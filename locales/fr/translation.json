@@ -1,1 +1,68 @@
-{}
+{
+    "nav": {
+        "diary": "Journal",
+        "checkin": "Enregistrement",
+        "reports": "Rapports",
+        "foods": "Repas",
+        "exercises": "Exercices",
+        "goals": "Objectifs",
+        "settings": "Paramètres",
+        "admin": "Admin"
+    },
+    "settings": {
+        "profileInformation": {
+            "title": "Informations utilisateur",
+            "description": "Modifie tes informations personnelles et ta photo de profil",
+            "changePhoto": "Modifie ta photo",
+            "photoSize": "PNG, JPG jusqu'à 5Mo",
+            "fullName": "Nom complet",
+            "enterFullName": "Entre ton nom complet",
+            "phoneNumber": "Numéro de téléphone",
+            "enterPhoneNumber": "Entre ton numéro de téléphone",
+            "dateOfBirth": "Date de naissance",
+            "pickADate": "Sélectionne une date",
+            "gender": "Genre",
+            "selectGender": "Sélectionne un genre",
+            "male": "Homme",
+            "female": "Femme",
+            "other": "Autre",
+            "bio": "Bio",
+            "tellAboutYourself": "Parle-nous de toi",
+            "saveProfile": "Sauvegarder le profil",
+            "saving": "Sauvegarde..."
+        },
+        "preferences": {
+            "title": "Préférences",
+            "description": "Customise les paramètres d'application et les préférences d'affichage",
+            "dateFormat": "Format de date",
+            "weightUnit": "Unité de poids",
+            "kilograms": "Kilogramme (kg)",
+            "pounds": "Livre (lbs)",
+            "measurementUnit": "Unité de taille",
+            "centimeters": "Centimètres (cm)",
+            "inches": "Pouces (in)",
+            "distanceUnit": "Unité de distance",
+            "kilometers": "Kilomètres (km)",
+            "miles": "Milles (miles)",
+            "loggingLevel": "Niveau de logging minimum",
+            "itemDisplayLimit": "Recherche/Récent/Dernière Limite",
+            "items": "{{count}} ingrédients",
+            "language": "Langue",
+            "english": "Anglais",
+            "tamil": "Tamoul",
+            "savePreferences": "Sauvegarder les préférences"
+        },
+        "waterTracking": {
+            "title": "Suivi conso d'eau",
+            "description": "Configure tes paramètres de suivi de consommation d'eau",
+            "waterDisplayUnit": "Unité d'affichage de conso d'eau",
+            "milliliters": "Millilitres (ml)",
+            "fluidOunces": "Oz (oz)",
+            "cups": "Tasses",
+            "saveWaterDisplayUnit": "Sauvegarder l'unité de conso d'eau"
+        },
+        "nutrientDisplay": {
+            "title": "Affichage des nutriments"
+        }
+    }
+}
