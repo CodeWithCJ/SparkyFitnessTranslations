@@ -50,7 +50,11 @@
             "language": "Langue",
             "english": "Anglais",
             "tamil": "Tamoul",
-            "savePreferences": "Sauvegarder les préférences"
+            "savePreferences": "Sauvegarder les préférences",
+            "info": "INFO",
+            "error": "ERREUR",
+            "warn": "AVERT",
+            "silent": "SILENCE (Aucun Journal)"
         },
         "waterTracking": {
             "title": "Suivi conso d'eau",
@@ -62,7 +66,63 @@
             "saveWaterDisplayUnit": "Sauvegarder l'unité de conso d'eau"
         },
         "nutrientDisplay": {
-            "title": "Affichage des nutriments"
+            "title": "Affichage des nutriments",
+            "description": "Choisissez les nutriments à afficher dans les vues des aliments et des repas"
+        },
+        "calculationSettings": {
+            "title": "Paramètres de calculs",
+            "description": "Gérer les préférences de calcul du Métabolisme Basal et de la Masse Grasse"
+        },
+        "familyAccess": {
+            "title": "Accès familial",
+            "description": "Gérez l'accès à vos données pour les membres de votre famille"
+        },
+        "customCategories": {
+            "title": "Catégories Personnalisées",
+            "description": "Créer et gérer des catégories de mesure personnalisées"
+        },
+        "foodExerciseDataProviders": {
+            "title": "Fournisseurs de données pour la Nourriture et les Exercices",
+            "description": "Configurer les sources de données externes relatives à l'alimentation et à l'exercice physique et synchronisez les données avec Garmin Connect",
+            "invalidKeyLengthWarning": "Si vous rencontrez une erreur « Longueur de clé invalide », assurez-vous que vos clés de chiffrement et d'authentification JWT dans les variables d'environnement du serveur sont de 64 octets hexadécimaux."
+        },
+        "aiService": {
+            "title": "Service d'IA",
+            "description": "Gérer les paramètres des fonctionnalités basées sur l'IA",
+            "invalidKeyLengthWarning": "Si vous rencontrez une erreur « Longueur de clé invalide », assurez-vous que vos clés de chiffrement et d'authentification JWT dans les variables d'environnement du serveur sont de 64 octets hexadécimaux."
+        },
+        "apiKeyManagement": {
+            "title": "Gestion des clés API",
+            "description": "Générer et gérer les clés API pour les intégrations externes",
+            "infoText": "Générez des clés API pour soumettre en toute sécurité des données depuis des applications externes comme Raccourcis sur iPhone. Ces clés sont liées à votre compte et peuvent être révoquées à tout moment.",
+            "wikiWarning": "Consultez la page Wiki sur Github pour obtenir des exemples d'instructions d'installation pour iPhone et Android.",
+            "descriptionPlaceholder": "Description (ex. : « Raccourci Santé iPhone »)",
+            "generateNewKey": "Générer une Nouvelle Clé",
+            "generating": "Génération...",
+            "noApiKeys": "Aucune clé API n'a encore été générée.",
+            "noDescription": "Aucune Description",
+            "copied": "Copié!",
+            "apiKeyCopied": "Clé API copiée dans le presse-papiers.",
+            "created": "Créé :",
+            "lastUsed": "Dernière utilisation:",
+            "deleteApiKeyConfirm": "Êtes-vous sûr de vouloir supprimer cette clé API ? Cette action est irréversible."
+        },
+        "accountSecurity": {
+            "title": "Sécurité du compte",
+            "description": "Changez votre adresse e-mail ou votre mot de passe",
+            "currentEmail": "Email actuel",
+            "enterNewEmail": "Saisissez votre nouvelle adresse e-mail",
+            "updateEmail": "Mettre à jour l'email",
+            "verifyNewEmail": "Vous devrez vérifier votre nouvelle adresse e-mail",
+            "changePassword": "Changer le mot de passe",
+            "newPassword": "Nouveau mot de passe",
+            "enterNewPassword": "Saisissez le nouveau mot de passe",
+            "confirmNewPassword": "Confirmez le nouveau mot de passe",
+            "updatePassword": "Mettre à jour le mot de passe",
+            "updating": "Mise à jour...",
+            "newPasswordsDoNotMatch": "Les nouveaux mots de passe ne correspondent pas",
+            "passwordLengthError": "Le mot de passe doit comporter au moins 6 caractères",
+            "enterNewEmailAddress": "Veuillez saisir une nouvelle adresse e-mail"
         }
     }
 }
