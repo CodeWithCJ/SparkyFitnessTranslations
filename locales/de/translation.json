@@ -125,5 +125,8 @@
             "passwordLengthError": "Passwort muss mindestens 6 Zeichen lang sein.",
             "enterNewEmailAddress": "Bitte neue E-Mail-Adresse eingeben"
         }
+    },
+    "aboutDialog": {
+        "title": "Über SparkyFitness"
     }
 }
