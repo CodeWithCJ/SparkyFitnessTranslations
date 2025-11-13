@@ -2,10 +2,11 @@
     "nav": {
         "diary": "Diario",
         "checkin": "Check-In",
-        "reports": "Resoconti",
+        "reports": "Report",
         "foods": "Alimenti",
         "goals": "Obiettivi",
-        "settings": "Impostazioni"
+        "settings": "Impostazioni",
+        "admin": "Admin"
     },
     "aboutDialog": {
         "title": "Riguardo SparkyFitness",
@@ -18,9 +19,9 @@
         "technologiesUsed": "Tecnologie Utilizzate:",
         "frontend": "Frontend:",
         "backend": "Backend:",
-        "externalApis": "APIs esterne:",
+        "externalApis": "API esterne:",
         "wgerApi": "Wger API (Dati Esercizi)",
-        "foodDataApis": "APIs Dati Alimenti:",
+        "foodDataApis": "API Dati Alimenti:",
         "nutritionixApi": "Nutritionix API",
         "fatsecretApi": "FatSecret API",
         "openFoodFactsApi": "Open Food Facts API",
@@ -40,7 +41,24 @@
             "nameLabel": "Nome",
             "categoryLabel": "Categoria",
             "selectCategoryPlaceholder": "Seleziona una categoria",
-            "categoryGeneral": "Generale"
+            "categoryGeneral": "Generale",
+            "categoryStrength": "Forza",
+            "categoryCardio": "",
+            "caloriesPerHourLabel": "Calorie/Ora",
+            "caloriesPerHourHint": "Lasciare vuoto per utilizzare le calorie calcolate dal sistema all'ora ({{newExerciseCalories}} cal/ora).",
+            "descriptionLabel": "Descrizione",
+            "sourceLabel": "Fonte",
+            "forceLabel": "Tipologia esercizio",
+            "selectForcePlaceholder": "Tipo di esercizio",
+            "forcePull": "Trazione",
+            "forceStatic": "Statico",
+            "levelLabel": "Livello",
+            "selectLevelPlaceholder": "Seleziona livello",
+            "levelBeginner": "Principiante",
+            "levelIntermediate": "Intermedio",
+            "levelExpert": "Esperto",
+            "mechanicLabel": "Meccanica",
+            "selectMechanicPlaceholder": "Seleziona meccanica"
         }
     }
 }
