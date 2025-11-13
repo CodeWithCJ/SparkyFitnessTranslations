@@ -1,1 +1,38 @@
-{}
+{
+    "nav": {
+        "diary": "Dagbog",
+        "reports": "Rapporter",
+        "goals": "Mål",
+        "settings": "Indstillinger",
+        "admin": "Admin",
+        "checkin": "Tjek ind"
+    },
+    "aboutDialog": {
+        "title": "Om SparkyFitness",
+        "description1": "SparkyFitness: Bygget til familier. Drevet af AI. Track mad, fitness, vand og sundhed – sammen.",
+        "joinDiscord": "Bliv en del af vores fællesskab på Discord: ",
+        "discordLink": "discord.gg/vcnMT5cPEA",
+        "gotIt": "Forstået",
+        "close": "Luk"
+    },
+    "exercise": {
+        "title": "Øvelser",
+        "addExerciseDialog": {
+            "title": "Tilføj motion",
+            "myExercisesTab": "Mine øvelser",
+            "onlineTab": "Online",
+            "categoryLabel": "Kategori",
+            "selectCategoryPlaceholder": "Vælg en kategori",
+            "categoryGeneral": "Generelt",
+            "categoryStrength": "Styrke",
+            "categoryCardio": "Konditionstræning",
+            "categoryYoga": "Yoga",
+            "caloriesPerHourLabel": "Kalorier/Time",
+            "descriptionLabel": "Beskrivelse",
+            "forcePull": "Træk",
+            "forcePush": "Skub",
+            "levelBeginner": "Begynder",
+            "imagesLabel": "Billeder"
+        }
+    }
+}
