@@ -127,6 +127,44 @@
         }
     },
     "aboutDialog": {
-        "title": "Über SparkyFitness"
+        "title": "Über SparkyFitness",
+        "description1": "SparkyFitness: Erstellt für Familien. Powered by AI. Tracke Food, Fitness, Wasser und Gesundheit - zusammen.",
+        "applicationVersion": "App-Version: ",
+        "joinDiscord": "Betritt unsere Community auf Discord: ",
+        "discordLink": "discord.gg/vcnMT5cPEA",
+        "moreInfoVisit": "Für mehr Informationen, besuche die ",
+        "githubRepo": "Github Repository",
+        "technologiesUsed": "Genutze Technologien:",
+        "frontend": "Frontend:",
+        "backend": "Backend:",
+        "externalApis": "Externe APIs:",
+        "wgerApi": "Wger API (Aufgaben-Daten)",
+        "foodDataApis": "Essens-Daten-APIs:",
+        "nutritionixApi": "Nutritionix API",
+        "fatsecretApi": "FatSecret API",
+        "openFoodFactsApi": "Open Food Facts API",
+        "gotIt": "Bekomme es",
+        "close": "Schließen"
+    },
+    "exercise": {
+        "title": "Aufgaben",
+        "addExerciseDialog": {
+            "title": "Aufgabe hinzufügen",
+            "description": "Füge eine neue Aufgabe zu deiner Datenbank, indem du eine benutzerdefinierte Aufgabe erstellst oder eine Aufgabe aus einer externen Quelle importierst.",
+            "myExercisesTab": "Meine Aufgaben",
+            "workoutPresetTab": "Workout Voreinstellung",
+            "onlineTab": "Online",
+            "addCustomTab": "Benutzerdefinierte Aufgabe erstellen",
+            "importCSVTab": "CSV importieren",
+            "nameLabel": "Name",
+            "categoryLabel": "Kategorie",
+            "selectCategoryPlaceholder": "Wähle eine Kategorie",
+            "categoryGeneral": "Allgemein",
+            "categoryStrength": "Stärke",
+            "categoryYoga": "Yoga",
+            "caloriesPerHourLabel": "Kalorien/ Stunde",
+            "caloriesPerHourHint": "Lasse das Feld leer um die berechneten Kalorien pro Stunde zu nutzen ({{newExerciseCalories}} cal/hour).",
+            "descriptionLabel": "Beschreibung"
+        }
     }
 }
