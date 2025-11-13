@@ -5,7 +5,8 @@
         "goals": "Mål",
         "settings": "Indstillinger",
         "admin": "Admin",
-        "checkin": "Tjek ind"
+        "checkin": "Tjek ind",
+        "foods": "Fødevare"
     },
     "aboutDialog": {
         "title": "Om SparkyFitness",
@@ -13,7 +14,10 @@
         "joinDiscord": "Bliv en del af vores fællesskab på Discord: ",
         "discordLink": "discord.gg/vcnMT5cPEA",
         "gotIt": "Forstået",
-        "close": "Luk"
+        "close": "Luk",
+        "applicationVersion": "Applikation Version ",
+        "moreInfoVisit": "For mere information, besøg ",
+        "githubRepo": "GitHub repository"
     },
     "exercise": {
         "title": "Øvelser",
