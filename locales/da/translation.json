@@ -55,7 +55,8 @@
             "levelExpert": "Ekspert",
             "mechanicLabel": "Teknik",
             "selectMechanicPlaceholder": "Vælg teknik",
-            "mechanicIsolation": "Isolering"
+            "mechanicIsolation": "Isolering",
+            "workoutPresetTab": "Træningsskabelon"
         }
     }
 }
