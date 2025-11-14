@@ -17,7 +17,10 @@
         "close": "Luk",
         "applicationVersion": "Applikation Version ",
         "moreInfoVisit": "For mere information, besøg ",
-        "githubRepo": "GitHub repository"
+        "githubRepo": "GitHub repository",
+        "wgerApi": "Wger API (Øvelses Data)",
+        "foodDataApis": "Fødevare API'er:",
+        "nutritionixApi": "Nutritionix API"
     },
     "exercise": {
         "title": "Øvelser",
@@ -36,7 +39,23 @@
             "forcePull": "Træk",
             "forcePush": "Skub",
             "levelBeginner": "Begynder",
-            "imagesLabel": "Billeder"
+            "imagesLabel": "Billeder",
+            "description": "Tilføj en ny øvelse til din database, enten ved at tilføje en brugerdefineret eller importere en fra en ekstern kilde.",
+            "addCustomTab": "Tilføj Brugerdefineret",
+            "importCSVTab": "Importer CSV",
+            "nameLabel": "Navn",
+            "caloriesPerHourHint": "Lad feltet stå tomt for at lade systemet beregne kalorier per time ({{newExerciseCalories}} kal/time).",
+            "sourceLabel": "Kilde",
+            "forceLabel": "Kraft",
+            "selectForcePlaceholder": "Vælg Kraft",
+            "forceStatic": "Statisk",
+            "levelLabel": "Niveau",
+            "selectLevelPlaceholder": "Vælg niveau",
+            "levelIntermediate": "Øvet",
+            "levelExpert": "Ekspert",
+            "mechanicLabel": "Teknik",
+            "selectMechanicPlaceholder": "Vælg teknik",
+            "mechanicIsolation": "Isolering"
         }
     }
 }
