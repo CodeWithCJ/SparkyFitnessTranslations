@@ -191,7 +191,8 @@
             "importSuccess": "Trainingsdaten erfolgreich importiert",
             "importDuplicateTitle": "Import fehlgeschlagen: Doppelte Einträge gefunden",
             "importDuplicateDescription": "Die folgenden Einträge existieren bereits: {{duplicateList}}. Bitte entferne sie aus deiner Datei und versuche es erneut.",
-            "importError": "Trainingsdaten konnten nicht importiert werden. Bitte versuche es erneut."
+            "importError": "Trainingsdaten konnten nicht importiert werden. Bitte versuche es erneut.",
+            "categoryCardio": "Kardio"
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "Durchsuche deine Workout-Vorlagen...",
