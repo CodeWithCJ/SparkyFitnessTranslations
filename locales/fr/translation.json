@@ -478,11 +478,39 @@
         "pleaseSelectAnExercise": "Sélectionner un exercice.",
         "failedToAddExerciseEntry": "Échec d'ajout de l'exercice.",
         "exerciseEntryAddedSuccessfully": "Exercice ajouté.",
-        "failedToDeleteExerciseEntry": "Échec de suppression de l'exercice."
+        "failedToDeleteExerciseEntry": "Échec de suppression de l'exercice.",
+        "exerciseEntryDeletedSuccessfully": "Exercice supprimé avec succès.",
+        "loadingExercises": "Chargement des exercices..."
     },
     "enhancedFoodSearch": {
         "private": "Privé",
         "public": "Publique",
-        "family": "Famille"
+        "family": "Famille",
+        "database": "Base de données",
+        "meals": "Repas",
+        "online": "En ligne",
+        "scanBarcode": "Scanner le code-barres",
+        "importFromCSV": "Importer depuis un fichier CSV",
+        "searchFoodsPlaceholder": "Recherche d'aliments...",
+        "selectProvider": "Sélectionner un fournisseur",
+        "recentFoods": "Aliments récents",
+        "topFoods": "Meilleurs aliments",
+        "clickSearchIconOnline": "Cliquez sur l'icône de recherche pour effectuer une recherche en ligne.",
+        "noFoodsFoundOnline": "Aucun aliment trouvé auprès du fournisseur en ligne sélectionné.",
+        "mealie": "Mealie",
+        "editAndAdd": "Modifier et ajouter",
+        "openFoodFacts": "OpenFoodFacts",
+        "nutritionix": "Nutritionix",
+        "fatSecret": "FatSecret",
+        "editFoodDetails": "Modifier les détails de l'aliment",
+        "editFoodDetailsDescription": "Modifiez les détails de l'aliment avant de l'ajouter à votre base de données personnalisée.",
+        "addNewFood": "Ajouter un nouvel aliment",
+        "addNewFoodDescription": "Saisissez les détails d'un nouvel aliment à ajouter à votre base de données.",
+        "scanBarcodeDescription": "Placez le code-barres du produit devant votre caméra.",
+        "importFromCSVDescription": "Importez un fichier CSV pour ajouter plusieurs aliments à la fois."
+    },
+    "foodSearchDialog": {
+        "title": "Rechercher et ajouter des aliments",
+        "description": "Recherchez des aliments à ajouter à votre base de données."
     }
 }
