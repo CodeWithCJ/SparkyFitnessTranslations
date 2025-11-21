@@ -366,6 +366,130 @@
         "failedToUpdateExerciseInDatabase": "Impossibile aggiornare l'esercizio nel database",
         "exerciseUpdatedSuccessfullyInDatabase": "Esercizio aggiornato correttamente nel database",
         "pleaseSelectAnExercise": "Seleziona un esercizio.",
-        "failedToAddExerciseEntry": "Impossibile aggiungere la voce relativa all'esercizio fisico."
+        "failedToAddExerciseEntry": "Impossibile aggiungere la voce relativa all'esercizio fisico.",
+        "exerciseEntryAddedSuccessfully": "Voce di esercizio aggiunta correttamente.",
+        "failedToDeleteExerciseEntry": "Impossibile eliminare la voce dell'esercizio.",
+        "exerciseEntryDeletedSuccessfully": "Voce esercizio cancellata con successo.",
+        "loadingExercises": "Caricamento esercizi..."
+    },
+    "foodSearchDialog": {
+        "title": "Cerca e aggiungi alimenti",
+        "description": "Cerca gli alimenti da aggiungere al tuo database."
+    },
+    "enhancedFoodSearch": {
+        "database": "Banca dati",
+        "meals": "Pasti",
+        "online": "Online",
+        "scanBarcode": "Scansiona codice a barre",
+        "customFood": "Cibo personalizzato",
+        "importFromCSV": "Importa da CSV",
+        "searchFoodsPlaceholder": "Cerca alimenti...",
+        "selectProvider": "Selezionare il fornitore",
+        "searchingFoods": "Ricerca alimenti...",
+        "recentFoods": "Alimenti recenti",
+        "private": "Privato",
+        "public": "Pubblico",
+        "family": "Famiglia",
+        "topFoods": "I migliori alimenti",
+        "noRecentOrTopFoods": "Non sono stati trovati alimenti recenti o più consumati. Inizia a registrare gli alimenti per visualizzarli qui.",
+        "noItemsFoundInDatabase": "Nessun elemento trovato nel database per “{{searchTerm}}”.",
+        "clickSearchIconOnline": "Clicca sull'icona di ricerca per effettuare una ricerca online.",
+        "noFoodsFoundOnline": "Nessun alimento trovato dal fornitore online selezionato.",
+        "mealie": "Pannocchia",
+        "editAndAdd": "Modifica e aggiungi",
+        "meal": "Pasto",
+        "openFoodFacts": "OpenFoodFacts",
+        "nutritionix": "Nutritionix",
+        "fatSecret": "FatSecret",
+        "editFoodDetails": "Modifica dettagli alimentari",
+        "editFoodDetailsDescription": "Modifica i dettagli dell'alimento prima di aggiungerlo al tuo database personalizzato.",
+        "addNewFood": "Aggiungi nuovo alimento",
+        "addNewFoodDescription": "Inserisci i dettagli di un nuovo alimento da aggiungere al tuo database.",
+        "scanBarcodeDescription": "Posiziona il codice a barre del prodotto davanti alla fotocamera.",
+        "importFromCSVDescription": "Importa un file CSV per aggiungere più alimenti contemporaneamente."
+    },
+    "settings": {
+        "profileInformation": {
+            "title": "Informazioni sul profilo",
+            "description": "Gestisci le tue informazioni personali e l'immagine del tuo profilo",
+            "changePhoto": "Cambia foto",
+            "photoSize": "PNG, JPG fino a 5 MB",
+            "fullName": "Nome completo",
+            "enterFullName": "Inserisci il tuo nome completo",
+            "phoneNumber": "Numero di telefono",
+            "enterPhoneNumber": "Inserisci il tuo numero di telefono",
+            "dateOfBirth": "Data di nascita",
+            "pickADate": "Scegli una data",
+            "gender": "Genere",
+            "selectGender": "Seleziona il sesso",
+            "male": "Maschio",
+            "female": "Femmina",
+            "other": "Altro",
+            "bio": "Biografia",
+            "tellAboutYourself": "Raccontaci di te",
+            "saveProfile": "Salva profilo",
+            "saving": "Salvataggio in corso..."
+        },
+        "preferences": {
+            "title": "Preferenze",
+            "description": "Personalizza le impostazioni dell'app e le preferenze di visualizzazione",
+            "dateFormat": "Formato della data",
+            "weightUnit": "Unità di peso",
+            "kilograms": "Chilogrammi (kg)",
+            "pounds": "Libbre (lbs)",
+            "measurementUnit": "Unità di misura",
+            "centimeters": "Centimetri (cm)",
+            "inches": "Pollici (in)",
+            "distanceUnit": "Unità di distanza",
+            "kilometers": "Chilometri (km)",
+            "miles": "Miglia (miglia)",
+            "loggingLevel": "Livello di registrazione minimo",
+            "debug": "DEBUG (più dettagliato)",
+            "info": "INFO",
+            "warn": "AVVERTENZA",
+            "error": "ERRORE",
+            "silent": "SILENZIOSO (Nessun registro)",
+            "itemDisplayLimit": "Ricerca/Recenti/Limite massimo",
+            "items": "{{count}} articoli",
+            "language": "Lingua",
+            "english": "Inglese",
+            "tamil": "தமிழ்",
+            "savePreferences": "Salva preferenze"
+        },
+        "waterTracking": {
+            "title": "Monitoraggio dell'acqua",
+            "description": "Configura le impostazioni per il monitoraggio dell'assunzione di acqua",
+            "waterDisplayUnit": "Unità di visualizzazione dell'acqua",
+            "milliliters": "Millilitri (ml)",
+            "fluidOunces": "Once Liquide (oz)",
+            "cups": "Tazze",
+            "saveWaterDisplayUnit": "Espositore “Risparmia acqua”"
+        },
+        "nutrientDisplay": {
+            "title": "Visualizzazione dei nutrienti",
+            "description": "Scegli quali nutrienti visualizzare nelle schermate dedicate agli alimenti e ai pasti"
+        },
+        "calculationSettings": {
+            "title": "Impostazioni di calcolo",
+            "description": "Gestisci le preferenze di calcolo del metabolismo basale (BMR) e del grasso corporeo"
+        },
+        "familyAccess": {
+            "title": "Accesso famiglia",
+            "description": "Gestisci l'accesso ai tuoi dati per i membri della tua famiglia"
+        },
+        "customCategories": {
+            "title": "Categorie personalizzate",
+            "description": "Crea e gestisci categorie di misurazione personalizzate"
+        },
+        "foodExerciseDataProviders": {
+            "title": "Fornitori di dati relativi all'alimentazione e all'attività fisica",
+            "description": "Configura fonti di dati esterne relative all'alimentazione e all'attività fisica e sincronizza i dati con Garmin Connect",
+            "invalidKeyLengthWarning": "Se viene visualizzato l'errore “Lunghezza chiave non valida”, assicurarsi che le chiavi di crittografia e di autenticazione JWT nelle variabili di ambiente del server siano a 64 caratteri esadecimali."
+        },
+        "aiService": {
+            "title": "Servizio di intelligenza artificiale",
+            "description": "Gestisci le impostazioni delle funzioni basate sull'intelligenza artificiale",
+            "invalidKeyLengthWarning": "Se viene visualizzato l'errore “Lunghezza chiave non valida”, assicurarsi che le chiavi di crittografia e di autenticazione JWT nelle variabili di ambiente del server siano a 64 caratteri esadecimali."
+        }
     }
 }
