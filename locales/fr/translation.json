@@ -480,7 +480,8 @@
         "exerciseEntryAddedSuccessfully": "Exercice ajouté.",
         "failedToDeleteExerciseEntry": "Échec de suppression de l'exercice.",
         "exerciseEntryDeletedSuccessfully": "Exercice supprimé avec succès.",
-        "loadingExercises": "Chargement des exercices..."
+        "loadingExercises": "Chargement des exercices...",
+        "playInstructions": "Jouer les instructions"
     },
     "enhancedFoodSearch": {
         "private": "Privé",
@@ -507,7 +508,8 @@
         "addNewFood": "Ajouter un nouvel aliment",
         "addNewFoodDescription": "Saisissez les détails d'un nouvel aliment à ajouter à votre base de données.",
         "scanBarcodeDescription": "Placez le code-barres du produit devant votre caméra.",
-        "importFromCSVDescription": "Importez un fichier CSV pour ajouter plusieurs aliments à la fois."
+        "importFromCSVDescription": "Importez un fichier CSV pour ajouter plusieurs aliments à la fois.",
+        "customFood": "Nourriture personnalisée"
     },
     "foodSearchDialog": {
         "title": "Rechercher et ajouter des aliments",
