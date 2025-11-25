@@ -240,7 +240,7 @@
             "notesLabel": "Notes",
             "title": "Modifier l'exercice",
             "description": "Réalisez des modifications sur vos exercices ici. Appuyez sur sauvegarder lorsque vous avez terminé.",
-            "caloriesWarning": "Lors de la sauvegarde, les calories brulées vont être recalculées. Entrez une valeur pour écraser la précédente.",
+            "caloriesWarning": "Lors de la sauvegarde, les calories brulées vont être recalculées. Entrer une valeur pour écraser la précédente.",
             "exerciseLabel": "Exercice",
             "unknownExercise": "Exercice inconnu",
             "addSetButton": "Ajouter une série",
