@@ -490,6 +490,70 @@
             "title": "Servizio di intelligenza artificiale",
             "description": "Gestisci le impostazioni delle funzioni basate sull'intelligenza artificiale",
             "invalidKeyLengthWarning": "Se viene visualizzato l'errore “Lunghezza chiave non valida”, assicurarsi che le chiavi di crittografia e di autenticazione JWT nelle variabili di ambiente del server siano a 64 caratteri esadecimali."
+        },
+        "apiKeyManagement": {
+            "title": "Gestione delle chiavi API",
+            "description": "Genera e gestisci chiavi API per integrazioni esterne",
+            "infoText": "Genera chiavi API per inviare dati in modo sicuro da applicazioni esterne come le scorciatoie di iPhone. Queste chiavi sono collegate al tuo account e possono essere revocate in qualsiasi momento.",
+            "wikiWarning": "Fai riferimento alla pagina Wiki su Github per le istruzioni di configurazione di esempio per iPhone e Android.",
+            "descriptionPlaceholder": "Descrizione (ad esempio, “Scorciatoia Salute iPhone”)",
+            "generateNewKey": "Genera nuova chiave",
+            "generating": "Generazione in corso...",
+            "noApiKeys": "Nessuna chiave API generata ancora.",
+            "noDescription": "Nessuna descrizione",
+            "copied": "Copiato!",
+            "apiKeyCopied": "Chiave API copiata negli appunti.",
+            "created": "Creato:",
+            "lastUsed": "Ultimo utilizzo:",
+            "deleteApiKeyConfirm": "Sei sicuro di voler eliminare questa chiave API? Questa azione non può essere annullata."
+        },
+        "accountSecurity": {
+            "title": "Sicurezza dell'account",
+            "description": "Modifica il tuo indirizzo e-mail o la tua password",
+            "currentEmail": "Email attuale",
+            "enterNewEmail": "Inserisci un nuovo indirizzo e-mail",
+            "updateEmail": "Aggiorna e-mail",
+            "verifyNewEmail": "Dovrai verificare il tuo nuovo indirizzo e-mail",
+            "changePassword": "Cambia password",
+            "newPassword": "Nuova password",
+            "enterNewPassword": "Inserisci nuova password",
+            "confirmNewPassword": "Conferma nuova password",
+            "updatePassword": "Aggiorna password",
+            "updating": "Aggiornamento in corso...",
+            "newPasswordsDoNotMatch": "Le nuove password non corrispondono",
+            "passwordLengthError": "La password deve contenere almeno 6 caratteri",
+            "enterNewEmailAddress": "Inserisci un nuovo indirizzo e-mail"
+        }
+    },
+    "admin": {
+        "authenticationSettings": {
+            "title": "Impostazioni di autenticazione",
+            "description": "Gestisci i metodi di autenticazione e i provider OIDC.",
+            "loginManagement": {
+                "title": "Gestione degli accessi",
+                "description": "Abilita o disabilita diversi metodi di accesso per gli utenti.",
+                "enableEmailPasswordLogin": "Abilita accesso con email e password",
+                "enableOidcLoginGlobal": "Abilita accesso OIDC (globale)",
+                "emergencyFailSafe": "Sicurezza di emergenza:",
+                "emergencyFailSafeDescription": "Se dovessi rimanere bloccato fuori dal tuo account, puoi forzare l'abilitazione dell'accesso tramite email/password impostando la seguente variabile di ambiente sul tuo server e riavviandolo:",
+                "envVarCopied": "Variabile d'ambiente copiata negli appunti."
+            },
+            "oidcProviderManagement": {
+                "title": "Gestione dei provider OIDC",
+                "description": "Configura i tuoi provider OpenID Connect (OIDC)."
+            }
+        },
+        "backupSettings": {
+            "title": "Impostazioni di backup",
+            "description": "Configurare i backup pianificati e le opzioni di ripristino",
+            "loadingSettings": "Caricamento delle impostazioni...",
+            "errorLoadingSettings": "Impossibile caricare le impostazioni di backup globali.",
+            "enableScheduledBackups": "Abilita backup pianificati:",
+            "backupDays": "Giorni di backup:",
+            "backupTime": "Ora di backup ({{timezone}}):",
+            "retentionDays": "Conserva i backup per (giorni):",
+            "backupLocation": "Posizione di backup:",
+            "lastBackupStatus": "Stato dell'ultimo backup:"
         }
     }
 }
