@@ -1,1 +1,63 @@
-{}
+{
+    "nav": {
+        "diary": "Diario",
+        "reports": "Reportes",
+        "foods": "Comidas",
+        "goals": "Objetivos",
+        "settings": "Ajustes",
+        "admin": "Administración"
+    },
+    "aboutDialog": {
+        "title": "Sobre SparkyFitness",
+        "applicationVersion": "Versión de la aplicación: ",
+        "joinDiscord": "Únete a nuestra comunidad en Discord: ",
+        "moreInfoVisit": "Para más información, visita la ",
+        "githubRepo": "Repositorio GitHub",
+        "technologiesUsed": "Tecnologías usadas:",
+        "frontend": "Frontend:",
+        "backend": "Backend:",
+        "externalApis": "APIs externas:",
+        "nutritionixApi": "Nutritionist API",
+        "close": "Cerrar"
+    },
+    "exercise": {
+        "title": "Ejercicios",
+        "addExerciseDialog": {
+            "title": "Añadir ejercicio",
+            "description": "Añade un nuevo ejercicio a tu base de datos, ya sea creando uno custom o importándolo desde una fuente externa.",
+            "onlineTab": "Online",
+            "addCustomTab": "Añadir Custom",
+            "importCSVTab": "Importar CSV",
+            "nameLabel": "Nombre",
+            "categoryLabel": "Categoría",
+            "selectCategoryPlaceholder": "Selecciona una categoría",
+            "categoryGeneral": "General",
+            "categoryStrength": "Fuerza",
+            "categoryCardio": "Cardio",
+            "categoryYoga": "Yoga",
+            "caloriesPerHourLabel": "Calorías/Hora",
+            "descriptionLabel": "Descripción",
+            "sourceLabel": "Fuente",
+            "forceLabel": "Forzar",
+            "forcePull": "Tirar",
+            "forcePush": "Empujar",
+            "forceStatic": "Estático",
+            "levelLabel": "Nivel",
+            "selectLevelPlaceholder": "Seleccionar nivel",
+            "levelBeginner": "Principiante",
+            "levelIntermediate": "Intermedio",
+            "levelExpert": "Experto",
+            "mechanicLabel": "Mecánica",
+            "selectMechanicPlaceholder": "Selecciona mecánica",
+            "mechanicCompound": "Componente",
+            "equipmentLabel": "Equipamiento (separado por coma)",
+            "primaryMusclesLabel": "Músculos primarios (separados por coma)",
+            "secondaryMusclesLabel": "Músculos secundarios (separados por coma)",
+            "instructionsLabel": "Instrucciones (una por línea)",
+            "imagesLabel": "Imágenes",
+            "addButton": "Añadir Ejercicio",
+            "addSuccess": "Ejercicio añadido exitosamente",
+            "addError": "Fallo al añadir ejercicio"
+        }
+    }
+}
