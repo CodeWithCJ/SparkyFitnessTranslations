@@ -513,7 +513,8 @@
         "nutritionix": "Nutritionix",
         "editFoodDetails": "Lebensmitteldetails bearbeiten",
         "editFoodDetailsDescription": "Passe die Angaben zum Lebensmittel an, bevor es zu deiner benutzerdefinierten Datenbank hinzugefügt wird.",
-        "addNewFood": "Neues Lebensmittel hinzufügen"
+        "addNewFood": "Neues Lebensmittel hinzufügen",
+        "fatSecret": "FatSecret"
     },
     "workoutPresetForm": {
         "createTitle": "Neue Trainingsvorlage erstellen",
