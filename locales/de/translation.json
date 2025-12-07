@@ -514,7 +514,10 @@
         "editFoodDetails": "Lebensmitteldetails bearbeiten",
         "editFoodDetailsDescription": "Passe die Angaben zum Lebensmittel an, bevor es zu deiner benutzerdefinierten Datenbank hinzugefügt wird.",
         "addNewFood": "Neues Lebensmittel hinzufügen",
-        "fatSecret": "FatSecret"
+        "fatSecret": "FatSecret",
+        "importFromCSVDescription": "Importiere eine CSV-Datei, um mehrere Lebensmittel gleichzeitig hinzuzufügen.",
+        "addNewFoodDescription": "Gebe die Details für ein neues Lebensmittel ein, den Du Deiner Datenbank hinzufügen möchten.",
+        "scanBarcodeDescription": "Positioniere den Produkt-Barcode vor Deiner Kamera."
     },
     "workoutPresetForm": {
         "createTitle": "Neue Trainingsvorlage erstellen",
@@ -590,5 +593,16 @@
         "prs": "PRs - ",
         "maxWeight": "Max. Gewicht",
         "maxReps": "Max. Wiederholungen"
+    },
+    "admin": {
+        "authenticationSettings": {
+            "title": "Authentifizierungseinstellungen",
+            "description": "Verwalte Authentifizierungsmethoden und OIDC-Anbieter.",
+            "loginManagement": {
+                "description": "Aktiviere oder deaktiviere verschiedene Methoden für die Anmeldung von Benutzern.",
+                "enableEmailPasswordLogin": "Anmeldung per E-Mail und Passwort aktivieren",
+                "enableOidcLoginGlobal": "OIDC-Anmeldung aktivieren (global)"
+            }
+        }
     }
 }
