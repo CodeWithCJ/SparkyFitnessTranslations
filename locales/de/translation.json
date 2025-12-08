@@ -603,6 +603,39 @@
                 "enableEmailPasswordLogin": "Anmeldung per E-Mail und Passwort aktivieren",
                 "enableOidcLoginGlobal": "OIDC-Anmeldung aktivieren (global)"
             }
+        },
+        "oidcSettings": {
+            "editProvider": "OIDC-Anbieter bearbeiten",
+            "addProvider": "OIDC-Anbieter hinzufügen",
+            "fillDetails": "Gebe die Daten für den OIDC-Anbieter ein.",
+            "resetToDefaults": "Auf Standardwerte zurücksetzen",
+            "defaultsRestored": "Die Felder des OIDC-Anbieters wurden auf ihre Standardwerte zurückgesetzt.",
+            "logoFile": "Logo-Datei",
+            "logoUrl": "Logo-URL",
+            "willBeSetOnUpload": "Wird beim Hochladen festgelegt",
+            "issuerUrl": "Aussteller-URL",
+            "redirectUriInfo": "Die Redirect-URI für den OIDC-Anbieter sollte lauten: SPARKY_FITNESS_FRONTEND_URL/oidc-callback",
+            "redirectUriCopied": "Redirect-URI in die Zwischenablage kopiert.",
+            "localhostWarning": "Stellen Sie sicher, dass Ihr OIDC-Anbieter localhost oder Ihre lokale IP-Adresse für die Entwicklung zulässt.",
+            "proxyWarning": "Wenn Sie einen Proxy wie Nginx Proxy Manager verwenden, stellen Sie sicher, dass die folgenden Header konfiguriert sind:",
+            "proxyConfigCopied": "Proxy-Konfiguration in die Zwischenablage kopiert.",
+            "cancel": "Abbrechen",
+            "save": "Speichern",
+            "uploadFailed": "Hochladen des Logos ist fehlgeschlagen."
+        },
+        "userManagement": {
+            "description": "Benutzerkonten, Rollen und Status verwalten.",
+            "loadingUsers": "Benutzerdaten werden geladen...",
+            "errorLoadingUsers": "Das Abrufen der Benutzerdaten ist fehlgeschlagen.",
+            "noUsersFound": "Keine Benutzer gefunden.",
+            "searchUsers": "Suche Benutzer...",
+            "fullName": "Vollständiger Name",
+            "email": "E-Mail",
+            "admin": "Admin",
+            "active": "Aktiv",
+            "createdAt": "Erstellt am",
+            "lastLogin": "Letzter Login",
+            "actions": "Aktionen"
         }
     }
 }
