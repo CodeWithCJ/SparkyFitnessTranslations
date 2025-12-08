@@ -545,7 +545,8 @@
             "backupDays": "Jours de sauvegarde :",
             "backupTime": "Heure de la sauvegarde {{timezone}} :",
             "retentionDays": "Conserver les sauvegardes durant (jours) :",
-            "backupLocation": "Emplacement de sauvegarde :"
+            "backupLocation": "Emplacement de sauvegarde :",
+            "restoreWarningCautionText": "Restaurer une sauvegarde va effacer toutes les données actuelles et les remplacer avec le contenu de la sauvegarde. Procédez avec beaucoup de précaution. Redémarrer le serveur manuellement après la restauration."
         }
     }
 }
