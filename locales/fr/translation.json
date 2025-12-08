@@ -509,10 +509,43 @@
         "addNewFoodDescription": "Saisissez les détails d'un nouvel aliment à ajouter à votre base de données.",
         "scanBarcodeDescription": "Placez le code-barres du produit devant votre caméra.",
         "importFromCSVDescription": "Importez un fichier CSV pour ajouter plusieurs aliments à la fois.",
-        "customFood": "Nourriture personnalisée"
+        "customFood": "Nourriture personnalisée",
+        "searchingFoods": "Recherche d'aliments...",
+        "noRecentOrTopFoods": "Pas d'aliments favoris ou récents. Commencez à enregistrer des aliments pour les voir apparaître ici.",
+        "noItemsFoundInDatabase": "Aucun résultat trouvé pour \"{{searchTerm}}\" dans la base de données.",
+        "meal": "Repas"
     },
     "foodSearchDialog": {
         "title": "Rechercher et ajouter des aliments",
         "description": "Recherchez des aliments à ajouter à votre base de données."
+    },
+    "admin": {
+        "authenticationSettings": {
+            "title": "Paramètres d'authentification",
+            "description": "Gérer les méthodes d'authentification et les fournisseurs OIDC.",
+            "loginManagement": {
+                "title": "Gestion de la connection",
+                "description": "Activer ou désactiver différentes méthodes pour la connection des utilisateurs.",
+                "enableEmailPasswordLogin": "Activer la connection par Email & Mot de passe",
+                "enableOidcLoginGlobal": "Activer la connection OIDC (Général)",
+                "emergencyFailSafeDescription": "Si vous êtes bloqués en dehors de votre compte, vous pouvez forcer l'activation de la connection par email/mot de passe en ajoutant la variable d'environnement suivante sur votre serveur et en le redémarrant :",
+                "envVarCopied": "Variable d'environnement copiée dans le presse-papier."
+            },
+            "oidcProviderManagement": {
+                "title": "Gestion des fournisseurs OIDC",
+                "description": "Configurer votre founisseur OpenID Connect (OIDC)."
+            }
+        },
+        "backupSettings": {
+            "title": "Paramètres de sauvegarde",
+            "description": "Configurer les options de sauvegarde et de restauration",
+            "loadingSettings": "Chargement des paramètres...",
+            "errorLoadingSettings": "Chargement impossible des paramètres globaux de sauvegarde.",
+            "enableScheduledBackups": "Activer la sauvegarde planifiée :",
+            "backupDays": "Jours de sauvegarde :",
+            "backupTime": "Heure de la sauvegarde {{timezone}} :",
+            "retentionDays": "Conserver les sauvegardes durant (jours) :",
+            "backupLocation": "Emplacement de sauvegarde :"
+        }
     }
 }
