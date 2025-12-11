@@ -637,7 +637,42 @@
             "toggleUserStatusConfirm": "Êtes-vous sûr de vouloir {{action}} l'utilisateur {{userName}} ?",
             "userStatusUpdated": "Utilisateur {{userName}}{{action}} avec succès.",
             "failedToUpdateUserStatus": "Echec de {{action}} de l'utilisateur.",
-            "toggleUserRoleConfirm": "êtes-vous sûr de vouloir changer le rôle de {{userName}} pour {{newRole}} ?"
+            "toggleUserRoleConfirm": "êtes-vous sûr de vouloir changer le rôle de {{userName}} pour {{newRole}} ?",
+            "userRoleUpdated": "Le rôle de l'utilisateur {{userName}} a été mis à jour vers {{newRole}} avec succès.",
+            "failedToUpdateUserRole": "Échec de la mise à jour du rôle de l'utilisateur {{userName}}."
+        }
+    },
+    "goals": {
+        "goalsSettings": {
+            "title": "Paramètres des objectifs",
+            "cascadingGoals": "Sous-objectifs",
+            "dailyNutritionGoals": "Objectifs nutritionnels quotidiens",
+            "changesCascadeInfo": "(Les changements affectent les 6 prochains mois ou jusqu'à votre prochain objectif)",
+            "calories": "Calories",
+            "protein": "Protéines (g)",
+            "carbohydrates": "Glucides (g)",
+            "fat": "Lipides (g)",
+            "saturatedFat": "Graisses saturées (g)",
+            "polyunsaturatedFat": "Graisses polyinsaturées (g)",
+            "monounsaturatedFat": "Graisses monoinsaturées (g)",
+            "transFat": "Graisses trans (g)",
+            "cholesterol": "Cholestérol (mg)",
+            "sodium": "Sodium (mg)",
+            "potassium": "Potassium (mg)",
+            "dietaryFiber": "Fibres alimentaires (g)",
+            "sugars": "Sucres (g)",
+            "vitaminA": "Vitamine A (mg)",
+            "vitaminC": "Vitamine C (mg)",
+            "calcium": "Calcium (mg)",
+            "iron": "Fer (mg)",
+            "waterGoal": "Objectif eau {{unit}}",
+            "targetExerciseCaloriesBurned": "Objectif de calories brulées en exercice",
+            "targetExerciseDurationMinutes": "Objectif de durée d'exercice (minutes)",
+            "mealCalorieDistribution": "Répartition des calories par repas",
+            "saveGoals": "Enregistrer les objectifs",
+            "saving": "Enregistrement...",
+            "goalsUpdatedSuccess": "Objectifs mis-à-jour et ils seront appliqués pour les 6 prochains mois (ou jusqu'à votre prochain objectif à venir)",
+            "errorSavingGoals": "Une erreur inattendue est survenue durant l'enregistrement des objectifs"
         }
     }
 }
