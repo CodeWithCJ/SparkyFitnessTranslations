@@ -18,7 +18,9 @@
         "backend": "Backend:",
         "externalApis": "APIs externas:",
         "nutritionixApi": "Nutritionist API",
-        "close": "Cerrar"
+        "close": "Cerrar",
+        "discordLink": "discord.gg/vcnMT5cPEA",
+        "gotIt": "Lo tengo"
     },
     "exercise": {
         "title": "Ejercicios",
@@ -57,7 +59,40 @@
             "imagesLabel": "Imágenes",
             "addButton": "Añadir Ejercicio",
             "addSuccess": "Ejercicio añadido exitosamente",
-            "addError": "Fallo al añadir ejercicio"
+            "addError": "Fallo al añadir ejercicio",
+            "myExercisesTab": "Mis ejercicios",
+            "workoutPresetTab": "Plantillas de rutina",
+            "caloriesPerHourHint": "Al dejar en blanco, se usará el sistema calculado de calorias por hora ({{newExerciseCalories}} cal/hora).",
+            "selectForcePlaceholder": "Elegir esfuerzo",
+            "mechanicIsolation": "Aislamiento",
+            "importSuccess": "Datos de ejercicio importados correctamente",
+            "importDuplicateTitle": "Import Failed: Duplicate Items Found\nError al importar: Registros duplicados encontrados",
+            "importDuplicateDescription": "Los siguiente registros ya existen: {{duplicateList}}. Por favor, eliminarlos del archivo e intentar nuevamente.",
+            "importError": "Error al importar datos de ejercicio. Por favor, intenta de nuevo."
+        },
+        "addWorkoutPresetDialog": {
+            "searchPlaceholder": "Busca tu rutina predefinida",
+            "recentPresetsTitle": "Plantillas recientes",
+            "noRecentPresets": "Sin plantillas recientes.",
+            "topPresetsTitle": "Mejores plantillas",
+            "noTopPresets": "Sin mejores plantillas.",
+            "searchResultsTitle": "Buscar resultados",
+            "noMatchingPresets": "Tu búsqueda sin coincidencias."
+        },
+        "workoutPresetSelector": {
+            "searchPlaceholder": "Busca tus plantillas de rutinas...",
+            "recentPresetsTitle": "Rutinas recientes",
+            "noRecentPresets": "Sin rutinas recientes.",
+            "topPresetsTitle": "Mejores rutinas",
+            "noTopPresets": "Sin mejores rutinas.",
+            "searchResultsTitle": "Buscar resultados",
+            "noMatchingPresets": "Tu búsqueda sin coincidencias."
+        },
+        "dailyProgress": {
+            "dailyCalorieGoal": "Meta Calorias diarias",
+            "remaining": "restante",
+            "eaten": "comido",
+            "burned": "quemado"
         }
     }
 }
