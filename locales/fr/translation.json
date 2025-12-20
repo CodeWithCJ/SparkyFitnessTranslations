@@ -955,6 +955,19 @@
         "sleepSession": "Séance de someil {{sessionNumber}}",
         "bedtime": "Heure du coucher",
         "wakeTime": "Heure du réveil",
-        "addAnotherSleepSession": "Ajouter une autre séance de sommeil"
+        "addAnotherSleepSession": "Ajouter une autre séance de sommeil",
+        "savingSleep": "Enregistrement du sommeil...",
+        "saveSleep": "Enregistrer le sommeil",
+        "sleepEntryFor": "Entrée de sommeil pour",
+        "cancel": "Annuler",
+        "save": "Enregistrer",
+        "edit": "Modifier",
+        "delete": "Supprimer",
+        "error": "Erreur",
+        "mustBeLoggedInToSaveSleepData": "Vous devez être connecté pour enregistrer les données du sommeil",
+        "enterBedtimeAndWakeTime": "Veuillez renseigner l'heure de coucher et de réveil pour toutes les séances de sommeil.",
+        "failedToSaveSleepEntry": "Echec de l'enregistrement de l'entrée de sommeil",
+        "newSessionStagesUpdatedLocally": "Temps et phases de sommeil de la nouvelle séance chargées localement. Pensez à enregistrer l'entrée de sommeil principale.",
+        "newSessionStagesDiscarded": "Modifications des phases de sommeil de la nouvelle séance annulées."
     }
 }
