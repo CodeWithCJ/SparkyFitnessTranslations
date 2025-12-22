@@ -120,7 +120,21 @@
     "exercise": {
         "title": "Exercícios",
         "addExerciseDialog": {
-            "title": "Adicionar exercício"
+            "title": "Adicionar exercício",
+            "description": "Adicionar um novo exercício para o seu banco de dados, criando um personalizado ou importando de fontes externas.",
+            "myExercisesTab": "Meus Exercícios",
+            "workoutPresetTab": "Treinos Planejado",
+            "onlineTab": "Online",
+            "addCustomTab": "Adicionar Personalização",
+            "importCSVTab": "Importar CSV",
+            "nameLabel": "Nome",
+            "categoryLabel": "Categoria",
+            "selectCategoryPlaceholder": "Selecione uma categoria",
+            "categoryGeneral": "Geral",
+            "categoryStrength": "Força",
+            "categoryCardio": "Cardio",
+            "categoryYoga": "Yoga",
+            "caloriesPerHourLabel": "Calorias/Hora"
         }
     }
 }
