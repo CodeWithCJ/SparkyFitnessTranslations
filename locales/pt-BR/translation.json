@@ -134,7 +134,250 @@
             "categoryStrength": "Força",
             "categoryCardio": "Cardio",
             "categoryYoga": "Yoga",
-            "caloriesPerHourLabel": "Calorias/Hora"
+            "caloriesPerHourLabel": "Calorias/Hora",
+            "descriptionLabel": "Descrição",
+            "sourceLabel": "Fonte",
+            "forcePull": "Puxar",
+            "forcePush": "Empurrar",
+            "levelLabel": "Nível",
+            "selectLevelPlaceholder": "Selecione o nível",
+            "levelBeginner": "Iniciante",
+            "levelIntermediate": "Intermediário",
+            "levelExpert": "Experiente",
+            "mechanicLabel": "Mecânica",
+            "selectMechanicPlaceholder": "Selecione a Mecânica",
+            "mechanicIsolation": "Isolado",
+            "mechanicCompound": "Composto",
+            "equipmentLabel": "Equipamento (Separado por vírgula)",
+            "primaryMusclesLabel": "Músculos Primários (Separado por vírgula)",
+            "secondaryMusclesLabel": "Músculos Secundários (Separado por vírgula)",
+            "instructionsLabel": "Instruções (uma por linha)",
+            "imagesLabel": "Imagens",
+            "addButton": "Adicionar Exercícios",
+            "addSuccess": "Exercício adicionado com sucesso",
+            "addError": "Falha ao adicionar o exercício",
+            "importSuccess": "Dado de exercício importado com sucesso",
+            "importDuplicateTitle": "Falha ao Importar: Encontrado Itens Duplicados",
+            "importDuplicateDescription": "Os seguintes itens existem: {{duplicateList}}. Por favor, remova-os do seu arquivo e tente novamente.",
+            "importError": "Falha para importar dados de exercício. Por favor, tente novamente.",
+            "caloriesPerHourHint": "Deixe em branco para o sistema calcular as calorias por hora {{newExerciseCalories}} Cal/Hora."
+        },
+        "addWorkoutPresetDialog": {
+            "searchPlaceholder": "Pesquise seus treinos planejados...",
+            "recentPresetsTitle": "Treinos recentes",
+            "noRecentPresets": "Sem treinos recentes.",
+            "topPresetsTitle": "Top Treinos",
+            "noTopPresets": "Sem top treinos.",
+            "searchResultsTitle": "Pesquisar Resultados",
+            "noMatchingPresets": "Sem treinos que correspondem a sua busca."
+        },
+        "workoutPresetSelector": {
+            "searchPlaceholder": "Pesquise seus treinos planejados...",
+            "recentPresetsTitle": "Treinos recentes",
+            "noRecentPresets": "Sem treinos recentes.",
+            "topPresetsTitle": "Top Treinos",
+            "noTopPresets": "Sem top treinos.",
+            "searchResultsTitle": "Pesquisar Resultados",
+            "noMatchingPresets": "Sem treinos que correspondem a sua busca."
+        },
+        "dailyProgress": {
+            "dailyCalorieGoal": "Meta Diária de Calorias",
+            "remaining": "restante",
+            "eaten": "consumido",
+            "burned": "queimando",
+            "burnedCaloriesBreakdown": "Detalhamento de Calorias Queimadas:",
+            "otherExerciseCalories": "Outros Exercícios: {{exerciseCalories}} cal",
+            "activeCalories": "Calorias Ativa: {{activeCaloriesFromExercise}} Cal",
+            "stepsCalories": "Passos: {{dailySteps}} = {{stepsCalories}} cal",
+            "bmrCalories": "TMB: {{bmr}} cal",
+            "totalCaloriesBurned": "Total: {{totalCaloriesBurned}} cal",
+            "goal": "meta",
+            "caloriesBurnedBreakdownTitle": "Detalhamento de Calorias Queimadas",
+            "netCalories": "Calorias líquidas: {{netCalories}}",
+            "netCaloriesBreakdown": "{{dailyIntakeCalories}} consumida - {{finalTotalCaloriesBurned}} queimada",
+            "dailyProgress": "Progresso Diário"
+        },
+        "editExerciseEntryDialog": {
+            "setLabel": "Série",
+            "typeLabel": "Tipo",
+            "repsLabel": "Repetições",
+            "weightLabel": "Peso",
+            "durationLabel": "Duração (min)",
+            "restLabel": "Descanso (s)",
+            "notesLabel": "Notas"
         }
+    },
+    "workoutPresetForm": {
+        "setLabel": "Série",
+        "typeLabel": "Tipo",
+        "repsLabel": "Repetições",
+        "weightLabel": "Peso",
+        "durationLabel": "Duração (min)",
+        "restLabel": "Descanso (s)",
+        "notesLabel": "Notas"
+    },
+    "reportsTables": {
+        "set": "Série",
+        "type": "Tipo",
+        "reps": "Repetições",
+        "weight": "Peso",
+        "durationMin": "Duração (min)",
+        "restS": "Descanso (s)",
+        "notes": "Notas"
+    },
+    "exerciseCard": {
+        "repsLabel": "Repetições",
+        "weightLabel": "Peso",
+        "levelLabel": "Nível",
+        "mechanicLabel": "Mecânica",
+        "equipmentLabel": "Equipamento",
+        "primaryMusclesLabel": "Músculos primários",
+        "secondaryMusclesLabel": "Músculos Secundários",
+        "caloriesUnit": "Calorias"
+    },
+    "reports": {
+        "exerciseEntriesExportHeaders": {
+            "equipment": "Equipamento",
+            "primaryMuscles": "Músculos primários",
+            "secondaryMuscles": "Músculos Secundários",
+            "reps": "Repetições",
+            "weight": "Peso",
+            "notes": "Notas"
+        },
+        "activityReport": {
+            "duration": "Duração",
+            "lapTableDurationMinHeader": "Duração (min)",
+            "calories": "Calorias",
+            "lapTableCaloriesHeader": "Calorias"
+        },
+        "foodDiaryExportHeaders": {
+            "calories": "Calorias",
+            "protein": "Proteína (g)",
+            "saturatedFat": "Gordura Saturada (g)",
+            "polyunsaturatedFat": "Gordura Poli-insaturada (g)",
+            "monounsaturatedFat": "Gordura Monoinsaturada (g)",
+            "transFat": "Gordura Trans (g)",
+            "cholesterol": "Colesterol (mg)",
+            "sodium": "Sódio (mg)",
+            "potassium": "Potássio (mg)",
+            "dietaryFiber": "Fibras Alimentares (g)",
+            "sugars": "Açucares (g)",
+            "vitaminC": "Vitamina C (mg)",
+            "calcium": "Cálcio (mg)",
+            "iron": "Ferro (mg)"
+        },
+        "activityReportLapTable": {
+            "calories": "Calorias"
+        }
+    },
+    "logExerciseEntryDialog": {
+        "typeLabel": "Tipo",
+        "repsLabel": "Repetições",
+        "weightLabel": "Peso",
+        "durationLabel": "Duração",
+        "restLabel": "Descanso (s)",
+        "notesLabel": "Notas"
+    },
+    "exerciseReportsDashboard": {
+        "repsShort": "Repetições",
+        "reps": "Repetições",
+        "weight": "Peso"
+    },
+    "prProgressionChart": {
+        "reps": "Repetições"
+    },
+    "checkIn": {
+        "weight": "Peso"
+    },
+    "workoutReport": {
+        "weight": "Peso"
+    },
+    "sleepTimelineEditor": {
+        "duration": "Duração",
+        "source": "Fonte"
+    },
+    "sleepAnalyticsTable": {
+        "duration": "Duração",
+        "score": "Pontuação",
+        "efficiency": "Eficiência",
+        "debt": "Débito",
+        "awakePeriods": "Períodos Desperto",
+        "source": "Fonte"
+    },
+    "sleepReport": {
+        "csvHeadersAwakePeriods": "Períodos Desperto",
+        "csvHeadersSource": "Fonte"
+    },
+    "moodReports": {
+        "tableHeadNotes": "Notas",
+        "tableHeadCreatedAt": "Criado em"
+    },
+    "nutritionCharts": {
+        "calories": "Calorias"
+    },
+    "goals": {
+        "goalsSettings": {
+            "calories": "Calorias",
+            "protein": "Proteína (g)",
+            "carbohydrates": "Carboidratos (g)",
+            "fat": "Gordura (g)",
+            "saturatedFat": "Gordura Saturada (g)",
+            "polyunsaturatedFat": "Gordura Poli-insaturada (g)",
+            "monounsaturatedFat": "Gordura Monoinsaturada (g)",
+            "transFat": "Gordura Trans (g)",
+            "cholesterol": "Colesterol (mg)",
+            "sodium": "Sódio (mg)",
+            "potassium": "Potássio (mg)",
+            "dietaryFiber": "Fibras Alimentares (g)",
+            "sugars": "Açucares (g)",
+            "vitaminA": "Vitamina A (mcg)",
+            "vitaminC": "Vitamina C (mg)",
+            "calcium": "Cálcio (mg)",
+            "iron": "Ferro (mg)",
+            "waterGoal": "Meta de água ({{unit}})",
+            "targetExerciseCaloriesBurned": "Meta de Calorias Queimadas com Exercícios",
+            "targetExerciseDurationMinutes": "Meta de Duração dos Exercícios (minutos)",
+            "mealCalorieDistribution": "Distribuição de Calorias por Refeição",
+            "saveGoals": "Salvar Metas",
+            "saving": "Salvando...",
+            "goalsUpdatedSuccess": "Metas atualizadas e se aplicarão para os próximos 6 meses (ou até sua próxima meta futura)",
+            "errorSavingGoals": "Um erro inesperado ocorreu ao salvar as metas",
+            "goalPresets": "Metas Planejadas",
+            "createNewPreset": "Criar Novo Planejamento"
+        }
+    },
+    "customFoodForm": {
+        "caloriesLabel": "Calorias",
+        "proteinLabel": "Proteína (g)",
+        "saturatedFatLabel": "Gordura Saturada (g)",
+        "polyunsaturatedFatLabel": "Gordura Poli-insaturada (g)",
+        "monounsaturatedFatLabel": "Gordura Monoinsaturada (g)",
+        "transFatLabel": "Gordura Trans (g)",
+        "cholesterolLabel": "Colesterol (mg)",
+        "sodiumLabel": "Sódio (mg)",
+        "potassiumLabel": "Potássio (mg)",
+        "dietaryFiberLabel": "Fibras Alimentares (g)",
+        "sugarsLabel": "Açucares (g)",
+        "vitaminALabel": "Vitamina A (mcg)",
+        "vitaminCLabel": "Vitamina C (mg)",
+        "calciumLabel": "Cálcio (mg)",
+        "ironLabel": "Ferro (mg)"
+    },
+    "customNutritionForm": {
+        "caloriesLabel": "Calorias",
+        "proteinLabel": "Proteína (g)",
+        "saturatedFatLabel": "Gordura Saturada (g)",
+        "polyunsaturatedFatLabel": "Gordura Poli-insaturada (g)",
+        "monounsaturatedFatLabel": "Gordura Monoinsaturada (g)",
+        "transFatLabel": "Gordura Trans (g)",
+        "cholesterolLabel": "Colesterol (mg)",
+        "sodiumLabel": "Sódio (mg)",
+        "potassiumLabel": "Potássio (mg)",
+        "dietaryFiberLabel": "Fibras Alimentares (g)",
+        "sugarsVitaminsTitle": "Açucares e Vitaminas",
+        "sugarsLabel": "Açucares (g)",
+        "vitaminCLabel": "Vitamina C (mg)",
+        "calciumLabel": "Cálcio (mg)",
+        "ironLabel": "Ferro (mg)"
     }
 }
