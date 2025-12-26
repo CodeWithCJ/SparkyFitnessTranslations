@@ -121,9 +121,9 @@
         "title": "Exercícios",
         "addExerciseDialog": {
             "title": "Adicionar exercício",
-            "description": "Adicionar um novo exercício para o seu banco de dados, criando um personalizado ou importando de fontes externas.",
+            "description": "Adicione um novo exercício para o banco de dados, criando um personalizado ou importando de fontes externas.",
             "myExercisesTab": "Meus Exercícios",
-            "workoutPresetTab": "Treinos Planejado",
+            "workoutPresetTab": "Treinos predefinidos",
             "onlineTab": "Online",
             "addCustomTab": "Adicionar Personalização",
             "importCSVTab": "Importar CSV",
@@ -160,10 +160,13 @@
             "importDuplicateTitle": "Falha ao Importar: Encontrado Itens Duplicados",
             "importDuplicateDescription": "Os seguintes itens existem: {{duplicateList}}. Por favor, remova-os do seu arquivo e tente novamente.",
             "importError": "Falha para importar dados de exercício. Por favor, tente novamente.",
-            "caloriesPerHourHint": "Deixe em branco para o sistema calcular as calorias por hora {{newExerciseCalories}} Cal/Hora."
+            "caloriesPerHourHint": "Deixe em branco para o sistema calcular as calorias por hora {{newExerciseCalories}} Cal/Hora.",
+            "forceStatic": "Estático",
+            "forceLabel": "Força",
+            "selectForcePlaceholder": "Selecionar tipo de Força"
         },
         "addWorkoutPresetDialog": {
-            "searchPlaceholder": "Pesquise seus treinos planejados...",
+            "searchPlaceholder": "Pesquise seus treinos predefinidos...",
             "recentPresetsTitle": "Treinos recentes",
             "noRecentPresets": "Sem treinos recentes.",
             "topPresetsTitle": "Top Treinos",
@@ -172,7 +175,7 @@
             "noMatchingPresets": "Sem treinos que correspondem a sua busca."
         },
         "workoutPresetSelector": {
-            "searchPlaceholder": "Pesquise seus treinos planejados...",
+            "searchPlaceholder": "Pesquise seus treinos predefinidos...",
             "recentPresetsTitle": "Treinos recentes",
             "noRecentPresets": "Sem treinos recentes.",
             "topPresetsTitle": "Top Treinos",
@@ -214,7 +217,8 @@
         "weightLabel": "Peso",
         "durationLabel": "Duração (min)",
         "restLabel": "Descanso (s)",
-        "notesLabel": "Notas"
+        "notesLabel": "Notas",
+        "descriptionLabel": "Descrição"
     },
     "reportsTables": {
         "set": "Série",
@@ -233,7 +237,21 @@
         "equipmentLabel": "Equipamento",
         "primaryMusclesLabel": "Músculos primários",
         "secondaryMusclesLabel": "Músculos Secundários",
-        "caloriesUnit": "Calorias"
+        "caloriesUnit": "Calorias",
+        "forceStatic": "Estático",
+        "mechanic": "Mecânica",
+        "selectMechanic": "Selecione a Mecânica",
+        "mechanicIsolation": "Isolado",
+        "mechanicCompound": "Composto",
+        "equipment": "Equipamento (Separado por vírgula)",
+        "primaryMuscles": "Músculos Primários (Separado por vírgula)",
+        "secondaryMuscles": "Músculos Secundários (Separado por vírgula)",
+        "instructions": "Instruções (uma por linha)",
+        "images": "Imagens",
+        "description": "Descrição",
+        "nutritionixSource": "Nutritionix",
+        "freeExerciseDBSource": "Free Exercise DB",
+        "wgerSource": "Wger"
     },
     "reports": {
         "exerciseEntriesExportHeaders": {
@@ -268,6 +286,10 @@
         },
         "activityReportLapTable": {
             "calories": "Calorias"
+        },
+        "reportsControls": {
+            "startDate": "Data de início",
+            "endDate": "Data final"
         }
     },
     "logExerciseEntryDialog": {
@@ -290,7 +312,8 @@
         "weight": "Peso"
     },
     "workoutReport": {
-        "weight": "Peso"
+        "weight": "Peso",
+        "description": "Descrição"
     },
     "sleepTimelineEditor": {
         "duration": "Duração",
@@ -310,7 +333,10 @@
     },
     "moodReports": {
         "tableHeadNotes": "Notas",
-        "tableHeadCreatedAt": "Criado em"
+        "tableHeadCreatedAt": "Criado em",
+        "startDate": "Data de início",
+        "endDate": "Data final",
+        "loading": "Carregando..."
     },
     "nutritionCharts": {
         "calories": "Calorias"
@@ -343,7 +369,8 @@
             "goalsUpdatedSuccess": "Metas atualizadas e se aplicarão para os próximos 6 meses (ou até sua próxima meta futura)",
             "errorSavingGoals": "Um erro inesperado ocorreu ao salvar as metas",
             "goalPresets": "Metas Planejadas",
-            "createNewPreset": "Criar Novo Planejamento"
+            "createNewPreset": "Criar Novo Planejamento",
+            "startDate": "Data de início"
         }
     },
     "customFoodForm": {
@@ -379,5 +406,54 @@
         "vitaminCLabel": "Vitamina C (mg)",
         "calciumLabel": "Cálcio (mg)",
         "ironLabel": "Ferro (mg)"
+    },
+    "mealPlanTemplateForm": {
+        "descriptionLabel": "Descrição",
+        "startDateLabel": "Data de início",
+        "endDateLabel": "Data final"
+    },
+    "addWorkoutPlanDialog": {
+        "descriptionLabel": "Descrição",
+        "startDateLabel": "Data de início"
+    },
+    "workoutPresetsManager": {
+        "loading": "Carregando..."
+    },
+    "exerciseSearch": {
+        "loading": "Carregando...",
+        "noRecentOrTopExercises": "Nenhum exercício recente ou top encontrado.",
+        "recentExercises": "Exercícios recentes",
+        "topExercises": "Top Exercícios",
+        "calPerHour": "cal / hora",
+        "selectButton": "Selecione",
+        "noExercisesFoundInDatabase": "Nenhum exercício encontrado no seu banco de dados.",
+        "describeYourExercise": "Descreva seu exercício (por exemplo, 'correr 3 km ', 'nadar por 30 minutos')",
+        "searchOnlineDatabase": "Pesquisar banco de dados do {{providerName}}...",
+        "searchButton": "Pesquisar",
+        "searchYourExercises": "Pesquisar seus exercícios...",
+        "enterSearchTerm": "Digite um termo de pesquisa e clique no botão de Pesquisar para encontrar exercícios.",
+        "noExercisesFoundOnline": "Nenhum exercício encontrado em {{providerName}} para \"{{searchTerm}}\".",
+        "wgerSource": "Wger",
+        "freeExerciseDBSource": "Free Exercise DB",
+        "nutritionixSource": "Nutritionix",
+        "addExternalExerciseSuccess": "{{exerciseName}} adicionado aos seus exercícios. Agora você pode registra-lo a partir da página do diário.",
+        "addExternalExerciseError": "Falha ao adicionar o exercício: {{errorMessage}}",
+        "textToSpeechNotSupported": "Text-to-Speech não suportado",
+        "textToSpeechNotSupportedDescription": "Seu navegador não suporta a API do Web Speech.",
+        "unknownProvider": "Provedor desconhecido para adicionar exercício externo: {{providerType}}",
+        "failedToLoadRecentTopExercises": "Falha em carregar top exercícios e recentes.",
+        "failedToSearchExercises": "Falha para pesquisar exercícios: {{errorMessage}}",
+        "failedToLoadFilterOptions": "Falha em carregar opções de filtro: {{errorMessage}}"
+    },
+    "enhancedFoodSearch": {
+        "nutritionix": "Nutritionix"
+    },
+    "addComp": {
+        "addNew": "Adicionar novo"
+    },
+    "barcodeScanner": {
+        "error": {
+            "parseScanAreaSize": "Falha em analisar o tamanho da área digitalizada, usando o padrão."
+        }
     }
 }
