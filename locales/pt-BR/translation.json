@@ -207,7 +207,81 @@
             "weightLabel": "Peso",
             "durationLabel": "Duração (min)",
             "restLabel": "Descanso (s)",
-            "notesLabel": "Notas"
+            "notesLabel": "Notas",
+            "title": "Editar Entrada de Exercício",
+            "description": "Faça alterações na sua entrada de exercício aqui. Clique em salvar quando terminar.",
+            "caloriesWarning": "As calorias queimadas serão recalculadas ao salvar. Insira um valor para substituir.",
+            "exerciseLabel": "Exercício",
+            "unknownExercise": "Exercício desconhecido",
+            "addSetButton": "Adicionar Série",
+            "caloriesBurnedOptionalLabel": "Calorias Queimadas (Opcional)",
+            "caloriesBurnedPlaceholder": "Insira calorias queimadas para substituir o cálculo",
+            "caloriesBurnedHint": "Se não preenchido as calorias serão calculadas automaticamente quando salvar.",
+            "distanceLabel": "Distância",
+            "distancePlaceholder": "Insira a distância em {{distanceUnit}}",
+            "avgHeartRateLabel": "Frequência Cardíaca média (bpm)",
+            "avgHeartRatePlaceholder": "Insira a frequência cardíaca média",
+            "customActivityDetailsLabel": "Detalhes da atividade personalizada",
+            "notesPlaceholder": "Adicionar notas sobre esse exercício...",
+            "imageLabel": "Imagem",
+            "updateSuccess": "Exercício atualizado com sucesso.",
+            "updateError": "Falha ao atualizar exercício."
+        },
+        "activityDetailsEditor": {
+            "fieldNameLabel": "Nome do campo",
+            "fieldNamePlaceholder": "Ex.: 'Clima', 'Humor'",
+            "valueLabel": "Valor",
+            "valuePlaceholder": "Ex.: 'Ensolarado', 'Entusiasmado'",
+            "addCustomFieldButton": "Adicionar campo personalizado"
+        },
+        "databaseManager": {
+            "errorLoadingExercises": "Erro ao carregar exercícios:",
+            "failedToLoadExercises": "Falha para carregar exercícios",
+            "editSuccess": "Exercício editado com sucesso",
+            "errorEditingExercise": "Erro ao editar exercício:",
+            "failedToEditExercise": "Falha ao editar exercício",
+            "deleteSuccess": "Exercício excluído com sucesso.",
+            "hiddenSuccess": "Exercício ocultado (marcado como rápido). Histórico de registros permanecem.",
+            "deleteOperationCompleted": "Operação de exclusão do exercício concluída.",
+            "errorDeletingExercise": "Erro ao excluir exercício:",
+            "failedToDeleteExercise": "Falha ao excluir exercício.",
+            "shareStatusSuccess": "Exercício {{shareStatus}} com sucesso",
+            "errorSharingExercise": "Erro ao compartilhar exercício:",
+            "failedToShareExercise": "Falha ao compartilhar exercício",
+            "syncSuccess": "As entradas de diário anteriores foram atualizadas.",
+            "syncError": "Falha em atualizar entradas anteriores do diário.",
+            "badgeSystem": "Sistema",
+            "badgePrivate": "Privado",
+            "badgeFamily": "Família",
+            "familyOwnershipItem": "Família",
+            "cardTitle": "Exercícios",
+            "searchPlaceholder": "Pesquisar exercícios...",
+            "allCategoriesPlaceholder": "Todas as categorias",
+            "allCategoriesItem": "Todas as categorias",
+            "categoryPowerlifting": "Levantamento de Peso",
+            "categoryOlympicWeightlifting": "Halterofilismo",
+            "categoryStrongman": "Atletismo de Força",
+            "categoryPlyometrics": "Pliometria",
+            "categoryStretching": "Alongamento",
+            "allOwnershipPlaceholder": "Todos",
+            "allOwnershipItem": "Todos",
+            "publicOwnershipItem": "Público",
+            "needsReviewOwnershipItem": "Necessita Revisar",
+            "allExercisesCount": "Todos os exercícios ({{totalExercisesCount}})",
+            "itemsPerPageLabel": "Itens por página:",
+            "levelDisplay": "Nível: {{level}}",
+            "forceDisplay": "Força: {{force}}",
+            "mechanicDisplay": "Mecânica: {{mechanic}}",
+            "equipmentDisplay": "Equipamento: {{equipment}}",
+            "primaryMusclesDisplay": "Músculos primários: {{primaryMuscles}}",
+            "secondaryMusclesDisplay": "Músculos secundários: {{secondaryMuscles}}",
+            "instructionsDisplay": "Instruções: {{instruction}}...",
+            "caloriesPerHourDisplay": "Calorias/hora: {{caloriesPerHour}}",
+            "makePrivateTooltip": "Tornar privado",
+            "shareWithPublicTooltip": "Compartilhar como público",
+            "notEditableTooltip": "Não editável",
+            "editExerciseTooltip": "Editar exercício",
+            "deleteExerciseTooltip": "Excluir exercício"
         }
     },
     "workoutPresetForm": {
@@ -218,7 +292,8 @@
         "durationLabel": "Duração (min)",
         "restLabel": "Descanso (s)",
         "notesLabel": "Notas",
-        "descriptionLabel": "Descrição"
+        "descriptionLabel": "Descrição",
+        "exercisesLabel": "Exercícios"
     },
     "reportsTables": {
         "set": "Série",
@@ -227,7 +302,8 @@
         "weight": "Peso",
         "durationMin": "Duração (min)",
         "restS": "Descanso (s)",
-        "notes": "Notas"
+        "notes": "Notas",
+        "exercise": "Exercício"
     },
     "exerciseCard": {
         "repsLabel": "Repetições",
@@ -251,7 +327,8 @@
         "description": "Descrição",
         "nutritionixSource": "Nutritionix",
         "freeExerciseDBSource": "Free Exercise DB",
-        "wgerSource": "Wger"
+        "wgerSource": "Wger",
+        "title": "Exercício"
     },
     "reports": {
         "exerciseEntriesExportHeaders": {
@@ -298,7 +375,10 @@
         "weightLabel": "Peso",
         "durationLabel": "Duração",
         "restLabel": "Descanso (s)",
-        "notesLabel": "Notas"
+        "notesLabel": "Notas",
+        "logExercise": "Registro de Exercício: {{exerciseName}}",
+        "enterDetails": "Insira detalhes para sua sessão de exercícios em {{selectedDate}}.",
+        "setLabel": "Série"
     },
     "exerciseReportsDashboard": {
         "repsShort": "Repetições",
@@ -309,11 +389,15 @@
         "reps": "Repetições"
     },
     "checkIn": {
-        "weight": "Peso"
+        "weight": "Peso",
+        "howAreYouFeelingToday": "Como está se sentido hoje?",
+        "neutral": "Neutro",
+        "anyThoughtsOrFeelings": "Há pensamentos ou sentimentos que gostaria de acrescentar?"
     },
     "workoutReport": {
         "weight": "Peso",
-        "description": "Descrição"
+        "description": "Descrição",
+        "exercise": "Exercício"
     },
     "sleepTimelineEditor": {
         "duration": "Duração",
@@ -339,7 +423,8 @@
         "loading": "Carregando..."
     },
     "nutritionCharts": {
-        "calories": "Calorias"
+        "calories": "Calorias",
+        "calcium": "Cálcio"
     },
     "goals": {
         "goalsSettings": {
@@ -370,7 +455,8 @@
             "errorSavingGoals": "Um erro inesperado ocorreu ao salvar as metas",
             "goalPresets": "Metas Planejadas",
             "createNewPreset": "Criar Novo Planejamento",
-            "startDate": "Data de início"
+            "startDate": "Data de início",
+            "exercise": "Exercício"
         }
     },
     "customFoodForm": {
@@ -446,7 +532,9 @@
         "failedToLoadFilterOptions": "Falha em carregar opções de filtro: {{errorMessage}}"
     },
     "enhancedFoodSearch": {
-        "nutritionix": "Nutritionix"
+        "nutritionix": "Nutritionix",
+        "private": "Privado",
+        "family": "Família"
     },
     "addComp": {
         "addNew": "Adicionar novo"
@@ -455,5 +543,60 @@
         "error": {
             "parseScanAreaSize": "Falha em analisar o tamanho da área digitalizada, usando o padrão."
         }
+    },
+    "exerciseHistoryDisplay": {
+        "exerciseImageAlt": "Exercício"
+    },
+    "diary": {
+        "nutrientLabels": {
+            "calcium": "Cálcio"
+        },
+        "of": "de"
+    },
+    "foodDiary": {
+        "title": "Diário de alimentação",
+        "pickADate": "Escolha uma data",
+        "success": "Sucesso",
+        "error": "Erro",
+        "genericError": "Um erro inesperado ocorreu.",
+        "entryCopied": "Entradas de alimentos copiadas com sucesso",
+        "entryCopyError": "Falha em copiar entradas de alimentos.",
+        "copiedFromYesterday": "Alimentos copiados de ontem com sucesso",
+        "copyFromYesterdayError": "Falha em copiar alimentos de ontem.",
+        "mealAdded": "Refeição \"{{mealName}}\" adicionada ao diário.",
+        "mealAddError": "Falha em adicionar refeição ao diário.",
+        "entryAdded": "Entrada de alimentos adicionada com sucesso",
+        "entryAddError": "Erro ao adicionar alimentos:",
+        "entryRemoved": "Alimentos removido com sucesso",
+        "entryRemoveError": "Erro ao remover alimentos:",
+        "waterIntake": {
+            "title": "Ingestão de água",
+            "updated": "Consumo de água atualizado",
+            "updateError": "Falha ao salvar ingestão de água",
+            "perDrink": "{{volume}} {{unit}} por bebida",
+            "defaultPerDrink": "{{volume}} {{unit}} por bebida (padrão)"
+        },
+        "copyFoodEntryDialog": {
+            "title": "Copiar Alimentos",
+            "description": "Selecione a data e o tipo de refeição para copiar os alimentos.",
+            "targetDate": "Data a ser copiada",
+            "mealType": "Tipo de Refeição",
+            "selectMealTypePlaceholder": "Selecione o tipo de refeição",
+            "copyButton": "Copiar"
+        }
+    },
+    "mealCard": {
+        "addFoodToMeal": "Adicionar comida para {{mealName}}",
+        "searchFoodsForMeal": "Procure alimentos para adicionar ao seu {{mealName}}.",
+        "addFoodTo": "Adicionar comida para",
+        "searchFoodsToYour": "Procure alimentos para adicionar ao seu"
+    },
+    "foodDatabaseManager": {
+        "system": "Sistema",
+        "private": "Privado",
+        "family": "Família"
+    },
+    "mealManagement": {
+        "family": "Família"
     }
 }
