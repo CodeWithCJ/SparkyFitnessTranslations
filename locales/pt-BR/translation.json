@@ -68,7 +68,7 @@
         },
         "nutrientDisplay": {
             "title": "Exibição Nutrientes",
-            "description": "Escolha quais nutrientes exibir nas visualizações de alimentos e refeições"
+            "description": "Escolha quais nutrientes exibir nas visualizações de comidas e refeições"
         },
         "calculationSettings": {
             "title": "Configurações de Cálculos",
@@ -94,7 +94,19 @@
         },
         "apiKeyManagement": {
             "title": "Gerenciamento de chaves de API",
-            "description": "Gerar e gerenciar chaves de API para integrações externas"
+            "description": "Gerar e gerenciar chaves de API para integrações externas",
+            "infoText": "Gerar chaves API para enviar dados de aplicativos externos com segurança, como o iPhone Shortcuts. Estas chaves estão ligadas à sua conta e podem ser revogadas a qualquer momento.",
+            "wikiWarning": "Consulte a página Wiki no Github para obter instruções de configuração de para iPhone e Android.",
+            "descriptionPlaceholder": "Descrição (por exemplo, 'iPhone Health Shortcut')",
+            "generateNewKey": "Gerar nova chave",
+            "generating": "Gerando...",
+            "noApiKeys": "Nenhuma chave de API gerada ainda.",
+            "noDescription": "Nenhuma descrição",
+            "copied": "Copiado!",
+            "apiKeyCopied": "Chave de API copiada para área de transferência.",
+            "created": "Criado:",
+            "lastUsed": "Usado pela última vez:",
+            "deleteApiKeyConfirm": "Tem certeza de que deseja excluir esta chave API? Esta ação não pode ser desfeita."
         },
         "accountSecurity": {
             "updateEmail": "Atualizar e-mail",
@@ -107,7 +119,11 @@
             "updating": "Atualizando...",
             "newPasswordsDoNotMatch": "Nova senha não corresponde com a confirmação",
             "passwordLengthError": "Senha deve ter pelo menos 6 caracteres",
-            "enterNewEmailAddress": "Digite um novo endereço de email"
+            "enterNewEmailAddress": "Digite um novo endereço de email",
+            "title": "Segurança da Conta",
+            "description": "Alterar seu e-mail ou senha",
+            "currentEmail": "E-mail atual",
+            "enterNewEmail": "Digite novo endereço de e-mail"
         }
     },
     "aboutDialog": {
@@ -432,7 +448,16 @@
         "forceLabel": "Força",
         "instructionsLabel": "Instruções",
         "previewExerciseImage": "Visualização da imagem do exercício.",
-        "exerciseImage": "Imagem do exercício"
+        "exerciseImage": "Imagem do exercício",
+        "failedToLoadExerciseDetailsForEditing": "Falha ao carrega detalhes do exercício para edição.",
+        "failedToUpdateExerciseInDatabase": "Falha ao atualizar exercícios no banco de dados",
+        "exerciseUpdatedSuccessfullyInDatabase": "Exercício atualizado com sucesso no banco de dados",
+        "pleaseSelectAnExercise": "Por favor, selecione um exercício.",
+        "failedToAddExerciseEntry": "Falha ao adicionar entrada de exercício.",
+        "exerciseEntryAddedSuccessfully": "Entrada de exercício adicionada com sucesso.",
+        "failedToDeleteExerciseEntry": "Falha ao excluir entrada de exercício.",
+        "exerciseEntryDeletedSuccessfully": "Entrada de exercício excluída com sucesso.",
+        "loadingExercises": "Carregando exercícios..."
     },
     "reports": {
         "exerciseEntriesExportHeaders": {
@@ -656,7 +681,34 @@
     "enhancedFoodSearch": {
         "nutritionix": "Nutritionix",
         "private": "Privado",
-        "family": "Família"
+        "family": "Família",
+        "database": "Banco de dados",
+        "meals": "Refeições",
+        "online": "Online",
+        "scanBarcode": "Escanear código de barra",
+        "customFood": "Comida Personalizada",
+        "importFromCSV": "Importação de CSV",
+        "searchFoodsPlaceholder": "Pesquisar por comidas...",
+        "selectProvider": "Selecione o provedor",
+        "searchingFoods": "Pesquisando comidas...",
+        "recentFoods": "Comidas Recentes",
+        "public": "Público",
+        "topFoods": "Principais Comidas",
+        "noRecentOrTopFoods": "Nenhuma comida recente ou principal encontrada. Comece a registrar comidas para vê-los aqui.",
+        "noItemsFoundInDatabase": "Nenhum item encontrado em seu banco de dados para \"{{searchTerm}}\".",
+        "clickSearchIconOnline": "Clique no ícone de pesquisa para procurar online.",
+        "noFoodsFoundOnline": "Nenhuma comida encontrada no provedor online selecionado.",
+        "mealie": "Mealie",
+        "editAndAdd": "Editar e Adicionar",
+        "meal": "Refeição",
+        "openFoodFacts": "OpenFoodFacts",
+        "fatSecret": "FatSecret",
+        "editFoodDetails": "Editar detalhes da comida",
+        "editFoodDetailsDescription": "Ajuste os detalhes da comida antes de a adicionar ao seu banco de dados personalizado.",
+        "addNewFood": "Adicionar nova comida",
+        "addNewFoodDescription": "Digite os detalhes do novo item de comida para adicionar ao seu banco de dados.",
+        "scanBarcodeDescription": "Posicione o código de barras do produto na frente de sua câmera.",
+        "importFromCSVDescription": "Importar um arquivo CSV para adicionar várias comidas de uma só vez."
     },
     "addComp": {
         "addNew": "Adicionar novo"
@@ -681,16 +733,16 @@
         "success": "Sucesso",
         "error": "Erro",
         "genericError": "Um erro inesperado ocorreu.",
-        "entryCopied": "Entradas de alimentos copiadas com sucesso",
-        "entryCopyError": "Falha em copiar entradas de alimentos.",
-        "copiedFromYesterday": "Alimentos copiados de ontem com sucesso",
-        "copyFromYesterdayError": "Falha em copiar alimentos de ontem.",
+        "entryCopied": "Entradas de comidas copiadas com sucesso",
+        "entryCopyError": "Falha em copiar entradas de comidas.",
+        "copiedFromYesterday": "Comidas copiadas de ontem com sucesso",
+        "copyFromYesterdayError": "Falha em copiar comidas de ontem.",
         "mealAdded": "Refeição \"{{mealName}}\" adicionada ao diário.",
         "mealAddError": "Falha em adicionar refeição ao diário.",
-        "entryAdded": "Entrada de alimentos adicionada com sucesso",
-        "entryAddError": "Erro ao adicionar alimentos:",
-        "entryRemoved": "Alimentos removido com sucesso",
-        "entryRemoveError": "Erro ao remover alimentos:",
+        "entryAdded": "Entrada de comidas adicionada com sucesso",
+        "entryAddError": "Erro ao adicionar comidas:",
+        "entryRemoved": "Entrada de comida removida com sucesso",
+        "entryRemoveError": "Erro ao remover entrada de comida:",
         "waterIntake": {
             "title": "Ingestão de água",
             "updated": "Consumo de água atualizado",
@@ -699,8 +751,8 @@
             "defaultPerDrink": "{{volume}} {{unit}} por bebida (padrão)"
         },
         "copyFoodEntryDialog": {
-            "title": "Copiar Alimentos",
-            "description": "Selecione a data e o tipo de refeição para copiar os alimentos.",
+            "title": "Copiar Entrada de Comidas",
+            "description": "Selecione a data e o tipo de refeição para copiar as comidas.",
             "targetDate": "Data a ser copiada",
             "mealType": "Tipo de Refeição",
             "selectMealTypePlaceholder": "Selecione o tipo de refeição",
@@ -709,9 +761,9 @@
     },
     "mealCard": {
         "addFoodToMeal": "Adicionar comida para {{mealName}}",
-        "searchFoodsForMeal": "Procure alimentos para adicionar ao seu {{mealName}}.",
+        "searchFoodsForMeal": "Procure comidas para adicionar ao seu {{mealName}}.",
         "addFoodTo": "Adicionar comida para",
-        "searchFoodsToYour": "Procure alimentos para adicionar ao seu"
+        "searchFoodsToYour": "Procure comidas para adicionar ao seu"
     },
     "foodDatabaseManager": {
         "system": "Sistema",
@@ -723,7 +775,20 @@
     },
     "admin": {
         "authenticationSettings": {
-            "title": "Configurações de autenticação"
+            "title": "Configurações de autenticação",
+            "description": "Gerenciar métodos de autenticação e provedores de OIDC.",
+            "loginManagement": {
+                "title": "Gerenciamento de Login",
+                "description": "Habilite ou desative métodos diferentes para os usuários fazerem login.",
+                "enableEmailPasswordLogin": "Ativar Email e Senha de acesso",
+                "enableOidcLoginGlobal": "Ativar Login OIDC (Global)",
+                "emergencyFailSafe": "Acesso de emergência em caso de falhas:",
+                "emergencyFailSafeDescription": "Se você tiver a sua conta bloqueada, você poderá forçar o uso de email/senha para se autenticar, definindo a seguinte variável de ambiente no seu servidor e o reiniciado:",
+                "envVarCopied": "Variável de ambiente copiada para área de transferência."
+            },
+            "oidcProviderManagement": {
+                "title": "Gestão de Provedores de OIDC"
+            }
         }
     },
     "workoutPlansManager": {
@@ -747,5 +812,9 @@
         "updateStatusError": "Não consegui encontrar o plano para atualizar.",
         "toggleStatusSuccess": "Plano de treino {{status}} com sucesso.",
         "toggleStatusError": "Falha para alternar o estado do plano de treino."
+    },
+    "foodSearchDialog": {
+        "title": "Pesquisar e Adicionar comida",
+        "description": "Procure comidas para adicionar ao seu banco de dados."
     }
 }
