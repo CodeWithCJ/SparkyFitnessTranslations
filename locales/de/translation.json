@@ -601,7 +601,14 @@
             "loginManagement": {
                 "description": "Aktiviere oder deaktiviere verschiedene Methoden für die Anmeldung von Benutzern.",
                 "enableEmailPasswordLogin": "Anmeldung per E-Mail und Passwort aktivieren",
-                "enableOidcLoginGlobal": "OIDC-Anmeldung aktivieren (global)"
+                "enableOidcLoginGlobal": "OIDC-Anmeldung aktivieren (global)",
+                "title": "Login-Verwaltung",
+                "emergencyFailSafe": "Notfallabsicherung:",
+                "emergencyFailSafeDescription": "Falls du jemals aus deinem Konto ausgesperrt wirst, kannst du die Anmeldung per E-Mail/Passwort erzwingen, indem du auf deinem Server die folgende Umgebungsvariable setzt und ihn neu startest:",
+                "envVarCopied": "Umgebungsvariable in die Zwischenablage kopiert."
+            },
+            "oidcProviderManagement": {
+                "description": "Konfiguriere deine OpenID Connect (OIDC) Anbieter."
             }
         },
         "oidcSettings": {
@@ -636,6 +643,15 @@
             "createdAt": "Erstellt am",
             "lastLogin": "Letzter Login",
             "actions": "Aktionen"
+        },
+        "backupSettings": {
+            "title": "Backup Einstellungen",
+            "loadingSettings": "Lade Einstellungen...",
+            "errorLoadingSettings": "Globale Backup-Einstellungen konnten nicht geladen werden.",
+            "enableScheduledBackups": "Aktiviere geplante Backups:",
+            "backupDays": "Backup Tage:",
+            "backupTime": "Backup Zeit   ({{timezone}}):",
+            "retentionDays": "Behalte Backups für (Tage):"
         }
     }
 }
