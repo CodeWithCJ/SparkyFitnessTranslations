@@ -149,7 +149,7 @@
     "exercise": {
         "title": "Exercícios",
         "addExerciseDialog": {
-            "title": "Adicionar exercício",
+            "title": "Adicionar Exercício",
             "description": "Adicione um novo exercício para o banco de dados, criando um personalizado ou importando de fontes externas.",
             "myExercisesTab": "Meus Exercícios",
             "workoutPresetTab": "Treinos predefinidos",
@@ -182,7 +182,7 @@
             "secondaryMusclesLabel": "Músculos Secundários (Separado por vírgula)",
             "instructionsLabel": "Instruções (uma por linha)",
             "imagesLabel": "Imagens",
-            "addButton": "Adicionar Exercícios",
+            "addButton": "Adicionar Exercício",
             "addSuccess": "Exercício adicionado com sucesso",
             "addError": "Falha ao adicionar o exercício",
             "importSuccess": "Dado de exercício importado com sucesso",
@@ -326,7 +326,7 @@
             "forceDeleteConfirmLabel": "Forçar Exclusão",
             "syncConfirmationTitle": "Sincronizar entradas anteriores?",
             "syncConfirmationDescription": "Você quer atualizar todas as suas entradas de diário anteriores para este exercício com as novas informações?",
-            "addExerciseButton": "Adicionar Exercícios"
+            "addExerciseButton": "Adicionar Exercício"
         },
         "exerciseImportCSV": {
             "importExerciseData": "Importar Dados de Exercício",
@@ -373,7 +373,8 @@
         "restLabel": "Descanso (s)",
         "notesLabel": "Notas",
         "descriptionLabel": "Descrição",
-        "exercisesLabel": "Exercícios"
+        "exercisesLabel": "Exercícios",
+        "addExerciseButton": "Adicionar Exercício"
     },
     "reportsTables": {
         "set": "Série",
@@ -409,7 +410,7 @@
         "freeExerciseDBSource": "Free Exercise DB",
         "wgerSource": "Wger",
         "title": "Exercício",
-        "addExercise": "Adicionar Exercícios",
+        "addExercise": "Adicionar Exercício",
         "noEntries": "Não há entradas de exercício para este dia.",
         "exerciseTotal": "Totais do exercício",
         "editExerciseInDatabase": "Editar Exercício em Banco de Dados",
@@ -472,7 +473,9 @@
             "duration": "Duração",
             "lapTableDurationMinHeader": "Duração (min)",
             "calories": "Calorias",
-            "lapTableCaloriesHeader": "Calorias"
+            "lapTableCaloriesHeader": "Calorias",
+            "activityDurationMin": "Duração da atividade (min)",
+            "activityMap": "Mapa de Atividades"
         },
         "foodDiaryExportHeaders": {
             "calories": "Calorias",
@@ -512,7 +515,8 @@
     "exerciseReportsDashboard": {
         "repsShort": "Repetições",
         "reps": "Repetições",
-        "weight": "Peso"
+        "weight": "Peso",
+        "activityMaps": "Mapas de atividade"
     },
     "prProgressionChart": {
         "reps": "Repetições"
@@ -521,7 +525,8 @@
         "weight": "Peso",
         "howAreYouFeelingToday": "Como está se sentido hoje?",
         "neutral": "Neutro",
-        "anyThoughtsOrFeelings": "Há pensamentos ou sentimentos que gostaria de acrescentar?"
+        "anyThoughtsOrFeelings": "Há pensamentos ou sentimentos que gostaria de acrescentar?",
+        "addAnotherSleepSession": "Adicionar outra sessão de sono"
     },
     "workoutReport": {
         "weight": "Peso",
@@ -587,7 +592,9 @@
             "startDate": "Data de início",
             "exercise": "Exercício",
             "edit": "Editar",
-            "delete": "Excluir"
+            "delete": "Excluir",
+            "active": "Ativo",
+            "activePlan": "Plano Ativo"
         }
     },
     "customFoodForm": {
@@ -645,7 +652,28 @@
     },
     "addWorkoutPlanDialog": {
         "descriptionLabel": "Descrição",
-        "startDateLabel": "Data de início"
+        "startDateLabel": "Data de início",
+        "addExerciseOrPresetTitle": "Adicionar Exercício ou Treino Predefinido",
+        "addExercisePresetButton": "Adicionar Exercício ou Treino Predefinido",
+        "addTitle": "Adicionar novo plano de exercícios",
+        "addDescription": "Digite os detalhes para o seu novo plano de treino e atribua treinos para os dias.",
+        "addExerciseOrPresetDescription": "Selecione um exercício ou treino predefinido para adicionar ao dia selecionado.",
+        "addSetButton": "Adicionar Série",
+        "assignmentsTitle": "Atribuições",
+        "cancelButton": "Cancelar",
+        "copiedToastDescription": "{{itemName}} copiado para área de transferência.",
+        "copiedToastTitle": "Copiado!",
+        "editDescription": "Edite os detalhes para o seu plano de treino e suas atribuições.",
+        "editTitle": "Editar Plano de Treinos",
+        "endDateLabel": "Data final (opcional)",
+        "errorToastDescription": "Falha para carregar treino predefinidos ou exercícios.",
+        "errorToastTitle": "Erro",
+        "noteDescription": "Atualizar um plano ativo ajusta as próximas entradas de exercícios. Excluindo um plano limpa os futuros, enquanto as entradas anteriores permanecem no seu diário.",
+        "noteTitle": "Nota:",
+        "pastedToastDescription": "{{itemName}} colado para o novo dia.",
+        "pastedToastTitle": "Colado!",
+        "pasteExerciseButton": "Colar Exercício",
+        "planNameLabel": "Nome do Plano"
     },
     "workoutPresetsManager": {
         "loading": "Carregando...",
@@ -701,9 +729,9 @@
         "database": "Banco de dados",
         "meals": "Refeições",
         "online": "Online",
-        "scanBarcode": "Escanear código de barra",
+        "scanBarcode": "Ler código de barra",
         "customFood": "Comida Personalizada",
-        "importFromCSV": "Importação de CSV",
+        "importFromCSV": "Importar CSV",
         "searchFoodsPlaceholder": "Pesquisar por comidas...",
         "selectProvider": "Selecione o provedor",
         "searchingFoods": "Pesquisando comidas...",
@@ -785,7 +813,9 @@
         "system": "Sistema",
         "private": "Privado",
         "family": "Família",
-        "delete": "Excluir"
+        "delete": "Excluir",
+        "addFoodToDatabaseTitle": "Adicionar Comida ao Banco de Dados",
+        "addNewFood": "Adicionar nova comida"
     },
     "mealManagement": {
         "family": "Família",
@@ -885,7 +915,9 @@
             "uploadFailed": "Falha ao carregar o logotipo."
         },
         "userManagement": {
-            "title": "Gerenciamento de Usuário"
+            "title": "Gerenciamento de Usuário",
+            "actions": "Ações",
+            "active": "Ativo"
         }
     },
     "workoutPlansManager": {
@@ -915,15 +947,20 @@
         "description": "Procure comidas para adicionar ao seu banco de dados."
     },
     "customMeasurements": {
-        "saveButton": "Salvar"
+        "saveButton": "Salvar",
+        "addNotePlaceholder": "Adicionar uma nota..."
     },
     "sleepEntrySection": {
         "save": "Salvar",
         "edit": "Editar",
-        "delete": "Excluir"
+        "delete": "Excluir",
+        "addAnotherSleepSession": "Adicionar outra sessão de sono"
     },
     "customCategoryManager": {
-        "deleteCategoryButton": "Excluir"
+        "deleteCategoryButton": "Excluir",
+        "addCategoryButton": "Adicionar Categoria",
+        "addCategoryAction": "Adicionar Categoria",
+        "addCategoryDialogTitle": "Adicionar Categoria Personalizada"
     },
     "mealBuilder": {
         "errorTitle": "Erro",
@@ -972,5 +1009,12 @@
         "updateStatusError": "Não consegui encontrar o plano de refeições para atualizar.",
         "toggleStatusSuccess": "Plano de refeições {{status}} com sucesso.",
         "toggleStatusError": "Falha ao alternar o estado do plano de refeição."
+    },
+    "muscleGroups": {
+        "abs": "Abdome"
+    },
+    "common": {
+        "active": "Ativo",
+        "add": "Adicionar"
     }
 }
