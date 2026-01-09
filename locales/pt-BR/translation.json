@@ -673,7 +673,13 @@
         "pastedToastDescription": "{{itemName}} colado para o novo dia.",
         "pastedToastTitle": "Colado!",
         "pasteExerciseButton": "Colar Exercício",
-        "planNameLabel": "Nome do Plano"
+        "planNameLabel": "Nome do Plano",
+        "presetLabel": "Treino Predefinido:",
+        "saveButton": "Salvar Plano",
+        "setActiveLabel": "Definir como plano ativo",
+        "setsLabel": "Séries",
+        "validationErrorDescription": "Nome do Plano e Data de início são necessários.",
+        "validationErrorTitle": "Erro de validação"
     },
     "workoutPresetsManager": {
         "loading": "Carregando...",
@@ -760,6 +766,9 @@
     "barcodeScanner": {
         "error": {
             "parseScanAreaSize": "Falha em analisar o tamanho da área digitalizada, usando o padrão."
+        },
+        "buttons": {
+            "enterBarcodeManually": "Entre o Código de Barras Manualmente"
         }
     },
     "exerciseHistoryDisplay": {
@@ -917,7 +926,32 @@
         "userManagement": {
             "title": "Gerenciamento de Usuário",
             "actions": "Ações",
-            "active": "Ativo"
+            "active": "Ativo",
+            "admin": "Admin",
+            "confirmChangeFullName": "Tem certeza de que quer mudar o nome completo {{currentFullName}} para {{newFullName}}?",
+            "createdAt": "Criado em",
+            "deleteConfirm": "Tem certeza de que deseja excluir este usuário?",
+            "deleteFailed": "Falha ao excluir o usuário.",
+            "deleteSuccess": "Usuário com ID {{userId}} excluído com sucesso.",
+            "description": "Gerenciar contas de usuário, funções e status.",
+            "email": "Email",
+            "errorLoadingUsers": "Falha em recuperar dados do usuário.",
+            "failedToSaveFullName": "Falha ao salvar nome completo do usuário.",
+            "failedToUpdateUserRole": "Falha em atualizar a função do usuário {{userName}}.",
+            "failedToUpdateUserStatus": "Falha em {{action}} usuário.",
+            "fullName": "Nome Completo",
+            "fullNameUpdated": "O nome completo do usuário {{currentFullName}} atualizado com sucesso.",
+            "lastLogin": "Última sessão",
+            "loadingUsers": "Carregando dados do usuário...",
+            "noUsersFound": "Nenhum usuário encontrado.",
+            "resetPasswordConfirm": "Tem certeza que deseja redefinir a senha para {{userName}}?",
+            "resetPasswordFailed": "Falha para redefinir a senha.",
+            "resetPasswordInitiated": "Redefinição de senha iniciada para {{userName}}.",
+            "searchUsers": "Pesquisar usuários...",
+            "toggleUserRoleConfirm": "Tem certeza de que deseja alterar a função do usuário {{userName}} para {{newRole}}?",
+            "toggleUserStatusConfirm": "Tem certeza de que deseja {{action}} usuário {{userName}}?",
+            "userRoleUpdated": "Função do usuário {{userName}} atualizada para {{newRole}} com sucesso.",
+            "userStatusUpdated": "Usuário {{userName}} {{action}} com sucesso."
         }
     },
     "workoutPlansManager": {
