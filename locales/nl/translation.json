@@ -6,7 +6,7 @@
         "foods": "Eten",
         "goals": "Doelen",
         "settings": "Instellingen",
-        "admin": "Beheerder"
+        "admin": "Beheer"
     },
     "aboutDialog": {
         "title": "Over SparkyFitness",
@@ -1791,7 +1791,7 @@
         "numericDataType": "Numeriek",
         "textDataType": "Tekst",
         "frequencyLabel": "Frequentie",
-        "frequencyAll": "Alles (onbeperkt aantal inschrijvingen)",
+        "frequencyAll": "Alles (ongelimiteerd aantal)",
         "frequencyDaily": "Dagelijks (één per dag)",
         "frequencyHourly": "Per uur (één per uur)",
         "addCategoryAction": "Categorie Toevoegen",
