@@ -528,7 +528,28 @@
         "howAreYouFeelingToday": "Como está se sentido hoje?",
         "neutral": "Neutro",
         "anyThoughtsOrFeelings": "Há pensamentos ou sentimentos que gostaria de acrescentar?",
-        "addAnotherSleepSession": "Adicionar outra sessão de sono"
+        "addAnotherSleepSession": "Adicionar outra sessão de sono",
+        "sleepTracking": "Rastreamento do Sono",
+        "sleepSession1": "Sessão de sono 1",
+        "bedtime": "Hora que dormiu",
+        "wakeTime": "Hora que Acordou",
+        "saveSleep": "Salvar o sono",
+        "dailyCheckIn": "Check-In Diário",
+        "bodyMeasurementsTitle": "Medições do Corpo",
+        "enterWeight": "Informe o peso em",
+        "steps": "Passos",
+        "enterDailySteps": "Informe passos no dia",
+        "neck": "Pescoço",
+        "enterNeckMeasurement": "Digite a medição do pescoço em",
+        "waist": "Cintura",
+        "enterWaistMeasurement": "Digite a medição da cintura em",
+        "hips": "Quadril",
+        "enterHipsMeasurement": "Insira a medição de quadris em",
+        "height": "Altura",
+        "enterHeight": "Digite a altura em",
+        "bodyFatPercentage": "Gordura corporal %",
+        "useRecent": "Use a recente",
+        "useMostRecentForCalculation": "Use as medidas mais recentes de peso, altura, cintura, pescoço e quadril para calculara a gordura corporal"
     },
     "workoutReport": {
         "weight": "Peso",
@@ -641,7 +662,44 @@
             "selectPreset": "Selecione meta predefinida para {{day}}",
             "saveWeeklyPlan": "Salvar o Plano Semanal",
             "weeklyPlanUpdatedSuccess": "Plano semanal atualizado com sucesso.",
-            "weeklyPlanCreatedSuccess": "Plano semanal criado com sucesso."
+            "weeklyPlanCreatedSuccess": "Plano semanal criado com sucesso.",
+            "errorSavingWeeklyPlan": "Falha ao salvar o plano semanal.",
+            "deleteWeeklyPlanConfirm": "Tem a certeza de que quer apagar este plano semanal?",
+            "weeklyPlanDeletedSuccess": "Plano semanal excluído com sucesso.",
+            "errorDeletingWeeklyPlan": "Falha ao excluir o plano semanal.",
+            "editWeeklyGoalPlan": "Editar Plano de Meta Semanal",
+            "createNewWeeklyGoalPlan": "Criar Novo Plano de Meta Semanal",
+            "defineWeeklySchedule": "Defina uma programação semanal recorrente para suas metas.",
+            "resetOnboarding": "Redefinir Metas Iniciais",
+            "resetOnboardingDescription": "Redefina suas metas iniciais revisitando o questionário. Você será desconectado após a redefinição.",
+            "resetOnboardingConfirm": "Tem certeza que deseja redefinir as metas? Isso reiniciará o processo de definição de metas.",
+            "resetOnboardingSuccess": "Metas iniciais redefinidas. A página será recarregada.",
+            "errorResettingOnboarding": "Falha ao redefinir a meta:",
+            "pleaseSignIn": "Por favor, entre para gerenciar suas metas.",
+            "loadingGoals": "Carregando metas...",
+            "errorLoadingGoals": "Erro ao carregar metas:",
+            "errorLoadingGoalPresets": "Falha ao carregar metas predefinidas.",
+            "errorLoadingWeeklyPlans": "Falha ao carregar planos semanais.",
+            "error": "Erro",
+            "success": "Sucesso",
+            "info": "Informações",
+            "copied": "Copiado!",
+            "failedOn": "Falha em",
+            "clearDateSpecificGoal": "Limpar data definida da Meta",
+            "dateSpecificGoalCleared": "Data definida da meta foi limpa. O plano padrão ou semanal será aplicado.",
+            "errorClearingDateSpecificGoal": "Um erro inesperado ocorreu ao limpar a meta",
+            "editGoals": "Editar Metas",
+            "editGoalsFor": "Editar Metas para {{date}}",
+            "changesApplyToDate": "As alterações só se aplicam a esta data específica.",
+            "applyPreset": "Aplicar Meta Predefinida",
+            "selectGoalPreset": "Selecione uma meta predefinida para aplicar"
+        },
+        "mealDistribution": {
+            "selectTemplate": "Selecione um Modelo de Distribuição",
+            "custom": "Personalizado",
+            "distributeRemaining": "Distribuir Uniformemente o Restante",
+            "total": "Total",
+            "mustBe100": "Deve ser 100% para salvar"
         }
     },
     "customFoodForm": {
@@ -823,9 +881,24 @@
     },
     "diary": {
         "nutrientLabels": {
-            "calcium": "Cálcio"
+            "calcium": "Cálcio",
+            "cal": "cal",
+            "protein": "proteína",
+            "carbs": "carboidratos",
+            "fat": "gordura",
+            "fiber": "fibras",
+            "sugar": "açúcar",
+            "sodium": "sódio",
+            "cholesterol": "colesterol",
+            "satFat": "gordura sat.",
+            "transFat": "gordura trans",
+            "potassium": "potássio",
+            "vitA": "vit a",
+            "vitC": "vit c",
+            "iron": "ferro"
         },
-        "of": "de"
+        "of": "de",
+        "nutritionSummary": "Resumo da Nutrição"
     },
     "foodDiary": {
         "title": "Diário de alimentação",
@@ -1096,6 +1169,40 @@
     },
     "common": {
         "active": "Ativo",
-        "add": "Adicionar"
+        "add": "Adicionar",
+        "saving": "Salvando...",
+        "cancel": "Cancelar",
+        "saveChanges": "Salvar alterações",
+        "pickADate": "Escolha uma data",
+        "yes": "Sim",
+        "no": "Não",
+        "monday": "Segunda-feira",
+        "tuesday": "Terça-feira",
+        "wednesday": "Quarta-feira",
+        "thursday": "Quinta-feira",
+        "friday": "Sexta-feira",
+        "saturday": "Sábado",
+        "sunday": "Domingo",
+        "day_short": {
+            "sunday": "D",
+            "monday": "S",
+            "tuesday": "T",
+            "wednesday": "Q",
+            "thursday": "Q",
+            "friday": "S",
+            "saturday": "S"
+        },
+        "indefinite": "Indefinido",
+        "kcal": "kcal",
+        "breakfast": "Café da manhã",
+        "lunch": "Almoço",
+        "dinner": "Jantar",
+        "snacks": "Lanches",
+        "errorOccurred": "Um Erro Ocorreu",
+        "confirm": "Confirma",
+        "notApplicable": "N/A"
+    },
+    "documentationViewer": {
+        "loadingAiContext": "Carregando o contexto de IA..."
     }
 }
