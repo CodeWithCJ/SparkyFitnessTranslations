@@ -531,8 +531,8 @@
         "addAnotherSleepSession": "Adicionar outra sessão de sono",
         "sleepTracking": "Rastreamento do Sono",
         "sleepSession1": "Sessão de sono 1",
-        "bedtime": "Hora que dormiu",
-        "wakeTime": "Hora que Acordou",
+        "bedtime": "Hora que Deitou",
+        "wakeTime": "Hora que Levantou",
         "saveSleep": "Salvar o sono",
         "dailyCheckIn": "Check-In Diário",
         "bodyMeasurementsTitle": "Medições do Corpo",
@@ -549,7 +549,31 @@
         "enterHeight": "Digite a altura em",
         "bodyFatPercentage": "Gordura corporal %",
         "useRecent": "Use a recente",
-        "useMostRecentForCalculation": "Use as medidas mais recentes de peso, altura, cintura, pescoço e quadril para calculara a gordura corporal"
+        "useMostRecentForCalculation": "Use as medidas mais recentes de peso, altura, cintura, pescoço e quadril para calculara a gordura corporal",
+        "enterBodyFatPercentage": "Insira a porcentagem de gordura corporal",
+        "calculate": "Calcular",
+        "notesOptional": "Notas (opcional)",
+        "saving": "Salvando...",
+        "saveCheckIn": "Salvar Check-in",
+        "saveMeasurements": "Salvar medidas",
+        "mustBeLoggedInToSave": "Você deve estar conectado para salvar dados de check-in",
+        "failedToSaveMoodEntry": "Falha ao salvar a entrada de humor",
+        "checkInSavedSuccessfully": "Dados de check-in salvos com sucesso!",
+        "failedToSaveCheckIn": "Falha ao salvar dados de check-in",
+        "couldNotLoadUserProfile": "Não foi possível carregar o perfil do usuário para cálculo.",
+        "couldNotLoadUserPreferences": "Não foi possível carregar as preferências do usuário para cálculo.",
+        "bmiMethodRequiredFields": "Peso, altura, idade e gênero são necessários para o Método IMC.",
+        "usNavyMethodRequiredFields": "As medidas de gênero, altura, cintura, pescoço e quadris (se mulher) são necessárias para o Método da Marinha dos EUA.",
+        "failedToCalculateBodyFat": "Falha ao calcular a gordura corporal:",
+        "anUnknownErrorOccurred": "Um erro desconhecido ocorreu.",
+        "bodyFatCalculated": "Porcentagem de gordura corporal calculada.",
+        "recentMeasurements": "Medições Recentes (Últimas 20)",
+        "noMeasurementsRecorded": "Nenhuma medição gravada ainda",
+        "at": "em",
+        "measurementDeletedSuccessfully": "Medição excluída com sucesso",
+        "failedToDeleteMeasurement": "Falha ao excluir a medição",
+        "failedToLoadRecentMeasurements": "Falha ao carregar medições recentes",
+        "enterCustomCategory": "Informe {{categoryName}}"
     },
     "workoutReport": {
         "weight": "Peso",
@@ -558,7 +582,16 @@
     },
     "sleepTimelineEditor": {
         "duration": "Duração",
-        "source": "Fonte"
+        "source": "Fonte",
+        "sleepTimeline": "Linha do Tempo do Sono",
+        "awake": "Desperto",
+        "rem": "REM",
+        "light": "Leve",
+        "deep": "Profundo",
+        "clear": "Limpar",
+        "bedtime": "Hora que Deitou",
+        "wakeTime": "Hora que Levantou",
+        "sleepScore": "Pontuação do sono"
     },
     "sleepAnalyticsTable": {
         "duration": "Duração",
@@ -1108,7 +1141,19 @@
         "save": "Salvar",
         "edit": "Editar",
         "delete": "Excluir",
-        "addAnotherSleepSession": "Adicionar outra sessão de sono"
+        "addAnotherSleepSession": "Adicionar outra sessão de sono",
+        "sleepTracking": "Rastreamento do Sono",
+        "sleepSession": "Sessão de sono {{sessionNumber}}",
+        "bedtime": "Hora que Deitou",
+        "wakeTime": "Hora que Levantou",
+        "savingSleep": "Salvando o Sono...",
+        "saveSleep": "Salvar o sono",
+        "sleepEntryFor": "Entrada de sono para",
+        "cancel": "Cancelar",
+        "error": "Erro",
+        "mustBeLoggedInToSaveSleepData": "Você deve estar conectado para salvar dados do sono",
+        "enterBedtimeAndWakeTime": "Por favor, informe a hora de deitar e levantar para todas as sessões de sono.",
+        "failedToSaveSleepEntry": "Falha ao salvar entrada do sono"
     },
     "customCategoryManager": {
         "deleteCategoryButton": "Excluir",
@@ -1204,5 +1249,18 @@
     },
     "documentationViewer": {
         "loadingAiContext": "Carregando o contexto de IA..."
+    },
+    "moodMeter": {
+        "howAreYouFeelingToday": "Como está se sentido hoje?",
+        "neutral": "Neutro",
+        "tired": "Cansado",
+        "sad": "Triste",
+        "angry": "Raiva",
+        "worried": "Preocupado",
+        "thoughtful": "Pensativo",
+        "calm": "Calmo",
+        "confident": "Confiante",
+        "happy": "Feliz",
+        "excited": "Empolgado"
     }
 }
