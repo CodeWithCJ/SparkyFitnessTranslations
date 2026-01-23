@@ -7,7 +7,7 @@
         "exercises": "Exercícios",
         "goals": "Metas",
         "settings": "Configurações",
-        "admin": "Admin"
+        "admin": "Administrador"
     },
     "settings": {
         "profileInformation": {
@@ -128,23 +128,23 @@
     },
     "aboutDialog": {
         "title": "Sobre SparkyFitness",
-        "description1": "SparkyFitness: Feito para famílias. Com tecnologia de IA. Sigue a alimentação, o exercício, a hidratação e a saúde — tudo junto.",
+        "description1": "SparkyFitness: Feito para famílias. Com tecnologia de IA. Acompanhe sua alimentação, exercícios físicos, ingestão de água e saúde — tudo em um só lugar.",
         "applicationVersion": "Versão da aplicação: ",
         "joinDiscord": "Junte-se à nossa comunidade no Discord: ",
         "discordLink": "discord.gg/vcnMT5cPEA",
         "moreInfoVisit": "Para mais informação, visite ",
         "githubRepo": "Repositório GitHub",
         "technologiesUsed": "Tecnologias utilizadas:",
-        "frontend": "Frontend:",
-        "backend": "Backend:",
-        "externalApis": "APIs externa:",
+        "frontend": "Front-end:",
+        "backend": "Back-end:",
+        "externalApis": "APIs externas:",
         "wgerApi": "API Wger (Dados de Exercício)",
         "foodDataApis": "APIs de dados alimentares:",
         "nutritionixApi": "API Nutritionix",
         "fatsecretApi": "API FatSecret",
         "openFoodFactsApi": "API Open Food Facts",
         "gotIt": "Entendi",
-        "close": "Fecha"
+        "close": "Fechar"
     },
     "exercise": {
         "title": "Exercícios",
@@ -545,7 +545,26 @@
         "notesLabel": "Notas",
         "logExercise": "Registro de Exercício: {{exerciseName}}",
         "enterDetails": "Insira detalhes para sua sessão de exercícios em {{selectedDate}}.",
-        "setLabel": "Série"
+        "setLabel": "Série",
+        "addSet": "Adicionar Série",
+        "caloriesBurnedOptional": "Calorias Queimadas (Opcional)",
+        "enterCaloriesBurned": "Insira as calorias queimadas",
+        "distanceLabel": "Distância ({{distanceUnit}})",
+        "enterDistance": "Insira a distância em {{distanceUnit}}",
+        "avgHeartRateLabel": "Frequência Cardíaca média (bpm)",
+        "enterAvgHeartRate": "Insira a frequência cardíaca média",
+        "customActivityDetails": "Detalhes da atividade personalizada",
+        "sessionNotes": "Notas da sessão",
+        "uploadImage": "Carregar imagem",
+        "imagePreviewAlt": "Pré-visualização",
+        "cancel": "Cancelar",
+        "saveEntry": "Salvar entrada",
+        "saving": "Salvando...",
+        "successTitle": "Sucesso",
+        "successDescription": "Exercício “{{exerciseName}}” registrado com sucesso.",
+        "errorTitle": "Erro",
+        "errorDescription": "Falha ao registrar o exercício: {{errorMessage}}",
+        "noExerciseSelected": "Tentativa de salvar sem um exercício selecionado."
     },
     "exerciseReportsDashboard": {
         "repsShort": "Repetições",
@@ -554,7 +573,12 @@
         "activityMaps": "Mapas de atividade"
     },
     "prProgressionChart": {
-        "reps": "Repetições"
+        "reps": "Repetições",
+        "title": "Progressão do Recorde Pessoal",
+        "weightKg": "Peso (kg)",
+        "estimated1RM": "1RM estimado",
+        "maxWeight": "Peso máximo",
+        "maxReps": "Repetições máximas"
     },
     "checkIn": {
         "weight": "Peso",
@@ -611,7 +635,21 @@
     "workoutReport": {
         "weight": "Peso",
         "description": "Descrição",
-        "exercise": "Exercício"
+        "exercise": "Exercício",
+        "workoutStats": "Estatísticas do treino",
+        "sport": "Esporte",
+        "estDuration": "Duração estimada",
+        "totalVolume": "Volume total",
+        "totalReps": "Total de repetições",
+        "workoutSteps": "Etapas do treino",
+        "step": "Passo",
+        "target": "Meta",
+        "personalRecords": "Recordes pessoais (PRs)",
+        "prs": "PRs  - ",
+        "estimated1RM": "1RM estimado",
+        "maxWeight": "Peso máximo",
+        "maxReps": "Repetições máximas",
+        "setPerformanceAnalysis": "Análise de desempenho definido"
     },
     "sleepTimelineEditor": {
         "duration": "Duração",
@@ -632,22 +670,76 @@
         "efficiency": "Eficiência",
         "debt": "Débito",
         "awakePeriods": "Períodos Desperto",
-        "source": "Fonte"
+        "source": "Fonte",
+        "exportToCSV": "Exportar para CSV",
+        "date": "Data",
+        "bedtime": "Hora de dormir",
+        "wakeTime": "Hora de acordar",
+        "timeAsleep": "Tempo de sono",
+        "insight": "compreensão",
+        "goodSleep": "Boa noite de sono",
+        "needsImprovement": "Precisa melhorar",
+        "sleepStagesSummary": "Resumo das fases do sono:",
+        "sleepStageTimeline": "Cronograma das fases do sono:",
+        "noSleepDataAvailable": "Não há dados de sono disponíveis."
     },
     "sleepReport": {
         "csvHeadersAwakePeriods": "Períodos Desperto",
-        "csvHeadersSource": "Fonte"
+        "csvHeadersSource": "Fonte",
+        "loadingSleepData": "Carregando dados do sono...",
+        "sleepReportTitle": "Relatório do sono",
+        "noSleepDataAvailableRange": "Não há dados de sono disponíveis para o intervalo de datas selecionado.",
+        "noSleepDataToExport": "Não há dados de sono para exportar.",
+        "csvHeadersDate": "Data",
+        "csvHeadersBedtime": "Hora de dormir",
+        "csvHeadersWakeTime": "Hora de acordar",
+        "csvHeadersDurationHours": "Duração (h)",
+        "csvHeadersTimeAsleepHours": "Tempo de sono (h)",
+        "csvHeadersScore": "Pontuação",
+        "csvHeadersEfficiencyPercentage": "Eficiência (%)",
+        "csvHeadersDebtHours": "Dívida (h)",
+        "csvHeadersInsight": "compreensão",
+        "goodSleep": "Boa noite de sono",
+        "needsImprovement": "Precisa melhorar",
+        "sleepDataExportedSuccessfully": "Dados do sono exportados com sucesso.",
+        "failedToLoadSleepEntries": "Falha ao carregar entradas de suspensão",
+        "sleepHypnogram": "Hipnograma do sono",
+        "noSleepStageDataAvailable": "Não há dados sobre o estágio do sono disponíveis para esta entrada."
     },
     "moodReports": {
         "tableHeadNotes": "Notas",
         "tableHeadCreatedAt": "Criado em",
         "startDate": "Data de início",
         "endDate": "Data final",
-        "loading": "Carregando..."
+        "loading": "Carregando...",
+        "title": "Relatórios de humor",
+        "userNotAuthenticated": "Usuário não autenticado.",
+        "failedToLoadMoodData": "Falha ao carregar os dados de humor. Por favor, tente novamente.",
+        "applyFilters": "Aplicar filtros",
+        "noMoodDataAvailable": "Não há dados de humor disponíveis para o período selecionado.",
+        "moodTrend": "Tendência de humor",
+        "detailedMoodEntries": "Entradas detalhadas sobre o humor",
+        "tableHeadDate": "Data",
+        "tableHeadMoodValue": "Valor do humor"
     },
     "nutritionCharts": {
         "calories": "Calorias",
-        "calcium": "Cálcio"
+        "calcium": "Cálcio",
+        "protein": "Proteína",
+        "carbs": "Carboidratos",
+        "fat": "Gordura",
+        "saturated_fat": "Gordura saturada",
+        "polyunsaturated_fat": "Gordura poliinsaturada",
+        "monounsaturated_fat": "Gordura monoinsaturada",
+        "trans_fat": "Gordura trans",
+        "cholesterol": "Colesterol",
+        "sodium": "Sódio",
+        "potassium": "Potássio",
+        "dietary_fiber": "Fibra alimentar",
+        "sugars": "Açúcares",
+        "vitamin_a": "Vitamina A",
+        "vitamin_c": "Vitamina C",
+        "iron": "Ferro"
     },
     "goals": {
         "goalsSettings": {
@@ -783,7 +875,25 @@
         "vitaminALabel": "Vitamina A (mcg)",
         "vitaminCLabel": "Vitamina C (mg)",
         "calciumLabel": "Cálcio (mg)",
-        "ironLabel": "Ferro (mg)"
+        "ironLabel": "Ferro (mg)",
+        "saveFoodButton": "Salvar Alimento",
+        "cancelButton": "Cancelar",
+        "giVeryHigh": "Muito alto",
+        "giVeryLow": "Muito Baixo",
+        "giLow": "Baixo",
+        "giMedium": "Médio",
+        "brandLabel": "Marca (opcional)",
+        "foodNameLabel": "Nome do alimento *",
+        "glycemicIndexLabel": "Índice Glicêmico (IG)",
+        "selectGIPlaceholder": "Selecione IG",
+        "giNone": "Nenhum",
+        "giHigh": "Alto",
+        "quickAddLabel": "Adicionar rapidamente (não salvar na minha lista de alimentos para uso futuro)",
+        "servingSizeLabel": "Porção",
+        "servingSizeError": "O tamanho da porção deve ser um número positivo.",
+        "unitLabel": "Unidade",
+        "foodNamePlaceholder": "e.g., Pizza caseira",
+        "brandPlaceholder": "e.g., Feito em Casa"
     },
     "customNutritionForm": {
         "caloriesLabel": "Calorias",
@@ -800,7 +910,24 @@
         "sugarsLabel": "Açucares (g)",
         "vitaminCLabel": "Vitamina C (mg)",
         "calciumLabel": "Cálcio (mg)",
-        "ironLabel": "Ferro (mg)"
+        "ironLabel": "Ferro (mg)",
+        "nutritionInformationTitle": "Informações nutricionais para {{foodName}}",
+        "adjustQuantityDescription": "Ajuste a quantidade para ver os valores nutricionais serem atualizados automaticamente.",
+        "quantityLabel": "Quantidade",
+        "unitLabel": "Unidade",
+        "macronutrientsTitle": "Macronutrientes",
+        "carbsLabel": "Carboidratos  (g)",
+        "fatLabel": "Gordura (g)",
+        "fatBreakdownTitle": "Quebra de gordura",
+        "mineralsOtherNutrientsTitle": "Minerais e outros nutrientes",
+        "proteinShort": "proteína g",
+        "carbsShort": "g de carboidratos",
+        "fatShort": "gordura g",
+        "cancelButton": "Cancelar",
+        "saveChangesButton": "Salvar alterações",
+        "savingButton": "Salvando...",
+        "updateSuccessToast": "Entrada de alimentos atualizada com sucesso",
+        "updateErrorToast": "Falha ao atualizar a entrada de alimentos"
     },
     "mealPlanTemplateForm": {
         "descriptionLabel": "Descrição",
@@ -888,7 +1015,7 @@
         "enterSearchTerm": "Digite um termo de pesquisa e clique no botão de Pesquisar para encontrar exercícios.",
         "noExercisesFoundOnline": "Nenhum exercício encontrado em {{providerName}} para \"{{searchTerm}}\".",
         "wgerSource": "Wger",
-        "freeExerciseDBSource": "Free Exercise DB",
+        "freeExerciseDBSource": "Banco de dados gratuito de exercícios",
         "nutritionixSource": "Nutritionix",
         "addExternalExerciseSuccess": "{{exerciseName}} adicionado aos seus exercícios. Agora você pode registra-lo a partir da página do diário.",
         "addExternalExerciseError": "Falha ao adicionar o exercício: {{errorMessage}}",
@@ -936,14 +1063,49 @@
     },
     "barcodeScanner": {
         "error": {
-            "parseScanAreaSize": "Falha em analisar o tamanho da área digitalizada, usando o padrão."
+            "parseScanAreaSize": "Falha em analisar o tamanho da área digitalizada, usando o padrão.",
+            "parseContinuousMode": "Falha ao analisar o modo contínuo armazenado, usando o padrão.",
+            "turnOffTorch": "Erro ao desligar a tocha:",
+            "scanning": "Erro de digitalização:",
+            "canvasDecode": "Errores de decodificación de Canvas:",
+            "toggleTorch": "Erro ao alternar a tocha:",
+            "applyFocus": "Erro ao aplicar o foco:",
+            "saveScanAreaSize": "Falha ao salvar o tamanho da área de digitalização no armazenamento local.",
+            "saveContinuousMode": "Falha ao salvar o modo contínuo no localStorage.",
+            "accessCamera": "Erro ao acessar a câmera:",
+            "forceScan": "Erro de verificação forçada:",
+            "forceScanCanvas": "Erro ao forçar a varredura da tela:"
         },
         "buttons": {
-            "enterBarcodeManually": "Entre o Código de Barras Manualmente"
+            "enterBarcodeManually": "Entre o Código de Barras Manualmente",
+            "switchToCameraScan": "Mudar para a digitalização da câmera",
+            "switchToSingleScanMode": "Mudar para o modo de varredura única",
+            "switchToContinuousScanMode": "Mudar para o modo de varredura contínua",
+            "forceScan": "Verificação forçada",
+            "turnOffFlashlight": "Desligar a lanterna",
+            "turnOnFlashlight": "Ligar a lanterna"
+        },
+        "status": {
+            "barcodeDetected": "Código de barras detectado:",
+            "scanningContinuously": "Digitalizando continuamente.",
+            "alignBarcode": "Alinhe o código de barras dentro do quadro",
+            "forceScanResult": "Resultado da verificação forçada:"
+        },
+        "manualInput": {
+            "title": "Entre o Código de Barras Manualmente",
+            "placeholder": "Insira o código de barras",
+            "submitButton": "Enviar código de barras"
         }
     },
     "exerciseHistoryDisplay": {
-        "exerciseImageAlt": "Exercício"
+        "exerciseImageAlt": "Exercício",
+        "loadingHistory": "Carregando histórico...",
+        "noPreviousEntries": "Não foram encontradas entradas anteriores para este exercício.",
+        "lastEntries": "Últimas {{limit}} entradas",
+        "setsLabel": "Conjuntos:",
+        "durationLabel": "Duração:",
+        "caloriesLabel": "Calorias:",
+        "notesLabel": "Observações:"
     },
     "diary": {
         "nutrientLabels": {
@@ -1259,7 +1421,20 @@
     },
     "customMeasurements": {
         "saveButton": "Salvar",
-        "addNotePlaceholder": "Adicionar uma nota..."
+        "addNotePlaceholder": "Adicionar uma nota...",
+        "deleteErrorToast": "Falha ao excluir a medição",
+        "loadCategoriesErrorToast": "Falha ao carregar categorias",
+        "loadMeasurementsErrorToast": "Falha ao carregar as medições",
+        "loadTodayMeasurementsErrorToast": "Falha ao carregar as medições de hoje",
+        "noMeasurementsRecorded": "Ainda não foram registradas medições",
+        "at": "em",
+        "notesLabel": "Observações:",
+        "enterValueToastError": "Insira um valor",
+        "invalidCategoryToastError": "Categoria inválida",
+        "invalidPositiveNumberToastError": "Insira um número positivo válido",
+        "saveSuccessToast": "Medição salva com sucesso",
+        "saveErrorToast": "Falha ao salvar a medição",
+        "deleteSuccessToast": "Medição excluída com sucesso"
     },
     "sleepEntrySection": {
         "save": "Salvar",
@@ -1289,7 +1464,34 @@
         "deleteCategoryButton": "Excluir",
         "addCategoryButton": "Adicionar Categoria",
         "addCategoryAction": "Adicionar Categoria",
-        "addCategoryDialogTitle": "Adicionar Categoria Personalizada"
+        "addCategoryDialogTitle": "Adicionar Categoria Personalizada",
+        "updateCategoryAction": "Atualizar categoria",
+        "editCategoryButton": "Editar",
+        "addCategoryDialogDescription": "Preencha os detalhes da sua nova categoria de medidas personalizadas.",
+        "updateCategorySuccess": "Categoria personalizada atualizada com sucesso",
+        "updateCategoryError": "Falha ao atualizar categoria personalizada",
+        "deleteCategorySuccess": "Categoria personalizada excluída com sucesso",
+        "deleteCategoryError": "Falha ao excluir categoria personalizada",
+        "invalidIdError": "Não é possível excluir a categoria: ID inválido.",
+        "userNotAuthenticatedError": "Não é possível excluir a categoria: Usuário não autenticado.",
+        "numericDataType": "Numérico",
+        "textDataType": "Texto",
+        "frequencyLabel": "Frequência",
+        "frequencyAll": "Todos (inscrições ilimitadas)",
+        "frequencyDaily": "Diariamente (uma vez por dia)",
+        "frequencyHourly": "Por hora (uma por hora)",
+        "editCategoryDialogTitle": "Editar categoria personalizada",
+        "editCategoryDialogDescription": "Atualize os detalhes da sua categoria de medição personalizada.",
+        "fillAllFieldsError": "Preencha todos os campos",
+        "failedToLoadCategories": "Falha ao carregar categorias personalizadas.",
+        "addCategorySuccess": "Categoria personalizada adicionada com sucesso",
+        "addCategoryError": "Falha ao adicionar categoria personalizada",
+        "noCustomCategories": "Ainda não há categorias personalizadas. Adicione uma para começar!",
+        "nameLabel": "Nome (máximo de 50 caracteres)",
+        "namePlaceholder": "e.g., açúcar no sangue",
+        "measurementTypeLabel": "Tipo de medição (máximo de 50 caracteres)",
+        "measurementTypePlaceholder": "e.g.,mg/dL",
+        "dataTypeLabel": "Tipo de Dados"
     },
     "mealBuilder": {
         "errorTitle": "Erro",
@@ -1340,7 +1542,15 @@
         "toggleStatusError": "Falha ao alternar o estado do plano de refeição."
     },
     "muscleGroups": {
-        "abs": "Abdome"
+        "abs": "Abdome",
+        "chest": "Peito",
+        "back": "Voltar",
+        "shoulders": "Ombros",
+        "biceps": "Bíceps",
+        "triceps": "Tríceps",
+        "legs": "Pernas",
+        "calves": "panturrilha",
+        "forearms": "Antebraços"
     },
     "common": {
         "active": "Ativo",
@@ -1378,7 +1588,26 @@
         "notApplicable": "N/A"
     },
     "documentationViewer": {
-        "loadingAiContext": "Carregando o contexto de IA..."
+        "loadingAiContext": "Carregando o contexto de IA...",
+        "appDocumentation": "Documentação do aplicativo",
+        "documentationDescription": "Documentação abrangente para referência sobre o contexto e o desenvolvimento da IA",
+        "updated": "Atualizado:",
+        "refreshContext": "Atualizar contexto",
+        "overview": "Visão geral",
+        "features": "Características",
+        "database": "Banco de dados",
+        "aiPatterns": "Padrões de IA",
+        "liveContext": "Contexto ao vivo",
+        "appOverviewTitle": "Visão geral do aplicativo",
+        "loadingAppOverview": "Carregando visão geral do aplicativo...",
+        "featuresInventoryTitle": "Inventário de recursos",
+        "loadingFeaturesInventory": "Carregando inventário de recursos...",
+        "databaseSchemaTitle": "Esquema do banco de dados",
+        "loadingDatabaseSchema": "Carregando esquema do banco de dados...",
+        "aiCommandPatternsTitle": "Padrões de comando de IA",
+        "loadingAiPatterns": "Carregando padrões de IA...",
+        "liveAiContextTitle": "Contexto de IA ao vivo",
+        "liveAiContextDescription": "Este é o contexto atual que seria fornecido ao assistente de IA"
     },
     "moodMeter": {
         "howAreYouFeelingToday": "Como está se sentido hoje?",
@@ -1392,5 +1621,26 @@
         "confident": "Confiante",
         "happy": "Feliz",
         "excited": "Empolgado"
+    },
+    "muscleGroupRecovery": {
+        "title": "Recuperação do grupo muscular",
+        "noRecoveryData": "Não há dados disponíveis sobre a recuperação dos grupos musculares."
+    },
+    "sleepAnalyticsCharts": {
+        "sleepStages": "Fases do sono",
+        "deep": "Profundo",
+        "rem": "REM",
+        "light": "Leve",
+        "awake": "Desperto",
+        "core": "Núcleo",
+        "sleepConsistency": "Consistência do sono",
+        "bedtime": "Hora de dormir",
+        "wakeTime": "Hora de acordar",
+        "sleepDebt": "Dívida de sono",
+        "sleepDebtHours": "Dívida de sono (horas)",
+        "sleepDebtDisclaimer": "*A dívida de sono é calculada com base nas 8 horas de sono recomendadas. Isso poderá ser personalizado em uma versão futura.",
+        "sleepEfficiency": "Eficiência do sono",
+        "hoursShort": "h ",
+        "minutesShort": "m"
     }
 }
