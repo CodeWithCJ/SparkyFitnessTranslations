@@ -62,7 +62,7 @@
             "description": "Configure seu consumo de agua nas configurações",
             "waterDisplayUnit": "Unidade de exibição de água",
             "milliliters": "Mililitros (ml)",
-            "fluidOunces": "Fluid Ounces (oz)",
+            "fluidOunces": "Onças líquidas (oz)",
             "cups": "Copos",
             "saveWaterDisplayUnit": "Salvar a unidade de exibição de água"
         },
@@ -192,7 +192,7 @@
             "caloriesPerHourHint": "Deixe em branco para o sistema calcular as calorias por hora {{newExerciseCalories}} Cal/Hora.",
             "forceStatic": "Estático",
             "forceLabel": "Força",
-            "selectForcePlaceholder": "Selecionar tipo de Força"
+            "selectForcePlaceholder": "Selecionar Tipo de Força"
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "Pesquise seus treinos predefinidos...",
@@ -222,7 +222,7 @@
             "activeCalories": "Calorias Ativa: {{activeCaloriesFromExercise}} Cal",
             "stepsCalories": "Passos: {{dailySteps}} = {{stepsCalories}} cal",
             "bmrCalories": "TMB: {{bmr}} cal",
-            "totalCaloriesBurned": "Total: {{totalCaloriesBurned}} cal",
+            "totalCaloriesBurned": "Total: {{totalCaloriesBurned}} calorias",
             "goal": "meta",
             "caloriesBurnedBreakdownTitle": "Detalhamento de Calorias Queimadas",
             "netCalories": "Calorias líquidas: {{netCalories}}",
@@ -296,7 +296,7 @@
             "allOwnershipPlaceholder": "Todos",
             "allOwnershipItem": "Todos",
             "publicOwnershipItem": "Público",
-            "needsReviewOwnershipItem": "Necessita Revisar",
+            "needsReviewOwnershipItem": "Necessita de revisão",
             "allExercisesCount": "Todos os exercícios ({{totalExercisesCount}})",
             "itemsPerPageLabel": "Itens por página:",
             "levelDisplay": "Nível: {{level}}",
@@ -332,7 +332,7 @@
         },
         "exerciseImportCSV": {
             "importExerciseData": "Importar Dados de Exercício",
-            "standardValuesForDropdowns": "Valores padrão para Dropdowns",
+            "standardValuesForDropdowns": "Valores padrão para Menus suspensos",
             "standardValuesDescription": "Ao importar exercícios, assegure que os valores para \"Nível\", \"Força\" e \"Mecânica\" correspondem as opções padrão. Você pode clicar no ícone de cópia para copiar rapidamente o valor válido para cada campo.",
             "levelLabel": "Nível:",
             "forceLabel": "Força:",
@@ -388,13 +388,13 @@
         "validationErrorTitle": "Erro de Validação",
         "nameRequiredError": "Nome do treino predefinido é necessário.",
         "setTypePlaceholder": "Definir Tipo",
-        "workingSet": "Working Set",
+        "workingSet": "Conjunto de Trabalho",
         "warmUp": "Aquecimento",
-        "dropSet": "Drop Set",
+        "dropSet": "Conjunto de quedas",
         "failure": "Falha",
         "amrap": "AMRAP",
-        "backOff": "Back-off",
-        "restPause": "Rest-Pause",
+        "backOff": "Recuar",
+        "restPause": "Descanso-Pausa",
         "cluster": "Cluster",
         "technique": "Técnica"
     },
@@ -429,7 +429,7 @@
         "images": "Imagens",
         "description": "Descrição",
         "nutritionixSource": "Nutritionix",
-        "freeExerciseDBSource": "Free Exercise DB",
+        "freeExerciseDBSource": "Banco de dados gratuito de exercícios",
         "wgerSource": "Wger",
         "title": "Exercício",
         "addExercise": "Adicionar Exercício",
@@ -489,7 +489,11 @@
             "secondaryMuscles": "Músculos Secundários",
             "reps": "Repetições",
             "weight": "Peso",
-            "notes": "Notas"
+            "notes": "Notas",
+            "durationMinutes": "Duração (minutos)",
+            "caloriesBurned": "Calorias queimadas",
+            "sets": "Conjuntos",
+            "category": "Categoria"
         },
         "activityReport": {
             "duration": "Duração",
@@ -513,10 +517,20 @@
             "sugars": "Açucares (g)",
             "vitaminC": "Vitamina C (mg)",
             "calcium": "Cálcio (mg)",
-            "iron": "Ferro (mg)"
+            "iron": "Ferro (mg)",
+            "date": "Data",
+            "meal": "Refeição",
+            "food": "Alimento",
+            "brand": "Marca",
+            "quantity": "Quantidade"
         },
         "activityReportLapTable": {
-            "calories": "Calorias"
+            "calories": "Calorias",
+            "lap": "Volta",
+            "time": "Tempo",
+            "cumulativeTime": "Tempo acumulado",
+            "avgMovingPace": "Velocidade média de deslocamento",
+            "avgHR": "Média HR"
         },
         "reportsControls": {
             "startDate": "Data de início",
@@ -534,7 +548,19 @@
         "errorLoadingReports": "Falha ao carregar relatórios.",
         "noData": "Sem Dados",
         "noFoodDiaryDataToExport": "Sem dados de diário de alimentação para exportar",
-        "foodDiaryExportSuccess": "Diário de alimentação exportado com sucesso"
+        "foodDiaryExportSuccess": "Diário de alimentação exportado com sucesso",
+        "foodDiaryExportError": "Falha ao exportar o diário alimentar",
+        "noExerciseEntriesToExport": "Nenhuma entrada de exercício para exportar",
+        "exerciseEntriesExportSuccess": "Entradas de exercícios exportadas com sucesso",
+        "exerciseEntriesExportError": "Falha ao exportar entradas de exercícios",
+        "customMeasurementsExportSuccess": "{{categoryName}} dados exportados com sucesso",
+        "customMeasurementsExportError": "Falha ao exportar dados",
+        "bodyMeasurementsExportHeaders": {
+            "date": "Data",
+            "weight": "Peso ({{unit}})",
+            "neck": "Pescoço ({{unit}})",
+            "waist": "Cintura ({{unit}})"
+        }
     },
     "logExerciseEntryDialog": {
         "typeLabel": "Tipo",
@@ -893,7 +919,10 @@
         "servingSizeError": "O tamanho da porção deve ser um número positivo.",
         "unitLabel": "Unidade",
         "foodNamePlaceholder": "e.g., Pizza caseira",
-        "brandPlaceholder": "e.g., Feito em Casa"
+        "brandPlaceholder": "e.g., Feito em Casa",
+        "unitPlaceholder": "g, ml, xícara, etc.",
+        "carbsLabel": "Carboidratos (g)",
+        "fatLabel": "Gordura (g)"
     },
     "customNutritionForm": {
         "caloriesLabel": "Calorias",
@@ -918,7 +947,7 @@
         "macronutrientsTitle": "Macronutrientes",
         "carbsLabel": "Carboidratos  (g)",
         "fatLabel": "Gordura (g)",
-        "fatBreakdownTitle": "Quebra de gordura",
+        "fatBreakdownTitle": "Quebra de Gordura",
         "mineralsOtherNutrientsTitle": "Minerais e outros nutrientes",
         "proteinShort": "proteína g",
         "carbsShort": "g de carboidratos",
@@ -927,7 +956,10 @@
         "saveChangesButton": "Salvar alterações",
         "savingButton": "Salvando...",
         "updateSuccessToast": "Entrada de alimentos atualizada com sucesso",
-        "updateErrorToast": "Falha ao atualizar a entrada de alimentos"
+        "updateErrorToast": "Falha ao atualizar a entrada de alimentos",
+        "vitaminALabel": "Vitamina A (µg)",
+        "originalFoodValuesTitle": "Valores nutricionais originais (per {{servingSize}} {{servingUnit}}):",
+        "calShort": "cal"
     },
     "mealPlanTemplateForm": {
         "descriptionLabel": "Descrição",
@@ -1434,7 +1466,14 @@
         "invalidPositiveNumberToastError": "Insira um número positivo válido",
         "saveSuccessToast": "Medição salva com sucesso",
         "saveErrorToast": "Falha ao salvar a medição",
-        "deleteSuccessToast": "Medição excluída com sucesso"
+        "deleteSuccessToast": "Medição excluída com sucesso",
+        "title": "Medidas personalizadas - {{date}}",
+        "noCategoriesAvailable": "Não há categorias personalizadas disponíveis. Adicione algumas categorias primeiro para começar a acompanhar as medições.",
+        "valueLabel": "Valor",
+        "enterValuePlaceholder": "Insira o valor",
+        "savingButton": "Salvando...",
+        "notesOptionalLabel": "Notas (opcional)",
+        "recentMeasurementsTitle": "Medições Recentes (Últimas 20)"
     },
     "sleepEntrySection": {
         "save": "Salvar",
