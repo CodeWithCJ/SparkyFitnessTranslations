@@ -492,8 +492,10 @@
             "notes": "Notas",
             "durationMinutes": "Duração (minutos)",
             "caloriesBurned": "Calorias queimadas",
-            "sets": "Conjuntos",
-            "category": "Categoria"
+            "sets": "Séries",
+            "category": "Categoria",
+            "date": "Data",
+            "exerciseName": "Nome do Exercício"
         },
         "activityReport": {
             "duration": "Duração",
@@ -501,7 +503,26 @@
             "calories": "Calorias",
             "lapTableCaloriesHeader": "Calorias",
             "activityDurationMin": "Duração da atividade (min)",
-            "activityMap": "Mapa de Atividades"
+            "activityMap": "Mapa de Atividades",
+            "lapTableAvgHRBpmHeader": "FC(bpm) Média",
+            "lapTableMaxHRBpmHeader": "FC(bpm) Max.",
+            "loadingActivityReport": "Carregando relatório de atividades...",
+            "error": "Erro:",
+            "noActivityDataAvailable": "Sem dados de atividade disponíveis.",
+            "metricDescriptorsNotFound": "Descritores métricos não encontrados.",
+            "metricDescriptorsMissingKeys": "Os descritores métricos estão faltando as chaves necessárias ('directTimestamp' ou 'sumDistance').",
+            "heartRateDescriptorNotFound": "Descritor de frequência cardíaca não encontrado. O gráfico da frequência cardíaca não estará disponível.",
+            "missingTimestampOrDistanceDescriptor": "Faltando descritor de tempo ou distância.",
+            "noValidTimestampsFound": "Não há horários válidos encontradas em métricas.",
+            "event": "Evento:",
+            "course": "Rota:",
+            "gear": "Equipamento:",
+            "stats": "Estatísticas",
+            "distance": "Distância",
+            "time": "Tempo",
+            "avgPace": "Ritmo Médio",
+            "totalAscent": "Ganho de Elevação",
+            "heartRate": "Frequência Cardiaca"
         },
         "foodDiaryExportHeaders": {
             "calories": "Calorias",
@@ -522,7 +543,12 @@
             "meal": "Refeição",
             "food": "Alimento",
             "brand": "Marca",
-            "quantity": "Quantidade"
+            "quantity": "Quantidade",
+            "unit": "Unidade",
+            "carbs": "Carboidratos (g)",
+            "fat": "Gordura (g)",
+            "glycemicIndex": "Índice Glicêmico",
+            "vitaminA": "Vitamina A (μg)"
         },
         "activityReportLapTable": {
             "calories": "Calorias",
@@ -530,7 +556,21 @@
             "time": "Tempo",
             "cumulativeTime": "Tempo acumulado",
             "avgMovingPace": "Velocidade média de deslocamento",
-            "avgHR": "Média HR"
+            "avgHR": "FC Média",
+            "maxHR": "FC Máxima",
+            "laps": "Voltas",
+            "distance": "Distância",
+            "cumulativeDistance": "Distância Cumulativa",
+            "avgPace": "Ritmo Médio",
+            "avgRunCadence": "Cadência de Corrida Média",
+            "maxRunCadence": "Cadência de Corrida Máxima",
+            "movingTime": "Tempo de Movimento",
+            "totals": "Total",
+            "minPerKm": "min/km",
+            "minPerMi": "min/mi",
+            "bpm": "bpm",
+            "spm": "ppm",
+            "min": "min"
         },
         "reportsControls": {
             "startDate": "Data de início",
@@ -559,8 +599,22 @@
             "date": "Data",
             "weight": "Peso ({{unit}})",
             "neck": "Pescoço ({{unit}})",
-            "waist": "Cintura ({{unit}})"
-        }
+            "waist": "Cintura ({{unit}})",
+            "hips": "Quadril ({{unit}})",
+            "steps": "Passos",
+            "height": "Altura ({{unit}})",
+            "bodyFatPercentage": "Gordura Corporal %"
+        },
+        "noBodyMeasurementsToExport": "Nenhuma medida do corpo para exportar",
+        "bodyMeasurementsExportSuccess": "Medidas do corpo exportadas com sucesso",
+        "bodyMeasurementsExportError": "Falha ao exportar medidas do corpo",
+        "noCustomMeasurementDataToExport": "{{categoryName}} não há dados para exportar",
+        "customMeasurementsExportHeaders": {
+            "date": "Data",
+            "time": "Hora",
+            "value": "Valor"
+        },
+        "noMapDataAvailable": "Não há dados de mapa disponíveis."
     },
     "logExerciseEntryDialog": {
         "typeLabel": "Tipo",
@@ -945,7 +999,7 @@
         "quantityLabel": "Quantidade",
         "unitLabel": "Unidade",
         "macronutrientsTitle": "Macronutrientes",
-        "carbsLabel": "Carboidratos  (g)",
+        "carbsLabel": "Carboidratos (g)",
         "fatLabel": "Gordura (g)",
         "fatBreakdownTitle": "Quebra de Gordura",
         "mineralsOtherNutrientsTitle": "Minerais e outros nutrientes",
