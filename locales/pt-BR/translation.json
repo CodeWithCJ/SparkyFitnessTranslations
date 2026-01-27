@@ -567,7 +567,8 @@
             "noGarminActivityDataAvailable": "Não existem dados de atividade disponíveis no Garmin.",
             "garminActivityReportTitle": "Relatório de Atividades do Garmin:",
             "timeOfDay": "Hora do Dia",
-            "timeOfDayLocal": "Hora do Dia (Local)"
+            "timeOfDayLocal": "Hora do Dia (Local)",
+            "runningDynamics": "Dinâmica de corrida"
         },
         "foodDiaryExportHeaders": {
             "calories": "Calorias",
@@ -742,7 +743,34 @@
         "bestSetByRepRangeTitle": "Melhor Série por Faixa de Repetição",
         "trainingVolumeByMuscleGroup": "Volume de Treino por Grupo Muscular",
         "repsVsWeight": "Repetições vs Peso - {{exerciseName}}",
-        "averageWeight": "Peso Médio"
+        "averageWeight": "Peso Médio",
+        "waist": "Cintura",
+        "hips": "Quadris",
+        "timeUnderTensionTrend": "Tendência do tempo sob tensão - {{exerciseName}}",
+        "timeUnderTensionTrendTitle": "Tendência do tempo sob tensão",
+        "timeUnderTensionMin": "Tempo sob tensão (min)",
+        "personalRecords": "Recordes pessoais (PRs) - {{exerciseName}}",
+        "estimated1RM": "1RM estimado",
+        "maxWeight": "Peso máximo",
+        "maxReps": "Repetições máximas",
+        "repsAt": "representantes @",
+        "on": "On",
+        "setPerformance": "Definir desempenho",
+        "noProgressDataAvailable": "Não há dados de progresso disponíveis para os exercícios selecionados no intervalo de datas escolhido.",
+        "setPerformanceAnalysis": {
+            "title": "Análise de desempenho definido",
+            "titleWithExercise": "Análise de desempenho definido - {{exerciseName}}",
+            "avgWeightKg": "Peso médio (kg)",
+            "avgReps": "Média de repetições",
+            "avgWeight": "Peso médio"
+        },
+        "loadingCharts": "Carregando gráficos...",
+        "failedToLoadExerciseProgressData": "Falha ao carregar os dados do progresso do exercício.",
+        "kg": "Kg",
+        "lbs": "libras",
+        "neck": "Pescoço",
+        "cm": "cm",
+        "inches": "polegadas"
     },
     "prProgressionChart": {
         "reps": "Repetições",
