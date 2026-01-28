@@ -1137,6 +1137,23 @@
         "delete": "Löschen"
     },
     "mealBuilder": {
-        "errorTitle": "Fehler"
+        "errorTitle": "Fehler",
+        "loadMealError": "Zu bearbeitende Mahlzeit konnte nicht geladen werden.",
+        "successTitle": "Erfolgreich",
+        "foodAddedToMeal": "{{foodName}} wurde zur Mahlzeit hinzugefügt.",
+        "removedTitle": "Entfernt",
+        "foodRemovedFromMeal": "Zutat aus der Mahlzeit entfernt.",
+        "mealNameEmptyError": "Name der Mahlzeit kann nicht leer sein.",
+        "noFoodInMealError": "Eine Mahlzeit muss mindestens eine Zutat enthalten.",
+        "mealUpdatedSuccess": "Mahlzeit erfolgreich upgedated!",
+        "mealCreatedSuccess": "Mahlzeit erfolgreich erstellt!",
+        "saveMealError": "Mahlzeit konnte nicht geladen werden: {{error}}",
+        "mealName": "Name der Mahlzeit",
+        "mealNamePlaceholder": "e.g., proteinreiches Frühstück",
+        "mealDescription": "Beschreibung (Optional)",
+        "mealDescriptionPlaceholder": "z.B. Mein übliches Frühstück",
+        "shareWithPublic": "Mit der Öffentlichkeit teilen",
+        "shareWithPublicNote": "Hinweis: Alle Speisen dieser Mahlzeit werden als öffentlich gekennzeichnet.",
+        "foodsInMeal": "Zutaten in der Mahlzeit"
     }
 }
