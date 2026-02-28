@@ -51,7 +51,9 @@
             "levelIntermediate": "Середній",
             "levelExpert": "Експерт",
             "descriptionLabel": "Опис",
-            "addError": "Не вдалось додати вправу"
+            "addError": "Не вдалось додати вправу",
+            "categoryGeneral": "Головна",
+            "sourceLabel": "Джерело"
         }
     }
 }
