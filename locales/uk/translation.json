@@ -53,7 +53,8 @@
             "descriptionLabel": "Опис",
             "addError": "Не вдалось додати вправу",
             "categoryGeneral": "Головна",
-            "sourceLabel": "Джерело"
+            "sourceLabel": "Джерело",
+            "caloriesPerHourHint": "Лишіть порожнім, щоб використати системний підрахунок калорій за годину ({{newExerciseCalories}} кал/год)."
         }
     }
 }
