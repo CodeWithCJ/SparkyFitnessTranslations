@@ -1,1 +1,64 @@
-{}
+{
+    "nav": {
+        "diary": "Дневник",
+        "checkin": "Контроль",
+        "reports": "Отчеты",
+        "foods": "Еда",
+        "goals": "Цели",
+        "settings": "Настройки",
+        "admin": "Администратор"
+    },
+    "aboutDialog": {
+        "title": "О SparkyFitness",
+        "description1": "SparkyFitness: Построен для семей. Powered by AI. Отслеживать еду, фитнес, воду и здоровье вместе.",
+        "applicationVersion": "Версия приложения: ",
+        "joinDiscord": "Присоединяйтесь к нашему сообществу в Discord: ",
+        "discordLink": "discord.gg/vcnMT5cPEA",
+        "moreInfoVisit": "Для получения дополнительной информации посетите ",
+        "githubRepo": "Репозиторий GitHub",
+        "technologiesUsed": "Использованные технологии:",
+        "frontend": "Фронтенд:",
+        "backend": "Бекенд:",
+        "externalApis": "Внешние API:",
+        "fatsecretApi": "FatSecret API",
+        "openFoodFactsApi": "Open Food Facts API",
+        "gotIt": "Понятно",
+        "close": "Закрыть"
+    },
+    "exercise": {
+        "title": "Упражнения",
+        "addExerciseDialog": {
+            "title": "Добавить упражнение",
+            "description": "Добавить новое упражнение в вашу базу данных, либо путем создания пользовательского или импорта из внешнего источника.",
+            "myExercisesTab": "Мои упражнения",
+            "onlineTab": "Онлайн",
+            "importCSVTab": "Импорт CSV",
+            "nameLabel": "Имя",
+            "categoryLabel": "Категория",
+            "selectCategoryPlaceholder": "Выберите категорию",
+            "categoryStrength": "Сила",
+            "categoryCardio": "Кардио",
+            "categoryYoga": "Йога",
+            "caloriesPerHourLabel": "Калории/Час",
+            "caloriesPerHourHint": "Оставьте пустой для использования системы расчета калорий в час ({{newExerciseCalories}} кал/час).",
+            "descriptionLabel": "Описание",
+            "sourceLabel": "Источник",
+            "addError": "Не удалось добавить упражнения",
+            "importSuccess": "Данные по упражнениям импортированы успешно"
+        },
+        "editExerciseEntryDialog": {
+            "distanceLabel": "Расстояние",
+            "distancePlaceholder": "Введите расстояние в {{distanceUnit}}",
+            "avgHeartRateLabel": "Средняя частота сердечных сокращений (bpm)",
+            "avgHeartRatePlaceholder": "Введите среднюю частоту сердечных сокращений",
+            "notesPlaceholder": "Добавьте любые заметки об этом упражнении..."
+        },
+        "databaseManager": {
+            "failedToEditExercise": "Не удалось редактировать упражнение",
+            "editSuccess": "Упражнения успешно отредактированы"
+        }
+    },
+    "documentationViewer": {
+        "loadingFeaturesInventory": "Загрузка..."
+    }
+}
