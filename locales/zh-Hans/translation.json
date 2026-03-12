@@ -5,7 +5,8 @@
         "foods": "饮食",
         "goals": "目标",
         "settings": "设置",
-        "admin": "管理员页面"
+        "admin": "管理员页面",
+        "checkin": "打卡"
     },
     "aboutDialog": {
         "title": "关于SparkyFitness",
