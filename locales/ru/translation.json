@@ -23,7 +23,9 @@
         "fatsecretApi": "FatSecret API",
         "openFoodFactsApi": "Open Food Facts API",
         "gotIt": "Понятно",
-        "close": "Закрыть"
+        "close": "Закрыть",
+        "wgerApi": "Wger API (Данные об упражнениях)",
+        "foodDataApis": "API данные о продуктах:"
     },
     "exercise": {
         "title": "Упражнения",
@@ -44,18 +46,36 @@
             "descriptionLabel": "Описание",
             "sourceLabel": "Источник",
             "addError": "Не удалось добавить упражнения",
-            "importSuccess": "Данные по упражнениям импортированы успешно"
+            "importSuccess": "Данные по упражнениям импортированы успешно",
+            "addButton": "Добавить упражнение",
+            "addSuccess": "Упражнение успешно добавлено",
+            "importDuplicateTitle": "Импорт неуспешный: Найден дубликат",
+            "importDuplicateDescription": "Уже существуют следующие пункты: {{duplicateList}}. Пожалуйста, уберите их из вашего файла и попробуйте еще раз.",
+            "importError": "Не удалось импортировать данные упражнений. Попробуй еще раз."
         },
         "editExerciseEntryDialog": {
             "distanceLabel": "Расстояние",
             "distancePlaceholder": "Введите расстояние в {{distanceUnit}}",
             "avgHeartRateLabel": "Средняя частота сердечных сокращений (bpm)",
             "avgHeartRatePlaceholder": "Введите среднюю частоту сердечных сокращений",
-            "notesPlaceholder": "Добавьте любые заметки об этом упражнении..."
+            "notesPlaceholder": "Добавьте любые заметки об этом упражнении...",
+            "weightLabel": "Вес",
+            "durationLabel": "Продолжительность (мин)",
+            "restLabel": "Отдых (сек)",
+            "notesLabel": "Заметки",
+            "caloriesWarning": "Сожженные калории будут перерассчитаны после сохранения. Введите значение для переопределения.",
+            "exerciseLabel": "Упражнения",
+            "unknownExercise": "Неизвестное упражнение"
         },
         "databaseManager": {
             "failedToEditExercise": "Не удалось редактировать упражнение",
             "editSuccess": "Упражнения успешно отредактированы"
+        },
+        "addWorkoutPresetDialog": {
+            "searchPlaceholder": "Найдите свои планы тренировок..."
+        },
+        "dailyProgress": {
+            "burned": "сожжено"
         }
     },
     "documentationViewer": {
