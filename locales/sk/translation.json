@@ -46,7 +46,9 @@
             "caloriesPerHourLabel": "Kalórie/hodina",
             "descriptionLabel": "Popis",
             "sourceLabel": "Zdroj",
-            "forceLabel": "Sila"
+            "forceLabel": "Sila",
+            "description": "Pridajte nové cvičenie do databázy, buď vytvorením vlastného cvičenia, alebo importom z externého zdroja.",
+            "caloriesPerHourHint": "Nechajte prázdne pole, ak chcete použiť systémom vypočítané kalórie za hodinu ({{newExerciseCalories}} kal/hod.)."
         },
         "databaseManager": {
             "syncSuccess": "Staršie záznamy v denníku boli aktualizované.",
