@@ -48,13 +48,32 @@
             "sourceLabel": "Zdroj",
             "forceLabel": "Sila",
             "description": "Pridajte nové cvičenie do databázy, buď vytvorením vlastného cvičenia, alebo importom z externého zdroja.",
-            "caloriesPerHourHint": "Nechajte prázdne pole, ak chcete použiť systémom vypočítané kalórie za hodinu ({{newExerciseCalories}} kal/hod.)."
+            "caloriesPerHourHint": "Nechajte prázdne pole, ak chcete použiť systémom vypočítané kalórie za hodinu ({{newExerciseCalories}} kal/hod.).",
+            "categoryGeneral": "Všeobecné",
+            "forcePush": "Tlaky",
+            "levelLabel": "Úroveň",
+            "selectLevelPlaceholder": "Zvoľ úroveň",
+            "levelBeginner": "Začiatočník",
+            "levelIntermediate": "Mierne pokročilý",
+            "levelExpert": "Profesionál",
+            "primaryMusclesLabel": "Primárne svaly (oddelené čiarkami)",
+            "secondaryMusclesLabel": "Sekundárne svaly (oddelené čiarkami)",
+            "instructionsLabel": "Inštrukcie (jedna na riadok)",
+            "imagesLabel": "Obrázky",
+            "addButton": "Pridať cvičenie",
+            "addSuccess": "Cvičenie bolo úspešne pridané",
+            "addError": "Nepodarilo sa pridať cvičenie",
+            "importSuccess": "Dáta o cvičení boli úspešne naimportované",
+            "importDuplicateTitle": "Import zlyhal: Nájdene duplicitné záznamy",
+            "importDuplicateDescription": "Nájdené duplicitné záznamy:  {{duplicateList}}. Prosím odstraňte ich zo súboru a skúste znova.",
+            "importError": "Nepodarilo sa nahrať dáta o cvičení. Prosím skúste znova."
         },
         "databaseManager": {
             "syncSuccess": "Staršie záznamy v denníku boli aktualizované.",
             "syncError": "Nepodarilo sa aktualizovať predchádzajúce záznamy v denníku.",
             "allCategoriesPlaceholder": "Všetky kategórie",
-            "allCategoriesItem": "Všetky kategórie"
+            "allCategoriesItem": "Všetky kategórie",
+            "deleteConfirmationTitle": "Zmazať {{exerciseName}}?"
         },
         "dailyProgress": {
             "dailyCalorieGoal": "Denný cieľ kalórií",
@@ -73,7 +92,14 @@
             "notesLabel": "Poznámky",
             "title": "Upraviť záznam cvičenia",
             "description": "Tu vykonajte zmeny v zadanom cvičení. Po dokončení kliknite na tlačidlo Uložiť.",
-            "distanceLabel": "Vzdialenosť"
+            "distanceLabel": "Vzdialenosť",
+            "imageLabel": "Obrázok",
+            "updateSuccess": "Záznam o cvičení bol úspešne aktualizovaný."
+        },
+        "addWorkoutPresetDialog": {
+            "searchPlaceholder": "Hľadaj predvolené cvičenia ...",
+            "recentPresetsTitle": "Posledné predvoľby",
+            "noRecentPresets": "Žiadne nedávne predvoľby."
         }
     },
     "settings": {
