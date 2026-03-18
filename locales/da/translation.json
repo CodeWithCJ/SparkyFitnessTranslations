@@ -23,7 +23,9 @@
         "nutritionixApi": "Nutritionix API",
         "technologiesUsed": "Anvendte teknologier:",
         "frontend": "Brugerflade:",
-        "externalApis": "Eksterne API'er:"
+        "externalApis": "Eksterne API'er:",
+        "backend": "Backend:",
+        "fatsecretApi": "FatSecret API"
     },
     "exercise": {
         "title": "Øvelser",
@@ -62,7 +64,15 @@
             "workoutPresetTab": "Træningsskabelon",
             "instructionsLabel": "Instruktioner (en pr. linje)",
             "addButton": "Tilføj øvelse",
-            "importDuplicateDescription": "Følgende elementer findes allerede: {{duplicateList}}. Fjern dem fra din fil og prøv igen."
+            "importDuplicateDescription": "Følgende elementer findes allerede: {{duplicateList}}. Fjern dem fra din fil og prøv igen.",
+            "equipmentLabel": "Udstyr (komma separeret)",
+            "primaryMusclesLabel": "Primære Muskler (komma separeret)",
+            "secondaryMusclesLabel": "Sekundære Muskler (komma separeret)",
+            "addSuccess": "Øvelse tilføjet",
+            "addError": "Tilføjelse af øvelse fejlede",
+            "importSuccess": "Øvelse data importeret",
+            "importDuplicateTitle": "Import fejlede: Duplikerede enheder fundet",
+            "importError": "Import af trænings data fejlede. Prøv igen."
         }
     }
 }
