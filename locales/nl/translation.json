@@ -46,7 +46,7 @@
             "categoryCardio": "Cardio",
             "categoryYoga": "Yoga",
             "caloriesPerHourLabel": "Calorieën/Uur",
-            "caloriesPerHourHint": "Laat leeg om de standaard berekende aantal calorieën per uur te gebruiken ({{newExerciseCalories}} cal/uur).",
+            "caloriesPerHourHint": "Laat leeg om de standaard berekende aantal calorieën per uur te gebruiken ({{newExerciseCalories}} kcal/uur).",
             "descriptionLabel": "Beschrijving",
             "sourceLabel": "Bron",
             "forceLabel": "Gewicht",
