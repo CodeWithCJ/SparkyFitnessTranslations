@@ -25,7 +25,8 @@
         "frontend": "Brugerflade:",
         "externalApis": "Eksterne API'er:",
         "backend": "Backend:",
-        "fatsecretApi": "FatSecret API"
+        "fatsecretApi": "FatSecret API",
+        "openFoodFactsApi": "Open Food Facts API"
     },
     "exercise": {
         "title": "Øvelser",
@@ -72,7 +73,8 @@
             "addError": "Tilføjelse af øvelse fejlede",
             "importSuccess": "Øvelse data importeret",
             "importDuplicateTitle": "Import fejlede: Duplikerede enheder fundet",
-            "importError": "Import af trænings data fejlede. Prøv igen."
+            "importError": "Import af trænings data fejlede. Prøv igen.",
+            "mechanicCompound": "Flerleds"
         }
     }
 }
