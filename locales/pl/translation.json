@@ -1,6 +1,6 @@
 {
     "nav": {
-        "diary": "Pamiętnik",
+        "diary": "Dziennik",
         "reports": "Raporty",
         "goals": "Cele",
         "settings": "Ustawienia",
@@ -32,7 +32,7 @@
         "title": "Ćwiczenia",
         "addExerciseDialog": {
             "title": "Dodaj ćwiczenie",
-            "description": "Dodaj nowe ćwiczenie do swojej bazy, zarówno tworząc własne lub importując z zewnętrznego źródła.",
+            "description": "Dodaj nowe ćwiczenie do swojej bazy, zarówno tworząc własne od podstaw lub importując z zewnętrznego źródła.",
             "myExercisesTab": "Moje Ćwiczenia",
             "addCustomTab": "Dodaj własne",
             "importCSVTab": "Importuj CSV",
@@ -155,7 +155,30 @@
             "failedToDeleteExercise": "Usuwanie ćwiczenia nie powiodło się.",
             "shareStatusSuccess": "Ćwiczenie {{shareStatus}} pomyślnie",
             "errorSharingExercise": "Błąd podczas udostępniania ćwiczenia:",
-            "failedToShareExercise": "Nie udało się udostępnić ćwiczenia"
+            "failedToShareExercise": "Nie udało się udostępnić ćwiczenia",
+            "allCategoriesPlaceholder": "Wszystkie Kategorie",
+            "allCategoriesItem": "Wszystkie Kategorie",
+            "categoryPowerlifting": "Trójbój Siłowy",
+            "categoryOlympicWeightlifting": "Dwubój Olimpijski",
+            "categoryStrongman": "Siłacz",
+            "categoryStretching": "Rozciąganie",
+            "allExercisesCount": "Wszystkie Ćwiczenia ({{totalExercisesCount}})",
+            "itemsPerPageLabel": "Elementów na stronę:",
+            "levelDisplay": "Poziom: {{level}}",
+            "forceDisplay": "Rodzaj Siły: {{force}}",
+            "mechanicDisplay": "Mechanika Ruchu: {{mechanic}}",
+            "equipmentDisplay": "Sprzęt: {{equipment}}",
+            "primaryMusclesDisplay": "Główne Partie Mięśniowe: {{primaryMuscles}}",
+            "secondaryMusclesDisplay": "Podrzędne Partie Mięśniowe: {{secondaryMuscles}}",
+            "instructionsDisplay": "Instrukcja: {{instruction}}...",
+            "caloriesPerHourDisplay": "Kalorie/Godz: {{caloriesPerHour}}",
+            "deleteConfirmationTitle": "Usunąć {{exerciseName}}?",
+            "deleteUsedByOthersDescription": "Inni użytkownicy korzystają z tego ćwiczenia. Usunięcie go wpłynie na ich dane co jest niedozwolone; zamiast tego zostanie ono ukryte.",
+            "syncSuccess": "Wcześniejsze wpisy w dzienniku zostały zaktualizowane.",
+            "syncError": "Nie udało się zmienić wcześniejszych wpisów w dzienniku.",
+            "deleteUsedByOthersEntries": "{{exerciseEntriesCount}} wpisów w dzienniku (wszystkich użytkowników)",
+            "deletePermanentEntries": "{{exerciseEntriesCount}} wpisów w dzienniku",
+            "syncConfirmationDescription": "Czy zaktualizować wszystkie wcześniejsze wpisy dziennika dla tego ćwiczenia?"
         }
     },
     "documentationViewer": {
