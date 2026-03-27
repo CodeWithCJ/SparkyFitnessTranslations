@@ -75,6 +75,19 @@
             "importDuplicateTitle": "Import fejlede: Duplikerede enheder fundet",
             "importError": "Import af trænings data fejlede. Prøv igen.",
             "mechanicCompound": "Flerleds"
+        },
+        "addWorkoutPresetDialog": {
+            "searchPlaceholder": "søg i dine træningsprogrammer...",
+            "recentPresetsTitle": "nylige træningsprogrammer",
+            "noRecentPresets": "Ingen nylige træningsprogrammmer.",
+            "topPresetsTitle": "favorit programmer",
+            "noTopPresets": "Ingen favorit programmer.",
+            "searchResultsTitle": "Resultater",
+            "noMatchingPresets": "Ingen træningsprogrammer matcher din søgning."
+        },
+        "workoutPresetSelector": {
+            "searchPlaceholder": "søg i dine træningsprogrammer...",
+            "recentPresetsTitle": "nylige træningsprogrammer"
         }
     }
 }
