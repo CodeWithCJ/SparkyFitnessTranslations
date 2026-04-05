@@ -204,7 +204,17 @@
             "deleteUsedByOthersEntries": "{{exerciseEntriesCount}} záznamů v deníku (všemi uživateli)",
             "deletePermanentDescription": "Tohle permanentně smaže cvik a všechna spojená data pro tento účet.",
             "deletePermanentEntries": "{{exerciseEntriesCount}} záznamů v deníku",
-            "workoutPresetsCardTitle": "Přednastavený trénink"
+            "workoutPresetsCardTitle": "Přednastavený trénink",
+            "workoutPlansCardTitle": "Cvičební plány",
+            "deleteUsedByOthersWarning": "Toto cvičení používají ostatní uživatelé v tréninzích nebo denících. Smazání ovlivní jejich data. Místo toho bude skryto.",
+            "forceDeleteConfirmLabel": "Vynutit odstranění",
+            "syncConfirmationTitle": "Synchronizovat minulé záznamy?",
+            "syncConfirmationDescription": "Chcete aktualizovat všechny své minulé záznamy v deníku pro toto cvičení o nové informace?",
+            "addExerciseButton": "Přidejte cvičení"
+        },
+        "exerciseImportCSV": {
+            "importExerciseData": "Importuj data cvičení",
+            "standardValuesForDropdowns": "Standardní hodnoty pro rozevírací seznamy"
         }
     }
 }
