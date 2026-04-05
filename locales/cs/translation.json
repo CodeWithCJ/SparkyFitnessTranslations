@@ -203,7 +203,8 @@
             "deleteUsedByOthersDescription": "Tento cvik je používaný ostatními uživateli. Jeho smazání ovlivní jejich data a není povoleno; bude skryt.",
             "deleteUsedByOthersEntries": "{{exerciseEntriesCount}} záznamů v deníku (všemi uživateli)",
             "deletePermanentDescription": "Tohle permanentně smaže cvik a všechna spojená data pro tento účet.",
-            "deletePermanentEntries": "{{exerciseEntriesCount}} záznamů v deníku"
+            "deletePermanentEntries": "{{exerciseEntriesCount}} záznamů v deníku",
+            "workoutPresetsCardTitle": "Přednastavený trénink"
         }
     }
 }
