@@ -142,7 +142,9 @@
         "activityDetailsEditor": {
             "fieldNamePlaceholder": "n.p., 'Pogoda', 'Samopoczucie'",
             "valuePlaceholder": "n.p., 'Słonecznie', 'Pełen Energii'",
-            "valueLabel": "Wartość"
+            "valueLabel": "Wartość",
+            "fieldNameLabel": "Nazwa pola",
+            "addCustomFieldButton": "Dodaj pole niestandardowe"
         },
         "databaseManager": {
             "errorLoadingExercises": "Błąd wczytywania ćwiczeń:",
@@ -200,7 +202,9 @@
             "editExerciseDialogTitle": "Edytuj ćwiczenie",
             "editExerciseDialogDescription": "Edytuj szczegóły wybranego ćwiczenia.",
             "forceDeleteConfirmLabel": "Wymuś usunięcie",
-            "addExerciseButton": "Dodaj ćwiczenie"
+            "addExerciseButton": "Dodaj ćwiczenie",
+            "shareWithPublicTooltip": "Udostępnij publicznie",
+            "deletePermanentDescription": "To działanie permanentnie usunie ćwiczenie i wszystkie powiązane dane dla twojego konta"
         },
         "exerciseImportCSV": {
             "levelLabel": "Poziom:",
