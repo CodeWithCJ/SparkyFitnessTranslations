@@ -24,7 +24,7 @@
         "foodDataApis": "Food Data API:",
         "nutritionixApi": "Nutritionix API",
         "fatsecretApi": "FatSecret API",
-        "openFoodFactsApi": "Open Food Facts API",
+        "openFoodFactsApi": "Otwórz FoodFacts API",
         "gotIt": "Zrozumiałem",
         "close": "Zamknij"
     },
@@ -204,7 +204,13 @@
             "forceDeleteConfirmLabel": "Wymuś usunięcie",
             "addExerciseButton": "Dodaj ćwiczenie",
             "shareWithPublicTooltip": "Udostępnij publicznie",
-            "deletePermanentDescription": "To działanie permanentnie usunie ćwiczenie i wszystkie powiązane dane dla twojego konta"
+            "deletePermanentDescription": "To działanie permanentnie usunie ćwiczenie i wszystkie powiązane dane dla twojego konta.",
+            "errorFetchingDeletionImpact": "Wystąpił błąd podczas pobierania informacji o skutkach usunięcia:",
+            "failedToFetchDeletionImpact": "Nie udało się pobrać informacji o skutkach usunięcia. Spróbuj ponownie.",
+            "searchPlaceholder": "Wyszukaj ćwiczenia...",
+            "workoutPresetsCardTitle": "Gotowe programy treningowe",
+            "deleteUsedByOthersWarning": "To ćwiczenie jest wykorzystywane w planach treningowych lub dziennikach innych użytkowników. Jego usunięcie wpłynie na ich dane. Zamiast tego zostanie ono ukryte.",
+            "syncConfirmationTitle": "Synchronizować poprzednie wpisy?"
         },
         "exerciseImportCSV": {
             "levelLabel": "Poziom:",
@@ -217,7 +223,24 @@
             "data": "Dane",
             "emptyFile": "Wybrany plik jest pusty.",
             "invalidCSVFormat": "Nieprawidłowy format CSV",
-            "copied": "Skopiowano!"
+            "copied": "Skopiowano!",
+            "importExerciseData": "Importuj dane dotyczące ćwiczeń",
+            "standardValuesForDropdowns": "Wartości domyślne dla list rozwijanych",
+            "standardValuesDescription": "Podczas importowania ćwiczeń upewnij się, że wartości pól „Poziom”, „Siła” i „Mechanika” są zgodne z tymi standardowymi opcjami. Możesz kliknąć ikonę kopiowania, aby szybko skopiować listę dopuszczalnych wartości dla każdego pola.",
+            "forceLabel": "Siła:",
+            "mechanicLabel": "Mechanika Ruchu:",
+            "copyTooltip": "Kopiuj '{{value}}'",
+            "uploadCSV": "Prześlij plik CSV",
+            "clearData": "Wyczyść dane",
+            "loadedRecords": "Pobrano {{count}} rekordów.",
+            "actions": "Działania",
+            "importError": "Błąd importu",
+            "invalidCSVFormatDescription": "Nagłówki pliku CSV nie są zgodne z wymaganym formatem lub kolejnością. Proszę pobrać szablon.",
+            "noDataFound": "Nie znaleziono żadnych danych",
+            "noDataFoundDescription": "Plik CSV zawiera nagłówki, ale nie zawiera wierszy z danymi.",
+            "validationError": "Błąd weryfikacji",
+            "nameEmptyError": "Pole „nazwa” nie może być puste.",
+            "copiedToClipboard": "„{{value}}” skopiowano do schowka."
         }
     },
     "documentationViewer": {
