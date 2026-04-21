@@ -188,7 +188,9 @@
             "totalCaloriesBurned": "Всего: {{totalCaloriesBurned}}",
             "netCalories": "Чистые калории: {{netCalories}}",
             "netCaloriesBreakdown": "{{dailyIntakeCalories}} съедено - {{finalTotalCaloriesBurned}} сожжено",
-            "dailyProgress": "Ежедневный прогресс"
+            "dailyProgress": "Ежедневный прогресс",
+            "goal": "цель",
+            "caloriesBurnedBreakdownTitle": "Распределение сожженных калорий"
         },
         "workoutPresetSelector": {
             "searchPlaceholder": "Найдите свои пресеты для тренировок...",
