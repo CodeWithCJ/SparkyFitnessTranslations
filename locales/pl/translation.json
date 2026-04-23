@@ -1013,7 +1013,7 @@
     "mealPlanEntries": "{{count}} planach posiłków",
     "mealPlanTemplateEntries": "{{count}} szablonach planów",
     "warning": "Uwaga!",
-    "foodUsedByOtherUsersWarning": "Produkt jest używany przez innych. Możesz go jedynie ukryć, by nie był używany w przyszłości.",
+    "foodUsedByOtherUsersWarning": "Ten produkt jest używany przez innych użytkowników. Możesz go jedynie ukryć, co uniemożliwi innym dodawanie go w przyszłości, ale nie wpłynie na ich istniejącą historię, posiłki ani plany posiłków.",
     "cancel": "Anuluj",
     "delete": "Usuń",
     "hide": "Ukryj",
