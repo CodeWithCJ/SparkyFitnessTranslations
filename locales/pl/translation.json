@@ -553,7 +553,7 @@
       "backupFailed": "Ręczna kopia nie powiodła się.",
       "restoreBackup": "Przywróć kopię",
       "restoreWarningImportant": "Ważna uwaga:",
-      "restoreWarningImportantText": "Ta funkcja jest nowa. Zaleca się tworzenie niezależnych kopii. Stosuj strategię 3-2-1.",
+      "restoreWarningImportantText": "Ta funkcja kopii zapasowych jest nowa i należy jej używać z ostrożnością. Chociaż tworzy ona kopię zapasową, zdecydowanie zaleca się tworzenie dodatkowych kopii niezależnie od tej aplikacji. Zawsze stosuj strategię kopii zapasowych 3-2-1 (3 kopie danych, na 2 różnych nośnikach, z 1 kopią poza siedzibą), aby zapewnić bezpieczeństwo danych. Funkcja przywracania może nie działać poprawnie we wszystkich scenariuszach, więc nie polegaj wyłącznie na tej wbudowanej kopii zapasowej.",
       "restoreWarningCaution": "OSTRZEŻENIE:",
       "restoreWarningCautionText": "Przywrócenie kopii nadpisze wszystkie obecne dane! Po operacji zrestartuj serwer.",
       "restoreConfirm": "CZY NA PEWNO? Wszystkie obecne dane zostaną zastąpione danymi z kopii.",
