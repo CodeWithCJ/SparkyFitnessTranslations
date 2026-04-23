@@ -241,6 +241,11 @@
             "validationError": "Błąd weryfikacji",
             "nameEmptyError": "Pole „nazwa” nie może być puste.",
             "copiedToClipboard": "„{{value}}” skopiowano do schowka."
+        },
+        "playbackModal": {
+            "voiceLabel": "Głos:",
+            "selectVoicePlaceholder": "Wybierz głos",
+            "stepCount": "Krok {{currentInstructionIndex}} z {{totalInstructions}}"
         }
     },
     "documentationViewer": {
@@ -248,12 +253,31 @@
         "loadingDatabaseSchema": "Wczytywanie schematu bazy danych..."
     },
     "workoutPresetsManager": {
-        "loading": "Ładowanie..."
+        "loading": "Ładowanie...",
+        "addPresetButton": "Dodaj ustawienie wstępne",
+        "noPresetsFound": "Nie znaleziono gotowych planów treningowych. Utwórz własny, aby rozpocząć!",
+        "logPresetToDiaryTooltip": "Dziennik domyślny",
+        "makePresetPrivateTooltip": "Ustaw ten profil jako prywatny",
+        "sharePresetTooltip": "Udostępnij ten preset społeczności",
+        "editPresetTooltip": "Edytuj ten preset",
+        "deletePresetTooltip": "Usuń ten preset",
+        "loadMore": "Pobierz więcej",
+        "noExercisesInPreset": "W tym zestawie nie ma żadnych ćwiczeń",
+        "failedToLoadPresets": "Nie udało się załadować gotowych programów treningowych.",
+        "createSuccess": "Ustawienia treningu zostały pomyślnie utworzone.",
+        "createError": "Nie udało się utworzyć gotowego planu treningowego.",
+        "updateSuccess": "Ustawienia treningu zostały pomyślnie zaktualizowane.",
+        "updateError": "Nie udało się zaktualizować gotowego programu treningowego.",
+        "deleteSuccess": "Ustawienie treningu zostało pomyślnie usunięte.",
+        "deleteError": "Nie udało się usunąć gotowego planu treningowego.",
+        "logSuccess": "Ustawienie treningu „{{presetName}}” zostało zapisane w dzienniku.",
+        "logError": "Nie udało się zapisać zaprogramowanego treningu „{{presetName}}” w dzienniku."
     },
     "exerciseCard": {
         "title": "Ćwiczenie",
         "addExercise": "Dodaj ćwiczenie",
-        "categoryYoga": "Joga"
+        "categoryYoga": "Joga",
+        "noEntries": "Brak wpisów dotyczących ćwiczeń z tego dnia."
     },
     "reports": {
         "activityReport": {
@@ -310,5 +334,27 @@
         "cancelButton": "Anuluj",
         "saveChangesButton": "Zapisz zmiany",
         "savingButton": "Zapisywanie..."
+    },
+    "workoutPlansManager": {
+        "addPlanButton": "Dodaj plan",
+        "noPlansFound": "Nie znaleziono żadnych planów treningowych. Utwórz plan, aby rozpocząć!",
+        "editPlanTooltip": "Edytuj plan treningowy",
+        "deletePlanTooltip": "Usuń plan treningowy",
+        "activatePlanTooltip": "Aktywuj plan",
+        "deactivatePlanTooltip": "Wyłącz plan",
+        "statusLabel": "Status: ",
+        "activeStatus": "Aktywny",
+        "inactiveStatus": "Wyłączony",
+        "ongoingStatus": "- W trakcie",
+        "failedToLoadPlans": "Nie udało się załadować planów treningowych.",
+        "createSuccess": "Plan treningowy został pomyślnie utworzony.",
+        "createError": "Nie udało się utworzyć planu treningowego.",
+        "updateSuccess": "Plan treningowy został pomyślnie zaktualizowany.",
+        "updateError": "Nie udało się zaktualizować planu treningowego.",
+        "deleteSuccess": "Plan treningowy został pomyślnie usunięty.",
+        "deleteError": "Nie udało się usunąć planu treningowego.",
+        "updateStatusError": "Nie znaleziono planu aktualizacji.",
+        "toggleStatusSuccess": "Plan treningowy {{status}} został pomyślnie wdrożony.",
+        "toggleStatusError": "Nie udało się zmienić statusu aktywności planu treningowego."
     }
 }
