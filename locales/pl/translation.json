@@ -1530,7 +1530,7 @@
     "wakeTime": "Pora pobudki",
     "sleepDebt": "Deficyt snu",
     "sleepDebtHours": "Deficyt snu (godziny)",
-    "sleepDebtDisclaimer": "*Deficyt snu liczony względem zalecanych 8 godzin snu.",
+    "sleepDebtDisclaimer": "*Deficyt snu liczony względem zalecanych 8 godzin snu. Ta opcja będzie konfigurowalna w przyszłej wersji.",
     "sleepEfficiency": "Wydajność snu",
     "hoursShort": "h ",
     "minutesShort": "m"
