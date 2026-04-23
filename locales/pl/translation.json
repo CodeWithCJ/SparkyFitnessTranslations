@@ -436,7 +436,7 @@
       "distanceUnit": "Jednostka dystansu",
       "kilometers": "Kilometry (km)",
       "miles": "Mile (mi)",
-      "loggingLevel": "Poziom logowania błędów",
+      "loggingLevel": "Minimalny poziom logowania",
       "debug": "DEBUG (Szczegółowe)",
       "info": "INFO",
       "warn": "OSTRZEŻENIE",
