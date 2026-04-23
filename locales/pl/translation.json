@@ -528,7 +528,7 @@
         "enableEmailPasswordLogin": "Włącz logowanie E-mail i Hasło",
         "enableOidcLoginGlobal": "Włącz logowanie OIDC (Globalnie)",
         "emergencyFailSafe": "Zabezpieczenie awaryjne:",
-        "emergencyFailSafeDescription": "Jeśli zostaniesz zablokowany, możesz wymusić logowanie hasłem ustawiając zmienną środowiskową na serwerze:",
+        "emergencyFailSafeDescription": "Jeśli zostaniesz zablokowany, możesz wymusić logowanie hasłem, ustawiając następującą zmienną środowiskową na serwerze i restartując go:",
         "envVarCopied": "Zmienna środowiskowa skopiowana."
       },
       "oidcProviderManagement": {
