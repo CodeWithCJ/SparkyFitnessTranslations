@@ -1301,7 +1301,7 @@
       "error": "Błąd:",
       "noActivityDataAvailable": "Brak dostępnych danych aktywności.",
       "metricDescriptorsNotFound": "Nie znaleziono deskryptorów metryk.",
-      "metricDescriptorsMissingKeys": "Deskryptory metryk nie zawierają wymaganych kluczy.",
+      "metricDescriptorsMissingKeys": "Deskryptory metryk nie zawierają wymaganych kluczy ('directTimestamp' lub 'sumDistance').",
       "heartRateDescriptorNotFound": "Brak danych tętna. Wykres tętna będzie niedostępny.",
       "missingTimestampOrDistanceDescriptor": "Brak sygnatury czasowej lub dystansu.",
       "noValidTimestampsFound": "Brak poprawnych sygnatur czasowych.",
