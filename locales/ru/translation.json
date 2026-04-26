@@ -368,5 +368,56 @@
     "foodSearchDialog": {
         "title": "Поиск и добавление пищи",
         "description": "Поиск продуктов для добавления в вашу базу данных."
+    },
+    "settings": {
+        "profileInformation": {
+            "phoneNumber": "Номер телефона",
+            "enterPhoneNumber": "Введите номер телефона",
+            "dateOfBirth": "Дата рождения",
+            "pickADate": "Выберите дату",
+            "gender": "Пол",
+            "selectGender": "Выберите пол",
+            "male": "Мужчина",
+            "female": "Женщина",
+            "other": "Другой",
+            "tellAboutYourself": "Расскажите нам о себе",
+            "saveProfile": "Сохранить профиль",
+            "saving": "Сохранение..."
+        },
+        "preferences": {
+            "title": "Предпочтения",
+            "description": "Измените настройки приложения и предпочтения изображения",
+            "dateFormat": "Формат даты",
+            "weightUnit": "Единицы веса",
+            "kilograms": "Килограммы (кг)",
+            "pounds": "Фунты ( фунты)",
+            "measurementUnit": "Единицы измерений",
+            "centimeters": "Сантиметры (см)",
+            "inches": "Дюймы (in)",
+            "distanceUnit": "Единицы расстояния",
+            "kilometers": "Километры (км)",
+            "miles": "Мили (miles)",
+            "loggingLevel": "Минимальный уровнь логирования",
+            "debug": "DEBUG (Самая подробная)",
+            "info": "INFO",
+            "warn": "WARN",
+            "error": "ERROR",
+            "silent": "SILENT (без логов)"
+        },
+        "calculationSettings": {
+            "title": "Настройки расчета"
+        },
+        "familyAccess": {
+            "title": "Семейный доступ",
+            "description": "Управлять доступом к вашим данным для членов семьи"
+        },
+        "customCategories": {
+            "title": "Пользовательские категории",
+            "description": "Создание и управление пользовательскими категориями измерения"
+        },
+        "foodExerciseDataProviders": {
+            "title": "Еда и упражнения Поставщик данных",
+            "description": "Настройка внешних источников данных о продуктах питания и упражнениях и синхронизация данных с Garmin Connect"
+        }
     }
 }
