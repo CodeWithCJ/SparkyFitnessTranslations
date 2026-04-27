@@ -1349,7 +1349,8 @@
             "lapTableMaxHRBpmHeader": "최대 심박수 (bpm)",
             "lapTableCaloriesHeader": "칼로리",
             "heartRateTimeInZonesTitle": "심박수 구간별 시간",
-            "timeInZoneSLabel": "구간 내 시간 (초)"
+            "timeInZoneSLabel": "구간 내 시간 (초)",
+            "cadence": "케이던스"
         }
     },
     "exerciseReportsDashboard": {
