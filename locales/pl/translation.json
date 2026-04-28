@@ -162,7 +162,7 @@
             "allCategoriesPlaceholder": "Wszystkie kategorie",
             "allCategoriesItem": "Wszystkie kategorie",
             "categoryPowerlifting": "Trójbój siłowy",
-            "categoryOlympicWeightlifting": "Podnoszenie ciężarów",
+            "categoryOlympicWeightlifting": "Dwubój olimpijski",
             "categoryStrongman": "Strongman",
             "categoryStretching": "Rozciąganie",
             "allExercisesCount": "Wszystkie ćwiczenia ({{totalExercisesCount}})",
@@ -232,20 +232,20 @@
             "copyTooltip": "Kopiuj '{{value}}'",
             "uploadCSV": "Wgraj CSV",
             "clearData": "Wyczyść dane",
-            "loadedRecords": "Pomyślnie załadowano {{count}} rekordów.",
+            "loadedRecords": "Pomyślnie załadowano {{count}} wpisów.",
             "actions": "Akcje",
             "importError": "Błąd importu",
-            "invalidCSVFormatDescription": "Nagłówki CSV nie zgadzają się z wymaganym formatem. Pobierz szablon.",
+            "invalidCSVFormatDescription": "Nagłówki CSV nie są zgodne z obowiązującym formatem. Proszę pobrać szablon.",
             "noDataFound": "Nie znaleziono danych",
-            "noDataFoundDescription": "Plik CSV zawiera nagłówki, ale brak w nim wierszy z danymi.",
+            "noDataFoundDescription": "Plik CSV zawiera nagłówki ale bez wierszy z danymi.",
             "validationError": "Błąd walidacji",
-            "nameEmptyError": "Pole 'nazwa' nie może być puste.",
-            "copiedToClipboard": "'{{value}}' skopiowane do schowka."
+            "nameEmptyError": "Pole \"nazwa\" nie może być puste.",
+            "copiedToClipboard": "'{{value}}' skopiowano  do schowka."
         },
         "playbackModal": {
             "voiceLabel": "Głos:",
             "selectVoicePlaceholder": "Wybierz głos",
-            "stepCount": "Krok {{currentInstructionIndex}} z {{totalInstructions}}"
+            "stepCount": "Krok {{currentInstructionIndex}} z\n{{totalInstructions}}"
         }
     },
     "documentationViewer": {
@@ -747,12 +747,12 @@
     },
     "workoutPlansManager": {
         "addPlanButton": "Dodaj plan",
-        "noPlansFound": "Brak planów treningowych. Stwórz nowy plan!",
+        "noPlansFound": "Nie znaleziono planów treningowych. Utwórz pierwszy by zacząć!",
         "editPlanTooltip": "Edytuj plan treningowy",
         "deletePlanTooltip": "Usuń plan treningowy",
         "activatePlanTooltip": "Aktywuj plan",
         "deactivatePlanTooltip": "Dezaktywuj plan",
-        "statusLabel": "Status: ",
+        "statusLabel": "Stan: ",
         "activeStatus": "Aktywny",
         "inactiveStatus": "Nieaktywny",
         "ongoingStatus": "- W toku",
