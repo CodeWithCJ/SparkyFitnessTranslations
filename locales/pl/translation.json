@@ -74,7 +74,7 @@
             "mechanicIsolation": "Izolowane",
             "mechanicCompound": "Wielostawowe",
             "instructionsLabel": "Instrukcje (jedna na linię)",
-            "workoutPresetTab": "Szablony"
+            "workoutPresetTab": "Szablony treningów"
         },
         "addWorkoutPresetDialog": {
             "searchResultsTitle": "Wyniki wyszukiwania",
@@ -231,7 +231,7 @@
             "mechanicLabel": "Mechanika:",
             "copyTooltip": "Kopiuj '{{value}}'",
             "uploadCSV": "Wgraj CSV",
-            "clearData": "Wyczyść dane",
+            "clearData": "Usuń dane",
             "loadedRecords": "Pomyślnie załadowano {{count}} wpisów.",
             "actions": "Akcje",
             "importError": "Błąd importu",
@@ -240,12 +240,12 @@
             "noDataFoundDescription": "Plik CSV zawiera nagłówki ale bez wierszy z danymi.",
             "validationError": "Błąd walidacji",
             "nameEmptyError": "Pole \"nazwa\" nie może być puste.",
-            "copiedToClipboard": "'{{value}}' skopiowano  do schowka."
+            "copiedToClipboard": "'{{value}}' skopiowano do schowka."
         },
         "playbackModal": {
             "voiceLabel": "Głos:",
             "selectVoicePlaceholder": "Wybierz głos",
-            "stepCount": "Krok {{currentInstructionIndex}} z\n{{totalInstructions}}"
+            "stepCount": "Krok {{currentInstructionIndex}} z {{totalInstructions}}"
         }
     },
     "documentationViewer": {
@@ -306,7 +306,7 @@
         "categoryStrength": "Siłowe",
         "categoryCardio": "Kardio",
         "categoryPowerlifting": "Trójbój siłowy",
-        "categoryOlympicWeightlifting": "Podnoszenie ciężarów",
+        "categoryOlympicWeightlifting": "Dwubój olimpijski",
         "categoryStrongman": "Strongman",
         "categoryPlyometrics": "Plyometria",
         "categoryStretching": "Rozciąganie",
@@ -314,7 +314,7 @@
         "level": "Poziom",
         "selectLevel": "Wybierz poziom",
         "levelBeginner": "Początkujący",
-        "levelIntermediate": "Średniozaawansowany",
+        "levelIntermediate": "Zaawansowany",
         "levelExpert": "Ekspert",
         "force": "Siła",
         "selectForce": "Wybierz typ siły",
@@ -326,7 +326,7 @@
         "mechanicIsolation": "Izolowane",
         "mechanicCompound": "Wielostawowe",
         "equipment": "Sprzęt (oddzielony przecinkami)",
-        "primaryMuscles": "Główne mięśnie",
+        "primaryMuscles": "Mięśnie główne (oddzielone przecinkiem)",
         "secondaryMuscles": "Mięśnie pomocnicze",
         "instructions": "Instrukcje",
         "images": "Zdjęcia",
