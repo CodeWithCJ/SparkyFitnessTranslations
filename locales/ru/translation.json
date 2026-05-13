@@ -338,7 +338,7 @@
         "levelBeginner": "Начинающий",
         "levelIntermediate": "Промежуточный",
         "levelExpert": "Эксперт",
-        "force": "Сила",
+        "force": "Усилие",
         "selectForce": "Выберите усилие",
         "forcePull": "Тяга",
         "forcePush": "Толкать",
@@ -469,7 +469,7 @@
             "language": "Язык",
             "english": "Английский",
             "tamil": "Тамильский",
-            "savePreferences": "Сохранить настройки"
+            "savePreferences": "Сохранить предпочтения"
         },
         "calculationSettings": {
             "title": "Настройки расчета",
