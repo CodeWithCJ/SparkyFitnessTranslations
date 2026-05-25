@@ -1858,6 +1858,16 @@
     },
     "nutrition": {
         "calories": "Kalorien",
-        "protein": "Protein"
+        "protein": "Protein",
+        "carbohydrates": "Kohlenhydrate",
+        "carbs": "Kohlenhydrate",
+        "fat": "Fett",
+        "saturatedFat": "Gesättigte Fettsäuren",
+        "polyunsaturatedFat": "Mehrfach ungesättigte Fettsäuren",
+        "monounsaturatedFat": "Einfach ungesättigte Fettsäuren",
+        "transFat": "Transfette",
+        "cholesterol": "Cholesterin",
+        "iron": "Eisen",
+        "calcium": "Kalcium"
     }
 }
