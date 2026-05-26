@@ -155,14 +155,14 @@
             "workoutPresetTab": "Trainingsvorlagen",
             "onlineTab": "Online",
             "addCustomTab": "Benutzerdefinierte Übung erstellen",
-            "importCSVTab": "CSV importieren",
+            "importCSVTab": "Übungen importieren",
             "nameLabel": "Name",
             "categoryLabel": "Kategorie",
             "selectCategoryPlaceholder": "Wähle eine Kategorie",
             "categoryGeneral": "Allgemein",
             "categoryStrength": "Kraft",
             "categoryYoga": "Yoga",
-            "caloriesPerHourLabel": "Kalorien/ Stunde",
+            "caloriesPerHourLabel": "Kalorien / Stunde",
             "caloriesPerHourHint": "Lasse das Feld leer um die berechneten Kalorien pro Stunde zu nutzen ({{newExerciseCalories}} kcal/Stunde).",
             "descriptionLabel": "Beschreibung",
             "sourceLabel": "Quelle",
@@ -1415,7 +1415,7 @@
             "avgPace": "Ø Pace",
             "totalAscent": "Gesamtanstieg",
             "calories": "Kalorien",
-            "heartRate": "Herzfrequen",
+            "heartRate": "Herzfrequenz",
             "runningDynamics": "Laufdynamik",
             "xAxis": "X-Achse:",
             "timeOfDay": "Tageszeit",
@@ -1449,7 +1449,8 @@
             "lapTableMaxHRBpmHeader": "Max HF (S/min)",
             "lapTableCaloriesHeader": "Kalorien",
             "heartRateTimeInZonesTitle": "Herzfrequenzzeit in Zonen",
-            "timeInZoneSLabel": "Zeit in Zone (s)"
+            "timeInZoneSLabel": "Zeit in Zone (s)",
+            "cadence": "Frequenz"
         }
     },
     "reportsTables": {
@@ -1534,7 +1535,7 @@
         "biceps": "Bizeps",
         "triceps": "Trizeps",
         "legs": "Beine",
-        "abs": "Abs",
+        "abs": "Bauchmuskeln",
         "calves": "Waden",
         "forearms": "Unterarme"
     },
@@ -1868,6 +1869,13 @@
         "transFat": "Transfette",
         "cholesterol": "Cholesterin",
         "iron": "Eisen",
-        "calcium": "Kalcium"
+        "calcium": "Kalzium",
+        "sodium": "Natrium",
+        "potassium": "Kalium",
+        "dietaryFiber": "Ballaststoffe",
+        "vitaminA": "Vitamin A",
+        "vitaminC": "Vitamin C",
+        "sugars": "Zucker",
+        "fiber": "Ballaststoffe"
     }
 }
