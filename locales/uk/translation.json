@@ -1054,5 +1054,11 @@
     "mealBuilder": {
         "errorTitle": "Помилка",
         "loadMealError": "Не вдалося завантажити страву для редагування."
+    },
+    "nutrition": {
+        "calories": "Калорії",
+        "protein": "Білок",
+        "carbohydrates": "Вуглеводи",
+        "carbs": "Вуглеводи"
     }
 }
