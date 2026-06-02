@@ -25,7 +25,8 @@
         "foodDataApis": "API:er för livsmedelsdata:",
         "nutritionixApi": "Nutritionix API",
         "fatsecretApi": "FatSecret API",
-        "gotIt": "Uppfattat"
+        "gotIt": "Uppfattat",
+        "openFoodFactsApi": "Open Food Facts API"
     },
     "exerciseSearch": {
         "loading": "Laddar..."
