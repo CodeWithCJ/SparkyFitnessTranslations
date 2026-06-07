@@ -1,1 +1,97 @@
-{}
+{
+    "nav": {
+        "diary": "Günlük",
+        "reports": "Yazanak",
+        "foods": "Yiyecekler",
+        "goals": "Hedefler",
+        "settings": "Ayarlar",
+        "admin": "Yönetici"
+    },
+    "admin": {
+        "userManagement": {
+            "admin": "Yönetici",
+            "active": "Etkin"
+        },
+        "oidcSettings": {
+            "active": "Etkin"
+        }
+    },
+    "workoutPlansManager": {
+        "activeStatus": "Etkin",
+        "inactiveStatus": "Etkin değil"
+    },
+    "settings": {
+        "aiService": {
+            "userSettings": {
+                "active": "Etkin",
+                "global": "Küresel",
+                "yourSetting": "Senin ayarın"
+            }
+        },
+        "profileInformation": {
+            "pickADate": "Tarih seç",
+            "gender": "Cinsiyet",
+            "male": "Erkek",
+            "female": "Kadın",
+            "other": "Diğer"
+        }
+    },
+    "goals": {
+        "goalsSettings": {
+            "active": "Etkin",
+            "pickADate": "Tarih seç"
+        }
+    },
+    "common": {
+        "active": "Etkin",
+        "pickADate": "Tarih seç"
+    },
+    "foodDiary": {
+        "pickADate": "Tarih seç"
+    },
+    "nutrition": {
+        "vitaminA": "A vitamini",
+        "vitaminC": "C vitamini",
+        "calcium": "Kalsiyum",
+        "iron": "Demir"
+    },
+    "nutritionCharts": {
+        "calcium": "Kalsiyum",
+        "iron": "Demir"
+    },
+    "diary": {
+        "nutrientLabels": {
+            "calcium": "kalsiyum",
+            "iron": "demir"
+        }
+    },
+    "aboutDialog": {
+        "applicationVersion": "Uygulama sürümü: ",
+        "discordLink": "discord.gg/vcnMT5cPEA"
+    },
+    "exerciseCard": {
+        "name": "Adı",
+        "categoryGeneral": "Genel",
+        "categoryYoga": "Yoga"
+    },
+    "workoutPresetForm": {
+        "nameLabel": "Adı"
+    },
+    "exercise": {
+        "addExerciseDialog": {
+            "nameLabel": "Adı",
+            "categoryGeneral": "Genel",
+            "categoryYoga": "Yoga",
+            "sourceLabel": "Kaynak"
+        }
+    },
+    "sleepTimelineEditor": {
+        "source": "Kaynak"
+    },
+    "sleepAnalyticsTable": {
+        "source": "Kaynak"
+    },
+    "sleepReport": {
+        "csvHeadersSource": "Kaynak"
+    }
+}
