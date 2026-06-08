@@ -141,7 +141,8 @@
                 "successUpdatingConfig": "Benutzer KI-Konfigurationseinstellungen wurden erfolgreich aktualisiert",
                 "errorOriginalNotFound": "Ursprünglicher Dienst nicht gefunden.",
                 "deleteConfirm": "Sind Sie sicher, dass Sie diesen globalen KI-Dienst löschen möchten?",
-                "enterNewApiKey": "API Schlüssel hinzufügen oder updaten"
+                "enterNewApiKey": "API Schlüssel hinzufügen oder updaten",
+                "syncFromEnv": "Aus Env synchronisieren"
             },
             "userSettings": {
                 "title": "AI-Dienste",
