@@ -145,7 +145,7 @@
                 "syncFromEnv": "Aus Env synchronisieren"
             },
             "userSettings": {
-                "title": "AI-Dienste",
+                "title": "KI-Dienst",
                 "neverClear": "Nie löschen",
                 "clearAfter7Days": "nach 7 Tagen löschen",
                 "clearAllHistory": "ganzen Verlauf löschen",
@@ -279,7 +279,7 @@
             "emailUpdateError": "Aktualisieren der E-Mail Adresse fehlgeschlagen."
         },
         "customNutrients": {
-            "title": "Benutzerdefinierte Nährwerte",
+            "title": "Eigene Nährwerte",
             "subtitle": "Benutzerdefinierte Nährstoffdefinitionen verwalten"
         },
         "dataManagement": {
@@ -392,7 +392,7 @@
         "dailyProgress": {
             "dailyCalorieGoal": "Tägliches Kalorienziel",
             "remaining": "verbleibend",
-            "eaten": "aufgenommen",
+            "eaten": "verzehrt",
             "burned": "verbrannt",
             "burnedCaloriesBreakdown": "Aufteilung verbrannter Kalorien:",
             "otherExerciseCalories": "Sonstiges Training: {{exerciseCalories}} kcal",
@@ -403,7 +403,7 @@
             "goal": "Ziel",
             "caloriesBurnedBreakdownTitle": "Aufteilung verbrannter Kalorien",
             "netCalories": "Nettokalorien: {{netCalories}}",
-            "netCaloriesBreakdown": "{{dailyIntakeCalories}} aufgenommen - {{finalTotalCaloriesBurned}} verbrannt",
+            "netCaloriesBreakdown": "{{dailyIntakeCalories}} verzehrt - {{finalTotalCaloriesBurned}} verbrannt",
             "dailyProgress": "Täglicher Fortschritt"
         },
         "editExerciseEntryDialog": {
@@ -561,7 +561,7 @@
         "updateError": "Aktualisieren der Traininsgvorlage fehlgeschlagen.",
         "deleteSuccess": "Traininsgvorlage erfolgreich gelöscht.",
         "deleteError": "Löschen der Traininsgvorlage fehlgeschlagen.",
-        "logSuccess": "Traininsgvorlage \"{{presetName}}\" ins Tagebuch aufgenommen.",
+        "logSuccess": "Traininsgvorlage \"{{presetName}}\" ins Tagebuch eingetragen.",
         "logError": "Hinzufügen der Traininsgvorlage \"{{presetName}}\" zum Tagebuch fehlgeschlagen."
     },
     "workoutPlansManager": {
