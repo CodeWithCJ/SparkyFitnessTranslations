@@ -499,12 +499,12 @@
         "foodExerciseDataProviders": {
             "title": "Fornitori di dati relativi all'alimentazione e all'attività fisica",
             "description": "Configura fonti di dati esterne relative all'alimentazione e all'attività fisica e sincronizza i dati con Garmin Connect",
-            "invalidKeyLengthWarning": "Se viene visualizzato l'errore “Lunghezza chiave non valida”, assicurarsi che le chiavi di crittografia e di autenticazione JWT nelle variabili di ambiente del server siano a 64 caratteri esadecimali."
+            "invalidKeyLengthWarning": "Se viene visualizzato l'errore “Lunghezza chiave non valida”, assicurarsi che le chiavi di crittografia nelle variabili di ambiente del server siano a 64 caratteri esadecimali."
         },
         "aiService": {
             "title": "Servizio di intelligenza artificiale",
             "description": "Gestisci le impostazioni delle funzioni basate sull'intelligenza artificiale",
-            "invalidKeyLengthWarning": "Se viene visualizzato l'errore “Lunghezza chiave non valida”, assicurarsi che le chiavi di crittografia e di autenticazione JWT nelle variabili di ambiente del server siano a 64 caratteri esadecimali.",
+            "invalidKeyLengthWarning": "Se viene visualizzato l'errore “Lunghezza chiave non valida”, assicurarsi che le chiavi di crittografia nelle variabili di ambiente del server siano a 64 caratteri esadecimali.",
             "globalSettings": {
                 "title": "Configurazioni Generali servizio AI",
                 "description": "Le configurazioni generali del servizio Ai sono condivise fra tutti gli utenti. Gli utenti possono sovrascriverle con le proprie configurazioni.",
@@ -515,7 +515,37 @@
                 "edit": "Modifica",
                 "delete": "Rimuovi",
                 "globalServices": "Servizi Globali",
-                "noServices": "Nessun servizio globale di AI configurato."
+                "noServices": "Nessun servizio globale di AI configurato.",
+                "allowUserConfigDescription": "Quanto abilitato, gli utenti possono aggiungere e gestire le configurazione del proprio servizio AI. Quando disabilitato, gli utenti possono solo utilizzare le configurazioni globali del servizio AI.",
+                "syncFromEnv": "Sincronizza dal Sistema",
+                "addNewService": "Aggiungi un nuovo servizio globale AI",
+                "noServicesDescription": "Aggiungo un nuovo servizio globale di AI per fornire le impostazioni di default per tutti gli utenti.",
+                "serviceName": "Nome Servizio",
+                "serviceNamePlaceholder": "Organizzazione Servizio OpenAI",
+                "serviceType": "Tipo Servizio",
+                "apiKey": "Chiave API",
+                "apiKeyOptional": "Chiave API (Opzionale)",
+                "apiKeyPlaceholder": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeyPlaceholderOllama": "Non necessario per Ollama",
+                "customUrl": "URL Personalizzato",
+                "customUrlPlaceholderOllama": "http://localhost:11434",
+                "customUrlPlaceholder": "https://api.example.com/v1",
+                "useCustomModel": "Utilizza Nome Personalizzato Modello",
+                "model": "Modello",
+                "selectModel": "Seleziona un modello",
+                "customModelName": "Nome Modello Personalizzato",
+                "customModelNamePlaceholder": "Inserisi il nome personalizzato del modello",
+                "systemPrompt": "Prompt di Sistema (Istruzioni Aggiuntive)",
+                "systemPromptPlaceholder": "Istruzioni Aggiuntive per l'assistente AI...",
+                "setAsActive": "Imposta come servizio attivo",
+                "activeService": "Servizio attivo",
+                "global": "Globale",
+                "error": "Errore",
+                "success": "Successo",
+                "errorLoading": "Impossibile caricare i servizi AI globali",
+                "errorAdding": "Impossibile aggiungere il servizio globale di AI",
+                "successAdding": "Servizio globale di AI aggiunto con successo",
+                "errorUpdating": "Impossibile aggiornare il servizio globale di AI"
             }
         },
         "apiKeyManagement": {
@@ -1925,6 +1955,7 @@
         "syncFailed_other": "Impossibile sincronizzare {{count}} servizi."
     },
     "calculationSettings": {
-        "showNetCarbs": "Mostra carboidrati netti (carboidrati meno fibre)"
+        "showNetCarbs": "Mostra carboidrati netti (carboidrati meno fibre)",
+        "showNetCarbsHint": "Quando abilitato, i riepiloghi dei carboidrati mostrano il totale dei carboidrati meno le fibre alimentari."
     }
 }
