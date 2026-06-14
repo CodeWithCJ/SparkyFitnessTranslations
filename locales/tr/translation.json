@@ -13,7 +13,8 @@
             "active": "Etkin"
         },
         "oidcSettings": {
-            "active": "Etkin"
+            "active": "Etkin",
+            "cancel": "İptal"
         }
     },
     "workoutPlansManager": {
@@ -25,7 +26,30 @@
             "userSettings": {
                 "active": "Etkin",
                 "global": "Küresel",
-                "yourSetting": "Senin ayarın"
+                "yourSetting": "Senin ayarın",
+                "saveChanges": "Değişiklikleri kaydet",
+                "apiKey": "API anahtarı",
+                "apiKeyOptional": "API anahtarı (İsteğe bağlı)",
+                "apiKeyPlaceholder": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                "customUrlPlaceholderOllama": "http://localhost:11434",
+                "error": "Hata",
+                "success": "Başarılı",
+                "cancel": "İptal",
+                "edit": "Düzenle",
+                "delete": "Sil"
+            },
+            "globalSettings": {
+                "saveChanges": "Değişiklikleri kaydet",
+                "apiKey": "API anahtarı",
+                "apiKeyOptional": "API anahtarı (İsteğe bağlı)",
+                "apiKeyPlaceholder": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                "customUrlPlaceholderOllama": "http://localhost:11434",
+                "global": "Küresel",
+                "error": "Hata",
+                "success": "Başarılı",
+                "cancel": "İptal",
+                "edit": "Düzenle",
+                "delete": "Sil"
             }
         },
         "profileInformation": {
@@ -34,55 +58,104 @@
             "male": "Erkek",
             "female": "Kadın",
             "other": "Diğer"
+        },
+        "preferences": {
+            "centimeters": "Santimetre (cm)",
+            "inches": "İnç (in)",
+            "distanceUnit": "Mesafe birimi",
+            "kilometers": "Kilometre (km)",
+            "miles": "Mil (mil)",
+            "language": "Dil",
+            "english": "İngilizce",
+            "error": "HATA"
         }
     },
     "goals": {
         "goalsSettings": {
             "active": "Etkin",
-            "pickADate": "Tarih seç"
+            "pickADate": "Tarih seç",
+            "error": "Hata",
+            "success": "Başarılı",
+            "edit": "Düzenle",
+            "delete": "Sil"
         }
     },
     "common": {
         "active": "Etkin",
-        "pickADate": "Tarih seç"
+        "pickADate": "Tarih seç",
+        "saveChanges": "Değişiklikleri kaydet",
+        "cancel": "İptal"
     },
     "foodDiary": {
-        "pickADate": "Tarih seç"
+        "pickADate": "Tarih seç",
+        "error": "Hata",
+        "success": "Başarılı"
     },
     "nutrition": {
         "vitaminA": "A vitamini",
         "vitaminC": "C vitamini",
         "calcium": "Kalsiyum",
-        "iron": "Demir"
+        "iron": "Demir",
+        "cholesterol": "Kolesterol",
+        "sodium": "Sodyum",
+        "potassium": "Potasyum",
+        "sugars": "Şekerler"
     },
     "nutritionCharts": {
         "calcium": "Kalsiyum",
-        "iron": "Demir"
+        "iron": "Demir",
+        "cholesterol": "Kolesterol",
+        "sodium": "Sodyum",
+        "potassium": "Potasyum",
+        "sugars": "Şekerler",
+        "vitamin_a": "A vitamini",
+        "vitamin_c": "C vitamini"
     },
     "diary": {
         "nutrientLabels": {
             "calcium": "kalsiyum",
-            "iron": "demir"
+            "iron": "demir",
+            "cholesterol": "kolesterol",
+            "sodium": "sodyum",
+            "potassium": "potasyum"
         }
     },
     "aboutDialog": {
         "applicationVersion": "Uygulama sürümü: ",
-        "discordLink": "discord.gg/vcnMT5cPEA"
+        "discordLink": "discord.gg/vcnMT5cPEA",
+        "githubRepo": "GitHub deposu"
     },
     "exerciseCard": {
         "name": "Adı",
         "categoryGeneral": "Genel",
-        "categoryYoga": "Yoga"
+        "categoryYoga": "Yoga",
+        "categoryStrength": "Kuvvet",
+        "caloriesPerHour": "Kalori/Saat",
+        "levelLabel": "Seviye",
+        "level": "Seviye",
+        "selectLevel": "Seviye seçin",
+        "description": "Tanım",
+        "images": "Görseller",
+        "saveChanges": "Değişiklikleri kaydet",
+        "equipmentLabel": "Ekipman",
+        "wgerSource": "Wger"
     },
     "workoutPresetForm": {
-        "nameLabel": "Adı"
+        "nameLabel": "Adı",
+        "descriptionLabel": "Tanım"
     },
     "exercise": {
         "addExerciseDialog": {
             "nameLabel": "Adı",
             "categoryGeneral": "Genel",
             "categoryYoga": "Yoga",
-            "sourceLabel": "Kaynak"
+            "sourceLabel": "Kaynak",
+            "categoryStrength": "Kuvvet",
+            "caloriesPerHourLabel": "Kalori/Saat",
+            "levelLabel": "Seviye",
+            "selectLevelPlaceholder": "Seviye seçin",
+            "descriptionLabel": "Tanım",
+            "imagesLabel": "Görseller"
         }
     },
     "sleepTimelineEditor": {
@@ -93,5 +166,68 @@
     },
     "sleepReport": {
         "csvHeadersSource": "Kaynak"
+    },
+    "workoutReport": {
+        "description": "Tanım"
+    },
+    "mealPlanTemplateForm": {
+        "descriptionLabel": "Tanım"
+    },
+    "addWorkoutPlanDialog": {
+        "descriptionLabel": "Tanım",
+        "errorToastTitle": "Hata",
+        "cancelButton": "İptal"
+    },
+    "customNutritionForm": {
+        "saveChangesButton": "Değişiklikleri kaydet",
+        "cancelButton": "İptal"
+    },
+    "reports": {
+        "exerciseEntriesExportHeaders": {
+            "equipment": "Ekipman"
+        },
+        "foodDiaryExportHeaders": {
+            "meal": "Öğün"
+        },
+        "errorToastTitle": "Hata"
+    },
+    "exerciseSearch": {
+        "wgerSource": "Wger"
+    },
+    "enhancedFoodSearch": {
+        "mealie": "Mealie",
+        "meal": "Öğün"
+    },
+    "reportsTables": {
+        "meal": "Öğün"
+    },
+    "logExerciseEntryDialog": {
+        "errorTitle": "Hata",
+        "successTitle": "Başarılı",
+        "cancel": "İptal"
+    },
+    "mealBuilder": {
+        "errorTitle": "Hata",
+        "successTitle": "Başarılı"
+    },
+    "sleepEntrySection": {
+        "error": "Hata",
+        "cancel": "İptal",
+        "edit": "Düzenle",
+        "delete": "Sil"
+    },
+    "foodDatabaseManager": {
+        "cancel": "İptal",
+        "delete": "Sil"
+    },
+    "customFoodForm": {
+        "cancelButton": "İptal"
+    },
+    "customCategoryManager": {
+        "editCategoryButton": "Düzenle",
+        "deleteCategoryButton": "Sil"
+    },
+    "mealManagement": {
+        "delete": "Sil"
     }
 }
