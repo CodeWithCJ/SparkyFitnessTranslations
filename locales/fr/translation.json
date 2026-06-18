@@ -775,7 +775,7 @@
             "leaveUnchanged": "Laisser inchangé si *****",
             "scope": "Portée",
             "redirectUri": "URI de redirection",
-            "redirectUriPlaceholder": "par ex., {{origin}}/oidc-callback",
+            "redirectUriPlaceholder": "par ex., {{uri}}",
             "tokenEndpointAuthMethod": "Méthode d'authentification du point de terminaison de jeton",
             "idTokenSignedAlg": "Algorithme de signature du jeton ID",
             "userinfoSignedAlg": "Algorithme de signature Userinfo",
@@ -787,7 +787,12 @@
             "proxyConfigCopied": "Configuration du proxy copiée dans le presse-papiers.",
             "cancel": "Annuler",
             "save": "Sauvegarder",
-            "uploadFailed": "Impossible de télécharger le logo."
+            "uploadFailed": "Impossible de télécharger le logo.",
+            "providerId": "Identifiant du fournisseur (Slug)",
+            "providerIdInfo": "Cela fera partie de votre URI de redirection : /api/auth/sso/callback/VOTRE_ID",
+            "domain": "Domaine de l'organisation",
+            "domainInfo": "Requis par Better Auth pour identifier ce fournisseur.",
+            "callbackUrlCopied": "URL de rappel copiée dans le presse-papiers"
         },
         "userManagement": {
             "title": "Gestion des utilisateurs",
@@ -825,7 +830,7 @@
             "title": "Paramètres des objectifs",
             "cascadingGoals": "Objectifs en cascade",
             "dailyNutritionGoals": "Objectifs nutritionnels quotidiens",
-            "changesCascadeInfo": "(Les modifications s'appliquent en cascade pendant 6 mois à partir d'aujourd'hui ou jusqu'à votre prochain objectif futur)",
+            "changesCascadeInfo": "(Mettre à jour vos objectifs pour les 6 mois prochains mois ou jusqu'à votre prochain changement d'objectif)",
             "calories": "Calories",
             "protein": "Protéines (g)",
             "carbohydrates": "Glucides (g)",
@@ -1017,8 +1022,16 @@
             "title": "Consommation d'eau",
             "updated": "Consommation d'eau mise à jour",
             "updateError": "Échec de la sauvegarde de la consommation d'eau",
-            "perDrink": "{{volume}} {{unit}} par boisson",
-            "defaultPerDrink": "{{volume}} {{unit}} par boisson (par défaut)"
+            "perDrink": "{{volume}} {{unit}}",
+            "defaultPerDrink": "{{volume}} {{unit}} (par défaut)",
+            "defaultContainer": "Récipient",
+            "logTitle": "Boissons du jour",
+            "logEmpty": "Aucune boisson enregistrée pour le moment",
+            "deleteEntry": "Supprimez cette boisson",
+            "deleteConfirm": "Supprimer cette entrée {{volume}} {{unit}} ?",
+            "deletedSuccess": "Boisson retirée",
+            "deletedError": "Impossible de supprimer la boisson",
+            "editTime": "Cliquez pour modifier l'heure"
         },
         "copyFoodEntryDialog": {
             "title": "Copier les entrées alimentaires",
@@ -1027,7 +1040,8 @@
             "mealType": "Type de repas",
             "selectMealTypePlaceholder": "Sélectionner le type de repas",
             "copyButton": "Copier"
-        }
+        },
+        "selectMealType": "Sélectionnez le type de repas"
     },
     "mealCard": {
         "addFoodToMeal": "Ajouter un aliment à {{mealName}}",
@@ -1265,7 +1279,21 @@
         "addFoodButton": "Ajouter un aliment",
         "addFoodToMealDialogTitle": "Ajouter un aliment au repas",
         "addFoodToMealDialogDescription": "Rechercher un aliment à ajouter à ce repas.",
-        "saveMealButton": "Sauvegarder le repas"
+        "saveMealButton": "Sauvegarder le repas",
+        "totalNutritionLabel": "Nutrition totale :",
+        "fullRecipeNutritionLabel": "Informations nutritionnelles complètes de la recette :",
+        "loggedNutritionLabel": "Données nutritionnelles enregistrées :",
+        "totalServings": "Nombre total de portions",
+        "totalAmount": "Montant total",
+        "servingSize": "Portion",
+        "defaultServingSize": "Portion par défaut",
+        "consumedQuantity": "Quantité consommée",
+        "servingUnit": "Unité",
+        "invalidTotalServings": "Le nombre total de portions doit être supérieur à zéro.",
+        "invalidTotalAmount": "Le montant total doit être supérieur à zéro.",
+        "invalidDefaultServingSize": "La portion par défaut doit être supérieure à zéro.",
+        "perServingTab": "Par portion",
+        "totalTab": "Total"
     },
     "mealPlanCalendar": {
         "title": "Menus",
@@ -1418,7 +1446,8 @@
             "vitaminA": "Vitamine A (µg)",
             "vitaminC": "Vitamine C (mg)",
             "calcium": "Calcium (mg)",
-            "iron": "Fer (mg)"
+            "iron": "Fer (mg)",
+            "netCarbs": "Glucides nets (g)"
         },
         "exerciseEntriesExportHeaders": {
             "date": "Date",
@@ -1529,7 +1558,8 @@
             "lapTableMaxHRBpmHeader": "FC max (bpm)",
             "lapTableCaloriesHeader": "Calories",
             "heartRateTimeInZonesTitle": "Temps dans les zones de FC",
-            "timeInZoneSLabel": "Temps dans la zone (s)"
+            "timeInZoneSLabel": "Temps dans la zone (s)",
+            "cadence": "Cadence"
         },
         "bodyBattery": "Batterie corporelle",
         "charged": "Chargée",
@@ -1823,7 +1853,9 @@
         "needsImprovement": "À améliorer",
         "sleepStagesSummary": "Résumé des phases de sommeil :",
         "sleepStageTimeline": "Chronologie des phases de sommeil :",
-        "noSleepDataAvailable": "Aucune donnée de sommeil disponible."
+        "noSleepDataAvailable": "Aucune donnée de sommeil disponible.",
+        "impact": "Impact",
+        "highDebt": "Dette élevée"
     },
     "sleepReport": {
         "loadingSleepData": "Chargement des données de sommeil...",
@@ -1846,7 +1878,10 @@
         "sleepDataExportedSuccessfully": "Données de sommeil exportées avec succès.",
         "failedToLoadSleepEntries": "Échec du chargement des entrées de sommeil",
         "sleepHypnogram": "Hypnogramme de sommeil",
-        "noSleepStageDataAvailable": "Aucune donnée de phase de sommeil disponible pour cette entrée."
+        "noSleepStageDataAvailable": "Aucune donnée de phase de sommeil disponible pour cette entrée.",
+        "csvHeadersDebt": "Dette",
+        "csvHeadersWeight": "Poids (%)",
+        "highDebt": "Dette élevée"
     },
     "workoutReport": {
         "workoutStats": "Statistiques de la séance",
@@ -2162,5 +2197,62 @@
     "calculationSettings": {
         "showNetCarbs": "Afficher les glucides nets (sans les fibres)",
         "showNetCarbsHint": "Lorsqu'elle est activée, l'option permet de grouper les glucides (affiche le total des glucides sans les fibres alimentaires)."
+    },
+    "sleepScience": {
+        "chronotypeEarlyDesc": "Vous vous réveillez naturellement tôt et êtes plus performant le matin.",
+        "chronotypeIntermediate": "Intermédiaire",
+        "chronotypeIntermediateDesc": "Votre rythme est équilibré entre le matin et le soir.",
+        "chronotypeLate": "Noctambule",
+        "chronotypeLateDesc": "Vous avez naturellement tendance à veiller tard et à atteindre votre pic de forme en soirée.",
+        "avgWake": "Réveil moyen",
+        "avgSleep": "Sommeil moyen",
+        "nadir": "Nadir",
+        "acrophase": "Acrophase",
+        "melatoninWindow": "Fenêtre de mélatonine",
+        "basedOn": "Basé sur {{days}} jours",
+        "sleepNeedTonight": "Besoin de sommeil",
+        "baseline": "Ligne de base",
+        "strain": "Souche",
+        "debtLow": "Faible",
+        "debtLowDesc": "Votre dette de sommeil est minime. Bravo pour votre rétablissement !",
+        "debtModerate": "Modéré",
+        "debtModerateDesc": "J'ai des dettes accumulées. J'essaie de rattraper mon sommeil.",
+        "debtHigh": "Haut",
+        "debtHighDesc": "Important déficit de sommeil. Priorisez le repos.",
+        "debtCritical": "Critique",
+        "debtCriticalDesc": "Déficit de sommeil critique. Besoin immédiat de repos.",
+        "paybackTime": "~{{nights}} nuits pour récupérer",
+        "debtHistory": "14j de dette de sommeil",
+        "debt": "Dette",
+        "surplus": "Surplus",
+        "dailyBreakdown": "Analyse quotidienne",
+        "date": "Date",
+        "slept": "Sommeil",
+        "deviation": "Déviation",
+        "weight": "Poids",
+        "weightExplanation": "Indication de poids récente : les jours les plus récents ont un impact plus important.",
+        "energyCurve": "Courbe d'énergie",
+        "currentEnergy": "Maintenant : {{energy}}%",
+        "energy": "Énergie",
+        "zone_peak": "Pic",
+        "zone_rising": "Hausse",
+        "zone_dip": "Baisse",
+        "zone_wind-down": "Détendez-vous",
+        "zone_sleep": "Sommeil",
+        "chronotype": "Chronotype",
+        "chronotypeEarly": "Lève-tôt",
+        "title": "Sciences du sommeil",
+        "sleepDebt": "Dette de sommeil",
+        "debtRecovery": "Récupération de la dette",
+        "naps": "Siestes",
+        "method": "Méthode",
+        "recalculate": "Recalculer",
+        "insufficientData": "Des données supplémentaires sont nécessaires pour une analyse complète",
+        "workdays": "Jours ouvrables",
+        "freedays": "Jours libres",
+        "noData": "Aucune donnée sur le sommeil disponible",
+        "noDataDesc": "Commencez à suivre votre sommeil pour accéder à des informations plus approfondies.",
+        "baselineCalculated": "Le besoin de sommeil de base a été calculé avec succès",
+        "baselineError": "Échec du calcul des besoins de sommeil de base"
     }
 }
