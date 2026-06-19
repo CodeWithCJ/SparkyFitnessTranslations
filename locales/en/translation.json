@@ -130,6 +130,7 @@
       "activeCalories": "Active Calories: {{activeCaloriesFromExercise}} cal",
       "stepsCalories": "Steps: {{dailySteps}} = {{stepsCalories}} cal",
       "bmrCalories": "BMR: {{bmr}} cal",
+      "bmrSourceExternal": "Health App",
       "totalCaloriesBurned": "Total: {{totalCaloriesBurned}} cal",
       "goal": "goal",
       "caloriesBurnedBreakdownTitle": "Calories Burned Breakdown",
@@ -499,7 +500,7 @@
     },
     "calculationSettings": {
       "title": "Calculation Settings",
-      "description": "Manage BMR and Body Fat calculation preferences"
+      "description": "Manage BMR formulas, body fat algorithms, daily energy adjustments, goal deficit modes, and safety floors."
     },
     "familyAccess": {
       "title": "Family Access",
@@ -572,6 +573,7 @@
         "selectModel": "Select a model",
         "customModelName": "Custom Model Name",
         "customModelNamePlaceholder": "Enter custom model name",
+        "recommendedModel": "Recommended: {{- model}} — a good balance of cost and capability.",
         "systemPrompt": "System Prompt (Additional Instructions)",
         "systemPromptPlaceholder": "Additional instructions for the AI assistant...",
         "setAsActive": "Set as active service",
@@ -643,6 +645,7 @@
         "customModelName": "Custom Model Name",
         "customModelNamePlaceholder": "Enter custom model name",
         "customModelNameDescription": "Enter the exact name of your custom model.",
+        "recommendedModel": "Recommended: {{- model}} — a good balance of cost and capability.",
         "systemPrompt": "System Prompt (Additional Instructions)",
         "systemPromptPlaceholder": "Additional instructions for the AI assistant...",
         "systemPromptDescription": "These instructions will be added to the AI context in addition to project documentation",
@@ -1040,6 +1043,8 @@
     "success": "Success",
     "error": "Error",
     "genericError": "An unexpected error occurred.",
+    "pastDateWarning": "Warning: You are adding food entries for a past date.",
+    "futureDateWarning": "Warning: You are adding food entries for a future date.",
     "entryCopied": "Food entries copied successfully",
     "entryCopyError": "Failed to copy food entries.",
     "copiedFromYesterday": "Food entries copied from yesterday successfully",
@@ -1131,7 +1136,23 @@
     "measurementDeletedSuccessfully": "Measurement deleted successfully",
     "failedToDeleteMeasurement": "Failed to delete measurement",
     "failedToLoadRecentMeasurements": "Failed to load recent measurements",
-    "enterCustomCategory": "Enter {{categoryName}}"
+    "enterCustomCategory": "Enter {{categoryName}}",
+    "photos": {
+      "title": "Progress Photos",
+      "subtitle": "Upload front, back, and side photos to track your physique over time.",
+      "addPhotos": "Add progress photos",
+      "front": "Front",
+      "back": "Back",
+      "side": "Side",
+      "tapToUpload": "Tap to upload",
+      "upload": "Upload",
+      "replace": "Replace",
+      "uploadSuccess": "Photo saved",
+      "uploadError": "Upload failed",
+      "tooLarge": "Image is too large (max 10 MB).",
+      "deleteSuccess": "Photo removed",
+      "deleteError": "Failed to remove photo"
+    }
   },
   "sleepTimelineEditor": {
     "sleepTimeline": "Sleep Timeline",
@@ -1227,11 +1248,16 @@
     "shareWithPublic": "Share with public",
     "notEditable": "Not editable",
     "editFood": "Edit food",
+    "duplicateFood": "Duplicate food",
     "deleteFood": "Delete food",
     "mealManagement": "Meal Management",
     "mealPlanCalendar": "Meal Plan",
     "editFoodDialogTitle": "Edit Food",
     "editFoodDialogDescription": "Edit the details of the selected food item.",
+    "duplicateFoodDialogTitle": "Duplicate Food",
+    "duplicateFoodDialogDescription": "Adjust the details and save this as a new food. The original is not changed.",
+    "copySuffix": "(copy)",
+    "duplicateFailed": "Failed to duplicate food.",
     "deleteFoodConfirmTitle": "Delete {{foodName}}?",
     "foodUsedIn": "This food is used in:",
     "diaryEntries": "{{count}} diary entries",
