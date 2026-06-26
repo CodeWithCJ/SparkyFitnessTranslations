@@ -884,7 +884,15 @@
         "aiService": {
             "title": "Usługa AI",
             "description": "Zarządzaj ustawieniami funkcji wspieranych przez AI",
-            "invalidKeyLengthWarning": "Upewnij się, że klucze w zmiennych środowiskowych serwera mają 64 znaki hex."
+            "invalidKeyLengthWarning": "Upewnij się, że klucze w zmiennych środowiskowych serwera mają 64 znaki hex.",
+            "globalSettings": {
+                "errorLoading": "Nie udało się wczytać globalnych usług AI",
+                "errorAdding": "Nie udało się dodać globalnych usług AI",
+                "successAdding": "Globalne usługi AI zostały dodane pomyślnie",
+                "errorUpdating": "Nie udało się zaktualizować globalnych usług AI",
+                "successUpdating": "Aktualizacja globalnych usług AI zakończyła się sukcesem",
+                "errorDeleting": "Nie udało się usunąć globalnych usług AI"
+            }
         },
         "apiKeyManagement": {
             "title": "Zarządzanie kluczami API",
@@ -918,6 +926,29 @@
             "newPasswordsDoNotMatch": "Nowe hasła nie są identyczne",
             "passwordLengthError": "Hasło musi mieć co najmniej 6 znaków",
             "enterNewEmailAddress": "Wprowadź nowy adres e-mail"
+        },
+        "customNutrients": {
+            "title": "Własne składniki odżywcze",
+            "subtitle": "Zarządzaj własnymi składnikami odżywczymi"
+        },
+        "customMeals": {
+            "title": "Własne posiłki",
+            "subtitle": "Twórz i zarządzaj własnymi typami posiłków"
+        },
+        "dataManagement": {
+            "sectionTitle": "Zarządzanie danymi",
+            "subtitle": "Eksportuj lub zarządzaj swoimi danymi",
+            "title": "Eksport danych",
+            "description": "Pobierz całe zestawienie posiłków w formacie CSV. Plik będzie zawierał wszystkie twoje posiłki wraz ze szczegółami dotyczącymi żywności, wielkością porcji i makroskładnikami (kalorie, białko, węglowodany, tłuszcz...).",
+            "delimiterLabel": "Format separatora CSV",
+            "delimiterPlaceholder": "Separator",
+            "semicolon": "Średnik (;)",
+            "comma": "Przecinek (,)",
+            "exportButton": "Eksportuj zestawienie (CSV)",
+            "exporting": "Przygotowywanie...",
+            "exportSuccess": "Eksport zakończył się sukcesem",
+            "exportSuccessDescription": "Twoje zestawienie zostało wyeksportowane poprawnie.",
+            "exportError": "Błąd eksportu"
         }
     },
     "admin": {
@@ -1854,5 +1885,38 @@
         "loadCategoriesErrorToast": "Błąd ładowania kategorii",
         "loadMeasurementsErrorToast": "Błąd ładowania pomiarów",
         "loadTodayMeasurementsErrorToast": "Błąd ładowania dzisiejszych pomiarów"
+    },
+    "nutrition": {
+        "calories": "Kalorie",
+        "protein": "Białko",
+        "carbohydrates": "Węglowodany",
+        "polyunsaturatedFat": "Tłuszcze wielonasycone",
+        "monounsaturatedFat": "Tłuszcze mononasycone",
+        "transFat": "Tłuszcze trans",
+        "cholesterol": "Cholesterol",
+        "sodium": "Sód",
+        "potassium": "Potas",
+        "dietaryFiber": "Błonnik pokarmowy",
+        "fiber": "Błonnik",
+        "sugars": "Cukry",
+        "vitaminA": "Witamina A",
+        "vitaminC": "Witamina C",
+        "calcium": "Wapno",
+        "iron": "Żelazo"
+    },
+    "calculationSettings": {
+        "showNetCarbs": "Pokaż wartość netto węglowodanów (węglowodany minus błonnik)",
+        "showNetCarbsHint": "Jeśli opcja jest włączona, podsumowanie węglowodanów wyświetla sumę węglowodanów minus błonnik pokarmowy."
+    },
+    "sync": {
+        "syncAll": "Synchronizuj dane wszystkich aktywnych dostawców",
+        "syncingAll": "Synchronizacja ze wszystkimi dostawcami...",
+        "noActiveProviders": "Nie odnaleziono żadnych aktywnych dostawców do synchronizacji.",
+        "syncCompleted_one": "Pomyślnie zsynchronizowano dane dostawcy.",
+        "syncCompleted_few": "Pomyślnie zsynchronizowano dane {{count}} dostawców.",
+        "syncCompleted_many": "Pomyślnie zsynchronizowano dane {{count}} dostawców.",
+        "syncFailed_one": "Błąd synchronizacji danych dostawcy.",
+        "syncFailed_few": "Błąd synchronizacji danych {{count}} dostawców.",
+        "syncFailed_many": "Błąd synchronizacji danych {{count}} dostawców."
     }
 }
