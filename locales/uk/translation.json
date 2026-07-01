@@ -577,7 +577,7 @@
             "exporting": "Підготовка...",
             "exportSuccessDescription": "Ваш щоденник успішно експортовано.",
             "exportError": "Помилка експорту",
-            "exportErrorDescription": "Неможливо завантажити ваш щоденник. Будь ласка, спробуйте ще раз.",
+            "exportErrorDescription": "Неможливо завантажити ваш щоденник. Будь ласка, спробуйте знову пізніше.",
             "delimiterLabel": "Роздільник даних в CSV",
             "delimiterPlaceholder": "Роздільник",
             "semicolon": "Крапка з комою (;)",
