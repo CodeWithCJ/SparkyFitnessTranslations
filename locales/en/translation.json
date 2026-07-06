@@ -1,4 +1,247 @@
 {
+  "medications": {
+    "tabs": {
+      "log": "Log",
+      "cabinet": "Cabinet",
+      "symptoms": "Symptoms"
+    },
+    "common": {
+      "logging": "Logging…",
+      "saving": "Saving…",
+      "save": "Save",
+      "reset": "Reset",
+      "custom": "Custom"
+    },
+    "today": {
+      "noIntake": "No entries logged yet today.",
+      "doses": "Doses",
+      "dosesToday": "Doses today",
+      "adherence14": "14-day adherence",
+      "perfectDays": "Perfect days (14d)",
+      "last14": "Last 14 days",
+      "streak": "{{count}}-day streak",
+      "checklistToday": "Today's Checklist",
+      "checklistMed": "Medication Checklist",
+      "scheduled": "Scheduled",
+      "undo": "Undo",
+      "snooze": "Snooze",
+      "snoozed": "Snoozed",
+      "skip": "Skip",
+      "take": "Take"
+    },
+    "insights": {
+      "title": "Side-Effect Insights & Hints",
+      "subtitle": "Pharmacokinetic correlations overlaying recent dose timings",
+      "disclaimer": "Insights are calculated over a rolling 30-day window. These are educational estimations, not clinical advice."
+    },
+    "locations": {
+      "general": "General",
+      "head": "Head",
+      "abdomen": "Abdomen",
+      "chest": "Chest",
+      "back": "Back",
+      "muscles": "Muscles",
+      "joints": "Joints"
+    },
+    "symptomNames": {
+      "nausea": "Nausea",
+      "fatigue": "Fatigue",
+      "headache": "Headache",
+      "constipation": "Constipation",
+      "diarrhea": "Diarrhea",
+      "vomiting": "Vomiting",
+      "acid_reflux": "Acid Reflux / GERD",
+      "stomach_pain": "Stomach Pain / Cramping",
+      "dizziness": "Dizziness"
+    },
+    "scheduleDesc": {
+      "atTime": " at {{time}}",
+      "mealSuffix": " ({{meal}} meal)",
+      "daily": "Daily",
+      "weeklyOn": "Weekly on {{days}}",
+      "everyNDays": "Every {{n}} days",
+      "cyclic": "Cycle: {{on}} days on, {{off}} days off",
+      "monthly": "Monthly on day {{day}}",
+      "prn": "As needed (PRN)",
+      "taper": "Taper / titration"
+    },
+    "bodymap": {
+      "label": "Injection site body map"
+    },
+    "calendar": {
+      "loggedCount_one": "{{count}} logged symptom",
+      "loggedCount_other": "{{count}} logged symptoms",
+      "maxSeverity": "Max severity: {{n}}"
+    },
+    "gi": {
+      "title": "GI sub-tracker",
+      "subtitle": "Per-week rates over the last 30 days",
+      "nausea": "Nausea / wk",
+      "vomiting": "Vomiting / wk",
+      "reflux": "Reflux / wk",
+      "avgBristol": "Avg Bristol"
+    },
+    "symptoms": {
+      "logTitle": "Log Symptom",
+      "calendarTitle": "Symptom Activity Calendar",
+      "logsTitle": "Logged Symptom Logs",
+      "subtitle": "Log severity and physical context of your side effects",
+      "symptom": "Symptom",
+      "addCustom": "Add Custom Symptom",
+      "customName": "Symptom Name (internal)",
+      "customNamePlaceholder": "e.g. skin_rash",
+      "displayLabel": "Display Label",
+      "displayLabelPlaceholder": "e.g. Skin Rash",
+      "saveCustom": "Save Custom Symptom",
+      "severity": "Severity",
+      "mild": "Mild (1-3)",
+      "moderate": "Moderate (4-6)",
+      "severe": "Severe (7-10)",
+      "primaryLocation": "Primary Location",
+      "customLocationPlaceholder": "e.g. Left shoulder, Jaw…",
+      "linkMed": "Link to Medication (Optional)",
+      "noMedLinked": "No medication linked",
+      "context": "Context / Notes",
+      "contextPlaceholder": "e.g. Occurred 4 hours after taking my dinner dose.",
+      "bristol": "Bowel Log (Bristol Stool Scale)",
+      "bristolType": "Bristol Type {{n}}"
+    },
+    "fasting": {
+      "title": "Oral GLP-1 fasting timer",
+      "instructions": "Take with 4–6 oz of water, then wait {{min}} min before food, coffee, or other medications.",
+      "start": "Tablet taken — start timer",
+      "complete": "Fast complete — you can eat now.",
+      "waterOnly": "Water only"
+    },
+    "checkin": {
+      "title": "GLP-1 daily check-in",
+      "subtitle": "Track how the medication is affecting you — saved to your daily measurements, so it also shows in Check-in & Reports.",
+      "save": "Save check-in",
+      "saveToday": "Save today's check-in",
+      "metric": {
+        "hunger": "Hunger",
+        "food_noise": "Food noise",
+        "fullness": "Fullness",
+        "energy": "Energy"
+      }
+    },
+    "sites": {
+      "customize": "Customize sites",
+      "dialogTitle": "Injection sites",
+      "subtitle": "Toggle the sites you use and order them — rotation suggestions follow this order.",
+      "label": {
+        "upper_arm_left": "Left Upper Arm",
+        "upper_arm_right": "Right Upper Arm",
+        "forearm_left": "Left Forearm",
+        "forearm_right": "Right Forearm",
+        "abdomen_left": "Left Abdomen",
+        "abdomen_right": "Right Abdomen",
+        "thigh_front_left": "Left Thigh (Front)",
+        "thigh_front_right": "Right Thigh (Front)",
+        "upper_back_left": "Left Upper Back",
+        "upper_back_right": "Right Upper Back",
+        "lower_back_left": "Left Lower Back",
+        "lower_back_right": "Right Lower Back",
+        "buttock_left": "Left Buttock",
+        "buttock_right": "Right Buttock",
+        "thigh_back_left": "Left Thigh (Back)",
+        "thigh_back_right": "Right Thigh (Back)"
+      }
+    },
+    "glp1": {
+      "logInjection": "Log injection",
+      "logInjectionAt": "Log injection — {{site}}",
+      "injectionSite": "Injection site",
+      "legendSuggested": "green = suggested",
+      "legendResting": "amber = resting <{{days}}d",
+      "selected": "Selected:",
+      "tapZone": "Tap a zone",
+      "lipoWarning": "This site was used recently — rotate to avoid lipohypertrophy.",
+      "doseMg": "Dose (mg)",
+      "dateTime": "Date & time",
+      "deduct": "Deduct from pen/vial",
+      "dontDeduct": "Don't deduct",
+      "pkTitle": "PK serum level",
+      "pkEmpty": "Log injections to model your serum level. (Needs a recognized GLP-1 drug — set it on the medication.)",
+      "penInventory": "Pen / vial inventory",
+      "addPen": "Add pen",
+      "noPens": "No pens/vials tracked.",
+      "titrationTitle": "Dose titration plan",
+      "addStep": "Add step",
+      "statusPlanned": "Planned",
+      "statusActive": "Active (current)",
+      "statusDone": "Done",
+      "noTitration": "No titration steps yet — tap “Add step” to plan your dose escalation.",
+      "recentInjections": "Recent injections",
+      "noInjections": "No injections logged yet."
+    },
+    "types": {
+      "pill": "pill",
+      "tablet": "tablet",
+      "capsule": "capsule",
+      "liquid": "liquid",
+      "injection": "injection",
+      "patch": "patch",
+      "inhaler": "inhaler",
+      "drops": "drops",
+      "cream": "cream",
+      "suppository": "suppository",
+      "other": "other"
+    },
+    "cabinet": {
+      "addMed": "Add medication",
+      "editMed": "Edit medication",
+      "name": "Name",
+      "namePlaceholder": "e.g. Wegovy",
+      "type": "Type",
+      "strength": "Strength",
+      "glp1Med": "GLP-1 medication",
+      "glp1Hint": "Unlocks the injection coach, PK curve & site rotation.",
+      "glp1Drug": "GLP-1 drug (for the PK model)",
+      "reason": "Reason / condition (optional)",
+      "reasonPlaceholder": "e.g. Weight management, Type 2 diabetes",
+      "prescriber": "Prescriber (optional)",
+      "prescriberPlaceholder": "Dr. Chen",
+      "pharmacy": "Pharmacy (optional)",
+      "pharmacyPlaceholder": "CVS #4421",
+      "rxNumber": "Rx number (optional)",
+      "rxPlaceholder": "Rx-482-93221",
+      "activeScripts": "Active scripts",
+      "glp1Meds": "GLP-1 meds",
+      "scheduledToday": "Scheduled today",
+      "totalMeds": "Total meds"
+    },
+    "schedule": {
+      "heading": "Schedules & Reminders",
+      "subheading": "Configure reminders and intake rules",
+      "addRule": "Add Rule",
+      "title": "Add Schedule Rule",
+      "type": "Schedule Type",
+      "daily": "Every day",
+      "weekly": "Specific days of week",
+      "everyNDays": "Every N days",
+      "cyclic": "Cyclic (on/off)",
+      "monthly": "Monthly",
+      "prn": "As needed (PRN)",
+      "timeOfDay": "Time of Day",
+      "daysOfWeek": "Days of Week",
+      "interval": "Interval (Days)",
+      "dayOfMonth": "Day of Month (1-31)",
+      "daysOn": "Days On",
+      "daysOff": "Days Off",
+      "prnReason": "Reason (Optional)",
+      "prnReasonPlaceholder": "e.g. Pain",
+      "prnMax": "Max Doses / Day",
+      "doseOverride": "Dose Amount (Optional)",
+      "withMeal": "With Meal",
+      "anyTime": "Any time",
+      "beforeMeal": "Before meal",
+      "withMealOpt": "With meal",
+      "afterMeal": "After meal",
+      "startDate": "Start Date (Optional)",
+      "endDate": "End Date (Optional)"
+    }
+  },
   "nav": {
     "diary": "Diary",
     "checkin": "Check-In",
@@ -6,7 +249,9 @@
     "foods": "Foods",
     "goals": "Goals",
     "settings": "Settings",
-    "admin": "Admin"
+    "admin": "Admin",
+    "cycle": "Cycle",
+    "pregnancy": "Pregnancy"
   },
   "nutrition": {
     "calories": "Calories",
@@ -130,6 +375,7 @@
       "activeCalories": "Active Calories: {{activeCaloriesFromExercise}} cal",
       "stepsCalories": "Steps: {{dailySteps}} = {{stepsCalories}} cal",
       "bmrCalories": "BMR: {{bmr}} cal",
+      "bmrSourceExternal": "Health App",
       "totalCaloriesBurned": "Total: {{totalCaloriesBurned}} cal",
       "goal": "goal",
       "caloriesBurnedBreakdownTitle": "Calories Burned Breakdown",
@@ -405,6 +651,15 @@
     "searchFoodsPlaceholder": "Search for foods...",
     "selectProvider": "Select Provider",
     "searchingFoods": "Searching foods...",
+    "yourFoods": "Your Foods",
+    "yourMeals": "Your Meals",
+    "noSavedFoods": "No saved foods found.",
+    "noSavedFoodsOrMeals": "No saved foods or meals found.",
+    "searchOnlineToImport": "Search to find foods from your online provider.",
+    "onlineSearchFailed": "Failed to search the online provider.",
+    "loadMore": "Load more",
+    "loadMoreFailed": "Failed to load more results.",
+    "scannedProduct": "Scanned product",
     "recentFoods": "Recent Foods",
     "private": "Private",
     "public": "Public",
@@ -425,7 +680,13 @@
     "addNewFood": "Add New Food",
     "addNewFoodDescription": "Enter the details for a new food item to add to your database.",
     "scanBarcodeDescription": "Position the product barcode in front of your camera.",
-    "importFromCSVDescription": "Import a CSV file to add multiple foods at once."
+    "importFromCSVDescription": "Import a CSV file to add multiple foods at once.",
+    "allProviders": "All Providers",
+    "topMatches": "Top Matches",
+    "bySource": "By Source",
+    "noResults": "No results",
+    "couldntLoad": "Couldn't load",
+    "showAllResults": "Show all {{count}} {{provider}} results"
   },
   "sync": {
     "syncAll": "Sync all active providers",
@@ -458,6 +719,28 @@
       "saveProfile": "Save Profile",
       "saving": "Saving..."
     },
+    "cycle": {
+      "title": "Cycle & Pregnancy",
+      "description": "Manage reproductive health, menstruation cycles, and pregnancy tracking",
+      "enableLabel": "Enable Cycle & Pregnancy Tracking",
+      "enableHint": "Toggle the reproductive health hub. Enabling reveals the sidebar navigation tab.",
+      "mode": "Tracker Mode",
+      "bcMethod": "Birth Control",
+      "terminology": "Terminology",
+      "terminologyDefault": "Default (Gendered)",
+      "terminologyNeutral": "Gender Neutral",
+      "avgCycleOverride": "Average Cycle Length (days)",
+      "avgPeriodOverride": "Average Period Length (days)",
+      "lutealLength": "Luteal Phase Length (days)",
+      "showFertileWindow": "Show Fertile Window Predictions",
+      "showFertileWindowHint": "Show or hide fertile days and ovulation predictions on dashboards/calendars.",
+      "conditions": "Health Conditions",
+      "learned": "Calculated from logs",
+      "successTitle": "Success",
+      "successDesc": "Cycle settings updated.",
+      "errorTitle": "Error",
+      "errorDesc": "Could not save cycle settings. Please try again."
+    },
     "preferences": {
       "title": "Preferences",
       "description": "Customize your app settings and display preferences",
@@ -466,6 +749,7 @@
       "kilograms": "Kilograms (kg)",
       "pounds": "Pounds (lbs)",
       "measurementUnit": "Measurement Unit",
+      "measurementDecimalPlaces": "Measurement Decimal Places",
       "centimeters": "Centimeters (cm)",
       "inches": "Inches (in)",
       "distanceUnit": "Distance Unit",
@@ -491,7 +775,9 @@
       "milliliters": "Milliliters (ml)",
       "fluidOunces": "Fluid Ounces (oz)",
       "cups": "Cups",
-      "saveWaterDisplayUnit": "Save Water Display Unit"
+      "saveWaterDisplayUnit": "Save Water Display Unit",
+      "addExerciseWater": "Add exercise water loss to daily goal",
+      "addExerciseWaterHint": "Increases your daily water goal by the estimated sweat loss from activities."
     },
     "nutrientDisplay": {
       "title": "Nutrient Display",
@@ -499,7 +785,7 @@
     },
     "calculationSettings": {
       "title": "Calculation Settings",
-      "description": "Manage BMR and Body Fat calculation preferences"
+      "description": "Manage BMR formulas, body fat algorithms, daily energy adjustments, goal deficit modes, and safety floors."
     },
     "familyAccess": {
       "title": "Family Access",
@@ -567,11 +853,16 @@
         "customUrl": "Custom URL",
         "customUrlPlaceholderOllama": "http://localhost:11434",
         "customUrlPlaceholder": "https://api.example.com/v1",
+        "chatToolProfile": "Chat Tool Set",
+        "chatToolProfileFull": "Full (all tools)",
+        "chatToolProfileCore": "Core (faster, fewer tools)",
+        "chatToolProfileDescription": "Core trims the chatbot to the food, exercise, and measurement logging essentials, meant for local or low resource environments. Full enables every tool.",
         "useCustomModel": "Use Custom Model Name",
         "model": "Model",
         "selectModel": "Select a model",
         "customModelName": "Custom Model Name",
         "customModelNamePlaceholder": "Enter custom model name",
+        "recommendedModel": "Recommended: {{- model}} — a good balance of cost and capability.",
         "systemPrompt": "System Prompt (Additional Instructions)",
         "systemPromptPlaceholder": "Additional instructions for the AI assistant...",
         "setAsActive": "Set as active service",
@@ -593,11 +884,17 @@
         "errorOriginalNotFound": "Original service not found.",
         "deleteConfirm": "Are you sure you want to delete this global AI service?",
         "fillRequiredFields": "Please fill in all required fields",
-        "enterNewApiKey": "Enter new API key to update"
+        "enterNewApiKey": "Enter new API key to update",
+        "testConnection": "Test Connection",
+        "testing": "Testing…"
       },
       "userSettings": {
         "title": "AI Services",
         "chatPreferences": "Chat Preferences",
+        "aiAssistedConversions": "AI Assisted Unit Conversions",
+        "aiAssistedConversionsDescription": "Convert cross-category food units (e.g. cup → g) with AI inside the unit picker.",
+        "showTokenStats": "Show token usage",
+        "showTokenStatsDescription": "Display per-message token counts in the chat.",
         "autoClearHistory": "Auto Clear Chat History",
         "autoClearHistoryDescription": "Controls how chat history is preserved for AI context",
         "saveChatPreferences": "Save Chat Preferences",
@@ -621,6 +918,7 @@
         "delete": "Delete",
         "configuredServices": "Configured Services",
         "availableServices": "Available AI Services",
+        "activeProvider": "Active AI provider",
         "noServices": "No AI services configured yet.",
         "noServicesDescription": "Add your first AI service to get started with Sparky.",
         "noServicesDescriptionDisabled": "Please contact your administrator to configure an AI service.",
@@ -637,12 +935,17 @@
         "customUrl": "Custom URL",
         "customUrlPlaceholderOllama": "http://localhost:11434",
         "customUrlPlaceholder": "https://api.example.com/v1",
+        "chatToolProfile": "Chat Tool Set",
+        "chatToolProfileFull": "Full (all tools)",
+        "chatToolProfileCore": "Core (faster, fewer tools)",
+        "chatToolProfileDescription": "Core trims the chatbot to the food, exercise, and measurement logging essentials, meant for local or low resource environments. Full enables every tool.",
         "useCustomModel": "Use Custom Model Name",
         "model": "Model",
         "selectModel": "Select a model",
         "customModelName": "Custom Model Name",
         "customModelNamePlaceholder": "Enter custom model name",
         "customModelNameDescription": "Enter the exact name of your custom model.",
+        "recommendedModel": "Recommended: {{- model}} — a good balance of cost and capability.",
         "systemPrompt": "System Prompt (Additional Instructions)",
         "systemPromptPlaceholder": "Additional instructions for the AI assistant...",
         "systemPromptDescription": "These instructions will be added to the AI context in addition to project documentation",
@@ -677,7 +980,21 @@
         "revertConfirm": "Are you sure you want to delete all your custom AI service settings and use the global settings instead?",
         "successReverting": "Reverted to global settings. Your custom settings have been deleted.",
         "errorReverting": "Failed to revert to global settings",
-        "fillRequiredFields": "Please fill in all required fields"
+        "fillRequiredFields": "Please fill in all required fields",
+        "testConnection": "Test Connection",
+        "testing": "Testing…"
+      },
+      "test": {
+        "successTitle": "Success",
+        "failureTitle": "Failure",
+        "categories": {
+          "api_key_missing": "API key is missing or invalid. Add a valid key and try again.",
+          "custom_url_missing": "A custom URL is required for this service type.",
+          "upstream_error": "The AI service returned an error. Check the API key, model name, and URL.",
+          "timeout": "The AI service did not respond in time. Check the URL and that the server is reachable.",
+          "unsupported_provider": "This service type is not supported.",
+          "unknown": "The connection test failed. Please check the configuration and try again."
+        }
       },
       "serviceTypes": {
         "openai": "OpenAI",
@@ -688,6 +1005,7 @@
         "groq": "Groq",
         "ollama": "Ollama",
         "openrouter": "OpenRouter",
+        "xai": "xAI (Grok)",
         "custom": "Custom"
       }
     },
@@ -1015,6 +1333,17 @@
   },
   "diary": {
     "nutritionSummary": "Nutrition Summary",
+    "dailyEnergyGoal": "Daily Energy Goal",
+    "waterIntake": "Water Intake",
+    "exercise": "Exercise",
+    "widgets": {
+      "layout": "Customize layout",
+      "done": "Done",
+      "resetLayout": "Reset layout",
+      "maximize": "Maximize",
+      "restore": "Restore",
+      "hide": "Hide"
+    },
     "nutrientLabels": {
       "cal": "cal",
       "protein": "protein",
@@ -1040,6 +1369,8 @@
     "success": "Success",
     "error": "Error",
     "genericError": "An unexpected error occurred.",
+    "pastDateWarning": "Warning: You are adding food entries for a past date.",
+    "futureDateWarning": "Warning: You are adding food entries for a future date.",
     "entryCopied": "Food entries copied successfully",
     "entryCopyError": "Failed to copy food entries.",
     "copiedFromYesterday": "Food entries copied from yesterday successfully",
@@ -1131,7 +1462,23 @@
     "measurementDeletedSuccessfully": "Measurement deleted successfully",
     "failedToDeleteMeasurement": "Failed to delete measurement",
     "failedToLoadRecentMeasurements": "Failed to load recent measurements",
-    "enterCustomCategory": "Enter {{categoryName}}"
+    "enterCustomCategory": "Enter {{categoryName}}",
+    "photos": {
+      "title": "Progress Photos",
+      "subtitle": "Upload front, back, and side photos to track your physique over time.",
+      "addPhotos": "Add progress photos",
+      "front": "Front",
+      "back": "Back",
+      "side": "Side",
+      "tapToUpload": "Tap to upload",
+      "upload": "Upload",
+      "replace": "Replace",
+      "uploadSuccess": "Photo saved",
+      "uploadError": "Upload failed",
+      "tooLarge": "Image is too large (max 10 MB).",
+      "deleteSuccess": "Photo removed",
+      "deleteError": "Failed to remove photo"
+    }
   },
   "sleepTimelineEditor": {
     "sleepTimeline": "Sleep Timeline",
@@ -1227,11 +1574,16 @@
     "shareWithPublic": "Share with public",
     "notEditable": "Not editable",
     "editFood": "Edit food",
+    "duplicateFood": "Duplicate food",
     "deleteFood": "Delete food",
     "mealManagement": "Meal Management",
     "mealPlanCalendar": "Meal Plan",
     "editFoodDialogTitle": "Edit Food",
     "editFoodDialogDescription": "Edit the details of the selected food item.",
+    "duplicateFoodDialogTitle": "Duplicate Food",
+    "duplicateFoodDialogDescription": "Adjust the details and save this as a new food. The original is not changed.",
+    "copySuffix": "(copy)",
+    "duplicateFailed": "Failed to duplicate food.",
     "deleteFoodConfirmTitle": "Delete {{foodName}}?",
     "foodUsedIn": "This food is used in:",
     "diaryEntries": "{{count}} diary entries",
@@ -1270,12 +1622,16 @@
     "unshareMeal": "Unshare Meal",
     "shareMeal": "Share Meal",
     "editMeal": "Edit Meal",
+    "duplicateMeal": "Duplicate Meal",
     "deleteMeal": "Delete Meal",
     "viewMealDetails": "View Meal Details",
     "editMealDialogTitle": "Edit Meal",
     "createNewMealDialogTitle": "Create New Meal",
+    "duplicateMealDialogTitle": "Duplicate Meal",
+    "copySuffix": "(copy)",
     "editMealDialogDescription": "Edit the details of your meal.",
     "createNewMealDialogDescription": "Create a new meal by adding foods.",
+    "duplicateMealDialogDescription": "Adjust the details and save this as a new meal. The original is not changed.",
     "noDescriptionProvided": "No description provided.",
     "foodsInThisMeal": "Foods in this Meal:",
     "noFoodsAddedToMealYet": "No foods have been added to this meal yet.",
@@ -1557,6 +1913,8 @@
       "totalAscent": "Total Ascent",
       "calories": "Calories",
       "heartRate": "Heart Rate",
+      "cadence": "Cadence",
+      "waterLoss": "Water Loss",
       "runningDynamics": "Running Dynamics",
       "xAxis": "X-Axis:",
       "timeOfDay": "Time of Day",
@@ -2248,5 +2606,111 @@
     "noDataDesc": "Start tracking your sleep to unlock advanced insights.",
     "baselineCalculated": "Sleep need baseline calculated successfully",
     "baselineError": "Failed to calculate sleep need baseline"
+  },
+  "onboarding": {
+    "completeSetup": "Complete Setup"
+  },
+  "cycle": {
+    "hub": "Cycle & Pregnancy Hub",
+    "pregnancyHub": "Pregnancy Hub",
+    "hubSubtitle": "Track, understand, and sync with your body.",
+    "tabs": {
+      "today": "Today",
+      "calendar": "Calendar",
+      "insights": "Insights",
+      "care": "Care"
+    },
+    "comingSoon": {
+      "calendarTitle": "Cycle Calendar",
+      "calendarDesc": "An interactive view of your past cycles, flow volume, and future predictions is coming in Phase 2.",
+      "insightsTitle": "Cycle Insights",
+      "insightsDesc": "Detailed graphs of basal body temperature, symptom heatmaps, and cycle length history are coming in Phase 2.",
+      "careTitle": "Care & Reminders",
+      "careDesc": "Reminders for birth control, product changes, and a doctor report PDF export are coming in Phase 5.",
+      "placeholder": "Coming soon"
+    },
+    "onboarding": {
+      "stepIndicator": "Step {{step}} of 4",
+      "step1Title": "Choose Your Tracking Goal",
+      "step1Desc": "Select the primary mode for your tracker.",
+      "step2Title": "Cycle Dates & Lengths",
+      "step2Desc": "Tell us about your typical cycle properties.",
+      "step3Title": "Your Health Profile",
+      "step3Desc": "Optional information to customize predictions (skippable).",
+      "step4Title": "Disclaimer & Confirmation",
+      "step4Desc": "Read and acknowledge before finalizing.",
+      "successTitle": "Welcome to Cycle Tracking!",
+      "successDesc": "Your cycle profile has been initialized successfully.",
+      "errorTitle": "Setup failed",
+      "errorDesc": "Could not save your preferences. Please try again.",
+      "lastPeriodStart": "When did your last period start?",
+      "avgCycleLength": "Typical cycle (days)",
+      "avgPeriodLength": "Typical period (days)",
+      "bcMethod": "Birth control method",
+      "bcHint": "Hormonal birth control will suppress fertility windows, showing bleed predictions only.",
+      "conditions": "Known conditions (Optional)",
+      "complete": "Agree & Complete"
+    },
+    "disclaimer": {
+      "title": "Important Health Disclaimer",
+      "text1": "This cycle tracking feature is intended for educational, fitness, and log keeping purposes only. It is not designed or intended to be used as a primary method of contraception or family planning.",
+      "text2": "Predictions are estimates and will vary based on individual consistency, health conditions, or cycle irregularity. Always consult a healthcare provider for medical concerns."
+    },
+    "mode": {
+      "standard": "Standard Cycle Tracking",
+      "standardDesc": "Track periods, symptoms, and predict future cycle phases.",
+      "ttc": "Trying to Conceive (TTC)",
+      "ttcDesc": "Track fertile window, ovulation, and luteal phase indicators.",
+      "pregnant": "Pregnancy Tracking",
+      "pregnantDesc": "Track fetal development milestones, contraction timers, and prenatal care."
+    },
+    "today": {
+      "cycleDay": "Cycle day",
+      "late": "{{n}} days late",
+      "periodIn": "Period in {{n}} days",
+      "nextPeriod": "Next period",
+      "ovulation": "Ovulation",
+      "cycleLength": "Cycle length",
+      "lateBanner": "Your period is {{n}} days late. Log it when it starts, or adjust your cycle length in settings."
+    },
+    "legend": {
+      "period": "Period",
+      "fertile": "Fertile",
+      "ovulation": "Ovulation"
+    },
+    "stats": {
+      "cycleAvg": "Cycle avg",
+      "periodAvg": "Period avg",
+      "lastBbt": "Last BBT"
+    },
+    "regularity": {
+      "regular": "Regular",
+      "somewhat": "Somewhat regular",
+      "irregular": "Irregular"
+    },
+    "insight": {
+      "menstrual_rest": "You are in your menstrual phase — rest and gentle movement can help.",
+      "menstrual_iron": "Iron-rich foods can support you during your period.",
+      "follicular_energy": "Energy often rises in the follicular phase — a good week for harder workouts.",
+      "fertile_window": "You are in your fertile window.",
+      "ovulation_peak": "Ovulation is around now — this is your peak fertile day.",
+      "luteal_dip": "Energy and sleep can dip in the late luteal phase. Be kind to yourself.",
+      "luteal_pms": "PMS symptoms can appear now — track how you feel.",
+      "generic_log": "Log today to improve your predictions over time."
+    },
+    "log": {
+      "title": "Today's log",
+      "saved": "Saved",
+      "flow": "Flow",
+      "products": "Period products",
+      "fewerProducts": "Show fewer",
+      "moreProducts": "+ more products",
+      "bbt": "Basal body temperature",
+      "mucus": "Cervical mucus",
+      "moods": "Mood",
+      "energy": "Energy",
+      "notes": "Notes",
+      "notesPlaceholder": "Anything else to note…"
+    }
   }
 }
