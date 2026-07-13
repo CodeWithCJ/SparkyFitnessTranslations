@@ -66,7 +66,9 @@
             "milliliters": "Milliliter (ml)",
             "fluidOunces": "Flüssigunzen (oz)",
             "cups": "Tassen (ca. 240 ml)",
-            "saveWaterDisplayUnit": "Wasseranzeigeeinheit speichern"
+            "saveWaterDisplayUnit": "Wasseranzeigeeinheit speichern",
+            "addExerciseWater": "Füge Wasserverlust durch Übungen zum täglichen Ziel hinzu",
+            "addExerciseWaterHint": "Erhöht das tägliche Trinkziel aufgrund des geschätzten Flüssigkeitsverlusten durch Aktivitäten."
         },
         "nutrientDisplay": {
             "title": "Nährwertanzeige",
@@ -74,7 +76,7 @@
         },
         "calculationSettings": {
             "title": "Berechnungseinstellungen",
-            "description": "Grundumsatz- und Körperfettberechnungseinstellungen verwalten"
+            "description": "Grundumsatz- und Körperfettberechnungseinstellungen verwalten."
         },
         "familyAccess": {
             "title": "Familienzugriff",
@@ -146,7 +148,8 @@
                 "enterNewApiKey": "API Schlüssel hinzufügen oder updaten",
                 "syncFromEnv": "Aus Env synchronisieren",
                 "testConnection": "Verbindung testen",
-                "testing": "Teste…"
+                "testing": "Teste…",
+                "chatToolProfileFull": "Vollständig (alle Tools)"
             },
             "userSettings": {
                 "title": "KI-Dienst",
@@ -234,7 +237,8 @@
                 "aiAssistedConversions": "KI-unterstützte Einheiten Umrechnung",
                 "activeProvider": "Aktive KI-Anbieter",
                 "testConnection": "Verbindung testen",
-                "testing": "Teste…"
+                "testing": "Teste…",
+                "recommendedModel": "Empfohlen: {{- model}} — Eine gute Balance zwischen Kosten und Nutzen."
             },
             "serviceTypes": {
                 "openai": "OpenAI",
@@ -245,7 +249,8 @@
                 "groq": "Groq",
                 "ollama": "Ollama",
                 "openrouter": "OpenRouter",
-                "custom": "Benutzerdefiniert"
+                "custom": "Benutzerdefiniert",
+                "xai": "xAI (Grok)"
             },
             "test": {
                 "successTitle": "Erfolg",
@@ -325,7 +330,13 @@
             "successTitle": "Erfolgreich",
             "successDesc": "Zyklus Einstellungen aktualisiert.",
             "errorTitle": "Fehler",
-            "errorDesc": "Zyklus Einstellungen konnten nicht gespeichert werden. Bitte versuche es erneut."
+            "errorDesc": "Zyklus Einstellungen konnten nicht gespeichert werden. Bitte versuche es erneut.",
+            "bcMethod": "Geburtskontrolle",
+            "terminology": "Terminologie",
+            "terminologyDefault": "Standard (Gegendert)",
+            "terminologyNeutral": "Geschlechtsneutral",
+            "showFertileWindow": "Zeige Voraussagen für Fruchtbarkeitsfenster",
+            "learned": "Aus Protokollen berechnet"
         }
     },
     "aboutDialog": {
@@ -2335,7 +2346,8 @@
     "medications": {
         "tabs": {
             "symptoms": "Symptome",
-            "log": "Protokoll"
+            "log": "Protokoll",
+            "cabinet": "Medizinschrank"
         },
         "common": {
             "saving": "Speichern…",
@@ -2417,7 +2429,7 @@
             "symptom": "Symptom",
             "addCustom": "Benutzerdefiniertes Symptom hinzufügen",
             "customName": "Symptom Name (intern)",
-            "customNamePlaceholder": "z. B. Hautausschlag",
+            "customNamePlaceholder": "z. B. skin_rash",
             "displayLabel": "Anzeige-Bezeichnung",
             "displayLabelPlaceholder": "z. B. Hautausschlag",
             "saveCustom": "Benutzerdefiniertes Symptom speichern",
@@ -2429,11 +2441,17 @@
             "customLocationPlaceholder": "z.B. Linke Schulter, Kiefer…",
             "linkMed": "Link zum Medikament (optional)",
             "noMedLinked": "Kein Medikament zugeordnet",
-            "context": "Kontext / Notizen"
+            "context": "Kontext / Notizen",
+            "contextPlaceholder": "z.B. vier Stunden nach meiner Abenddosis aufgetreten.",
+            "bristol": "Stuhlgangprotokoll (Bristol-Stuhlskala)",
+            "bristolType": "Bristol Typ {{n}}"
         },
         "fasting": {
             "complete": "Fasten vorbei - du kannst jetzt wieder essen.",
-            "waterOnly": "Nur Wasser"
+            "waterOnly": "Nur Wasser",
+            "title": "GLP-1-Nüchtern-Timer zur oralen Einnahme",
+            "instructions": "Mit 100-150ml Wasser einnehmen, danach {{min}} Minuten warten vor dem Konsum von Essen oder Kaffee oder der Einnahme von Medikamenten.",
+            "start": "Tablette eingenommen – Timer starten"
         },
         "sites": {
             "label": {
@@ -2447,8 +2465,16 @@
                 "buttock_left": "Linkes Gesäß",
                 "buttock_right": "Rechtes Gesäß",
                 "thigh_back_left": "Linker Oberschenkel (hinten)",
-                "thigh_back_right": "Rechter Oberschenkel (hinten)"
-            }
+                "thigh_back_right": "Rechter Oberschenkel (hinten)",
+                "upper_arm_left": "Linker Oberarm",
+                "upper_arm_right": "Rechter Oberarm",
+                "forearm_left": "Linker Unterarm",
+                "forearm_right": "Rechter Unterarm",
+                "abdomen_left": "Linker Bauchraum"
+            },
+            "customize": "Seiten individualisieren",
+            "dialogTitle": "Injektionsstellen",
+            "subtitle": "Schalte die von dir genutzten Websites um und ordne sie an – die Vorschläge für die Rotation folgen dieser Reihenfolge."
         },
         "glp1": {
             "legendSuggested": "grün = vorgeschlagen",
@@ -2462,7 +2488,14 @@
             "statusActive": "Aktiv (aktuell)",
             "statusDone": "Erledigt",
             "recentInjections": "Kürzliche Injektionen",
-            "noInjections": "Bisher keine Injektionen protokolliert."
+            "noInjections": "Bisher keine Injektionen protokolliert.",
+            "logInjection": "Injektion protokollieren",
+            "logInjectionAt": "Injektion protokollieren — {{site}}",
+            "tapZone": "Wähle einen Bereich",
+            "deduct": "Vom Injektions-Pen/von Phiole abziehen",
+            "dontDeduct": "Nicht abziehen",
+            "penInventory": "Inventar an Injektions-Pens/Phiolen",
+            "noPens": "Keine Injektions-Pens/Phiolen protokolliert."
         },
         "types": {
             "pill": "Tablette",
@@ -2472,7 +2505,9 @@
             "inhaler": "Inhalator",
             "drops": "Tropfen",
             "cream": "Creme",
-            "other": "Andere"
+            "other": "Andere",
+            "liquid": "Flüssigkeit",
+            "suppository": "Zäpfchen"
         },
         "cabinet": {
             "addMed": "Medikament hinzufügen",
@@ -2486,7 +2521,13 @@
             "rxPlaceholder": "Rx-482-93221",
             "activeScripts": "Aktive Verschreibungen",
             "scheduledToday": "Heute geplant",
-            "totalMeds": "Gesamte Medikamente"
+            "totalMeds": "Gesamte Medikamente",
+            "namePlaceholder": "z.B. Wegovy",
+            "glp1Med": "GLP-1 Behandlung",
+            "reason": "Grund / Zustand (optional)",
+            "reasonPlaceholder": "z.B. Gewichtsmanagement, Typ-2-Diabetes",
+            "pharmacyPlaceholder": "CVS #4421",
+            "glp1Meds": "GLP-1-Medikamente"
         },
         "schedule": {
             "subheading": "Konfiguriere Erinnerungen und Einnahmeregeln",
@@ -2513,7 +2554,22 @@
             "withMealOpt": "Während des Essens",
             "afterMeal": "Nach dem Essen",
             "startDate": "Startdatum (optional)",
-            "endDate": "Enddatum (optional)"
+            "endDate": "Enddatum (optional)",
+            "heading": "Zeitpläne & Erinnerungen",
+            "cyclic": "Zyklisch (an/aus)",
+            "prn": "Bei Bedarf (PRN)"
+        },
+        "checkin": {
+            "subtitle": "Verfolge, wie die Medikation dich beeinflusst — wird in deinen täglichen Messungen gespeichert, taucht also auch in deinen Check-Ins & Berichten auf.",
+            "save": "Check-In speichern",
+            "saveToday": "Heutigen Check-In speichern",
+            "metric": {
+                "hunger": "Hunger",
+                "food_noise": "Essgeräusche",
+                "fullness": "Fülle",
+                "energy": "Energie"
+            },
+            "title": "Tägliche GLP-1-Kontrolle"
         }
     },
     "onboarding": {
@@ -2523,12 +2579,14 @@
         "tabs": {
             "today": "Heute",
             "calendar": "Kalender",
-            "insights": "Einsichten"
+            "insights": "Einsichten",
+            "care": "Pflege"
         },
         "comingSoon": {
             "calendarTitle": "Zykluskalender",
             "insightsTitle": "Zyklus Einsichten",
-            "placeholder": "Kommt bald"
+            "placeholder": "Kommt bald",
+            "careTitle": "Pflege & Erinnerungen"
         },
         "onboarding": {
             "stepIndicator": "Schritt {{step}} von 4",
