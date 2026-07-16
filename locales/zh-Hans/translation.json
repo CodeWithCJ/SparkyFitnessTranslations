@@ -110,7 +110,15 @@
             "subtitle": "记录副作用的严重程度和身体状况",
             "symptom": "症状",
             "addCustom": "添加自定义症状",
-            "customName": "症状名称 (内部)"
+            "customName": "症状名称 (内部)",
+            "saveCustom": "保存自定义症状",
+            "severity": "严重程度",
+            "moderate": "中等 (4-6)",
+            "mild": "轻微 (1-3)",
+            "severe": "高强度 (7-10)",
+            "primaryLocation": "主要部位",
+            "customLocationPlaceholder": "例如：左肩、下颌……",
+            "linkMed": "关联药物（可选）"
         }
     }
 }
