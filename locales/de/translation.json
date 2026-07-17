@@ -2370,11 +2370,13 @@
             "snooze": "Schlummern",
             "snoozed": "Geschlummert",
             "skip": "Überspringen",
-            "take": "Nehmen"
+            "take": "Nehmen",
+            "adherence14": "14-tägige Einhaltung"
         },
         "insights": {
             "title": "Nebenwirkungen Einsichten & Hinweise",
-            "disclaimer": "Einsichten werden über einen Zeitraum von 30 Tagen berechnet. Dies sind nur geschätzte Werte und ersetzen keinen Arzt."
+            "disclaimer": "Einsichten werden über einen Zeitraum von 30 Tagen berechnet. Dies sind nur geschätzte Werte und ersetzen keinen Arzt.",
+            "subtitle": "Pharmakakokinetische Korrelation unter der Berücksichtigung der Aktuellen Dosierungszeitpunkte"
         },
         "locations": {
             "general": "Generell",
