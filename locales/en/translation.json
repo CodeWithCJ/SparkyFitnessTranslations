@@ -1,9 +1,89 @@
 {
+  "chat": {
+    "toolCategories": {
+      "tooltip": "Choose chatbot tools",
+      "title": "Chatbot tools",
+      "description": "Fewer tools help smaller local models respond reliably.",
+      "presetFull": "Full",
+      "presetCore": "Core",
+      "clearAll": "Clear all",
+      "emptyHint": "No categories selected — the chatbot will use its default tool set.",
+      "food": "Food & Water",
+      "exercise": "Exercise",
+      "checkin": "Body & Check-ins",
+      "goals": "Goals",
+      "reports": "Reports & Analytics",
+      "coaching": "Coaching",
+      "vision": "Vision",
+      "profile": "Profile & Habits"
+    }
+  },
+  "foodCsvImport": {
+    "title": "Import Food Data",
+    "addRow": "Add Row",
+    "uploadCsv": "Upload CSV",
+    "downloadTemplate": "Download Template",
+    "clearData": "Clear Data",
+    "pastePlaceholder": "Or paste CSV content here...",
+    "parseText": "Parse Text",
+    "recordsLoaded": "Successfully loaded {{count}} records.",
+    "actions": "Actions",
+    "booleanTrue": "True",
+    "booleanFalse": "False",
+    "deleteRow": "Delete Row",
+    "overrideLabel": "Override existing food details",
+    "overrideDescription": "If a food with the same name and brand already exists, update its nutrition instead of failing the import. Leave unchecked to skip and error on duplicates.",
+    "importing": "Importing...",
+    "importData": "Import Data",
+    "importRecords_one": "Import {{count}} Record",
+    "importRecords_other": "Import {{count}} Records",
+    "importErrorTitle": "Import Error",
+    "pasteFirst": "Please paste some CSV data first.",
+    "invalidFormatTitle": "Invalid CSV Format",
+    "headersMismatchText": "Headers do not match required format. Use the template.",
+    "successTitle": "Success",
+    "loadedRowsFromText": "Loaded {{count}} rows from text.",
+    "emptyFile": "The selected file is empty.",
+    "headersMismatchFile": "The CSV headers do not match the required format or order. Please download the template.",
+    "noDataTitle": "No Data Found",
+    "noDataText": "The CSV file contains headers but no data rows.",
+    "validationErrorTitle": "Validation Error",
+    "nameRequired": "The 'name' field cannot be empty."
+  },
+  "foods": {
+    "providerVerified": "Verified food"
+  },
   "medications": {
     "tabs": {
       "log": "Log",
       "cabinet": "Cabinet",
       "symptoms": "Symptoms"
+    },
+    "calendar": {
+      "title": "Medication Log Calendar",
+      "noMeds": "Add a medication to see its log calendar here.",
+      "selectMedication": "Select a medication",
+      "allMedications": "All medications",
+      "monthTotal": "{{count}} doses logged in {{month}}",
+      "allTaken": "All doses taken",
+      "partialTaken": "Partially taken",
+      "mostlySkipped": "Mostly skipped",
+      "allSkipped": "All doses skipped",
+      "snoozedOnly": "Snoozed only",
+      "sideEffect": "Side-effect symptom",
+      "generalSymptom": "General symptom",
+      "tooltipTaken": "{{count}} taken",
+      "tooltipPrn": "{{count}} PRN taken",
+      "tooltipSkipped": "{{count}} skipped",
+      "tooltipSnoozed": "{{count}} snoozed",
+      "tooltipSymptoms": "Symptoms: {{names}}",
+      "sun": "Sun",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat"
     },
     "common": {
       "logging": "Logging…",
@@ -33,6 +113,16 @@
       "title": "Side-Effect Insights & Hints",
       "subtitle": "Pharmacokinetic correlations overlaying recent dose timings",
       "disclaimer": "Insights are calculated over a rolling 30-day window. These are educational estimations, not clinical advice."
+    },
+    "reports": {
+      "logTableTitle": "Medication Log Table",
+      "logTableDesc": "Per-day dose counts and times for {{start}}–{{end}}, including same-day symptoms.",
+      "logTableEmpty": "No medication doses logged in this date range.",
+      "dosesLogged": "{{count}} doses logged",
+      "dosesTaken": "Doses taken",
+      "times": "Times",
+      "symptomsColumn": "Symptoms",
+      "injectionAbbrev": "inj"
     },
     "locations": {
       "general": "General",
@@ -183,6 +273,7 @@
       "injection": "injection",
       "patch": "patch",
       "inhaler": "inhaler",
+      "nasal_spray": "nasal spray",
       "drops": "drops",
       "cream": "cream",
       "suppository": "suppository",
@@ -251,7 +342,8 @@
     "settings": "Settings",
     "admin": "Admin",
     "cycle": "Cycle",
-    "pregnancy": "Pregnancy"
+    "pregnancy": "Pregnancy",
+    "medications": "Medications"
   },
   "nutrition": {
     "calories": "Calories",
@@ -273,7 +365,14 @@
     "vitaminA": "Vitamin A",
     "vitaminC": "Vitamin C",
     "calcium": "Calcium",
-    "iron": "Iron"
+    "iron": "Iron",
+    "autoCalculate": "Auto-calculate",
+    "autoCalculateTooltip": "Auto-calculate using {{algorithm}}",
+    "autoCalculateDisabledNoSex": "Set your sex in Profile to enable auto-calculate",
+    "autoCalculateSelect": "Include in bulk auto-calculate",
+    "autoCalculateSelectAll": "Select All",
+    "autoCalculateSelectNone": "Select None",
+    "autoCalculateApplySelected": "Auto-calculate Selected ({{count}})"
   },
   "calculationSettings": {
     "showNetCarbs": "Show net carbs (carbs minus fiber)",
@@ -309,6 +408,7 @@
       "onlineTab": "Online",
       "addCustomTab": "Add Custom",
       "importCSVTab": "Import Exercises",
+      "importFitTab": "Import FIT",
       "nameLabel": "Name",
       "categoryLabel": "Category",
       "selectCategoryPlaceholder": "Select a category",
@@ -363,11 +463,18 @@
       "topPresetsTitle": "Top Presets",
       "noTopPresets": "No top presets.",
       "searchResultsTitle": "Search Results",
-      "noMatchingPresets": "No presets found matching your search."
+      "noMatchingPresets": "No presets found matching your search.",
+      "ownership": {
+        "all": "All",
+        "mine": "My Presets",
+        "family": "Family",
+        "public": "Public"
+      }
     },
     "dailyProgress": {
       "dailyCalorieGoal": "Daily Calorie Goal",
       "remaining": "remaining",
+      "targetBand": "target {{min}}–{{max}}",
       "eaten": "eaten",
       "burned": "burned",
       "burnedCaloriesBreakdown": "Burned Calories Breakdown:",
@@ -518,6 +625,25 @@
       "voiceLabel": "Voice:",
       "selectVoicePlaceholder": "Select a voice",
       "stepCount": "Step {{currentInstructionIndex}} of {{totalInstructions}}"
+    },
+    "importFit": {
+      "title": "Import FIT Files",
+      "description": "Upload FIT activity files exported from your device or app (up to 10 at a time). Each file becomes a diary entry with heart rate, laps, and other report data. Re-uploading a file updates its entry.",
+      "importButton": "Import {{count}} file(s)",
+      "importing": "Importing...",
+      "successTitle": "Import complete",
+      "successDescription": "{{count}} activities imported.",
+      "partialTitle": "Import finished with errors",
+      "partialDescription": "{{imported}} imported, {{failed}} failed. See the results below.",
+      "resultsTitle": "Import Results",
+      "fileColumn": "File",
+      "statusColumn": "Status",
+      "activityColumn": "Activity",
+      "dateColumn": "Date",
+      "detailsColumn": "Details",
+      "statusCreated": "Imported",
+      "statusUpdated": "Updated",
+      "statusFailed": "Failed"
     }
   },
   "workoutPresetsManager": {
@@ -666,6 +792,9 @@
     "family": "Family",
     "topFoods": "Top Foods",
     "noRecentOrTopFoods": "No recent or top foods found. Start logging foods to see them here.",
+    "noRecentOrTopItems": "No recent or frequent foods or meals found. Start logging to see them here.",
+    "recent": "Recent",
+    "frequent": "Frequent",
     "noItemsFoundInDatabase": "No items found in your database for \"{{searchTerm}}\".",
     "clickSearchIconOnline": "Click the search icon to search online.",
     "noFoodsFoundOnline": "No foods found from the selected online provider.",
@@ -686,7 +815,13 @@
     "bySource": "By Source",
     "noResults": "No results",
     "couldntLoad": "Couldn't load",
-    "showAllResults": "Show all {{count}} {{provider}} results"
+    "showAllResults": "Show all {{count}} {{provider}} results",
+    "favorite": "Favorite",
+    "favorites": "Favorites",
+    "addToFavorites": "Add to favorites",
+    "removeFromFavorites": "Remove from favorites",
+    "failedToLoadFavorites": "Failed to load favorites.",
+    "failedToUpdateFavorite": "Failed to update favorite."
   },
   "sync": {
     "syncAll": "Sync all active providers",
@@ -783,6 +918,10 @@
       "title": "Nutrient Display",
       "description": "Choose which nutrients to display in food and meal views"
     },
+    "nutrientGoalDirection": {
+      "title": "Nutrient Goal Direction",
+      "description": "Choose whether each nutrient goal is a minimum to reach, a maximum to stay under, or a target range to hit"
+    },
     "calculationSettings": {
       "title": "Calculation Settings",
       "description": "Manage BMR formulas, body fat algorithms, daily energy adjustments, goal deficit modes, and safety floors."
@@ -817,12 +956,37 @@
       "exportSuccess": "Export successful",
       "exportSuccessDescription": "Your diary has been exported successfully.",
       "exportError": "Export error",
-      "exportErrorDescription": "Unable to download your diary. Please try again later."
+      "exportErrorDescription": "Unable to download your diary. Please try again later.",
+      "deleteSynced": {
+        "title": "Delete synced data",
+        "description": "Remove all entries that were synced or imported from a specific source (e.g. Apple Health, Garmin). This affects only synced data — entries you added manually are never touched. This cannot be undone.",
+        "scopeNoteTitle": "What this removes",
+        "scopeIncludes": "Deletes synced diary entries: food, exercise/workout sessions, sleep, water, and custom check-in measurements.",
+        "scopeExcludesLibrary": "Does NOT delete your food or exercise database (the reusable food/exercise definitions) — only the logged entries.",
+        "scopeExcludesCheckin": "Does NOT delete standard check-in measurements (weight, steps, body fat, height) — those merge all providers into one daily value and cannot be removed by source here.",
+        "scopeExcludesManual": "Does NOT delete anything you created yourself — entries you typed in, logged via the Sparky assistant, or workouts from a saved preset or plan are always kept.",
+        "loading": "Loading sources...",
+        "loadError": "Failed to load synced data sources.",
+        "empty": "No synced data found. Nothing to delete here.",
+        "sourceLabel": "Data source",
+        "sourcePlaceholder": "Select a source",
+        "deleteButton": "Delete synced data",
+        "confirmTitle": "Delete synced data?",
+        "confirmDescription": "This will permanently delete {{count}} entries synced from {{source}}. Manually-entered data is not affected.",
+        "confirmWarning": "This action cannot be undone. Make sure you have a recent database backup before deleting.",
+        "confirmButton": "Delete permanently",
+        "success": "Synced data deleted.",
+        "error": "Failed to delete synced data."
+      }
     },
     "foodExerciseDataProviders": {
       "title": "Food & Exercise Data Providers",
       "description": "Configure external food and exercise data sources and synchronize data with Garmin Connect",
-      "invalidKeyLengthWarning": "If you encounter an \"Invalid key length\" error, ensure your encryption key in the server's env variables are 64 hex."
+      "invalidKeyLengthWarning": "If you encounter an \"Invalid key length\" error, ensure your encryption key in the server's env variables are 64 hex.",
+      "openFoodFacts": {
+        "baseUrlLabel": "Base URL (Optional)",
+        "baseUrlHelp": "Leave blank to use the public Open Food Facts server, or point this at your own self-hosted instance."
+      }
     },
     "aiService": {
       "title": "AI Service",
@@ -857,6 +1021,10 @@
         "chatToolProfileFull": "Full (all tools)",
         "chatToolProfileCore": "Core (faster, fewer tools)",
         "chatToolProfileDescription": "Core trims the chatbot to the food, exercise, and measurement logging essentials, meant for local or low resource environments. Full enables every tool.",
+        "ollamaContextTitle": "Important: increase Ollama's context window",
+        "ollamaContextHint": "Ollama defaults to a 4096-token context and silently truncates anything larger, which corrupts tool definitions and makes the chatbot unreliable. Set OLLAMA_CONTEXT_LENGTH=16384 on the Ollama server (or add PARAMETER num_ctx 16384 to the model's Modelfile), then restart Ollama. On an 8GB machine, start at 8192.",
+        "ollamaFullProfileWarningTitle": "Potential Performance Impact for Local Models",
+        "ollamaFullProfileWarningHint": "Running a local model with the Full tool set can cause significant latency or errors unless you have a highly powerful system (e.g. high VRAM GPU). If performance is slow or the model gets confused, switch to the Core tool set.",
         "useCustomModel": "Use Custom Model Name",
         "model": "Model",
         "selectModel": "Select a model",
@@ -939,6 +1107,10 @@
         "chatToolProfileFull": "Full (all tools)",
         "chatToolProfileCore": "Core (faster, fewer tools)",
         "chatToolProfileDescription": "Core trims the chatbot to the food, exercise, and measurement logging essentials, meant for local or low resource environments. Full enables every tool.",
+        "ollamaContextTitle": "Important: increase Ollama's context window",
+        "ollamaContextHint": "Ollama defaults to a 4096-token context and silently truncates anything larger, which corrupts tool definitions and makes the chatbot unreliable. Set OLLAMA_CONTEXT_LENGTH=16384 on the Ollama server (or add PARAMETER num_ctx 16384 to the model's Modelfile), then restart Ollama. On an 8GB machine, start at 8192.",
+        "ollamaFullProfileWarningTitle": "Potential Performance Impact for Local Models",
+        "ollamaFullProfileWarningHint": "Running a local model with the Full tool set can cause significant latency or errors unless you have a highly powerful system (e.g. high VRAM GPU). If performance is slow or the model gets confused, switch to the Core tool set.",
         "useCustomModel": "Use Custom Model Name",
         "model": "Model",
         "selectModel": "Select a model",
@@ -1006,6 +1178,7 @@
         "ollama": "Ollama",
         "openrouter": "OpenRouter",
         "xai": "xAI (Grok)",
+        "meta": "Meta",
         "custom": "Custom"
       }
     },
@@ -1031,7 +1204,7 @@
       "currentEmail": "Current Email",
       "enterNewEmail": "Enter new email address",
       "updateEmail": "Update Email",
-      "updateEmailHint": "Your email address will be updated immediately.",
+      "updateEmailHint": "Confirm your current password to change your email. Leave blank if you sign in with SSO.",
       "emailUpdateSuccess": "Email updated successfully.",
       "emailUpdateError": "Failed to update email",
       "changePassword": "Change Password",
@@ -1342,7 +1515,8 @@
       "resetLayout": "Reset layout",
       "maximize": "Maximize",
       "restore": "Restore",
-      "hide": "Hide"
+      "hide": "Hide",
+      "layoutErrorNotice": "The customizable layout hit an error, so a simple view is shown. Your saved layout is kept."
     },
     "nutrientLabels": {
       "cal": "cal",
@@ -1361,7 +1535,71 @@
       "iron": "iron",
       "calcium": "calcium"
     },
-    "of": "of"
+    "of": "of",
+    "over": "over"
+  },
+  "nutrientGoalDirection": {
+    "min": "Min",
+    "max": "Max",
+    "to": "to",
+    "invalidBand": "Enter a valid min ≤ max",
+    "resetToDefault": "Reset to default",
+    "failedToLoad": "Failed to load nutrient goal direction preferences.",
+    "failedToSave": "Failed to save nutrient goal direction.",
+    "failedToReset": "Failed to reset nutrient goal direction.",
+    "goalTypeGroupLabel": "Goal direction",
+    "badgeMin": "Min",
+    "badgeMax": "Max",
+    "badgeTarget": "Range",
+    "minimumDescription": "More is better — progress fills toward the goal",
+    "maximumDescription": "Less is better — stay at or under the goal",
+    "targetDescription": "Hit a band between a minimum and a maximum",
+    "resetAll": "Reset All",
+    "resetAllConfirmTitle": "Reset all nutrient goal directions?",
+    "resetAllConfirmDescription": "Every nutrient below will go back to its built-in Min/Max direction. This only affects how progress is displayed — your goal values themselves are unchanged.",
+    "whyDependsLabel": "Why this depends on your goal",
+    "hints": {
+      "calories": "Depends on your goal: Maximum (or Range) to lose weight, Minimum to gain, Range to maintain.",
+      "carbs": "Often Maximum if managing blood sugar (diabetes) or eating low-carb; Minimum if you want to reach a carb target.",
+      "fat": "Usually Minimum (a target to reach); choose Maximum if you are limiting total fat."
+    },
+    "guidance": {
+      "title": "Not sure which to choose? It depends on your goal",
+      "intro": "These are only display directions — they change how progress is judged, not your goal numbers. Pick what fits what you are trying to do:",
+      "loseWeight": {
+        "title": "Losing weight",
+        "body": "Set Calories to Maximum (a ceiling) or a Target range."
+      },
+      "gainWeight": {
+        "title": "Gaining weight or building muscle",
+        "body": "Set Calories and Protein to Minimum (a floor to reach)."
+      },
+      "maintain": {
+        "title": "Maintaining weight",
+        "body": "Set Calories to a Target range around your maintenance level."
+      },
+      "diabetes": {
+        "title": "Managing blood sugar (diabetes)",
+        "body": "Set Carbohydrates and Sugars to Maximum."
+      },
+      "heart": {
+        "title": "High cholesterol or heart health",
+        "body": "Keep Cholesterol, Saturated fat, and Sodium as Maximum (the defaults)."
+      },
+      "lowCarb": {
+        "title": "Low-carb or keto",
+        "body": "Set Carbohydrates to Maximum; keep Fat and Protein as Minimum."
+      }
+    },
+    "sections": {
+      "energyMacros": "Energy & Macros",
+      "fats": "Fats",
+      "minerals": "Minerals",
+      "fiberSugar": "Fiber & Sugar",
+      "vitamins": "Vitamins",
+      "other": "Other",
+      "custom": "Custom Nutrients"
+    }
   },
   "foodDiary": {
     "title": "Food Diary",
@@ -1438,6 +1676,7 @@
     "enterHeight": "Enter height in",
     "bodyFatPercentage": "Body Fat %",
     "useRecent": "Use Recent",
+    "useLast": "Use last",
     "useMostRecentForCalculation": "Use most recent Weight, Height, Waist, Neck, and Hips for body fat calculation",
     "enterBodyFatPercentage": "Enter body fat percentage",
     "calculate": "Calculate",
@@ -1601,6 +1840,8 @@
   },
   "mealManagement": {
     "failedToLoadMeals": "Failed to load meals.",
+    "failedToLoadRecentMeals": "Failed to load recent meals.",
+    "failedToLoadTopMeals": "Failed to load top meals.",
     "failedToDeleteMeal": "Failed to delete meal: {{errorMessage}}",
     "couldNotCheckMealUsage": "Could not check meal usage.",
     "mealSavedSuccessfully": "Meal \"{{mealName}}\" saved successfully.",
@@ -1948,8 +2189,7 @@
       "lapTableMaxHRBpmHeader": "Max HR (bpm)",
       "lapTableCaloriesHeader": "Calories",
       "heartRateTimeInZonesTitle": "Heart Rate Time in Zones",
-      "timeInZoneSLabel": "Time in Zone (s)",
-      "cadence": "Cadence"
+      "timeInZoneSLabel": "Time in Zone (s)"
     },
     "bodyBattery": "Body Battery",
     "charged": "Charged",
@@ -2355,7 +2595,13 @@
     "unknownProvider": "Unknown provider for adding external exercise: {{providerType}}",
     "failedToLoadRecentTopExercises": "Failed to load recent and top exercises.",
     "failedToSearchExercises": "Failed to search exercises: {{errorMessage}}",
-    "failedToLoadFilterOptions": "Failed to load filter options: {{errorMessage}}"
+    "failedToLoadFilterOptions": "Failed to load filter options: {{errorMessage}}",
+    "ownership": {
+      "all": "All",
+      "mine": "My Exercises",
+      "family": "Family",
+      "public": "Public"
+    }
   },
   "addComp": {
     "addNew": "Add New"
