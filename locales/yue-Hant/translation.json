@@ -2177,8 +2177,8 @@
         "potassium": "鉀",
         "dietary_fiber": "膳食纖維",
         "sugars": "糖分",
-        "vitamin_a": "維他命A",
-        "vitamin_c": "維他命C",
+        "vitamin_a": "維他命 A",
+        "vitamin_c": "維他命 C",
         "calcium": "鈣質",
         "iron": "鐵質"
     },
@@ -2188,9 +2188,9 @@
     },
     "prProgressionChart": {
         "title": "個人最佳紀錄走勢",
-        "weightKg": "重量（公斤）",
-        "reps": "次數",
-        "estimated1RM": "預估一次性極限重量",
+        "weightKg": "重量（kg公斤）",
+        "reps": "次數 (Reps)",
+        "estimated1RM": "預估 1RM 極限重量",
         "maxWeight": "最高負重",
         "maxReps": "最多完成次數"
     },
