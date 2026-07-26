@@ -1,93 +1,187 @@
 {
-  "nav": {
-    "diary": "Dagbog",
-    "reports": "Rapporter",
-    "goals": "Mål",
-    "settings": "Indstillinger",
-    "admin": "Admin",
-    "checkin": "Tjek ind",
-    "foods": "Fødevare"
-  },
-  "aboutDialog": {
-    "title": "Om SparkyFitness",
-    "description1": "SparkyFitness: Bygget til familier. Drevet af AI. Track mad, fitness, vand og sundhed – sammen.",
-    "joinDiscord": "Bliv en del af vores fællesskab på Discord: ",
-    "discordLink": "discord.gg/vcnMT5cPEA",
-    "gotIt": "Forstået",
-    "close": "Luk",
-    "applicationVersion": "Applikation Version ",
-    "moreInfoVisit": "For mere information, besøg ",
-    "githubRepo": "GitHub repository",
-    "wgerApi": "Wger API (Øvelses Data)",
-    "foodDataApis": "Fødevare API'er:",
-    "nutritionixApi": "Nutritionix API",
-    "technologiesUsed": "Anvendte teknologier:",
-    "frontend": "Brugerflade:",
-    "externalApis": "Eksterne API'er:",
-    "backend": "Backend:",
-    "fatsecretApi": "FatSecret API",
-    "openFoodFactsApi": "Open Food Facts API"
-  },
-  "exercise": {
-    "title": "Øvelser",
-    "addExerciseDialog": {
-      "title": "Tilføj motion",
-      "myExercisesTab": "Mine øvelser",
-      "onlineTab": "Online",
-      "categoryLabel": "Kategori",
-      "selectCategoryPlaceholder": "Vælg en kategori",
-      "categoryGeneral": "Generelt",
-      "categoryStrength": "Styrke",
-      "categoryCardio": "Konditionstræning",
-      "categoryYoga": "Yoga",
-      "caloriesPerHourLabel": "Kalorier/Time",
-      "descriptionLabel": "Beskrivelse",
-      "forcePull": "Træk",
-      "forcePush": "Skub",
-      "levelBeginner": "Begynder",
-      "imagesLabel": "Billeder",
-      "description": "Tilføj en ny øvelse til din database, enten ved at tilføje en brugerdefineret eller importere en fra en ekstern kilde.",
-      "addCustomTab": "Tilføj Brugerdefineret",
-      "importCSVTab": "Importer CSV",
-      "nameLabel": "Navn",
-      "caloriesPerHourHint": "Lad feltet stå tomt for at lade systemet beregne kalorier per time ({{newExerciseCalories}} kal/time).",
-      "sourceLabel": "Kilde",
-      "forceLabel": "Kraft",
-      "selectForcePlaceholder": "Vælg Kraft",
-      "forceStatic": "Statisk",
-      "levelLabel": "Niveau",
-      "selectLevelPlaceholder": "Vælg niveau",
-      "levelIntermediate": "Øvet",
-      "levelExpert": "Ekspert",
-      "mechanicLabel": "Teknik",
-      "selectMechanicPlaceholder": "Vælg teknik",
-      "mechanicIsolation": "Isolering",
-      "workoutPresetTab": "Træningsskabelon",
-      "instructionsLabel": "Instruktioner (en pr. linje)",
-      "addButton": "Tilføj øvelse",
-      "importDuplicateDescription": "Følgende elementer findes allerede: {{duplicateList}}. Fjern dem fra din fil og prøv igen.",
-      "equipmentLabel": "Udstyr (komma separeret)",
-      "primaryMusclesLabel": "Primære Muskler (komma separeret)",
-      "secondaryMusclesLabel": "Sekundære Muskler (komma separeret)",
-      "addSuccess": "Øvelse tilføjet",
-      "addError": "Tilføjelse af øvelse fejlede",
-      "importSuccess": "Øvelse data importeret",
-      "importDuplicateTitle": "Import fejlede: Duplikerede enheder fundet",
-      "importError": "Import af trænings data fejlede. Prøv igen.",
-      "mechanicCompound": "Flerleds"
+    "nav": {
+        "diary": "Dagbog",
+        "reports": "Rapporter",
+        "goals": "Mål",
+        "settings": "Indstillinger",
+        "admin": "Admin",
+        "checkin": "Tjek ind",
+        "foods": "Fødevare"
     },
-    "addWorkoutPresetDialog": {
-      "searchPlaceholder": "søg i dine træningsprogrammer...",
-      "recentPresetsTitle": "nylige træningsprogrammer",
-      "noRecentPresets": "Ingen nylige træningsprogrammmer.",
-      "topPresetsTitle": "favorit programmer",
-      "noTopPresets": "Ingen favorit programmer.",
-      "searchResultsTitle": "Resultater",
-      "noMatchingPresets": "Ingen træningsprogrammer matcher din søgning."
+    "aboutDialog": {
+        "title": "Om SparkyFitness",
+        "description1": "SparkyFitness: Bygget til familier. Drevet af AI. Track mad, fitness, vand og sundhed – sammen.",
+        "joinDiscord": "Bliv en del af vores fællesskab på Discord: ",
+        "discordLink": "discord.gg/vcnMT5cPEA",
+        "gotIt": "Forstået",
+        "close": "Luk",
+        "applicationVersion": "Applikation Version ",
+        "moreInfoVisit": "For mere information, besøg ",
+        "githubRepo": "GitHub repository",
+        "wgerApi": "Wger API (Øvelses Data)",
+        "foodDataApis": "Fødevare API'er:",
+        "nutritionixApi": "Nutritionix API",
+        "technologiesUsed": "Anvendte teknologier:",
+        "frontend": "Brugerflade:",
+        "externalApis": "Eksterne API'er:",
+        "backend": "Backend:",
+        "fatsecretApi": "FatSecret API",
+        "openFoodFactsApi": "Open Food Facts API"
     },
-    "workoutPresetSelector": {
-      "searchPlaceholder": "søg i dine træningsprogrammer...",
-      "recentPresetsTitle": "nylige træningsprogrammer"
+    "exercise": {
+        "title": "Øvelser",
+        "addExerciseDialog": {
+            "title": "Tilføj motion",
+            "myExercisesTab": "Mine øvelser",
+            "onlineTab": "Online",
+            "categoryLabel": "Kategori",
+            "selectCategoryPlaceholder": "Vælg en kategori",
+            "categoryGeneral": "Generelt",
+            "categoryStrength": "Styrke",
+            "categoryCardio": "Konditionstræning",
+            "categoryYoga": "Yoga",
+            "caloriesPerHourLabel": "Kalorier/Time",
+            "descriptionLabel": "Beskrivelse",
+            "forcePull": "Træk",
+            "forcePush": "Skub",
+            "levelBeginner": "Begynder",
+            "imagesLabel": "Billeder",
+            "description": "Tilføj en ny øvelse til din database, enten ved at tilføje en brugerdefineret eller importere en fra en ekstern kilde.",
+            "addCustomTab": "Tilføj Brugerdefineret",
+            "importCSVTab": "Importer CSV",
+            "nameLabel": "Navn",
+            "caloriesPerHourHint": "Lad feltet stå tomt for at lade systemet beregne kalorier per time ({{newExerciseCalories}} kal/time).",
+            "sourceLabel": "Kilde",
+            "forceLabel": "Kraft",
+            "selectForcePlaceholder": "Vælg Kraft",
+            "forceStatic": "Statisk",
+            "levelLabel": "Niveau",
+            "selectLevelPlaceholder": "Vælg niveau",
+            "levelIntermediate": "Øvet",
+            "levelExpert": "Ekspert",
+            "mechanicLabel": "Teknik",
+            "selectMechanicPlaceholder": "Vælg teknik",
+            "mechanicIsolation": "Isolering",
+            "workoutPresetTab": "Træningsskabelon",
+            "instructionsLabel": "Instruktioner (en pr. linje)",
+            "addButton": "Tilføj øvelse",
+            "importDuplicateDescription": "Følgende elementer findes allerede: {{duplicateList}}. Fjern dem fra din fil og prøv igen.",
+            "equipmentLabel": "Udstyr (komma separeret)",
+            "primaryMusclesLabel": "Primære Muskler (komma separeret)",
+            "secondaryMusclesLabel": "Sekundære Muskler (komma separeret)",
+            "addSuccess": "Øvelse tilføjet",
+            "addError": "Tilføjelse af øvelse fejlede",
+            "importSuccess": "Øvelse data importeret",
+            "importDuplicateTitle": "Import fejlede: Duplikerede enheder fundet",
+            "importError": "Import af trænings data fejlede. Prøv igen.",
+            "mechanicCompound": "Flerleds"
+        },
+        "addWorkoutPresetDialog": {
+            "searchPlaceholder": "søg i dine træningsprogrammer...",
+            "recentPresetsTitle": "nylige træningsprogrammer",
+            "noRecentPresets": "Ingen nylige træningsprogrammmer.",
+            "topPresetsTitle": "favorit programmer",
+            "noTopPresets": "Ingen favorit programmer.",
+            "searchResultsTitle": "Resultater",
+            "noMatchingPresets": "Ingen træningsprogrammer matcher din søgning."
+        },
+        "workoutPresetSelector": {
+            "searchPlaceholder": "søg i dine træningsprogrammer...",
+            "recentPresetsTitle": "nylige træningsprogrammer"
+        },
+        "editExerciseEntryDialog": {
+            "avgHeartRateLabel": "Gennemsnitlig puls (bpm)",
+            "avgHeartRatePlaceholder": "Indtast gennemsnitlig puls"
+        }
+    },
+    "medications": {
+        "symptoms": {
+            "linkMed": "Link til medicin (Valgfri)",
+            "logTitle": "Log Symptom"
+        },
+        "checkin": {
+            "metric": {
+                "energy": "Energi"
+            }
+        },
+        "common": {
+            "logging": "Logging..",
+            "saving": "Gemmer…",
+            "save": "Gem",
+            "reset": "Nulstilling"
+        },
+        "today": {
+            "perfectDays": "Perfekte dage (14d)",
+            "last14": "Sidste 14 dage",
+            "streak": "{{count}}-dags streak",
+            "checklistToday": "Dagens checklist",
+            "checklistMed": "Medicin checkliste",
+            "scheduled": "Planlægning",
+            "snooze": "Snooze",
+            "skip": "Spring over"
+        },
+        "insights": {
+            "disclaimer": "Insights beregnes over en rullende 30-dages vindue. Disse er uddannelsesmæssige skøn, ikke klinisk rådgivning."
+        },
+        "locations": {
+            "general": "Generelt",
+            "head": "Hoved",
+            "chest": "Bryst",
+            "muscles": "Muskeler",
+            "joints": "Led"
+        },
+        "symptomNames": {
+            "nausea": "Kvalme",
+            "headache": "Hovedpine",
+            "constipation": "Forstoppelse",
+            "diarrhea": "Diarré",
+            "acid_reflux": "Surt opstød / GERD",
+            "stomach_pain": "Mavesmerter / kramper",
+            "dizziness": "Svimmelhed"
+        },
+        "tabs": {
+            "symptoms": "Symptomer"
+        },
+        "scheduleDesc": {
+            "mealSuffix": " ({{meal}} måltid)",
+            "daily": "Daglig",
+            "weeklyOn": "Ugentligt på {{days}}",
+            "everyNDays": "Hver {{n}} dage",
+            "monthly": "Månedligt på dag {{day}}",
+            "prn": "Efter behov (PRN)",
+            "taper": "Nedtapning / titrering"
+        },
+        "calendar": {
+            "loggedCount_one": "{{count}} logget symptom",
+            "loggedCount_other": "{{count}} logget symptomer"
+        }
+    },
+    "exerciseSearch": {
+        "textToSpeechNotSupportedDescription": "Din browser understøtter ikke Web Speech API."
+    },
+    "reports": {
+        "activityReport": {
+            "duration": "Varighed",
+            "heartRateDescriptorNotFound": "Puls deskriptor ikke fundet. Puls diagrammet er ikke tilgængelig.",
+            "heartRate": "Puls frekvens",
+            "heartRateBpm": "Puls frekvens (bpm)",
+            "heartRateTimeInZones": "Puls frekvens tid i Zones",
+            "heartRateBpmLabel": "Puls frekvens (bpm)",
+            "heartRateTimeInZonesTitle": "Puls frekvens tid i Zones"
+        },
+        "restingHeartRate": "Hvilde puls",
+        "heartRateAthletic": "Atletik",
+        "heartRateNormal": "Normal",
+        "heartRateElevated": "Eleveret",
+        "heartRateHigh": "Høj"
+    },
+    "sleepHealth": {
+        "hrv": "Hjertefrekvens Variabilitet",
+        "heartRate": "Puls frekvens",
+        "restingHeartRate": "Hvilde puls"
+    },
+    "logExerciseEntryDialog": {
+        "avgHeartRateLabel": "Gennemsnitlig puls (bpm)",
+        "enterAvgHeartRate": "Indtast gennemsnitlig puls"
     }
-  }
 }
