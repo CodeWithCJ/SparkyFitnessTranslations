@@ -2711,5 +2711,24 @@
             "notes": "額外備註",
             "notesPlaceholder": "有其他身體情況、特別感覺就寫喺度…"
         }
+    },
+    "chat": {
+        "toolCategories": {
+            "checkin": "身體狀況及每日打卡",
+            "goals": "目標設定",
+            "reports": "報表與數據分析",
+            "coaching": "訓練指導",
+            "vision": "影像辨識功能",
+            "profile": "個人資料及生活習慣",
+            "clearAll": "全部清除",
+            "presetCore": "核心工具組",
+            "presetFull": "完整工具組",
+            "description": "縮減工具數量，可以令輕量本機模型回覆更加穩定可靠.",
+            "emptyHint": "未有揀選任何分類，機械人會使用預設工具組.",
+            "food": "飲食及水份",
+            "exercise": "運動訓練",
+            "title": "對話機械人工具",
+            "tooltip": "揀選對話機械人可用工具"
+        }
     }
 }
