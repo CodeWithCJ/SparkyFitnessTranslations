@@ -248,7 +248,8 @@
             "dosesTaken": "已服用份量",
             "times": "服用時間",
             "symptomsColumn": "相關症狀",
-            "injectionAbbrev": "注射"
+            "injectionAbbrev": "注射",
+            "logTableDesc": "統計 {{start}} 至 {{end}} 呢段日子每日嘅服藥份量同時間，同時一併顯示當日記錄嘅各種身體不適症狀."
         }
     },
     "nav": {
@@ -405,7 +406,8 @@
             "netCalories": "淨熱量：{{netCalories}}",
             "netCaloriesBreakdown": "{{dailyIntakeCalories}} 攝入 − {{finalTotalCaloriesBurned}} 消耗",
             "dailyProgress": "今日進度",
-            "burnedCaloriesBreakdown": "消耗熱量明細："
+            "burnedCaloriesBreakdown": "消耗熱量明細：",
+            "targetBand": "目標區間 {{min}} 至 {{max}}"
         },
         "editExerciseEntryDialog": {
             "setLabel": "組數",
@@ -883,7 +885,11 @@
                 "confirmWarning": "呢個操作冇辦法復原，建議您刪除之前先備份好資料庫檔案.",
                 "confirmButton": "永久刪除",
                 "success": "同步數據已經刪除完畢.",
-                "error": "刪除同步數據嘅過程出現錯誤."
+                "error": "刪除同步數據嘅過程出現錯誤.",
+                "description": "清除由 Apple Health、Garmin 等平台同步、匯入嘅所有紀錄.呢個操作只會影響同步數據，您手動輸入嘅資料完全唔會被刪除，而且操作之後冇辦法復原.",
+                "scopeExcludesLibrary": "唔會刪除您建立嘅食物庫、運動動作庫（可以重複選用嘅基礎資料），只會清除使用者嘅個人記錄內容.",
+                "scopeExcludesCheckin": "標準打卡數據（體重、步數、體脂率、身高）唔會被刪除.呢類數據會整合所有來源成為單一每日數值，唔能夠依照資料來源獨立刪除.",
+                "scopeExcludesManual": "您親自新增嘅所有內容都會完整保留.手動填寫嘅紀錄、Sparky 助手幫您記錄嘅資料、套用儲存訓練模板產生嘅運動記錄，全部唔會受影響."
             }
         },
         "foodExerciseDataProviders": {
@@ -2853,7 +2859,9 @@
         "noDataTitle": "找不到任何資料",
         "noDataText": "呢份 CSV 淨係得表頭，唔存在任何數據列.",
         "validationErrorTitle": "數據校驗失敗",
-        "nameRequired": "「名稱」欄位唔可以留空."
+        "nameRequired": "「名稱」欄位唔可以留空.",
+        "booleanTrue": "係",
+        "booleanFalse": "唔係"
     },
     "foods": {
         "providerVerified": "已核證食物資料"
@@ -2904,7 +2912,8 @@
             "lowCarb": {
                 "title": "低碳或者生酮飲食",
                 "body": "碳水化合物設定成最大值，脂肪、蛋白質維持最小值即可."
-            }
+            },
+            "intro": "呢啲只係畫面顯示規則，只會影響進度嘅判斷標準，唔會變動您填寫嘅目標數值.揀選配合自身需求嘅選項就得："
         },
         "sections": {
             "energyMacros": "熱量與巨量營養素",
@@ -2914,6 +2923,10 @@
             "vitamins": "維他命",
             "other": "其他營養成份",
             "custom": "自訂營養項目"
-        }
+        },
+        "invalidBand": "請輸入合理嘅最小、最大數值",
+        "minimumDescription": "數值愈高愈理想，進度條會朝目標值填滿",
+        "maximumDescription": "數值愈低愈理想，建議維持喺目標數值以下",
+        "resetAllConfirmDescription": "下方所有營養素都會回復系統原生嘅最大、最小規則.呢個動作只會改變進度條嘅顯示邏輯，唔會修改您手動設定嘅目標數字."
     }
 }
