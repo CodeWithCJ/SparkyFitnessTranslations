@@ -253,16 +253,16 @@
         }
     },
     "nav": {
-        "diary": "日記",
-        "checkin": "身體回報",
-        "foods": "食物記錄",
-        "goals": "個人目標",
-        "settings": "系統設定",
-        "admin": "管理選項",
+        "diary": "每日摘要",
+        "checkin": "打卡",
+        "foods": "進食",
+        "goals": "目標",
+        "settings": "個人設定",
+        "admin": "系統管理",
         "cycle": "生理週期",
-        "reports": "數據報告",
+        "reports": "趨勢報告",
         "pregnancy": "懷孕監察",
-        "medications": "藥品管理"
+        "medications": "食藥"
     },
     "nutrition": {
         "calories": "熱量",
@@ -335,7 +335,7 @@
             "categoryCardio": "帶氧運動",
             "categoryYoga": "瑜伽",
             "caloriesPerHourLabel": "消耗熱量/小時",
-            "caloriesPerHourHint": "留空就會用系統自動計算數值 「{{newExerciseCalories}} 卡路里/小時）.",
+            "caloriesPerHourHint": "留空就會用系統自動計算數值 「{{newExerciseCalories}} 千卡/小時）.",
             "descriptionLabel": "動作講解",
             "sourceLabel": "資料來源",
             "forceLabel": "發力模式",
@@ -395,17 +395,17 @@
             "remaining": "剩餘配額",
             "eaten": "已攝入",
             "burned": "已消耗",
-            "otherExerciseCalories": "其他運動：{{exerciseCalories}} 卡路里",
-            "activeCalories": "活動消耗熱量：{{activeCaloriesFromExercise}} 卡路里",
-            "stepsCalories": "步數消耗：{{dailySteps}} 步 = {{stepsCalories}} 卡路里",
-            "bmrCalories": "基礎代謝：{{bmr}} 卡路里",
+            "otherExerciseCalories": "其他運動：{{exerciseCalories}} 千卡",
+            "activeCalories": "活動消耗熱量：{{activeCaloriesFromExercise}} 千卡",
+            "stepsCalories": "步數消耗：{{dailySteps}} 步 = {{stepsCalories}} 千卡",
+            "bmrCalories": "基礎代謝率：{{bmr}} 千卡",
             "bmrSourceExternal": "健康 App 同步數據",
-            "totalCaloriesBurned": "總消耗：{{totalCaloriesBurned}} 卡路里",
+            "totalCaloriesBurned": "總消耗：{{totalCaloriesBurned}} 千卡",
             "goal": "目標值",
             "caloriesBurnedBreakdownTitle": "熱量消耗分項",
             "netCalories": "淨熱量：{{netCalories}}",
             "netCaloriesBreakdown": "{{dailyIntakeCalories}} 攝入 − {{finalTotalCaloriesBurned}} 消耗",
-            "dailyProgress": "今日進度",
+            "dailyProgress": "今日進展",
             "burnedCaloriesBreakdown": "消耗熱量明細：",
             "targetBand": "目標區間 {{min}} 至 {{max}}"
         },
@@ -659,7 +659,7 @@
         "customSource": "自己新增",
         "activeCalories": "活動消耗熱量",
         "minutesUnit": "分鐘 (Mins)",
-        "caloriesUnit": "卡路里 (Calories)",
+        "caloriesUnit": "千卡 (Calories)",
         "setsLabel": "組數",
         "repsLabel": "次數 (Reps)",
         "weightLabel": "重量 (Weight)",
@@ -902,7 +902,7 @@
             }
         },
         "aiService": {
-            "title": "AI 功能設定",
+            "title": "AI 服務",
             "description": "管理各項 AI 輔助功能嘅參數配置",
             "invalidKeyLengthWarning": "如果彈出「Invalid key length」錯誤，要確認伺服器環境變數入面嘅加密金鑰係64個十六進制字符.",
             "globalSettings": {
@@ -1096,7 +1096,7 @@
             }
         },
         "apiKeyManagement": {
-            "title": "API 密鑰管理專區",
+            "title": "API 密鑰管理",
             "description": "整返專屬 API 鑰匙，俾 iPhone 捷徑、外部程式讀取您嘅數據；呢啲鎖匙綁定您帳號，隨時覺得唔安全就即時撤銷就得",
             "infoText": "產生 API 密鑰之後，其他外部程式例如 iPhone 捷徑就可以合法交換數據，條條鎖匙都同您帳號綁實，唔想用隨時銷毀唔使驚資料外洩.",
             "wikiWarning": "想要睇 iPhone 同 Android 嘅實際設定教學，去 GitHub 專案嘅 Wiki 頁面睇範例步驟啦.",
@@ -1112,7 +1112,7 @@
             "deleteApiKeyConfirm": "確實要刪走呢條 API 密鑰？刪咗之後相關外部程式即刻斷線，呢個操作冇得還原㗎！."
         },
         "accountSecurity": {
-            "title": "帳號保安設定",
+            "title": "帳號保安",
             "description": "更換登入電郵地址、重設登入密碼都係呢度搞",
             "currentEmail": "而家緊用嘅登入電郵",
             "enterNewEmail": "入新嘅電郵信箱地址",
@@ -1415,7 +1415,7 @@
         "breakfast": "早餐",
         "lunch": "午餐",
         "dinner": "晚餐",
-        "snacks": "小食",
+        "snacks": "食零",
         "errorOccurred": "出錯啦",
         "confirm": "確認",
         "notApplicable": "唔適用",
