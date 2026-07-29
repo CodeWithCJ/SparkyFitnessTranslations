@@ -2711,5 +2711,23 @@
             "notes": "Notlar",
             "notesPlaceholder": "Dikkat edilmesi gereken başka bir şey…"
         }
+    },
+    "foodCsvImport": {
+        "title": "Besin Verisini İçe Aktar",
+        "addRow": "Satır Ekle",
+        "uploadCsv": "CSV Yükle",
+        "downloadTemplate": "Taslağı İndir",
+        "clearData": "Temizle",
+        "pastePlaceholder": "Ya da CSV'yi buraya yapıştırın...",
+        "parseText": "Metni Yapıştır",
+        "recordsLoaded": "{{count}} kayıt başarıyla yüklendi.",
+        "actions": "Eylemler",
+        "deleteRow": "Satırı Sil",
+        "overrideLabel": "Varolan besin verilerinin üzerine yaz"
+    },
+    "chat": {
+        "toolCategories": {
+            "food": "Besin & Su"
+        }
     }
 }
