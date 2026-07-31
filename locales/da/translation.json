@@ -6,7 +6,8 @@
         "settings": "Indstillinger",
         "admin": "Admin",
         "checkin": "Tjek ind",
-        "foods": "Fødevare"
+        "foods": "Fødevare",
+        "pregnancy": "Graviditet"
     },
     "aboutDialog": {
         "title": "Om SparkyFitness",
@@ -268,5 +269,11 @@
         "noDataText": "CSV-filen indeholder overskrifter, men ingen data rækker.",
         "validationErrorTitle": "Valideringsfejl",
         "nameRequired": "Feltet 'navn' må ikke være tomt."
+    },
+    "nutrition": {
+        "calories": "Kalorier",
+        "protein": "Protein",
+        "carbohydrates": "Kulhydrater",
+        "netCarbs": "Netto Kulhydrater"
     }
 }
