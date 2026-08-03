@@ -2838,7 +2838,8 @@
             "reports": "Raporty i analizy",
             "coaching": "Wsparcie trenerskie",
             "vision": "Analiza obrazu",
-            "profile": "Profil i nawyki"
+            "profile": "Profil i nawyki",
+            "medications": "Leki"
         }
     },
     "foodCsvImport": {
