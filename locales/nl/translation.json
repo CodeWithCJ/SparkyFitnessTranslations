@@ -52,7 +52,7 @@
             "caloriesPerHourHint": "Laat leeg om de standaard berekende aantal calorieën per uur te gebruiken ({{newExerciseCalories}} cal/uur).",
             "descriptionLabel": "Beschrijving",
             "sourceLabel": "Bron",
-            "forceLabel": "Gewicht",
+            "forceLabel": "Kracht",
             "selectForcePlaceholder": "Selecteer gewicht",
             "forcePull": "Trek",
             "forcePush": "Duw",
@@ -78,7 +78,8 @@
             "importDuplicateTitle": "Import mislukt: Duplicaten gevonden",
             "importDuplicateDescription": "De volgende items bestaan al: {{duplicateList}}. Verwijder ze uit het bestand en probeer opnieuw.",
             "importError": "Importeren van data van oefeningen mislukt. Probeer het opnieuw.",
-            "importFitTab": "Import FIT"
+            "importFitTab": "Import FIT",
+            "modalityLabel": "Tracking type"
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "Zoek jouw vooraf ingestelde trainingen...",
@@ -252,7 +253,8 @@
             "validationError": "Validatiefout",
             "nameEmptyError": "Het veld 'naam' mag niet leeg zijn.",
             "copied": "Gekopieerd!",
-            "copiedToClipboard": "'{{value}}' gekopieerd naar het klembord."
+            "copiedToClipboard": "'{{value}}' gekopieerd naar het klembord.",
+            "fileTooLarge": "Het geselecteerde bestand is te groot. U moet een bestand uploaden dat kleiner is dan 25 MB."
         },
         "playbackModal": {
             "voiceLabel": "Stem:",
@@ -277,6 +279,21 @@
             "statusCreated": "Geïmporteerd",
             "statusUpdated": "Bijgewerkt",
             "statusFailed": "Mislukt"
+        },
+        "modality": {
+            "weightReps": "Gewicht & herhalingen",
+            "repsOnly": "Herhalingen",
+            "duration": "Duur",
+            "durationDistance": "Duur & afstand"
+        },
+        "importHistoryCSV": {
+            "fileTooLarge": "Het geselecteerde bestand is te groot. U moet een bestand uploaden dat kleiner is dan 25 MB.",
+            "pasteFirst": "Plak eerst wat CSV-gegevens.",
+            "pastePlaceholder": "Of plak hier de inhoud van het CSV-bestand...",
+            "parseText": "Analyseer tekst",
+            "rowsRejected": "{{failed}} van de {{total}} rijen konden niet worden geïmporteerd — zie hieronder voor meer informatie.",
+            "headersMapped": "Kopteksten toegewezen",
+            "mapRequiredFields": "De kopteksten in uw CSV-bestand komen niet overeen met het vereiste formaat. Wijs de velden toe om door te gaan."
         }
     },
     "workoutPresetsManager": {
@@ -665,8 +682,65 @@
             "lapTableCaloriesHeader": "Calorieën",
             "heartRateTimeInZonesTitle": "Hartslag Tijd in Zones",
             "timeInZoneSLabel": "Tijd in Zone (s)",
-            "cadence": "Cadans"
-        }
+            "cadence": "Cadans",
+            "waterLoss": "Vochtverlies"
+        },
+        "bodyBattery": "Lichaamsbatterij",
+        "charged": "Opgeladen",
+        "drained": "Uitgeput",
+        "trend": "Trend",
+        "highest": "Hoogste",
+        "atWake": "Bij wakker worden",
+        "lowest": "Laagste",
+        "bodyBatteryStatusGood": "Goed",
+        "bodyBatteryStatusExcellent": "Uitstekend",
+        "bodyBatteryDescLow": "Je energie is op. Rust wordt aanbevolen.",
+        "bodyBatteryDescModerate": "Je energie is beperkt. Lichte activiteiten zijn oké.",
+        "bodyBatteryDescGood": "Je lichaamsbatterij staat op een goed niveau.",
+        "bodyBatteryDescExcellent": "Je bent helemaal opgeladen en klaar voor intensieve inspanningen.",
+        "hrv": "HRV",
+        "hrvStatus": "HRV status",
+        "hrvBaseline": "Basislijn",
+        "hrvCurrent": "Huidig",
+        "hrvLow": "Laag",
+        "hrvNormal": "Normaal",
+        "hrvElevated": "Verhoogd",
+        "hrvBalanced": "Gebalanceerd",
+        "hrvDescLow": "Je HRV ligt onder je basislijn.",
+        "hrvDescNormal": "Je HRV ligt binnen je normale bereik.",
+        "hrvDescElevated": "Je HRV ligt boven je basislijn.",
+        "hrvDescBalanced": "Je HRV is gebalanceerd.",
+        "spo2": "SpO2",
+        "spo2Status": "SpO2 status",
+        "spo2Average": "Gemiddeld",
+        "spo2Minimum": "Minimaal",
+        "spo2Excellent": "Uitstekend",
+        "spo2Normal": "Normaal",
+        "spo2Low": "Laag",
+        "spo2VeryLow": "Erg laag",
+        "spo2DescExcellent": "Het zuurstofgehalte in uw bloed is uitstekend.",
+        "spo2DescNormal": "Het zuurstofgehalte in uw bloed ligt binnen het normale bereik.",
+        "spo2DescLow": "Het zuurstofgehalte in uw bloed ligt onder de normale waarde. Overweeg om een arts te raadplegen.",
+        "spo2DescVeryLow": "Het zuurstofgehalte in uw bloed is erg laag. Zoek medische hulp.",
+        "respiration": "Ademhaling",
+        "respirationRate": "Ademhalingsfrequentie",
+        "respirationSleepAvg": "Slaap gem",
+        "respirationAwakeAvg": "Wakker gem",
+        "respirationLow": "Laag",
+        "respirationNormal": "Normaal",
+        "respirationElevated": "Verhoogd",
+        "respirationDescLow": "Uw ademhalingsfrequentie ligt onder het normale niveau.",
+        "respirationDescNormal": "Uw ademhalingsfrequentie ligt binnen het normale bereik.",
+        "respirationDescElevated": "Your respiration rate is within the normal range.",
+        "breathsPerMin": "ademhalingen/min",
+        "restingHeartRate": "Rusthartfrequentie",
+        "heartRateAthletic": "Atletisch",
+        "heartRateNormal": "Normaal",
+        "heartRateElevated": "Verhoogd",
+        "heartRateHigh": "Hoog",
+        "bpm": "bpm",
+        "bodyBatteryStatusLow": "Laag",
+        "bodyBatteryStatusModerate": "Matig"
     },
     "exerciseCard": {
         "mechanic": "Mechanica",
@@ -994,7 +1068,7 @@
                 "serviceType": "Servicetype",
                 "apiKey": "API-sleutel",
                 "apiKeyOptional": "API-sleutel (optioneel)",
-                "apiKeyPlaceholder": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeyPlaceholder": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
                 "apiKeyPlaceholderOllama": "Niet vereist voor Ollama",
                 "apiKeyDescriptionOllama": "Een API-sleutel is optioneel voor Ollama. Indien opgegeven, wordt deze versleuteld opgeslagen.",
                 "apiKeyDescription": "Uw API-sleutel voor de geselecteerde service. Deze wordt versleuteld opgeslagen.",
@@ -1057,7 +1131,7 @@
             },
             "test": {
                 "successTitle": "Succes",
-                "failureTitle": "Mislukt",
+                "failureTitle": "Mislukking",
                 "categories": {
                     "api_key_missing": "De API-sleutel ontbreekt of is ongeldig. Voer een geldige sleutel in en probeer het opnieuw.",
                     "custom_url_missing": "Voor dit servicetype is een aangepaste URL vereist.",
@@ -1235,7 +1309,23 @@
             "restoreFailed": "Terugzetten van de back-up mislukt.",
             "failedToFetchSettings": "Het ophalen van de back-upinstellingen is mislukt.",
             "failedToSaveSettings": "Het opslaan van de back-upinstellingen is mislukt.",
-            "failedToRestoreBackup": "Het terugzetten van de back-up is mislukt."
+            "failedToRestoreBackup": "Het terugzetten van de back-up is mislukt.",
+            "downloadBackup": "Back-up downloaden",
+            "availableBackups": "Beschikbare back-ups",
+            "availableBackupsDescription": "Kies een back-upbestand om te downloaden.",
+            "noBackupsFound": "Er zijn geen back-upbestanden gevonden.",
+            "backupCount_one": "{{count}} back-up",
+            "backupCount_other": "{{count}} back-ups",
+            "backupFileName": "Bestandsnaam",
+            "backupDate": "Gestart",
+            "backupCompletedDate": "Compleet",
+            "backupSize": "Groote",
+            "download": "Download",
+            "downloadBackupFile": "Download {{fileName}}",
+            "downloadBackupSuccess": "De back-up is succesvol gedownload.",
+            "failedToDownloadBackup": "Het downloaden van de back-up is mislukt.",
+            "failedToFetchBackups": "Het ophalen van de back-upbestanden is mislukt.",
+            "error": "Fout"
         },
         "oidcSettings": {
             "title": "OIDC-authenticatieproviders",
@@ -1954,7 +2044,8 @@
         "meal": "Maaltijd",
         "food": "Voedingsmiddel",
         "quantity": "Hoeveelheid",
-        "total": "Totaal"
+        "total": "Totaal",
+        "durationSec": "Duur (s)"
     },
     "moodReports": {
         "title": "Stemmingsrapporten",
@@ -2005,9 +2096,9 @@
         "sleepConsistency": "Slaapconsistentie",
         "bedtime": "Bedtijd",
         "wakeTime": "Wektijd",
-        "sleepDebt": "Slaap Schuld",
-        "sleepDebtHours": "Slaap Schuld (uren)",
-        "sleepDebtDisclaimer": "*Slaap Schuld wordt berekend op basis van de aanbevolen 8 uur slaap. Dit zal in een toekomstige release worden aangepast.",
+        "sleepDebt": "Slaaptekort",
+        "sleepDebtHours": "Slaaptekort (uren)",
+        "sleepDebtDisclaimer": "*Slaaptekort wordt berekend op basis van de aanbevolen 8 uur slaap. Dit zal in een toekomstige release worden aangepast.",
         "sleepEfficiency": "Slaap Efficiëntie",
         "hoursShort": "h ",
         "minutesShort": "m"
@@ -2021,7 +2112,7 @@
         "timeAsleep": "Tijd in Slaap",
         "score": "Score",
         "efficiency": "Efficiëntie",
-        "debt": "Schuld",
+        "debt": "Tekort",
         "awakePeriods": "Periodes Wakker",
         "insight": "Inzicht",
         "source": "Bron",
@@ -2029,7 +2120,9 @@
         "needsImprovement": "Ter Verbetering",
         "sleepStagesSummary": "Slaapfasen Samenvatting:",
         "sleepStageTimeline": "Slaapfasen Tijdlijn:",
-        "noSleepDataAvailable": "Geen slaapgegevens beschikbaar."
+        "noSleepDataAvailable": "Geen slaapgegevens beschikbaar.",
+        "impact": "Gevolgen",
+        "highDebt": "Hoog tekort"
     },
     "sleepReport": {
         "loadingSleepData": "Slaapgegevens laden...",
@@ -2052,7 +2145,10 @@
         "sleepDataExportedSuccessfully": "Slaapgegevens succesvol geëxporteerd.",
         "failedToLoadSleepEntries": "Kan slaapvermeldingen niet laden",
         "sleepHypnogram": "Slaap Hypnogram",
-        "noSleepStageDataAvailable": "Geen slaapfase gegevens beschikbaar voor dit item."
+        "noSleepStageDataAvailable": "Geen slaapfase gegevens beschikbaar voor dit item.",
+        "csvHeadersDebt": "Tekort",
+        "csvHeadersWeight": "Gewicht (%)",
+        "highDebt": "Hoog tekort"
     },
     "workoutReport": {
         "workoutStats": "Trainingsstatistieken",
@@ -2137,7 +2233,13 @@
         "unknownProvider": "Onbekende provider voor toevoegen externe oefening: {{providerType}}",
         "failedToLoadRecentTopExercises": "Kan recente en hoofdoefeningen niet laden.",
         "failedToSearchExercises": "Zoeken van oefeningen mislukt: {{errorMessage}}",
-        "failedToLoadFilterOptions": "Laden van filteropties mislukt: {{errorMessage}}"
+        "failedToLoadFilterOptions": "Laden van filteropties mislukt: {{errorMessage}}",
+        "ownership": {
+            "all": "Alles",
+            "mine": "Mijn oefeningen",
+            "family": "Familie",
+            "public": "Publiek"
+        }
     },
     "addComp": {
         "addNew": "Nieuw Toevoegen"
@@ -2374,7 +2476,31 @@
         "calendar": {
             "loggedCount_one": "{{count}} gemeld symptoom",
             "loggedCount_other": "{{count}} gemelde symptomen",
-            "maxSeverity": "Maximale ernst: {{n}}"
+            "maxSeverity": "Maximale ernst: {{n}}",
+            "title": "Kalender voor medicatieoverzicht",
+            "noMeds": "Voeg hier een medicijn toe om de bijbehorende kalender te bekijken.",
+            "selectMedication": "Kies een medicijn",
+            "allMedications": "Alle medicaties",
+            "monthTotal": "{{count}} doses geregistreerd in {{month}}",
+            "allTaken": "Alle ingenomen doses",
+            "partialTaken": "Gedeeltelijk ingenomen",
+            "mostlySkipped": "Meestal overgeslagen",
+            "allSkipped": "Alle overgeslagen doses",
+            "snoozedOnly": "Alleen uitgesteld",
+            "sideEffect": "Bijwerkingssymptoom",
+            "generalSymptom": "Algemeen symptoom",
+            "tooltipTaken": "{{count}} ingenomen",
+            "tooltipPrn": "{{count}} PRN ingenomen",
+            "tooltipSkipped": "{{count}} overgeslagen",
+            "tooltipSnoozed": "{{count}} uitgesteld",
+            "tooltipSymptoms": "Symptomen: {{names}}",
+            "sun": "Zo",
+            "mon": "Ma",
+            "tue": "Di",
+            "wed": "Wo",
+            "thu": "Do",
+            "fri": "Vr",
+            "sat": "Za"
         },
         "reports": {
             "logTableTitle": "Tabel voor medicatieoverzicht",
@@ -2500,7 +2626,10 @@
             "statusDone": "Klaar",
             "noTitration": "Er zijn nog geen opbouwstappen — tik op ‘Stap toevoegen’ om je dosisopbouw te plannen.",
             "recentInjections": "Recente injecties",
-            "noInjections": "Er zijn nog geen injecties geregistreerd."
+            "noInjections": "Er zijn nog geen injecties geregistreerd.",
+            "pkAxisDays": "Dagen",
+            "pkDayLabel": "Dag {{day}}",
+            "pkAxisDates": "Datums"
         },
         "types": {
             "pill": "pil",
@@ -2537,7 +2666,12 @@
             "activeScripts": "Actieve recepten",
             "glp1Meds": "GLP-1 medicijnen",
             "scheduledToday": "Vandaag gepland",
-            "totalMeds": "Totaal medicatie"
+            "totalMeds": "Totaal medicatie",
+            "strengthUnit": "Krachteenheid",
+            "dose": "Dosis",
+            "dosePerInjection": "Dosis per injectie",
+            "doseUnit": "Dosiseenheid",
+            "doseFollowsStrength": "Komt overeen met kracht totdat je het wijzigt."
         }
     },
     "chat": {
@@ -2556,7 +2690,8 @@
             "reports": "Rapporten & Analyses",
             "coaching": "Coaching",
             "vision": "Visie",
-            "profile": "Profiel & Gewoontes"
+            "profile": "Profiel & Gewoontes",
+            "medications": "Medicijnen"
         }
     },
     "calculationSettings": {
@@ -2570,7 +2705,7 @@
         "downloadTemplate": "Download sjabloon",
         "clearData": "Gegevens wissen",
         "pastePlaceholder": "Of plak hier de inhoud van het CSV-bestand...",
-        "parseText": "Parse Tekst",
+        "parseText": "Analyseer tekst",
         "recordsLoaded": "Er zijn {{count}} records succesvol geladen.",
         "actions": "Acties",
         "booleanTrue": "Waar",
@@ -2589,11 +2724,18 @@
         "successTitle": "Succes",
         "loadedRowsFromText": "Er zijn {{count}} rijen uit de tekst geladen.",
         "emptyFile": "Het geselecteerde bestand is leeg.",
-        "headersMismatchFile": "De CSV-kopteksten voldoen niet aan de vereiste indeling of volgorde. Download het sjabloon.",
+        "headersMismatchFile": "De CSV-kopteksten voldoen niet aan het vereiste formaat. Wijs de velden toe om door te gaan.",
         "noDataTitle": "Geen gegevens gevonden",
         "noDataText": "Het CSV-bestand bevat kopteksten, maar geen gegevensrijen.",
         "validationErrorTitle": "Validatiefout",
-        "nameRequired": "Het veld ‘naam’ mag niet leeg zijn."
+        "nameRequired": "Het veld ‘naam’ mag niet leeg zijn.",
+        "fileTooLarge": "Het geselecteerde bestand is te groot. U moet een bestand uploaden dat kleiner is dan 25 MB.",
+        "defaultVariantNote": "Per voedingsmiddel moet ten minste één variant als standaardeenheid worden ingesteld (standaard = waar).",
+        "upfrontNote": "Opmerking: Voor elk voedingsmiddel moet ten minste één variant als standaardeenheid zijn ingesteld (standaard = waar).",
+        "missingDefaultWarning": "Waarschuwing: voor {{count}} voedingsmiddel(en) is geen standaardvariant ingesteld. Stel ten minste één variant in als standaard (hieronder geel gemarkeerd).",
+        "missingDefaultValidationError": "Per voedingsmiddel moet ten minste één variant als standaardeenheid worden ingesteld.",
+        "filterMissingDefault": "Ontbrekende standaardwaarden weergeven ({{count}})",
+        "showAllRows": "Alle rijen weergeven ({{count}})"
     },
     "foods": {
         "providerVerified": "Gecertificeerde voedingsmiddelen"
@@ -2669,5 +2811,251 @@
             "other": "Anders",
             "custom": "Op maat gemaakte voedingsstoffen"
         }
+    },
+    "sleepHealth": {
+        "hrvStatus": "HRV status",
+        "hrv": "Hartslagvariabiliteit",
+        "hrvCurrent": "Huidige HRV",
+        "hrvBaseline": "Basislijn bereik",
+        "hrvTrend": "HRV trend",
+        "hrvLow": "Laag",
+        "hrvNormal": "Normaal",
+        "hrvElevated": "Verhoogd",
+        "spo2": "Zuurstofgehalte in het bloed",
+        "spo2Average": "Gemiddelde SpO2",
+        "spo2Minimum": "Minimaal",
+        "respiration": "Ademhaling",
+        "respirationAverage": "Gemiddelde",
+        "respirationLowest": "Laagste",
+        "respirationHighest": "Hoogste",
+        "heartRate": "Hartslag",
+        "restingHeartRate": "Rusthartslag"
+    },
+    "sleepSummary": {
+        "title": "De slaap van gisteravond",
+        "duration": "Duur",
+        "score": "Slaapscore",
+        "efficiency": "Efficiëntie",
+        "bedtime": "Bedtijd",
+        "wakeTime": "Wakker worden",
+        "deepSleep": "Diepe slaap",
+        "lightSleep": "Lichte slaap",
+        "remSleep": "REM slaap",
+        "awake": "Wakker",
+        "bodyBatteryChange": "Lichaamsbatterij verandering",
+        "restlessMoments": "Rusteloze momenten",
+        "avgStress": "Gem slaapstress",
+        "noData": "Geen slaapdata beschikbaar"
+    },
+    "sleepScience": {
+        "title": "Slaapwetenschap",
+        "sleepDebt": "Slaaptekort",
+        "debtLow": "Laag",
+        "debtLowDesc": "Je slaaptekort is minimaal. Goed hersteld!",
+        "debtModerate": "Matig",
+        "debtModerateDesc": "Er is een tekort opgebouwd. Probeer wat slaap in te halen.",
+        "debtHigh": "Hoog",
+        "debtHighDesc": "Aanzienlijk slaaptekort. Rusten is belangrijk.",
+        "debtCritical": "Kritisch",
+        "debtCriticalDesc": "Ernstig slaaptekort. Onmiddellijke rust nodig.",
+        "paybackTime": "~{{nights}} nachten om bij te komen",
+        "debtHistory": "14 dagen slaaptekort",
+        "debt": "Tekort",
+        "surplus": "Overschot",
+        "dailyBreakdown": "Dagelijks overzicht",
+        "date": "Datum",
+        "slept": "Geslapen",
+        "deviation": "Afwijking",
+        "weight": "Gewicht",
+        "weightExplanation": "Het gewicht geeft de recentheid aan: recentere dagen hebben een grotere invloed.",
+        "energyCurve": "Energiecurve",
+        "currentEnergy": "Nu: {{energy}}%",
+        "energy": "Energie",
+        "zone_peak": "Piek",
+        "zone_rising": "Stijgend",
+        "zone_wind-down": "Ontspannen",
+        "zone_sleep": "Slaap",
+        "chronotype": "Chronotype",
+        "chronotypeEarly": "Vroege vogel",
+        "chronotypeEarlyDesc": "Je wordt van nature vroeg wakker en presteert ’s ochtends het beste.",
+        "chronotypeIntermediate": "Gemiddeld",
+        "chronotypeIntermediateDesc": "Je ritme is in balans tussen ’s ochtends en ’s avonds.",
+        "chronotypeLate": "Nachtuil",
+        "chronotypeLateDesc": "Je blijft van nature laat op en bent ’s avonds op je best.",
+        "avgWake": "Gemiddeld wakker",
+        "avgSleep": "Gemiddeld slaap",
+        "acrophase": "Acrofase",
+        "melatoninWindow": "Melatoninevenster",
+        "basedOn": "Op basis van {{days}} dagen",
+        "sleepNeedTonight": "Slaapbehoefte vanavond",
+        "baseline": "Basislijn",
+        "strain": "Belasting",
+        "debtRecovery": "Tekortherstel",
+        "naps": "Dutjes",
+        "method": "Methode",
+        "recalculate": "Herberekenen",
+        "insufficientData": "Er zijn meer gegevens nodig voor een volledige analyse",
+        "workdays": "Werkdagen",
+        "freedays": "Vrijedagen",
+        "noData": "Er zijn geen slaapgegevens beschikbaar",
+        "noDataDesc": "Begin met het bijhouden van je slaap om geavanceerde inzichten te verkrijgen.",
+        "baselineCalculated": "De basislijn voor de slaapbehoefte is succesvol berekend",
+        "baselineError": "Het berekenen van de basislijn voor de slaapbehoefte is mislukt",
+        "zone_dip": "Dip",
+        "nadir": "Nadir"
+    },
+    "onboarding": {
+        "completeSetup": "Installatie afronden"
+    },
+    "cycle": {
+        "hub": "Cyclus- & zwangerschapscentrum",
+        "pregnancyHub": "Zwangerschapscentrum",
+        "hubSubtitle": "Houd je lichaam in de gaten, leer het begrijpen en stem je erop af.",
+        "tabs": {
+            "today": "Vandaag",
+            "calendar": "Agenda",
+            "insights": "Inzichten",
+            "care": "Zorg"
+        },
+        "comingSoon": {
+            "calendarTitle": "Cyclus agenda",
+            "calendarDesc": "In fase 2 komt er een interactief overzicht van je eerdere cycli, je bloedverliesvolume en voorspellingen voor de toekomst.",
+            "insightsTitle": "Cyclus inzichten",
+            "insightsDesc": "In fase 2 volgen gedetailleerde grafieken van de basale lichaamstemperatuur, overzicht van symptomen en de cycluslengte.",
+            "careTitle": "Zorg en herinneringen",
+            "careDesc": "In fase 5 komen er herinneringen voor anticonceptie, productwijzigingen en de mogelijkheid om een doktersrapport als PDF te exporteren.",
+            "placeholder": "Binnenkort beschikbaar"
+        },
+        "onboarding": {
+            "stepIndicator": "Stap {{step}} van 4",
+            "step1Title": "Kies je trackingdoel",
+            "step1Desc": "Kies de primaire modus voor je tracker.",
+            "step2Title": "Data en duur van de cycli",
+            "step2Desc": "Vertel ons eens wat meer over de kenmerken van een typische cyclus.",
+            "step3Title": "Uw gezondheidsprofiel",
+            "step3Desc": "Optionele informatie om voorspellingen aan te passen (optioneel).",
+            "step4Title": "Disclaimer & bevestiging",
+            "step4Desc": "Lees dit aandachtig door en bevestig dat u het hebt begrepen voordat u de procedure afrondt.",
+            "successTitle": "Welkom bij cyclus tracking!",
+            "successDesc": "Je cyclusprofiel is succesvol geïnitialiseerd.",
+            "errorTitle": "Installatie is mislukt",
+            "errorDesc": "Je instellingen konden niet worden opgeslagen. Probeer het nog eens.",
+            "lastPeriodStart": "Wanneer begon je laatste menstruatie?",
+            "avgCycleLength": "Typische cyclus (dagen)",
+            "avgPeriodLength": "Typische menstruatie (dagen)",
+            "bcMethod": "Anticonceptiemethode",
+            "bcHint": "Hormonale anticonceptie onderdrukt vruchtbaarheidsperiodes, waardoor alleen voorspellingen voor de menstruatie worden weergegeven.",
+            "conditions": "Bekende aandoeningen (optioneel)",
+            "complete": "Akkoord en voltooien"
+        },
+        "disclaimer": {
+            "title": "Belangrijke gezondheidswaarschuwing",
+            "text1": "Deze functie voor het bijhouden van de cyclus is uitsluitend bedoeld voor educatieve doeleinden, fitness en het bijhouden van een logboek. De functie is niet ontworpen of bedoeld om te worden gebruikt als primaire methode voor anticonceptie of gezinsplanning.",
+            "text2": "Voorspellingen zijn schattingen en kunnen variëren afhankelijk van de individuele consistentie, gezondheidstoestand of onregelmatigheden in de cyclus. Raadpleeg bij medische vragen altijd een zorgverlener."
+        },
+        "mode": {
+            "standard": "Standaard cyclusregistratie",
+            "standardDesc": "Houd menstruatiecycli en symptomen bij en voorspel toekomstige cyclusfasen.",
+            "ttc": "Proberen zwanger te worden",
+            "ttcDesc": "Houd de vruchtbare periode, de eisprong en de indicatoren voor de luteale fase bij.",
+            "pregnant": "Zwangerschap bijhouden",
+            "pregnantDesc": "Houd de mijlpalen in de ontwikkeling van de foetus bij, gebruik de weeëntimer en houd je prenatale zorg bij."
+        },
+        "today": {
+            "cycleDay": "Cyclische dag",
+            "late": "{{n}} dagen te laat",
+            "periodIn": "Menstruatie over {{n}} dagen",
+            "nextPeriod": "Volgende menstruatie",
+            "ovulation": "Ovulatie",
+            "cycleLength": "Cyclusduur",
+            "lateBanner": "Je menstruatie is {{n}} dagen te laat. Noteer wanneer deze begint, of pas de lengte van je cyclus aan in de instellingen."
+        },
+        "legend": {
+            "period": "Menstruatie",
+            "fertile": "Vruchtbaar",
+            "ovulation": "Ovulatie"
+        },
+        "stats": {
+            "cycleAvg": "Cyclus gemiddelde",
+            "periodAvg": "Menstruatie gemiddelde",
+            "lastBbt": "Laatste basale lichaamstemperatuur"
+        },
+        "regularity": {
+            "regular": "Gewoon",
+            "somewhat": "Redelijk gewoon",
+            "irregular": "Ongewoon"
+        },
+        "insight": {
+            "menstrual_rest": "Je zit in je menstruatiefase — rust en lichte beweging kunnen helpen.",
+            "menstrual_iron": "IJzerrijke voedingsmiddelen kunnen je tijdens je menstruatie helpen.",
+            "follicular_energy": "Tijdens de folliculaire fase heb je vaak meer energie — een goede week voor intensievere trainingen.",
+            "fertile_window": "Je bevindt je in je vruchtbare periode.",
+            "ovulation_peak": "Je ovulatie vindt rond deze tijd plaats — dit is je meest vruchtbare dag.",
+            "luteal_dip": "In de late luteale fase kunnen je energie en slaap wat afnemen. Wees lief voor jezelf.",
+            "luteal_pms": "De symptomen van premenstrueel syndroom kunnen nu optreden — houd bij hoe je je voelt.",
+            "generic_log": "Houd vandaag bij om je voorspellingen in de loop van de tijd te verbeteren."
+        },
+        "log": {
+            "title": "Het logboek van vandaag",
+            "saved": "Opgeslagen",
+            "flow": "Bloeding",
+            "products": "Menstruatieproducten",
+            "fewerProducts": "Minder weergeven",
+            "moreProducts": "+ meer producten",
+            "bbt": "Basale lichaamstemperatuur",
+            "mucus": "Baarmoederhalsslijm",
+            "moods": "Stemming",
+            "energy": "Energie",
+            "notes": "Notities",
+            "notesPlaceholder": "Nog iets anders om te noteren…"
+        }
+    },
+    "healthDataImport": {
+        "fileTooLarge": "Het geselecteerde bestand is te groot. Upload alstublieft een bestand dat kleiner is dan 25 MB."
+    },
+    "diaryCsvImport": {
+        "fileTooLarge": "Het geselecteerde bestand is te groot. Upload alstublieft een bestand dat kleiner is dan 25 MB.",
+        "headersMismatch": "Er ontbreken verplichte kolommen in het CSV-bestand. Wijs de velden toe om door te gaan."
+    },
+    "csvImport": {
+        "changeFormat": "Wijzigen",
+        "hideOptions": "Opmaakopties verbergen",
+        "delimiterLabel": "Scheidingsteken",
+        "decimalLabel": "Getalnotatie",
+        "dateLabel": "Datumnotatie",
+        "quoteLabel": "Aanhalingsteken",
+        "advanced": "Geavanceerd",
+        "delimiterDetectionFailed": "Er kon geen scheidingsteken worden gedetecteerd — kies er hieronder een.",
+        "decimalDetected": "Gedetecteerd: {{format}} (uit “{{evidence}}”)",
+        "decimalNotConfident": "Er zijn geen dubbelzinnige getallen gevonden; er wordt de Amerikaanse notatie gebruikt.",
+        "previewSummary": "{{columns}} kolommen, {{rows}} rijen gedetecteerd.",
+        "resultImported": "Geimporteerd",
+        "resultSkipped": "Overgeslagen",
+        "resultFailed": "Mislukt",
+        "viewErrors": "Mislukte rijen bekijken",
+        "summary": {
+            "auto": "Automatisch detecteren",
+            "autoDelimiter": "Automatisch detecteren ({{label}})",
+            "autoDecimal": "Aantal decimalen automatisch instellen"
+        },
+        "decimal": {
+            "auto": "Automatisch detecteren",
+            "us": "1,234.56 (US)",
+            "eu": "1.234,56 (EU)",
+            "usShort": "1,234.56 (US)",
+            "euShort": "1.234,56 (EU)"
+        },
+        "delimiter": {
+            "comma": "Komma",
+            "semicolon": "Puntkomma",
+            "tab": "Tab",
+            "pipe": "Buis"
+        },
+        "mapHeaders": "CSV-kopteksten schikken",
+        "mapHeadersDescription": "De kolommen in uw bestand komen niet overeen met de verwachte namen. Koppel elk verplicht veld aan de kolom waarin het staat, of klik op ‘Annuleren’ en pas het scheidingsteken hierboven aan als de kolommen hierboven niet kloppen.",
+        "selectHeader": "Koptekst selecteren",
+        "none": "Geen",
+        "confirmMapping": "Bevestig",
+        "cancel": "Annuleren"
     }
 }
