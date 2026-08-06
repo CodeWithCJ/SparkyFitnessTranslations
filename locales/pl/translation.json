@@ -1437,7 +1437,7 @@
             "providerIdInfo": "Wartość ta wejdzie w skład URI przekierowania: /api/auth/sso/callback/YOUR_ID",
             "domain": "Domena organizacji",
             "domainInfo": "Identyfikacja tego dostawcy jest wymagana przez Better Auth.",
-            "callbackUrlCopied": "Callback URL skopiowano do schowka."
+            "callbackUrlCopied": "Callback URL skopiowano do schowka"
         },
         "userManagement": {
             "title": "Zarządzanie użytkownikami",
