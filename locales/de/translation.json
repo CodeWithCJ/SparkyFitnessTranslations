@@ -2641,7 +2641,8 @@
             "exercise": "Übung",
             "goals": "Ziele",
             "profile": "Profil & Gewohnheiten",
-            "medications": "Medikamente"
+            "medications": "Medikamente",
+            "tooltip": "Chatbot Werkzeuge"
         }
     },
     "foodCsvImport": {
