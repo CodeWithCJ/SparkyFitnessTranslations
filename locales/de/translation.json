@@ -2390,7 +2390,10 @@
             "snoozed": "Geschlummert",
             "skip": "Überspringen",
             "take": "Nehmen",
-            "adherence14": "14-tägige Einhaltung"
+            "adherence14": "14-tägige Einhaltung",
+            "loadingChecklist": "Checkliste wird geladen…",
+            "dueToday": "Fällig heute",
+            "asNeeded": "Bei Bedarf"
         },
         "insights": {
             "title": "Nebenwirkungen Einsichten & Hinweise",
@@ -2447,7 +2450,7 @@
             "tooltipTaken": "{{count}} genommen",
             "tooltipSkipped": "{{count}} übersprungen",
             "tooltipSymptoms": "Symptome: {{names}}",
-            "sun": "Sonne",
+            "sun": "So",
             "mon": "Mon",
             "tue": "Di",
             "wed": "Mit",
@@ -2738,5 +2741,16 @@
         "cancel": "Abbrechen",
         "none": "Keine",
         "confirmMapping": "Bestätigen"
+    },
+    "workoutLaps": {
+        "lapsCount": "{{count}} Runden",
+        "lap": "Runde",
+        "distance": "Distanz",
+        "time": "Zeit",
+        "pace": "Pace (/{{unit}})",
+        "cadence": "Frequenz"
+    },
+    "dailyHealthMetrics": {
+        "bodyBattery": "Energielevel"
     }
 }
