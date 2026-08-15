@@ -339,7 +339,8 @@
             "terminologyDefault": "Standard (Gegendert)",
             "terminologyNeutral": "Geschlechtsneutral",
             "showFertileWindow": "Zeige Voraussagen für Fruchtbarkeitsfenster",
-            "learned": "Aus Protokollen berechnet"
+            "learned": "Aus Protokollen berechnet",
+            "description": "Verwalten Sie reproduktive Gesundheit, Menstruationszyklen und Schwangerschaftsverfolgung"
         }
     },
     "aboutDialog": {
@@ -581,6 +582,15 @@
             "voiceLabel": "Stimme:",
             "selectVoicePlaceholder": "Wähle eine Stimme",
             "stepCount": "Schritt {{currentInstructionIndex}} von {{totalInstructions}}"
+        },
+        "importFit": {
+            "statusCreated": "Importiert",
+            "statusUpdated": "Aktualisiert",
+            "statusFailed": "Fehlgeschlagen"
+        },
+        "importHistoryCSV": {
+            "pasteFirst": "Bitte füge zuerst CSV Daten ein.",
+            "pastePlaceholder": "Oder den CSV-Inhalt hier einfügen..."
         }
     },
     "workoutPresetsManager": {
@@ -749,7 +759,15 @@
         "bySource": "Bei Quelle",
         "noResults": "Keine Ergebnisse",
         "couldntLoad": "Konnte nicht geladen werden",
-        "showAllResults": "Alle {{count}} {{provider}} Ergebnisse anzeigen"
+        "showAllResults": "Alle {{count}} {{provider}} Ergebnisse anzeigen",
+        "recent": "Vor kurzem",
+        "frequent": "Häufigkeit",
+        "favorite": "Favorit",
+        "favorites": "Favoriten",
+        "addToFavorites": "Zu den Favoriten hinzufügen",
+        "removeFromFavorites": "Von Favoriten entfernen",
+        "failedToLoadFavorites": "Laden der Favoriten fehlgeschlagen.",
+        "failedToUpdateFavorite": "Speichern des Favoriten ist fehlgeschlagen."
     },
     "workoutPresetForm": {
         "createTitle": "Neue Trainingsvorlage erstellen",
@@ -2456,7 +2474,16 @@
             "wed": "Mit",
             "thu": "Do",
             "fri": "Fr",
-            "sat": "Sa"
+            "sat": "Sa",
+            "noMeds": "Fügen Sie ein Medikament hinzu, um seinen Logkalender hier zu sehen.",
+            "titleSupplements": "Supplement Log Kalender",
+            "noSupplements": "Fügen Sie ein Supplement hinzu, um den Log-Kalender zu sehen.",
+            "selectSupplement": "Wählen Sie ein Supplement",
+            "allSupplements": "Alle Supplements",
+            "titleAll": "Log Kalender",
+            "noEntries": "Fügen Sie ein Medikament oder Supplement hinzu, um seinen Log-Kalender hier zu sehen.",
+            "selectEntry": "Wählen Sie einen Artikel",
+            "allEntries": "Alle"
         },
         "gi": {
             "subtitle": "Rate pro Woche in den letzten 30 Tagen",
@@ -2732,10 +2759,14 @@
         "fileTooLarge": "Die ausgewählte Datei ist zu groß. Bitte laden Sie eine Datei, die kleiner als 25MB ist hoch.",
         "missingDefaultValidationError": "Mindestens eine Variante pro Lebensmittel muss als Standardeinheit eingestellt werden.",
         "showAllRows": "Zeige alle Reihen ({{count}})",
-        "noDataText": "Die CSV-Datei enthält eine Kopfzeile aber keine Datenzeilen."
+        "noDataText": "Die CSV-Datei enthält eine Kopfzeile aber keine Datenzeilen.",
+        "defaultVariantNote": "Mindestens eine Variante pro Lebensmittel muss als Standardeinheit (Is Default = True) eingestellt werden.",
+        "upfrontNote": "Hinweis: Jedes Lebensmittel muss mindestens eine Variante als Standardeinheit (Is Default = True) haben.",
+        "filterMissingDefault": "Zeigen fehlenden Standard ({{count}})"
     },
     "foods": {
-        "providerVerified": "Verifizierte Lebensmittel"
+        "providerVerified": "Verifizierte Lebensmittel",
+        "removeNutrient": "Entferne {{nutrient}}"
     },
     "csvImport": {
         "cancel": "Abbrechen",
