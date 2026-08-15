@@ -3,7 +3,7 @@
         "diary": "Dagboek",
         "checkin": "Inchecken",
         "reports": "Rapporten",
-        "foods": "Eten",
+        "foods": "Voeding",
         "goals": "Doelen",
         "settings": "Instellingen",
         "admin": "Beheer",
@@ -822,7 +822,7 @@
         "loadingExercises": "Oefeningen laden..."
     },
     "foodSearchDialog": {
-        "title": "Eten Zoeken en Toevoegen",
+        "title": "Voeding zoeken en toevoegen",
         "description": "Zoek naar voedingsmiddelen om toe te voegen aan je database."
     },
     "enhancedFoodSearch": {
@@ -839,7 +839,7 @@
         "private": "Privé",
         "public": "Openbaar",
         "family": "Gezin",
-        "topFoods": "Meest Gegeten Voedingsmiddelen",
+        "topFoods": "Meest gegeten voedingsmiddelen",
         "noRecentOrTopFoods": "Geen recente of meest gegeten voedingsmiddelen gevonden. Begin met het registreren van voedingsmiddelen om ze hier te zien.",
         "noItemsFoundInDatabase": "Er zijn geen resultaten gevonden in uw database voor \"{{searchTerm}}\".",
         "clickSearchIconOnline": "Klik op het zoekpictogram om online te zoeken.",
@@ -885,9 +885,9 @@
         "profileInformation": {
             "title": "Profielinformatie",
             "description": "Beheer je persoonlijke gegevens en profielfoto",
-            "changePhoto": "Wijzig Foto",
+            "changePhoto": "Wijzig foto",
             "photoSize": "PNG, JPG tot 5MB",
-            "fullName": "Volledige Naam",
+            "fullName": "Volledige naam",
             "enterFullName": "Vul je volledige naam in",
             "phoneNumber": "Telefoonnummer",
             "enterPhoneNumber": "Voer je telefoonnummer in",
@@ -1214,7 +1214,7 @@
             "enterCurrentPassword": "Voer huidig wachtwoord in"
         },
         "cycle": {
-            "title": "Cyclus & zwangerschap",
+            "title": "Cyclus en zwangerschap",
             "description": "Beheer je reproductieve gezondheid, menstruatiecycli en het bijhouden van zwangerschappen",
             "enableLabel": "Cyclus & zwangerschapsvolger aanzetten",
             "enableHint": "Schakel het centrum voor reproductieve gezondheid in of uit. Als je dit inschakelt, wordt het navigatietabblad in de zijbalk weergegeven.",
@@ -1463,7 +1463,7 @@
             "hide": "Verbergen",
             "layoutErrorNotice": "Er is een fout opgetreden bij de aanpasbare lay-out, dus wordt er een eenvoudige weergave getoond. Je opgeslagen lay-out blijft behouden."
         },
-        "over": "meer dan",
+        "over": "te veel",
         "entryPhoto": "Foto's bij dit bericht",
         "entryPhotoAlt": "Foto bij dagboeknotitie",
         "addEntryPhoto": "Foto toevoegen",
@@ -2622,7 +2622,7 @@
             "title": "Orale GLP-1-nuchterheids timer",
             "instructions": "Innemen met 120–180 ml water, en vervolgens {{min}} min wachten voordat u gaat eten, koffie drinkt of andere medicijnen inneemt.",
             "start": "Tablet ingenomen - start timer",
-            "complete": "Wachten klaar — je kunt nu eten.",
+            "complete": "Vasten klaar — je kunt nu eten.",
             "waterOnly": "Alleen water"
         },
         "checkin": {
@@ -2779,7 +2779,7 @@
             "description": "Met minder tools kunnen kleinere lokale modellen betrouwbaarder reageren.",
             "presetFull": "Vol",
             "emptyHint": "Er zijn geen categorieën geselecteerd — de chatbot gebruikt zijn standaardtoolset.",
-            "food": "Eten & water",
+            "food": "Voeding & water",
             "exercise": "Oefening",
             "checkin": "Lichaam & check-ins",
             "goals": "Doelen",
