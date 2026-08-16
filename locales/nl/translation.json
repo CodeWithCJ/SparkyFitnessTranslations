@@ -9,7 +9,9 @@
         "admin": "Beheer",
         "cycle": "Cyclus",
         "pregnancy": "Zwangerschap",
-        "medications": "Medicijnen"
+        "medications": "Medicijnen",
+        "foodLog": "Voedingsregistratie",
+        "wellness": "Welzijn"
     },
     "aboutDialog": {
         "title": "Over SparkyFitness",
@@ -29,7 +31,9 @@
         "openFoodFactsApi": "Open Food Facts API",
         "gotIt": "Akkoord",
         "close": "Sluit",
-        "discordLink": "discord.gg/vcnMT5cPEA"
+        "discordLink": "discord.gg/vcnMT5cPEA",
+        "swissFoodApi": "API voor de Zwitserse voedingsmiddelensamenstellingsdatabase",
+        "usdaApi": "USDA-voedingsdatabase-API"
     },
     "exercise": {
         "title": "Oefeningen",
@@ -103,7 +107,8 @@
                 "family": "Familie",
                 "mine": "Mijn schema's",
                 "public": "Publiek"
-            }
+            },
+            "searching": "Zoeken..."
         },
         "dailyProgress": {
             "dailyCalorieGoal": "Dagelijks caloriedoel",
@@ -122,7 +127,29 @@
             "netCaloriesBreakdown": "{{dailyIntakeCalories}} gegeten - {{finalTotalCaloriesBurned}} verbrand",
             "dailyProgress": "Dagelijkse Voortgang",
             "targetBand": "doel {{min}}–{{max}}",
-            "bmrSourceExternal": "Gezondheidsapp"
+            "bmrSourceExternal": "Gezondheidsapp",
+            "adaptiveTdee": "Adaptieve TDEE",
+            "adjustment": "Aanpassing",
+            "burnedEnergyBreakdown": "Uitsplitsing energieverbruik:",
+            "dailyBurn": "Dagelijksverbruik",
+            "dailyEnergyGoal": "Dagelijks energiedoel",
+            "dataPoints": "Datapunten",
+            "days": "dagen",
+            "energyBurnedBreakdownTitle": "Uitsplitsing energieverbruik",
+            "enterMeasurements": "Metingen invoeren",
+            "expenditure": "Verbruikt",
+            "fallbackReason": "Op basis van een schatting: {{reason}}",
+            "katchCunninghamMissingDesc": "Het gewicht en het lichaamsvetpercentage ontbreken. De caloriedoelstellingen zijn mogelijk onnauwkeurig.",
+            "netEnergy": "Netto-energie: {{netCalories}}",
+            "netEnergyBreakdown": "{{dailyIntakeCalories}} gegeten - {{finalTotalCaloriesBurned}} verbruikt",
+            "profileIncompleteDesc": "Gewicht, lengte en leeftijd ontbreken. De caloriedoelstellingen zijn mogelijk onnauwkeurig.",
+            "profileIncompleteTitle": "Profiel onvolledig",
+            "projectedBurn": "Verwacht (hele dag)",
+            "sparkyfitnessBurned": "SparkyFitness verbruikt",
+            "summaryUnavailableDesc": "Je dagelijkse energieoverzicht kon niet worden geladen. Probeer de pagina te vernieuwen.",
+            "summaryUnavailableTitle": "Dagelijks overzicht niet beschikbaar",
+            "updateProfile": "Profiel bijwerken",
+            "weightTrend": "Gewichtstrend"
         },
         "editExerciseEntryDialog": {
             "setLabel": "Set",
@@ -150,7 +177,9 @@
             "notesPlaceholder": "Voeg eventuele opmerkingen over deze oefening toe...",
             "imageLabel": "Afbeelding",
             "updateSuccess": "De training is succesvol bijgewerkt.",
-            "updateError": "Het bijwerken van de training is mislukt."
+            "updateError": "Het bijwerken van de training is mislukt.",
+            "syncedProviderBackup": "Gesynchroniseerde back-up provider (beveiligd)",
+            "telemetryHeader": "Telemetrie- en activiteitsstatistieken"
         },
         "activityDetailsEditor": {
             "fieldNameLabel": "Veldnaam",
@@ -223,7 +252,14 @@
             "deletePermanentDescription": "Hierdoor worden de oefening en alle bijbehorende gegevens permanent verwijderd uit uw account.",
             "deletePermanentEntries": "{{exerciseEntriesCount}} dagboekvermeldingen",
             "deleteUsedByOthersWarning": "Deze oefening wordt door andere gebruikers gebruikt in trainingsschema's of dagboeken. Het verwijderen ervan heeft gevolgen voor hun gegevens. De oefening wordt in plaats daarvan verborgen.",
-            "forceDeleteConfirmLabel": "Geforceerd Verwijderen"
+            "forceDeleteConfirmLabel": "Geforceerd Verwijderen",
+            "category": "Categorie",
+            "details": "Details",
+            "energy": "Energie",
+            "exercises": "oefeningen",
+            "name": "Naam",
+            "deleteConfirmationDescription": "Weet je zeker dat je deze oefening wilt verwijderen? Deze handeling kan niet ongedaan worden gemaakt.",
+            "deleteImpactDescription": "Deze oefening wordt ook in andere logboeken of trainingsschema's gebruikt. Als je deze verwijdert, kan dit gevolgen hebben voor die gegevens."
         },
         "exerciseImportCSV": {
             "importExerciseData": "Oefeningsgegevens Importeren",
@@ -254,7 +290,12 @@
             "nameEmptyError": "Het veld 'naam' mag niet leeg zijn.",
             "copied": "Gekopieerd!",
             "copiedToClipboard": "'{{value}}' gekopieerd naar het klembord.",
-            "fileTooLarge": "Het geselecteerde bestand is te groot. U moet een bestand uploaden dat kleiner is dan 25 MB."
+            "fileTooLarge": "Het geselecteerde bestand is te groot. U moet een bestand uploaden dat kleiner is dan 25 MB.",
+            "dataParsedSuccessfully": "De CSV-gegevens zijn succesvol verwerkt en geladen.",
+            "headersMapped": "Kopteksten toegewezen",
+            "mapRequiredFields": "De kopteksten in uw CSV-bestand komen niet overeen met het vereiste formaat. Wijs de velden toe om door te gaan.",
+            "parseSuccessful": "Verwerking gelukt",
+            "readError": "Het geselecteerde bestand kon niet worden gelezen."
         },
         "playbackModal": {
             "voiceLabel": "Stem:",
@@ -293,7 +334,83 @@
             "parseText": "Analyseer tekst",
             "rowsRejected": "{{failed}} van de {{total}} rijen konden niet worden geïmporteerd — zie hieronder voor meer informatie.",
             "headersMapped": "Kopteksten toegewezen",
-            "mapRequiredFields": "De kopteksten in uw CSV-bestand komen niet overeen met het vereiste formaat. Wijs de velden toe om door te gaan."
+            "mapRequiredFields": "De kopteksten in uw CSV-bestand komen niet overeen met het vereiste formaat. Wijs de velden toe om door te gaan.",
+            "addEmptyEntry": "Lege vermelding toevoegen",
+            "clearData": "Gegevens wissen",
+            "confirmImport": "Bevestig en importeer {{count}} vermeldingen",
+            "copied": "Gekopieerd!",
+            "copyTooltip": "Kopieer ",
+            "customFieldsInfo": "'Activiteitsveld' en ‘waarde’ zijn aangepaste velden die je aan elke trainingsnotitie kunt toevoegen.",
+            "dataCleared": "Alle verwerkte gegevens zijn gewist.",
+            "description": "Upload een CSV-bestand met je eerdere trainingsgegevens. Het systeem maakt nieuwe oefeningen of voorinstellingen aan als deze nog niet bestaan, en importeert je gegevens, sets en activiteitsdetails.",
+            "downloadTemplate": "Download sjabloon",
+            "emptyEntryAdded": "Er is een nieuw leeg item toegevoegd. Vul de gegevens in.",
+            "emptyFile": "Het geselecteerde bestand is leeg.",
+            "importSuccess": "De historische trainingsgegevens zijn succesvol geïmporteerd.",
+            "invalidDate": "Rij {{rowNum}}: ongeldige datumnotatie voor ‘{{date}}’. verwacht: {{format}}.",
+            "invalidSetNumber": "Rij {{rowNum}}: ongeldig setnummer ",
+            "noDataToImport": "Er zijn geen geldige gegevens om te importeren.",
+            "noFile": "Selecteer een CSV-bestand om te importeren.",
+            "parseError": "CSV kon niet worden verwerkt: {{error}}",
+            "preview": "Voorbeeld van de te importeren items",
+            "processFile": "Verwerk bestand",
+            "standardValuesDescription": "Zorg er bij het importeren van oefeningsdefinities voor dat de waarden voor ‘niveau’, ‘kracht’ en ‘oefeningstype’ overeenkomen met deze standaardopties.",
+            "standardValuesForDropdowns": "Standaardwaarden voor keuzelijsten met trainingsdefinities",
+            "table": {
+                "activityDetails": "Details van de activiteit",
+                "date": "Datum",
+                "exercise": "Oefening",
+                "notes": "Notities",
+                "preset": "Voorinstelling",
+                "sets": "Sets"
+            },
+            "title": "Historische trainingsgegevens importeren",
+            "unitsHint": "Verwachte eenheden in CSV: gewicht: {{weightUnit}}; afstand: {{distanceUnit}}; duur: minuten; rusttijd: seconden; verbrande calorieën: calorieën",
+            "validationError": "Rij {{rowNum}}: verplicht veld ontbreekt ",
+            "copiedToClipboard": "'{{value}}' is naar het klembord gekopieerd.",
+            "importError": "Het importeren van de trainingsgeschiedenis is mislukt. Probeer het nog eens.",
+            "partialImportError": "Sommige items konden niet worden geïmporteerd: {{details}}"
+        },
+        "exerciseSearch": {
+            "add": "Toevoegen",
+            "noResults": "Er zijn geen oefeningen gevonden.",
+            "placeholder": "Zoek oefeningen…",
+            "popular": "Meest gebruikt",
+            "recent": "Recent",
+            "searching": "Zoeken…",
+            "selectButton": "Selecteer"
+        },
+        "failedToFetchById": "De details van de oefening konden niet worden geladen.",
+        "failedToFetchDetails": "De gegevens van de training konden niet worden opgehaald. Probeer het nog eens.",
+        "failedToFetchSuggested": "De voorgestelde oefeningen konden niet worden geladen.",
+        "lastEntries": "Laatste {{limit}} items",
+        "logExerciseEntryDialog": {
+            "addSet": "Set toevoegen",
+            "avgHeartRateLabel": "Gemiddelde hartslag (slagen per minuut)",
+            "caloriesAutoHint": "Wordt automatisch berekend als dit veld leeg wordt gelaten",
+            "cancel": "Annuleren",
+            "customActivityDetails": "Details van aangepaste activiteiten",
+            "enterDetails": "Voer de gegevens in voor je trainingssessie op {{selectedDate}}.",
+            "imagePreviewAlt": "Voorbeeld",
+            "logExercise": "Registreer oefening: {{exerciseName}}",
+            "notesPlaceholder": "Opmerkingen over deze sessie...",
+            "saveEntry": "Item opslaan",
+            "saving": "Opslaan...",
+            "sessionNotes": "Notities",
+            "uploadImage": "Foto",
+            "caloriesBurnedOptional": "Verbruikte calorieën (optioneel)"
+        },
+        "progress": {
+            "loadError": "Het laden van de voortgangsgegevens van de oefening is mislukt."
+        },
+        "suggestions": {
+            "recentLoadError": "Het laden van recente oefeningen is mislukt.",
+            "topLoadError": "Het laden van de meest voorkomende oefeningen is mislukt."
+        },
+        "workoutPlaybackDialog": {
+            "closeKeepDraft": "Sluiten",
+            "completeAtLeastOneSet": "Voer ten minste één set uit voordat je stopt.",
+            "discard": "Niet opslaan"
         }
     },
     "workoutPresetsManager": {
@@ -2010,35 +2127,35 @@
         "volumeTrend": "Volumetrend",
         "volumeCurrent": "Volume (Huidig)",
         "volumeComparison": "Volume (Vergelijking)",
-        "maxWeightTrend": "Max Gewicht Trend",
-        "maxWeightCurrent": "Max Gewicht (Huidig)",
-        "maxWeightComparison": "Max Gewicht (Vergelijking)",
-        "estimated1RMTrend": "Geschatte 1RM Trend",
-        "estimated1RMCurrent": "Geschatte 1RM (Huidig)",
-        "estimated1RMComparison": "Geschatte 1RM (Vergelijking)",
-        "bestSetByRepRange": "Beste Set per Rep bereik - {{exerciseName}}",
-        "bestSetByRepRangeTitle": "Beste Set per Rep Bereik",
-        "trainingVolumeByMuscleGroup": "Trainingsvolume per Spiergroep",
-        "repsVsWeight": "Reps vs Gewicht - {{exerciseName}}",
-        "reps": "Reps",
-        "averageWeight": "Gemiddeld Gewicht",
-        "timeUnderTensionTrend": "Trend Tijd Onder Spanning - {{exerciseName}}",
-        "timeUnderTensionTrendTitle": "Trend Tijd Onder Spanning",
-        "timeUnderTensionMin": "Tijd Onder Spanning (min)",
-        "personalRecords": "Persoonlijke Records (PRs) - {{exerciseName}}",
+        "maxWeightTrend": "Max gewichtstrend",
+        "maxWeightCurrent": "Max gewicht (huidig)",
+        "maxWeightComparison": "Max gewicht (vergelijking)",
+        "estimated1RMTrend": "Geschatte 1RM trend",
+        "estimated1RMCurrent": "Geschatte 1RM (huidig)",
+        "estimated1RMComparison": "Geschatte 1RM (vergelijking)",
+        "bestSetByRepRange": "Beste set per herhaling bereik - {{exerciseName}}",
+        "bestSetByRepRangeTitle": "Beste set per herhaling bereik",
+        "trainingVolumeByMuscleGroup": "Trainingsvolume per spiergroep",
+        "repsVsWeight": "Herhaling vs gewicht - {{exerciseName}}",
+        "reps": "Herhalingen",
+        "averageWeight": "Gemiddeld gewicht",
+        "timeUnderTensionTrend": "Trend \"Time under tention\" - {{exerciseName}}",
+        "timeUnderTensionTrendTitle": "Trend \"Time under tention\"",
+        "timeUnderTensionMin": "Time Under Tension (min)",
+        "personalRecords": "Persoonlijke records (PRs) - {{exerciseName}}",
         "estimated1RM": "Geschatte 1RM",
-        "maxWeight": "Max Gewicht",
-        "maxReps": "Max Reps",
-        "repsAt": "reps @",
+        "maxWeight": "Max gewicht",
+        "maxReps": "Max herhalingen",
+        "repsAt": "herhaling @",
         "on": "aan",
-        "repsShort": "reps",
-        "setPerformance": "Set Prestatie",
+        "repsShort": "herhalingen",
+        "setPerformance": "Set prestatie",
         "setPerformanceAnalysis": {
-            "title": "Set Prestatie Analyse",
-            "titleWithExercise": "Set Prestatie Analyse - {{exerciseName}}",
-            "avgWeightKg": "Gem. Gewicht (kg)",
-            "avgReps": "Gem. Reps",
-            "avgWeight": "Gem. Gewicht"
+            "title": "Set prestatie analyse",
+            "titleWithExercise": "Set prestatie analyse - {{exerciseName}}",
+            "avgWeightKg": "Gem. gewicht (kg)",
+            "avgReps": "Gem. herhalingen",
+            "avgWeight": "Gem. gewicht"
         },
         "loadingCharts": "Diagrammen laden...",
         "failedToLoadExerciseProgressData": "Kan de voortgangsgegevens van de training niet laden.",
@@ -2052,25 +2169,26 @@
         "inches": "inches",
         "waist": "Taille",
         "hips": "Heupen",
-        "dailySteps": "Dagelijkse Stappen"
+        "dailySteps": "Dagelijkse stappen",
+        "failedToLoadComparisonData": "Het laden van de vergelijkingsgegevens is mislukt."
     },
     "reportsTables": {
-        "foodDiaryTable": "Voedingsdagboek Tabel",
-        "exerciseEntriesTable": "Oefeningsgegevens Tabel",
+        "foodDiaryTable": "Voedingsdagboektabel",
+        "exerciseEntriesTable": "Oefeningsgegevenstabel",
         "filterByExerciseName": "Filter op oefeningnaam...",
         "filterBySetType": "Filter op set type...",
         "date": "Datum",
         "exercise": "Oefening",
         "set": "Set",
         "type": "Type",
-        "reps": "Reps",
+        "reps": "Herhalingen",
         "weight": "Gewicht",
         "tonnage": "Tonnage",
         "durationMin": "Duur (min)",
         "restS": "Rust (s)",
         "notes": "Opmerkingen",
-        "caloriesBurned": "Verbrande Calorieën",
-        "bodyMeasurementsTable": "Lichaamsmaten Tabel",
+        "caloriesBurned": "Verbrande calorieën",
+        "bodyMeasurementsTable": "Lichaamsmatentabel",
         "neck": "Nek",
         "waist": "Taille",
         "hips": "Heupen",
@@ -2081,7 +2199,9 @@
         "food": "Voedingsmiddel",
         "quantity": "Hoeveelheid",
         "total": "Totaal",
-        "durationSec": "Duur (s)"
+        "durationSec": "Duur (s)",
+        "allTables": "Alle tabellen",
+        "showTable": "Tabel weergeven"
     },
     "moodReports": {
         "title": "Stemmingsrapporten",
@@ -2435,7 +2555,8 @@
             "save": "Opslaan",
             "reset": "Opnieuw instellen",
             "custom": "Op maat",
-            "logging": "Wordt gelogt…"
+            "logging": "Wordt gelogt…",
+            "clear": "Wissen"
         },
         "today": {
             "noIntake": "Geen waardes ingevoerd vandaag.",
@@ -2467,7 +2588,10 @@
             "dueToday": "Vandaag innemen",
             "asNeeded": "Indien nodig",
             "asNeededHint": "Tik hier om nu een dosis te registreren (geen vast schema of vandaag niet aan de beurt).",
-            "logIntake": "Inname registeren"
+            "logIntake": "Inname registeren",
+            "adherenceTitle": "Overzicht therapietrouw",
+            "editLogged": "Geregistreerde dosis bewerken",
+            "takenAt": "Ingenomen op"
         },
         "insights": {
             "title": "Inzichten en tips over bijwerkingen",
@@ -2522,7 +2646,17 @@
             "beforeMeal": "Voor maaltijd",
             "withMealOpt": "Met maaltijd",
             "afterMeal": "Na maaltijd",
-            "startDate": "Startdatum (optioneel)"
+            "startDate": "Startdatum (optioneel)",
+            "supplementDoseScalingCalories": "Elk registratie heeft {{dose}} porties: {{dose}} x {{perDose}} kcal = {{total}} kcal.",
+            "supplementDoseScaling": "Elk registratie bevat {{dose}} porties, dus {{dose}} keer de voedingswaarden die per portie zijn ingevoerd.",
+            "servingUnit": "portie",
+            "servingsPerLog": "Porties per registratie",
+            "cycleOff": "Dagen niet",
+            "cycleOn": "Dagen wel",
+            "doseAmount": "Dosering (overschrijving)",
+            "startDateRequired": "Startdatum (verplicht)",
+            "time": "Tijdstip",
+            "weekdays": "Selecteer dagen"
         },
         "calendar": {
             "loggedCount_one": "{{count}} gemeld symptoom",
@@ -2559,7 +2693,8 @@
             "titleAll": "Logboekkalender",
             "noEntries": "Voeg een medicijn of voedingssupplement toe om de bijbehorende logboekkalender hier te bekijken.",
             "selectEntry": "Kies een item",
-            "allEntries": "Alles"
+            "allEntries": "Alles",
+            "skipped": "Overgeslagen"
         },
         "reports": {
             "logTableTitle": "Tabel voor medicatieoverzicht",
@@ -2569,7 +2704,37 @@
             "dosesTaken": "Ingenomen doses",
             "times": "Tijden",
             "symptomsColumn": "Symptomen",
-            "injectionAbbrev": "inj"
+            "injectionAbbrev": "inj",
+            "adherenceTrend": "Dagelijkse therapietrouw (%)",
+            "adherenceTrendDesc": "Geeft het dagelijkse therapietrouwpercentage weer (het percentage ingenomen doses ten opzichte van het aantal geplande doses).",
+            "configDesc": "Schakel de weergave van bepaalde grafieken en correlatie-widgets in of uit.",
+            "configTitle": "Visualisaties in- of uitschakelen",
+            "corrDose": "GLP-1-dosering versus misselijkheid",
+            "corrHydration": "Waterinname versus constipatie",
+            "corrProtein": "Eiwitinname versus misselijkheid",
+            "corrSleep": "Slaapduur versus vermoeidheid",
+            "correlationsDisclaimer": "Opmerking: Correlaties zijn alleen beschrijvende berekeningen over de gekozen periode en duiden niet op een klinisch oorzakelijk verband.",
+            "correlationsTitle": "Informatieve verbanden tussen symptomen en bijwerkingen",
+            "customize": "Grafieken aanpassen",
+            "downloadCSV": "CSV-gegevens downloaden",
+            "exportDesc": "Download een overzichtelijk rapport met informatie over medicatie, logboeken, schema’s, symptomen en gewichtsgegevens voor uw arts.",
+            "exportTitle": "Gegevensuitvoer voor arts",
+            "failedToLoadPrefs": "Het laden van de voorkeuren voor de weergave van medicatie is mislukt.",
+            "glp1CheckinTrends": "Trends in de dagelijkse GLP-1-check-ins",
+            "glp1CheckinTrendsDesc": "Houdt naast de GLP-1-doseringen ook subjectieve honger, contante eetgedachte, verzadiging en energieniveaus (0-10) bij.",
+            "kpiAdherence": "Gemiddelde therapietrouw",
+            "kpiAdherenceDetail": "Percentage van de geplande doses waarvan de inname met succes is geregistreerd.",
+            "kpiGlp1": "GLP-1 injecties",
+            "kpiGlp1Detail": "Totaal aantal actieve GLP-1-injectiedoses dat in deze periode is geregistreerd.",
+            "kpiSymptomCount": "Geregistreerde bijwerkingen",
+            "kpiSymptomCountDetail": "Aantal unieke, ingebouwde of aangepaste symptomen dat is geregistreerd.",
+            "nauseaVsDose": "Misselijkheid versus dosering van GLP-1-medicatie",
+            "nauseaVsDoseDesc": "Geeft de maximale misselijkheid (balken) weer ten opzichte van de tijdstippen van de injectiedoses (lijn).",
+            "printPDF": "Afdrukken / PDF-rapport opslaan",
+            "subtitle": "Analyseer de verbanden tussen dosering en bijwerkingen, en de trends in therapietrouw.",
+            "title": "Medicatierapport",
+            "weightVsGoalDesc": "Geeft een overzicht van de dagelijkse gewichtsmetingen in vergelijking met je totale streefgewicht.",
+            "weightVsGoal": "Gewichtstrend versus streefgewicht ({{weightUnit}})"
         },
         "scheduleDesc": {
             "atTime": " om {{time}}",
@@ -2635,7 +2800,9 @@
                 "food_noise": "Constante eetgedachten(Food noise)",
                 "fullness": "Verzadiging",
                 "energy": "Energie"
-            }
+            },
+            "noAccessBody": "Vraag hier {{name}} om de toegang tot check-in te delen, zodat je honger, eetgedachte , verzadiging en energie kunt bijhouden.",
+            "noAccessTitle": "Voor de dagelijkse check-in van GLP-1 is toegang tot de check-in vereist"
         },
         "sites": {
             "customize": "Locaties aanpassen",
@@ -2688,7 +2855,14 @@
             "noInjections": "Er zijn nog geen injecties geregistreerd.",
             "pkAxisDays": "Dagen",
             "pkDayLabel": "Dag {{day}}",
-            "pkAxisDates": "Datums"
+            "pkAxisDates": "Datums",
+            "addInventory": "Voorraad toevoegen",
+            "editInjection": "Injectie aanpassen",
+            "notes": "Notities",
+            "notesPlaceholder": "bijv. Een lichte prikkeling, voelde prima aan",
+            "quickLogHint": "{{name}} — de dosis wordt automatisch van uw actieve pen afgetrokken. Groen = aanbevolen injectieplaats.",
+            "quickLogTitle": "Waar heb je de injectie toegediend?",
+            "skipSite": "Locatie overslaan"
         },
         "types": {
             "pill": "pil",
@@ -2735,7 +2909,7 @@
             "editSupplement": "Supplement aanpassen",
             "supplementNamePlaceholder": "bijv. Vitamine D3",
             "doseForm": "Doseringsvorm",
-            "nutritionPerDose": "Voedingsstof per dosis",
+            "nutritionPerDose": "Voedingsstof per portie",
             "nutritionPerDoseHint": "Lees de voedingsstoffen op het etiket in en vul vervolgens de hoeveelheid in die één dosis bevat.",
             "clearNutrients": "Alles verwijderen",
             "nutrientsNeedDiaryAccess": "Voor de voedingswaarde per dosis is voor dit profiel toegang tot het voedingsdagboek vereist. Je kunt het supplement wel opslaan en het schema, de herinneringen en de doses bijhouden.",
@@ -2754,7 +2928,38 @@
             "nutrientCount_other": "{{count}} voedingstoffen",
             "empty": "Nog geen medicijnen. Voeg je eerste medicijn toe om te beginnen.",
             "emptyMeds": "Nog geen medicijnen. Voeg je eerste medicijn toe om te beginnen.",
-            "emptySupplements": "Nog geen supplement. Voeg je eerste supplement toe om te beginnen."
+            "emptySupplements": "Nog geen supplement. Voeg je eerste supplement toe om te beginnen.",
+            "nutritionHelpLabel": "Hoe lees je het etiket",
+            "nutritionHelpSubGram": "Een etiket met de vermelding „minder dan 1 g“ geeft de hoeveelheid niet aan. Voer 0,5 in als middenwaarde, of 0 om een te hoge schatting te voorkomen.",
+            "macroLabel_calories": "Calorieën",
+            "macroLabel_protein": "Eiwit",
+            "macroLabel_carbs": "Koolhydraten",
+            "macroLabel_fat": "Vet",
+            "macroLabel_dietary_fiber": "Vezels",
+            "includeMacros": "Macronutriënten opnemen",
+            "servingUnit_tablet_one": "tablet",
+            "servingUnit_tablet_other": "tabletten",
+            "servingUnit_capsule_one": "capsule",
+            "servingUnit_capsule_other": "capsules",
+            "servingUnit_softgel_one": "softgel",
+            "servingUnit_softgel_other": "softgels",
+            "servingUnit_gummy_one": "gummy",
+            "servingUnit_gummy_other": "gummies",
+            "servingUnit_pill_one": "pil",
+            "servingUnit_pill_other": "pillen",
+            "servingEquals": "1 portie =",
+            "customCadence": "Ritme",
+            "customGlp1": "GLP-1 op maat / overige...",
+            "customGlpName": "Aangepaste geneesmiddelnaam (optioneel)",
+            "customHalfLife": "Halfwaardetijd (dagen)",
+            "customIsOral": "Orale toediening",
+            "customTMax": "Tijd tot piek (dagen)",
+            "effectiveness": "Effectiviteitsbeoordeling",
+            "hideAdvanced": "Geavanceerde opties verbergen",
+            "notes": "Notities",
+            "notesPlaceholder": "Neem dit in met water vóór het ontbijt. Vermijd alcohol.",
+            "photoPath": "URL van foto van pil/etiket (optioneel)",
+            "showAdvanced": "Geavanceerde opties weergeven"
         },
         "subtype": {
             "all": "Alles",
@@ -2768,6 +2973,40 @@
             "gummy": "Gummy",
             "powder": "Poeder",
             "liquid": "Drank"
+        },
+        "beta": {
+            "description": "Houd er rekening mee dat er nog wat kinderziektes kunnen zijn. Als je bugs of problemen tegenkomt, meld deze dan op GitHub om ons te helpen het te verbeteren!",
+            "title": "Eerste bètaversie"
+        },
+        "disclaimer": {
+            "accept": "Akkoord en doorgaan",
+            "acknowledge": "Ik begrijp dat deze tracker geen medisch hulpmiddel is en geen medisch advies geeft. Voor alle beslissingen met betrekking tot medicatie zal ik mijn zorgverlener raadplegen.",
+            "badge": "Medicatie tracker",
+            "healthTitle": "Belangrijke gezondheidswaarschuwing",
+            "reminderTitle": "Herinneringen zijn geen medische waarschuwingen",
+            "subtitle": "Lees het volgende aandachtig door en bevestig dat u het hebt begrepen voordat u de medicatietracker gaat gebruiken.",
+            "text1": "Deze functie voor het bijhouden van medicatie is uitsluitend bedoeld voor persoonlijke administratie en ter informatie. Het is geen vervanging voor professioneel medisch advies, diagnose of behandeling.",
+            "text2": "Raadpleeg altijd uw arts, apotheker of een andere zorgverlener voordat u begint met het gebruik van een medicijn, ermee stopt of de dosering wijzigt. Negeer nooit professioneel medisch advies en stel het inwinnen ervan nooit uit op basis van informatie die door deze tracker wordt verstrekt.",
+            "text3": "Herinneringen voor het innemen van medicijnen en het bijhouden van de therapietrouw zijn handige functies. Hierbij wordt mogelijk geen rekening gehouden met interacties tussen geneesmiddelen, contra-indicaties of aanpassingen van de dosering die door uw zorgteam zijn voorgeschreven. U bent zelf volledig verantwoordelijk voor het innemen van medicijnen volgens het voorschrift.",
+            "title": "Voordat u begint"
+        },
+        "mealRelation": {
+            "after": "Na de maaltijd",
+            "before": "Voor de maaltijd",
+            "none": "Geen specifiek verband met voedsel",
+            "with": "Tijdens de maaltijd"
+        },
+        "print": {
+            "dates": "Rapportageperiode:",
+            "header": "Medicatierapport voor voorschrijver"
+        },
+        "scheduleTypes": {
+            "cyclic": "Cyclisch (wel/niet)",
+            "daily": "Dagelijks",
+            "everyNDays": "Elke x dagen",
+            "monthly": "Maandelijks",
+            "prn": "Naar behoefte",
+            "weekly": "Specifieke dagen"
         }
     },
     "chat": {
@@ -2788,11 +3027,36 @@
             "vision": "Visie",
             "profile": "Profiel & gewoontes",
             "medications": "Medicijnen"
-        }
+        },
+        "errorClearingHistory": "Het wissen van de chatgeschiedenis is mislukt.",
+        "errorLoadingHistory": "Het laden van de chatgeschiedenis is mislukt.",
+        "errorLoadingPreferences": "De chatinstellingen konden niet worden geladen.",
+        "successClearingHistory": "De chatgeschiedenis is succesvol gewist."
     },
     "calculationSettings": {
         "showNetCarbs": "Toon netto koolhydraten (koolhydraten zonder vezels)",
-        "showNetCarbsHint": "Als ingeschakeld, wordt in de koolhydraatoverzichten het totale aantal koolhydraten zonder voedingsvezels weergegeven."
+        "showNetCarbsHint": "Als ingeschakeld, wordt in de koolhydraatoverzichten het totale aantal koolhydraten zonder voedingsvezels weergegeven.",
+        "bmrAlgorithm": "BMR Algoritme",
+        "bmrAlgorithmHint": "Kies de formule die wordt gebruikt om je basaal metabolisme te berekenen.",
+        "bodyFatAlgorithm": "Lichaamsvet algoritme",
+        "bodyFatAlgorithmHint": "Kies de formule die wordt gebruikt om het lichaamsvetpercentage te schatten op basis van de metingen.",
+        "calories": "Calorieën",
+        "energyUnitHint": "Kies de gewenste eenheid voor de weergave van energiewaarden (bijv. calorieën, kilojoules).",
+        "energyUnitLabel": "Energie-eenheid",
+        "energyUnitSaveError": "Fout",
+        "energyUnitSaveErrorDesc": "Het bijwerken van de energie-eenheid is mislukt.",
+        "energyUnitSaveSuccess": "Gelukt",
+        "energyUnitSaveSuccessDesc": "De energie-eenheid is succesvol bijgewerkt.",
+        "includeBmrInNetCalories": "BMR meerekenen in het aantal netto calorieën",
+        "includeBmrInNetCaloriesHint": "Als deze optie is ingeschakeld, wordt je BMR afgetrokken van je dagelijkse netto-calorie-totaal.",
+        "joules": "Joules",
+        "saveError": "Fout",
+        "saveErrorDesc": "Het opslaan van de berekeningsinstellingen is mislukt.",
+        "saveSuccess": "Gelukt",
+        "saveSuccessDesc": "De berekeningsinstellingen zijn succesvol opgeslagen!",
+        "selectBmrAlgorithm": "Kies het BMR-algoritme",
+        "selectBodyFatAlgorithm": "Algoritme voor lichaamsvet selecteren",
+        "selectEnergyUnitPlaceholder": "Kies een energie-eenheid"
     },
     "foodCsvImport": {
         "title": "Voedingsgegevens importeren",
@@ -3197,5 +3461,8 @@
         "moveImageEarlier": "Afbeelding naar links verplaatsen",
         "moveImageLater": "Afbeelding naar rechts verplaatsen",
         "imagesReorderHint": "Sleep om de volgorde te wijzigen. De eerste afbeelding wordt als voorbeeld gebruikt."
+    },
+    "layout": {
+        "welcome": "Welkom {{activeUserName}}"
     }
 }
