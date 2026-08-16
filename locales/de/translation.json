@@ -341,6 +341,10 @@
             "showFertileWindow": "Zeige Voraussagen für Fruchtbarkeitsfenster",
             "learned": "Aus Protokollen berechnet",
             "description": "Verwalten Sie reproduktive Gesundheit, Menstruationszyklen und Schwangerschaftsverfolgung"
+        },
+        "allergenPreferences": {
+            "description": "Verfolgen Sie Allergene, über die Sie in Lebensmitteln gewarnt werden möchten",
+            "title": "Allergen-Präferenzen"
         }
     },
     "aboutDialog": {
@@ -427,7 +431,10 @@
             "topPresetsTitle": "Top Vorlagen",
             "noTopPresets": "Keine Top Vorlagen.",
             "searchResultsTitle": "Suchergebnisse",
-            "noMatchingPresets": "Keine passenden Vorlagen gefunden."
+            "noMatchingPresets": "Keine passenden Vorlagen gefunden.",
+            "ownership": {
+                "all": "Alle"
+            }
         },
         "dailyProgress": {
             "dailyCalorieGoal": "Tägliches Kalorienziel",
@@ -576,7 +583,8 @@
             "validationError": "Validierungsfehler",
             "nameEmptyError": "Das Namensfeld darf nicht leer sein.",
             "copied": "Kopiert!",
-            "copiedToClipboard": "\"{{value}}\" wurde in die Zwischenablage kopiert."
+            "copiedToClipboard": "\"{{value}}\" wurde in die Zwischenablage kopiert.",
+            "fileTooLarge": "Die ausgewählte Datei ist zu groß. Bitte laden Sie eine Datei, die kleiner als 25MB ist hoch."
         },
         "playbackModal": {
             "voiceLabel": "Stimme:",
@@ -590,7 +598,8 @@
         },
         "importHistoryCSV": {
             "pasteFirst": "Bitte füge zuerst CSV Daten ein.",
-            "pastePlaceholder": "Oder den CSV-Inhalt hier einfügen..."
+            "pastePlaceholder": "Oder den CSV-Inhalt hier einfügen...",
+            "fileTooLarge": "Die ausgewählte Datei ist zu groß. Bitte laden Sie eine Datei kleiner als 25MB hoch."
         }
     },
     "workoutPresetsManager": {
@@ -1080,7 +1089,7 @@
         "goalsSettings": {
             "title": "Zieleinstellungen",
             "cascadingGoals": "Etappenziele",
-            "dailyNutritionGoals": "tägliche Ernährungsziele",
+            "dailyNutritionGoals": "Tägliche Ernährungsziele",
             "changesCascadeInfo": "(Änderungen gelten für 6 Monate ab heute oder bis zum nächsten zukünftigen Ziel)",
             "calories": "Kalorien",
             "protein": "Eiweiß (g)",
@@ -1262,7 +1271,9 @@
             "maximize": "Maximieren",
             "restore": "Wiederherstellen",
             "hide": "Verstecken"
-        }
+        },
+        "addError": "Lebensmittel konnte nicht hinzugefügt werden.",
+        "addSuccess": "Lebensmittel erfolgreich hinzugefügt."
     },
     "foodDiary": {
         "title": "Ernährungstagebuch",
@@ -1498,7 +1509,10 @@
         "duplicateFoodDialogTitle": "Lebensmittel duplizieren",
         "duplicateFoodDialogDescription": "Lebensmitteldetails anpassen und als neues Lebensmittel speichern. Das Original bleibt unverändert.",
         "copySuffix": "(kopieren)",
-        "duplicateFailed": "Konnte Lebensmittel nicht duplizieren."
+        "duplicateFailed": "Konnte Lebensmittel nicht duplizieren.",
+        "addToFavorites": "Zu Favoriten hinzufügen",
+        "failedToAddFood": "Lebensmittel konnte nicht hinzugefügt werden.",
+        "foodAddedSuccessfully": "Lebensmittel erfolgreich hinzugefügt."
     },
     "mealManagement": {
         "failedToLoadMeals": "Laden von Mahlzeiten fehlgeschlagen.",
@@ -1581,7 +1595,9 @@
         "invalidTotalAmount": "Gesamtanzahl muss größer als 0 sein.",
         "invalidDefaultServingSize": "Standard Portionsgröße muss größer als 0 sein.",
         "perServingTab": "Pro Portion",
-        "totalTab": "Gesamt"
+        "totalTab": "Gesamt",
+        "addFoodOrMealToMealTitle": "Essen oder Mahlzeit hinzufügen",
+        "mealImages": "Bilder"
     },
     "mealPlanCalendar": {
         "title": "Speiseplan",
@@ -2273,7 +2289,8 @@
         "vitaminC": "Vitamin C",
         "sugars": "Zucker",
         "fiber": "Ballaststoffe",
-        "netCarbs": "Netto Kohlenhydrate"
+        "netCarbs": "Netto Kohlenhydrate",
+        "autoCalculateSelectAll": "Alle auswählen"
     },
     "calculationSettings": {
         "showNetCarbs": "Netto-Kohlenhydrate anzeigen (Kohlenhydrate abzüglich Ballaststoffe)",
@@ -2597,7 +2614,19 @@
             "reason": "Grund / Zustand (optional)",
             "reasonPlaceholder": "z.B. Gewichtsmanagement, Typ-2-Diabetes",
             "pharmacyPlaceholder": "CVS #4421",
-            "glp1Meds": "GLP-1-Medikamente"
+            "glp1Meds": "GLP-1-Medikamente",
+            "nutritionPerDose": "Nährwerte pro Portion",
+            "servingUnit_tablet_one": "Tablette",
+            "servingUnit_tablet_other": "Tabletten",
+            "servingUnit_capsule_one": "Kapsel",
+            "servingUnit_capsule_other": "Kapseln",
+            "servingUnit_softgel_one": "Softgel-Kapsel",
+            "servingUnit_softgel_other": "Softgel-Kapseln",
+            "servingUnit_gummy_one": "Gummibärchen",
+            "servingUnit_gummy_other": "Gummibärchen",
+            "servingUnit_pill_one": "Pille",
+            "servingUnit_pill_other": "Pillen",
+            "servingEquals": "1 Portion ="
         },
         "schedule": {
             "subheading": "Konfiguriere Erinnerungen und Einnahmeregeln",
@@ -2627,7 +2656,9 @@
             "endDate": "Enddatum (optional)",
             "heading": "Zeitpläne & Erinnerungen",
             "cyclic": "Zyklisch (an/aus)",
-            "prn": "Bei Bedarf (PRN)"
+            "prn": "Bei Bedarf (PRN)",
+            "servingsPerLog": "Portionen pro Eintrag",
+            "servingUnit": "Portion"
         },
         "checkin": {
             "subtitle": "Verfolge, wie die Medikation dich beeinflusst — wird in deinen täglichen Messungen gespeichert, taucht also auch in deinen Check-Ins & Berichten auf.",
@@ -2725,7 +2756,11 @@
             "clearAll": "Alles löschen",
             "vision": "Vision",
             "presetCore": "Standard"
-        }
+        },
+        "errorClearingHistory": "Chat Historie konnte nicht gelöscht werden.",
+        "errorLoadingHistory": "Chat Historie konnte nicht geladen werden.",
+        "errorLoadingPreferences": "Chateinstellungen konnten nicht geladen werden.",
+        "successClearingHistory": "Chat Historie wurde erfolgreich gelöscht."
     },
     "foodCsvImport": {
         "uploadCsv": "CSV Hochladen",
@@ -2779,9 +2814,35 @@
         "distance": "Distanz",
         "time": "Zeit",
         "pace": "Pace (/{{unit}})",
-        "cadence": "Frequenz"
+        "cadence": "Frequenz",
+        "power": "Leistung"
     },
     "dailyHealthMetrics": {
-        "bodyBattery": "Energielevel"
+        "bodyBattery": "Energielevel",
+        "peak": "Spitze",
+        "low": "niedrig: {{val}}",
+        "avgStress": "Avg Stress",
+        "max": "Max: {{val}}",
+        "restingHr": "Ruhende HF",
+        "recovery": "Erholung: {{val}}",
+        "vo2Max": "VO2 Max"
+    },
+    "layout": {
+        "welcome": "Willkommen {{activeUserName}}"
+    },
+    "food": {
+        "imagesLabel": "Bilder",
+        "imagesLimitReached": "Maximale Anzahl von {{count}} Bilder erreicht.",
+        "viewImages": "Bilder anzeigen",
+        "imagesReorderHint": "Ziehen um die Reihenfolge zu ändern. Das erste Bild wird als Anzeigebild verwendet."
+    },
+    "diaryCsvImport": {
+        "fileTooLarge": "Die ausgewählte Datei ist zu groß. Bitte laden Sie eine Datei kleiner als 25MB hoch."
+    },
+    "healthDataImport": {
+        "fileTooLarge": "Die ausgewählte Datei ist zu groß. Bitte laden Sie eine Datei kleiner als 25MB hoch."
+    },
+    "copyFoodEntryDialog": {
+        "descriptionAll": "Wählen Sie das Zieldatum aus, um alle Lebensmitteleinträge vom diesem Tag zu kopieren."
     }
 }
