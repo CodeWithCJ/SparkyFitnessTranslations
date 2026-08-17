@@ -2503,7 +2503,8 @@
             "allEntries": "Alle",
             "monthTotal": "{{count}} Einnahmen im {{month}} erfasst",
             "snoozedOnly": "Nur zurückgestellte",
-            "tooltipPrn": "{{count}} Bedarfsdosen eingenommen"
+            "tooltipPrn": "{{count}} Bedarfsdosen eingenommen",
+            "skipped": "übersprungen"
         },
         "gi": {
             "subtitle": "Rate pro Woche in den letzten 30 Tagen",
