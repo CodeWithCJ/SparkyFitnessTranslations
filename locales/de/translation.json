@@ -2500,7 +2500,10 @@
             "titleAll": "Log Kalender",
             "noEntries": "Fügen Sie ein Medikament oder Supplement hinzu, um seinen Log-Kalender hier zu sehen.",
             "selectEntry": "Wählen Sie einen Artikel",
-            "allEntries": "Alle"
+            "allEntries": "Alle",
+            "monthTotal": "{{count}} Einnahmen im {{month}} erfasst",
+            "snoozedOnly": "Nur zurückgestellte",
+            "tooltipPrn": "{{count}} Bedarfsdosen eingenommen"
         },
         "gi": {
             "subtitle": "Rate pro Woche in den letzten 30 Tagen",
@@ -2797,7 +2800,9 @@
         "noDataText": "Die CSV-Datei enthält eine Kopfzeile aber keine Datenzeilen.",
         "defaultVariantNote": "Mindestens eine Variante pro Lebensmittel muss als Standardeinheit (Is Default = True) eingestellt werden.",
         "upfrontNote": "Hinweis: Jedes Lebensmittel muss mindestens eine Variante als Standardeinheit (Is Default = True) haben.",
-        "filterMissingDefault": "Zeigen fehlenden Standard ({{count}})"
+        "filterMissingDefault": "Zeigen fehlenden Standard ({{count}})",
+        "headersMismatchFile": "Die CSV-Spalten entsprechen nicht dem erforderlichen Format. Bitte ordne die Felder zu, um fortzufahren.",
+        "missingDefaultWarning": "Warnung: Bei {{count}} Lebensmitteln ist keine Standardvariante festgelegt. Bitte lege mindestens eine Variante als Standard fest (unten gelb markiert)."
     },
     "foods": {
         "providerVerified": "Verifizierte Lebensmittel",
@@ -2815,7 +2820,10 @@
         "time": "Zeit",
         "pace": "Pace (/{{unit}})",
         "cadence": "Frequenz",
-        "power": "Leistung"
+        "power": "Leistung",
+        "title": "Workout Aufteilung: Intervalle & Runden",
+        "avgMaxHr": "Ø / Max. HF",
+        "resp": "Atm. (Az/min)"
     },
     "dailyHealthMetrics": {
         "bodyBattery": "Energielevel",
@@ -2825,7 +2833,11 @@
         "max": "Max: {{val}}",
         "restingHr": "Ruhende HF",
         "recovery": "Erholung: {{val}}",
-        "vo2Max": "VO2 Max"
+        "vo2Max": "VO2 Max",
+        "title": "Tägliche Gesundheitsübersicht vom Fitnessgerät",
+        "fitnessAge": "Fitnessalter: {{val}}",
+        "readiness": "Erholungsstatus",
+        "recHours": "Erh.: {{val}}"
     },
     "layout": {
         "welcome": "Willkommen {{activeUserName}}"
