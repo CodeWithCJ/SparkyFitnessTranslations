@@ -31,10 +31,11 @@
             "bio": "Biografie",
             "tellAboutYourself": "Erzähl uns etwas über dich",
             "saveProfile": "Profil speichern",
-            "saving": "Speichere..."
+            "saving": "Speichere...",
+            "height": "Größe"
         },
         "preferences": {
-            "title": "Präferenzen",
+            "title": "Einstellungen",
             "description": "Verwalte deine App- und Anzeigeeinstellungen",
             "dateFormat": "Datumsformat",
             "weightUnit": "Gewichtseinheit",
@@ -46,7 +47,7 @@
             "distanceUnit": "Längeneinheit",
             "kilometers": "Kilometer (km)",
             "miles": "Meilen (miles)",
-            "loggingLevel": "Minimales Logging-Stufe",
+            "loggingLevel": "Minimale Logging-Stufe",
             "debug": "DEBUG (meiste Details)",
             "info": "INFO",
             "warn": "WARN",
@@ -57,7 +58,14 @@
             "language": "Sprache",
             "english": "Englisch",
             "tamil": "தமிழ் (Tamil)",
-            "savePreferences": "Präferenzen speichern"
+            "savePreferences": "Einstellungen speichern",
+            "timeFormat": "Zeitformat",
+            "noTimezoneFound": "Keine Zeitzone gefunden.",
+            "searchTimezones": "Zeitzonen suchen...",
+            "selectTimezone": "Zeitzone auswählen...",
+            "timezone": "Zeitzone",
+            "firstDayOfWeek": "Starttag der Woche",
+            "measurementDecimalPlaces": "Dezimalstellen bei Messungen"
         },
         "waterTracking": {
             "title": "Wasser-Tracking",
@@ -345,6 +353,18 @@
         "allergenPreferences": {
             "description": "Verfolgen Sie Allergene, über die Sie in Lebensmitteln gewarnt werden möchten",
             "title": "Allergen-Präferenzen"
+        },
+        "tabs": {
+            "nutritionDiet": "Ernährung & Diet"
+        },
+        "passkey": {
+            "add": "Passkey hinzufügen"
+        },
+        "mfa": {
+            "confirmPassword": "Passwort bestätigen um fortzufahren",
+            "passwordRequired": "Bitte geben Sie Ihr Passwort ein, um die Sicherheitseinstellungen zu ändern.",
+            "scanQr": "Scannen Sie den QR-Code mit Ihrer Authentifizierungs-App und geben Sie den generierten Code zur Bestätigung ein.",
+            "enable": "Aktivieren"
         }
     },
     "aboutDialog": {
@@ -2294,7 +2314,9 @@
     },
     "calculationSettings": {
         "showNetCarbs": "Netto-Kohlenhydrate anzeigen (Kohlenhydrate abzüglich Ballaststoffe)",
-        "showNetCarbsHint": "Wenn aktiviert, zeigen die Kohlenhydrat-Zusammenfassungen die Netto-Kohlenhydrate (Gesamtkohlenhydrate abzüglich Ballaststoffe) an."
+        "showNetCarbsHint": "Wenn aktiviert, zeigen die Kohlenhydrat-Zusammenfassungen die Netto-Kohlenhydrate (Gesamtkohlenhydrate abzüglich Ballaststoffe) an.",
+        "energyUnitLabel": "Energieeinheit",
+        "saveSuccess": "Erfolgreich"
     },
     "sync": {
         "syncAll": "Synchronisiere alle aktiven Anbieter",
@@ -2630,7 +2652,8 @@
             "servingUnit_gummy_other": "Gummibärchen",
             "servingUnit_pill_one": "Pille",
             "servingUnit_pill_other": "Pillen",
-            "servingEquals": "1 Portion ="
+            "servingEquals": "1 Portion =",
+            "macroLabel_calories": "Kalorien"
         },
         "schedule": {
             "subheading": "Konfiguriere Erinnerungen und Einnahmeregeln",
