@@ -1523,7 +1523,7 @@
             "showFertileWindowHint": "Vruchtbare dagen en ovulatievoorspellingen weergeven of verbergen op dashboards/schema's.",
             "conditions": "Gezondheidsproblemen",
             "learned": "Berekend op basis van registraties",
-            "successTitle": "Geslaagd",
+            "successTitle": "Gelukt",
             "successDesc": "Cyclus instellingen zijn bijgewerkt.",
             "errorTitle": "Fout",
             "errorDesc": "De cyclusinstellingen konden niet worden opgeslagen. Probeer het nog eens.",
@@ -4065,10 +4065,10 @@
             "create": "Aanmaken en bijhouden in check-in",
             "creating": "Instellen…",
             "missing": "Houd je basale lichaamstemperatuur bij om te controleren of u ovuleert. Deze functie zit in check-in en kan worden gesynchroniseerd vanaf uw telefoon.",
-            "stale": "Je laatste basale lichaamstemperatuurmeting was {{n}} dagen geleden. De temperatuurbevestiging is tijdelijk uitgeschakeld totdat je een nieuwe meting invoert — de kalender- en ovulatietestvoorspellingen werken nog steeds."
+            "stale": "Uw laatste basale lichaamstemperatuurmeting was {{n}} dagen geleden. De temperatuurbevestiging is tijdelijk uitgeschakeld totdat u een nieuwe meting invoert — de kalender- en ovulatietestvoorspellingen werken nog steeds."
         },
         "beta": {
-            "description": "Houd er rekening mee dat er nog wat kinderziektes kunnen zijn. Als je bugs of problemen tegenkomt, meld deze dan op GitHub om ons te helpen het te verbeteren!",
+            "description": "Houd er rekening mee dat er nog wat kinderziektes kunnen zijn. Als u bugs of problemen tegenkomt, meld deze dan op GitHub om ons te helpen het te verbeteren!",
             "title": "Eerste bètaversie"
         },
         "calendar": {
@@ -4103,7 +4103,7 @@
             "delete": "Verwijderen",
             "doctorReport": "Artsenrapport",
             "hospitalBag": "Ziekenhuistas",
-            "intro": "Artikelen, afspraken en voorbereidingen — allemaal opgeslagen op je eigen server.",
+            "intro": "Artikelen, afspraken en voorbereidingen — allemaal opgeslagen op uw eigen server.",
             "library": "Gezondheidsbibliotheek",
             "noAppointments": "Er zijn nog geen afspraken.",
             "print": "Printen",
@@ -4114,7 +4114,7 @@
         },
         "correlation": {
             "byPhase": "op cyclusfase",
-            "emptyDesc": "Houd je gewicht, stemming, slaap en energieniveau gedurende een paar cycli bij om te zien hoe deze factoren met je fasen meebewegen.",
+            "emptyDesc": "Houd je gewicht, stemming, slaap en energieniveau gedurende een paar cycli bij om te zien hoe deze factoren met uw fasen meebewegen.",
             "emptyTitle": "Met meer gegevens komen correlaties aan het licht",
             "higher": "hoger",
             "insight": "{{metric}} neigt ertoe {{dir}} te zijn in uw {{phase}}-fase ({{delta}}{{unit}} ten opzichte van uw gemiddelde).",
@@ -4166,16 +4166,16 @@
             "nextForecast": "Prognose voor de voorraad in de volgende periode",
             "noBbt": "Registreer dagelijks uw temperatuur om uw temperatuurgrafiek te bekijken.",
             "noData": "Er zijn geen inzichtengegevens beschikbaar.",
-            "noSymptoms": "Noteer de symptomen in je dagboek om verbanden tussen de fasen te bekijken.",
+            "noSymptoms": "Noteer de symptomen in uw dagboek om verbanden tussen de fasen te bekijken.",
             "productsPerPeriod": "producten gemiddeld",
             "progress": "Voortgang: {{count}}/2 cycli",
             "regularity": "Regelmaat van de cyclus",
             "regularityDesc": "Duur van de laatste cycli vergeleken met het gemiddelde.",
             "spendDesc": "Maandverband: {{pads}} · Tampons: {{tampons}}",
             "supply": "Prognose voor productgebruik",
-            "supplyDesc": "Gemiddelden en schattingen voor je volgende periode.",
+            "supplyDesc": "Gemiddelden en schattingen voor uw volgende periode.",
             "symptoms": "Frequentie van symptomen per fase",
-            "symptomsDesc": "Het aantal voorvallen, samengevat over alle cycli die je bijhoudt.",
+            "symptomsDesc": "Het aantal voorvallen, samengevat over alle cycli die u bijhoudt.",
             "yearlySpend": "Jaarlijkse uitgaven (schatting)"
         },
         "ttc": {
@@ -4187,28 +4187,28 @@
             "dpo": "Dagen na de eisprong (DPO)",
             "fertileWindowChart": "Vruchtbare periode – Kans op bevruchting",
             "hptTestTitle": "Zwangerschapstest",
-            "implantationDesc": "Een bevruchte eicel nestelt zich doorgaans 6 tot 12 dagen na de eisprong in de baarmoeder. Tijdens deze periode is het gebruikelijk dat je helemaal geen symptomen ervaart, of juist lichte krampen en licht bloedverlies. Deze symptomen kunnen precies hetzelfde aanvoelen als gewone klachten na menstruatie.",
+            "implantationDesc": "Een bevruchte eicel nestelt zich doorgaans 6 tot 12 dagen na de eisprong in de baarmoeder. Tijdens deze periode is het gebruikelijk dat u helemaal geen symptomen ervaart, of juist lichte krampen en licht bloedverlies. Deze symptomen kunnen precies hetzelfde aanvoelen als gewone klachten na menstruatie.",
             "implantationTitle": "Implantatieperiode",
-            "irregularCaveatDesc": "Voorspellingen kunnen minder nauwkeurig zijn als gevolg van cyclusvariaties. Door dagelijks de basale lichaamstemperatuur en ovulatietesten bij te houden, krijg je het meest nauwkeurige vruchtbaarheidsvenster.",
+            "irregularCaveatDesc": "Voorspellingen kunnen minder nauwkeurig zijn als gevolg van cyclusvariaties. Door dagelijks de basale lichaamstemperatuur en ovulatietesten bij te houden, krijg u het meest nauwkeurige vruchtbaarheidsvenster.",
             "irregularCaveatTitle": "Onregelmatige cyclus gedetecteerd",
             "logNegativeHpt": "Negatieve zwangerschapstest registeren",
             "logPositiveHpt": "Positieve zwangerschapstest registeren",
-            "logTestError": "Het is niet gelukt om je test te registreren. Probeer het nog eens.",
-            "noOvulationEstimate": "Er is nog geen schatting van de eisprong beschikbaar. Blijf je cyclus bijhouden om een voorspelling te kunnen doen.",
+            "logTestError": "Het is niet gelukt om uw test te registreren. Probeer het nog eens.",
+            "noOvulationEstimate": "Er is nog geen schatting van de eisprong beschikbaar. Blijf uw cyclus bijhouden om een voorspelling te kunnen doen.",
             "opkTestTitle": "Ovulatietest",
             "ovulationEstimateBasis": " gebaseerd op ",
             "ovulationEstimateDetail": "De eisprong wordt geschat op ",
-            "pregnancyModeStubDesc": "De zwangerschapsmodus komt binnenkort beschikbaar in fase 4! We zullen je statistieken dan aanpassen.",
+            "pregnancyModeStubDesc": "De zwangerschapsmodus komt binnenkort beschikbaar in fase 4! We zullen uw statistieken dan aanpassen.",
             "pregnancyModeStubTitle": "Zwangerschapsmodus",
             "startPregnancyMode": "Start de zwangerschapsmodus",
             "testCountdown": "De test is het meest nauwkeurig vanaf 10 dagen na ovulatie (over {{n}} dagen). Probeer nog even te wachten om teleurstelling of verwarring door een vage streep te voorkomen.",
             "testDeleted": "Test verwijderd",
             "testDeletedDesc": "Test verwijderd.",
             "testLogged": "Test geregistreerd",
-            "testLoggedDesc": "Je testresultaat is succesvol geregistreerd.",
+            "testLoggedDesc": "Uw testresultaat is succesvol geregistreerd.",
             "testLoggingTitle": "Ovulatie- en zwangerschapstests",
             "testLogsHistory": "Deze cyclus",
-            "testReady": "Je bent nu {{dpo}} dagen na ovulatie! Een zwangerschapstest die je nu uitvoert, is zeer nauwkeurig. Gebruik de eerste ochtendurine voor de hoogste concentratie.",
+            "testReady": "U bent nu {{dpo}} dagen na ovulatie! Een zwangerschapstest die u nu uitvoert, is zeer nauwkeurig. Gebruik de eerste ochtendurine voor de hoogste concentratie.",
             "twoWeekWaitTitle": "Twee weken wachten"
         }
     },
@@ -4230,7 +4230,8 @@
         "noItems": "Er zijn geen importeerbare waarden gevonden. Controleer of er lege rijen of ontbrekende datums zijn.",
         "title": "Gezondheidsgegevens importeren",
         "uploadCSV": "CSV uploaden",
-        "validationError": "Niets om te importeren"
+        "validationError": "Niets om te importeren",
+        "copiedValue": "Update healthDataImport.copiedValue op weblate"
     },
     "diaryCsvImport": {
         "fileTooLarge": "Het geselecteerde bestand is te groot. Upload alstublieft een bestand dat kleiner is dan 25 MB.",
@@ -4250,9 +4251,9 @@
         "importing": "Importeren...",
         "invalidFormatTitle": "Ongeldige CSV-indeling",
         "matchScope": "Koppel de namen van gerechten aan",
-        "matchScopeDescription": "Een overeenkomst met een food_name buiten de aangevinkte bereiken wordt genegeerd, en in plaats daarvan wordt er een nieuw voedingsmiddel voor je aangemaakt (op basis van de voedingswaardekolommen van de rij).",
+        "matchScopeDescription": "Een overeenkomst met een food_name buiten de aangevinkte bereiken wordt genegeerd, en in plaats daarvan wordt er een nieuw voedingsmiddel voor u aangemaakt (op basis van de voedingswaardekolommen van de rij).",
         "mealType": "Maaltijd",
-        "overrideDescription": "Als een rij overeenkomt met een van je eigen voedingsmiddelen, pas dan deze voedingsmiddelvariant aan",
+        "overrideDescription": "Als een rij overeenkomt met een van uw eigen voedingsmiddelen, pas dan deze voedingsmiddelvariant aan",
         "overrideLabel": "Bestaande voedingswaarden overschrijven met geïmporteerde waarden",
         "parseText": "Tekst verwerken",
         "pasteFirst": "Plak eerst wat CSV-gegevens.",
@@ -4364,13 +4365,13 @@
         "magicLinkSent": "De magische link is verzonden! Kijk in uw inbox.",
         "oidcError": "Het inloggen bij de provider is mislukt.",
         "passkeyErrorTitle": "Passkey fout",
-        "passkeyGenericError": "Het inloggen met passkey is mislukt. Controleer of je apparaat deze functie ondersteunt.",
+        "passkeyGenericError": "Het inloggen met passkey is mislukt. Controleer of uw apparaat deze functie ondersteunt.",
         "passkeySecureContextError": "Voor authenticatie met een passkey is een beveiligde context (HTTPS of localhost) vereist. Meld u alstublieft aan met uw e-mailadres en wachtwoord.",
         "passkeySuccess": "Ingelogd met passkey!",
         "passwordResetError": "Het opnieuw instellen van het wachtwoord is mislukt. De link is mogelijk verlopen.",
         "passwordResetSuccess": "Het wachtwoord is succesvol gereset. U kunt nu inloggen.",
         "registerError": "Er is een onverwachte fout opgetreden tijdens het aanmelden.",
-        "registerSuccess": "Je account is succesvol aangemaakt!",
+        "registerSuccess": "Uw account is succesvol aangemaakt!",
         "resetEmailError": "Het aanvragen van een wachtwoordreset is mislukt.",
         "resetEmailSent": "Als het account bestaat, is er een e-mail verzonden om het wachtwoord opnieuw in te stellen.",
         "successTitle": "Gelukt"
@@ -4441,7 +4442,7 @@
         "garminLoginSuccess": "Garmin is succesvol verbonden.",
         "googleHealthLinkError": "Het koppelen van het Google Health-account is mislukt.",
         "googleHealthLinkSuccess": "Google Health-account succesvol gekoppeld!",
-        "hevySyncError": "Hevy-synchronisatie is mislukt. Controleer je API-sleutel in de instellingen.",
+        "hevySyncError": "Hevy-synchronisatie is mislukt. Controleer uw API-sleutel in de instellingen.",
         "hevySyncSuccess": "Hevy-synchronisatie is gelukt.",
         "ouraLinkError": "Het koppelen van het Oura-account is mislukt.",
         "ouraLinkSuccess": "Uw Oura-account is succesvol gekoppeld!",
@@ -4450,13 +4451,13 @@
         "stravaError": "Het koppelen van het Strava-account is mislukt. Probeer het nog eens.",
         "stravaSuccess": "Uw Strava-account is succesvol gekoppeld.",
         "withingsError": "Het koppelen van het Withings-account is mislukt. Probeer het nog eens.",
-        "withingsSuccess": "Je Withings-account is succesvol gekoppeld."
+        "withingsSuccess": "Uw Withings-account is succesvol gekoppeld."
     },
     "key": "tekst",
     "mealCreation": {
         "convertToMeal": "Maaltijd aanmaken op basis van dagboek",
         "description": "Beschrijving",
-        "enterDetails": "Voer de gegevens voor je nieuwe maaltijdsjabloon in.",
+        "enterDetails": "Voer de gegevens voor uw nieuwe maaltijdsjabloon in.",
         "failedToCreateMeal": "Het is niet gelukt om op basis van dagboeknotities een maaltijd aan te maken.",
         "makePublic": "Publiek maken",
         "mealCreatedSuccessfully": "Maaltijd succesvol samengesteld op basis van dagboeknotities.",
@@ -4548,7 +4549,7 @@
             "apart": "tussen",
             "count": "in het laatste uur",
             "dur": "Duur",
-            "fiveOneOne": "Je weeën lijken een 5-1-1-patroon te volgen (om de ongeveer 5 minuten, ~1 minuut lang, gedurende een uur). Overweeg om contact op te nemen met je zorgverlener. Dit is geen medisch advies.",
+            "fiveOneOne": "Uw weeën lijken een 5-1-1-patroon te volgen (om de ongeveer 5 minuten, ~1 minuut lang, gedurende een uur). Overweeg om contact op te nemen met uw zorgverlener. Dit is geen medisch advies.",
             "int": "Interval",
             "long": "lang",
             "start": "Wee begint",
@@ -4564,7 +4565,7 @@
             "prevWeek": "Vorige week",
             "sizeThisWeek": "De grootte van de baby deze week",
             "week": "Week",
-            "weekScrubber": "Wekelijkse reiniger",
+            "weekScrubber": "Wekelijkse reiniger?",
             "you": "Uw lichaam"
         },
         "kicks": {
@@ -4579,7 +4580,109 @@
         "photos": {
             "add": "Week {{n}} toevoegen",
             "delete": "Foto verwijderen",
-            "empty": "Leg je babybuik elke week vast om het hele traject te volgen."
+            "empty": "Leg uw babybuik elke week vast om het hele traject te volgen.",
+            "title": "Fotodagboek van uw babybuik",
+            "uploading": "Uploaden…",
+            "week": "Wk {{n}}",
+            "weekAlt": "Foto van de buik van week {{n}}"
+        },
+        "safety": {
+            "disclaimer": "Dit is slechts algemene informatie — vraag altijd om bevestiging bij uw zorgverlener.",
+            "food": "Voedingsmiddellen",
+            "foodPlaceholder": "Mag ik … eten? (bijv. tonijn, brie)",
+            "medPlaceholder": "Mag ik… (bijv. ibuprofen) innemen",
+            "meds": "Medicijnen",
+            "noResults": "Geen resultaten. Probeer een andere zoekterm.",
+            "title": "Voedsel- en geneesmiddelenveiligheid"
+        },
+        "setup": {
+            "babies": "Aantal baby's",
+            "conception": "Bevruchting",
+            "conceptionLabel": "Bevruchting / ovulatiedatum",
+            "disclaimer": "Deze schattingen zijn ter informatie en vormen geen vervanging voor medische zorg.",
+            "dueDate": "Uitgerekende datum",
+            "dueDateLabel": "Uitgerekende datum",
+            "estimatedDue": "Verwachte uitgerekende datum: {{date}}",
+            "lmp": "Laatste menstruatie",
+            "lmpLabel": "Eerste dag van de laatste menstruatie",
+            "more": "3+",
+            "single": "Een",
+            "start": "Begin met bijhouden",
+            "subtitle": "Geef aan hoe we uw uitgerekende datum moeten schatten — u kunt deze later nog aanpassen.",
+            "title": "Begin met het bijhouden van uw zwangerschap",
+            "twins": "Tweeling"
+        },
+        "today": {
+            "babyThisWeek": "De baby deze week"
+        },
+        "vitals": {
+            "bp": {
+                "title": "Bloeddruk"
+            },
+            "cancel": "Annuleren",
+            "edit": "Aanpassen",
+            "log": "Registratie",
+            "meds": {
+                "notTaken": "Vandaag niet genomen",
+                "taken": "Vandaag genomen"
+            },
+            "noPrenatalsLinked": "Er zijn geen prenatale medicijnen gekoppeld. Koppel medicijnen om de therapietrouw bij te houden.",
+            "prenatalSupplements": "Prenatale supplementen",
+            "save": "Opslaan",
+            "title": "Vitale functies van de moeder",
+            "weight": {
+                "aboveRange": "Boven het gebruikelijke bereik",
+                "belowRange": "Onder het gebruikelijke bereik",
+                "iomRange": "Gewichtstoename tijdens de zwangerschap(IOM) (Wk {{wk}}):",
+                "sinceStart": "sinds het begin",
+                "title": "Gewicht van moeder",
+                "withinRange": "Binnen het normale bereik"
+            }
         }
+    },
+    "providers": {
+        "createError": "Het toevoegen van de externe gegevensbron is mislukt.",
+        "createSuccess": "Het toevoegen van de externe gegevensbron is gelukt.",
+        "deleteError": "Het verwijderen van de externe gegevensbron is mislukt",
+        "deleteSuccess": "Het verwijderen van de externe gegevensbron is gelukt",
+        "statusUpdateError": "Het is niet gelukt om de status van de externe gegevensleverancier bij te werken",
+        "statusUpdateSuccess": "De status van de externe gegevensleverancier is succesvol bijgewerkt",
+        "updateError": "Het bijwerken van de externe gegevensbron is mislukt",
+        "updateSuccess": "Externe gegevensleverancier is succesvol bijgewerkt"
+    },
+    "review": {
+        "errorLoadingCount": "Het aantal beoordelingen kon niet worden geladen.",
+        "errorLoadingItems": "Het laden van de beoordelingsitems is mislukt."
+    },
+    "success": "Gelukt",
+    "syncRangeDialog": {
+        "description": "Kies de periode die u wilt synchroniseren vanuit {{provider}}.",
+        "endDate": "Einddatum",
+        "last180Days": "Laatste 180 dagen",
+        "last30Days": "Laatste 30 dagen",
+        "last365Days": "Laatste jaar",
+        "last7Days": "Laatste week",
+        "last90Days": "Laatste 90 dagen",
+        "polarWarning": "Opmerking: Polar staat alleen het synchroniseren toe van gegevens die zijn geregistreerd nadat uw het account aan SparkyFitness hebt gekoppeld.",
+        "startDate": "Startdatum",
+        "syncNow": "Start synchonisatie",
+        "timeoutWarning": "Bij grote datumbereiken kan de browser een time-out geven, maar de server gaat op de achtergrond door met synchroniseren.",
+        "title": "Gegevens van {{provider}} synchroniseren"
+    },
+    "warning": "Waarschuwing",
+    "workout": {
+        "avgHr": "Hartslag (Gem, bpm)",
+        "calories": "Calorieën",
+        "caloriesAuto": "Auto",
+        "distance": "Afstand",
+        "durationMin": "Duur (min)",
+        "durationSec": "Duur (s)",
+        "durationSet": "Duur van set {{setNumber}}",
+        "notesPlaceholder": "Voeg een opmerking toe voor deze set...",
+        "reps": "Herhalingen",
+        "restSec": "Rust (s)",
+        "rpe": "RPE",
+        "type": "Type",
+        "weight": "gewicht"
     }
 }
