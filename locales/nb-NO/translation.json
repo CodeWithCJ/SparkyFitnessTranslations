@@ -27,5 +27,13 @@
         "pastePlaceholder": "Eller lim inn CSV innhold her.",
         "parseText": "Sjekk tekst",
         "recordsLoaded": "Suksess! {{count}} loggføringer lastet opp."
+    },
+    "workoutLaps": {
+        "lap": "Runde",
+        "distance": "Distanse",
+        "time": "Tid"
+    },
+    "dailyHealthMetrics": {
+        "vo2Max": "VO2-maks"
     }
 }
