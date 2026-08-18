@@ -2114,7 +2114,8 @@
             "goals": "Objetivos",
             "reports": "Reportes y estadísticas",
             "coaching": "Asesoramiento",
-            "profile": "Perfil y Hábitos"
+            "profile": "Perfil y Hábitos",
+            "tooltip": "Elige herramientas del chatbot"
         }
     },
     "foodCsvImport": {
@@ -2181,5 +2182,8 @@
             "skip": "Saltar",
             "take": "Toma"
         }
+    },
+    "layout": {
+        "welcome": "Bienvenido {{activeUserName}}"
     }
 }
