@@ -226,7 +226,9 @@
             "presetCore": "Bål",
             "reports": "Rapporter & Analyser",
             "coaching": "Coachning",
-            "vision": "Visuell"
+            "vision": "Visuell",
+            "emptyHint": "Inga kategorier valda — chattboten kommer att använda sina standardverktyg.",
+            "checkin": "Kropp & Check-ins"
         },
         "errorClearingHistory": "Det gick inte att rensa chatthistoriken.",
         "errorLoadingHistory": "Det gick inte att läsa in chatthistoriken.",
