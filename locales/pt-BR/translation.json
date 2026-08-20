@@ -1949,5 +1949,8 @@
             "prn": "Conforme necessário (PRN)",
             "taper": "Afinamento/titulação"
         }
+    },
+    "layout": {
+        "welcome": "Bem-vindo {{activeUserName}}"
     }
 }
