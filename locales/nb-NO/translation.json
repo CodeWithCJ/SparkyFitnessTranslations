@@ -34,7 +34,7 @@
         "recordsLoaded": "Suksess! {{count}} loggføringer lastet opp.",
         "booleanFalse": "Usann",
         "booleanTrue": "Sann",
-        "deleteRow": "Slett Rad",
+        "deleteRow": "Slett rad",
         "overrideLabel": "Overstyr eksisterende matdetaljer",
         "overrideDescription": "Hvis en matvare med samme navn og merke allerede eksisterer, oppdater næringsinnholdet på den i stedet for å feile importen. La denne instillingen være av for å hoppe over og feile på duplikater.",
         "importing": "Importerer...",
@@ -42,29 +42,31 @@
         "importRecords_one": "Importer {{count}} Post",
         "importRecords_other": "Importer {{count}} Poster",
         "importErrorTitle": "Importfeil",
-        "pasteFirst": "Vennligst lim inn noe CSV-data først.",
+        "pasteFirst": "Lim inn noe CSV-data først.",
         "invalidFormatTitle": "Ugyldig CSV-format",
         "headersMismatchText": "Overskrifter samsvarer ikke med forventet format. Bruk malen.",
         "successTitle": "Suksess",
         "loadedRowsFromText": "Lastet {{count}} rader fra tekst.",
         "emptyFile": "Den valgte filen er tom.",
-        "headersMismatchFile": "CSV-overskriftene stemmer ikke med forventet format. Vennligst koble sammen feltene for å fortsette.",
-        "noDataTitle": "Ingen Data Funnet",
+        "headersMismatchFile": "CSV-overskriftene stemmer ikke med forventet format. Koble sammen feltene for å fortsette.",
+        "noDataTitle": "Ingen data funnet",
         "noDataText": "CSV-filen inneholder overskrifter, men ingen datarader.",
         "validationErrorTitle": "Valideringsfeil",
         "nameRequired": "Feltet \"navn\" kan ikke være tomt.",
-        "fileTooLarge": "Den valgte filen er for stor. Vennligst last opp en fil som er mindre enn 25MB.",
+        "fileTooLarge": "Den valgte filen er for stor. Last opp en fil som er mindre enn 25MB.",
         "defaultVariantNote": "Minst en varian per matvare må være satt som standard enhet (Standard = Sann).",
         "upfrontNote": "Merk: Hver matvare må ha minst en variant satt som standard enhet (Standard = Sann).",
-        "missingDefaultWarning": "Advarsel: {{count}} matvare(r) har ikke en standard variant satt. Vennligst set minst en variant som atandard (uthevet i gul nedenfor).",
+        "missingDefaultWarning": "Advarsel: {{count}} matvare(r) har ikke en standard variant satt. Angi minst en variant som standard (uthevet i gul nedenfor).",
         "missingDefaultValidationError": "Minst en variant per matvare må være satt som standard enhet.",
         "filterMissingDefault": "Vis Manglende Standard ({{count}})",
-        "showAllRows": "Vis Alle Rader ({{count}})"
+        "showAllRows": "Vis Alle Rader ({{count}})",
+        "actions": "Handlinger"
     },
     "workoutLaps": {
         "lap": "Runde",
         "distance": "Distanse",
-        "time": "Tid"
+        "time": "Tid",
+        "pace": "Tempo (/{{unit}})"
     },
     "dailyHealthMetrics": {
         "vo2Max": "VO2-maks"
@@ -78,7 +80,8 @@
     },
     "medications": {
         "tabs": {
-            "log": "Logg"
+            "log": "Logg",
+            "symptoms": "Symptomer"
         }
     },
     "nutrition": {
