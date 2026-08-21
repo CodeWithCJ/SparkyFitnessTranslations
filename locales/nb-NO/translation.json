@@ -82,6 +82,25 @@
         "tabs": {
             "log": "Logg",
             "symptoms": "Symptomer"
+        },
+        "calendar": {
+            "allSupplements": "Alle kosttilskudd",
+            "selectSupplement": "Velg et kosttilskudd",
+            "partialTaken": "Delvis tatt",
+            "sun": "Søn",
+            "mon": "Man",
+            "tue": "Tir",
+            "wed": "Ons",
+            "thu": "Tor",
+            "fri": "Fre",
+            "sat": "Lør"
+        },
+        "common": {
+            "saving": "Lagrer…",
+            "save": "Lagre"
+        },
+        "today": {
+            "supplementsTitle": "Dagens kosttilskudd"
         }
     },
     "nutrition": {
