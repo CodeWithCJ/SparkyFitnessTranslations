@@ -198,6 +198,62 @@
             "exportDesc": "Descarcă un raport coerent care include detalii despre medicamente, istoric, programări, simptome și datele despre greutate pentru medicul tău.",
             "failedToLoadPrefs": "Eroare la încărcarea preferințelor despre medicamente.",
             "kpiAdherence": "Aderență medie"
+        },
+        "locations": {
+            "general": "General",
+            "head": "Cap",
+            "abdomen": "Abdomen",
+            "chest": "Piept",
+            "back": "Spate",
+            "muscles": "Mușchi",
+            "joints": "Articulatii"
+        },
+        "symptomNames": {
+            "nausea": "Greață",
+            "fatigue": "Oboseală",
+            "headache": "Durere de cap",
+            "constipation": "Constipație",
+            "diarrhea": "Diaree",
+            "vomiting": "Vărsături",
+            "stomach_pain": "Dureri de stomac/crampe",
+            "dizziness": "Amețeală"
+        },
+        "scheduleDesc": {
+            "daily": "Zilnic",
+            "weeklyOn": "Săptămânal pe {{days}}",
+            "everyNDays": "fiecare {{n}} zile",
+            "monthly": "Lunar în ziua {{day}}"
+        },
+        "gi": {
+            "nausea": "Greață / Saptamana",
+            "vomiting": "Vărsături / săptămână",
+            "reflux": "Reflux / săptămână"
+        },
+        "symptoms": {
+            "logTitle": "Arhivează simptom",
+            "calendarTitle": "Calendarul recurentei simptomelor",
+            "symptom": "Simptom",
+            "addCustom": "Adaugă un simptom personalizat",
+            "customName": "Numele simptomului (intern)",
+            "customNamePlaceholder": "de ex. skin_rash",
+            "displayLabel": "Etichetă",
+            "saveCustom": "Salvați simptom personalizat",
+            "severity": "Severitate",
+            "mild": "Ușoară (1-3)",
+            "moderate": "Moderat (4-6)",
+            "severe": "Sever (7-10)",
+            "primaryLocation": "Locația principală",
+            "customLocationPlaceholder": "de ex. Umărul stâng, falca…",
+            "linkMed": "Link către medicamente (opțional)",
+            "noMedLinked": "Nu sunt medicamente legate",
+            "context": "Context / Note",
+            "contextPlaceholder": "de ex. a avut loc la 4 ore după ce mi-am luat doza de seară."
+        },
+        "fasting": {
+            "instructions": "Luați cu 120 - 200 ml de apă, apoi așteptați {{min}} minute înainte de mâncare, cafea sau alte medicamente.",
+            "start": "Tableta luata — Incepe cronometrul",
+            "complete": "Completați rapid - puteți mânca acum.",
+            "waterOnly": "Doar apă"
         }
     }
 }
