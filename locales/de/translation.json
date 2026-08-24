@@ -2450,7 +2450,8 @@
             "adherence14": "14-tägige Einhaltung",
             "loadingChecklist": "Checkliste wird geladen…",
             "dueToday": "Fällig heute",
-            "asNeeded": "Bei Bedarf"
+            "asNeeded": "Bei Bedarf",
+            "logIntake": "Einnahme protokollieren"
         },
         "insights": {
             "title": "Nebenwirkungen Einsichten & Hinweise",
