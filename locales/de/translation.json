@@ -2609,7 +2609,9 @@
             "deduct": "Vom Injektions-Pen/von Phiole abziehen",
             "dontDeduct": "Nicht abziehen",
             "penInventory": "Inventar an Injektions-Pens/Phiolen",
-            "noPens": "Keine Injektions-Pens/Phiolen protokolliert."
+            "noPens": "Keine Injektions-Pens/Phiolen protokolliert.",
+            "editInjection": "Bearbeite Injektion",
+            "notes": "Notizen"
         },
         "types": {
             "pill": "Tablette",
@@ -2621,7 +2623,9 @@
             "cream": "Creme",
             "other": "Andere",
             "liquid": "Flüssigkeit",
-            "suppository": "Zäpfchen"
+            "suppository": "Zäpfchen",
+            "tablet": "Tablette",
+            "nasal_spray": "Nasenspray"
         },
         "cabinet": {
             "addMed": "Medikament hinzufügen",
@@ -2654,7 +2658,13 @@
             "servingUnit_pill_one": "Pille",
             "servingUnit_pill_other": "Pillen",
             "servingEquals": "1 Portion =",
-            "macroLabel_calories": "Kalorien"
+            "macroLabel_calories": "Kalorien",
+            "supplementNamePlaceholder": "z.B. Vitamin D3",
+            "dose": "Dosis",
+            "doseUnit": "Dosis Einheit",
+            "macroLabel_protein": "Protein",
+            "macroLabel_carbs": "Kohlenhydrate",
+            "nutrientUnit": "Einheit"
         },
         "schedule": {
             "subheading": "Konfiguriere Erinnerungen und Einnahmeregeln",
@@ -2686,7 +2696,8 @@
             "cyclic": "Zyklisch (an/aus)",
             "prn": "Bei Bedarf (PRN)",
             "servingsPerLog": "Portionen pro Eintrag",
-            "servingUnit": "Portion"
+            "servingUnit": "Portion",
+            "weekdays": "Tage auswählen"
         },
         "checkin": {
             "subtitle": "Verfolge, wie die Medikation dich beeinflusst — wird in deinen täglichen Messungen gespeichert, taucht also auch in deinen Check-Ins & Berichten auf.",
@@ -2704,7 +2715,18 @@
             "dosesTaken": "Dosen genommen",
             "times": "Anzahl",
             "symptomsColumn": "Symptome",
-            "injectionAbbrev": "inj"
+            "injectionAbbrev": "inj",
+            "dosesLogged": "{{count}} Dosen eingetragen",
+            "corrSleep": "Schlafdauer vs. Müdigkeit",
+            "customize": "Diagramme anpassen",
+            "downloadCSV": "CSV-Daten herunterladen",
+            "kpiAdherence": "Durchschnittliche Therapietreue",
+            "kpiSymptomCount": "Gemeldete Nebenwirkungen",
+            "printPDF": "Drucken / Speichern PDF Report"
+        },
+        "subtype": {
+            "all": "Alle",
+            "meds": "Medikamente"
         }
     },
     "onboarding": {
