@@ -348,7 +348,12 @@
             "terminologyNeutral": "Geschlechtsneutral",
             "showFertileWindow": "Zeige Voraussagen für Fruchtbarkeitsfenster",
             "learned": "Aus Protokollen berechnet",
-            "description": "Verwalten Sie reproduktive Gesundheit, Menstruationszyklen und Schwangerschaftsverfolgung"
+            "description": "Verwalten Sie reproduktive Gesundheit, Menstruationszyklen und Schwangerschaftsverfolgung",
+            "customizeProducts": "Menstruationsprodukte anpassen",
+            "discreetMode": "Diskreter Modus",
+            "export": "Export",
+            "exporting": "Exportieren…",
+            "lutealConstHelp": "Die Lutealphase ist auf 14 Tage festgelegt. Die Follikelphase passt sich automatisch an Ihre Zykluslänge an."
         },
         "allergenPreferences": {
             "description": "Verfolgen Sie Allergene, über die Sie in Lebensmitteln gewarnt werden möchten",
@@ -472,7 +477,9 @@
             "netCalories": "Nettokalorien: {{netCalories}}",
             "netCaloriesBreakdown": "{{dailyIntakeCalories}} verzehrt - {{finalTotalCaloriesBurned}} verbrannt",
             "dailyProgress": "Täglicher Fortschritt",
-            "bmrSourceExternal": "Gesundheitsapp"
+            "bmrSourceExternal": "Gesundheitsapp",
+            "enterMeasurements": "Messwerte eigeben",
+            "katchCunninghamMissingDesc": "Gewicht und Körperfettanteil fehlen. Die Kalorienziele sind möglicherweise ungenau."
         },
         "editExerciseEntryDialog": {
             "setLabel": "Satz",
@@ -620,6 +627,19 @@
             "pasteFirst": "Bitte füge zuerst CSV Daten ein.",
             "pastePlaceholder": "Oder den CSV-Inhalt hier einfügen...",
             "fileTooLarge": "Die ausgewählte Datei ist zu groß. Bitte laden Sie eine Datei kleiner als 25MB hoch."
+        },
+        "workoutPlaybackDialog": {
+            "setRow": "Satz {{setNumber}}"
+        },
+        "workoutPlaybackPage": {
+            "columnRest": "Pause",
+            "columnSet": "Satz",
+            "columnType": "Typ",
+            "columnWeight": "Gewicht",
+            "elapsedTime": "Dauer",
+            "inProgress": "In Bearbeitung",
+            "progress": "Sätze",
+            "restEditorTitle": "Pause bearbeiten"
         }
     },
     "workoutPresetsManager": {
@@ -641,7 +661,9 @@
         "deleteSuccess": "Traininsgvorlage erfolgreich gelöscht.",
         "deleteError": "Löschen der Traininsgvorlage fehlgeschlagen.",
         "logSuccess": "Traininsgvorlage \"{{presetName}}\" ins Tagebuch eingetragen.",
-        "logError": "Hinzufügen der Traininsgvorlage \"{{presetName}}\" zum Tagebuch fehlgeschlagen."
+        "logError": "Hinzufügen der Traininsgvorlage \"{{presetName}}\" zum Tagebuch fehlgeschlagen.",
+        "name": "Name",
+        "startWorkout": "Starte Workout"
     },
     "workoutPlansManager": {
         "addPlanButton": "Plan hinzufügen",
@@ -663,7 +685,11 @@
         "deleteError": "Löschen des Trainingsplans fehlgeschlagen.",
         "updateStatusError": "Der zu aktualisierende Plan konnte nicht gefunden werden.",
         "toggleStatusSuccess": "Trainingsplan erfolgreich {{status}}.",
-        "toggleStatusError": "Aktivieren des Trainingsplans fehlgeschlagen."
+        "toggleStatusError": "Aktivieren des Trainingsplans fehlgeschlagen.",
+        "duration": "Dauer",
+        "planName": "Plan Name",
+        "plans": "Pläne",
+        "status": "Status"
     },
     "exerciseCard": {
         "title": "Übung",
@@ -737,7 +763,8 @@
         "exerciseEntryAddedSuccessfully": "Trainingseintrag erfolgreich hinzugefügt.",
         "failedToDeleteExerciseEntry": "Das Löschen des Trainingseintrags ist fehlgeschlagen.",
         "exerciseEntryDeletedSuccessfully": "Trainingseintrag erfolgreich gelöscht.",
-        "loadingExercises": "Lade Übungen..."
+        "loadingExercises": "Lade Übungen...",
+        "startWorkout": "Starte Workout"
     },
     "foodSearchDialog": {
         "title": "Lebensmittel suchen und hinzufügen",
@@ -1293,7 +1320,10 @@
             "hide": "Verstecken"
         },
         "addError": "Lebensmittel konnte nicht hinzugefügt werden.",
-        "addSuccess": "Lebensmittel erfolgreich hinzugefügt."
+        "addSuccess": "Lebensmittel erfolgreich hinzugefügt.",
+        "entryImageRemoveFailed": "Das Foto zu diesem Eintrag konnte nicht entfernt werden.",
+        "inheritedPhotoAlt": "Übernommenes Bild {{number}}",
+        "savingPhotos": "Fotos speichern…"
     },
     "foodDiary": {
         "title": "Ernährungstagebuch",
@@ -1324,7 +1354,8 @@
             "deleteConfirm": "Diesen Eintrag entfernen {{volume}} {{unit}}?",
             "deletedSuccess": "Getränk entfernt",
             "deletedError": "Entfernen des Getränks fehlgeschlagen",
-            "editTime": "Klicken um die Zeit zu ändern"
+            "editTime": "Klicken um die Zeit zu ändern",
+            "noManualToRemove": "Nur manuell erfasste Wassermengen können entfernt werden"
         },
         "copyFoodEntryDialog": {
             "title": "Essenseintrag kopieren",
@@ -1336,7 +1367,8 @@
         },
         "selectMealType": "Wähle Mahlzeit Typ",
         "pastDateWarning": "Warnung: Du fügst Lebensmittel für ein vergangenes Datum hinzu.",
-        "futureDateWarning": "Warnung: Du fügst Lebensmittel für ein zukünftiges Datum hinzu."
+        "futureDateWarning": "Warnung: Du fügst Lebensmittel für ein zukünftiges Datum hinzu.",
+        "userNotFound": "Benutzer nicht gefunden, Eintrag kann nicht bearbeitet werden."
     },
     "mealCard": {
         "addFoodToMeal": "Lebensmittel zu {{mealName}} hinzufügen",
@@ -1410,7 +1442,10 @@
             "tooLarge": "Bild ist zu groß (max. 10MB).",
             "deleteSuccess": "Foto entfernt",
             "deleteError": "Foto konnte nicht entfernt werden"
-        }
+        },
+        "useLast": "Letzte verwenden",
+        "bodyWater": "Körperwasseranteil in %",
+        "boneMass": "Knochenmasse"
     },
     "sleepTimelineEditor": {
         "sleepTimeline": "Schlafverlauf",
@@ -2614,7 +2649,7 @@
             "notes": "Notizen"
         },
         "types": {
-            "pill": "Tablette",
+            "pill": "Pille",
             "capsule": "Kapsel",
             "injection": "Injektion",
             "patch": "Pflaster",
@@ -2715,7 +2750,7 @@
             "dosesTaken": "Dosen genommen",
             "times": "Anzahl",
             "symptomsColumn": "Symptome",
-            "injectionAbbrev": "inj",
+            "injectionAbbrev": "Inj",
             "dosesLogged": "{{count}} Dosen eingetragen",
             "corrSleep": "Schlafdauer vs. Müdigkeit",
             "customize": "Diagramme anpassen",
@@ -2799,7 +2834,7 @@
             "medications": "Medikamente",
             "tooltip": "Chatbot Werkzeuge",
             "description": "Weniger Tools helfen kleineren lokalen Modellen, zuverlässiger zu antworten.",
-            "emptyHint": "Keine Kategorie ausgewählt - Der Chatbot verwendet die Standard-Werkzeuge",
+            "emptyHint": "Keine Kategorie ausgewählt - Der Chatbot verwendet die Standard-Werkzeuge.",
             "checkin": "Körper & Check-ins",
             "reports": "Berichte & Analysen",
             "coaching": "Training",
@@ -2836,7 +2871,7 @@
         "title": "Lebensmitteldaten importieren",
         "overrideDescription": "Falls bereits ein Lebensmittel mit demselben Namen und derselben Marke vorhanden ist, sollten die Nährwertangaben aktualisiert werden, anstatt den Import abzubrechen. Lassen Sie das Kontrollkästchen deaktiviert, um Duplikate zu überspringen und eine Fehlermeldung auszugeben.",
         "headersMismatchText": "Die Überschriften entsprechen nicht dem vorgeschriebenen Format. Verwenden Sie bitte die Vorlage.",
-        "loadedRowsFromText": "Es wurden {{count}}  Reihen aus dem Text geladen.",
+        "loadedRowsFromText": "Es wurden {{count}} Reihen aus dem Text geladen.",
         "emptyFile": "Die gewählte Datei ist leer.",
         "noDataTitle": "Keine Daten gefunden",
         "validationErrorTitle": "Fehler bei der Validierung",
@@ -2903,5 +2938,41 @@
     },
     "copyFoodEntryDialog": {
         "descriptionAll": "Wählen Sie das Zieldatum aus, um alle Lebensmitteleinträge vom diesem Tag zu kopieren."
+    },
+    "nutrientGoalDirection": {
+        "min": "Min.",
+        "max": "Max.",
+        "badgeMin": "Min.",
+        "badgeMax": "Max.",
+        "guidance": {
+            "loseWeight": {
+                "title": "Abnehmen"
+            },
+            "gainWeight": {
+                "title": "Zunehmen oder Muskeln aufbauen"
+            },
+            "maintain": {
+                "title": "Gewicht halten"
+            },
+            "diabetes": {
+                "title": "Blutzuckerkontrolle (Diabetes)"
+            },
+            "heart": {
+                "title": "Hoher Cholesterinspiegel oder Herzgesundheit",
+                "body": "Behalten Sie die Höchstwerte für Cholesterin, gesättigte Fettsäuren und Natrium bei (die Standardwerte)."
+            },
+            "lowCarb": {
+                "title": "Low-Carb oder Keto"
+            }
+        },
+        "sections": {
+            "energyMacros": "Energie & Makrodaten",
+            "fats": "Fette",
+            "minerals": "Mineralien",
+            "fiberSugar": "Ballaststoffe und Zucker",
+            "vitamins": "Vitamine",
+            "other": "Andere",
+            "custom": "Individuelle Nährstoffe"
+        }
     }
 }
