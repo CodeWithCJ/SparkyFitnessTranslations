@@ -66,10 +66,13 @@
         "lap": "Runde",
         "distance": "Distanse",
         "time": "Tid",
-        "pace": "Tempo (/{{unit}})"
+        "pace": "Tempo (/{{unit}})",
+        "lapsCount": "{{count}} Runder"
     },
     "dailyHealthMetrics": {
-        "vo2Max": "VO2-maks"
+        "vo2Max": "VO2-maks",
+        "restingHr": "Hvilepuls",
+        "recovery": "Restitusjon: {{val}}"
     },
     "layout": {
         "welcome": "Velkommen {{activeUserName}}"
@@ -101,6 +104,10 @@
         },
         "today": {
             "supplementsTitle": "Dagens kosttilskudd"
+        },
+        "glp1": {
+            "doseMg": "Dose (mg)",
+            "pkDayLabel": "Dag {{day}}"
         }
     },
     "nutrition": {
@@ -215,5 +222,18 @@
         "fatSecret": "FatSecret",
         "editFoodDetails": "Endre Matvaredetaljer",
         "addNewFood": "Legg til Ny Matvare"
+    },
+    "workout": {
+        "weight": "vekt"
+    },
+    "food": {
+        "imagesLabel": "Bilder",
+        "imagePreviewAlt": "Matbilde {{number}}",
+        "newImagePreviewAlt": "Nytt bilde {{number}}",
+        "removeImage": "Fjern bilde",
+        "viewImages": "Se bilder",
+        "imageViewer": "Bildeframviser",
+        "previousImage": "Forrige bilde",
+        "nextImage": "Neste bilde"
     }
 }
