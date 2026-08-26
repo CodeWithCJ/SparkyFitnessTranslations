@@ -999,7 +999,27 @@
             "iron": "hierro",
             "calcium": "calcio"
         },
-        "of": "de"
+        "of": "de",
+        "mealDeleteSuccess": "Comida eliminada.",
+        "mealDetailsLoadError": "Error al cargar los detalles de la comida.",
+        "mealUpdateError": "Error al actualizar comida.",
+        "mealUpdateSuccess": "Comida actualizada correctamente.",
+        "mealsLoadError": "Error al cargar las comidas.",
+        "updateError": "Error al actualizar el registro.",
+        "updateSuccess": "Registro actualizado.",
+        "wearableHealthSummary": "Resumen diario de salud del wearable",
+        "entryPhoto": "Fotos para esta entrada",
+        "entryPhotoAlt": "Foto del registro del diario",
+        "addEntryPhoto": "Añadir foto",
+        "replaceEntryPhoto": "Reemplazar foto",
+        "removeEntryPhoto": "Eliminar foto",
+        "entryPhotoOverrideHint": "Estas fotos solo se aplican a este registro. Arrastra para reordenarlas",
+        "entryPhotoInheritedHint": "Se muestran las imágenes propias del alimento. Añade una foto para sustituirlas en este registro.",
+        "entryImageUploadFailedTitle": "Error al subir",
+        "entryImageUploadFailed": "No se ha podido guardar la foto de este registro.",
+        "entryImageRemoveFailedTitle": "Error al eliminar",
+        "entryImageRemoveFailed": "No se ha podido eliminar la foto de este registro.",
+        "inheritedPhotoAlt": "Imagen heredada {{number}}"
     },
     "foodDiary": {
         "title": "Diario de comida",
@@ -2115,8 +2135,15 @@
             "reports": "Reportes y estadísticas",
             "coaching": "Asesoramiento",
             "profile": "Perfil y Hábitos",
-            "tooltip": "Elige herramientas del chatbot"
-        }
+            "tooltip": "Elige herramientas del chatbot",
+            "clearAll": "Borrar todo",
+            "vision": "Visión",
+            "medications": "Medicamentos"
+        },
+        "errorClearingHistory": "Fallo al borrar el historial del chat.",
+        "errorLoadingHistory": "Fallo al cargar el historial del chat.",
+        "errorLoadingPreferences": "Fallo al cargar las preferencias del chat.",
+        "successClearingHistory": "Historial del chat borrado correctamente."
     },
     "foodCsvImport": {
         "title": "Importar datos de comida",
@@ -2142,14 +2169,24 @@
         "successTitle": "Éxito",
         "loadedRowsFromText": "Se han cargado {{count}} filas del texto.",
         "emptyFile": "El archivo seleccionado está vacío.",
-        "headersMismatchFile": "Los encabezados del archivo CSV no se ajustan al formato ni al orden requeridos. Por favor descarga la plantilla.",
+        "headersMismatchFile": "Los encabezados del archivo CSV no se ajustan al formato ni al orden requeridos. Por favor descarga la plantilla para continuar.",
         "noDataTitle": "No se han encontrado datos",
         "noDataText": "El archivo CSV contiene encabezados, pero no filas de datos.",
         "validationErrorTitle": "Error de validación",
-        "nameRequired": "El campo «nombre» no puede estar vacío."
+        "nameRequired": "El campo «nombre» no puede estar vacío.",
+        "parseText": "Analizar el texto",
+        "booleanTrue": "Verdadero",
+        "booleanFalse": "Falso",
+        "fileTooLarge": "El archivo seleccionado es demasiado grande. Por favor, suba un archivo más pequeño que 25MB.",
+        "defaultVariantNote": "Al menos una variante por alimento debe establecerse como unidad predeterminada (Is Default = True).",
+        "upfrontNote": "Nota: Cada alimento debe tener al menos una variante establecida como unidad predeterminada (Is Default = True).",
+        "missingDefaultWarning": "Advertencia: {{count}} alimentos(s) no tienen una variante predeterminada. Por favor, establezca al menos una variante como predeterminado (destacado en amarillo debajo).",
+        "missingDefaultValidationError": "Al menos una variante por alimento debe establecerse como unidad predeterminada.",
+        "showAllRows": "Mostrar todas las filas ({{count}})"
     },
     "foods": {
-        "providerVerified": "Alimentos verificados"
+        "providerVerified": "Alimentos verificados",
+        "removeNutrient": "Quitar {{nutrient}}"
     },
     "medications": {
         "tabs": {
@@ -2159,14 +2196,49 @@
         "calendar": {
             "loggedCount_one": "{{count}} síntoma registrado",
             "loggedCount_many": "{{count}} síntomas registrados",
-            "loggedCount_other": ""
+            "loggedCount_other": "",
+            "title": "Calendario de Registro de la medicación",
+            "noMeds": "Añadir una medicación para ver su calendario de registro aquí.",
+            "selectMedication": "Seleccionar una medicación",
+            "allMedications": "Todos los medicamentos",
+            "titleSupplements": "Calendario de Registro de suplementos",
+            "noSupplements": "Añadir un suplemento para ver su calendario de registro aquí.",
+            "selectSupplement": "Seleccione un suplemento",
+            "allSupplements": "Todos los suplementos",
+            "titleAll": "Calendario de registros",
+            "noEntries": "Añadir una medicación o suplemento para ver su calendario de registro aquí.",
+            "selectEntry": "Seleccione un elemento",
+            "allEntries": "Todos",
+            "monthTotal": "{{count}} dosis registradas en {{month}}",
+            "allTaken": "Todas las dosis tomadas",
+            "partialTaken": "Tomada parcialmente",
+            "mostlySkipped": "Mayormente omitidas",
+            "allSkipped": "Todas las dosis omitidas",
+            "snoozedOnly": "Solo pospuestas",
+            "sideEffect": "Síntoma de efecto secundario",
+            "generalSymptom": "Síntoma general",
+            "tooltipTaken": "{{count}} tomado",
+            "tooltipPrn": "{{count}} dosis PRN tomadas",
+            "tooltipSkipped": "{{count}} omitidas",
+            "tooltipSnoozed": "{{count}} pospuestas",
+            "tooltipSymptoms": "Síntomas: {{names}}",
+            "sun": "Dom",
+            "mon": "Lun",
+            "tue": "Mar",
+            "wed": "Mié",
+            "thu": "Jue",
+            "fri": "Vie",
+            "sat": "Sáb",
+            "maxSeverity": "Severidad máxima: {{n}}",
+            "skipped": "Omitidas"
         },
         "common": {
             "logging": "Registrando…",
             "saving": "Guardando…",
             "save": "Guardar",
             "reset": "Restablecer",
-            "custom": "Personalizado"
+            "custom": "Personalizado",
+            "clear": "Borrar"
         },
         "today": {
             "noIntake": "Hoy aún no se ha registrado ninguna entrada.",
@@ -2180,10 +2252,67 @@
             "scheduled": "Programado",
             "undo": "Deshacer",
             "skip": "Saltar",
-            "take": "Toma"
+            "take": "Toma",
+            "medicationsTitle": "Medicamentos de hoy",
+            "medicationsDescription": "Haz un seguimiento de las dosis programadas y registra los medicamentos según sea necesario",
+            "noMedicationDoses": "No hay dosis programadas para hoy. Registra a continuación cualquier medicamento que tomes cuando lo necesites.",
+            "supplementsTitle": "Suplementos de hoy",
+            "supplementsDescription": "Registra las dosis programadas y los suplementos que tomes cuando los necesites",
+            "noSupplementDoses": "No hay dosis programadas para hoy. Registra a continuación cualquier suplemento que tomes cuando lo necesite.",
+            "noPrnMedications": "No hay medicamentos según necesidad ni medicamentos no programados configurados.",
+            "noPrnSupplements": "No hay suplementos según necesidad ni suplementos no programados configurados.",
+            "loadingMedications": "Cargando medicamentos activos…",
+            "loadingSupplements": "Cargando suplementos activos..",
+            "loadingChecklist": "Cargando lista de control…",
+            "dueToday": "Previsto hoy",
+            "asNeeded": "Según sea necesario",
+            "asNeededHint": "Toca para registrar una dosis ahora (sin horario fijo o no programada para hoy).",
+            "logIntake": "Registrar toma",
+            "perfectDays": "Días perfectos (14d)",
+            "snooze": "Posponer",
+            "snoozed": "Pospuesto",
+            "adherenceTitle": "Resumen de adherencia",
+            "editLogged": "Editar la dosis registrada",
+            "takenAt": "Tomado en"
+        },
+        "insights": {
+            "title": "Información y consejos sobre efectos secundarios",
+            "subtitle": "Correlaciones farmacocinéticas superpuestas a los momentos de administración de dosis recientes.",
+            "disclaimer": "Las perspectivas se calculan en un periodo móvil de 30 días. Se trata de estimaciones educativas, no de asesoramiento clínico."
+        },
+        "reports": {
+            "logTableTitle": "Tabla de registro de medicamentos",
+            "logTableDesc": "Recuento de dosis y horarios diarios para el periodo del {{start}} al {{end}}, incluyendo los síntomas del mismo día.",
+            "logTableEmpty": "No se han registrado dosis de medicamentos en este intervalo de fechas.",
+            "dosesLogged": "{{count}} dosis registradas",
+            "dosesTaken": "Dosis tomadas",
+            "times": "Veces",
+            "symptomsColumn": "Síntomas",
+            "adherenceTrend": "Tendencia diaria de la adherencia (%)"
         }
     },
     "layout": {
         "welcome": "Bienvenido {{activeUserName}}"
+    },
+    "workoutLaps": {
+        "lap": "Vuelta",
+        "lapsCount": "{{count}} Vueltas",
+        "distance": "Distancia",
+        "time": "Hora",
+        "avgMaxHr": "Avg / Max HR",
+        "cadence": "Cadencia",
+        "power": "Potencia"
+    },
+    "dailyHealthMetrics": {
+        "title": "Resumen diario de salud",
+        "bodyBattery": "Nivel de energía",
+        "avgStress": "Avg Stress",
+        "restingHr": "Frecuencia cardíaca en reposo",
+        "recovery": "Recuperación: {{val}}",
+        "vo2Max": "VO2 Max",
+        "fitnessAge": "Edad física: {{val}}"
+    },
+    "food": {
+        "imagesReorderHint": "Arrastra para reordenar. La primera imagen se utilizará como miniatura."
     }
 }
