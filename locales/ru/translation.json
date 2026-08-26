@@ -470,7 +470,7 @@
         "addPresetButton": "Добавить шаблон",
         "noPresetsFound": "Не найдено ни одного шаблона тренировки. Создайте его, чтобы начать!",
         "logPresetToDiaryTooltip": "Записать шаблон в дневник",
-        "makePresetPrivateTooltip": "Сделать этот шаблон приватным",
+        "makePresetPrivateTooltip": "Сделать этот шаблон личным",
         "editPresetTooltip": "Редактировать этот шаблон",
         "deletePresetTooltip": "Удалить этот шаблон",
         "loadMore": "Загрузить ещё",
