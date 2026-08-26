@@ -4269,7 +4269,8 @@
         "noItems": "Nav atrastu importējamu vērtību. Pārbaudiet, vai nav tukšu rindu vai trūkstošu datumu.",
         "title": "Importēt veselības datus",
         "uploadCSV": "Augšupielādēt CSV",
-        "validationError": "Nav ko importēt"
+        "validationError": "Nav ko importēt",
+        "copiedValue": " "
     },
     "diaryCsvImport": {
         "fileTooLarge": "Atlasītais fails ir pārāk liels. Lūdzu, augšupielādējiet failu, kas ir mazāks par 25 MB.",
