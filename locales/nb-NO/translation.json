@@ -107,7 +107,39 @@
         },
         "glp1": {
             "doseMg": "Dose (mg)",
-            "pkDayLabel": "Dag {{day}}"
+            "pkDayLabel": "Dag {{day}}",
+            "dateTime": "Dato og tid",
+            "pkAxisDates": "Datoer",
+            "pkAxisDays": "Dager",
+            "addStep": "Legg til steg",
+            "statusPlanned": "Planlagt",
+            "statusActive": "Aktiv (nåværende)",
+            "statusDone": "Utført",
+            "notes": "Notater"
+        },
+        "types": {
+            "tablet": "tablett",
+            "capsule": "kapsel",
+            "liquid": "væske",
+            "injection": "injeksjon",
+            "drops": "dråper",
+            "cream": "krem",
+            "other": "annet"
+        },
+        "cabinet": {
+            "macroLabel_calories": "Kalorier",
+            "macroLabel_protein": "Protein",
+            "macroLabel_carbs": "Karbo",
+            "macroLabel_fat": "Fett",
+            "macroLabel_dietary_fiber": "Fiber",
+            "includeMacros": "Inkluder makroer",
+            "servingUnit_tablet_one": "tablett",
+            "servingUnit_tablet_other": "tabletter",
+            "servingUnit_capsule_one": "kapsel",
+            "servingUnit_capsule_other": "kapsler",
+            "servingUnit_pill_one": "pille",
+            "servingUnit_pill_other": "piller",
+            "clearNutrients": "Fjern alle"
         }
     },
     "nutrition": {
