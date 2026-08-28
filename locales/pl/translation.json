@@ -173,7 +173,7 @@
             "title": "Edytuj wpis ćwiczenia",
             "description": "Wprowadź zmiany w swoim wpisie. Kliknij zapisz, gdy skończysz.",
             "addSetButton": "Dodaj serię",
-            "customActivityDetailsLabel": "Szczegóły aktywności",
+            "customActivityDetailsLabel": "Szczegóły niestandardowej aktywności",
             "notesPlaceholder": "Dodaj notatki do ćwiczenia...",
             "updateSuccess": "Wpis zaktualizowany pomyślnie.",
             "updateError": "Nie udało się zaktualizować wpisu.",
@@ -523,7 +523,7 @@
         "mechanicIsolation": "Izolowane",
         "mechanicCompound": "Wielostawowe",
         "equipment": "Sprzęt (oddzielony przecinkami)",
-        "primaryMuscles": "Główne mięśnie",
+        "primaryMuscles": "Główne mięśnie (oddzielone przecinkami)",
         "secondaryMuscles": "Mięśnie pomocnicze",
         "instructions": "Instrukcje",
         "images": "Zdjęcia",
@@ -624,7 +624,7 @@
             "timeInZoneSLabel": "Czas w strefie (s)",
             "cadence": "Kadencja",
             "waterLoss": "Utrata wody",
-            "elapsedTime": "Czas trwania",
+            "elapsedTime": "Czas, który upłynął",
             "movingTime": "Czas w ruchu",
             "provider": {
                 "appleHealth": "Apple Health"
@@ -1226,7 +1226,7 @@
             "autoScaleOpenFoodFactsHint": "Po włączeniu wartości odżywcze z OpenFoodFacts zostaną automatycznie przeliczone ze 100 g na wielkość porcji produktu.",
             "calories": "Kalorie (kcal)",
             "energyUnit": "Jednostka energii",
-            "feetInches": "Stopy i cale (st/c)=?",
+            "feetInches": "Stopy i cale (ft/in)",
             "firstDayOfWeek": "Pierwszy dzień tygodnia",
             "joules": "Dżule (kJ)",
             "noTimezoneFound": "Nie znaleziono strefy czasowej.",
@@ -1236,7 +1236,7 @@
             "successDescription": "Preferencje zostały zapisane.",
             "successTitle": "Sukces",
             "timeFormat": "Format czasu",
-            "timeFormat12Lower": "12-godzinny AM/PM (2:30 pm)",
+            "timeFormat12Lower": "12-godzinny am/pm (2:30 pm)",
             "timeFormat12Upper": "12-godzinny AM/PM (2:30 PM)",
             "timeFormat24": "24-godzinny (14:30)",
             "timezone": "Strefa czasowa"
@@ -1796,19 +1796,19 @@
                 "emergencyFailSafe": "Zabezpieczenie awaryjne:",
                 "emergencyFailSafeDescription": "Jeśli zostaniesz zablokowany, możesz wymusić logowanie hasłem, ustawiając następującą zmienną środowiskową na serwerze i restartując go:",
                 "envVarCopied": "Zmienna środowiskowa skopiowana.",
-                "enforceMfaForAllUsers": "Trening"
+                "enforceMfaForAllUsers": "Wymuś MFA dla wszystkich użytkowników"
             },
             "oidcProviderManagement": {
                 "title": "Zarządzanie OIDC",
                 "description": "Konfiguracja dostawców OpenID Connect."
             },
-            "error": "Jedzenie i odżywianie",
-            "errorLoadingSettings": "Ustawienia",
-            "errorLoadingSettingsDescription": "Synchronizacja",
-            "failedToSaveLoginSettings": "Cele i postępy",
-            "loadingSettings": "Rodzina",
-            "loginSettingUpdated": "Szybki start",
-            "settingsSaved": "Dziennik"
+            "error": "Błąd",
+            "errorLoadingSettings": "Błąd",
+            "errorLoadingSettingsDescription": "Nie udało się wczytać ustawień uwierzytelniania.",
+            "failedToSaveLoginSettings": "Nie udało się zapisać ustawień logowania.",
+            "loadingSettings": "Ładowanie ustawień…",
+            "loginSettingUpdated": "Ustawienie logowania zaktualizowano pomyślnie.",
+            "settingsSaved": "Ustawienia zapisano"
         },
         "backupSettings": {
             "title": "Kopie zapasowe",
@@ -1854,10 +1854,10 @@
             "failedToDownloadBackup": "Nie udało się pobrać kopii zapasowej.",
             "failedToFetchBackups": "Nie udało się pobrać listy kopii zapasowych.",
             "noBackupsFound": "Nie znaleziono plików kopii zapasowych.",
-            "backupSettingsSaved": "Ćwiczenia",
-            "invalidTimeDescription": "Posiłki",
-            "invalidTimeTitle": "Zdrowie",
-            "saveWarningSchedulerFailed": "Ustawienia konta"
+            "backupSettingsSaved": "Zapisano",
+            "invalidTimeDescription": "Przed zapisaniem wprowadź prawidłową godzinę w formacie HH:MM.",
+            "invalidTimeTitle": "Nieprawidłowa godzina kopii zapasowej",
+            "saveWarningSchedulerFailed": "Ustawienia zapisano, ale nie udało się zaktualizować aktywnego harmonogramu. Zmiany zaczną obowiązywać po ponownym uruchomieniu serwera."
         },
         "oidcSettings": {
             "title": "Dostawcy OIDC",
@@ -1910,11 +1910,11 @@
             "domain": "Domena organizacji",
             "domainInfo": "Identyfikacja tego dostawcy jest wymagana przez Better Auth.",
             "callbackUrlCopied": "Callback URL skopiowano do schowka",
-            "envConfigured": "Bezpieczeństwo",
-            "envManagedNotice": "Powiadomienia",
-            "envManagedSecret": "Prywatność",
-            "error": "Wygląd",
-            "logoUploadFailed": "Język"
+            "envConfigured": "Zarządzane przez zmienne środowiskowe",
+            "envManagedNotice": "Ten dostawca jest konfigurowany za pomocą zmiennych środowiskowych. Niektóre pola są tylko do odczytu.",
+            "envManagedSecret": "Sekret jest zarządzany przez zmienne środowiskowe",
+            "error": "Błąd",
+            "logoUploadFailed": "Dostawcę utworzono, ale przesyłanie logo nie powiodło się."
         },
         "userManagement": {
             "title": "Zarządzanie użytkownikami",
@@ -1945,8 +1945,8 @@
             "toggleUserRoleConfirm": "Zmienić rolę {{userName}} na {{newRole}}?",
             "userRoleUpdated": "Rola użytkownika {{userName}} zmieniona na {{newRole}}.",
             "failedToUpdateUserRole": "Nie udało się zaktualizować roli użytkownika {{userName}}.",
-            "deleteUser": "Jednostki",
-            "deleteUserConfirm": "Strefa czasowa",
+            "deleteUser": "Usuń",
+            "deleteUserConfirm": "Czy na pewno chcesz usunąć tego użytkownika?",
             "error": "Błąd podczas ładowania użytkowników",
             "resetMfa": "Zresetuj MFA",
             "resetMfaSuccess": "MFA zresetowano pomyślnie dla użytkownika {{userName}}.",
@@ -2431,7 +2431,7 @@
         "light": "Płytki",
         "deep": "Głęboki",
         "clear": "Wyczyść",
-        "bedtime": "Sen",
+        "bedtime": "Pora snu",
         "wakeTime": "Pobudka",
         "duration": "Czas trwania",
         "sleepScore": "Wynik snu",
@@ -2969,7 +2969,7 @@
         "enterDistance": "Wpisz dystans w {{distanceUnit}}",
         "avgHeartRateLabel": "Średnie tętno (bpm)",
         "enterAvgHeartRate": "Wpisz średnie tętno",
-        "customActivityDetails": "Szczegóły aktywności",
+        "customActivityDetails": "Szczegóły niestandardowej aktywności",
         "sessionNotes": "Notatki z sesji",
         "uploadImage": "Wgraj zdjęcie",
         "imagePreviewAlt": "Podgląd",
@@ -3058,7 +3058,9 @@
             "continuous": "Ciągłe",
             "flashOff": "Lampa wyłączona",
             "flashOn": "Lampa włączona",
-            "manual": "Wprowadź kod skanowania"
+            "manual": "Wprowadź kod skanowania",
+            "refresh": "Odśwież skupienie",
+            "single": "Skanowanie pojedyncze"
         }
     },
     "customCategoryManager": {
@@ -3092,7 +3094,12 @@
         "deleteCategorySuccess": "Kategoria usunięta",
         "deleteCategoryError": "Błąd usuwania kategorii",
         "invalidIdError": "Błąd: Nieprawidłowe ID.",
-        "userNotAuthenticatedError": "Błąd: Użytkownik niezalogowany."
+        "userNotAuthenticatedError": "Błąd: Użytkownik niezalogowany.",
+        "displayNameHelp": "Opcjonalna nazwa niestandardowa wyświetlana w aplikacji",
+        "displayNameLabel": "Nazwa wyświetlana (opcjonalnie, maks. 100 znaków)",
+        "displayNamePlaceholder": "np. Poziom cukru we krwi rano",
+        "nameHelp": "Wewnętrzny identyfikator używany do synchronizacji",
+        "unitPrecisionNote": "Używanie standardowych jednostek (takich jak kcal, mmHg, BPM) automatycznie optymalizuje precyzję wykresu."
     },
     "customMeasurements": {
         "title": "Pomiary własne - {{date}}",
@@ -3227,7 +3234,7 @@
         "noData": "Brak dostępnych danych o śnie",
         "duration": "Długość",
         "efficiency": "Wydajność",
-        "bedtime": "Czas snu",
+        "bedtime": "Pora snu",
         "score": "Wynik snu",
         "avgHRV": "Śr. HRV",
         "avgResp": "Śr. oddechów/min",
@@ -3556,7 +3563,7 @@
             "name": "Nazwa",
             "namePlaceholder": "np. Wegovy",
             "type": "Postać",
-            "strength": "Siła",
+            "strength": "Moc",
             "glp1Med": "Lek GLP-1",
             "glp1Hint": "Udostępnia asystenta wstrzyknięć, krzywą farmakokinetyczną i rotację miejsc.",
             "glp1Drug": "Lek GLP-1 (do modelu farmakokinetycznego)",
@@ -3595,7 +3602,7 @@
             "nutrientsNeedDiaryAccess": "Do obliczania wartości odżywczych na dawkę ten profil musi mieć dostęp do dziennika żywieniowego. Nadal możesz zapisać suplement oraz śledzić jego harmonogram, przypomnienia i dawki.",
             "addNutrient": "Dodaj składnik odżywczy",
             "nutrientGroupCatalog": "Witaminy i minerały",
-            "nutrientGroupCustom": "Własne składniki odżywcze",
+            "nutrientGroupCustom": "Twoje własne składniki odżywcze",
             "createNutrient": "Nie ma na liście? Utwórz własny",
             "nutrientNamePlaceholder": "np. ashwagandha",
             "nutrientUnit": "Jednostka",
@@ -3774,7 +3781,7 @@
             "today": "Dzisiaj",
             "calendar": "Kalendarz",
             "insights": "Analizy",
-            "care": "Zdrowie",
+            "care": "Opieka",
             "log": "Dziennik"
         },
         "comingSoon": {
@@ -3819,7 +3826,9 @@
             "ttc": "Starania o ciążę (TTC)",
             "ttcDesc": "Monitoruj okno płodności, owulację i wskaźniki fazy lutealnej.",
             "pregnant": "Monitorowanie ciąży",
-            "pregnantDesc": "Monitoruj etapy rozwoju płodu, czas skurczów i opiekę prenatalną."
+            "pregnantDesc": "Monitoruj etapy rozwoju płodu, czas skurczów i opiekę prenatalną.",
+            "menopause": "Uwzględniający menopauzę",
+            "postpartum": "Okres poporodowy"
         },
         "today": {
             "cycleDay": "Dzień cyklu",
@@ -3828,17 +3837,43 @@
             "nextPeriod": "Następna miesiączka",
             "ovulation": "Owulacja",
             "cycleLength": "Długość cyklu",
-            "lateBanner": "Miesiączka spóźnia się o {{n}} dni. Zarejestruj ją, gdy się rozpocznie, lub skoryguj długość cyklu w ustawieniach."
+            "lateBanner": "Miesiączka spóźnia się o {{n}} dni. Zarejestruj ją, gdy się rozpocznie, lub skoryguj długość cyklu w ustawieniach.",
+            "adjustSettingsTitle": "Dostosuj długości cyklu",
+            "avgCycleHint": "Standardowo cykl trwa 28 dni. Dostosuj tę wartość, aby dopasować prognozy do swojego organizmu.",
+            "avgCycleLabel": "Typowa długość cyklu (dni)",
+            "avgPeriodLabel": "Typowa długość miesiączki (dni)",
+            "guide": {
+                "day": "dzień",
+                "days": "dni",
+                "fertileDesc": "7-dniowy okres od 5 dni przed owulacją do 1 dnia po owulacji, oznaczający największe prawdopodobieństwo poczęcia.",
+                "fertileDescDynamic": "Obliczone jako:",
+                "fertileTitle": "Okno płodności",
+                "follicularDesc": "Faza przed owulacją. Automatycznie wydłuża się lub skraca, aby dopasować się do całkowitej długości cyklu (np. 16 dni w cyklu 30-dniowym).",
+                "follicularDescDynamic": "Obliczone jako:",
+                "follicularTitle": "Faza folikularna (zmienna)",
+                "intro": "Prognozy są obliczane dynamicznie na podstawie ustawień cyklu i zapisów:",
+                "note": "Uwaga: W standardowych cyklach faza lutealna trwa 14 dni. Ustawienia cyklu możesz zmienić za pomocą ołówka edycji na karcie Długość cyklu.",
+                "ovulationDesc": "Początek następnej miesiączki – długość fazy lutealnej (np. 12 lipca – 14 dni = 28 czerwca).",
+                "ovulationDescDynamic": "Obliczone jako:",
+                "ovulationTitle": "Dzień owulacji",
+                "periodDesc": "Początek ostatniej miesiączki + typowa długość cyklu (np. 12 czerwca + 30 dni = 12 lipca).",
+                "periodDescDynamic": "Obliczone jako:",
+                "periodTitle": "Początek następnej miesiączki",
+                "title": "Jak obliczane są prognozy?"
+            },
+            "ttcModeActive": "Tryb planowania ciąży aktywny"
         },
         "legend": {
             "period": "Miesiączka",
             "fertile": "Dni płodne",
-            "ovulation": "Owulacja"
+            "ovulation": "Owulacja",
+            "predicted": "Przewidywana miesiączka"
         },
         "stats": {
             "cycleAvg": "Śr. długość cyklu",
             "periodAvg": "Śr. długość miesiączki",
-            "lastBbt": "Ostatnia PTC"
+            "lastBbt": "Ostatnia PTC",
+            "confidence": "Prognoza"
         },
         "regularity": {
             "regular": "Regularny",
@@ -3869,20 +3904,35 @@
             "notes": "Notatki",
             "notesPlaceholder": "Inne informacje…",
             "glance": {
-                "weight": "Masa ciała"
-            }
+                "weight": "Masa ciała",
+                "sleep": "Sen",
+                "water": "Woda"
+            },
+            "cervicalPositionFirmness": "Twardość",
+            "cervicalPositionHeight": "Wysokość",
+            "cervicalPositionOpening": "Rozwarcie",
+            "cervicalPositionTitle": "Położenie szyjki macicy",
+            "customizeProducts": "Dostosuj produkty",
+            "customizeSymptoms": "Dostosuj objawy",
+            "intercourse": "Współżycie",
+            "intercourseLogged": "Zarejestrowano",
+            "intercourseNotLogged": "Nie zarejestrowano",
+            "intercourseSection": "Współżycie",
+            "protectedIntercourse": "Współżycie zabezpieczone (prezerwatywa/bariera)",
+            "severity": "Nasilenie nowych objawów",
+            "symptoms": "Objawy"
         },
         "calendar": {
             "addLog": "Dodaj wpis",
-            "editLog": "Sob",
-            "editPeriods": "Miesiączka została zaktualizowana",
-            "fri": "Pomyślnie zaktualizowano rejestry miesiączki.",
-            "logDialogDesc": "Nd",
-            "logDialogTitle": "Czw",
-            "mon": "Wt",
-            "noLogs": "Śr",
-            "normalDay": "Wizyta",
-            "paintModeHint": "Wizyty",
+            "editLog": "Edytuj wpis",
+            "editPeriods": "Edytuj miesiączki",
+            "fri": "Pt",
+            "logDialogDesc": "Zapisuj parametry cyklu, objawy, nastrój i temperaturę.",
+            "logDialogTitle": "Dzienny wpis — {{date}}",
+            "mon": "Pn",
+            "noLogs": "Brak wpisów z tego dnia.",
+            "normalDay": "Dzień bez krwawienia",
+            "paintModeHint": "Dotknij dat, aby oznaczać lub odznaczać dni miesiączki. Prognozy zostaną ponownie obliczone po zapisaniu.",
             "sat": "Sob",
             "saveSuccess": "Zaktualizowano miesiączkę",
             "saveSuccessDesc": "Pomyślnie zaktualizowano rejestry miesiączki.",
@@ -3910,22 +3960,43 @@
             "print": "Drukuj",
             "regularity": "Regularność",
             "reportEmpty": "Zaloguj kilka cykli, aby wygenerować podsumowanie, które możesz udostępnić.",
-            "reportNote": "Na podstawie danych zgłoszonych przez Ciebie. Wygenerowano lokalnie, aby udostępnić je lekarzowi."
+            "reportNote": "Na podstawie danych zgłoszonych przez Ciebie. Wygenerowano lokalnie, aby udostępnić je lekarzowi.",
+            "save": "Zapisz wizytę"
         },
         "history": {
             "title": "Historia cykli",
             "periodLength": "Długość miesiączki (dni)",
             "startDate": "Data rozpoczęcia",
             "updateSuccess": "Cykl zaktualizowano",
-            "updateSuccessDesc": "Pomyślnie zaktualizowano ręczne daty cyklu."
+            "updateSuccessDesc": "Pomyślnie zaktualizowano ręczne daty cyklu.",
+            "addSuccess": "Dodano cykl",
+            "addSuccessDesc": "Pomyślnie zapisano ręczną historię cyklu.",
+            "confirmDelete": "Czy na pewno chcesz usunąć ten zapis cyklu?",
+            "cycleLength": "Długość cyklu (dni)",
+            "deleteSuccess": "Usunięto cykl",
+            "derived": "Automatycznie",
+            "desc": "Wyświetlaj i dostosowuj daty oraz statystyki minionych miesiączek.",
+            "editDesc": "Edytuj daty rozpoczęcia/zakończenia cyklu lub parametry.",
+            "editTitle": "Edytuj zapis cyklu",
+            "exclude": "Wyklucz ze statystyk",
+            "excludeHelp": "Użyj dla nieregularnych wartości odstających",
+            "excludeToggle": "Przełącz wykluczenie",
+            "excluded": "Wykluczono",
+            "logPrevious": "Zarejestruj poprzednią miesiączkę",
+            "logPreviousDesc": "Wprowadź daty minionych miesiączek, aby rozpocząć obliczenia.",
+            "logPreviousTitle": "Zarejestruj poprzednią miesiączkę",
+            "manual": "Ręcznie",
+            "noCycles": "Nie zarejestrowano jeszcze żadnych cykli. Spróbuj zapisać miesiączkę."
         },
         "bbt": {
-            "missing": "Śr. długość cyklu",
-            "stale": "Śr. długość miesiączki"
+            "missing": "Śledź podstawową temperaturę ciała, aby potwierdzić owulację. Znajdziesz ją w sekcji Pomiary; może też synchronizować się z telefonu.",
+            "stale": "Ostatni pomiar podstawowej temperatury ciała wykonano {{n}} dni temu. Potwierdzanie owulacji na podstawie temperatury jest wstrzymane do czasu zapisania nowego pomiaru — prognozy kalendarza i testów owulacyjnych nadal działają.",
+            "create": "Utwórz i śledź w sekcji Meldunek",
+            "creating": "Konfigurowanie…"
         },
         "beta": {
-            "description": "Brak",
-            "title": "Pon"
+            "description": "Spodziewaj się jeszcze pewnych niedoskonałości. Jeśli zauważysz błędy lub problemy, zgłoś je na GitHubie, aby pomóc nam ulepszać aplikację!",
+            "title": "Początkowa wersja beta"
         },
         "insights": {
             "clinicalAlertsDesc": "Obserwacje oparte na heurystykach, które warto omówić z lekarzem.",
@@ -3974,17 +4045,51 @@
             "testLoggingTitle": "Testy owulacyjne i ciążowe",
             "testLogsHistory": "Ten cykl",
             "testReady": "Osiągnięto {{dpo}}. dzień po owulacji! Zapisany teraz test ciążowy jest bardzo dokładny. Użyj pierwszego porannego moczu, aby uzyskać najwyższe stężenie.",
-            "twoWeekWaitTitle": "Dwutygodniowe oczekiwanie (TWW)"
+            "twoWeekWaitTitle": "Dwutygodniowe oczekiwanie (TWW)",
+            "congratsTitle": "Gratulacje! 🎉",
+            "dpo": "Dni po owulacji (DPO)",
+            "fertileWindowChart": "Szansa na poczęcie w oknie płodności",
+            "hptTestTitle": "Test ciążowy (HPT)",
+            "implantationDesc": "Zapłodniona komórka jajowa zwykle zagnieżdża się 6–12 dni po owulacji. W tym okresie często nie odczuwa się żadnych objawów albo pojawiają się łagodne skurcze i plamienie. Mogą one być nie do odróżnienia od typowych objawów PMS.",
+            "implantationTitle": "Okno implantacji",
+            "irregularCaveatDesc": "Prognozy mogą być mniej dokładne z powodu zmienności cyklu. Codzienne rejestrowanie podstawowej temperatury ciała (BBT) i testów owulacyjnych (OPK) zapewni najdokładniejsze określenie okna płodności.",
+            "irregularCaveatTitle": "Wykryto nieregularny cykl",
+            "logNegativeHpt": "Zarejestruj negatywny wynik HPT",
+            "logPositiveHpt": "Zarejestruj pozytywny wynik HPT",
+            "logTestError": "Nie udało się zarejestrować testu. Spróbuj ponownie."
         },
         "hormone": {
             "estrogen": "Estrogen",
             "fsh": "FSH",
             "lh": "LH",
             "progesterone": "Progesteron"
+        },
+        "disclaimerFooter": "Prognozy mają charakter informacyjny i nie stanowią porady medycznej ani antykoncepcji.",
+        "correlation": {
+            "byPhase": "według fazy cyklu",
+            "emptyDesc": "Rejestruj wagę, nastrój, sen i energię przez kilka cykli, aby zobaczyć, jak zmieniają się wraz z fazami.",
+            "emptyTitle": "Korelacje odblokują się po zebraniu większej ilości danych",
+            "higher": "wyższa",
+            "insight": "{{metric}} ma tendencję do przyjmowania wartości {{dir}} w fazie {{phase}} ({{delta}}{{unit}} względem średniej).",
+            "lower": "niższa"
         }
     },
     "onboarding": {
-        "completeSetup": "Zakończ konfigurację"
+        "completeSetup": "Zakończ konfigurację",
+        "activityHeavy": "Duża (6–7 dni w tygodniu)",
+        "activityHeavyDesc": "Intensywne ćwiczenia lub uprawianie sportu.",
+        "activityLevelTitle": "Jak często ćwiczysz?",
+        "activityLight": "Lekka (1–2 dni w tygodniu)",
+        "activityLightDesc": "Lekkie ćwiczenia lub uprawianie sportu.",
+        "activityModerate": "Umiarkowana (3–5 dni w tygodniu)",
+        "activityModerateDesc": "Umiarkowane ćwiczenia lub uprawianie sportu.",
+        "activityNotMuch": "Niewielka",
+        "activityNotMuchDesc": "Siedzący tryb życia, niewiele lub brak ćwiczeń.",
+        "addBurnedCaloriesDesc": "Jeśli ćwiczysz, czy dodać spalone kalorie do Twojego dziennego limitu?",
+        "addBurnedCaloriesTitle": "Dodać spalone kalorie z ćwiczeń?",
+        "planReady": "Twój spersonalizowany plan jest gotowy.",
+        "skipFailed": "Nie udało się pominąć konfiguracji początkowej. Spróbuj ponownie.",
+        "submissionFailed": "Nie udało się zapisać Twojego planu. Spróbuj ponownie."
     },
     "chat": {
         "toolCategories": {
@@ -4175,7 +4280,24 @@
         "scopePublic": "Publiczne",
         "title": "Importuj dziennik (CSV)",
         "uploadCsv": "Prześlij CSV",
-        "validationErrorTitle": "Błąd walidacji"
+        "validationErrorTitle": "Błąd walidacji",
+        "actions": "Działania",
+        "dateMealTypeRequired": "Każdy wiersz wymaga ",
+        "deleteRow": "Usuń wiersz",
+        "downloadTemplate": "Pobierz szablon",
+        "emptyFile": "Wybrany plik jest pusty.",
+        "importComplete": "Import zakończony",
+        "importData": "Importuj dane",
+        "importErrorTitle": "Błąd importu",
+        "importFailed": "Nie udało się zaimportować danych dziennika.",
+        "importSummary": "Zaimportowano {{processed}} wpisów, niepowodzenie: {{errors}}.",
+        "importing": "Importowanie…",
+        "invalidFormatTitle": "Nieprawidłowy format CSV",
+        "matchScope": "Dopasowuj nazwy produktów do",
+        "matchScopeDescription": "Dopasowanie nazwy produktu poza zaznaczonymi zakresami zostanie zignorowane, a zamiast tego zostanie utworzony nowy produkt na podstawie kolumn z wartościami odżywczymi wiersza.",
+        "mealType": "Posiłek",
+        "overrideDescription": "Gdy wiersz pasuje do jednego z Twoich produktów, zastąp wariant tego produktu",
+        "overrideLabel": "Zastąp wartości odżywcze istniejącego produktu zaimportowanymi wartościami"
     },
     "healthDataImport": {
         "fileTooLarge": "Wybrany plik jest zbyt duży. Prześlij plik mniejszy niż 25 MB.",
@@ -4188,7 +4310,14 @@
         "import": "Importuj",
         "importComplete": "Import zakończony",
         "importError": "Błąd importu",
-        "importFailed": "Nie udało się zaimportować danych zdrowotnych."
+        "importFailed": "Nie udało się zaimportować danych zdrowotnych.",
+        "importSummary": "Zaimportowano {{processed}} rekordów, pominięto {{skipped}}, niepowodzenie: {{errors}}.",
+        "importing": "Importowanie…",
+        "loadedRecords": "Wczytano {{count}} wierszy.",
+        "noItems": "Nie znaleziono wartości możliwych do zaimportowania. Sprawdź puste wiersze lub brakujące daty.",
+        "title": "Importuj dane zdrowotne",
+        "uploadCSV": "Prześlij CSV",
+        "validationError": "Brak danych do zaimportowania"
     },
     "workoutLaps": {
         "lap": "Okrążenie",
@@ -4273,7 +4402,93 @@
                 "iomRange": "Zakres IOM (tydz. {{wk}}):",
                 "title": "Masa ciała matki"
             },
-            "save": "Zapisz"
+            "save": "Zapisz",
+            "bp": {
+                "title": "Ciśnienie krwi"
+            },
+            "cancel": "Anuluj",
+            "edit": "Edytuj",
+            "log": "Zarejestruj"
+        },
+        "banner": {
+            "daysUntil": "Do terminu pozostało {{n}} dni · {{date}}",
+            "due": "Termin",
+            "dueNow": "Nadszedł termin porodu!",
+            "week": "Tydzień {{n}}"
+        },
+        "checklist": {
+            "title": "Ten tydzień",
+            "week": "Tydzień {{n}}"
+        },
+        "contractions": {
+            "apart": "odstępu",
+            "count": "w ciągu ostatniej godziny",
+            "dur": "Czas trwania",
+            "fiveOneOne": "Twoje skurcze przypominają schemat 5-1-1 (występują mniej więcej co 5 minut, trwają około 1 minuty i utrzymują się przez godzinę). Rozważ skontaktowanie się z lekarzem lub położną. To nie jest porada medyczna.",
+            "int": "Odstęp",
+            "long": "długi",
+            "start": "Rozpocznij skurcz",
+            "stop": "Zatrzymaj",
+            "title": "Minutnik skurczów"
+        },
+        "disclaimer": "Informacje dotyczące ciąży mają charakter edukacyjny i nie zastępują opieki medycznej.",
+        "growth": {
+            "baby": "Twoje dziecko",
+            "chart": "Rozwój w czasie ciąży",
+            "jumpToCurrent": "Przejdź do tego tygodnia ({{n}})",
+            "nextWeek": "Następny tydzień",
+            "prevWeek": "Poprzedni tydzień",
+            "sizeThisWeek": "Rozmiar dziecka w tym tygodniu",
+            "week": "Tydzień",
+            "weekScrubber": "Przewijanie tygodni",
+            "you": "Twoje ciało"
+        },
+        "kicks": {
+            "goal": "Cel: {{n}} ruchów",
+            "movements": "ruchów",
+            "recent": "Ostatnie sesje",
+            "start": "Rozpocznij liczenie",
+            "stop": "Zakończ sesję",
+            "tap": "Dotknij, aby policzyć ruch",
+            "title": "Licznik ruchów"
+        },
+        "photos": {
+            "add": "Dodaj tydzień {{n}}",
+            "delete": "Usuń zdjęcie",
+            "empty": "Rób zdjęcie brzucha co tydzień, aby śledzić tę podróż.",
+            "title": "Dziennik zdjęć brzucha",
+            "uploading": "Przesyłanie…",
+            "week": "Tydz. {{n}}",
+            "weekAlt": "Zdjęcie brzucha z tygodnia {{n}}"
+        },
+        "safety": {
+            "disclaimer": "To tylko ogólne wskazówki — zawsze potwierdź je u swojego lekarza lub położnej.",
+            "food": "Produkty spożywcze",
+            "foodPlaceholder": "Czy mogę jeść… (np. tuńczyka, brie)",
+            "medPlaceholder": "Czy mogę przyjmować… (np. ibuprofen)",
+            "meds": "Leki",
+            "noResults": "Brak wyników. Spróbuj innego terminu.",
+            "title": "Bezpieczeństwo żywności i leków"
+        },
+        "setup": {
+            "babies": "Liczba dzieci",
+            "conception": "Poczęcie",
+            "conceptionLabel": "Data poczęcia / owulacji",
+            "disclaimer": "Szacunki mają charakter informacyjny i nie zastępują opieki medycznej.",
+            "dueDate": "Termin porodu",
+            "dueDateLabel": "Termin porodu",
+            "estimatedDue": "Przewidywany termin porodu: {{date}}",
+            "lmp": "Ostatnia miesiączka",
+            "lmpLabel": "Pierwszy dzień ostatniej miesiączki",
+            "more": "3+",
+            "single": "Jedno",
+            "start": "Rozpocznij śledzenie",
+            "subtitle": "Powiedz nam, jak oszacować termin porodu — później możesz go zmienić.",
+            "title": "Rozpocznij śledzenie ciąży",
+            "twins": "Bliźnięta"
+        },
+        "today": {
+            "babyThisWeek": "Dziecko w tym tygodniu"
         }
     },
     "providers": {
@@ -4339,7 +4554,10 @@
         "failedToUpdate": "Nie udało się zaktualizować wpisu nastroju.",
         "intensityTrend": "Ogólny nastrój w czasie",
         "mood": "Nastrój",
-        "noMoodData": "Brak danych o nastroju dla tego okresu."
+        "noMoodData": "Brak danych o nastroju dla tego okresu.",
+        "notes": "Uwagi: ",
+        "savedSuccessfully": "Wpis nastroju zapisano pomyślnie.",
+        "updatedSuccessfully": "Wpis nastroju zaktualizowano pomyślnie."
     },
     "fasting": {
         "startTime": "Godzina rozpoczęcia",
@@ -4429,7 +4647,16 @@
         "add": "Dodaj kategorię",
         "addDesc": "Utwórz nową kategorię posiłku (np. przed treningiem).",
         "addSuccess": "Dodano kategorię posiłku.",
-        "addTitle": "Dodaj kategorię posiłku"
+        "addTitle": "Dodaj kategorię posiłku",
+        "deleteSuccess": "Kategoria posiłku została usunięta.",
+        "description": "Dostosuj kategorie posiłków i domyślne godziny rozpoczęcia. Sugerowane typy posiłków dynamicznie dopasowują się do Twojego harmonogramu podczas rejestrowania jedzenia.",
+        "editTitle": "Edytuj posiłki",
+        "loadError": "Nie udało się wczytać kategorii posiłków.",
+        "nameLabel": "Nazwa",
+        "sortHelp": "Niższe liczby pojawiają się wcześniej. (Śniadanie=10, Obiad=20, Kolacja=40)",
+        "sortOrderLabel": "Kolejność sortowania",
+        "title": "Kategorie posiłków",
+        "updateSuccess": "Kategoria posiłku została zaktualizowana."
     },
     "i18n": {
         "locale": "en-US"
@@ -4443,6 +4670,28 @@
         "totpTab": "Kod aplikacji",
         "verify": "Zweryfikuj",
         "verifyLogin": "Zweryfikuj logowanie za pomocą jednej z metod uwierzytelniania wieloskładnikowego.",
-        "verifyRecovery": "Zweryfikuj kod odzyskiwania"
+        "verifyRecovery": "Zweryfikuj kod odzyskiwania",
+        "challengeTitle": "Wyzwanie MFA",
+        "emailCodeLabel": "Kod weryfikacyjny z e-maila",
+        "emailTab": "Kod z e-maila",
+        "enterAppCode": "Wprowadź kod z aplikacji uwierzytelniającej",
+        "enterEmailCode": "Wprowadź kod z e-maila",
+        "enterRecoveryCode": "Wprowadź kod odzyskiwania",
+        "error": {
+            "missingAuthInfo": "Brak informacji uwierzytelniających.",
+            "missingInfo": "Błąd",
+            "recoveryCodeInvalid": "Nieprawidłowy kod odzyskiwania.",
+            "totpInvalid": "Nieprawidłowy kod TOTP.",
+            "verificationFailed": "Weryfikacja nie powiodła się"
+        },
+        "loggedInAs": "Zalogowano jako:"
+    },
+    "measurements": {
+        "errorLoadingBodyFat": "Nie udało się wczytać najnowszej zawartości tkanki tłuszczowej.",
+        "errorLoadingHeight": "Nie udało się wczytać najnowszego wzrostu.",
+        "errorLoadingWeight": "Nie udało się wczytać najnowszej masy ciała."
+    },
+    "preferences": {
+        "resetError": "Nie udało się zresetować preferencji"
     }
 }
