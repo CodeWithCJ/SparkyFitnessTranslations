@@ -4,7 +4,6 @@
         "checkin": "Check-in",
         "reports": "Relatórios",
         "foods": "Comidas",
-        "exercises": "Exercícios",
         "goals": "Metas",
         "settings": "Configurações",
         "admin": "Administrador",
@@ -115,7 +114,6 @@
         },
         "accountSecurity": {
             "updateEmail": "Atualizar e-mail",
-            "verifyNewEmail": "Você precisa validar seu novo e-mail",
             "changePassword": "Alterar Senha",
             "newPassword": "Nova Senha",
             "enterNewPassword": "Entre nova senha",
@@ -408,7 +406,6 @@
         "type": "Tipo",
         "reps": "Repetições",
         "weight": "Peso",
-        "durationMin": "Duração (min)",
         "restS": "Descanso (s)",
         "notes": "Notas",
         "exercise": "Exercício",
@@ -919,7 +916,6 @@
         "csvHeadersTimeAsleepHours": "Tempo de sono (h)",
         "csvHeadersScore": "Pontuação",
         "csvHeadersEfficiencyPercentage": "Eficiência (%)",
-        "csvHeadersDebtHours": "Dívida (h)",
         "csvHeadersInsight": "compreensão",
         "goodSleep": "Boa noite de sono",
         "needsImprovement": "Precisa melhorar",
@@ -1595,7 +1591,6 @@
             "idTokenSignedAlg": "Algoritmo de assinatura do Token ID",
             "userinfoSignedAlg": "Algoritmo de assinatura de informações do usuário",
             "requestTimeout": "Tempo de requisição esgotado (ms)",
-            "redirectUriInfo": "A URI de redirecionamento para o seu provedor OIDC deve ser: SPARKY_FITNESS_FRONTEND_URL/oidc-callback",
             "redirectUriCopied": "URI de redirecionamento copiada para a área de transferência.",
             "createSuccess": "Provedor OIDC criado com sucesso.",
             "localhostWarning": "Certifique-se de que seu provedor OIDC permita o uso de host local ou de seu IP local para desenvolvimento.",
@@ -2019,7 +2014,6 @@
         },
         "scheduleDesc": {
             "atTime": " em {{time}}",
-            "mealSuffix": " ({{meal}} refeição)",
             "daily": "Diariamente",
             "weeklyOn": "Semanal em {{days}}",
             "everyNDays": "Cada {{n}} dias",
@@ -2164,7 +2158,6 @@
         "enterDetails": "Digite detalhes para o seu novo modelo de refeição.",
         "description": "Descrição"
     },
-    "key": "texto",
     "i18n": {
         "locale": "en-US"
     },
