@@ -9,7 +9,6 @@
         "admin": "Administration",
         "cycle": "Zyklus",
         "pregnancy": "Schwangerschaft",
-        "exercises": "Übungen",
         "medications": "Medikamente",
         "foodLog": "Ernährungsprotokoll",
         "wellness": "Wellness"
@@ -396,7 +395,6 @@
             "updateEmailHint": "Bestätigen Sie Ihr aktuelles Passwort, um Ihre E-Mail zu ändern. Lassen Sie leer, wenn Sie sich mit SSO anmelden.",
             "emailUpdateSuccess": "E-Mail erfolgreich aktualisiert.",
             "emailUpdateError": "Aktualisieren der E-Mail Adresse fehlgeschlagen.",
-            "verifyNewEmail": "Du musst deine neue E-Mail-Adresse verifizieren.",
             "passwordUpdateError": "Passwort konnte nicht aktualisiert werden",
             "passwordUpdateSuccess": "Passwort erfolgreich aktualisiert"
         },
@@ -781,7 +779,6 @@
             "dailyProgress": "Täglicher Fortschritt",
             "enterMeasurements": "Messwerte eingeben",
             "katchCunninghamMissingDesc": "Gewicht und Körperfettanteil fehlen. Die Kalorienziele sind möglicherweise ungenau.",
-            "bmrSourceExternal": "Gesundheitsapp",
             "targetBand": "Ziel {{min}}–{{max}}",
             "adaptiveTdee": "Adaptiv TDEE",
             "adjustment": "Anpassung",
@@ -1539,7 +1536,6 @@
             "domain": "Organisation Domain",
             "domainInfo": "Benötigt für \"Better Auth\" um diesen Provider zu identifizieren.",
             "callbackUrlCopied": "Callback-URL in Zwischenablage kopiert",
-            "redirectUriInfo": "Die Redirect-URI für den OIDC-Anbieter sollte lauten: SPARKY_FITNESS_FRONTEND_URL/oidc-callback",
             "envConfigured": "Verwaltet von Env",
             "envManagedNotice": "Dieser Anbieter wird über Umgebungsvariablen konfiguriert. Einige Felder sind schreibgeschützt.",
             "envManagedSecret": "Geheimnis wird von env verwaltet",
@@ -2745,7 +2741,6 @@
         "food": "Lebensmittel",
         "quantity": "Anzahl",
         "total": "Gesamt",
-        "durationMin": "Dauer (min)",
         "durationSec": "Dauer (s)",
         "allTables": "Alle Tabellen",
         "showTable": "Tabelle anzeigen"
@@ -2877,7 +2872,6 @@
         "csvHeadersWeight": "Gewicht (%)",
         "csvHeadersDebt": "Defizit",
         "highDebt": "Hoher Defizit",
-        "csvHeadersDebtHours": "Defizit (h)",
         "csvHeadersDuration": "Dauer",
         "csvHeadersTimeAsleep": "Schlafzeit",
         "sleepHistoryTableTitle": "Schlafverlauf und -analyse"
@@ -3425,8 +3419,7 @@
             "cyclic": "Zyklus: {{on}} Tage aktiv, {{off}} Tage inaktiv",
             "monthly": "Monatlich am {{day}}",
             "prn": "Nach Bedarf",
-            "taper": "Abschwächung",
-            "mealSuffix": " ({{meal}} Mahlzeit)"
+            "taper": "Abschwächung"
         },
         "bodymap": {
             "label": "Körperkarte der Injektionsstellen"
