@@ -4,12 +4,12 @@
         "checkin": "Statusmeldung",
         "reports": "Berichte",
         "foods": "Lebensmittel",
-        "exercises": "Übungen",
         "goals": "Ziele",
         "settings": "Einstellungen",
         "admin": "Administration",
         "cycle": "Zyklus",
         "pregnancy": "Schwangerschaft",
+        "exercises": "Übungen",
         "medications": "Medikamente",
         "foodLog": "Ernährungsprotokoll",
         "wellness": "Wellness"
@@ -382,7 +382,6 @@
             "currentEmail": "E-Mail ändern",
             "enterNewEmail": "Neue E-Mail-Adresse eingeben",
             "updateEmail": "E-Mail-Adresse aktualisieren",
-            "verifyNewEmail": "Du musst deine neue E-Mail-Adresse verifizieren.",
             "changePassword": "Passwort ändern",
             "newPassword": "Neues Passwort",
             "enterNewPassword": "Neues Passwort eingeben",
@@ -397,6 +396,7 @@
             "updateEmailHint": "Bestätigen Sie Ihr aktuelles Passwort, um Ihre E-Mail zu ändern. Lassen Sie leer, wenn Sie sich mit SSO anmelden.",
             "emailUpdateSuccess": "E-Mail erfolgreich aktualisiert.",
             "emailUpdateError": "Aktualisieren der E-Mail Adresse fehlgeschlagen.",
+            "verifyNewEmail": "Du musst deine neue E-Mail-Adresse verifizieren.",
             "passwordUpdateError": "Passwort konnte nicht aktualisiert werden",
             "passwordUpdateSuccess": "Passwort erfolgreich aktualisiert"
         },
@@ -462,23 +462,23 @@
             "showFertileWindow": "Zeige Voraussagen für Fruchtbarkeitsfenster",
             "learned": "Aus Protokollen berechnet",
             "description": "Verwalten Sie reproduktive Gesundheit, Menstruationszyklen und Schwangerschaftsverfolgung",
+            "customizeProducts": "Menstruationsprodukte anpassen",
+            "discreetMode": "Diskreter Modus",
+            "export": "Export",
+            "exporting": "Exportieren…",
+            "lutealConstHelp": "Die Lutealphase ist auf 14 Tage festgelegt. Die Follikelphase passt sich automatisch an Ihre Zykluslänge an.",
             "enableHint": "Schalten Sie den Hub für reproduktive Gesundheit um. Durch Aktivieren wird die Navigationsregisterkarte in der Seitenleiste angezeigt.",
             "mode": "Tracker-Modus",
             "lutealLength": "Lutealphasenlänge (Tage)",
             "showFertileWindowHint": "Fruchtbare Tage und Eisprungvorhersagen auf Dashboards/Kalendern anzeigen oder ausblenden.",
             "conditions": "Gesundheitszustand",
-            "customizeProducts": "Periode anpassen Produkte",
             "customizeProductsDesc": "Wählen Sie aus, welche Periodenprodukte in Ihren täglichen Protokollen angezeigt werden, oder fügen Sie Ihre eigenen hinzu.",
             "customizeSymptoms": "Symptome anpassen",
             "customizeSymptomsDesc": "Symptome in Ihrem Zyklusprotokoll anzeigen oder ausblenden oder neue hinzufügen.",
-            "discreetMode": "Diskreter Modus",
             "discreetModeHint": "Verwenden Sie ein neutrales „Wellness“-Label und -Symbol in der Navigation.",
-            "export": "Exportieren",
             "exportData": "Exportieren Sie Ihre Daten",
             "exportError": "Daten konnten nicht exportiert werden.",
             "exportHint": "Laden Sie alle Ihre Zyklusdaten als JSON herunter. Sie verlassen nie Ihren Server.",
-            "exporting": "Exportiert…",
-            "lutealConstHelp": "Die Lutealphase ist auf 14 Tage gesperrt. Die Follikelphase passt sich automatisch an Ihre Zykluslänge an.",
             "resetConfirm": "Sind Sie sicher, dass Sie Ihr Zyklus-Tracking-Profil zurücksetzen möchten? Dadurch können Sie die Onboarding-Konfiguration von Grund auf neu ausführen. Ihr protokollierter Zyklusverlauf wird nicht gelöscht.",
             "resetError": "Onboarding konnte nicht zurückgesetzt werden. Bitte versuchen Sie es erneut.",
             "resetOnboarding": "Onboarding zurücksetzen und erneut ausführen",
@@ -779,6 +779,8 @@
             "netCalories": "Nettokalorien: {{netCalories}}",
             "netCaloriesBreakdown": "{{dailyIntakeCalories}} verzehrt - {{finalTotalCaloriesBurned}} verbrannt",
             "dailyProgress": "Täglicher Fortschritt",
+            "enterMeasurements": "Messwerte eingeben",
+            "katchCunninghamMissingDesc": "Gewicht und Körperfettanteil fehlen. Die Kalorienziele sind möglicherweise ungenau.",
             "bmrSourceExternal": "Gesundheitsapp",
             "targetBand": "Ziel {{min}}–{{max}}",
             "adaptiveTdee": "Adaptiv TDEE",
@@ -789,10 +791,8 @@
             "dataPoints": "Datenpunkte",
             "days": "Tage",
             "energyBurnedBreakdownTitle": "Aufschlüsselung des Energieverbrauchs",
-            "enterMeasurements": "Messwerte eingeben",
             "expenditure": "Ausgaben",
             "fallbackReason": "Schätzung verwenden: {{reason}}",
-            "katchCunninghamMissingDesc": "Gewicht und Körperfettanteil fehlen. Kalorienziele sind möglicherweise ungenau.",
             "netEnergy": "Nettoenergie: {{netCalories}}",
             "netEnergyBreakdown": "{{dailyIntakeCalories}} gegessen - {{finalTotalCaloriesBurned}} verbrannt",
             "profileIncompleteDesc": "Gewicht, Größe und Alter fehlen. Kalorienziele sind möglicherweise ungenau.",
@@ -1018,6 +1018,37 @@
             "importError": "Trainingsverlauf konnte nicht importiert werden. Bitte versuchen Sie es erneut.",
             "partialImportError": "Einige Einträge konnten nicht importiert werden: {{details}}"
         },
+        "workoutPlaybackDialog": {
+            "setRow": "Satz {{setNumber}}",
+            "closeKeepDraft": "Schließen",
+            "completeAtLeastOneSet": "Schließen Sie mindestens einen Satz ab, bevor Sie fertig sind.",
+            "discard": "Verwerfen",
+            "discardConfirm": "Diesen laufenden Satz verwerfen Training? Dies kann nicht rückgängig gemacht werden.",
+            "finish": "Training beenden",
+            "finishError": "Training konnte nicht gespeichert werden. Ihr lokaler Fortschritt bleibt weiterhin erhalten und Sie können es erneut versuchen.",
+            "finishing": "Speichern...",
+            "noDraft": "Für dieses Datum wurde kein aktiver Trainingsentwurf gefunden.",
+            "sets": "Sätze",
+            "title": "Live-Training"
+        },
+        "workoutPlaybackPage": {
+            "columnRest": "Pause",
+            "columnSet": "Satz",
+            "columnType": "Typ",
+            "columnWeight": "Gewicht",
+            "elapsedTime": "Dauer",
+            "inProgress": "In Bearbeitung",
+            "progress": "Sätze",
+            "restEditorTitle": "Pause bearbeiten",
+            "addSet": "Satz hinzufügen",
+            "columnReps": "Wiederholungen",
+            "completed": "Abgeschlossen",
+            "customRest": "Benutzerdefiniert (Sekunden)",
+            "description": "Verfolgen Sie Ihre Sätze live verfolgen, Pausen-Countdowns verfolgen und speichern, wenn Sie fertig sind.",
+            "restEditorDescription": "Wählen Sie eine Pausendauer für diesen Satz.",
+            "restTimer": "Pause",
+            "volume": "Volumen"
+        },
         "modality": {
             "weightReps": "Gewicht und Wiederholungen",
             "repsOnly": "Wiederholungen",
@@ -1059,37 +1090,6 @@
         "suggestions": {
             "recentLoadError": "Letzte Übungen konnten nicht geladen werden.",
             "topLoadError": "Top-Übungen konnten nicht geladen werden."
-        },
-        "workoutPlaybackDialog": {
-            "closeKeepDraft": "Schließen",
-            "completeAtLeastOneSet": "Schließen Sie mindestens einen Satz ab, bevor Sie fertig sind.",
-            "discard": "Verwerfen",
-            "discardConfirm": "Diesen laufenden Satz verwerfen Training? Dies kann nicht rückgängig gemacht werden.",
-            "finish": "Training beenden",
-            "finishError": "Training konnte nicht gespeichert werden. Ihr lokaler Fortschritt bleibt weiterhin erhalten und Sie können es erneut versuchen.",
-            "finishing": "Speichern...",
-            "noDraft": "Für dieses Datum wurde kein aktiver Trainingsentwurf gefunden.",
-            "setRow": "Satz {{setNumber}}",
-            "sets": "Sätze",
-            "title": "Live-Training"
-        },
-        "workoutPlaybackPage": {
-            "addSet": "Satz hinzufügen",
-            "columnReps": "Wiederholungen",
-            "columnRest": "Ruhe",
-            "columnSet": "Eingestellt",
-            "columnType": "Typ",
-            "columnWeight": "Gewicht",
-            "completed": "Abgeschlossen",
-            "customRest": "Benutzerdefiniert (Sekunden)",
-            "description": "Verfolgen Sie Ihre Sätze live verfolgen, Pausen-Countdowns verfolgen und speichern, wenn Sie fertig sind.",
-            "elapsedTime": "Dauer",
-            "inProgress": "In Bearbeitung",
-            "progress": "Sätze",
-            "restEditorDescription": "Wählen Sie eine Pausendauer für diesen Satz.",
-            "restEditorTitle": "Pause bearbeiten",
-            "restTimer": "Pause",
-            "volume": "Volumen"
         }
     },
     "workoutPresetsManager": {
@@ -1112,11 +1112,11 @@
         "deleteError": "Löschen der Traininsgvorlage fehlgeschlagen.",
         "logSuccess": "Traininsgvorlage \"{{presetName}}\" ins Tagebuch eingetragen.",
         "logError": "Hinzufügen der Traininsgvorlage \"{{presetName}}\" zum Tagebuch fehlgeschlagen.",
+        "name": "Name",
+        "startWorkout": "Starte Workout",
         "exercises": "Übungen",
         "logToDiary": "Im Tagebuch protokollieren",
-        "name": "Name",
         "presets": "Voreinstellungen",
-        "startWorkout": "Training starten",
         "stats": "Statistiken"
     },
     "workoutPlansManager": {
@@ -1140,12 +1140,12 @@
         "updateStatusError": "Der zu aktualisierende Plan konnte nicht gefunden werden.",
         "toggleStatusSuccess": "Trainingsplan erfolgreich {{status}}.",
         "toggleStatusError": "Aktivieren des Trainingsplans fehlgeschlagen.",
-        "activate": "Aktivieren",
-        "deactivate": "Deaktivieren",
         "duration": "Dauer",
         "planName": "Planname",
         "plans": "Pläne",
-        "status": "Status"
+        "status": "Status",
+        "activate": "Aktivieren",
+        "deactivate": "Deaktivieren"
     },
     "exerciseCard": {
         "title": "Übung",
@@ -1220,10 +1220,10 @@
         "failedToDeleteExerciseEntry": "Das Löschen des Trainingseintrags ist fehlgeschlagen.",
         "exerciseEntryDeletedSuccessfully": "Trainingseintrag erfolgreich gelöscht.",
         "loadingExercises": "Lade Übungen...",
+        "startWorkout": "Starte Workout",
         "deletePresetEntry": "Voreingestellten Eintrag löschen",
         "editExerciseDescription": "Details unten bearbeiten.",
         "noExercisesInPreset": "Keine Übungen in dieser Voreinstellung.",
-        "startWorkout": "Training starten",
         "workoutPreset": "Trainingsvoreinstellung"
     },
     "foodSearchDialog": {
@@ -1499,7 +1499,6 @@
             "logoUrl": "Logo-URL",
             "willBeSetOnUpload": "Wird beim Hochladen festgelegt",
             "issuerUrl": "Aussteller-URL",
-            "redirectUriInfo": "Die Redirect-URI für den OIDC-Anbieter sollte lauten: SPARKY_FITNESS_FRONTEND_URL/oidc-callback",
             "redirectUriCopied": "Redirect-URI in die Zwischenablage kopiert.",
             "localhostWarning": "Stellen Sie sicher, dass Ihr OIDC-Anbieter localhost oder Ihre lokale IP-Adresse für die Entwicklung zulässt.",
             "proxyWarning": "Wenn Sie einen Proxy wie Nginx Proxy Manager verwenden, stellen Sie sicher, dass die folgenden Header konfiguriert sind:",
@@ -1540,6 +1539,7 @@
             "domain": "Organisation Domain",
             "domainInfo": "Benötigt für \"Better Auth\" um diesen Provider zu identifizieren.",
             "callbackUrlCopied": "Callback-URL in Zwischenablage kopiert",
+            "redirectUriInfo": "Die Redirect-URI für den OIDC-Anbieter sollte lauten: SPARKY_FITNESS_FRONTEND_URL/oidc-callback",
             "envConfigured": "Verwaltet von Env",
             "envManagedNotice": "Dieser Anbieter wird über Umgebungsvariablen konfiguriert. Einige Felder sind schreibgeschützt.",
             "envManagedSecret": "Geheimnis wird von env verwaltet",
@@ -1615,7 +1615,7 @@
             "availableBackups": "Verfügbare Backups",
             "availableBackupsDescription": "Wählen Sie eine Sicherungsdatei zum Download.",
             "noBackupsFound": "Keine Backup-Dateien gefunden.",
-            "backupCount_one": "{{count}} Sicherung",
+            "backupCount_one": "",
             "backupCount_other": "{{count}} Backups",
             "backupFileName": "Dateiname",
             "backupDate": "Gestartet",
@@ -1878,6 +1878,9 @@
         },
         "addError": "Lebensmittel konnte nicht hinzugefügt werden.",
         "addSuccess": "Lebensmittel erfolgreich hinzugefügt.",
+        "entryImageRemoveFailed": "Das Foto zu diesem Eintrag konnte nicht entfernt werden.",
+        "inheritedPhotoAlt": "Übernommenes Bild {{number}}",
+        "savingPhotos": "Fotos speichern…",
         "over": "über",
         "calculateExplanation": {
             "dialogDescription": "Schrittweise Aufschlüsselung der Berechnung Ihres täglichen Energieziels.",
@@ -1946,10 +1949,7 @@
         "entryPhotoInheritedHint": "Zeigt die eigenen Bilder des Essens. Fügen Sie ein Foto hinzu, um sie für diesen Eintrag zu überschreiben.",
         "entryImageUploadFailedTitle": "Hochladen fehlgeschlagen",
         "entryImageUploadFailed": "Das Foto für diesen Eintrag konnte nicht gespeichert werden.",
-        "entryImageRemoveFailedTitle": "Entfernen fehlgeschlagen",
-        "entryImageRemoveFailed": "Das Foto für diesen Eintrag konnte nicht entfernt werden.",
-        "inheritedPhotoAlt": "Geerbtes Bild {{number}}",
-        "savingPhotos": "Fotos werden gespeichert…"
+        "entryImageRemoveFailedTitle": "Entfernen fehlgeschlagen"
     },
     "foodDiary": {
         "title": "Ernährungstagebuch",
@@ -1981,7 +1981,7 @@
             "deletedSuccess": "Getränk entfernt",
             "deletedError": "Entfernen des Getränks fehlgeschlagen",
             "editTime": "Klicken um die Zeit zu ändern",
-            "noManualToRemove": "Hier kann nur manuell erfasstes Wasser entfernt werden"
+            "noManualToRemove": "Nur manuell erfasste Wassermengen können entfernt werden"
         },
         "copyFoodEntryDialog": {
             "title": "Essenseintrag kopieren",
@@ -2071,7 +2071,7 @@
             "calendarLegend": "Fortschrittsfotos"
         },
         "useLast": "Letzte verwenden",
-        "bodyWater": "Körperwasser %",
+        "bodyWater": "Körperwasseranteil in %",
         "boneMass": "Knochenmasse",
         "couldNotLoadUserProfileOrPrefs": "Benutzerprofil oder Präferenzen für die Berechnung konnten nicht geladen werden.",
         "exercise": "Übung",
@@ -2731,7 +2731,6 @@
         "reps": "Wiederholungen",
         "weight": "Gewicht",
         "tonnage": "Gesamtgewicht",
-        "durationMin": "Dauer (min)",
         "restS": "Pause (s)",
         "notes": "Notizen",
         "caloriesBurned": "Kalorien verbrannt",
@@ -2746,6 +2745,7 @@
         "food": "Lebensmittel",
         "quantity": "Anzahl",
         "total": "Gesamt",
+        "durationMin": "Dauer (min)",
         "durationSec": "Dauer (s)",
         "allTables": "Alle Tabellen",
         "showTable": "Tabelle anzeigen"
@@ -2865,7 +2865,6 @@
         "csvHeadersTimeAsleepHours": "Zeit im Schlaf (h)",
         "csvHeadersScore": "Score",
         "csvHeadersEfficiencyPercentage": "Effizienz (%)",
-        "csvHeadersDebtHours": "Defizit (h)",
         "csvHeadersAwakePeriods": "Wachphasen",
         "csvHeadersSource": "Quelle",
         "csvHeadersInsight": "Einblick",
@@ -2878,6 +2877,7 @@
         "csvHeadersWeight": "Gewicht (%)",
         "csvHeadersDebt": "Defizit",
         "highDebt": "Hoher Defizit",
+        "csvHeadersDebtHours": "Defizit (h)",
         "csvHeadersDuration": "Dauer",
         "csvHeadersTimeAsleep": "Schlafzeit",
         "sleepHistoryTableTitle": "Schlafverlauf und -analyse"
@@ -3228,7 +3228,7 @@
         "noActiveProviders": "Keine aktiven Anbieter zur Synchronisierung gefunden.",
         "syncCompleted_one": "{{count}} Anbieter erfolgreich synchronisiert.",
         "syncCompleted_other": "{{count}} Anbieter erfolgreich synchronisiert.",
-        "syncFailed_one": "{{count}} Anbieter konnte nicht synchronisiert werden.",
+        "syncFailed_one": "Synchronisierung mit einem Anbieter fehlgeschlagen.",
         "syncFailed_other": "Synchronisierung mit {{count}} Anbietern fehlgeschlagen."
     },
     "sleepHealth": {
@@ -3376,9 +3376,10 @@
             "loadingChecklist": "Checkliste wird geladen…",
             "dueToday": "Fällig heute",
             "asNeeded": "Bei Bedarf",
+            "logIntake": "Einnahme protokollieren",
             "medicationsTitle": "Heutige Medikamente",
-            "medicationsDescription": "Geplante Dosen verfolgen und nach Bedarf protokollieren",
-            "noMedicationDoses": "Heute keine geplanten Dosen – protokollieren Sie unten alle nach Bedarf eingenommenen Medikamente.",
+            "medicationsDescription": "Geplante Dosen erfassen und Bedarfsmedikamente dokumentieren",
+            "noMedicationDoses": "Heute keine geplanten Dosen – erfasse unten alle Bedarfsmedikamente.",
             "supplementsTitle": "Heutige Nahrungsergänzungsmittel",
             "supplementsDescription": "Verfolgen Sie geplante Dosen und protokollieren Sie Ergänzungen nach Bedarf",
             "noSupplementDoses": "Keine geplanten Dosen heute – protokollieren Sie unten alle Ergänzungen nach Bedarf.",
@@ -3387,7 +3388,6 @@
             "loadingMedications": "Aktive Medikamente werden geladen...",
             "loadingSupplements": "Aktive Nahrungsergänzungsmittel werden geladen...",
             "asNeededHint": "Tippen Sie hier, um eine Dosis jetzt zu protokollieren (kein fester Zeitplan oder heute nicht fällig).",
-            "logIntake": "Einnahme protokollieren",
             "adherenceTitle": "Übersicht über die Einhaltung",
             "editLogged": "Gespeicherte Dosis bearbeiten",
             "takenAt": "Aufgenommen in"
@@ -3419,14 +3419,14 @@
         },
         "scheduleDesc": {
             "atTime": " um {{time}}",
-            "mealSuffix": " ({{meal}} Mahlzeit)",
             "daily": "Täglich",
             "weeklyOn": "Wöchentlich an {{days}}",
             "everyNDays": "Alle {{n}} Tage",
             "cyclic": "Zyklus: {{on}} Tage aktiv, {{off}} Tage inaktiv",
             "monthly": "Monatlich am {{day}}",
             "prn": "Nach Bedarf",
-            "taper": "Abschwächung"
+            "taper": "Abschwächung",
+            "mealSuffix": " ({{meal}} Mahlzeit)"
         },
         "bodymap": {
             "label": "Körperkarte der Injektionsstellen"
@@ -3448,9 +3448,9 @@
             "tooltipSkipped": "{{count}} übersprungen",
             "tooltipSymptoms": "Symptome: {{names}}",
             "sun": "So",
-            "mon": "Mo",
+            "mon": "Mon",
             "tue": "Di",
-            "wed": "Mi",
+            "wed": "Mit",
             "thu": "Do",
             "fri": "Fr",
             "sat": "Sa",
@@ -3467,7 +3467,7 @@
             "snoozedOnly": "Nur zurückgestellte",
             "tooltipPrn": "{{count}} Bedarfsdosen eingenommen",
             "skipped": "übersprungen",
-            "tooltipSnoozed": "{{count}} im Ruhezustand"
+            "tooltipSnoozed": "{{count}} pausiert"
         },
         "gi": {
             "subtitle": "Rate pro Woche in den letzten 30 Tagen",
@@ -3552,6 +3552,8 @@
             "dontDeduct": "Nicht abziehen",
             "penInventory": "Inventar an Injektions-Pens/Phiolen",
             "noPens": "Keine Injektions-Pens/Phiolen protokolliert.",
+            "editInjection": "Bearbeite Injektion",
+            "notes": "Notizen",
             "legendResting": "Orange = ruhend < {{days}} T.",
             "lipoWarning": "Diese Seite wurde kürzlich verwendet – rotieren, um Lipohypertrophie zu vermeiden.",
             "pkTitle": "PK-Serumspiegel",
@@ -3562,15 +3564,13 @@
             "titrationTitle": "Dosistitrationsplan",
             "noTitration": "Keine Titrationsschritte noch nicht – tippen Sie auf „Schritt hinzufügen“, um Ihre Dosiserhöhung zu planen.",
             "addInventory": "Bestand hinzufügen",
-            "editInjection": "Injektion bearbeiten",
-            "notes": "Notizen",
             "notesPlaceholder": "z.B. Leichtes Brennen, fühlte sich gut an",
             "quickLogHint": "{{name}} – die Dosis wird automatisch von Ihrem Aktivstift abgezogen. Grün = empfohlene Rotationsstelle.",
             "quickLogTitle": "Wo haben Sie gespritzt?",
             "skipSite": "Seite überspringen"
         },
         "types": {
-            "pill": "Tablette",
+            "pill": "Pille",
             "capsule": "Kapsel",
             "injection": "Injektion",
             "patch": "Pflaster",
@@ -3615,21 +3615,22 @@
             "servingUnit_pill_other": "Pillen",
             "servingEquals": "1 Portion =",
             "macroLabel_calories": "Kalorien",
+            "supplementNamePlaceholder": "z.B. Vitamin D3",
+            "dose": "Dosis",
+            "doseUnit": "Dosiseinheit",
+            "macroLabel_protein": "Protein",
+            "macroLabel_carbs": "Kohlenhydrate",
+            "nutrientUnit": "Einheit",
             "addSupplement": "Ergänzung hinzufügen",
             "editSupplement": "Ergänzung bearbeiten",
-            "supplementNamePlaceholder": "z.B. Vitamin D3",
             "doseForm": "Form",
             "strengthUnit": "Stärkeeinheit",
-            "dose": "Dosis",
             "dosePerInjection": "Dosis pro Injektion",
-            "doseUnit": "Dosiseinheit",
             "doseFollowsStrength": "Entspricht der Stärke, bis Sie sie ändern.",
             "glp1Hint": "Schaltet den Injektionstrainer frei, PK-Kurve und Standortrotation.",
             "glp1Drug": "GLP-1 Medikament (für das PK-Modell)",
             "nutritionHelpLabel": "So lesen Sie Ihr Etikett",
             "nutritionHelpSubGram": "Ein Etikett mit der Aufschrift „weniger als 1 g“ gibt nicht die Menge an. Geben Sie 0,5 als Mittelwert oder 0 ein, um eine Übertreibung zu vermeiden.",
-            "macroLabel_protein": "Protein",
-            "macroLabel_carbs": "Kohlenhydrate",
             "macroLabel_fat": "Fett",
             "macroLabel_dietary_fiber": "Ballaststoffe",
             "includeMacros": "Makros einbeziehen",
@@ -3642,7 +3643,6 @@
             "nutrientGroupCustom": "Ihre individuellen Nährstoffe",
             "createNutrient": "Nicht aufgeführt? Erstellen Sie Ihre eigenen",
             "nutrientNamePlaceholder": "z.B. Ashwagandha",
-            "nutrientUnit": "Einheit",
             "nutrientExists": "Dieser Nährstoff existiert bereits – wählen Sie ihn aus der Liste aus.",
             "createAndAddShort": "Hinzufügen",
             "multivitaminPanel": "Multivitamin-Panel",
@@ -3696,14 +3696,14 @@
             "prn": "Bei Bedarf (PRN)",
             "servingsPerLog": "Portionen pro Eintrag",
             "servingUnit": "Portion",
+            "weekdays": "Tage auswählen",
             "supplementDoseScalingCalories": "Jedes Protokoll zählt {{dose}} Portionen: {{dose}} x {{perDose}} kcal = {{total}} kcal.",
             "supplementDoseScaling": "Jedes Protokoll zählt {{dose}} Portionen, also das {{dose}}-fache Nährwert pro Portion eingegeben.",
             "cycleOff": "Freie Tage",
             "cycleOn": "Eintägige Tage",
             "doseAmount": "Dosismenge (überschreiben)",
             "startDateRequired": "Startdatum (erforderlich)",
-            "time": "Tageszeit",
-            "weekdays": "Tage auswählen"
+            "time": "Tageszeit"
         },
         "checkin": {
             "subtitle": "Verfolge, wie die Medikation dich beeinflusst — wird in deinen täglichen Messungen gespeichert, taucht also auch in deinen Check-Ins & Berichten auf.",
@@ -3723,11 +3723,17 @@
             "dosesTaken": "Dosen genommen",
             "times": "Anzahl",
             "symptomsColumn": "Symptome",
-            "injectionAbbrev": "inj",
+            "injectionAbbrev": "Inj",
+            "dosesLogged": "{{count}} Dosen eingetragen",
+            "corrSleep": "Schlafdauer vs. Müdigkeit",
+            "customize": "Diagramme anpassen",
+            "downloadCSV": "CSV-Daten herunterladen",
+            "kpiAdherence": "Durchschnittliche Therapietreue",
+            "kpiSymptomCount": "Gemeldete Nebenwirkungen",
+            "printPDF": "PDF-Bericht drucken/speichern",
             "logTableTitle": "Medikamentenprotokolltabelle",
             "logTableDesc": "Tagesdosiszahlen und -zeiten für {{start}}–{{end}}, einschließlich Symptomen am selben Tag.",
             "logTableEmpty": "In diesem Datumsbereich wurden keine Medikamentendosen protokolliert.",
-            "dosesLogged": "{{count}} protokollierte Dosen",
             "adherenceTrend": "Täglicher Adhärenztrend (%)",
             "adherenceTrendDesc": "Zeichnet den täglichen Adhärenzprozentsatz (Prozentsatz der geplanten eingenommenen Dosen) auf.",
             "configDesc": "Sichtbarkeit bestimmter Diagramme und Korrelations-Widgets umschalten.",
@@ -3735,25 +3741,19 @@
             "corrDose": "GLP-1 Dosis vs. Übelkeitsschwere",
             "corrHydration": "Flüssigkeit vs. Verstopfung",
             "corrProtein": "Proteinaufnahme vs. Übelkeit",
-            "corrSleep": "Schlafdauer vs. Müdigkeit",
             "correlationsDisclaimer": "Hinweis: Korrelationen sind rein deskriptive Berechnungen über die ausgewählten Datumsbereich und implizieren keine klinische Kausalität.",
             "correlationsTitle": "Informative Symptom- und Nebenwirkungskorrelationen",
-            "customize": "Diagramme anpassen",
-            "downloadCSV": "CSV Daten herunterladen",
             "exportDesc": "Laden Sie einen zusammenhängenden Bericht mit Medikamentendetails, Protokollen, Zeitplänen, Symptomen und Gewichtsdaten für Sie herunter Arzt.",
             "exportTitle": "Verschreibungspflichtiger Datenexport",
             "failedToLoadPrefs": "Einstellungen für die Medikamentenanzeige konnten nicht geladen werden.",
             "glp1CheckinTrends": "GLP-1 Tägliche Check-in-Trends",
             "glp1CheckinTrendsDesc": "Zeichnet nebenbei subjektiven Hunger, Essensgeräusche, Völlegefühl und Energieniveaus (0–10) auf GLP-1 Dosen.",
-            "kpiAdherence": "Durchschnittliche Adhärenz",
             "kpiAdherenceDetail": "Prozentsatz der geplanten, erfolgreich protokollierten und eingenommenen Dosen.",
             "kpiGlp1": "GLP-1 Injektionen",
             "kpiGlp1Detail": "Gesamtzahl aktiver GLP-1 aufgezeichneter Injektionsdosen in diesem Zeitraum.",
-            "kpiSymptomCount": "Gemeldete Nebenwirkungen",
             "kpiSymptomCountDetail": "Anzahl der protokollierten eindeutigen integrierten oder benutzerdefinierten Symptome.",
             "nauseaVsDose": "Schweregrad der Übelkeit vs. GLP-1 Medikamentendosis",
             "nauseaVsDoseDesc": "Zeichnet den maximalen Schweregrad der Übelkeit (Balken) relativ zu den Zeitpunkten der Injektionsdosis auf (Zeile).",
-            "printPDF": "PDF-Bericht drucken/speichern",
             "subtitle": "Analysieren Sie Dosiskorrelationen, Nebenwirkungen und Adhärenztrends.",
             "title": "Medikamentenbericht",
             "weightVsGoalDesc": "Visualisiert tägliche Gewichtsmessungen im Vergleich zu Ihrem Gesamtzielgewicht.",
@@ -4136,7 +4136,7 @@
             "medications": "Medikamente",
             "tooltip": "Chatbot Werkzeuge",
             "description": "Weniger Tools helfen kleineren lokalen Modellen, zuverlässiger zu antworten.",
-            "emptyHint": "Keine Kategorie ausgewählt - Der Chatbot verwendet die Standard-Werkzeuge",
+            "emptyHint": "Keine Kategorie ausgewählt - Der Chatbot verwendet die Standard-Werkzeuge.",
             "checkin": "Körper & Check-ins",
             "reports": "Berichte & Analysen",
             "coaching": "Training",
@@ -4173,7 +4173,7 @@
         "title": "Lebensmitteldaten importieren",
         "overrideDescription": "Falls bereits ein Lebensmittel mit demselben Namen und derselben Marke vorhanden ist, sollten die Nährwertangaben aktualisiert werden, anstatt den Import abzubrechen. Lassen Sie das Kontrollkästchen deaktiviert, um Duplikate zu überspringen und eine Fehlermeldung auszugeben.",
         "headersMismatchText": "Die Überschriften entsprechen nicht dem vorgeschriebenen Format. Verwenden Sie bitte die Vorlage.",
-        "loadedRowsFromText": "Es wurden {{count}}  Reihen aus dem Text geladen.",
+        "loadedRowsFromText": "Es wurden {{count}} Reihen aus dem Text geladen.",
         "emptyFile": "Die gewählte Datei ist leer.",
         "noDataTitle": "Keine Daten gefunden",
         "validationErrorTitle": "Fehler bei der Validierung",
@@ -4347,8 +4347,47 @@
         "titleAll": "Ganzen Tag kopieren"
     },
     "nutrientGoalDirection": {
-        "min": "Min",
-        "max": "Max",
+        "min": "Min.",
+        "max": "Max.",
+        "badgeMin": "Min.",
+        "badgeMax": "Max.",
+        "guidance": {
+            "loseWeight": {
+                "title": "Abnehmen",
+                "body": "Kalorien auf Maximum (eine Obergrenze) oder einen Zielbereich einstellen."
+            },
+            "gainWeight": {
+                "title": "Zunehmen oder Muskeln aufbauen",
+                "body": "Kalorien und Protein auf Minimum (eine zu erreichende Untergrenze) setzen."
+            },
+            "maintain": {
+                "title": "Gewicht halten",
+                "body": "Stellen Sie die Kalorien auf einen Zielbereich ein, der Ihrem Erhaltungsniveau entspricht."
+            },
+            "diabetes": {
+                "title": "Blutzuckerkontrolle (Diabetes)",
+                "body": "Stellen Sie Kohlenhydrate und Zucker auf das Maximum ein."
+            },
+            "heart": {
+                "title": "Hoher Cholesterinspiegel oder Herzgesundheit",
+                "body": "Behalten Sie die Höchstwerte für Cholesterin, gesättigte Fettsäuren und Natrium bei (die Standardwerte)."
+            },
+            "lowCarb": {
+                "title": "Low-Carb oder Keto",
+                "body": "Kohlenhydrate auf Maximum setzen; Behalten Sie Fett und Eiweiß auf einem Minimum bei."
+            },
+            "title": "Sie sind sich nicht sicher, was Sie wählen sollen? Es hängt von Ihrem Ziel ab",
+            "intro": "Dies sind nur Anzeigeanweisungen – sie ändern die Art und Weise, wie der Fortschritt beurteilt wird, nicht Ihre Zielzahlen. Wählen Sie aus, was zu Ihren Zielen passt:"
+        },
+        "sections": {
+            "energyMacros": "Energie & Makrodaten",
+            "fats": "Fette",
+            "minerals": "Mineralien",
+            "fiberSugar": "Ballaststoffe und Zucker",
+            "vitamins": "Vitamine",
+            "other": "Andere",
+            "custom": "Individuelle Nährstoffe"
+        },
         "to": "bis",
         "invalidBand": "Geben Sie ein gültiges Minimum ≤ Maximum",
         "resetToDefault": "Auf Standard zurücksetzen",
@@ -4356,8 +4395,6 @@
         "failedToSave": "Die Nährstoffzielrichtung konnte nicht gespeichert werden.",
         "failedToReset": "Die Nährstoffzielrichtung konnte nicht zurückgesetzt werden.",
         "goalTypeGroupLabel": "Zielrichtung",
-        "badgeMin": "Min",
-        "badgeMax": "Max",
         "badgeTarget": "Bereich",
         "minimumDescription": "Mehr ist besser – der Fortschritt nähert sich dem Ziel",
         "maximumDescription": "Weniger ist besser – am oder unter dem Ziel bleiben",
@@ -4370,43 +4407,6 @@
             "calories": "Hängt von Ihrem Ziel ab: Maximum (oder Bereich), um Gewicht zu verlieren, Minimum, um zuzunehmen, Bereich, um es beizubehalten.",
             "carbs": "Oft Maximum, wenn Sie den Blutzucker kontrollieren (Diabetes) oder sich kohlenhydratarm ernähren; Minimum, wenn Sie ein Kohlenhydratziel erreichen möchten.",
             "fat": "Normalerweise Minimum (ein zu erreichendes Ziel); Wählen Sie „Maximum“, wenn Sie das Gesamtfett begrenzen möchten."
-        },
-        "guidance": {
-            "title": "Sie sind sich nicht sicher, was Sie wählen sollen? Es hängt von Ihrem Ziel ab",
-            "intro": "Dies sind nur Anzeigeanweisungen – sie ändern die Art und Weise, wie der Fortschritt beurteilt wird, nicht Ihre Zielzahlen. Wählen Sie aus, was zu Ihren Zielen passt:",
-            "loseWeight": {
-                "title": "Gewicht verlieren",
-                "body": "Kalorien auf Maximum (eine Obergrenze) oder einen Zielbereich einstellen."
-            },
-            "gainWeight": {
-                "title": "Gewicht zunehmen oder Muskeln aufbauen",
-                "body": "Kalorien und Protein auf Minimum (eine zu erreichende Untergrenze) setzen."
-            },
-            "maintain": {
-                "title": "Gewicht halten",
-                "body": "Stellen Sie die Kalorien auf einen Zielbereich ein, der Ihrem Erhaltungsniveau entspricht."
-            },
-            "diabetes": {
-                "title": "Kontrolle des Blutzuckers (Diabetes)",
-                "body": "Stellen Sie Kohlenhydrate und Zucker auf das Maximum ein."
-            },
-            "heart": {
-                "title": "Hoher Cholesterinspiegel oder Herzgesundheit",
-                "body": "Halten Sie Cholesterin, gesättigte Fettsäuren und Natrium aufrecht als Maximum (die Standardeinstellungen)."
-            },
-            "lowCarb": {
-                "title": "Low Carb oder Keto",
-                "body": "Kohlenhydrate auf Maximum setzen; Behalten Sie Fett und Eiweiß auf einem Minimum bei."
-            }
-        },
-        "sections": {
-            "energyMacros": "Energie & Makros",
-            "fats": "Fette",
-            "minerals": "Mineralien",
-            "fiberSugar": "Ballaststoffe und Zucker",
-            "vitamins": "Vitamine",
-            "other": "Sonstiges",
-            "custom": "Benutzerdefinierte Nährstoffe"
         }
     },
     "auth": {

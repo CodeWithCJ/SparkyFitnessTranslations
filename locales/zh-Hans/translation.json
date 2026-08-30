@@ -87,7 +87,6 @@
         },
         "scheduleDesc": {
             "atTime": " 在 {{time}}",
-            "mealSuffix": " (在{{meal}} 餐后)",
             "daily": "每日",
             "weeklyOn": "每周 {{days}}",
             "everyNDays": "每 {{n}} 天",
@@ -375,7 +374,6 @@
             "stepsCalories": "步数消耗： {{dailySteps}} 步 = {{stepsCalories}} 千卡",
             "bmrCalories": "基础代谢(BMR)： {{bmr}} 千卡",
             "totalCaloriesBurned": "总消耗热量： {{totalCaloriesBurned}} 千卡",
-            "bmrSourceExternal": "数据取自健康应用",
             "goal": "目标值",
             "caloriesBurnedBreakdownTitle": "热量消耗汇总详情",
             "netCalories": "热量收支净额： {{netCalories}}",
@@ -2131,7 +2129,6 @@
         "reps": "动作次数",
         "weight": "负重",
         "tonnage": "负重吨位",
-        "durationMin": "运动时长 (分钟)",
         "restS": "组间休息 (秒)",
         "notes": "备注信息",
         "caloriesBurned": "消耗热量",
