@@ -399,6 +399,31 @@
         "nutrientGoalDirection": {
             "title": "Sens de l'objectif nutritionnel",
             "description": "Choisissez si chaque objectif nutritionnel est un minimum à atteindre, un maximum à ne pas dépasser, ou une plage cible à respecter"
+        },
+        "goalMode": {
+            "customPercentageLabel": "Pourcentage de déficit personnalisé :",
+            "goalModeLabel": "Mode d'objectif",
+            "livePreview": "Calcul de l'aperçu en temps réel",
+            "methodAdaptive": "Adaptatif",
+            "methodManual": "Manuel",
+            "modeCut": "Sèche (-15%)",
+            "modeHighCut": "Sèche intense (-20%)",
+            "modeMaintain": "Maintien (0%)",
+            "modeManual": "Manuel (Custom %)",
+            "modeRecomp": "Recomposition corporelle (-10%)",
+            "subtitle": "Réglez votre cible de calories quotidienne en fonction de votre objectif de composition corporelle.",
+            "title": "Mode Objectif"
+        },
+        "mfa": {
+            "confirmPassword": "Confirmer le mot de passe pour continuer",
+            "disable": "Désactiver",
+            "emailCode": "Authentification multi-facteurs par e-mail",
+            "emailDisabled": "L'authentification multi-facteurs par e-mail est actuellement désactivée.",
+            "emailEnabled": "L'authentification multi-facteurs par e-mail est actuellement asactivée.",
+            "enable": "Activer",
+            "enterCode": "Entrez le code à 6 chiffres",
+            "enterPassword": "Entrez votre mot de passe",
+            "generateNewCodes": "Générer de nouveaux codes de récupération"
         }
     },
     "aboutDialog": {
@@ -1807,7 +1832,11 @@
         "heartRateNormal": "Normale",
         "heartRateElevated": "Élevée",
         "heartRateHigh": "Très élevée",
-        "bpm": "bpm"
+        "bpm": "bpm",
+        "sleepAvg": "Sommeil Moy",
+        "stressChartTitle": "Niveaux de stress brut",
+        "stressTab": "Stress",
+        "uniqueExercises": "Exercices uniques"
     },
     "sleepHealth": {
         "hrvStatus": "Statut de la VFC",
@@ -1826,7 +1855,16 @@
         "respirationLowest": "Plus basse",
         "respirationHighest": "Plus haute",
         "heartRate": "Fréquence cardiaque",
-        "restingHeartRate": "Fréquence cardiaque au repos"
+        "restingHeartRate": "Fréquence cardiaque au repos",
+        "avgHR": "Moy",
+        "avgHRV": "Moy",
+        "avgResp": "Moy",
+        "avgSpO2": "Moyenne",
+        "baseline": "Référence",
+        "lowestResp": "Plus bas",
+        "lowestSpO2": "Plus basse",
+        "normalRHR": "Adulte normal : 60-100 bpm",
+        "normalRange": "Normal : 12-20 cpm"
     },
     "sleepSummary": {
         "title": "Sommeil de la nuit dernière",
@@ -2459,7 +2497,8 @@
             "reset": "Réinitialiser",
             "logging": "Enregistrement…",
             "saving": "Sauvegarde…",
-            "custom": "Personnalisé"
+            "custom": "Personnalisé",
+            "clear": "Effacer"
         },
         "today": {
             "doses": "Doses",
@@ -2476,7 +2515,10 @@
             "undo": "Annuler",
             "snooze": "Reporter",
             "snoozed": "Reporté",
-            "take": "Prendre"
+            "take": "Prendre",
+            "asNeeded": "Au besoin",
+            "medicationsTitle": "Médicaments du jour",
+            "supplementsTitle": "Compléments alimentaires du jour"
         },
         "locations": {
             "head": "Tête",
@@ -2523,7 +2565,40 @@
             "label": "Carte corporelle des sites d'injection"
         },
         "calendar": {
-            "maxSeverity": "Sévérité max : {{n}}"
+            "maxSeverity": "Sévérité max : {{n}}",
+            "title": "Calendrier de suivi des médicaments",
+            "noMeds": "Ajoutez un médicament pour voir son calendrier de suivi ici.",
+            "selectMedication": "Sélectionner un médicament",
+            "allMedications": "Tous les médicaments",
+            "titleSupplements": "Calendrier de suivi des compléments alimentaires",
+            "noSupplements": "Ajoutez un complément alimentaire pour voir son calendrier de suivi ici.",
+            "selectSupplement": "Sélectionner un complément alimentaire",
+            "allSupplements": "Tous les compléments alimentaires",
+            "titleAll": "Calendrier de suivi",
+            "noEntries": "Ajoutez un médicament ou un complément alimentaire pour voir son calendrier de suivi ici.",
+            "selectEntry": "Sélectionner un élément",
+            "allEntries": "Tout",
+            "tue": "Mar",
+            "mon": "Lun",
+            "wed": "Mer",
+            "thu": "Jeu",
+            "fri": "Ven",
+            "sat": "Sam",
+            "monthTotal": "{{count}} doses enregistrées en {{month}}",
+            "allTaken": "Toutes les doses prises",
+            "partialTaken": "Partiellement pris",
+            "mostlySkipped": "Généralement ignoré",
+            "allSkipped": "Toutes les doses sautées",
+            "snoozedOnly": "Répété uniquement",
+            "sideEffect": "Symptôme d'effet secondaire",
+            "generalSymptom": "Symptôme général",
+            "tooltipTaken": "{{count}} pris",
+            "tooltipSymptoms": "Symptômes : {{names}}",
+            "sun": "Soleil",
+            "loggedCount_one": "{{count}} symptôme enregistré",
+            "loggedCount_many": "{{count}} symptômes enregistrés",
+            "loggedCount_other": "{{count}} symptômes enregistrés",
+            "skipped": "Ignoré"
         },
         "gi": {
             "title": "Sous-suivi digestif",
@@ -2702,7 +2777,9 @@
             "dosesTaken": "Doses prises",
             "times": "Heures",
             "symptomsColumn": "Symptômes",
-            "injectionAbbrev": "inj"
+            "injectionAbbrev": "inj",
+            "customize": "Personnaliser les graphiques",
+            "downloadCSV": "Télécharger les données CSV"
         }
     },
     "chat": {
@@ -2730,7 +2807,11 @@
         "successClearingHistory": "Succès du nettoyage de la conversation."
     },
     "onboarding": {
-        "completeSetup": "Terminer la configuration"
+        "completeSetup": "Terminer la configuration",
+        "addBurnedCaloriesTitle": "Ajouter les calories brûlées lors de l'exercice ?",
+        "planReady": "Votre plan personnalisé est prêt.",
+        "skipFailed": "Impossible de passer l'étape de présentation. Veuillez réessayer.",
+        "submissionFailed": "Impossible d'enregistrer votre plan. Veuillez réessayer."
     },
     "cycle": {
         "hub": "Centre cycle et grossesse",
@@ -2784,7 +2865,9 @@
             "ttc": "Essai de conception",
             "ttcDesc": "Suivez la fenêtre de fertilité, l'ovulation et les indicateurs de la phase lutéale.",
             "pregnant": "Suivi de grossesse",
-            "pregnantDesc": "Suivez les étapes du développement fœtal, le minuteur de contractions et le suivi prénatal."
+            "pregnantDesc": "Suivez les étapes du développement fœtal, le minuteur de contractions et le suivi prénatal.",
+            "menopause": "Sensibilisé à la ménopause",
+            "postpartum": "Post-partum"
         },
         "today": {
             "cycleDay": "Jour du cycle",
@@ -2841,7 +2924,7 @@
         "uploadCsv": "Téléverser un CSV",
         "downloadTemplate": "Télécharger le modèle",
         "clearData": "Effacer les données",
-        "pastePlaceholder": "Ou collez le contenu CSV ici...",
+        "pastePlaceholder": "Ou coller le contenu du CSV ici...",
         "parseText": "Analyser le texte",
         "recordsLoaded": "{{count}} enregistrements chargés avec succès.",
         "actions": "Actions",
@@ -2863,10 +2946,21 @@
         "noDataTitle": "Aucune donnée trouvée",
         "noDataText": "Le fichier CSV contient des en-têtes mais aucune ligne de données.",
         "validationErrorTitle": "Erreur de validation",
-        "nameRequired": "Le champ « nom » ne peut pas être vide."
+        "nameRequired": "Le champ « nom » ne peut pas être vide.",
+        "importRecords_one": "Importer {{count}} enregistrement",
+        "importRecords_many": "Importer {{count}} enregistrements",
+        "importRecords_other": "Importer {{count}} enregistrements",
+        "fileTooLarge": "Le fichier sélectionné est trop lourd. Veuillez uploader un fichier de taille inférieure à 25Mo.",
+        "defaultVariantNote": "Au moins une variante par aliment doit être définie comme unité par défaut (Par défaut = Vrai).",
+        "upfrontNote": "Remarque : Chaque aliment doit avoir au moins une variante définie comme unité par défaut (Par défaut = Vrai).",
+        "missingDefaultWarning": "Attention : {{count}} aliment(s) n'ont pas de variante par défaut définie. Veuillez définir au moins une variante par défaut (surligné en jaune ci-dessous).",
+        "missingDefaultValidationError": "Au moins une variante par aliment doit être définie comme unité par défaut.",
+        "filterMissingDefault": "Afficher les valeurs par défaut manquantes ({{count}})",
+        "showAllRows": "Afficher toutes les lignes ({{count}})"
     },
     "foods": {
-        "providerVerified": "Aliment vérifié"
+        "providerVerified": "Aliment vérifié",
+        "removeNutrient": "Retirer {{nutrient}}"
     },
     "nutrientGoalDirection": {
         "min": "Min",
@@ -2881,16 +2975,31 @@
         "distance": "Distance",
         "time": "Temps",
         "cadence": "Cadence",
-        "title": "Programme d'Entraînement: Intervalles et Tours",
+        "title": "Programme d'Entraînement : Intervalles et Tours",
         "lapsCount": "{{count}} Tours",
         "lap": "Tour",
-        "power": "Puissance"
+        "power": "Puissance",
+        "pace": "Rythme (/{{unit}})",
+        "avgMaxHr": "Moy / Max BPM",
+        "resp": "Cycles respiratoire par minute (cpm)"
     },
     "dailyHealthMetrics": {
         "vo2Max": "VO2 Max",
-        "peak": "peak"
+        "peak": "pic",
+        "title": "Résumé quotidien de santé",
+        "bodyBattery": "Batterie corporelle",
+        "low": "faible : {{val}}",
+        "avgStress": "Stress moy",
+        "max": "Max : {{val}}",
+        "restingHr": "BPM au repos",
+        "recovery": "Récupération : {{val}}",
+        "fitnessAge": "Age physiologique : {{val}}",
+        "readiness": "Etat de préparation"
     },
     "layout": {
         "welcome": "Bienvenue {{activeUserName}}"
+    },
+    "food": {
+        "imagesReorderHint": "Faire glisser pour réorganiser. La première image est utilisée comme vignette."
     }
 }
