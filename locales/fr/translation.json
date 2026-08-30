@@ -2591,7 +2591,8 @@
             "loggedCount_one": "{{count}} symptôme enregistré",
             "loggedCount_many": "{{count}} symptômes enregistrés",
             "loggedCount_other": "{{count}} symptômes enregistrés",
-            "skipped": "Ignoré"
+            "skipped": "Ignoré",
+            "tooltipSkipped": "{{count}} ignorés"
         },
         "gi": {
             "title": "Sous-suivi digestif",
@@ -2994,5 +2995,80 @@
     },
     "food": {
         "imagesReorderHint": "Faire glisser pour réorganiser. La première image est utilisée comme vignette."
+    },
+    "foodPhoto": {
+        "openInMealBuilder": "Ouvrir dans le générateur de repas",
+        "loggedSuccess": "Repas enregistré avec succès dans votre journal.",
+        "editInMealBuilder": "Modifier dans le générateur de repas",
+        "analyzingHint": "Détection des ingrédients, des portions en grammes et des macronutriments",
+        "analyzing": "Analyse de la photo du repas ...",
+        "errors": {
+            "unreachableMessage": "Réessayez, ou enregistrez cet aliment manuellement.",
+            "unreachableTitle": "Impossible de joindre le fournisseur d'IA",
+            "timedOutMessage": "L'estimation a pris trop de temps. Veuillez réessayer ou enregistrer cet aliment manuellement.",
+            "timedOutTitle": "Le fournisseur d'IA a expiré.",
+            "couldNotProcessMessage": "Le fournisseur a bloqué cette image. Essayez une autre photo.",
+            "couldNotProcessTitle": "Impossible de traiter la photo",
+            "unexpectedFormatMessage": "Utilisez une image JPEG, PNG ou WebP.",
+            "unexpectedFormatTitle": "Format d'image inattendu",
+            "photoTooLargeMessage": "Utilisez une image plus petite.",
+            "photoTooLargeTitle": "Photo trop grande",
+            "providerNotAllowedMessage": "Ce fournisseur d'IA indique une adresse réseau privée. Demandez à un administrateur de le configurer globalement.",
+            "providerNotAllowedTitle": "Fournisseur d'IA non autorisé",
+            "aiNotConfiguredMessage": "Configurer un fournisseur d'IA dans Paramètres pour utiliser des estimations photo.",
+            "aiNotConfiguredTitle": "AI non configurée"
+        },
+        "mode": {
+            "hintOneFood": "Conserve l'assiette entière comme un seul aliment, sans la décomposer.",
+            "hintIngredientsOnly": "Chaque ingrédient devient un aliment à part entière. Aucun repas réutilisable n'est conservé.",
+            "hintIngredientsAndMeal": "Chaque ingrédient devient un plat à part entière, et le repas est sauvegardé afin que vous puissiez l'enregistrer à nouveau sans photo.",
+            "mealName": "Nom du repas",
+            "label": "Enregistrer sous",
+            "oneFood": "Un aliment",
+            "ingredientsOnly": "Ingrédients seulement",
+            "ingredientsAndMeal": "Ingrédients + repas réutilisable"
+        },
+        "match": {
+            "summary": "{{count}} ingrédients associés aux aliments déjà présents dans votre bibliothèque.",
+            "using": "Utiliser {{name}}",
+            "use": "Utiliser {{name}} de vos aliments"
+        },
+        "confidence": {
+            "low": "Incertain",
+            "medium": "Possible",
+            "high": "Probable"
+        },
+        "columns": {
+            "total": "Total",
+            "sugar": "Sucre",
+            "fiber": "Fibres",
+            "fat": "Lipides",
+            "carbs": "Glucides",
+            "protein": "Protéines",
+            "calories": "Calories",
+            "gramsFor": "Grammes pour {{name}}",
+            "grams": "Grammes",
+            "ingredient": "Ingrédient"
+        },
+        "photosTooLargeMessage": "Retirez une photo ou utilisez des images plus petites.",
+        "photosTooLargeTitle": "Photos trop grandes",
+        "tooManyPhotosMessage": "Jusqu'à {{count}} photos peuvent être analysées ensemble.",
+        "tooManyPhotosTitle": "Trop de photos",
+        "recalcFromGrams": "Recalculer à partir des grammes",
+        "removeIngredient": "Supprimer {{name}}",
+        "emptyIngredients": "Tous les ingrédients ont été retirés. Sélectionnez « Un seul aliment » pour enregistrer l'assiette comme une seule entrée.",
+        "noIngredients": "Garder au moins un ingrédient avec un poids supérieur à zéro.",
+        "logFailedMessage": "Veuillez réessayer.",
+        "logFailedTitle": "Impossible d'enregistrer l'estimation",
+        "logged": "Estimation enregistrée",
+        "log": "Enregistrer dans le journal",
+        "analyse": "Analyser la photo",
+        "weightLabel": "Poids total en grammes (facultatif)",
+        "descriptionPlaceholder": "p.ex. cuisse de poulet, sans peau, cuite dans l'huile d'olive",
+        "descriptionLabel": "Description (facultatif)",
+        "removePhoto": "Supprimer la photo {{number}}",
+        "photoAlt": "Photo de repas {{number}}",
+        "addPhotos": "Ajouter des photos",
+        "reviewDescription": "Vérifiez chaque ingrédient avant l'enregistrement. Modifier les grammes recalcule cette ligne."
     }
 }
