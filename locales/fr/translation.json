@@ -2994,7 +2994,21 @@
         "welcome": "Bienvenue {{activeUserName}}"
     },
     "food": {
-        "imagesReorderHint": "Faire glisser pour réorganiser. La première image est utilisée comme vignette."
+        "imagesReorderHint": "Faire glisser pour réorganiser. La première image est utilisée comme vignette.",
+        "moveImageLater": "Déplacer l'image à droite",
+        "moveImageEarlier": "Déplacer l'image à gauche",
+        "mainImage": "Principale",
+        "pauseSlideshow": "Mettre en pause le diaporama",
+        "playSlideshow": "Lancer le diaporama",
+        "nextImage": "Image suivante",
+        "previousImage": "Image précédente",
+        "imageViewer": "Visionneuse d'images",
+        "viewImages": "Voir les images",
+        "removeImage": "Supprimer l'image",
+        "newImagePreviewAlt": "Nouvelle image {{number}}",
+        "imagePreviewAlt": "Image alimentaire {{number}}",
+        "imagesLimitReached": "Maximum de {{count}} images atteint.",
+        "imagesLabel": "Images"
     },
     "foodPhoto": {
         "openInMealBuilder": "Ouvrir dans le générateur de repas",
@@ -3069,6 +3083,28 @@
         "removePhoto": "Supprimer la photo {{number}}",
         "photoAlt": "Photo de repas {{number}}",
         "addPhotos": "Ajouter des photos",
-        "reviewDescription": "Vérifiez chaque ingrédient avant l'enregistrement. Modifier les grammes recalcule cette ligne."
+        "reviewDescription": "Vérifiez chaque ingrédient avant l'enregistrement. Modifier les grammes recalcule cette ligne.",
+        "weightHint": "C'est au niveau des portions que les estimations basées sur les photos sont les moins précises. Peser l'assiette rend les chiffres beaucoup plus fiables.",
+        "captureDescription": "Ajoutez une ou plusieurs photos du repas. Un deuxième angle aide avec des plats empilés ou mélangés.",
+        "title": "Estimation à partir d'une photo"
+    },
+    "workout": {
+        "weight": "poids",
+        "type": "Type",
+        "rpe": "EPR",
+        "restSec": "Repos (s)",
+        "reps": "Répétitions",
+        "notesPlaceholder": "Ajouter une note pour cette série ...",
+        "durationSec": "Durée (s)",
+        "durationMin": "Durée (min)",
+        "distance": "Distance",
+        "caloriesAuto": "Auto",
+        "calories": "Calories",
+        "avgHr": "FC moyenne (bpm)"
+    },
+    "warning": "Attention",
+    "syncRangeDialog": {
+        "title": "Synchroniser Données {{provider}}",
+        "timeoutWarning": "Pour les plages de dates importantes, la session navigateur peut expirer, mais le serveur continuera la synchronisation en arrière-plan."
     }
 }
