@@ -3105,6 +3105,25 @@
     "warning": "Attention",
     "syncRangeDialog": {
         "title": "Synchroniser Données {{provider}}",
-        "timeoutWarning": "Pour les plages de dates importantes, la session navigateur peut expirer, mais le serveur continuera la synchronisation en arrière-plan."
+        "timeoutWarning": "Pour les plages de dates importantes, la session navigateur peut expirer, mais le serveur continuera la synchronisation en arrière-plan.",
+        "syncNow": "Commencez la Synchronisation",
+        "startDate": "Date de début",
+        "polarWarning": "Remarque : Polar autorise uniquement la synchronisation des données enregistrées après la connexion de votre compte à SparkyFitness.",
+        "last90Days": "90 derniers jours",
+        "last7Days": "7 derniers jours",
+        "last365Days": "365 derniers jours",
+        "last30Days": "30 derniers jours",
+        "last180Days": "180 derniers jours",
+        "endDate": "Date de fin",
+        "description": "Choisissez la plage de dates que vous souhaitez synchroniser à partir de {{provider}}."
+    },
+    "success": "Succès",
+    "review": {
+        "errorLoadingItems": "Echec du chargement des éléments d'évaluation.",
+        "errorLoadingCount": "Echec du chargement du nombre d'évaluations."
+    },
+    "providers": {
+        "updateSuccess": "Fournisseur de données externe mis à jour avec succès",
+        "updateError": "Échec de la mise à jour du fournisseur de données externe"
     }
 }
