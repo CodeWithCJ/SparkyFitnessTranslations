@@ -667,7 +667,14 @@
             "weightStones": "Peso en stones",
             "weightPounds": "Peso en libras",
             "heightFeet": "Altura en pies",
-            "heightInches": "Altura en pulgadas"
+            "heightInches": "Altura en pulgadas",
+            "muscleMass": "Masa muscular",
+            "boneMass": "Masa ósea",
+            "bodyWaterPercentage": "% de agua corporal",
+            "bmr": "TMB",
+            "muscleMassWithUnit": "Masa muscular ({{unit}})",
+            "boneMassWithUnit": "Masa ósea ({{unit}})",
+            "bmrWithUnit": "TMB (kcal)"
         },
         "validation": {
             "invalid": "{{label}} no válido",
@@ -679,7 +686,10 @@
             "nonNegative": "Los valores deben ser 0 o mayores.",
             "invalidHeight": "Altura no válida",
             "feetInchesNumber": "Introduce un número para pies y pulgadas.",
-            "bodyFatRange": "El % de grasa corporal debe estar entre 0 y 100."
+            "bodyFatRange": "El % de grasa corporal debe estar entre 0 y 100.",
+            "min": "Debe ser {{min}} o mayor.",
+            "bodyWaterRange": "El % de agua corporal debe estar entre 0 y 100.",
+            "bmrRange": "La TMB debe estar entre 300 y 10000 kcal."
         },
         "nothingToSave": "Nada que guardar",
         "enterValue": "Introduce o borra al menos un valor.",
@@ -717,7 +727,8 @@
         "menu": {
             "newFood": "Nuevo alimento",
             "newMeal": "Nueva comida",
-            "show": "Mostrar"
+            "show": "Mostrar",
+            "allProviders": "Todos los proveedores"
         },
         "accessibility": {
             "moreFiltered": "Más opciones, filtrado a {{filter}}",
@@ -733,7 +744,8 @@
             "verifiedFood": "Alimento verificado",
             "providerExpand_one": "{{provider}}, {{count}} resultado, toca para {{action}}",
             "providerExpand_many": "",
-            "providerExpand_other": "{{provider}}, {{count}} resultados, toca para {{action}}"
+            "providerExpand_other": "{{provider}}, {{count}} resultados, toca para {{action}}",
+            "providerChange": "Proveedor {{provider}}, toca para cambiar"
         },
         "errors": {
             "detailsUnavailable": "Detalles no disponibles",
@@ -746,7 +758,8 @@
             "yourFoods": "Tus alimentos",
             "yourMeals": "Tus comidas",
             "topMatches": "Mejores coincidencias",
-            "onlineResults": "Resultados en línea"
+            "onlineResults": "Resultados en línea",
+            "byProvider": "Por proveedor"
         },
         "search": {
             "placeholder": "Buscar alimentos..."
@@ -2228,7 +2241,7 @@
         "inactiveCount_many": "",
         "inactiveCount_other": "Inactivos ({{count}})",
         "mealRelation": {
-            "awayFromMeals": "Lejos de las comidas"
+            "awayFromMeals": "Fuera de las comidas"
         }
     },
     "pregnancy": {
@@ -3274,7 +3287,12 @@
         "over": "de más",
         "title": "Resumen",
         "collapse": "Contraer esta sección",
-        "expand": "Expandir esta sección"
+        "expand": "Expandir esta sección",
+        "projectedTdee": "TDEE proyectado: {{value}} kcal",
+        "goalModeTarget": "Objetivo en Modo Objetivo: {{value}} kcal",
+        "healthConnectProjectionSource": "Calorías totales de Health Connect",
+        "fallbackProjectionSource": "Alternativa TMB + calorías activas",
+        "legacyProjectionSource": "Proyección del dispositivo"
     },
     "calorieSettings": {
         "restingEnergy": "Energía en reposo",
@@ -3324,7 +3342,8 @@
             "percentage": "Objetivo − Ingerido + {{percentage}}% del ejercicio",
             "tdee": "Objetivo − Ingerido + (Proyección − GET)",
             "adaptive": "Objetivo − Ingerido",
-            "fixed": "Objetivo − Ingerido"
+            "fixed": "Objetivo − Ingerido",
+            "projectedTotal": "Calorías totales de Health Connect (alternativa TMB + calorías activas)"
         },
         "notes": {
             "dynamic": "El objetivo crece a medida que te mueves",
@@ -3342,6 +3361,22 @@
             "standardDescription": "Usa el mayor entre tu RMR estimado y el mínimo clínico.",
             "customDescription": "Sustituye el límite estándar por el mínimo que elijas. Las recomendaciones de salud siguen visibles.",
             "disabledDescription": "Detiene el ajuste automático del objetivo. Las advertencias de salud siguen visibles."
+        },
+        "deviceProjectionDescription": "Las calorías totales del día actual de Health Connect se proyectan hasta la medianoche; los días completados usan el total registrado. El Modo Objetivo se aplica a ese TDEE, con TMB + calorías activas como alternativa.",
+        "deviceProjectionFallback": "Solo se usa como alternativa de TMB + calorías activas cuando el total del dispositivo no está disponible.",
+        "goalMode": {
+            "title": "Modo Objetivo",
+            "description": "Ajusta tu objetivo de calorías para mantenimiento, déficit o superávit.",
+            "deviceProjectionDescription": "Este porcentaje se aplica directamente al TDEE proyectado del dispositivo.",
+            "maintain": "Mantenimiento (0%)",
+            "recomp": "Recomposición corporal (-10%)",
+            "cut": "Definición (-15%)",
+            "highCut": "Definición alta (-20%)",
+            "leanBulk": "Volumen limpio (+10%)",
+            "bulk": "Volumen (+20%)",
+            "manual": "Manual (% personalizado)",
+            "customPercentage": "Porcentaje personalizado",
+            "customPercentageDescription": "Un valor positivo añade calorías; uno negativo crea un déficit. Limitado a ±40%."
         }
     },
     "foodUnit": {
@@ -3413,7 +3448,7 @@
             "serving_many": "",
             "serving_other": "raciones",
             "portion_one": "porción",
-            "portion_many": "",
+            "portion_many": "porciones",
             "portion_other": "porciones",
             "can_one": "lata",
             "can_many": "",
@@ -3791,7 +3826,70 @@
             "invalidRequiredNutrition": "Las calorías, proteínas, carbohidratos y grasas deben ser números no negativos.",
             "invalidOptionalNutrition": "Todos los valores nutricionales deben ser números no negativos.",
             "invalidServingSize": "Tamaño de ración no válido",
-            "invalidServingSizeMessage": "El tamaño de la ración debe ser un número positivo."
+            "invalidServingSizeMessage": "El tamaño de la ración debe ser un número positivo.",
+            "noIngredients": "Conserva al menos un ingrediente o cambia a Un solo alimento.",
+            "invalidServings": "Porciones no válidas",
+            "positiveServings": "El total del plato, el tamaño de la porción y la cantidad consumida deben ser mayores que cero."
+        },
+        "ingredients": {
+            "editRow": "Editar {{name}}",
+            "remove": "Eliminar {{name}}",
+            "name": "Nombre",
+            "grams": "Peso (g)",
+            "calories": "Calorías",
+            "protein": "Proteína (g)",
+            "carbs": "Carbohidratos (g)",
+            "fat": "Grasa (g)",
+            "fiber": "Fibra (g)",
+            "sugar": "Azúcar (g)",
+            "recalcFromGrams": "La información nutricional se editó manualmente, por lo que ya no coincide con el peso. Toca para recalcular a partir del peso.",
+            "heading": "Ingredientes detectados",
+            "empty": "Se han eliminado todos los ingredientes. Añade uno de nuevo o cambia a Un solo alimento.",
+            "totals": "Total",
+            "rowSummary": "{{grams}} g · {{calories}} kcal",
+            "macroSummary": "{{calories}} kcal · {{protein}}P · {{carbs}}C · {{fat}}G",
+            "addFood": "Añadir alimento",
+            "addedFood": "Alimento",
+            "pickedRowSummary": "{{quantity}} {{unit}} · {{calories}} kcal",
+            "pickedFoodNote": "Añadido desde tus alimentos. Elimínalo y vuelve a añadirlo para cambiar la cantidad.",
+            "count_one": "{{count}} ingrediente",
+            "count_many": "{{count}} ingredientes",
+            "count_other": "{{count}} ingredientes"
+        },
+        "match": {
+            "useYourFood": "De tus alimentos: {{name}} · toca para usarlo",
+            "usingYourFood": "Usando tu alimento: {{name}} · toca para usar la estimación de la IA",
+            "matchedCount_one": "{{count}} ingrediente que coinciden con tus alimentos",
+            "matchedCount_many": "{{count}} ingredientes que coinciden con tus alimentos",
+            "matchedCount_other": "{{count}} ingredientes que coinciden con tus alimentos"
+        },
+        "mode": {
+            "ingredients": "Ingredientes",
+            "combined": "Un solo alimento",
+            "explainerIngredients": "Registra una comida que puedes desglosar en cada ingrediente.",
+            "explainerCombined": "Registra todo el plato como un solo alimento.",
+            "label": "Guardar como",
+            "ingredientsAndMeal": "Ingredientes + comida reutilizable",
+            "ingredientsOnly": "Solo ingredientes",
+            "oneFood": "Un solo alimento",
+            "mealName": "Nombre de la comida",
+            "hintIngredientsAndMeal": "Cada ingrediente se registra por separado y la comida se guarda para que puedas volver a registrarla sin necesidad de foto.",
+            "hintIngredientsOnly": "Cada ingrediente se registra por separado. No se guarda como comida reutilizable.",
+            "hintOneFood": "Guarda todo el plato como un solo alimento, sin desglosar."
+        },
+        "servings": {
+            "unit": "Unidad",
+            "total": "Porciones totales",
+            "totalAmount": "Cantidad total ({{unit}})",
+            "servingSize": "Una porción es ({{unit}})",
+            "eatenServings": "Porciones consumidas",
+            "eatenAmount": "Consumiste ({{unit}})",
+            "hint": "Los ingredientes anteriores forman el plato completo: indica cómo se divide y solo lo que consumiste irá a tu diario.",
+            "perServing": "Por porción",
+            "logging": "Registro",
+            "derivedYield_one": "Da para una {{count}} ración",
+            "derivedYield_many": "Da para unas {{count}} raciones",
+            "derivedYield_other": "Da para unas {{count}} raciones"
         }
     },
     "foodPhotoIntro": {
@@ -3815,7 +3913,11 @@
         "meal": "Comida",
         "selectMeal": "Seleccionar comida",
         "date": "Fecha",
-        "servings": "Raciones"
+        "servings": "Raciones",
+        "failed": "No se pudo registrar la estimación",
+        "groupedSummary_one": "El ingrediente {{count}} se registrará como una comida.",
+        "groupedSummary_many": "Los ingredientes {{count}} se registrarán como una comida.",
+        "groupedSummary_other": "Los ingredientes {{count}} se registrarán como una comida."
     },
     "editBarcode": {
         "title": "Código de barras",
@@ -4597,5 +4699,69 @@
     },
     "foodEntryMeal": {
         "failed": "No se pudo añadir la comida"
+    },
+    "familyDiary": {
+        "title": "Diarios familiares",
+        "openFamilyDiaries": "Abrir diarios familiares",
+        "loadingMembers": "Cargando miembros de la familia…",
+        "loadMembersFailed": "No se pudieron cargar los miembros de la familia",
+        "noMembers": "No hay miembros de la familia",
+        "manageOnWeb": "El acceso al diario familiar se gestiona desde la aplicación web.",
+        "canCopy": "Puede copiar",
+        "viewOnly": "Solo lectura",
+        "diary": "Diario familiar",
+        "loadingDiary": "Cargando diario familiar…",
+        "loadDiaryFailed": "Acceso al diario familiar no disponible",
+        "back": "Volver",
+        "emptyForDate": "No hay alimentos registrados para esta fecha",
+        "diaryForDate": "Diario familiar · {{date}}",
+        "openMeal": "Abrir comida {{meal}}",
+        "mealCalories": "{{calories}} kcal",
+        "unnamedFood": "Alimento sin nombre",
+        "selectAll": "Seleccionar todo",
+        "deselectAll": "Desmarcar todo",
+        "viewingOnly": "Solo lectura",
+        "selectFood": "Seleccionar {{food}}",
+        "deselectFood": "Desmarcar {{food}}",
+        "continue": "Continuar",
+        "nutritionSummary": "{{calories}} kcal · P {{protein}} g · C {{carbs}} g · G {{fat}} g",
+        "selectedNutrition": "Seleccionado: {{calories}} kcal · P {{protein}} g · C {{carbs}} g · G {{fat}} g",
+        "copyReview": "Revisar copia",
+        "copyFrom": "Copiando de {{name}}",
+        "copyMealTitle": "Comida {{meal}}",
+        "quantityForFood": "Cantidad para {{food}}",
+        "quantityMustBePositive": "Introduce una cantidad mayor que cero.",
+        "copyNutrition": "Copiar nutrición",
+        "copyCalories": "{{calories}} kcal",
+        "copyProtein": "{{protein}} g de proteína",
+        "copyCarbs": "{{carbs}} g de carbohidratos",
+        "copyFat": "{{fat}} g de grasa",
+        "copyTargetDate": "Copiar fecha",
+        "copyTargetDateHint": "Abre el selector de fecha",
+        "copyTargetMeal": "Copiar a la comida",
+        "copyTargetMealRequired": "Elige una comida antes de copiar.",
+        "copyToMyDiary": "Copiar a mi diario",
+        "copyInvalidSelection": "Los alimentos seleccionados ya no están disponibles.",
+        "copyTargetDateLabel": "Fecha de copia: {{date}}",
+        "copySuccess": "¡Copiado a tu diario!",
+        "copyFailed": "No se pudieron copiar los alimentos",
+        "copyFailedGuidance": "Tu revisión sigue aquí. Por favor, inténtalo de nuevo.",
+        "copyPermissionRevoked": "Se eliminó el permiso para copiar",
+        "copyPermissionRevokedGuidance": "Actualiza los diarios familiares para ver tu acceso actual.",
+        "copyStale": "El diario familiar ha cambiado",
+        "copyStaleGuidance": "Se está abriendo el último diario familiar para su revisión.",
+        "unnamedMember": "Miembro de la familia",
+        "previousDay": "Día anterior",
+        "previousDayHint": "Muestra el día anterior",
+        "nextDay": "Día siguiente",
+        "nextDayHint": "Muestra el día siguiente",
+        "chooseDate": "Elegir fecha",
+        "chooseDateHint": "Abre el selector de fecha",
+        "goToToday": "Ir a hoy",
+        "goToTodayHint": "Vuelve a hoy"
+    },
+    "foodProvenance": {
+        "aiEstimate": "Estimación por IA",
+        "aiEstimateAccessibility": "Información nutricional estimada por IA"
     }
 }
