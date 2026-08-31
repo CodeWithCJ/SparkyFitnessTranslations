@@ -2272,7 +2272,11 @@
             "vision": "Visione",
             "profile": "Profilo e abitudini",
             "medications": "Farmaci"
-        }
+        },
+        "errorClearingHistory": "Impossibile cancellare la cronologia della chat.",
+        "errorLoadingHistory": "Impossibile caricare la cronologia della chat.",
+        "errorLoadingPreferences": "Impossibile caricare le preferenze della chat.",
+        "successClearingHistory": "La cronologia della chat è stata cancellata con successo."
     },
     "foodCsvImport": {
         "title": "Importa dati alimentari",
@@ -2307,9 +2311,67 @@
         "validationErrorTitle": "Errore di convalida",
         "nameRequired": "Il campo “nome” non può essere vuoto.",
         "fileTooLarge": "Il file selezionato è troppo grande. Carica un file di dimensioni inferiori a 25 MB.",
-        "defaultVariantNote": "Per ogni alimento deve essere impostata almeno una variante come unità predefinita (Is Default = True)."
+        "defaultVariantNote": "Per ogni alimento deve essere impostata almeno una variante come unità predefinita (Is Default = True).",
+        "upfrontNote": "Nota: per ogni alimento deve esserci almeno una variante impostata come unità predefinita (Is Default = True).",
+        "missingDefaultWarning": "Avviso: per {{count}} prodotti alimentari non è stata impostata alcuna variante predefinita. Si prega di impostare almeno una variante come predefinita (evidenziata in giallo qui sotto).",
+        "missingDefaultValidationError": "Per ogni alimento deve essere impostata almeno una variante come unità predefinita.",
+        "filterMissingDefault": "Mostra valori predefiniti mancanti ({{count}})",
+        "showAllRows": "Mostra tutte le righe ({{count}})"
     },
     "layout": {
         "welcome": "Benvenuto {{activeUserName}}"
+    },
+    "workoutLaps": {
+        "title": "Intervalli e giri nell'allenamento a blocchi",
+        "lapsCount": "{{count}} giri",
+        "lap": "Giro",
+        "distance": "Distanza",
+        "time": "Tempo",
+        "pace": "Velocità (/{{unit}})",
+        "avgMaxHr": "Frequenza cardiaca media / massima",
+        "resp": "Frequenza respiratoria (b/min)",
+        "cadence": "Cadenza",
+        "power": "Potenza"
+    },
+    "dailyHealthMetrics": {
+        "title": "Riepilogo giornaliero dei dati sulla salute rilevati dai dispositivi indossabili",
+        "bodyBattery": "Batteria corporea",
+        "peak": "picco",
+        "low": "basso: {{val}}",
+        "avgStress": "Stress medio",
+        "max": "Max: {{val}}",
+        "restingHr": "Frequenza cardiaca a riposo",
+        "recovery": "Recupero: {{val}}",
+        "vo2Max": "VO2 max",
+        "fitnessAge": "Età fisica: {{val}}",
+        "readiness": "Preparazione",
+        "recHours": "Rec: {{val}}"
+    },
+    "foods": {
+        "providerVerified": "Alimenti certificati",
+        "removeNutrient": "Rimuovi {{nutrient}}"
+    },
+    "medications": {
+        "tabs": {
+            "log": "Registro",
+            "cabinet": "Gabinetto",
+            "symptoms": "Sintomi"
+        },
+        "calendar": {
+            "title": "Calendario per la registrazione dei farmaci",
+            "noMeds": "Aggiungi un farmaco per visualizzarne il calendario qui.",
+            "selectMedication": "Seleziona un farmaco",
+            "allMedications": "Tutti i farmaci",
+            "titleSupplements": "Calendario di registrazione degli integratori",
+            "noSupplements": "Aggiungi un supplemento per visualizzarne il calendario qui.",
+            "selectSupplement": "Scegli un integratore",
+            "allSupplements": "Tutti gli integratori",
+            "titleAll": "Calendario dei registri",
+            "noEntries": "Aggiungi un farmaco o un integratore per visualizzarne il calendario qui.",
+            "selectEntry": "Seleziona un articolo",
+            "allEntries": "Tutto",
+            "monthTotal": "{{count}} dosi registrate nel mese di {{month}}",
+            "allTaken": "Tutte le dosi assunte"
+        }
     }
 }
