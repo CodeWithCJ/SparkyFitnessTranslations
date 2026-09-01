@@ -1842,7 +1842,7 @@
         "create": "Criar",
         "creating": "Criando...",
         "date": "Data",
-        "delete": "Remover",
+        "delete": "Deletar",
         "duplicate": "Duplicar",
         "edit": "Editar",
         "error": "Erro",
@@ -1866,7 +1866,8 @@
         "save": "Salvar",
         "savePreferences": "Salvar Preferências",
         "select": "Selecionar",
-        "workout": "Treino"
+        "workout": "Treino",
+        "success": "Sucesso"
     },
     "documentationViewer": {
         "loadingAiContext": "Carregando o contexto de IA...",
