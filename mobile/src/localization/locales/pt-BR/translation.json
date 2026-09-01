@@ -78,6 +78,66 @@
             "iosSettingsHint": "Mude o idioma deste aplicativo nas Configurações do iOS",
             "openSettingsFailed": "Não foi possível abrir as Configurações do iOS",
             "iosSubtitle": "{{language}} · {{managedBy}}"
+        },
+        "lastSynced": "Última sincronização {{time}}",
+        "addServer": "Toque para adicionar um servidor",
+        "title": "Ajustes",
+        "shareReportFailed": "Falha ao enviar relatório de diagnóstico: {{error}}",
+        "serverConnected": "Ajustes do servidor. Conectado.",
+        "serverConnectionFailed": "Ajustes do servidor. Conexão falhou.",
+        "serverNotConfigured": "Ajustes do servidor. Servidor não está configurado.",
+        "rows": {
+            "server": "Servidor",
+            "healthSync": "Sincronização de dados de saúde",
+            "app": "Ajustes do App",
+            "calories": "Calorias e TMB",
+            "food": "Alimento",
+            "dashboard": "Painel",
+            "diary": "Diário",
+            "wellness": "Bem-estar",
+            "cyclePregnancy": "Ciclo e gravidez",
+            "workout": "Treino",
+            "whatsNew": "Novidades",
+            "logs": "Ver registros",
+            "about": "Sobre",
+            "shareReport": "Compartilhar relatório de diagnóstico"
+        },
+        "theme": {
+            "title": "Tema",
+            "light": "Claro",
+            "dark": "Escuro",
+            "amoled": "AMOLED",
+            "system": "Sistema"
+        },
+        "liquidGlass": {
+            "title": "Navegação Liquid Glass"
+        },
+        "notifications": {
+            "title": "Notificações",
+            "subtitle": "Temporizadores de descanso, objetivos de jejum e lembretes de meditação."
+        },
+        "cameraShutter": {
+            "title": "Obturador da câmera",
+            "subtitle": "Reproduzir um som ao fotografar."
         }
+    },
+    "languageSettings": {
+        "subtitle": "Use o idioma do dispositivo ou escolha um idioma para o SparkyFitness."
+    },
+    "navigation": {
+        "settings": "Ajustes",
+        "library": "Biblioteca",
+        "presets": "Pré-definições",
+        "foods": "Alimentos",
+        "meals": "Refeições",
+        "exercises": "Exercícios",
+        "diary": "Diário",
+        "details": "Detalhes",
+        "dashboard": "Painel",
+        "add": "Adicionar",
+        "mealTypes": "Tipos de refeições"
+    },
+    "familyDiary": {
+        "title": "Diários familiares"
     }
 }
