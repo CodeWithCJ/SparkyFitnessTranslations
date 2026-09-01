@@ -33,7 +33,10 @@
             "bio": "Bio",
             "tellAboutYourself": "Conte-nos sobre você",
             "saveProfile": "Salvar Perfil",
-            "saving": "Salvando..."
+            "saving": "Salvando...",
+            "enterHeight": "Insira sua altura",
+            "height": "Altura",
+            "uploading": "Enviando..."
         },
         "preferences": {
             "title": "Preferências",
@@ -94,7 +97,25 @@
         "aiService": {
             "title": "Serviço de IA",
             "description": "Gerenciar configurações para recursos com tecnologia de IA",
-            "invalidKeyLengthWarning": "Se você encontrar um erro de \"Invalid key length\", certifique-se de que sua chaves de criptografia nas variáveis de ambiente do servidor seja de 64 caracteres hexadecimais."
+            "invalidKeyLengthWarning": "Se você encontrar um erro de \"Invalid key length\", certifique-se de que sua chaves de criptografia nas variáveis de ambiente do servidor seja de 64 caracteres hexadecimais.",
+            "globalSettings": {
+                "allowUserConfig": "Permitir que usuários configurem serviços de IA",
+                "syncFromEnv": "Sincronizar das variáveis de ambiente",
+                "addService": "Adicionar serviço",
+                "saveChanges": "Salvar mudanças",
+                "cancel": "Cancelar",
+                "edit": "Editar",
+                "delete": "Remover",
+                "serviceName": "Nome do serviço",
+                "serviceType": "Tipo de serviço",
+                "apiKey": "Chave da API",
+                "apiKeyOptional": "Chave da API (opcional)",
+                "customUrl": "URL personalizada",
+                "activeService": "Serviço ativo",
+                "global": "Global",
+                "error": "Erro",
+                "success": "Sucesso"
+            }
         },
         "apiKeyManagement": {
             "title": "Gerenciamento de chaves de API",
@@ -127,6 +148,18 @@
             "description": "Alterar seu e-mail ou senha",
             "currentEmail": "E-mail atual",
             "enterNewEmail": "Digite novo endereço de e-mail"
+        },
+        "dataManagement": {
+            "sectionTitle": "Gestão de dados",
+            "subtitle": "Exporte ou gerencie seus dados",
+            "title": "Exportar dados",
+            "delimiterPlaceholder": "Delimitador",
+            "semicolon": "Ponto e vírgula (;)",
+            "comma": "Vírgula (,)",
+            "exportButton": "Exportar meu diário (CSV)",
+            "exporting": "Preparando...",
+            "exportSuccess": "Exportação concluída",
+            "exportSuccessDescription": "Seu diário foi exportado com sucesso."
         }
     },
     "aboutDialog": {
@@ -1282,7 +1315,16 @@
         "addNewFood": "Adicionar nova comida",
         "addNewFoodDescription": "Digite os detalhes do novo item de comida para adicionar ao seu banco de dados.",
         "scanBarcodeDescription": "Posicione o código de barras do produto na frente de sua câmera.",
-        "importFromCSVDescription": "Importar um arquivo CSV para adicionar várias comidas de uma só vez."
+        "importFromCSVDescription": "Importar um arquivo CSV para adicionar várias comidas de uma só vez.",
+        "loadMore": "Carregar mais",
+        "recent": "Recentes",
+        "frequent": "Frequentes",
+        "bySource": "Por fonte",
+        "noResults": "Sem resultados",
+        "favorite": "Favorito",
+        "favorites": "Favoritos",
+        "addToFavorites": "Adicionar aos favoritos",
+        "removeFromFavorites": "Remover dos favoritos"
     },
     "addComp": {
         "addNew": "Adicionar novo"
@@ -1949,7 +1991,9 @@
         "autoCalculate": "Auto-calculado",
         "autoCalculateTooltip": "Auto-calculado usando {{algorithm}}",
         "autoCalculateDisabledNoSex": "Defina seu sexo no Perfil para permitir calculo automático",
-        "autoCalculateSelectAll": "Selecionar tudo"
+        "autoCalculateSelectAll": "Selecionar tudo",
+        "autoCalculateSelectNone": "Desselecionar todos",
+        "autoCalculateApplySelected": "Calcular selecionados automaticamente ({{count}})"
     },
     "sync": {
         "syncAll": "Sincronizar todas as fontes ativas",
@@ -2210,5 +2254,29 @@
     "foods": {
         "providerVerified": "Alimentos verificados",
         "removeNutrient": "Remover {{nutrient}}"
+    },
+    "foodPhoto": {
+        "analyzing": "Analisando foto da refeição...",
+        "errors": {
+            "unreachableMessage": "Tente novamente ou registre este alimento manualmente.",
+            "photoTooLargeMessage": "Utilize uma imagem menor.",
+            "photoTooLargeTitle": "Foto muito grande",
+            "aiNotConfiguredTitle": "IA não configurada"
+        },
+        "columns": {
+            "fat": "Gordura",
+            "carbs": "Carboidratos",
+            "protein": "Proteínas",
+            "gramsFor": "Gramas para {{name}}",
+            "grams": "Gramas"
+        },
+        "photosTooLargeTitle": "Fotos muito grandes",
+        "recalcFromGrams": "Recalcular a partir de gramas",
+        "removeIngredient": "Remover {{name}}",
+        "logFailedMessage": "Por favor, tente novamente."
+    },
+    "food": {
+        "mainImage": "Principal",
+        "imagesLabel": "Imagens"
     }
 }
