@@ -291,7 +291,7 @@
             "imageLabel": "Imagem",
             "updateSuccess": "Exercício atualizado com sucesso.",
             "updateError": "Falha ao atualizar exercício.",
-            "setTypePlaceholder": "Definir Tipo"
+            "setTypePlaceholder": "Tipo de série"
         },
         "activityDetailsEditor": {
             "fieldNameLabel": "Nome do campo",
@@ -642,7 +642,7 @@
             "laps": "Voltas",
             "distance": "Distância",
             "cumulativeDistance": "Distância Cumulativa",
-            "avgPace": "Ritmo Médio",
+            "avgPace": "Ritmo médio",
             "avgRunCadence": "Cadência de Corrida Média",
             "maxRunCadence": "Cadência de Corrida Máxima",
             "movingTime": "Tempo de Movimento",
@@ -1109,7 +1109,8 @@
             "distributeRemaining": "Distribuir Uniformemente o Restante",
             "total": "Total",
             "mustBe100": "Deve ser 100% para salvar"
-        }
+        },
+        "saveAndStart": "Salvar e começar plano"
     },
     "customFoodForm": {
         "caloriesLabel": "Calorias",
@@ -1404,7 +1405,35 @@
             "maximize": "Maximizar",
             "restore": "Restaurar",
             "hide": "Ocultar"
-        }
+        },
+        "over": "acima",
+        "addSuccess": "Alimento adicionado com sucesso.",
+        "calculateExplanation": {
+            "bmrMeasured": "Medido",
+            "bmrMeasuredDesc": "Usando sua TMB medida. Sem fórmula aplicada.",
+            "todayTarget": "Como o objetivo do dia é calculado"
+        },
+        "copyAllFromYesterday": "Copiar tudo de ontem",
+        "copyAllSuccess": "O dia foi copiado com sucesso.",
+        "copyAllToDate": "Copiar dia inteiro para outra data",
+        "copyError": "Falha ao copiar entradas.",
+        "copyFamilyFromSuccess": "Entradas copiadas de familiares com sucesso.",
+        "copyFamilyMealType": "Tipo de refeição",
+        "copyFamilyMemberLabel": "Familiar",
+        "copyFamilyMemberPlaceholder": "Selecionar familiar",
+        "copyTargetTitleFamily": "Destino (família)",
+        "copyTargetTitleSelf": "Destino (você)",
+        "deleteSuccess": "Entrada removida.",
+        "mealsLoadError": "Falha ao carregar refeições.",
+        "updateError": "Falha ao atualizar registro.",
+        "updateSuccess": "Registro atualizado.",
+        "entryPhoto": "Fotos para esta entrada",
+        "addEntryPhoto": "Adicionar foto",
+        "replaceEntryPhoto": "Substituir foto",
+        "removeEntryPhoto": "Remover foto",
+        "entryImageUploadFailedTitle": "Falha no envio",
+        "entryImageRemoveFailedTitle": "Falha ao remover",
+        "savingPhotos": "Salvando fotos…"
     },
     "foodDiary": {
         "title": "Diário de alimentação",
@@ -1909,7 +1938,15 @@
         "savePreferences": "Salvar Preferências",
         "select": "Selecionar",
         "workout": "Treino",
-        "success": "Sucesso"
+        "success": "Sucesso",
+        "totalSets": "Total de séries",
+        "actions": "Ações",
+        "advanced": "Avançado",
+        "avgHrUnit": "FC média",
+        "copyRawJson": "Copiar JSON não formatado",
+        "skip": "Pular",
+        "view": "Ver detalher",
+        "weight": "Peso"
     },
     "documentationViewer": {
         "loadingAiContext": "Carregando o contexto de IA...",
@@ -2158,7 +2195,8 @@
         "fileTooLarge": "O arquivo selecionado é muito grande. Por favor, envie um arquivo menor que 25MB.",
         "missingDefaultWarning": "Aviso: {{count}} comida(s) não têm uma variante padrão. Por favor, defina pelo menos uma variante como padrão (destacada em amarelo abaixo).",
         "missingDefaultValidationError": "Pelo menos uma variante por alimento deve ser definida como a unidade padrão.",
-        "showAllRows": "Mostrar todas as linhas ({{count}})"
+        "showAllRows": "Mostrar todas as linhas ({{count}})",
+        "defaultVariantNote": "Pelo menos uma variante por alimento deve ser definida como a unidade padrão."
     },
     "workout": {
         "weight": "peso",
@@ -2167,7 +2205,12 @@
         "reps": "Repetições",
         "durationMin": "Duração (min)",
         "distance": "Distância",
-        "calories": "Calorias"
+        "calories": "Calorias",
+        "avgHr": "FC média (bpm)",
+        "caloriesAuto": "Automática",
+        "durationSet": "Duração da série {{setNumber}}",
+        "notesPlaceholder": "Adicionar uma nota para esta série...",
+        "rpe": "PSE"
     },
     "syncRangeDialog": {
         "timeoutWarning": "Para grandes intervalos de data, o navegador pode sair, mas o servidor continuará sincronizando em segundo plano.",
@@ -2194,7 +2237,9 @@
         "createSuccess": "Provedor de dados externo adicionado com sucesso."
     },
     "mealTypeManager": {
-        "add": "Adicionar Categoria"
+        "add": "Adicionar Categoria",
+        "addDesc": "Criar uma nova categoria de refeições (por exemplo, Pré-Treino).",
+        "nameLabel": "Nome"
     },
     "mealCreation": {
         "mealName": "Nome da refeição",
@@ -2214,12 +2259,19 @@
         "passkeyErrorTitle": "Erro de Passkey",
         "loginSuccess": "Login bem sucedido!",
         "invalidOrigin": "Acesso negado: Esta conexão",
-        "emailExists": "Usuário com este e-mail já existe."
+        "emailExists": "Usuário com este e-mail já existe.",
+        "passkeySecureContextError": "A autenticação passkey requer um contexto seguro (HTTPS ou localhost). Por favor, inscreva-se usando e-mail e senha.",
+        "passwordResetSuccess": "A senha foi redefinida com sucesso. Você pode entrar agora.",
+        "registerError": "Um erro inesperado ocorreu durante a inscrição."
     },
     "diaryCsvImport": {
         "validationErrorTitle": "Erro de validação",
         "scopePublic": "Público",
-        "scopeFamily": "Família"
+        "scopeFamily": "Família",
+        "scopeMine": "Meus itens",
+        "pickDate": "Escolha uma data",
+        "title": "Importar registros de diário (CSV)",
+        "uploadCsv": "Enviar CSV"
     },
     "cycle": {
         "history": {
@@ -2278,5 +2330,30 @@
     "food": {
         "mainImage": "Principal",
         "imagesLabel": "Imagens"
+    },
+    "nutrientGoalDirection": {
+        "min": "Min",
+        "max": "Máx",
+        "to": "para",
+        "goalTypeGroupLabel": "Direção do objetivo",
+        "badgeMin": "Min",
+        "badgeMax": "Máx",
+        "badgeTarget": "Intervalo",
+        "guidance": {
+            "loseWeight": {
+                "title": "Perder peso",
+                "body": "Ajusta calorias ao máximo (um limite) ou um intervalo alvo."
+            },
+            "gainWeight": {
+                "title": "Ganhar peso ou massa muscular"
+            },
+            "maintain": {
+                "title": "Manter peso"
+            }
+        },
+        "sections": {
+            "other": "Outros",
+            "custom": "Nutrientes personalizados"
+        }
     }
 }
