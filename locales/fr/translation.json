@@ -3125,5 +3125,60 @@
     "providers": {
         "updateSuccess": "Fournisseur de données externe mis à jour avec succès",
         "updateError": "Échec de la mise à jour du fournisseur de données externe"
+    },
+    "pregnancy": {
+        "setup": {
+            "disclaimer": "Les estimations sont informatives et ne remplacent pas les soins médicaux.",
+            "conceptionLabel": "Conception / date d'ovulation",
+            "conception": "Conception",
+            "babies": "Nombre de bébés"
+        },
+        "safety": {
+            "noResults": "Pas de correspondance. Essayez un autre terme.",
+            "meds": "Médicaments",
+            "medPlaceholder": "Puis-je prendre...",
+            "foodPlaceholder": "Puis-je manger ...",
+            "food": "Aliments"
+        },
+        "photos": {
+            "weekAlt": "Photo de la semaine {{n}} de grossesse",
+            "week": "Sem {{n}}",
+            "uploading": "Chargement…",
+            "title": "Journal photo de grossesse",
+            "empty": "Capturez votre ventre chaque semaine pour voir le parcours.",
+            "delete": "Supprimer la photo",
+            "add": "Ajouter la semaine {{n}}"
+        },
+        "kicks": {
+            "title": "Compteur de coups de pied",
+            "tap": "Appuyez pour compter un coup de pied",
+            "stop": "Terminer la session",
+            "start": "Commencez à compter",
+            "recent": "Sessions récentes",
+            "movements": "mouvements"
+        },
+        "growth": {
+            "you": "Votre corps",
+            "week": "Semaine",
+            "sizeThisWeek": "Taille de bébé cette semaine",
+            "prevWeek": "Semaine précédente",
+            "nextWeek": "Semaine suivante",
+            "jumpToCurrent": "Aller à cette semaine ({{n}})",
+            "chart": "Croissance tout au long de la grossesse",
+            "baby": "Votre bébé"
+        },
+        "disclaimer": "Les informations sur la grossesse sont éducatives et ne remplacent pas les soins médicaux.",
+        "contractions": {
+            "title": "Minuteur de contractions",
+            "stop": "Stop",
+            "start": "Commencer les contractions",
+            "long": "longue",
+            "int": "intervalle",
+            "dur": "Durée",
+            "count": "dans la dernière heure"
+        },
+        "checklist": {
+            "week": "Semaine {{n}}"
+        }
     }
 }
