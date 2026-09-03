@@ -1704,5 +1704,11 @@
     },
     "exerciseReportsDashboard": {
         "noWorkout": "உடற்பயிற்சி இல்லை"
+    },
+    "chat": {
+        "toolCategories": {
+            "presetFull": "எல்லாம்",
+            "clearAll": "அனைத்தையும் நீக்கு"
+        }
     }
 }
