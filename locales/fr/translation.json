@@ -9,7 +9,8 @@
         "admin": "Admin",
         "cycle": "Cycle",
         "pregnancy": "Grossesse",
-        "medications": "Médicaments"
+        "medications": "Médicaments",
+        "wellness": "Bien-être"
     },
     "settings": {
         "profileInformation": {
@@ -77,7 +78,7 @@
         },
         "calculationSettings": {
             "title": "Paramètres de calculs",
-            "description": "Gérer les préférences de calcul du Métabolisme Basal et de la Masse Grasse"
+            "description": "Gérer les préférences de calcul du Métabolisme Basal et de la Masse Grasse."
         },
         "familyAccess": {
             "title": "Accès familial",
@@ -533,7 +534,8 @@
             "netCalories": "Calories nettes : {{netCalories}}",
             "netCaloriesBreakdown": "{{dailyIntakeCalories}} mangées - {{finalTotalCaloriesBurned}} brulées",
             "dailyProgress": "Progression journalière",
-            "targetBand": "cible {{min}}–{{max}}"
+            "targetBand": "cible {{min}}–{{max}}",
+            "dailyEnergyGoal": "Obj. énergétique quotidien"
         },
         "editExerciseEntryDialog": {
             "setLabel": "Définir",
@@ -2512,7 +2514,22 @@
             "take": "Prendre",
             "asNeeded": "Au besoin",
             "medicationsTitle": "Médicaments du jour",
-            "supplementsTitle": "Compléments alimentaires du jour"
+            "supplementsTitle": "Compléments alimentaires du jour",
+            "medicationsDescription": "Suivez les doses programmées et consignez les médicaments pris à la demande",
+            "noMedicationDoses": "Aucune dose prévue aujourd'hui. Notez ci-dessous tout médicament pris au besoin.",
+            "supplementsDescription": "Suivez les doses planifiées et notez les compléments pris au besoin",
+            "noSupplementDoses": "Aucune dose prévue aujourd'hui. Notez ci-dessous tout médicament pris au besoin.",
+            "noPrnMedications": "Aucun médicament au besoin ou non programmé n'est configuré.",
+            "noPrnSupplements": "Aucun complément au besoin ou non programmé n'est configuré.",
+            "loadingMedications": "Chargement des médicaments actifs…",
+            "loadingSupplements": "Chargement des compléments actifs…",
+            "loadingChecklist": "Chargement de la liste de contrôle…",
+            "dueToday": "Prévu aujourd'hui",
+            "asNeededHint": "Appuyez pour enregistrer une dose maintenant (aucune planification fixée ou aucune prise prévue aujourd'hui).",
+            "logIntake": "Consigner une prise",
+            "adherenceTitle": "Synthèse de l'observance",
+            "editLogged": "Éditer la dose consignée",
+            "takenAt": "Pris le"
         },
         "locations": {
             "head": "Tête",
@@ -2592,7 +2609,9 @@
             "loggedCount_many": "{{count}} symptômes enregistrés",
             "loggedCount_other": "{{count}} symptômes enregistrés",
             "skipped": "Ignoré",
-            "tooltipSkipped": "{{count}} ignorés"
+            "tooltipSkipped": "{{count}} ignorés",
+            "tooltipPrn": "{{count}} PRN pris",
+            "tooltipSnoozed": "{{count}} reporté"
         },
         "gi": {
             "title": "Sous-suivi digestif",
@@ -2730,7 +2749,7 @@
             "rxPlaceholder": "Rx-482-93221",
             "activeScripts": "Ordonnances actives",
             "glp1Meds": "Médicaments GLP-1",
-            "scheduledToday": "Prévu aujourd'hui",
+            "scheduledToday": "Planifié aujourd'hui",
             "totalMeds": "Total médicaments"
         },
         "schedule": {
@@ -2771,9 +2790,27 @@
             "dosesTaken": "Doses prises",
             "times": "Heures",
             "symptomsColumn": "Symptômes",
-            "injectionAbbrev": "inj",
+            "injectionAbbrev": "inject°",
             "customize": "Personnaliser les graphiques",
-            "downloadCSV": "Télécharger les données CSV"
+            "downloadCSV": "Télécharger les données CSV",
+            "adherenceTrend": "Évolution de l'observance quotidienne (%)",
+            "adherenceTrendDesc": "Représente le pourcentage d'observance quotidien (part des doses prévues qui ont été prises).",
+            "configDesc": "Afficher ou masquer certains graphiques et widgets de corrélation.",
+            "configTitle": "Afficher/Masquer les visualisations",
+            "corrDose": "Dose de GLP-1 vs sévérité des nausées",
+            "corrHydration": "Hydration vs. Constipation",
+            "corrSleep": "Durée de sommeil vs. fatigue",
+            "corrProtein": "Prise de protéine vs. nausée",
+            "kpiAdherence": "Observance moyenne",
+            "title": "Rapport sur les médicaments",
+            "weightVsGoalDesc": "Visualise l'évolution de votre poids quotidien en comparaison avec votre poids cible.",
+            "weightVsGoal": "Tendance du poids vs. poids cible ({{weightUnit}})",
+            "correlationsDisclaimer": "Remarque : les corrélations sont des calculs purement descriptifs réalisés sur la période sélectionnée et n'impliquent pas de lien de causalité clinique.",
+            "correlationsTitle": "Corrélations informatives entre symptômes et effets indésirables",
+            "kpiGlp1": "Injections GLP-1",
+            "printPDF": "Imprimer/Enregistrer le rapport PDF",
+            "subtitle": "Analyse les corrélations entre les doses, les effets indésirables et les tendances d'observance thérapeutique.",
+            "kpiAdherenceDetail": "Pourcentage des doses programmées enregistrées comme prises."
         }
     },
     "chat": {
@@ -2988,7 +3025,8 @@
         "restingHr": "BPM au repos",
         "recovery": "Récupération : {{val}}",
         "fitnessAge": "Age physiologique : {{val}}",
-        "readiness": "Etat de préparation"
+        "readiness": "Etat de préparation",
+        "recHours": "Enr .:{{val}}"
     },
     "layout": {
         "welcome": "Bienvenue {{activeUserName}}"
@@ -3020,7 +3058,7 @@
             "unreachableMessage": "Réessayez, ou enregistrez cet aliment manuellement.",
             "unreachableTitle": "Impossible de joindre le fournisseur d'IA",
             "timedOutMessage": "L'estimation a pris trop de temps. Veuillez réessayer ou enregistrer cet aliment manuellement.",
-            "timedOutTitle": "Le fournisseur d'IA a expiré.",
+            "timedOutTitle": "Le fournisseur d'IA a expiré",
             "couldNotProcessMessage": "Le fournisseur a bloqué cette image. Essayez une autre photo.",
             "couldNotProcessTitle": "Impossible de traiter la photo",
             "unexpectedFormatMessage": "Utilisez une image JPEG, PNG ou WebP.",
