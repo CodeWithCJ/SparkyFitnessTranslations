@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="sparky_calorie_widget_name">Calories</string>
+    <string name="sparky_widget_description">Résumé quotidien des calories avec raccourcis d\'ajout rapide</string>
+    <string name="sparky_macro_widget_name">Macros</string>
+    <string name="sparky_macro_widget_description">Protéines, glucides et lipides du jour avec raccourcis d\'ajout rapide</string>
+    <string name="widget_kcal_left">%1$s kcal restantes</string>
 </resources>
