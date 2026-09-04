@@ -135,6 +135,14 @@
                 "clientSecretPlaceholder": "Geben Sie YAZIO Client-Geheimnis ein",
                 "allFieldsRequired": "Alle Felder (E-Mail/Benutzername, Passwort, Client-ID und Client-Geheimnis) sind erforderlich.",
                 "languageSupportHelp": "Die YAZIO-Lebensmittelsuche passt sich automatisch an Ihre aktive Spracheinstellung in SparkyFitness an (unterstützt werden Englisch, Deutsch, Französisch, Russisch, Spanisch, Italienisch, Niederländisch, Polnisch, Portugiesisch, Dänisch, Finnisch, Schwedisch, Tschechisch, Ungarisch, Griechisch, Norwegisch, Türkisch, Chinesisch, Japanisch und Koreanisch). Für andere Sprachen werden die internationalen Standardparameter der Datenbank verwendet."
+            },
+            "oauthDashboards": {
+                "fallback": "Anbieter Entwickler Dashboard",
+                "withings": "Withings Entwickler Dashboard",
+                "fitbit": "Fitbit Entwickler Dashboard",
+                "oura": "Oura Entwickler Dashboard",
+                "googlehealth": "Google Cloud Konsole",
+                "polar": "Polar Zugangs-Link Admin"
             }
         },
         "aiService": {
@@ -650,7 +658,17 @@
             "projectedWeeklyGain": "Prognostizierte wöchentliche Zunahme:",
             "projectedWeeklyLoss": "Prognostizierte wöchentliche Abnahme:",
             "raisedToFloorTitle": "Ziel auf Ihr Sicherheitsminimum angehoben",
-            "awaitingCalibrationTitle": "Warten auf adaptive TDEE-Kalibrierung"
+            "awaitingCalibrationTitle": "Warten auf adaptive TDEE-Kalibrierung",
+            "deviceProjectionHint": "Im Modus Geräteprojektion wird dieser Prozentsatz direkt auf den projizierten TDEE des Geräts angewendet.",
+            "safetyFloorCustom": "Benutzerdefiniertes Minimum",
+            "safetyFloorCustomHint": "Ersetzt den Standardwert durch den von Ihnen gewählten Mindestwert. Die Gesundheitsempfehlungen bleiben sichtbar.",
+            "safetyFloorDisabled": "Deaktiviert",
+            "safetyFloorDisabledHint": "Beendet die automatische Zielfestlegung. Gesundheitswarnungen bleiben sichtbar; bei sehr niedrigen Zielwerten sollten Sie ärztlichen Rat einholen.",
+            "safetyFloorModeLabel": "Adaptiver Sicherheitsboden",
+            "safetyFloorStandardHint": "Es wird der höhere Wert aus Ihrem geschätzten RMR und dem klinischen Mindestwert (1.200 kcal für Frauen, 1.500 kcal für Männer) zugrunde gelegt.",
+            "safetyFloorValueLabel": "Benutzerdefiniertes Minimum",
+            "modeUnreachableSuffix": "Nicht erreichbar",
+            "clampAdviceEstimated": ". Um schneller abzunehmen, steigern Sie Ihren Kalorienverbrauch durch körperliche Aktivität oder überprüfen Sie, ob Ihr Aktivitätsniveau nicht zu niedrig angesetzt ist – es legt diese Obergrenze fest, bis genügend Daten für eine gemessene Basislinie vorliegen."
         },
         "breakdown": {
             "goalSurplusLabel": "Zielüberschuss:",
@@ -799,7 +817,11 @@
             "summaryUnavailableDesc": "Ihre tägliche Energiezusammenfassung konnte nicht geladen werden. Versuchen Sie, die Seite zu aktualisieren.",
             "summaryUnavailableTitle": "Tägliche Zusammenfassung nicht verfügbar",
             "updateProfile": "Profil aktualisieren",
-            "weightTrend": "Gewichtstrend"
+            "weightTrend": "Gewichtstrend",
+            "bmrSourceMeasured": "Gemessen",
+            "bmrSourceAlgorithm": "Algorithmus",
+            "healthConnectProjectionSource": "Health Connect Kalorien gesamt",
+            "legacyProjectionSource": "Gerät Projektion"
         },
         "editExerciseEntryDialog": {
             "setLabel": "Satz",
@@ -1114,7 +1136,8 @@
         "exercises": "Übungen",
         "logToDiary": "Im Tagebuch protokollieren",
         "presets": "Voreinstellungen",
-        "stats": "Statistiken"
+        "stats": "Statistiken",
+        "duplicate": "Duplikat"
     },
     "workoutPlansManager": {
         "addPlanButton": "Plan hinzufügen",
@@ -3419,7 +3442,8 @@
             "cyclic": "Zyklus: {{on}} Tage aktiv, {{off}} Tage inaktiv",
             "monthly": "Monatlich am {{day}}",
             "prn": "Nach Bedarf",
-            "taper": "Abschwächung"
+            "taper": "Abschwächung",
+            "mealRelationSuffix": " Mahlzeit"
         },
         "bodymap": {
             "label": "Körperkarte der Injektionsstellen"
