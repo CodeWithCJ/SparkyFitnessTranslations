@@ -2393,12 +2393,16 @@
             "tooltipTaken": "Assunte: {{count}}",
             "sideEffect": "Sintomo da effetto collaterale",
             "snoozedOnly": "Solo posticipate",
-            "skipped": "Saltate"
+            "skipped": "Saltate",
+            "maxSeverity": "Massima gravità"
         },
         "common": {
             "saving": "Salvataggio…",
             "save": "Salva",
-            "logging": "Registrazione…"
+            "logging": "Registrazione…",
+            "reset": "Azzera",
+            "custom": "Personalizzato",
+            "clear": "Cancella"
         },
         "today": {
             "medicationsTitle": "Farmaci di oggi",
