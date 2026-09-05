@@ -2956,11 +2956,11 @@
             "presetFull": "Plein",
             "clearAll": "Tout effacer",
             "emptyHint": "Aucune catégorie sélectionnée — le chatbot utilisera son jeu d'outils par défaut.",
-            "food": "Alimentation et eau",
+            "food": "Nourriture et eau",
             "exercise": "Exercice",
             "tooltip": "Choisir les outils du chatbot",
             "title": "Outils de Chatbot",
-            "presetCore": "Essentiel",
+            "presetCore": "Coeur",
             "checkin": "Corps et bilans",
             "goals": "Objectifs",
             "reports": "Rapports et analyses",
@@ -2970,8 +2970,8 @@
             "medications": "Médicaments"
         },
         "errorClearingHistory": "Échec du nettoyage de la conversion.",
-        "errorLoadingHistory": "Échec de la récupération de l'historie.",
-        "errorLoadingPreferences": "Échec de la récupération des préférences.",
+        "errorLoadingHistory": "Échec de la récupération de l'historique de la conversation.",
+        "errorLoadingPreferences": "Échec de la récupération des préférences de conversation.",
         "successClearingHistory": "Succès du nettoyage de la conversation."
     },
     "onboarding": {
