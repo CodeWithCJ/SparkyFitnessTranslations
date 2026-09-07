@@ -2566,7 +2566,8 @@
             "logging": "Enregistrement…",
             "saving": "Sauvegarde…",
             "custom": "Personnalisé",
-            "clear": "Effacer"
+            "clear": "Effacer",
+            "inactive": "Inactif"
         },
         "today": {
             "doses": "Doses",
@@ -2601,7 +2602,10 @@
             "logIntake": "Consigner une prise",
             "adherenceTitle": "Synthèse de l'observance",
             "editLogged": "Éditer la dose consignée",
-            "takenAt": "Pris le"
+            "takenAt": "Pris le",
+            "ring14Day": "14 jours",
+            "noScheduledToday": "Aucune dose programmée aujourd'hui.",
+            "noScheduledDay": "Aucune dose programmée pour ce jour."
         },
         "locations": {
             "head": "Tête",
