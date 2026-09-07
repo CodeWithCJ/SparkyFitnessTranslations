@@ -1188,7 +1188,17 @@
         "errorOccurred": "Une erreur s'est produite",
         "confirm": "Confirmer",
         "notApplicable": "N/A",
-        "totalSets": "Total des séries"
+        "totalSets": "Total des séries",
+        "save": "Sauvegarder",
+        "back": "Retour",
+        "next": "Suivant",
+        "close": "Fermer",
+        "error": "Erreur",
+        "delete": "Supprimer",
+        "success": "Succès",
+        "edit": "Modifier",
+        "date": "Date",
+        "loading": "Chargement..."
     },
     "diary": {
         "nutritionSummary": "Résumé nutritionnel",
@@ -2706,7 +2716,9 @@
                 "food_noise": "Bruit alimentaire",
                 "fullness": "Satiété",
                 "energy": "Énergie"
-            }
+            },
+            "noAccessBody": "Demandez à {{name}} de partager l'accès au suivi pour enregistrer ici la faim, les pensées obsédantes liées à la nourriture, la satiété et le niveau d'énergie.",
+            "noAccessTitle": "Le suivi quotidien GLP-1 nécessite un accès au suivi"
         },
         "sites": {
             "customize": "Personnaliser les sites",
@@ -2763,7 +2775,10 @@
             "editInjection": "Modifier l'injection",
             "notes": "Notes",
             "quickLogTitle": "Où avez-vous effectué l'injection ?",
-            "skipSite": "Ignorer le site"
+            "skipSite": "Ignorer le site",
+            "addInventory": "Ajouter du stock",
+            "notesPlaceholder": "Par ex. : légère sensation de picotement, je me sentais bien",
+            "quickLogHint": "{{name}} — la dose est automatiquement déduite de votre stylo en cours d'utilisation. Vert = site de rotation recommandé."
         },
         "types": {
             "pill": "pilule",
@@ -2843,7 +2858,25 @@
             "nutrientCount_other": "nutriments",
             "customIsOral": "Administration orale",
             "notes": "Notes",
-            "showAdvanced": "Afficher les options avancées"
+            "showAdvanced": "Afficher les options avancées",
+            "supplementNamePlaceholder": "par ex. vitamine D3",
+            "strengthUnit": "Unité de résistance",
+            "doseFollowsStrength": "Maintient l'intensité jusqu'à ce que vous la modifiiez.",
+            "nutritionHelpLabel": "Comment lire votre étiquette",
+            "nutritionHelpSubGram": "Une étiquette indiquant « moins de 1 g » ne précise pas la quantité exacte. Saisissez 0,5 comme valeur médiane, ou 0 pour éviter de surestimer la quantité.",
+            "nutrientsNeedDiaryAccess": "Pour afficher les informations nutritionnelles par dose, l'accès au journal alimentaire est nécessaire pour ce profil. Vous pouvez tout de même enregistrer le complément et en assurer le suivi (calendrier, rappels et doses).",
+            "nutrientNamePlaceholder": "par ex. l'ashwagandha",
+            "empty": "Aucun médicament pour l'instant. Ajoutez-en un premier pour commencer.",
+            "emptyMeds": "Aucun médicament pour l'instant. Ajoutez-en un premier pour commencer.",
+            "emptySupplements": "Aucun complément pour l'instant. Ajoutez-en un premier pour commencer.",
+            "customCadence": "rythme",
+            "customGlpName": "Nom du médicament personnalisé (facultatif)",
+            "customHalfLife": "Demi-vie (jours)",
+            "customTMax": "Délai pour atteindre le pic (jours)",
+            "effectiveness": "Évaluation de l'efficacité",
+            "hideAdvanced": "Masquer les options avancées",
+            "notesPlaceholder": "À prendre avec de l'eau avant le petit-déjeuner. Éviter la consommation d'alcool.",
+            "photoPath": "URL de la photo du comprimé / de l'étiquette (facultatif)"
         },
         "schedule": {
             "heading": "Horaires et rappels",
@@ -2876,7 +2909,14 @@
             "endDate": "Date de fin (facultatif)",
             "servingUnit": "portion",
             "startDateRequired": "Date de début (Obligatoire)",
-            "weekdays": "Sélectionner des jours"
+            "weekdays": "Sélectionner des jours",
+            "supplementDoseScalingCalories": "Chaque bûche compte {{dose}} portions : {{dose}} x {{perDose}} kcal = {{total}} kcal.",
+            "supplementDoseScaling": "Chaque entrée correspond à {{dose}} portions ; les valeurs nutritionnelles saisies par portion sont donc multipliées par {{dose}}.",
+            "servingsPerLog": "Portions par bûche",
+            "cycleOff": "Jours de congé",
+            "cycleOn": "Jours de travail",
+            "doseAmount": "Quantité de la dose (priorité manuelle)",
+            "time": "Moment de la journée"
         },
         "reports": {
             "logTableTitle": "Tableau du journal des médicaments",
@@ -2948,6 +2988,9 @@
             "monthly": "Mensuellement",
             "prn": "Au besoin (PRN)",
             "weekly": "Jours spécifiques de la semaine"
+        },
+        "beta": {
+            "description": "Attendez-vous à quelques imperfections. Si vous rencontrez des bugs ou des problèmes, signalez-les sur GitHub pour nous aider à nous améliorer !"
         }
     },
     "chat": {
