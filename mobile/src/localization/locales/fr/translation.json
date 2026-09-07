@@ -122,6 +122,112 @@
             "subtitle": "Minuteurs de repos, objectifs de jeûne et rappels de prise de médicaments."
         },
         "lastSynced": "Dernière synchronisation {{time}}",
-        "shareReportFailed": "Échec de partage du rapport de diagnostic : {{error}}"
+        "shareReportFailed": "Échec de partage du rapport de diagnostic : {{error}}",
+        "haptics": {
+            "title": "Retour haptique",
+            "subtitle": "Vibrations légères pour les minuteurs et les confirmations."
+        },
+        "cameraShutter": {
+            "title": "Obturateur d'appareil photo",
+            "subtitle": "Émettre un son lors de la prise de photos."
+        }
+    },
+    "languageSettings": {
+        "subtitle": "Utilisez la langue de votre appareil ou choisissez une langue pour SparkyFitness."
+    },
+    "navigation": {
+        "settings": "Paramètres",
+        "details": "Détails",
+        "dashboard": "Tableau de bord",
+        "add": "Ajouter",
+        "mealTypes": "Types de repas"
+    },
+    "familyDiary": {
+        "title": "Journaux de famille",
+        "openFamilyDiaries": "Journaux de famille ouverts",
+        "loadingMembers": "Chargement des membres de la famille…",
+        "loadMembersFailed": "Impossible de charger les membres de la famille",
+        "noMembers": "Aucun membre de la famille",
+        "manageOnWeb": "L'accès au journal de famille est géré dans l'application web.",
+        "canCopy": "Peut être copié",
+        "viewOnly": "Affichage uniquement",
+        "diary": "Journal de famille",
+        "loadingDiary": "Chargement du journal de famille…",
+        "loadDiaryFailed": "Accès au journal de famille indisponible",
+        "back": "Retours",
+        "emptyForDate": "Aucune entrée alimentaire pour cette date",
+        "diaryForDate": "Journal de famille · {{date}}",
+        "openMeal": "Ouvrir le repas {{meal}}",
+        "mealCalories": "{{calories}} kcal",
+        "unnamedFood": "Aliment non nommé",
+        "selectAll": "Tout sélectionner",
+        "deselectAll": "Tout désélectionner",
+        "viewingOnly": "Consultation uniquement",
+        "selectFood": "Sélectionnez {{food}}",
+        "deselectFood": "Désélectionner {{food}}",
+        "continue": "Continuer",
+        "nutritionSummary": "{{calories}} kcal · P {{protein}} g · C {{carbs}} g · F {{fat}} g",
+        "selectedNutrition": "Sélectionné : {{calories}} kcal · P {{protein}} g · G {{carbs}} g · L {{fat}} g",
+        "copyReview": "Copie de révision",
+        "copyFrom": "Copie depuis {{name}}",
+        "copyMealTitle": "Repas {{meal}}",
+        "quantityForFood": "Quantité pour {{food}}",
+        "quantityMustBePositive": "Saisissez une quantité supérieure à zéro.",
+        "copyNutrition": "Copier les informations nutritionnelles",
+        "copyCalories": "{{calories}} kcal",
+        "copyProtein": "{{protein}} g protein",
+        "copyCarbs": "{{carbs}} g de glucides",
+        "copyFat": "{{fat}} g de lipides",
+        "copyTargetDate": "Date de la copie",
+        "copyTargetDateHint": "Ouvre le sélecteur de date",
+        "copyTargetMeal": "Copier vers le repas",
+        "copyTargetMealRequired": "Choisissez un repas avant de copier.",
+        "copyToMyDiary": "Copier dans mon agenda",
+        "copyInvalidSelection": "Les aliments sélectionnés ne sont plus disponibles.",
+        "copyTargetDateLabel": "Date de copie : {{date}}",
+        "copySuccess": "Copié dans votre agenda",
+        "copyFailed": "Impossible de copier les aliments",
+        "copyFailedGuidance": "Votre avis est toujours là. Veuillez réessayer.",
+        "copyPermissionRevoked": "L'autorisation de copie a été supprimée.",
+        "copyPermissionRevokedGuidance": "Actualisez les agendas familiaux pour voir vos droits d'accès actuels.",
+        "copyStale": "Le journal de famille a été modifié.",
+        "copyStaleGuidance": "Le dernier journal de famille est ouvert pour examen.",
+        "unnamedMember": "Membre de la famille",
+        "previousDay": "Jour précédent",
+        "previousDayHint": "Affiche la veille",
+        "nextDay": "Lendemain",
+        "nextDayHint": "Représentations le lendemain",
+        "chooseDate": "Choisir une date",
+        "chooseDateHint": "Ouvre le sélecteur de date",
+        "goToToday": "Aller à aujourd'hui",
+        "goToTodayHint": "Retour à aujourd'hui"
+    },
+    "notifications": {
+        "title": "Notifications",
+        "channels": {
+            "medicationReminders": "Rappels de prise de médicaments",
+            "workoutTimer": "Minuteur d'entraînement",
+            "fasting": "Jeûne"
+        },
+        "actions": {
+            "completeSet": "Ensemble complet",
+            "logAsTaken": "Enregistrer comme trouvé",
+            "skip": "passer"
+        },
+        "permission": {
+            "notificationsOff": "Notifications désactivées",
+            "timerInApp": "La minuterie émettra tout de même une alerte dans l'application."
+        },
+        "exactAlarm": {
+            "title": "Alertes en temps voulu"
+        }
+    },
+    "activeWorkout": {
+        "exerciseCard": {
+            "moreOptionsFor": "Plus d'options pour {{exerciseName}}",
+            "moreOptionsFallback": "Plus d'options pour faire de l'exercice",
+            "notesFor": "Notes pour {{exerciseName}}",
+            "notesFallback": "Notes sur l'exercice"
+        }
     }
 }
