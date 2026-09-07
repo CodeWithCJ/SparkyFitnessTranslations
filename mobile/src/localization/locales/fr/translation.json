@@ -6,10 +6,10 @@
     },
     "common": {
         "save": "Sauvegarder",
-        "saving": "Économie…",
+        "saving": "Sauvegarde…",
         "back": "Retour",
         "showLess": "Réduire",
-        "learnMore": "Apprendre encore plus",
+        "learnMore": "En savoir plus",
         "next": "Suivant",
         "later": "Suivant",
         "close": "Fermer",
@@ -66,7 +66,8 @@
         "itemCount_other": "{{count}} articles",
         "deleteItemTitle": "Supprimer {{title}} ?",
         "listFinalSeparator": ", et ",
-        "nextDay": ": le lendemain"
+        "nextDay": ": le lendemain",
+        "previousDay": ":jour précédent"
     },
     "settings": {
         "app": "Paramètres de l'application",
@@ -80,7 +81,8 @@
             "changeFailed": "Impossible de changer la langue",
             "managedByIOS": "Géré par iOS",
             "iosSettingsHint": "Modifiez la langue de cette application dans les réglages d’iOS",
-            "openSettingsFailed": "Impossible d'ouvrir les réglages iOS"
+            "openSettingsFailed": "Impossible d'ouvrir les réglages iOS",
+            "iosSubtitle": "{{language}} · {{managedBy}}"
         },
         "addServer": "Appuyez pour ajouter un serveur",
         "title": "Paramètres",
@@ -118,6 +120,8 @@
         "notifications": {
             "title": "Notifications",
             "subtitle": "Minuteurs de repos, objectifs de jeûne et rappels de prise de médicaments."
-        }
+        },
+        "lastSynced": "Dernière synchronisation {{time}}",
+        "shareReportFailed": "Échec de partage du rapport de diagnostic : {{error}}"
     }
 }
