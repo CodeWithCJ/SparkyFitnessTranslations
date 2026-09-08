@@ -1,7 +1,7 @@
 {
     "common": {
         "save": "Speichern",
-        "saving": "Speichern..",
+        "saving": "Speichern…",
         "back": "Zurück",
         "showLess": "Weniger anzeigen",
         "learnMore": "Mehr erfahren",
@@ -16,8 +16,8 @@
         "delete": "Löschen",
         "collapseSection": "Einklappen",
         "expandSection": "Ausklappen",
-        "itemCount_one": "Gegenstand",
-        "itemCount_other": "Gegenstände",
+        "itemCount_one": "{{count}} Gegenstand",
+        "itemCount_other": "{{count}} Gegenstände",
         "off": "Aus",
         "openSelectionMenu": "Menü öffnen",
         "selectOptionHint": "Doppelklicken um die Option zu wählen",
@@ -26,8 +26,8 @@
         "discardChanges": "Änderungen verwerfen",
         "loadMore": "Mehr laden",
         "edit": "Bearbeiten",
-        "connectionRetry": "Bitte Verbindung prüfen und erneut versuchen",
-        "deleteItemTitle": "Löschen",
+        "connectionRetry": "Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+        "deleteItemTitle": "{{title}} löschen?",
         "tryAgain": "Bitte erneut versuchen.",
         "yes": "Ja",
         "no": "Nein",
@@ -76,12 +76,12 @@
             "managedByIOS": "Verwaltet von iOS",
             "iosSettingsHint": "App-Sprache in iOS Settings ändern",
             "openSettingsFailed": "iOS Einstellungen konnten nicht geändert werden",
-            "iosSubtitle": "Sprache verwaltetVon"
+            "iosSubtitle": "{{language}} · {{managedBy}}"
         },
-        "lastSynced": "Zuletzt synchronisiert",
+        "lastSynced": "Zuletzt synchronisiert {{time}}",
         "addServer": "Klicken um Server hinzuzufügen",
         "title": "Einstellungen",
-        "shareReportFailed": "Teilen des Diagnoereports fehlgeschlagen",
+        "shareReportFailed": "Teilen des Diagnoereports fehlgeschlagen: {{error}}",
         "serverConnected": "Server Einstellungen. Verbunden.",
         "serverConnectionFailed": "Server Einstellungen. Verbindung fehlgeschlagen.",
         "serverNotConfigured": "Server Einstellungen. Kein Server konfiguriert.",
@@ -111,6 +111,41 @@
         },
         "liquidGlass": {
             "title": "Liquid Glass Navigation"
+        },
+        "notifications": {
+            "title": "Benachrichtigungen",
+            "subtitle": "Ruhezeiten-Timer, Fastenziele und Erinnerungen an die Einnahme von Medikamenten."
+        },
+        "haptics": {
+            "title": "Haptisches Feedback",
+            "subtitle": "Leichte Vibrationen für Timer und Bestätigungen."
+        },
+        "cameraShutter": {
+            "title": "Kameraauslöser",
+            "subtitle": "Beim Aufnehmen von Fotos einen Ton abspielen."
         }
+    },
+    "languageSettings": {
+        "subtitle": "Verwenden Sie die Sprache Ihres Geräts oder wählen Sie eine Sprache für SparkyFitness aus."
+    },
+    "navigation": {
+        "settings": "Einstellungen"
+    },
+    "medications": {
+        "schedule": {
+            "doseOverride": "Dosisüberschreitung ({{unit}})",
+            "withMeal": "Zum Essen"
+        },
+        "types": {
+            "injection": "Injektion",
+            "drops": "Tropfen"
+        },
+        "mealRelation": {
+            "awayFromMeals": "Außerhalb einer Mahlzeit"
+        }
+    },
+    "mealBuilder": {
+        "totalAmount": "Gesamtbetrag ({{unit}}) *",
+        "servingUnit": "Portion"
     }
 }
