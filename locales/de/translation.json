@@ -3406,7 +3406,9 @@
             "asNeededHint": "Tippen Sie hier, um eine Dosis jetzt zu protokollieren (kein fester Zeitplan oder heute nicht fällig).",
             "adherenceTitle": "Übersicht über die Einhaltung",
             "editLogged": "Gespeicherte Dosis bearbeiten",
-            "takenAt": "Aufgenommen in"
+            "takenAt": "Aufgenommen in",
+            "ring14Day": "14-Tage",
+            "logShot": "Injektion loggen"
         },
         "insights": {
             "title": "Nebenwirkungen Einsichten & Hinweise",
@@ -3516,7 +3518,12 @@
             "context": "Kontext / Notizen",
             "contextPlaceholder": "z.B. vier Stunden nach meiner Abenddosis aufgetreten.",
             "bristol": "Stuhlgangprotokoll (Bristol-Stuhlskala)",
-            "bristolType": "Bristol Typ {{n}}"
+            "bristolType": "Bristol Typ {{n}}",
+            "calendarDescription": "Häufigkeit und Intensität der Symptom-Einträge der letzten 30 Tage",
+            "clear": "Zurücksetzen",
+            "trendingUp": "Ansteigend im Vergleich zum Vorzeitraum",
+            "trendingDown": "Sinkend im Vergleich zum Vorzeitraum",
+            "dayTooltip": "{{date}}: {{count}} Einträge, max. Intensität {{severity}}"
         },
         "fasting": {
             "complete": "Fasten vorbei - du kannst jetzt wieder essen.",
@@ -3679,7 +3686,16 @@
             "notes": "Notizen",
             "notesPlaceholder": "Vor dem Frühstück mit Wasser einnehmen. Vermeiden Sie Alkohol.",
             "photoPath": "Pillen-/Etikettenfoto URL (optional)",
-            "showAdvanced": "Erweiterte Optionen anzeigen"
+            "showAdvanced": "Erweiterte Optionen anzeigen",
+            "doctorPrefix": "Dr.",
+            "prescriberDetail": "Arzt",
+            "pharmacyDetail": "Apotheke",
+            "rxNumberDetail": "Rezeptnummer",
+            "packagingPhoto": "Pillen-/Verpackungsfoto",
+            "effectivenessDetail": "Wirksamkeit",
+            "adherenceDescriptionBefore": "Zeitpläne und tägliche Checklisten für Nicht-GLP-1-Medikamente sind aktiv. Verwalte die Zeitplanregeln unten und trage die tägliche Einnahme ein von",
+            "todayTab": "Heute",
+            "adherenceDescriptionAfter": "Tab."
         },
         "schedule": {
             "subheading": "Konfiguriere Erinnerungen und Einnahmeregeln",
@@ -3773,7 +3789,16 @@
             "subtitle": "Analysieren Sie Dosiskorrelationen, Nebenwirkungen und Adhärenztrends.",
             "title": "Medikamentenbericht",
             "weightVsGoalDesc": "Visualisiert tägliche Gewichtsmessungen im Vergleich zu Ihrem Gesamtzielgewicht.",
-            "weightVsGoal": "Gewichtstrend vs. Zielgewicht ({{weightUnit}})"
+            "weightVsGoal": "Gewichtstrend vs. Zielgewicht ({{weightUnit}})",
+            "configDoseNausea": "Dosis vs. Übelkeit Karte",
+            "reducedIntake": "<strong>Reduzierte Aufnahme:</strong> Übelkeitsmomente treten an Tagen mit weniger Protein-Einträgen auf, vermutlich wegen Appetitlosigkeit.",
+            "proteinInsufficient": "Unzureichende Daten. Trage täglich Nahrungsmittel und schlechtes Befinden ein, um Korrelationen zu finden.",
+            "restBenefit": "<strong>Erholungsvorteil:</strong> Mehr Schlaf führt zu weniger Müdigkeit. Achte auf feste Schlafzeiten.",
+            "hypersomnia": "<strong>Schlafbedarf-Zusammenhang:</strong> Stärkere Müdigkeit kann zu längerem nötigen Schlaf oder Ruhephasen führen.",
+            "sleepInsufficient": "Nicht genügend Schlaf- oder Müdigkeitsdaten vorhanden, um den Zusammenhang in diesem Bereich zu berechnen.",
+            "doseDependentNausea": "<strong>Dosisabhängige Übelkeit:</strong> Höhere Dosen führen zu stärkerer Übelkeit. Besprich mögliche Dosisanpassungen oder eine aufgeteilte Tagesdosis mit deinem Arzt.",
+            "adaptationBenefit": "<strong>Gewöhnungseffekt:</strong> Keine negativen Auswirkungen erkennbar. Der Körper hat sich gut an die Dosierung angepasst, ohne Nebenwirkungen zu zeigen.",
+            "doseInsufficient": "Benötige aktive GLP-1-Dosiswerte und Übelkeits-Logs in diesem Zeitraum."
         },
         "subtype": {
             "all": "Alle",
@@ -3812,7 +3837,35 @@
         },
         "print": {
             "dates": "Berichtszeitraum:",
-            "header": "Verschreibende Medikamente Bericht"
+            "header": "Verschreibende Medikamente Bericht",
+            "name": "Name:",
+            "patient": "Patient",
+            "targetWeight": "Zielgewicht:",
+            "adherenceRate": "Einhaltungsrate:",
+            "reportDate": "Berichtsdatum:",
+            "activeMedications": "Aktuelle Medikamente",
+            "medication": "Medikament",
+            "type": "Typ",
+            "strength": "Wirkstärke",
+            "frequency": "Häufigkeit",
+            "prescriber": "Arzt",
+            "titrationSteps": "Dosierungs- & Reduktionsschritte",
+            "dose": "Dosis",
+            "startDate": "Startdatum",
+            "weeks": "Wochen",
+            "status": "Status",
+            "note": "Notiz",
+            "recentInjections": "Letzte Injektionen",
+            "date": "Datum",
+            "doseMg": "Dosis (mg)",
+            "injectionSite": "Einstichstelle",
+            "notes": "Notizen",
+            "recentSymptoms": "Letzte Symptom-Einträge",
+            "symptom": "Symptom",
+            "severity": "Intensität",
+            "notesContext": "Notizen / Kontext",
+            "dateRangeSeparator": "zu",
+            "notSet": "Nicht festgelegt"
         },
         "scheduleTypes": {
             "cyclic": "Zyklisch (Ein/Aus)",
@@ -4742,5 +4795,53 @@
         "rpe": "RPE",
         "type": "Typ",
         "weight": "Gewicht"
+    },
+    "markdownView": {
+        "externalImage": "Externes Bild",
+        "imageFromHost": "Bild von {{host}}",
+        "imageBlockedFrom": "Externes Bild blockiert: {{host}}",
+        "imageBlocked": "Externes Bild blockiert"
+    },
+    "markdownEditor": {
+        "collapse": "Editor minimieren",
+        "expand": "Editor erweitern",
+        "imageAlt": "Foto {{number}}",
+        "chooseImage": "Foto von diesem Artikel einfügen",
+        "insertImage": "Foto einfügen",
+        "table": "Tabelle",
+        "taskList": "Checkliste (nur Anzeige)",
+        "quote": "Zitat",
+        "strikethrough": "Durchstreichen",
+        "heading": "Überschrift",
+        "charactersRemaining": "Noch {{count}} Zeichen übrig",
+        "nothingToPreview": "Noch keine Vorschau verfügbar.",
+        "numberedList": "Nummerierte Liste",
+        "bulletList": "Aufzählungsliste",
+        "link": "Link",
+        "code": "Code",
+        "italic": "Kursiv",
+        "bold": "Fett",
+        "preview": "Vorschau",
+        "write": "Schreiben"
+    },
+    "exerciseDistances": {
+        "1Mile": "1 Meile"
+    },
+    "goalPresetDialog": {
+        "percentages": "Prozentanteile",
+        "grams": "Gramm"
+    },
+    "exerciseDisplayNames": {
+        "play": "Starten",
+        "walking": "Gehen",
+        "mixedCardio": "Gemischtes Cardio"
+    },
+    "exerciseAnalytics": {
+        "activityLogs": {
+            "all": "Trainingsverlauf & Karten",
+            "cardio": "Cardio & GPS-Aktivitätskarten",
+            "strength": "Krafttraining-Verlauf"
+        },
+        "noHeatmapData": "Keine Trainingsdaten für Heatmap verfügbar."
     }
 }
