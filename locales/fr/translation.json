@@ -2605,7 +2605,9 @@
             "takenAt": "Pris le",
             "ring14Day": "14 jours",
             "noScheduledToday": "Aucune dose programmée aujourd'hui.",
-            "noScheduledDay": "Aucune dose programmée pour ce jour."
+            "noScheduledDay": "Aucune dose programmée pour ce jour.",
+            "loggedToday": "{{completed}} doses sur {{total}} enregistrées aujourd'hui.",
+            "loggedDay": "{{completed}} doses sur {{total}} enregistrées pour cette journée."
         },
         "locations": {
             "head": "Tête",
