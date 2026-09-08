@@ -2355,5 +2355,17 @@
             "other": "Outros",
             "custom": "Nutrientes personalizados"
         }
+    },
+    "openFoodFactsContribution": {
+        "unavailable": "Para fazer contribuições, é necessário ter seus próprios alimentos personalizados, uma configuração do servidor ativada e uma conta no Open Food Facts disponível.",
+        "title": "Contribua com o Open Food Facts",
+        "introduction": "Suas informações sobre alimentos são salvas localmente. Escolha uma foto que você tirou deste produto e, em seguida, verifique exatamente o que será publicado. Preparar ou cancelar uma pré-visualização não altera o Open Food Facts.",
+        "saveAndPreview": "Salvar e visualizar a contribuição",
+        "photoLabel": "Sua própria foto do produto",
+        "photoHelp": "Use uma foto nítida da parte da frente, do rótulo nutricional ou da embalagem. A localização e outros metadados da imagem são removidos antes da publicação.",
+        "imageTypeLabel": "Conteúdo da foto",
+        "nutritionPhoto": "Rótulo nutricional",
+        "frontPhoto": "Frente do produto",
+        "packagingPhoto": "Embalagem"
     }
 }
