@@ -580,7 +580,7 @@
             "tdeeGoal": "Geräteprojektion",
             "tdeeGoalDescription": "Wie MyFitnessPal mit Apple Watch. SparkyFitness projiziert Ihren ganztägigen Verbrauch, indem es Ihre aktuellen Gerätedaten auf Mitternacht hochrechnet. Die Anpassung = Projektion − TDEE.",
             "title": "Tägliche Kalorienzielanpassung",
-            "tdeeActivityHint": "Das Aktivitätsniveau wird nur dann vom Fallback-Mechanismus „BMR + aktive Kalorien“ herangezogen, wenn keine Gesamtwerte des Geräts verfügbar sind."
+            "tdeeActivityHint": "Das Aktivitätsniveau wird nur dann vom Fallback-Mechanismus „BMR + aktive Kalorien“ verwendet, wenn keine Gesamtwerte des Geräts verfügbar sind."
         },
         "dataImport": {
             "checkin": {
@@ -826,8 +826,8 @@
             "bmrSourceAlgorithm": "Algorithmus",
             "healthConnectProjectionSource": "Health Connect Kalorien gesamt",
             "legacyProjectionSource": "Gerät Projektion",
-            "goalModeTarget": "Zielmodus-Zielwert",
-            "fallbackProjectionSource": "Grundumsatz (BMR) + aktive Kalorien (Fallback)"
+            "goalModeTarget": "Zielmodus Ziel",
+            "fallbackProjectionSource": "BMR + Ausweichwert für aktive Kalorien"
         },
         "editExerciseEntryDialog": {
             "setLabel": "Satz",
@@ -3243,7 +3243,10 @@
         "saveSuccessDesc": "Berechnungseinstellungen erfolgreich gespeichert!",
         "selectBmrAlgorithm": "Wählen Sie den Grundumsatz-Algorithmus",
         "selectBodyFatAlgorithm": "Wählen Sie Körperfett aus Algorithmus",
-        "selectEnergyUnitPlaceholder": "Energieeinheit auswählen"
+        "selectEnergyUnitPlaceholder": "Energieeinheit auswählen",
+        "bodyFatAlgorithmOptions": {
+            "usNavy": "U.S. Navy"
+        }
     },
     "sync": {
         "syncAll": "Synchronisiere alle aktiven Anbieter",
@@ -3931,6 +3934,9 @@
             "monthly": "Monatlich",
             "prn": "Nach Bedarf (PRN)",
             "weekly": "Bestimmte Wochentage"
+        },
+        "noSelection": {
+            "title": "keine Medikation ausgewählt"
         }
     },
     "onboarding": {
