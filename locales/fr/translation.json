@@ -2607,7 +2607,20 @@
             "noScheduledToday": "Aucune dose programmée aujourd'hui.",
             "noScheduledDay": "Aucune dose programmée pour ce jour.",
             "loggedToday": "{{completed}} doses sur {{total}} enregistrées aujourd'hui.",
-            "loggedDay": "{{completed}} doses sur {{total}} enregistrées pour cette journée."
+            "loggedDay": "{{completed}} doses sur {{total}} enregistrées pour cette journée.",
+            "loggedActivity": "Enregistré aujourd'hui",
+            "loggedActivityDescription": "Tout ce que vous avez pris ou omis de prendre à cette date.",
+            "loadingHistory": "Chargement de l'historique…",
+            "addNote": "Ajouter une note...",
+            "note": "Note:",
+            "injectionDueToday": "Injection de {{name}} — prévue pour aujourd'hui",
+            "injectionScheduled": "Injection de {{name}} — programmée",
+            "scheduledAt": "Programmé à {{time}}",
+            "anyTimeToday": "À tout moment aujourd'hui",
+            "logShot": "Plan d'ensemble",
+            "taken": "Prise",
+            "prnTaken": "Pris au besoin",
+            "editEntryTime": "Modifier l'heure de saisie"
         },
         "locations": {
             "head": "Tête",
@@ -3445,5 +3458,38 @@
         "checklist": {
             "week": "Semaine {{n}}"
         }
+    },
+    "openFoodFactsContribution": {
+        "title": "Contribuez à Open Food Facts",
+        "unavailable": "Les contributions nécessitent vos propres aliments personnalisés, un paramètre de serveur activé et un compte Open Food Facts disponible.",
+        "introduction": "Les contributions nécessitent vos propres aliments personnalisés, un paramètre de serveur activé et un compte Open Food Facts disponible.",
+        "saveAndPreview": "Enregistrer et prévisualiser la contribution",
+        "photoLabel": "Votre propre photo de produit",
+        "photoHelp": "Utilisez une photo nette de la face avant, de l'étiquette nutritionnelle ou de l'emballage. La localisation et les autres métadonnées de l'image sont supprimées avant la publication.",
+        "imageTypeLabel": "Contenu photographique",
+        "nutritionPhoto": "Étiquette nutritionnelle",
+        "frontPhoto": "Face avant du produit",
+        "packagingPhoto": "Conditionnement",
+        "imageError": "Choisissez une photo nette au format JPEG, PNG ou WebP de moins de 20 Mo, mesurant au moins 640 pixels sur son côté le plus long et 160 pixels sur son côté le plus court, et ne dépassant pas 40 mégapixels.",
+        "preview": "Prévisualiser la contribution",
+        "preparing": "Préparation de l'aperçu…",
+        "previewError": "La prévisualisation n'a pas pu être préparée.",
+        "previewTitle": "Examinez cette contribution précise.",
+        "existingProduct": "Cette contribution met à jour un produit public existant. Vérifiez les informations actuelles avant de confirmer.",
+        "newProduct": "Cette contribution crée un bien public.",
+        "personalAccount": "Votre compte personnel Open Food Facts",
+        "globalAccount": "Le compte Open Food Facts sur serveur partagé",
+        "imageAlt": "Photo à publier",
+        "fieldsCaption": "Chaque champ qui sera publié",
+        "field": "Champ",
+        "value": "Valeur exacte",
+        "dataConsent": "J'ai saisi ces données à partir de l'emballage physique, vérifié les valeurs exactes ci-dessus et j'accepte de les publier sous les licences ODbL et Database Contents License.",
+        "imageConsent": "J'ai pris cette photo, je détiens les droits pour la partager et j'accepte de la publier sous licence CC BY-SA.",
+        "publish": "Publier cette contribution",
+        "publishing": "Édition…",
+        "publishError": "La publication n'a pas pu être confirmée. Vérifiez le produit avant de préparer une nouvelle contribution.",
+        "expired": "Cet aperçu a expiré. Demandez et examinez un nouvel aperçu.",
+        "successTitle": "Contribution publiée",
+        "partialTitle": "Photo publiée ; données produit non confirmées"
     }
 }
