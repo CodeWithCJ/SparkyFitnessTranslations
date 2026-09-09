@@ -4900,5 +4900,10 @@
             "strength": "Krafttraining-Verlauf"
         },
         "noHeatmapData": "Keine Trainingsdaten für Heatmap verfügbar."
+    },
+    "openFoodFactsContribution": {
+        "title": "Zu Open Food Facts hinzufügen",
+        "unavailable": "Für Beiträge werden ein eigenes benutzerdefiniertes Lebensmittel, eine aktivierte Servereinstellung und ein verfügbares Open Food Facts-Konto benötigt.",
+        "introduction": "Dein Lebensmittel ist lokal gespeichert. Wähle ein Foto aus, das du von diesem Produkt aufgenommen hast, und überprüfe anschließend genau, welche Informationen veröffentlicht werden. Das Erstellen oder Abbrechen einer Vorschau führt zu keinen Änderungen bei Open Food Facts."
     }
 }
