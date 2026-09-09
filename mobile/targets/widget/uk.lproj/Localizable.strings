@@ -1,1 +1,17 @@
-
+"widget.calorie.name" = "Калорії";
+"widget.calorie.description" = "Скільки калорій ви спожили сьогодні.";
+"widget.macro.name" = "БЖВ";
+"widget.macro.description" = "Білки, жири та вуглеводи за сьогодні.";
+"widget.kcal_left" = "ккал залишилось";
+"widget.kcal" = "ккал";
+"widget.food" = "Спожито";
+"widget.burned" = "Спалено";
+"widget.goal" = "Ціль";
+"widget.protein" = "Білок";
+"widget.carbs" = "Вуглеводи";
+"widget.fat" = "Жири";
+"widget.search_food" = "Знайти продукт";
+"widget.scan_barcode" = "Сканувати штрихкод";
+"widget.grams" = "%@ г";
+"widget.a11y.kcal_left" = "Залишилось %@ ккал";
+"widget.a11y.kcal" = "%@ ккал";
