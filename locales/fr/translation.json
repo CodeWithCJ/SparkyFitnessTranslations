@@ -550,7 +550,9 @@
             "updateProfile": "Mise à jour du profil",
             "weightTrend": "Tendance du poids",
             "adaptiveTdee": "TDEE adaptatif",
-            "burnedEnergyBreakdown": "Répartition de l'énergie dépensée :"
+            "burnedEnergyBreakdown": "Répartition de l'énergie dépensée :",
+            "profileIncompleteDesc": "Le poids, la taille et l'âge sont manquants. Les objectifs caloriques pourraient être inexacts.",
+            "projectedBurn": "Dépense énergétique quotidienne totale estimée"
         },
         "editExerciseEntryDialog": {
             "setLabel": "Définir",
@@ -731,8 +733,18 @@
                 "activityDetails": "Détails de l'activité",
                 "date": "Date",
                 "exercise": "Exercice",
-                "notes": "Notes"
-            }
+                "notes": "Notes",
+                "preset": "Modèle",
+                "sets": "Séries"
+            },
+            "noDataToImport": "Aucune donnée valide à importer.",
+            "noFile": "Veuillez sélectionner un fichier CSV à importer.",
+            "parseError": "Échec de l'analyse du CSV : {{error}}",
+            "preview": "Aperçu des entrées à importer",
+            "processFile": "Traiter le fichier",
+            "standardValuesDescription": "Lors de l'importation de définitions d'exercices, assurez-vous que les valeurs pour « Niveau », « Force » et « Mécanique » correspondent à ces options standard.",
+            "standardValuesForDropdowns": "Valeurs standard pour les listes déroulantes de définition d'exercices",
+            "title": "Importer l'historique des entrées d'exercices"
         }
     },
     "workoutPresetsManager": {
@@ -2919,7 +2931,11 @@
             "servingUnit_gummy_one": "gummy",
             "servingUnit_gummy_many": "gummies",
             "servingUnit_gummy_other": "gummies",
-            "customGlp1": "GLP-1 personnalisé / Autre..."
+            "customGlp1": "GLP-1 personnalisé / Autre...",
+            "pharmacyDetail": "Pharmacie",
+            "packagingPhoto": "Photo du comprimé/de l'emballage",
+            "effectivenessDetail": "Efficacité",
+            "todayTab": "Aujourd'hui"
         },
         "schedule": {
             "heading": "Horaires et rappels",
@@ -2999,7 +3015,20 @@
             "kpiSymptomCount": "Effets secondaires signalés",
             "kpiSymptomCountDetail": "Nombre de symptômes distincts prédéfinis ou personnalisés enregistrés.",
             "nauseaVsDose": "Sévérité des nausées vs. dose de médicament GLP-1",
-            "nauseaVsDoseDesc": "Suit la sévérité maximale des nausées (barres) par rapport au calendrier d'administration des doses injectées (courbe)."
+            "nauseaVsDoseDesc": "Suit la sévérité maximale des nausées (barres) par rapport au calendrier d'administration des doses injectées (courbe).",
+            "configWeightGoal": "Graphique : Poids vs Objectif",
+            "configMedicationLog": "Tableau du journal des médicaments",
+            "configHydrationConstipation": "Carte Hydratation vs. Constipation",
+            "configProteinNausea": "Carte Protéine vs Nausée",
+            "configSleepFatigue": "Carte Sommeil vs Fatigue",
+            "configDoseNausea": "Carte Taille de la Dose vs Nausée",
+            "chartNauseaSeverity": "Gravité des Nausées",
+            "chartDoseMg": "Dose (mg)",
+            "chartMedicationDose": "Dose du médicament (mg)",
+            "chartWeight": "Poids",
+            "chartTargetWeight": "Poids Cible",
+            "hydrationInsufficient": "Données insuffisants pour cartographier la relation. Continuez à suivre l'hydratation et les symptômes.",
+            "proteinTolerance": "<strong>Tolérance à la protéine :</strong> Un apport quotidien en protéines plus élevé est associé à une moindre intensité des nausées. Continuez à consommer des repas légers et riches en protéines."
         },
         "subtype": {
             "all": "Tout",
@@ -3047,7 +3076,8 @@
         },
         "print": {
             "dates": "Période de rapport :",
-            "header": "Rapport sur les médicaments prescrits"
+            "header": "Rapport sur les médicaments prescrits",
+            "name": "Nom :"
         }
     },
     "chat": {
