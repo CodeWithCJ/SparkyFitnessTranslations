@@ -1033,7 +1033,7 @@
         "snacks": "Mellommåltider",
         "confirm": "Bekreft",
         "actions": "Handlinger",
-        "back": "Bakside",
+        "back": "Tilbake",
         "bulkDeleteTitle": "Slette {{selectedCount}} {{entityName}}?",
         "close": "Lukk",
         "collapse": "Skjul",
