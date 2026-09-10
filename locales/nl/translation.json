@@ -116,11 +116,11 @@
             "eaten": "gegeten",
             "burned": "verbrand",
             "burnedCaloriesBreakdown": "Verbrande calorieën overzicht:",
-            "otherExerciseCalories": "Andere oefening: {{exerciseCalories}} cal",
-            "activeCalories": "Actieve calorieën: {{activeCaloriesFromExercise}} cal",
-            "stepsCalories": "Stappen: {{dailySteps}} = {{stepsCalories}} cal",
-            "bmrCalories": "BMR: {{bmr}} cal",
-            "totalCaloriesBurned": "Totaal: {{totalCaloriesBurned}} cal",
+            "otherExerciseCalories": "Andere oefening: {{exerciseCalories}} {{energyUnit}}",
+            "activeCalories": "Actieve calorieën: {{activeCaloriesFromExercise}} {{energyUnit}}",
+            "stepsCalories": "Stappen: {{dailySteps}} = {{stepsCalories}} {{energyUnit}}",
+            "bmrCalories": "BMR: {{bmr}} {{energyUnit}}",
+            "totalCaloriesBurned": "Totaal: {{totalCaloriesBurned}} {{energyUnit}}",
             "goal": "doel",
             "caloriesBurnedBreakdownTitle": "Verbrande calorieën overzicht",
             "netCalories": "Netto calorieën: {{netCalories}}",
@@ -344,7 +344,7 @@
             "clearData": "Gegevens wissen",
             "confirmImport": "Bevestig en importeer {{count}} vermeldingen",
             "copied": "Gekopieerd!",
-            "copyTooltip": "Kopieer ",
+            "copyTooltip": "Kopieer '{{value}}'",
             "customFieldsInfo": "'Activiteitsveld' en ‘waarde’ zijn aangepaste velden die u aan elke trainingsnotitie kunt toevoegen.",
             "dataCleared": "Alle verwerkte gegevens zijn gewist.",
             "description": "Upload een CSV-bestand met uw eerdere trainingsgegevens. Het systeem maakt nieuwe oefeningen of voorinstellingen aan als deze nog niet bestaan, en importeert uw gegevens, sets en activiteitsdetails.",
@@ -353,7 +353,7 @@
             "emptyFile": "Het geselecteerde bestand is leeg.",
             "importSuccess": "De historische trainingsgegevens zijn succesvol geïmporteerd.",
             "invalidDate": "Rij {{rowNum}}: ongeldige datumnotatie voor ‘{{date}}’. verwacht: {{format}}.",
-            "invalidSetNumber": "Rij {{rowNum}}: ongeldig setnummer ",
+            "invalidSetNumber": "Rij {{rowNum}}: ongeldig setnummer '{{value}}'.",
             "noDataToImport": "Er zijn geen geldige gegevens om te importeren.",
             "noFile": "Selecteer een CSV-bestand om te importeren.",
             "parseError": "CSV kon niet worden verwerkt: {{error}}",
@@ -371,7 +371,7 @@
             },
             "title": "Historische trainingsgegevens importeren",
             "unitsHint": "Verwachte eenheden in CSV: gewicht: {{weightUnit}}; afstand: {{distanceUnit}}; duur: minuten; rusttijd: seconden; verbrande calorieën: calorieën",
-            "validationError": "Rij {{rowNum}}: verplicht veld ontbreekt ",
+            "validationError": "Rij {{rowNum}}: Het verplichte veld ‘entry_date’ of ‘exercise_name’ ontbreekt. Rij wordt overgeslagen.",
             "copiedToClipboard": "'{{value}}' is naar het klembord gekopieerd.",
             "importError": "Het importeren van de trainingsgeschiedenis is mislukt. Probeer het nog eens.",
             "partialImportError": "Sommige items konden niet worden geïmporteerd: {{details}}"
@@ -1233,7 +1233,7 @@
             "invalidKeyLengthWarning": "Als u de foutmelding \"Ongeldige sleutellengte\" krijgt, zorg er dan voor dat uw encryptiesleutel in de omgevingsvariabelen van de server 64 hex is.",
             "openFoodFacts": {
                 "baseUrlLabel": "Basis-URL (optioneel)",
-                "baseUrlHelp": "Laat dit veld leeg om de openbare Open Food Facts-server te gebruiken, of stel hier uw eigen, zelf gehoste instantie in."
+                "baseUrlHelp": "Laat dit veld leeg om de openbare Open Food Facts-server te gebruiken, of stel hier uw eigen, zelf gehoste instantie in. Voor geauthenticeerde bijdragen is HTTPS vereist."
             },
             "yazio": {
                 "unofficialApiTitle": "⚠️ Onofficiële API — Gebruik op eigen risico",
@@ -1484,7 +1484,7 @@
             "createSuccess": "De nieuwe API-sleutel is succesvol gegenereerd! Kopieer deze nu, want hij wordt niet nogmaals weergegeven.",
             "deleteError": "Het verwijderen van de API-sleutel is mislukt",
             "deleteSuccess": "API-sleutel succesvol verwijderd!",
-            "descriptionLabel": "Omschrijving ",
+            "descriptionLabel": "Beschrijving (bijv. ‘iPhone-snelkoppeling voor Gezondheid’)",
             "disabled": "Uitgeschakeld",
             "expires": "Verloopt:",
             "expiresIn": "Verloopt over",
@@ -1493,7 +1493,7 @@
             "loadError": "API-sleutels konden niet worden geladen",
             "never": "Nooit",
             "newKeyGenerated": "Nieuwe API-sleutel aangemaakt!",
-            "placeholder": "Beschrijving (bijv., ",
+            "placeholder": "Beschrijving (bijv. ‘iPhone-snelkoppeling voor Gezondheid’)",
             "updateError": "Het bijwerken van de API-sleutel is mislukt",
             "updateSuccess": "De status van de API-sleutel is succesvol bijgewerkt!"
         },
@@ -1564,7 +1564,7 @@
             "description": "Kies of elk voedingsdoel een minimum is dat moet worden bereikt, een maximum dat niet mag worden overschreden, of een streefbereik dat moet worden gehaald"
         },
         "customNutrients": {
-            "title": "Op maat gemaakte voedingsstoffen",
+            "title": "Op maat gemaakte voedingsstoffen beheer",
             "subtitle": "Beheer uw aangepaste definities van voedingsstoffen",
             "failedToAddNutrient": "Het toevoegen van de voedingsstof is mislukt."
         },
@@ -1642,7 +1642,7 @@
             "activityNotMuch": "Inactief (×1,2)",
             "adaptiveActivityHint": "In de adaptieve modus fungeert deze instelling als een noodoplossing totdat u over voldoende trackinggegevens beschikt.",
             "adaptiveGoal": "Adaptief doel",
-            "adaptiveGoalDescription": "Het ",
+            "adaptiveGoalDescription": "Uw caloriedoel wordt berekend op basis van je gemeten energieverbruik, door uw geregistreerde calorie-inname te vergelijken met uw gewichtsontwikkeling van de afgelopen 28 dagen. Dit is de meest nauwkeurige methode zodra u een paar weken lang consequent uw gewicht en voedselinname hebt bijgehouden.",
             "allowNegativeAdjustment": "Negatieve aanpassing toestaan (strafpunten bij een energieverbruik dat lager is dan het TDEE)",
             "dynamicGoal": "Dynamisch doel",
             "dynamicGoalDescription": "Uw caloriedoel wordt dynamisch aangepast op basis van uw dagelijkse activiteitsniveau (bijv. lichaamsbeweging, aantal stappen). Dit is ideaal voor actieve mensen of voor mensen wier activiteitsniveau van dag tot dag varieert.",
@@ -1654,7 +1654,7 @@
             "tdeeGoal": "Volg apparaat",
             "tdeeGoalDescription": "Net als MyFitnessPal met de Apple Watch. SparkyFitness berekent uw totale energieverbruik over de hele dag door de huidige gegevens van uw apparaat door te trekken tot middernacht. De aanpassing = prognose − TDEE.",
             "title": "Aanpassing van het dagelijkse caloriedoel",
-            "tdeeActivityHint": "Het activiteitsniveau wordt alleen gebruikt door de BMR + actieve calorieën-reserveoptie wanneer er geen totaalcijfer van het apparaat beschikbaar is."
+            "tdeeActivityHint": "Als er geen totaal van uw apparaat beschikbaar is, wordt teruggevallen op BMR + actieve calorieën."
         },
         "dataImport": {
             "checkin": {
@@ -1754,7 +1754,7 @@
         "passkey": {
             "add": "Passkey toevoegen",
             "addedOn": "Toegevoegd op",
-            "description": "Met passkeys kunt u op een veilige manier en zonder wachtwoord aanmelden via uw apparaat",
+            "description": "Met passkeys kunt u op een veilige manier en zonder wachtwoord aanmelden via uw apparaat.",
             "namePlaceholder": "bijv. mijn MacBook, mijn werktelefoon",
             "newName": "Naam van de passkey (optioneel)",
             "noPasskeys": "Er zijn nog geen passkeys geregistreerd.",
@@ -2001,7 +2001,7 @@
         "copyFamilyMemberLabel": "Gezinslid",
         "copyFamilyMemberPlaceholder": "Selecteer een gezinslid",
         "copyFamilyNoConnections": "Er zijn geen geautoriseerde gezinsleden gevonden.",
-        "copyFamilyNoConnectionsHelp": "Uw gezinsleden moeten uw toestemming geven ",
+        "copyFamilyNoConnectionsHelp": "Je gezinsleden moeten je zowel de machtiging “Dagboek beheren” als “Mijn voedsel- en maaltijdbibliotheek gebruiken” verlenen om het delen mogelijk te maken.",
         "copyFamilyNoDate": "Kies geldige begin- en einddatums.",
         "copyFamilyNoMember": "Kies een gezinslid.",
         "copyFamilyTabFrom": "Kopieer van gezin",
@@ -2058,12 +2058,12 @@
         "mealUpdatedSuccess": "Maaltijd succesvol bijgewerkt!",
         "mealCreatedSuccess": "Maaltijd succesvol aangemaakt!",
         "saveMealError": "Maaltijd opslaan mislukt: {{error}}",
-        "mealName": "Maaltijdnaam",
+        "mealName": "Naam van de Maaltijd",
         "mealDescription": "Beschrijving (optioneel)",
         "mealDescriptionPlaceholder": "bv., mij go-to ochtendmaaltijd",
         "shareWithPublic": "Deel openbaar",
         "shareWithPublicNote": "Opmerking: alle voedingsmiddelen in deze maaltijd worden gemarkeerd als openbaar.",
-        "foodsInMeal": "Voedingsmiddelen in maaltijd",
+        "foodsInMeal": "Voedingsmiddelen in Maaltijd",
         "noFoodsInMeal": "Nog geen voedingsmiddelen aan deze maaltijd toegevoegd.",
         "addFoodToMealTitle": "Voeg voedingsmiddel toe aan maaltijd",
         "addFoodButton": "Voeg voedingsmiddel toe",
@@ -2073,7 +2073,7 @@
         "totalTab": "Totaal",
         "totalNutritionLabel": "Totale voedingswaarden:",
         "fullRecipeNutritionLabel": "Voedingswaarde van het recept:",
-        "totalServings": "Totaal aantal porties",
+        "totalServings": "Totaal Aantal Porties",
         "servingSize": "Portiegrootte",
         "defaultServingSize": "Standaard portiegrootte",
         "consumedQuantity": "Verbruikte hoeveelheid",
@@ -2098,7 +2098,8 @@
         "linkedMealServingInfo": "Opbrengst: {{totalServings}} × {{servingSize}} {{servingUnit}}",
         "mealAddedToMeal": "{{name}} is aan de maaltijd toegevoegd.",
         "updateEntryButton": "Item bijwerken",
-        "updateLinkedMeal": "Bijwerken"
+        "updateLinkedMeal": "Bijwerken",
+        "totalDishAmount": "Totale hoeveelheid van de maaltijd"
     },
     "nutritionCharts": {
         "protein": "Eiwit",
@@ -2473,7 +2474,7 @@
         "addAnotherSleepSession": "Voeg nog een slaapsessie toe",
         "savingSleep": "Slaap opslaan...",
         "saveSleep": "Slaap opslaan",
-        "sleepEntryFor": "Slaapgegevens voor",
+        "sleepEntryFor": "Slaapgegevens voor {{date}}",
         "cancel": "Annuleren",
         "save": "Opslaan",
         "edit": "Bewerken",
@@ -4261,7 +4262,7 @@
         "title": "Gezondheidsgegevens importeren",
         "uploadCSV": "CSV uploaden",
         "validationError": "Niets om te importeren",
-        "copiedValue": "Update healthDataImport.copiedValue op weblate"
+        "copiedValue": "'{{value}}' gekopieerd."
     },
     "diaryCsvImport": {
         "fileTooLarge": "Het geselecteerde bestand is te groot. Upload alstublieft een bestand dat kleiner is dan 25 MB.",
@@ -4269,7 +4270,7 @@
         "actions": "Acties",
         "addRow": "Rij toevoegen",
         "clearData": "Data wissen",
-        "dateMealTypeRequired": "Elke rij heeft een ",
+        "dateMealTypeRequired": "Elke rij heeft een datum en maaltijdtype.",
         "deleteRow": "Rij verwijderen",
         "downloadTemplate": "Download sjabloon",
         "emptyFile": "Het geselecteerde bestand is leeg.",
@@ -4283,7 +4284,7 @@
         "matchScope": "Koppel de namen van gerechten aan",
         "matchScopeDescription": "Een overeenkomst met een food_name buiten de aangevinkte bereiken wordt genegeerd, en in plaats daarvan wordt er een nieuw voedingsmiddel voor u aangemaakt (op basis van de voedingswaardekolommen van de rij).",
         "mealType": "Maaltijd",
-        "overrideDescription": "Als een rij overeenkomt met een van uw eigen voedingsmiddelen, pas dan deze voedingsmiddelvariant aan",
+        "overrideDescription": "Wanneer een rij overeenkomt met een van je eigen voedingsmiddelen, vervang dan de opgeslagen voedingswaarden van die voedingsmiddelvariant door de geïmporteerde waarden. Dit geldt alleen voor ‘Mijn items’ — de opties ‘Gezin’ en ‘Openbaar’ zijn uitgeschakeld.",
         "overrideLabel": "Bestaande voedingswaarden overschrijven met geïmporteerde waarden",
         "parseText": "Tekst verwerken",
         "pasteFirst": "Plak eerst wat CSV-gegevens.",
@@ -4388,7 +4389,7 @@
     },
     "auth": {
         "emailExists": "Er bestaat al een gebruiker met dit e-mailadres.",
-        "invalidOrigin": "Toegang geweigerd: deze verbinding",
+        "invalidOrigin": "Toegang geweigerd: De herkomst van deze verbinding wordt niet herkend. Als u verbinding maakt vanuit een lokaal netwerk (LAN), moet dit adres expliciet als vertrouwd worden aangemerkt.",
         "loginError": "Inloggen is mislukt. Controleer uw inloggegevens.",
         "loginSuccess": "Inloggen gelukt!",
         "magicLinkError": "Het opvragen van de magische link is mislukt.",
@@ -4713,5 +4714,41 @@
         "rpe": "RPE",
         "type": "Type",
         "weight": "gewicht"
+    },
+    "healthMetrics": {
+        "steps": "Stappen",
+        "totalCalories": "Totale Calorieën",
+        "heartRate": "Hartslag",
+        "weight": "Gewicht",
+        "bloodPressure": "Bloeddruk",
+        "nutrition": "Voeding",
+        "sleepSession": "Slaapsessie",
+        "stress": "Stress",
+        "basalBodyTemperature": "Basale Lichaamstemperatuur",
+        "basalMetabolicRate": "Basale Stofwisseling",
+        "bloodGlucose": "Bloedglucose",
+        "bodyFat": "Lichaamsvet",
+        "bodyTemperature": "Lichaamstemperatuur",
+        "distance": "Afstand",
+        "floorsClimbed": "Beklommen Verdiepingen",
+        "height": "Lengte",
+        "hydration": "Hydratatie",
+        "leanBodyMass": "Vetvrije Massa",
+        "respiratoryRate": "Ademhalingsfrequentie",
+        "restingHeartRate": "Rusthartslag",
+        "speed": "Snelheid",
+        "power": "Vermogen",
+        "elevationGained": "Hoogtewinst",
+        "boneMass": "Botmassa",
+        "cyclingPedalingCadence": "Trapcadans",
+        "stepsCadence": "Pascadans",
+        "bloodOxygenSaturation": "Zuurstofsaturatie Bloed",
+        "bloodAlcoholContent": "Alcoholpromillage",
+        "appleMoveTime": "Apple Beweegtijd",
+        "appleExerciseTime": "Apple Trainingstijd",
+        "appleStandTime": "Apple Statijd"
+    },
+    "markdownEditor": {
+        "collapse": "Samenvouwen"
     }
 }
