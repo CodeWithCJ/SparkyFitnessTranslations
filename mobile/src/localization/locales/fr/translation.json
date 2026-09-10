@@ -140,7 +140,13 @@
         "details": "Détails",
         "dashboard": "Tableau de bord",
         "add": "Ajouter",
-        "mealTypes": "Types de repas"
+        "mealTypes": "Types de repas",
+        "library": "Bibliothèque",
+        "presets": "Préréglages",
+        "foods": "Aliments",
+        "meals": "Menus",
+        "exercises": "Exercices",
+        "diary": "Journal"
     },
     "familyDiary": {
         "title": "Journaux de famille",
@@ -219,7 +225,14 @@
             "timerInApp": "La minuterie émettra tout de même une alerte dans l'application."
         },
         "exactAlarm": {
-            "title": "Alertes en temps voulu"
+            "title": "Alertes en temps voulu",
+            "message": "Android retarde les alertes programmées si SparkyFitness n'est pas autorisé à définir des alarmes précises. Activez « Alarmes et rappels » pour que les minuteurs de repos et les rappels de prise de médicaments se déclenchent à l'heure prévue.",
+            "notNow": "Pas maintenant",
+            "openSettings": "Ouvrir les paramètres"
+        },
+        "rest": {
+            "title": "Repos complet",
+            "nextSetTitle": "Repos complet : préparation de la série suivante"
         }
     },
     "activeWorkout": {
