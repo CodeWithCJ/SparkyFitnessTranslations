@@ -1,1 +1,1578 @@
-{}
+{
+    "common": {
+        "add": "Legg til",
+        "cancel": "Avbryt",
+        "yes": "Ja",
+        "no": "Nei",
+        "back": "Bakside",
+        "close": "Lukk",
+        "date": "Dato",
+        "delete": "Slett",
+        "edit": "Rediger",
+        "error": "Feil",
+        "loading": "Laster...",
+        "next": "Neste",
+        "save": "Lagre",
+        "success": "Vellykket",
+        "saving": "Lagrer…",
+        "showLess": "Vis mindre",
+        "learnMore": "Les mer",
+        "later": "Senere",
+        "continue": "Fortsett",
+        "retry": "Prøv igjen",
+        "details": "Detaljer",
+        "itemCount_one": "{{count}} element",
+        "itemCount_other": "{{count}} elementer",
+        "clear": "Tøm",
+        "discardChanges": "Forkast endringer",
+        "loadMore": "Last inn flere",
+        "connectionRetry": "Kontroller tilkoblingen og prøv igjen.",
+        "deleteItemTitle": "Slette {{title}}?",
+        "tryAgain": "Prøv igjen.",
+        "pleaseTryAgain": "Prøv igjen.",
+        "addToFavorites": "Legg til to favorites",
+        "goToSettings": "Gå til innstillinger",
+        "notSet": "Ikke angitt",
+        "deleting": "Sletter...",
+        "done": "Ferdig",
+        "none": "Ingen",
+        "food": "Mat",
+        "remove": "Fjern",
+        "overwrite": "Overskriv",
+        "unknownDate": "Ukjent dato",
+        "selectOption": "Velg et alternativ",
+        "notNow": "Ikke nå"
+    },
+    "workout": {
+        "calories": "Kalorier",
+        "distance": "Distanse",
+        "reps": "Repetisjoner",
+        "editActivity": "Rediger aktivitet",
+        "date": "Dato",
+        "namePlaceholder": "Treningsøkt",
+        "notes": "Notater",
+        "addExercise": "Legg til an Exercise",
+        "addExerciseBeforeSave": "Legg til at least one exercise with a set before saving.",
+        "viewExercise": "Vis øvelse",
+        "log": "Loggfør",
+        "retry": "Prøv igjen",
+        "metricVolume": "Volum",
+        "reorderDoneText": "Ferdig",
+        "set": "Sett",
+        "selectActivity": "Velg aktivitet",
+        "addNotes": "Legg til notes...",
+        "failedSaveActivity": "Kunne ikke lagre aktivitet",
+        "description": "Beskrivelse",
+        "source": "Kilde",
+        "history": "Historikk",
+        "summary": "Oppsummering",
+        "addExerciseLabel": "Legg til øvelse",
+        "editExercise": "Rediger øvelse",
+        "select": "Velg {{label}}",
+        "all": "Alle",
+        "mine": "Mine",
+        "family": "Familie",
+        "public": "Offentlig",
+        "online": "På nett",
+        "popular": "Populære",
+        "recent": "Nylige",
+        "exercises": "Øvelser",
+        "presets": "Forhåndsinnstillinger",
+        "searchExercises": "Søk etter øvelser...",
+        "searchPresets": "Søk etter forhåndsinnstillinger...",
+        "search": "Søk",
+        "noMatchingExercises": "Ingen samsvarende øvelser funnet",
+        "noMatchingPresets": "Ingen samsvarende forhåndsinnstillinger funnet",
+        "startWorkout": "Start treningsøkt",
+        "failedLoadExercises": "Kunne ikke laste inn øvelser",
+        "failedLoadProviders": "Kunne ikke laste inn leverandører",
+        "viewExerciseDetails": "Vis exercise details",
+        "viewPresetDetails": "Vis preset details",
+        "presetDescription": "Beskrivelse",
+        "presetAddBeforeSave": "Legg til at least one exercise with a set before saving.",
+        "editPreset": "Rediger treningsmal",
+        "volume": "Volum",
+        "viewWorkout": "Vis treningsøkt",
+        "updatePreset": "Oppdater",
+        "setsLabel": "Sett",
+        "caloriesLabel": "Kalorier",
+        "distanceLabel": "Distanse",
+        "durationLabel": "Varighet",
+        "details": "Detaljer",
+        "name": "Navn",
+        "presetsTitle": "Treningsmaler",
+        "noServer": "Ingen server er konfigurert",
+        "loadingPresets": "Laster inn treningsmaler...",
+        "tryConnection": "Kontroller tilkoblingen og prøv igjen.",
+        "categoryGeneral": "Generelt",
+        "categoryStrength": "Styrke",
+        "modalityWeightReps": "Vekt og repetisjoner",
+        "modalityReps": "Repetisjoner",
+        "modalityDuration": "Varighet",
+        "next": "Neste",
+        "failedToSaveActivity": "Kunne ikke lagre aktivitet",
+        "pleaseTryAgain": "Prøv igjen.",
+        "steps": "Skritt",
+        "weight": "Vekt",
+        "repsLabel": "Repetisjoner",
+        "setLabel": "Sett",
+        "failedLoadPresets": "Kunne ikke laste inn treningsmaler",
+        "deleting": "Sletter...",
+        "addNotesPlaceholder": "Legg til notes...",
+        "exercise": "Trening",
+        "setTypeNormal": "Normal",
+        "setTypeWarmup": "Oppvarming",
+        "setTypeDropSet": "Droppsett",
+        "setTypeFailure": "Til utmattelse",
+        "discard": "Forkast",
+        "failedLoadMore": "Kunne ikke laste inn more. Tap to retry",
+        "loadMore": "Last inn flere",
+        "failedLoadPresetsShort": "Kunne ikke laste inn forhåndsinnstillinger",
+        "addExerciseOrDelete": "Legg til at least one exercise with a set or delete the workout.",
+        "failedToSaveWorkout": "Kunne ikke lagre treningsøkt",
+        "editWorkout": "Rediger treningsøkt",
+        "noWorkoutPresets": "Ingen treningsmaler ennå",
+        "failedLoadPresetsFull": "Kunne ikke laste inn treningsmaler",
+        "failedMorePresets": "Kunne ikke laste inn more presets.",
+        "searchWorkoutPresets": "Søk etter treningsmaler...",
+        "addNotePlaceholder": "Legg til a note…"
+    },
+    "healthMetrics": {
+        "bloodGlucose": "Blodsukker",
+        "bloodPressure": "Blodtrykk",
+        "bodyFat": "Kroppsfett",
+        "bodyTemperature": "Kroppstemperatur",
+        "distance": "Distanse",
+        "elevationGained": "Høydemeter",
+        "floorsClimbed": "Etasjer gått",
+        "heartRate": "Puls",
+        "height": "Høyde",
+        "hydration": "Væskeinntak",
+        "leanBodyMass": "Fettfri kroppsmasse",
+        "nutrition": "Ernæring",
+        "power": "Effekt",
+        "respiratoryRate": "Pustefrekvens",
+        "restingHeartRate": "Hvilepuls",
+        "speed": "Hastighet",
+        "stress": "Stress",
+        "weight": "Vekt",
+        "steps": "Skritt",
+        "totalCalories": "Totale kalorier",
+        "calories": "Aktive kalorier",
+        "vo2Max": "VO2-maks",
+        "wheelchairPushes": "Rullestolskyv"
+    },
+    "settings": {
+        "app": "Appinnstillinger",
+        "language": {
+            "title": "Språk",
+            "system": "System",
+            "english": "Engelsk"
+        },
+        "title": "Innstillinger",
+        "rows": {
+            "server": "Server",
+            "healthSync": "Synkronisering av helsedata",
+            "app": "Appinnstillinger",
+            "food": "Mat",
+            "dashboard": "Oversikt",
+            "diary": "Dagbok",
+            "workout": "Treningsøkt",
+            "logs": "Vis logger",
+            "about": "Om"
+        },
+        "theme": {
+            "title": "Tema",
+            "light": "Lys",
+            "dark": "Mørk",
+            "system": "System"
+        },
+        "notifications": {
+            "title": "Varsler"
+        }
+    },
+    "navigation": {
+        "settings": "Innstillinger",
+        "library": "Bibliotek",
+        "presets": "Forhåndsinnstillinger",
+        "foods": "Matvarer",
+        "meals": "Måltider",
+        "exercises": "Øvelser",
+        "diary": "Dagbok",
+        "details": "Detaljer",
+        "dashboard": "Oversikt",
+        "add": "Legg til"
+    },
+    "familyDiary": {
+        "openFamilyDiaries": "Åpne family diaries",
+        "viewOnly": "Vis only",
+        "back": "Bakside",
+        "openMeal": "Åpne {{meal}} meal",
+        "selectAll": "Velg alle",
+        "deselectAll": "Fjern alle valg",
+        "selectFood": "Velg {{food}}",
+        "continue": "Fortsett",
+        "previousDay": "Forrige dag",
+        "nextDay": "Neste dag",
+        "chooseDate": "Velg dato"
+    },
+    "notifications": {
+        "title": "Varsler",
+        "channels": {
+            "medicationReminders": "Påminnelser om legemidler",
+            "workoutTimer": "Treningstidtaker",
+            "fasting": "Faste"
+        },
+        "actions": {
+            "skip": "Hopp over"
+        },
+        "permission": {
+            "notificationsOff": "Varsler er slått av"
+        },
+        "exactAlarm": {
+            "openSettings": "Åpne innstillinger"
+        }
+    },
+    "activeWorkout": {
+        "liveActivity": {
+            "rest": "Hvile",
+            "addFifteenSeconds": "Legg til 15 seconds",
+            "workout": "Treningsøkt",
+            "exercise": "Trening",
+            "set": "Sett"
+        },
+        "bar": {
+            "clear": "Tøm",
+            "finishWorkout": "Avslutt treningsøkt",
+            "open": "Åpne active workout",
+            "pause": "Pause",
+            "resume": "Fortsett",
+            "resting": "Hviler",
+            "next": "Neste"
+        },
+        "header": {
+            "addExercise": "Legg til øvelse",
+            "back": "Bakside"
+        },
+        "exerciseCard": {
+            "addNote": "Legg til a note for this exercise…",
+            "addSetFallback": "Legg til set to exercise",
+            "addSetTo": "Legg til set to {{exerciseName}}",
+            "addSet": "Legg til Set",
+            "editCaloriesFallback": "Rediger calories burned for exercise",
+            "viewDetailsFor": "Vis {{exerciseName}} details",
+            "viewDetailsFallback": "Vis exercise details",
+            "editCaloriesFor": "Rediger calories burned for {{exerciseName}}"
+        },
+        "rail": {
+            "add": "Legg til",
+            "addExercise": "Legg til øvelse"
+        },
+        "setDetail": {
+            "addNote": "Legg til a note for this set…"
+        },
+        "setRow": {
+            "duration": "Varighet",
+            "reps": "Repetisjoner",
+            "weight": "Vekt"
+        },
+        "columns": {
+            "set": "Sett"
+        },
+        "exercise": {
+            "viewDetails": "Vis {{name}} details",
+            "notePlaceholder": "Legg til a note for this exercise…",
+            "editCaloriesFor": "Rediger calories burned for {{name}}",
+            "addSet": "Legg til set to {{name}}",
+            "addSetLabel": "Legg til set"
+        }
+    },
+    "addSheet": {
+        "food": "Mat",
+        "exercise": "Trening",
+        "workout": "Treningsøkt",
+        "progressPhotos": "Fremgangsbilder"
+    },
+    "screens": {
+        "foods": "Matvarer",
+        "meals": "Måltider",
+        "exercises": "Øvelser",
+        "addFood": "Legg til mat",
+        "newFood": "Ny matvare",
+        "editFood": "Rediger matvare",
+        "editExercise": "Rediger øvelse",
+        "newExercise": "Ny øvelse",
+        "editPreset": "Rediger forhåndsinnstilling",
+        "editMeal": "Rediger måltid",
+        "createMeal": "Opprett måltid",
+        "meal": "Måltid",
+        "selectExercise": "Velg øvelse",
+        "startWorkout": "Start treningsøkt",
+        "editWorkout": "Rediger treningsøkt",
+        "editActivity": "Rediger aktivitet",
+        "workout": "Treningsøkt",
+        "logs": "Logger",
+        "about": "Om",
+        "medications": "Legemidler",
+        "medication": "Legemiddel",
+        "library": {
+            "noServerConfigured": "Ingen server er konfigurert",
+            "configureServer": "Konfigurer servertilkoblingen i Innstillinger for å se biblioteket ditt.",
+            "goToSettings": "Gå til innstillinger",
+            "loading": "Laster inn library...",
+            "title": "Bibliotek",
+            "create": "Opprett",
+            "food": "Mat",
+            "meal": "Måltid",
+            "exercise": "Trening",
+            "workoutPreset": "Treningsmal",
+            "foods": "Matvarer",
+            "meals": "Måltider",
+            "mealPlans": "Måltidsplaner",
+            "exercises": "Øvelser",
+            "workoutPresets": "Treningsmaler",
+            "medications": "Legemidler",
+            "loadingRecentItems": "Laster inn recent items...",
+            "failedRecentItems": "Kunne ikke laste inn recent items."
+        },
+        "sleep": "Søvn",
+        "progressPhotos": "Fremgangsbilder",
+        "progressPhotoCompare": "Sammenlign"
+    },
+    "healthCategories": {
+        "Nutrition": "Ernæring",
+        "unknown": "Annet"
+    },
+    "healthSync": {
+        "appleHealth": "Apple Helse",
+        "healthConnect": "Health Connect",
+        "allTime": "Hele perioden",
+        "noData": "Ingen data",
+        "alerts": {
+            "permissionErrorTitle": "Feil med tillatelse"
+        }
+    },
+    "auth": {
+        "email": "E-post",
+        "password": "Passord",
+        "apiKey": "API-nøkkel",
+        "signIn": "Logg inn",
+        "connect": "Koble til",
+        "editServer": "Rediger server",
+        "addServer": "Legg til server",
+        "advancedOptions": "Avanserte alternativer",
+        "addHeader": "Legg til header",
+        "passwordPlaceholder": "Passord",
+        "hidePassword": "Skjul passord",
+        "showPassword": "Vis passord",
+        "headerValuePlaceholder": "Verdi"
+    },
+    "dashboard": {
+        "noServerConfigured": "Ingen server er konfigurert",
+        "goToSettings": "Gå til innstillinger",
+        "loadingSummary": "Laster inn summary...",
+        "loadFailed": "Kunne ikke laste inn summary",
+        "checkConnection": "Kontroller tilkoblingen og prøv igjen.",
+        "food": "Mat",
+        "consumed": "Inntatt",
+        "remaining": "gjenstår",
+        "burned": "Forbrent",
+        "hydration": "Væskeinntak",
+        "exercise": "Trening",
+        "minutes": "Minutter",
+        "calories": "Kalorier",
+        "addWater": "Legg til water",
+        "selectContainer": "Velg {{container}}"
+    },
+    "syncScreen": {
+        "title": "Synkronisering av helsedata",
+        "syncNow": "Synkroniser nå",
+        "syncing": "Synkroniserer…",
+        "commonError": "Feil",
+        "timeRanges": {
+            "today": "I dag",
+            "last24Hours": "Siste 24 timer",
+            "last3Days": "Siste 3 dager",
+            "last7Days": "Siste 7 dager",
+            "last30Days": "Siste 30 dager",
+            "last90Days": "Siste 90 dager",
+            "lastYear": "Siste år"
+        },
+        "permissionRequired": {
+            "title": "Tillatelse kreves"
+        },
+        "permissionError": {
+            "title": "Feil med tillatelse"
+        },
+        "permissionDenied": {
+            "title": "Tillatelse avslått"
+        },
+        "range": {
+            "selectTitle": "Velg Sync Range"
+        }
+    },
+    "date": {
+        "neverSynced": "Aldri synkronisert",
+        "justNow": "Akkurat nå",
+        "today": "I dag",
+        "yesterday": "I går"
+    },
+    "calorieSettings": {
+        "safetyFloor": {
+            "custom": "Egendefinert"
+        }
+    },
+    "dashboardSettings": {
+        "hydration": "Væskeinntak",
+        "fasting": "Faste",
+        "medications": "Legemidler",
+        "progressPhotos": "Fremgangsbilder"
+    },
+    "about": {
+        "title": "Om",
+        "version": "Versjon {{version}} ({{build}})",
+        "descriptionTitle": "Om denne appen",
+        "github": "Prosjekt på GitHub",
+        "documentation": "Dokumentasjon",
+        "privacyPolicy": "Personvernerklæring"
+    },
+    "errorBoundary": {
+        "somethingWentWrong": "Noe gikk galt"
+    },
+    "notificationSettings": {
+        "title": "Varsler",
+        "medications": "Legemidler",
+        "openSettings": "Åpne innstillinger"
+    },
+    "restPeriod": {
+        "custom": "Egendefinert"
+    },
+    "diary": {
+        "noServer": "Ingen server er konfigurert",
+        "goToSettings": "Gå til innstillinger",
+        "loading": "Laster inn diary...",
+        "loadFailed": "Kunne ikke laste inn diary",
+        "checkConnection": "Kontroller tilkoblingen og prøv igjen.",
+        "retry": "Prøv igjen",
+        "title": "Dagbok",
+        "addFood": "Legg til mat"
+    },
+    "medications": {
+        "title": "Legemidler",
+        "medication": "Legemiddel",
+        "addMedication": "Legg til legemiddel",
+        "addMedicationTitle": "Legg til legemiddel",
+        "viewAll": "Vis all",
+        "viewAllMedications": "Vis all medications",
+        "loading": "Laster inn legemidler...",
+        "loadFailed": "Kunne ikke laste inn legemidler.",
+        "emptyDescription": "Legg til your first medication to start tracking.",
+        "retry": "Prøv igjen",
+        "inactive": "Inaktiv",
+        "form": {
+            "newTitle": "Nytt legemiddel",
+            "editTitle": "Rediger legemiddel",
+            "type": "Type",
+            "strength": "Styrke",
+            "dose": "Dose",
+            "unit": "Enhet",
+            "doseUnitPlaceholder": "tablett",
+            "details": "Detaljer",
+            "prescriber": "Forskriver",
+            "pharmacy": "Apotek",
+            "notes": "Notater",
+            "active": "Aktiv",
+            "required": "Påkrevd"
+        },
+        "detail": {
+            "edit": "Rediger",
+            "loading": "Laster...",
+            "inactive": "Inaktiv",
+            "asNeeded": "Ved behov",
+            "schedules": "Tidsplaner",
+            "addSchedule": "Legg til tidsplan",
+            "add": "Legg til",
+            "details": "Detaljer",
+            "prescriber": "Forskriver",
+            "pharmacy": "Apotek",
+            "notes": "Notater"
+        },
+        "schedule": {
+            "editTitle": "Rediger tidsplan",
+            "required": "Påkrevd",
+            "daysRequired": "Velg at least one day of the week.",
+            "none": "Ingen",
+            "time": "Tid",
+            "clear": "Tøm",
+            "daysOfWeek": "Ukedager",
+            "selectDays": "Velg days of week",
+            "withMeal": "Med måltid",
+            "startDate": "Startdato",
+            "endDate": "Sluttdato",
+            "active": "Aktiv",
+            "loading": "Laster...",
+            "everyDay": "Hver dag"
+        },
+        "dose": {
+            "log": "Loggfør",
+            "skip": "Hopp over",
+            "taken": "Tatt",
+            "skipped": "Hoppet over"
+        },
+        "card": {
+            "title": "Legemidler",
+            "viewAll": "Vis all",
+            "viewAllA11y": "Vis all medications"
+        },
+        "types": {
+            "daily": "Daglig",
+            "monthly": "Månedlig",
+            "prn": "Ved behov",
+            "tablet": "Tablett",
+            "capsule": "Kapsel",
+            "liquid": "Væske",
+            "injection": "Injeksjon",
+            "patch": "Plaster",
+            "inhaler": "Inhalator",
+            "drops": "Dråper",
+            "cream": "Krem",
+            "other": "Annet",
+            "beforeMeal": "Før måltid",
+            "withMeal": "Med måltid",
+            "afterMeal": "Etter måltid"
+        },
+        "weekdays": {
+            "sun": "Søndag",
+            "mon": "Mandag",
+            "tue": "Tirsdag",
+            "wed": "Onsdag",
+            "thu": "Torsdag",
+            "fri": "Fredag",
+            "sat": "Lørdag"
+        },
+        "scheduleSummary": {
+            "daily": "Daglig",
+            "weekly": "Ukentlig",
+            "monthly": "Månedlig",
+            "asNeeded": "Ved behov",
+            "unknown": "Tidsplan"
+        }
+    },
+    "scheduleSummary": {
+        "daily": "Daglig",
+        "weekly": "Ukentlig",
+        "monthly": "Månedlig",
+        "asNeeded": "Ved behov"
+    },
+    "devTools": {
+        "title": "Utviklerverktøy",
+        "description": "Disse verktøyene er bare synlige i utviklingsversjoner.",
+        "healthConnect": {
+            "title": "Health Connect"
+        },
+        "toast": {
+            "reset": "Tilbakestill"
+        }
+    },
+    "cycleCard": {
+        "day": "Dag {{day}}",
+        "active": "Aktiv"
+    },
+    "fastingCard": {
+        "title": "Faste",
+        "openDetails": "Åpne fasting details",
+        "viewHistory": "Vis fasting history",
+        "history": "Historikk",
+        "viewDetails": "Vis detaljer"
+    },
+    "fastingHistory": {
+        "deleteTitle": "Slette fast?"
+    },
+    "fastingEdit": {
+        "time": "Tid",
+        "deleteTitle": "Slette fast?",
+        "editTitle": "Rediger fast",
+        "saving": "Lagrer...",
+        "saveChanges": "Lagre endringer",
+        "deleting": "Sletter..."
+    },
+    "privacyPolicy": {
+        "title": "Personvernerklæring"
+    },
+    "cycleCalendar": {
+        "selectMonth": "Velg month",
+        "selectYear": "Velg year"
+    },
+    "mealBuilder": {
+        "linkedMealWebEdit": "Rediger this sub-meal ingredient in the web app.",
+        "editTitle": "Rediger måltid",
+        "createTitle": "Opprett måltid",
+        "loading": "Laster inn måltid...",
+        "loadErrorTitle": "Kunne ikke laste inn måltid",
+        "unit": "Enhet",
+        "selectUnit": "Velg Unit",
+        "editIngredient": "Rediger {{name}}",
+        "addFood": "Legg til mat",
+        "perServing": "Per porsjon",
+        "errors": {
+            "noIngredientsMessage": "Legg til at least one food before saving this meal."
+        }
+    },
+    "nutrition": {
+        "left": "igjen",
+        "met": "nådd"
+    },
+    "exerciseSummary": {
+        "addExercise": "Legg til øvelse",
+        "title": "Trening"
+    },
+    "cycleSettings": {
+        "updateFailed": "Oppdateringen mislyktes",
+        "birthControl": {
+            "none": "Ingen",
+            "patch": "Plaster",
+            "other": "Annet"
+        },
+        "condition": {
+            "other": "Annet"
+        },
+        "reset": {
+            "action": "Tilbakestill"
+        },
+        "groups": {
+            "conditionsSubtitle": "Velg applicable conditions to personalize your tracking.",
+            "actions": "Handlinger"
+        },
+        "pickers": {
+            "mode": "Velg Mode",
+            "method": "Velg Method",
+            "terminology": "Velg Terminology"
+        }
+    },
+    "measurements": {
+        "fields": {
+            "weight": "Vekt",
+            "height": "Høyde",
+            "steps": "Skritt"
+        },
+        "date": "Dato",
+        "edit": "Rediger målinger"
+    },
+    "foodScan": {
+        "segment": {
+            "barcode": "Strekkode",
+            "label": "Etikett",
+            "photo": "Bilde"
+        },
+        "errors": {
+            "loadPhoto": "Kunne ikke laste inn bilde."
+        },
+        "permission": {
+            "grant": "Gi tillatelse"
+        },
+        "label": {
+            "analyzing": "Analyserer etikett...",
+            "retake": "Ta på nytt",
+            "usePhoto": "Bruk bilde"
+        },
+        "lookup": {
+            "addManually": "Legg til Food Manually"
+        },
+        "photo": {
+            "setupHelp": "Åpne SparkyFitness in a browser and visit Settings → AI to add an AI provider, then return here."
+        },
+        "manual": {
+            "title": "Skriv inn strekkode",
+            "lookup": "Slå opp"
+        }
+    },
+    "cycleToday": {
+        "flow": {
+            "none": "Ingen",
+            "light": "Lys"
+        },
+        "mucus": {
+            "none": "Ingen"
+        },
+        "intercourseOption": {
+            "none": "Ingen",
+            "yes": "Ja",
+            "no": "Nei"
+        },
+        "position": {
+            "none": "Ingen",
+            "low": "Lav",
+            "medium": "Middels",
+            "high": "Høy"
+        },
+        "notes": "Notater",
+        "saving": "Lagrer..."
+    },
+    "cycleSymptoms": {
+        "title": "Symptomer",
+        "showLess": "Vis mindre"
+    },
+    "cycleInsights": {
+        "set": "Sett"
+    },
+    "cycleCorrelations": {
+        "metrics": {
+            "weight": "Vekt",
+            "sleep": "Søvn"
+        }
+    },
+    "cycleHistory": {
+        "selectDate": "Velg dato",
+        "toast": {
+            "success": "Vellykket",
+            "error": "Feil"
+        }
+    },
+    "nutrients": {
+        "calories": "Kalorier",
+        "protein": "Protein",
+        "carbs": "Karbohydrater",
+        "fat": "Fett",
+        "fiber": "Fiber",
+        "saturatedFatLabel": "Mettet fett",
+        "transFat": "Transfett",
+        "cholesterol": "Kolesterol",
+        "sodium": "Natrium",
+        "potassium": "Kalium",
+        "sugars": "Sukkerarter",
+        "vitaminA": "Vitamin A",
+        "vitaminC": "Vitamin C",
+        "calcium": "Kalsium",
+        "iron": "Jern",
+        "totalCarbs": "Totalt karbohydrat",
+        "netCarbs": "Netto karbohydrat",
+        "glycemicIndexNone": "Ingen",
+        "glycemicIndexLow": "Lav",
+        "glycemicIndexMedium": "Middels",
+        "glycemicIndexHigh": "Høy"
+    },
+    "diarySummary": {
+        "remaining": "gjenstår",
+        "over": "over",
+        "title": "Oppsummering"
+    },
+    "dateRange": {
+        "removeTitle": "Velg a date range to remove"
+    },
+    "duration": {
+        "minutes": "Minutter",
+        "seconds": "Sekunder"
+    },
+    "entryImage": {
+        "photo": "Bilde",
+        "addHelp": "Legg til a photo to set one for this entry.",
+        "saveFailed": "Kunne ikke lagre bilde"
+    },
+    "foodForm": {
+        "selectUnit": "Velg Unit",
+        "foodName": "Navn på matvare",
+        "brand": "Merke",
+        "servingSize": "Porsjonsstørrelse",
+        "servingUnit": "Porsjonsenhet",
+        "editTitle": "Rediger matvare",
+        "addFood": "Legg til mat",
+        "notes": "Notater"
+    },
+    "foodFormPersistence": {
+        "discard": "Forkast",
+        "update": "Oppdater",
+        "editFoodTitle": "Rediger matvare"
+    },
+    "foodPhotoImprove": {
+        "cameraPermissionNeeded": "Kameratillatelse kreves",
+        "takePhotoFailed": "Kunne ikke ta bilde",
+        "loadPhotoFailed": "Kunne ikke laste inn bildet",
+        "noImagesMessage": "Legg til at least one photo to generate an estimate.",
+        "cancel": "Avbryt",
+        "addAnotherImage": "Legg til another image",
+        "descriptionHint": "Legg til anything the {{subject}} might not make obvious.",
+        "generateEstimate": "Lag estimat",
+        "aiNotConfiguredTitle": "KI er ikke konfigurert",
+        "unexpectedImageFormatTitle": "Uventet bildeformat"
+    },
+    "serverSettingsUi": {
+        "selectAction": "Velg an action",
+        "openWeb": "Åpne Web",
+        "addConfiguration": "Legg til new configuration"
+    },
+    "passkeySettings": {
+        "loadFailed": "Kunne ikke laste inn passkeys: {{error}}",
+        "requiredTitle": "Påkrevd",
+        "noneHint": "Legg til this device or biometric credentials to sign in quickly next time.",
+        "add": "Legg til tilgangsnøkkel"
+    },
+    "whatsNewPage": {
+        "mockup": {
+            "taken": "Tatt"
+        },
+        "features": {
+            "medications": {
+                "body": "Legg til your medications, set dose schedules, and log each dose from the dashboard with optional reminders."
+            },
+            "ios": {
+                "cta": "Åpne innstillinger"
+            }
+        }
+    },
+    "cycleOnboarding": {
+        "goalDescription": "Velg the mode that best fits your current health focus. You can change this anytime in settings.",
+        "selectMethod": "Velg Method",
+        "birthControl": {
+            "none": "Ingen",
+            "patch": "Plaster",
+            "injection": "Injeksjon",
+            "other": "Annet"
+        },
+        "condition": {
+            "other": "Annet"
+        }
+    },
+    "importHistory": {
+        "idle": {
+            "source": "Kilde"
+        },
+        "actions": {
+            "resume": "Fortsett"
+        }
+    },
+    "fastingDetail": {
+        "title": "Faste",
+        "total": "Totalt"
+    },
+    "exerciseDetail": {
+        "summary": "Oppsummering",
+        "history": "Historikk",
+        "editExercise": "Rediger øvelse",
+        "addExercise": "Legg til øvelse",
+        "description": "Beskrivelse",
+        "showMore": "Vis mer",
+        "source": "Kilde",
+        "startWorkout": "Start treningsøkt",
+        "deleting": "Sletter..."
+    },
+    "mealTypeSettings": {
+        "edit": "Rediger {{name}}",
+        "failedUpdate": "Kunne ikke oppdatere",
+        "failedDelete": "Kunne ikke slette",
+        "add": "Legg til meal type",
+        "deleteMessage": "Slette '{{name}}'?",
+        "loading": "Laster inn meal types...",
+        "loadFailed": "Kunne ikke laste inn meal types.",
+        "empty": "Ingen meal types funnet.",
+        "notSet": "Ikke angitt"
+    },
+    "mealPlans": {
+        "title": "Måltidsplaner",
+        "create": "Opprett måltidsplan",
+        "createTitle": "Opprett måltidsplan",
+        "editTitle": "Rediger måltidsplan",
+        "active": "Aktiv",
+        "inactive": "Inaktiv",
+        "deleteTitle": "Slett måltidsplan",
+        "noServer": "Ingen server er konfigurert",
+        "goToSettings": "Gå til innstillinger",
+        "loading": "Laster inn meal plans...",
+        "loadFailed": "Kunne ikke laste inn meal plans",
+        "loadingPlanningOptions": "Laster inn planning options...",
+        "planningOptionsFailed": "Kunne ikke laste inn planning options",
+        "noMealTypes": "Legg til a visible meal type before creating a plan.",
+        "weekday": "Ukedag",
+        "selectWeekday": "Velg weekday",
+        "mealType": "Måltidstype",
+        "selectMealType": "Velg meal type",
+        "reusableMeal": "Gjenbrukbart måltid",
+        "selectMeal": "Velg måltid",
+        "quantity": "Mengde",
+        "name": "Plannavn",
+        "description": "Beskrivelse",
+        "startDate": "Startdato",
+        "endDate": "Sluttdato",
+        "noEndDate": "Ingen sluttdato",
+        "activePlan": "Aktiv plan",
+        "addMeal": "Legg til måltid",
+        "weeklyPlan": "Ukeplan",
+        "mealBadge": "Måltid",
+        "foodBadge": "Mat",
+        "addToMealType": "Legg til food or meal to {{mealType}}",
+        "addFoodOrMeal": "Legg til food or meal",
+        "caloriesLabel": "Kalorier",
+        "proteinLabel": "Protein",
+        "carbsLabel": "Karbohydrater",
+        "fatLabel": "Fett",
+        "assignmentRequired": "Legg til at least one complete meal assignment.",
+        "weekdays": {
+            "sunday": "Søndag",
+            "monday": "Mandag",
+            "tuesday": "Tirsdag",
+            "wednesday": "Onsdag",
+            "thursday": "Torsdag",
+            "friday": "Fredag",
+            "saturday": "Lørdag"
+        },
+        "weekdaysShort": {
+            "sunday": "Søn",
+            "monday": "Man",
+            "tuesday": "Tir",
+            "wednesday": "Ons",
+            "thursday": "Tor",
+            "friday": "Fre",
+            "saturday": "Lør"
+        }
+    },
+    "mealDetail": {
+        "addFavorite": "Legg til to favorites",
+        "editMeal": "Rediger måltid",
+        "noServer": "Ingen server er konfigurert",
+        "loading": "Laster inn måltid...",
+        "loadFailed": "Kunne ikke laste inn måltid",
+        "perServing": "Per porsjon",
+        "total": "Totalt",
+        "viewLinkedMeal": "Vis linked meal {{name}}",
+        "deleting": "Sletter...",
+        "deleteMeal": "Slett måltid",
+        "notes": "Notater"
+    },
+    "dailyNutritionDetails": {
+        "loadFailed": "Kunne ikke laste inn nutrition details",
+        "tryAgain": "Kontroller tilkoblingen og prøv igjen.",
+        "met": "nådd"
+    },
+    "mealTypes": {
+        "breakfast": "Frokost",
+        "lunch": "Lunsj",
+        "snacks": "Mellommåltider",
+        "dinner": "Middag",
+        "other": "Annet"
+    },
+    "foodEntryAdd": {
+        "errors": {
+            "tryAgain": "Prøv igjen.",
+            "selectFoodInstead": "Velg a food instead of another meal."
+        },
+        "actions": {
+            "clear": "Tøm",
+            "addFood": "Legg til mat",
+            "addMeal": "Legg til måltid",
+            "addFavorite": "Legg til to favorites"
+        },
+        "labels": {
+            "time": "Tid",
+            "none": "Ingen",
+            "meal": "Måltid"
+        },
+        "pickers": {
+            "selectServing": "Velg Serving",
+            "selectMeal": "Velg måltid"
+        }
+    },
+    "exerciseSearch": {
+        "title": "Øvelser",
+        "tabs": {
+            "search": "Søk",
+            "online": "På nett"
+        },
+        "sections": {
+            "recent": "Nylige",
+            "popular": "Populære"
+        },
+        "search": {
+            "placeholder": "Søk etter øvelser..."
+        },
+        "actions": {
+            "viewDetails": "Vis exercise details",
+            "loadMoreFailed": "Kunne ikke laste inn more. Tap to retry",
+            "loadMore": "Last inn flere"
+        },
+        "states": {
+            "noMatches": "Ingen samsvarende øvelser funnet",
+            "failedToLoad": "Kunne ikke laste inn øvelser",
+            "failedToLoadProviders": "Kunne ikke laste inn leverandører"
+        },
+        "filter": {
+            "all": "Alle",
+            "mine": "Mine",
+            "family": "Familie",
+            "public": "Offentlig"
+        }
+    },
+    "foodSearch": {
+        "menu": {
+            "newFood": "Ny matvare"
+        },
+        "accessibility": {
+            "favorite": "Favoritt",
+            "viewPhoto": "Vis bilde",
+            "verifiedFood": "Verifisert matvare"
+        },
+        "sections": {
+            "favorites": "Favoritter",
+            "yourFoods": "Dine Matvarer",
+            "yourMeals": "Dine Måltid"
+        },
+        "search": {
+            "placeholder": "Søk etter matvarer..."
+        },
+        "states": {
+            "failedToLoad": "Kunne ikke laste inn matvarer",
+            "noSavedFoods": "Ingen saved foods funnet.",
+            "noSavedFoodsMeals": "Ingen saved foods or meals funnet.",
+            "couldNotLoad": "Kunne ikke laste inn",
+            "noResults": "Ingen resultater"
+        },
+        "filter": {
+            "all": "Alle",
+            "mine": "Mine",
+            "family": "Familie",
+            "public": "Offentlig"
+        },
+        "actions": {
+            "loadMoreFailed": "Kunne ikke laste inn more. Tap to retry",
+            "loadMore": "Last inn flere"
+        },
+        "labels": {
+            "meal": "Måltid",
+            "itemCount_one": "{{count}} element",
+            "itemCount_other": "{{count}} elementer"
+        }
+    },
+    "editBarcode": {
+        "title": "Strekkode",
+        "actions": {
+            "remove": "Fjern"
+        }
+    },
+    "workoutDetail": {
+        "summary": {
+            "exercise_one": "Trening",
+            "exercise_other": "Øvelser",
+            "sets": "Sett",
+            "volume": "Volum",
+            "calories": "Kalorier"
+        },
+        "errors": {
+            "addExerciseOrDelete": "Legg til at least one exercise with a set or delete the workout.",
+            "saveFailed": "Kunne ikke lagre treningsøkt"
+        },
+        "labels": {
+            "details": "Detaljer",
+            "name": "Navn",
+            "notes": "Notater"
+        },
+        "placeholders": {
+            "notes": "Legg til notes..."
+        },
+        "accessibility": {
+            "save": "Lagre",
+            "editWorkout": "Rediger treningsøkt"
+        },
+        "title": {
+            "edit": "Rediger treningsøkt"
+        }
+    },
+    "activityDetail": {
+        "errors": {
+            "saveFailed": "Kunne ikke lagre aktivitet"
+        },
+        "stats": {
+            "duration": "Varighet",
+            "calories": "Kalorier",
+            "distance": "Distanse",
+            "steps": "Skritt"
+        },
+        "labels": {
+            "sets": "Sett",
+            "set": "Sett",
+            "weight": "Vekt",
+            "reps": "Repetisjoner",
+            "notes": "Notater"
+        },
+        "placeholders": {
+            "notes": "Legg til notes..."
+        },
+        "accessibility": {
+            "save": "Lagre",
+            "edit": "Rediger aktivitet"
+        }
+    },
+    "foodSettings": {
+        "errors": {
+            "error": "Feil"
+        },
+        "openFacts": {
+            "description": "Åpne Food Facts uses values per 100g. This converts them to the product’s serving size."
+        }
+    },
+    "workoutComplete": {
+        "stats": {
+            "duration": "Varighet",
+            "volume": "Volum",
+            "sets": "Sett",
+            "calories": "Kalorier",
+            "distance": "Distanse"
+        },
+        "labels": {
+            "all": "Alle"
+        },
+        "actions": {
+            "viewWorkout": "Vis treningsøkt",
+            "done": "Ferdig",
+            "update": "Oppdater"
+        },
+        "sections": {
+            "exercises": "Øvelser",
+            "volume": "Volum"
+        }
+    },
+    "createFood": {
+        "title": "Ny matvare",
+        "meal": "Måltid",
+        "selectMeal": "Velg måltid",
+        "actions": {
+            "addFood": "Legg til mat"
+        },
+        "errors": {
+            "foodSaveFailed": "Kunne ikke lagre mat"
+        }
+    },
+    "foodDetail": {
+        "editFood": "Rediger mat",
+        "noServer": "Ingen server er konfigurert",
+        "selectServing": "Velg Serving",
+        "loadingServingOptions": "Laster inn serving options...",
+        "barcode": "Strekkode",
+        "notes": "Notater"
+    },
+    "foodEntryView": {
+        "editEntry": "Rediger food entry",
+        "selectServing": "Velg Serving",
+        "meal": "Måltid",
+        "selectMeal": "Velg måltid",
+        "time": "Tid",
+        "timeSelectorLabel": "Velg time: {{time}}",
+        "errors": {
+            "saveFailed": "Kunne ikke lagre changes",
+            "deleteFailed": "Kunne ikke slette"
+        }
+    },
+    "presetSearch": {
+        "title": "Start treningsøkt",
+        "viewDetails": "Vis preset details",
+        "noMatches": "Ingen samsvarende forhåndsinnstillinger funnet",
+        "loadFailed": "Kunne ikke laste inn forhåndsinnstillinger",
+        "searchPlaceholder": "Søk etter forhåndsinnstillinger..."
+    },
+    "ownership": {
+        "all": "Alle",
+        "mine": "Mine",
+        "family": "Familie",
+        "public": "Offentlig"
+    },
+    "workoutPresetForm": {
+        "description": "Beskrivelse",
+        "editTitle": "Rediger forhåndsinnstilling",
+        "errors": {
+            "addExercise": "Legg til an exercise",
+            "addExerciseSet": "Legg til at least one exercise with a set before saving."
+        }
+    },
+    "logScreen": {
+        "title": "Logger",
+        "all": "Alle",
+        "clearLogs": "Tøm logger",
+        "filterSaveFailed": "Kunne ikke lagre log filter.",
+        "noLogs": "Ingen logger ennå.",
+        "status": {
+            "error": "Feil",
+            "warning": "Advarsel",
+            "info": "Informasjon",
+            "debug": "Feilsøking"
+        },
+        "clipboard": {
+            "status": "Status",
+            "message": "Melding",
+            "details": "Detaljer",
+            "timestamp": "Tidsstempel"
+        }
+    },
+    "testQuickLog": {
+        "results": {
+            "low": "Lav",
+            "high": "Høy"
+        }
+    },
+    "bumpPhotos": {
+        "add": "Legg til bilde",
+        "remove": "Fjern",
+        "addTitle": "Legg til Bump Photo",
+        "takePhoto": "Ta bilde",
+        "chooseLibrary": "Velg fra bibliotek"
+    },
+    "chat": {
+        "retry": "Prøv igjen",
+        "copy": "Kopier",
+        "tools": {
+            "food": "Mat",
+            "exercise": "Trening",
+            "goals": "Mål"
+        }
+    },
+    "foodImagePicker": {
+        "photos": "Bilder",
+        "errors": {
+            "cameraPermission": "Kameratillatelse kreves"
+        },
+        "actions": {
+            "addPhoto": "Legg til bilde",
+            "takePhoto": "Ta bilde",
+            "chooseFromLibrary": "Velg fra bibliotek",
+            "remove": "Fjern",
+            "photo": "Bilde"
+        },
+        "accessibility": {
+            "addPhoto": "Legg til bilde"
+        }
+    },
+    "editLoggedMeal": {
+        "fields": {
+            "meal": "Måltid",
+            "selectMeal": "Velg måltid",
+            "time": "Tid"
+        },
+        "actions": {
+            "addFood": "Legg til mat",
+            "deleteMeal": "Slett måltid"
+        },
+        "accessibility": {
+            "date": "Velg date: {{date}}",
+            "meal": "Velg meal: {{meal}}",
+            "time": "Velg time: {{time}}"
+        },
+        "errors": {
+            "saveFailed": "Kunne ikke lagre måltid"
+        },
+        "deleteConfirm": "Slette this meal?"
+    },
+    "exerciseMutations": {
+        "errors": {
+            "deleteFailed": "Kunne ikke slette",
+            "saveWorkout": "Kunne ikke lagre treningsøkt",
+            "saveActivity": "Kunne ikke lagre aktivitet"
+        },
+        "confirm": {
+            "deleteWorkoutTitle": "Slette treningsøkt?",
+            "deleteActivityTitle": "Slette aktivitet?",
+            "deleteExerciseTitle": "Slette øvelse?"
+        }
+    },
+    "foodPhotoEstimate": {
+        "title": "Se gjennom estimatet",
+        "confidence": {
+            "good": "God",
+            "fair": "Middels",
+            "rough": "Grov"
+        },
+        "ingredients": {
+            "editRow": "Rediger {{name}}",
+            "name": "Navn",
+            "calories": "Kalorier",
+            "count_one": "{{count}} ingrediens",
+            "count_other": "{{count}} ingredienser",
+            "totals": "Totalt",
+            "addFood": "Legg til mat",
+            "addedFood": "Mat"
+        },
+        "servings": {
+            "unit": "Enhet",
+            "perServing": "Per porsjon"
+        }
+    },
+    "mealTypeForm": {
+        "createTitle": "Legg til Meal Type",
+        "editTitle": "Rediger Meal Type",
+        "name": "Navn",
+        "notSet": "Ikke angitt",
+        "create": "Opprett"
+    },
+    "activityAdd": {
+        "fields": {
+            "calories": "Kalorier",
+            "notes": "Notater"
+        },
+        "actions": {
+            "selectActivity": "Velg aktivitet"
+        },
+        "labels": {
+            "custom": "Egendefinert"
+        },
+        "accessibility": {
+            "editActivityName": "Rediger activity name",
+            "selectExercise": "Velg øvelse",
+            "calories": "Kalorier"
+        },
+        "errors": {
+            "saveFailed": "Kunne ikke lagre aktivitet"
+        }
+    },
+    "mealTypeDetail": {
+        "states": {
+            "noServer": "Ingen server er konfigurert",
+            "loadFailed": "Kunne ikke laste inn måltid"
+        },
+        "labels": {
+            "foods": "Matvarer"
+        },
+        "accessibility": {
+            "addFood": "Legg til mat"
+        }
+    },
+    "nutrientTrends": {
+        "states": {
+            "loadFailed": "Kunne ikke laste inn trend data"
+        }
+    },
+    "workoutPresetDetail": {
+        "accessibility": {
+            "edit": "Rediger treningsmal"
+        },
+        "exerciseCount_one": "{{count}} øvelse",
+        "exerciseCount_other": "{{count}} øvelser"
+    },
+    "workoutPresetMutations": {
+        "confirm": {
+            "title": "Slette treningsmal?"
+        }
+    },
+    "babyGrowth": {
+        "weight": "Vekt"
+    },
+    "pregnancySafety": {
+        "food": "Mat",
+        "medications": "Legemidler"
+    },
+    "foodPhotoLogEntry": {
+        "selectMealType": "Velg a meal type",
+        "back": "Bakside",
+        "meal": "Måltid",
+        "selectMeal": "Velg måltid",
+        "date": "Dato"
+    },
+    "workoutAdd": {
+        "addExercise": "Legg til an Exercise",
+        "addExerciseMessage": "Legg til at least one exercise with a set before saving.",
+        "cancel": "Avbryt",
+        "save": "Lagre",
+        "saveFailed": "Kunne ikke lagre treningsøkt",
+        "tryAgain": "Prøv igjen.",
+        "workoutPlaceholder": "Treningsøkt"
+    },
+    "mealMutations": {
+        "deleteTitle": "Slett måltid"
+    },
+    "foodUnit": {
+        "aiEstimate": "KI-estimat",
+        "groups": {
+            "weight": "Vekt",
+            "volume": "Volum",
+            "quantity": "Mengde"
+        },
+        "confidence": {
+            "high": "Høy",
+            "medium": "Middels",
+            "low": "Lav"
+        }
+    },
+    "charts": {
+        "weight": {
+            "title": "Vekt",
+            "loadFailed": "Kunne ikke laste inn weight data"
+        },
+        "steps": {
+            "title": "Skritt",
+            "loadFailed": "Kunne ikke laste inn step data"
+        },
+        "sleep": {
+            "title": "Søvn",
+            "loadFailed": "Kunne ikke laste inn sleep data"
+        },
+        "loading": "Laster inn chart...",
+        "weightLoadFailed": "Kunne ikke laste inn weight data",
+        "stepsLoadFailed": "Kunne ikke laste inn step data",
+        "trendLoadFailed": "Kunne ikke laste inn trend data",
+        "nutrients": {
+            "loadFailed": "Kunne ikke laste inn trend data"
+        }
+    },
+    "exerciseLibrary": {
+        "title": "Øvelser",
+        "search": "Søk etter øvelser...",
+        "noServer": "Ingen server er konfigurert",
+        "go": "Gå til innstillinger",
+        "loading": "Laster inn øvelser...",
+        "failed": "Kunne ikke laste inn øvelser",
+        "retry": "Prøv igjen",
+        "check": "Kontroller tilkoblingen og prøv igjen.",
+        "noMatch": "Ingen samsvarende øvelser funnet",
+        "noItems": "Ingen øvelser funnet",
+        "moreFailed": "Kunne ikke laste inn more exercises.",
+        "view": "Vis øvelse"
+    },
+    "foodLibrary": {
+        "title": "Matvarer",
+        "search": "Søk etter matvarer...",
+        "noServer": "Ingen server er konfigurert",
+        "go": "Gå til innstillinger",
+        "loading": "Laster inn matvarer...",
+        "failed": "Kunne ikke laste inn matvarer",
+        "retry": "Prøv igjen",
+        "check": "Kontroller tilkoblingen og prøv igjen.",
+        "noMatch": "Ingen samsvarende matvarer funnet",
+        "noItems": "Ingen matvarer funnet",
+        "moreFailed": "Kunne ikke laste inn more foods."
+    },
+    "mealLibrary": {
+        "title": "Måltider",
+        "search": "Søk etter måltider...",
+        "noServer": "Ingen server er konfigurert",
+        "go": "Gå til innstillinger",
+        "loading": "Laster inn måltider...",
+        "failed": "Kunne ikke laste inn måltider",
+        "retry": "Prøv igjen",
+        "check": "Kontroller tilkoblingen og prøv igjen.",
+        "noMatch": "Ingen samsvarende måltider funnet",
+        "noItems": "Ingen måltider funnet"
+    },
+    "presetLibrary": {
+        "title": "Treningsmaler",
+        "search": "Søk etter treningsmaler...",
+        "noServer": "Ingen server er konfigurert",
+        "go": "Gå til innstillinger",
+        "loading": "Laster inn treningsmaler...",
+        "failed": "Kunne ikke laste inn treningsmaler",
+        "retry": "Prøv igjen",
+        "check": "Kontroller tilkoblingen og prøv igjen.",
+        "noMatch": "Ingen samsvarende forhåndsinnstillinger funnet",
+        "noItems": "Ingen treningsmaler ennå",
+        "moreFailed": "Kunne ikke laste inn more presets.",
+        "exerciseCount_one": "{{count}} øvelse",
+        "exerciseCount_other": "{{count}} øvelser"
+    },
+    "workoutForm": {
+        "viewExercise": "Vis øvelse",
+        "notes": "Notater",
+        "addExercise": "Legg til øvelse",
+        "exercise": "Trening"
+    },
+    "cycleLog": {
+        "saveFailed": "Lagringen mislyktes",
+        "deleteFailed": "Slettingen mislyktes"
+    },
+    "activitySummary": {
+        "heartRateZoneLight": "Lys"
+    },
+    "copyMeal": {
+        "copy": "Kopier"
+    },
+    "ingredientRow": {
+        "edit": "Rediger {{name}}"
+    },
+    "exerciseSetRest": {
+        "all": "Alle",
+        "rest": "Hvile",
+        "set": "Sett"
+    },
+    "foodSave": {
+        "failed": "Kunne ikke lagre mat"
+    },
+    "checkIn": {
+        "saveFailed": "Lagringen mislyktes"
+    },
+    "symptoms": {
+        "saveFailed": "Kunne ikke lagre symptom"
+    },
+    "waterIntake": {
+        "updateFailed": "Feil"
+    },
+    "pregnancy": {
+        "prompt": {
+            "message": "Legg til your due date to track baby's growth week by week and keep a bump photo journal."
+        }
+    },
+    "workoutDraft": {
+        "saveFailed": "Kunne ikke lagre draft"
+    },
+    "foodPhotoIntro": {
+        "weight": "Legg til weight when you know it",
+        "description": "Legg til a short description"
+    },
+    "barcode": {
+        "title": "Strekkode"
+    },
+    "cycleHub": {
+        "history": "Historikk",
+        "ring": {
+            "day": "Dag {{day}}"
+        }
+    },
+    "healthDataDisplay": {
+        "error": "Feil",
+        "workouts_one": "{{count}} treningsøkt",
+        "workouts_other": "{{count}} treningsøkter"
+    },
+    "sleep": {
+        "wakeUpA11y": "Åpne wake up sleep details",
+        "bedTimeA11y": "Åpne bedtime sleep details",
+        "napA11y": "Åpne nap details, {{time}}, {{duration}}",
+        "detailTitle": "Søvn",
+        "loading": "Laster inn sleep...",
+        "loadFailedSubtitle": "Kontroller tilkoblingen og prøv igjen.",
+        "stage": {
+            "light": "Lys",
+            "other": "Annet"
+        }
+    },
+    "foodProvenance": {
+        "aiEstimate": "KI-estimat"
+    },
+    "notes": {
+        "label": "Notater",
+        "placeholder": "Legg til a note… (supports markdown)"
+    },
+    "progressPhotos": {
+        "card": {
+            "viewAll": "Vis all",
+            "openA11y": "Vis progress photos"
+        },
+        "title": "Fremgangsbilder",
+        "angle": {
+            "front": "Forside",
+            "back": "Bakside",
+            "side": "Side"
+        },
+        "openPhotoA11y": "Vis this photo full screen",
+        "emptyBody": "Legg til one above and it will show up here with that day’s weight.",
+        "takePhoto": "Ta bilde",
+        "chooseLibrary": "Velg fra bibliotek",
+        "remove": "Fjern bilde",
+        "compare": "Sammenlign",
+        "compareTitle": "Sammenlign",
+        "before": "Før",
+        "after": "Etter",
+        "timelapseEmpty": "Legg til at least two photos of this angle to play a time-lapse.",
+        "play": "Spill av",
+        "pause": "Pause",
+        "speedSlow": "Sakte",
+        "speedNormal": "Normal",
+        "speedFast": "Rask",
+        "addDayA11y": "Legg til progress photos for this day",
+        "openDayA11y": "Åpne the progress photos for this day",
+        "historySection": "Historikk",
+        "viewAngleA11y": "Vis the {{angle}} photo full screen",
+        "addAngleA11y": "Legg til the {{angle}} photo",
+        "rangeAll": "Hele perioden"
+    }
+}
