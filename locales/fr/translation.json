@@ -2600,8 +2600,8 @@
             "asNeeded": "Au besoin",
             "medicationsTitle": "Médicaments du jour",
             "supplementsTitle": "Compléments alimentaires du jour",
-            "medicationsDescription": "Suivez les doses programmées et consignez les médicaments pris à la demande",
-            "noMedicationDoses": "Aucune dose prévue aujourd'hui. Notez ci-dessous tout médicament pris au besoin.",
+            "medicationsDescription": "Suivez les doses planifiées et consignez les médicaments pris à la demande",
+            "noMedicationDoses": "Aucune dose prévue aujourd'hui. Notez ci-dessous tout médicament pris si nécessaire",
             "supplementsDescription": "Suivez les doses planifiées et notez les compléments pris au besoin",
             "noSupplementDoses": "Aucune dose prévue aujourd'hui. Notez ci-dessous tout médicament pris au besoin.",
             "noPrnMedications": "Aucun médicament au besoin ou non programmé n'est configuré.",
@@ -2624,7 +2624,7 @@
             "loggedActivityDescription": "Tout ce que vous avez pris ou omis de prendre à cette date.",
             "loadingHistory": "Chargement de l'historique…",
             "addNote": "Ajouter une note...",
-            "note": "Note:",
+            "note": "Note :",
             "injectionDueToday": "Injection de {{name}} — prévue pour aujourd'hui",
             "injectionScheduled": "Injection de {{name}} — programmée",
             "scheduledAt": "Programmé à {{time}}",
@@ -2632,7 +2632,8 @@
             "logShot": "Plan d'ensemble",
             "taken": "Prise",
             "prnTaken": "Pris au besoin",
-            "editEntryTime": "Modifier l'heure de saisie"
+            "editEntryTime": "Modifier l'heure de saisie",
+            "removeEntry": "Supprimer l'entrée"
         },
         "locations": {
             "head": "Tête",
@@ -2662,7 +2663,8 @@
         "insights": {
             "title": "Analyses et conseils sur les effets secondaires",
             "subtitle": "Corrélations pharmacocinétiques superposées aux horaires de prise récents",
-            "disclaimer": "Les analyses sont calculées sur une fenêtre glissante de 30 jours. Il s'agit d'estimations à but éducatif, pas d'un avis médical."
+            "disclaimer": "Les analyses sont calculées sur une fenêtre glissante de 30 jours. Il s'agit d'estimations à but éducatif, pas d'un avis médical.",
+            "symptomCorrelation": "Corrélation : {{symptom}}"
         },
         "scheduleDesc": {
             "atTime": " à {{time}}",
@@ -2927,7 +2929,7 @@
             "effectiveness": "Évaluation de l'efficacité",
             "hideAdvanced": "Masquer les options avancées",
             "notesPlaceholder": "À prendre avec de l'eau avant le petit-déjeuner. Éviter la consommation d'alcool.",
-            "photoPath": "URL de la photo du comprimé / de l'étiquette (facultatif)",
+            "photoPath": "URL de la photo du comprimé ou de l'étiquette (facultatif)",
             "servingUnit_gummy_one": "gummy",
             "servingUnit_gummy_many": "gummies",
             "servingUnit_gummy_other": "gummies",
@@ -2993,7 +2995,7 @@
             "configDesc": "Afficher ou masquer certains graphiques et widgets de corrélation.",
             "configTitle": "Afficher/Masquer les visualisations",
             "corrDose": "Dose de GLP-1 vs sévérité des nausées",
-            "corrHydration": "Hydration vs. Constipation",
+            "corrHydration": "Hydratation vs. Constipation",
             "corrSleep": "Durée de sommeil vs. fatigue",
             "corrProtein": "Prise de protéine vs. nausée",
             "kpiAdherence": "Observance moyenne",
@@ -3028,18 +3030,23 @@
             "chartWeight": "Poids",
             "chartTargetWeight": "Poids Cible",
             "hydrationInsufficient": "Données insuffisants pour cartographier la relation. Continuez à suivre l'hydratation et les symptômes.",
-            "proteinTolerance": "<strong>Tolérance à la protéine :</strong> Un apport quotidien en protéines plus élevé est associé à une moindre intensité des nausées. Continuez à consommer des repas légers et riches en protéines."
+            "proteinTolerance": "<strong>Tolérance à la protéine :</strong> Un apport quotidien en protéines plus élevé est associé à une moindre intensité des nausées. Continuez à consommer des repas légers et riches en protéines.",
+            "configNauseaDose": "Comparaison nausées et dose",
+            "configGlp1Checkin": "Suivi quotidien du GLP-1",
+            "chartCheckInScore": "Score d'auto-évaluation (0-10)",
+            "chartHunger": "Niveau de faim",
+            "chartFoodNoise": "Préoccupation alimentaire"
         },
         "subtype": {
-            "all": "Tout",
+            "all": "Tous",
             "meds": "Médicaments",
-            "supplements": "Compléments"
+            "supplements": "Compléments alimentaires"
         },
         "forms": {
-            "tablet": "Tablette",
-            "capsule": "Capsule",
+            "tablet": "Comprimé",
+            "capsule": "Gélule",
             "softgel": "Capsule molle",
-            "gummy": "Gomme vitaminée (Gummy)",
+            "gummy": "Gomme à mâcher",
             "powder": "Poudre",
             "liquid": "Liquide"
         },
@@ -3296,7 +3303,7 @@
         "recovery": "Récupération : {{val}}",
         "fitnessAge": "Age physiologique : {{val}}",
         "readiness": "Etat de préparation",
-        "recHours": "Enr .:{{val}}"
+        "recHours": "Enr .: {{val}}"
     },
     "layout": {
         "welcome": "Bienvenue {{activeUserName}}"
@@ -3504,7 +3511,7 @@
         "preview": "Prévisualiser la contribution",
         "preparing": "Préparation de l'aperçu…",
         "previewError": "La prévisualisation n'a pas pu être préparée.",
-        "previewTitle": "Examinez cette contribution précise.",
+        "previewTitle": "Examinez cette contribution précise",
         "existingProduct": "Cette contribution met à jour un produit public existant. Vérifiez les informations actuelles avant de confirmer.",
         "newProduct": "Cette contribution crée un bien public.",
         "personalAccount": "Votre compte personnel Open Food Facts",
