@@ -14,4 +14,4 @@
 "widget.a11y.kcal_left" = "%@ kcal restantes";
 "widget.a11y.kcal" = "%@ kcal";
 "widget.search_food" = "Rechercher un aliment";
-"widget.scan_barcode" = "Scanner un code-barres";
+"widget.scan_barcode" = "Code barre";
