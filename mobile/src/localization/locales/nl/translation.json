@@ -290,8 +290,8 @@
             "title": "Taal",
             "system": "Systeem",
             "english": "English",
-            "polish": "Polski",
-            "spanish": "Español",
+            "polish": "Pools",
+            "spanish": "Spaans",
             "pickerHint": "Opent het menu voor taalselectie",
             "changeFailed": "Taal wijzigen is mislukt",
             "managedByIOS": "Beheerd door iOS",
@@ -497,7 +497,7 @@
         "removeWater": "Water verwijderen",
         "addWater": "Water toevoegen",
         "selectContainer": "Selecteer {{container}}",
-        "perContainer": "{{value}} {{unit}} per container"
+        "perContainer": "{{value}} {{unit}} per verpakking"
     },
     "notificationSettings": {
         "title": "Meldingen",
@@ -766,7 +766,7 @@
         "newActivity": "Nieuwe Activiteit",
         "workout": "Training",
         "activity": "Activiteit",
-        "logs": "Logs",
+        "logs": "Logboek",
         "healthSync": "Synchronisatie Gezondheid",
         "importHistory": "Geschiedenis Importeren",
         "measurements": "Metingen",
@@ -815,7 +815,11 @@
             "mealPlans": "Maaltijdplannen",
             "mealPlansSubtitle": "Maaltijden op bepaalde dagen herhalen"
         },
-        "sleep": "Slaap"
+        "sleep": "Slaap",
+        "healthTrendsSettings": "Gezondheidstrends",
+        "progressPhotos": "Voortgangsfoto's",
+        "progressPhotoCompare": "Vergelijken",
+        "progressPhotoTimelapse": "Time-lapse"
     },
     "healthMetrics": {
         "steps": "Stappen",
@@ -1098,8 +1102,8 @@
             "recomp": "Lichaamsrecompositie (-10%)",
             "cut": "Afvallen (-15%)",
             "highCut": "Sterk Afvallen (-20%)",
-            "leanBulk": "Lean Bulk (+10%)",
-            "bulk": "Aankomen (+20%)",
+            "leanBulk": "Rustig spiermassa opbouwen (+10%)",
+            "bulk": "Spiermassa (+20%)",
             "manual": "Handmatig (Aangepast %)",
             "customPercentage": "Aangepast percentage",
             "customPercentageDescription": "Positief voegt calorieën toe; negatief creëert een tekort. Beperkt tot ±40%."
@@ -1130,7 +1134,11 @@
         "cyclePregnancySubtitle": "Toon de welzijnskaart op het Dashboard",
         "medications": "Medicijnen",
         "medicationsSubtitle": "Toon de medicijnenkaart op het Dashboard",
-        "customNutrientDisplay": "Weergave Aangepaste Voedingsstoffen"
+        "customNutrientDisplay": "Weergave Aangepaste Voedingsstoffen",
+        "healthTrends": "Gezondheidstrends",
+        "healthTrendsSubtitle": "Kies welke grafieken op het Dashboard worden getoond en in welke volgorde",
+        "progressPhotos": "Voortgangsfoto's",
+        "progressPhotosSubtitle": "Toon de voortgangsfoto's-kaart op het Dashboard"
     },
     "diarySettings": {
         "updateFailed": "Bijwerken van instelling mislukt.",
@@ -1831,12 +1839,14 @@
             "g": "g",
             "ml": "ml",
             "oz": "oz",
-            "cup": "cup",
+            "cup": "kopje",
             "tbsp": "el",
             "tsp": "tl",
             "piece": "stuk"
         },
-        "unitPickerLabel": "Eenheid, {{unit}}"
+        "unitPickerLabel": "Eenheid, {{unit}}",
+        "notes": "Notities (optioneel)",
+        "notesPlaceholder": "bijv. het recept, of hoe u dit bereidt"
     },
     "nutrition": {
         "protein": "eiwit",
@@ -2097,7 +2107,7 @@
         "menstrualFlow": "Menstruatiebloeding",
         "flow": {
             "none": "Geen",
-            "spot": "Spotting",
+            "spot": "Vlekje",
             "light": "Licht",
             "medium": "Matig",
             "heavy": "Zwaar"
@@ -2169,7 +2179,7 @@
             "mood_swings": "Stemmingswisselingen",
             "anxiety": "Angst",
             "hot_flashes": "Opvliegers",
-            "spotting": "Spotting",
+            "spotting": "Vlekjes",
             "body_aches": "Lichaamspijn",
             "joint_pain": "Gewrichtspijn",
             "muscle_soreness": "Spierpijn",
@@ -2402,7 +2412,9 @@
         "addFood": "Voeding Toevoegen",
         "saved": "Opgeslagen",
         "equivalentUnitsUpdated_one": "Opgeslagen · {{formattedCount}} gelijkwaardige eenheid bijgewerkt",
-        "equivalentUnitsUpdated_other": "Opgeslagen · {{formattedCount}} gelijkwaardige eenheden bijgewerkt"
+        "equivalentUnitsUpdated_other": "Opgeslagen · {{formattedCount}} gelijkwaardige eenheden bijgewerkt",
+        "notes": "Notities",
+        "notesPlaceholder": "bijv. Witte rijst, dubbele kip, geen bonen (ondersteunt markdown)"
     },
     "exerciseHistory": {
         "noSetData": "Geen setgegevens",
@@ -2876,7 +2888,9 @@
         "makesSummary_one": "Maakt {{servings}} {{servingLabel}} · {{count}} {{ingredientLabel}}",
         "makesSummary_other": "Maakt {{servings}} {{servingLabel}} · {{count}} {{ingredientLabel}}",
         "items_one": "{{formattedCount}} item",
-        "items_other": "{{formattedCount}} items"
+        "items_other": "{{formattedCount}} items",
+        "planMeal": "Maaltijd Plannen",
+        "notes": "Notities"
     },
     "dailyNutritionDetails": {
         "title": "Voedingsdetails",
@@ -2929,7 +2943,10 @@
             "serving_one": "portie",
             "serving_other": "porties",
             "mealMakes_one": "maaltijd maakt {{formattedCount}} portie",
-            "mealMakes_other": "maaltijd maakt {{formattedCount}} porties"
+            "mealMakes_other": "maaltijd maakt {{formattedCount}} porties",
+            "aboutThisFood": "Over dit voedingsmiddel",
+            "entryNotes": "Notitie voor deze registratie",
+            "entryNotesPlaceholder": "Iets specifieks over deze keer dat u het at"
         },
         "pickers": {
             "selectServing": "Selecteer Portie",
@@ -3276,7 +3293,8 @@
             "invalidAmount": "Ongeldige hoeveelheid",
             "amountRequired": "De hoeveelheid moet groter zijn dan nul.",
             "noMealType": "Geen maaltijdtype",
-            "noMealTypesAvailable": "Er zijn geen maaltijdtypes beschikbaar. Controleer uw accountinstellingen."
+            "noMealTypesAvailable": "Er zijn geen maaltijdtypes beschikbaar. Controleer uw accountinstellingen.",
+            "foodSaveFailed": "Opslaan van voedingsmiddel mislukt"
         }
     },
     "foodDetail": {
@@ -3298,7 +3316,8 @@
         "servingOptionsError": "Sommige portieopties konden nu niet worden geladen.",
         "barcode": "Streepjescode",
         "logFood": "Voeding Registreren",
-        "deleteFood": "Voedingsmiddel Verwijderen"
+        "deleteFood": "Voedingsmiddel Verwijderen",
+        "notes": "Notities"
     },
     "foodEntryView": {
         "saveChanges": "Wijzigingen aan voedingsregistratie opslaan",
@@ -3324,7 +3343,8 @@
             "saveFailed": "Opslaan van wijzigingen mislukt",
             "deleteFailed": "Verwijderen mislukt"
         },
-        "deleteConfirm": "Weet u zeker dat u deze voedingsregistratie wilt verwijderen?"
+        "deleteConfirm": "Weet u zeker dat u deze voedingsregistratie wilt verwijderen?",
+        "entryNotes": "Notitie voor deze registratie"
     },
     "presetSearch": {
         "title": "Training Starten",
@@ -3372,7 +3392,7 @@
         }
     },
     "logScreen": {
-        "title": "Logs",
+        "title": "Logboek",
         "all": "Alle",
         "clearLogs": "Logs wissen",
         "filterSaveFailed": "Opslaan van logfilter mislukt.",
@@ -3494,7 +3514,9 @@
             "meal": "Maaltijd",
             "selectMeal": "Selecteer Maaltijd",
             "time": "Tijd",
-            "foodsInMeal": "Voedingsmiddelen in deze maaltijd"
+            "foodsInMeal": "Voedingsmiddelen in deze maaltijd",
+            "notes": "Notitie voor deze registratie",
+            "aboutThisMeal": "Over deze maaltijd"
         },
         "states": {
             "noFoods": "Nog geen voedingsmiddelen in deze maaltijd."
@@ -3883,8 +3905,8 @@
             "l": "l",
             "liter": "l",
             "liters": "l",
-            "cup": "cup",
-            "cups": "cups",
+            "cup": "kopje",
+            "cups": "kopjes",
             "tbsp": "el",
             "tsp": "tl",
             "piece": "stuk",
@@ -3909,10 +3931,10 @@
             "low": "Laag"
         },
         "unitPlurals": {
-            "cup_one": "cup",
-            "cup_other": "cups",
-            "cups_one": "cup",
-            "cups_other": "cups",
+            "cup_one": "kopje",
+            "cup_other": "kopjes",
+            "cups_one": "kopje",
+            "cups_other": "kopjes",
             "tbsp_one": "el",
             "tbsp_other": "el",
             "tsp_one": "tl",
@@ -3952,7 +3974,8 @@
     "charts": {
         "weight": {
             "title": "Gewicht",
-            "loadFailed": "Laden van gewichtsgegevens mislukt"
+            "loadFailed": "Laden van gewichtsgegevens mislukt",
+            "empty": "Geen gewichtsgegevens voor deze periode"
         },
         "steps": {
             "title": "Stappen",
@@ -3976,7 +3999,16 @@
         "bbt": {
             "tooltip": "Druk op de lijn voor details",
             "empty": "Registreer dagelijkse temperatuurmetingen om uw BBT-grafiek te bekijken."
-        }
+        },
+        "sleep": {
+            "title": "Slaap",
+            "loadFailed": "Laden van slaapgegevens mislukt",
+            "empty": "Geen slaapgegevens voor deze periode",
+            "avgTimeInBed": "Gem. tijd in bed",
+            "avgTimeAsleep": "Gem. tijd geslapen",
+            "rangeLabel": "{{startDate}} – {{endDate}}"
+        },
+        "allTrendsHidden": "Alle grafieken zijn verborgen. Kies welke u wilt tonen in Dashboardinstellingen."
     },
     "exerciseLibrary": {
         "title": "Oefeningen",
@@ -4552,7 +4584,7 @@
                     "note": "Wordt over het algemeen als eerste keuze beschouwd voor pijn/koorts bij de aanbevolen dosering. Overleg met uw zorgverlener."
                 },
                 "ibuprofen": {
-                    "name": "Ibuprofen (Advil)",
+                    "name": "Ibuprofen",
                     "note": "Vermijd vooral in het derde trimester; gebruik alleen op advies van uw zorgverlener."
                 },
                 "aspirin": {
@@ -4629,7 +4661,8 @@
         "configure": "Configureer uw serververbinding in Instellingen om uw trainingsvoorinstellingen te bekijken."
     },
     "time": {
-        "hoursShort": "u"
+        "hoursShort": "u",
+        "minutesShort": "m"
     },
     "exerciseImage": {
         "playAnimation": "Oefeninganimatie afspelen",
@@ -4679,5 +4712,261 @@
     "foodProvenance": {
         "aiEstimate": "AI-schatting",
         "aiEstimateAccessibility": "Voedingswaarde geschat door AI"
+    },
+    "mealPlans": {
+        "title": "Maaltijdplannen",
+        "create": "Maaltijdplan Aanmaken",
+        "createTitle": "Maaltijdplan Aanmaken",
+        "editTitle": "Maaltijdplan Bewerken",
+        "active": "Actief",
+        "inactive": "Inactief",
+        "dateRange": "{{start}} – {{end}}",
+        "starting": "Vanaf {{date}}",
+        "moreAssignments_one": "+{{count}} meer",
+        "moreAssignments_other": "+{{count}} meer",
+        "duplicateNamed": "{{name}} dupliceren",
+        "deleteNamed": "{{name}} verwijderen",
+        "duplicateSuccess": "Maaltijdplan gedupliceerd",
+        "duplicateInactive": "De kopie is inactief, zodat u deze eerst kunt controleren.",
+        "duplicateFailed": "Dupliceren van maaltijdplan mislukt",
+        "deleteTitle": "Maaltijdplan Verwijderen",
+        "deleteMessage": "{{name}} verwijderen? Toekomstige dagboekregistraties die door dit plan zijn gegenereerd, worden verwijderd.",
+        "deleteFailed": "Verwijderen van maaltijdplan mislukt",
+        "deleteSuccess": "Maaltijdplan verwijderd",
+        "noServer": "Geen server geconfigureerd",
+        "noServerSubtitle": "Configureer uw serververbinding om maaltijdplannen te beheren.",
+        "goToSettings": "Ga naar Instellingen",
+        "loading": "Maaltijdplannen laden...",
+        "loadFailed": "Laden van maaltijdplannen mislukt",
+        "loadFailedSubtitle": "Controleer uw verbinding en probeer het opnieuw.",
+        "futureNotice": "Actieve plannen voegen registraties toe aan toekomstige dagboekdagen. Het bewerken of verwijderen van een plan werkt toekomstig gegenereerde registraties bij.",
+        "emptyTitle": "Nog geen maaltijdplannen",
+        "emptySubtitle": "Plan herbruikbare maaltijden op geselecteerde weekdagen voor eenvoudigere maaltijdvoorbereiding.",
+        "assignmentUnavailable": "Een herbruikbare maaltijd en maaltijdtype zijn vereist",
+        "loadingPlanningOptions": "Planningsopties laden...",
+        "planningOptionsFailed": "Laden van planningsopties mislukt",
+        "planningOptionsFailedSubtitle": "Controleer uw verbinding en probeer het opnieuw.",
+        "planningSetupNeeded": "Instelling voor maaltijdplanning vereist",
+        "noReusableMeals": "Maak een herbruikbare maaltijd aan voordat u een plan aanmaakt.",
+        "noMealTypes": "Voeg een zichtbaar maaltijdtype toe voordat u een plan aanmaakt.",
+        "updateSuccess": "Maaltijdplan bijgewerkt",
+        "createSuccess": "Maaltijdplan aangemaakt",
+        "updateFailed": "Bijwerken van maaltijdplan mislukt",
+        "createFailed": "Aanmaken van maaltijdplan mislukt",
+        "foodAssignment": "Voedingstoewijzing",
+        "managedOnWeb": "Beheerd op het web",
+        "foodPreserved": "Deze voedingstoewijzing blijft behouden wanneer u opslaat. Bewerk deze in de webapp.",
+        "mealAssignment": "Maaltijdtoewijzing",
+        "removeAssignment": "Maaltijdtoewijzing verwijderen",
+        "weekday": "Weekdag",
+        "selectWeekday": "Selecteer weekdag",
+        "mealType": "Maaltijdtype",
+        "selectMealType": "Selecteer maaltijdtype",
+        "reusableMeal": "Herbruikbare maaltijd",
+        "selectMeal": "Selecteer maaltijd",
+        "quantity": "Hoeveelheid",
+        "quantityFor": "Hoeveelheid voor {{name}}",
+        "quantityHint": "Gebruik de portie-eenheid van de maaltijd. Voer voor afgewogen maaltijdvoorbereiding de hoeveelheid in die in één container gaat.",
+        "name": "Naam van het Plan",
+        "namePlaceholder": "Naam van het maaltijdplan",
+        "nameRequired": "Naam van het plan is verplicht.",
+        "description": "Beschrijving",
+        "descriptionPlaceholder": "Optionele notities over dit plan",
+        "startDate": "Startdatum",
+        "endDate": "Einddatum",
+        "noEndDate": "Geen einddatum",
+        "clearEndDate": "Einddatum wissen",
+        "endBeforeStart": "De einddatum kan niet vóór de startdatum liggen.",
+        "activePlan": "Actief Plan",
+        "activePlanHint": "Actieve plannen vullen overeenkomende toekomstige dagboekdagen.",
+        "assignments": "Wekelijkse Toewijzingen",
+        "assignmentsHint": "Kies welke hoeveelheid van een herbruikbare maaltijd op elke dag moet verschijnen.",
+        "addMeal": "Maaltijd toevoegen",
+        "weeklyPlan": "Wekelijks plan",
+        "oneDayHint": "Kies een dag en voeg dan voedingsmiddelen of herbruikbare maaltijden toe aan elk maaltijdtype.",
+        "mealBadge": "Maaltijd",
+        "foodBadge": "Voeding",
+        "replaceAssignmentFor": "{{name}} vervangen",
+        "removeAssignmentFor": "{{name}} verwijderen",
+        "addToMealType": "Voeding of maaltijd toevoegen aan {{mealType}}",
+        "addFoodOrMeal": "Voeding of maaltijd toevoegen",
+        "caloriesLabel": "Calorieën",
+        "proteinLabel": "Eiwit",
+        "carbsLabel": "Koolhydraten",
+        "fatLabel": "Vet",
+        "nutritionLine": "{{calories}} kcal · {{protein}} g E · {{carbs}} g K · {{fat}} g V",
+        "dailyNutritionAccessibility": "Dagelijks {{nutrient}} {{value}} {{unit}}",
+        "mealTypeNutritionAccessibility": "Totaal {{mealType}}: {{calories}} kcal, {{protein}} g eiwit, {{carbs}} g koolhydraten, {{fat}} g vet",
+        "mealTypeMacros": "{{protein}} g E · {{carbs}} g K · {{fat}} g V",
+        "caloriesValue": "{{value}} kcal",
+        "nutritionLoading": "Ontbrekende voedingsdetails laden. Totalen kunnen onvolledig zijn.",
+        "nutritionLoadFailed": "Sommige voedingsdetails konden niet worden geladen. Totalen kunnen onvolledig zijn.",
+        "assignmentRequired": "Voeg minstens één volledige maaltijdtoewijzing toe.",
+        "familyNotice": "U kunt uw eigen maaltijden plannen, plus gezins- of openbare maaltijden die al zichtbaar zijn in uw maaltijdbibliotheek. Het plan blijft privé voor dit account en verandert niets aan het delen van maaltijden.",
+        "weekdays": {
+            "sunday": "Zondag",
+            "monday": "Maandag",
+            "tuesday": "Dinsdag",
+            "wednesday": "Woensdag",
+            "thursday": "Donderdag",
+            "friday": "Vrijdag",
+            "saturday": "Zaterdag"
+        },
+        "weekdaysShort": {
+            "sunday": "Zo",
+            "monday": "Ma",
+            "tuesday": "Di",
+            "wednesday": "Wo",
+            "thursday": "Do",
+            "friday": "Vr",
+            "saturday": "Za"
+        }
+    },
+    "sleep": {
+        "wakeUp": "Wakker Worden",
+        "wakeUpA11y": "Details wakker worden openen",
+        "bedTime": "Bedtijd",
+        "bedTimeA11y": "Details bedtijd openen",
+        "napCount_one": "{{count}} dutje",
+        "napCount_other": "{{count}} dutjes",
+        "napA11y": "Dutjedetails openen, {{time}}, {{duration}}",
+        "timeAsleep": "Tijd geslapen",
+        "timeInBed": "Tijd in bed",
+        "score": "Score",
+        "valueUnavailable": "—",
+        "detailTitle": "Slaap",
+        "loading": "Slaap laden...",
+        "notFound": "Slaapregistratie niet gevonden",
+        "notFoundSubtitle": "Deze slaapsessie is mogelijk verwijderd of wordt niet meer gesynchroniseerd.",
+        "loadFailed": "Kon deze slaapsessie niet laden",
+        "loadFailedSubtitle": "Controleer uw verbinding en probeer het opnieuw.",
+        "bedtimeToWake": "{{bedtime}} – {{wakeTime}}",
+        "hypnogram": "Slaapfasen",
+        "hypnogramEmpty": "Deze bron heeft geen slaapfasen geregistreerd.",
+        "stageBreakdown": "Uitsplitsing per Fase",
+        "percentValue": "{{percent}}%",
+        "stage": {
+            "awake": "Wakker",
+            "rem": "REM",
+            "light": "Licht",
+            "deep": "Diep",
+            "other": "Overig"
+        },
+        "biometrics": "Nachtelijke Biometrie",
+        "averageSpo2": "Gemiddelde SpO2",
+        "lowestSpo2": "Laagste SpO2",
+        "highestSpo2": "Hoogste SpO2",
+        "restingHeartRate": "Rusthartslag",
+        "percentUnit": "%",
+        "bpmUnit": "bpm",
+        "quality": "Slaapkwaliteit"
+    },
+    "notes": {
+        "label": "Notities",
+        "placeholder": "Voeg een notitie toe… (ondersteunt markdown)",
+        "write": "Schrijven",
+        "preview": "Voorbeeld",
+        "nothingToPreview": "Nog niets om te bekijken.",
+        "toolbar": {
+            "bold": "Vet",
+            "italic": "Cursief",
+            "strikethrough": "Doorhalen",
+            "heading": "Kop",
+            "bulletList": "Opsommingslijst",
+            "numberedList": "Genummerde lijst",
+            "taskList": "Checklist (alleen weergave)",
+            "quote": "Citaat",
+            "code": "Code",
+            "link": "Link",
+            "table": "Tabel",
+            "insertImage": "Foto invoegen",
+            "photoNumber": "Foto {{number}}"
+        },
+        "photoUnavailable": "Foto niet beschikbaar"
+    },
+    "healthTrendsSettings": {
+        "description": "Sleep een grafiek aan de hendel om deze te herschikken. Zet hem onder de lijn Verborgen om hem van het Dashboard te halen.",
+        "hiddenLabel": "Verborgen",
+        "reorder": "{{name}} herschikken",
+        "reorderHint": "Verplaats onder de lijn Verborgen om deze grafiek te verbergen, of erboven om hem te tonen",
+        "moveUp": "Omhoog verplaatsen",
+        "moveDown": "Omlaag verplaatsen",
+        "stateShown": "Getoond",
+        "stateHidden": "Verborgen",
+        "emptyShown": "Er worden geen grafieken getoond. Sleep er een boven de lijn om hem terug te zetten.",
+        "emptyHidden": "Sleep hier een grafiek naartoe om deze te verbergen."
+    },
+    "progressPhotos": {
+        "card": {
+            "title": "Voortgang",
+            "viewAll": "Alles bekijken",
+            "openA11y": "Voortgangsfoto's bekijken"
+        },
+        "title": "Voortgangsfoto's",
+        "angle": {
+            "front": "Voorkant",
+            "back": "Achterkant",
+            "side": "Zijkant"
+        },
+        "noWeight": "Geen gewicht geregistreerd",
+        "logWeight": "Gewicht Registreren",
+        "logWeightA11y": "Registreer uw gewicht voor deze dag",
+        "openPhotoA11y": "Deze foto op volledig scherm bekijken",
+        "sincePrevious": "{{delta}} sinds vorige",
+        "emptyTitle": "Nog geen {{angle}}-foto's",
+        "emptyBody": "Voeg er hierboven een toe en deze verschijnt hier samen met het gewicht van die dag.",
+        "loadError": "Kon uw voortgangsfoto's niet laden.",
+        "takePhoto": "Foto Maken",
+        "chooseLibrary": "Kiezen uit Bibliotheek",
+        "remove": "Foto Verwijderen",
+        "cameraPermission": "Cameratoestemming vereist",
+        "cameraPermissionHint": "Schakel cameratoegang voor SparkyFitness in bij Instellingen.",
+        "compare": "Vergelijken",
+        "compareTitle": "Vergelijken",
+        "before": "Voor",
+        "after": "Na",
+        "pickWhich": "Tik op een van beide datums om een andere dag te vergelijken",
+        "timelapse": "Time-lapse",
+        "timelapseTitle": "Time-lapse",
+        "timelapseEmpty": "Voeg minstens twee foto's van deze hoek toe om een time-lapse af te spelen.",
+        "previousFrame": "Vorige foto",
+        "nextFrame": "Volgende foto",
+        "play": "Afspelen",
+        "pause": "Pauzeren",
+        "speedSlow": "Langzaam",
+        "speedNormal": "Normaal",
+        "speedFast": "Snel",
+        "daysApart_one": "{{count}} dag ertussen",
+        "daysApart_other": "{{count}} dagen ertussen",
+        "noPhotoOnDay": "Geen foto voor deze hoek op die dag",
+        "pickDayA11y": "Kies de {{side}} dag",
+        "range30d": "Laatste 30 dagen",
+        "range3m": "Laatste 3 maanden",
+        "chooseDayA11y": "Kies de dag",
+        "diarySection": "Voortgangsfoto's",
+        "tapToAdd": "Tik om foto's toe te voegen",
+        "addDayA11y": "Voortgangsfoto's toevoegen voor deze dag",
+        "angleCount": "{{taken}} van {{total}}",
+        "openDayA11y": "De voortgangsfoto's voor deze dag openen",
+        "missingAngleA11y": "Geen {{angle}}-foto op deze dag",
+        "historySection": "Geschiedenis",
+        "historyDescription": "Uw foto's voor deze hoek, nieuwste eerst.",
+        "historyDescriptionCapped": "Uw {{limit}} meest recente. Vergelijken of Time-lapse gaan verder terug.",
+        "slotSheetTitle": "Voortgangsfoto",
+        "removeTitle": "Foto verwijderen?",
+        "removeMessage": "Hiermee wordt de foto van deze dag verwijderd.",
+        "uploadError": "Kon die foto niet opslaan",
+        "deleteError": "Kon die foto niet verwijderen",
+        "viewAngleA11y": "De {{angle}}-foto op volledig scherm bekijken",
+        "addAngleA11y": "De {{angle}}-foto toevoegen",
+        "manageAngleA11y": "De {{angle}}-foto vervangen of verwijderen",
+        "rangeAll": "Alle tijd",
+        "rangeCustom": "Aangepast bereik…",
+        "rangeSheetTitle": "Een datumbereik afspelen",
+        "rangeSheetAction": "Dit bereik afspelen",
+        "rangeSection": "Afspelen",
+        "rangeA11y": "Kies hoe ver terug u wilt afspelen",
+        "deltaBadge": "Δ {{value}}",
+        "frameCountRanged": "{{current}} van {{total}} · {{range}}"
     }
 }
