@@ -578,7 +578,21 @@
         "editExerciseDescription": "Edita los detalles a continuación.",
         "noExercisesInPreset": "No hay ejercicios en esta plantilla.",
         "startWorkout": "Iniciar entrenamiento",
-        "workoutPreset": "Plantilla de entrenamiento"
+        "workoutPreset": "Plantilla de entrenamiento",
+        "activeCaloriesValue": "{{calories}} activas",
+        "setCount": "{{count}} serie",
+        "secondsShort": "{{count}}s",
+        "repCount": "{{count}} rep",
+        "meta": {
+            "beginner": "Principiante",
+            "intermediate": "Intermedio",
+            "expert": "Experto",
+            "pull": "Tirón",
+            "push": "Empuje",
+            "static": "Estático",
+            "isolation": "Aislamiento",
+            "compound": "Compuesto"
+        }
     },
     "foodSearchDialog": {
         "title": "Buscar y añadir comida",
@@ -712,7 +726,17 @@
             "timeFormat12Lower": "12 horas am/pm (2:30 pm)",
             "timeFormat12Upper": "12 horas AM/PM (2:30 PM)",
             "timeFormat24": "24 horas (14:30)",
-            "timezone": "Zona horaria"
+            "timezone": "Zona horaria",
+            "chartScaleMode": "Modo de escala del gráfico",
+            "chartScalePoint": "Espaciado uniforme (cada entrada tiene el mismo ancho)",
+            "chartScaleTime": "Proporcional al tiempo (los intervalos entre entradas son visibles)",
+            "sunday": "Domingo",
+            "monday": "Lunes",
+            "tuesday": "Martes",
+            "wednesday": "Miércoles",
+            "thursday": "Jueves",
+            "friday": "Viernes",
+            "saturday": "Sábado"
         },
         "waterTracking": {
             "title": "Registro de agua",
@@ -728,7 +752,30 @@
         },
         "nutrientDisplay": {
             "title": "Visualización de nutrientes",
-            "description": "Elige qué nutrientes mostrar en las vistas de comida y comidas"
+            "description": "Elige qué nutrientes mostrar en las vistas de comida y comidas",
+            "platformDesktop": "Escritorio",
+            "platformMobile": "Móvil",
+            "groups": {
+                "summary": "Resumen",
+                "quickInfo": "Información rápida",
+                "foodDatabase": "Base de datos de alimentos",
+                "goal": "Objetivo",
+                "reportTabular": "Informe (tabular)",
+                "reportChart": "Informe (gráfico)"
+            },
+            "descriptions": {
+                "summary": "Controla el Resumen de Nutrición y las Tendencias de 14 días en la página del Diario.",
+                "quickInfo": "Controla los nutrientes que se muestran en las entradas individuales de alimentos, totales de comidas, resultados de búsqueda y en la base de datos de alimentos.",
+                "foodDatabase": "Controla los nutrientes que se muestran al editar alimentos en tu base de datos.",
+                "goal": "Controla los nutrientes que se muestran al establecer o editar tus objetivos.",
+                "reportTabular": "Controla las columnas de nutrientes en la vista de tabla de Informes.",
+                "reportChart": "Controla qué nutrientes están disponibles para los gráficos en la sección de Informes."
+            },
+            "syncWith": "Sincronizar con {{platform}}",
+            "selectAll": "Seleccionar todo",
+            "clearAll": "Desmarcar todo",
+            "resetDefault": "Restablecer valores predeterminados",
+            "dragToReorder": "Arrastra para reordenar {{nutrient}}"
         },
         "calculationSettings": {
             "title": "Ajustes de cálculo",
@@ -736,7 +783,58 @@
         },
         "familyAccess": {
             "title": "Acceso de la familia",
-            "description": "Gestiona el acceso a tus datos para los miembros de la familia"
+            "description": "Gestiona el acceso a tus datos para los miembros de la familia",
+            "addFamilyMember": "Añadir miembro de la familia",
+            "noAccess": "Aún no se ha concedido acceso familiar",
+            "noAccessDescription": "Añade miembros de la familia para permitirles ayudarte a gestionar tus datos de fitness",
+            "selectPermissionError": "Por favor, selecciona al menos un permiso",
+            "selfAccessError": "No puedes concederte acceso a ti mismo",
+            "alreadyGrantedError": "Ya se ha concedido acceso a este miembro de la familia",
+            "statusInactive": "Inactivo",
+            "statusActive": "Activo",
+            "statusPending": "Pendiente",
+            "statusUnknown": "Desconocido",
+            "editDialogTitle": "Editar acceso familiar",
+            "addDialogTitle": "Añadir acceso familiar",
+            "familyMemberEmail": "Correo electrónico del familiar",
+            "emailPlaceholder": "Introduce el correo electrónico del familiar",
+            "accountHint": "Obtendrán acceso una vez que creen una cuenta en SparkyFitness (si aún no tienen una)",
+            "accessPermissions": "Permisos de acceso",
+            "canManageDiary": "Puede gestionar el diario",
+            "canManageDiaryHelp": "Permite al delegado registrar comidas, entrenamientos, agua y objetivos en tu nombre. Los registros de bienestar (sueño, estado de ánimo, ayuno) están bloqueados. Otorga acceso al perfil en modo de solo lectura.",
+            "canUseFoodLibrary": "Puede usar mi biblioteca de alimentos y comidas",
+            "canUseFoodLibraryHelp": "Permite al delegado buscar y seleccionar entre tus alimentos, comidas y recetas personalizadas al cambiar de contexto. No otorga acceso a los registros del diario ni a la configuración del perfil.",
+            "canUseExerciseLibrary": "Puede usar mi biblioteca de ejercicios y entrenamientos",
+            "canUseExerciseLibraryHelp": "Permite al delegado ver y utilizar tus ejercicios personalizados y rutinas preestablecidas al cambiar de contexto. No otorga acceso a los registros del diario ni a la configuración del perfil.",
+            "canManageCheckin": "Puede gestionar los datos de seguimiento",
+            "canManageCheckinHelp": "Permite al delegado registrar peso, medidas corporales, fotos de progreso, registros de sueño, estado de ánimo y estado de ayuno en tu nombre. Los registros del diario están bloqueados. Otorga acceso al perfil en modo de solo lectura.",
+            "canManageMedications": "Puede gestionar medicamentos",
+            "canManageMedicationsHelp": "Permite al delegado registrar medicamentos, dosis, planes de titulación, síntomas y zonas de inyección en tu nombre. Los registros del diario están bloqueados. Otorga acceso al perfil en modo de solo lectura.",
+            "canViewReports": "Puede ver informes",
+            "canViewReportsHelp": "Permite al delegado ver gráficos, estadísticas y registros históricos en tu panel. No se conceden privilegios de escritura. Otorga acceso al perfil en modo de solo lectura.",
+            "shareExternalProviders": "Compartir proveedores de datos externos",
+            "shareExternalProvidersHelp": "Permite al delegado buscar alimentos/ejercicios utilizando tus proveedores de API configurados (p. ej., FatSecret, USDA). Las integraciones de salud (Garmin, Fitbit, etc.) son estrictamente privadas y nunca se comparten.",
+            "accessEndDate": "Fecha de finalización del acceso (opcional)",
+            "accessEndDateHint": "Déjalo vacío para un acceso indefinido",
+            "updateAccess": "Actualizar acceso",
+            "grantAccess": "Conceder acceso",
+            "rulesCreated": "Reglas que he creado",
+            "rulesReceived": "Reglas asignadas a mí",
+            "familyMember": "Miembro de la familia",
+            "grantedBy": "Otorgado por",
+            "permissions": "Permisos",
+            "endDate": "Fecha de finalización",
+            "status": "Estado",
+            "managesDiary": "Gestiona el diario",
+            "foodLibrary": "Biblioteca de alimentos",
+            "exerciseLibrary": "Biblioteca de ejercicios",
+            "managesCheckin": "Gestiona el seguimiento",
+            "managesMedications": "Gestiona medicamentos",
+            "viewsReports": "Ve informes",
+            "sharesExternalProviders": "Comparte proveedores externos",
+            "noEndDate": "Sin fecha de finalización",
+            "editRule": "Editar regla de acceso",
+            "deleteRule": "Eliminar regla de acceso"
         },
         "customCategories": {
             "title": "Categorías personalizadas",
@@ -1038,7 +1136,23 @@
         "customNutrients": {
             "title": "Nutrientes personalizados",
             "subtitle": "Administra tus definiciones personalizadas de nutrientes",
-            "failedToAddNutrient": "Error al añadir el nutriente."
+            "failedToAddNutrient": "Error al añadir el nutriente.",
+            "addTitle": "Añadir nuevo nutriente personalizado",
+            "name": "Nombre del nutriente",
+            "namePlaceholder": "p. ej., Azúcares añadidos",
+            "unit": "Unidad",
+            "unitPlaceholder": "p. ej., g, mg, UI",
+            "providerAliases": "Si no se marca, los valores antiguos se mantendrán en tu historial, pero el nutriente se ocultará de la interfaz.",
+            "aliasPlaceholder": "Escribe un nombre y presiona Entrar",
+            "aliasesHelp": "Los alias son los nombres exactos que las bases de datos de alimentos en línea utilizan para este nutriente (presiona Entrar para añadir cada uno). Al importar, los campos de nutrientes del proveedor se comparan (sin distinguir mayúsculas de minúsculas) con el nombre y estos alias. Consejo: usa el panel \"Campos de nutrientes informados por…\" al importar un alimento para añadir el nombre exacto de un proveedor con un solo clic.",
+            "add": "Añadir nutriente personalizado",
+            "existing": "Nutrientes personalizados existentes",
+            "empty": "Aún no se han definido nutrientes personalizados.",
+            "required": "El nombre del nutriente y la unidad son obligatorios.",
+            "deleteTitle": "¿Estás completamente seguro?",
+            "deleteDescription": "Esta acción no se puede deshacer. Se eliminará permanentemente la definición de tu nutriente personalizado.",
+            "deleteHistory": "¿Eliminar también de objetivos anteriores y entradas del diario?",
+            "deleteHistoryHelp": "Si no se marca, los valores antiguos permanecerán en tu historial pero el nutriente se ocultará de la interfaz."
         },
         "customMeals": {
             "title": "Comidas personalizadas",
@@ -1264,7 +1378,37 @@
             "deficitCeilingHintEstimated": "En tu nivel de actividad actual, el déficit más profundo alcanzable es de aprox. {{percent}}%. Los modos más profundos se elevarán a tu límite de seguridad.",
             "deficitCeilingHintMeasured": "Según tu TDEE medido, el déficit más profundo alcanzable es de aprox. {{percent}}%. Los modos más profundos se elevarán a tu límite de seguridad.",
             "clampAdviceEstimated": ". Para perder peso más rápido, aumenta tu gasto mediante actividad o verifica que tu Nivel de Actividad no esté subestimado; este define el techo hasta que tengas suficiente historial para una base medida.",
-            "clampAdviceMeasured": ". Para perder peso más rápido, aumenta tu gasto real en lugar de reducir más la ingesta; tu base ya está medida, por lo que el ajuste del Nivel de Actividad ya no le afecta."
+            "clampAdviceMeasured": ". Para perder peso más rápido, aumenta tu gasto real en lugar de reducir más la ingesta; tu base ya está medida, por lo que el ajuste del Nivel de Actividad ya no le afecta.",
+            "modeNames": {
+                "maintain": "Mantenimiento",
+                "recomp": "Recomposición corporal",
+                "cut": "Definición",
+                "highCut": "Definición agresiva",
+                "leanBulk": "Volumen limpio",
+                "bulk": "Volumen",
+                "manual": "Manual"
+            },
+            "dailyCalorieTarget": "Objetivo calórico diario:",
+            "perWeek": "/ semana",
+            "rate": "Ritmo:",
+            "bodyWeightRate": "{{percent}}% del peso corporal / semana",
+            "estimatedTargetNote": "Nota: Este objetivo se basa actualmente en un nivel de actividad estimado. Tras más de {{required}} días con datos de peso y calorías, SparkyFitness calculará un TDEE adaptativo más personalizado.",
+            "minimumMetabolismWarningTitle": "Alerta de seguridad: Objetivo de calorías por debajo del metabolismo mínimo",
+            "minimumMetabolismWarningText": "Tu objetivo de calorías está por debajo de tu metabolismo mínimo estimado (RMR). Esto puede no ser sostenible a largo plazo. Considera seleccionar un Modo de objetivo menos agresivo o activar un límite de seguridad Estándar o Personalizado.",
+            "absoluteFloorWarningTitle": "Alerta crítica de salud: Objetivo de calorías por debajo del límite absoluto",
+            "absoluteFloorWarningText": "Tu objetivo de calorías está por debajo del límite clínico de seguridad absoluto de {{floor}}/día. Por lo general, no se recomiendan déficits por debajo de este nivel sin supervisión médica directa.",
+            "clampExplanation": "El déficit que seleccionaste equivale a {{target}} {{unit}}, lo cual está por debajo de tu {{floorDescription}} de {{floor}} {{unit}}, por lo que tu objetivo se ha elevado a ese mínimo.",
+            "estimatedRmrDescription": "metabolismo en reposo estimado (RMR)",
+            "absoluteFloorDescription": "límite de seguridad absoluto",
+            "largestFeasibleDeficit": "El mayor déficit que se ajusta por encima de tu mínimo es de aproximadamente {{percent}}%",
+            "manualFloorWarning": "El método de cálculo manual no aplica este límite: emite una advertencia en lugar de anularlo.",
+            "unsafeGainTitle": "Ritmo de aumento de peso no seguro",
+            "unsafeGainText": "Ganar más del 0,5 % del peso corporal por semana significa que la mayor parte del peso ganado será grasa en lugar de músculo. Un superávit más lento desarrolla una cantidad similar de músculo con una ganancia de grasa mucho menor.",
+            "unsafeLossTitle": "Ritmo de pérdida de peso no seguro",
+            "unsafeLossText": "Perder más del 1,5 % del peso corporal por semana se considera excesivo. Este ritmo aumenta drásticamente los riesgos de pérdida muscular severa, letargo, desequilibrios hormonales y deficiencias nutricionales. Elige un modo de objetivo menos agresivo.",
+            "calibrationDescription": "El motor de TDEE adaptativo de Sparky requiere al menos {{required}} días de seguimiento constante para calcular tu metabolismo con precisión (actualmente utiliza estimaciones alternativas). Para acelerar la calibración:",
+            "calibrationWeightTip": "Registra tu peso al menos 3 o 4 veces por semana.",
+            "calibrationFoodTip": "Registra tu ingesta de alimentos a diario (>200 kcal/día)."
         },
         "mfa": {
             "confirmPassword": "Confirma la contraseña para continuar",
@@ -1328,6 +1472,87 @@
             "customFloorActive": "Hay un límite de seguridad personalizado activo; los límites recomendados aún se muestran arriba.",
             "raisedToSafetyFloor": "⚠️ El presupuesto diario se elevó automáticamente al límite de seguridad.",
             "safetyFloorDisabled": "El ajuste automático del límite de seguridad está desactivado; los límites recomendados aún se muestran arriba."
+        },
+        "allergens": {
+            "title": "Preferencias de alérgenos",
+            "description": "Añade los alérgenos sobre los que deseas recibir advertencias. Cuando un alimento contenga uno de ellos, aparecerá una insignia de advertencia en las tarjetas de alimentos y resultados de búsqueda.",
+            "common": "Alérgenos comunes",
+            "custom": "Alérgeno personalizado",
+            "customPlaceholder": "p. ej., altramuces, moluscos…",
+            "alreadyAdded": "Ya se ha añadido",
+            "alreadyAddedDescription": "{{name}} ya está en tu lista.",
+            "syncTitle": "Sincronizar desde OpenFoodFacts",
+            "syncDescription": "Obtén los datos de alérgenos de tus alimentos guardados de OpenFoodFacts. Solo necesita hacerse una vez.",
+            "syncing": "Sincronizando…",
+            "sync": "Sincronizar alérgenos",
+            "tracked": "Tus alérgenos registrados",
+            "empty": "Aún no registras alérgenos. Añade algunos arriba para recibir advertencias en las tarjetas de alimentos.",
+            "allergen": "Alérgeno",
+            "remove": "Eliminar",
+            "names": {
+                "gluten": "Gluten",
+                "wheat": "Trigo",
+                "milk": "Leche",
+                "eggs": "Huevos",
+                "peanuts": "Cacahuetes",
+                "tree nuts": "Frutos secos",
+                "soy": "Soja",
+                "fish": "Pescado",
+                "shellfish": "Mariscos",
+                "crustaceans": "Crustáceos",
+                "sesame": "Sésamo",
+                "celery": "Apio",
+                "mustard": "Mostaza",
+                "lupin": "Altramuces",
+                "sulphites": "Sulfitos"
+            }
+        },
+        "goalCoaching": {
+            "maintenanceTitle": "Asesoramiento de mantenimiento",
+            "maintenanceText": "Las calorías de mantenimiento están diseñadas para mantener el peso corporal relativamente estable. Enfócate en un consumo constante de proteínas (1,6–2,2 g/kg de peso corporal), entrenamiento de fuerza regular y en monitorear las tendencias de peso a lo largo del tiempo para hacer ajustes menores.",
+            "highAggressiveTitle": "Advertencia de déficit altamente agresivo",
+            "highAggressiveText": "Déficit altamente agresivo. Los déficits superiores al 25 % aumentan significativamente el riesgo de pérdida muscular, disminución del rendimiento en el entrenamiento, hambre intensa y una mala recuperación. Considera un déficit menor a menos que cuentes con supervisión profesional activa. Si decides continuar, prioriza un alto consumo de proteínas (2,2–2,5 g/kg) y el descanso adecuado.",
+            "aggressiveTitle": "Recomendaciones para déficit agresivo",
+            "aggressiveText": "Déficit agresivo para una rápida pérdida de grasa. Para prevenir la pérdida muscular, consume entre 2,2 y 2,5 g de proteína por kg de peso corporal, prioriza el descanso y considera volver al mantenimiento cada 6–8 semanas. Ritmo de pérdida objetivo: ~0,75–1,0 % del peso corporal / semana.",
+            "standardTitle": "Recomendaciones para déficit estándar",
+            "standardText": "Déficit ideal para una pérdida de grasa constante manteniendo la masa magra. Concéntrate en un alto consumo de proteínas (2,0–2,4 g/kg de peso corporal) y monitorea tus niveles de energía y recuperación. Ritmo de pérdida objetivo: ~0,5–0,75 % del peso corporal / semana.",
+            "recompTitle": "Recomendaciones para recomposición corporal",
+            "recompText": "Adecuado para la recomposición corporal o una definición lenta. El modesto déficit calórico ayuda a mantener el rendimiento y la masa muscular mientras reduce gradualmente la grasa corporal. Procura consumir entre 1,6 y 2,2 g de proteína por kg de peso corporal al día y mantén un programa constante de entrenamiento de fuerza. Ritmo de pérdida objetivo: ~0,25–0,5 % del peso corporal / semana."
+        },
+        "nutrientAlgorithms": {
+            "title": "Algoritmos de cálculo de nutrientes",
+            "fatTitle": "Algoritmo de desglose de grasas",
+            "selectFat": "Seleccionar algoritmo de desglose de grasas",
+            "fatHint": "Cómo distribuir la grasa dietética en grasas saturadas, poliinsaturadas, monoinsaturadas y trans.",
+            "mineralTitle": "Algoritmo de cálculo de minerales",
+            "selectMineral": "Seleccionar algoritmo de minerales",
+            "mineralHint": "Algoritmo para calcular los objetivos de sodio, potasio, calcio, hierro y colesterol.",
+            "vitaminTitle": "Algoritmo de cálculo de vitaminas",
+            "selectVitamin": "Seleccionar algoritmo de vitaminas",
+            "vitaminHint": "Algoritmo para calcular los objetivos de vitamina A y C.",
+            "sugarTitle": "Algoritmo de cálculo de azúcares",
+            "selectSugar": "Seleccionar algoritmo de azúcares",
+            "sugarHint": "Ingesta máxima de azúcar como porcentaje de las calorías totales.",
+            "addedSugarTitle": "Algoritmo de azúcares añadidos",
+            "selectAddedSugar": "Seleccionar algoritmo de azúcares añadidos",
+            "addedSugarHint": "Límite recomendado para un nutriente personalizado de \"Azúcares añadidos\" registrado como un objetivo máximo (pautas de la OMS o AHA).",
+            "addedSugarRequirement": "Requiere un nutriente personalizado llamado \"Azúcar(es) añadido(s)\" (Ajustes → Nutrientes personalizados) configurado con dirección de objetivo Máximo; este algoritmo no tendrá efecto hasta que exista uno.",
+            "labels": {
+                "AHA_GUIDELINES": "Pautas de la AHA (salud cardiovascular)",
+                "KETO_ADAPTED": "Adaptado a keto",
+                "MEDITERRANEAN": "Dieta mediterránea",
+                "RDA_STANDARD": "Estándar CDR",
+                "ATHLETIC_PERFORMANCE": "Rendimiento Deportivo",
+                "HEART_HEALTH": "Salud Cardíaca (Bajo en Sodio)",
+                "IMMUNE_SUPPORT": "Refuerzo Inmunológico",
+                "ANTIOXIDANT_FOCUS": "Enfoque Antioxidante",
+                "WHO_GUIDELINES": "Pautas de la OMS (10% máx.)",
+                "LOW_CARB_KETO": "Bajo en Carbohidratos/Keto (5% máx.)",
+                "BALANCED": "Equilibrado (15% máx.)",
+                "WHO_IDEAL": "Ideal según la OMS (5% de calorías)",
+                "WHO_MAXIMUM": "Máximo según la OMS (10% de calorías)",
+                "AHA_FIXED": "Fijo según la AHA (36 g hombres / 25 g mujeres)"
+            }
         }
     },
     "admin": {
@@ -1609,7 +1834,9 @@
             "changesApplyToDate": "Los cambios solo se aplicarán a esta fecha específica.",
             "applyPreset": "Aplicar plantilla",
             "selectGoalPreset": "Selecciona una plantilla de objetivos para aplicar",
-            "errorLoading": "Error al cargar los objetivos de nutrición. Inténtalo de nuevo más tarde."
+            "errorLoading": "Error al cargar los objetivos de nutrición. Inténtalo de nuevo más tarde.",
+            "saveForDate": "Guardar para esta Fecha",
+            "loadingDailyGoals": "Cargando tus objetivos diarios..."
         },
         "mealDistribution": {
             "selectTemplate": "Seleccionar plantilla de distribución",
@@ -1617,7 +1844,10 @@
             "distributeRemaining": "Distribuir el resto equitativamente",
             "total": "Total",
             "mustBe100": "Debe ser 100 % para guardar",
-            "title": "Distribución calórica de las comidas"
+            "title": "Distribución calórica de las comidas",
+            "protein": "Proteína:",
+            "carbs": "Carbohidratos:",
+            "fat": "Grasa:"
         },
         "errorSavingPreset": "Error al guardar la plantilla.",
         "presetCreatedSuccess": "¡Plantilla de objetivo creada con éxito!",
@@ -1710,7 +1940,11 @@
         "weight": "Peso",
         "workout": "Entrenamiento",
         "caloriesUnit": "calorías",
-        "mealSlot": "Momento de la Comida"
+        "mealSlot": "Momento de la Comida",
+        "welcomeUser": "¡Te damos la bienvenida, {{name}}!",
+        "selectAll": "Seleccionar todo",
+        "selectRow": "Seleccionar fila",
+        "unknown": "Desconocido"
     },
     "diary": {
         "nutritionSummary": "Resumen nutricional",
@@ -1772,7 +2006,71 @@
             "dialogDescription": "Desglose paso a paso de cómo se calcula tu objetivo de energía diario.",
             "todayTarget": "Cómo se calcula el objetivo de hoy",
             "bmrMeasured": "Medido",
-            "bmrMeasuredDesc": "Usando tu TMB medida. Sin fórmula aplicada."
+            "bmrMeasuredDesc": "Usando tu TMB medida. Sin fórmula aplicada.",
+            "bmrTitle": "1. Tasa Metabólica Basal (TMB)",
+            "healthApp": "Aplicación de Salud",
+            "externalBmr": "TMB sincronizada desde tu aplicación de salud (Apple Health / Health Connect). Sin fórmulas aplicadas.",
+            "restingMetabolism": "Metabolismo en Reposo (TMR/TMB):",
+            "bodyFatTitle": "2. Porcentaje de Grasa Corporal",
+            "currentBodyFat": "Grasa Corporal Actual:",
+            "currentBodyFatMeasured": "Grasa Corporal Actual (medida):",
+            "noMeasurement": "Sin medición",
+            "mifflinMath": "Fórmula: 10 × peso + 6,25 × altura - 5 × edad + ajuste ({{offset}})\nCálculo: 10 × {{weight}} + 6,25 × {{height}} - 5 × {{age}} {{sign}} {{absoluteOffset}} = {{result}} kcal",
+            "navyMissingMeasurements": "Fórmula: Método de la Marina de EE. UU. (requiere cintura, cuello y caderas para mujeres)\nFaltan mediciones para visualizar la fórmula. Ve a Registro para anotar tu cintura y cuello.",
+            "goalCalculationTitle": "{{step}}. Cálculo del Objetivo Calórico Diario",
+            "calculationMethod": "Método {{method}}",
+            "manualDailyGoal": "Objetivo Calórico Diario Manual",
+            "goalDeficit": "Déficit del Objetivo:",
+            "maintainDeficit": "Mantenimiento (déficit del 0%)",
+            "safetyFloors": "Límites Mínimos de Seguridad del Objetivo:",
+            "rmrFloor": "Límite Mínimo de TMR:",
+            "clinicalFloor": "Límite Mínimo Clínico Absoluto:",
+            "effectiveFloor": "Límite Mínimo de Seguridad Efectivo:",
+            "finalTarget": "Objetivo de Presupuesto Energético Final:",
+            "methods": {
+                "manual": "manual",
+                "adaptive": "adaptativo"
+            },
+            "requiresBodyFat": "Requiere Peso y Porcentaje de Grasa Corporal. Cálculo: Omitido (usando alternativa Mifflin-St Jeor).",
+            "katchMath": "Fórmula: 370 + 21,6 × MLO (donde MLO = peso × (1 - GC/100))\nCálculo: 370 + 21,6 × ({{weight}} kg × (1 - {{bodyFat}}/100)) = {{result}} kcal",
+            "cunninghamMath": "Fórmula: 500 + 22 × MLO (donde MLO = peso × (1 - GC/100))\nCálculo: 500 + 22 × ({{weight}} kg × (1 - {{bodyFat}}/100)) = {{result}} kcal",
+            "harrisMaleMath": "Fórmula: 13,397 × peso + 4,799 × altura - 5,677 × edad + 88,362\nCálculo: 13,397 × {{weight}} + 4,799 × {{height}} - 5,677 × {{age}} + 88,362 = {{result}} kcal",
+            "harrisFemaleMath": "Fórmula: 9,247 × peso + 3,098 × altura - 4,33 × edad + 447,593\nCálculo: 9,247 × {{weight}} + 3,098 × {{height}} - 4,33 × {{age}} + 447,593 = {{result}} kcal",
+            "oxfordMaleMath": "Fórmula: 14,2 × peso + 593\nCálculo: 14,2 × {{weight}} + 593 = {{result}} kcal",
+            "oxfordFemaleMath": "Fórmula: 10,9 × peso + 677\nCálculo: 10,9 × {{weight}} + 677 = {{result}} kcal",
+            "bmiBodyFatMath": "Fórmula: 1,2 × IMC + 0,23 × edad - constante ({{constant}})\nCálculo: 1,2 × {{bmi}} (IMC) + 0,23 × {{age}} - {{constant}} = {{result}}%",
+            "invalidMeasurements": "Mediciones no válidas para el cálculo del registro.",
+            "navyMaleMath": "Fórmula (Hombre): 86,01 × log10(cintura - cuello) - 70,041 × log10(altura) + 36,76 (en pulgadas)\nCálculo: 86,01 × log10({{waist}}in - {{neck}}in) - 70,041 × log10({{height}}in) + 36,76\nCalculado: {{result}}%",
+            "navyFemaleMath": "Fórmula (Mujer): 163,205 × log10(cintura + caderas - cuello) - 97,684 × log10(altura) - 78,387 (en pulgadas)\nCálculo: 163,205 × log10({{waist}}in + {{hips}}in - {{neck}}in) - 97,684 × log10({{height}}in) - 78,387\nCalculado: {{result}}%",
+            "fallbackInsufficient": "El objetivo utilizará la TMB alternativa ({{value}} {{unit}}) debido a datos insuficientes.",
+            "fallbackWeight": "El objetivo utilizará la TMB alternativa ({{value}} {{unit}}) porque faltan registros de peso (requiere al menos 2 registros de peso durante más de 7 días).",
+            "fallbackCalories": "El objetivo utilizará la TMB alternativa ({{value}} {{unit}}) porque faltan registros calóricos (requiere al menos 7 días con ≥200 kcal).",
+            "fallbackUnknown": "El objetivo utilizará la TMB alternativa ({{value}} {{unit}}) debido a: {{reason}}",
+            "fallbackRequiredDays": "El objetivo utilizará la TMB alternativa ({{value}} {{unit}}) hasta alcanzar {{required}} días de registros calóricos (actualmente {{days}}/{{required}} días registrados).",
+            "adaptiveTitle": "3. TDEE Adaptativo (Gasto Energético)",
+            "fallbackEstimate": "Estimación Alternativa",
+            "adaptiveTdee": "TDEE Adaptativo",
+            "adaptiveFormula": "Fórmula: Promedio de Calorías Diarias - (Cambio de Peso Diario en kg × 7700 kcal)",
+            "adaptiveBypassedStatus": "Estado: Se omitió el cálculo directo ({{value}} {{unit}}) debido a un historial insuficiente.",
+            "adaptiveChecklist": "Lista de verificación de TDEE adaptativo para dejar la estimación alternativa:",
+            "weightLogRequirement": "• Registros de Peso (2+ entradas durante 7+ días)",
+            "weightLogsMissing": "❌ Faltante (registros de peso en Verificación)",
+            "requirementMet": "✓ Cumplido",
+            "calorieLogRequirement": "• Registros de Calorías para cálculo de TDEE (7+ días ≥ 200 kcal)",
+            "daysMissing": "❌ Faltante ({{days}}/{{required}} días registrados)",
+            "daysMet": "✓ Cumplido ({{days}}/{{required}} días registrados)",
+            "stabilityRequirement": "• Registros de calorías para la estabilidad de tu objetivo ({{required}}+ días ≥ 200 kcal)",
+            "daysWarning": "⚠️ Incompleto ({{days}}/{{required}} días registrados)",
+            "usingFallbackBmr": "Usando TMB alternativa × Multiplicador de actividad:",
+            "fallbackMath": "Cálculo: TMB ({{bmr}} kcal) × multiplicador de actividad ({{multiplier}}) = {{result}} {{unit}}",
+            "adaptiveActiveStatus": "Estado: Activo (línea base calculada desde los registros).",
+            "averageDailyIntake": "Consumo calórico diario promedio:",
+            "calculatedExpenditure": "Gasto calculado (TDEE):",
+            "fallbackEstimateUnavailable": "Estimación alternativa (TDEE adaptativo no disponible)",
+            "fallbackBaselineDetail": "TMB ({{bmr}}) × Multiplicador de actividad ({{multiplier}}) = {{result}} {{unit}} (Alternativa usada: historial insuficiente [<{{required}} días]; cálculo directo de {{raw}} {{unit}} omitido)",
+            "adaptiveTdeeExpenditure": "TDEE adaptativo (Gasto)",
+            "adaptiveManualGoal": "Objetivo manual de calorías adaptativo",
+            "targetSafeRange": "✓ El objetivo está en un rango seguro por encima del mínimo de seguridad metabólica."
         },
         "copyAllError": "Error al copiar el día completo.",
         "copyAllFromYesterday": "Copiar todo lo de ayer",
@@ -1864,13 +2162,19 @@
         "selectMealType": "Seleccionar tipo de comida",
         "pastDateWarning": "Aviso: Estás añadiendo registros de comida para una fecha pasada.",
         "futureDateWarning": "Aviso: Estás añadiendo registros de comida para una fecha futura.",
-        "userNotFound": "Usuario no encontrado, no se puede editar la entrada."
+        "userNotFound": "Usuario no encontrado, no se puede editar la entrada.",
+        "noFoodsAddedYet": "Aún no has añadido alimentos"
     },
     "mealCard": {
         "addFoodToMeal": "Añadir alimento a {{mealName}}",
         "searchFoodsForMeal": "Busca alimentos para añadir a {{mealName}}.",
         "addFoodTo": "Añadir alimento a",
-        "searchFoodsToYour": "Busca alimentos para añadir a tu"
+        "searchFoodsToYour": "Busca alimentos para añadir a tu",
+        "mealTotal": "Total de {{mealName}}:",
+        "fromPlan": "Del plan",
+        "editFoodDatabase": "Editar base de datos de alimentos",
+        "editFoodDatabaseDescription": "Edita la información nutricional de este alimento en tu base de datos.",
+        "editingTemporarilyUnavailable": "La edición de detalles de alimentos no está disponible temporalmente debido a cambios de esquema."
     },
     "checkIn": {
         "howAreYouFeelingToday": "¿Cómo te sientes hoy?",
@@ -1971,7 +2275,8 @@
             "photos": "Fotos",
             "sleep": "Sueño"
         },
-        "bmr": "TMB (kcal)"
+        "bmr": "TMB (kcal)",
+        "noRecentActivity": "No se encontró actividad reciente."
     },
     "sleepTimelineEditor": {
         "sleepTimeline": "Línea de tiempo del sueño",
@@ -1985,7 +2290,8 @@
         "duration": "Duración",
         "sleepScore": "Puntuación de sueño",
         "source": "Fuente",
-        "timeAsleep": "Tiempo dormido"
+        "timeAsleep": "Tiempo dormido",
+        "stageTimeRange": "{{stage}}: {{start}}–{{end}}"
     },
     "moodMeter": {
         "howAreYouFeelingToday": "¿Cómo te sientes hoy?",
@@ -2009,7 +2315,15 @@
         "manageMoods": "Gestionar estados de ánimo",
         "moodName": "Nombre del estado de ánimo",
         "moods": "Estados de ánimo",
-        "showHide": "Mostrar u ocultar estados de ánimo"
+        "showHide": "Mostrar u ocultar estados de ánimo",
+        "energetic": "Con energía",
+        "sensitive": "Sensible",
+        "low": "Poca energía",
+        "anxious": "Ansioso/a",
+        "irritable": "Irritable",
+        "showMood": "Mostrar estado de ánimo",
+        "hideMood": "Ocultar estado de ánimo",
+        "deleteMood": "Eliminar estado de ánimo"
     },
     "sleepEntrySection": {
         "sleepTracking": "Registro de sueño",
@@ -2126,7 +2440,8 @@
         "foodSnapshotUpdatedSuccessfully": "Resumen de registros de alimentos actualizado con éxito.",
         "foods": "alimentos",
         "name": "Nombre",
-        "removeFromFavorites": "Eliminar de favoritos"
+        "removeFromFavorites": "Eliminar de favoritos",
+        "notes": "Notas"
     },
     "mealManagement": {
         "failedToLoadMeals": "Error al cargar las comidas.",
@@ -2191,7 +2506,8 @@
         "meals": "comidas",
         "name": "Nombre",
         "removeFromFavorites": "Eliminar de favoritos",
-        "createMeal": "Crear Comida"
+        "createMeal": "Crear Comida",
+        "notes": "Notas"
     },
     "mealBuilder": {
         "errorTitle": "Error",
@@ -2266,7 +2582,15 @@
         "clearTime": "Borrar hora",
         "setToCurrentTime": "Establecer a la hora local actual",
         "ingredientResolveFailed": "No se pudo guardar el ingrediente \"{{foodName}}\". Por favor, inténtalo de nuevo.",
-        "now": "Ahora"
+        "now": "Ahora",
+        "foodsInMealWholeDish": "Ingredientes de la receta (plato completo)",
+        "foodsInMealWholeDishHint": "Introduce las cantidades de los ingredientes para toda la receta; tu porción se calcula arriba.",
+        "diaryPortionExplainer": "Este plato rinde {{total}} {{unit}} en total y registraste {{consumed}} {{unit}} ({{pct}}%), así que cada ingrediente a continuación cuenta al {{pct}}% en tu plato.",
+        "totalDishAmount": "Cantidad total del plato",
+        "consumedTab": "Consumido",
+        "mealNotes": "Notas (opcional)",
+        "mealNotesPlaceholder": "ej., la receta o cómo lo preparas",
+        "templateNotes": "Acerca de esta comida"
     },
     "mealPlanCalendar": {
         "title": "Plan de comida",
@@ -2297,7 +2621,8 @@
         "ongoingStatus": "Indefinido",
         "planName": "Nombre del plan",
         "status": "Estado",
-        "templates": "plantillas de planes de alimentación"
+        "templates": "plantillas de planes de alimentación",
+        "openMenu": "Abrir menú"
     },
     "mealPlanTemplateForm": {
         "createTitle": "Crear plantilla de plan de comida",
@@ -2317,7 +2642,15 @@
         "planNameEmptyError": "El nombre del plan no puede estar vacío.",
         "endDateError": "La fecha de fin no puede ser anterior a la fecha de inicio.",
         "removeButton": "X",
-        "multipleActiveHint": "Puedes tener varios planes de alimentación activos a la vez. Los planes activos completan automáticamente las entradas del diario."
+        "multipleActiveHint": "Puedes tener varios planes de alimentación activos a la vez. Los planes activos completan automáticamente las entradas del diario.",
+        "mealTotal": "Total:",
+        "dailyTotal": "Total diario del {{day}}",
+        "editQuantity": "Editar cantidad",
+        "remove": "Eliminar",
+        "serving": "porción",
+        "proteinShort": "P:",
+        "carbsShort": "C:",
+        "fatShort": "G:"
     },
     "workoutPresetForm": {
         "createTitle": "Crear nueva plantilla de rutina",
@@ -2645,7 +2978,17 @@
             "totalFasts": "Ayunos totales",
             "totalHours": "Horas totales",
             "trends": "Tendencias de ayuno",
-            "zoneDistribution": "Zonas de ayuno"
+            "zoneDistribution": "Zonas de ayuno",
+            "less": "Menos",
+            "more": "Más",
+            "ongoing": "En curso",
+            "custom": "Personalizado",
+            "zones": {
+                "Anabolic": "Anabólico",
+                "Catabolic": "Catabólico",
+                "FatBurning": "Quema de grasa",
+                "Ketosis": "Cetosis"
+            }
         },
         "foodDiaryExportTotals": {
             "total": "Total"
@@ -2678,7 +3021,15 @@
         "daysCounted": "{{counted}} días contabilizados",
         "daysCountedNoGoal": "Contabilizados {{counted}} de {{total}} días: los días sin objetivo de {{nutrient}} o sin nada registrado quedan excluidos",
         "daysCountedPartial": "Contabilizados {{counted}} de {{total}} días: los días sin nada registrado quedan excluidos",
-        "failedToLoadCalorieBalance": "Error al cargar los datos del balance calórico."
+        "failedToLoadCalorieBalance": "Error al cargar los datos del balance calórico.",
+        "primary": "Principal",
+        "weight": "Peso",
+        "neck": "Cuello",
+        "waist": "Cintura",
+        "hips": "Caderas",
+        "height": "Altura",
+        "bodyFatPercentage": "% de grasa corporal",
+        "nutrientBalance": "Balance de {{nutrient}}"
     },
     "exerciseReportsDashboard": {
         "loadingExerciseData": "Cargando datos de ejercicio...",
@@ -2930,7 +3281,8 @@
         "highDebt": "Déficit elevado",
         "csvHeadersDuration": "Duración",
         "csvHeadersTimeAsleep": "Tiempo dormido",
-        "sleepHistoryTableTitle": "Historial y análisis del sueño"
+        "sleepHistoryTableTitle": "Historial y análisis del sueño",
+        "sessionCount": "{{count}} sesiones"
     },
     "workoutReport": {
         "workoutStats": "Estadísticas del entrenamiento",
@@ -3162,7 +3514,27 @@
         "syncConfirmationDescriptionWithPhotos": "¿Quieres actualizar todas tus entradas pasadas en el diario para este alimento con la nueva información nutricional y fotos? Actualizar las fotos reemplazará las fotos asignadas en entradas individuales del diario y no se podrá deshacer.",
         "syncConfirmationConfirm": "Actualizar",
         "syncConfirmationConfirmWithPhotos": "Actualizar nutrición y fotos",
-        "syncConfirmationNutritionOnly": "Actualizar solo nutrición"
+        "syncConfirmationNutritionOnly": "Actualizar solo nutrición",
+        "titleEdit": "Editar alimento",
+        "titleAdd": "Añadir alimento personalizado",
+        "brand": "Marca",
+        "barcode": "Código de barras",
+        "barcodePlaceholder": "ej. 012345678905",
+        "scan": "Escanear",
+        "barcodeHelp": "Los códigos de barras estándar tienen de 8 a 14 dígitos.",
+        "unitVariants": "Variantes de unidad",
+        "addUnit": "Añadir unidad",
+        "unitVariantsHelp": "Añade diferentes unidades de medida para este alimento con valores nutricionales específicos para cada una.",
+        "saving": "Guardando...",
+        "updateFood": "Actualizar alimento",
+        "addFood": "Añadir alimento",
+        "syncPastEntriesTitle": "¿Sincronizar entradas pasadas?",
+        "syncPastEntriesDescription": "¿Quieres actualizar todas las entradas pasadas de tu diario para este alimento con la nueva información nutricional?",
+        "barcodeConflictTitle": "Código de barras ya en uso",
+        "barcodeConflictDescription": "Este código de barras ya está asociado a “{{existing}}”. ¿Quieres asociarlo a “{{current}}” de todos modos?",
+        "notesLabel": "Notas",
+        "notesHelp": "Detalles que quieras recordar cada vez que registres esto: cómo lo pides o una receta. Compatible con markdown.",
+        "notesPlaceholder": "ej. Arroz blanco, doble pollo, salsa suave, sin frijoles"
     },
     "customMeasurements": {
         "title": "Mediciones personalizadas - {{date}}",
@@ -3299,7 +3671,18 @@
         "saveSuccessDesc": "¡Configuración de cálculo guardada con éxito!",
         "selectBmrAlgorithm": "Seleccionar algoritmo de TMB",
         "selectBodyFatAlgorithm": "Seleccionar algoritmo de grasa corporal",
-        "selectEnergyUnitPlaceholder": "Seleccionar unidad de energía"
+        "selectEnergyUnitPlaceholder": "Seleccionar unidad de energía",
+        "bmrAlgorithmOptions": {
+            "mifflinStJeor": "Mifflin-St Jeor",
+            "revisedHarrisBenedict": "Harris-Benedict revisada",
+            "katchMcArdle": "Katch-McArdle",
+            "cunningham": "Cunningham",
+            "oxford": "Oxford"
+        },
+        "bodyFatAlgorithmOptions": {
+            "usNavy": "Marina de EE. UU.",
+            "bmiMethod": "Método IMC"
+        }
     },
     "sync": {
         "syncAll": "Sincronizar todos los proveedores activos",
@@ -3529,12 +3912,27 @@
             "noScheduledToday": "No hay dosis programadas para hoy.",
             "noScheduledDay": "No hay dosis programadas para este día.",
             "loggedToday": "{{completed}} de {{total}} dosis registradas hoy.",
-            "loggedDay": "{{completed}} de {{total}} dosis registradas para este día."
+            "loggedDay": "{{completed}} de {{total}} dosis registradas para este día.",
+            "loggedActivity": "Registrado hoy",
+            "loggedActivityDescription": "Todo lo que has tomado u omitido en esta fecha.",
+            "loadingHistory": "Cargando historial…",
+            "addNote": "Añadir nota...",
+            "note": "Nota:",
+            "injectionDueToday": "Inyección de {{name}} — programada para hoy",
+            "injectionScheduled": "Inyección de {{name}} — programada",
+            "scheduledAt": "Programado a las {{time}}",
+            "anyTimeToday": "En cualquier momento hoy",
+            "logShot": "Registrar inyección",
+            "taken": "Tomado",
+            "prnTaken": "Tomado (PRN)",
+            "editEntryTime": "Editar hora de registro",
+            "removeEntry": "Eliminar registro"
         },
         "insights": {
             "title": "Información y consejos sobre efectos secundarios",
             "subtitle": "Correlaciones farmacocinéticas superpuestas a los momentos de administración de dosis recientes",
-            "disclaimer": "Las perspectivas se calculan en un periodo móvil de 30 días. Se trata de estimaciones educativas, no de asesoramiento clínico."
+            "disclaimer": "Las perspectivas se calculan en un periodo móvil de 30 días. Se trata de estimaciones educativas, no de asesoramiento clínico.",
+            "symptomCorrelation": "Correlación de {{symptom}}"
         },
         "reports": {
             "logTableTitle": "Tabla de registro de medicamentos",
@@ -3574,7 +3972,46 @@
             "subtitle": "Analiza correlaciones de dosis, efectos secundarios y tendencias de adherencia.",
             "title": "Informe de medicamentos",
             "weightVsGoalDesc": "Visualiza tus mediciones de peso diarias en comparación con tu peso objetivo global.",
-            "weightVsGoal": "Tendencia de peso vs. Peso objetivo ({{weightUnit}})"
+            "weightVsGoal": "Tendencia de peso vs. Peso objetivo ({{weightUnit}})",
+            "configNauseaDose": "Gráfico de náuseas vs. dosis",
+            "configWeightGoal": "Gráfico de peso vs. meta",
+            "configAdherence": "Gráfico de tendencia de adherencia",
+            "configMedicationLog": "Tabla de registro de medicamentos",
+            "configGlp1Checkin": "Gráfico de chequeo diario GLP-1",
+            "configHydrationConstipation": "Tarjeta de hidratación vs. estreñimiento",
+            "configProteinNausea": "Tarjeta de proteína vs. náuseas",
+            "configSleepFatigue": "Tarjeta de sueño vs. fatiga",
+            "configDoseNausea": "Tarjeta de tamaño de dosis vs. náuseas",
+            "chartNauseaSeverity": "Severidad de las náuseas",
+            "chartDoseMg": "Dosis (mg)",
+            "chartMedicationDose": "Dosis del medicamento (mg)",
+            "chartWeight": "Peso",
+            "chartTargetWeight": "Peso objetivo",
+            "chartAdherenceRate": "Tasa de adherencia",
+            "chartCheckInScore": "Puntuación de chequeo (0-10)",
+            "chartHunger": "Hambre",
+            "chartFoodNoise": "Ruido por la comida",
+            "chartFullness": "Saciedad",
+            "chartEnergy": "Energía",
+            "confidenceScore": "Puntuación de confianza:",
+            "correlationStrength": "Correlación {{strength}}",
+            "strength": {
+                "strong": "fuerte",
+                "moderate": "moderada",
+                "weak": "débil"
+            },
+            "hydrationBenefit": "<strong>Gran beneficio de la hidratación:</strong> Un mayor consumo de agua se relaciona con un menor estreñimiento. ¡Mantente hidratado para reducir los efectos secundarios intestinales!",
+            "hydrationUnexpected": "<strong>Asociación positiva inesperada:</strong> Aumenta tu consumo de líquidos de forma activa para potenciar la respuesta a la fibra o al medicamento.",
+            "hydrationInsufficient": "No hay suficientes datos para establecer una relación. ¡Sigue registrando tu consumo de agua y tus síntomas!",
+            "proteinTolerance": "<strong>Tolerancia a la proteína:</strong> Un mayor consumo diario de proteína se asocia con menores niveles de náusea. ¡Sigue incluyendo comidas magras ricas en proteína!",
+            "reducedIntake": "<strong>Ingesta reducida:</strong> Los picos de náuseas corresponden a días con menor registro de proteínas, probablemente debido a la supresión del apetito.",
+            "proteinInsufficient": "Datos insuficientes. Registra tus comidas diarias y los efectos secundarios de náuseas para ver las correlaciones.",
+            "restBenefit": "<strong>Beneficio del descanso:</strong> Una mayor duración del sueño se relaciona con una menor fatiga. ¡Mantén hábitos de sueño constantes para sentirte al máximo!",
+            "hypersomnia": "<strong>Asociación con hipersomnia:</strong> Una mayor fatiga podría estar desencadenando una mayor necesidad de sueño o periodos de descanso en cama.",
+            "sleepInsufficient": "Insuficientes registros de sueño o fatiga para calcular la correlación en este periodo.",
+            "doseDependentNausea": "<strong>Náuseas dependientes de la dosis:</strong> Dosis más altas del medicamento se correlacionan con mayor nivel de náuseas. Considera consultar con tu médico sobre la graduación de dosis o dividir los horarios.",
+            "adaptationBenefit": "<strong>Beneficio de adaptación:</strong> Sin correlación positiva. Tu cuerpo se ha adaptado muy bien a los niveles de dosis sin presentar efectos secundarios.",
+            "doseInsufficient": "Requiere registros activos de dosis de GLP-1 y de náuseas en este rango de fechas."
         },
         "locations": {
             "general": "General",
@@ -3641,7 +4078,12 @@
             "context": "Contexto / Notas",
             "contextPlaceholder": "p. ej. Ocurrió 4 horas después de tomar mi dosis de la cena.",
             "bristol": "Registro intestinal (Escala de Bristol)",
-            "bristolType": "Tipo Bristol {{n}}"
+            "bristolType": "Tipo Bristol {{n}}",
+            "calendarDescription": "Frecuencia y severidad del registro de síntomas en los últimos 30 días",
+            "clear": "Sin síntomas",
+            "trendingUp": "Tendencia al alza respecto a principios de este periodo",
+            "trendingDown": "Tendencia a la baja respecto a principios de este periodo",
+            "dayTooltip": "{{date}}: {{count}} registrados, severidad máx. {{severity}}"
         },
         "fasting": {
             "title": "Temporizador de ayuno para GLP-1 oral",
@@ -3824,7 +4266,16 @@
             "servingUnit_pill_other": "pastilla",
             "nutrientCount_one": "{{count}} nutriente",
             "nutrientCount_many": "{{count}} nutrientes",
-            "nutrientCount_other": "{{count}} nutriente"
+            "nutrientCount_other": "{{count}} nutriente",
+            "doctorPrefix": "Dr.",
+            "prescriberDetail": "Prescriptor",
+            "pharmacyDetail": "Farmacia",
+            "rxNumberDetail": "Nº de receta",
+            "packagingPhoto": "Foto de la pastilla/empaque",
+            "effectivenessDetail": "Efectividad",
+            "adherenceDescriptionBefore": "Los horarios y listas de control diario para medicamentos no GLP-1 están totalmente activos. Gestiona las reglas de programación abajo y registra la toma diaria desde la pestaña",
+            "todayTab": "Hoy",
+            "adherenceDescriptionAfter": "."
         },
         "schedule": {
             "heading": "Horarios y Recordatorios",
@@ -3904,7 +4355,36 @@
         },
         "print": {
             "dates": "Período del informe:",
-            "header": "Informe de medicación para el médico"
+            "header": "Informe de medicación para el médico",
+            "name": "Nombre:",
+            "patient": "Paciente",
+            "targetWeight": "Peso objetivo:",
+            "adherenceRate": "Tasa de adherencia:",
+            "reportDate": "Fecha del informe:",
+            "activeMedications": "Medicamentos activos",
+            "medication": "Medicamento",
+            "type": "Tipo",
+            "strength": "Concentración",
+            "frequency": "Frecuencia",
+            "prescriber": "Prescriptor",
+            "titrationSteps": "Pasos de titulación y reducción",
+            "dose": "Dosis",
+            "startDate": "Fecha de inicio",
+            "weeks": "Semanas",
+            "status": "Estado",
+            "note": "Nota",
+            "recentInjections": "Historial reciente de inyecciones",
+            "date": "Fecha",
+            "doseMg": "Dosis (mg)",
+            "injectionSite": "Zona de inyección",
+            "notes": "Notas",
+            "recentSymptoms": "Registros recientes de síntomas",
+            "symptom": "Síntoma",
+            "severity": "Severidad",
+            "location": "Ubicación",
+            "notesContext": "Notas / Contexto",
+            "dateRangeSeparator": "a",
+            "notSet": "No configurado"
         },
         "scheduleTypes": {
             "cyclic": "Cíclico (Activo/Inactivo)",
@@ -3913,6 +4393,10 @@
             "monthly": "Mensualmente",
             "prn": "Según sea necesario (PRN)",
             "weekly": "Días específicos de la semana"
+        },
+        "noSelection": {
+            "title": "Ningún medicamento seleccionado",
+            "description": "Selecciona un medicamento de la lista para ver horarios, notas y herramientas de guía GLP-1."
         }
     },
     "layout": {
@@ -4031,7 +4515,8 @@
         "addBurnedCaloriesTitle": "¿Añadir calorías quemadas por el ejercicio?",
         "planReady": "Tu plan personalizado está listo para comenzar.",
         "skipFailed": "No se pudo omitir la integración. Por favor, inténtalo de nuevo.",
-        "submissionFailed": "No se pudo guardar tu plan. Por favor, inténtalo de nuevo."
+        "submissionFailed": "No se pudo guardar tu plan. Por favor, inténtalo de nuevo.",
+        "setupShort": "Configuración"
     },
     "cycle": {
         "hub": "Centro de ciclo y embarazo",
@@ -4513,7 +4998,10 @@
         "registerSuccess": "¡Cuenta creada con éxito!",
         "resetEmailError": "No se pudo solicitar el restablecimiento de contraseña.",
         "resetEmailSent": "Si la cuenta existe, se ha enviado un correo electrónico para restablecer tu contraseña.",
-        "successTitle": "Éxito"
+        "successTitle": "Éxito",
+        "signedOut": "Sesión cerrada correctamente",
+        "signOutFailed": "Error al cerrar sesión",
+        "signOut": "Cerrar sesión"
     },
     "copied": "¡Copiado!",
     "copyFoodEntryDialog": {
@@ -4569,7 +5057,14 @@
         "startTime": "Hora de inicio",
         "startedSuccessfully": "Ayuno iniciado con éxito.",
         "targetEndTime": "Hora prevista de finalización",
-        "updatedSuccessfully": "Ayuno actualizado con éxito."
+        "updatedSuccessfully": "Ayuno actualizado con éxito.",
+        "currentlyFasting": "Estás en ayuno en este momento",
+        "readyToStart": "¿Listo/a para empezar un nuevo ayuno?",
+        "startFast": "Iniciar ayuno",
+        "endFast": "Terminar ayuno",
+        "totalFasts": "Ayunos totales",
+        "avgDuration": "Duración promedio",
+        "hoursShort": "{{count}}h"
     },
     "i18n": {
         "locale": "es-ES"
@@ -4629,7 +5124,17 @@
         "moveAndDelete": "Mover elementos y eliminar",
         "moveItemsHint": "La información nutricional, las fechas y las horas se conservarán. Solo cambiará la categoría de comida.",
         "moveItemsTo": "Mover estos elementos a",
-        "warning": "¡Advertencia!"
+        "warning": "¡Advertencia!",
+        "namePlaceholder": "ej. Snack nocturno",
+        "defaultTimeOptional": "Hora predeterminada (opcional)",
+        "defaultTimeHelp": "Se usa para sugerir esta categoría de comida automáticamente según tu hora local al registrar alimentos.",
+        "default": "Predeterminado",
+        "order": "Orden: {{order}}",
+        "defaultTime": "Hora predeterminada:",
+        "hideFromDiary": "Ocultar del diario",
+        "showInDiary": "Mostrar en el diario",
+        "hideFromQuickLog": "Ocultar del registro rápido de alimentos",
+        "showInQuickLog": "Mostrar en el registro rápido de alimentos"
     },
     "measurements": {
         "errorLoadingBodyFat": "Error al cargar la grasa corporal más reciente.",
@@ -4916,5 +5421,327 @@
         "editInMealBuilder": "Editar en el Creador de Comidas",
         "loggedSuccess": "Comida registrada con éxito en tu diario.",
         "openInMealBuilder": "Abrir en el Creador de Comidas"
+    },
+    "waterContainerManager": {
+        "title": "Gestionar recipientes de agua",
+        "name": "Nombre del recipiente",
+        "namePlaceholder": "ej. Mi botella de agua",
+        "volume": "Volumen",
+        "volumePlaceholder": "ej. 500",
+        "servings": "Porciones por recipiente",
+        "servingsPlaceholder": "ej. 4",
+        "unit": "Unidad",
+        "liter": "litro",
+        "add": "Añadir recipiente",
+        "primary": "Principal",
+        "setPrimary": "Establecer como principal",
+        "deleted": "Recipiente de agua eliminado.",
+        "primaryUpdated": "Recipiente principal actualizado."
+    },
+    "homeFasting": {
+        "startNew": "Empieza un nuevo ayuno",
+        "description": "Selecciona un protocolo para comenzar tu ayuno.",
+        "startTime": "Hora de inicio",
+        "protocol": "Protocolo de ayuno",
+        "start": "Empezar ayuno"
+    },
+    "dataTable": {
+        "loading": "Cargando...",
+        "noResults": "No se encontraron resultados.",
+        "selectedRows": "{{selected}} de {{total}} fila(s) seleccionada(s).",
+        "rowsPerPage": "Filas por página",
+        "pageOf": "Página {{page}} de {{total}}",
+        "firstPage": "Ir a la primera página",
+        "previousPage": "Ir a la página anterior",
+        "nextPage": "Ir a la página siguiente",
+        "lastPage": "Ir a la última página"
+    },
+    "editFoodEntry": {
+        "title": "Editar registro de alimento",
+        "description": "Edita la cantidad y la unidad de porción de tu registro.",
+        "latestVariantNote": "Nota: Al actualizar esta entrada se utilizarán los últimos detalles disponibles de la variante del alimento, no el registro original.",
+        "quantity": "Cantidad",
+        "unit": "Unidad",
+        "meal": "Comida",
+        "timeOptional": "Hora (opcional)",
+        "clearTime": "Borrar hora",
+        "clear": "Borrar",
+        "setCurrentTime": "Establecer a la hora local actual",
+        "now": "Ahora",
+        "setMealDefault": "Usar hora predeterminada de la comida ({{time}})",
+        "default": "Predeterminado",
+        "customUnit": "Unidad personalizada...",
+        "unitName": "Nombre de la unidad",
+        "unitNamePlaceholder": "ej. rebanada, barra, cucharada",
+        "numberPlaceholder": "ej. 1",
+        "manualConversion": "Estas unidades no se pueden convertir automáticamente: introduce cuántas {{baseUnit}} hay en 1 {{unit}}.",
+        "aiEstimateConfidence": "Estimación de IA (confianza: {{confidence}})",
+        "confidence": {
+            "high": "Buena",
+            "medium": "Aceptable",
+            "low": "Aproximada"
+        },
+        "aboutThisFood": "Acerca de este alimento",
+        "entryNotes": "Nota para esta entrada (opcional)"
+    },
+    "release": {
+        "whatsNew": "Novedades"
+    },
+    "foodUnitSelector": {
+        "editTitle": "Editar {{name}}",
+        "addTitle": "Añadir {{name}} a la comida",
+        "editDescription": "Edita la cantidad y la unidad para {{name}}.",
+        "addDescription": "Selecciona la cantidad y la unidad para tu registro de alimento.",
+        "loadingUnits": "Cargando unidades...",
+        "quantity": "Cantidad",
+        "unit": "Unidad",
+        "customUnit": "Unidad personalizada...",
+        "meal": "Comida",
+        "selectMeal": "Seleccionar comida",
+        "timeOptional": "Hora (opcional)",
+        "clearTime": "Borrar hora",
+        "clear": "Borrar",
+        "setCurrentTime": "Establecer a la hora local actual",
+        "now": "Ahora",
+        "setMealDefault": "Usar hora predeterminada de la comida ({{time}})",
+        "default": "Predeterminado",
+        "unitName": "Nombre de la unidad",
+        "unitNamePlaceholder": "ej. rebanada, barra, cucharada",
+        "numberPlaceholder": "ej. 1",
+        "manualConversion": "Estas unidades no se pueden convertir automáticamente: introduce cuántas {{baseUnit}} hay en 1 {{unit}}.",
+        "aiEstimateConfidence": "Estimación de IA (confianza: {{confidence}})",
+        "confidenceEstimate": "Estimación {{confidence}}",
+        "nutritionFor": "Nutrición para {{serving}}:",
+        "proteinAmount": "{{amount}} g de proteína",
+        "carbsAmount": "{{amount}} g de carbohidratos",
+        "fatAmount": "{{amount}} g de grasa",
+        "updateFood": "Actualizar alimento",
+        "addToMeal": "Añadir a la comida",
+        "confidence": {
+            "high": "Buena",
+            "medium": "Aceptable",
+            "low": "Aproximada"
+        },
+        "foodNotes": "Acerca de este alimento",
+        "entryNotes": "Nota para esta entrada (opcional)",
+        "entryNotesPlaceholder": "Cualquier detalle sobre este consumo"
+    },
+    "healthMetrics": {
+        "activeCalories": "Calorías activas",
+        "activeCaloriesBurned": "Calorías activas quemadas",
+        "basalBodyTemperature": "Temperatura corporal basal",
+        "basalMetabolicRate": "Tasa metabólica basal",
+        "bloodAlcoholContent": "Nivel de alcohol en sangre",
+        "bloodGlucose": "Glucosa en sangre",
+        "bloodOxygenSaturation": "Saturación de oxígeno en sangre",
+        "bloodPressure": "Presión arterial",
+        "bodyFat": "Grasa corporal",
+        "bodyTemperature": "Temperatura corporal",
+        "boneMass": "Masa ósea",
+        "cyclingPedalingCadence": "Cadencia de pedaleo en ciclismo",
+        "distance": "Distancia",
+        "elevationGained": "Desnivel positivo",
+        "floorsClimbed": "Pisos subidos",
+        "hrv": "HRV",
+        "hrvSdnn": "HRV SDNN",
+        "hrvSdnnAvg": "Promedio de HRV SDNN",
+        "hrvSdnnMax": "HRV SDNN máx.",
+        "hrvSdnnMin": "HRV SDNN mín.",
+        "hrvAvg": "Promedio de HRV",
+        "hrvMax": "HRV máx.",
+        "hrvMin": "HRV mín.",
+        "heartRate": "Frecuencia cardíaca",
+        "height": "Estatura",
+        "hydration": "Hidratación",
+        "leanBodyMass": "Masa corporal magra",
+        "nutrition": "Nutrición",
+        "oxygenSaturation": "Saturación de oxígeno",
+        "power": "Potencia",
+        "respiratoryRate": "Frecuencia respiratoria",
+        "restingHeartRate": "Frecuencia cardíaca en reposo",
+        "sleepSession": "Sesión de sueño",
+        "speed": "Velocidad",
+        "stepsCadence": "Cadencia de pasos",
+        "stress": "Estrés",
+        "totalCaloriesBurned": "Calorías totales quemadas",
+        "vo2Max": "VO₂ Máx",
+        "weight": "Peso",
+        "appleExerciseTime": "Tiempo de Ejercicio (Apple)",
+        "appleMoveTime": "Tiempo de Moverse (Apple)",
+        "appleStandTime": "Tiempo de Pie (Apple)",
+        "bloodGlucoseAvg": "Promedio de glucosa en sangre",
+        "bloodGlucoseMax": "Glucosa en sangre máx.",
+        "bloodGlucoseMin": "Glucosa en sangre mín.",
+        "bloodOxygenSaturationAvg": "Promedio de saturación de oxígeno",
+        "bloodOxygenSaturationMax": "Saturación de oxígeno máx.",
+        "bloodOxygenSaturationMin": "Saturación de oxígeno mín.",
+        "bodyWater": "Agua corporal",
+        "cyclingCadenceAvg": "Promedio de cadencia de ciclismo",
+        "cyclingCadenceMax": "Cadencia de ciclismo máx.",
+        "cyclingCadenceMin": "Cadencia de ciclismo mín.",
+        "cyclingFtp": "FTP de ciclismo",
+        "cyclingPowerAvg": "Promedio de potencia de ciclismo",
+        "cyclingPowerMax": "Potencia de ciclismo máx.",
+        "cyclingPowerMin": "Potencia de ciclismo mín.",
+        "cyclingSpeedAvg": "Promedio de velocidad de ciclismo",
+        "cyclingSpeedMax": "Velocidad de ciclismo máx.",
+        "cyclingSpeedMin": "Velocidad de ciclismo mín.",
+        "dietaryFatTotal": "Grasas totales en la dieta",
+        "dietaryProtein": "Proteínas en la dieta",
+        "dietarySodium": "Sodio en la dieta",
+        "environmentalAudioExposureAvg": "Promedio de exposición al sonido ambiental",
+        "environmentalAudioExposureMax": "Exposición máx. al sonido ambiental",
+        "environmentalAudioExposureMin": "Exposición mín. al sonido ambiental",
+        "headphoneAudioExposureAvg": "Promedio de exposición al sonido de audífonos",
+        "headphoneAudioExposureMax": "Exposición máx. al sonido de audífonos",
+        "headphoneAudioExposureMin": "Exposición mín. al sonido de audífonos",
+        "heartRateAvg": "Promedio de frecuencia cardíaca",
+        "heartRateMax": "Frecuencia cardíaca máx.",
+        "heartRateMin": "Frecuencia cardíaca mín.",
+        "hips": "Caderas",
+        "muscleMass": "Masa muscular",
+        "neck": "Cuello",
+        "respiratoryRateAvg": "Promedio de frecuencia respiratoria",
+        "respiratoryRateMax": "Frecuencia respiratoria máx.",
+        "respiratoryRateMin": "Frecuencia respiratoria mín.",
+        "runningGroundContactAvg": "Promedio de contacto con el suelo al correr",
+        "runningGroundContactMax": "Contacto con el suelo máx. al correr",
+        "runningGroundContactMin": "Contacto con el suelo mín. al correr",
+        "runningPowerAvg": "Promedio de potencia de carrera",
+        "runningPowerMax": "Potencia de carrera máx.",
+        "runningPowerMin": "Potencia de carrera mín.",
+        "runningSpeedAvg": "Promedio de velocidad de carrera",
+        "runningSpeedMax": "Velocidad de carrera máx.",
+        "runningSpeedMin": "Velocidad de carrera mín.",
+        "runningStrideLengthAvg": "Promedio de longitud de zancada",
+        "runningStrideLengthMax": "Longitud de zancada máx.",
+        "runningStrideLengthMin": "Longitud de zancada mín.",
+        "runningVerticalOscillationAvg": "Promedio de oscilación vertical",
+        "runningVerticalOscillationMax": "Oscilación vertical máx.",
+        "runningVerticalOscillationMin": "Oscilación vertical mín.",
+        "step": "Paso",
+        "steps": "Pasos",
+        "stepsCadenceAvg": "Promedio de cadencia de pasos",
+        "stepsCadenceMax": "Cadencia de pasos máx.",
+        "stepsCadenceMin": "Cadencia de pasos mín.",
+        "totalCalories": "Calorías totales",
+        "waist": "Cintura",
+        "walkingAsymmetryAvg": "Asimetría de caminata prom.",
+        "walkingAsymmetryMax": "Asimetría de caminata máx.",
+        "walkingAsymmetryMin": "Asimetría de caminata mín.",
+        "walkingDoubleSupportAvg": "Soporte doble al caminar prom.",
+        "walkingDoubleSupportMax": "Soporte doble al caminar máx.",
+        "walkingDoubleSupportMin": "Soporte doble al caminar mín.",
+        "walkingSpeedAvg": "Velocidad de caminata prom.",
+        "walkingSpeedMax": "Velocidad de caminata máx.",
+        "walkingSpeedMin": "Velocidad de caminata mín.",
+        "walkingStepLengthAvg": "Longitud de paso al caminar prom.",
+        "walkingStepLengthMax": "Longitud de paso al caminar máx.",
+        "walkingStepLengthMin": "Longitud de paso al caminar mín."
+    },
+    "healthUnits": {
+        "count": "cantidad",
+        "percent": "%",
+        "breathsMin": "respiraciones/min",
+        "stepsMin": "pasos/min",
+        "seconds": "segundos",
+        "celsius": "°C",
+        "level": "nivel",
+        "watts": "W"
+    },
+    "exerciseAnalytics": {
+        "finder": {
+            "title": "Consulta de actividades y búsqueda por distancia",
+            "description": "Consulta y compara tus actividades pasadas por hitos de distancia, rutas o palabras clave (p. ej. Medios Maratones, 10k, 5k).",
+            "loadError": "No se pudieron cargar las actividades. ¡Inténtalo de nuevo!",
+            "allDistances": "Todas las distancias",
+            "distanceMilestone": "Hito de distancia",
+            "fiveKMiles": "5K (3,1 mi)",
+            "fiveKKm": "5 km",
+            "tenKMiles": "10K (6,2 mi)",
+            "tenKKm": "10 km",
+            "fifteenKMiles": "15K (9,3 mi)",
+            "fifteenKKm": "15 km",
+            "halfMarathonMiles": "Medio Maratón (13,1 mi)",
+            "halfMarathonKm": "Medio Maratón (21,1 km)",
+            "marathonMiles": "Maratón (26,2 mi)",
+            "marathonKm": "Maratón (42,2 km)",
+            "searchPlaceholder": "Buscar por notas o título del entrenamiento...",
+            "querying": "Consultando...",
+            "search": "Buscar",
+            "searching": "Buscando en la base de datos de actividades...",
+            "avgPace": "Ritmo prom.",
+            "avgHeartRate": "FC prom.",
+            "noMatches": "Ninguna actividad coincide con los filtros de búsqueda."
+        },
+        "matchedCourses": {
+            "title": "Rutas coincidentes e historial de recorridos (\"Carreras coincidentes\")",
+            "description": "Actividades en circuitos recurrentes agrupadas para comparar tu ritmo a lo largo del tiempo.",
+            "average": "Prom:",
+            "bestPace": "Mejor ritmo:"
+        },
+        "volume": {
+            "emptyTitle": "Volumen de ejercicio y tiempos totales",
+            "noData": "No hay distancia ni duración de ejercicio registrada para este rango de fechas.",
+            "title": "Volumen de ejercicio y totales por intervalo",
+            "distance": "Distancia",
+            "duration": "Duración",
+            "calories": "Calorías"
+        },
+        "records": {
+            "title": "Matriz de récords personales y mejores esfuerzos",
+            "description": "Tus mejores tiempos históricos para distancias estándar y estimaciones de 1 repetición máxima (1RM).",
+            "cardioMilestones": "Récords Personales de Hitos de Cardio",
+            "pace": "Ritmo:",
+            "noCardioRecords": "Aún no hay récords personales de distancia de cardio registrados. ¡Registra o sincroniza tus actividades con GPS (5k, 10k, Medio Maratón)!",
+            "topStrength": "Mejores 1RM de Fuerza",
+            "bestSet": "Mejor serie:",
+            "reps": "reps",
+            "distanceBest": "Mejor {{distance}}",
+            "sportGroupPrs": "Récords de {{group}}",
+            "sportInferredTitle": "{{activity}} — deporte inferido del nombre de la actividad",
+            "sportGroups": {
+                "run": "Carrera",
+                "ride": "Ciclismo",
+                "walk": "Caminata",
+                "swim": "Natación",
+                "other": "Otro"
+            }
+        },
+        "views": {
+            "all": "Todos los entrenamientos",
+            "strength": "Fuerza y resistencia",
+            "cardio": "Cardio y GPS"
+        },
+        "interval": "Intervalo:",
+        "intervals": {
+            "day": "día",
+            "week": "semana",
+            "month": "mes",
+            "year": "año"
+        },
+        "noHeatmapData": "No hay datos de entrenamiento disponibles para el mapa de calor.",
+        "activityLogs": {
+            "strength": "Historial de entrenamientos de fuerza",
+            "cardio": "Mapas de actividad de cardio y GPS",
+            "all": "Historial de entrenamientos y mapas"
+        }
+    },
+    "exerciseDisplayNames": {
+        "mixedCardio": "Cardio mixto",
+        "walking": "Caminando",
+        "play": "Juego"
+    },
+    "goalPresetDialog": {
+        "grams": "Gramos",
+        "percentages": "Porcentajes"
+    },
+    "exerciseDistances": {
+        "1Mile": "1 milla"
+    },
+    "markdownEditor": {
+        "write": "Escribir",
+        "preview": "Previsualizar",
+        "bold": "Negrita"
     }
 }
