@@ -2,6 +2,14 @@
     "medications": {
         "mealRelation": {
             "awayFromMeals": "En dehors des repas"
+        },
+        "schedule": {
+            "doseOverride": "Modification de la dose ({{unit}})",
+            "withMeal": "Pendant le repas"
+        },
+        "types": {
+            "drops": "Gouttes",
+            "injection": "Injection"
         }
     },
     "common": {
@@ -11,7 +19,7 @@
         "showLess": "Réduire",
         "learnMore": "En savoir plus",
         "next": "Suivant",
-        "later": "Suivant",
+        "later": "Plus tard",
         "close": "Fermer",
         "cancel": "Annuler",
         "continue": "Continuer",
@@ -39,7 +47,7 @@
         "loading": "Chargement...",
         "pleaseTryAgain": "Veuillez réessayer.",
         "ok": "OK",
-        "collapse": "échouer",
+        "collapse": "Replier",
         "expand": "développer",
         "removeFromFavorites": "Retirer des favoris",
         "addToFavorites": "Ajouter aux favoris",
@@ -48,7 +56,7 @@
         "deleting": "Suppression en cours...",
         "done": "Fait",
         "none": "Aucun",
-        "food": "Alimentation",
+        "food": "Nourriture",
         "dismiss": "Rejeter",
         "remove": "Retirer",
         "overwrite": "Écraser",
@@ -66,8 +74,8 @@
         "itemCount_other": "{{count}} articles",
         "deleteItemTitle": "Supprimer {{title}} ?",
         "listFinalSeparator": ", et ",
-        "nextDay": ": le lendemain",
-        "previousDay": ":jour précédent"
+        "nextDay": ": jour suivant",
+        "previousDay": ": jour précédent"
     },
     "settings": {
         "app": "Paramètres de l'application",
@@ -194,9 +202,9 @@
         "copySuccess": "Copié dans votre agenda",
         "copyFailed": "Impossible de copier les aliments",
         "copyFailedGuidance": "Votre avis est toujours là. Veuillez réessayer.",
-        "copyPermissionRevoked": "L'autorisation de copie a été supprimée.",
+        "copyPermissionRevoked": "L'autorisation de copie a été supprimée",
         "copyPermissionRevokedGuidance": "Actualisez les agendas familiaux pour voir vos droits d'accès actuels.",
-        "copyStale": "Le journal de famille a été modifié.",
+        "copyStale": "Le journal de famille a été modifié",
         "copyStaleGuidance": "Le dernier journal de famille est ouvert pour examen.",
         "unnamedMember": "Membre de la famille",
         "previousDay": "Jour précédent",
@@ -232,7 +240,12 @@
         },
         "rest": {
             "title": "Repos complet",
-            "nextSetTitle": "Repos complet : préparation de la série suivante"
+            "nextSetTitle": "Repos complet : préparation de la série suivante",
+            "bodySetProgress": "{{name}} · Série {{setNumber}} sur {{setCount}}"
+        },
+        "fasting": {
+            "title": "Objectif de jeûne atteint",
+            "body": "Vous avez atteint votre objectif de jeûne. Excellent travail !"
         }
     },
     "activeWorkout": {
@@ -241,6 +254,21 @@
             "moreOptionsFallback": "Plus d'options pour faire de l'exercice",
             "notesFor": "Notes pour {{exerciseName}}",
             "notesFallback": "Notes sur l'exercice"
+        },
+        "liveActivity": {
+            "rest": "Repos",
+            "paused": "En pause",
+            "elapsed": "Écoulé",
+            "workoutComplete": "Entraînement terminé"
         }
+    },
+    "foodEntryAdd": {
+        "errors": {
+            "failedToAddFood": "Échec de l'ajout de l'aliment"
+        }
+    },
+    "mealBuilder": {
+        "totalAmount": "Quantité totale ({{unit}}) *",
+        "servingUnit": "Portion"
     }
 }
