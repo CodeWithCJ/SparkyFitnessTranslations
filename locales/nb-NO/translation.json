@@ -2106,7 +2106,14 @@
     },
     "openFoodFactsContribution": {
         "title": "Bidra til Open Food Facts",
-        "saveAndPreview": "Lagre og forhåndsvis bidrag"
+        "saveAndPreview": "Lagre og forhåndsvis bidrag",
+        "unavailable": "Bidrag krever egne matvarer, en aktivert serverinnstilling og en tilgjengelig Open Food Facts-konto.",
+        "introduction": "Matvaren din er lagret lokalt. Velg et bilde du har tatt av dette produktet og se nøye gjennom hva som vil bli publisert. Å klargjøre eller avbryte en forhåndsvisning gjør ingen endringer i Open Food Facts.",
+        "photoLabel": "Ditt eget produktbilde",
+        "preparing": "Klargjør forhåndsvisning…",
+        "previewError": "Forhåndsvisningen kunne ikke klargjøres.",
+        "preview": "Forhåndsvis bidrag",
+        "personalAccount": "Din personlige Open Food Facts-konto"
     },
     "familyAccess": {
         "toggleError": "Kunne ikke oppdatere tilgangsstatus",
