@@ -2717,7 +2717,7 @@
             "skipped": "Ignoré",
             "tooltipSkipped": "{{count}} ignorés",
             "tooltipPrn": "{{count}} PRN pris",
-            "tooltipSnoozed": "{{count}} reporté"
+            "tooltipSnoozed": "{{count}} mis en attente"
         },
         "gi": {
             "title": "Sous-suivi digestif",
