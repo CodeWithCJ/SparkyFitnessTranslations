@@ -2113,7 +2113,9 @@
         "preparing": "Klargjør forhåndsvisning…",
         "previewError": "Forhåndsvisningen kunne ikke klargjøres.",
         "preview": "Forhåndsvis bidrag",
-        "personalAccount": "Din personlige Open Food Facts-konto"
+        "personalAccount": "Din personlige Open Food Facts-konto",
+        "field": "Felt",
+        "value": "Nøyaktig verdi"
     },
     "familyAccess": {
         "toggleError": "Kunne ikke oppdatere tilgangsstatus",
