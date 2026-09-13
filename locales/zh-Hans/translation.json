@@ -138,7 +138,8 @@
             "cyclic": "周期: 用药{{on}} 天,停药 {{off}} 天",
             "monthly": "每月第 {{day}}天",
             "prn": "按需服用",
-            "taper": "减量 / 滴定"
+            "taper": "减量 / 滴定",
+            "mealRelationSuffix": " ({{meal}})"
         },
         "bodymap": {
             "label": "注射部位身体图"
@@ -406,7 +407,7 @@
             "type": "计划类型",
             "daily": "每日服用",
             "weekly": "每周指定日期服用",
-            "everyNDays": "间隔N天服用一次",
+            "everyNDays": "每 N 天",
             "cyclic": "周期循环（服药/停药轮换）",
             "monthly": "每月固定日期服用",
             "prn": "按需取用 (PRN)",
@@ -504,7 +505,7 @@
                 "moderate": "中等",
                 "weak": "弱"
             },
-            "hydrationBenefit": "<strong>强补水益处：</strong>较高的饮水量与较低的便秘严重程度相关。保持充足水分，以减少肠道副作用.",
+            "hydrationBenefit": "<strong>强效补水益处：</strong>饮水量越高，便秘严重程度越低。保持充足饮水，减轻肠道相关副作用。",
             "hydrationUnexpected": "<strong>意外的正相关：</strong>请主动增加液体摄入，以帮助缓解高纤维或药物反应.",
             "hydrationInsufficient": "数据点不足，无法建立关系。请继续记录饮水和症状.",
             "proteinTolerance": "<strong>蛋白质耐受性：</strong>较高的每日蛋白质摄入与较低的恶心程度相关。请继续食用富含蛋白质的瘦肉餐食.",
@@ -3179,13 +3180,13 @@
         "mealUpdatedSuccess": "食谱修改保存成功！",
         "mealCreatedSuccess": "食谱创建完成！",
         "saveMealError": "食谱保存失败： {{error}}",
-        "mealName": "食谱名称",
+        "mealName": "餐食名称",
         "mealNamePlaceholder": "示例：高蛋白早餐套餐",
         "mealDescription": "食谱描述（选填）",
         "mealDescriptionPlaceholder": "示例：本人日常常备早餐",
         "shareWithPublic": "公开分享至社区",
         "shareWithPublicNote": "注意：食谱内所有食材会同步被标记为公开状态。",
-        "foodsInMeal": "当前食谱食材列表",
+        "foodsInMeal": "餐食中的食物",
         "noFoodsInMeal": "该食谱还未添加任何食材。",
         "totalNutrition": "合计营养数据：热量 {{calories}} 、蛋白质 {{protein}} g、碳水 {{carbs}} g、脂肪 {{fat}} g",
         "totalNutritionLabel": "整体营养总值：",
@@ -4704,7 +4705,8 @@
             "testLoggingTitle": "排卵与验孕测试",
             "testLogsHistory": "本周期测试记录",
             "testReady": "你已达到 {{dpo}} DPO！现在记录的验孕结果非常准确。请使用晨起第一次尿液以获得最佳浓度.",
-            "twoWeekWaitTitle": "两周等待（TWW）"
+            "twoWeekWaitTitle": "两周等待（TWW）",
+            "ovulationEstimateBasis": " 基于 "
         }
     },
     "layout": {
