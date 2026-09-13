@@ -3083,7 +3083,18 @@
             "configGlp1Checkin": "Suivi quotidien du GLP-1",
             "chartCheckInScore": "Score d'auto-évaluation (0-10)",
             "chartHunger": "Niveau de faim",
-            "chartFoodNoise": "Préoccupation alimentaire"
+            "chartFoodNoise": "Préoccupation alimentaire",
+            "chartEnergy": "Énergie",
+            "confidenceScore": "Score de confiance",
+            "strength": {
+                "strong": "Forte",
+                "moderate": "Modérée",
+                "weak": "Faible"
+            },
+            "correlationStrength": "Corrélation {{strength}}",
+            "hydrationBenefit": "<strong>Bénéfice d'hydratation fort : </strong> Boire plus d'eau aide à réduire la constipation. Restez hydraté pour réduire les troubles intestinaux.",
+            "proteinInsufficient": "Données insuffisantes. Enregistrez tous les jours de la nourriture et des effets secondaires de nausée pour identifier des corrélations.",
+            "sleepInsufficient": "Données de sommeil insuffisantes pour calculer une corrélation sur cette période."
         },
         "subtype": {
             "all": "Tous",
