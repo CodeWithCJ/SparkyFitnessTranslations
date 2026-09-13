@@ -1092,7 +1092,7 @@
             "permissionErrorTitle": "权限错误",
             "permissionErrorMessage": "请求健康权限时发生意外错误：{{error}}"
         },
-        "appleDetail": "SparkyFitness将通过苹果健康（HealthKit）读取你在下方选择的健康数据。若已开启同步，数据仅在你的设备与自建的SparkyFitness服务器之间同步（手动或后台同步）。\n\n前往设置 → 健康 → 数据访问与设备 → SparkyFitnessMobile，管理或移除访问权限。"
+        "appleDetail": "SparkyFitness将通过苹果健康（HealthKit）读取你在下方选择的健康数据。若已开启同步，数据仅在你的设备与自建的SparkyFitness服务器之间同步（手动或后台同步）。\n\n前往设置 → 健康 → 数据访问与设备 → SparkyFitnessMobile，管理或移除访问权限"
     },
     "auth": {
         "frontendUrl": "前端 URL",
@@ -1195,7 +1195,7 @@
         "hydration": "饮水",
         "ofVolume": "（共 {{value}} {{unit}}）",
         "perBottle": "每瓶 {{value}} {{unit}}",
-        "configureWaterContainer": "在服务器上配置水容器 / 启用快速添加/移除按钮",
+        "configureWaterContainer": "在服务器上配置水容器\n启用快速添加 / 移除按钮",
         "exercise": "运动",
         "minutes": "分钟",
         "calories": "卡路里",
@@ -1269,7 +1269,7 @@
             "generating": "正在生成…",
             "title": "健康数据报告",
             "subtitle": "导出匿名化健康数据以用于错误报告",
-            "privacy": "读取 Health Connect 最近 4 小时的数据以用于故障排查。/ 数值会四舍五入以保护隐私。不会向服务器发送任何内容。",
+            "privacy": "读取 Health Connect 最近 4 小时的数据以用于故障排查。\n数值会四舍五入以保护隐私。不会向服务器发送任何内容。",
             "error": "生成健康数据报告失败：{{error}}"
         }
     },
@@ -1320,7 +1320,7 @@
         "netEnergy": "净能量",
         "remainingCalories": "剩余卡路里",
         "useExternal": "使用来自 {{source}} 的 {{metric}}",
-        "externalDescription": "可用时使用 {{source}} {{metric}}。否则，使用所选的 {{formula}} 公式。",
+        "externalDescription": "可用时使用 {{source}} {{metric}}。否则，使用所选的 {{formula}} 公式",
         "iosNote": "同步值已包含轻度日常活动，因此你可能希望将",
         "iosNoteContinuation": "你的活动水平设置为「无（×1.0）」，以避免重复计算。",
         "updateFailed": "更新设置失败。",
