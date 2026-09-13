@@ -95,14 +95,15 @@
             "dizziness": "頭暈"
         },
         "scheduleDesc": {
-            "atTime": " 喺{{time}}",
+            "atTime": " 喺 {{time}}",
             "daily": "每日",
             "weeklyOn": "每逢星期 [{{days}}]",
             "everyNDays": "每隔 {{n}} 日一次",
             "cyclic": "循環模式：食 {{on}} 日，停 {{off}} 日",
             "monthly": "每月第 {{day}} 日",
             "prn": "有需要先食（PRN）",
-            "taper": "逐步減藥 / 調整藥量"
+            "taper": "逐步減藥 / 調整藥量",
+            "mealRelationSuffix": " ({{meal}})"
         },
         "bodymap": {
             "label": "注射位置示意圖"
@@ -267,10 +268,10 @@
             "pill": "藥丸",
             "capsule": "膠囊",
             "liquid": "藥水",
-            "injection": "針劑注射",
+            "injection": "注射",
             "patch": "藥貼",
             "inhaler": "吸入劑",
-            "drops": "藥水滴劑",
+            "drops": "滴劑",
             "cream": "藥膏",
             "suppository": "塞劑",
             "tablet": "藥片",
@@ -370,7 +371,7 @@
             "type": "週期類型",
             "daily": "每日一次",
             "weekly": "指定星期幾",
-            "everyNDays": "每隔 N 日",
+            "everyNDays": "每 N 日",
             "cyclic": "循環（食幾日 停幾日）",
             "monthly": "每月 固定日子",
             "prn": "有需要先食（PRN）",
@@ -383,11 +384,11 @@
             "prnReason": "觸發原因（非必要）",
             "prnReasonPlaceholder": "例如：身體痛楚",
             "prnMax": "每日最多服用次數",
-            "doseOverride": "自訂單次藥量（非必要）",
-            "withMeal": "跟進餐安排",
+            "doseOverride": "劑量（非必填）",
+            "withMeal": "跟餐進食",
             "anyTime": "任何時間都得",
             "beforeMeal": "食飯之前",
-            "withMealOpt": "跟住正餐一齊食",
+            "withMealOpt": "跟住進餐一齊食",
             "afterMeal": "食飯之後",
             "startDate": "生效日期（非必要）",
             "endDate": "完結日期（非必要）",
@@ -397,7 +398,7 @@
             "servingsPerLog": "每次記錄嘅份數",
             "cycleOff": "停用日數",
             "cycleOn": "啟用日數",
-            "doseAmount": "劑量（覆蓋）",
+            "doseAmount": "劑量（修訂）",
             "startDateRequired": "開始日期（必填）",
             "time": "一日嘅時間",
             "weekdays": "揀日期"
@@ -468,17 +469,17 @@
                 "moderate": "中等",
                 "weak": "弱"
             },
-            "hydrationBenefit": "<strong>強補水益處：</strong>飲水量越多，便秘越輕。飲夠水可以減少腸道副作用.",
-            "hydrationUnexpected": "<strong>意外正相關：</strong>請主動加多啲液體攝取，幫手紓緩高纖或藥物反應.",
+            "hydrationBenefit": "<strong>強補水益處：</strong> 飲水量越多，便秘越輕。飲夠水可以減少腸道副作用.",
+            "hydrationUnexpected": "<strong>意外正相關：</strong> 請主動加多啲液體攝取，幫手紓緩高纖或藥物反應.",
             "hydrationInsufficient": "數據點唔夠，建立唔到關係。請繼續記錄飲水同症狀.",
-            "proteinTolerance": "<strong>蛋白質耐受性：</strong>每日蛋白質攝取越多，噁心越輕。繼續食多啲高蛋白嘅瘦肉餐.",
-            "reducedIntake": "<strong>攝取減少：</strong>噁心發作對應蛋白質記錄較低嘅日子，可能係食慾受抑制.",
+            "proteinTolerance": "<strong>蛋白質耐受性：</strong> 每日蛋白質攝取越多，噁心越輕。繼續食多啲高蛋白嘅瘦肉餐.",
+            "reducedIntake": "<strong>攝取減少：</strong> 噁心發作對應蛋白質記錄較低嘅日子，可能係食慾受抑制.",
             "proteinInsufficient": "數據不足。請記錄每日食物同噁心副作用，建立相關性.",
-            "restBenefit": "<strong>休息益處：</strong>瞓得越多，疲勞越輕。請保持規律作息.",
-            "hypersomnia": "<strong>嗜睡關聯：</strong>疲勞程度越高，可能要瞓耐啲或瞓多啲床.",
+            "restBenefit": "<strong>休息益處：</strong> 瞓得越多，疲勞越輕。請保持規律作息.",
+            "hypersomnia": "<strong>嗜睡關聯：</strong> 疲勞程度越高，可能要瞓耐啲或瞓多啲床.",
             "sleepInsufficient": "呢個範圍內睡眠或疲勞記錄唔夠，計唔到相關性.",
-            "doseDependentNausea": "<strong>劑量相關噁心：</strong>用藥劑量越高，噁心越嚴重。可以同醫生商量逐步調整劑量或分開服用.",
-            "adaptationBenefit": "<strong>適應益處：</strong>冇正相關。身體已適應而家嘅劑量，冇出現副作用.",
+            "doseDependentNausea": "<strong>劑量相關噁心：</strong> 用藥劑量越高，噁心越嚴重。可以同醫生商量逐步調整劑量或分開服用.",
+            "adaptationBenefit": "<strong>適應益處：</strong> 冇正相關。身體已適應而家嘅劑量，冇出現副作用.",
             "doseInsufficient": "需要呢段日期範圍內有 GLP-1 劑量記錄同噁心日誌."
         },
         "subtype": {
@@ -512,7 +513,7 @@
         },
         "mealRelation": {
             "after": "餐後",
-            "awayFromMeals": "遠離進餐時間",
+            "awayFromMeals": "遠離餐點時間",
             "before": "餐前",
             "none": "同食物冇特定關係",
             "with": "隨餐"
@@ -615,7 +616,7 @@
             "revisedHarrisBenedict": "修正版 Harris-Benedict",
             "katchMcArdle": "Katch-McArdle",
             "cunningham": "Cunningham",
-            "oxford": "Oxford"
+            "oxford": "牛津"
         },
         "bmrAlgorithmHint": "揀用嚟計基礎代謝率嘅公式.",
         "bodyFatAlgorithm": "體脂算法",
@@ -2578,8 +2579,8 @@
         "info": "資訊",
         "items": "個項目",
         "kJUnit": "kJ",
-        "kcalUnit": "kcal",
-        "loading": "載入緊...",
+        "kcalUnit": "千卡",
+        "loading": "載入中...",
         "min": "分鐘",
         "minutesUnit": "時間",
         "next": "下一步",
@@ -2652,8 +2653,8 @@
             "currentBodyFat": "目前體脂：",
             "currentBodyFatMeasured": "目前體脂（實測）：",
             "noMeasurement": "冇測量值",
-            "mifflinMath": "公式：10 × 體重 + 6.25 × 身高 - 5 × 年齡 + 偏移量（{{offset}}） / 計算：10 × {{weight}} + 6.25 × {{height}} - 5 × {{age}} {{sign}} {{absoluteOffset}} = {{result}} kcal",
-            "navyMissingMeasurements": "公式：美國海軍法（女性需要腰圍、頸圍同臀圍） / 缺少用嚟公式視覺化嘅測量值。請去「打卡」記錄腰圍同頸圍.",
+            "mifflinMath": "公式：10 × 體重 + 6.25 × 身高 - 5 × 年齡 + 偏移量 ({{offset}})\n計算：10 × {{weight}} + 6.25 × {{height}} - 5 × {{age}} {{sign}} {{absoluteOffset}} = {{result}} kcal",
+            "navyMissingMeasurements": "公式：美國海軍法（女性需要腰圍、頸圍同臀圍）\n缺少用嚟公式視覺化嘅測量值。請去「打卡」記錄腰圍同頸圍.",
             "goalCalculationTitle": "{{step}}. 每日熱量目標計算",
             "calculationMethod": "{{method}} 方法",
             "manualDailyGoal": "手動每日熱量目標",
@@ -2669,16 +2670,16 @@
                 "adaptive": "自適應"
             },
             "requiresBodyFat": "需要體重同體脂率。計算：已跳過（用 Mifflin-St Jeor 回退）.",
-            "katchMath": "公式：370 + 21.6 × 瘦體重（瘦體重 = 體重 ×（1 - 體脂/100）） / 計算：370 + 21.6 ×（{{weight}} kg ×（1 - {{bodyFat}}/100））= {{result}} kcal",
-            "cunninghamMath": "公式：500 + 22 × 瘦體重（瘦體重 = 體重 ×（1 - 體脂/100）） / 計算：500 + 22 ×（{{weight}} kg ×（1 - {{bodyFat}}/100））= {{result}} kcal",
-            "harrisMaleMath": "公式：13.397 × 體重 + 4.799 × 身高 - 5.677 × 年齡 + 88.362 / 計算：13.397 × {{weight}} + 4.799 × {{height}} - 5.677 × {{age}} + 88.362 = {{result}} kcal",
-            "harrisFemaleMath": "公式：9.247 × 體重 + 3.098 × 身高 - 4.33 × 年齡 + 447.593 / 計算：9.247 × {{weight}} + 3.098 × {{height}} - 4.33 × {{age}} + 447.593 = {{result}} kcal",
-            "oxfordMaleMath": "公式：14.2 × 體重 + 593 / 計算：14.2 × {{weight}} + 593 = {{result}} kcal",
-            "oxfordFemaleMath": "公式：10.9 × 體重 + 677 / 計算：10.9 × {{weight}} + 677 = {{result}} kcal",
-            "bmiBodyFatMath": "公式：1.2 × BMI + 0.23 × 年齡 - 常數（{{constant}}） / 計算：1.2 × {{bmi}}（BMI）+ 0.23 × {{age}} - {{constant}} = {{result}}%",
+            "katchMath": "公式：370 + 21.6 × 瘦體重（瘦體重 = 體重 ×（1 - 體脂/100））\n計算：370 + 21.6 ×（{{weight}} kg ×（1 - {{bodyFat}}/100））= {{result}} kcal",
+            "cunninghamMath": "公式：500 + 22 × 瘦體重（瘦體重 = 體重 ×（1 - 體脂/100））\n計算：500 + 22 ×（{{weight}} kg ×（1 - {{bodyFat}}/100））= {{result}} kcal",
+            "harrisMaleMath": "公式：13.397 × 體重 + 4.799 × 身高 - 5.677 × 年齡 + 88.362\n計算：13.397 × {{weight}} + 4.799 × {{height}} - 5.677 × {{age}} + 88.362 = {{result}} kcal",
+            "harrisFemaleMath": "公式：9.247 × 體重 + 3.098 × 身高 - 4.33 × 年齡 + 447.593\n計算：9.247 × {{weight}} + 3.098 × {{height}} - 4.33 × {{age}} + 447.593 = {{result}} kcal",
+            "oxfordMaleMath": "公式：14.2 × 體重 + 593\n計算：14.2 × {{weight}} + 593 = {{result}} kcal",
+            "oxfordFemaleMath": "公式：10.9 × 體重 + 677\n計算：10.9 × {{weight}} + 677 = {{result}} kcal",
+            "bmiBodyFatMath": "公式：1.2 × BMI + 0.23 × 年齡 - 常數（{{constant}}）\n計算：1.2 × {{bmi}}（BMI）+ 0.23 × {{age}} - {{constant}} = {{result}}%",
             "invalidMeasurements": "用嚟日誌計算嘅測量值無效.",
-            "navyMaleMath": "公式（男）：86.01 × log10(腰圍 - 頸圍) - 70.041 × log10(身高) + 36.76（單位：英寸） / 計算：86.01 × log10({{waist}}in - {{neck}}in) - 70.041 × log10({{height}}in) + 36.76 / 計算結果：{{result}}%",
-            "navyFemaleMath": "公式（女）：163.205 × log10(腰圍 + 臀圍 - 頸圍) - 97.684 × log10(身高) - 78.387（單位：英寸） / 計算：163.205 × log10({{waist}}in + {{hips}}in - {{neck}}in) - 97.684 × log10({{height}}in) - 78.387 / 計算結果：{{result}}%",
+            "navyMaleMath": "公式（男）：86.01 × log10(腰圍 - 頸圍) - 70.041 × log10(身高) + 36.76（單位：英寸）\n計算：86.01 × log10({{waist}}in - {{neck}}in) - 70.041 × log10({{height}}in) + 36.76\n計算結果：{{result}}%",
+            "navyFemaleMath": "公式（女）：163.205 × log10(腰圍 + 臀圍 - 頸圍) - 97.684 × log10(身高) - 78.387（單位：英寸）\n計算：163.205 × log10({{waist}}in + {{hips}}in - {{neck}}in) - 97.684 × log10({{height}}in) - 78.387\n計算結果：{{result}}%",
             "fallbackInsufficient": "由於數據不足，目標會用回退 BMR（{{value}} {{unit}}）.",
             "fallbackWeight": "目標會用回退 BMR（{{value}} {{unit}}），因為缺少體重記錄（需要至少 2 條相隔 7 日以上嘅體重記錄）.",
             "fallbackCalories": "目標會用回退 BMR（{{value}} {{unit}}），因為缺少熱量記錄（需要至少 7 日 ≥200 千卡）.",
@@ -3179,18 +3180,18 @@
         "mealUpdatedSuccess": "餐單資料更新成功晒！",
         "mealCreatedSuccess": "全新餐單建立完畢！",
         "saveMealError": "儲存餐單時發生故障：{{error}}",
-        "mealName": "餐單名稱",
+        "mealName": "餐點名稱",
         "mealNamePlaceholder": "舉例：高蛋白早餐",
         "mealDescription": "餐單介紹（非必填）",
         "mealDescriptionPlaceholder": "舉例：我平時最常食嘅早餐組合",
         "shareWithPublic": "開放俾大眾共用",
         "shareWithPublicNote": "備註：份餐單入面所有食材都會一齊變成公開資料.",
-        "foodsInMeal": "餐單內食材清單",
+        "foodsInMeal": "餐點入面嘅食物",
         "noFoodsInMeal": "呢個餐單而家乜食材都冇.",
         "totalNutrition": "整份營養總值：熱量 {{calories}} ，蛋白 {{protein}} g克，碳水{{carbs}} g克，脂肪 {{fat}} g克",
         "totalNutritionLabel": "總營養數值：",
         "fullRecipeNutritionLabel": "成個食譜總營養：",
-        "totalServings": "總份數",
+        "totalServings": "總份量",
         "totalAmount": "食材總重量/份量",
         "servingSize": "單份份量",
         "defaultServingSize": "系統預設單份大小",
@@ -4704,7 +4705,8 @@
             "testLoggingTitle": "排卵同驗孕測試",
             "testLogsHistory": "本週期測試記錄",
             "testReady": "你已經到 {{dpo}} DPO！而家記錄嘅驗孕結果非常準。請用晨起第一次尿液攞最佳濃度.",
-            "twoWeekWaitTitle": "兩星期等待（TWW）"
+            "twoWeekWaitTitle": "兩星期等待（TWW）",
+            "ovulationEstimateBasis": " 基於 "
         }
     },
     "chat": {
@@ -4723,8 +4725,13 @@
             "food": "飲食及水份",
             "exercise": "運動訓練",
             "title": "聊天機械人工具",
-            "tooltip": "揀選聊天機械人可用工具"
-        }
+            "tooltip": "揀選聊天機械人可用工具",
+            "medications": "藥物"
+        },
+        "errorClearingHistory": "無法清除聊天記錄.",
+        "errorLoadingHistory": "無法載入聊天記錄.",
+        "errorLoadingPreferences": "無法載入聊天喜好設定.",
+        "successClearingHistory": "聊天記錄已成功清除."
     },
     "foodCsvImport": {
         "title": "食物資料匯入",
@@ -5219,7 +5226,7 @@
         },
         "disclaimer": "孕期資訊僅供教育用途，唔可以取代醫療護理.",
         "growth": {
-            "baby": "你嘅 BB",
+            "baby": "您嘅 BB",
             "chart": "成個孕期嘅成長",
             "jumpToCurrent": "跳去本週（{{n}}）",
             "nextWeek": "下星期",
@@ -5561,7 +5568,7 @@
         "cyclingPedalingCadence": "踩單車踏頻",
         "distance": "距離",
         "elevationGained": "爬升高度",
-        "floorsClimbed": "爬樓層數",
+        "floorsClimbed": "上樓層數",
         "hrv": "HRV",
         "hrvSdnn": "HRV SDNN",
         "hrvSdnnAvg": "HRV SDNN 平均",
@@ -5788,5 +5795,34 @@
         "imageBlockedFrom": "外部圖片已被阻止：{{host}}",
         "imageFromHost": "來自 {{host}} 嘅圖片",
         "externalImage": "外部圖片"
+    },
+    "layout": {
+        "welcome": "歡迎 {{activeUserName}}"
+    },
+    "workoutLaps": {
+        "title": "訓練分段間隔與圈數",
+        "lapsCount": "{{count}} 圈",
+        "lap": "圈",
+        "distance": "距離",
+        "time": "時間",
+        "pace": "配速 (/{{unit}})",
+        "avgMaxHr": "平均 / 最大心率",
+        "cadence": "圈速",
+        "power": "圈數動力",
+        "resp": "呼吸 (brpm)"
+    },
+    "dailyHealthMetrics": {
+        "title": "日常穿戴式健康摘要",
+        "bodyBattery": "體能",
+        "peak": "高峰",
+        "low": "低谷: {{val}}",
+        "avgStress": "平均壓力",
+        "max": "高峰:{{val}}",
+        "restingHr": "靜息心率",
+        "recovery": "復原：{{val}}",
+        "vo2Max": "最大攝氧量",
+        "fitnessAge": "適合年齡：{{val}}",
+        "readiness": "準備就緒",
+        "recHours": "錄入: {{val}}"
     }
 }
