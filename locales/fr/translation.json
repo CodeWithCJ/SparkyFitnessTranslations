@@ -760,6 +760,19 @@
             "finishError": "Échec de l'enregistrement de la séance. Votre progression locale est conservée et vous pouvez réessayer.",
             "finishing": "Enregistrement...",
             "noDraft": "Aucun brouillon d'entraînement n'a été trouvé pour cette date."
+        },
+        "workoutPlaybackPage": {
+            "columnReps": "Répétitions",
+            "columnRest": "Repos",
+            "columnSet": "Série",
+            "columnType": "Type",
+            "columnWeight": "Poids",
+            "completed": "Terminé",
+            "customRest": "Personnalisé (secondes)",
+            "description": "Suivez vos séries en temps réel, surveillez les temps de repos et enregistrez votre séance une fois terminée.",
+            "elapsedTime": "Durée",
+            "inProgress": "En Cours",
+            "progress": "Séries"
         }
     },
     "workoutPresetsManager": {
@@ -803,7 +816,8 @@
         "deleteError": "Échec de suppression du plan d'entrainement.",
         "updateStatusError": "Impossible de trouver le plan d'entrainement à mettre à jour.",
         "toggleStatusSuccess": "Plan d'entrainement {{status}} avec succès.",
-        "toggleStatusError": "Échec de la modification du statut du plan d'entraînement."
+        "toggleStatusError": "Échec de la modification du statut du plan d'entraînement.",
+        "status": "Statut"
     },
     "exerciseCard": {
         "noEntries": "Aucune donnée d'exercice pour aujourd’hui.",
@@ -877,7 +891,25 @@
         "failedToDeleteExerciseEntry": "Échec de suppression de l'exercice.",
         "playInstructions": "Lire les instructions",
         "exerciseEntryDeletedSuccessfully": "Exercice supprimée avec succès.",
-        "loadingExercises": "Chargement des exercices..."
+        "loadingExercises": "Chargement des exercices...",
+        "deletePresetEntry": "Supprimer l'entrée prédéfinie",
+        "editExerciseDescription": "Modifiez les détails ci-dessous.",
+        "startWorkout": "Démarrer la séance",
+        "workoutPreset": "Modèles de Séance",
+        "activeCaloriesValue": "{{calories}} actives",
+        "setCount": "{{count}} série",
+        "secondsShort": "{{count}}s",
+        "repCount": "{{count}} répétition",
+        "meta": {
+            "beginner": "Débutant",
+            "intermediate": "Intermédiaire",
+            "expert": "Expert",
+            "pull": "Tirage",
+            "push": "Poussée",
+            "static": "Isométrique",
+            "isolation": "Isolation",
+            "compound": "Poly-articulaire"
+        }
     },
     "enhancedFoodSearch": {
         "private": "Privé",
@@ -933,7 +965,8 @@
         "addToFavorites": "Ajouter aux favoris",
         "removeFromFavorites": "Retirer des favoris",
         "failedToLoadFavorites": "Échec du chargement des favoris.",
-        "failedToUpdateFavorite": "Échec de la mise à jour du favori."
+        "failedToUpdateFavorite": "Échec de la mise à jour du favori.",
+        "provider": "Fournisseur de données"
     },
     "foodSearchDialog": {
         "title": "Rechercher et ajouter un aliment",
