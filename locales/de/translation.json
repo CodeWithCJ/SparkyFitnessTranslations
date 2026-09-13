@@ -673,7 +673,8 @@
             "modeUnreachableSuffix": "Nicht erreichbar",
             "clampAdviceEstimated": ". Um schneller abzunehmen, steigern Sie Ihren Kalorienverbrauch durch körperliche Aktivität oder überprüfen Sie, ob Ihr Aktivitätsniveau nicht zu niedrig angesetzt ist – es legt diese Obergrenze fest, bis genügend Daten für eine gemessene Basislinie vorliegen.",
             "safetyFloorStandard": "Standard (RMR / klinisches Minimum)",
-            "customPercentageUnreachable": "Tiefer als die ~{{percent}} % Ihres Sicherheitsminimums; das Ziel wird auf dieses Minimum angehoben."
+            "customPercentageUnreachable": "Niedriger als die {{percent}}% deines Minimums; Ziel wurde auf das Minimum gesetzt.",
+            "deficitCeilingHintEstimated": "Bei Ihrem derzeitigen Aktivitätsniveau beträgt das tiefstmögliche Defizit etwa {{percent}} %. Tiefere Modi werden auf Ihr Sicherheitsminimum angehoben."
         },
         "breakdown": {
             "goalSurplusLabel": "Zielüberschuss:",
@@ -3445,7 +3446,7 @@
             "logShot": "Injektion loggen",
             "noScheduledToday": "Keine geplanten Medikamente für heute.",
             "noScheduledDay": "Keine geplanten Medikamente für diesen Tag.",
-            "loggedToday": "{{completed}} von {{total}} Dosen wurden heute erfasst.",
+            "loggedToday": "{{completed}} von {{total}} Medikamente gespeichert für heute.",
             "loggedDay": "{{completed}} von {{total}} Dosen wurden an diesem Tag erfasst.",
             "loggedActivity": "Heute protokolliert",
             "loggedActivityDescription": "Alles, was du an diesem Tag eingenommen oder ausgelassen hast.",
@@ -3916,7 +3917,7 @@
             "before": "Vor der Mahlzeit",
             "none": "Kein spezifischer Lebensmittelbezug",
             "with": "Zur Mahlzeit",
-            "awayFromMeals": "Außerhalb einer Mahlzeit"
+            "awayFromMeals": "Zwischen den Mahlzeiten"
         },
         "print": {
             "dates": "Berichtszeitraum:",
