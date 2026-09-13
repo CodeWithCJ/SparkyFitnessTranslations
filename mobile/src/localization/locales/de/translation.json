@@ -141,7 +141,7 @@
             "drops": "Tropfen"
         },
         "mealRelation": {
-            "awayFromMeals": "Außerhalb einer Mahlzeit"
+            "awayFromMeals": "Zwischen den Mahlzeiten"
         }
     },
     "mealBuilder": {
