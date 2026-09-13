@@ -465,6 +465,8 @@
       "exercises": "Exercises",
       "workoutPresets": "Workout presets",
       "medications": "Medications",
+      "waterContainers": "Water containers",
+      "waterContainersSubtitle": "Bottles, glasses, and drinks linked to foods",
       "recentlyLogged": "Recently Logged",
       "loadingRecentItems": "Loading recent items...",
       "failedRecentItems": "Failed to load recent items.",
@@ -687,7 +689,6 @@
     "hydration": "Hydration",
     "ofVolume": "of {{value}} {{unit}}",
     "perBottle": "{{value}} {{unit}} per bottle",
-    "configureWaterContainer": "Configure water container on server to\nenable quick add/remove buttons",
     "exercise": "Exercise",
     "minutes": "Minutes",
     "calories": "Calories",
@@ -695,7 +696,13 @@
     "removeWater": "Remove water",
     "addWater": "Add water",
     "selectContainer": "Select {{container}}",
-    "perContainer": "{{value}} {{unit}} per container"
+    "perContainer": "{{value}} {{unit}} per container",
+    "waterFromFood": "Includes {{value}} {{unit}} from food",
+    "chooseWaterContainer": "Choose a water container to enable quick add/remove",
+    "quickAddDrinks": "Quick add",
+    "logDrink": "Log {{drink}}",
+    "perPress": "{{value}} {{unit}}",
+    "logDrinkFailed": "Could not log that drink"
   },
   "syncScreen": {
     "healthConnectSettings": "Health Connect settings",
@@ -804,7 +811,7 @@
     "exerciseCaloriesDescription": "How much of your exercise calories are added back to your daily goal.",
     "activityLevel": "Activity Level",
     "activityBaseline": "Used as a baseline for TDEE.",
-    "adaptiveFallback": "Acts as a fallback until you have enough tracking data.",
+    "adaptiveFallback": "The fallback estimate until you have enough tracking data — and it keeps setting the plausibility limits afterwards. Your measured TDEE is capped to within ±500 kcal of BMR × this multiplier.",
     "allowNegative": "Allow Lower Fallback Projection",
     "negativeDescription": "When a device total is unavailable, let the BMR + active calories fallback lower your target.",
     "includeResting": "Include Resting Calories",
@@ -862,6 +869,9 @@
       "leanBulk": "Lean Bulk (+10%)",
       "bulk": "Bulk (+20%)",
       "manual": "Manual (Custom %)",
+      "calculationMethod": "Calculation Method",
+      "methodAdaptive": "Adaptive",
+      "methodManual": "Manual",
       "customPercentage": "Custom percentage",
       "customPercentageDescription": "Positive adds calories; negative creates a deficit. Limited to ±40%."
     },
@@ -874,7 +884,10 @@
       "standardDescription": "Uses the higher of your estimated RMR and the clinical minimum.",
       "customDescription": "Replaces the standard floor with your chosen minimum. Health recommendations remain visible.",
       "disabledDescription": "Stops automatic target clamping. Health warnings remain visible."
-    }
+    },
+    "useExternalBmr": "Use measured BMR from check-ins and synced devices",
+    "useExternalBmrHint": "Off by default — your chosen formula is always used until you turn this on. When enabled, a BMR recorded on a check-in or synced from a smart scale or health provider replaces the formula for that day, provided it is physiologically plausible for you.",
+    "useExternalBmrIosNote": "Apple Health’s Resting Energy already includes light daily activity, so consider setting Activity Level to None (×1.0) to avoid counting it twice."
   },
   "dashboardSettings": {
     "updateFailed": "Failed to update setting.",
@@ -895,7 +908,9 @@
     "healthTrendsSubtitle": "Choose which graphs show on the Dashboard and their order",
     "progressPhotos": "Progress Photos",
     "progressPhotosSubtitle": "Show the progress photos card on the Dashboard",
-    "customNutrientDisplay": "Custom Nutrient Display"
+    "customNutrientDisplay": "Custom Nutrient Display",
+    "caffeine": "Caffeine",
+    "caffeineSubtitle": "Show the active caffeine card on the Dashboard"
   },
   "diarySettings": {
     "updateFailed": "Failed to update setting.",
@@ -1251,6 +1266,15 @@
       "description": "Manually trigger the background sync process.",
       "trigger": "Trigger Sync",
       "checkPermission": "Check BG Permission"
+    },
+    "watch": {
+      "title": "Apple Watch",
+      "description": "Status of the watch companion link. Check-ins captured on the watch are queued and delivered even when \"reachable\" is off, so a gray dot here does not mean data is lost.",
+      "paired": "Watch paired",
+      "notPaired": "No watch paired",
+      "unsupported": "Not supported on this platform",
+      "reachable": "Watch app reachable now",
+      "notReachable": "Watch app not in foreground"
     },
     "auth": {
       "title": "Auth",
@@ -2012,7 +2036,7 @@
       "feetInchesNumber": "Enter a number for feet and inches.",
       "bodyFatRange": "Body fat % must be between 0 and 100.",
       "bodyWaterRange": "Body water % must be between 0 and 100.",
-      "bmrRange": "BMR must be between 300 and 10000 kcal."
+      "bmrRange": "BMR must be between 600 and 6000 kcal."
     },
     "nothingToSave": "Nothing to save",
     "enterValue": "Enter or clear at least one value.",
@@ -2020,10 +2044,25 @@
     "partialSave": "Some changes may not have been saved.",
     "date": "Date",
     "willBeCleared": "Will be cleared",
+    "useLast": "Use last",
+    "useLastFor": "Use last {{label}} value",
+    "previousUnavailable": "Couldn't load previous values. Your server may need updating.",
+    "bodyFat": {
+      "calculate": "Calculate",
+      "useRecent": "Use recent",
+      "calculateFailedTitle": "Could not calculate body fat",
+      "calculatedTitle": "Body fat calculated",
+      "calculatedMessage": "Review the value, then save to keep it.",
+      "profileRequired": "Set your gender in your profile to use this calculation.",
+      "bmiRequiredFields": "Weight, height, age, and gender are required for BMI Method.",
+      "navyRequiredFields": "Gender, height, waist, neck, and (if female) hips measurements are required for U.S. Navy Method.",
+      "uncomputable": "These measurements do not produce a valid body fat percentage. Check the waist, neck, height, and hips values."
+    },
     "custom": {
       "title": "Custom Measurements",
       "loadError": "Couldn't load custom measurements.",
       "deleteEntry": "Delete {{label}} entry",
+      "lastValue": "Last: {{value}}",
       "moreCategories": "More categories ▾",
       "hideCategories": "Hide categories ▴",
       "hideCategoriesToggle": "Hide categories ▴",
@@ -2323,6 +2362,9 @@
     "vitaminC": "Vitamin C",
     "calcium": "Calcium",
     "iron": "Iron",
+    "caffeine": "Caffeine",
+    "waterContent": "Water Content",
+    "alcohol": "Alcohol",
     "glycemicIndex": "Glycemic Index",
     "totalCarbs": "Total Carbs",
     "netCarbs": "Net Carbs",
@@ -2829,7 +2871,8 @@
     "deleting": "Deleting...",
     "deleteExercise": "Delete Exercise",
     "makePrivate": "Make private",
-    "shareWithPublic": "Share with public"
+    "shareWithPublic": "Share with public",
+    "deleteSheetTitle": "Delete exercise"
   },
   "mealTypeSettings": {
     "reorder": "Reorder {{name}}",
@@ -3426,7 +3469,8 @@
     "barcode": "Barcode",
     "logFood": "Log Food",
     "deleteFood": "Delete Food",
-    "notes": "Notes"
+    "notes": "Notes",
+    "deleteSheetTitle": "Delete food"
   },
   "foodEntryView": {
     "saveChanges": "Save food entry changes",
@@ -3668,7 +3712,21 @@
       "deleteActivityTitle": "Delete Activity?",
       "deleteActivityMessage": "This activity will be permanently removed.",
       "deleteExerciseTitle": "Delete Exercise?",
-      "deleteExerciseMessage": "This exercise will be removed from your library. Past logged sessions are preserved."
+      "deleteExerciseMessage": "This exercise will be removed from your library. Past logged sessions are preserved.",
+      "deleteWithHistoryTitle": "Delete workouts too?",
+      "deleteWithHistoryMessage": "This also permanently deletes your logged workouts for this exercise. This cannot be undone."
+    },
+    "hidden": {
+      "title": "Exercise hidden",
+      "usedByOthers": "It is used by other people, so it was hidden instead of deleted. Their history is unaffected."
+    },
+    "options": {
+      "hide": "Hide from search",
+      "hideDescription": "Keeps everything as it is. The exercise just stops showing up when you search.",
+      "delete": "Delete",
+      "deleteDescription": "Removes it from your library, presets and plans. Your logged workouts are kept.",
+      "deleteWithHistory": "Delete including history",
+      "deleteWithHistoryDescription": "Also permanently deletes your logged workouts for this exercise."
     }
   },
   "foodPhotoEstimate": {
@@ -4008,6 +4066,7 @@
       "kg": "kg",
       "mg": "mg",
       "oz": "oz",
+      "flOz": "fl oz",
       "lb": "lb",
       "lbs": "lbs",
       "ml": "ml",
@@ -4100,6 +4159,12 @@
       "avgTimeInBed": "Avg time in bed",
       "avgTimeAsleep": "Avg time asleep",
       "rangeLabel": "{{startDate}} – {{endDate}}"
+    },
+    "hydration": {
+      "title": "Hydration",
+      "loadFailed": "Failed to load hydration data",
+      "empty": "No hydration data for this period",
+      "tooltip": "{{formattedVolume}} {{unit}} · {{date}}"
     },
     "loading": "Loading chart...",
     "weightLoadFailed": "Failed to load weight data",
@@ -4319,7 +4384,21 @@
   "foodDelete": {
     "failed": "Failed to delete food",
     "title": "Delete Food",
-    "message": "Are you sure you want to delete this food? Existing logged entries will stay unchanged."
+    "message": "Are you sure you want to delete this food? Existing logged entries will stay unchanged.",
+    "hidden": {
+      "title": "Food hidden",
+      "usedByOthers": "It is used by other people, so it was hidden instead of deleted. Their history is unaffected."
+    },
+    "confirmWithHistoryTitle": "Delete entries too?",
+    "confirmWithHistoryMessage": "This also permanently deletes your logged diary entries for this food. This cannot be undone.",
+    "options": {
+      "hide": "Hide from search",
+      "hideDescription": "Keeps everything as it is. The food just stops showing up when you search.",
+      "delete": "Delete",
+      "deleteDescription": "Removes it from your library, meals and meal plans. Your logged entries are kept.",
+      "deleteWithHistory": "Delete including history",
+      "deleteWithHistoryDescription": "Also permanently deletes your logged diary entries for this food."
+    }
   },
   "exerciseEditing": {
     "removeTitle": "Remove Exercise?",
@@ -4368,7 +4447,75 @@
     "noPrimary": "No Primary Container",
     "noContainers": "No Water Containers",
     "multipleNoPrimary": "You have multiple water containers but none is marked as primary. Please set one as primary on the server.",
-    "configure": "Please configure a water container on the server to track hydration."
+    "configure": "Please configure a water container on the server to track hydration.",
+    "multipleNoPrimaryMobile": "You have multiple water containers but none is marked as primary. Tap to choose one.",
+    "configureMobile": "Add a water container to start tracking hydration.",
+    "defaultContainer": "Default"
+  },
+  "waterContainers": {
+    "title": "Water containers",
+    "add": "Add container",
+    "loading": "Loading water containers...",
+    "loadFailed": "Failed to load water containers",
+    "loadFailedSubtitle": "Check your connection and try again.",
+    "noServer": "No server configured",
+    "noServerSubtitle": "Configure your server connection to manage water containers.",
+    "goToSettings": "Go to Settings",
+    "emptyTitle": "No water containers yet",
+    "emptySubtitle": "Add a bottle or glass to track hydration -- optionally linked to a food so a tap logs both.",
+    "linkedTo": "Linked to {{food}}",
+    "deleteTitle": "Delete container",
+    "deleteMessage": "Delete {{name}}?",
+    "deleteNamed": "Delete {{name}}",
+    "deleteSuccess": "Container deleted",
+    "deleteFailed": "Failed to delete container",
+    "setPrimaryNamed": "Set {{name}} as primary",
+    "setPrimaryFailed": "Failed to set primary container",
+    "moveUp": "Move {{name}} up",
+    "moveDown": "Move {{name}} down",
+    "reorderFailed": "Failed to reorder containers",
+    "presets": "Quick-add presets",
+    "addPresetFailed": "Failed to add drink preset"
+  },
+  "waterContainerEdit": {
+    "createTitle": "Add container",
+    "editTitle": "Edit container",
+    "loading": "Loading container...",
+    "name": "Name",
+    "namePlaceholder": "e.g. My Water Bottle",
+    "volume": "Volume",
+    "unit": "Unit",
+    "units": {
+      "ml": "ml",
+      "oz": "oz",
+      "liter": "liter"
+    },
+    "servingsPerContainer": "Servings per container",
+    "primary": "Primary container",
+    "hydrationFactor": "Hydration factor",
+    "hydrationFactorHint": "Scales the water credit only: 1 for water, about 0.9 for coffee or tea, 0 for a drink that should count as no water at all. Calories, caffeine and alcohol always count in full.",
+    "linkedFood": "Linked food",
+    "selectFood": "Select a food (optional)",
+    "unlinkFood": "Unlink food",
+    "linkedMealType": "Meal type",
+    "noMealType": "None (use time of day)",
+    "delete": "Delete container",
+    "saveSuccess": "Water container saved",
+    "saveFailed": "Failed to save water container",
+    "errors": {
+      "title": "Check the form",
+      "nameRequired": "Name is required.",
+      "volumeInvalid": "Volume must be greater than zero.",
+      "servingsInvalid": "Servings per container must be at least 1.",
+      "factorInvalid": "Hydration factor must be between 0 and 2.",
+      "foodRequired": "Pick the food this container holds.",
+      "quantityInvalid": "Quantity must be greater than zero."
+    },
+    "tabWater": "Water",
+    "tabDrink": "Drink (linked food)",
+    "quantity": "Quantity",
+    "hydrationFactorExample": "At {{factor}}, one press adds {{credited}} {{unit}} to your water ring out of the drink’s {{total}} {{unit}}. Calories, caffeine and alcohol always count in full.",
+    "hydrationFactorApplies": "Applies to drinks logged from now on -- past entries keep the factor they were logged with."
   },
   "activeWorkoutAutosave": {
     "failedTitle": "Workout not saved",
@@ -4968,5 +5115,20 @@
     "rangeA11y": "Choose how far back to play",
     "deltaBadge": "Δ {{value}}",
     "frameCountRanged": "{{current}} of {{total}} · {{range}}"
+  },
+  "caffeine": {
+    "title": "Active Caffeine",
+    "activeNow": "Active now",
+    "atBedtime": "At {{time}}",
+    "lastDose": "Last dose by",
+    "cutoffPassed": "Too late",
+    "cutoffOver": "Over",
+    "anytimeSafe": "Any time",
+    "crossingNote": "Back under {{threshold}}mg from {{time}}",
+    "underThreshold": "Stays under {{threshold}}mg tonight",
+    "estimatedTimes": "Some dose times were estimated",
+    "legendCurve": "Active caffeine",
+    "legendThreshold": "{{threshold}}mg threshold",
+    "unitMg": "mg"
   }
 }
