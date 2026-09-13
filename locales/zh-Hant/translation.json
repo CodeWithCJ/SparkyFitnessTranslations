@@ -87,7 +87,8 @@
             "cyclic": "週期規律連：續服用 {{on}} 天休、息 {{off}} 天",
             "monthly": "每月第 {{day}} 天",
             "prn": "視需求服用 (PRN)",
-            "taper": "劑量遞減 / 劑量調整"
+            "taper": "劑量遞減 / 劑量調整",
+            "mealRelationSuffix": " ({{meal}})"
         },
         "calendar": {
             "loggedCount_other": "已紀錄 {{count}} 筆症狀",
@@ -347,7 +348,7 @@
             "type": "排程類型",
             "daily": "每日固定時間",
             "weekly": "指定每週天數",
-            "everyNDays": "每隔 N 天一次",
+            "everyNDays": "每 N 天",
             "cyclic": "週期式 (服用 / 休息交替)",
             "monthly": "每月固定日期",
             "prn": "視需求服用 (PRN)",
@@ -2524,7 +2525,7 @@
         "saveChanges": "儲存變更",
         "active": "啟用",
         "pickADate": "選擇日期",
-        "no": "是",
+        "no": "否",
         "monday": "否",
         "wednesday": "星期一",
         "thursday": "星期二",
@@ -2579,7 +2580,7 @@
         "items": "個項目",
         "kJUnit": "kJ",
         "kcalUnit": "kcal",
-        "loading": "正在載入…",
+        "loading": "正在載入...",
         "min": "分鐘",
         "minutesUnit": "時間",
         "next": "下一步",
@@ -3185,7 +3186,7 @@
         "mealDescriptionPlaceholder": "範例：我固定的晨起餐食",
         "shareWithPublic": "開放公開分享",
         "shareWithPublicNote": "提醒：餐點內所有食物都會一併變更為公開狀態。",
-        "foodsInMeal": "餐點內容",
+        "foodsInMeal": "餐點中的食物",
         "noFoodsInMeal": "此餐點尚未加入任何食物。",
         "totalNutrition": "總營養資訊：熱量 {{calories}}、蛋白質 {{protein}}g、碳水 {{carbs}}g、脂肪 {{fat}}g",
         "totalNutritionLabel": "總營養：",
@@ -4704,7 +4705,8 @@
             "testLoggingTitle": "排卵與驗孕測試",
             "testLogsHistory": "本週期測試紀錄",
             "testReady": "你已達到 {{dpo}} DPO！現在記錄的驗孕結果非常準確。請使用晨起第一次尿液以獲得最佳濃度.",
-            "twoWeekWaitTitle": "兩週等待（TWW）"
+            "twoWeekWaitTitle": "兩週等待（TWW）",
+            "ovulationEstimateBasis": " 基於· "
         }
     },
     "openFoodFactsContribution": {
@@ -4768,7 +4770,15 @@
         "missingDefaultWarning": "警告：{{count}} 種食物未設定預設變體。請至少將一個變體設為預設（下方以黃色標示）.",
         "missingDefaultValidationError": "每種食物必須至少有一個變體設為預設單位.",
         "filterMissingDefault": "顯示缺少的預設項目（{{count}}）",
-        "showAllRows": "顯示所有列（{{count}}）"
+        "showAllRows": "顯示所有列（{{count}}）",
+        "title": "食物資料匯入",
+        "addRow": "新增行",
+        "uploadCsv": "上載 CSV",
+        "downloadTemplate": "下載範本",
+        "clearData": "清除資料",
+        "pastePlaceholder": "或在此貼上 CSV 內容….",
+        "parseText": "解析文字",
+        "recordsLoaded": "成功載入 {{count}} 筆資料."
     },
     "foods": {
         "providerVerified": "已核實的食物",
@@ -5524,7 +5534,7 @@
         "activeCaloriesBurned": "活動消耗的熱量",
         "basalBodyTemperature": "基礎體溫",
         "basalMetabolicRate": "基礎代謝率",
-        "bloodAlcoholContent": "血液酒精濃度",
+        "bloodAlcoholContent": "血液酒精含量",
         "bloodGlucose": "血糖",
         "bloodOxygenSaturation": "血氧飽和度",
         "bloodPressure": "血壓",
@@ -5761,5 +5771,58 @@
         "imageBlockedFrom": "外部圖片已被封鎖：{{host}}",
         "imageFromHost": "來自 {{host}} 的圖片",
         "externalImage": "外部圖片"
+    },
+    "layout": {
+        "welcome": "歡迎 {{activeUserName}}"
+    },
+    "chat": {
+        "toolCategories": {
+            "tooltip": "選擇聊天機械人可用工具",
+            "title": "聊天機械人工具",
+            "description": "較少的工具有助小型本地模型穩定回應.",
+            "presetFull": "完整工具組",
+            "presetCore": "核心工具組",
+            "clearAll": "全部清除",
+            "emptyHint": "未選取任何類別 — 聊天機器人將使用其預設工具組。",
+            "food": "飲食及水份",
+            "exercise": "運動訓練",
+            "checkin": "身體狀況及每日打卡",
+            "goals": "目標設定",
+            "reports": "報表與數據分析",
+            "coaching": "訓練指導",
+            "vision": "影像辨識功能",
+            "profile": "個人資料及生活習慣",
+            "medications": "藥物"
+        },
+        "errorClearingHistory": "無法清除聊天記錄.",
+        "errorLoadingHistory": "無法載入聊天記錄.",
+        "errorLoadingPreferences": "無法載入對話偏好設定.",
+        "successClearingHistory": "聊天記錄已成功清除."
+    },
+    "workoutLaps": {
+        "title": "訓練分段間隔與趟次",
+        "lapsCount": "{{count}} 圈次",
+        "lap": "圈",
+        "distance": "距離",
+        "time": "時間",
+        "pace": "步速 (/{{unit}})",
+        "avgMaxHr": "平均 / 最大心率",
+        "resp": "呼吸 (brpm)",
+        "power": "圈數動力",
+        "cadence": "圈速"
+    },
+    "dailyHealthMetrics": {
+        "title": "日常穿戴裝置健康摘要",
+        "bodyBattery": "體能",
+        "peak": "巔峰",
+        "low": "低谷：{{val}}",
+        "avgStress": "平均壓力",
+        "max": "頂峰: {{val}}",
+        "restingHr": "靜息心率",
+        "recovery": "復原：{{val}}",
+        "vo2Max": "最大攝氧量",
+        "fitnessAge": "適合年齡：{{val}}",
+        "readiness": "準備就緒",
+        "recHours": "錄入: {{val}}"
     }
 }
