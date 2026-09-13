@@ -270,5 +270,36 @@
     "mealBuilder": {
         "totalAmount": "Quantité totale ({{unit}}) *",
         "servingUnit": "Portion"
+    },
+    "progressPhotos": {
+        "frameCountRanged": "{{current}} de {{total}} · {{range}}",
+        "deltaBadge": "Δ {{value}}",
+        "cameraPermission": "L'autorisation de caméra requise",
+        "cameraPermissionHint": "Autorisez l'accès à la caméra pour SparkyFitness dans les paramètres.",
+        "compare": "Comparer",
+        "compareTitle": "Comparer",
+        "before": "Avant",
+        "after": "Après",
+        "historyDescription": "Vos photos pour cet angle, plus récentes en premier.",
+        "speedFast": "Rapide",
+        "loadError": "Impossible de charger les photos de progression.",
+        "takePhoto": "Prenez une photo",
+        "chooseLibrary": "Choisissez depuis la bibliothèque",
+        "remove": "Supprimer la photo",
+        "title": "Photos de progression",
+        "angle": {
+            "front": "Avant",
+            "back": "Arrière",
+            "side": "Côté"
+        },
+        "noWeight": "Aucun poids enregistré",
+        "logWeight": "Enregistrer un poids",
+        "logWeightA11y": "Enregistrez votre poids pour ce jour",
+        "openPhotoA11y": "Voir cette photo en plein écran",
+        "sincePrevious": "{{delta}} depuis la précédente",
+        "emptyTitle": "Pas encore de photos pour {{angle}}"
+    },
+    "healthTrendsSettings": {
+        "moveDown": "Descendre"
     }
 }
