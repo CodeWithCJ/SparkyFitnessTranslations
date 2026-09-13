@@ -83,7 +83,8 @@
             "successTitle": "Erfolg",
             "timeFormat12Lower": "12 Stunden, am/pm (2:30 pm)",
             "timeFormat12Upper": "12 Stunden, AM/PM (2:30 PM)",
-            "timeFormat24": "24 Stunden (14:30)"
+            "timeFormat24": "24 Stunden (14:30)",
+            "chartScaleMode": "Diagrammskalierung"
         },
         "waterTracking": {
             "title": "Wasser-Tracking",
@@ -1251,7 +1252,21 @@
         "deletePresetEntry": "Voreingestellten Eintrag löschen",
         "editExerciseDescription": "Details unten bearbeiten.",
         "noExercisesInPreset": "Keine Übungen in dieser Voreinstellung.",
-        "workoutPreset": "Trainingsvoreinstellung"
+        "workoutPreset": "Trainingsvoreinstellung",
+        "activeCaloriesValue": "{{calories}} Aktiv",
+        "setCount": "{{count}} gesetzt",
+        "secondsShort": "{{count}}",
+        "repCount": "{{count}} Wiederholungen",
+        "meta": {
+            "beginner": "Anfänger",
+            "intermediate": "Fortgeschritten",
+            "expert": "Profi",
+            "pull": "Ziehen",
+            "push": "Drücken",
+            "static": "Statisch",
+            "isolation": "Isolierung",
+            "compound": "Grundübungen"
+        }
     },
     "foodSearchDialog": {
         "title": "Lebensmittel suchen und hinzufügen",
@@ -3245,7 +3260,15 @@
         "selectBodyFatAlgorithm": "Wählen Sie Körperfett aus Algorithmus",
         "selectEnergyUnitPlaceholder": "Energieeinheit auswählen",
         "bodyFatAlgorithmOptions": {
-            "usNavy": "U.S. Navy"
+            "usNavy": "U.S. Navy",
+            "bmiMethod": "BMI Methode"
+        },
+        "bmrAlgorithmOptions": {
+            "mifflinStJeor": "Mifflin-St Jeor",
+            "revisedHarrisBenedict": "revidierte Harris-Benedict Gleichung",
+            "katchMcArdle": "Katch-McArdle Formel",
+            "cunningham": "Cunningham Gleichung",
+            "oxford": "Oxford"
         }
     },
     "sync": {
@@ -3925,7 +3948,8 @@
             "severity": "Intensität",
             "notesContext": "Notizen / Kontext",
             "dateRangeSeparator": "zu",
-            "notSet": "Nicht festgelegt"
+            "notSet": "Nicht festgelegt",
+            "location": "Standort"
         },
         "scheduleTypes": {
             "cyclic": "Zyklisch (Ein/Aus)",
@@ -4259,14 +4283,14 @@
     },
     "chat": {
         "toolCategories": {
-            "title": "Chatbot Werkzeuge",
+            "title": "Chatbot Tools",
             "presetFull": "Voll",
             "food": "Essen & Wasser",
             "exercise": "Übung",
             "goals": "Ziele",
             "profile": "Profil & Gewohnheiten",
             "medications": "Medikamente",
-            "tooltip": "Chatbot Werkzeuge",
+            "tooltip": "Wähle deine Chatbot Tools",
             "description": "Weniger Tools helfen kleineren lokalen Modellen, zuverlässiger zu antworten.",
             "emptyHint": "Keine Kategorie ausgewählt - Der Chatbot verwendet die Standard-Werkzeuge.",
             "checkin": "Körper & Check-ins",
@@ -4910,6 +4934,34 @@
     "openFoodFactsContribution": {
         "title": "Zu Open Food Facts hinzufügen",
         "unavailable": "Für Beiträge werden ein eigenes benutzerdefiniertes Lebensmittel, eine aktivierte Servereinstellung und ein verfügbares Open Food Facts-Konto benötigt.",
-        "introduction": "Dein Lebensmittel ist lokal gespeichert. Wähle ein Foto aus, das du von diesem Produkt aufgenommen hast, und überprüfe anschließend genau, welche Informationen veröffentlicht werden. Das Erstellen oder Abbrechen einer Vorschau führt zu keinen Änderungen bei Open Food Facts."
+        "introduction": "Dein Lebensmittel ist lokal gespeichert. Wähle ein Foto aus, das du von diesem Produkt aufgenommen hast, und überprüfe anschließend genau, welche Informationen veröffentlicht werden. Das Erstellen oder Abbrechen einer Vorschau führt zu keinen Änderungen bei Open Food Facts.",
+        "saveAndPreview": "Eintrag speichern und Vorschau anzeigen",
+        "photoLabel": "Dein eigenes Bild",
+        "photoHelp": "Erstelle ein gutes Foto der Vorderseite, der Nährwerttabelle oder der Verpackung. Orts- und Metadaten werden vor dem veröffentlichen vom Foto entfernt.",
+        "nutritionPhoto": "Nährwerttabelle",
+        "frontPhoto": "Vorderseite des Produkts",
+        "packagingPhoto": "Verpackung",
+        "imageError": "Wähle ein gutes JPEG, PNG oder WebP Foto unter 20MB und mit mindestens 640 Pixeln auf seiner längsten Seite und mindestens 160 Pixeln auf seiner kürzesten Seite. Maximalgröße 40 Megapixel.",
+        "preview": "Vorschau deines Beitrags",
+        "preparing": "Vorschau wird erstellt…",
+        "previewError": "Die Vorschau konnte nicht erstellt werden.",
+        "existingProduct": "Dieser Beitrag ändert ein existierendes Produkt. Schau dir die aktuellen Daten an bevor du bestätigst.",
+        "newProduct": "Dieser Beitrag erstellt ein öffentlich zugängliches Produkt.",
+        "personalAccount": "Dein persönlicher Open Food Facts account",
+        "imageAlt": "Foto welches veröffentlicht werden soll",
+        "fieldsCaption": "Alle Daten die veröffentlicht werden sollen",
+        "field": "Feld",
+        "value": "Genauer Wert",
+        "dataConsent": "Ich habe diese Daten genau mit den Daten des Produkts verglichen und stimme zu sie unter der ODbL and Database Contents License zu veröffentlichen.",
+        "imageConsent": "Ich habe das Foto selbst gemacht, besitze alle Rechte daran und stimme zu sie unter der CC BY-SA Lizenz zu veröffentlichen.",
+        "publish": "diesen Beitrag veröffentlichen",
+        "publishing": "Veröffentlichen…",
+        "publishError": "Veröffentlichung konnte nicht bestätigt werden. Überprüfe die Daten nochmal bevor du eine neue Veröffentlichung versuchst.",
+        "expired": "Diese Vorschau ist abgelaufen. Erbitte ein neues Review.",
+        "successTitle": "Beitrag veröffentlicht",
+        "partialTitle": "Foto veröffentlicht; Produktdaten noch nicht bestätigt",
+        "imageTypeLabel": "Inhalt des Fotos",
+        "previewTitle": "Genau diesen Beitrag reviewen",
+        "globalAccount": "Dein shared server Open Food Facts account"
     }
 }
