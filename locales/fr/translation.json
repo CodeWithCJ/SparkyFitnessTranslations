@@ -754,6 +754,12 @@
             "sessionNotes": "Notes",
             "uploadImage": "Photo",
             "caloriesBurnedOptional": "Calories brûlées (optionnel)"
+        },
+        "workoutPlaybackDialog": {
+            "finish": "Terminer la séance",
+            "finishError": "Échec de l'enregistrement de la séance. Votre progression locale est conservée et vous pouvez réessayer.",
+            "finishing": "Enregistrement...",
+            "noDraft": "Aucun brouillon d'entraînement n'a été trouvé pour cette date."
         }
     },
     "workoutPresetsManager": {
