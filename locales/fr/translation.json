@@ -745,6 +745,15 @@
             "standardValuesDescription": "Lors de l'importation de définitions d'exercices, assurez-vous que les valeurs pour « Niveau », « Force » et « Mécanique » correspondent à ces options standard.",
             "standardValuesForDropdowns": "Valeurs standard pour les listes déroulantes de définition d'exercices",
             "title": "Importer l'historique des entrées d'exercices"
+        },
+        "logExerciseEntryDialog": {
+            "logExercise": "Enregistrer l'exercice : {{exerciseName}}",
+            "notesPlaceholder": "Remarques concernant cette séance...",
+            "saveEntry": "Enregistrer l'entrée",
+            "saving": "Sauvegarde...",
+            "sessionNotes": "Notes",
+            "uploadImage": "Photo",
+            "caloriesBurnedOptional": "Calories brûlées (optionnel)"
         }
     },
     "workoutPresetsManager": {
