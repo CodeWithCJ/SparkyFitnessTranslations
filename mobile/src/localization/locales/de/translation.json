@@ -418,7 +418,7 @@
     "healthMetrics": {
         "basalBodyTemperature": "Basal Body Temperature",
         "basalMetabolicRate": "Basal Metabolic Rate",
-        "bloodAlcoholContent": "Blood Alcohol Content",
+        "bloodAlcoholContent": "Blut Alkohol Gehalt",
         "bloodGlucose": "Blood Glucose",
         "bloodOxygenSaturation": "Blood Oxygen Saturation",
         "bloodPressure": "Blood Drückeure",
