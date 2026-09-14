@@ -147,5 +147,38 @@
     "mealBuilder": {
         "totalAmount": "Gesamtbetrag ({{unit}}) *",
         "servingUnit": "Portion"
+    },
+    "healthMetrics": {
+        "basalBodyTemperature": "Basale Körpertemperatur",
+        "basalMetabolicRate": "Grundumsatz",
+        "bloodAlcoholContent": "Blutalkoholgehalt",
+        "bloodGlucose": "Blutzucker",
+        "bloodOxygenSaturation": "Sauerstoffsättigung des Blutes",
+        "bloodPressure": "Blutdruck",
+        "bodyFat": "Körperfett",
+        "bodyTemperature": "Körpertemperatur",
+        "boneMass": "Knochenmasse",
+        "cyclingPedalingCadence": "Trittfrequenz beim Radfahren",
+        "distance": "Distanz",
+        "elevationGained": "Höhenmeter",
+        "floorsClimbed": "Erklommene Stockwerke",
+        "heartRate": "Herzfrequenz",
+        "height": "Größe",
+        "hydration": "Flüssigkeitszufuhr",
+        "leanBodyMass": "Fettfreie Körpermasse",
+        "nutrition": "Ernährung",
+        "power": "Leistung",
+        "respiratoryRate": "Atemfrequenz",
+        "restingHeartRate": "Ruheherzfrequenz",
+        "sleepSession": "Schlafsitzung",
+        "speed": "Geschwindigkeit",
+        "stepsCadence": "Schrittfrequenz",
+        "stress": "Stress",
+        "weight": "Gewicht",
+        "appleExerciseTime": "Apple Trainingszeit",
+        "appleMoveTime": "Apple Bewegungszeit",
+        "appleStandTime": "Apple Stehzeit",
+        "steps": "Schritte",
+        "totalCalories": "Kalorien insgesamt"
     }
 }
