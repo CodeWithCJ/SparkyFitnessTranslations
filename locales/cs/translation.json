@@ -168,12 +168,11 @@
             "thu": "Čt",
             "fri": "Pá",
             "sat": "So",
-            "loggedCount_one": "{{count}} zaznamenaný příznak",
+            "loggedCount_one": "{{count}} zaznamenané příznaky",
             "loggedCount_few": "",
-            "loggedCount_other": "{{count}} zaznamenaných příznaků",
+            "loggedCount_other": "",
             "maxSeverity": "Maximální závažnost: {{n}}",
-            "skipped": "Vynecháno",
-            "loggedCount": "{{count}} zaznamenané příznaky"
+            "skipped": "Vynecháno"
         },
         "common": {
             "logging": "Protokolování…",
