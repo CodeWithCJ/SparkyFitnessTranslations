@@ -84,7 +84,21 @@
             "timeFormat12Lower": "12 Stunden, am/pm (2:30 pm)",
             "timeFormat12Upper": "12 Stunden, AM/PM (2:30 PM)",
             "timeFormat24": "24 Stunden (14:30)",
-            "chartScaleMode": "Diagrammskalierung"
+            "chartScaleMode": "Diagrammskalierung",
+            "chartScalePoint": "Gleichmäßig verteilt (jeder Eintrag erhält die gleiche Breite)",
+            "chartScaleTime": "Zeitproportional (Abstände zwischen den Einträgen sind sichtbar)",
+            "standardDrinkUnit": "Standard-Getränkeeinheit",
+            "weeklyAlcoholLimit": "Wöchentliche Alkoholobergrenze (Standardgetränke)",
+            "noWeeklyLimit": "Kein Limit festgelegt",
+            "caffeineHalfLife": "Halbwertszeit von Koffein (Stunden)",
+            "targetBedtime": "Angestrebte Schlafenszeit",
+            "sunday": "Sonntag",
+            "monday": "Montag",
+            "tuesday": "Dienstag",
+            "wednesday": "Mittwoch",
+            "thursday": "Donnerstag",
+            "friday": "Freitag",
+            "saturday": "Samstag"
         },
         "waterTracking": {
             "title": "Wasser-Tracking",
@@ -96,11 +110,26 @@
             "saveWaterDisplayUnit": "Wasseranzeigeeinheit speichern",
             "addExerciseWater": "Füge Wasserverlust durch Übungen zum täglichen Ziel hinzu",
             "addExerciseWaterHint": "Erhöht das tägliche Trinkziel aufgrund des geschätzten Flüssigkeitsverlusten durch Aktivitäten.",
-            "liters": "Liter"
+            "liters": "Liter",
+            "addFoodWater": "Rechne das Wasser aus Lebensmitteln zu deiner Gesamtflüssigkeitsaufnahme hinzu",
+            "addFoodWaterHint": "Rechnet den Wassergehalt eines erfassten Lebensmittels in deine tägliche Wasseraufnahme ein, sofern dieser nicht bereits durch einen verknüpften Behälter berücksichtigt wurde."
         },
         "nutrientDisplay": {
             "title": "Nährwertanzeige",
-            "description": "Wähle, welche Nährwerte für Lebensmittel und Mahlzeiten angezeigt werden sollen"
+            "description": "Wähle, welche Nährwerte für Lebensmittel und Mahlzeiten angezeigt werden sollen",
+            "platformDesktop": "Desktop",
+            "platformMobile": "Mobil",
+            "groups": {
+                "summary": "Zusammenfassung",
+                "quickInfo": "Kurzinfo",
+                "foodDatabase": "Lebensmitteldatenbank",
+                "goal": "Ziel",
+                "reportTabular": "Bericht (tabellarisch)",
+                "reportChart": "Bericht (Diagramm)"
+            },
+            "descriptions": {
+                "summary": "Steuert die Ernährungsübersicht und die 14-Tage-Trends auf der Tagebuchseite."
+            }
         },
         "calculationSettings": {
             "title": "Berechnungseinstellungen",
@@ -939,7 +968,18 @@
             "exercises": "Übungen",
             "name": "Name",
             "deleteConfirmationDescription": "Sind Sie sicher, dass Sie diese Übung löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
-            "deleteImpactDescription": "Diese Übung wird in anderen Protokollen oder Trainingsplänen verwendet. Das Löschen kann Auswirkungen auf diese Datensätze haben."
+            "deleteImpactDescription": "Diese Übung wird in anderen Protokollen oder Trainingsplänen verwendet. Das Löschen kann Auswirkungen auf diese Datensätze haben.",
+            "delete": "Löschen",
+            "cancel": "Abbrechen",
+            "deleteExerciseConfirmTitle": "{{exerciseName}} löschen?",
+            "hide": "Verstecken",
+            "warning": "Warnung!",
+            "deleteWithHistory": "Löschen inklusive Verlauf",
+            "diaryEntriesCount": "{{count}} protokollierte Workouts",
+            "exerciseUnused": "Diese Übung wird bisher nirgendwo verwendet.",
+            "exerciseUsedIn": "Diese Übung wird verwendet in:",
+            "workoutPlansCount": "{{count}} Trainingspläne",
+            "workoutPresetsCount": "{{count}} Workout-Voreinstellungen"
         },
         "exerciseImportCSV": {
             "importExerciseData": "Übungsdaten importieren",
@@ -1145,7 +1185,8 @@
         "presets": "Voreinstellungen",
         "stats": "Statistiken",
         "duplicate": "Duplikat",
-        "duplicateNameSuffix": "{{name}} (Kopie)"
+        "duplicateNameSuffix": "{{name}} (Kopie)",
+        "emptyPresetError": "Ein Workout-Preset ohne Übungen kann nicht gestartet oder protokolliert werden."
     },
     "workoutPlansManager": {
         "addPlanButton": "Plan hinzufügen",
@@ -3233,7 +3274,11 @@
         "autoCalculateDisabledNoSex": "Stellen Sie Ihr Geschlecht im Profil ein, um es zu aktivieren Automatisch berechnen",
         "autoCalculateSelect": "In Massenberechnung einbeziehen",
         "autoCalculateSelectNone": "Keine auswählen",
-        "autoCalculateApplySelected": "Ausgewählte automatisch berechnen ({{count}})"
+        "autoCalculateApplySelected": "Ausgewählte automatisch berechnen ({{count}})",
+        "caffeine": "Koffein",
+        "waterContent": "Wassergehalt",
+        "alcohol": "Alkohol",
+        "abv": "% vol."
     },
     "calculationSettings": {
         "showNetCarbs": "Netto-Kohlenhydrate anzeigen (Kohlenhydrate abzüglich Ballaststoffe)",
@@ -3269,7 +3314,9 @@
             "katchMcArdle": "Katch-McArdle Formel",
             "cunningham": "Cunningham Gleichung",
             "oxford": "Oxford"
-        }
+        },
+        "useExternalBmr": "Verwenden Sie den gemessenen Grundumsatz (BMR) aus Check-ins und synchronisierten Geräten",
+        "useExternalBmrHint": "Standardmäßig deaktiviert – die von Ihnen gewählte Formel wird so lange verwendet, bis Sie diese Funktion einschalten. Ist sie aktiviert, ersetzt ein bei einem Check-in erfasster oder von einer intelligenten Waage bzw. einem Gesundheitsdienstleister übertragener BMR-Wert für den jeweiligen Tag die Formel, sofern der Wert physiologisch plausibel ist. Da manche Geräte den BMR als laufende Tagessumme statt als Rate angeben, ist diese Funktion optional."
     },
     "sync": {
         "syncAll": "Synchronisiere alle aktiven Anbieter",
@@ -3960,7 +4007,8 @@
             "weekly": "Bestimmte Wochentage"
         },
         "noSelection": {
-            "title": "keine Medikation ausgewählt"
+            "title": "keine Medikation ausgewählt",
+            "description": "Wählen Sie ein Medikament aus der Liste aus, um Medikationspläne, Notizen und GLP-1-Coaching-Tools anzuzeigen."
         }
     },
     "onboarding": {
