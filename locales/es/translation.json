@@ -453,7 +453,6 @@
         "editPresetTooltip": "Editar esta plantilla",
         "deletePresetTooltip": "Eliminar esta plantilla",
         "loading": "Cargando...",
-        "loadMore": "Cargar más",
         "noExercisesInPreset": "No hay ejercicios en esta plantilla",
         "failedToLoadPresets": "Error al cargar las plantillas de rutina.",
         "createSuccess": "Plantilla de rutina creada correctamente.",

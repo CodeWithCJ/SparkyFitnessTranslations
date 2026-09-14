@@ -842,7 +842,6 @@
         "editPresetTooltip": "Modifier ce modèle",
         "deletePresetTooltip": "Supprimer ce modèle",
         "loading": "Chargement...",
-        "loadMore": "Charger plus",
         "noExercisesInPreset": "Aucun exercices dans ce modèle",
         "failedToLoadPresets": "Echec de chargement du modèle d'entrainement.",
         "createSuccess": "Modèle d'entrainement créé.",

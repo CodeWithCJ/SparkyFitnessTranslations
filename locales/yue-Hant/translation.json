@@ -1083,7 +1083,6 @@
         "editPresetTooltip": "修改套裝內容",
         "deletePresetTooltip": "刪除呢個訓練套裝",
         "loading": "載入中…",
-        "loadMore": "載入更多",
         "noExercisesInPreset": "呢個套裝入面冇加入任何運動",
         "failedToLoadPresets": "讀取訓練套裝清單 失敗.",
         "createSuccess": "訓練套裝 建立成功.",

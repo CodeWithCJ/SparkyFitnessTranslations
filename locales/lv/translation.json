@@ -447,7 +447,6 @@
         "editPresetTooltip": "Rediģēt šo iepriekš iestatīto profilu",
         "deletePresetTooltip": "Dzēst šo iepriekš iestatīto profilu",
         "loading": "Ielāde...",
-        "loadMore": "Ielādēt vairāk",
         "noExercisesInPreset": "Šajā iepriekš iestatītajā profilā nav neviena vingrojuma",
         "failedToLoadPresets": "Neizdevās ielādēt treniņu iepriekšējās iestatnes.",
         "createSuccess": "Treniņa iestatījums veiksmīgi izveidots.",

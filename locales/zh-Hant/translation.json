@@ -1083,7 +1083,6 @@
         "editPresetTooltip": "編輯此模板",
         "deletePresetTooltip": "刪除此模板",
         "loading": "載入中…",
-        "loadMore": "載入更多",
         "noExercisesInPreset": "此模板內沒有任何運動項目",
         "failedToLoadPresets": "載入訓練模板清單失敗。",
         "createSuccess": "訓練模板建立成功。",

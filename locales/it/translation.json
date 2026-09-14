@@ -279,7 +279,6 @@
         "editPresetTooltip": "Modifica questa impostazione predefinita",
         "deletePresetTooltip": "Elimina questa preimpostazione",
         "loading": "Caricamento in corso...",
-        "loadMore": "Carica altro",
         "noExercisesInPreset": "Nessun esercizio in questa impostazione predefinita",
         "failedToLoadPresets": "Impossibile caricare le impostazioni predefinite dell'allenamento.",
         "createSuccess": "Impostazione allenamento creata con successo.",

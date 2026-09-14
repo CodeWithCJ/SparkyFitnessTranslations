@@ -478,7 +478,6 @@
         "makePresetPrivateTooltip": "Сделать этот шаблон личным",
         "editPresetTooltip": "Редактировать этот шаблон",
         "deletePresetTooltip": "Удалить этот шаблон",
-        "loadMore": "Загрузить ещё",
         "noExercisesInPreset": "Нет упражнений в этом шаблоне",
         "failedToLoadPresets": "Не удалось загрузить шаблоны тренировок.",
         "createSuccess": "Шаблон тренировки успешно создан.",

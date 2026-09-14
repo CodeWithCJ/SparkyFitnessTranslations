@@ -1128,7 +1128,6 @@
         "editPresetTooltip": "Vorlage bearbeiten",
         "deletePresetTooltip": "Vorlage löschen",
         "loading": "Lade …",
-        "loadMore": "Mehr laden",
         "noExercisesInPreset": "Keine Übungen in dieser Vorlage",
         "failedToLoadPresets": "Laden von Trainingsvorlagen fehlgeschlagen.",
         "createSuccess": "Traininsgvorlage erfolgreich erstellt.",
