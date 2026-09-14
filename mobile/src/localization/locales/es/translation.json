@@ -173,7 +173,6 @@
         "hydration": "Hidratación",
         "ofVolume": "de {{value}} {{unit}}",
         "perBottle": "{{value}} {{unit}} por botella",
-        "configureWaterContainer": "Configura un recipiente de agua en el servidor para\nactivar los botones de añadir/quitar rápido",
         "exercise": "Ejercicio",
         "minutes": "Minutos",
         "calories": "Calorías",

@@ -1195,7 +1195,6 @@
         "hydration": "飲水",
         "ofVolume": "（共 {{value}} {{unit}}）",
         "perBottle": "每瓶 {{value}} {{unit}}",
-        "configureWaterContainer": "在伺服器上配置水容器\n啟用快速新增 / 移除按鈕",
         "exercise": "運動",
         "minutes": "分鐘",
         "calories": "卡路里",

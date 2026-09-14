@@ -1195,7 +1195,6 @@
         "hydration": "水分",
         "ofVolume": "／{{value}} {{unit}}",
         "perBottle": "每樽 {{value}} {{unit}}",
-        "configureWaterContainer": "喺伺服器設定水樽，\n以啟用快速加減掣",
         "exercise": "運動",
         "minutes": "分鐘",
         "calories": "卡路里",
