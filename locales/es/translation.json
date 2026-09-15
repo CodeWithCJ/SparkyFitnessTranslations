@@ -5742,5 +5742,15 @@
         "write": "Escribir",
         "preview": "Previsualizar",
         "bold": "Negrita"
+    },
+    "openFoodFactsContribution": {
+        "title": "Contribuir con Open Food Facts",
+        "introduction": "Tu comida se ha guardado localmente. Elige una foto que tomaste de este producto y revisa exactamente lo que va a ser publicado. Preparar o cancelar una previsualización no cambia Open Food Facts.",
+        "saveAndPreview": "Guarda y previsualiza la contribución",
+        "photoLabel": "Tu propia foto del producto",
+        "photoHelp": "Usa una foto nítida de la parte frontal, la etiqueta de información nutricional o el envase. La ubicación y otros metadatos de la imagen serán eliminados antes de la publicación.",
+        "nutritionPhoto": "Etiqueta nutricional",
+        "frontPhoto": "Frontal del producto",
+        "packagingPhoto": "Envase"
     }
 }
