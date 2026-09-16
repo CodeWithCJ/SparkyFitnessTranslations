@@ -5751,6 +5751,7 @@
         "photoHelp": "Usa una foto nítida de la parte frontal, la etiqueta de información nutricional o el envase. La ubicación y otros metadatos de la imagen serán eliminados antes de la publicación.",
         "nutritionPhoto": "Etiqueta nutricional",
         "frontPhoto": "Frontal del producto",
-        "packagingPhoto": "Envase"
+        "packagingPhoto": "Envase",
+        "unavailable": "Para colaborar, necesitas subir tu propia comida personalizada, tener activada la configuración del servidor y una cuenta de Open Food Facts disponible."
     }
 }
