@@ -1039,7 +1039,9 @@
             "loadingRecentItems": "正在加载最近项目...",
             "failedRecentItems": "无法加载最近项目。",
             "noRecentItems": "暂无最近项目",
-            "recentItemsHint": "你记录的食物、餐食和运动会显示在这里，方便快速访问。"
+            "recentItemsHint": "你记录的食物、餐食和运动会显示在这里，方便快速访问。",
+            "waterContainers": "水容器",
+            "waterContainersSubtitle": "水瓶、水杯，以及关联食物的饮品"
         },
         "sleep": "睡眠",
         "healthTrendsSettings": "健康趋势",
@@ -1202,7 +1204,13 @@
         "removeWater": "移除水",
         "addWater": "添加水",
         "selectContainer": "选择 {{container}}",
-        "perContainer": "每个容器 {{value}} {{unit}}"
+        "perContainer": "每个容器 {{value}} {{unit}}",
+        "waterFromFood": "包含来自食物的 {{value}} {{unit}}",
+        "chooseWaterContainer": "选择水容器以启用快速添加／移除",
+        "quickAddDrinks": "快速添加",
+        "logDrink": "记录{{drink}}",
+        "perPress": "{{value}} {{unit}}",
+        "logDrinkFailed": "无法记录该饮品"
     },
     "syncScreen": {
         "healthConnectSettings": "Health Connect 设置",
@@ -1309,7 +1317,7 @@
         "exerciseCaloriesDescription": "你的运动卡路里中有多少被加回每日目标。",
         "activityLevel": "活动水平",
         "activityBaseline": "用作 TDEE 的基线。",
-        "adaptiveFallback": "在你有足够的追踪数据之前作为回退。",
+        "adaptiveFallback": "在你积累足够追踪数据之前的备用估算，之后也会继续用于设定合理性上限。你测得的 TDEE 会被限制在 BMR × 此倍数的 ±500 kcal 范围内。",
         "allowNegative": "允许较低的回退预测",
         "negativeDescription": "当设备总量不可用时，允许 BMR + 活动卡路里回退降低你的目标。",
         "includeResting": "包含静息卡路里",
@@ -1368,7 +1376,10 @@
             "bulk": "增肌（+20%）",
             "manual": "手动（自定义 %）",
             "customPercentage": "自定义百分比",
-            "customPercentageDescription": "正数增加卡路里（盈余）；负数产生赤字。限制在 ±40%。"
+            "customPercentageDescription": "正数增加卡路里（盈余）；负数产生赤字。限制在 ±40%。",
+            "calculationMethod": "计算方法",
+            "methodAdaptive": "自适应",
+            "methodManual": "手动"
         },
         "safetyFloor": {
             "title": "安全下限",
@@ -1379,7 +1390,10 @@
             "standardDescription": "使用你的估算 RMR 与临床下限中较高者。",
             "customDescription": "用你选择的下限替代标准下限。健康建议仍然可见。",
             "disabledDescription": "停止自动目标钳制。健康警告仍然可见。"
-        }
+        },
+        "useExternalBmr": "使用检查和同步设备测得的 BMR",
+        "useExternalBmrHint": "默认关闭——在你开启之前，始终使用你选择的公式。开启后，检查记录中记录的 BMR，或从智能秤／健康服务同步的 BMR，会在当天取代公式（前提是对你来说生理上合理）。",
+        "useExternalBmrIosNote": "Apple 健康中的静息能量已包含轻度日常活动，因此建议将活动量设为「无」（×1.0），避免重复计算。"
     },
     "dashboardSettings": {
         "updateFailed": "更新设置失败。",
@@ -1400,7 +1414,9 @@
         "healthTrendsSubtitle": "选择哪些图表显示在仪表板上及其顺序",
         "progressPhotos": "进度照片",
         "progressPhotosSubtitle": "在仪表板上显示进度照片卡片",
-        "customNutrientDisplay": "自定义营养素显示"
+        "customNutrientDisplay": "自定义营养素显示",
+        "caffeine": "咖啡因",
+        "caffeineSubtitle": "在仪表板上显示活性咖啡因卡片"
     },
     "diarySettings": {
         "updateFailed": "更新设置失败。",
@@ -1594,6 +1610,15 @@
                 "late": "经期延迟 — 第 31 天",
                 "unknown": "周期阶段"
             }
+        },
+        "watch": {
+            "title": "Apple Watch",
+            "description": "手表配套连接的状态。即使关闭「可连接」，手表上捕获的检查记录仍会排队并送达，因此这里的灰点不代表数据丢失。",
+            "paired": "手表已配对",
+            "notPaired": "未配对手表",
+            "unsupported": "此平台不支持",
+            "reachable": "手表 App 当前可连接",
+            "notReachable": "手表 App 不在前台"
         }
     },
     "cycleCard": {
@@ -1985,7 +2010,7 @@
             "feetInchesNumber": "请为英尺和英寸输入数字。",
             "bodyFatRange": "体脂率必须在 0 到 100 之间。",
             "bodyWaterRange": "体水率必须在 0 到 100 之间。",
-            "bmrRange": "BMR 必须在 300 到 10000 千卡之间。"
+            "bmrRange": "BMR 必须在 3600 到 6000 千卡之间。"
         },
         "nothingToSave": "没有可保存的内容",
         "enterValue": "请至少输入或清除一个数值。",
@@ -2000,7 +2025,8 @@
             "moreCategories": "更多类别 ▾",
             "hideCategories": "隐藏类别 ▴",
             "hideCategoriesToggle": "隐藏类别 ▴",
-            "moreCategoriesToggle": "更多类别 ▾"
+            "moreCategoriesToggle": "更多类别 ▾",
+            "lastValue": "上次：{{value}}"
         },
         "confirm": {
             "measurement": "项测量",
@@ -2015,7 +2041,21 @@
             "in": "英寸"
         },
         "title": "测量",
-        "edit": "编辑测量"
+        "edit": "编辑测量",
+        "useLast": "使用上次",
+        "useLastFor": "使用上次的{{label}}数值",
+        "previousUnavailable": "无法加载之前的数值。你的服务器可能需要更新。",
+        "bodyFat": {
+            "calculate": "计算",
+            "useRecent": "使用最近",
+            "calculateFailedTitle": "无法计算体脂",
+            "calculatedTitle": "体脂已计算",
+            "calculatedMessage": "检查数值后，保存即可保留。",
+            "profileRequired": "请在个人资料中设置性别，以使用此计算。",
+            "bmiRequiredFields": "BMI 法需要体重、身高、年龄和性别。",
+            "navyRequiredFields": "美国海军法需要性别、身高、腰围、颈围，以及（女性）臀围测量值。",
+            "uncomputable": "这些测量值无法得出有效的体脂百分比。请检查腰围、颈围、身高和臀围数值。"
+        }
     },
     "foodScan": {
         "segment": {
@@ -2297,7 +2337,10 @@
         "glycemicIndexMedium": "中",
         "glycemicIndexHigh": "高",
         "glycemicIndexVeryHigh": "极高",
-        "saturatedFatCompact": "饱和脂肪"
+        "saturatedFatCompact": "饱和脂肪",
+        "caffeine": "咖啡因",
+        "waterContent": "水分含量",
+        "alcohol": "酒精"
     },
     "foodNutrition": {
         "hideExtra": "隐藏更多营养素 ▴",
@@ -2789,7 +2832,8 @@
         "deleting": "删除中...",
         "deleteExercise": "删除动作",
         "makePrivate": "设为私有",
-        "shareWithPublic": "公开共享"
+        "shareWithPublic": "公开共享",
+        "deleteSheetTitle": "删除动作"
     },
     "mealTypeSettings": {
         "reorder": "重新排序 {{name}}",
@@ -3371,7 +3415,8 @@
         "barcode": "条形码",
         "logFood": "记录食物",
         "deleteFood": "删除食物",
-        "notes": "备注"
+        "notes": "备注",
+        "deleteSheetTitle": "删除食物"
     },
     "foodEntryView": {
         "saveChanges": "保存食物条目更改",
@@ -3611,7 +3656,21 @@
             "deleteActivityTitle": "删除活动？",
             "deleteActivityMessage": "此活动将被永久移除。",
             "deleteExerciseTitle": "删除动作？",
-            "deleteExerciseMessage": "此动作将从你的动作库中移除。过去的记录训练会保留。"
+            "deleteExerciseMessage": "此动作将从你的动作库中移除。过去的记录训练会保留。",
+            "deleteWithHistoryTitle": "也要删除训练吗？",
+            "deleteWithHistoryMessage": "这也会永久删除你为该动作记录的训练。此操作无法撤销。"
+        },
+        "hidden": {
+            "title": "动作已隐藏",
+            "usedByOthers": "该动作被其他人使用，因此改为隐藏而非删除。他们的历史记录不受影响。"
+        },
+        "options": {
+            "hide": "从搜索中隐藏",
+            "hideDescription": "保留一切原状。该动作只是不再出现在搜索结果中。",
+            "delete": "删除",
+            "deleteDescription": "会从你的动作库、预设和计划中移除。已记录的训练会保留。",
+            "deleteWithHistory": "连同历史记录一起删除",
+            "deleteWithHistoryDescription": "也会永久删除你为该动作记录的训练。"
         }
     },
     "foodPhotoEstimate": {
@@ -3970,7 +4029,8 @@
             "scoop": "勺",
             "bar": "条",
             "stick": "根",
-            "whole": "整份"
+            "whole": "整份",
+            "flOz": "液量盎司（fl oz）"
         },
         "confidence": {
             "high": "高",
@@ -4035,7 +4095,13 @@
             "tooltip": "按下线条查看详情",
             "empty": "记录每日体温记录以查看你的 BBT 图表。"
         },
-        "allTrendsHidden": "所有图表均已隐藏。请在仪表板设置中选择要显示哪些。"
+        "allTrendsHidden": "所有图表均已隐藏。请在仪表板设置中选择要显示哪些。",
+        "hydration": {
+            "title": "水分",
+            "loadFailed": "无法加载水分数据",
+            "empty": "此期间没有水分数据",
+            "tooltip": "{{formattedVolume}} {{unit}} · {{date}}"
+        }
     },
     "exerciseLibrary": {
         "title": "动作",
@@ -4234,7 +4300,21 @@
     "foodDelete": {
         "failed": "删除食物失败",
         "title": "删除食物",
-        "message": "确定要删除此食物吗？已有的记录条目保持不变。"
+        "message": "确定要删除此食物吗？已有的记录条目保持不变。",
+        "hidden": {
+            "title": "食物已隐藏",
+            "usedByOthers": "该食物被其他人使用，因此改为隐藏而非删除。他们的历史记录不受影响。"
+        },
+        "confirmWithHistoryTitle": "也要删除记录吗？",
+        "confirmWithHistoryMessage": "这也会永久删除你为该食物记录的日记条目。此操作无法撤销。",
+        "options": {
+            "hide": "从搜索中隐藏",
+            "hideDescription": "保留一切原状。该食物只是不再出现在搜索结果中。",
+            "delete": "删除",
+            "deleteDescription": "会从你的食物库、餐点和餐点计划中移除。已记录的条目会保留。",
+            "deleteWithHistory": "连同历史记录一起删除",
+            "deleteWithHistoryDescription": "也会永久删除你为该食物记录的日记条目。"
+        }
     },
     "exerciseEditing": {
         "removeTitle": "移除动作？",
@@ -4282,7 +4362,10 @@
         "noPrimary": "无主容器",
         "noContainers": "无饮水容器",
         "multipleNoPrimary": "你有多个饮水容器，但没有一个标记为主容器。请在服务器上设置一个为主容器。",
-        "configure": "请在服务器上配置一个饮水容器以追踪饮水。"
+        "configure": "请在服务器上配置一个饮水容器以追踪饮水。",
+        "multipleNoPrimaryMobile": "你有多个水容器，但没有标记为主要容器。点击以选择一个。",
+        "configureMobile": "添加水容器以开始追踪水分。",
+        "defaultContainer": "默认"
     },
     "activeWorkoutAutosave": {
         "failedTitle": "训练未保存",
@@ -4876,5 +4959,85 @@
         "rangeA11y": "选择回放多久以前",
         "deltaBadge": "Δ {{value}}",
         "frameCountRanged": "{{current}}/{{total}} · {{range}}"
+    },
+    "waterContainers": {
+        "title": "水容器",
+        "add": "添加容器",
+        "loading": "正在加载水容器…",
+        "loadFailed": "无法加载水容器",
+        "loadFailedSubtitle": "请检查连接后重试。",
+        "noServer": "未配置服务器",
+        "noServerSubtitle": "配置你的服务器连接以管理水容器。",
+        "goToSettings": "前往设置",
+        "emptyTitle": "还没有水容器",
+        "emptySubtitle": "添加水瓶或水杯来追踪水分——可选择关联食物，这样点一下即可同时记录。",
+        "linkedTo": "已关联{{food}}",
+        "deleteTitle": "删除容器",
+        "deleteMessage": "删除{{name}}？",
+        "deleteNamed": "删除{{name}}",
+        "deleteSuccess": "容器已删除",
+        "deleteFailed": "无法删除容器",
+        "setPrimaryNamed": "将{{name}}设为主要容器",
+        "setPrimaryFailed": "无法设置主要容器",
+        "moveUp": "将{{name}}上移",
+        "moveDown": "将{{name}}下移",
+        "reorderFailed": "无法重新排序容器",
+        "presets": "快速添加预设",
+        "addPresetFailed": "无法添加饮品预设"
+    },
+    "waterContainerEdit": {
+        "createTitle": "添加容器",
+        "editTitle": "编辑容器",
+        "loading": "正在加载容器…",
+        "name": "名称",
+        "namePlaceholder": "例如：我的水瓶",
+        "volume": "容量",
+        "unit": "单位",
+        "units": {
+            "ml": "ml",
+            "oz": "oz",
+            "liter": "升"
+        },
+        "servingsPerContainer": "每个容器的份量数",
+        "primary": "主要容器",
+        "hydrationFactor": "水分系数",
+        "hydrationFactorHint": "仅调整水分计入比例：水为 1，咖啡或茶约 0.9，完全不应计入水分的饮品为 0。热量、咖啡因与酒精一律全额计入。",
+        "linkedFood": "已关联食物",
+        "selectFood": "选择食物（选填）",
+        "unlinkFood": "取消关联食物",
+        "linkedMealType": "餐别",
+        "noMealType": "无（按时间段）",
+        "delete": "删除容器",
+        "saveSuccess": "水容器已保存",
+        "saveFailed": "无法保存水容器",
+        "errors": {
+            "title": "请检查表单",
+            "nameRequired": "名称为必填项。",
+            "volumeInvalid": "容量必须大于零。",
+            "servingsInvalid": "每个容器的份量数至少为 1。",
+            "factorInvalid": "水分系数必须在 0 到 2 之间。",
+            "foodRequired": "请选择这个容器所装的食物。",
+            "quantityInvalid": "数量必须大于零。"
+        },
+        "tabWater": "水",
+        "tabDrink": "饮品（已关联食物）",
+        "quantity": "数量",
+        "hydrationFactorExample": "以 {{factor}} 计算，每按一下会从饮品的 {{total}} {{unit}} 中，将 {{credited}} {{unit}} 加入你的水分环。热量、咖啡因与酒精一律全额计入。",
+        "hydrationFactorApplies": "适用于之后记录的饮品——过去的记录会保留录入时使用的系数。"
+    },
+    "caffeine": {
+        "title": "活性咖啡因",
+        "activeNow": "当前生效中",
+        "atBedtime": "在{{time}}",
+        "lastDose": "最后一剂截止时间",
+        "cutoffPassed": "太晚了",
+        "cutoffOver": "已超标",
+        "anytimeSafe": "任何时间",
+        "crossingNote": "从 {{time}} 起回到 {{threshold}} 毫克以下",
+        "underThreshold": "今晚保持在 {{threshold}} 毫克以下",
+        "estimatedTimes": "部分剂量时间为估算值",
+        "legendCurve": "活性咖啡因",
+        "legendThreshold": "阈值 {{threshold}} 毫克",
+        "unitMg": "mg"
     }
 }
