@@ -481,7 +481,28 @@
         },
         "nutrientDisplay": {
             "title": "Visualizzazione dei nutrienti",
-            "description": "Scegli quali nutrienti visualizzare nelle schermate dedicate agli alimenti e ai pasti"
+            "description": "Scegli quali nutrienti visualizzare nelle schermate dedicate agli alimenti e ai pasti",
+            "groups": {
+                "summary": "Riepilogo",
+                "quickInfo": "Info rapide",
+                "foodDatabase": "Database alimenti",
+                "goal": "Obiettivo",
+                "reportTabular": "Report (Tabella)",
+                "reportChart": "Report (Grafico)"
+            },
+            "descriptions": {
+                "summary": "Gestisce il Riepilogo nutrizionale e i Trend a 14 giorni nella pagina del Diario.",
+                "quickInfo": "Gestisce i nutrienti mostrati per i singoli alimenti, i totali dei pasti, i risultati di ricerca e il database alimenti.",
+                "foodDatabase": "Gestisce i nutrienti mostrati durante la modifica degli alimenti nel tuo database.",
+                "goal": "Gestisce i nutrienti mostrati quando imposti o modifichi i tuoi obiettivi.",
+                "reportTabular": "Gestisce le colonne dei nutrienti nella vista a tabella dei Report.",
+                "reportChart": "Gestisce quali nutrienti sono disponibili per i grafici nella sezione Report."
+            },
+            "syncWith": "Sincronizza con {{platform}}",
+            "selectAll": "Seleziona Tutto",
+            "clearAll": "Deseleziona tutto",
+            "resetDefault": "Ripristina Predefiniti",
+            "dragToReorder": "Trascina per riordinare {{nutrient}}"
         },
         "calculationSettings": {
             "title": "Impostazioni di calcolo",
@@ -489,7 +510,25 @@
         },
         "familyAccess": {
             "title": "Accesso famiglia",
-            "description": "Gestisci l'accesso ai tuoi dati per i membri della tua famiglia"
+            "description": "Gestisci l'accesso ai tuoi dati per i membri della tua famiglia",
+            "addFamilyMember": "Aggiungi membro della famiglia",
+            "noAccess": "Nessun accesso familiare consentito finora",
+            "noAccessDescription": "Aggiungi i tuoi familiari per consentire loro di aiutarti a gestire i tuoi dati di fitness",
+            "selectPermissionError": "Seleziona almeno un permesso",
+            "selfAccessError": "Non puoi concedere l'accesso a te stesso",
+            "alreadyGrantedError": "Hai già concesso l'accesso a questo membro della famiglia",
+            "statusInactive": "Non attivo",
+            "statusActive": "Attivo",
+            "statusPending": "In attesa",
+            "statusUnknown": "Sconosciuto",
+            "editDialogTitle": "Modifica Accesso famiglia",
+            "addDialogTitle": "Aggiungi Accesso famiglia",
+            "familyMemberEmail": "Email del membro della famiglia",
+            "emailPlaceholder": "Inserisci l'email del membro della famiglia",
+            "accountHint": "Riceverà l'accesso non appena avrà creato un account SparkyFitness (se non ne ha già uno)",
+            "accessPermissions": "Permessi di accesso",
+            "canManageDiary": "Può gestire il diario",
+            "canManageDiaryHelp": "Consente al delegato di registrare pasti, allenamenti, acqua e obiettivi a tuo nome. I registri del benessere (sonno, umore, digiuno) sono bloccati. Fornisce l'accesso al profilo in sola lettura."
         },
         "customCategories": {
             "title": "Categorie personalizzate",
@@ -713,6 +752,10 @@
             "exportSuccessDescription": "Il tuo diario è stato esportato con successo.",
             "exportError": "Errore durante l'esportazione",
             "exportErrorDescription": "Impossibile scaricare il tuo diario. Riprova più tardi per favore."
+        },
+        "nutrientGoalDirection": {
+            "title": "Orientamento obiettivo nutrienti",
+            "description": "Scegli se l'obiettivo di ogni nutriente deve essere un minimo da raggiungere, un massimo da non superare o un intervallo target da centrare"
         }
     },
     "admin": {
