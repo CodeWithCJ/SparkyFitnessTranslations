@@ -100,11 +100,11 @@
             "eaten": "mangiato",
             "burned": "bruciato",
             "burnedCaloriesBreakdown": "Ripartizione delle calorie bruciate:",
-            "otherExerciseCalories": "Altri esercizi: {{exerciseCalories}} cal",
-            "activeCalories": "Calorie attive: {{activeCaloriesFromExercise}} cal",
-            "stepsCalories": "Passi: {{dailySteps}} = {{stepsCalories}} cal",
-            "bmrCalories": "BMR: {{bmr}} cal",
-            "totalCaloriesBurned": "Totale: {{totalCaloriesBurned}} cal",
+            "otherExerciseCalories": "Altri esercizi: {{exerciseCalories}} {{energyUnit}}",
+            "activeCalories": "Calorie attive: {{activeCaloriesFromExercise}} {{energyUnit}}",
+            "stepsCalories": "Passi: {{dailySteps}} = {{stepsCalories}} {{energyUnit}}",
+            "bmrCalories": "BMR: {{bmr}} {{energyUnit}}",
+            "totalCaloriesBurned": "Totale: {{totalCaloriesBurned}} {{energyUnit}}",
             "goal": "obiettivo",
             "caloriesBurnedBreakdownTitle": "Ripartizione delle calorie bruciate",
             "netCalories": "Calorie nette: {{netCalories}}",
@@ -730,7 +730,7 @@
             "enterCurrentPassword": "Immetti password attuale"
         },
         "customNutrients": {
-            "title": "Nutrienti Personalizzati",
+            "title": "Gestione Nutrienti Personalizzati",
             "subtitle": "Gestisci la definizione dei tuoi nutrienti personalizzati"
         },
         "customMeals": {
@@ -1040,7 +1040,17 @@
         "confirm": "Conferma",
         "notApplicable": "Non applicabile",
         "kJ": "kJ",
-        "totalSets": "Set Totali"
+        "totalSets": "Set Totali",
+        "save": "Salva",
+        "back": "Indietro",
+        "next": "Avanti",
+        "close": "Chiudi",
+        "error": "Errore",
+        "delete": "Elimina",
+        "success": "Successo",
+        "edit": "Modifica",
+        "date": "Data",
+        "loading": "Caricamento..."
     },
     "diary": {
         "nutritionSummary": "Riepilogo nutrizionale",
@@ -1196,7 +1206,7 @@
         "addAnotherSleepSession": "Aggiungi un'altra sessione di sonno",
         "savingSleep": "Salvare il sonno...",
         "saveSleep": "Salva sonno",
-        "sleepEntryFor": "Inserimento sonno per",
+        "sleepEntryFor": "Inserimento sonno per {{date}}",
         "cancel": "Annulla",
         "save": "Salva",
         "edit": "Modifica",
@@ -1327,7 +1337,7 @@
         "mealUpdatedSuccess": "Pasto aggiornato con successo!",
         "mealCreatedSuccess": "Pasto creato con successo!",
         "saveMealError": "Impossibile salvare il pasto: {{error}}",
-        "mealName": "Nome del pasto",
+        "mealName": "Nome pasto",
         "mealNamePlaceholder": "ad esempio, colazione ricca di proteine",
         "mealDescription": "Descrizione (facoltativa)",
         "mealDescriptionPlaceholder": "Ad esempio, la mia colazione preferita",
@@ -2435,7 +2445,7 @@
             "sideEffect": "Sintomo da effetto collaterale",
             "snoozedOnly": "Solo posticipate",
             "skipped": "Saltate",
-            "maxSeverity": "Massima gravità"
+            "maxSeverity": "Massima gravità: {{n}}"
         },
         "common": {
             "saving": "Salvataggio…",
@@ -2482,6 +2492,12 @@
         },
         "insights": {
             "title": "Effetti collaterali e indicazioni"
+        },
+        "schedule": {
+            "everyNDays": "Ogni N giorni"
+        },
+        "mealRelation": {
+            "awayFromMeals": "Lontano dai pasti"
         }
     },
     "openFoodFactsContribution": {
@@ -2512,5 +2528,43 @@
         "imageConsent": "Ho scattato questa foto, detengo i diritti per condividerla e acconsento a pubblicarla sotto licenza CC BY-SA.",
         "publish": "Pubblica questo contributo",
         "publishing": "Pubblico…"
+    },
+    "healthMetrics": {
+        "steps": "Passi",
+        "totalCalories": "Calorie totali",
+        "heartRate": "Frequenza cardiaca",
+        "weight": "Peso",
+        "bloodPressure": "Pressione sanguigna",
+        "nutrition": "Valori nutrizionali",
+        "sleepSession": "Sessione di sonno",
+        "stress": "Stress",
+        "basalBodyTemperature": "Temperatura corporea basale",
+        "basalMetabolicRate": "Tasso metabolico basale",
+        "bloodGlucose": "Glicemia",
+        "bodyFat": "Grasso corporeo",
+        "bodyTemperature": "Temperatura corporea",
+        "distance": "Distanza",
+        "floorsClimbed": "Piani saliti",
+        "height": "Altezza",
+        "hydration": "Idratazione",
+        "leanBodyMass": "Massa corporea magra",
+        "respiratoryRate": "Frequenza respiratoria",
+        "restingHeartRate": "Frequenza cardiaca a riposo",
+        "speed": "Velocità",
+        "power": "Potenza",
+        "elevationGained": "Elevazione guadagnata",
+        "boneMass": "Massa ossea",
+        "cyclingPedalingCadence": "Cadenza di pedalata in bicicletta",
+        "stepsCadence": "Cadenza dei passi",
+        "bloodOxygenSaturation": "Saturazione di ossigeno nel sangue",
+        "bloodAlcoholContent": "Contenuto di alcol nel sangue",
+        "appleMoveTime": "Tempo di movimento Apple",
+        "appleExerciseTime": "Tempo di esercizio Apple",
+        "appleStandTime": "Tempo in piedi Apple"
+    },
+    "workout": {
+        "distance": "Distanza",
+        "calories": "Calorie",
+        "reps": "Ripetizioni"
     }
 }
