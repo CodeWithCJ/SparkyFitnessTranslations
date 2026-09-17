@@ -105,7 +105,7 @@
             "everyNDays": "每 N 日",
             "dayOfMonth": "每月日子",
             "daysOn": "服用日數",
-            "daysOff": "停藥日數",
+            "daysOff": "停藥休息日數",
             "reason": "原因",
             "reasonPlaceholder": "頭痛",
             "maxPerDay": "每日上限",
@@ -262,7 +262,7 @@
         "deleting": "刪除緊…",
         "done": "攪掂",
         "none": "冇",
-        "food": "食物",
+        "food": "食材",
         "dismiss": "關掉",
         "remove": "移除",
         "overwrite": "覆寫",
@@ -279,9 +279,9 @@
         "notNow": "而家唔搞"
     },
     "workout": {
-        "calories": "еҚЎи·ҜйҮҢ",
-        "distance": "и·қйӣў",
-        "reps": "ж¬Ўж•ё",
+        "calories": "卡路里",
+        "distance": "距離",
+        "reps": "次數",
         "couldNotSave": "儲存唔到您嘅訓練",
         "sets": "組",
         "editActivity": "編輯活動",
@@ -575,37 +575,37 @@
         "repCount_other": "{{formattedCount}} 次"
     },
     "healthMetrics": {
-        "basalBodyTemperature": "еҹәзӨҺй«”жә«",
-        "basalMetabolicRate": "еҹәзӨҺд»Ји¬қзҺҮ",
-        "bloodAlcoholContent": "иЎҖж¶Ій…’зІҫеҗ«йҮҸ",
-        "bloodGlucose": "иЎҖзі–",
-        "bloodOxygenSaturation": "иЎҖж°§йЈҪе’ҢеәҰ",
-        "bloodPressure": "иЎҖеЈ“",
-        "bodyFat": "й«”и„Ӯ",
-        "bodyTemperature": "й«”жә«",
-        "boneMass": "йӘЁйҮҸ",
-        "cyclingPedalingCadence": "иё©е–®и»ҠиёҸй »",
-        "distance": "и·қйӣў",
-        "elevationGained": "зҲ¬еҚҮй«ҳеәҰ",
-        "floorsClimbed": "дёҠжЁ“еұӨж•ё",
-        "heartRate": "еҝғзҺҮ",
-        "height": "иә«й«ҳ",
-        "hydration": "ж°ҙеҲҶ",
-        "leanBodyMass": "зҳҰй«”йҮҚ",
-        "nutrition": "зҮҹйӨҠ",
-        "power": "еҠҹзҺҮ",
-        "respiratoryRate": "е‘јеҗёзҺҮ",
-        "restingHeartRate": "йқңжҒҜеҝғзҺҮ",
-        "sleepSession": "зһ“иҰәжҷӮж®ө",
-        "speed": "йҖҹеәҰ",
-        "stepsCadence": "жӯҘй »",
-        "stress": "еЈ“еҠӣ",
-        "weight": "й«”йҮҚ",
-        "appleExerciseTime": "Apple йҒӢеӢ•жҷӮй–“",
-        "appleMoveTime": "Apple жҙ»еӢ•жҷӮй–“",
-        "appleStandTime": "Apple з«ҷз«ӢжҷӮй–“",
-        "steps": "жӯҘж•ё",
-        "totalCalories": "зёҪзҶұйҮҸ",
+        "basalBodyTemperature": "基礎體溫",
+        "basalMetabolicRate": "基礎代謝率",
+        "bloodAlcoholContent": "血液酒精含量",
+        "bloodGlucose": "血糖",
+        "bloodOxygenSaturation": "血氧飽和度",
+        "bloodPressure": "血壓",
+        "bodyFat": "體脂",
+        "bodyTemperature": "體溫",
+        "boneMass": "骨量",
+        "cyclingPedalingCadence": "踩單車踏頻",
+        "distance": "距離",
+        "elevationGained": "爬升高度",
+        "floorsClimbed": "上樓層數",
+        "heartRate": "心率",
+        "height": "身高",
+        "hydration": "水分",
+        "leanBodyMass": "瘦體重",
+        "nutrition": "營養",
+        "power": "功率",
+        "respiratoryRate": "呼吸率",
+        "restingHeartRate": "靜息心率",
+        "sleepSession": "瞓覺時段",
+        "speed": "速度",
+        "stepsCadence": "步頻",
+        "stress": "壓力",
+        "weight": "體重",
+        "appleExerciseTime": "Apple 運動時間",
+        "appleMoveTime": "Apple 活動時間",
+        "appleStandTime": "Apple 站立時間",
+        "steps": "步數",
+        "totalCalories": "總熱量",
         "calories": "活動卡路里",
         "exerciseSession": "運動時段",
         "heartRateVariability": "心率變異性",
@@ -658,13 +658,13 @@
         "serverConnected": "伺服器設定，已連線.",
         "serverConnectionFailed": "伺服器設定，連線失敗.",
         "serverNotConfigured": "伺服器設定，未設定伺服器.",
-        "shareReportDescription": "匯出本地診斷報告（App 版本、同步狀態、日誌），唔包括任何個人健康或食物資料，唔會送出任何資料.",
+        "shareReportDescription": "匯出本地診斷報告（App 版本、同步狀態、日誌），唔包括任何個人健康或食材資料，唔會送出任何資料.",
         "rows": {
             "server": "伺服器",
             "healthSync": "健康資料同步",
             "app": "App 設定",
             "calories": "卡路里同 BMR基礎代謝率",
-            "food": "食物",
+            "food": "食材",
             "dashboard": "儀表板",
             "diary": "日記",
             "wellness": "健康",
@@ -706,7 +706,7 @@
         "settings": "設定",
         "library": "資料庫",
         "presets": "預設",
-        "foods": "食物",
+        "foods": "食材",
         "meals": "餐膳",
         "exercises": "動作",
         "diary": "日記",
@@ -728,11 +728,11 @@
         "loadingDiary": "載入家庭日記中…",
         "loadDiaryFailed": "家庭日記存取唔到",
         "back": "返回",
-        "emptyForDate": "呢一日冇食物紀錄",
+        "emptyForDate": "呢一日冇食材紀錄",
         "diaryForDate": "家庭日記 · {{date}}",
         "openMeal": "開啟 {{meal}} 餐",
         "mealCalories": "{{calories}} 千卡",
-        "unnamedFood": "未命名食物",
+        "unnamedFood": "未命名食材",
         "selectAll": "全選",
         "deselectAll": "取消全選",
         "viewingOnly": "只可以睇",
@@ -756,10 +756,10 @@
         "copyTargetMeal": "複製到餐段",
         "copyTargetMealRequired": "複製之前揀一個餐段.",
         "copyToMyDiary": "複製到我嘅日記",
-        "copyInvalidSelection": "所揀嘅食物已經唔再可用.",
+        "copyInvalidSelection": "所揀嘅食材已經唔再可用.",
         "copyTargetDateLabel": "複製日期： {{date}}",
         "copySuccess": "已複製到您嘅日記",
-        "copyFailed": "複製唔到食物",
+        "copyFailed": "複製唔到食材",
         "copyFailedGuidance": "您嘅核對內容仲喺度，請再試一次.",
         "copyPermissionRevoked": "複製權限已被移除",
         "copyPermissionRevokedGuidance": "重新整理家庭日記，睇返您而家有嘅存取權限.",
@@ -944,10 +944,10 @@
         "nextSet": "下一組"
     },
     "addSheet": {
-        "food": "食物",
+        "food": "食材",
         "exercise": "動作",
         "measurements": "測量",
-        "scanFood": "掃描食物",
+        "scanFood": "掃描食材",
         "workout": "訓練",
         "liveSets": "即時組數同次數",
         "activity": "活動",
@@ -962,25 +962,25 @@
         "logCycle": "記錄週期"
     },
     "screens": {
-        "foods": "食物",
+        "foods": "食材",
         "meals": "餐膳",
         "exercises": "動作",
         "workoutPresets": "訓練預設",
-        "addFood": "新增食物",
-        "newFood": "新食物",
-        "editFood": "編輯食物",
+        "addFood": "新增食材",
+        "newFood": "新食材",
+        "editFood": "編輯食材",
         "adjustNutrition": "調整營養",
         "barcodes": "條碼",
         "editExercise": "編輯動作",
         "newExercise": "新動作",
         "editPreset": "編輯預設",
         "newPreset": "新預設",
-        "scanFood": "掃描食物",
-        "photoFood": "影相記食物",
+        "scanFood": "掃描食材",
+        "photoFood": "影相記食材",
         "sparky": "Sparky",
         "editMeal": "編輯餐膳",
         "createMeal": "建立餐膳",
-        "foodEntry": "食物紀錄",
+        "foodEntry": "食材紀錄",
         "meal": "餐膳",
         "nutritionDetails": "營養詳情",
         "trends": "趨勢",
@@ -997,7 +997,7 @@
         "importHistory": "匯入記錄",
         "measurements": "測量",
         "calorieSettings": "卡路里設定",
-        "foodSettings": "食物設定",
+        "foodSettings": "食材設定",
         "mealTypes": "餐段",
         "dashboardSettings": "儀表板設定",
         "diarySettings": "日記設定",
@@ -1020,15 +1020,15 @@
             "loading": "載入資料庫中…",
             "title": "資料庫",
             "create": "建立",
-            "food": "食物",
+            "food": "食材",
             "manualEntry": "手動輸入",
             "meal": "餐膳",
-            "groupFoods": "食物組合",
+            "groupFoods": "食材組合",
             "exercise": "動作",
             "workoutPreset": "訓練預設",
             "exerciseRoutine": "動作流程",
             "browse": "瀏覽",
-            "foods": "食物",
+            "foods": "食材",
             "meals": "餐膳",
             "mealPlans": "餐單計劃",
             "mealPlansSubtitle": "喺揀咗嘅日子重複餐膳",
@@ -1039,9 +1039,9 @@
             "loadingRecentItems": "載入最近項目中…",
             "failedRecentItems": "載入唔到最近項目.",
             "noRecentItems": "未有最近項目",
-            "recentItemsHint": "您記錄嘅食物、餐膳同動作會喺呢度顯示，方便快速揀.",
+            "recentItemsHint": "您記錄嘅食材、餐膳同動作會喺呢度顯示，方便快速揀.",
             "waterContainers": "水容器",
-            "waterContainersSubtitle": "水樽、水杯，同埋連結咗食物嘅飲品"
+            "waterContainersSubtitle": "水樽、水杯，同埋連結咗食材嘅飲品"
         },
         "sleep": "瞓覺",
         "healthTrendsSettings": "健康趨勢",
@@ -1170,7 +1170,7 @@
     "onboarding": {
         "subtitle": "您嘅自架健身追蹤器",
         "learnMoreTitle": "了解 SparkyFitness 多啲",
-        "learnMoreBody": "SparkyFitness 幫您喺一個地方記錄食物、訓練同健康資料.",
+        "learnMoreBody": "SparkyFitness 幫您喺一個地方記錄食材、訓練同健康資料.",
         "learnMorePrivacy": "佢行喺您自己嘅伺服器上，所以您嘅資料保持私隱.",
         "errors": {
             "validFrontendUrl": "輸入一個有效嘅前端 URL",
@@ -1187,8 +1187,8 @@
         "checkConnection": "請檢查您嘅網絡連線，然後再試一次.",
         "askSparky": "問 Sparky…",
         "nutrients": "營養素",
-        "food": "食物",
-        "tapToAddFood": "撳一下加食物",
+        "food": "食材",
+        "tapToAddFood": "撳一下加食材",
         "healthTrends": "健康趨勢",
         "consumed": "已攝取",
         "remaining": "剩返",
@@ -1205,7 +1205,7 @@
         "addWater": "加水",
         "selectContainer": "揀 {{container}}",
         "perContainer": "每個容器 {{value}} {{unit}}",
-        "waterFromFood": "包括嚟自食物嘅 {{value}} {{unit}}",
+        "waterFromFood": "包括嚟自食材嘅 {{value}} {{unit}}",
         "chooseWaterContainer": "揀個水容器先可以用快速加入 / 移除",
         "quickAddDrinks": "快速加入",
         "logDrink": "記錄 {{drink}}",
@@ -1499,7 +1499,7 @@
         "checkConnection": "請檢查您嘅網絡連線，然後再試一次.",
         "retry": "重試",
         "title": "日記",
-        "addFood": "新增食物",
+        "addFood": "新增食材",
         "emptyDay": "呢一日未有紀錄"
     },
     "scheduleSummary": {
@@ -1565,8 +1565,8 @@
             "reset": "重設公告"
         },
         "popovers": {
-            "title": "食物搜尋彈出視窗",
-            "description": "清除已睇過嘅標記，令佢嘅教學彈出視窗喺下次搜尋食物嗰陣重新出現.",
+            "title": "食材搜尋彈出視窗",
+            "description": "清除已睇過嘅標記，令佢嘅教學彈出視窗喺下次搜尋食材嗰陣重新出現.",
             "sources": "來源介紹",
             "provider": "來源切換器"
         },
@@ -1801,21 +1801,21 @@
         "createTitle": "建立餐膳",
         "loading": "載入餐膳中…",
         "loadErrorTitle": "載入餐膳失敗",
-        "mealName": "йӨҗиҶіеҗҚзЁұ",
+        "mealName": "餐膳名稱",
         "mealNamePlaceholder": "例如：雞肉飯碗",
         "descriptionOptional": "描述（選填）",
         "descriptionPlaceholder": "關於呢個餐膳嘅備註",
-        "totalServings": "зёҪд»ҪйҮҸ",
+        "totalServings": "總份量",
         "totalAmount": "總量（{{unit}}） *",
         "unit": "單位",
         "selectUnit": "揀單位",
         "servingSize": "每份分量（{{unit}}）*",
         "servingUnit": "份",
-        "foodsInMeal": "йӨҗиҶіе…Ҙйқўеҳ…йЈҹзү©",
+        "foodsInMeal": "餐膳入面嘅食材",
         "ingredient": "食材",
         "removeIngredient": "移除 {{name}}",
         "editIngredient": "編輯 {{name}}",
-        "addFood": "新增食物",
+        "addFood": "新增食材",
         "mealTotal": "餐膳總計",
         "perServing": "每份",
         "errors": {
@@ -1828,9 +1828,9 @@
             "invalidTotalAmountTitle": "無效嘅總量",
             "invalidTotalAmountMessage": "總量要大過零.",
             "noIngredientsTitle": "未有食材",
-            "noIngredientsMessage": "儲存呢個餐膳之前，至少加一種食物.",
+            "noIngredientsMessage": "儲存呢個餐膳之前，至少加一種食材.",
             "missingIngredientTitle": "缺少食材資料",
-            "missingIngredientMessage": "所揀嘅其中一種食物缺少每份變體，請重新加入."
+            "missingIngredientMessage": "所揀嘅其中一種食材缺少每份變體，請重新加入."
         },
         "units": {
             "serving": "份",
@@ -1863,7 +1863,7 @@
         "goalSeparator": " / {{value}}"
     },
     "foodSummary": {
-        "tapToAddFood": "撳一下加食物",
+        "tapToAddFood": "撳一下加食材",
         "caloriesShort": "千卡",
         "caloriesUnit": "卡路里",
         "nutritionBreakdown": "{{label}} 營養分析"
@@ -1874,11 +1874,11 @@
         "title": "運動"
     },
     "foodRow": {
-        "unknownFood": "未知食物",
+        "unknownFood": "未知食材",
         "adjustServing": "調整份量",
         "caloriesShort": "千卡",
         "caloriesUnit": "卡路里",
-        "deleteFood": "刪除食物"
+        "deleteFood": "刪除食材"
     },
     "exerciseRow": {
         "deleteExercise": "刪除運動"
@@ -2086,10 +2086,10 @@
             "noMatch": "搵唔到呢個條碼",
             "nextSteps": "您可以掃描營養標籤或者手動輸入.",
             "scanLabel": "掃描營養標籤",
-            "addManually": "手動新增食物"
+            "addManually": "手動新增食材"
         },
         "photo": {
-            "frameMeal": "將成餐食物框入去",
+            "frameMeal": "將成餐食材框入去",
             "notSetUp": "AI 相片估算未設定",
             "setupHelp": "用瀏覽器開啟 SparkyFitness，去設定 → AI 加一個 AI 提供者，然後返嚟呢度.",
             "logManually": "手動記錄"
@@ -2379,7 +2379,7 @@
         "unit": "單位",
         "removeEquivalent": "移除等量",
         "addEquivalent": "+ 加等量'",
-        "foodName": "食物名稱",
+        "foodName": "食材名稱",
         "foodNamePlaceholder": "例如：雞胸肉",
         "brand": "品牌",
         "optional": "選擇性",
@@ -2389,7 +2389,7 @@
         "caloriesRequired": "卡路里（千卡）*",
         "ai": {
             "couldNotEstimate": "估算唔到",
-            "noTrustedDefault": "呢種食物冇可信嘅預設可以換算.",
+            "noTrustedDefault": "呢種食材冇可信嘅預設可以換算.",
             "servingSizeRequired": "先設定每份分量",
             "estimating": "估算緊…",
             "convertWithAI": "用 AI 換算",
@@ -2406,7 +2406,7 @@
             "saveAnyway": "照樣儲存",
             "banner": "單位之間轉換唔到，請手動更新營養數值."
         },
-        "loadingDetails": "食物詳情仲喺度載入，過一陣再試.",
+        "loadingDetails": "食材詳情仲喺度載入，過一陣再試.",
         "saveNewUnitFailed": "儲存唔到新單位",
         "equivalentUnitsFailed": "有啲等量單位儲存唔到",
         "saveNewVariantFailed": "儲存唔到新變體",
@@ -2414,10 +2414,10 @@
         "savedNewVariant": "已儲存做新變體",
         "pastEntriesUpdated": "過去嘅紀錄已更新",
         "pastEntriesFailed": "更新唔到過去嘅紀錄",
-        "foodSaved": "您嘅食物已儲存.",
-        "updateFailed": "更新唔到食物",
-        "editTitle": "編輯食物",
-        "addFood": "新增食物",
+        "foodSaved": "您嘅食材已儲存.",
+        "updateFailed": "更新唔到食材",
+        "editTitle": "編輯食材",
+        "addFood": "新增食材",
         "saved": "已儲存",
         "equivalentUnitsUpdated_other": "已儲存 · {{formattedCount}} 個等量單位已更新",
         "notes": "備註",
@@ -2433,10 +2433,10 @@
         "discardMessage": "您有未儲存嘅等量大小，放棄佢哋繼續？",
         "discard": "放棄",
         "updateTitle": "更新過去嘅紀錄？",
-        "updateMessage": "您嘅資料庫食物已儲存，您都想用新營養更新呢種食物過去嘅日記紀錄？您未揀嘅紀錄會照舊.",
+        "updateMessage": "您嘅資料庫食材已儲存，您都想用新營養更新呢種食材過去嘅日記紀錄？您未揀嘅紀錄會照舊.",
         "dontUpdate": "唔更新",
         "update": "更新",
-        "updatePhotosMessage": "您嘅資料庫食物已儲存，呢種食物過去嘅日記紀錄應該用啲乜？",
+        "updatePhotosMessage": "您嘅資料庫食材已儲存，呢種食材過去嘅日記紀錄應該用啲乜？",
         "updateNutrition": "淨更新營養",
         "updateNutritionPhotos": "更新營養同相片",
         "saveNutritionTitle": "儲存營養",
@@ -2444,20 +2444,20 @@
         "saveAsNew": "另存新",
         "updateExisting": "更新現有",
         "missingName": "缺少名稱",
-        "nameRequired": "請輸入食物名稱.",
+        "nameRequired": "請輸入食材名稱.",
         "invalidServingSize": "無效嘅每份分量",
         "servingSizeRequired": "每份分量要大過零.",
-        "loadingDetails": "食物詳情仲喺度載入，過一陣再試.",
+        "loadingDetails": "食材詳情仲喺度載入，過一陣再試.",
         "savedNewVariant": "已儲存做新變體",
         "pastUpdated": "過去嘅紀錄已更新",
         "pastUpdateFailed": "更新唔到過去嘅紀錄",
-        "foodSaved": "您嘅食物已儲存.",
-        "updateFoodFailed": "更新唔到食物",
+        "foodSaved": "您嘅食材已儲存.",
+        "updateFoodFailed": "更新唔到食材",
         "saveUnitFailed": "儲存唔到新單位",
         "equivalentsFailed": "有啲等量單位儲存唔到",
         "saveVariantFailed": "儲存唔到新變體",
         "saveNutritionFailed": "儲存唔到營養，留返日後用",
-        "editFoodTitle": "編輯食物",
+        "editFoodTitle": "編輯食材",
         "adjustNutritionTitle": "調整營養",
         "saveNutritionFuture": "儲存營養，留返日後用"
     },
@@ -2505,11 +2505,11 @@
         "couldNotProcessPhotoTitle": "處理相片唔到",
         "couldNotProcessPhotoMessage": "提供者擋咗呢張圖，試吓影第二張.",
         "providerTimedOutTitle": "AI 提供者逾時",
-        "providerTimedOutMessage": "估算太耐，再試一次，或者手動記錄呢種食物.",
+        "providerTimedOutMessage": "估算太耐，再試一次，或者手動記錄呢種食材.",
         "providerNotAllowedTitle": "AI 提供者唔容許",
         "providerNotAllowedMessage": "呢個 AI 提供者指向一個私人網絡位址，請管理員喺全局設定.",
         "providerUnreachableTitle": "連唔到 AI 提供者",
-        "providerUnreachableMessage": "再試一次，或者手動記錄呢種食物."
+        "providerUnreachableMessage": "再試一次，或者手動記錄呢種食材."
     },
     "serverSettingsUi": {
         "activeServerChanged": "已切換使用中伺服器",
@@ -2897,9 +2897,9 @@
         "createSuccess": "餐膳計劃已建立",
         "updateFailed": "更新餐膳計劃失敗",
         "createFailed": "建立餐膳計劃失敗",
-        "foodAssignment": "食物分配",
+        "foodAssignment": "食材分配",
         "managedOnWeb": "喺網頁版管理",
-        "foodPreserved": "呢個食物分配喺您儲存嗰陣會保留，喺網頁版編輯佢.",
+        "foodPreserved": "呢個食材分配喺您儲存嗰陣會保留，喺網頁版編輯佢.",
         "mealAssignment": "餐膳分配",
         "removeAssignment": "移除餐膳分配",
         "weekday": "星期",
@@ -2927,13 +2927,13 @@
         "assignmentsHint": "揀每日應該出現幾多可重用餐膳.",
         "addMeal": "新增餐膳",
         "weeklyPlan": "每週計劃",
-        "oneDayHint": "揀一日，然後喺每個餐段加食物或者可重用餐膳.",
+        "oneDayHint": "揀一日，然後喺每個餐段加食材或者可重用餐膳.",
         "mealBadge": "餐膳",
-        "foodBadge": "食物",
+        "foodBadge": "食材",
         "replaceAssignmentFor": "取代 {{name}}",
         "removeAssignmentFor": "移除 {{name}}",
-        "addToMealType": "加食物或餐膳落 {{mealType}}",
-        "addFoodOrMeal": "新增食物或餐膳",
+        "addToMealType": "加食材或餐膳落 {{mealType}}",
+        "addFoodOrMeal": "新增食材或餐膳",
         "caloriesLabel": "卡路里",
         "proteinLabel": "蛋白質",
         "carbsLabel": "碳水",
@@ -2970,7 +2970,7 @@
         "sharedPublicly": "餐膳已公開分享",
         "madePrivate": "餐膳已設為私人",
         "makePublicTitle": "設為公開？",
-        "makePublicMessage": "呢個餐膳同佢所有食材食物會變成呢個伺服器上所有用戶都睇到.",
+        "makePublicMessage": "呢個餐膳同佢所有食材食材會變成呢個伺服器上所有用戶都睇到.",
         "makePublic": "設為公開",
         "removeFavorite": "由最愛移除",
         "addFavorite": "加入最愛",
@@ -2985,7 +2985,7 @@
         "total": "總計",
         "servingsLabel_other": "份",
         "ingredientsLabel_other": "食材",
-        "foodsInMeal": "餐膳入面嘅食物",
+        "foodsInMeal": "餐膳入面嘅食材",
         "linkedMeal": "連結餐膳",
         "protein": "蛋白質",
         "carbs": "碳水",
@@ -3023,22 +3023,22 @@
             "equivalentsNotSaved": "有啲等量單位儲存唔到",
             "invalidAmount": "無效數量",
             "amountGreaterThanZero": "數量一定要大過零.",
-            "failedToAddFood": "新增食物失敗",
+            "failedToAddFood": "新增食材失敗",
             "tryAgain": "請再試一次.",
             "mealsNotSupported": "呢度唔支援餐膳",
-            "selectFoodInstead": "揀食物，唔好揀另一個餐膳.",
-            "savedFoodUnitFailed": "食物已儲存，但新單位冇儲存到",
-            "savedFoodUnitFailedDetails": "您仍然可以加呢種食物，然後再試吓儲存嗰個單位.",
+            "selectFoodInstead": "揀食材，唔好揀另一個餐膳.",
+            "savedFoodUnitFailed": "食材已儲存，但新單位冇儲存到",
+            "savedFoodUnitFailedDetails": "您仍然可以加呢種食材，然後再試吓儲存嗰個單位.",
             "chooseDifferentServing": "揀另一個份量."
         },
         "actions": {
             "adjustNutrition": "調整營養",
-            "saveFood": "儲存食物",
+            "saveFood": "儲存食材",
             "useYesterday": "琴日用",
             "useToday": "今日用",
             "now": "而家",
             "clear": "清除",
-            "addFood": "新增食物",
+            "addFood": "新增食材",
             "addMeal": "新增餐膳",
             "removeFavorite": "由最愛移除",
             "addFavorite": "加入最愛"
@@ -3050,7 +3050,7 @@
             "meal": "餐",
             "serving_other": "份",
             "mealMakes_other": "餐膳整到 {{formattedCount}} 份",
-            "aboutThisFood": "關於呢種食物",
+            "aboutThisFood": "關於呢種食材",
             "entryNotes": "呢條紀錄嘅備註",
             "entryNotesPlaceholder": "今次食嗰陣有咩特別"
         },
@@ -3112,7 +3112,7 @@
     },
     "foodSearch": {
         "menu": {
-            "newFood": "新食物",
+            "newFood": "新食材",
             "newMeal": "新餐膳",
             "show": "顯示",
             "allProviders": "全部提供者"
@@ -3121,14 +3121,14 @@
             "moreFiltered": "更多選項，已篩至 {{filter}}",
             "moreOptions": "更多選項",
             "clearSearch": "清除搜尋",
-            "scanFood": "掃描食物",
-            "searchingFoods": "搜尋緊已儲存食物",
-            "searchingFoodsMeals": "搜尋緊已儲存食物同餐膳",
+            "scanFood": "掃描食材",
+            "searchingFoods": "搜尋緊已儲存食材",
+            "searchingFoodsMeals": "搜尋緊已儲存食材同餐膳",
             "providerError": "{{provider}}, 載入唔到，撳一下重試",
             "providerNoResults": "{{provider}}, 冇結果",
             "favorite": "最愛",
             "viewPhoto": "睇相",
-            "verifiedFood": "已驗證食物",
+            "verifiedFood": "已驗證食材",
             "providerExpand_other": "{{provider}} ， {{count}} 個結果，撳一下 {{action}}",
             "providerChange": "提供者 {{provider}} ，撳一下轉換"
         },
@@ -3140,22 +3140,22 @@
             "favorites": "最愛",
             "recentlyLogged": "最近記錄",
             "top": "熱門",
-            "yourFoods": "您嘅食物",
+            "yourFoods": "您嘅食材",
             "yourMeals": "您嘅餐膳",
             "topMatches": "最佳相符",
             "onlineResults": "網上結果",
             "byProvider": "按提供者"
         },
         "search": {
-            "placeholder": "搜尋食物…"
+            "placeholder": "搜尋食材…"
         },
         "states": {
-            "connectToSearch": "連去伺服器先可以搜尋食物",
-            "failedToLoad": "載入食物失敗",
-            "noFilteredFoods": "{{filter}} 入面冇食物",
-            "searchToLog": "搜尋一個食物或者餐膳記錄",
-            "noSavedFoods": "搵唔到已儲存食物",
-            "noSavedFoodsMeals": "搵唔到已儲存食物或者餐膳",
+            "connectToSearch": "連去伺服器先可以搜尋食材",
+            "failedToLoad": "載入食材失敗",
+            "noFilteredFoods": "{{filter}} 入面冇食材",
+            "searchToLog": "搜尋一個食材或者餐膳記錄",
+            "noSavedFoods": "搵唔到已儲存食材",
+            "noSavedFoodsMeals": "搵唔到已儲存食材或者餐膳",
             "noFilteredSaved": "{{filter}} 入面 {{message}}",
             "couldNotLoad": "載入唔到",
             "noResults": "冇結果",
@@ -3180,7 +3180,7 @@
         "labels": {
             "caloriesShort": "千卡",
             "caloriesUnit": "卡路里",
-            "foods": "食物",
+            "foods": "食材",
             "meals": "餐膳",
             "meal": "餐膳",
             "itemCount_other": "{{count}} 項"
@@ -3285,7 +3285,7 @@
         }
     },
     "foodSettings": {
-        "title": "食物設定",
+        "title": "食材設定",
         "errors": {
             "error": "錯誤",
             "updateFailed": "更新設定失敗."
@@ -3299,10 +3299,10 @@
             "description": "啟用之後，碳水摘要會顯示淨碳水（總碳水 − 膳食纖維），營養分析度亦會加一行總碳水."
         },
         "foodSource": {
-            "title": "預設食物提供者",
+            "title": "預設食材提供者",
             "pickerTitle": "搜尋提供者",
             "firstAvailable": "第一個可用",
-            "description": "用嚟按名搜尋食物嗰陣用."
+            "description": "用嚟按名搜尋食材嗰陣用."
         },
         "openFacts": {
             "title": "調整 Open Food Facts 數值",
@@ -3369,26 +3369,26 @@
         }
     },
     "createFood": {
-        "title": "新食物",
+        "title": "新食材",
         "meal": "餐",
         "selectMeal": "揀餐膳",
         "perServing": "每份",
         "saveToDatabase": "儲存去資料庫",
         "actions": {
-            "addFood": "新增食物"
+            "addFood": "新增食材"
         },
         "success": {
-            "foodSaved": "食物已儲存"
+            "foodSaved": "食材已儲存"
         },
         "errors": {
             "missingName": "缺少名稱",
-            "nameRequired": "請輸入食物名稱.",
+            "nameRequired": "請輸入食材名稱.",
             "invalidServingSize": "無效嘅每份分量",
             "servingSizeRequired": "每份分量要大過零.",
             "invalidBarcode": "無效條碼",
             "barcodeRequired": "條碼一定要係 8 至 14 個位數字.",
             "equivalentsSaveFailed": "有啲等量單位儲存唔到",
-            "foodSaveFailed": "儲存食物失敗",
+            "foodSaveFailed": "儲存食材失敗",
             "invalidAmount": "無效數量",
             "amountRequired": "數量一定要大過零.",
             "noMealType": "冇餐段",
@@ -3396,37 +3396,37 @@
         }
     },
     "foodDetail": {
-        "sharedPublicly": "食物已公開分享",
-        "madePrivate": "食物已設為私人",
+        "sharedPublicly": "食材已公開分享",
+        "madePrivate": "食材已設為私人",
         "shareFailed": "更新分享失敗",
         "makePublicTitle": "設為公開？",
-        "makePublicMessage": "呢種食物會變成呢個伺服器上所有用戶都睇到.",
+        "makePublicMessage": "呢種食材會變成呢個伺服器上所有用戶都睇到.",
         "makePublic": "設為公開",
         "makePrivate": "設為私人",
         "sharePublic": "公開分享",
-        "editFood": "編輯食物",
+        "editFood": "編輯食材",
         "noServer": "未設定伺服器",
-        "configureServer": "喺設定度設定您嘅伺服器連線，先睇到食物詳情.",
+        "configureServer": "喺設定度設定您嘅伺服器連線，先睇到食材詳情.",
         "serving": "份量",
         "selectServing": "揀份量",
         "servingOptions": "份量選項",
         "loadingServingOptions": "載入份量選項中…",
         "servingOptionsError": "有啲份量選項而家載入唔到.",
         "barcode": "條碼",
-        "logFood": "記錄食物",
-        "deleteFood": "刪除食物",
+        "logFood": "記錄食材",
+        "deleteFood": "刪除食材",
         "notes": "備註",
-        "deleteSheetTitle": "刪除食物"
+        "deleteSheetTitle": "刪除食材"
     },
     "foodEntryView": {
-        "saveChanges": "儲存食物紀錄改動",
-        "editEntry": "編輯食物紀錄",
+        "saveChanges": "儲存食材紀錄改動",
+        "editEntry": "編輯食材紀錄",
         "selectServing": "揀份量",
         "tapToEditNutrition": "撳一下編輯營養",
         "meal": "餐",
         "selectMeal": "揀餐膳",
         "time": "時間",
-        "unknownFood": "未知食物",
+        "unknownFood": "未知食材",
         "deleteEntry": "刪除紀錄",
         "servingOptionsHint": "開啟份量選項",
         "mealSelectorHint": "開啟餐膳揀選",
@@ -3442,7 +3442,7 @@
             "saveFailed": "儲存改動失敗",
             "deleteFailed": "刪除失敗"
         },
-        "deleteConfirm": "您確定要刪除呢條食物紀錄？",
+        "deleteConfirm": "您確定要刪除呢條食材紀錄？",
         "entryNotes": "呢條紀錄嘅備註"
     },
     "presetSearch": {
@@ -3572,7 +3572,7 @@
             "snack": "推薦一個高蛋白小食"
         },
         "tools": {
-            "food": "食物",
+            "food": "食材",
             "exercise": "運動",
             "checkin": "簽到",
             "goals": "目標",
@@ -3611,15 +3611,15 @@
             "meal": "餐",
             "selectMeal": "揀餐膳",
             "time": "時間",
-            "foodsInMeal": "呢個餐膳入面嘅食物",
+            "foodsInMeal": "呢個餐膳入面嘅食材",
             "notes": "呢條紀錄嘅備註",
             "aboutThisMeal": "關於呢個餐膳"
         },
         "states": {
-            "noFoods": "呢個餐膳仲未有食物."
+            "noFoods": "呢個餐膳仲未有食材."
         },
         "actions": {
-            "addFood": "新增食物",
+            "addFood": "新增食材",
             "deleteMeal": "刪除餐膳"
         },
         "accessibility": {
@@ -3693,13 +3693,13 @@
         },
         "errors": {
             "nameRequired": "名稱必填",
-            "nameRequiredMessage": "幫呢種食物改個名.",
+            "nameRequiredMessage": "幫呢種食材改個名.",
             "invalidNutrition": "無效營養",
             "invalidRequiredNutrition": "卡路里、蛋白質、碳水同脂肪一定要係非負數.",
             "invalidOptionalNutrition": "所有營養數值一定要係非負數.",
             "invalidServingSize": "無效嘅每份分量",
             "invalidServingSizeMessage": "每份分量一定要係正數.",
-            "noIngredients": "至少保留一種食材，或者轉做單一食物.",
+            "noIngredients": "至少保留一種食材，或者轉做單一食材.",
             "invalidServings": "無效份數",
             "positiveServings": "菜式總量、每份分量同食咗嘅量都要大過零."
         },
@@ -3716,34 +3716,34 @@
             "sugar": "糖（克）",
             "recalcFromGrams": "營養俾人手改過，所以唔再跟重量，撳一下由重量重新計算.",
             "heading": "偵測到嘅食材",
-            "empty": "所有食材都俾人移走咗，加返一個，或者轉做單一食物.",
+            "empty": "所有食材都俾人移走咗，加返一個，或者轉做單一食材.",
             "count_other": "{{count}} 種食材",
             "totals": "總計",
             "rowSummary": "{{grams}} 克 · {{calories}} 千卡",
             "macroSummary": "{{calories}} 千卡，蛋白{{protein}} g、碳水{{carbs}} g、脂肪{{fat}} g",
-            "addFood": "新增食物",
-            "addedFood": "食物",
+            "addFood": "新增食材",
+            "addedFood": "食材",
             "pickedRowSummary": "{{quantity}} {{unit}} · {{calories}} 千卡",
-            "pickedFoodNote": "由您嘅食物加入，移除佢再加過，先可以改數量."
+            "pickedFoodNote": "由您嘅食材加入，移除佢再加過，先可以改數量."
         },
         "match": {
-            "useYourFood": "嚟自您嘅食物： {{name}} · 撳一下用佢",
-            "usingYourFood": "用緊您嘅食物： {{name}} · 撳一下用 AI 估算",
-            "matchedCount_other": "{{count}} 種食材配對到您嘅食物"
+            "useYourFood": "嚟自您嘅食材： {{name}} · 撳一下用佢",
+            "usingYourFood": "用緊您嘅食材： {{name}} · 撳一下用 AI 估算",
+            "matchedCount_other": "{{count}} 種食材配對到您嘅食材"
         },
         "mode": {
             "ingredients": "食材",
-            "combined": "單一食物",
+            "combined": "單一食材",
             "explainerIngredients": "記錄一餐，可以展開到每種食材.",
-            "explainerCombined": "將成盤嘢記錄做單一食物.",
+            "explainerCombined": "將成盤嘢記錄做單一食材.",
             "label": "儲存做",
             "ingredientsAndMeal": "食材＋可重用餐膳",
             "ingredientsOnly": "淨食材",
-            "oneFood": "單一食物",
+            "oneFood": "單一食材",
             "mealName": "餐膳名稱",
-            "hintIngredientsAndMeal": "每種食材會變做自己嘅食物，餐膳會儲存，下次唔使影相都可以再記錄.",
-            "hintIngredientsOnly": "每種食材會變做自己嘅食物，唔會儲存可重用餐膳.",
-            "hintOneFood": "將成盤嘢儲存做單一食物，冇細分."
+            "hintIngredientsAndMeal": "每種食材會變做自己嘅食材，餐膳會儲存，下次唔使影相都可以再記錄.",
+            "hintIngredientsOnly": "每種食材會變做自己嘅食材，唔會儲存可重用餐膳.",
+            "hintOneFood": "將成盤嘢儲存做單一食材，冇細分."
         },
         "servings": {
             "unit": "單位",
@@ -3819,14 +3819,14 @@
             "noServerHint": "喺設定度設定您嘅伺服器連線，先睇到餐膳營養.",
             "loading": "載入餐膳中…",
             "loadFailed": "載入餐膳失敗",
-            "noFoods": "冇 {{meal}} 嘅食物",
-            "noFoodsHint": "{{date}} 呢餐冇記錄到食物."
+            "noFoods": "冇 {{meal}} 嘅食材",
+            "noFoodsHint": "{{date}} 呢餐冇記錄到食材."
         },
         "labels": {
-            "foods": "食物"
+            "foods": "食材"
         },
         "accessibility": {
-            "addFood": "新增食物",
+            "addFood": "新增食材",
             "copyMeal": "複製餐膳去另一日"
         },
         "targetCalories": "目標： {{calories}} 千卡"
@@ -3929,13 +3929,13 @@
         "dismiss": "收到，唔好再顯示"
     },
     "pregnancySafety": {
-        "title": "食物同藥物安全",
-        "food": "食物",
+        "title": "食材同藥物安全",
+        "food": "食材",
         "medications": "藥物",
         "safe": "安全",
         "caution": "小心",
         "avoid": "避免",
-        "searchHint": "搜尋睇吓一種食物或者藥物喺懷孕期間通常點分類.",
+        "searchHint": "搜尋睇吓一種食材或者藥物喺懷孕期間通常點分類.",
         "noMatch": "搵唔到相符，呢個列表唔係全部，唔肯定就問您嘅醫護.",
         "disclaimer": "只係一般指引，唔係醫療建議，一定要同您嘅醫護確認.",
         "foodExample": "壽司",
@@ -4122,21 +4122,21 @@
         "noun": "動作"
     },
     "foodLibrary": {
-        "title": "食物",
-        "search": "搜尋食物…",
+        "title": "食材",
+        "search": "搜尋食材…",
         "noServer": "未設定伺服器",
-        "configure": "喺設定度設定您嘅伺服器連線，先睇到您嘅食物庫.",
+        "configure": "喺設定度設定您嘅伺服器連線，先睇到您嘅食材庫.",
         "go": "去設定",
-        "loading": "載入食物中…",
-        "failed": "載入食物失敗",
+        "loading": "載入食材中…",
+        "failed": "載入食材失敗",
         "retry": "重試",
         "check": "請檢查您嘅連線再試一次.",
-        "noMatch": "搵唔到相符嘅食物",
-        "noItems": "搵唔到食物",
-        "trySearch": "試吓用另一個搜尋字，搵已儲存嘅食物.",
-        "empty": "您儲存或者記錄嘅食物會喺呢度出現.",
-        "moreFailed": "載入更多食物失敗.",
-        "noun": "食物"
+        "noMatch": "搵唔到相符嘅食材",
+        "noItems": "搵唔到食材",
+        "trySearch": "試吓用另一個搜尋字，搵已儲存嘅食材.",
+        "empty": "您儲存或者記錄嘅食材會喺呢度出現.",
+        "moreFailed": "載入更多食材失敗.",
+        "noun": "食材"
     },
     "mealLibrary": {
         "title": "餐膳",
@@ -4298,22 +4298,22 @@
         "failed": "複製餐膳失敗"
     },
     "foodDelete": {
-        "failed": "刪除食物失敗",
-        "title": "刪除食物",
-        "message": "您確定要刪除呢種食物？現有嘅已記錄紀錄會保持唔變.",
+        "failed": "刪除食材失敗",
+        "title": "刪除食材",
+        "message": "您確定要刪除呢種食材？現有嘅已記錄紀錄會保持唔變.",
         "hidden": {
-            "title": "食物已隱藏",
-            "usedByOthers": "呢個食物有其他人在用，所以改成隱藏而唔係刪除，佢哋嘅歷史記錄唔受影響."
+            "title": "食材已隱藏",
+            "usedByOthers": "呢個食材有其他人在用，所以改成隱藏而唔係刪除，佢哋嘅歷史記錄唔受影響."
         },
         "confirmWithHistoryTitle": "記錄都一齊刪？",
-        "confirmWithHistoryMessage": "呢個亦都會永久刪除您為呢個食物記錄嘅日記記錄，呢個係冇得復原嘅.",
+        "confirmWithHistoryMessage": "呢個亦都會永久刪除您為呢個食材記錄嘅日記記錄，呢個係冇得復原嘅.",
         "options": {
             "hide": "喺搜尋度隱藏",
-            "hideDescription": "樣樣都保留原狀，呢個食物只係唔會再喺您搜尋嗰陣出現.",
+            "hideDescription": "樣樣都保留原狀，呢個食材只係唔會再喺您搜尋嗰陣出現.",
             "delete": "刪除",
-            "deleteDescription": "會由您嘅食物庫、餐膳同餐膳計劃度移除，已記錄嘅項目會保留.",
+            "deleteDescription": "會由您嘅食材庫、餐膳同餐膳計劃度移除，已記錄嘅項目會保留.",
             "deleteWithHistory": "連埋歷史一齊刪",
-            "deleteWithHistoryDescription": "亦都會永久刪除您為呢個食物記錄嘅日記記錄."
+            "deleteWithHistoryDescription": "亦都會永久刪除您為呢個食材記錄嘅日記記錄."
         }
     },
     "exerciseEditing": {
@@ -4343,7 +4343,7 @@
         "failed": "新增餐膳失敗"
     },
     "foodSave": {
-        "failed": "儲存食物失敗"
+        "failed": "儲存食材失敗"
     },
     "favorites": {
         "updateFailed": "更新最愛失敗"
@@ -4970,7 +4970,7 @@
         "noServerSubtitle": "設定您嘅伺服器連線，先可以管理水容器.",
         "goToSettings": "去設定",
         "emptyTitle": "仲未有水容器",
-        "emptySubtitle": "加水樽或者水杯嚟追蹤水份——可以揀連結食物，咁撳一下兩樣都記錄到.",
+        "emptySubtitle": "加水樽或者水杯嚟追蹤水份——可以揀連結食材，咁撳一下兩樣都記錄到.",
         "linkedTo": "已連結 {{food}}",
         "deleteTitle": "刪除容器",
         "deleteMessage": "刪除 {{name}}？",
@@ -5002,9 +5002,9 @@
         "primary": "主要容器",
         "hydrationFactor": "水份系數",
         "hydrationFactorHint": "只會調整水份計入比例：水係 1，咖啡或茶大約 0.9，完全唔應該計水份嘅飲品係 0，卡路里、咖啡因同酒精一律全數計入.",
-        "linkedFood": "已連結食物",
-        "selectFood": "揀食物（可選）",
-        "unlinkFood": "取消連結食物",
+        "linkedFood": "已連結食材",
+        "selectFood": "揀食材（可選）",
+        "unlinkFood": "取消連結食材",
         "linkedMealType": "餐段",
         "noMealType": "無（跟時間）",
         "delete": "刪除容器",
@@ -5016,11 +5016,11 @@
             "volumeInvalid": "容量一定要大過零.",
             "servingsInvalid": "每個容器嘅份量至少要 1.",
             "factorInvalid": "水份系數一定要喺 0 至 2 之間.",
-            "foodRequired": "揀返呢個容器裝嘅食物.",
+            "foodRequired": "揀返呢個容器裝嘅食材.",
             "quantityInvalid": "數量一定要大過零."
         },
         "tabWater": "水",
-        "tabDrink": "飲品（已連結食物）",
+        "tabDrink": "飲品（已連結食材）",
         "quantity": "數量",
         "hydrationFactorExample": "以 {{factor}} 計，每撳一下會由飲品嘅 {{total}} {{unit}} 入面，將 {{credited}} {{unit}} 加入您嘅水份環. 卡路里、咖啡因同酒精一律全數計入.",
         "hydrationFactorApplies": "只會影響由而家開始記錄嘅飲品——以前嘅記錄會保留嗰陣用嘅系數."
