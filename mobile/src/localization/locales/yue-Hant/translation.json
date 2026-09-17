@@ -5003,7 +5003,7 @@
         "hydrationFactor": "水份系數",
         "hydrationFactorHint": "只會調整水份計入比例：水係 1，咖啡或茶大約 0.9，完全唔應該計水份嘅飲品係 0，卡路里、咖啡因同酒精一律全數計入.",
         "linkedFood": "已連結食材",
-        "selectFood": "揀食材（可選）",
+        "selectFood": "揀食材（選填）",
         "unlinkFood": "取消連結食材",
         "linkedMealType": "餐段",
         "noMealType": "無（跟時間）",
