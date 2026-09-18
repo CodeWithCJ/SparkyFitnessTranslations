@@ -4845,7 +4845,7 @@
         "lowestSpo2": "最低 SpO2",
         "highestSpo2": "最高 SpO2",
         "restingHeartRate": "靜息心率",
-        "percentUnit": "%'",
+        "percentUnit": "%",
         "bpmUnit": "bpm",
         "quality": "瞓覺質素"
     },
