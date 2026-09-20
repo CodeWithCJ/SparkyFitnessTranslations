@@ -233,7 +233,6 @@
       "exportDesc": "Stiahnite si ucelenú správu pre svojho lekára vrátane podrobností o liekoch, záznamov, plánov, príznakov a údajov o hmotnosti.",
       "exportTitle": "Export údajov pripravený pre lekára",
       "failedToLoadPrefs": "Nepodarilo sa načítať predvoľby zobrazenia liekov.",
-      - glp1CheckinTrends
       "glp1CheckinTrends": "Denné trendy kontrol GLP-1",
       "glp1CheckinTrendsDesc": "Sleduje subjektívny hlad, posadnutosť jedlom (food noise), pocit sýtosti a úroveň energie (0-10) popri dávkach GLP-1.",
       "kpiAdherence": "Priemerná disciplína",
