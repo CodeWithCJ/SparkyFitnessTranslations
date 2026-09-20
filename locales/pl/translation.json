@@ -635,8 +635,7 @@
             "hrZonesEstimatedFromAge": "Strefy są szacowane na podstawie wieku — Apple Health i Health Connect nie udostępniają aplikacjom skonfigurowanego maksymalnego tętna.",
             "caloriesBreakdown": "Aktywność / spoczynkowe",
             "elevationRange": "Min. / maks. wysokość",
-            "weather": "Pogoda",
-            "avgMovingSpeed": "Średnia prędkość ruchu"
+            "weather": "Pogoda"
         },
         "errorToastTitle": "Błąd",
         "signInMessage": "Zaloguj się, aby zobaczyć raporty.",

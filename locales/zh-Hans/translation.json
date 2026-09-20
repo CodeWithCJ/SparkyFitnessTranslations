@@ -3630,7 +3630,6 @@
                 "appleHealth": "Apple 健康"
             },
             "hrZonesEstimatedFromAge": "心率区间是根据你的年龄估算的 — Apple 健康和 Health Connect 不会与应用共享配置的最大心率.",
-            "avgMovingSpeed": "平均移动速度",
             "caloriesBreakdown": "活动 / 静息",
             "elapsedTime": "经过时间",
             "elevationRange": "最低 / 最高海拔",

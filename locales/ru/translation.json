@@ -3011,7 +3011,6 @@
                 "appleHealth": "Apple Health"
             },
             "hrZonesEstimatedFromAge": "Зоны определяются на основе вашего возраста — приложения Apple Health и Health Connect не передают установленное максимальное значение частоты сердечных сокращений другим приложениям.",
-            "avgMovingSpeed": "Средняя скорость движения",
             "caloriesBreakdown": "Активен / в состоянии покоя",
             "elapsedTime": "Прошедшее время",
             "elevationRange": "Мин. / макс. высота",

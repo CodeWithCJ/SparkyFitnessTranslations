@@ -2885,7 +2885,6 @@
                 "appleHealth": "Apple Health"
             },
             "hrZonesEstimatedFromAge": "Las zonas se estiman según tu edad: Apple Health y Health Connect no comparten la frecuencia cardíaca máxima configurada con las aplicaciones.",
-            "avgMovingSpeed": "Velocidad media en movimiento",
             "caloriesBreakdown": "Activo / Reposo",
             "elapsedTime": "Tiempo transcurrido",
             "elevationRange": "Elevación mín. / máx",
