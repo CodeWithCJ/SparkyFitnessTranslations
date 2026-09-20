@@ -1316,7 +1316,6 @@
             "activityNotMuch": "Mazkustīgs (×1.2)",
             "adaptiveActivityHint": "Adaptīvajā režīmā šī ir provizoriskā vērtība, līdz tiek savākts pietiekams daudzums datu, un pēc tam tā turpina iestatīt ticamības robežas. Jūsu izmērītais TDEE ir ierobežots ±500 kcal robežās no BMR, reizinot ar šo koeficientu, tāpēc, ja līmenis ir iestatīts pārāk zems, tas var ierobežot patiesībā augstāku iztēriņu.",
             "adaptiveGoal": "Adaptīvais mērķis",
-            "adaptiveGoalDescription": "",
             "allowNegativeAdjustment": "Atļaut negatīvu korekciju (sodīt par mazāku sadedzināšanu nekā TDEE)",
             "dynamicGoal": "Dinamiskais mērķis",
             "dynamicGoalDescription": "Jūsu kaloriju mērķis dinamiski pielāgosies atbilstoši jūsu ikdienas aktivitātes līmenim (piem., vingrojumi, soļi). Tas ir ideāli piemērots aktīviem cilvēkiem vai tiem, kuru aktivitātes līmenis mainās katru dienu.",
@@ -2123,7 +2122,6 @@
         "copyFamilyMemberLabel": "Ģimenes loceklis",
         "copyFamilyMemberPlaceholder": "Izvēlieties ģimenes locekli",
         "copyFamilyNoConnections": "Nav atrastas autorizētas ģimenes saites.",
-        "copyFamilyNoConnectionsHelp": "",
         "copyFamilyNoDate": "Lūdzu, izvēlieties derīgus avota un mērķa datumus.",
         "copyFamilyNoMember": "Lūdzu, izvēlieties ģimenes locekli.",
         "copyFamilyTabFrom": "Kopēt no ģimenes",
@@ -5014,8 +5012,7 @@
         "noItems": "Nav atrastu importējamu vērtību. Pārbaudiet, vai nav tukšu rindu vai trūkstošu datumu.",
         "title": "Importēt veselības datus",
         "uploadCSV": "Augšupielādēt CSV",
-        "validationError": "Nav ko importēt",
-        "copiedValue": ""
+        "validationError": "Nav ko importēt"
     },
     "diaryCsvImport": {
         "fileTooLarge": "Atlasītais fails ir pārāk liels. Lūdzu, augšupielādējiet failu, kas ir mazāks par 25 MB.",
@@ -5023,7 +5020,6 @@
         "actions": "Darbības",
         "addRow": "Pievienot rindu",
         "clearData": "Notīrīt datus",
-        "dateMealTypeRequired": "",
         "deleteRow": "Dzēst rindu",
         "downloadTemplate": "Lejupielādēt veidni",
         "emptyFile": "Atlasītais fails ir tukšs.",
@@ -5037,7 +5033,6 @@
         "matchScope": "Saskaņot pārtikas nosaukumus ar",
         "matchScopeDescription": "Pārtikas nosaukuma atbilstība ārpus atzīmētajām jomām tiek ignorēta, un jūsu vietā tiek izveidots jauns pārtikas produkts (izmantojot rindas uzturvielu kolonnas).",
         "mealType": "Ēdienreize",
-        "overrideDescription": "",
         "overrideLabel": "Aizstāt esošās pārtikas uzturvērtību ar importētajām vērtībām",
         "parseText": "Parsēt tekstu",
         "pasteFirst": "Lūdzu, vispirms ielīmējiet CSV datus.",
@@ -5096,7 +5091,6 @@
     },
     "auth": {
         "emailExists": "Lietotājs ar šo e-pastu jau eksistē.",
-        "invalidOrigin": "",
         "loginError": "Pieteikšanās neizdevās. Lūdzu, pārbaudiet savus akreditācijas datus.",
         "loginSuccess": "Pieteikšanās veiksmīga!",
         "magicLinkError": "Neizdevās pieprasīt burvju saiti.",
