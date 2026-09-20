@@ -3265,10 +3265,10 @@
         "actions": {
             "loadMoreFailed": "Impossibile caricare altri. Tocca per riprovare",
             "loadMore": "Carica altri",
-            "showAllProviderResults_one": "Mostra il risultato di {{provider}}",
+            "showAllProviderResults_one": "Mostra {{count}} risultato di {{provider}}",
             "showAllProviderResults_many": "Mostra tutti i {{count}} risultati di {{provider}}",
             "showAllProviderResults_other": "Mostra tutti i {{count}} risultati di {{provider}}",
-            "showAllLocalResults_one": "Mostra il {{itemType}}",
+            "showAllLocalResults_one": "Mostra {{count}} {{itemType}}",
             "showAllLocalResults_many": "Mostra tutti i {{count}} {{itemType}}",
             "showAllLocalResults_other": "Mostra tutti i {{count}} {{itemType}}"
         },
