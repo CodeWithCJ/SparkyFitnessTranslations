@@ -1729,7 +1729,9 @@
                 "ollamaFullProfileWarningTitle": "本地模型的潜在性能影响",
                 "ollamaFullProfileWarningHint": "除非你的系统性能非常强大（例如高显存 GPU），否则使用完整工具集运行本地模型可能会导致明显延迟或错误。如果性能缓慢或模型变得混乱，请切换到核心工具集.",
                 "visionNone": "无",
-                "visionService": "全局视觉 AI 服务"
+                "visionService": "全局视觉 AI 服务",
+                "allowPrivateNetworkAi": "允许私有网络端点（例如本机 Ollama/vLLM）",
+                "allowPrivateNetworkAiDescription": "允许连接托管在私有 IP 地址（10.0.0.0/8、172.16.0.0/12、192.168.0.0/16、localhost）上的 AI 端点。"
             },
             "userSettings": {
                 "title": "个人 AI 服务配置",
@@ -2268,7 +2270,11 @@
             "failedToSaveLoginSettings": "保存登录设置失败.",
             "loadingSettings": "正在加载设置...",
             "loginSettingUpdated": "登录设置更新成功.",
-            "settingsSaved": "设置已保存"
+            "settingsSaved": "设置已保存",
+            "publicApiDocs": "公开 API 文档",
+            "publicApiDocsDescription": "允许在无需用户登录验证的情况下访问 Swagger API 文档（/api/api-docs）。",
+            "devTools": "开发者诊断工具",
+            "devToolsDescription": "为管理员启用 MCP 和诊断数据库检查工具。"
         },
         "backupSettings": {
             "title": "数据备份配置",
@@ -2351,7 +2357,7 @@
             "issuerUrl": "签发服务地址",
             "clientId": "客户端编号",
             "clientSecret": "客户端密钥",
-            "leaveUnchanged": "密钥保持原样即可（显示为星号*****）",
+            "leaveUnchanged": "留空即可保留现有密钥",
             "scope": "授权权限域",
             "redirectUri": "跳转回调地址",
             "redirectUriPlaceholder": "示例地址： {{uri}}",
@@ -2631,7 +2637,9 @@
         "welcomeUser": "欢迎 {{name}}",
         "selectAll": "全选",
         "selectRow": "选择行",
-        "unknown": "未知"
+        "unknown": "未知",
+        "avg": "平均",
+        "max": "最大值"
     },
     "diary": {
         "nutritionSummary": "营养摄入汇总",
@@ -2846,7 +2854,8 @@
             "legendNow": "现在",
             "legendDose": "已记录剂量",
             "legendEstimated": "推测时间",
-            "legendCutoff": "最后一剂 {{dose}} 毫克，{{time}}"
+            "legendCutoff": "最后一剂 {{dose}} 毫克，{{time}}",
+            "empty": "今日未记录任何咖啡因。"
         }
     },
     "foodDiary": {
@@ -3634,7 +3643,8 @@
             "elapsedTime": "经过时间",
             "elevationRange": "最低 / 最高海拔",
             "movingTime": "移动时间",
-            "weather": "天气"
+            "weather": "天气",
+            "avgMovingPace": "平均移动配速"
         },
         "bodyBattery": "身体体能储备值",
         "charged": "体能充沛",
@@ -3821,7 +3831,11 @@
         "normalRHR": "成人正常：60-100 bpm",
         "normalRange": "正常：12-20 brpm",
         "pulseOx": "血氧（SpO2）",
-        "range": "范围"
+        "range": "范围",
+        "dailyTrend": "趋势",
+        "overnightSeries": "夜间序列",
+        "overnightHrvSeriesDesc": "每 5 分钟一次的整夜 HRV 序列",
+        "spotTests": "抽查测试"
     },
     "sleepSummary": {
         "title": "昨夜睡眠概况",
@@ -4862,7 +4876,14 @@
         "vo2Max": "最大摄氧量",
         "fitnessAge": "身体年龄：{{val}}",
         "readiness": "就绪度",
-        "recHours": "恢复：{{val}}"
+        "recHours": "恢复：{{val}}",
+        "trainingLoad": "训练负荷",
+        "acute": "短期负荷",
+        "ratio": "比率：{{val}}",
+        "chronic": "长期负荷：{{val}}",
+        "empty": "今日未同步到任何可穿戴设备数据。",
+        "skinTemp": "皮肤温度",
+        "weekly": "每周"
     },
     "foodCsvImport": {
         "title": "导入食物信息",
@@ -5225,7 +5246,12 @@
         "stravaError": "关联 Strava 账户失败。请重试.",
         "stravaSuccess": "你的 Strava 账户已成功关联.",
         "withingsError": "关联 Withings 账户失败。请重试.",
-        "withingsSuccess": "你的 Withings 账户已成功关联."
+        "withingsSuccess": "你的 Withings 账户已成功关联.",
+        "liftosaurSyncError": "Liftosaur 同步失败。请在设置中检查您的 API 密钥。",
+        "liftosaurSyncErrorDesc": "Liftosaur 同步失败。请检查设置中的 API 密钥。",
+        "liftosaurSyncSuccess": "Liftosaur 数据同步成功。",
+        "liftosaurSyncSuccessTitle": "Liftosaur 同步成功",
+        "liftosaurSyncDetails": "已同步：导入了 {{workoutsImported}} 组训练和 {{measurementsImported}} 项测量。"
     },
     "mealCreation": {
         "convertToMeal": "从日记创建餐食",
@@ -5466,7 +5492,12 @@
         "startDate": "开始日期",
         "syncNow": "开始同步",
         "timeoutWarning": "对于较大的日期范围，浏览器可能会超时，但服务器会在后台继续同步.",
-        "title": "同步 {{provider}} 数据"
+        "title": "同步 {{provider}} 数据",
+        "troubleshooting": "疑难解答",
+        "modeLive": "正常从 {{provider}} 同步",
+        "modeCapture": "从 {{provider}} 同步，并将本次同步的原始响应保存为服务器上的文件",
+        "modeReplay": "从之前保存的文件同步，而不是 {{provider}}",
+        "replayIgnoresDates": "日期范围在此不适用——保存的文件将完整重播，涵盖其录制时的任意时间段。"
     },
     "warning": "警告",
     "workout": {
