@@ -76,7 +76,19 @@
             "managedByIOS": "Verwaltet von iOS",
             "iosSettingsHint": "Ändere die Sprache dieser App in den iOS-Einstellungen",
             "openSettingsFailed": "iOS-Einstellungen konnten nicht geöffnet werden",
-            "iosSubtitle": "{{language}} · {{managedBy}}"
+            "iosSubtitle": "{{language}} · {{managedBy}}",
+            "simplifiedChinese": "Vereinfachtes Chinesisch",
+            "traditionalChinese": "Traditionelles Chinesisch",
+            "cantoneseTraditional": "Kantonesisch (traditionelle Schriftzeichen)",
+            "german": "Deutsch",
+            "french": "Französisch",
+            "hungarian": "Ungarisch",
+            "italian": "Italienisch",
+            "latvian": "Lettisch",
+            "norwegianBokmal": "Norwegisch (Bokmål)",
+            "dutch": "Niederländisch",
+            "brazilianPortuguese": "Portugiesisch (Brasilien)",
+            "russian": "Russisch"
         },
         "lastSynced": "Zuletzt synchronisiert {{time}}",
         "addServer": "Tippe, um einen Server hinzuzufügen",
@@ -542,7 +554,8 @@
         "channels": {
             "medicationReminders": "Medikament reminders",
             "workoutTimer": "Training timer",
-            "fasting": "Schnelling"
+            "fasting": "Schnelling",
+            "hydration": "Trinkerinnerungen"
         },
         "actions": {
             "completeSet": "Abschließen Satz",
@@ -570,6 +583,10 @@
         "fasting": {
             "title": "Schnelling Ziel reached",
             "body": "Du've hit dein fasting Ziel. Great work!"
+        },
+        "hydration": {
+            "title": "Zeit zum Trinken 💧",
+            "body": "Du hast schon eine Weile kein Wasser erfasst."
         }
     },
     "activeWorkout": {
@@ -706,7 +723,26 @@
             "caloriesUnit": "kcal",
             "addSetLabel": "set hinzufügen"
         },
-        "nextSet": "Weiter Satz"
+        "nextSet": "Weiter Satz",
+        "progression": {
+            "toggleSettings": "Progressionseinstellungen umschalten",
+            "title": "Progression",
+            "manualOff": "Manuell (Aus)",
+            "fixedSummary": "Festes Ziel · +{{value}} {{unit}}",
+            "stepLoadSummary": "Step-Load · {{reps}} Wdh. · +{{value}} Wdh.",
+            "repGoalSummary": "Wdh.-Ziel · {{reps}} Wdh. · +{{value}} {{unit}}",
+            "overloadMode": "Overload-Modus",
+            "modeRepGoal": "Wdh.-Ziel",
+            "modeFixed": "Fest",
+            "modeStepLoad": "Step-Load",
+            "modeOff": "Aus",
+            "targetRepsPerSet": "Ziel-Wdh. / Satz",
+            "targetRepsTotal": "Ziel-Wdh. (Gesamt)",
+            "incrementReps": "Steigerung (Wdh.)",
+            "incrementWeight": "Steigerung ({{unit}})",
+            "equipmentBrand": "Ausrüstung / Gerätemarke",
+            "equipmentBrandPlaceholder": "z. B. Hammer Strength, Kabelzug"
+        }
     },
     "addSheet": {
         "food": "Essen",
@@ -1043,6 +1079,14 @@
             "subtitle": "Export anonymized Gesundheit data für bug reports",
             "privacy": "Reads the last 4 Stunden von data von Gesundheit Connect für troubleshooting.\nValues are rounded für privacy. Neinthing is sent automatically.",
             "error": "Die Erstellung des Gesundheitsdatenberichts ist fehlgeschlagen: {{error}}"
+        },
+        "syncChoice": {
+            "title": "{{start}} – {{end}} synchronisieren",
+            "titleSingleDay": "{{day}} synchronisieren",
+            "quick": "Schnellsynchronisierung",
+            "quickDescription": "Sendet alle deine Gesundheitsdaten. Bereits synchronisierte Workouts behalten ihre vorhandene Karte und Herzfrequenz.",
+            "all": "Vollständige Synchronisierung",
+            "allDescription": "Wie zuvor, liest zusätzlich Karte und Herzfrequenz für bereits synchronisierte Workouts neu ein. Langsamer."
         }
     },
     "syncFrequency": {
@@ -1234,7 +1278,14 @@
         "openSettings": "Öffnen Einstellungen",
         "permissionTitle": "Berechtigungen erteilen",
         "permissionBody": "SparkyFitness alerts (rest timers, fasting Ziele, medication reminders) won't fire.",
-        "permissionWarningAccessibility": "{{title}}. {{body}} {{action}}."
+        "permissionWarningAccessibility": "{{title}}. {{body}} {{action}}.",
+        "hydration": "Flüssigkeitszufuhr",
+        "waterReminders": "Trinkerinnerungen",
+        "waterRemindersSubtitle": "Erinnert dich ans Trinken, wenn du schon eine Weile kein Wasser erfasst hast.",
+        "waterReminderInterval": "Erinnern nach",
+        "waterReminderIntervalOption": "{{hours}} Std.",
+        "waterReminderStart": "Startzeit",
+        "waterReminderStartAccessibility": "Startzeit, {{time}}"
     },
     "workoutSettings": {
         "title": "Training Einstellungen",
