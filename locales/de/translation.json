@@ -328,7 +328,9 @@
                 "ollamaFullProfileWarningHint": "Das Ausführen eines lokalen Modells mit dem vollständigen Toolset kann zu erheblicher Latenz oder Fehlern führen, es sei denn, Sie verfügen über ein sehr leistungsstarkes System (z. B. eine GPU mit hohem VRAM). Wenn die Leistung langsam ist oder das Modell verwirrt ist, wechseln Sie zum Core-Toolset.",
                 "recommendedModel": "Empfohlen: {{- model}} – eine gute Balance zwischen Kosten und Leistungsfähigkeit.",
                 "visionNone": "Keine",
-                "visionService": "Globaler Vision-KI-Dienst"
+                "visionService": "Globaler Vision-KI-Dienst",
+                "allowPrivateNetworkAi": "Private Netzwerk-Endpunkte erlauben (z. B. lokales Ollama/vLLM)",
+                "allowPrivateNetworkAiDescription": "Erlaubt die Verbindung zu KI-Endpunkten, die auf privaten IP-Adressen gehostet werden (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, localhost)."
             },
             "userSettings": {
                 "title": "KI-Dienst",
@@ -1808,7 +1810,11 @@
             "failedToSaveLoginSettings": "Anmeldeeinstellungen konnten nicht gespeichert werden.",
             "loadingSettings": "Einstellungen werden geladen...",
             "loginSettingUpdated": "Anmeldeeinstellung erfolgreich aktualisiert.",
-            "settingsSaved": "Einstellungen gespeichert"
+            "settingsSaved": "Einstellungen gespeichert",
+            "publicApiDocs": "Öffentliche API-Dokumentation",
+            "publicApiDocsDescription": "Erlaubt den Zugriff auf die Swagger-API-Dokumentation (/api/api-docs) ohne erforderliche Benutzerauthentifizierung.",
+            "devTools": "Entwickler-Diagnosewerkzeuge",
+            "devToolsDescription": "Aktiviert MCP- und Diagnose-Datenbankinspektionswerkzeuge für Administratoren."
         },
         "oidcSettings": {
             "editProvider": "OIDC-Anbieter bearbeiten",
@@ -1847,7 +1853,7 @@
             "failedToUpdateProvider": "Aktualisierung des Anbieters fehlgeschlagen.",
             "clientId": "Client-ID",
             "clientSecret": "Client Secret",
-            "leaveUnchanged": "Unverändert lassen, wenn *****",
+            "leaveUnchanged": "Leer lassen, um das bestehende Secret beizubehalten",
             "scope": "Scope",
             "redirectUri": "Weiterleitungs-URI",
             "redirectUriPlaceholder": "z.B.: {{uri}}",
@@ -2172,7 +2178,9 @@
         "welcomeUser": "Willkommen {{name}}",
         "selectAll": "Alle auswählen",
         "selectRow": "Zeile auswählen",
-        "unknown": "Unbekannt"
+        "unknown": "Unbekannt",
+        "avg": "Durchschnitt",
+        "max": "Max"
     },
     "diary": {
         "nutritionSummary": "Ernährungsübersicht",
@@ -2387,7 +2395,8 @@
             "legendNow": "Jetzt",
             "legendDose": "Erfasste Dosis",
             "legendEstimated": "Angenommene Zeit",
-            "legendCutoff": "Letzte Dosis von {{dose}} mg um {{time}}"
+            "legendCutoff": "Letzte Dosis von {{dose}} mg um {{time}}",
+            "empty": "Für diesen Tag wurde kein Koffein erfasst."
         }
     },
     "foodDiary": {
@@ -3108,7 +3117,8 @@
             "elapsedTime": "Verstrichene Zeit",
             "elevationRange": "Min./Max. Höhe",
             "movingTime": "Bewegungszeit",
-            "weather": "Wetter"
+            "weather": "Wetter",
+            "avgMovingPace": "Ø Bewegungstempo"
         },
         "bodyBattery": "Energielevel",
         "charged": "Aufgeladen",
@@ -3849,7 +3859,11 @@
         "normalRHR": "Normaler Erwachsener: 60–100 Schläge pro Minute",
         "normalRange": "Normal: 12–20 Schläge pro Minute",
         "pulseOx": "Pulsoxymetrie (SpO2)",
-        "range": "Bereich"
+        "range": "Bereich",
+        "dailyTrend": "Trend",
+        "overnightSeries": "Nachtverlauf",
+        "overnightHrvSeriesDesc": "Nächtliche HRV-Zeitreihe in 5-Minuten-Intervallen",
+        "spotTests": "Stichproben-Tests"
     },
     "sleepSummary": {
         "title": "Letzte Nacht Schlafdauer",
@@ -4957,7 +4971,14 @@
         "title": "Tägliche Gesundheitsübersicht vom Fitnessgerät",
         "fitnessAge": "Fitnessalter: {{val}}",
         "readiness": "Erholungsstatus",
-        "recHours": "Erh.: {{val}}"
+        "recHours": "Erh.: {{val}}",
+        "trainingLoad": "Trainingsbelastung",
+        "acute": "akut",
+        "ratio": "Verhältnis: {{val}}",
+        "chronic": "Chronisch: {{val}}",
+        "empty": "Für diesen Tag wurden keine Wearable-Daten synchronisiert.",
+        "skinTemp": "Hauttemperatur",
+        "weekly": "wöchentlich"
     },
     "layout": {
         "welcome": "Willkommen {{activeUserName}}"
@@ -5222,7 +5243,12 @@
         "stravaError": "Verknüpfung des Kontos Strava fehlgeschlagen. Bitte versuchen Sie es erneut.",
         "stravaSuccess": "Ihr Konto Strava wurde erfolgreich verknüpft.",
         "withingsError": "Die Verknüpfung des Kontos Withings ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
-        "withingsSuccess": "Ihr Withings-Konto wurde erfolgreich verknüpft."
+        "withingsSuccess": "Ihr Withings-Konto wurde erfolgreich verknüpft.",
+        "liftosaurSyncError": "Liftosaur-Synchronisierung fehlgeschlagen. Bitte überprüfe deinen API-Schlüssel in den Einstellungen.",
+        "liftosaurSyncErrorDesc": "Liftosaur-Synchronisierung fehlgeschlagen. Bitte überprüfe deinen API-Schlüssel in den Einstellungen.",
+        "liftosaurSyncSuccess": "Liftosaur-Daten erfolgreich synchronisiert.",
+        "liftosaurSyncSuccessTitle": "Liftosaur erfolgreich synchronisiert",
+        "liftosaurSyncDetails": "Synchronisiert: {{workoutsImported}} Workouts, {{measurementsImported}} Messungen importiert."
     },
     "mealCreation": {
         "convertToMeal": "Mahlzeit aus Tagebuch erstellen",
@@ -5463,7 +5489,12 @@
         "startDate": "Startdatum",
         "syncNow": "Synchronisierung starten",
         "timeoutWarning": "Bei großen Datumsbereichen kann es zu einer Zeitüberschreitung des Browsers kommen, aber der Server setzt die Synchronisierung im Hintergrund fort.",
-        "title": "Synchronisierung {{provider}} Daten"
+        "title": "Synchronisierung {{provider}} Daten",
+        "troubleshooting": "Fehlerbehebung",
+        "modeLive": "Normal von {{provider}} synchronisieren",
+        "modeCapture": "Von {{provider}} synchronisieren und die Rohantworten dieser Synchronisierung in einer Datei auf dem Server speichern",
+        "modeReplay": "Aus der zuvor gespeicherten Datei synchronisieren statt von {{provider}}",
+        "replayIgnoresDates": "Der Datumsbereich gilt hier nicht – die gespeicherte Datei wird vollständig wiedergegeben und deckt den Zeitraum ab, für den sie ursprünglich erfasst wurde."
     },
     "warning": "Warnung",
     "workout": {
