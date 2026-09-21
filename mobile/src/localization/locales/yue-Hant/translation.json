@@ -1066,7 +1066,7 @@
             "browse": "瀏覽",
             "foods": "食材",
             "meals": "餐膳",
-            "mealPlans": "餐單計劃",
+            "mealPlans": "餐謄計劃",
             "mealPlansSubtitle": "喺揀咗嘅日子重複餐膳",
             "exercises": "動作",
             "workoutPresets": "訓練預設",
@@ -3000,7 +3000,7 @@
         "nutritionLoading": "載入緊未齊嘅營養詳情，總計可能唔完整.",
         "nutritionLoadFailed": "有啲營養詳情載入唔到，總計可能唔完整.",
         "assignmentRequired": "至少加一個完整嘅餐膳分配.",
-        "familyNotice": "您可以排定自己嘅餐膳，加上餐膳庫入面已經睇到嘅家庭或者公開餐膳，個計劃對呢個 App 保持私人.",
+        "familyNotice": "您可以排定自己嘅餐膳，亦可以排定餐膳庫入面嘅家庭或公開餐膳. 呢個計劃淨係您嘅帳號先睇到，唔會影響餐膳嘅分享.",
         "weekdays": {
             "sunday": "星期日",
             "monday": "星期一",
@@ -4899,7 +4899,7 @@
         "percentValue": "{{percent}}%",
         "stage": {
             "awake": "清醒",
-            "rem": "REM",
+            "rem": "快眼動期",
             "light": "淺睡",
             "deep": "深睡",
             "other": "其他"
