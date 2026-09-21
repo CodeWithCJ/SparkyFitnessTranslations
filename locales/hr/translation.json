@@ -1,1 +1,11 @@
-{}
+{
+    "openFoodFactsContribution": {
+        "packagingPhoto": "Pakiranje"
+    },
+    "onboarding": {
+        "planReady": "Tvoj personalizirani plan je spreman."
+    },
+    "nutritionCharts": {
+        "vitamin_c": "Vitamin C"
+    }
+}
