@@ -649,7 +649,19 @@
             "managedByIOS": "由 iOS 管理",
             "iosSettingsHint": "在 iOS 设置中更改此应用的语言",
             "openSettingsFailed": "无法打开 iOS 设置",
-            "iosSubtitle": "{{language}} · {{managedBy}}"
+            "iosSubtitle": "{{language}} · {{managedBy}}",
+            "simplifiedChinese": "简体中文",
+            "traditionalChinese": "正體中文",
+            "cantoneseTraditional": "正體粵語",
+            "german": "Deutsch",
+            "french": "Français",
+            "hungarian": "Magyar",
+            "italian": "Italiano",
+            "latvian": "Latviešu",
+            "norwegianBokmal": "Norsk bokmål",
+            "dutch": "Nederlands",
+            "brazilianPortuguese": "Português (Brasil)",
+            "russian": "Русский"
         },
         "lastSynced": "上次同步于 {{time}}",
         "addServer": "点按以添加服务器",
@@ -780,7 +792,8 @@
         "channels": {
             "medicationReminders": "药物提醒",
             "workoutTimer": "训练计时器",
-            "fasting": "禁食"
+            "fasting": "禁食",
+            "hydration": "饮水提醒"
         },
         "actions": {
             "completeSet": "完成该组",
@@ -807,6 +820,10 @@
         "fasting": {
             "title": "禁食目标已达成",
             "body": "你已达成禁食目标。做得好！"
+        },
+        "hydration": {
+            "title": "该喝水了 💧",
+            "body": "你有一段时间没有记录饮水了。"
         }
     },
     "activeWorkout": {
@@ -941,7 +958,26 @@
             "caloriesUnit": "千卡",
             "addSetLabel": "添加组"
         },
-        "nextSet": "下一组"
+        "nextSet": "下一组",
+        "progression": {
+            "toggleSettings": "切换渐进设置",
+            "title": "渐进",
+            "manualOff": "手动（关闭）",
+            "fixedSummary": "固定目标 · +{{value}} {{unit}}",
+            "stepLoadSummary": "阶梯加重 · {{reps}} 次 · +{{value}} 次",
+            "repGoalSummary": "次数目标 · {{reps}} 次 · +{{value}} {{unit}}",
+            "overloadMode": "超负荷模式",
+            "modeRepGoal": "次数目标",
+            "modeFixed": "固定",
+            "modeStepLoad": "阶梯加重",
+            "modeOff": "关闭",
+            "targetRepsPerSet": "每组目标次数",
+            "targetRepsTotal": "目标次数（总计）",
+            "incrementReps": "增加幅度（次数）",
+            "incrementWeight": "增加幅度（{{unit}}）",
+            "equipmentBrand": "器材／机器品牌",
+            "equipmentBrandPlaceholder": "例如 Hammer Strength、Cable Stack"
+        }
     },
     "addSheet": {
         "food": "食物",
@@ -1278,6 +1314,14 @@
             "subtitle": "导出匿名化健康数据以用于错误报告",
             "privacy": "读取 Health Connect 最近 4 小时的数据以用于故障排查。\n数值会四舍五入以保护隐私。不会向服务器发送任何内容。",
             "error": "生成健康数据报告失败：{{error}}"
+        },
+        "syncChoice": {
+            "title": "同步 {{start}} – {{end}}",
+            "titleSingleDay": "同步 {{day}}",
+            "quick": "快速同步",
+            "quickDescription": "发送你的所有健康数据。已同步的训练会保留原有的路线图与心率。",
+            "all": "完整同步",
+            "allDescription": "与快速同步相同，并会重新读取已同步训练的路线图与心率。速度较慢。"
         }
     },
     "syncFrequency": {
@@ -1465,8 +1509,18 @@
         "enableNotifications": "启用通知",
         "openSettings": "打开设置",
         "permissionTitle": "授予权限",
-        "permissionBody": "SparkyFitness 提醒（休息计时器、禁食目标、药物提醒）将不会触发。",
-        "permissionWarningAccessibility": "{{title}}。{{body}} {{action}}。"
+        "permissionBody": "SparkyFitness 的提醒（休息计时器、断食目标、药物与饮水提醒）将不会触发。",
+        "permissionWarningAccessibility": "{{title}}。{{body}} {{action}}。",
+        "hydration": "饮水",
+        "waterReminders": "饮水提醒",
+        "waterRemindersSubtitle": "当你有一段时间没有记录饮水时，提醒你喝水。",
+        "waterReminderInterval": "提醒间隔",
+        "waterReminderIntervalOption": "{{hours}}h",
+        "waterReminderStart": "开始时间",
+        "waterReminderStartAccessibility": "开始时间，{{time}}",
+        "waterReminderEnd": "结束时间",
+        "waterReminderEndAccessibility": "结束时间，{{time}}",
+        "waterReminderInvalidWindow": "结束时间必须晚于开始时间。"
     },
     "workoutSettings": {
         "title": "训练设置",
@@ -3184,6 +3238,16 @@
             "meals": "份餐食",
             "meal": "餐食",
             "itemCount_other": "{{count}} 个项目"
+        },
+        "multiSelect": {
+            "select": "选择",
+            "cancel": "取消",
+            "clear": "清除",
+            "review": "查看",
+            "selectAll": "全选",
+            "selected_other": "已选择 {{count}} 项",
+            "limitReached": "最多可选择 {{limit}} 项食物",
+            "foodCheckbox": "选择 {{name}}"
         }
     },
     "editBarcode": {
@@ -5039,5 +5103,43 @@
         "legendCurve": "活性咖啡因",
         "legendThreshold": "阈值 {{threshold}} 毫克",
         "unitMg": "mg"
+    },
+    "foodEntryMultiAdd": {
+        "title": "查看",
+        "addingToDate": "添加到 {{date}}",
+        "labels": {
+            "meal": "餐次",
+            "chooseMeal": "选择餐次"
+        },
+        "pickers": {
+            "selectMeal": "选择餐次",
+            "selectServing": "选择份量"
+        },
+        "accessibility": {
+            "mealForAll": "所有项目的餐次：{{meal}}",
+            "mealForRow": "{{food}} 的餐次：{{meal}}",
+            "increaseQuantity": "增加数量",
+            "decreaseQuantity": "减少数量",
+            "changeServing": "更改 {{name}} 的份量"
+        },
+        "actions": {
+            "addAll_other": "全部添加（{{count}}）",
+            "remove": "移除 {{name}}",
+            "addAnyway": "仍然添加",
+            "addAnywayFor": "仍然添加 {{name}}"
+        },
+        "banners": {
+            "unknownOutcome": "有些项目无法添加，可能已存在于你的日志中。"
+        },
+        "errors": {
+            "invalidQuantity": "请输入大于零的数量。",
+            "rowRejected": "无法添加此项目。请检查后重试。"
+        },
+        "states": {
+            "empty": "未选择任何食物"
+        },
+        "toasts": {
+            "added_other": "已添加 {{count}} 项食物"
+        }
     }
 }
