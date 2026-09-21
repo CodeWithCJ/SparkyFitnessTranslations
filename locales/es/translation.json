@@ -116,11 +116,11 @@
             "eaten": "comido",
             "burned": "quemado",
             "burnedCaloriesBreakdown": "Desglose de calorías quemadas:",
-            "otherExerciseCalories": "Otro ejercicio: {{exerciseCalories}} cal",
-            "activeCalories": "Calorías activas: {{activeCaloriesFromExercise}} cal",
-            "stepsCalories": "Pasos: {{dailySteps}} = {{stepsCalories}} cal",
-            "bmrCalories": "TMB: {{bmr}} cal",
-            "totalCaloriesBurned": "Total: {{totalCaloriesBurned}} cal",
+            "otherExerciseCalories": "Otro ejercicio: {{exerciseCalories}} {{energyUnit}}",
+            "activeCalories": "Calorías activas: {{activeCaloriesFromExercise}} {{energyUnit}}",
+            "stepsCalories": "Pasos: {{dailySteps}} = {{stepsCalories}} {{energyUnit}}",
+            "bmrCalories": "TMB: {{bmr}} {{energyUnit}}",
+            "totalCaloriesBurned": "Total: {{totalCaloriesBurned}} {{energyUnit}}",
             "goal": "objetivo",
             "caloriesBurnedBreakdownTitle": "Desglose de calorías quemadas",
             "netCalories": "Calorías Netas: {{netCalories}}",
@@ -264,7 +264,21 @@
             "exercises": "ejercicios",
             "name": "Nombre",
             "deleteConfirmationDescription": "¿Estás seguro de que quieres eliminar este ejercicio? Esta acción no se puede deshacer.",
-            "deleteImpactDescription": "Este ejercicio se usa en otros registros o planes de entrenamiento. Eliminarlo podría afectar a esos registros."
+            "deleteImpactDescription": "Este ejercicio se usa en otros registros o planes de entrenamiento. Eliminarlo podría afectar a esos registros.",
+            "bulkDeleteDescription": "Elimina estos {{count}} ejercicios de tu biblioteca y de cualquier rutina predefinida o plan. Los entrenamientos que ya hayas registrado se conservan en tu diario.",
+            "cancel": "Cancelar",
+            "delete": "Eliminar",
+            "deleteExerciseConfirmTitle": "¿Eliminar {{exerciseName}}?",
+            "deleteKeepsDiaryHint": "Al eliminarlo, el ejercicio desaparece de tu biblioteca, rutinas predefinidas y planes. Tus entrenamientos registrados conservan su nombre, imagen, series y repeticiones.",
+            "deleteWithHistory": "Eliminar incluyendo el historial",
+            "diaryEntriesCount": "{{count}} entrenamientos registrados",
+            "exerciseUnused": "Este ejercicio aún no se usa en ningún sitio.",
+            "exerciseUsedByOtherUsersWarning": "Este ejercicio lo usan otros usuarios. Solo puedes ocultarlo. Al ocultarlo dejará de aparecer en las búsquedas a partir de ahora, pero no afecta a su historial, rutinas predefinidas ni planes.",
+            "exerciseUsedIn": "Este ejercicio se usa en:",
+            "hide": "Ocultar",
+            "warning": "¡Atención!",
+            "workoutPlansCount": "{{count}} planes de entrenamiento",
+            "workoutPresetsCount": "{{count}} rutinas predefinidas"
         },
         "exerciseImportCSV": {
             "importExerciseData": "Importar datos de ejercicios",
@@ -470,7 +484,8 @@
         "startWorkout": "Iniciar entrenamiento",
         "stats": "Estadísticas",
         "duplicate": "Duplicar",
-        "duplicateNameSuffix": "{{name}} (Copia)"
+        "duplicateNameSuffix": "{{name}} (Copia)",
+        "emptyPresetError": "No se puede iniciar ni registrar una rutina predefinida sin ejercicios."
     },
     "workoutPlansManager": {
         "addPlanButton": "Añadir plan",
@@ -735,7 +750,12 @@
             "wednesday": "Miércoles",
             "thursday": "Jueves",
             "friday": "Viernes",
-            "saturday": "Sábado"
+            "saturday": "Sábado",
+            "caffeineHalfLife": "Semivida de la cafeína (horas)",
+            "noWeeklyLimit": "Sin límite establecido",
+            "standardDrinkUnit": "Unidad de bebida estándar",
+            "targetBedtime": "Hora objetivo para acostarse",
+            "weeklyAlcoholLimit": "Límite semanal de alcohol (bebidas estándar)"
         },
         "waterTracking": {
             "title": "Registro de agua",
@@ -747,7 +767,9 @@
             "saveWaterDisplayUnit": "Guardar unidad de agua",
             "addExerciseWater": "Añadir pérdida de agua por ejercicio al objetivo diario",
             "addExerciseWaterHint": "Aumenta tu objetivo diario de agua según la pérdida estimada de sudor en tus actividades.",
-            "liters": "Litros"
+            "liters": "Litros",
+            "addFoodWater": "Contar el agua de los alimentos en tu ingesta",
+            "addFoodWaterHint": "Suma el contenido de agua de un alimento registrado a tu total diario de agua, salvo que ya lo contabilice un recipiente vinculado."
         },
         "nutrientDisplay": {
             "title": "Visualización de nutrientes",
@@ -845,7 +867,31 @@
             "invalidKeyLengthWarning": "Si aparece un error de \"Invalid key length\", asegúrate de que la clave de cifrado en las variables de entorno del servidor tenga 64 caracteres hexadecimales.",
             "openFoodFacts": {
                 "baseUrlLabel": "URL base (Opcional)",
-                "baseUrlHelp": "Déjalo en blanco para usar el servidor público de Open Food Facts o indícalo hacia tu propia instancia alojada."
+                "baseUrlHelp": "Déjalo en blanco para usar el servidor público de Open Food Facts, o apúntalo a tu propia instancia autoalojada. Las contribuciones autenticadas requieren HTTPS.",
+                "accountGlobal": "Cuenta de contribución disponible: la cuenta de Open Food Facts del servidor",
+                "accountMissing": "Actualmente no hay ninguna cuenta de Open Food Facts disponible",
+                "accountPersonal": "Cuenta de contribución disponible: tu cuenta personal de Open Food Facts",
+                "accountPriorityHelp": "Se usa primero tu cuenta personal activa. Si no hay ninguna configurada, se usa como alternativa la cuenta del servidor habilitada.",
+                "adminTitle": "Contribuciones a Open Food Facts",
+                "consentTitle": "Las subidas requieren tu consentimiento",
+                "contributionsDescription": "Mejora la base de datos compartida de Open Food Facts y haz que los datos de producto sean mejores para todos los servidores de SparkyFitness.",
+                "contributionsTitle": "Contribuciones a Open Food Facts",
+                "contributorTerms": "Términos para colaboradores",
+                "credentialContributionHelp": "El usuario y la contraseña son opcionales para las búsquedas, pero ambos son obligatorios para contribuir alimentos desde SparkyFitness. Las credenciales se cifran en reposo. Guardar una cuenta no habilita las subidas; cada usuario controla su propio consentimiento por separado.",
+                "credentialKeepExistingHelp": "Deja ambos campos en blanco para mantener las credenciales guardadas.",
+                "loadError": "Inténtalo de nuevo más tarde.",
+                "loadErrorTitle": "No se pudieron cargar los ajustes de contribución a Open Food Facts",
+                "personalConsentWarning": "Contribuye un producto cada vez desde tu formulario de alimento personalizado o desde el menú de alimentos. Elige tu propia foto del envase, revisa la previsualización exacta y confirma la publicación. Guardar un alimento o estos ajustes no sube nada.",
+                "productLanguageHelp": "Usa el código de idioma de dos letras impreso en el envase del producto, por ejemplo en o de.",
+                "productLanguageLabel": "Idioma de los datos del producto",
+                "saveError": "Comprueba el ajuste del servidor y la conexión de la cuenta, y vuelve a intentarlo.",
+                "saveErrorTitle": "No se pudieron guardar los ajustes de contribución a Open Food Facts",
+                "saveLanguage": "Guardar idioma",
+                "saveSuccess": "Ajustes de contribución a Open Food Facts guardados.",
+                "serverDisabled": "El administrador de este servidor ha desactivado las contribuciones a Open Food Facts.",
+                "serverGateHelp": "Este interruptor del servidor habilita las contribuciones manuales. Cada usuario debe previsualizar y confirmar un producto y su propia foto antes de publicar. Las credenciales globales son una alternativa opcional para los usuarios sin cuenta personal.",
+                "serverGateLabel": "Permitir contribuciones a Open Food Facts en este servidor",
+                "sharedDataWarning": "Solo son válidos los datos que hayas introducido a partir del envase físico. Open Food Facts publica los datos estructurados bajo la ODbL y la Database Contents License, y tus propias fotos bajo CC BY-SA. Cada contribución requiere confirmar por separado los derechos de los datos y los de la foto."
             },
             "yazio": {
                 "unofficialApiTitle": "⚠️ API no oficial: Úsala bajo tu propio riesgo",
@@ -939,7 +985,9 @@
                 "ollamaContextHint": "Ollama usa por defecto un contexto de 4096 tokens y trunca silenciosamente todo lo que sea mayor, lo que corrompe las definiciones de herramientas y hace que el chatbot no sea confiable. Configura OLLAMA_CONTEXT_LENGTH=16384 en el servidor Ollama (o añade PARAMETER num_ctx 16384 al Modelfile del modelo) y luego reinicia Ollama. En una máquina de 8 GB, comienza con 8192.",
                 "ollamaFullProfileWarningHint": "Ejecutar un modelo local con el conjunto completo de herramientas (Full) puede causar retrasos o errores significativos a menos que tengas un sistema muy potente (p. ej., GPU con mucha VRAM). Si el rendimiento es lento o el modelo se confunde, cambia al conjunto de herramientas básico (Core).",
                 "visionNone": "Ninguno",
-                "visionService": "Servicio global de IA de visión"
+                "visionService": "Servicio global de IA de visión",
+                "allowPrivateNetworkAi": "Permitir endpoints en redes privadas (p. ej. Ollama/vLLM local)",
+                "allowPrivateNetworkAiDescription": "Permite conectarse a endpoints de IA alojados en direcciones IP privadas (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, localhost)."
             },
             "userSettings": {
                 "title": "Servicios de IA",
@@ -1133,7 +1181,7 @@
             "passwordUpdateSuccess": "Contraseña actualizada con éxito"
         },
         "customNutrients": {
-            "title": "Nutrientes personalizados",
+            "title": "Gestión de nutrientes personalizados",
             "subtitle": "Administra tus definiciones personalizadas de nutrientes",
             "failedToAddNutrient": "Error al añadir el nutriente.",
             "addTitle": "Añadir nuevo nutriente personalizado",
@@ -1268,7 +1316,7 @@
             "activityModerate": "Moderadamente activo (×1.55)",
             "activityNone": "Ninguno (×1.0)",
             "activityNotMuch": "Sedentario (×1.2)",
-            "adaptiveActivityHint": "En el modo adaptativo, esta configuración actúa como alternativa hasta que tengas suficientes datos de seguimiento.",
+            "adaptiveActivityHint": "En el modo adaptativo esta es la estimación alternativa hasta que tengas suficientes datos de seguimiento, y después sigue fijando los límites de plausibilidad. Tu TDEE medido se limita a ±500 kcal respecto a TMB × este multiplicador, así que un nivel demasiado bajo puede frenar un gasto realmente mayor.",
             "adaptiveGoal": "Objetivo adaptativo",
             "adaptiveGoalDescription": "Tu objetivo calórico se calcula a partir de tu gasto energético medido, comparando la ingesta registrada con la evolución de tu peso durante los últimos 28 días. Esta es la opción más precisa una vez que hayas llevado un registro constante de tu peso y de lo que comes durante unas semanas.",
             "allowNegativeAdjustment": "Permitir que la proyección de respaldo reduzca el objetivo",
@@ -1407,7 +1455,8 @@
             "unsafeLossText": "Perder más del 1,5 % del peso corporal por semana se considera excesivo. Este ritmo aumenta drásticamente los riesgos de pérdida muscular severa, letargo, desequilibrios hormonales y deficiencias nutricionales. Elige un modo de objetivo menos agresivo.",
             "calibrationDescription": "El motor de TDEE adaptativo de Sparky requiere al menos {{required}} días de seguimiento constante para calcular tu metabolismo con precisión (actualmente utiliza estimaciones alternativas). Para acelerar la calibración:",
             "calibrationWeightTip": "Registra tu peso al menos 3 o 4 veces por semana.",
-            "calibrationFoodTip": "Registra tu ingesta de alimentos a diario (>200 kcal/día)."
+            "calibrationFoodTip": "Registra tu ingesta de alimentos a diario (>200 kcal/día).",
+            "livePreviewSavedNote": "La TMB y la grasa corporal se actualizan a medida que cambias los ajustes. El gasto se calcula en el servidor a partir de tus ajustes guardados, así que tanto este como el objetivo final solo cambian después de guardar."
         },
         "mfa": {
             "confirmPassword": "Confirma la contraseña para continuar",
@@ -1455,8 +1504,8 @@
             "goalMaintain": "Mantener (0% de cambio)",
             "surplus": "Superávit",
             "deficit": "Déficit",
-            "adaptiveFormula": "Fórmula: Calorías Diarias Promedio − (Cambio de Peso Diario en kg × {{kcalPerKg}} kcal/kg)",
-            "adaptiveFormulaExplainer": "{{kcalPerKg}} kcal/kg representa la energía de un kilogramo de peso corporal, permitiendo convertir tu tendencia de peso en calorías. El peso perdido o ganado es una mezcla de grasa (~9,441 kcal/kg) y tejido magro con agua (~1,816 kcal/kg), y {{kcalPerKg}} refleja una combinación típica.",
+            "adaptiveFormula": "Fórmula: Calorías diarias promedio − (Cambio de peso diario en {{massUnit}} × {{kcalPerUnit}} kcal/{{massUnit}})",
+            "adaptiveFormulaExplainer": "{{kcalPerUnit}} kcal/{{massUnit}} es la energía que representa cada {{unitName}} de peso corporal, por lo que tu tendencia de peso se puede convertir en calorías. El peso corporal perdido o ganado es una mezcla de grasa (~{{fatPerUnit}} kcal/{{massUnit}}) y tejido magro y agua (~{{leanPerUnit}} kcal/{{massUnit}}), y {{kcalPerUnit}} refleja una combinación típica.",
             "adjustment": "Ajuste",
             "goalAdjustmentLabel": "Ajuste Objetivo:"
         },
@@ -1578,7 +1627,11 @@
             "failedToSaveLoginSettings": "Error al guardar los ajustes de inicio de sesión.",
             "loadingSettings": "Cargando ajustes...",
             "loginSettingUpdated": "Ajuste de inicio de sesión actualizado con éxito.",
-            "settingsSaved": "Ajustes guardados"
+            "settingsSaved": "Ajustes guardados",
+            "devTools": "Herramientas de diagnóstico para desarrolladores",
+            "devToolsDescription": "Habilita las herramientas MCP y de inspección de la base de datos para los administradores.",
+            "publicApiDocs": "Documentación pública de la API",
+            "publicApiDocsDescription": "Permite acceder a la documentación Swagger de la API (/api/api-docs) sin exigir la autenticación del usuario."
         },
         "backupSettings": {
             "title": "Ajustes de copia de seguridad",
@@ -1659,7 +1712,7 @@
             "issuerUrl": "URL del emisor",
             "clientId": "Client ID",
             "clientSecret": "Client Secret",
-            "leaveUnchanged": "Déjalo sin cambios si *****",
+            "leaveUnchanged": "Déjalo en blanco para mantener el secreto actual",
             "scope": "Scope",
             "redirectUri": "URI de redirección",
             "redirectUriPlaceholder": "p. ej., {{uri}}",
@@ -1943,7 +1996,9 @@
         "welcomeUser": "¡Te damos la bienvenida, {{name}}!",
         "selectAll": "Seleccionar todo",
         "selectRow": "Seleccionar fila",
-        "unknown": "Desconocido"
+        "unknown": "Desconocido",
+        "avg": "Prom.",
+        "max": "Máx."
     },
     "diary": {
         "nutritionSummary": "Resumen nutricional",
@@ -2005,7 +2060,7 @@
             "dialogDescription": "Desglose paso a paso de cómo se calcula tu objetivo de energía diario.",
             "todayTarget": "Cómo se calcula el objetivo de hoy",
             "bmrMeasured": "Medido",
-            "bmrMeasuredDesc": "Usando tu TMB medida. Sin fórmula aplicada.",
+            "bmrMeasuredDesc": "Usando una TMB medida de {{value}} {{unit}} registrada para este día, procedente de una báscula inteligente o de la sincronización con una app de salud. No se aplica tu fórmula {{algorithm}}.",
             "bmrTitle": "1. Tasa Metabólica Basal (TMB)",
             "healthApp": "Aplicación de Salud",
             "externalBmr": "TMB sincronizada desde tu aplicación de salud (Apple Health / Health Connect). Sin fórmulas aplicadas.",
@@ -2069,7 +2124,21 @@
             "fallbackBaselineDetail": "TMB ({{bmr}}) × Multiplicador de actividad ({{multiplier}}) = {{result}} {{unit}} (Alternativa usada: historial insuficiente [<{{required}} días]; cálculo directo de {{raw}} {{unit}} omitido)",
             "adaptiveTdeeExpenditure": "TDEE adaptativo (Gasto)",
             "adaptiveManualGoal": "Objetivo manual de calorías adaptativo",
-            "targetSafeRange": "✓ El objetivo está en un rango seguro por encima del mínimo de seguridad metabólica."
+            "targetSafeRange": "✓ El objetivo está en un rango seguro por encima del mínimo de seguridad metabólica.",
+            "adaptiveClamped": "La estimación bruta de {{raw}} {{unit}} se limitó a {{capped}} {{unit}}, el límite de plausibilidad de ±{{band}} {{unit}} en torno a tu estimación basada en la TMB ({{min}}–{{max}} {{unit}}).",
+            "adaptivePlausibilityBand": "Límites de plausibilidad según tu nivel de actividad (×{{multiplier}}): {{min}}–{{max}} {{unit}}. La estimación está dentro de este rango, así que se usa tal cual.",
+            "adjustmentMode": "Ajuste del objetivo diario de calorías: {{mode}}",
+            "bmrMeasuredScope": "Un valor medido solo cuenta el día en que se registró. Los días sin él vuelven a la fórmula. Para dejar de usar valores medidos, desactiva «Usar la TMB medida de los controles y los dispositivos sincronizados» en los ajustes de cálculo.",
+            "deviceProjectionCaveat": "En este modo el objetivo de tu diario procede del total de calorías de tu dispositivo proyectado hasta la medianoche, que aquí no se conoce. Las cifras de abajo corresponden a la derivación del objetivo guardado y diferirán de lo que muestra el diario.",
+            "intakeWindow": "(media de {{logged}} días registrados entre {{start}} y {{end}}; los días por debajo de 200 kcal se excluyen, no cuentan como cero)",
+            "modeAdaptive": "Objetivo adaptativo",
+            "modeDevice": "Proyección del dispositivo",
+            "modeDynamic": "Objetivo dinámico",
+            "modeFixed": "Objetivo fijo",
+            "modePercentage": "Recuperación por porcentaje",
+            "tdeeSum": "({{intake}} {{sign}} {{delta}})",
+            "weightTrendCalories": "Energía de esa tendencia: −({{daily}} {{massUnit}}/día × {{kcalPerUnit}} kcal/{{massUnit}}) ≈ {{value}}",
+            "weightTrendTerm": "Tendencia de peso: {{start}} → {{end}} ({{change}} a lo largo de los {{days}} días de la ventana) = {{daily}} {{massUnit}}/día — medias de 7 días de tus pesos registrados, no las lecturas en sí, rellenando los días que faltan a partir de los días anterior y posterior"
         },
         "copyAllError": "Error al copiar el día completo.",
         "copyAllFromYesterday": "Copiar todo lo de ayer",
@@ -2116,7 +2185,37 @@
         "loadError": "Error al cargar los registros de alimentos.",
         "mealAddError": "Error al añadir la comida.",
         "mealAddSuccess": "Comida añadida con éxito.",
-        "mealDeleteError": "Error al eliminar la comida."
+        "mealDeleteError": "Error al eliminar la comida.",
+        "caffeine": {
+            "activeCaffeine": "Cafeína activa",
+            "activeNow": "Activa ahora",
+            "anytimeSafe": "A cualquier hora",
+            "atBedtime": "Al acostarte",
+            "bedtimeCutoff": "Último café antes de",
+            "contributingDoses": "Dosis recientes (48 h)",
+            "crossingNote": "Por debajo de {{threshold}} mg a partir de las {{time}}",
+            "cutoffDesc": "Para una dosis de {{dose}} mg",
+            "cutoffOver": "Ya has superado el límite de esta noche",
+            "cutoffOverDesc": "Ya superas los {{threshold}} mg a la hora de acostarte",
+            "cutoffPassed": "Ya es tarde para otra",
+            "empty": "No hay cafeína registrada para este día.",
+            "estimatedTimes": "Horas estimadas",
+            "failedToLoad": "No se pudieron cargar los datos de cafeína activa.",
+            "halfLifeLabel": "Semivida de {{hours}} h",
+            "legendBedtime": "Hora de acostarse: {{time}}",
+            "legendCurve": "Cafeína activa",
+            "legendCutoff": "Última dosis de {{dose}} mg: {{time}}",
+            "legendDose": "Dosis registrada",
+            "legendEstimated": "Hora supuesta",
+            "legendNow": "Ahora",
+            "legendThreshold": "Umbral de sueño de {{threshold}} mg",
+            "sleepImpactHigh": "Impacto alto en el sueño",
+            "sleepImpactLow": "Impacto bajo en el sueño",
+            "sleepImpactMinimal": "Impacto mínimo en el sueño",
+            "sleepImpactModerate": "Impacto moderado en el sueño",
+            "title": "Cinética de la cafeína",
+            "underThreshold": "Esta noche se mantiene por debajo de {{threshold}} mg"
+        }
     },
     "foodDiary": {
         "title": "Diario de comida",
@@ -2148,7 +2247,13 @@
             "deletedSuccess": "Toma eliminada",
             "deletedError": "Error al eliminar la toma",
             "editTime": "Pulsa para cambiar la hora",
-            "noManualToRemove": "Aquí solo se puede eliminar el agua registrada manualmente"
+            "noManualToRemove": "Aquí solo se puede eliminar el agua registrada manualmente",
+            "fromFood": "Incluye {{volume}} {{unit}} procedentes de alimentos",
+            "linkedDrink": "Vinculado a un registro de alimento",
+            "linkedFoodRemoved": "El registro de alimento vinculado también se eliminó de tu diario de comidas.",
+            "linkedFoodRemovedTitle": "Registro de alimento eliminado",
+            "noWaterCredit": "sin agua",
+            "noWaterCreditHint": "Esta bebida está configurada para no contar como agua"
         },
         "copyFoodEntryDialog": {
             "title": "Copiar entradas de comida",
@@ -2275,7 +2380,8 @@
             "sleep": "Sueño"
         },
         "bmr": "TMB (kcal)",
-        "noRecentActivity": "No se encontró actividad reciente."
+        "noRecentActivity": "No se encontró actividad reciente.",
+        "failedToLoadPreviousCustom": "No se pudieron cargar los valores personalizados anteriores."
     },
     "sleepTimelineEditor": {
         "sleepTimeline": "Línea de tiempo del sueño",
@@ -2332,7 +2438,7 @@
         "addAnotherSleepSession": "Añadir otra sesión de sueño",
         "savingSleep": "Guardando sueño...",
         "saveSleep": "Guardar sueño",
-        "sleepEntryFor": "Registro de sueño para",
+        "sleepEntryFor": "Registro de sueño para {{date}}",
         "cancel": "Cancelar",
         "save": "Guardar",
         "edit": "Editar",
@@ -2440,7 +2546,11 @@
         "foods": "alimentos",
         "name": "Nombre",
         "removeFromFavorites": "Eliminar de favoritos",
-        "notes": "Notas"
+        "notes": "Notas",
+        "bulkDeleteDescription": "Elimina estos {{count}} alimentos de tu biblioteca y de cualquier comida o plan de comidas. Los registros que ya hayas hecho se conservan en tu diario.",
+        "deleteKeepsDiaryHint": "Al eliminarlo, el alimento desaparece de tu biblioteca, comidas y planes de comidas. Los registros de tu diario conservan su nombre, marca e información nutricional.",
+        "deleteMealPlanKeepsPastHistoryHint": "Este alimento se usa en tus planes de comidas. Al eliminarlo se quitarán de tu diario las comidas planificadas futuras, conservando el historial ya registrado.",
+        "deleteWithHistory": "Eliminar incluyendo el historial"
     },
     "mealManagement": {
         "failedToLoadMeals": "Error al cargar las comidas.",
@@ -2767,7 +2877,10 @@
             "vitaminC": "Vitamina C (mg)",
             "calcium": "Calcio (mg)",
             "iron": "Hierro (mg)",
-            "netCarbs": "Carbohidratos netos (g)"
+            "netCarbs": "Carbohidratos netos (g)",
+            "alcohol": "Alcohol (g)",
+            "caffeine": "Cafeína (mg)",
+            "waterContent": "Contenido de agua (ml)"
         },
         "exerciseEntriesExportHeaders": {
             "date": "Fecha",
@@ -2889,7 +3002,8 @@
             "elapsedTime": "Tiempo transcurrido",
             "elevationRange": "Elevación mín. / máx",
             "movingTime": "Tiempo en movimiento",
-            "weather": "Clima"
+            "weather": "Clima",
+            "avgMovingPace": "Ritmo medio en movimiento"
         },
         "bodyBattery": "Nivel de energía",
         "charged": "Cargada",
@@ -3027,7 +3141,29 @@
         "hips": "Caderas",
         "height": "Altura",
         "bodyFatPercentage": "% de grasa corporal",
-        "nutrientBalance": "Balance de {{nutrient}}"
+        "nutrientBalance": "Balance de {{nutrient}}",
+        "alcohol": {
+            "drinksOver_one": "{{count}} bebida de más",
+            "drinksOver_many": "{{count}} bebidas de más",
+            "drinksOver_other": "{{count}} bebidas de más",
+            "drinksRemaining_one": "Queda {{count}} bebida",
+            "drinksRemaining_many": "Quedan {{count}} bebidas",
+            "drinksRemaining_other": "Quedan {{count}} bebidas",
+            "limit": "Límite",
+            "noLimit": "Sin límite semanal establecido",
+            "onTrack": "Por debajo del límite",
+            "overLimit": "Por encima del límite",
+            "standardDrinks": "bebidas est.",
+            "upcomingDay": "Aún no",
+            "weeklyAlcohol": "Ingesta semanal de alcohol"
+        },
+        "avgVarianceTargetRangeDescription": "Desviación media diaria fuera del rango objetivo",
+        "daysInTargetRange": "{{inRange}} de {{total}} días dentro del rango",
+        "failedToLoadAlcoholWeek": "No se pudieron cargar los datos semanales de alcohol.",
+        "failedToLoadHydrationTrend": "No se pudieron cargar los datos de tendencia de hidratación.",
+        "hydration": {
+            "title": "Hidratación"
+        }
     },
     "exerciseReportsDashboard": {
         "loadingExerciseData": "Cargando datos de ejercicio...",
@@ -3644,7 +3780,11 @@
         "autoCalculateSelect": "Incluir en el cálculo automático masivo",
         "autoCalculateSelectAll": "Seleccionar todo",
         "autoCalculateSelectNone": "Deseleccionar todo",
-        "autoCalculateApplySelected": "Calcular automáticamente seleccionados ({{count}})"
+        "autoCalculateApplySelected": "Calcular automáticamente seleccionados ({{count}})",
+        "abv": "Graduación alcohólica (%)",
+        "alcohol": "Alcohol",
+        "caffeine": "Cafeína",
+        "waterContent": "Contenido de agua"
     },
     "calculationSettings": {
         "showNetCarbs": "Mostrar carbohidratos netos (carboh menos fibra)",
@@ -3680,7 +3820,9 @@
         "bodyFatAlgorithmOptions": {
             "usNavy": "Marina de EE. UU.",
             "bmiMethod": "Método IMC"
-        }
+        },
+        "useExternalBmr": "Usar la TMB medida de los controles y los dispositivos sincronizados",
+        "useExternalBmrHint": "Desactivado por defecto: hasta que lo actives se usa siempre la fórmula que hayas elegido. Si lo activas, una TMB registrada en un control o sincronizada desde una báscula inteligente o un proveedor de salud sustituye a la fórmula ese día, siempre que sea fisiológicamente plausible para ti. Algunos dispositivos informan de la TMB como un total diario acumulado en vez de como una tasa, por eso hay que activarlo manualmente."
     },
     "sync": {
         "syncAll": "Sincronizar todos los proveedores activos",
@@ -4398,7 +4540,7 @@
         }
     },
     "layout": {
-        "welcome": "Bienvenido {{activeUserName}}"
+        "welcome": "Bienvenido/a {{activeUserName}}"
     },
     "workoutLaps": {
         "lap": "Vuelta",
@@ -4424,7 +4566,14 @@
         "low": "bajo: {{val}}",
         "max": "Máx: {{val}}",
         "readiness": "Estado de preparación",
-        "recHours": "Rec: {{val}}"
+        "recHours": "Rec: {{val}}",
+        "acute": "aguda",
+        "chronic": "Crónica: {{val}}",
+        "empty": "No hay datos de wearables sincronizados para este día.",
+        "ratio": "Ratio: {{val}}",
+        "skinTemp": "Temperatura de la piel",
+        "trainingLoad": "Carga de entrenamiento",
+        "weekly": "semanal"
     },
     "food": {
         "imagesReorderHint": "Arrastra para reordenar. La primera imagen se utilizará como miniatura.",
@@ -4472,7 +4621,11 @@
         "normalRHR": "Adulto normal: 60-100 ppm",
         "normalRange": "Normal: 12-20 rpm",
         "pulseOx": "Pulsioximetría (SpO2)",
-        "range": "Rango"
+        "range": "Rango",
+        "dailyTrend": "Tendencia",
+        "overnightHrvSeriesDesc": "Serie de VFC nocturna en intervalos de 5 minutos",
+        "overnightSeries": "Serie nocturna",
+        "spotTests": "Mediciones puntuales"
     },
     "sleepSummary": {
         "title": "Sueño de anoche",
@@ -4999,7 +5152,27 @@
         "successTitle": "Éxito",
         "signedOut": "Sesión cerrada correctamente",
         "signOutFailed": "Error al cerrar sesión",
-        "signOut": "Cerrar sesión"
+        "signOut": "Cerrar sesión",
+        "agreeAndEnter": "Acepto y entrar en la demo",
+        "demoAgreeCheckbox": "Acepto los términos de la licencia y me comprometo a no hacer un uso indebido de este entorno de evaluación.",
+        "demoLicenseDesc": "Al usar esta demo, aceptas la licencia del proyecto.",
+        "demoLicenseTitle": "Licencia y términos",
+        "demoLockedDesc": "Por estabilidad, en la cuenta compartida de demostración están desactivadas las modificaciones de credenciales, la configuración de MFA y de claves de acceso, y las integraciones OAuth con dispositivos externos.",
+        "demoLockedTitle": "Ajustes protegidos",
+        "demoLoginSuccess": "¡Bienvenido a la demo de SparkyFitness!",
+        "demoPrivacyDesc": "Esta es una instancia de demostración pública y compartida. NO introduzcas historiales médicos reales, contraseñas ni datos personales confidenciales.",
+        "demoPrivacyTitle": "Aviso de entorno público",
+        "demoResetDesc": "Todos los registros del diario de comidas, los entrenamientos y las medidas se reinician automáticamente cada 24 horas para mantener fresco el conjunto de datos de ejemplo.",
+        "demoResetTitle": "Reinicio automático diario (00:00 UTC)",
+        "demoSandbox": "Entorno de pruebas público",
+        "demoSubtext": "Entorno interactivo • Se reinicia a diario a las 00:00 UTC",
+        "demoTermsDesc": "Este entorno de pruebas es exclusivamente para evaluar el software. Quedan estrictamente prohibidos el sondeo de seguridad, el scraping automatizado y los bots, los ataques DDoS, la explotación de vulnerabilidades y cualquier actividad maliciosa.",
+        "demoTermsTitle": "Política de uso aceptable y contra el uso indebido",
+        "demoWelcomeSubtitle": "Revisa y acepta los términos de la demo antes de entrar.",
+        "demoWelcomeTitle": "Bienvenido a la demo de SparkyFitness",
+        "enteringDemo": "Entrando en la demo...",
+        "exploreDemo": "🚀 Explorar la demo en vivo (acceso en 1 clic)",
+        "viewLicense": "Ver licencia"
     },
     "copied": "¡Copiado!",
     "copyFoodEntryDialog": {
@@ -5083,7 +5256,12 @@
         "stravaError": "No se pudo vincular la cuenta de Strava. Por favor, inténtalo de nuevo.",
         "stravaSuccess": "Tu cuenta de Strava se ha vinculado con éxito.",
         "withingsError": "No se pudo vincular la cuenta de Withings. Por favor, inténtalo de nuevo.",
-        "withingsSuccess": "Tu cuenta de Withings se ha vinculado con éxito."
+        "withingsSuccess": "Tu cuenta de Withings se ha vinculado con éxito.",
+        "liftosaurSyncDetails": "Sincronizado: {{workoutsImported}} entrenamientos y {{measurementsImported}} medidas importados.",
+        "liftosaurSyncError": "Falló la sincronización con Liftosaur. Comprueba tu clave de API en los ajustes.",
+        "liftosaurSyncErrorDesc": "Falló la sincronización con Liftosaur. Comprueba tu clave de API en los ajustes.",
+        "liftosaurSyncSuccess": "Datos de Liftosaur sincronizados correctamente.",
+        "liftosaurSyncSuccessTitle": "Liftosaur sincronizado correctamente"
     },
     "mealCreation": {
         "convertToMeal": "Crear comida desde el diario",
@@ -5324,7 +5502,12 @@
         "startDate": "Fecha de inicio",
         "syncNow": "Iniciar sincronización",
         "timeoutWarning": "Para rangos de fechas amplios, el navegador puede agotar el tiempo de espera, pero el servidor continuará la sincronización en segundo plano.",
-        "title": "Sincronizar datos de {{provider}}"
+        "title": "Sincronizar datos de {{provider}}",
+        "modeCapture": "Sincronizar desde {{provider}} y guardar las respuestas en bruto de esta sincronización en un fichero del servidor",
+        "modeLive": "Sincronizar normalmente desde {{provider}}",
+        "modeReplay": "Sincronizar desde el fichero guardado anteriormente en lugar de desde {{provider}}",
+        "replayIgnoresDates": "Aquí no se aplica el rango de fechas: el fichero guardado se reproduce por completo, cubriendo el periodo en el que se capturó.",
+        "troubleshooting": "Solución de problemas"
     },
     "warning": "Advertencia",
     "workout": {
@@ -5434,7 +5617,33 @@
         "primary": "Principal",
         "setPrimary": "Establecer como principal",
         "deleted": "Recipiente de agua eliminado.",
-        "primaryUpdated": "Recipiente principal actualizado."
+        "primaryUpdated": "Recipiente principal actualizado.",
+        "cancel": "Cancelar",
+        "changeQuantity": "Cambiar cantidad/unidad",
+        "edit": "Editar",
+        "editContainer": "Editar recipiente",
+        "hydrationFactor": "Factor de hidratación",
+        "hydrationFactorExample": "Con {{factor}}, una pulsación añade {{credited}} {{unit}} a tu anillo de agua de los {{total}} {{unit}} de la bebida. Las calorías, la cafeína y el alcohol siempre cuentan por completo.",
+        "hydrationFactorHelp": "Escala solo el crédito de agua: 1 para el agua, unos 0,9 para el café o el té, y 0 para una bebida que no deba contar como agua en absoluto. Las calorías, la cafeína y el alcohol siempre cuentan por completo.",
+        "linkFood": "Vincular a un alimento",
+        "linkFoodRequired": "Vincula primero un alimento",
+        "linkFoodRequiredHint": "Un recipiente de bebida registra un alimento, así que elige el que contiene este recipiente.",
+        "linkedFood": "Alimento vinculado",
+        "modeLinked": "Una pulsación registra en tu diario el alimento de abajo y acredita su agua.",
+        "modePlain": "Una pulsación acredita este volumen de agua natural.",
+        "perPress": "Una pulsación registra",
+        "quantity": "Cantidad",
+        "saveChanges": "Guardar cambios",
+        "searchFood": "Buscar alimento para vincular",
+        "selectMealType": "Categoría de comida",
+        "selectMealTypePlaceholder": "Selecciona la categoría de comida (opcional)",
+        "servingsCount_one": "{{count}} porción",
+        "servingsCount_many": "{{count}} porciones",
+        "servingsCount_other": "{{count}} porciones",
+        "tabDrink": "Bebida (alimento vinculado)",
+        "tabWater": "Agua",
+        "unlinkFood": "Desvincular",
+        "updated": "Recipiente de agua actualizado."
     },
     "homeFasting": {
         "startNew": "Empieza un nuevo ayuno",
@@ -5480,7 +5689,8 @@
             "low": "Aproximada"
         },
         "aboutThisFood": "Acerca de este alimento",
-        "entryNotes": "Nota para esta entrada (opcional)"
+        "entryNotes": "Nota para esta entrada (opcional)",
+        "deletedFoodNote": "Este alimento ya no está en tu base de datos de alimentos. Se muestran los detalles guardados en este registro del diario."
     },
     "release": {
         "whatsNew": "Novedades"
@@ -5676,7 +5886,10 @@
             "title": "Rutas coincidentes e historial de recorridos (\"Carreras coincidentes\")",
             "description": "Actividades en circuitos recurrentes agrupadas para comparar tu ritmo a lo largo del tiempo.",
             "average": "Prom:",
-            "bestPace": "Mejor ritmo:"
+            "bestPace": "Mejor ritmo:",
+            "runs_one": "{{count}} carrera",
+            "runs_many": "{{count}} carreras",
+            "runs_other": "{{count}} carreras"
         },
         "volume": {
             "emptyTitle": "Volumen de ejercicio y tiempos totales",
@@ -5684,7 +5897,10 @@
             "title": "Volumen de ejercicio y totales por intervalo",
             "distance": "Distancia",
             "duration": "Duración",
-            "calories": "Calorías"
+            "calories": "Calorías",
+            "summary_one": "Agrupado por {{interval}} • Total {{distance}} {{unit}} en {{count}} entrenamiento",
+            "summary_many": "Agrupado por {{interval}} • Total {{distance}} {{unit}} en {{count}} entrenamientos",
+            "summary_other": "Agrupado por {{interval}} • Total {{distance}} {{unit}} en {{count}} entrenamientos"
         },
         "records": {
             "title": "Matriz de récords personales y mejores esfuerzos",
@@ -5740,7 +5956,24 @@
     "markdownEditor": {
         "write": "Escribir",
         "preview": "Previsualizar",
-        "bold": "Negrita"
+        "bold": "Negrita",
+        "bulletList": "Lista con viñetas",
+        "charactersRemaining": "Quedan {{count}} caracteres",
+        "chooseImage": "Inserta una de las fotos de este elemento",
+        "code": "Código",
+        "collapse": "Reducir el editor",
+        "expand": "Ampliar el editor",
+        "heading": "Encabezado",
+        "imageAlt": "foto {{number}}",
+        "insertImage": "Insertar foto",
+        "italic": "Cursiva",
+        "link": "Enlace",
+        "nothingToPreview": "Aún no hay nada que previsualizar.",
+        "numberedList": "Lista numerada",
+        "quote": "Cita",
+        "strikethrough": "Tachado",
+        "table": "Tabla",
+        "taskList": "Lista de tareas (solo visualización)"
     },
     "openFoodFactsContribution": {
         "title": "Contribuir con Open Food Facts",
@@ -5751,6 +5984,67 @@
         "nutritionPhoto": "Etiqueta nutricional",
         "frontPhoto": "Frontal del producto",
         "packagingPhoto": "Envase",
-        "unavailable": "Para colaborar, necesitas subir tu propia comida personalizada, tener activada la configuración del servidor y una cuenta de Open Food Facts disponible."
+        "unavailable": "Para colaborar, necesitas subir tu propia comida personalizada, tener activada la configuración del servidor y una cuenta de Open Food Facts disponible.",
+        "dataConsent": "He introducido estos datos a partir del envase físico, he comprobado los valores exactos de arriba y acepto publicarlos bajo la ODbL y la Database Contents License.",
+        "existingProduct": "Esta contribución actualiza un producto público existente. Revisa su información actual antes de confirmar.",
+        "expired": "Esta previsualización ha caducado. Solicita y revisa una nueva.",
+        "field": "Campo",
+        "fieldsCaption": "Todos los campos que se publicarán",
+        "globalAccount": "La cuenta compartida de Open Food Facts del servidor",
+        "imageAlt": "Foto que se publicará",
+        "imageConsent": "He hecho esta foto, tengo los derechos para compartirla y acepto publicarla bajo CC BY-SA.",
+        "imageError": "Elige una foto JPEG, PNG o WebP nítida de menos de 20 MB, con al menos 640 píxeles en su lado más largo y 160 en el más corto, y un máximo de 40 megapíxeles.",
+        "imageTypeLabel": "Contenido de la foto",
+        "newProduct": "Esta contribución crea un producto público.",
+        "partialTitle": "Foto publicada; datos del producto sin confirmar",
+        "personalAccount": "Tu cuenta personal de Open Food Facts",
+        "preparing": "Preparando la previsualización…",
+        "preview": "Previsualizar la contribución",
+        "previewError": "No se pudo preparar la previsualización.",
+        "previewTitle": "Revisa esta contribución exacta",
+        "publish": "Publicar esta contribución",
+        "publishError": "No se pudo confirmar la publicación. Comprueba el producto antes de preparar una nueva contribución.",
+        "publishing": "Publicando…",
+        "successTitle": "Contribución publicada",
+        "value": "Valor exacto"
+    },
+    "drink_presets": {
+        "addFailed": "No se pudo añadir la bebida predefinida.",
+        "addFromCatalog": "Añadir desde el catálogo",
+        "addPreset": "Añadir bebida predefinida",
+        "alcohol": "Alcohol",
+        "alcoholBadge": "{{abv}} % de alcohol",
+        "all": "Todas",
+        "alreadyAdded": "Añadida",
+        "beer_bottle": "Cerveza (botellín 5 %)",
+        "beer_pint": "Cerveza (pinta 4,5 %)",
+        "black_tea": "Té negro",
+        "caffeine": "Cafeína",
+        "caffeineBadge": "{{amount}} mg de cafeína",
+        "cappuccino": "Capuchino",
+        "catalogDescription": "Elige una bebida predefinida para añadirla a tus botones de añadido rápido.",
+        "catalogTitle": "Catálogo de bebidas predefinidas",
+        "cola": "Cola",
+        "description": "Ajustes predefinidos de un toque para las bebidas con cafeína y alcohólicas más habituales",
+        "double_espresso": "Espresso doble",
+        "drip_coffee": "Café de filtro",
+        "energy_drink": "Bebida energética",
+        "espresso": "Espresso",
+        "green_tea": "Té verde",
+        "hydration": "Hidratación",
+        "instant_coffee": "Café instantáneo",
+        "latte": "Latte",
+        "noPresets": "Aún no tienes bebidas predefinidas de añadido rápido. Añade espresso, café, té o cerveza desde el catálogo.",
+        "presetAdded": "Bebida predefinida añadida correctamente.",
+        "quickAdd": "Bebidas de añadido rápido",
+        "spirit_single": "Licor (medida simple 40 %)",
+        "title": "Bebidas predefinidas de añadido rápido",
+        "wine_glass": "Vino (175 ml 12 %)"
+    },
+    "markdownView": {
+        "externalImage": "imagen externa",
+        "imageBlocked": "Imagen externa bloqueada",
+        "imageBlockedFrom": "Imagen externa bloqueada: {{host}}",
+        "imageFromHost": "imagen de {{host}}"
     }
 }
