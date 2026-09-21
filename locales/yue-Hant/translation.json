@@ -1729,7 +1729,9 @@
                 "ollamaFullProfileWarningTitle": "本地模型嘅潛在效能影響",
                 "ollamaFullProfileWarningHint": "除非您部機效能好強（例如高顯存 GPU），否則用完整工具集行本地模型可能會明顯延遲或出錯，如果效能慢或者模型變亂，就轉用核心工具集.",
                 "visionNone": "無",
-                "visionService": "全局視覺 AI 服務"
+                "visionService": "全局視覺 AI 服務",
+                "allowPrivateNetworkAi": "允許私人網絡端點（例如本機 Ollama/vLLM）",
+                "allowPrivateNetworkAiDescription": "容許連接位於私人 IP 地址（10.0.0.0/8、172.16.0.0/12、192.168.0.0/16、localhost）上嘅 AI 端點."
             },
             "userSettings": {
                 "title": "所有功能",
@@ -2268,7 +2270,11 @@
             "failedToSaveLoginSettings": "儲存登入設定失敗.",
             "loadingSettings": "載入緊設定…",
             "loginSettingUpdated": "登入設定更新成功.",
-            "settingsSaved": "設定已儲存"
+            "settingsSaved": "設定已儲存",
+            "publicApiDocs": "公開 API 文件",
+            "publicApiDocsDescription": "容許無需用戶登入即可存取 Swagger API 文件（/api/api-docs）.",
+            "devTools": "開發者診斷工具",
+            "devToolsDescription": "為管理員啟用 MCP 同診斷資料庫檢查工具."
         },
         "backupSettings": {
             "title": "資料備份參數",
@@ -2351,7 +2357,7 @@
             "issuerUrl": "發證單位網址",
             "clientId": "客戶端編號",
             "clientSecret": "客戶端密碼",
-            "leaveUnchanged": "如果原本有密碼就唔好郁，留返星號*****就得",
+            "leaveUnchanged": "留空即可保留現有密鑰",
             "scope": "授權權限範圍",
             "redirectUri": "跳轉回傳網址",
             "redirectUriPlaceholder": "舉個例：{{uri}}",
@@ -2631,7 +2637,9 @@
         "welcomeUser": "歡迎 {{name}}",
         "selectAll": "全選",
         "selectRow": "揀行",
-        "unknown": "未知"
+        "unknown": "未知",
+        "avg": "平均",
+        "max": "最高"
     },
     "diary": {
         "nutritionSummary": "營養總覽",
@@ -2846,7 +2854,8 @@
             "legendNow": "而家",
             "legendDose": "已記錄劑量",
             "legendEstimated": "假設時間",
-            "legendCutoff": "最後 {{dose}} 毫克劑量，{{time}}"
+            "legendCutoff": "最後 {{dose}} 毫克劑量，{{time}}",
+            "empty": "今日冇記錄任何咖啡因."
         }
     },
     "foodDiary": {
@@ -3634,7 +3643,8 @@
             "elapsedTime": "經過時間",
             "elevationRange": "最低 / 最高海拔",
             "movingTime": "移動時間",
-            "weather": "天氣"
+            "weather": "天氣",
+            "avgMovingPace": "平均移動配速"
         },
         "bodyBattery": "身體體能電量",
         "charged": "電量充足",
@@ -3821,7 +3831,11 @@
         "normalRHR": "成人正常：60-100 bpm",
         "normalRange": "正常：12-20 brpm",
         "pulseOx": "血氧（SpO2）",
-        "range": "範圍"
+        "range": "範圍",
+        "dailyTrend": "趨勢",
+        "overnightSeries": "夜間序列",
+        "overnightHrvSeriesDesc": "每 5 分鐘一次嘅整夜 HRV 序列",
+        "spotTests": "抽查測試"
     },
     "sleepSummary": {
         "title": "尋晚瞓覺總覽",
@@ -5196,7 +5210,12 @@
         "stravaError": "關聯 Strava 帳號失敗.請再試.",
         "stravaSuccess": "您嘅 Strava 帳號已成功關聯.",
         "withingsError": "關聯 Withings 帳號失敗.請再試.",
-        "withingsSuccess": "您嘅 Withings 帳號已成功關聯."
+        "withingsSuccess": "您嘅 Withings 帳號已成功關聯.",
+        "liftosaurSyncError": "Liftosaur 同步失敗，請喺設定入面檢查您嘅 API 金鑰.",
+        "liftosaurSyncErrorDesc": "Liftosaur 同步失敗，請檢查設定入面嘅 API 金鑰.",
+        "liftosaurSyncSuccess": "Liftosaur 數據同步成功.",
+        "liftosaurSyncSuccessTitle": "Liftosaur 同步成功",
+        "liftosaurSyncDetails": "已同步：匯入咗 {{workoutsImported}} 組訓練同 {{measurementsImported}} 項測量."
     },
     "mealCreation": {
         "convertToMeal": "由日記建立餐膳",
@@ -5437,7 +5456,12 @@
         "startDate": "開始日期",
         "syncNow": "開始同步",
         "timeoutWarning": "對於較大嘅日期範圍，瀏覽器可能會超時，但伺服器會喺背景繼續同步.",
-        "title": "同步 {{provider}} 數據"
+        "title": "同步 {{provider}} 數據",
+        "troubleshooting": "疑難排解",
+        "modeLive": "正常由 {{provider}} 同步",
+        "modeCapture": "由 {{provider}} 同步，並將今次同步嘅原始回應儲存做伺服器上嘅檔案",
+        "modeReplay": "由之前儲存嘅檔案同步，代替連接 {{provider}}",
+        "replayIgnoresDates": "日期範圍喺呢度唔適用——儲存嘅檔案會完整重播，涵蓋原本錄製嘅任何時段."
     },
     "warning": "警告",
     "workout": {
@@ -5949,7 +5973,14 @@
         "vo2Max": "最大攝氧量",
         "fitnessAge": "適合年齡：{{val}}",
         "readiness": "準備就緒",
-        "recHours": "錄入: {{val}}"
+        "recHours": "錄入: {{val}}",
+        "trainingLoad": "訓練負荷",
+        "acute": "短期負荷",
+        "ratio": "比率：{{val}}",
+        "chronic": "長期負荷：{{val}}",
+        "empty": "今日冇同步到任何穿戴裝置數據.",
+        "skinTemp": "皮膚溫度",
+        "weekly": "每週"
     },
     "drink_presets": {
         "title": "快速加入飲品預設",
