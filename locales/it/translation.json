@@ -2396,7 +2396,8 @@
         "vo2Max": "VO2 max",
         "fitnessAge": "Età fisica: {{val}}",
         "readiness": "Preparazione",
-        "recHours": "Rec: {{val}}"
+        "recHours": "Rec: {{val}}",
+        "trainingLoad": "Carico allenante"
     },
     "foods": {
         "providerVerified": "Alimenti certificati",
@@ -2527,7 +2528,11 @@
         "dataConsent": "Ho inserito questi dati dalla confezione fisica, ho verificato i valori esatti sopra riportati e acconsento a pubblicarli sotto la licenza ODbL e la Database Contents License.",
         "imageConsent": "Ho scattato questa foto, detengo i diritti per condividerla e acconsento a pubblicarla sotto licenza CC BY-SA.",
         "publish": "Pubblica questo contributo",
-        "publishing": "Pubblico…"
+        "publishing": "Pubblico…",
+        "publishError": "La pubblicazione non può essere confermata. Controlla il prodotto prima di preparare uan nuova partecipazione.",
+        "expired": "L'anteprima è scaduta. Richiedi e controlla una nuova anteprima.",
+        "successTitle": "Partecipazione pubblicata",
+        "partialTitle": "Foto pubblicata; dati del prodotto non confermati"
     },
     "healthMetrics": {
         "steps": "Passi",
