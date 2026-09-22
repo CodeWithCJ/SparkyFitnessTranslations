@@ -226,7 +226,7 @@
             "cyclic": "Zyklus (an/aus)",
             "prn": "Bei Bedarf",
             "pill": "Tablette",
-            "tablet": "Tabellet",
+            "tablet": "Tablette",
             "capsule": "Kapsel",
             "liquid": "Flüssigkeit",
             "patch": "Pflaster",
@@ -256,7 +256,7 @@
         "retry": "Erneut versuchen",
         "inactive": "Inaktiv",
         "form": {
-            "newTitle": "Neu Medikament",
+            "newTitle": "Neues Medikament",
             "editTitle": "Medikament bearbeiten",
             "name": "Name *",
             "namePlaceholder": "Ipsumol",
@@ -303,7 +303,7 @@
             "details": "Details",
             "prescriber": "Verschreibende Person",
             "pharmacy": "Apotheke",
-            "rxNumber": "Rx Nummer",
+            "rxNumber": "Rezeptnummer",
             "notes": "Notizen",
             "delete": "Medikament löschen",
             "logged": "Eingetragen",
@@ -358,7 +358,7 @@
             "monthly": "Monatlich",
             "cycle": "{{on}}, {{off}}",
             "asNeeded": "Bei Bedarf",
-            "taper": "Tippeer",
+            "taper": "Ausschleichen",
             "at": "{{frequency}} um {{time}}",
             "unknown": "Zeitplan",
             "cycleOn_one": "{{count}} Tag an",
@@ -634,13 +634,13 @@
             "clearAllSets": "Alle erfassten Sätze leeren",
             "discardWorkout": "Training verwerfen",
             "elapsedTime": "{{time}} vergangen",
-            "endWorkout": "Beenden Training",
+            "endWorkout": "Training beenden",
             "exerciseProgress_one": "{{completed}} / {{count}} Übung",
             "exerciseProgress_other": "{{completed}} / {{count}} Übungen",
             "renameWorkout": "Training umbenennen",
             "reorderExercises": "Übungen neu anordnen",
             "menu": "Training Menü",
-            "settings": "Training Einstellungen"
+            "settings": "Trainingseinstellungen"
         },
         "exerciseCard": {
             "addNote": "Füge eine Notiz zu dieser Übung hinzu…",
@@ -802,7 +802,7 @@
         "mealTypes": "Mahlzeitentypen",
         "dashboardSettings": "Dashboard Einstellungen",
         "diarySettings": "Tagebuch Einstellungen",
-        "workoutSettings": "Training Einstellungen",
+        "workoutSettings": "Trainingseinstellungen",
         "serverSettings": "Server-Einstellungen",
         "passkeys": "Zugangsschlüssel",
         "about": "Über",
@@ -1291,7 +1291,7 @@
         "waterReminderInvalidWindow": "Die Endzeit muss nach der Startzeit liegen."
     },
     "workoutSettings": {
-        "title": "Training Einstellungen",
+        "title": "Trainingseinstellungen",
         "defaultRest": "Standard-Pausendauer",
         "defaultRestSubtitle": "Pause zwischen Sätzen für neu hinzugefügte Übungen.",
         "defaultRestAccessibility": "Standard-Pausendauer, {{duration}}",
@@ -1332,7 +1332,7 @@
         "monthly": "Monatlich",
         "cycle": "{{on}}, {{off}}",
         "asNeeded": "Bei Bedarf",
-        "taper": "Tippeer",
+        "taper": "Ausschleichen",
         "at": "{{frequency}} um {{time}}",
         "cycleOn_one": "{{count}} Tag an",
         "cycleOn_other": "{{count}} Tage an",
@@ -1538,7 +1538,7 @@
         "editExercise": "Übung bearbeiten",
         "exerciseDeleted": "Übung gelöscht",
         "failedAddExercise": "Fehler beim Hinzufügen der Übung",
-        "makePublicTitle": "machen öffentlich?",
+        "makePublicTitle": "Veröffentlichen?",
         "makePublicMessage": "Diese Übung wird für alle Nutzer auf diesem Server sichtbar.",
         "makePublic": "Veröffentlichen",
         "exerciseNamePlaceholder": "z. B. Bulgarian Split Squat",
@@ -1599,7 +1599,7 @@
         "resumeDraft": "Entwurf fortsetzen",
         "discardContinue": "Verwerfen & fortfahren",
         "editPreset": "Trainingsvorlage bearbeiten",
-        "makePresetPublicTitle": "machen öffentlich?",
+        "makePresetPublicTitle": "Veröffentlichen?",
         "makePresetPublicMessage": "Diese Trainingsvorlage wird für alle Nutzer auf diesem Server sichtbar.",
         "makePresetPublic": "Veröffentlichen",
         "presetDraftMessage": "Du hast einen ungespeicherten {{name}}-Entwurf. Was möchtest du tun?",
@@ -2894,7 +2894,7 @@
     "exerciseDetail": {
         "sharedPublicly": "Übung öffentlich geteilt",
         "madePrivate": "Übung auf privat gesetzt",
-        "makePublicTitle": "machen öffentlich?",
+        "makePublicTitle": "Veröffentlichen?",
         "makePublicMessage": "Diese Übung wird für alle Nutzer auf diesem Server sichtbar.",
         "makePublic": "Veröffentlichen",
         "deleted": "Übung gelöscht",
@@ -3063,7 +3063,7 @@
     "mealDetail": {
         "sharedPublicly": "Mahlzeit öffentlich geteilt",
         "madePrivate": "Mahlzeit auf privat gesetzt",
-        "makePublicTitle": "machen öffentlich?",
+        "makePublicTitle": "Veröffentlichen?",
         "makePublicMessage": "Diese Mahlzeit und alle ihre Zutaten-Lebensmittel werden für alle Nutzer auf diesem Server sichtbar.",
         "makePublic": "Veröffentlichen",
         "removeFavorite": "Aus Favoriten entfernen",
@@ -3518,7 +3518,7 @@
         "sharedPublicly": "Lebensmittel öffentlich geteilt",
         "madePrivate": "Lebensmittel auf privat gesetzt",
         "shareFailed": "Freigabe konnte nicht aktualisiert werden",
-        "makePublicTitle": "machen öffentlich?",
+        "makePublicTitle": "Veröffentlichen?",
         "makePublicMessage": "Dieses Lebensmittel wird für alle Nutzer auf diesem Server sichtbar.",
         "makePublic": "Veröffentlichen",
         "makePrivate": "Privat machen",
@@ -3977,9 +3977,9 @@
             "duplicated": "Trainingsvorlage dupliziert"
         },
         "share": {
-            "title": "machen öffentlich?",
+            "title": "Veröffentlichen?",
             "message": "Diese Trainingsvorlage wird für alle Nutzer auf diesem Server sichtbar.",
-            "confirm": "machen öffentlich"
+            "confirm": "Veröffentlichen"
         },
         "draft": {
             "title": "Entwurf in Bearbeitung",
