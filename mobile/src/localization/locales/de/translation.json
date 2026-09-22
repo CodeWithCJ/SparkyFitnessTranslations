@@ -991,7 +991,7 @@
         "food": "Essen",
         "tapToAddFood": "Tippe, um hinzufügen Ernährung",
         "healthTrends": "Gesundheit Trends",
-        "consumed": "Verbraucht",
+        "consumed": "konsumiert",
         "remaining": "verbleibend",
         "ofCalories": "von {{value}} kcal",
         "burned": "Verbrannt",
@@ -4237,8 +4237,8 @@
         "noStepData": "Keine Schrittdaten für diesen Zeitraum",
         "trendLoadFailed": "Trenddaten konnten nicht geladen werden",
         "noLoggedIntake": "Keine erfasste Aufnahme für diesen Zeitraum",
-        "consumed": "Verbraucht",
-        "tooltip": "{{value}}{{unit}} Verbraucht · {{date}}",
+        "consumed": "konsumiert",
+        "tooltip": "{{value}}{{unit}} konsumiert · {{date}}",
         "nutrients": {
             "loadFailed": "Trenddaten konnten nicht geladen werden",
             "empty": "Keine erfasste Aufnahme für diesen Zeitraum"
