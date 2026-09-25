@@ -1,1 +1,17 @@
-
+"widget.calorie.name" = "Kalorie";
+"widget.calorie.description" = "Přehled dnešního příjmu kalorií.";
+"widget.macro.name" = "Makra";
+"widget.macro.description" = "Přehled dnešního příjmu bílkovin, sacharidů a tuků.";
+"widget.kcal_left" = "Zbývá kcal";
+"widget.kcal" = "kcal";
+"widget.food" = "Jídlo";
+"widget.burned" = "Spáleno";
+"widget.goal" = "Cíl";
+"widget.protein" = "Bílkoviny";
+"widget.carbs" = "Sacharidy";
+"widget.fat" = "Tuky";
+"widget.grams" = "%@ g";
+"widget.a11y.kcal_left" = "%@ zbývá kcal";
+"widget.a11y.kcal" = "%@ kcal";
+"widget.search_food" = "Hledat jídlo";
+"widget.scan_barcode" = "Naskenovat čárový kód";
