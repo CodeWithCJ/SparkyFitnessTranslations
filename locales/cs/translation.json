@@ -83,7 +83,14 @@
         "vo2Max": "VO₂ max",
         "fitnessAge": "Věk: {{val}}",
         "readiness": "Připravenost",
-        "recHours": "Doba regenerace: {{val}}"
+        "recHours": "Doba regenerace: {{val}}",
+        "trainingLoad": "Tréninková zátěž",
+        "acute": "Akutní",
+        "ratio": "Poměr: {{val}}",
+        "chronic": "Chronická: {{val}}",
+        "empty": "Pro tento den nejsou synchronizována žádná data ze zařízení.",
+        "skinTemp": "Teplota pokožky",
+        "weekly": "Týdně"
     },
     "foodCsvImport": {
         "title": "Import dat o potravinách",
@@ -168,9 +175,9 @@
             "thu": "Čt",
             "fri": "Pá",
             "sat": "So",
-            "loggedCount_one": "{{count}} zaznamenané příznaky",
-            "loggedCount_few": "",
-            "loggedCount_other": "",
+            "loggedCount_one": "{{count}} zaznamenaný příznak",
+            "loggedCount_few": "{{count}} zaznamenané příznaky",
+            "loggedCount_other": "{{count}} zaznamenaných příznaků",
             "maxSeverity": "Maximální závažnost: {{n}}",
             "skipped": "Vynecháno"
         },
@@ -750,7 +757,11 @@
         "autoCalculateSelect": "Zahrnout do hromadného automatického výpočtu",
         "autoCalculateSelectAll": "Vybrat vše",
         "autoCalculateSelectNone": "Zrušit výběr",
-        "autoCalculateApplySelected": "Automaticky vypočítat vybrané ({{count}})"
+        "autoCalculateApplySelected": "Automaticky vypočítat vybrané ({{count}})",
+        "caffeine": "Kofein",
+        "waterContent": "Obsah vody",
+        "alcohol": "Alkohol",
+        "abv": "Obsah alkoholu (%)"
     },
     "calculationSettings": {
         "showNetCarbs": "Zobrazit čisté sacharidy (sacharidy mínus vláknina)",
@@ -786,7 +797,8 @@
         "saveSuccessDesc": "Nastavení výpočtů bylo úspěšně uloženo!",
         "selectBmrAlgorithm": "Vyberte algoritmus BMR",
         "selectBodyFatAlgorithm": "Vyberte algoritmus tělesného tuku",
-        "selectEnergyUnitPlaceholder": "Vyberte jednotku energie"
+        "selectEnergyUnitPlaceholder": "Vyberte jednotku energie",
+        "useExternalBmr": "Použít naměřený BMR z kontrolních měření a synchronizovaných zařízení"
     },
     "aboutDialog": {
         "title": "O SparkyFitness",
