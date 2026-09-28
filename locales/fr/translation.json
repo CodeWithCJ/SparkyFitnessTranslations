@@ -33,7 +33,10 @@
             "bio": "Bio",
             "tellAboutYourself": "Parlez-nous de vous",
             "saveProfile": "Sauvegarder le profil",
-            "saving": "Sauvegarde..."
+            "saving": "Sauvegarde...",
+            "enterHeight": "Saisissez votre taille",
+            "height": "Taille",
+            "uploading": "Téléversement…"
         },
         "preferences": {
             "title": "Préférences",
@@ -106,7 +109,10 @@
             "cups": "Tasses",
             "saveWaterDisplayUnit": "Sauvegarder l'unité de conso d'eau",
             "addExerciseWater": "Ajouter la perte d'eau liée à l'exercice à l'objectif quotidien",
-            "addExerciseWaterHint": "Augmente votre objectif d'eau quotidien selon la perte de sueur estimée lors des activités."
+            "addExerciseWaterHint": "Augmente votre objectif d'eau quotidien selon la perte de sueur estimée lors des activités.",
+            "addFoodWater": "Compter l'eau des aliments dans votre consommation",
+            "addFoodWaterHint": "Ajoute la teneur en eau d'un aliment enregistré à votre total d'eau quotidien, sauf si elle est déjà comptée par un contenant associé.",
+            "liters": "Litres"
         },
         "nutrientDisplay": {
             "title": "Affichage des nutriments",
@@ -320,7 +326,11 @@
                 "ollamaContextTitle": "Important : augmentez la fenêtre de contexte d'Ollama",
                 "ollamaContextHint": "Par défaut, Ollama utilise un contexte de 4096 jetons et tronque silencieusement tout ce qui dépasse, ce qui corrompt les définitions d'outils et rend le chatbot instable. Définissez OLLAMA_CONTEXT_LENGTH=16384 sur le serveur Ollama (ou ajoutez PARAMETER num_ctx 16384 au Modelfile du modèle), puis redémarrez Ollama. Sur une machine avec 8 Go, commencez à 8192.",
                 "ollamaFullProfileWarningTitle": "Impact potentiel sur les performances des modèles locaux",
-                "ollamaFullProfileWarningHint": "Exécuter un modèle local avec l'ensemble d'outils Complet peut entraîner une latence importante ou des erreurs, sauf sur un système très puissant (ex. GPU avec beaucoup de VRAM). Si les performances sont lentes ou que le modèle se perd, passez à l'ensemble d'outils Essentiel."
+                "ollamaFullProfileWarningHint": "Exécuter un modèle local avec l'ensemble d'outils Complet peut entraîner une latence importante ou des erreurs, sauf sur un système très puissant (ex. GPU avec beaucoup de VRAM). Si les performances sont lentes ou que le modèle se perd, passez à l'ensemble d'outils Essentiel.",
+                "allowPrivateNetworkAi": "Autoriser les points de terminaison en réseau privé (ex. Ollama/vLLM en local)",
+                "allowPrivateNetworkAiDescription": "Autorise la connexion à des points de terminaison d'IA hébergés sur des adresses IP privées (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, localhost).",
+                "visionNone": "Aucun",
+                "visionService": "Service d'IA de vision global"
             },
             "userSettings": {
                 "title": "Services IA",
@@ -420,7 +430,9 @@
                 "ollamaContextTitle": "Important : augmentez la fenêtre de contexte d'Ollama",
                 "ollamaContextHint": "Par défaut, Ollama utilise un contexte de 4096 jetons et tronque silencieusement tout ce qui dépasse, ce qui corrompt les définitions d'outils et rend le chatbot instable. Définissez OLLAMA_CONTEXT_LENGTH=16384 sur le serveur Ollama (ou ajoutez PARAMETER num_ctx 16384 au Modelfile du modèle), puis redémarrez Ollama. Sur une machine avec 8 Go, commencez à 8192.",
                 "ollamaFullProfileWarningTitle": "Impact potentiel sur les performances des modèles locaux",
-                "ollamaFullProfileWarningHint": "Exécuter un modèle local avec l'ensemble d'outils Complet peut entraîner une latence importante ou des erreurs, sauf sur un système très puissant (ex. GPU avec beaucoup de VRAM). Si les performances sont lentes ou que le modèle se perd, passez à l'ensemble d'outils Essentiel."
+                "ollamaFullProfileWarningHint": "Exécuter un modèle local avec l'ensemble d'outils Complet peut entraîner une latence importante ou des erreurs, sauf sur un système très puissant (ex. GPU avec beaucoup de VRAM). Si les performances sont lentes ou que le modèle se perd, passez à l'ensemble d'outils Essentiel.",
+                "activeVisionProvider": "Fournisseur d'IA de vision actif",
+                "sameAsDefault": "Identique au paramètre par défaut"
             },
             "serviceTypes": {
                 "openai": "OpenAI",
@@ -462,7 +474,31 @@
             "apiKeyCopied": "Clé API copiée dans le presse-papiers.",
             "created": "Créé :",
             "lastUsed": "Dernière utilisation :",
-            "deleteApiKeyConfirm": "Êtes-vous sûr de vouloir supprimer cette clé API ? Cette action est irréversible."
+            "deleteApiKeyConfirm": "Êtes-vous sûr de vouloir supprimer cette clé API ? Cette action est irréversible.",
+            "1year": "1 an",
+            "30days": "30 jours",
+            "7days": "7 jours",
+            "90days": "90 jours",
+            "cleanupError": "Échec du nettoyage des clés",
+            "cleanupExpired": "Supprimer les clés expirées",
+            "cleanupSuccess": "Toutes les clés API expirées ont été supprimées.",
+            "copyWarning": "Copiez cette clé maintenant. Par sécurité, elle ne sera PLUS affichée.",
+            "createError": "Échec de la génération de la clé API",
+            "createSuccess": "Nouvelle clé API générée avec succès ! Copiez-la maintenant, elle ne sera plus affichée.",
+            "deleteError": "Échec de la suppression de la clé API",
+            "deleteSuccess": "Clé API supprimée avec succès !",
+            "descriptionLabel": "Description (ex. « Raccourci Santé iPhone »)",
+            "disabled": "Désactivée",
+            "expires": "Expire :",
+            "expiresIn": "Expire dans",
+            "generate": "Générer une nouvelle clé",
+            "idOnlyInfo": "Par sécurité, seul l'identifiant de la clé est affiché.",
+            "loadError": "Échec du chargement des clés API",
+            "never": "Jamais",
+            "newKeyGenerated": "Nouvelle clé API générée !",
+            "placeholder": "Description (ex. « Raccourci Santé iPhone »)",
+            "updateError": "Échec de la mise à jour de la clé API",
+            "updateSuccess": "Statut de la clé API mis à jour avec succès !"
         },
         "accountSecurity": {
             "title": "Sécurité du compte",
@@ -483,11 +519,30 @@
             "enterCurrentPassword": "Entre le mot de passe actuel",
             "updateEmailHint": "Votre adresse e-mail sera mise à jour immédiatement.",
             "emailUpdateSuccess": "E-mail mis à jour avec succès.",
-            "emailUpdateError": "Échec de la mise à jour de l'e-mail"
+            "emailUpdateError": "Échec de la mise à jour de l'e-mail",
+            "passwordUpdateError": "Échec de la mise à jour du mot de passe",
+            "passwordUpdateSuccess": "Mot de passe mis à jour avec succès"
         },
         "customNutrients": {
             "title": "Nutriments personnalisés",
-            "subtitle": "Gère vos définitions de nutriments personnalisés"
+            "subtitle": "Gère vos définitions de nutriments personnalisés",
+            "failedToAddNutrient": "Échec de l'ajout du nutriment.",
+            "addTitle": "Ajouter un nutriment personnalisé",
+            "name": "Nom du nutriment",
+            "namePlaceholder": "ex. Sucres ajoutés",
+            "unit": "Unité",
+            "unitPlaceholder": "ex. g, mg, UI",
+            "providerAliases": "Alias des fournisseurs",
+            "aliasPlaceholder": "Saisissez un nom, appuyez sur Entrée",
+            "aliasesHelp": "Les alias sont les noms exacts utilisés pour ce nutriment par les bases d'aliments en ligne (appuyez sur Entrée pour ajouter chacun). À l'import, les champs de nutriments du fournisseur sont comparés (sans tenir compte de la casse) au nom et à ces alias. Astuce : lors de l'import d'un aliment, utilisez le panneau « Champs de nutriments fournis par… » pour ajouter en un clic le nom exact d'un fournisseur.",
+            "add": "Ajouter le nutriment personnalisé",
+            "existing": "Nutriments personnalisés existants",
+            "empty": "Aucun nutriment personnalisé défini pour l'instant.",
+            "required": "Le nom et l'unité du nutriment sont obligatoires.",
+            "deleteTitle": "Êtes-vous vraiment sûr ?",
+            "deleteDescription": "Cette action est irréversible. La définition de votre nutriment personnalisé sera définitivement supprimée.",
+            "deleteHistory": "Le retirer aussi des objectifs et des entrées de journal passés ?",
+            "deleteHistoryHelp": "Si la case n'est pas cochée, les anciennes valeurs restent dans votre historique, mais le nutriment sera masqué dans l'interface."
         },
         "customMeals": {
             "title": "Repas personnalisés",
@@ -675,7 +730,19 @@
             "enable": "Activer",
             "enterCode": "Entrez le code à 6 chiffres",
             "enterPassword": "Entrez votre mot de passe",
-            "generateNewCodes": "Générer de nouveaux codes de récupération"
+            "generateNewCodes": "Générer de nouveaux codes de récupération",
+            "passwordRequired": "Veuillez saisir le mot de passe de votre compte pour modifier les paramètres de sécurité.",
+            "recoveryCodesInfo": "Les codes de récupération permettent d'accéder à votre compte si vous perdez l'accès à vos méthodes MFA principales.",
+            "recoveryCodesTitle": "Codes de récupération",
+            "saveCodesWarning": "IMPORTANT : conservez ces codes en lieu sûr. Ils ne seront plus affichés.",
+            "scanQr": "Scannez le QR code avec votre application d'authentification et saisissez le code généré pour vérifier.",
+            "title": "Authentification multifacteur (MFA)",
+            "totp": "Application d'authentification (TOTP)",
+            "totpDisabled": "L'application d'authentification est actuellement désactivée.",
+            "totpEnabled": "L'application d'authentification est actuellement activée.",
+            "verificationCode": "Code de vérification",
+            "verify": "Vérifier et activer",
+            "yourRecoveryCodes": "Vos codes de récupération"
         },
         "nutrientAlgorithms": {
             "title": "Algorithmes de calcul des nutriments",
@@ -789,6 +856,94 @@
             "standardText": "Déficit idéal pour une perte de graisse régulière tout en préservant la masse maigre. Misez sur un apport élevé en protéines (2,0–2,4 g/kg de poids corporel) et surveillez votre énergie et votre récupération. Rythme de perte visé : ~0,5–0,75 % du poids corporel par semaine.",
             "recompTitle": "Recommandations pour la recomposition corporelle",
             "recompText": "Adapté à une recomposition corporelle ou à une sèche lente. Le déficit calorique modéré aide à préserver les performances et le muscle tout en réduisant progressivement la masse grasse. Visez 1,6–2,2 g de protéines par kg de poids corporel chaque jour et maintenez un programme de musculation régulier. Rythme de perte visé : ~0,25–0,5 % du poids corporel par semaine."
+        },
+        "allergenPreferences": {
+            "description": "Suivez les allergènes pour lesquels vous voulez être averti dans les aliments",
+            "title": "Préférences d'allergènes"
+        },
+        "dataImport": {
+            "checkin": {
+                "description": "Importez mensurations, sommeil, constantes, activité, hydratation et humeur.",
+                "title": "Enregistrements et données de santé (CSV)"
+            },
+            "description": "Importez vos données en masse depuis des fichiers CSV. Ces outils servent aux migrations ponctuelles et aux rattrapages périodiques ; ils se trouvent donc ici plutôt que sur les écrans quotidiens.",
+            "diary": {
+                "description": "Enregistrez des repas passés dans votre journal alimentaire par date et type de repas, en associant ou en créant les aliments si nécessaire.",
+                "title": "Journal alimentaire (CSV)"
+            },
+            "exercise": {
+                "description": "Ajoutez des exercices réutilisables à votre base d'exercices.",
+                "title": "Base d'exercices (CSV)"
+            },
+            "exerciseHistory": {
+                "description": "Importez des séances passées, avec séries, répétitions et charges.",
+                "title": "Historique des séances (CSV)"
+            },
+            "food": {
+                "description": "Ajoutez des aliments réutilisables (avec portions et valeurs nutritionnelles) à votre bibliothèque d'aliments.",
+                "title": "Base d'aliments (CSV)"
+            },
+            "garminFit": {
+                "description": "Importez des séances et des données d'activité depuis des fichiers binaires .fit.",
+                "title": "Activités sportives (FIT)"
+            },
+            "importButton": "Importer",
+            "title": "Import de données"
+        },
+        "developerResources": {
+            "description": "Accédez à la documentation de l'API et aux ressources",
+            "title": "Ressources pour développeurs"
+        },
+        "passkey": {
+            "add": "Ajouter une clé d'accès",
+            "addedOn": "Ajoutée le",
+            "description": "Les clés d'accès offrent une connexion sécurisée sans mot de passe, via la biométrie de votre appareil ou une clé de sécurité.",
+            "namePlaceholder": "ex. Mon MacBook, téléphone pro",
+            "newName": "Nom de la clé d'accès (facultatif)",
+            "noPasskeys": "Aucune clé d'accès enregistrée pour l'instant.",
+            "title": "Clés d'accès",
+            "unnamed": "Clé d'accès sans nom",
+            "yourPasskeys": "Vos clés d'accès enregistrées"
+        },
+        "tabs": {
+            "developerIntegrations": "Développeurs et intégrations",
+            "nutritionDiet": "Nutrition et alimentation",
+            "profileAccount": "Profil et compte",
+            "wellness": "Bien-être"
+        },
+        "allergens": {
+            "title": "Préférences d'allergènes",
+            "description": "Ajoutez les allergènes pour lesquels vous voulez être averti. Lorsqu'un aliment en contient un, un badge d'avertissement apparaît sur les fiches d'aliments et dans les résultats de recherche.",
+            "common": "Allergènes courants",
+            "custom": "Allergène personnalisé",
+            "customPlaceholder": "ex. lupin, mollusques…",
+            "alreadyAdded": "Déjà ajouté",
+            "alreadyAddedDescription": "{{name}} figure déjà dans votre liste.",
+            "syncTitle": "Synchroniser depuis OpenFoodFacts",
+            "syncDescription": "Récupère les données d'allergènes de vos aliments OpenFoodFacts enregistrés. À faire une seule fois.",
+            "syncing": "Synchronisation…",
+            "sync": "Synchroniser les allergènes",
+            "tracked": "Vos allergènes suivis",
+            "empty": "Aucun allergène suivi pour l'instant. Ajoutez-en ci-dessus pour afficher des avertissements sur les fiches d'aliments.",
+            "allergen": "Allergène",
+            "remove": "Retirer",
+            "names": {
+                "gluten": "Gluten",
+                "wheat": "Blé",
+                "milk": "Lait",
+                "eggs": "Œufs",
+                "peanuts": "Arachides",
+                "tree nuts": "Fruits à coque",
+                "soy": "Soja",
+                "fish": "Poisson",
+                "shellfish": "Fruits de mer",
+                "crustaceans": "Crustacés",
+                "sesame": "Sésame",
+                "celery": "Céleri",
+                "mustard": "Moutarde",
+                "lupin": "Lupin",
+                "sulphites": "Sulfites"
+            }
         }
     },
     "aboutDialog": {
