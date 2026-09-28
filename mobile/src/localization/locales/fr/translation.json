@@ -600,7 +600,7 @@
         "columns": {
             "set": "N°",
             "previous": "Avant",
-            "seconds": "Sec"
+            "seconds": "s"
         },
         "exercise": {
             "expand": "Développer {{name}}",
@@ -2198,7 +2198,7 @@
         "avgHeartRateLabel": "FC moy",
         "steps": "Pas",
         "pace": "Allure",
-        "sec": "Sec",
+        "sec": "s",
         "weight": "Poids",
         "repsLabel": "Rép",
         "setLabel": "Série",
@@ -4258,7 +4258,7 @@
         "labels": {
             "sets": "Séries",
             "set": "Série",
-            "secondsShort": "Sec",
+            "secondsShort": "s",
             "weight": "Poids",
             "reps": "Rép",
             "notes": "Notes"
@@ -4422,14 +4422,14 @@
     "foodSummary": {
         "tapToAddFood": "Touchez pour ajouter un aliment",
         "caloriesShort": "kcal",
-        "caloriesUnit": "Cal",
+        "caloriesUnit": "kcal",
         "nutritionBreakdown": "Détail nutritionnel : {{label}}"
     },
     "foodRow": {
         "unknownFood": "Aliment inconnu",
         "adjustServing": "Ajuster la portion",
         "caloriesShort": "kcal",
-        "caloriesUnit": "Cal",
+        "caloriesUnit": "kcal",
         "deleteFood": "Supprimer l'aliment"
     },
     "foodNutrition": {
