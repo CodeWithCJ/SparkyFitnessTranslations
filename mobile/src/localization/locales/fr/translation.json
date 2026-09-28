@@ -619,7 +619,7 @@
             "addSetLabel": "Ajouter une série"
         },
         "progression": {
-            "toggleSettings": "Afficher/masquer les réglages de progression",
+            "toggleSettings": "Afficher/masquer les paramètres de progression",
             "title": "Progression",
             "manualOff": "Manuelle (aucune)",
             "fixedSummary": "Cible fixe · +{{value}} {{unit}}",
@@ -904,7 +904,7 @@
         "importHistory": "Importer l'historique",
         "measurements": "Mesures",
         "calorieSettings": "Calories",
-        "foodSettings": "Paramètres aliments",
+        "foodSettings": "Paramètres des aliments",
         "mealTypes": "Types de repas",
         "dashboardSettings": "Tableau de bord",
         "diarySettings": "Paramètres du journal",
@@ -1166,7 +1166,7 @@
         "deleteSuccess": "Menu supprimé",
         "noServer": "Aucun serveur configuré",
         "noServerSubtitle": "Configurez la connexion au serveur pour gérer vos menus.",
-        "goToSettings": "Aller aux réglages",
+        "goToSettings": "Ouvrir les paramètres",
         "loading": "Chargement des menus…",
         "loadFailed": "Échec du chargement des menus",
         "loadFailedSubtitle": "Vérifiez votre connexion et réessayez.",
@@ -1460,7 +1460,7 @@
         "externalDescription": "Utilise {{metric}} de {{source}} si disponible. Sinon, la {{formula}} sélectionnée",
         "iosNote": "La valeur synchronisée inclut déjà l'activité quotidienne légère ; vous pouvez donc régler",
         "iosNoteContinuation": "votre niveau d'activité sur Aucun (×1,0) pour ne pas la compter deux fois.",
-        "updateFailed": "Réglage non mis à jour.",
+        "updateFailed": "Échec de la mise à jour du paramètre.",
         "modes": {
             "adaptive": "Objectif adaptatif",
             "dynamic": "Objectif dynamique",
@@ -2393,7 +2393,7 @@
         "shareWithPublic": "Partager publiquement",
         "editMeal": "Modifier le repas",
         "noServer": "Aucun serveur configuré",
-        "configureServer": "Configurez la connexion au serveur dans les réglages pour voir le détail du repas.",
+        "configureServer": "Configurez la connexion au serveur dans les paramètres pour voir le détail du repas.",
         "loading": "Chargement du repas…",
         "loadFailed": "Échec du chargement du repas",
         "perServing": "Par portion",
@@ -2437,8 +2437,8 @@
         "title": "Repas",
         "search": "Rechercher des repas…",
         "noServer": "Aucun serveur configuré",
-        "configure": "Configurez la connexion au serveur dans les réglages pour voir votre bibliothèque de repas.",
-        "go": "Aller aux réglages",
+        "configure": "Configurez la connexion au serveur dans les paramètres pour voir votre bibliothèque de repas.",
+        "go": "Ouvrir les paramètres",
         "loading": "Chargement des repas…",
         "failed": "Échec du chargement des repas",
         "searchFailed": "Échec de la recherche de repas",
@@ -3224,7 +3224,7 @@
         "loadFailedSubtitle": "Vérifiez votre connexion et réessayez.",
         "noServer": "Aucun serveur configuré",
         "noServerSubtitle": "Configurez la connexion au serveur pour gérer vos contenants d'eau.",
-        "goToSettings": "Aller aux réglages",
+        "goToSettings": "Ouvrir les paramètres",
         "emptyTitle": "Aucun contenant d'eau",
         "emptySubtitle": "Ajoutez une bouteille ou un verre pour suivre votre hydratation — éventuellement lié à un aliment pour tout enregistrer d'un seul appui.",
         "linkedTo": "Lié à {{food}}",
@@ -3534,7 +3534,7 @@
             "period": "Règles",
             "predictedPeriod": "Règles prévues",
             "fertileWindow": "Fenêtre fertile",
-            "estimatedOvulation": "Ovulation est",
+            "estimatedOvulation": "Ovul. estimée",
             "logged": "Saisi"
         }
     },
@@ -4053,7 +4053,7 @@
         "failedReorder": "Échec du réordonnancement des types de repas",
         "capacity": "Impossible de placer d'autres types de repas {{gap}}.",
         "add": "Ajouter un type de repas",
-        "createdPartial": "Créé, mais certains réglages n'ont pas pu être enregistrés.",
+        "createdPartial": "Créé, mais certains paramètres n'ont pas pu être enregistrés.",
         "created": "Type de repas créé",
         "failedCreate": "Échec de la création du type de repas",
         "deleteTitle": "Supprimer le type de repas",
@@ -4095,7 +4095,7 @@
             "invalidAmount": "Quantité invalide",
             "amountRequired": "La quantité doit être supérieure à zéro.",
             "noMealType": "Aucun type de repas",
-            "noMealTypesAvailable": "Aucun type de repas disponible. Vérifiez les réglages de votre compte."
+            "noMealTypesAvailable": "Aucun type de repas disponible. Vérifiez les paramètres de votre compte."
         }
     },
     "editLoggedMeal": {
@@ -4154,7 +4154,7 @@
     "mealTypeDetail": {
         "states": {
             "noServer": "Aucun serveur configuré",
-            "noServerHint": "Configurez la connexion au serveur dans les réglages pour voir les valeurs nutritionnelles du repas.",
+            "noServerHint": "Configurez la connexion au serveur dans les paramètres pour voir les valeurs nutritionnelles du repas.",
             "loading": "Chargement du repas…",
             "loadFailed": "Échec du chargement du repas",
             "noFoods": "Aucun aliment ({{meal}})",
@@ -4185,7 +4185,7 @@
         "saveHint": "Enregistrer l'heure par défaut"
     },
     "workoutSettings": {
-        "title": "Réglages des séances",
+        "title": "Paramètres de séance",
         "defaultRest": "Repos par défaut",
         "defaultRestSubtitle": "Repos entre les séries pour les exercices ajoutés.",
         "defaultRestAccessibility": "Repos par défaut, {{duration}}",
@@ -4340,7 +4340,7 @@
         "search": "Rechercher des exercices…",
         "noServer": "Aucun serveur configuré",
         "configure": "Configurez la connexion au serveur dans Paramètres pour voir votre bibliothèque d'exercices.",
-        "go": "Ouvrir Paramètres",
+        "go": "Ouvrir les paramètres",
         "loading": "Chargement des exercices…",
         "failed": "Échec du chargement des exercices",
         "retry": "Réessayer",
@@ -4358,7 +4358,7 @@
         "search": "Rechercher des modèles…",
         "noServer": "Aucun serveur configuré",
         "configure": "Configurez la connexion au serveur dans Paramètres pour voir vos modèles de séance.",
-        "go": "Ouvrir Paramètres",
+        "go": "Ouvrir les paramètres",
         "loading": "Chargement des modèles…",
         "failed": "Échec du chargement des modèles de séance",
         "retry": "Réessayer",
@@ -4440,7 +4440,7 @@
         "title": "Paramètres des aliments",
         "errors": {
             "error": "Erreur",
-            "updateFailed": "Échec de la mise à jour du réglage."
+            "updateFailed": "Échec de la mise à jour du paramètre."
         },
         "mealTypes": {
             "title": "Types de repas",
@@ -4537,7 +4537,7 @@
         "search": "Rechercher un aliment…",
         "noServer": "Aucun serveur configuré",
         "configure": "Configurez la connexion au serveur dans les Paramètres pour voir votre bibliothèque d'aliments.",
-        "go": "Ouvrir les Paramètres",
+        "go": "Ouvrir les paramètres",
         "loading": "Chargement des aliments…",
         "failed": "Échec du chargement des aliments",
         "retry": "Réessayer",
@@ -4823,11 +4823,11 @@
         "logCycle": "Suivi du cycle"
     },
     "diarySettings": {
-        "updateFailed": "Échec de la mise à jour du réglage.",
+        "updateFailed": "Échec de la mise à jour du paramètre.",
         "limitReached": "Limite atteinte",
         "noCustomNutrients": "Aucun nutriment personnalisé",
         "customNutrientsDescription": "Les nutriments personnalisés se créent dans l'application web SparkyFitness. Une fois ajoutés, ils apparaîtront ici pour que vous choisissiez ceux à afficher dans votre journal.",
-        "title": "Réglages du journal",
+        "title": "Paramètres du journal",
         "summary": "Résumé du journal",
         "summarySubtitle": "Afficher les calories et les macronutriments",
         "customNutrientDisplay": "Nutriments personnalisés affichés",
@@ -4838,8 +4838,8 @@
     "diary": {
         "chooseDate": "Choisir la date du journal",
         "noServer": "Aucun serveur configuré",
-        "configureServer": "Configurez la connexion au serveur dans les réglages pour voir votre journal.",
-        "goToSettings": "Aller aux réglages",
+        "configureServer": "Configurez la connexion au serveur dans les paramètres pour voir votre journal.",
+        "goToSettings": "Ouvrir les paramètres",
         "loading": "Chargement du journal…",
         "loadFailed": "Échec du chargement du journal",
         "checkConnection": "Vérifiez votre connexion et réessayez.",
@@ -4950,8 +4950,8 @@
     },
     "addSheetActions": {
         "noServerTitle": "Aucun serveur connecté",
-        "configureForExercise": "Configurez la connexion au serveur dans les réglages pour ajouter un exercice.",
-        "configureForWorkout": "Configurez la connexion au serveur dans les réglages pour démarrer une séance.",
+        "configureForExercise": "Configurez la connexion au serveur dans les paramètres pour ajouter un exercice.",
+        "configureForWorkout": "Configurez la connexion au serveur dans les paramètres pour démarrer une séance.",
         "draft": {
             "title": "Brouillon en cours",
             "message": "Vous avez un brouillon ({{type}}) non enregistré. Que voulez-vous faire ?",
@@ -4983,7 +4983,7 @@
         "chooseDate": "Choisir la date du tableau de bord",
         "noServerConfigured": "Aucun serveur configuré",
         "configureServer": "Configurez votre connexion au serveur dans les paramètres pour voir votre résumé du jour.",
-        "goToSettings": "Allez dans Paramètres",
+        "goToSettings": "Ouvrir les paramètres",
         "loadingSummary": "Chargement du résumé…",
         "loadFailed": "Échec du chargement du résumé",
         "checkConnection": "Vérifiez votre connexion et réessayez.",
@@ -5015,7 +5015,7 @@
         "logDrinkFailed": "Impossible de noter cette boisson"
     },
     "dashboardSettings": {
-        "updateFailed": "Réglage non mis à jour.",
+        "updateFailed": "Échec de la mise à jour du paramètre.",
         "noCustomNutrients": "Aucun nutriment personnalisé",
         "customNutrientsDescription": "Les nutriments personnalisés se créent dans l'appli web SparkyFitness. Une fois ajoutés, ils apparaîtront ici pour choisir ceux affichés sur le tableau de bord.",
         "title": "Tableau de bord",
