@@ -467,7 +467,7 @@
     "healthMetrics": {
         "steps": "Mesures",
         "calories": "Active Calories",
-        "totalCalories": "Total Calories",
+        "totalCalories": "Calories totales",
         "heartRate": "Fréquence cardiaque",
         "weight": "Poids",
         "bloodPressure": "Pression artérielle",
@@ -477,7 +477,7 @@
         "basalBodyTemperature": "Température basale du corps",
         "basalMetabolicRate": "Taux métabolique de base",
         "bloodGlucose": "Glycémie",
-        "bodyFat": "Body Fat",
+        "bodyFat": "Masse grasse",
         "bodyTemperature": "Température corporelle",
         "distance": "Distance",
         "exerciseSession": "Séance d'exercice",
