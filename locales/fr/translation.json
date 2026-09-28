@@ -3482,7 +3482,14 @@
         "recovery": "Récupération : {{val}}",
         "fitnessAge": "Age physiologique : {{val}}",
         "readiness": "Etat de préparation",
-        "recHours": "Enr .: {{val}}"
+        "recHours": "Enr .: {{val}}",
+        "trainingLoad": "Charge d'entraînement",
+        "acute": "aiguë",
+        "ratio": "Ratio : {{val}}",
+        "chronic": "Chronique : {{val}}",
+        "empty": "Aucune donnée d'objet connecté synchronisée pour ce jour.",
+        "skinTemp": "Température cutanée",
+        "weekly": "hebdomadaire"
     },
     "layout": {
         "welcome": "Bienvenue {{activeUserName}}"
