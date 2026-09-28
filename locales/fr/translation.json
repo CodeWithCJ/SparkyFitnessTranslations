@@ -4105,7 +4105,7 @@
             "nausea": "Nausées / sem",
             "vomiting": "Vomissements / sem",
             "reflux": "Reflux / sem",
-            "avgBristol": "Bristol moy."
+            "avgBristol": "Bristol moy"
         },
         "symptoms": {
             "logTitle": "Enregistrer un symptôme",
@@ -4291,8 +4291,8 @@
             "nutrientExists": "Le nutriment existe déjà — Sélectionner le dans la liste.",
             "createAndAddShort": "Ajouter",
             "multivitaminPanel": "Panneau multivitamine",
-            "nutrientCount_one": "nutriment",
-            "nutrientCount_many": "nutriments",
+            "nutrientCount_one": "{{count}} nutriment",
+            "nutrientCount_many": "{{count}} nutriments",
             "nutrientCount_other": "nutriments",
             "customIsOral": "Administration orale",
             "notes": "Notes",
@@ -4669,7 +4669,7 @@
             "predicted": "Règles prévues"
         },
         "stats": {
-            "cycleAvg": "Cycle moy.",
+            "cycleAvg": "Cycle moy",
             "periodAvg": "Règles moy",
             "lastBbt": "Dernière T° basale",
             "confidence": "Prévision"
