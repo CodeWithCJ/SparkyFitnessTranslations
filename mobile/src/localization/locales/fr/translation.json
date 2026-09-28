@@ -304,18 +304,18 @@
             "iosSettingsHint": "Modifiez la langue de cette application dans les réglages d’iOS",
             "openSettingsFailed": "Impossible d'ouvrir les réglages iOS",
             "iosSubtitle": "{{language}} · {{managedBy}}",
-            "simplifiedChinese": "Chinois simplifié",
-            "traditionalChinese": "Chinois traditionnel",
-            "cantoneseTraditional": "Cantonais (traditionnel)",
-            "german": "Allemand",
+            "simplifiedChinese": "简体中文",
+            "traditionalChinese": "正體中文",
+            "cantoneseTraditional": "正體粵語",
+            "german": "Deutsch",
             "french": "Français",
-            "hungarian": "Hongrois",
-            "italian": "Italien",
-            "latvian": "Letton",
-            "norwegianBokmal": "Norvégien (bokmål)",
-            "dutch": "Néerlandais",
-            "brazilianPortuguese": "Portugais (Brésil)",
-            "russian": "Russe"
+            "hungarian": "Magyar",
+            "italian": "Italiano",
+            "latvian": "Latviešu",
+            "norwegianBokmal": "Norsk bokmål",
+            "dutch": "Nederlands",
+            "brazilianPortuguese": "Português (Brasil)",
+            "russian": "Русский"
         },
         "addServer": "Appuyez pour ajouter un serveur",
         "title": "Paramètres",
@@ -4601,7 +4601,7 @@
         "monthly": "Mensuel",
         "cycle": "{{on}}, {{off}}",
         "asNeeded": "Au besoin",
-        "taper": "Dégressif",
+        "taper": "Dose dégressive",
         "at": "{{frequency}} à {{time}}",
         "cycleOn_one": "{{count}} jour de prise",
         "cycleOn_many": "{{count}} jours de prise",
@@ -5283,5 +5283,51 @@
     "shareStatus": {
         "public": "Partagé publiquement",
         "family": "Partagé avec la famille"
+    },
+    "pregnancySafety": {
+        "title": "Aliments et médicaments",
+        "food": "Aliments",
+        "medications": "Médicaments",
+        "safe": "Sans risque",
+        "caution": "Prudence",
+        "avoid": "À éviter",
+        "searchHint": "Recherchez un aliment ou un médicament pour voir comment il est généralement classé pendant la grossesse.",
+        "noMatch": "Aucun résultat. Cette liste n'est pas exhaustive : en cas de doute, demandez à votre sage-femme ou à votre médecin.",
+        "disclaimer": "Indications générales uniquement, pas un avis médical. Vérifiez toujours auprès de votre sage-femme ou de votre médecin.",
+        "foodExample": "Sushi",
+        "medicationExample": "Ibuprofène"
+    },
+    "pregnancyDueDate": {
+        "errors": {
+            "lmpFuture": "Vos dernières règles ne peuvent pas être dans le futur.",
+            "conceptionFuture": "La date de conception ne peut pas être dans le futur.",
+            "past": "Cette date de terme est passée. Vérifiez la date.",
+            "tooFar": "Cette date de terme est trop lointaine : une grossesse dure environ 40 semaines."
+        },
+        "basedOn": "Calculée d'après",
+        "estimateBy": "Estimer le terme d'après",
+        "estimated": "Date de terme estimée",
+        "options": {
+            "dueDate": "Date du terme",
+            "ultrasoundScan": "Échographie",
+            "lastPeriod": "Dernières règles (DDR)",
+            "conceptionDate": "Date de conception"
+        },
+        "fields": {
+            "firstDayLastPeriod": "1er jour des dernières règles",
+            "conceptionDate": "Date de conception",
+            "estimatedDueDate": "Date de terme estimée",
+            "estimatedDueDateFromScan": "Date de terme estimée (échographie)"
+        }
+    },
+    "pregnancySetup": {
+        "checkDates": "Vérifiez les dates",
+        "updated": "Grossesse mise à jour",
+        "created": "Grossesse configurée",
+        "saveFailed": "Impossible d'enregistrer la grossesse",
+        "editTitle": "Modifier la grossesse",
+        "title": "Configurer la grossesse",
+        "description": "Indiquez-nous comment estimer votre date de terme. Vous pourrez la modifier plus tard.",
+        "numberOfBabies": "Nombre de bébés"
     }
 }
