@@ -5,7 +5,7 @@
         },
         "schedule": {
             "doseOverride": "Modification de la dose ({{unit}})",
-            "withMeal": "Pendant le repas",
+            "withMeal": "Avec un repas",
             "newTitle": "Nouveau programme",
             "editTitle": "Modifier le programme",
             "required": "Obligatoire",
@@ -2026,7 +2026,7 @@
         "metricE1rm": "1RM estimé",
         "metricTenrm": "10RM estimé",
         "reorderDone": "Terminer la réorganisation",
-        "reorderDoneText": "OK",
+        "reorderDoneText": "Terminé",
         "dragToReorder": "Glisser pour réorganiser",
         "reorderTitle": "Réorganiser les exercices",
         "set": "N°",
