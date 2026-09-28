@@ -210,7 +210,7 @@
             "invalidKeyLengthWarning": "Si vous rencontrez une erreur « Longueur de clé invalide », assurez-vous que votre clé de chiffrement dans les variables d'environnement du serveur sont de 64 octets hexadécimaux.",
             "openFoodFacts": {
                 "baseUrlLabel": "URL de base (facultatif)",
-                "baseUrlHelp": "Laissez vide pour utiliser le serveur public Open Food Facts, ou indiquez votre propre instance auto-hébergée.",
+                "baseUrlHelp": "Laissez vide pour utiliser le serveur public Open Food Facts, ou indiquez votre propre instance auto-hébergée. Les contributions authentifiées nécessitent HTTPS.",
                 "credentialContributionHelp": "Le nom d'utilisateur et le mot de passe sont facultatifs pour les recherches, mais tous deux sont requis pour contribuer des aliments depuis SparkyFitness. Les identifiants sont chiffrés au repos. Enregistrer un compte n'active pas les envois ; chaque utilisateur gère son propre consentement séparément.",
                 "credentialKeepExistingHelp": "Laissez les deux champs vides pour conserver les identifiants enregistrés.",
                 "contributionsTitle": "Contributions à Open Food Facts",
@@ -524,7 +524,7 @@
             "passwordUpdateSuccess": "Mot de passe mis à jour avec succès"
         },
         "customNutrients": {
-            "title": "Nutriments personnalisés",
+            "title": "Gestion des nutriments personnalisés",
             "subtitle": "Gère vos définitions de nutriments personnalisés",
             "failedToAddNutrient": "Échec de l'ajout du nutriment.",
             "addTitle": "Ajouter un nutriment personnalisé",
@@ -1712,7 +1712,7 @@
             "issuerUrl": "URL de l'émetteur",
             "clientId": "ID client",
             "clientSecret": "Secret client",
-            "leaveUnchanged": "Laisser inchangé si *****",
+            "leaveUnchanged": "Laissez vide pour conserver le secret existant",
             "scope": "Portée",
             "redirectUri": "URI de redirection",
             "redirectUriPlaceholder": "par ex., {{uri}}",
@@ -4411,9 +4411,9 @@
             "configWeightGoal": "Graphique : Poids vs Objectif",
             "configMedicationLog": "Tableau du journal des médicaments",
             "configHydrationConstipation": "Carte Hydratation vs. Constipation",
-            "configProteinNausea": "Carte Protéine vs Nausée",
+            "configProteinNausea": "Carte Protéines vs nausées",
             "configSleepFatigue": "Carte Sommeil vs Fatigue",
-            "configDoseNausea": "Carte Taille de la Dose vs Nausée",
+            "configDoseNausea": "Carte Taille de la dose vs nausées",
             "chartNauseaSeverity": "Gravité des Nausées",
             "chartDoseMg": "Dose (mg)",
             "chartMedicationDose": "Dose du médicament (mg)",
