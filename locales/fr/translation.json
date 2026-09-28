@@ -16,13 +16,13 @@
     "settings": {
         "profileInformation": {
             "title": "Informations utilisateur",
-            "description": "Modifie tes informations personnelles et ta photo de profil",
-            "changePhoto": "Modifie ta photo",
+            "description": "Gérez vos informations personnelles et votre photo de profil",
+            "changePhoto": "Modifier la photo",
             "photoSize": "PNG, JPG jusqu'à 5Mo",
             "fullName": "Nom complet",
-            "enterFullName": "Entre ton nom complet",
+            "enterFullName": "Saisissez votre nom complet",
             "phoneNumber": "Numéro de téléphone",
-            "enterPhoneNumber": "Entre ton numéro de téléphone",
+            "enterPhoneNumber": "Saisissez votre numéro de téléphone",
             "dateOfBirth": "Date de naissance",
             "pickADate": "Sélectionne une date",
             "gender": "Genre",
@@ -31,7 +31,7 @@
             "female": "Femme",
             "other": "Autre",
             "bio": "Bio",
-            "tellAboutYourself": "Parle-nous de toi",
+            "tellAboutYourself": "Parlez-nous de vous",
             "saveProfile": "Sauvegarder le profil",
             "saving": "Sauvegarde..."
         },
@@ -64,7 +64,7 @@
         },
         "waterTracking": {
             "title": "Suivi conso d'eau",
-            "description": "Configure tes paramètres de suivi de consommation d'eau",
+            "description": "Configurez les paramètres de suivi de votre consommation d'eau",
             "waterDisplayUnit": "Unité d'affichage de conso d'eau",
             "milliliters": "Millilitres (ml)",
             "fluidOunces": "Oz (oz)",
@@ -150,7 +150,7 @@
                 "successSyncing": "Variables d'environnement synchronisées avec succès",
                 "errorUpdatingConfig": "Échec de la mise à jour du paramètre de configuration IA utilisateur",
                 "errorOriginalNotFound": "Service original introuvable.",
-                "deleteConfirm": "Es-tu sûr de vouloir supprimer ce service d'IA global ?",
+                "deleteConfirm": "Voulez-vous vraiment supprimer ce service d'IA global ?",
                 "fillRequiredFields": "Merci de remplir tous les champs obligatoires",
                 "enterNewApiKey": "Entre la nouvelle clé d'API pour mettre à jour",
                 "successUpdatingConfig": "Configuration IA de l'utilisateur mise à jour avec succès",
@@ -302,7 +302,7 @@
             "generating": "Génération...",
             "noApiKeys": "Aucune clé API n'a encore été générée.",
             "noDescription": "Aucune Description",
-            "copied": "Copié!",
+            "copied": "Copié !",
             "apiKeyCopied": "Clé API copiée dans le presse-papiers.",
             "created": "Créé :",
             "lastUsed": "Dernière utilisation :",
@@ -339,7 +339,7 @@
         },
         "dataManagement": {
             "sectionTitle": "Gestion des données",
-            "subtitle": "Exporte ou gère tes données",
+            "subtitle": "Exportez ou gérez vos données",
             "title": "Exportation des données",
             "description": "Télécharge l'intégralité de votre journal alimentaire au format CSV. Le fichier contiendra tous vos repas avec le détail des aliments, les portions et les macronutriments (calories, protéines, glucides, lipides...).",
             "delimiterLabel": "Format du délimiteur CSV",
@@ -349,7 +349,7 @@
             "exportButton": "Exporter mon journal (CSV)",
             "exporting": "Préparation...",
             "exportSuccess": "Export réussi",
-            "exportSuccessDescription": "Ton journal a correctement été exporté.",
+            "exportSuccessDescription": "Votre journal a été exporté avec succès.",
             "exportError": "Erreur d'exportation",
             "exportErrorDescription": "Impossible de télécharger votre journal. Réessaie plus tard.",
             "deleteSynced": {
@@ -529,11 +529,11 @@
             "eaten": "consommé",
             "burned": "brûlées",
             "burnedCaloriesBreakdown": "Détail des calories brûlées :",
-            "otherExerciseCalories": "Autres exercices : {{exerciseCalories}} kcal",
-            "activeCalories": "Calories actives : {{activeCaloriesFromExercise}} kcal",
-            "stepsCalories": "Pas : {{dailySteps}} = {{stepsCalories}} kcal",
-            "bmrCalories": "BMR : {{bmr}} kcal",
-            "totalCaloriesBurned": "Total : {{totalCaloriesBurned}} kcal",
+            "otherExerciseCalories": "Autres exercices : {{exerciseCalories}} {{energyUnit}}",
+            "activeCalories": "Calories actives : {{activeCaloriesFromExercise}} {{energyUnit}}",
+            "stepsCalories": "Pas : {{dailySteps}} = {{stepsCalories}} {{energyUnit}}",
+            "bmrCalories": "BMR : {{bmr}} {{energyUnit}}",
+            "totalCaloriesBurned": "Total : {{totalCaloriesBurned}} {{energyUnit}}",
             "goal": "objectif",
             "caloriesBurnedBreakdownTitle": "Détail des calories brûlées",
             "netCalories": "Calories nettes : {{netCalories}}",
@@ -709,7 +709,7 @@
             "copied": "Copié !",
             "copiedToClipboard": "'{{value}}' copié.",
             "parseSuccessful": "Analyse réussie",
-            "readError": "Échec de lecture du fichier sélectionné",
+            "readError": "Échec de la lecture du fichier sélectionné.",
             "fileTooLarge": "Le fichier sélectionné est trop volumineux. Veuillez télécharger un fichier de moins de 25 Mo.",
             "dataParsedSuccessfully": "Les données CSV ont été analysées et chargées avec succès.",
             "headersMapped": "En-têtes mappés",
@@ -749,7 +749,7 @@
             "parseText": "Analyser le texte",
             "addEmptyEntry": "Ajouter une entrée vide",
             "clearData": "Effacer les données",
-            "copied": "Copié!",
+            "copied": "Copié !",
             "copyTooltip": "Copie de '{{value}}'",
             "downloadTemplate": "Télécharger le modèle",
             "table": {
@@ -1590,9 +1590,9 @@
         "searchFoodsToYour": "Rechercher des aliments à ajouter à votre"
     },
     "checkIn": {
-        "howAreYouFeelingToday": "Comment te sens-tu aujourd'hui ?",
+        "howAreYouFeelingToday": "Comment vous sentez-vous aujourd'hui ?",
         "neutral": "Neutre",
-        "anyThoughtsOrFeelings": "Des pensées ou des sentiments que tu aimerais ajouter ?",
+        "anyThoughtsOrFeelings": "Des pensées ou des ressentis à ajouter ?",
         "sleepTracking": "Suivi du sommeil",
         "sleepSession1": "Session de sommeil 1",
         "bedtime": "Heure du coucher",
@@ -1680,8 +1680,8 @@
         "moodSavedSuccessfully": "Humeur enregistrée avec succès.",
         "muscleMass": "Masse musculaire",
         "recentFasts": "Jeûnes récents",
-        "recentFastsDescription": "Tes derniers jeûnes enregistrés et leur statut.",
-        "recentMeasurementsDescription": "Tes derniers enregistrements : mesures, jeûnes terminés et données de santé synchronisées.",
+        "recentFastsDescription": "Vos derniers jeûnes enregistrés et leur statut.",
+        "recentMeasurementsDescription": "Vos derniers enregistrements : mesures, jeûnes terminés et données de santé synchronisées.",
         "saveMood": "Enregistrer l'humeur",
         "stressLevel": "Niveau de stress",
         "tabs": {
@@ -1706,7 +1706,7 @@
         "source": "Source"
     },
     "moodMeter": {
-        "howAreYouFeelingToday": "Comment te sens-tu aujourd'hui ?",
+        "howAreYouFeelingToday": "Comment vous sentez-vous aujourd'hui ?",
         "neutral": "Neutre",
         "tired": "Fatigué",
         "sad": "Triste",
@@ -1726,7 +1726,7 @@
         "addAnotherSleepSession": "Ajouter une autre session de sommeil",
         "savingSleep": "Sauvegarde du sommeil...",
         "saveSleep": "Sauvegarder le sommeil",
-        "sleepEntryFor": "Entrée de sommeil pour",
+        "sleepEntryFor": "Entrée de sommeil du {{date}}",
         "cancel": "Annuler",
         "save": "Sauvegarder",
         "edit": "Modifier",
@@ -2936,7 +2936,7 @@
             "medicationsTitle": "Médicaments du jour",
             "supplementsTitle": "Compléments alimentaires du jour",
             "medicationsDescription": "Suivez les doses planifiées et consignez les médicaments pris à la demande",
-            "noMedicationDoses": "Aucune dose prévue aujourd'hui. Notez ci-dessous tout médicament pris si nécessaire",
+            "noMedicationDoses": "Aucune dose prévue aujourd'hui. Notez ci-dessous tout médicament pris si nécessaire.",
             "supplementsDescription": "Suivez les doses planifiées et notez les compléments pris au besoin",
             "noSupplementDoses": "Aucune dose prévue aujourd'hui. Notez ci-dessous tout médicament pris au besoin.",
             "noPrnMedications": "Aucun médicament au besoin ou non programmé n'est configuré.",
@@ -3382,7 +3382,7 @@
             "chartHunger": "Niveau de faim",
             "chartFoodNoise": "Préoccupation alimentaire",
             "chartEnergy": "Énergie",
-            "confidenceScore": "Score de confiance",
+            "confidenceScore": "Score de confiance :",
             "strength": {
                 "strong": "Forte",
                 "moderate": "Modérée",
@@ -3588,7 +3588,7 @@
         },
         "stats": {
             "cycleAvg": "Cycle moy.",
-            "periodAvg": "Règles moy.",
+            "periodAvg": "Règles moy",
             "lastBbt": "Dernière T° basale"
         },
         "regularity": {
@@ -3856,8 +3856,8 @@
         "safety": {
             "noResults": "Pas de correspondance. Essayez un autre terme.",
             "meds": "Médicaments",
-            "medPlaceholder": "Puis-je prendre...",
-            "foodPlaceholder": "Puis-je manger ...",
+            "medPlaceholder": "Puis-je prendre… (ex. ibuprofène)",
+            "foodPlaceholder": "Puis-je manger… (ex. thon, brie)",
             "food": "Aliments"
         },
         "photos": {
@@ -3936,7 +3936,7 @@
     },
     "healthMetrics": {
         "steps": "Mesures",
-        "totalCalories": "Total Calories",
+        "totalCalories": "Calories totales",
         "heartRate": "Fréquence cardiaque",
         "weight": "Poids",
         "bloodPressure": "Pression artérielle",
@@ -3946,7 +3946,7 @@
         "basalBodyTemperature": "Température basale du corps",
         "basalMetabolicRate": "Taux métabolique de base",
         "bloodGlucose": "Glycémie",
-        "bodyFat": "Body Fat",
+        "bodyFat": "Masse grasse",
         "bodyTemperature": "Température corporelle",
         "distance": "Distance",
         "floorsClimbed": "Étages gravis",
