@@ -263,5 +263,31 @@
         "bodyBattery": "Kroppsbatteri",
         "peak": "topp",
         "low": "låg: {{val}}"
+    },
+    "openFoodFactsContribution": {
+        "title": "Bidra till Open Food Facts",
+        "introduction": "Din mat sparas lokalt. Välj ett foto du tagit av produkten, granska sedan vad som kommer publiceras. Att förbereda eller avbryta en förhandsgranskning kommer inte ändra Open Food Facts.",
+        "saveAndPreview": "Spara och förhandsgranska bidraget",
+        "photoLabel": "Ditt foto av produkten",
+        "photoHelp": "Använd ett tydligt foto av framsidan, närings etiketten eller paketeringen. Plats och annan metadata tas bort från bilden före publicering.",
+        "imageTypeLabel": "Foto innehåll",
+        "nutritionPhoto": "Närings etikett",
+        "frontPhoto": "Framsidan av produkten",
+        "packagingPhoto": "Packetering",
+        "imageError": "Välj ett tydligt JPEG, PNG eller WebP fotografi under 20 MB, med åtminstone 640 pixlar på långsidan, och 160 pixlar på kortsidan, med högst 40 megapixlar.",
+        "preview": "Förhandsgranska bidrag",
+        "preparing": "Förbereder förhandsgranskning…",
+        "previewError": "Förhandsgranskningen kunde inte förberedas.",
+        "previewTitle": "Granska detta bidrag",
+        "existingProduct": "Detta bidrag uppdaterar en existerande offentlig produkt. Granska dess nuvarande information före bekräftande.",
+        "newProduct": "Detta bidrag skapar en offentlig produkt.",
+        "personalAccount": "Ditt personliga Open Food Facts konto",
+        "imageAlt": "Foto att publicera",
+        "fieldsCaption": "Varje fält som kommer publiceras",
+        "field": "Fält",
+        "value": "Exakt vädre",
+        "imageConsent": "Jag tog den här bilden, äger rättigheterna att dela den och godkänner att publicera den under CC BY-SA.",
+        "publish": "Publicera bidraget",
+        "publishing": "Publicerar…"
     }
 }
