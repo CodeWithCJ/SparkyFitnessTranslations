@@ -1136,5 +1136,10 @@
             "presetCore": "Ydin",
             "clearAll": "Tyhjennä kaikki"
         }
+    },
+    "onboarding": {
+        "activityLight": "Kevyt (1-2 päivää/viikko)",
+        "activityLightDesc": "Kevyt liikunta tai urheilu.",
+        "planReady": "Sinuun räätälöity suunitelma on valmis käyttöön."
     }
 }
