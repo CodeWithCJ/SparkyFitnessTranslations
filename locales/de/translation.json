@@ -133,7 +133,7 @@
                 "foodDatabase": "Steuert, welche Nährstoffe beim Bearbeiten von Lebensmitteln in deiner Datenbank angezeigt werden.",
                 "reportTabular": "Steuert die Nährstoffspalten in der Tabellenansicht der Berichte.",
                 "reportChart": "Steuert, welche Nährstoffe für Diagramme im Bereich „Berichte“ verfügbar sind.",
-                "goal": "Bestimmt, welche Nährstoffe angezeigt werden, wenn du deine Ziele festlegen oder bearbeiten."
+                "goal": "Steuert die angezeigten Nährstoffe beim Festlegen oder Bearbeiten deiner Ziele."
             },
             "syncWith": "Mit {{platform}} synchronisieren",
             "selectAll": "Alle auswählen",
