@@ -50,7 +50,11 @@
         "vo2Max": "VO2 Max",
         "fitnessAge": "Kondičný vek: {{val}}",
         "readiness": "Pripravenosť",
-        "recHours": "Regen: {{val}}"
+        "recHours": "Regen: {{val}}",
+        "trainingLoad": "Tréningová záťaž",
+        "acute": "akútny",
+        "empty": "Pre tento deň neboli synchronizované žiadne údaje z nositeľného zariadenia.",
+        "skinTemp": "Teplota pokožky"
     },
     "foodCsvImport": {
         "title": "Importovať údaje o jedle",
@@ -2273,5 +2277,54 @@
             "aggressiveTitle": "Odporúčania pre agresívny deficit",
             "aggressiveText": "Agresívny"
         }
+    },
+    "openFoodFactsContribution": {
+        "title": "Prispejte do Open Food Facts",
+        "unavailable": "Prispievanie si vyžaduje vlastnú potravinu, povolené nastavenie servera a dostupný účet na Open Food Facts.",
+        "introduction": "Údaje o potravine sa ukladajú lokálne. Vyberte fotografiu tohto výrobku, ktorú ste zhotovili, a následne skontrolujte, čo presne sa zverejní. Príprava alebo zrušenie náhľadu nemá vplyv na databázu Open Food Facts.",
+        "saveAndPreview": "Uložiť a zobraziť ukážku príspevku",
+        "photoLabel": "Vaša vlastná fotografia produktu",
+        "photoHelp": "Použite jasnú fotografiu prednej strany, výživových údajov alebo obalu. Údaje o polohe a ďalšie metadáta obrázka sa pred zverejnením odstránia.",
+        "imageTypeLabel": "Fotografický obsah",
+        "nutritionPhoto": "Výživové označenie",
+        "frontPhoto": "Predná strana výrobku",
+        "packagingPhoto": "Balenie",
+        "imageError": "Vyberte si čistú fotografiu vo formáte JPEG, PNG alebo WebP s veľkosťou do 20 MB, rozlíšením najmenej 640 pixelov na dlhšej strane a 160 pixelov na kratšej strane a s maximálne 40 megapixelmi.",
+        "preview": "Náhľad príspevku",
+        "preparing": "Pripravuje sa ukážka…",
+        "previewError": "Ukážku sa nepodarilo pripraviť.",
+        "previewTitle": "Skontrolujte tento konkrétny príspevok",
+        "existingProduct": "Tento príspevok aktualizuje existujúci verejný produkt. Pred potvrdením skontrolujte aktuálne informácie.",
+        "newProduct": "Tento príspevok vytvára verejný produkt.",
+        "personalAccount": "Váš osobný účet na Open Food Facts",
+        "globalAccount": "Zdieľaný účet na serveri Open Food Facts",
+        "imageAlt": "Fotografia na zverejnenie",
+        "fieldsCaption": "Každé pole, ktoré bude zverejnené",
+        "field": "Pole",
+        "value": "Presná hodnota",
+        "dataConsent": "Tieto údaje som prevzal z fyzického obalu, skontroloval som presné hodnoty uvedené vyššie a súhlasím s ich zverejnením pod licenciou ODbL a licenciou Database Contents License.",
+        "imageConsent": "Túto fotografiu som zhotovil, vlastním práva na jej zdieľanie a súhlasím s jej zverejnením pod licenciou CC BY-SA.",
+        "publish": "Zverejniť tento príspevok",
+        "publishing": "Zverejňovanie…",
+        "publishError": "Publikovanie sa nepodarilo potvrdiť. Pred prípravou nového príspevku skontrolujte produkt.",
+        "expired": "Platnosť tohto náhľadu vypršala. Vyžiadajte si a skontrolujte nový náhľad.",
+        "successTitle": "Príspevok zverejnený",
+        "partialTitle": "Fotografia zverejnená; údaje o produkte nepotvrdené"
+    },
+    "common": {
+        "save": "Uložiť",
+        "back": "Späť",
+        "next": "Ďalej",
+        "close": "Zatvoriť",
+        "cancel": "Zrušiť",
+        "error": "Chyba",
+        "delete": "Odstrániť",
+        "success": "Úspech",
+        "edit": "editovať",
+        "yes": "Áno",
+        "no": "Nie",
+        "date": "Dátum",
+        "add": "Pridať",
+        "loading": "Načítava sa..."
     }
 }
