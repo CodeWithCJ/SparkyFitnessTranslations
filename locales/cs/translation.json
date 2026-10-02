@@ -798,7 +798,8 @@
         "selectBmrAlgorithm": "Vyberte algoritmus BMR",
         "selectBodyFatAlgorithm": "Vyberte algoritmus tělesného tuku",
         "selectEnergyUnitPlaceholder": "Vyberte jednotku energie",
-        "useExternalBmr": "Použít naměřený BMR z kontrolních měření a synchronizovaných zařízení"
+        "useExternalBmr": "Použít naměřený BMR z kontrolních měření a synchronizovaných zařízení",
+        "useExternalBmrHint": "Ve výchozím nastavení vypnuto: dokud to nezapneš, vždy se používá tebou zvolený vzorec. Po zapnutí nahradí BMR zaznamenaný při check-inu nebo synchronizovaný z chytré váhy či od poskytovatele zdravotních dat vzorec pro daný den, pokud je pro tebe fyziologicky věrohodný. Některá zařízení hlásí BMR jako průběžný denní součet, a ne jako hodnotu (rychlost) za den, proto je tato funkce volitelná."
     },
     "aboutDialog": {
         "title": "O SparkyFitness",
@@ -1057,7 +1058,14 @@
             "exercises": "cviků",
             "name": "Název",
             "deleteConfirmationDescription": "Opravdu chcete tento cvik smazat? Tuto akci nelze vrátit zpět.",
-            "deleteImpactDescription": "Tento cvik se používá v jiných záznamech nebo tréninkových plánech. Jeho smazání může tyto záznamy ovlivnit."
+            "deleteImpactDescription": "Tento cvik se používá v jiných záznamech nebo tréninkových plánech. Jeho smazání může tyto záznamy ovlivnit.",
+            "bulkDeleteDescription": "Odeber těchto {{count}} cviků ze své knihovny a ze všech tréninkových předvoleb a plánů. Již zaznamenané tréninky zůstanou zachovány v deníku.",
+            "cancel": "Zrušit",
+            "delete": "Smazat",
+            "deleteExerciseConfirmTitle": "Smazat {{exerciseName}}?",
+            "deleteKeepsDiaryHint": "Smazáním se cvik odebere z tvé knihovny, předvoleb i plánů. U zaznamenaných tréninků zůstane zachován jeho název, obrázek, série i opakování.",
+            "deleteWithHistory": "Smazat včetně historie",
+            "diaryEntriesCount": "Zaznamenané tréninky: {{count}}"
         },
         "exerciseImportCSV": {
             "importExerciseData": "Importovat data cvičení",
