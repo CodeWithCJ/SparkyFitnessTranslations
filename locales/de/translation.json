@@ -4842,7 +4842,7 @@
             "title": "Chatbot-Tools",
             "presetFull": "Voll",
             "food": "Essen & Wasser",
-            "exercise": "Übung",
+            "exercise": "Training",
             "goals": "Ziele",
             "profile": "Profil & Gewohnheiten",
             "medications": "Medikamente",
@@ -4853,7 +4853,7 @@
             "reports": "Berichte & Analysen",
             "coaching": "Coaching",
             "clearAll": "Alle abwählen",
-            "vision": "Vision",
+            "vision": "Bilderkennung",
             "presetCore": "Basis"
         },
         "errorClearingHistory": "Chatverlauf konnte nicht gelöscht werden.",
@@ -4957,11 +4957,11 @@
         "power": "Leistung",
         "title": "Trainingsabschnitte: Intervalle & Runden",
         "avgMaxHr": "Ø / Max. HF",
-        "resp": "Atm. (Az/min)"
+        "resp": "Atmung (Atemz./min)"
     },
     "dailyHealthMetrics": {
         "bodyBattery": "Energielevel",
-        "peak": "Spitze",
+        "peak": "Höchstwert",
         "low": "niedrig: {{val}}",
         "avgStress": "Durchschnittlicher Stress",
         "max": "Max: {{val}}",
@@ -5636,8 +5636,8 @@
     },
     "openFoodFactsContribution": {
         "title": "Zu Open Food Facts hinzufügen",
-        "unavailable": "Für Beiträge werden ein eigenes benutzerdefiniertes Lebensmittel, eine aktivierte Servereinstellung und ein verfügbares Open Food Facts-Konto benötigt.",
-        "introduction": "Dein Lebensmittel ist lokal gespeichert. Wähle ein Foto aus, das du von diesem Produkt aufgenommen hast, und überprüfe anschließend genau, welche Informationen veröffentlicht werden. Das Erstellen oder Abbrechen einer Vorschau führt zu keinen Änderungen bei Open Food Facts.",
+        "unavailable": "Für Beiträge wird ein eigenes benutzerdefiniertes Lebensmittel, eine aktivierte Servereinstellung und ein verfügbares Open Food Facts-Konto benötigt.",
+        "introduction": "Deine Lebensmittel sind lokal gespeichert. Wähle ein Foto aus, das du von diesem Produkt aufgenommen hast, und überprüfe anschließend genau, welche Informationen veröffentlicht werden. Das Erstellen oder Abbrechen einer Vorschau führt zu keinen Änderungen bei Open Food Facts.",
         "saveAndPreview": "Eintrag speichern und Vorschau anzeigen",
         "photoLabel": "Eigenes Produktfoto",
         "photoHelp": "Nutze ein scharfes Foto der Vorderseite, der Nährwertangaben oder der Verpackung. Standortdaten und andere Bildmetadaten werden vor der Veröffentlichung entfernt.",
@@ -5890,7 +5890,7 @@
         "cyclingPedalingCadence": "Trittfrequenz (Radfahren)",
         "distance": "Entfernung",
         "elevationGained": "Höhengewinn",
-        "floorsClimbed": "Etagen erklommen",
+        "floorsClimbed": "Gestiegene Etagen",
         "hrv": "Herzfrequenzvariabilität (HRV)",
         "hrvSdnn": "HRV (SDNN)",
         "hrvSdnnAvg": "Durchschnittliche HRV (SDNN)",
