@@ -4360,7 +4360,7 @@
         "heartRateZoneModerate": "Mittel",
         "heartRateZoneIntense": "Intensiv",
         "heartRateZonePeak": "Maximal",
-        "durationMinutesSeconds": "{{minutes}}m {{seconds}}s"
+        "durationMinutesSeconds": "{{minutes}} min {{seconds}} s"
     },
     "copyMeal": {
         "title": "Mahlzeit kopieren: {{meal}}",
@@ -4601,7 +4601,7 @@
             "week": "Woche {{week}}",
             "weekDay": "{{week}}w {{day}}d",
             "edit": "Schwangerschaftsdetails bearbeiten",
-            "anyDayNow": "Jederzeit soweit",
+            "anyDayNow": "Es kann jederzeit losgehen",
             "daysToGo_one": "noch {{days}} Tag",
             "daysToGo_other": "noch {{days}} Tage"
         },
@@ -4693,7 +4693,7 @@
             "w16": {
                 "comparison": "Eine Avocado",
                 "baby": "Das Baby kann Geräusche hören, und sein Herz pumpt täglich viel Blut.",
-                "mom": "Manche spüren jetzt die ersten Kindsbewegungen („Lebendigwerden“)."
+                "mom": "Manche spüren jetzt die ersten zarten Kindsbewegungen."
             },
             "w17": {
                 "comparison": "Eine Speiserübe",
@@ -4797,7 +4797,7 @@
             },
             "w37": {
                 "comparison": "Ein Bund Mangold",
-                "baby": "Das Baby gilt als früh am Termin und übt das Atmen.",
+                "baby": "Das Baby ist jetzt kein Frühchen mehr (frühe Termingeburt) und übt das Atmen.",
                 "mom": "Achte auf Anzeichen von Wehen und halte deine Kliniktasche bereit."
             },
             "w38": {
@@ -4808,7 +4808,7 @@
             "w39": {
                 "comparison": "Eine Mini-Wassermelone",
                 "baby": "Das Baby ist voll ausgetragen und bereit, dich kennenzulernen.",
-                "mom": "Jederzeit soweit — achte auf regelmäßige Wehen."
+                "mom": "Es kann jederzeit losgehen — achte auf regelmäßige Wehen."
             },
             "w40": {
                 "comparison": "Ein kleiner Kürbis",
@@ -4983,7 +4983,7 @@
     },
     "time": {
         "hoursShort": "h",
-        "minutesShort": "m"
+        "minutesShort": "min"
     },
     "exerciseImage": {
         "playAnimation": "Übungsanimation abspielen",
@@ -5078,7 +5078,7 @@
         "placeholder": "Notiz hinzufügen … (unterstützt Markdown)",
         "write": "Schreiben",
         "preview": "Vorschau",
-        "nothingToPreview": "Noch nichts zum Vorschauen.",
+        "nothingToPreview": "Noch nichts für die Vorschau.",
         "toolbar": {
             "bold": "Fett",
             "italic": "Kursiv",
@@ -5184,10 +5184,10 @@
     "caffeine": {
         "title": "Aktives Koffein",
         "activeNow": "Jetzt aktiv",
-        "atBedtime": "um {{time}}",
+        "atBedtime": "Um {{time}}",
         "lastDose": "Letzte Dosis bis",
         "cutoffPassed": "Zu spät",
-        "cutoffOver": "darüber",
+        "cutoffOver": "Zu viel",
         "anytimeSafe": "Jederzeit",
         "crossingNote": "Wieder unter {{threshold}} mg ab {{time}}",
         "underThreshold": "Bleibt heute Nacht unter {{threshold}} mg",
