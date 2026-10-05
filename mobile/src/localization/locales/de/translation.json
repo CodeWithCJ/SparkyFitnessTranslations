@@ -32,7 +32,7 @@
         "yes": "Ja",
         "no": "Nein",
         "and": "und",
-        "listFinalSeparator": "und ",
+        "listFinalSeparator": ", und ",
         "date": "Datum",
         "add": "Hinzufügen",
         "loading": "Lädt …",
