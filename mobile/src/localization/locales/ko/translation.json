@@ -1,1 +1,63 @@
-{}
+{
+    "medications": {
+        "schedule": {
+            "everyNDays": "N일마다"
+        },
+        "mealRelation": {
+            "awayFromMeals": "식사와 별도로"
+        }
+    },
+    "common": {
+        "back": "뒤로",
+        "close": "닫기",
+        "date": "날짜",
+        "delete": "삭제",
+        "edit": "편집",
+        "error": "오류",
+        "loading": "불러오는 중...",
+        "next": "다음",
+        "save": "저장",
+        "success": "성공"
+    },
+    "mealBuilder": {
+        "totalServings": "총 인분 수"
+    },
+    "workout": {
+        "calories": "칼로리",
+        "distance": "거리",
+        "reps": "반복 횟수"
+    },
+    "healthMetrics": {
+        "basalBodyTemperature": "기초 체온",
+        "basalMetabolicRate": "기초대사량",
+        "bloodAlcoholContent": "혈중 알코올 농도",
+        "bloodGlucose": "혈당",
+        "bloodOxygenSaturation": "혈중 산소포화도",
+        "bloodPressure": "혈압",
+        "bodyFat": "체지방",
+        "bodyTemperature": "체온",
+        "boneMass": "골량",
+        "cyclingPedalingCadence": "자전거 페달 회전수",
+        "distance": "거리",
+        "elevationGained": "누적 상승 고도",
+        "floorsClimbed": "오른 층수",
+        "heartRate": "심박수",
+        "height": "높이",
+        "hydration": "하이드레이션",
+        "leanBodyMass": "제지방량",
+        "nutrition": "영양",
+        "power": "전원",
+        "respiratoryRate": "호흡수",
+        "restingHeartRate": "안정 시 심박수",
+        "sleepSession": "절전 세션",
+        "speed": "속도",
+        "stepsCadence": "걸음 케이던스",
+        "stress": "스트레스",
+        "weight": "가중치",
+        "appleExerciseTime": "Apple 운동 시간",
+        "appleMoveTime": "Apple 이동 시간",
+        "appleStandTime": "Apple 일어서기 시간",
+        "steps": "단계",
+        "totalCalories": "총 칼로리"
+    }
+}
