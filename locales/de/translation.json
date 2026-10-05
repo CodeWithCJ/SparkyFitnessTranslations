@@ -1527,9 +1527,7 @@
         "noExercisesInPreset": "Keine Übungen in dieser Vorlage.",
         "workoutPreset": "Trainingsvorlage",
         "activeCaloriesValue": "{{calories}} aktiv",
-        "setCount": "",
         "secondsShort": "{{count}} s",
-        "repCount": "",
         "meta": {
             "beginner": "Anfänger",
             "intermediate": "Fortgeschritten",
