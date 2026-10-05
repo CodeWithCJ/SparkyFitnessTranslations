@@ -1537,7 +1537,9 @@
             "static": "Statisch",
             "isolation": "Isolationsübung",
             "compound": "Grundübung"
-        }
+        },
+        "setCount": "Sätze: {{count}}",
+        "repCount": "{{count}} Wdh."
     },
     "foodSearchDialog": {
         "title": "Lebensmittel suchen und hinzufügen",
