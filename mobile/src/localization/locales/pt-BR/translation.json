@@ -51,7 +51,7 @@
         "food": "Alimento",
         "dismiss": "Dispensar",
         "remove": "Remover",
-        "overwrite": "Overwrite",
+        "overwrite": "Sobrescrever",
         "previousDay": ": dia anterior",
         "nextDay": ": próximo dia",
         "dismissMenu": "Dispensar menu",
@@ -77,7 +77,12 @@
             "managedByIOS": "Gerenciado pelo iOS",
             "iosSettingsHint": "Mude o idioma deste aplicativo nas Configurações do iOS",
             "openSettingsFailed": "Não foi possível abrir as Configurações do iOS",
-            "iosSubtitle": "{{language}} · {{managedBy}}"
+            "iosSubtitle": "{{language}} · {{managedBy}}",
+            "german": "Alemão",
+            "french": "Francês",
+            "simplifiedChinese": "Chinês Simplificado",
+            "traditionalChinese": "Chinês Tradicional",
+            "hungarian": "Húngaro"
         },
         "lastSynced": "Última sincronização {{time}}",
         "addServer": "Toque para adicionar um servidor",
@@ -138,6 +143,11 @@
         "mealTypes": "Tipos de refeições"
     },
     "familyDiary": {
-        "title": "Diários familiares"
+        "title": "Diários familiares",
+        "viewOnly": "Somente leitura",
+        "diary": "Diário Familiar",
+        "loadingDiary": "Carregando diário familiar…",
+        "loadDiaryFailed": "Acesso ao diário familiar indisponível",
+        "back": "Voltar"
     }
 }
