@@ -1,1 +1,8 @@
-{}
+{
+    "ios": {
+        "NSCameraUsageDescription": "A SparkyFitness alkalmazásnak hozzáférésre van szüksége a kamerádhoz, hogy beolvashassa az élelmiszerek vonalkódjait és címkéit.",
+        "NSHealthShareUsageDescription": "A SparkyFitness beolvassa az egészségügyi adatokat (például a tevékenységeket, az edzéseket és a testméreteket), hogy azokat az alkalmazásban megjelenítse, és szinkronizálja az Ön által üzemeltetett SparkyFitness-kiszolgálóval.",
+        "NSHealthUpdateUsageDescription": "A SparkyFitness az alkalmazásba rögzített táplálkozási és folyadékbevitel-adatokat átmásolja az Apple Health alkalmazásba, így a két alkalmazás adatai mindig szinkronban maradnak.",
+        "NSLocalNetworkUsageDescription": "A SparkyFitness a helyi hálózatodon található, saját szerverhez csatlakozik."
+    }
+}
