@@ -9,7 +9,7 @@
     },
     "nutrition": {
         "calories": "Kalóriák",
-        "protein": "Protein",
+        "protein": "Fehérje",
         "carbohydrates": "Szénhidrátok",
         "carbs": "Szénhidrátok",
         "fat": "Zsír",
@@ -70,18 +70,21 @@
     },
     "chat": {
         "toolCategories": {
-            "tooltip": "AI eszközök kiválasztása",
-            "title": "AI eszközök",
+            "tooltip": "Válasszon chatbot-eszközöket",
+            "title": "Chatbot-eszközök",
             "description": "Kevesebb eszköz segíti a kisebb helyi modelek megfelelő működését.",
             "presetFull": "Teljes",
             "presetCore": "Alap",
             "clearAll": "Összes törlése",
-            "emptyHint": "Nincsenek kategóriák kiválasztva - az alapértelmezett eszközök lesznek beállítva.",
+            "emptyHint": "Nincs kiválasztott kategória - a chatbot az alapértelmezett eszközkészletét fogja használni.",
             "food": "Étel & Víz",
             "exercise": "Edzés",
             "goals": "Célok",
             "checkin": "Test és Check-inek",
-            "medications": "Gyógyszerek"
+            "medications": "Gyógyszerek",
+            "reports": "Jelentések & Elemzések",
+            "coaching": "Mentorálás",
+            "profile": "Profil & Szokások"
         },
         "errorClearingHistory": "A csevegési előzményeket nem sikerült törölni.",
         "errorLoadingHistory": "A csevegési előzményeket nem sikerült betölteni.",
@@ -91,8 +94,24 @@
     "foodCsvImport": {
         "clearData": "Adatok törlése",
         "title": "Étkezési Adatok importálása",
-        "addRow": "Row hozzáadása",
-        "uploadCsv": "CSV-Fájl feltöltése"
+        "addRow": "Sor hozzáadása",
+        "uploadCsv": "CSV-fájl feltöltése",
+        "downloadTemplate": "Sablon letöltése",
+        "pastePlaceholder": "Vagy illessze be ide a CSV-fájl tartalmát...",
+        "parseText": "Szöveg elemzése",
+        "recordsLoaded": "{{count}} rekord betöltése sikeresen megtörtént.",
+        "actions": "Műveletek",
+        "booleanTrue": "Igaz",
+        "booleanFalse": "Hamis",
+        "deleteRow": "Sor törlése",
+        "overrideLabel": "Meglévő élelmiszer-adatok felülírása",
+        "overrideDescription": "Ha már létezik azonos nevű és márkájú élelmiszer, akkor az importálás meghiúsítása helyett frissítsd annak tápértékadatait. Ha bejelölés nélkül hagyod, a rendszer kihagyja az ilyen duplikátumokat, és hibaüzenetet jelenít meg.",
+        "importing": "Importálás...",
+        "importData": "Adatok importálása",
+        "importRecords_one": "{{count}} rekord importálása",
+        "importRecords_other": "{{count}} rekordok importálása",
+        "importErrorTitle": "Importálási hiba",
+        "pasteFirst": "Kérjük, először illesszen be néhány CSV-adatot."
     },
     "layout": {
         "welcome": "Üdvözlet, {{activeUserName}}"
@@ -104,18 +123,29 @@
         "lap": "Kör",
         "distance": "Távolság",
         "time": "Idő",
-        "pace": "Tempó (/{{unit}})"
+        "pace": "Tempó (/{{unit}})",
+        "title": "Edzés-Intervallumok & Körök",
+        "cadence": "Ritmus"
     },
     "dailyHealthMetrics": {
-        "title": "Napi Összefoglaló az Eszközeidről",
+        "title": "Napi Összefoglaló a Viselt Eszközeidről",
         "bodyBattery": "Testi Akkumulátor",
-        "peak": "Maximum",
+        "peak": "Csúcs",
         "low": "kevés: {{val}}",
         "avgStress": "Átlag Stressz",
         "max": "Max: {{val}}",
         "vo2Max": "VO2 Max",
-        "fitnessAge": "Fitnesszi Korod: {{val}}",
-        "readiness": "Elkészültség"
+        "fitnessAge": "Fitnessz Korod: {{val}}",
+        "readiness": "Felkészültség",
+        "restingHr": "Nyugalmi HR",
+        "recovery": "Felépülés: {{val}}",
+        "trainingLoad": "Edzésterhelés",
+        "acute": "akut",
+        "ratio": "Arány: {{val}}",
+        "chronic": "Krónikus: {{val}}",
+        "empty": "Erre a napra nincs szinkronizált adatok hordható eszközökről.",
+        "skinTemp": "Bőrhőmérséklet",
+        "weekly": "heti"
     },
     "common": {
         "save": "Mentés",
@@ -126,5 +156,35 @@
         "error": "Hiba",
         "delete": "Törlés",
         "success": "Siker"
+    },
+    "openFoodFactsContribution": {
+        "packagingPhoto": "Csomagolás",
+        "preview": "Hozzájárulás előnézete",
+        "preparing": "Előnézet előkészítése…",
+        "title": "Járulj hozzá az Open Food Facts-hez",
+        "introduction": "Az ételadatok helyileg kerülnek mentésre. Válasszon ki egy fotót, amelyet erről a termékről készített, majd ellenőrizze, hogy pontosan mi fog megjelenni. Az előnézet elkészítése vagy törlése nem módosítja az Open Food Facts adatait.",
+        "saveAndPreview": "Hozzájárulás mentése és előnézete",
+        "photoLabel": "A saját termékfotód",
+        "photoHelp": "Használjon éles képet a termék elülső oldaláról, a tápértékjelölésről vagy a csomagolásról. A kép helyadatait és egyéb meta-adatait közzététel előtt eltávolítjuk.",
+        "imageTypeLabel": "Fotótartalom",
+        "nutritionPhoto": "Tápérték-címke",
+        "frontPhoto": "A termék elülső oldala",
+        "imageError": "Válasszon egy éles JPEG-, PNG- vagy WebP-formátumú fényképet, amelynek mérete nem haladja meg a 20 MB-ot, leghosszabb oldala legalább 640 képpont, legrövidebb oldala pedig legalább 160 képpont, és amelynek felbontása legfeljebb 40 megapixel.",
+        "previewError": "Az előnézet nem állítható elő.",
+        "previewTitle": "Értékelje ezt a hozzájárulást",
+        "existingProduct": "Ez a hozzájárulás egy meglévő nyilvános terméket frissít. A megerősítés előtt kérjük, tekintse át a termék aktuális adatait.",
+        "newProduct": "Ez a hozzájárulás egy nyilvános terméket hoz létre.",
+        "personalAccount": "A saját Open Food Facts fiókod",
+        "imageAlt": "Közzéteendő fotó",
+        "fieldsCaption": "Minden olyan mező, amely közzétételre kerül",
+        "field": "Mező",
+        "value": "Pontos érték",
+        "dataConsent": "Ezeket az adatokat a termék csomagolásáról vettem át, a fenti pontos értékeket ellenőriztem, és hozzájárulok azok közzétételéhez az ODbL és az Adatbázis-tartalom licenc (DbCL) alapján.",
+        "imageConsent": "Ezt a fényképet én készítettem, a megosztáshoz szükséges jogok az enyémeim, és hozzájárulok ahhoz, hogy CC BY-SA licenc alatt tegyék közzé.",
+        "publishing": "Közzététel…",
+        "publishError": "A kiadást nem sikerült megerősíteni. Kérjük, ellenőrizze a terméket, mielőtt új bejegyzést készítene.",
+        "expired": "Ez az előnézet lejárt. Kérjen és ellenőrizzen egy új előnézetet.",
+        "successTitle": "Hozzájárulás megosztva",
+        "partialTitle": "A fotó publikáltva; a termékadatok még nem kerültek megerősítésre"
     }
 }
