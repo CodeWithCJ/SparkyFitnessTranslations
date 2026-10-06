@@ -4438,7 +4438,7 @@
             "proteinInsufficient": "Données insuffisantes. Enregistrez tous les jours de la nourriture et des effets secondaires de nausée pour identifier des corrélations.",
             "sleepInsufficient": "Données de sommeil insuffisantes pour calculer une corrélation sur cette période.",
             "configAdherence": "Graphique d'évolution de l'observance",
-            "chartAdherenceRate": "Taux d'observance",
+            "chartAdherenceRate": "Taux d'assiduité",
             "chartFullness": "Plénitude",
             "hydrationUnexpected": "<strong>Association positive inattendue :</strong> Augmentez activement l'apport hydrique pour favoriser les effets d'une alimentation riche en fibres ou d'un traitement médicamenteux.",
             "reducedIntake": "<strong>Réduction de l'apport :</strong> Les pics de nausées correspondent aux jours où l'apport en protéines est plus faible, probablement en raison d'une perte d'appétit.",
