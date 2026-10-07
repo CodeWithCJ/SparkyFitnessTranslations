@@ -175,7 +175,13 @@
         "cancel": "Megszakít",
         "error": "Hiba",
         "delete": "Törlés",
-        "success": "Siker"
+        "success": "Siker",
+        "edit": "Szerkesztés",
+        "yes": "Igen",
+        "no": "Nem",
+        "date": "Dátum",
+        "add": "Hozzáadás",
+        "loading": "Betöltés..."
     },
     "openFoodFactsContribution": {
         "packagingPhoto": "Csomagolás",
