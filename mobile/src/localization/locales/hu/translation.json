@@ -21,6 +21,247 @@
         "off": "Ki",
         "openSelectionMenu": "Kiválasztási menü megnyitása",
         "selectOptionHint": "Dupla koppintás a kiválasztáshoz",
-        "success": "Siker"
+        "success": "Siker",
+        "clear": "Törlés",
+        "discardChanges": "Módosítások elvetése",
+        "loadMore": "Továbbiak betöltése",
+        "edit": "Szerkesztés",
+        "connectionRetry": "Kérjük, ellenőrizze az internetkapcsolatát, majd próbálja meg újra.",
+        "deleteItemTitle": "Törölje a {{title}}-t?",
+        "tryAgain": "Kérjük, próbálja meg újra.",
+        "yes": "Igen",
+        "no": "Nem",
+        "and": "és",
+        "listFinalSeparator": ", és ",
+        "date": "Dátum",
+        "add": "Hozzáadás",
+        "loading": "Betöltés...",
+        "pleaseTryAgain": "Kérjük próbálja meg újra.",
+        "ok": "OK",
+        "collapse": "összecsukás",
+        "expand": "bővítés",
+        "removeFromFavorites": "Kivétel a kedvencekből",
+        "addToFavorites": "Kedvencekhez hozzáadás",
+        "goToSettings": "Ugrás a Beállításokra",
+        "notSet": "Nincs beállítva",
+        "deleting": "Törlés...",
+        "done": "Kész",
+        "none": "Nincs",
+        "food": "Étel",
+        "dismiss": "Elvetés",
+        "remove": "Eltávolítás",
+        "overwrite": "Felülírás",
+        "previousDay": ": előző nap",
+        "nextDay": ": következő nap",
+        "dismissMenu": "Menü bezárása",
+        "units": {
+            "cm": "cm"
+        },
+        "unknownDate": "Ismeretlen dátum",
+        "selectOption": "Válasszon egy lehetőséget",
+        "requestTimedOut": "A kérés időtúllépése történt. Ellenőrizze a szerverhez való kapcsolatot.",
+        "nextStep": "Következő lépés",
+        "notNow": "Most nem"
+    },
+    "settings": {
+        "app": "Alkalmazás beállításai",
+        "language": {
+            "title": "Nyelv",
+            "system": "Rendszer",
+            "english": "Angol",
+            "polish": "Lengyel",
+            "spanish": "Spanyol",
+            "simplifiedChinese": "Egyszerűsített kínai",
+            "traditionalChinese": "Hagyományos kínai",
+            "cantoneseTraditional": "Hagyományos kantoni",
+            "german": "Német",
+            "french": "Francia",
+            "hungarian": "Magyar",
+            "italian": "Olasz",
+            "latvian": "Lett",
+            "norwegianBokmal": "Norvég bokmål",
+            "dutch": "Holland",
+            "brazilianPortuguese": "Portugál (Brazíliai)",
+            "russian": "Orosz",
+            "pickerHint": "Megnyitja a nyelvválasztó menüt",
+            "changeFailed": "Nem sikerült megváltoztatni a nyelvet",
+            "managedByIOS": "iOS által kezelt",
+            "iosSettingsHint": "Az alkalmazás nyelvének módosítása az iOS Beállítások menüben",
+            "openSettingsFailed": "Nem sikerült megnyitni az iOS Beállításokat",
+            "iosSubtitle": "{{language}} · {{managedBy}}"
+        },
+        "lastSynced": "Utolsó szinkronizálás: {{time}}",
+        "addServer": "Érintsen ide szerver hozzáadásához",
+        "title": "Beállítások",
+        "shareReportFailed": "A diagnosztikai jelentés megosztása nem sikerült: {{error}}",
+        "serverConnected": "Szerver beállításai. Csatlakozva.",
+        "serverConnectionFailed": "Szerver beállításai. A csatlakozás nem sikerült.",
+        "serverNotConfigured": "Kiszolgálóbeállítások. Nincs beállított kiszolgáló.",
+        "shareReportDescription": "Helyi diagnosztikai jelentést exportál (alkalmazás verziója, szinkronizálási állapot, naplófájlok). Személyes egészségügyi vagy étkezési adatok nem szerepelnek benne. Semmi sem kerül automatikusan elküldésre.",
+        "rows": {
+            "server": "Szerver",
+            "healthSync": "Egészségügyi adatok szinkronizálása",
+            "app": "Alkalmazás-beállítások",
+            "calories": "Kalóriák és alapanyagcsere (BMR)",
+            "food": "Étel",
+            "dashboard": "Irányítópult",
+            "diary": "Napló",
+            "cyclePregnancy": "Menstruációs ciklus & Terhesség",
+            "workout": "Edzés",
+            "whatsNew": "Újdonságok",
+            "logs": "Naplók megtekintése",
+            "about": "Rólunk",
+            "shareReport": "Diagnosztikai jelentés megosztása"
+        },
+        "theme": {
+            "title": "Téma",
+            "light": "Világos",
+            "dark": "Sötét",
+            "amoled": "AMOLED",
+            "system": "Rendszer"
+        },
+        "liquidGlass": {
+            "title": "Liquid Glass navigáció",
+            "subtitle": "Használja az iOS 26 üveges fülsorát és képernyőfejléceit."
+        },
+        "notifications": {
+            "title": "Értesítések",
+            "subtitle": "Pihenési időzítők, böjtcélok és gyógyszeres kezelésre emlékeztetők."
+        },
+        "haptics": {
+            "title": "Haptikus visszajelzés",
+            "subtitle": "Enyhe rezgés az időzítők és a visszaigazolások jelzésére."
+        },
+        "cameraShutter": {
+            "title": "Kamera zárja",
+            "subtitle": "Hangjelzés lejátszása fényképezéskor."
+        }
+    },
+    "languageSettings": {
+        "subtitle": "Használja a készülék nyelvét, vagy válasszon nyelvet a SparkyFitness-hez."
+    },
+    "navigation": {
+        "settings": "Beállítások",
+        "library": "Könyvtár",
+        "presets": "Előbeállítások",
+        "foods": "Ételek",
+        "meals": "Étkezések",
+        "exercises": "Edzések",
+        "diary": "Napló",
+        "details": "Részletek",
+        "dashboard": "Vezérlőpult",
+        "add": "Hozzáadás",
+        "mealTypes": "Étkezési típusok"
+    },
+    "familyDiary": {
+        "title": "Családi naplók",
+        "openFamilyDiaries": "Családi naplók megnyitása",
+        "loadingMembers": "Családtagok betöltése…",
+        "loadMembersFailed": "Nem sikerült betölteni a családtagokat",
+        "noMembers": "Nincsenek családtagok",
+        "manageOnWeb": "A családi naplóhoz való hozzáférés kezelése a webalkalmazásban történik.",
+        "canCopy": "Másolható",
+        "viewOnly": "Csak megtekinthető",
+        "diary": "Családi napló",
+        "loadingDiary": "Családi napló betöltése…",
+        "loadDiaryFailed": "Családi napló nem elérhető",
+        "back": "Vissza",
+        "emptyForDate": "Erre a dátumra nincs étkezési bejegyzés",
+        "diaryForDate": "Családi napló · {{date}}",
+        "openMeal": "{{meal}} étkezés megnyitása",
+        "mealCalories": "{{calories}} kcal",
+        "unnamedFood": "Névtelen étel",
+        "selectAll": "Összes kiválasztása",
+        "deselectAll": "Minden jelölés eltávolítása",
+        "viewingOnly": "Csak megtekintés",
+        "selectFood": "Válassza ki a(z) {{food}}",
+        "deselectFood": "A {{food}} kijelölésének megszüntetése",
+        "continue": "Folytatás",
+        "nutritionSummary": "{{carbs}}{{calories}} kcal · P {{protein}} g · C {{carbs}} g · F {{fat}} g",
+        "selectedNutrition": "Kiválasztott: {{calories}} kcal · P {{protein}} g · C {{carbs}} g · F {{fat}} g",
+        "copyReview": "Másolat megtekintése",
+        "copyFrom": "Másolás a {{name}}-ből",
+        "copyMealTitle": "{{meal}} étel",
+        "quantityForFood": "A {{food}} mennyisége",
+        "quantityMustBePositive": "Adjon meg nullánál nagyobb mennyiséget.",
+        "copyNutrition": "Táplálkozás másolása",
+        "copyCalories": "{{calories}} kcal",
+        "copyProtein": "{{protein}} g fehérje",
+        "copyCarbs": "{{carbs}} g szénhidrát",
+        "copyFat": "{{fat}} g zsír",
+        "copyTargetDate": "Dátum másolása",
+        "copyTargetDateHint": "Megnyitja a dátum választót",
+        "copyTargetMeal": "Másolás az étkezéshez",
+        "copyTargetMealRequired": "A másolás előtt válasszon ki egy ételt.",
+        "copyToMyDiary": "Másolás a naplómba",
+        "copyInvalidSelection": "A kiválasztott élelmiszerek már nem választhatók.",
+        "copyTargetDateLabel": "Másolás dátuma: {{date}}",
+        "copySuccess": "Felvetted a naptáradba",
+        "copyFailed": "Nem sikerült másolni az ételeket",
+        "copyFailedGuidance": "Az értékelésed még mindig itt van. Kérlek, próbáld meg újra.",
+        "copyPermissionRevoked": "A másolási jogosultság megszűnt",
+        "copyPermissionRevokedGuidance": "Frissítsd a családi naptárakat, hogy megtekintsd az aktuális hozzáférési jogosultságaidat.",
+        "copyStale": "A családi napló módosítva lett",
+        "copyStaleGuidance": "A legújabb családi napló áttekintésre nyílik.",
+        "unnamedMember": "Családtag",
+        "previousDay": "Előző nap",
+        "previousDayHint": "Az előző nap eseményei",
+        "nextDay": "Következő nap",
+        "nextDayHint": "Következő napot mutatja",
+        "chooseDate": "Válasszon dátumot",
+        "chooseDateHint": "Megnyitja a dátumválasztót",
+        "goToToday": "Ugrás a mai napra",
+        "goToTodayHint": "Vissza a mai napra"
+    },
+    "notifications": {
+        "title": "Értesítések",
+        "channels": {
+            "medicationReminders": "Gyógyszeres kezelési emlékeztetők",
+            "workoutTimer": "Edzésidőzítő",
+            "fasting": "Böjt",
+            "hydration": "Folyadékpótlási emlékeztetők"
+        },
+        "actions": {
+            "completeSet": "Teljes készlet",
+            "skip": "Ugrás"
+        },
+        "permission": {
+            "notificationsOff": "Értesítések kikapcsolva",
+            "timerInApp": "Az időzítő továbbra is jelzést fog adni az alkalmazásban."
+        },
+        "exactAlarm": {
+            "title": "Pontossági figyelmeztetések",
+            "message": "Az Android elhalasztja a beállított figyelmeztetéseket, hacsak a SparkyFitness alkalmazásnak nem engedélyezed a pontos ébresztők beállítását. Kapcsold be az „Ébresztők és emlékeztetők” funkciót, hogy a pihenési időzítők és a gyógyszeres kezelésre vonatkozó emlékeztetők időben jelezzenek.",
+            "notNow": "Most nem",
+            "openSettings": "Beállítások megnyitása"
+        },
+        "rest": {
+            "title": "A pihenés véget ért",
+            "nextSetTitle": "A pihenés vége: következő szett",
+            "bodySetProgressReps_one": "{{setProgress}} · {{formattedCount}} ismétlés a cél eléréséhez",
+            "bodySetProgressReps_other": "{{setProgress}} · {{formattedCount}} ismétlés a célok eléréséhez",
+            "bodySetProgressDuration": "{{setProgress}} · {{duration}} cél"
+        },
+        "fasting": {
+            "title": "A böjtölési cél elérve",
+            "body": "Elérted az böjti célodat. Szép munka!"
+        },
+        "hydration": {
+            "title": "Ideje hidratálni 💧",
+            "body": "Már egy ideje nem rögzítettél vízfogyasztást."
+        }
+    },
+    "activeWorkout": {
+        "progression": {
+            "toggleSettings": "A haladás beállításainak váltása",
+            "title": "Előrehaladás",
+            "manualOff": "Kézi üzemmód (Ki)",
+            "fixedSummary": "Rögzített cél · +{{value}} {{unit}}",
+            "stepLoadSummary": "Lépésenkénti terhelés · {{reps}} ismétlés · + {{value}} ismétlés",
+            "repGoalSummary": "Célszám · {{reps}} ismétlés · + {{value}} {{unit}}",
+            "overloadMode": "Túlterhelési üzemmód",
+            "modeRepGoal": "Ismétlési cél",
+            "modeFixed": "Meghatározott"
+        }
     }
 }
