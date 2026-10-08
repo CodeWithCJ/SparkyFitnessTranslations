@@ -2371,8 +2371,8 @@
         "modalityBodyweight": "Poids du corps (+/− charge)",
         "bodyweightBanner": "Exercice au poids du corps : compte votre poids ({{bodyWeight}} {{unit}}) plus la charge saisie. Utilisez un signe moins pour une assistance.",
         "bodyweightBannerNoWeight": "Exercice au poids du corps : compte votre poids plus la charge saisie. Utilisez un signe moins pour une assistance. Enregistrez un poids pour que le volume puisse être calculé.",
-        "modalityWeightDistance": "Poids et distance (portés)",
-        "modalityWeightDuration": "Poids et durée (maintiens)"
+        "modalityWeightDistance": "Charge et distance (portés)",
+        "modalityWeightDuration": "Charge et durée (maintiens chargés)"
     },
     "auth": {
         "frontendUrl": "URL du frontend",
@@ -4756,7 +4756,7 @@
         "heartRateZonePeak": "Maximale",
         "durationMinutesSeconds": "{{minutes}} min {{seconds}} s",
         "wodScoreFormat": "Score {{format}}",
-        "timeCap": "Temps limite",
+        "timeCap": "Limite de temps",
         "scalingNotes": "Notes d'adaptation"
     },
     "exerciseEditing": {
@@ -5845,7 +5845,7 @@
             "none": "Aucune série de travail avec un muscle principal pour l'instant."
         },
         "heatMap": {
-            "title": "Carte thermique musculaire",
+            "title": "Carte des muscles sollicités",
             "subtitle": "Face et dos, colorés selon les séries de travail",
             "a11y": "Silhouette colorée selon les séries de travail. Les mêmes chiffres figurent sous Séries par muscle, où sélectionner un muscle le met en évidence ici.",
             "tap": "Touchez un muscle",
@@ -5912,7 +5912,7 @@
             "underOneMinute": "<1 min"
         },
         "consistency": {
-            "title": "Régularité d'entraînement",
+            "title": "Régularité de l'entraînement",
             "subtitle_one": "{{formattedCount}} dernière semaine, du {{first}} au {{last}}",
             "subtitle_many": "{{formattedCount}} dernières semaines, du {{first}} au {{last}}",
             "subtitle_other": "{{formattedCount}} dernières semaines, du {{first}} au {{last}}",
