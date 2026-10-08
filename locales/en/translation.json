@@ -33,7 +33,9 @@
     "partialTitle": "Photo published; product data unconfirmed"
   },
   "layout": {
-    "welcome": "Welcome {{activeUserName}}"
+    "welcome": "Welcome {{activeUserName}}",
+    "docs": "Docs",
+    "translate": "Translate"
   },
   "chat": {
     "toolCategories": {
@@ -721,7 +723,8 @@
     "pregnancy": "Pregnancy",
     "medications": "Medications",
     "foodLog": "Food Log",
-    "wellness": "Wellness"
+    "wellness": "Wellness",
+    "symptoms": "Symptoms"
   },
   "nutrition": {
     "calories": "Calories",
@@ -814,7 +817,8 @@
     "gotIt": "Got it",
     "close": "Close",
     "swissFoodApi": "Swiss Food Composition Database API",
-    "usdaApi": "USDA Food Database API"
+    "usdaApi": "USDA Food Database API",
+    "canadianNutrientFileApi": "Canadian Nutrient File (Health Canada)"
   },
   "exercise": {
     "title": "Exercises",
@@ -853,9 +857,12 @@
       "selectMechanicPlaceholder": "Select mechanic",
       "mechanicIsolation": "Isolation",
       "mechanicCompound": "Compound",
-      "equipmentLabel": "Equipment (comma-separated)",
-      "primaryMusclesLabel": "Primary Muscles (comma-separated)",
-      "secondaryMusclesLabel": "Secondary Muscles (comma-separated)",
+      "equipmentLabel": "Equipment",
+      "primaryMusclesLabel": "Primary Muscles",
+      "secondaryMusclesLabel": "Secondary Muscles",
+      "customMuscleBodyMapHint": "Custom muscles won't appear on the body map.",
+      "tagInputPlaceholder": "Type to add or search...",
+      "addCustomTag": "Add \"{{tag}}\"",
       "instructionsLabel": "Instructions (one per line)",
       "imagesLabel": "Images",
       "addButton": "Add Exercise",
@@ -864,11 +871,17 @@
       "importSuccess": "Exercise data imported successfully",
       "importDuplicateTitle": "Import Failed: Duplicate Items Found",
       "importDuplicateDescription": "The following items already exist: {{duplicateList}}. Please remove them from your file and try again.",
-      "importError": "Failed to import exercise data. Please try again."
+      "importError": "Failed to import exercise data. Please try again.",
+      "replaceTitle": "Replace Exercise",
+      "replaceSuccess": "Exercise replaced",
+      "suggestedTab": "Suggested"
     },
     "modality": {
       "weightReps": "Weight & Reps",
       "repsOnly": "Reps",
+      "bodyweightReps": "Bodyweight (+/− weight)",
+      "weightDistance": "Weight & Distance (carries)",
+      "weightDuration": "Weight & Duration (loaded holds)",
       "duration": "Duration",
       "durationDistance": "Duration & Distance"
     },
@@ -1035,6 +1048,11 @@
       "workoutPlansCardTitle": "Workout Plans",
       "editExerciseDialogTitle": "Edit Exercise",
       "editExerciseDialogDescription": "Edit the details of the selected exercise.",
+      "duplicateExercise": "Duplicate",
+      "duplicateExerciseDialogTitle": "Duplicate Exercise",
+      "duplicateExerciseDialogDescription": "Save a copy as your own exercise. The original is not changed.",
+      "saveCopy": "Save Copy",
+      "copySuffix": "(copy)",
       "deleteConfirmationTitle": "Delete {{exerciseName}}?",
       "deleteUsedByOthersDescription": "This exercise is used by other users. Deleting it will affect their data and is not allowed; it will be hidden instead.",
       "deleteUsedByOthersEntries": "{{exerciseEntriesCount}} diary entries (across users)",
@@ -1215,12 +1233,17 @@
       "finish": "Finish Workout",
       "finishError": "Failed to save workout. Your local progress is still preserved, and you can retry.",
       "finishing": "Saving...",
+      "location": "Gym / Location",
+      "locationPlaceholder": "e.g., Downtown Equinox, Garage Gym",
       "noDraft": "No active workout draft was found for this date.",
       "setRow": "Set {{setNumber}}",
       "sets": "sets",
       "title": "Live Workout"
     },
     "workoutPlaybackPage": {
+      "addDropSets": "Add {{sets}} Drop Sets (-{{percent}}%)",
+      "addDropSetsFor": "Add drop sets for {{name}}",
+      "viewImages": "View {{name}} images",
       "addSet": "Add Set",
       "columnReps": "Reps",
       "columnRest": "Rest",
@@ -1236,7 +1259,41 @@
       "restEditorDescription": "Pick a rest duration for this set.",
       "restEditorTitle": "Edit Rest",
       "restTimer": "Rest",
-      "volume": "Volume"
+      "volume": "Volume",
+      "replaceExercise": "Replace exercise",
+      "replaceExerciseNamed": "Replace {{name}}"
+    },
+    "workoutFinishSummary": {
+      "title": "Workout complete",
+      "duration": "Duration",
+      "calories": "Calories",
+      "sets": "Sets",
+      "volume": "Volume",
+      "done": "Done"
+    },
+    "alternatives": {
+      "heading": "Instead of {{name}}",
+      "modes": {
+        "similar": "Similar",
+        "differentEquipment": "Other equipment"
+      },
+      "reasons": {
+        "sameMuscles": "Same muscles",
+        "sharesMuscle": "Similar muscles",
+        "sameEquipment": "Same equipment",
+        "differentEquipment": "Different equipment",
+        "sameMovement": "Same movement",
+        "recent": "Done recently",
+        "inLibrary": "In your library"
+      },
+      "newBadge": "New",
+      "searchAll": "Search all exercises",
+      "failed": "Could not load alternatives",
+      "noMuscles": "No muscles recorded for {{name}}",
+      "noMusclesHint": "Add its primary muscles in the exercise library to get suggestions.",
+      "empty": "No alternatives found",
+      "retry": "Retry",
+      "catalogUnavailable": "Free Exercise DB is unavailable, so only your library is shown."
     }
   },
   "workoutPresetsManager": {
@@ -1294,12 +1351,36 @@
     "duration": "Duration",
     "planName": "Plan Name",
     "plans": "plans",
-    "status": "Status"
+    "status": "Status",
+    "scheduleType": "Mode",
+    "weeklyMode": "Weekly",
+    "weeklyPromptMode": "Weekly (Prompt)",
+    "weeklyPrefillMode": "Weekly (Pre-fill)",
+    "sequentialMode": "Sequential",
+    "upNextBadge": "Up Next in Sequence",
+    "scheduledTodayBadge": "Scheduled Today",
+    "scheduledWorkout": "Workout Session",
+    "activePlanLabel": "Active plan: {{name}}",
+    "failedToLoadActivePlan": "Failed to load active workout plan."
   },
   "exerciseCard": {
+    "workoutLocation": "Gym / Location",
     "title": "Exercise",
     "addExercise": "Add Exercise",
     "noEntries": "No exercise entries for this day.",
+    "upNextInPlanBadge": "Plan Up Next",
+    "scheduledTodayBadge": "Scheduled Today",
+    "activePlanHint": "Sequential plan: {{name}}",
+    "activeWeeklyPlanHint": "Active plan: {{name}}",
+    "scheduledWorkout": "Workout Session",
+    "logToDiaryButton": "Log to Diary",
+    "startWorkoutButton": "Start Workout",
+    "noExercisesInPlanSession": "No exercises found in this session.",
+    "switchSessionLabel": "Switch / Pick Session:",
+    "sessionNumber": "Session {{num}}",
+    "dayNumber": "Day {{num}}",
+    "suggestedBadge": "Suggested",
+    "planWorkoutLogged": "Workout session logged to diary.",
     "exerciseTotal": "Exercise Total",
     "editExerciseInDatabase": "Edit Exercise in Database",
     "editExerciseInDatabaseDescription": "Edit the details of the selected exercise in the database.",
@@ -1330,9 +1411,9 @@
     "selectMechanic": "Select mechanic",
     "mechanicIsolation": "Isolation",
     "mechanicCompound": "Compound",
-    "equipment": "Equipment (comma-separated)",
-    "primaryMuscles": "Primary Muscles (comma-separated)",
-    "secondaryMuscles": "Secondary Muscles (comma-separated)",
+    "equipment": "Equipment",
+    "primaryMuscles": "Primary Muscles",
+    "secondaryMuscles": "Secondary Muscles",
     "instructions": "Instructions (one per line)",
     "images": "Images",
     "description": "Description",
@@ -1665,7 +1746,7 @@
       "canManageCheckin": "Can Manage Check-in Data",
       "canManageCheckinHelp": "Allows delegate to log weight, body measurements, progress photos, sleep logs, mood logs, and fasting status on your behalf. Diary logs are blocked. Gives read-only profile access.",
       "canManageMedications": "Can Manage Medications",
-      "canManageMedicationsHelp": "Allows delegate to log medications, doses, titration plans, symptoms, and injection sites on your behalf. Diary logs are blocked. Gives read-only profile access.",
+      "canManageMedicationsHelp": "Allows delegate to log medications, doses, titration plans, and injection sites on your behalf. Diary logs are blocked. Gives read-only profile access.",
       "canViewReports": "Can View Reports",
       "canViewReportsHelp": "Allows delegate to view charts, statistics, and historical logs on your dashboard. No write privileges are granted. Gives read-only profile access.",
       "shareExternalProviders": "Share External Data Providers",
@@ -1690,7 +1771,10 @@
       "sharesExternalProviders": "Shares External Providers",
       "noEndDate": "No end date",
       "editRule": "Edit access rule",
-      "deleteRule": "Delete access rule"
+      "deleteRule": "Delete access rule",
+      "canManageSymptoms": "Can Manage Symptoms",
+      "canManageSymptomsHelp": "Allows delegate to log and edit symptoms, episodes, triggers, treatments, and photos on your behalf. Menstrual cycle and pregnancy symptoms are never shared. Diary logs are blocked.",
+      "managesSymptoms": "Manages Symptoms"
     },
     "customCategories": {
       "title": "Custom Categories",
@@ -1758,6 +1842,38 @@
         "error": "Failed to delete synced data."
       }
     },
+    "cnf": {
+      "dialogTitle": "Canadian Nutrient File Bulk Import & Sync",
+      "dialogDescription": "Import or update the complete Health Canada food catalog (~5,700 items) into your food library.",
+      "importingProgress": "Importing catalog in progress...",
+      "processed": "Processed",
+      "imported": "Imported",
+      "updated": "Updated",
+      "lastImportSuccess": "Catalog import completed successfully.",
+      "lastImportFailed": "Catalog import failed.",
+      "syncScopeLabel": "Sync Scope",
+      "modeLibraryOnly": "Sync library only (Recommended)",
+      "modeLibraryOnlyDesc": "Upserts food items, updates portion measures and saved recipe snapshots. Past diary entries are preserved untouched.",
+      "modeLibraryAndPast": "Sync library & past entries",
+      "modeLibraryAndPastDesc": "Updates the library and also recalculates historical diary logs logged from Canadian Nutrient File to match latest data.",
+      "languageLabel": "Catalog Language",
+      "sourceLabel": "Source",
+      "officialArchive": "Official Health Canada Open Data Archive (Default)",
+      "uploadZip": "Upload local ZIP archive (cnf-fcen-csv.zip)",
+      "needArchive": "Don't have the file?",
+      "downloadArchiveLink": "Download Official CNF ZIP (26 MB)",
+      "uploadHelp": "Select the official CNF ZIP archive downloaded from open.canada.ca.",
+      "dryRunLabel": "Sample Import (first 10 foods only)",
+      "dryRunHelp": "Import up to 10 foods to verify portion measurements and custom nutrient mappings before running the full import.",
+      "clearLibrary": "Clear CNF Library",
+      "startImport": "Start Import / Sync",
+      "confirmDeleteTitle": "Clear Canadian Nutrient File Library?",
+      "confirmDeleteDesc": "This will remove all Canadian Nutrient File foods from your library. Your past diary entries referencing these foods will be safely preserved.",
+      "licenceNotice": "Contains information published by Health Canada licensed under the <1>Open Government Licence – Canada</1>.",
+      "providerCardLicence": "Contains information published by Health Canada licensed under the <1>Open Government Licence – Canada</1>. Supported languages: <3>English (en)</3> and <5>French (fr)</5>. <7>Canadian Nutrient File</7>",
+      "providerSpecificDescription": "The Canadian Nutrient File (CNF) contains information published by Health Canada under the <1>Open Government Licence – Canada</1>. It is free, public, and requires no credentials. Supported languages are <3>English (en)</3> and <5>French (fr)</5>.",
+      "providerSpecificPortal": "For more details, see the official portal at <1>Canadian Nutrient File</1>."
+    },
     "foodExerciseDataProviders": {
       "title": "Food & Exercise Data Providers",
       "description": "Configure external food and exercise data sources and synchronize data with Garmin Connect",
@@ -1804,6 +1920,14 @@
         "clientSecretPlaceholder": "Enter YAZIO Client Secret",
         "allFieldsRequired": "All fields (Email/Username, Password, Client ID, and Client Secret) are required.",
         "languageSupportHelp": "YAZIO food searches automatically adjust to your active language preference in SparkyFitness (supporting English, German, French, Russian, Spanish, Italian, Dutch, Polish, Portuguese, Danish, Finnish, Swedish, Czech, Hungarian, Greek, Norwegian, Turkish, Chinese, Japanese, and Korean). Other languages default to standard international database parameters."
+      },
+      "coros": {
+        "regionLabel": "COROS Region",
+        "regionUs": "United States (mcpus.coros.com)",
+        "regionEu": "Europe (mcpeu.coros.com)",
+        "regionCn": "Mainland China (mcpcn.coros.com)",
+        "notTested": "not yet tested",
+        "infoText": "No API keys needed. You'll sign in with your COROS account. Your SparkyFitness address must be https:// (or localhost) for COROS to accept the connection."
       },
       "oauthDashboards": {
         "fallback": "provider's developer dashboard",
@@ -2010,6 +2134,7 @@
         "ollama": "Ollama",
         "openrouter": "OpenRouter",
         "xai": "xAI (Grok)",
+        "perplexity": "Perplexity AI",
         "meta": "Meta",
         "custom": "Custom"
       }
@@ -2033,6 +2158,9 @@
       "30days": "30 Days",
       "7days": "7 Days",
       "90days": "90 Days",
+      "access": "Access",
+      "accessFull": "Full access",
+      "accessRead": "Read-only",
       "cleanupError": "Failed to cleanup keys",
       "cleanupExpired": "Cleanup Expired Keys",
       "cleanupSuccess": "All expired API keys have been removed.",
@@ -2407,9 +2535,11 @@
         "title": "Login Management",
         "description": "Enable or disable different methods for users to log in.",
         "enableEmailPasswordLogin": "Enable Email & Password Login",
+        "enablePasskeyLogin": "Enable Passkey Login",
         "enableOidcLoginGlobal": "Enable OIDC Login (Global)",
         "emergencyFailSafe": "Emergency Fail-Safe:",
         "emergencyFailSafeDescription": "If you are ever locked out of your account, you can force email/password login to be enabled by setting the following environment variable on your server and restarting it:",
+        "emergencyFailSafePasskeyDescription": "If passkey login was turned off and you can no longer sign in, force it back on with:",
         "envVarCopied": "Environment variable copied to clipboard.",
         "enforceMfaForAllUsers": "Enforce MFA for all users"
       },
@@ -2704,6 +2834,7 @@
   },
   "common": {
     "add": "Add",
+    "source": "Source",
     "saving": "Saving...",
     "cancel": "Cancel",
     "saveChanges": "Save Changes",
@@ -2770,6 +2901,7 @@
     "next": "Next",
     "outOfTotal": "out of {{totalCount}} items",
     "pause": "Pause",
+    "previous": "Previous",
     "processing": "Processing...",
     "reps": "reps",
     "resume": "Resume",
@@ -3232,10 +3364,98 @@
     "tabs": {
       "fasting": "Fasting & Mood",
       "measurements": "Measurements",
+      "mindfulness": "Mindfulness",
       "photos": "Photos",
-      "sleep": "Sleep"
+      "sleep": "Sleep",
+      "symptoms": "Symptoms"
     },
     "noRecentActivity": "No recent activity found."
+  },
+  "mindfulness": {
+    "title": "Mindfulness",
+    "stats": {
+      "totalMinutes": "Mindful Minutes Today",
+      "sessionCount": "Sessions",
+      "recorded_one": "session recorded",
+      "recorded_other": "sessions recorded"
+    },
+    "pacer": {
+      "title": "Paced Breathing",
+      "subtitle": "Breathwork Guide",
+      "hide": "Hide Pacer",
+      "launch": "Launch Pacer",
+      "boxName": "Box Breathing",
+      "boxDesc": "Focus & Stress Relief",
+      "relaxName": "4-7-8 Relaxation",
+      "relaxDesc": "Deep Calm & Sleep Prep",
+      "coherenceName": "Coherent Resonance",
+      "coherenceDesc": "HRV Maximization",
+      "inhale": "Inhale",
+      "hold": "Hold",
+      "exhale": "Exhale",
+      "rest": "Rest",
+      "ready": "Ready",
+      "begin": "Begin Breathing",
+      "complete": "Complete"
+    },
+    "timer": {
+      "title": "Meditation Timer",
+      "subtitle": "Open / Timed Session",
+      "heading": "Meditation Session Timer",
+      "description": "Quiet focus with automated completion recording",
+      "hide": "Hide Timer",
+      "launch": "Launch Timer",
+      "start": "Start Timer",
+      "resume": "Resume",
+      "pause": "Pause",
+      "saveAndFinish": "Save & Finish"
+    },
+    "history": {
+      "title": "Today’s Sessions",
+      "subtitle": "Wearable imports and manual entries for {{date}}",
+      "loading": "Loading mindfulness data...",
+      "emptyTitle": "No mindfulness sessions recorded for this day",
+      "emptyDescription": "Take a quick 5-minute breathing break, meditate, or log a wearable session from Apple Health / Garmin."
+    },
+    "actions": {
+      "logManual": "Log Session",
+      "breathe": "Breathe",
+      "timer": "Timer",
+      "log": "Log",
+      "edit": "Edit session",
+      "delete": "Delete session",
+      "cancel": "Cancel",
+      "saving": "Saving..."
+    },
+    "types": {
+      "meditation": "Meditation",
+      "breathwork": "Breathwork",
+      "reflection": "Reflection",
+      "walking": "Mindful Walking",
+      "yoga": "Yoga",
+      "other": "Other"
+    },
+    "dialog": {
+      "editTitle": "Edit Mindfulness Session",
+      "createTitle": "Log Mindfulness Session",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "type": "Type",
+      "hrAvg": "Avg Heart Rate (bpm)",
+      "hrv": "HRV RMSSD (ms)",
+      "hrStart": "Start HR (bpm)",
+      "hrEnd": "End HR (bpm)",
+      "notes": "Notes",
+      "notesPlaceholder": "How did this session feel?",
+      "save": "Save Session",
+      "update": "Update Session"
+    },
+    "deleteDialog": {
+      "title": "Delete Mindfulness Session",
+      "description": "Are you sure you want to delete this mindfulness session? This action cannot be undone.",
+      "confirm": "Delete",
+      "deleting": "Deleting..."
+    }
   },
   "sleepTimelineEditor": {
     "sleepTimeline": "Sleep Timeline",
@@ -3328,6 +3548,8 @@
     "userNotAuthenticated": "User not authenticated.",
     "foodAddedToMealSuccess": "{{foodName}} has been added to your meal.",
     "failedToAddFoodToMeal": "Failed to add {{foodName}} to meal.",
+    "failedToRefreshFoodFromSource": "Failed to refresh food data from source.",
+    "foodRefreshedFromSource": "Food data refreshed from source. Review and save to apply.",
     "system": "System",
     "private": "Private",
     "family": "Family",
@@ -3348,6 +3570,7 @@
     "addNewFood": "Add New Food",
     "searchFoodsPlaceholder": "Search foods...",
     "all": "All",
+    "manual": "Manual",
     "myFoods": "My Foods",
     "needsReview": "Needs Review",
     "sortBy": "Sort by:",
@@ -3647,7 +3870,18 @@
     "backOff": "Back-off",
     "restPause": "Rest-Pause",
     "cluster": "Cluster",
-    "technique": "Technique"
+    "technique": "Technique",
+    "formatLabel": "Workout Format",
+    "formatStandard": "Standard (Sets & Reps)",
+    "formatInterval": "Interval / HIIT",
+    "formatTabata": "Tabata",
+    "formatEmom": "EMOM",
+    "formatAmrap": "AMRAP",
+    "formatForTime": "For Time",
+    "timeCapLabel": "Time Cap (minutes)",
+    "rampLabel": "Add per set (this workout, {{unit}})",
+    "rampPlaceholder": "Off",
+    "rampHint": "Each working set after the first pre-fills this much heavier in the same workout; use a negative number to ramp down. Warm-up and drop sets are skipped."
   },
   "addWorkoutPlanDialog": {
     "editTitle": "Edit Workout Plan",
@@ -3655,7 +3889,9 @@
     "editDescription": "Edit the details for your workout plan and its assignments.",
     "addDescription": "Enter the details for your new workout plan and assign workouts to days.",
     "planNameLabel": "Plan Name",
+    "planNamePlaceholder": "e.g., Summer Shred",
     "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional plan description...",
     "startDateLabel": "Start Date",
     "endDateLabel": "End Date (Optional)",
     "setActiveLabel": "Set as active plan",
@@ -3680,7 +3916,32 @@
     "errorToastTitle": "Error",
     "errorToastDescription": "Failed to load workout presets or exercises.",
     "addExerciseButtonInDay": "Add Exercise",
-    "pasteButton": "Paste"
+    "pasteButton": "Paste",
+    "scheduleTypeLabel": "Schedule Mode",
+    "weeklyModeTitle": "Weekly (Fixed Days)",
+    "weeklyModeSubtitle": "Workouts assigned to specific weekdays (Mon-Sun)",
+    "sequentialModeTitle": "Sequential (Cycle)",
+    "sequentialModeSubtitle": "Continuous sequence; pauses on missed days",
+    "sequentialNoteDescription": "Sequential plans do not pre-fill calendar days. The sequence automatically advances to the next session whenever you complete a workout.",
+    "sequentialAssignmentsTitle": "Workout Sequence",
+    "sequenceOrderHeading": "Ordered Sessions",
+    "sequenceOrderHelp": "Drag to reorder sessions in the rotation cycle.",
+    "noSequentialWorkouts": "No workouts added yet. Click \"Add Workout / Exercise\" to add the first session in the cycle.",
+    "sessionNumber": "Session {{number}}",
+    "addExerciseOrPresetButton": "Add Workout / Exercise",
+    "entryModeLabel": "Diary Integration",
+    "promptModeTitle": "Prompt & On-Demand (Recommended)",
+    "promptModeSubtitle": "Shows banner on scheduled days to start workout or log to diary",
+    "prefillModeTitle": "Pre-fill Calendar",
+    "prefillModeSubtitle": "Automatically generates exercise diary entries in advance",
+    "addNextSessionButton": "Add Next Session (Session {{number}})",
+    "exerciseSingular": "exercise",
+    "exercisePlural": "exercises",
+    "noExercisesInSession": "No exercises in this session. Click \"Add Exercise\" to add exercises or presets.",
+    "removeSessionTitle": "Remove Session",
+    "moveSessionUp": "Move session up",
+    "moveSessionDown": "Move session down",
+    "sessionNamePlaceholder": "Custom name (e.g., Push Day, Legs)"
   },
   "reports": {
     "alcohol": {
@@ -3701,6 +3962,7 @@
     },
     "failedToLoadAlcoholWeek": "Failed to load weekly alcohol data.",
     "failedToLoadHydrationTrend": "Failed to load hydration trend data.",
+    "failedToLoadWorkoutHeatmap": "Failed to load workout heatmap data.",
     "errorToastTitle": "Error",
     "signInMessage": "Please sign in to view reports.",
     "loadingDateControls": "Loading date controls...",
@@ -4015,7 +4277,8 @@
     "hips": "Hips",
     "height": "Height",
     "bodyFatPercentage": "Body Fat %",
-    "nutrientBalance": "{{nutrient}} Balance"
+    "nutrientBalance": "{{nutrient}} Balance",
+    "symptomsTab": "Symptoms"
   },
   "sleepHealth": {
     "hrvStatus": "HRV Status",
@@ -4077,6 +4340,9 @@
     "sleepScore": "Sleep Score"
   },
   "exerciseReportsDashboard": {
+    "heatmapRangeHint": "Last 12 months. Outlined days are in the selected date range.",
+    "workoutCount_one": "{{count}} workout",
+    "workoutCount_other": "{{count}} workouts",
     "loadingExerciseData": "Loading exercise data...",
     "overallPerformanceSnapshot": "Overall Performance Snapshot",
     "totalWorkouts": "Total Workouts",
@@ -4106,7 +4372,9 @@
     "allMuscles": "All Muscles",
     "selectExercises": "Select exercises",
     "allExercises": "All Exercises",
+    "personalRecordsTitle": "Personal Records",
     "prProgression": "PR Progression - {{exerciseName}}",
+    "prProgressionTitle": "PR Progression",
     "exerciseVarietyScore": "Exercise Variety Score",
     "uniqueExercises": "Unique Exercises",
     "volumeTrend": "Volume Trend",
@@ -4122,6 +4390,7 @@
     "bestSetByRepRangeTitle": "Best Set by Rep Range",
     "trainingVolumeByMuscleGroup": "Training Volume by Muscle Group",
     "repsVsWeight": "Reps vs Weight - {{exerciseName}}",
+    "repsVsWeightTitle": "Reps vs Weight",
     "reps": "Reps",
     "averageWeight": "Average Weight",
     "timeUnderTensionTrend": "Time Under Tension Trend - {{exerciseName}}",
@@ -4232,9 +4501,24 @@
     "calcium": "Calcium",
     "iron": "Iron"
   },
+  "muscleHeatmap": {
+    "title": "Muscle Heat Map",
+    "subtitle": "Working sets on primary muscles in this date range",
+    "sets": "sets",
+    "fewer": "Fewer",
+    "more": "More",
+    "tap": "Tap a muscle",
+    "notOnFigure": "Not on the figure",
+    "figure": "Body figure",
+    "male": "Male",
+    "female": "Female"
+  },
   "muscleGroupRecovery": {
     "title": "Muscle Group Recovery",
-    "noRecoveryData": "No muscle group recovery data available."
+    "noRecoveryData": "No muscle group recovery data available.",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "daysAgo": "{{count}} days ago"
   },
   "prProgressionChart": {
     "title": "Personal Record Progression",
@@ -4245,6 +4529,7 @@
     "maxReps": "Max Reps"
   },
   "muscleGroups": {
+    "_comment": "muscleGroups is a coarser UI grouping for RecoveryTracker (MuscleGroupRecoveryTracker.tsx). Do not consolidate with muscles.",
     "chest": "Chest",
     "back": "Back",
     "shoulders": "Shoulders",
@@ -4254,6 +4539,39 @@
     "abs": "Abs",
     "calves": "Calves",
     "forearms": "Forearms"
+  },
+  "muscles": {
+    "abdominals": "Abdominals",
+    "abductors": "Abductors",
+    "adductors": "Adductors",
+    "biceps": "Biceps",
+    "calves": "Calves",
+    "chest": "Chest",
+    "forearms": "Forearms",
+    "glutes": "Glutes",
+    "hamstrings": "Hamstrings",
+    "lats": "Lats",
+    "lower back": "Lower Back",
+    "middle back": "Middle Back",
+    "neck": "Neck",
+    "quadriceps": "Quadriceps",
+    "shoulders": "Shoulders",
+    "traps": "Traps",
+    "triceps": "Triceps"
+  },
+  "equipment": {
+    "barbell": "Barbell",
+    "dumbbell": "Dumbbell",
+    "kettlebells": "Kettlebells",
+    "cable": "Cable",
+    "machine": "Machine",
+    "bands": "Bands",
+    "body only": "Body Only",
+    "medicine ball": "Medicine Ball",
+    "exercise ball": "Exercise Ball",
+    "foam roll": "Foam Roll",
+    "e-z curl bar": "E-Z Curl Bar",
+    "other": "Other"
   },
   "sleepAnalyticsCharts": {
     "sleepStages": "Sleep Stages",
@@ -4567,6 +4885,8 @@
     "barcodePlaceholder": "e.g. 012345678905",
     "scan": "Scan",
     "barcodeHelp": "Standard barcodes are 8 to 14 digits.",
+    "dataSource": "Data source",
+    "refreshFromSource": "Refresh from source",
     "unitVariants": "Unit Variants",
     "addUnit": "Add Unit",
     "unitVariantsHelp": "Add different unit measurements for this food with specific nutrition values for each unit.",
@@ -5242,18 +5562,88 @@
     "endFast": "End Fast",
     "totalFasts": "Total Fasts",
     "avgDuration": "Avg Duration",
-    "hoursShort": "{{count}}h"
+    "hoursShort": "{{count}}h",
+    "autoFromMeals": "Auto (from meals)",
+    "currentlyFastingAfterMeal": "Fasting since {{meal}}",
+    "eatingWindow": "Eating Window",
+    "eatingWindowOpen": "Eating Window Open",
+    "eatingWindowDescription": "Eating window open · {{remaining}} remaining (closes at {{endTime}})",
+    "eatingWindowHint": "Fasting will automatically resume after your eating window closes.",
+    "remainingInEatingWindow": "Remaining in your eating window",
+    "startFastEarly": "Start Fasting Now",
+    "startedAt": "Started {{time}}",
+    "targetAt": "Target {{time}}",
+    "closesAt": "Closes {{time}}",
+    "stages": {
+      "open": {
+        "name": "Window Open",
+        "desc": "Nutrient absorption and insulin response."
+      },
+      "fuel": {
+        "name": "Optimal Fuel",
+        "desc": "Peak nutrition and sustained daytime energy."
+      },
+      "sustain": {
+        "name": "Mid Window",
+        "desc": "Balanced hydration and intermediate nourishment."
+      },
+      "closing": {
+        "name": "Window Closing",
+        "desc": "Final meal before your next fast begins."
+      }
+    },
+    "settings": {
+      "title": "Intermittent Fasting",
+      "description": "Configure intermittent fasting protocols, auto-calculation from meals, and notifications",
+      "autoCalculate": "Auto-Calculate Fasting from Meals",
+      "autoCalculateHint": "When enabled, Sparky automatically detects when your last meal ended and computes your active fasting window and daily history without needing manual start/stop buttons.",
+      "protocol": "Default Fasting Protocol",
+      "customProtocol": "Custom Hours",
+      "customProtocolDesc": "Specify your desired continuous fasting hours.",
+      "targetHours": "Target Fasting Hours",
+      "targetHoursDesc": "Goal duration in hours before fasting completion.",
+      "targetEatingHours": "Target Eating Hours",
+      "targetEatingHoursDesc": "Duration in hours for your eating window.",
+      "calorieThreshold": "Calorie Threshold (kcal)",
+      "calorieThresholdHint": "Snacks or drinks below this value (e.g. black coffee, water, electrolytes) will not break or restart your fast.",
+      "preEndAlert": "Pre-Goal Warning (minutes)",
+      "preEndAlertHint": "How many minutes before reaching your target fasting goal to receive a reminder notification.",
+      "notifications": "Fasting Alerts",
+      "eatingWindowAlert": "Goal & Eating Window Notifications",
+      "eatingWindowAlertDesc": "Receive alerts when your fasting goal is reached and when your eating window opens.",
+      "save": "Save Fasting Settings",
+      "saved": "Fasting preferences updated successfully.",
+      "error": "Failed to save fasting preferences.",
+      "errorLoading": "Failed to load preferences.",
+      "retry": "Retry"
+    }
   },
   "i18n": {
     "locale": "en-US"
   },
   "integrations": {
+    "corosLinkError": "Failed to link COROS account.",
+    "corosLinkSuccess": "COROS account successfully linked!",
+    "corosSyncSuccess": "COROS Sync Completed",
+    "corosNoNew": "No new activities found.",
+    "corosProcessingAuth": "Processing COROS authorization...",
+    "corosMissingCodeOrState": "Error: Missing COROS authorization code or state.",
+    "corosOAuthError": "COROS OAuth Error",
+    "corosMissingParams": "Missing authorization code or state in callback.",
+    "corosLinkSuccessMsg": "COROS account successfully linked!",
+    "corosLinkErrorMsg": "Error linking COROS account.",
+    "syncImported": "Imported {{count}}",
+    "syncUpdated": "Updated {{count}}",
+    "syncSkipped": "Skipped {{count}} existing",
+    "syncDeferred": "Deferred {{count}}",
+    "syncSummaryOnly": "Summary only: {{count}}",
     "fitbitLinkError": "Failed to link Fitbit account.",
     "fitbitLinkSuccess": "Fitbit account successfully linked!",
     "garminLoginError": "Failed to connect to Garmin.",
     "garminLoginSuccess": "Garmin connected successfully.",
     "googleHealthLinkError": "Failed to link Google Health account.",
     "googleHealthLinkSuccess": "Google Health account successfully linked!",
+    "googleHealthSyncError": "Google Health sync did not finish.",
     "hevySyncError": "Hevy sync failed. Please check your API key in settings.",
     "hevySyncSuccess": "Hevy data synced successfully.",
     "liftosaurSyncError": "Liftosaur sync failed. Please check your API key in settings.",
@@ -5510,6 +5900,8 @@
     "last365Days": "Last 365 Days",
     "last7Days": "Last 7 Days",
     "last90Days": "Last 90 Days",
+    "corosWarning": "Note: Daily FIT file downloads are subject to COROS rate limits (up to 50/day; remaining activities are deferred to subsequent syncs). Activity workouts are synced; daily health/sleep metrics are not yet imported.",
+    "capturePrivacyNote": "Warning: Raw diagnostic capture files contain your personal activity, GPS track, and health data. Review and redact any sensitive information before sharing.",
     "polarWarning": "Note: Polar only allows syncing data recorded after you connected your account to SparkyFitness.",
     "startDate": "Start Date",
     "syncNow": "Start Sync",
@@ -5518,17 +5910,23 @@
   },
   "warning": "Warning",
   "workout": {
+    "addedWeight": "+/− weight",
     "avgHr": "Avg HR (bpm)",
     "calories": "Calories",
     "caloriesAuto": "Auto",
     "distance": "Distance",
     "durationMin": "Duration (min)",
     "durationSec": "Duration (s)",
+    "durationSecShort": "Sec",
+    "distanceUnit": "Distance ({{unit}})",
     "durationSet": "Duration set {{setNumber}}",
     "notesPlaceholder": "Add a note for this set...",
     "reps": "Reps",
     "restSec": "Rest (s)",
     "rpe": "RPE",
+    "rir": "RIR",
+    "startTimer": "Start timer",
+    "stopTimer": "Stop timer",
     "type": "Type",
     "weight": "weight"
   },
@@ -5905,6 +6303,15 @@
       "avgHeartRate": "Avg HR",
       "noMatches": "No activities matched the query filters."
     },
+    "cardio": {
+      "sessionsTitle": "Sessions",
+      "sessionsHint": "Tap a workout for its route and heart rate.",
+      "noSessions": "No cardio workouts in this date range.",
+      "moreSessions": "Older sessions",
+      "noRoute": "No GPS route stored. Indoor workouts do not have one. An outdoor walk only has a route if Apple Health shared it when the workout synced.",
+      "avgHeartRate": "Average heart rate {{bpm}} bpm. Beat-by-beat samples were not stored.",
+      "noHeartRate": "No heart-rate samples for this workout."
+    },
     "matchedCourses": {
       "title": "Matched Courses & Route History (\"Matched Runs\")",
       "description": "Activities on recurring route loops grouped together to compare pace over time.",
@@ -5945,10 +6352,15 @@
     },
     "views": {
       "all": "All Workouts",
+      "allShort": "All",
       "strength": "Strength & Resistance",
-      "cardio": "Cardio & GPS"
+      "strengthShort": "Strength",
+      "cardio": "Cardio & GPS",
+      "cardioShort": "Cardio"
     },
-    "interval": "Interval:",
+    "interval": "Group by:",
+    "moreAnalysis": "More analysis",
+    "hideAnalysis": "Hide extra charts",
     "intervals": {
       "day": "day",
       "week": "week",
@@ -6034,5 +6446,414 @@
     "quickAdd": "Quick-Add Drinks",
     "caffeineBadge": "{{amount}} mg caffeine",
     "alcoholBadge": "{{abv}}% ABV"
+  },
+  "interval": {
+    "countdown": "Get Ready",
+    "decrementRound": "Undo 1 round",
+    "extraReps": "Additional Reps",
+    "finished": "Time Cap Reached",
+    "pause": "Pause",
+    "ready": "Ready",
+    "rest": "Rest",
+    "resume": "Resume",
+    "round": "Round {{current}}",
+    "roundOfTotal": "Round {{current}} of {{total}}",
+    "roundPlusOne": "+1 Round ({{current}} Completed)",
+    "rx": "Rx",
+    "scaled": "Scaled",
+    "timeCapLabel": "Cap: {{cap}}",
+    "wodScoring": "WOD Scoring",
+    "work": "Work"
+  },
+  "guidedWorkout": {
+    "cue": {
+      "getReady": "Get ready. Starting {{name}}.",
+      "setStartReps_one": "{{name}}. {{count}} rep.",
+      "setStartReps_other": "{{name}}. {{count}} reps.",
+      "setStartSeconds_one": "{{name}}. {{count}} second.",
+      "setStartSeconds_other": "{{name}}. {{count}} seconds.",
+      "setStartOpen": "{{name}}.",
+      "halfway": "Halfway.",
+      "rest_one": "Rest. {{count}} second.",
+      "rest_other": "Rest. {{count}} seconds.",
+      "intervalRest": "Rest.",
+      "nextUp": "Next: {{name}}.",
+      "workoutComplete": "Workout complete."
+    },
+    "card": {
+      "badge": "GUIDED",
+      "getReady": "Get ready",
+      "setOfTotal": "Set {{current}} of {{total}}",
+      "rest": "Rest",
+      "nextUp": "Next up",
+      "targetReps_one": "{{count}} rep",
+      "targetReps_other": "{{count}} reps",
+      "targetSeconds_one": "{{count}} second",
+      "targetSeconds_other": "{{count}} seconds",
+      "doneWeb": "All sets done. Finish the workout to save it.",
+      "paused": "Paused",
+      "pause": "Pause",
+      "resume": "Resume",
+      "mute": "Mute voice",
+      "unmute": "Unmute voice",
+      "replay": "Replay instructions",
+      "doneNext": "DONE — NEXT",
+      "doneHintReps_one": "Tap when you've done {{count}} rep",
+      "doneHintReps_other": "Tap when you've done {{count}} reps",
+      "doneHint": "Tap when you're done"
+    },
+    "settings": {
+      "section": "Guided workouts",
+      "description": "Spoken cues, countdowns and automatic set changes in the workout player",
+      "enabled": "Guided mode",
+      "enabledSubtitleWeb": "Speaks each exercise and its target, counts you in, runs timed sets on their own, and moves to the next set. Saved in this browser only.",
+      "unsupported": "This browser cannot speak. The guided view still works, without narration.",
+      "voice": "Voice",
+      "voiceDefaultWeb": "Browser default",
+      "rate": "Speech rate",
+      "rateValue": "{{rate}}×",
+      "countdown": "Get-ready countdown",
+      "countdownSubtitle": "Before the first exercise and before each timed set.",
+      "countdownValue_one": "{{count}} s",
+      "countdownValue_other": "{{count}} s",
+      "sample": "This is how your guided workouts will sound.",
+      "test": "Test voice"
+    }
+  },
+  "workoutFeedback": {
+    "title": "How did it feel?",
+    "subtitle": "Your next suggestions adjust to this.",
+    "difficulty": {
+      "tooEasy": "Too easy",
+      "justRight": "Just right",
+      "tooHard": "Too hard"
+    },
+    "painQuestion": "Any pain or discomfort?",
+    "painWhere": "During which exercises? (optional)",
+    "painNotePlaceholder": "What hurt? (optional)",
+    "painPrivacy": "Suggestions for these exercises get lighter, never heavier.",
+    "rateExercises": "Rate each exercise",
+    "saving": "Saving…",
+    "saved": "Saved",
+    "saveFailed": "Couldn't save your feedback. Try again.",
+    "loadFailed": "Couldn't load your feedback.",
+    "tryAgain": "Try again"
+  },
+  "workoutCoaching": {
+    "settingsTitle": "Adaptive workout suggestions",
+    "settingsSubtitle": "Adapts upcoming sets and exercise suggestions based on your logged session feedback (difficulty, pain flags).",
+    "settingsLoadFailed": "Could not load workout coaching settings",
+    "settingsSaved": "Settings saved",
+    "settingsSaveFailed": "Could not save workout coaching settings"
+  },
+  "adaptiveCoaching": {
+    "reasons": {
+      "painReported": "Lighter today: you reported pain here last time.",
+      "painRepeated": "Lighter today: pain here two sessions running. Consider an alternative.",
+      "sessionPain": "Holding weight: you reported discomfort in your last workout.",
+      "tooHard": "Holding weight: last time felt too hard.",
+      "tooHardRepeated": "Lighter today: too hard two sessions running.",
+      "highEffort": "Holding weight: your last sets were near max effort.",
+      "tooEasyRepeated": "A step heavier: too easy two sessions running."
+    },
+    "declined": "Using your usual suggestion.",
+    "variation": "You've done this in most recent workouts. Try a variation?",
+    "useUsual": "Use my usual",
+    "useAdjusted": "Use the adjusted suggestion",
+    "seeAlternatives": "See alternatives"
+  },
+  "symptoms": {
+    "manage": {
+      "show": "Show {{name}}",
+      "addOption": "Add your own",
+      "title": "Manage symptoms",
+      "description": "Choose what you track, what you are asked, and the choices you see.",
+      "tabSymptoms": "Symptoms",
+      "tabLists": "Choices",
+      "new": "New symptom",
+      "episodeTag": "episodes",
+      "unpin": "Unpin {{name}}",
+      "pin": "Pin {{name}}",
+      "edit": "Edit {{name}}",
+      "hide": "Hide {{name}}",
+      "delete": "Delete {{name}}",
+      "hidden": "Hidden",
+      "restore": "Show again",
+      "keepHistory": "Hiding or deleting a symptom never removes your past logs.",
+      "name": "Name",
+      "template": "Type",
+      "category": "Group",
+      "scale": "Rated on",
+      "episodic": "Usually an episode with a start and end (like a migraine)",
+      "sections": "What to ask when logging",
+      "fields": "Your own fields",
+      "fieldLabel": "Label",
+      "fieldType": "Type",
+      "removeField": "Remove field",
+      "fieldOptions": "Choices, separated by commas",
+      "fieldUnit": "Unit (optional)",
+      "addField": "Add a field",
+      "section": {
+        "locations": "Where it is",
+        "phases": "Headache phases",
+        "qualities": "What it feels like",
+        "associated": "Other symptoms",
+        "triggers": "Possible triggers",
+        "treatments": "Treatments",
+        "impact": "Effect on the day",
+        "notes": "Notes",
+        "medication": "Possible side effect of a medication",
+        "bristol": "Bristol stool scale",
+        "photos": "Photos",
+        "custom_fields": "Your own fields"
+      }
+    },
+    "chips": {
+      "remove": "Remove {{name}}",
+      "add": "Add",
+      "save": "Save",
+      "newLabel": "New option name"
+    },
+    "detail": {
+      "delete": "Delete",
+      "confirmDelete": "Delete this log?",
+      "edit": "Edit",
+      "editTitle": "Edit symptom log"
+    },
+    "treatments": {
+      "addMedication": "Add a medication",
+      "didItHelp": "Did it help?",
+      "helped": "Helped",
+      "partly": "Partly",
+      "didnt": "Didn't help"
+    },
+    "map": {
+      "view": "Map view",
+      "front": "Front",
+      "back": "Back",
+      "headLabel": "Head map",
+      "bodyLabel": "Body map",
+      "hint": "Tap where it hurts. Left and right are yours."
+    },
+    "severity": {
+      "label": "Severity",
+      "count": "How many times",
+      "mild": "Mild",
+      "moderate": "Moderate",
+      "severe": "Severe",
+      "low": "1 mild",
+      "high": "{{max}} worst"
+    },
+    "form": {
+      "started": "Started",
+      "now": "Now",
+      "minutesAgo": "−{{n}} min",
+      "hoursAgo": "−{{n}} h",
+      "pick": "Pick…",
+      "startedAt": "Start date and time",
+      "ongoing": "Still ongoing",
+      "ended": "Ended",
+      "symptom": "Symptom",
+      "newSymptom": "New symptom",
+      "kind": "Kind of entry",
+      "quick": "Quick log",
+      "episode": "Episode",
+      "newSymptomPlaceholder": "e.g. Lower back pain",
+      "newSymptomName": "New symptom name",
+      "noMedication": "No medication linked",
+      "notesPlaceholder": "Anything else worth remembering",
+      "cancel": "Cancel",
+      "saving": "Saving…",
+      "update": "Update",
+      "saveEpisode": "Save episode",
+      "save": "Save",
+      "title": "Log a symptom"
+    },
+    "sections": {
+      "where": "Where",
+      "phases": "Phases",
+      "optional": "optional",
+      "qualities": "What it feels like",
+      "associated": "Other symptoms",
+      "triggers": "Possible triggers",
+      "treatments": "Treatments",
+      "noneYet": "none yet",
+      "impact": "Effect on your day",
+      "bristol": "Bowel log (Bristol scale)",
+      "medication": "Possible side effect of",
+      "details": "More details",
+      "notes": "Notes",
+      "photos": "Photos"
+    },
+    "photos": {
+      "saved": "Saved photo",
+      "remove": "Remove photo",
+      "add": "Add photos"
+    },
+    "episode": {
+      "ongoing": "ongoing",
+      "peak": "peak {{n}}",
+      "saveTreatments": "Save treatments",
+      "updateSeverity": "Update severity",
+      "saveReading": "Save reading",
+      "addRelief": "Add relief",
+      "addReliefHint": "Record what you took or did, and whether it helped.",
+      "end": "End episode",
+      "endTitle": "End this episode",
+      "endHint": "Set when it ended, and mark what helped.",
+      "endedWhen": "It ended",
+      "didAnythingHelp": "Did anything help?",
+      "startedAt": "started {{time}}"
+    },
+    "history": {
+      "title": "Recent symptoms",
+      "loading": "Loading…",
+      "empty": "Nothing logged in the past 30 days. Use the form to log a symptom.",
+      "cycle": "Cycle"
+    },
+    "calendar": {
+      "previous": "Previous month",
+      "next": "Next month",
+      "free": "Symptom-free",
+      "mild": "Mild to moderate",
+      "severe": "Severe",
+      "unknown": "No entry"
+    },
+    "hub": {
+      "title": "Symptoms",
+      "subtitle": "Track symptoms and episodes, and see what tends to come with them.",
+      "manage": "Manage",
+      "anyToday": "Any symptoms on {{date}}?",
+      "today": "today",
+      "markedFree": "Marked as a symptom-free day.",
+      "undo": "Undo",
+      "noneToday": "No symptoms",
+      "logAgain": "Log again"
+    },
+    "chart": {
+      "summary": "Severity over the episode, {{count}} readings"
+    },
+    "phases": {
+      "prodrome": "Before the headache",
+      "aura": "Aura",
+      "postdrome": "After the headache"
+    },
+    "triggerGroups": {
+      "sleep": "Sleep",
+      "food_drink": "Food & drink",
+      "lifestyle": "Lifestyle",
+      "environment": "Environment",
+      "hormonal": "Hormonal",
+      "other": "Other",
+      "mine": "Mine"
+    },
+    "impact": {
+      "none": "None",
+      "mild": "Mild",
+      "moderate": "Moderate",
+      "severe": "Severe"
+    },
+    "templates": {
+      "generic": "General",
+      "headache": "Headache or migraine",
+      "pain": "Pain",
+      "gi": "Stomach and gut",
+      "respiratory": "Breathing and allergy",
+      "skin": "Skin",
+      "mental": "Mood and anxiety"
+    },
+    "categories": {
+      "general": "General",
+      "pain": "Pain",
+      "head": "Head",
+      "gi": "Stomach and gut",
+      "respiratory": "Breathing",
+      "skin": "Skin",
+      "mental": "Mind",
+      "other": "Other"
+    },
+    "scales": {
+      "1-5": "1 to 5",
+      "1-10": "1 to 10",
+      "none-severe": "Mild, moderate, severe",
+      "count": "A count",
+      "text": "Notes only"
+    },
+    "fieldTypes": {
+      "number": "Number",
+      "text": "Text",
+      "boolean": "Yes or no",
+      "select": "One choice",
+      "multiselect": "Several choices"
+    },
+    "optionKinds": {
+      "location": "Body locations",
+      "head_location": "Head locations",
+      "quality": "What it feels like",
+      "associated": "Other symptoms",
+      "trigger": "Triggers",
+      "relief": "Relief methods"
+    },
+    "report": {
+      "symptomDays": "Symptom days",
+      "episodes": "Episodes",
+      "freeDays": "Symptom-free days",
+      "averageDuration": "Average episode",
+      "medicationDays": "Days with medication",
+      "symptom": "Symptom",
+      "allSymptoms": "All symptoms",
+      "exportCsv": "Export CSV",
+      "print": "Print for a doctor",
+      "medicationCaution": "Taking medication for symptoms on 10 or more days is worth raising with your doctor. This is a reminder, not a diagnosis.",
+      "recentEpisodes": "Recent episodes",
+      "recentEpisodesHint": "Side by side, with what your diary holds around each one.",
+      "showLast": "How many to show",
+      "lastN": "Last {{n}}",
+      "noEpisodes": "No episodes in this date range. Log an episode with a start time to see it here.",
+      "col": {
+        "started": "Started",
+        "duration": "Duration",
+        "peak": "Peak",
+        "where": "Where",
+        "triggers": "Triggers",
+        "relief": "Relief",
+        "slept": "Slept",
+        "food": "Day before",
+        "water": "Water"
+      },
+      "factorsTitle": "What came before",
+      "factorsHint": "How many of your last {{n}} episodes had each of these. This describes what happened; it does not show a cause.",
+      "notEnough": "Not enough episodes yet to read a pattern (at least {{n}})",
+      "noFactors": "Add triggers to your episodes, and log sleep and food, to see what tends to come before them.",
+      "ofKnown": "{{count}} of {{known}}",
+      "timeOfDay": "Time of day",
+      "timeOfDayHint": "When symptoms were logged or started.",
+      "printTitle": "Symptom report",
+      "printSummary": "{{days}} symptom days, {{episodes}} episodes, {{free}} symptom-free days, {{meds}} days with medication.",
+      "factor": {
+        "short_sleep": "Slept under 6 hours the night before",
+        "low_water": "Under 1.5 L of water the day before",
+        "alcohol": "Alcohol in the food names",
+        "caffeine": "Caffeine in the food names",
+        "menstrual_phase": "During the menstrual phase"
+      }
+    }
+  },
+  "trainingConsistency": {
+    "title": "Training Consistency",
+    "streak": "Week streak",
+    "longest": "Longest",
+    "thisWeek": "This week",
+    "lastWeek": "Last week",
+    "weeks_one": "{{count}} week",
+    "weeks_other": "{{count}} weeks",
+    "days_one": "{{count}} day",
+    "days_other": "{{count}} days",
+    "daysPerWeek_one": "Workout days per week, last {{count}} week",
+    "daysPerWeek_other": "Workout days per week, last {{count}} weeks",
+    "chartLabel": "Workout days per week",
+    "setsTitle": "Sets per muscle",
+    "noSets": "No sets logged this week or last.",
+    "loadFailed": "Failed to load training consistency."
   }
 }
