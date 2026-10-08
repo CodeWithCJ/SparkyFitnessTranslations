@@ -86,7 +86,10 @@
             "beforeMeal": "Avant le repas",
             "withMeal": "Pendant le repas",
             "afterMeal": "Après le repas",
-            "awayFromMeals": "En dehors des repas"
+            "awayFromMeals": "En dehors des repas",
+            "softgel": "Capsule molle",
+            "gummy": "Gummy",
+            "powder": "Poudre"
         },
         "dose": {
             "log": "Noter",
@@ -223,7 +226,48 @@
         "inactiveA11y_other": "Médicaments inactifs ({{count}})",
         "inactiveCount_one": "Inactif ({{count}})",
         "inactiveCount_many": "Inactifs ({{count}})",
-        "inactiveCount_other": "Inactifs ({{count}})"
+        "inactiveCount_other": "Inactifs ({{count}})",
+        "notificationScheduledDoses_one": "Vous avez {{count}} prise prévue",
+        "notificationScheduledDoses_many": "Vous avez {{count}} prises prévues",
+        "notificationScheduledDoses_other": "Vous avez {{count}} prises prévues",
+        "notificationScheduledDosesNamed": "Prises prévues : {{names}}",
+        "notificationScheduledDosesOverflow_one": "Prises prévues : {{names}} et {{count}} autre",
+        "notificationScheduledDosesOverflow_many": "Prises prévues : {{names}} et {{count}} autres",
+        "notificationScheduledDosesOverflow_other": "Prises prévues : {{names}} et {{count}} autres",
+        "filter": {
+            "all": "Tous",
+            "meds": "Médicaments",
+            "supplements": "Compléments"
+        },
+        "supplement": {
+            "add": "Ajouter un complément",
+            "none": "Aucun complément pour l'instant",
+            "toggle": "C'est un complément alimentaire",
+            "form": "Forme",
+            "formTitle": "Forme du complément",
+            "newTitle": "Nouveau complément",
+            "editTitle": "Modifier le complément",
+            "nameRequired": "Veuillez saisir le nom du complément.",
+            "invalidAmount": "Les quantités de nutriments doivent être des nombres supérieurs ou égaux à zéro.",
+            "nutrientsFailed": "Échec de la configuration des nutriments : {{error}}",
+            "nutritionTitle": "Valeurs par portion",
+            "nutritionHint": "Saisissez les quantités indiquées sur l'étiquette pour une portion. Chaque prise enregistrée les ajoute à votre journée.",
+            "energyAndMacros": "Énergie et macros",
+            "vitaminsAndMinerals": "Vitamines, minéraux et autres",
+            "addNutrient": "Ajouter un nutriment",
+            "multivitaminPanel": "Modèle multivitamines",
+            "amountA11y": "Quantité de {{name}} en {{unit}}",
+            "removeNutrient": "Retirer {{name}}",
+            "nutrientCount_one": "{{count}} nutriment",
+            "nutrientCount_many": "{{count}} nutriments",
+            "nutrientCount_other": "{{count}} nutriments",
+            "scheduleResetFailed": "Échec de la réinitialisation des doses du programme : {{error}}",
+            "scheduleRestoreFailed": "La dose de {{schedules}} n'a pas pu être restaurée. Redéfinissez-la dans le programme.",
+            "unnamedSchedule": "un programme",
+            "modeUpdateNotApplied": "Le mode complément demandé n'a pas été appliqué.",
+            "nutrientsNotSaved": "Le complément a été créé, mais ses valeurs nutritionnelles n'ont pas été enregistrées car ce compte n'a pas accès au journal.",
+            "nutrientsNotUpdated": "Les modifications des nutriments n'ont pas été enregistrées."
+        }
     },
     "common": {
         "save": "Sauvegarder",
@@ -573,7 +617,9 @@
             "renameWorkout": "Renommer la séance d'entraînement",
             "reorderExercises": "Réorganiser les exercices",
             "menu": "Menu de la séance",
-            "settings": "Paramètres d'entraînement"
+            "settings": "Paramètres d'entraînement",
+            "gymLocation": "Salle / lieu",
+            "gymLocationSet": "Salle : {{location}}"
         },
         "rail": {
             "add": "Ajouter",
@@ -608,7 +654,11 @@
             "incomplete": "Annuler la validation de la série {{setNumber}}",
             "weight": "Poids",
             "rpe": "RPE",
-            "fillFromPrevious": "Remplir la série {{setNumber}} avec la précédente"
+            "fillFromPrevious": "Remplir la série {{setNumber}} avec la précédente",
+            "distance": "Distance",
+            "rir": "RIR",
+            "startTimer": "Démarrer le chronomètre",
+            "stopTimer": "Arrêter le chronomètre"
         },
         "columns": {
             "set": "N°",
@@ -629,7 +679,11 @@
             "notesForSet": "Notes de la série {{number}}",
             "addSet": "Ajouter une série à {{name}}",
             "caloriesUnit": "kcal",
-            "addSetLabel": "Ajouter une série"
+            "addSetLabel": "Ajouter une série",
+            "viewImages": "Voir les images de {{name}}",
+            "heartRateFor": "Fréquence cardiaque moyenne pour {{name}}",
+            "liveHeartRateFor": "Fréquence cardiaque actuelle pour {{name}}",
+            "heartRateUnit": "bpm"
         },
         "progression": {
             "toggleSettings": "Afficher/masquer les paramètres de progression",
@@ -648,9 +702,16 @@
             "incrementReps": "Incrément (rép)",
             "incrementWeight": "Incrément ({{unit}})",
             "equipmentBrand": "Équipement / marque de machine",
-            "equipmentBrandPlaceholder": "ex. Hammer Strength, poulie"
+            "equipmentBrandPlaceholder": "ex. Hammer Strength, poulie",
+            "rampTitle": "Ajout par série (cette séance)",
+            "rampUp": "Hausse",
+            "rampDown": "Baisse",
+            "rampAmountLabel": "Poids ajouté par série ({{unit}})",
+            "rampPlaceholder": "Aucun ({{unit}})",
+            "rampHint": "Chaque série de travail après la première est préremplie avec cette charge en plus (ou en moins) dans la même séance. Les séries d'échauffement et les drop sets sont ignorés."
         },
-        "nextSet": "Série suivante"
+        "nextSet": "Série suivante",
+        "failedToDeleteWorkout": "Échec de la suppression de la séance abandonnée du journal."
     },
     "foodEntryAdd": {
         "errors": {
@@ -2297,7 +2358,21 @@
         "setOf_other": "Série {{number}} sur {{count}}",
         "repCount_one": "{{formattedCount}} rép",
         "repCount_many": "{{formattedCount}} rép",
-        "repCount_other": "{{formattedCount}} rép"
+        "repCount_other": "{{formattedCount}} rép",
+        "addDropSets": "Ajouter {{sets}} drop sets (-{{percent}} %)",
+        "dismissLocation": "Ignorer le lieu",
+        "gymLocation": "Salle / lieu",
+        "gymLocationDesc": "Associez cette séance à votre salle ou lieu d'entraînement actuel",
+        "locationPlaceholder": "ex. Basic-Fit Centre-ville",
+        "metricRir": "RIR",
+        "recentLocations": "Lieux récents",
+        "tagPlaceholder": "Tapez pour ajouter ou rechercher…",
+        "addCustomTag": "Ajouter « {{tag}} »",
+        "modalityBodyweight": "Poids du corps (+/− charge)",
+        "bodyweightBanner": "Exercice au poids du corps : compte votre poids ({{bodyWeight}} {{unit}}) plus la charge saisie. Utilisez un signe moins pour une assistance.",
+        "bodyweightBannerNoWeight": "Exercice au poids du corps : compte votre poids plus la charge saisie. Utilisez un signe moins pour une assistance. Enregistrez un poids pour que le volume puisse être calculé.",
+        "modalityWeightDistance": "Poids et distance (portés)",
+        "modalityWeightDuration": "Poids et durée (maintiens)"
     },
     "auth": {
         "frontendUrl": "URL du frontend",
@@ -3179,7 +3254,8 @@
             "loadFailed": "Échec du chargement du sommeil",
             "empty": "Aucune donnée de sommeil sur cette période",
             "avgTimeInBed": "Temps au lit moy",
-            "avgTimeAsleep": "Temps de sommeil moy"
+            "avgTimeAsleep": "Temps de sommeil moy",
+            "tooltip": "{{timeInBed}} au lit · {{timeAsleep}} endormi"
         },
         "hydration": {
             "title": "Hydratation",
@@ -3203,7 +3279,18 @@
             "tooltip": "Appuyez sur la courbe pour les détails",
             "empty": "Enregistrez votre température chaque jour pour afficher votre courbe de température basale."
         },
-        "allTrendsHidden": "Tous les graphiques sont masqués. Choisissez ceux à afficher dans les paramètres du tableau de bord."
+        "allTrendsHidden": "Tous les graphiques sont masqués. Choisissez ceux à afficher dans les paramètres du tableau de bord.",
+        "calories": {
+            "title": "Calories",
+            "loadFailed": "Échec du chargement des calories",
+            "empty": "Aucune donnée de calories sur cette période",
+            "tooltip": "{{formattedCount}} kcal consommées",
+            "tooltipMacro": "{{percent}} % {{macroLabel}}",
+            "otherMacro": "Autres",
+            "avgCalories": "Moy",
+            "avgCaloriesValue": "{{formattedCount}} kcal",
+            "noAverage": "—"
+        }
     },
     "ranges": {
         "7d": "7 j",
@@ -3223,7 +3310,8 @@
             "analyzeLabel": "Échec de l'analyse de l'étiquette. Réessayez.",
             "loadPhoto": "Échec du chargement de la photo.",
             "lookupBarcode": "Recherche du code-barres impossible. Réessayez.",
-            "timeout": "Délai dépassé. Vérifiez la connexion au serveur."
+            "timeout": "Délai dépassé. Vérifiez la connexion au serveur.",
+            "retryOnDevice": "Cet iPhone n'a pas pu lire l'étiquette."
         },
         "permission": {
             "camera": "Autorisez l'accès à l'appareil photo pour l'afficher",
@@ -3266,7 +3354,11 @@
             "retakePhoto": "Reprendre la photo",
             "takeLabelPhoto": "Photographier l'étiquette nutritionnelle",
             "takeMealPhoto": "Photographier le repas"
-        }
+        },
+        "labelReadOnDevice": "Étiquette lue sur cet iPhone",
+        "labelReadByServer": "Étiquette lue par l'IA du serveur",
+        "retryWithServer": "Relire avec l'IA du serveur",
+        "retryOnDevice": "Relire sur cet iPhone"
     },
     "foodForm": {
         "equivalentSizes": "Tailles équivalentes",
@@ -3617,7 +3709,10 @@
         "deleteExercise": "Supprimer l'exercice",
         "makePrivate": "Rendre privé",
         "shareWithPublic": "Partager publiquement",
-        "deleteSheetTitle": "Supprimer l'exercice"
+        "deleteSheetTitle": "Supprimer l'exercice",
+        "duplicate": "Dupliquer l'exercice",
+        "viewImages": "Voir les images en plein écran",
+        "duplicateName": "{{name}} (copie)"
     },
     "workoutComplete": {
         "title": "Séance terminée",
@@ -3627,7 +3722,9 @@
             "sets": "Séries",
             "calories": "Calories",
             "distance": "Distance",
-            "averageRpe": "RPE moyen"
+            "averageRpe": "RPE moyen",
+            "avgHeartRate": "FC moy",
+            "maxHeartRate": "FC max"
         },
         "labels": {
             "todayAt": " · Aujourd'hui à ",
@@ -3674,6 +3771,9 @@
         "sections": {
             "exercises": "Exercices",
             "volume": "Volume"
+        },
+        "units": {
+            "bpm": "bpm"
         }
     },
     "cycleCalendar": {
@@ -3912,7 +4012,8 @@
         "title": "Exercices",
         "tabs": {
             "search": "Rechercher",
-            "online": "En ligne"
+            "online": "En ligne",
+            "suggested": "Suggestions"
         },
         "sections": {
             "recent": "Récents",
@@ -3957,6 +4058,30 @@
         "accessibility": {
             "provider": "Source d'exercices {{provider}}",
             "loadingMore": "Chargement d'autres exercices"
+        },
+        "replaceTitle": "Remplacer l'exercice",
+        "alternatives": {
+            "heading": "À la place de {{name}}",
+            "modes": {
+                "similar": "Similaires",
+                "differentEquipment": "Autre matériel"
+            },
+            "reasons": {
+                "sameMuscles": "Mêmes muscles",
+                "sharesMuscle": "Muscles proches",
+                "sameEquipment": "Même matériel",
+                "differentEquipment": "Autre matériel",
+                "sameMovement": "Même mouvement",
+                "recent": "Fait récemment",
+                "inLibrary": "Dans votre bibliothèque"
+            },
+            "newBadge": "Nouveau",
+            "searchAll": "Rechercher tous les exercices",
+            "failed": "Impossible de charger les alternatives",
+            "noMuscles": "Aucun muscle renseigné pour {{name}}",
+            "noMusclesHint": "Ajoutez ses muscles principaux dans la bibliothèque d'exercices pour obtenir des suggestions.",
+            "empty": "Aucune alternative trouvée",
+            "catalogUnavailable": "Free Exercise DB est indisponible : seule votre bibliothèque est affichée."
         }
     },
     "exerciseMutations": {
@@ -4410,7 +4535,15 @@
     "exerciseSummary": {
         "tapToAdd": "Touchez pour ajouter un exercice",
         "addExercise": "Ajouter un exercice",
-        "title": "Exercice"
+        "title": "Exercice",
+        "planUpNext": "Prochaine séance du plan",
+        "sessionNumber": "Séance {{current}} sur {{total}}",
+        "sessionNumberIndex": "Séance {{current}}",
+        "startWorkout": "Démarrer",
+        "switchSession": "Changer",
+        "suggestedPlanSession": "Suggérée",
+        "scheduledToday": "Prévue aujourd'hui",
+        "selectSession": "Choisir la séance"
     },
     "exerciseHistory": {
         "noSetData": "Aucune série",
@@ -4424,7 +4557,9 @@
             "exercise_other": "Exercices",
             "sets": "Séries",
             "volume": "Volume",
-            "calories": "Calories"
+            "calories": "Calories",
+            "avgHeartRate": "FC moy",
+            "maxHeartRate": "FC max"
         },
         "errors": {
             "needsExercise": "La séance doit contenir un exercice",
@@ -4434,7 +4569,8 @@
         "labels": {
             "details": "Détails",
             "name": "Nom",
-            "notes": "Notes"
+            "notes": "Notes",
+            "location": "Salle / lieu"
         },
         "placeholders": {
             "workoutName": "Nom de la séance",
@@ -4521,7 +4657,11 @@
         "formatTabata": "Tabata",
         "formatEmom": "EMOM",
         "formatAmrap": "AMRAP",
-        "formatForTime": "Au chrono (For Time)"
+        "formatForTime": "Au chrono (For Time)",
+        "format": "Format",
+        "formatStandard": "Standard",
+        "timeCapMinutes": "Temps limite (minutes)",
+        "timeCapPlaceholder": "ex. 20"
     },
     "workoutPresetMutations": {
         "errors": {
@@ -4614,7 +4754,10 @@
         "heartRateZoneModerate": "Modérée",
         "heartRateZoneIntense": "Intense",
         "heartRateZonePeak": "Maximale",
-        "durationMinutesSeconds": "{{minutes}} min {{seconds}} s"
+        "durationMinutesSeconds": "{{minutes}} min {{seconds}} s",
+        "wodScoreFormat": "Score {{format}}",
+        "timeCap": "Temps limite",
+        "scalingNotes": "Notes d'adaptation"
     },
     "exerciseEditing": {
         "removeTitle": "Retirer l'exercice ?",
@@ -5756,7 +5899,7 @@
             "caloriesLabel": "Calories",
             "route": "Parcours",
             "routeA11y": "Parcours de cette séance, du point vert à l'anneau rouge",
-            "noRoute": "Aucun tracé GPS enregistré. Les séances en intérieur n'en ont pas. Une marche en extérieur n'en a un que si Apple Santé l'a partagé lors de la synchronisation.",
+            "noRoute": "Aucun tracé GPS enregistré. Les séances en intérieur n'en ont pas. Une marche en extérieur n'en a un que si Apple Health l'a partagé lors de la synchronisation.",
             "heartRate": "Fréquence cardiaque",
             "average": "Moy {{value}}",
             "peak": "Max {{value}}",
@@ -5840,7 +5983,14 @@
         "scaled": "Scaled",
         "timeCapLabel": "Limite : {{cap}}",
         "wodScoring": "Score du WOD",
-        "work": "Effort"
+        "work": "Effort",
+        "finished": "Terminé",
+        "roundPlusOne": "+1 tour ({{current}})",
+        "timeCap": "Limite de temps",
+        "wodScore": "Score du WOD",
+        "amrapScore": "{{rounds}} tours + {{reps}} rép",
+        "completed": "Terminé",
+        "roundsCompleted": "{{rounds}} tours terminés"
     },
     "guidedWorkout": {
         "cue": {
@@ -5882,7 +6032,8 @@
             "doneHintReps_one": "Appuyez quand vous avez fait {{count}} répétition",
             "doneHintReps_many": "Appuyez quand vous avez fait {{count}} répétitions",
             "doneHintReps_other": "Appuyez quand vous avez fait {{count}} répétitions",
-            "doneHint": "Appuyez quand vous avez terminé"
+            "doneHint": "Appuyez quand vous avez terminé",
+            "done": "Toutes les séries sont faites. Terminez la séance pour l'enregistrer."
         },
         "settings": {
             "section": "Séances guidées",
@@ -5896,7 +6047,9 @@
             "countdownValue_many": "{{count}} s",
             "countdownValue_other": "{{count}} s",
             "sample": "Voici comment sonneront vos séances guidées.",
-            "test": "Tester la voix"
+            "test": "Tester la voix",
+            "enabledSubtitle": "Annonce chaque exercice et son objectif, lance le décompte, gère seul les séries chronométrées et passe à la série suivante. Les annonces passent même en mode silencieux, et l'écran reste allumé pendant la séance.",
+            "voiceDefault": "Voix de l'appareil"
         }
     },
     "workoutFeedback": {
@@ -5913,7 +6066,9 @@
         "painPrivacy": "Les suggestions pour ces exercices seront allégées, jamais alourdies.",
         "rateExercises": "Évaluer chaque exercice",
         "saving": "Enregistrement…",
-        "saved": "Enregistré"
+        "saved": "Enregistré",
+        "saveFailed": "Impossible d'enregistrer votre ressenti. Touchez pour réessayer.",
+        "loadFailed": "Impossible de charger votre ressenti. Touchez pour réessayer."
     },
     "adaptiveCoaching": {
         "reasons": {
