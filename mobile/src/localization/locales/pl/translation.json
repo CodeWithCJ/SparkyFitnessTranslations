@@ -476,12 +476,12 @@
     "healthMetrics": {
         "steps": "Kroki",
         "calories": "Aktywne kalorie",
-        "totalCalories": "Łączna liczba kalorii",
+        "totalCalories": "Łączne kalorie",
         "heartRate": "Tętno",
-        "weight": "Masa ciała",
+        "weight": "Waga",
         "bloodPressure": "Ciśnienie krwi",
         "nutrition": "Odżywianie",
-        "sleepSession": "Sen",
+        "sleepSession": "Sesja snu",
         "stress": "Stres",
         "basalBodyTemperature": "Podstawowa temperatura ciała",
         "basalMetabolicRate": "Podstawowa przemiana materii",
@@ -502,15 +502,15 @@
         "speed": "Prędkość",
         "power": "Moc",
         "elevationGained": "Przewyższenie",
-        "boneMass": "Masa kości",
+        "boneMass": "Masa kostna",
         "cervicalMucus": "Śluz szyjkowy",
         "cyclingPedalingCadence": "Kadencja pedałowania",
         "intermenstrualBleeding": "Krwawienie międzymiesiączkowe",
         "menstruationPeriod": "Miesiączka",
         "ovulationTest": "Test owulacyjny",
         "stepsCadence": "Kadencja kroków",
-        "bloodOxygenSaturation": "Saturacja krwi tlenem",
-        "bloodAlcoholContent": "Stężenie alkoholu we krwi",
+        "bloodOxygenSaturation": "Saturacja krwi",
+        "bloodAlcoholContent": "Zawartość alkoholu we krwi",
         "menstruationFlow": "Natężenie krwawienia",
         "nutritionDietaryFatTotal": "Tłuszcz w diecie",
         "nutritionDietaryProtein": "Białko w diecie",
@@ -530,9 +530,9 @@
         "cyclingFunctionalThresholdPower": "Funkcjonalna moc progowa",
         "environmentalAudioExposure": "Narażenie na hałas środowiskowy",
         "headphoneAudioExposure": "Narażenie na hałas ze słuchawek",
-        "appleMoveTime": "Czas ruchu Apple",
-        "appleExerciseTime": "Czas ćwiczeń Apple",
-        "appleStandTime": "Czas stania Apple",
+        "appleMoveTime": "Czas ruchu (Apple)",
+        "appleExerciseTime": "Czas ćwiczeń (Apple)",
+        "appleStandTime": "Czas stania (Apple)",
         "unknown": "Metryka zdrowotna"
     },
     "healthCategories": {
@@ -3383,7 +3383,12 @@
             "nameRequired": "Wprowadź nazwę tego planu.",
             "addExercise": "Dodaj ćwiczenie",
             "addExerciseSet": "Przed zapisaniem dodaj co najmniej jedno ćwiczenie z serią."
-        }
+        },
+        "formatInterval": "Interwałowy / HIIT",
+        "formatTabata": "Tabata",
+        "formatEmom": "EMOM",
+        "formatAmrap": "AMRAP",
+        "formatForTime": "Na czas"
     },
     "logScreen": {
         "title": "Dzienniki",
@@ -4196,7 +4201,18 @@
     },
     "symptoms": {
         "saveFailed": "Nie udało się zapisać objawu",
-        "removeFailed": "Nie udało się usunąć objawu"
+        "removeFailed": "Nie udało się usunąć objawu",
+        "severity": {
+            "mild": "Łagodne",
+            "moderate": "Umiarkowane",
+            "severe": "Silne"
+        },
+        "categories": {
+            "general": "Ogólne",
+            "pain": "Ból",
+            "skin": "Skóra",
+            "other": "Inne"
+        }
     },
     "waterIntake": {
         "updateFailed": "Błąd",
@@ -4656,5 +4672,162 @@
         "records_few": "{{count}} rekordy",
         "records_many": "{{count}} rekordów",
         "error": "Błąd"
+    },
+    "mindfulness": {
+        "timer": {
+            "title": "Minutnik medytacji",
+            "resume": "Wznów",
+            "pause": "Wstrzymaj"
+        },
+        "actions": {
+            "breathe": "Oddychaj",
+            "timer": "Minutnik",
+            "log": "Zarejestruj"
+        },
+        "types": {
+            "meditation": "Medytacja",
+            "breathwork": "Praca z oddechem",
+            "reflection": "Refleksja",
+            "walking": "Uważny spacer",
+            "yoga": "Joga",
+            "other": "Inne"
+        }
+    },
+    "muscles": {
+        "abdominals": "Brzuch",
+        "abductors": "Odwodziciele",
+        "adductors": "Przywodziciele",
+        "biceps": "Biceps",
+        "calves": "Łydki",
+        "chest": "Klatka piersiowa",
+        "forearms": "Przedramiona",
+        "glutes": "Pośladki",
+        "hamstrings": "Dwugłowe uda",
+        "lats": "Najszerszy grzbietu",
+        "lower back": "Dolna część pleców",
+        "middle back": "Środkowa część pleców",
+        "neck": "Szyja",
+        "quadriceps": "Czworogłowe uda",
+        "shoulders": "Barki",
+        "traps": "Czworoboczne",
+        "triceps": "Triceps"
+    },
+    "equipment": {
+        "barbell": "Sztanga",
+        "dumbbell": "Hantla",
+        "kettlebells": "Kettle",
+        "cable": "Wyciąg",
+        "machine": "Maszyna",
+        "bands": "Gumy oporowe",
+        "body only": "Tylko masa ciała",
+        "medicine ball": "Piłka lekarska",
+        "exercise ball": "Piłka do ćwiczeń",
+        "foam roll": "Rolka piankowa",
+        "e-z curl bar": "Gryf łamany E-Z",
+        "other": "Inne"
+    },
+    "interval": {
+        "countdown": "Przygotuj się",
+        "extraReps": "Dodatkowe powtórzenia",
+        "pause": "Pauza",
+        "ready": "Gotowy",
+        "rest": "Odpoczynek",
+        "resume": "Wznów",
+        "round": "Runda {{current}}",
+        "roundOfTotal": "Runda {{current}} z {{total}}",
+        "rx": "Rx",
+        "scaled": "Skalowane",
+        "timeCapLabel": "Limit: {{cap}}",
+        "wodScoring": "Punktacja WOD",
+        "work": "Praca"
+    },
+    "guidedWorkout": {
+        "cue": {
+            "getReady": "Przygotuj się. Start {{name}}.",
+            "setStartReps_one": "{{name}}. {{count}} powt.",
+            "setStartReps_few": "",
+            "setStartReps_many": "",
+            "setStartSeconds_one": "{{name}}. {{count}} sek.",
+            "setStartSeconds_few": "",
+            "setStartSeconds_many": "",
+            "setStartOpen": "{{name}}.",
+            "halfway": "Połowa.",
+            "rest_one": "Odpocznij. {{count}} sek.",
+            "rest_few": "",
+            "rest_many": "",
+            "intervalRest": "Odpocznij.",
+            "nextUp": "Następne: {{name}}.",
+            "workoutComplete": "Trening ukończony."
+        },
+        "card": {
+            "badge": "PROWADZONY",
+            "getReady": "Przygotuj się",
+            "setOfTotal": "Seria {{current}} z {{total}}",
+            "rest": "Odpoczynek",
+            "nextUp": "Następne",
+            "targetReps_one": "{{count}} powt.",
+            "targetReps_few": "",
+            "targetReps_many": "",
+            "targetSeconds_one": "{{count}} sek.",
+            "targetSeconds_few": "",
+            "targetSeconds_many": "",
+            "paused": "Wstrzymano",
+            "pause": "Pauza",
+            "resume": "Wznów",
+            "mute": "Wycisz głos",
+            "unmute": "Włącz głos",
+            "replay": "Odtwórz instrukcje ponownie",
+            "doneNext": "GOTOWE — NASTĘPNE",
+            "doneHintReps_one": "Dotknij po wykonaniu {{count}} powt.",
+            "doneHintReps_few": "",
+            "doneHintReps_many": "",
+            "doneHint": "Dotknij, gdy skończysz"
+        },
+        "settings": {
+            "section": "Treningi prowadzone",
+            "enabled": "Tryb prowadzony",
+            "voice": "Głos",
+            "rate": "Tempo mowy",
+            "rateValue": "{{rate}}×",
+            "countdown": "Odliczanie przygotowania",
+            "countdownSubtitle": "Przed pierwszym ćwiczeniem i przed każdą serią czasową.",
+            "countdownValue_one": "{{count}} s",
+            "countdownValue_few": "",
+            "countdownValue_many": "",
+            "sample": "Tak będą brzmieć Twoje treningi prowadzone.",
+            "test": "Testuj głos"
+        }
+    },
+    "workoutFeedback": {
+        "title": "Jak to było?",
+        "subtitle": "Twoje kolejne podpowiedzi dostosują się do tego.",
+        "difficulty": {
+            "tooEasy": "Za łatwo",
+            "justRight": "W sam raz",
+            "tooHard": "Za trudno"
+        },
+        "painQuestion": "Jakiś ból lub dyskomfort?",
+        "painWhere": "Podczas których ćwiczeń? (opcjonalnie)",
+        "painNotePlaceholder": "Co bolało? (opcjonalnie)",
+        "painPrivacy": "Podpowiedzi dla tych ćwiczeń będą lżejsze, nigdy cięższe.",
+        "rateExercises": "Oceń każde ćwiczenie",
+        "saving": "Zapisywanie…",
+        "saved": "Zapisano"
+    },
+    "adaptiveCoaching": {
+        "reasons": {
+            "painReported": "Lżej dzisiaj: ostatnio zgłosiłeś tu ból.",
+            "painRepeated": "Lżej dzisiaj: ból w tym miejscu przez dwie sesje z rzędu. Rozważ alternatywę.",
+            "sessionPain": "Utrzymujemy ciężar: zgłosiłeś dyskomfort w ostatnim treningu.",
+            "tooHard": "Utrzymujemy ciężar: ostatnio było za trudno.",
+            "tooHardRepeated": "Lżej dzisiaj: za trudno przez dwie sesje z rzędu.",
+            "highEffort": "Utrzymujemy ciężar: Twoje ostatnie serie były blisko maksymalnego wysiłku.",
+            "tooEasyRepeated": "O krok ciężniej: za łatwo przez dwie sesje z rzędu."
+        },
+        "declined": "Używamy Twojej zwykłej podpowiedzi.",
+        "variation": "Robiłeś to w ostatnich treningach. Spróbować wariantu?",
+        "useUsual": "Użyj mojej zwykłej",
+        "useAdjusted": "Użyj dostosowanej podpowiedzi",
+        "seeAlternatives": "Zobacz alternatywy"
     }
 }
