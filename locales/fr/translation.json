@@ -3564,7 +3564,10 @@
     },
     "muscleGroupRecovery": {
         "title": "Récupération des groupes musculaires",
-        "noRecoveryData": "Aucune donnée de récupération musculaire disponible."
+        "noRecoveryData": "Aucune donnée de récupération musculaire disponible.",
+        "today": "Aujourd'hui",
+        "yesterday": "Hier",
+        "daysAgo": "Il y a {{count}} jours"
     },
     "prProgressionChart": {
         "title": "Progression des records personnels",
@@ -3583,7 +3586,8 @@
         "legs": "Jambes",
         "abs": "Abdominaux",
         "calves": "Mollets",
-        "forearms": "Avant-bras"
+        "forearms": "Avant-bras",
+        "_comment": "muscleGroups est un regroupement plus large pour RecoveryTracker (MuscleGroupRecoveryTracker.tsx). Ne pas fusionner avec muscles."
     },
     "sleepAnalyticsCharts": {
         "sleepStages": "Phases de sommeil",
@@ -6688,5 +6692,192 @@
                 "menstrual_phase": "Pendant la phase menstruelle"
             }
         }
+    },
+    "muscleHeatmap": {
+        "title": "Carte des muscles sollicités",
+        "subtitle": "Séries de travail sur les muscles principaux pendant cette période",
+        "sets": "séries",
+        "fewer": "Moins",
+        "more": "Plus",
+        "tap": "Sélectionnez un muscle",
+        "notOnFigure": "Hors silhouette",
+        "figure": "Silhouette",
+        "male": "Homme",
+        "female": "Femme"
+    },
+    "muscles": {
+        "abdominals": "Abdominaux",
+        "abductors": "Abducteurs",
+        "adductors": "Adducteurs",
+        "biceps": "Biceps",
+        "calves": "Mollets",
+        "chest": "Pectoraux",
+        "forearms": "Avant-bras",
+        "glutes": "Fessiers",
+        "hamstrings": "Ischio-jambiers",
+        "lats": "Dorsaux",
+        "lower back": "Lombaires",
+        "middle back": "Milieu du dos",
+        "neck": "Cou",
+        "quadriceps": "Quadriceps",
+        "shoulders": "Épaules",
+        "traps": "Trapèzes",
+        "triceps": "Triceps"
+    },
+    "equipment": {
+        "barbell": "Barre",
+        "dumbbell": "Haltère",
+        "kettlebells": "Kettlebells",
+        "cable": "Poulie",
+        "machine": "Machine",
+        "bands": "Élastiques",
+        "body only": "Poids du corps",
+        "medicine ball": "Médecine-ball",
+        "exercise ball": "Ballon de gym",
+        "foam roll": "Rouleau de massage",
+        "e-z curl bar": "Barre EZ",
+        "other": "Autre"
+    },
+    "interval": {
+        "countdown": "Préparez-vous",
+        "decrementRound": "Annuler 1 tour",
+        "extraReps": "Répétitions en plus",
+        "finished": "Limite de temps atteinte",
+        "pause": "Pause",
+        "ready": "Prêt",
+        "rest": "Repos",
+        "resume": "Reprendre",
+        "round": "Tour {{current}}",
+        "roundOfTotal": "Tour {{current}} sur {{total}}",
+        "roundPlusOne": "+1 tour ({{current}} terminés)",
+        "rx": "Rx",
+        "scaled": "Scaled",
+        "timeCapLabel": "Limite : {{cap}}",
+        "wodScoring": "Score du WOD",
+        "work": "Effort"
+    },
+    "guidedWorkout": {
+        "cue": {
+            "getReady": "Préparez-vous. On commence par {{name}}.",
+            "setStartReps_one": "{{name}}. {{count}} répétition.",
+            "setStartReps_many": "{{name}}. {{count}} répétitions.",
+            "setStartReps_other": "{{name}}. {{count}} répétitions.",
+            "setStartSeconds_one": "{{name}}. {{count}} seconde.",
+            "setStartSeconds_many": "{{name}}. {{count}} secondes.",
+            "setStartSeconds_other": "{{name}}. {{count}} secondes.",
+            "setStartOpen": "{{name}}.",
+            "halfway": "À mi-parcours.",
+            "rest_one": "Repos. {{count}} seconde.",
+            "rest_many": "Repos. {{count}} secondes.",
+            "rest_other": "Repos. {{count}} secondes.",
+            "intervalRest": "Repos.",
+            "nextUp": "Ensuite : {{name}}.",
+            "workoutComplete": "Séance terminée."
+        },
+        "card": {
+            "badge": "GUIDÉE",
+            "getReady": "Préparez-vous",
+            "setOfTotal": "Série {{current}} sur {{total}}",
+            "rest": "Repos",
+            "nextUp": "À suivre",
+            "targetReps_one": "{{count}} répétition",
+            "targetReps_many": "{{count}} répétitions",
+            "targetReps_other": "{{count}} répétitions",
+            "targetSeconds_one": "{{count}} seconde",
+            "targetSeconds_many": "{{count}} secondes",
+            "targetSeconds_other": "{{count}} secondes",
+            "doneWeb": "Toutes les séries sont faites. Terminez la séance pour l'enregistrer.",
+            "paused": "En pause",
+            "pause": "Pause",
+            "resume": "Reprendre",
+            "mute": "Couper la voix",
+            "unmute": "Réactiver la voix",
+            "replay": "Répéter les consignes",
+            "doneNext": "FAIT — SUIVANT",
+            "doneHintReps_one": "Appuyez quand vous avez fait {{count}} répétition",
+            "doneHintReps_many": "Appuyez quand vous avez fait {{count}} répétitions",
+            "doneHintReps_other": "Appuyez quand vous avez fait {{count}} répétitions",
+            "doneHint": "Appuyez quand vous avez terminé"
+        },
+        "settings": {
+            "section": "Séances guidées",
+            "description": "Annonces vocales, décomptes et passage automatique des séries dans le lecteur de séance",
+            "enabled": "Mode guidé",
+            "enabledSubtitleWeb": "Annonce chaque exercice et son objectif, lance le décompte, gère seul les séries chronométrées et passe à la série suivante. Enregistré dans ce navigateur uniquement.",
+            "unsupported": "Ce navigateur ne peut pas parler. La vue guidée fonctionne quand même, sans narration.",
+            "voice": "Voix",
+            "voiceDefaultWeb": "Voix du navigateur",
+            "rate": "Débit de parole",
+            "rateValue": "{{rate}}×",
+            "countdown": "Décompte de préparation",
+            "countdownSubtitle": "Avant le premier exercice et avant chaque série chronométrée.",
+            "countdownValue_one": "{{count}} s",
+            "countdownValue_many": "{{count}} s",
+            "countdownValue_other": "{{count}} s",
+            "sample": "Voici comment sonneront vos séances guidées.",
+            "test": "Tester la voix"
+        }
+    },
+    "workoutFeedback": {
+        "title": "Votre ressenti ?",
+        "subtitle": "Vos prochaines suggestions s'y adapteront.",
+        "difficulty": {
+            "tooEasy": "Trop facile",
+            "justRight": "Juste bien",
+            "tooHard": "Trop dur"
+        },
+        "painQuestion": "Une douleur ou une gêne ?",
+        "painWhere": "Pendant quels exercices ? (facultatif)",
+        "painNotePlaceholder": "Qu'est-ce qui a fait mal ? (facultatif)",
+        "painPrivacy": "Les suggestions pour ces exercices seront allégées, jamais alourdies.",
+        "rateExercises": "Évaluer chaque exercice",
+        "saving": "Enregistrement…",
+        "saved": "Enregistré",
+        "saveFailed": "Impossible d'enregistrer votre ressenti. Réessayez.",
+        "loadFailed": "Impossible de charger votre ressenti.",
+        "tryAgain": "Réessayer"
+    },
+    "workoutCoaching": {
+        "settingsTitle": "Suggestions de séance adaptatives",
+        "settingsSubtitle": "Adapte les prochaines séries et les suggestions d'exercices selon le ressenti noté après vos séances (difficulté, douleurs signalées).",
+        "settingsLoadFailed": "Impossible de charger les paramètres de coaching des séances",
+        "settingsSaved": "Paramètres enregistrés",
+        "settingsSaveFailed": "Impossible d'enregistrer les paramètres de coaching des séances"
+    },
+    "adaptiveCoaching": {
+        "reasons": {
+            "painReported": "Plus léger aujourd'hui : vous avez signalé une douleur ici la dernière fois.",
+            "painRepeated": "Plus léger aujourd'hui : douleur ici deux séances de suite. Envisagez une alternative.",
+            "sessionPain": "Charge maintenue : vous avez signalé une gêne lors de votre dernière séance.",
+            "tooHard": "Charge maintenue : la dernière fois, c'était trop dur.",
+            "tooHardRepeated": "Plus léger aujourd'hui : trop dur deux séances de suite.",
+            "highEffort": "Charge maintenue : vos dernières séries étaient proches de l'effort maximal.",
+            "tooEasyRepeated": "Un cran plus lourd : trop facile deux séances de suite."
+        },
+        "declined": "Suggestion habituelle utilisée.",
+        "variation": "Vous l'avez fait lors de la plupart de vos dernières séances. Essayer une variante ?",
+        "useUsual": "Garder l'habituelle",
+        "useAdjusted": "Utiliser la suggestion ajustée",
+        "seeAlternatives": "Voir les alternatives"
+    },
+    "trainingConsistency": {
+        "title": "Régularité de l'entraînement",
+        "streak": "Semaines d'affilée",
+        "longest": "Record",
+        "thisWeek": "Cette semaine",
+        "lastWeek": "Semaine dernière",
+        "weeks_one": "{{count}} semaine",
+        "weeks_many": "{{count}} semaines",
+        "weeks_other": "{{count}} semaines",
+        "days_one": "{{count}} jour",
+        "days_many": "{{count}} jours",
+        "days_other": "{{count}} jours",
+        "daysPerWeek_one": "Jours d'entraînement par semaine, sur la dernière semaine ({{count}})",
+        "daysPerWeek_many": "Jours d'entraînement par semaine, sur les {{count}} dernières semaines",
+        "daysPerWeek_other": "Jours d'entraînement par semaine, sur les {{count}} dernières semaines",
+        "chartLabel": "Jours d'entraînement par semaine",
+        "setsTitle": "Séries par muscle",
+        "noSets": "Aucune série enregistrée cette semaine ni la précédente.",
+        "loadFailed": "Échec du chargement de la régularité de l'entraînement."
     }
 }
