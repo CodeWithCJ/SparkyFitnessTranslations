@@ -365,7 +365,7 @@
             "cycleOn_other": "{{count}} Tage Einnahme",
             "cycleOff_one": "{{count}} Tag Pause",
             "cycleOff_other": "{{count}} Tage Pause",
-            "everyNDays_one": "Jeden Tag",
+            "everyNDays_one": "Jeden {{count}} Tag",
             "everyNDays_other": "Alle {{count}} Tage"
         },
         "notificationScheduledDose": "Du hast eine geplante Dosis",
@@ -1057,7 +1057,7 @@
             "partialMessage": "Einige Datensätze konnten nicht aus {{store}} gelöscht werden.",
             "errorMessage": "Daten konnten nicht aus {{store}} entfernt werden.",
             "confirmTitle": "Alle {{store}}-Daten entfernen",
-            "confirmMessage": "Alle Ernährungs- und Flüssigkeitseinträge löschen, die SparkyFitness in {{store}} geschrieben hat, und das Schreiben in {{store}} deaktivieren? Dein SparkyFitness-Tagebuch und Einträge aus anderen Apps sind nicht betroffen."
+            "confirmMessage": "Alle Ernährungs- und Flüssigkeitseinträge löschen, die SparkyFitness in {{store}} geschrieben hat, und die Rückübertragung deaktivieren? Dein SparkyFitness-Tagebuch und Einträge aus anderen Apps sind nicht betroffen."
         },
         "range": {
             "title": "Synchronisierungszeitraum",
@@ -1334,10 +1334,10 @@
         "asNeeded": "Bei Bedarf",
         "taper": "Ausschleichen",
         "at": "{{frequency}} um {{time}}",
-        "cycleOn_one": "{{count}} Tag Einnahme{{count}} Tage Einnahme",
-        "cycleOn_other": "",
-        "cycleOff_one": "{{count}} Tag Pause{{count}} Tage Pause",
-        "cycleOff_other": ""
+        "cycleOn_one": "{{count}} Tag Einnahme",
+        "cycleOn_other": "{{count}} Tage Einnahme",
+        "cycleOff_one": "{{count}} Tag Pause",
+        "cycleOff_other": "{{count}} Tage Pause"
     },
     "devTools": {
         "title": "Entwicklerwerkzeuge",
@@ -1788,8 +1788,8 @@
         "active": "Aktiv",
         "periodLate_one": "Periode {{count}} Tag verspätet",
         "periodLate_other": "Periode {{count}} Tage verspätet",
-        "daysToDue_one": "{{count}} Tag bis zum Geburtstermin{{count}} Tage bis zum Geburtstermin",
-        "daysToDue_other": ""
+        "daysToDue_one": "{{count}} Tag bis zum Geburtstermin",
+        "daysToDue_other": "{{count}} Tage bis zum Geburtstermin"
     },
     "syncHealth": {
         "unknownError": "Unbekannter Synchronisierungsfehler",
@@ -1800,8 +1800,8 @@
         "error": "Synchronisierungsfehler",
         "errorDetails": "Die Synchronisierung der Gesundheitsdaten ist fehlgeschlagen: {{message}}",
         "loading": "Gesundheitsdaten werden geladen",
-        "readErrors_one": "{{count}} Wert konnte nicht gelesen werden. Er wird bei der nächsten Synchronisierung erneut gelesen.{{count}} Werte konnten nicht gelesen werden. Sie werden bei der nächsten Synchronisierung erneut gelesen.",
-        "readErrors_other": "",
+        "readErrors_one": "{{count}} Wert konnte nicht gelesen werden. Er wird bei der nächsten Synchronisierung erneut gelesen.",
+        "readErrors_other": "{{count}} Werte konnten nicht gelesen werden. Sie werden bei der nächsten Synchronisierung erneut gelesen.",
         "uploadErrors_one": "{{count}} Datensatz wurde vom Server abgelehnt. Siehe Protokolle.",
         "uploadErrors_other": "{{count}} Datensätze wurden vom Server abgelehnt. Siehe Protokolle."
     },
