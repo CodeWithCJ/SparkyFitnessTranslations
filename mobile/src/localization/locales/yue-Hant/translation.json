@@ -45,7 +45,7 @@
         },
         "detail": {
             "deleteTitle": "刪除藥物",
-            "deleteMessage": "你確定要刪除「{{name}}」？咁樣都會移除所有時間表同已記錄嘅紀錄.",
+            "deleteMessage": "您確定要刪除「{{name}}」？咁樣都會移除所有時間表同已記錄嘅紀錄.",
             "removeDoseTitle": "移除劑量",
             "removeDoseMessage": "移除 {{time}} 呢次已記錄嘅劑量？",
             "deleteFailed": "刪除藥物失敗",
@@ -622,7 +622,7 @@
         "locationPlaceholder": "例如 Planet Fitness - 市中心",
         "metricRir": "RIR",
         "recentLocations": "最近使用嘅地點",
-        "tagPlaceholder": "輸入以新增或搜尋...，",
+        "tagPlaceholder": "輸入以新增或搜尋...",
         "addCustomTag": "新增「{{tag}}」",
         "modalityBodyweight": "徒手（+/− 體重）",
         "bodyweightBanner": "徒手動作：會計入您嘅體重（{{bodyWeight}} {{unit}}）加上您輸入嘅重量，用負號表示輔助.",
@@ -1032,7 +1032,7 @@
             "viewImages": "檢視 {{name}} 嘅圖片",
             "heartRateFor": "{{name}} 嘅平均心率",
             "liveHeartRateFor": "{{name}} 嘅即時心率",
-            "heartRateUnit": "bpm"
+            "heartRateUnit": "次(bpm)/分鐘"
         },
         "nextSet": "下一組",
         "progression": {
@@ -2468,7 +2468,7 @@
         "byPhase": "{{metric}} 按週期階段",
         "higher": "偏高",
         "lower": "偏低",
-        "peak": "{{phase}}：{{metric}} 傾向 {{direction}}（同你嘅平均相差 {{delta}}{{unit}}）.",
+        "peak": "{{phase}}：{{metric}} 傾向 {{direction}}（同您嘅平均相差 {{delta}}{{unit}}）.",
         "noDataTitle": "多啲資料先會解鎖關聯",
         "noDataHint": "繼續記錄體重、情緒、瞓覺同精力幾個週期，睇吓佢哋點樣隨您嘅階段變化.",
         "conditions": {
@@ -2641,7 +2641,7 @@
         "updateNutrition": "淨更新營養",
         "updateNutritionPhotos": "更新營養同相片",
         "saveNutritionTitle": "儲存營養",
-        "overwriteMessage": "「{{unitLabel}}」已經係一個已儲存嘅變體。你想用呢啲數值更新佢，定係另存新變體？",
+        "overwriteMessage": "「{{unitLabel}}」已經係一個已儲存嘅變體。您想用呢啲數值更新佢，定係另存新變體？",
         "saveAsNew": "另存新",
         "updateExisting": "更新現有",
         "missingName": "缺少名稱",
@@ -2747,7 +2747,7 @@
         "nameAlreadyUsedMessage": "您已經有一個叫「{{name}}」嘅通行密鑰. 請改用另一個名稱.",
         "noActiveSession": "冇作用中嘅登入，請重新登入.",
         "deleteTitle": "刪除通行密鑰",
-        "deleteMessage": "你確定要刪除「{{name}}」？",
+        "deleteMessage": "您確定要刪除「{{name}}」？",
         "unnamed": "未命名通行密鑰",
         "deletedTitle": "已刪除",
         "deletedMessage": "通行密鑰已移除.",
@@ -2896,7 +2896,7 @@
     },
     "importHistory": {
         "paused": {
-            "quota": "{{source}} 嘅每日歷史上限已達到。你嘅進度已儲存。聽日繼續，由上次停低嘅位再接住.",
+            "quota": "{{source}} 嘅每日歷史上限已達到。您嘅進度已儲存。聽日繼續，由上次停低嘅位再接住.",
             "deviceLocked": "匯入期間您部機鎖咗，健康資料讀唔到，解鎖部機再繼續.",
             "appInactive": "匯入期間個 App 轉咗去背景，保持開住同解鎖，然後繼續.",
             "serverChanged": "匯入期間使用中伺服器轉咗，轉返去嗰個伺服器繼續，或者重新開始匯入落呢個.",
@@ -3340,7 +3340,7 @@
             "show": "顯示",
             "accessibility": "篩選{{noun}}，已篩至{{filter}}",
             "emptyTitle": "{{filter}} 入面冇 {{noun}}",
-            "emptySubtitle": "改吓篩選，睇你其他 {{noun}} .",
+            "emptySubtitle": "改吓篩選，睇您其他 {{noun}} .",
             "showAll": "顯示全部"
         },
         "accessibility": {
@@ -3645,7 +3645,7 @@
             "volume": "總量"
         },
         "units": {
-            "bpm": "bpm"
+            "bpm": "次(bpm)/分鐘"
         }
     },
     "createFood": {
@@ -4040,7 +4040,7 @@
             "totalAmount": "總量（{{unit}}）",
             "servingSize": "一份係（{{unit}}）",
             "eatenServings": "食咗嘅份數",
-            "eatenAmount": "你食咗（{{unit}}）",
+            "eatenAmount": "您食咗（{{unit}}）",
             "hint": "上面啲食材係成碟菜——話俾我哋知點分，得您食咗嗰啲先會入您嘅日記.",
             "derivedYield_other": "整到大約 {{count}} 份",
             "perServing": "每份",
@@ -4667,7 +4667,7 @@
         "newDefinitionTitle": "新增症狀類型",
         "editDefinitionTitle": "編輯症狀類型",
         "symptom": "症狀",
-        "orCustomName": "或輸入自訂症狀...，",
+        "orCustomName": "或輸入自訂症狀...",
         "ongoingEpisode": "記錄為進行中嘅發作",
         "startedWhen": "開始時間：",
         "endEpisodeNow": "即刻結束發作",
@@ -4679,7 +4679,7 @@
         "treatments": "治療同舒緩方法",
         "impact": "對日常嘅影響",
         "notes": "備註同觀察",
-        "notesPlaceholder": "任何其他備註或觀察...，",
+        "notesPlaceholder": "任何其他備註或觀察...",
         "logSymptom": "記錄症狀",
         "logAnother": "記錄另一個症狀",
         "logShort": "+ 記錄",
@@ -4757,7 +4757,7 @@
         "deleteTitle": "刪除症狀記錄",
         "deleteConfirm": "您確定要刪除呢筆記錄嗎？",
         "mapPerspective": "左同右對應您嘅身體",
-        "addTreatmentPlaceholder": "新增藥物或舒緩方法...，",
+        "addTreatmentPlaceholder": "新增藥物或舒緩方法...",
         "updateFailed": "無法更新症狀記錄",
         "endFailed": "無法結束發作",
         "saveDefinitionFailed": "無法儲存症狀",
@@ -5574,7 +5574,7 @@
         "roundsCompleted": "完成 {{rounds}} 回合"
     },
     "quickActions": {
-        "scanFood": "掃描食物",
+        "scanFood": "掃描食材",
         "searchFood": "記錄食物",
         "logWater": "記錄飲水",
         "fasting": "斷食",
@@ -5601,7 +5601,8 @@
         "setInputTitle": "組數輸入",
         "setInputDescription": "訓練期間喺手錶輸入重量同次數嘅方式：用鍵盤輸入，或者點一下數值再轉動數碼錶冠或拖動，重量每次以 0.5 增加.",
         "setInputKeypad": "鍵盤",
-        "setInputCrown": "數碼錶冠"
+        "setInputCrown": "數碼錶冠",
+        "nutrientsDescription": "喺手錶嘅熱量環下面揀要顯示嘅營養素，再拖曳排好次序. 每一項都會顯示今日嘅攝取量同目標嘅對比."
     },
     "guidedWorkout": {
         "cue": {
@@ -5737,7 +5738,7 @@
             "unitMi": "mi",
             "calories": "{{value}} 卡路里",
             "minutes_other": "{{formattedCount}} 分鐘",
-            "bpm": "{{value}} bpm",
+            "bpm": "{{value}} 次(bpm)/分鐘",
             "distance": "距離",
             "duration": "時長",
             "pace": "配速",
@@ -5771,7 +5772,8 @@
             "calendarA11y_other": "訓練日曆：過去 {{weeks}} 週共有 {{count}} 個訓練日",
             "setsTitle": "每個肌肉嘅組數",
             "noSets": "今週同上週都冇記錄組數.",
-            "loadFailed": "無法載入您嘅訓練穩定性."
+            "loadFailed": "無法載入您嘅訓練穩定性.",
+            "subtitle_other": "過去 {{formattedCount}} 週，{{first}} 至 {{last}}"
         }
     },
     "aiSettings": {
@@ -5798,7 +5800,7 @@
             "sessionCount_other": "{{count}} 節時段",
             "todayTotal": "今日",
             "minuteUnit": "分鐘",
-            "bpmUnit": "bpm",
+            "bpmUnit": "次(bpm)/分鐘",
             "msUnit": "毫秒",
             "details": "詳情",
             "openDetails": "開啟正念詳情",
@@ -5899,7 +5901,7 @@
             "stopwatchSubtitle": "開放式冥想時段",
             "countdown": "倒數",
             "openStopwatch": "開放式計時",
-            "meditating": "冥想中...，",
+            "meditating": "冥想中...",
             "peaceful": "搵個舒服嘅位坐低",
             "start": "開始冥想",
             "pause": "暫停",
