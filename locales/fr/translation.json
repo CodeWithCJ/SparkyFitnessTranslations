@@ -1339,8 +1339,8 @@
             "duration": "Durée",
             "durationDistance": "Durée & distance",
             "bodyweightReps": "Poids du corps (+/− charge)",
-            "weightDistance": "Charge & distance (portés)",
-            "weightDuration": "Charge & durée (maintiens chargés)"
+            "weightDistance": "Charge et distance (portés)",
+            "weightDuration": "Charge et durée (maintiens chargés)"
         },
         "importHistoryCSV": {
             "parseText": "Analyser le texte",
@@ -5872,7 +5872,7 @@
         "avgDuration": "Durée moy",
         "hoursShort": "{{count}} h",
         "autoFromMeals": "Auto (d'après les repas)",
-        "currentlyFastingAfterMeal": "En jeûne depuis le {{meal}}",
+        "currentlyFastingAfterMeal": "En jeûne depuis le repas « {{meal}} »",
         "eatingWindow": "Fenêtre alimentaire",
         "eatingWindowOpen": "Fenêtre alimentaire ouverte",
         "eatingWindowDescription": "Fenêtre alimentaire ouverte · {{remaining}} restant (fermeture à {{endTime}})",
