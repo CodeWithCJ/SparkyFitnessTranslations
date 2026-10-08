@@ -116,7 +116,7 @@
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "Keress az edzésprogramjaid között...",
-            "recentPresetsTitle": "Legutóbbi előre beállított értékek",
+            "recentPresetsTitle": "Legutóbb beállított értékek",
             "noRecentPresets": "Nincsenek legutóbbi beállítások."
         }
     },
