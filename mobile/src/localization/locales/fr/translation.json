@@ -886,9 +886,9 @@
     },
     "healthTrendsSettings": {
         "moveDown": "Descendre",
-        "description": "Faites glisser un graphique par sa poignée pour le déplacer. Déposez-le sous la ligne Masqués pour le retirer du tableau de bord.",
+        "description": "Faites glisser un graphique par sa poignée pour le déplacer. Désactivez-le pour le masquer du tableau de bord.",
         "reorder": "Déplacer {{name}}",
-        "reorderHint": "Placez-le sous la ligne Masqués pour masquer ce graphique, ou au-dessus pour l'afficher",
+        "reorderHint": "Déplacer ce graphique dans les tendances santé du tableau de bord",
         "moveUp": "Monter",
         "stateShown": "Affiché",
         "stateHidden": "Masqué"
