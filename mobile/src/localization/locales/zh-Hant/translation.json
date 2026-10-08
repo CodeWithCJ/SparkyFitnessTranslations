@@ -180,7 +180,10 @@
             "beforeMeal": "餐前",
             "withMeal": "隨餐",
             "afterMeal": "餐後",
-            "awayFromMeals": "遠離餐點"
+            "awayFromMeals": "遠離餐點",
+            "softgel": "軟膠囊",
+            "gummy": "軟糖",
+            "powder": "粉末"
         },
         "weekdays": {
             "title": "星期幾",
@@ -213,7 +216,42 @@
         "notificationScheduledDose": "你有一個計劃劑量",
         "notificationScheduledDoseNamed": "計劃劑量：{{name}}{{dose}}",
         "inactiveA11y_other": "已停用藥物（{{count}}）",
-        "inactiveCount_other": "已停用（{{count}}）"
+        "inactiveCount_other": "已停用（{{count}}）",
+        "notificationScheduledDoses_other": "你有 {{count}} 次已排定的劑量",
+        "notificationScheduledDosesNamed": "已排定劑量：{{names}}",
+        "notificationScheduledDosesOverflow_other": "已排定劑量：{{names}}，另外 {{count}} 次",
+        "filter": {
+            "all": "全部",
+            "meds": "藥物",
+            "supplements": "保健食品"
+        },
+        "supplement": {
+            "add": "新增保健食品",
+            "none": "尚無保健食品",
+            "toggle": "這是保健食品",
+            "form": "劑型",
+            "formTitle": "保健食品劑型",
+            "newTitle": "新增保健食品",
+            "editTitle": "編輯保健食品",
+            "nameRequired": "請輸入保健食品名稱。",
+            "invalidAmount": "營養素含量必須是零或以上的數字。",
+            "nutrientsFailed": "設定營養素失敗：{{error}}",
+            "nutritionTitle": "每份營養",
+            "nutritionHint": "輸入標籤上每一份的含量。每次記錄劑量都會將其加入當日。",
+            "energyAndMacros": "能量與巨量營養素",
+            "vitaminsAndMinerals": "維生素、礦物質及其他",
+            "addNutrient": "新增營養素",
+            "multivitaminPanel": "綜合維生素面板",
+            "amountA11y": "{{name}} 以 {{unit}} 計的含量",
+            "removeNutrient": "移除 {{name}}",
+            "nutrientCount_other": "{{count}} 種營養素",
+            "scheduleResetFailed": "重設排定劑量失敗：{{error}}",
+            "scheduleRestoreFailed": "無法還原 {{schedules}} 的劑量，請在日程中重新設定。",
+            "unnamedSchedule": "一個日程",
+            "modeUpdateNotApplied": "要求的保健食品模式未被套用。",
+            "nutrientsNotSaved": "保健食品已建立，但由於此帳戶無日誌存取權限，營養素數值未儲存。",
+            "nutrientsNotUpdated": "營養素變更未儲存。"
+        }
     },
     "common": {
         "back": "返回",
@@ -276,7 +314,11 @@
         "selectOption": "選擇一個選項",
         "requestTimedOut": "請求超時。請檢查你的伺服器連線。",
         "nextStep": "下一步",
-        "notNow": "暫不"
+        "notNow": "暫不",
+        "more": "更多",
+        "undo": "復原",
+        "all": "全部",
+        "builtIn": "內建"
     },
     "workout": {
         "calories": "卡路里",
@@ -572,7 +614,21 @@
         "unknownExercise": "未知動作",
         "addNotePlaceholder": "新增備註…",
         "setOf_other": "第 {{number}} 組，共 {{count}} 組",
-        "repCount_other": "{{formattedCount}} 次"
+        "repCount_other": "{{formattedCount}} 次",
+        "addDropSets": "新增 {{sets}} 組降重組（-{{percent}}%）",
+        "dismissLocation": "關閉地點",
+        "gymLocation": "健身房／地點",
+        "gymLocationDesc": "將本次訓練標記為你目前的健身房或訓練場地",
+        "locationPlaceholder": "例如 Planet Fitness - 市中心",
+        "metricRir": "RIR",
+        "recentLocations": "最近使用的地點",
+        "tagPlaceholder": "輸入以新增或搜尋...",
+        "addCustomTag": "新增「{{tag}}」",
+        "modalityBodyweight": "自身體重（+/− 體重）",
+        "bodyweightBanner": "自身體重動作：計入你的體重（{{bodyWeight}} {{unit}}）加上你輸入的重量。使用負號表示輔助。",
+        "bodyweightBannerNoWeight": "自身體重動作：計入你的體重加上你輸入的重量。使用負號表示輔助。記錄體重才能計算訓練量。",
+        "modalityWeightDistance": "重量與距離（負重行走）",
+        "modalityWeightDuration": "重量與時間（負重支撐）"
     },
     "healthMetrics": {
         "basalBodyTemperature": "基礎體溫",
@@ -634,7 +690,8 @@
         "cyclingFunctionalThresholdPower": "騎行功能閾值功率",
         "environmentalAudioExposure": "環境音訊暴露",
         "headphoneAudioExposure": "耳機音訊暴露",
-        "unknown": "健康指標"
+        "unknown": "健康指標",
+        "bodyWaterMass": "身體水分量"
     },
     "settings": {
         "app": "應用設定",
@@ -685,7 +742,9 @@
             "whatsNew": "新內容",
             "logs": "檢視日誌",
             "about": "關於",
-            "shareReport": "共享診斷報告"
+            "shareReport": "共享診斷報告",
+            "watch": "Apple Watch",
+            "ai": "AI"
         },
         "theme": {
             "title": "主題",
@@ -793,12 +852,15 @@
             "medicationReminders": "藥物提醒",
             "workoutTimer": "訓練計時器",
             "fasting": "禁食",
-            "hydration": "水分提醒"
+            "hydration": "水分提醒",
+            "ongoingWorkout": "進行中的訓練"
         },
         "actions": {
             "completeSet": "完成該組",
             "logAsTaken": "記錄為已服用",
-            "skip": "跳過"
+            "skip": "跳過",
+            "logAllAsTaken": "全部標記為已服用",
+            "skipAll": "全部跳過"
         },
         "permission": {
             "notificationsOff": "通知已關閉",
@@ -824,6 +886,10 @@
         "hydration": {
             "title": "該補充水分了 💧",
             "body": "你已經有一段時間沒有記錄水分攝取了。"
+        },
+        "fastingPreEnd": {
+            "title": "斷食目標即將結束",
+            "body": "你的斷食將在 {{minutes}} 分鐘後達到目標。"
         }
     },
     "activeWorkout": {
@@ -876,7 +942,9 @@
             "renameWorkout": "重新命名訓練",
             "reorderExercises": "重新排序動作",
             "menu": "訓練選單",
-            "settings": "訓練設定"
+            "settings": "訓練設定",
+            "gymLocation": "健身房／地點",
+            "gymLocationSet": "健身房：{{location}}"
         },
         "exerciseCard": {
             "addNote": "為此動作新增備註…",
@@ -935,7 +1003,11 @@
             "incomplete": "取消完成第 {{setNumber}} 組",
             "weight": "重量",
             "rpe": "RPE",
-            "fillFromPrevious": "從上一組填充第 {{setNumber}} 組"
+            "fillFromPrevious": "從上一組填充第 {{setNumber}} 組",
+            "distance": "距離",
+            "rir": "RIR",
+            "startTimer": "開始碼錶",
+            "stopTimer": "停止碼錶"
         },
         "columns": {
             "set": "組",
@@ -956,7 +1028,11 @@
             "notesForSet": "第 {{number}} 組的備註",
             "addSet": "向 {{name}} 新增組",
             "caloriesUnit": "千卡",
-            "addSetLabel": "新增組"
+            "addSetLabel": "新增組",
+            "viewImages": "檢視 {{name}} 的圖片",
+            "heartRateFor": "{{name}} 的平均心率",
+            "liveHeartRateFor": "{{name}} 的即時心率",
+            "heartRateUnit": "bpm"
         },
         "nextSet": "下一組",
         "progression": {
@@ -976,8 +1052,15 @@
             "incrementReps": "增加幅度（次數）",
             "incrementWeight": "增加幅度（{{unit}}）",
             "equipmentBrand": "器材／機器品牌",
-            "equipmentBrandPlaceholder": "例如 Hammer Strength、Cable Stack"
-        }
+            "equipmentBrandPlaceholder": "例如 Hammer Strength、Cable Stack",
+            "rampTitle": "每組增加（本次訓練）",
+            "rampUp": "增加",
+            "rampDown": "減少",
+            "rampAmountLabel": "每組增加的重量（{{unit}}）",
+            "rampPlaceholder": "關閉（{{unit}}）",
+            "rampHint": "同一場訓練中，第一組之後的每組正式組會自動預填加重（或減輕）這個量。暖身組與降重組會略過。"
+        },
+        "failedToDeleteWorkout": "無法從日誌中刪除已放棄的訓練時段。"
     },
     "addSheet": {
         "food": "食物",
@@ -995,7 +1078,9 @@
         "askSparky": "詢問 Sparky",
         "syncHealth": "同步健康資料",
         "logPregnancyEntry": "記錄孕期條目",
-        "logCycle": "記錄週期"
+        "logCycle": "記錄週期",
+        "symptoms": "症狀",
+        "mindfulness": "正念"
     },
     "screens": {
         "foods": "食物",
@@ -1077,13 +1162,24 @@
             "noRecentItems": "暫無最近專案",
             "recentItemsHint": "你記錄的食物、餐點和運動會顯示在這裡，方便快速訪問。",
             "waterContainers": "水容器",
-            "waterContainersSubtitle": "水瓶、水杯，以及連結食物的飲品"
+            "waterContainersSubtitle": "水瓶、水杯，以及連結食物的飲品",
+            "exerciseStatistics": "動作統計",
+            "exerciseStatisticsSubtitle": "各肌肉的組數與身體熱度圖"
         },
         "sleep": "睡眠",
         "healthTrendsSettings": "健康趨勢",
         "progressPhotos": "進度照片",
         "progressPhotoCompare": "對比",
-        "progressPhotoTimelapse": "延時攝影"
+        "progressPhotoTimelapse": "延時攝影",
+        "duplicateExercise": "複製動作",
+        "symptomLog": "記錄症狀",
+        "symptomHistory": "症狀紀錄",
+        "manageSymptoms": "管理症狀",
+        "symptomDefinition": "症狀詳情",
+        "exerciseStatistics": "動作統計",
+        "cardioSession": "心肺訓練時段",
+        "watchSettings": "Apple Watch",
+        "aiSettings": "AI"
     },
     "healthCategories": {
         "Common": "常用",
@@ -1246,7 +1342,8 @@
         "quickAddDrinks": "快速新增",
         "logDrink": "記錄{{drink}}",
         "perPress": "{{value}} {{unit}}",
-        "logDrinkFailed": "無法記錄該飲品"
+        "logDrinkFailed": "無法記錄該飲品",
+        "exerciseStatistics": "統計"
     },
     "syncScreen": {
         "healthConnectSettings": "Health Connect 設定",
@@ -1460,7 +1557,25 @@
         "progressPhotosSubtitle": "在儀表板上顯示進度照片卡片",
         "customNutrientDisplay": "自定義營養素顯示",
         "caffeine": "咖啡因",
-        "caffeineSubtitle": "在儀表板上顯示目前咖啡因卡片"
+        "caffeineSubtitle": "在儀表板上顯示目前咖啡因卡片",
+        "description": "拖曳卡片的手柄重新排序您的儀表板。關閉即可隱藏不使用的卡片。",
+        "calorieRing": "熱量概要",
+        "calorieRingSubtitle": "顯示每日熱量結餘與進度圓環",
+        "macros": "營養素",
+        "macrosSubtitle": "顯示巨量營養素目標與自訂營養素總計",
+        "exercise": "訓練進度",
+        "exerciseSubtitle": "顯示訓練分鐘數與燃燒熱量目標",
+        "symptoms": "症狀",
+        "symptomsSubtitle": "顯示症狀狀態、進行中的發作與快速記錄",
+        "mindfulness": "正念",
+        "mindfulnessSubtitle": "在儀表板顯示正念時段、呼吸與冥想",
+        "reorder": "重新排序 {{name}}",
+        "reorderHint": "在您的儀表板上重新排序此卡片",
+        "moveUp": "上移",
+        "moveDown": "下移",
+        "stateShown": "顯示",
+        "stateHidden": "隱藏",
+        "configureCard": "設定 {{name}}"
     },
     "diarySettings": {
         "updateFailed": "更新設定失敗。",
@@ -1520,7 +1635,9 @@
         "waterReminderStartAccessibility": "開始時間，{{time}}",
         "waterReminderEnd": "結束時間",
         "waterReminderEndAccessibility": "結束時間，{{time}}",
-        "waterReminderInvalidWindow": "結束時間必須晚於開始時間。"
+        "waterReminderInvalidWindow": "結束時間必須晚於開始時間。",
+        "consolidateReminders": "合併提醒",
+        "consolidateRemindersSubtitle": "將安排在同一時間的藥物合併為單一通知。"
     },
     "workoutSettings": {
         "title": "訓練設定",
@@ -1532,7 +1649,17 @@
         "keepAwake": "保持螢幕喚醒",
         "keepAwakeSubtitle": "訓練進行時防止螢幕休眠。",
         "restSoundAccessibility": "休息計時器聲音",
-        "keepAwakeAccessibility": "保持螢幕喚醒"
+        "keepAwakeAccessibility": "保持螢幕喚醒",
+        "restSoundSilent": "靜音模式下仍播放",
+        "restSoundSilentSubtitleIos": "即使手機處於靜音，包括 App 在背景或螢幕鎖定時，也會播放休息提示音。",
+        "restSoundSilentSubtitle": "即使手機處於靜音或震動，也會播放休息提示音。",
+        "restSoundSilentAccessibility": "靜音模式下播放休息計時器聲音",
+        "adaptiveCoaching": "自適應建議",
+        "adaptiveCoachingSubtitle": "根據你記錄的訓練回饋，調整後續的組數與動作建議。",
+        "adaptiveCoachingAccessibility": "自適應建議",
+        "duckMusic": "提示時降低音樂音量",
+        "duckMusicSubtitle": "播放訓練嗶聲或語音提示時，會短暫調低其他 App 的音樂音量。",
+        "duckMusicAccessibility": "提示時降低音樂音量"
     },
     "restPeriod": {
         "title": "休息時間",
@@ -1747,7 +1874,14 @@
         "lastFast": "上次禁食 {{duration}}",
         "lastFastWithDate": "上次禁食 {{duration}} · {{date}}",
         "today": "今天",
-        "yesterday": "昨天"
+        "yesterday": "昨天",
+        "auto": "自動",
+        "autoFromMeal": "自動 · {{meal}}",
+        "eatingWindow": "進食窗口",
+        "eatingWindowOpen": "進食窗口",
+        "eatingWindowMeal": "窗口 · {{meal}}",
+        "eatingWindowProgress": "進食窗口剩餘 {{remaining}}",
+        "details": "詳情"
     },
     "fastingProtocol": {
         "fastStarted": "禁食已開始",
@@ -1925,7 +2059,15 @@
     "exerciseSummary": {
         "tapToAdd": "點選以新增訓練",
         "addExercise": "新增訓練",
-        "title": "訓練"
+        "title": "訓練",
+        "planUpNext": "下一個計劃",
+        "sessionNumber": "時段 {{current}} / {{total}}",
+        "sessionNumberIndex": "時段 {{current}}",
+        "startWorkout": "開始",
+        "switchSession": "切換",
+        "suggestedPlanSession": "建議",
+        "scheduledToday": "今日已排定",
+        "selectSession": "選擇時段"
     },
     "foodRow": {
         "unknownFood": "未知食物",
@@ -2124,7 +2266,8 @@
             "analyzeLabel": "分析營養標籤失敗。請重試。",
             "loadPhoto": "載入照片失敗。",
             "lookupBarcode": "無法查詢此條形碼。請重試。",
-            "timeout": "請求超時。請檢查你的伺服器連線。"
+            "timeout": "請求超時。請檢查你的伺服器連線。",
+            "retryOnDevice": "此 iPhone 無法讀取標籤。"
         },
         "permission": {
             "camera": "我們需要你的許可權才能顯示相機",
@@ -2167,7 +2310,11 @@
             "retakePhoto": "重拍照片",
             "takeLabelPhoto": "拍攝營養標籤照片",
             "takeMealPhoto": "拍攝餐點照片"
-        }
+        },
+        "labelReadOnDevice": "在此 iPhone 讀取的標籤",
+        "labelReadByServer": "由伺服器 AI 讀取的標籤",
+        "retryWithServer": "使用伺服器 AI 重新讀取",
+        "retryOnDevice": "在此 iPhone 重新讀取"
     },
     "cycleToday": {
         "menstrualFlow": "月經量",
@@ -2619,7 +2766,8 @@
         "iosAuthMethods": "面容 ID、觸控 ID 或裝置 PIN 碼",
         "androidAuthMethods": "你的指紋、面容解鎖或裝置 PIN 碼",
         "iosNameExample": "我的 iPhone",
-        "androidNameExample": "我的安卓手機"
+        "androidNameExample": "我的安卓手機",
+        "disabledHint": "此伺服器已停用 Passkey 登入。"
     },
     "whatsNewPage": {
         "title": "新內容",
@@ -2850,7 +2998,39 @@
                 "name": "深度生酮",
                 "description": "常與自噬增強相關的一個階段"
             }
-        }
+        },
+        "tabs": {
+            "fasting": "斷食",
+            "history": "紀錄"
+        },
+        "startedAt": "開始於 {{time}}",
+        "targetAt": "目標 {{time}}",
+        "closesAt": "於 {{time}} 結束",
+        "eatingBands": {
+            "open": {
+                "name": "窗口開啟",
+                "shortName": "開啟"
+            },
+            "fuel": {
+                "name": "最佳能量",
+                "shortName": "能量"
+            },
+            "sustain": {
+                "name": "窗口中期",
+                "shortName": "維持"
+            },
+            "closing": {
+                "name": "窗口將關",
+                "shortName": "將關"
+            }
+        },
+        "metabolicState": "代謝狀態",
+        "eatingWindowOpen": "進食窗口開啟",
+        "remainingInEatingWindow": "你的進食窗口剩餘時間",
+        "eatingWindowHint": "進食窗口關閉後，斷食將自動恢復。",
+        "startFastEarly": "立即開始斷食",
+        "eatingWindowOpened": "窗口已開啟",
+        "eatingWindowCloses": "窗口關閉"
     },
     "exerciseDetail": {
         "sharedPublicly": "動作已公開共享",
@@ -2887,7 +3067,10 @@
         "deleteExercise": "刪除動作",
         "makePrivate": "設為私有",
         "shareWithPublic": "公開共享",
-        "deleteSheetTitle": "刪除動作"
+        "deleteSheetTitle": "刪除動作",
+        "duplicate": "複製動作",
+        "viewImages": "全螢幕檢視圖片",
+        "duplicateName": "{{name}}（副本）"
     },
     "mealTypeSettings": {
         "reorder": "重新排序 {{name}}",
@@ -3117,7 +3300,8 @@
         "title": "動作",
         "tabs": {
             "search": "搜尋",
-            "online": "線上"
+            "online": "線上",
+            "suggested": "建議"
         },
         "sections": {
             "recent": "最近",
@@ -3162,6 +3346,30 @@
         "accessibility": {
             "provider": "動作提供方 {{provider}}",
             "loadingMore": "正在載入更多動作"
+        },
+        "replaceTitle": "取代動作",
+        "alternatives": {
+            "heading": "替代 {{name}}",
+            "modes": {
+                "similar": "相似",
+                "differentEquipment": "其他器材"
+            },
+            "reasons": {
+                "sameMuscles": "相同肌肉",
+                "sharesMuscle": "相似肌肉",
+                "sameEquipment": "相同器材",
+                "differentEquipment": "不同器材",
+                "sameMovement": "相同動作",
+                "recent": "近期做過",
+                "inLibrary": "在你的動作庫"
+            },
+            "newBadge": "新增",
+            "searchAll": "搜尋所有動作",
+            "failed": "無法載入替代動作",
+            "noMuscles": "{{name}} 沒有記錄肌肉",
+            "noMusclesHint": "在動作庫中加入主要肌肉，即可獲得建議。",
+            "empty": "找不到替代動作",
+            "catalogUnavailable": "免費動作資料庫目前無法使用，因此僅顯示你的動作庫。"
         }
     },
     "foodSearch": {
@@ -3289,7 +3497,9 @@
             "exercise_other": "動作",
             "sets": "組數",
             "volume": "訓練量",
-            "calories": "卡路里"
+            "calories": "卡路里",
+            "avgHeartRate": "平均心率",
+            "maxHeartRate": "最高心率"
         },
         "errors": {
             "needsExercise": "訓練需要一個動作",
@@ -3299,7 +3509,8 @@
         "labels": {
             "details": "詳情",
             "name": "名稱",
-            "notes": "備註"
+            "notes": "備註",
+            "location": "健身房／地點"
         },
         "placeholders": {
             "workoutName": "訓練名稱",
@@ -3389,7 +3600,9 @@
             "sets": "組數",
             "calories": "卡路里",
             "distance": "距離",
-            "averageRpe": "平均 RPE"
+            "averageRpe": "平均 RPE",
+            "avgHeartRate": "平均心率",
+            "maxHeartRate": "最高心率"
         },
         "labels": {
             "skipped": "已跳過",
@@ -3430,6 +3643,9 @@
         "sections": {
             "exercises": "動作",
             "volume": "訓練量"
+        },
+        "units": {
+            "bpm": "bpm"
         }
     },
     "createFood": {
@@ -3551,7 +3767,16 @@
             "nameRequired": "請為此預設輸入名稱。",
             "addExercise": "新增動作",
             "addExerciseSet": "儲存前請至少新增一個含組的動作。"
-        }
+        },
+        "format": "格式",
+        "formatStandard": "標準",
+        "formatInterval": "間歇／HIIT",
+        "formatTabata": "Tabata",
+        "formatEmom": "EMOM",
+        "formatAmrap": "AMRAP",
+        "formatForTime": "限時完成",
+        "timeCapMinutes": "時間上限（分鐘）",
+        "timeCapPlaceholder": "例如 20"
     },
     "logScreen": {
         "title": "日誌",
@@ -4140,7 +4365,8 @@
             "loadFailed": "載入睡眠資料失敗",
             "empty": "此期間沒有睡眠資料",
             "avgTimeInBed": "平均臥床時間",
-            "avgTimeAsleep": "平均入睡時間"
+            "avgTimeAsleep": "平均入睡時間",
+            "tooltip": "臥床 {{timeInBed}} · 入睡 {{timeAsleep}}"
         },
         "loading": "正在載入圖表...",
         "weightLoadFailed": "載入體重資料失敗",
@@ -4164,6 +4390,17 @@
             "loadFailed": "無法載入水分資料",
             "empty": "此期間沒有水分資料",
             "tooltip": "{{formattedVolume}} {{unit}} · {{date}}"
+        },
+        "calories": {
+            "title": "熱量",
+            "loadFailed": "無法載入熱量資料",
+            "empty": "此期間沒有熱量資料",
+            "tooltip": "已攝取 {{formattedCount}} 千卡",
+            "tooltipMacro": "{{percent}}% {{macroLabel}}",
+            "otherMacro": "其他",
+            "avgCalories": "平均",
+            "avgCaloriesValue": "{{formattedCount}} 千卡",
+            "noAverage": "—"
         }
     },
     "exerciseLibrary": {
@@ -4276,7 +4513,10 @@
         "heartRateZoneModerate": "中度",
         "heartRateZoneIntense": "高強度",
         "heartRateZonePeak": "峰值",
-        "durationMinutesSeconds": "{{minutes}} 分 {{seconds}} 秒"
+        "durationMinutesSeconds": "{{minutes}} 分 {{seconds}} 秒",
+        "wodScoreFormat": "{{format}} 分數",
+        "timeCap": "時間上限",
+        "scalingNotes": "降階備註"
     },
     "copyMeal": {
         "title": "複製餐點：{{meal}}",
@@ -4417,7 +4657,147 @@
     },
     "symptoms": {
         "saveFailed": "儲存症狀失敗",
-        "removeFailed": "移除症狀失敗"
+        "removeFailed": "移除症狀失敗",
+        "title": "症狀",
+        "history": "紀錄",
+        "historyTitle": "症狀紀錄",
+        "logTitle": "記錄症狀",
+        "editTitle": "編輯症狀",
+        "manageTitle": "管理症狀",
+        "newDefinitionTitle": "新增症狀類型",
+        "editDefinitionTitle": "編輯症狀類型",
+        "symptom": "症狀",
+        "orCustomName": "或輸入自訂症狀...",
+        "ongoingEpisode": "追蹤為進行中的發作",
+        "startedWhen": "開始於：",
+        "endEpisodeNow": "立即結束發作",
+        "severityTitle": "嚴重程度",
+        "location": "位置",
+        "qualities": "疼痛性質",
+        "associated": "相關症狀／前兆",
+        "triggers": "誘因",
+        "treatments": "治療與緩解方式",
+        "impact": "對日常的影響",
+        "notes": "備註與觀察",
+        "notesPlaceholder": "任何其他備註或觀察...",
+        "logSymptom": "記錄症狀",
+        "logAnother": "記錄另一個症狀",
+        "logShort": "+ 記錄",
+        "activeEpisode": "進行中的發作",
+        "noneToday": "今日無",
+        "anySymptomsQuestion": "今天是否經歷任何症狀或疼痛？",
+        "markedSymptomFreeToday": "今日已標記為無症狀",
+        "noSymptomsTodayPrompt": "今天沒有症狀嗎？",
+        "markFree": "標記為無症狀",
+        "noSymptomsLoggedToday": "今日沒有記錄症狀",
+        "sparkline7d": "7 日趨勢",
+        "freeDaysShort": "無症狀日",
+        "insights30d": "30 日洞察",
+        "topTriggers": "主要誘因",
+        "effectiveRelief": "有效緩解方式",
+        "countTimes": "({{times}}x)",
+        "noneRecorded": "無記錄",
+        "activeOngoing": "進行中的發作",
+        "noHistory": "找不到症狀紀錄",
+        "noHistoryDesc": "過去 30 天的紀錄與先前的發作會顯示在此。",
+        "yourCustomSymptoms": "你的自訂症狀",
+        "noCustomSymptoms": "尚未建立自訂症狀。",
+        "createFirst": "+ 建立自訂症狀",
+        "builtInTemplates": "標準範本",
+        "namePlaceholder": "例如偏頭痛、膝蓋疼痛、胃食道逆流",
+        "categories": {
+            "general": "一般",
+            "head": "頭痛／頭部",
+            "pain": "疼痛",
+            "gi": "腸胃／消化",
+            "respiratory": "呼吸系統",
+            "skin": "皮膚",
+            "mental": "心理",
+            "other": "其他"
+        },
+        "templates": {
+            "generic": "一般",
+            "headache": "頭痛／偏頭痛",
+            "pain": "身體疼痛",
+            "gi": "腸胃／消化",
+            "respiratory": "呼吸系統",
+            "skin": "皮膚發作",
+            "mental": "心理健康"
+        },
+        "scales": {
+            "oneToTen": "1 - 10 級",
+            "oneToFive": "1 - 5 級",
+            "noneToSevere": "無 - 嚴重（5 級）",
+            "count": "次數／頻率",
+            "text": "純文字／備註"
+        },
+        "impacts": {
+            "none": "無",
+            "mild": "輕微",
+            "moderate": "中等",
+            "severe": "嚴重"
+        },
+        "timing": {
+            "now": "現在",
+            "m15": "-15 分鐘",
+            "h1": "-1 小時",
+            "h3": "-3 小時",
+            "started": "已開始",
+            "episode": "發作"
+        },
+        "name": "症狀名稱",
+        "nameRequired": "請輸入症狀名稱。",
+        "template": "範本（預先設定欄位）",
+        "category": "類別",
+        "scaleType": "嚴重程度量表",
+        "isEpisodic": "以時間長度計算的發作",
+        "isEpisodicDesc": "追蹤開始時間、進行中的橫幅與總時長",
+        "isPinned": "釘選至列表頂端",
+        "isPinnedDesc": "顯示在快速記錄快捷選項的第一位",
+        "deleteTitle": "刪除症狀紀錄",
+        "deleteConfirm": "你確定要刪除此筆紀錄嗎？",
+        "mapPerspective": "左右對應你的身體",
+        "addTreatmentPlaceholder": "新增藥物或緩解方式...",
+        "updateFailed": "無法更新症狀紀錄",
+        "endFailed": "無法結束發作",
+        "saveDefinitionFailed": "無法儲存症狀",
+        "saveOptionFailed": "無法儲存選項",
+        "severityFailed": "無法更新嚴重程度",
+        "freeFailed": "無法更新無症狀狀態",
+        "photoFailed": "無法上傳照片",
+        "views": {
+            "front": "正面",
+            "back": "背面"
+        },
+        "severity": {
+            "unset": "未設定",
+            "none": "無",
+            "mild": "輕微",
+            "moderate": "中等",
+            "substantial": "明顯",
+            "severe": "嚴重",
+            "unbearable": "無法忍受"
+        },
+        "effectiveness": {
+            "helped": "有幫助",
+            "partly": "部分有效",
+            "didntHelp": "沒有幫助",
+            "unknown": "不確定"
+        },
+        "kinds": {
+            "relief": "緩解／非藥物",
+            "medication": "藥物"
+        },
+        "actions": {
+            "endNow": "立即結束",
+            "stillOngoing": "仍在進行"
+        },
+        "notification": {
+            "dailyTitle": "症狀簽到",
+            "dailyBody": "今天感覺如何？點擊以記錄任何症狀。",
+            "nudgeTitle": "發作仍在進行嗎？",
+            "nudgeBody": "{{name}} 已持續 {{hours}} 小時。它仍在進行或已結束？"
+        }
     },
     "waterIntake": {
         "updateFailed": "錯誤",
@@ -4940,9 +5320,9 @@
         "photoUnavailable": "照片不可用"
     },
     "healthTrendsSettings": {
-        "description": "按住圖表的手柄拖曳以重新排序。將其拖到「已隱藏」線下方即可從儀表板移除。",
+        "description": "拖曳圖表的手柄重新排序。關閉即可從儀表板隱藏。",
         "reorder": "重新排序 {{name}}",
-        "reorderHint": "移到「已隱藏」線下方以隱藏此圖表，或移到上方以顯示",
+        "reorderHint": "在儀表板健康趨勢中重新排序此圖表",
         "moveUp": "上移",
         "moveDown": "下移",
         "stateShown": "已顯示",
@@ -5136,6 +5516,396 @@
         },
         "toasts": {
             "added_other": "已新增 {{count}} 項食物"
+        }
+    },
+    "muscles": {
+        "abdominals": "腹肌",
+        "abductors": "外展肌",
+        "adductors": "內收肌",
+        "biceps": "二頭肌",
+        "calves": "小腿",
+        "chest": "胸肌",
+        "forearms": "前臂",
+        "glutes": "臀部",
+        "hamstrings": "腿後肌群",
+        "lats": "背闊肌",
+        "lower back": "下背",
+        "middle back": "中背",
+        "neck": "頸部",
+        "quadriceps": "股四頭肌",
+        "shoulders": "肩部",
+        "traps": "斜方肌",
+        "triceps": "三頭肌"
+    },
+    "equipment": {
+        "barbell": "槓鈴",
+        "dumbbell": "啞鈴",
+        "kettlebells": "壺鈴",
+        "cable": "纜繩",
+        "machine": "器械",
+        "bands": "彈力帶",
+        "body only": "徒手",
+        "medicine ball": "藥球",
+        "exercise ball": "健身球",
+        "foam roll": "泡棉滾筒",
+        "e-z curl bar": "E-Z 曲槓",
+        "other": "其他"
+    },
+    "interval": {
+        "ready": "準備",
+        "countdown": "準備就緒",
+        "work": "訓練",
+        "rest": "休息",
+        "finished": "已完成",
+        "roundOfTotal": "回合 {{current}} / {{total}}",
+        "round": "第 {{current}} 回合",
+        "roundPlusOne": "+1 回合（{{current}}）",
+        "resume": "繼續",
+        "pause": "暫停",
+        "timeCap": "時間上限",
+        "timeCapLabel": "上限：{{cap}}",
+        "wodScoring": "WOD 計分",
+        "rx": "Rx",
+        "scaled": "降階",
+        "extraReps": "額外次數",
+        "wodScore": "WOD 分數",
+        "amrapScore": "{{rounds}} 回合 + {{reps}} 下",
+        "completed": "已完成",
+        "roundsCompleted": "完成 {{rounds}} 回合"
+    },
+    "quickActions": {
+        "scanFood": "掃描食物",
+        "searchFood": "記錄食物",
+        "logWater": "記錄水分",
+        "fasting": "斷食",
+        "waterLogged": "已記錄水分",
+        "waterFailed": "無法記錄水分"
+    },
+    "watchSettings": {
+        "gesturesTitle": "手勢",
+        "doubleTapTitle": "點兩下記錄一組",
+        "doubleTapSubtitle": "在支援的手錶（Series 9、Ultra 2 或更新型號，watchOS 11）上點兩下，即可在訓練期間記錄螢幕上的組數。",
+        "pagesTitle": "頁面",
+        "description": "拖曳頁面的手柄更改在手錶上滑動的順序。關閉頁面即可隱藏。訓練進行期間，訓練頁面仍會顯示。",
+        "reorder": "重新排序 {{name}}",
+        "reorderHint": "更改此頁面在手錶上的位置",
+        "pages": {
+            "goals": "目標",
+            "water": "水分",
+            "entry": "體重登記",
+            "trend": "體重趨勢",
+            "workout": "訓練"
+        },
+        "nutrientsTitle": "目標頁面的營養素",
+        "nutrientReorderHint": "更改此營養素在手錶上的位置",
+        "setInputTitle": "組數輸入",
+        "setInputDescription": "訓練期間在手錶輸入重量與次數的方式：使用鍵盤輸入，或點選數值再轉動數位錶冠或拖曳，重量每次增加 0.5。",
+        "setInputKeypad": "鍵盤",
+        "setInputCrown": "數位錶冠"
+    },
+    "guidedWorkout": {
+        "cue": {
+            "getReady": "準備。開始 {{name}}。",
+            "setStartReps_other": "{{name}}。做 {{count}} 下。",
+            "setStartSeconds_other": "{{name}}。{{count}} 秒。",
+            "setStartOpen": "{{name}}。",
+            "halfway": "進行到一半。",
+            "rest_other": "休息。{{count}} 秒。",
+            "intervalRest": "休息。",
+            "nextUp": "下一個：{{name}}。",
+            "workoutComplete": "訓練完成。"
+        },
+        "card": {
+            "badge": "引導",
+            "getReady": "準備",
+            "setOfTotal": "第 {{current}} / {{total}} 組",
+            "rest": "休息",
+            "nextUp": "下一個",
+            "targetReps_other": "{{count}} 下",
+            "targetSeconds_other": "{{count}} 秒",
+            "done": "所有組數已完成。結束訓練即可儲存。",
+            "paused": "已暫停",
+            "pause": "暫停",
+            "resume": "繼續",
+            "mute": "靜音語音",
+            "unmute": "取消靜音",
+            "replay": "重播指示",
+            "doneNext": "完成 — 下一個",
+            "doneHintReps_other": "做完 {{count}} 下時點擊",
+            "doneHint": "完成時點擊"
+        },
+        "settings": {
+            "section": "引導訓練",
+            "enabled": "引導模式",
+            "enabledSubtitle": "會朗讀每個動作與目標、倒數開始、自動執行限時組，並進入下一組。提示音在手機靜音時也會播放，訓練期間螢幕會保持開啟。",
+            "voice": "語音",
+            "voiceDefault": "跟隨裝置預設",
+            "rate": "語速",
+            "rateValue": "{{rate}}×",
+            "countdown": "準備倒數",
+            "countdownSubtitle": "在第一個動作之前，以及每個限時組之前。",
+            "countdownValue_other": "{{count}} 秒",
+            "sample": "你的引導訓練聽起來會是這樣。",
+            "test": "測試語音"
+        }
+    },
+    "workoutFeedback": {
+        "title": "感覺如何？",
+        "subtitle": "後續建議會據此調整。",
+        "difficulty": {
+            "tooEasy": "太輕鬆",
+            "justRight": "剛剛好",
+            "tooHard": "太難"
+        },
+        "painQuestion": "是否有任何疼痛或不適？",
+        "painWhere": "在哪些動作期間？（選填）",
+        "painNotePlaceholder": "哪裡疼痛？（選填）",
+        "painPrivacy": "這些動作的建議會變輕，不會加重。",
+        "rateExercises": "為每個動作評分",
+        "saving": "儲存中…",
+        "saved": "已儲存",
+        "saveFailed": "無法儲存你的回饋。點擊重試。",
+        "loadFailed": "無法載入你的回饋。點擊重試。"
+    },
+    "adaptiveCoaching": {
+        "reasons": {
+            "painReported": "今日減輕：你上次在此回報過疼痛。",
+            "painRepeated": "今日減輕：此處連續兩次訓練都有疼痛。可考慮替代動作。",
+            "sessionPain": "維持重量：你上次訓練回報過不適。",
+            "tooHard": "維持重量：上次感覺太難。",
+            "tooHardRepeated": "今日減輕：連續兩次訓練都覺得太難。",
+            "highEffort": "維持重量：你最後的組數接近最大努力。",
+            "tooEasyRepeated": "加重一階：連續兩次訓練都太輕鬆。"
+        },
+        "declined": "使用你的慣常建議。",
+        "variation": "你最近多數訓練都做過這個。試試變化版？",
+        "useUsual": "使用我的慣常選項",
+        "useAdjusted": "使用調整後的建議",
+        "seeAlternatives": "查看替代動作"
+    },
+    "exerciseStatistics": {
+        "title": "動作統計",
+        "sets_other": "{{formattedCount}} 組",
+        "stats": {
+            "workouts": "訓練次數",
+            "volume": "訓練量",
+            "reps": "次數"
+        },
+        "setsPerMuscle": {
+            "title": "各肌肉的組數",
+            "subtitle": "此期間主要肌肉的正式組",
+            "none": "尚無帶主要肌肉的正式組。"
+        },
+        "heatMap": {
+            "title": "肌肉熱度圖",
+            "subtitle": "正面與背面，依正式組數著色",
+            "a11y": "身體圖依正式組數著色。相同數量列在「各肌肉的組數」中，在其中選取肌肉會在此高亮。",
+            "tap": "點擊肌肉",
+            "fewer": "較少",
+            "more": "較多",
+            "notOnFigure": "未顯示於圖上",
+            "male": "男性",
+            "female": "女性"
+        },
+        "analysis": {
+            "title": "更多分析",
+            "recovery": "上次訓練",
+            "variety": "動作多樣性",
+            "volume": "各肌肉的訓練量",
+            "exerciseCount_other": "{{count}} 個動作"
+        },
+        "recovery": {
+            "today": "今日",
+            "yesterday": "昨日",
+            "daysAgo_other": "{{count}} 日前"
+        },
+        "states": {
+            "loadFailed": "無法載入動作統計",
+            "empty": "此期間沒有訓練",
+            "emptyHint": "記錄一場訓練，其組數就會依肌肉顯示在此。"
+        },
+        "views": {
+            "strength": "力量",
+            "cardio": "心肺"
+        },
+        "cardio": {
+            "hint": "點擊訓練可查看其路線與心率。",
+            "empty": "此期間沒有心肺訓練",
+            "loadFailed": "無法載入心肺訓練時段",
+            "olderSessions": "較早的時段",
+            "unitKm": "km",
+            "unitMi": "mi",
+            "calories": "{{value}} 卡路里",
+            "minutes_other": "{{formattedCount}} 分鐘",
+            "bpm": "{{value}} bpm",
+            "distance": "距離",
+            "duration": "時長",
+            "pace": "配速",
+            "avgHeartRate": "平均心率",
+            "caloriesLabel": "熱量",
+            "route": "路線",
+            "routeA11y": "本次訓練的路線，從綠點到紅圈",
+            "noRoute": "未儲存 GPS 路線。室內訓練沒有路線。戶外步行只有在 Apple Health 於同步時分享才會有路線。",
+            "heartRate": "心率",
+            "average": "平均 {{value}}",
+            "peak": "最高 {{value}}",
+            "onlyAverage": "平均心率 {{value}}。未儲存逐拍樣本。",
+            "noHeartRate": "本次訓練沒有心率樣本。",
+            "zones": "心率區間",
+            "zone": "區間 {{zone}}",
+            "zoneFrom": "由 {{bpm}} bpm 起",
+            "minutesAxis": "開始後分鐘數",
+            "underOneMinute": "<1 分鐘"
+        },
+        "consistency": {
+            "title": "訓練穩定性",
+            "subtitle_other": "過去 {{formattedCount}} 週，{{first}} 至 {{last}}",
+            "legendTrained": "訓練日",
+            "legendRest": "無訓練",
+            "legendHelp": "每個方格為一天，每欄為一週。",
+            "streak": "連續週數",
+            "longest": "最長",
+            "thisWeek": "本週",
+            "lastWeek": "上週",
+            "weeks_other": "{{formattedCount}} 週",
+            "days_other": "{{formattedCount}} 日",
+            "calendarA11y_other": "訓練日曆：過去 {{weeks}} 週共有 {{count}} 個訓練日",
+            "setsTitle": "各肌肉的組數",
+            "noSets": "本週與上週都沒有記錄組數。",
+            "loadFailed": "無法載入你的訓練穩定性。"
+        }
+    },
+    "aiSettings": {
+        "server": {
+            "title": "伺服器 AI 供應商",
+            "loading": "檢查中…",
+            "error": "無法檢查 AI 供應商。",
+            "none": "未設定任何 AI 供應商",
+            "description": "除非下方有裝置端選項處理，否則用於標籤掃描。供應商在網頁版設定。"
+        },
+        "onDevice": {
+            "title": "裝置端（Apple Intelligence）",
+            "description": "這些會在此手機上執行。裝置端模型無法處理的內容會回退至伺服器供應商。",
+            "unavailable": "此裝置不支援。需要 iOS 27 或以上，並已開啟且就緒的 Apple Intelligence。",
+            "labelScan": {
+                "title": "在裝置端掃描標籤",
+                "description": "使用此裝置的 Apple Intelligence 讀取營養標籤。若無法讀取，將改用伺服器 AI 供應商。"
+            }
+        }
+    },
+    "mindfulness": {
+        "card": {
+            "title": "正念",
+            "sessionCount_other": "{{count}} 次時段",
+            "todayTotal": "今日",
+            "minuteUnit": "分鐘",
+            "bpmUnit": "bpm",
+            "msUnit": "毫秒",
+            "details": "詳情",
+            "openDetails": "開啟正念詳情",
+            "noSessions": "今日沒有時段",
+            "readyPrompt": "準備練習",
+            "latestAt": "最近一次",
+            "latestSession": "最近",
+            "tapToPractice": "來一場正念休息 · 呼吸與計時器在「詳情」中"
+        },
+        "actions": {
+            "breathe": "呼吸",
+            "timer": "計時器",
+            "log": "記錄"
+        },
+        "tools": {
+            "title": "互動練習",
+            "breatheTitle": "節奏呼吸",
+            "breatheSubtitle": "方框呼吸、4-7-8、和諧呼吸法",
+            "timerTitle": "冥想計時器",
+            "timerSubtitle": "限時倒數與開放式碼錶",
+            "startAction": "開始"
+        },
+        "detail": {
+            "title": "正念",
+            "practiceTab": "練習與記錄",
+            "historyTab": "紀錄",
+            "historyHint": "點擊「編輯」或「刪除」管理你的時段",
+            "noHistory": "尚無正念時段",
+            "noHistorySubtitle": "完成一次呼吸或冥想時段即可開始追蹤",
+            "logTitle": "記錄正念時段",
+            "saveSession": "儲存正念時段",
+            "updateSession": "更新正念時段",
+            "sessionSaved": "時段已成功儲存",
+            "sessionDeleted": "時段已刪除",
+            "deletePrompt": "刪除正念時段",
+            "deleteConfirm": "你確定要刪除此時段嗎？"
+        },
+        "types": {
+            "meditation": "冥想",
+            "breathwork": "呼吸練習",
+            "reflection": "反思",
+            "walking": "正念步行",
+            "yoga": "瑜珈",
+            "guided": "引導",
+            "unguided": "自由",
+            "other": "其他"
+        },
+        "modal": {
+            "addTitle": "記錄正念時段",
+            "editTitle": "編輯正念時段",
+            "type": "時段類型",
+            "durationMinutes": "時長（分鐘）",
+            "durationMinutesAccessibility": "以分鐘計的時長",
+            "minutes": "分鐘",
+            "seconds": "秒",
+            "durationSecondsAccessibility": "以秒計的時長",
+            "vitalsHeader": "心率與 HRV（選填）",
+            "avgHr": "平均心率（bpm）",
+            "avgHrAccessibility": "平均心率",
+            "hrv": "HRV（毫秒）",
+            "hrvAccessibility": "HRV RMSSD",
+            "startHr": "開始心率",
+            "startHrAccessibility": "開始心率",
+            "endHr": "結束心率",
+            "endHrAccessibility": "結束心率",
+            "notes": "備註（選填）",
+            "notesAccessibility": "備註",
+            "notesPlaceholder": "你的練習如何？"
+        },
+        "fields": {
+            "durationMinutes": "時長（分鐘）",
+            "sessionType": "類型",
+            "notes": "備註",
+            "heartRateAvg": "平均心率（bpm）",
+            "heartRateStart": "開始心率（bpm）",
+            "heartRateEnd": "結束心率（bpm）",
+            "hrvRmssd": "HRV RMSSD（毫秒）"
+        },
+        "breathwork": {
+            "title": "呼吸練習",
+            "boxDescription": "4-4-4-4 • 專注與平靜",
+            "relaxDescription": "深度平靜與睡眠準備",
+            "coherenceDescription": "5-5 • 平衡與心率下降",
+            "ready": "準備",
+            "inhale": "吸氣",
+            "hold": "屏住",
+            "exhale": "呼氣",
+            "time": "時間",
+            "cycles": "循環",
+            "start": "開始呼吸",
+            "pause": "暫停",
+            "resume": "繼續",
+            "finishAndSave": "完成並儲存"
+        },
+        "timer": {
+            "title": "冥想計時器",
+            "countdownSubtitle": "限時冥想時段",
+            "stopwatchSubtitle": "開放式冥想時段",
+            "countdown": "倒數",
+            "openStopwatch": "開放式碼錶",
+            "meditating": "冥想中...",
+            "peaceful": "找個舒服的位置坐下",
+            "start": "開始冥想",
+            "pause": "暫停",
+            "resume": "繼續",
+            "finishAndSave": "完成並儲存"
         }
     }
 }
