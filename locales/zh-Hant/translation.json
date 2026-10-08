@@ -576,7 +576,8 @@
         "pregnancy": "孕期追蹤",
         "medications": "藥物",
         "foodLog": "食物日記",
-        "wellness": "健康"
+        "wellness": "健康",
+        "symptoms": "症狀"
     },
     "nutrition": {
         "calories": "熱量",
@@ -669,7 +670,8 @@
         "gotIt": "瞭解",
         "close": "關閉",
         "swissFoodApi": "瑞士食物成分資料庫 API",
-        "usdaApi": "美國農業部食物資料庫 API"
+        "usdaApi": "美國農業部食物資料庫 API",
+        "canadianNutrientFileApi": "加拿大營養資料庫（加拿大衛生部）"
     },
     "exercise": {
         "title": "運動項目",
@@ -706,9 +708,9 @@
             "selectMechanicPlaceholder": "選擇動作模式",
             "mechanicIsolation": "孤立肌群訓練",
             "mechanicCompound": "複合動作訓練",
-            "equipmentLabel": "使用器材 (多項以逗號分隔)",
-            "primaryMusclesLabel": "主要訓練肌群 (多項以逗號分隔)",
-            "secondaryMusclesLabel": "次要訓練肌群 (多項以逗號分隔)",
+            "equipmentLabel": "使用器材",
+            "primaryMusclesLabel": "主要訓練肌群",
+            "secondaryMusclesLabel": "次要訓練肌群",
             "instructionsLabel": "動作步驟 (每行一個步驟)",
             "imagesLabel": "圖片",
             "addButton": "新增運動",
@@ -719,7 +721,13 @@
             "importDuplicateDescription": "下列項目已經存在於資料庫：{{duplicateList}}。請從檔案移除重複資料後重新匯入。",
             "importError": "運動資料匯入失敗，請重新嘗試。",
             "importFitTab": "匯入 FIT",
-            "modalityLabel": "追蹤類型"
+            "modalityLabel": "追蹤類型",
+            "customMuscleBodyMapHint": "自訂肌肉不會顯示在身體圖上。",
+            "tagInputPlaceholder": "輸入以新增或搜尋...",
+            "addCustomTag": "新增「{{tag}}」",
+            "replaceTitle": "取代動作",
+            "replaceSuccess": "動作已取代",
+            "suggestedTab": "建議"
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "搜尋你的訓練模板…",
@@ -914,7 +922,12 @@
             "hide": "隱藏",
             "warning": "警告！",
             "workoutPlansCount": "{{count}} 個訓練計劃",
-            "workoutPresetsCount": "{{count}} 個訓練預設"
+            "workoutPresetsCount": "{{count}} 個訓練預設",
+            "duplicateExercise": "複製",
+            "duplicateExerciseDialogTitle": "複製動作",
+            "duplicateExerciseDialogDescription": "將副本儲存為你自己的動作，原始動作不會更改。",
+            "saveCopy": "儲存副本",
+            "copySuffix": "（副本）"
         },
         "exerciseImportCSV": {
             "importExerciseData": "匯入運動資料",
@@ -961,7 +974,10 @@
             "weightReps": "重量與次數",
             "repsOnly": "僅次數",
             "duration": "時長",
-            "durationDistance": "時長與距離"
+            "durationDistance": "時長與距離",
+            "bodyweightReps": "自身體重（+/− 體重）",
+            "weightDistance": "重量與距離（負重行走）",
+            "weightDuration": "重量與時間（負重支撐）"
         },
         "importFit": {
             "title": "匯入 FIT 檔案",
@@ -1073,7 +1089,9 @@
             "noDraft": "找不到此日期的進行中訓練草稿.",
             "setRow": "第 {{setNumber}} 組",
             "sets": "組",
-            "title": "即時訓練"
+            "title": "即時訓練",
+            "location": "健身房／地點",
+            "locationPlaceholder": "例如 Downtown Equinox、車庫健身房"
         },
         "workoutPlaybackPage": {
             "addSet": "新增組",
@@ -1091,7 +1109,44 @@
             "restEditorDescription": "為此組選擇休息時長.",
             "restEditorTitle": "編輯休息",
             "restTimer": "休息",
-            "volume": "訓練量"
+            "volume": "訓練量",
+            "addDropSets": "新增 {{sets}} 組降重組（-{{percent}}%）",
+            "addDropSetsFor": "為 {{name}} 新增降重組",
+            "viewImages": "檢視 {{name}} 的圖片",
+            "replaceExercise": "取代動作",
+            "replaceExerciseNamed": "取代 {{name}}"
+        },
+        "workoutFinishSummary": {
+            "title": "訓練完成",
+            "duration": "時長",
+            "calories": "熱量",
+            "sets": "組數",
+            "volume": "訓練量",
+            "done": "完成"
+        },
+        "alternatives": {
+            "heading": "替代 {{name}}",
+            "modes": {
+                "similar": "相似",
+                "differentEquipment": "其他器材"
+            },
+            "reasons": {
+                "sameMuscles": "相同肌肉",
+                "sharesMuscle": "相似肌肉",
+                "sameEquipment": "相同器材",
+                "differentEquipment": "不同器材",
+                "sameMovement": "相同動作",
+                "recent": "近期做過",
+                "inLibrary": "在你的動作庫"
+            },
+            "newBadge": "新增",
+            "searchAll": "搜尋所有動作",
+            "failed": "無法載入替代動作",
+            "noMuscles": "{{name}} 沒有記錄肌肉",
+            "noMusclesHint": "在動作庫中加入主要肌肉，即可獲得建議。",
+            "empty": "找不到替代動作",
+            "retry": "重試",
+            "catalogUnavailable": "免費動作資料庫目前無法使用，因此僅顯示你的動作庫。"
         }
     },
     "workoutPresetsManager": {
@@ -1149,7 +1204,17 @@
         "duration": "時長",
         "planName": "計畫名稱",
         "plans": "計畫",
-        "status": "狀態"
+        "status": "狀態",
+        "scheduleType": "模式",
+        "weeklyMode": "每週",
+        "weeklyPromptMode": "每週（提示）",
+        "weeklyPrefillMode": "每週（預填）",
+        "sequentialMode": "循序",
+        "upNextBadge": "序列中的下一個",
+        "scheduledTodayBadge": "今日已排定",
+        "scheduledWorkout": "訓練時段",
+        "activePlanLabel": "使用中的計劃：{{name}}",
+        "failedToLoadActivePlan": "無法載入使用中的訓練計劃。"
     },
     "exerciseCard": {
         "title": "運動項目",
@@ -1185,9 +1250,9 @@
         "selectMechanic": "選擇動作模式",
         "mechanicIsolation": "孤立肌群訓練",
         "mechanicCompound": "複合動作訓練",
-        "equipment": "使用器材 (多項以逗號分隔)",
-        "primaryMuscles": "主要訓練肌群 (多項以逗號分隔)",
-        "secondaryMuscles": "次要訓練肌群 (多項以逗號分隔)",
+        "equipment": "器材",
+        "primaryMuscles": "主要肌肉",
+        "secondaryMuscles": "輔助肌肉",
         "instructions": "動作步驟 (每行一個步驟)",
         "images": "圖片",
         "description": "補充說明",
@@ -1242,7 +1307,21 @@
             "static": "靜態",
             "isolation": "孤立",
             "compound": "複合"
-        }
+        },
+        "workoutLocation": "健身房／地點",
+        "upNextInPlanBadge": "下一個計劃",
+        "scheduledTodayBadge": "今日已排定",
+        "activePlanHint": "循序計劃：{{name}}",
+        "activeWeeklyPlanHint": "使用中的計劃：{{name}}",
+        "scheduledWorkout": "訓練時段",
+        "logToDiaryButton": "記錄至日誌",
+        "startWorkoutButton": "開始訓練",
+        "noExercisesInPlanSession": "此時段中找不到動作。",
+        "switchSessionLabel": "切換／選擇時段：",
+        "sessionNumber": "時段 {{num}}",
+        "dayNumber": "第 {{num}} 日",
+        "suggestedBadge": "建議",
+        "planWorkoutLogged": "訓練時段已記錄至日誌。"
     },
     "foodSearchDialog": {
         "title": "搜尋並新增食物",
@@ -1512,7 +1591,7 @@
             "canManageCheckin": "可管理打卡資料",
             "canManageCheckinHelp": "允許受託人代你記錄體重、身體測量值、進度照片、睡眠紀錄、心情紀錄與斷食狀態。日記紀錄會被阻止。授予個人資料唯讀權限.",
             "canManageMedications": "可管理藥物",
-            "canManageMedicationsHelp": "允許受託人代你記錄藥物、劑量、劑量調整計畫、症狀與注射部位。日記紀錄會被阻止。授予個人資料唯讀權限.",
+            "canManageMedicationsHelp": "允許受託人代您記錄藥物、劑量、劑量調整計劃與注射部位。日誌記錄會被封鎖，並授予個人資料唯讀權限。",
             "canViewReports": "可查看報告",
             "canViewReportsHelp": "允許受託人在你的儀表板上查看圖表、統計資料與歷史紀錄。不授予任何寫入權限。授予個人資料唯讀權限.",
             "shareExternalProviders": "共用外部資料提供者",
@@ -1537,7 +1616,10 @@
             "sharesExternalProviders": "共用外部提供者",
             "noEndDate": "無結束日期",
             "editRule": "編輯存取規則",
-            "deleteRule": "刪除存取規則"
+            "deleteRule": "刪除存取規則",
+            "canManageSymptoms": "可管理症狀",
+            "canManageSymptomsHelp": "允許受託人代您記錄與編輯症狀、發作、誘因、治療方式與照片。月經週期與懷孕相關症狀永不分享。日誌記錄會被封鎖。",
+            "managesSymptoms": "正在管理症狀"
         },
         "customCategories": {
             "title": "自訂量測分類",
@@ -1659,6 +1741,14 @@
                 "oura": "Oura 開發者入口網站",
                 "googlehealth": "Google Cloud 主控台",
                 "polar": "Polar AccessLink 管理後台"
+            },
+            "coros": {
+                "regionLabel": "COROS 地區",
+                "regionUs": "美國（mcpus.coros.com）",
+                "regionEu": "歐洲（mcpeu.coros.com）",
+                "regionCn": "中國大陸（mcpcn.coros.com）",
+                "notTested": "尚未測試",
+                "infoText": "不需要 API 金鑰。您將使用您的 COROS 帳戶登入。您的 SparkyFitness 位址必須是 https://（或 localhost），COROS 才會接受連線。"
             }
         },
         "aiService": {
@@ -1858,7 +1948,8 @@
                 "openrouter": "開源路由器 OpenRouter",
                 "xai": "戈碌曲 xAI (Grok)",
                 "custom": "自訂",
-                "meta": "元"
+                "meta": "元",
+                "perplexity": "Perplexity AI"
             }
         },
         "apiKeyManagement": {
@@ -1899,7 +1990,10 @@
             "newKeyGenerated": "已產生新的 API 密鑰！",
             "placeholder": "描述（例如「iPhone 健康捷徑」）",
             "updateError": "更新 API 密鑰失敗",
-            "updateSuccess": "API 密鑰狀態更新成功！"
+            "updateSuccess": "API 密鑰狀態更新成功！",
+            "access": "存取",
+            "accessFull": "完整存取",
+            "accessRead": "唯讀"
         },
         "accountSecurity": {
             "title": "帳號安全性",
@@ -2244,6 +2338,38 @@
                 "WHO_MAXIMUM": "WHO 最大（熱量的 10%）",
                 "AHA_FIXED": "AHA 固定（男 36 克 / 女 25 克）"
             }
+        },
+        "cnf": {
+            "dialogTitle": "加拿大營養資料庫批次匯入與同步",
+            "dialogDescription": "將完整的加拿大衛生部食物目錄（約 5,700 項）匯入或更新至您的食物庫。",
+            "importingProgress": "匯入目錄進行中...",
+            "processed": "已處理",
+            "imported": "已匯入",
+            "updated": "已更新",
+            "lastImportSuccess": "目錄匯入成功完成。",
+            "lastImportFailed": "目錄匯入失敗。",
+            "syncScopeLabel": "同步範圍",
+            "modeLibraryOnly": "僅同步食物庫（建議）",
+            "modeLibraryOnlyDesc": "新增或更新食物項目、份量單位與已儲存食譜快照。過去的日誌記錄會原封不動保留。",
+            "modeLibraryAndPast": "同步食物庫與過去的記錄",
+            "modeLibraryAndPastDesc": "更新食物庫，同時重新計算由加拿大營養資料庫記錄的歷史日誌，以符合最新資料。",
+            "languageLabel": "目錄語言",
+            "sourceLabel": "來源",
+            "officialArchive": "加拿大衛生部開放資料官方存檔（預設）",
+            "uploadZip": "上傳本機 ZIP 存檔（cnf-fcen-csv.zip）",
+            "needArchive": "沒有這個檔案嗎？",
+            "downloadArchiveLink": "下載官方 CNF ZIP（26 MB）",
+            "uploadHelp": "選擇從 open.canada.ca 下載的官方 CNF ZIP 存檔。",
+            "dryRunLabel": "試匯入（僅前 10 種食物）",
+            "dryRunHelp": "執行完整匯入前，可匯入最多 10 種食物，驗證份量單位與自訂營養素對應。",
+            "clearLibrary": "清除 CNF 食物庫",
+            "startImport": "開始匯入／同步",
+            "confirmDeleteTitle": "清除加拿大營養資料庫食物庫？",
+            "confirmDeleteDesc": "此操作會從您的食物庫移除所有加拿大營養資料庫食物。過往引用這些食物的日誌記錄將安全保留。",
+            "licenceNotice": "包含加拿大衛生部發佈、以<1>加拿大開放政府許可證</1>授權的資訊。",
+            "providerCardLicence": "包含加拿大衛生部發佈、以<1>加拿大開放政府許可證</1>授權的資訊。支援語言：<3>英文（en）</3>與<5>法文（fr）</5>。<7>加拿大營養資料庫</7>",
+            "providerSpecificDescription": "加拿大營養資料庫（CNF）包含加拿大衛生部以<1>加拿大開放政府許可證</1>發佈的資訊。它是免費、公開且不需要任何憑證。支援語言為<3>英文（en）</3>與<5>法文（fr）</5>。",
+            "providerSpecificPortal": "如需更多詳情，請參閱官方入口網站<1>加拿大營養資料庫</1>。"
         }
     },
     "admin": {
@@ -2258,7 +2384,9 @@
                 "emergencyFailSafe": "緊急復原機制：",
                 "emergencyFailSafeDescription": "若不慎被鎖住帳號，可在伺服器設定以下環境變數並重啟服務，強制開啟信箱密碼登入功能：",
                 "envVarCopied": "環境變數內容已複製至剪貼簿。",
-                "enforceMfaForAllUsers": "對所有使用者強制啟用 MFA"
+                "enforceMfaForAllUsers": "對所有使用者強制啟用 MFA",
+                "enablePasskeyLogin": "啟用 Passkey 登入",
+                "emergencyFailSafePasskeyDescription": "如果 Passkey 登入已關閉，且您無法再登入，可透過以下方式強制重新開啟："
             },
             "oidcProviderManagement": {
                 "title": "OIDC 供應商管理",
@@ -2639,7 +2767,9 @@
         "selectRow": "選擇列",
         "unknown": "未知",
         "avg": "平均",
-        "max": "最大值"
+        "max": "最大值",
+        "source": "來源",
+        "previous": "上一個"
     },
     "diary": {
         "nutritionSummary": "營養攝取總覽",
@@ -3019,7 +3149,9 @@
             "fasting": "斷食與心情",
             "measurements": "測量值",
             "photos": "照片",
-            "sleep": "睡眠"
+            "sleep": "睡眠",
+            "mindfulness": "正念",
+            "symptoms": "症狀"
         },
         "noRecentActivity": "找不到近期活動.",
         "failedToLoadPreviousCustom": "無法載入先前的自訂數值。"
@@ -3191,7 +3323,10 @@
         "bulkDeleteDescription": "從你的食物庫、所有餐點與餐點計劃中移除這 {{count}} 項食物。已記錄的項目會保留在你的日記中。",
         "deleteKeepsDiaryHint": "刪除會將食物從你的食物庫、餐點與餐點計劃中移除。你的日記記錄會保留名稱、品牌與營養資料。",
         "deleteMealPlanKeepsPastHistoryHint": "此食物用於你的餐點計劃。刪除它會移除日記中未來排定的餐點，但會保留你過去記錄的歷史。",
-        "deleteWithHistory": "連同歷史記錄一起刪除"
+        "deleteWithHistory": "連同歷史記錄一起刪除",
+        "failedToRefreshFoodFromSource": "無法從來源重新整理食物資料。",
+        "foodRefreshedFromSource": "已從來源重新整理食物資料。檢視後儲存即可套用。",
+        "manual": "手動"
     },
     "mealManagement": {
         "failedToLoadMeals": "載入餐點清單失敗。",
@@ -3439,7 +3574,13 @@
         "formatTabata": "Tabata",
         "formatEmom": "EMOM",
         "formatAmrap": "AMRAP",
-        "formatForTime": "限時完成"
+        "formatForTime": "限時完成",
+        "formatLabel": "訓練格式",
+        "formatStandard": "標準（組數與次數）",
+        "timeCapLabel": "時間上限（分鐘）",
+        "rampLabel": "每組增加（本次訓練，{{unit}}）",
+        "rampPlaceholder": "關閉",
+        "rampHint": "同一場訓練中，第一組之後的每組正式組會自動預填加重這個量；使用負數即可遞減。暖身組與降重組會略過。"
     },
     "addWorkoutPlanDialog": {
         "editTitle": "編輯運動計畫",
@@ -3472,7 +3613,34 @@
         "errorToastTitle": "錯誤",
         "errorToastDescription": "載入訓練範本或動作資料失敗。",
         "addExerciseButtonInDay": "新增運動",
-        "pasteButton": "貼上"
+        "pasteButton": "貼上",
+        "planNamePlaceholder": "例如 Summer Shred",
+        "descriptionPlaceholder": "選填的計劃描述...",
+        "scheduleTypeLabel": "排程模式",
+        "weeklyModeTitle": "每週（固定日期）",
+        "weeklyModeSubtitle": "訓練分配到特定星期（一至日）",
+        "sequentialModeTitle": "循序（循環）",
+        "sequentialModeSubtitle": "連續序列；錯過的日子會暫停",
+        "sequentialNoteDescription": "循序計劃不會預填日曆日期。每當您完成一場訓練，序列就會自動推進到下一個時段。",
+        "sequentialAssignmentsTitle": "訓練序列",
+        "sequenceOrderHeading": "依序時段",
+        "sequenceOrderHelp": "拖曳以在循環週期中重新排序時段。",
+        "noSequentialWorkouts": "尚未加入訓練。點擊「新增訓練／動作」加入循環的第一個時段。",
+        "sessionNumber": "時段 {{number}}",
+        "addExerciseOrPresetButton": "新增訓練／動作",
+        "entryModeLabel": "日誌整合",
+        "promptModeTitle": "提示與按需（建議）",
+        "promptModeSubtitle": "在排定的日期顯示橫幅，開始訓練或記錄至日誌",
+        "prefillModeTitle": "預填日曆",
+        "prefillModeSubtitle": "自動預先產生動作日誌記錄",
+        "addNextSessionButton": "新增下一個時段（時段 {{number}}）",
+        "exerciseSingular": "動作",
+        "exercisePlural": "動作",
+        "noExercisesInSession": "此時段沒有動作。點擊「新增動作」加入動作或預設。",
+        "removeSessionTitle": "移除時段",
+        "moveSessionUp": "上移時段",
+        "moveSessionDown": "下移時段",
+        "sessionNamePlaceholder": "自訂名稱（例如推日、腿部）"
     },
     "reports": {
         "errorToastTitle": "錯誤",
@@ -3805,7 +3973,9 @@
         "failedToLoadAlcoholWeek": "無法載入每週酒精資料。",
         "failedToLoadHydrationTrend": "無法載入水分趨勢資料。",
         "avgVarianceTargetRangeDescription": "每日偏離目標範圍的平均幅度",
-        "daysInTargetRange": "{{total}} 天中有 {{inRange}} 天在範圍內"
+        "daysInTargetRange": "{{total}} 天中有 {{inRange}} 天在範圍內",
+        "failedToLoadWorkoutHeatmap": "無法載入訓練熱力圖資料。",
+        "symptomsTab": "症狀"
     },
     "sleepHealth": {
         "hrvStatus": "HRV 狀態",
@@ -3951,7 +4121,12 @@
         "boneMass": "骨量",
         "bodyWaterPercentage": "體水分 %",
         "bmr": "BMR",
-        "failedToLoadComparisonData": "載入對比資料失敗."
+        "failedToLoadComparisonData": "載入對比資料失敗.",
+        "heatmapRangeHint": "過去 12 個月。有框線的日期在所選日期範圍內。",
+        "workoutCount_other": "{{count}} 場訓練",
+        "personalRecordsTitle": "個人紀錄",
+        "prProgressionTitle": "PR 進展",
+        "repsVsWeightTitle": "次數 vs 重量"
     },
     "reportsTables": {
         "foodDiaryTable": "飲食日誌表格",
@@ -4024,7 +4199,10 @@
     },
     "muscleGroupRecovery": {
         "title": "肌群恢復狀態",
-        "noRecoveryData": "沒有肌群恢復相關資料。"
+        "noRecoveryData": "沒有肌群恢復相關資料。",
+        "today": "今日",
+        "yesterday": "昨日",
+        "daysAgo": "{{count}} 日前"
     },
     "prProgressionChart": {
         "title": "個人最佳紀錄走勢",
@@ -4043,7 +4221,8 @@
         "legs": "腿部",
         "abs": "核心腹肌",
         "calves": "小腿",
-        "forearms": "前臂"
+        "forearms": "前臂",
+        "_comment": "muscleGroups 是 RecoveryTracker（MuscleGroupRecoveryTracker.tsx）使用的較粗略 UI 分組，請勿與 muscles 合併。"
     },
     "sleepAnalyticsCharts": {
         "sleepStages": "睡眠週期階段",
@@ -4369,7 +4548,9 @@
         "barcodeConflictDescription": "此條碼已關聯到「{{existing}}」。仍然要將其關聯到「{{current}}」嗎？",
         "notesLabel": "備註",
         "notesHelp": "每次記錄此食物時你想記住的詳情 — 例如點餐方式或食譜。支援 Markdown.",
-        "notesPlaceholder": "例如：白米飯、雙份雞肉、微辣莎莎醬、不加豆子"
+        "notesPlaceholder": "例如：白米飯、雙份雞肉、微辣莎莎醬、不加豆子",
+        "dataSource": "資料來源",
+        "refreshFromSource": "從來源重新整理"
     },
     "customMeasurements": {
         "title": "自訂量測紀錄 - {{date}}",
@@ -5170,7 +5351,61 @@
         "endFast": "結束斷食",
         "totalFasts": "斷食總次數",
         "avgDuration": "平均時長",
-        "hoursShort": "{{count}} 小時"
+        "hoursShort": "{{count}} 小時",
+        "autoFromMeals": "自動（來自餐膳）",
+        "currentlyFastingAfterMeal": "自 {{meal}} 開始斷食",
+        "eatingWindow": "進食窗口",
+        "eatingWindowOpen": "進食窗口開啟",
+        "eatingWindowDescription": "進食窗口開啟 · 剩餘 {{remaining}}（於 {{endTime}} 關閉）",
+        "eatingWindowHint": "進食窗口關閉後，斷食將自動恢復。",
+        "remainingInEatingWindow": "你的進食窗口剩餘時間",
+        "startFastEarly": "立即開始斷食",
+        "startedAt": "開始於 {{time}}",
+        "targetAt": "目標 {{time}}",
+        "closesAt": "於 {{time}} 結束",
+        "stages": {
+            "open": {
+                "name": "窗口開啟",
+                "desc": "營養吸收與胰島素反應。"
+            },
+            "fuel": {
+                "name": "最佳能量",
+                "desc": "營養高峰與持續的日間能量。"
+            },
+            "sustain": {
+                "name": "窗口中期",
+                "desc": "均衡水分與中間階段的營養補充。"
+            },
+            "closing": {
+                "name": "窗口將關",
+                "desc": "下一次斷食開始前的最後一餐。"
+            }
+        },
+        "settings": {
+            "title": "間歇性斷食",
+            "description": "設定間歇性斷食方案、由餐膳自動計算與通知",
+            "autoCalculate": "由餐膳自動計算斷食",
+            "autoCalculateHint": "啟用後，Sparky 會自動偵測您最後一餐何時結束，並計算進行中的斷食窗口與每日記錄，無需手動開始／停止按鈕。",
+            "protocol": "預設斷食方案",
+            "customProtocol": "自訂小時數",
+            "customProtocolDesc": "指定您想要的連續斷食小時數。",
+            "targetHours": "目標斷食小時數",
+            "targetHoursDesc": "斷食完成前的目標時長（以小時計）。",
+            "targetEatingHours": "目標進食小時數",
+            "targetEatingHoursDesc": "您的進食窗口時長（以小時計）。",
+            "calorieThreshold": "熱量門檻（千卡）",
+            "calorieThresholdHint": "低於此數值的點心或飲品（例如黑咖啡、水、電解質）不會中斷或重新開始您的斷食。",
+            "preEndAlert": "目標前提醒（分鐘）",
+            "preEndAlertHint": "到達目標斷食時長前多少分鐘收到提醒通知。",
+            "notifications": "斷食提醒",
+            "eatingWindowAlert": "目標與進食窗口通知",
+            "eatingWindowAlertDesc": "在達成斷食目標與進食窗口開啟時收到提醒。",
+            "save": "儲存斷食設定",
+            "saved": "斷食偏好已成功更新。",
+            "error": "無法儲存斷食偏好。",
+            "errorLoading": "無法載入偏好。",
+            "retry": "重試"
+        }
     },
     "i18n": {
         "locale": "en-US"
@@ -5196,7 +5431,23 @@
         "liftosaurSyncErrorDesc": "Liftosaur 同步失敗。請檢查設定中的 API 金鑰。",
         "liftosaurSyncSuccess": "Liftosaur 資料同步成功。",
         "liftosaurSyncSuccessTitle": "Liftosaur 同步成功",
-        "liftosaurSyncDetails": "已同步：匯入 {{workoutsImported}} 組訓練與 {{measurementsImported}} 項測量。"
+        "liftosaurSyncDetails": "已同步：匯入 {{workoutsImported}} 組訓練與 {{measurementsImported}} 項測量。",
+        "corosLinkError": "無法連結 COROS 帳戶。",
+        "corosLinkSuccess": "COROS 帳戶連結成功！",
+        "corosSyncSuccess": "COROS 同步完成",
+        "corosNoNew": "找不到新的活動。",
+        "corosProcessingAuth": "處理 COROS 授權中...",
+        "corosMissingCodeOrState": "錯誤：缺少 COROS 授權代碼或狀態。",
+        "corosOAuthError": "COROS OAuth 錯誤",
+        "corosMissingParams": "回呼中缺少授權代碼或狀態。",
+        "corosLinkSuccessMsg": "COROS 帳戶連結成功！",
+        "corosLinkErrorMsg": "連結 COROS 帳戶時發生錯誤。",
+        "syncImported": "已匯入 {{count}}",
+        "syncUpdated": "已更新 {{count}}",
+        "syncSkipped": "略過 {{count}} 個現有項目",
+        "syncDeferred": "延後 {{count}}",
+        "syncSummaryOnly": "僅摘要：{{count}}",
+        "googleHealthSyncError": "Google Health 同步未完成。"
     },
     "mealCreation": {
         "convertToMeal": "從日記建立餐點",
@@ -5442,7 +5693,9 @@
         "modeLive": "正常從 {{provider}} 同步",
         "modeCapture": "從 {{provider}} 同步，並將此次同步的原始回應儲存為伺服器上的檔案",
         "modeReplay": "從先前儲存的檔案同步，而非 {{provider}}",
-        "replayIgnoresDates": "日期範圍在此不適用——儲存的檔案會完整重播，涵蓋原本錄製的任何時段。"
+        "replayIgnoresDates": "日期範圍在此不適用——儲存的檔案會完整重播，涵蓋原本錄製的任何時段。",
+        "corosWarning": "注意：每日 FIT 檔案下載受 COROS 速率限制（每天最多 50 個；其餘活動會延後至後續同步）。活動訓練會同步；每日健康／睡眠指標尚未匯入。",
+        "capturePrivacyNote": "警告：原始診斷擷取檔案包含您的個人活動、GPS 軌跡與健康資料。分享前請檢視並遮蔽任何敏感資訊。"
     },
     "warning": "警告",
     "workout": {
@@ -5458,7 +5711,13 @@
         "restSec": "休息（秒）",
         "rpe": "RPE",
         "type": "類型",
-        "weight": "重量"
+        "weight": "重量",
+        "addedWeight": "+/− 體重",
+        "durationSecShort": "秒",
+        "distanceUnit": "距離（{{unit}}）",
+        "rir": "RIR",
+        "startTimer": "開始計時",
+        "stopTimer": "停止計時"
     },
     "food": {
         "imagesLabel": "圖片",
@@ -5871,9 +6130,12 @@
         "views": {
             "all": "所有訓練",
             "strength": "力量與阻力",
-            "cardio": "有氧與 GPS"
+            "cardio": "有氧與 GPS",
+            "allShort": "全部",
+            "strengthShort": "力量",
+            "cardioShort": "心肺"
         },
-        "interval": "區間：",
+        "interval": "分組方式：",
         "intervals": {
             "day": "天",
             "week": "週",
@@ -5885,7 +6147,18 @@
             "strength": "力量訓練活動記錄",
             "cardio": "有氧與 GPS 活動地圖",
             "all": "訓練活動歷史與地圖"
-        }
+        },
+        "cardio": {
+            "sessionsTitle": "時段",
+            "sessionsHint": "點擊訓練可查看其路線與心率。",
+            "noSessions": "此日期範圍內沒有心肺訓練。",
+            "moreSessions": "較早的時段",
+            "noRoute": "未儲存 GPS 路線。室內訓練沒有路線。戶外步行只有在 Apple Health 於同步時分享才會有路線。",
+            "avgHeartRate": "平均心率 {{bpm}} bpm。未儲存逐拍樣本。",
+            "noHeartRate": "本次訓練沒有心率樣本。"
+        },
+        "moreAnalysis": "更多分析",
+        "hideAnalysis": "隱藏其他圖表"
     },
     "exerciseDisplayNames": {
         "mixedCardio": "混合有氧",
@@ -5928,7 +6201,9 @@
         "externalImage": "外部圖片"
     },
     "layout": {
-        "welcome": "歡迎 {{activeUserName}}"
+        "welcome": "歡迎 {{activeUserName}}",
+        "docs": "文件",
+        "translate": "翻譯"
     },
     "chat": {
         "toolCategories": {
@@ -6066,19 +6341,286 @@
         "wodScoring": "WOD 計分",
         "rx": "Rx",
         "scaled": "降階",
-        "extraReps": "額外次數"
+        "extraReps": "額外次數",
+        "decrementRound": "復原 1 回合",
+        "finished": "已達時間上限",
+        "roundPlusOne": "+1 回合（{{current}} 已完成）"
     },
     "symptoms": {
         "categories": {
             "general": "一般",
             "pain": "疼痛",
             "skin": "皮膚",
-            "other": "其他"
+            "other": "其他",
+            "head": "頭部",
+            "gi": "腸胃",
+            "respiratory": "呼吸",
+            "mental": "心理"
         },
         "severity": {
             "mild": "輕微",
             "moderate": "中等",
+            "severe": "嚴重",
+            "label": "嚴重程度",
+            "count": "幾次",
+            "low": "1 輕微",
+            "high": "{{max}} 最嚴重"
+        },
+        "manage": {
+            "show": "顯示 {{name}}",
+            "addOption": "新增自己的",
+            "title": "管理症狀",
+            "description": "選擇您要追蹤的內容、會被詢問的內容，以及您看到的選項。",
+            "tabSymptoms": "症狀",
+            "tabLists": "選項",
+            "new": "新增症狀",
+            "episodeTag": "發作",
+            "unpin": "取消釘選 {{name}}",
+            "pin": "釘選 {{name}}",
+            "edit": "編輯 {{name}}",
+            "hide": "隱藏 {{name}}",
+            "delete": "刪除 {{name}}",
+            "hidden": "已隱藏",
+            "restore": "再次顯示",
+            "keepHistory": "隱藏或刪除症狀不會移除您過往的記錄。",
+            "name": "名稱",
+            "template": "類型",
+            "category": "群組",
+            "scale": "評分方式",
+            "episodic": "通常是有開始與結束的發作（例如偏頭痛）",
+            "sections": "記錄時詢問的內容",
+            "fields": "您自訂的欄位",
+            "fieldLabel": "標籤",
+            "fieldType": "類型",
+            "removeField": "移除欄位",
+            "fieldOptions": "選項，以逗號分隔",
+            "fieldUnit": "單位（選填）",
+            "addField": "新增欄位",
+            "section": {
+                "locations": "所在位置",
+                "phases": "頭痛階段",
+                "qualities": "感覺如何",
+                "associated": "其他症狀",
+                "triggers": "可能誘因",
+                "treatments": "治療方式",
+                "impact": "對當天的影響",
+                "notes": "備註",
+                "medication": "可能是藥物的副作用",
+                "bristol": "布里斯托大便分類表",
+                "photos": "照片",
+                "custom_fields": "您自訂的欄位"
+            }
+        },
+        "chips": {
+            "remove": "移除 {{name}}",
+            "add": "新增",
+            "save": "儲存",
+            "newLabel": "新選項名稱"
+        },
+        "detail": {
+            "delete": "刪除",
+            "confirmDelete": "刪除此筆記錄？",
+            "edit": "編輯",
+            "editTitle": "編輯症狀記錄"
+        },
+        "treatments": {
+            "addMedication": "新增藥物",
+            "didItHelp": "有幫助嗎？",
+            "helped": "有幫助",
+            "partly": "部分有效",
+            "didnt": "沒有幫助"
+        },
+        "map": {
+            "view": "身體圖檢視",
+            "front": "正面",
+            "back": "背面",
+            "headLabel": "頭部圖",
+            "bodyLabel": "身體圖",
+            "hint": "點擊疼痛的位置。左右對應您的身體。"
+        },
+        "form": {
+            "started": "已開始",
+            "now": "現在",
+            "minutesAgo": "{{n}} 分鐘前",
+            "hoursAgo": "{{n}} 小時前",
+            "pick": "選擇…",
+            "startedAt": "開始日期與時間",
+            "ongoing": "仍在進行",
+            "ended": "已結束",
+            "symptom": "症狀",
+            "newSymptom": "新增症狀",
+            "kind": "記錄種類",
+            "quick": "快速記錄",
+            "episode": "發作",
+            "newSymptomPlaceholder": "例如下背痛",
+            "newSymptomName": "新症狀名稱",
+            "noMedication": "未連結藥物",
+            "notesPlaceholder": "其他值得記住的內容",
+            "cancel": "取消",
+            "saving": "儲存中…",
+            "update": "更新",
+            "saveEpisode": "儲存發作",
+            "save": "儲存",
+            "title": "記錄症狀"
+        },
+        "sections": {
+            "where": "位置",
+            "phases": "階段",
+            "optional": "選填",
+            "qualities": "感覺如何",
+            "associated": "其他症狀",
+            "triggers": "可能誘因",
+            "treatments": "治療方式",
+            "noneYet": "尚無",
+            "impact": "對您當天的影響",
+            "bristol": "排便記錄（布里斯托分類表）",
+            "medication": "可能是...的副作用",
+            "details": "更多詳情",
+            "notes": "備註",
+            "photos": "照片"
+        },
+        "photos": {
+            "saved": "已儲存照片",
+            "remove": "移除照片",
+            "add": "新增照片"
+        },
+        "episode": {
+            "ongoing": "進行中",
+            "peak": "高峰 {{n}}",
+            "saveTreatments": "儲存治療方式",
+            "updateSeverity": "更新嚴重程度",
+            "saveReading": "儲存讀數",
+            "addRelief": "新增緩解方式",
+            "addReliefHint": "記錄您服用或做了什麼，以及是否有幫助。",
+            "end": "結束發作",
+            "endTitle": "結束此次發作",
+            "endHint": "設定結束時間，並標記有幫助的內容。",
+            "endedWhen": "已結束",
+            "didAnythingHelp": "有任何幫助嗎？",
+            "startedAt": "開始於 {{time}}"
+        },
+        "history": {
+            "title": "近期症狀",
+            "loading": "載入中…",
+            "empty": "過去 30 天沒有任何記錄。請使用此表單記錄症狀。",
+            "cycle": "週期"
+        },
+        "calendar": {
+            "previous": "上一個月",
+            "next": "下一個月",
+            "free": "無症狀",
+            "mild": "輕微至中度",
+            "severe": "嚴重",
+            "unknown": "無記錄"
+        },
+        "hub": {
+            "title": "症狀",
+            "subtitle": "追蹤症狀與發作，並觀察通常伴隨出現的內容。",
+            "manage": "管理",
+            "anyToday": "{{date}} 有任何症狀嗎？",
+            "today": "今日",
+            "markedFree": "已標記為無症狀日。",
+            "undo": "復原",
+            "noneToday": "無症狀",
+            "logAgain": "再次記錄"
+        },
+        "chart": {
+            "summary": "發作期間的嚴重程度，{{count}} 次讀數"
+        },
+        "phases": {
+            "prodrome": "頭痛之前",
+            "aura": "前兆",
+            "postdrome": "頭痛之後"
+        },
+        "triggerGroups": {
+            "sleep": "睡眠",
+            "food_drink": "食物與飲品",
+            "lifestyle": "生活習慣",
+            "environment": "環境",
+            "hormonal": "荷爾蒙",
+            "other": "其他",
+            "mine": "我的"
+        },
+        "impact": {
+            "none": "無",
+            "mild": "輕微",
+            "moderate": "中度",
             "severe": "嚴重"
+        },
+        "templates": {
+            "generic": "一般",
+            "headache": "頭痛或偏頭痛",
+            "pain": "疼痛",
+            "gi": "腸胃",
+            "respiratory": "呼吸與過敏",
+            "skin": "皮膚",
+            "mental": "情緒與焦慮"
+        },
+        "scales": {
+            "1-5": "1 至 5",
+            "1-10": "1 至 10",
+            "none-severe": "輕微、中度、嚴重",
+            "count": "次數",
+            "text": "僅備註"
+        },
+        "fieldTypes": {
+            "number": "數字",
+            "text": "文字",
+            "boolean": "是／否",
+            "select": "單選",
+            "multiselect": "多選"
+        },
+        "optionKinds": {
+            "location": "身體位置",
+            "head_location": "頭部位置",
+            "quality": "感覺如何",
+            "associated": "其他症狀",
+            "trigger": "誘因",
+            "relief": "緩解方式"
+        },
+        "report": {
+            "symptomDays": "有症狀日",
+            "episodes": "發作",
+            "freeDays": "無症狀日",
+            "averageDuration": "平均發作時長",
+            "medicationDays": "服藥天數",
+            "symptom": "症狀",
+            "allSymptoms": "所有症狀",
+            "exportCsv": "匯出 CSV",
+            "print": "列印給醫生",
+            "medicationCaution": "若連續 10 天或以上因症狀服藥，值得與醫生討論。這只是提醒，並非診斷。",
+            "recentEpisodes": "近期發作",
+            "recentEpisodesHint": "並排顯示，並包含日誌中圍繞每次發作的內容。",
+            "showLast": "顯示數量",
+            "lastN": "最近 {{n}} 個",
+            "noEpisodes": "此日期範圍內沒有發作。記錄一個有開始時間的發作即可在此查看。",
+            "col": {
+                "started": "已開始",
+                "duration": "時長",
+                "peak": "高峰",
+                "where": "位置",
+                "triggers": "誘因",
+                "relief": "緩解",
+                "slept": "睡眠",
+                "food": "前一天",
+                "water": "水分"
+            },
+            "factorsTitle": "之前發生什麼",
+            "factorsHint": "您最近 {{n}} 次發作中有多少次出現這些因素。這描述的是發生過什麼，並非顯示成因。",
+            "notEnough": "發作次數不足，尚無法看出規律（至少 {{n}} 次）",
+            "noFactors": "在您的發作中新增誘因，並記錄睡眠與食物，以觀察通常有哪些因素出現在前面。",
+            "ofKnown": "{{count}} / {{known}}",
+            "timeOfDay": "一天中的時段",
+            "timeOfDayHint": "症狀被記錄或開始的時間。",
+            "printTitle": "症狀報告",
+            "printSummary": "{{days}} 個有症狀日、{{episodes}} 次發作、{{free}} 個無症狀日、{{meds}} 天服藥。",
+            "factor": {
+                "short_sleep": "前一晚睡眠少於 6 小時",
+                "low_water": "前一天飲水少於 1.5 公升",
+                "alcohol": "食物名稱含酒精",
+                "caffeine": "食物名稱含咖啡因",
+                "menstrual_phase": "月經期間"
+            }
         }
     },
     "guidedWorkout": {
@@ -6109,7 +6651,8 @@
             "replay": "重播指示",
             "doneNext": "完成 — 下一個",
             "doneHintReps_other": "做完 {{count}} 下時點擊",
-            "doneHint": "完成時點擊"
+            "doneHint": "完成時點擊",
+            "doneWeb": "所有組數已完成。結束訓練即可儲存。"
         },
         "settings": {
             "section": "引導訓練",
@@ -6121,7 +6664,11 @@
             "countdownSubtitle": "在第一個動作之前，以及每個限時組之前。",
             "countdownValue_other": "{{count}} 秒",
             "sample": "你的引導訓練聽起來會是這樣。",
-            "test": "測試語音"
+            "test": "測試語音",
+            "description": "訓練播放器中的語音提示、倒數與自動切換組數",
+            "enabledSubtitleWeb": "會朗讀每個動作與目標、倒數開始、自動執行限時組，並進入下一組。僅儲存在此瀏覽器。",
+            "unsupported": "此瀏覽器無法朗讀。引導檢視仍可使用，只是沒有旁白。",
+            "voiceDefaultWeb": "跟隨瀏覽器預設"
         }
     },
     "workoutFeedback": {
@@ -6138,7 +6685,10 @@
         "painPrivacy": "這些動作的建議會變輕，不會加重。",
         "rateExercises": "為每個動作評分",
         "saving": "儲存中…",
-        "saved": "已儲存"
+        "saved": "已儲存",
+        "saveFailed": "無法儲存您的回饋。請再試一次。",
+        "loadFailed": "無法載入您的回饋。",
+        "tryAgain": "請再試一次"
     },
     "adaptiveCoaching": {
         "reasons": {
@@ -6160,7 +6710,12 @@
         "actions": {
             "breathe": "呼吸",
             "timer": "計時器",
-            "log": "記錄"
+            "log": "記錄",
+            "logManual": "記錄時段",
+            "edit": "編輯時段",
+            "delete": "刪除時段",
+            "cancel": "取消",
+            "saving": "儲存中..."
         },
         "types": {
             "meditation": "冥想",
@@ -6173,7 +6728,100 @@
         "timer": {
             "title": "冥想計時器",
             "pause": "暫停",
-            "resume": "繼續"
+            "resume": "繼續",
+            "subtitle": "開放／限時時段",
+            "heading": "冥想時段計時器",
+            "description": "安靜專注，並自動記錄完成",
+            "hide": "隱藏計時器",
+            "launch": "啟動計時器",
+            "start": "開始計時",
+            "saveAndFinish": "儲存並完成"
+        },
+        "title": "正念",
+        "stats": {
+            "totalMinutes": "今日正念分鐘",
+            "sessionCount": "時段",
+            "recorded_other": "已記錄時段"
+        },
+        "pacer": {
+            "title": "節奏呼吸",
+            "subtitle": "呼吸練習指南",
+            "hide": "隱藏呼吸引導器",
+            "launch": "啟動呼吸引導器",
+            "boxName": "方框呼吸",
+            "boxDesc": "專注與紓壓",
+            "relaxName": "4-7-8 放鬆法",
+            "relaxDesc": "深度平靜與睡眠準備",
+            "coherenceName": "和諧共振",
+            "coherenceDesc": "最大化 HRV",
+            "inhale": "吸氣",
+            "hold": "屏住",
+            "exhale": "呼氣",
+            "rest": "休息",
+            "ready": "準備",
+            "begin": "開始呼吸",
+            "complete": "完成"
+        },
+        "history": {
+            "title": "今日時段",
+            "subtitle": "{{date}} 的穿戴裝置匯入與手動記錄",
+            "loading": "載入正念資料中...",
+            "emptyTitle": "今日沒有記錄正念時段",
+            "emptyDescription": "花 5 分鐘做個快速呼吸休息、冥想，或記錄 Apple Health／Garmin 的穿戴裝置時段。"
+        },
+        "dialog": {
+            "editTitle": "編輯正念時段",
+            "createTitle": "記錄正念時段",
+            "minutes": "分鐘",
+            "seconds": "秒",
+            "type": "類型",
+            "hrAvg": "平均心率（bpm）",
+            "hrv": "HRV RMSSD（毫秒）",
+            "hrStart": "開始心率（bpm）",
+            "hrEnd": "結束心率（bpm）",
+            "notes": "備註",
+            "notesPlaceholder": "此時段感覺如何？",
+            "save": "儲存時段",
+            "update": "更新時段"
+        },
+        "deleteDialog": {
+            "title": "刪除正念時段",
+            "description": "您確定要刪除此正念時段嗎？此操作無法復原。",
+            "confirm": "刪除",
+            "deleting": "刪除中..."
         }
+    },
+    "muscleHeatmap": {
+        "title": "肌肉熱度圖",
+        "subtitle": "此日期範圍內主要肌肉的正式組",
+        "sets": "組",
+        "fewer": "較少",
+        "more": "較多",
+        "tap": "點擊肌肉",
+        "notOnFigure": "未顯示於圖上",
+        "figure": "身體圖",
+        "male": "男性",
+        "female": "女性"
+    },
+    "workoutCoaching": {
+        "settingsTitle": "自適應訓練建議",
+        "settingsSubtitle": "會根據您記錄的訓練回饋（難度、疼痛標記）調整後續的組數與動作建議。",
+        "settingsLoadFailed": "無法載入訓練指導設定",
+        "settingsSaved": "設定已儲存",
+        "settingsSaveFailed": "無法儲存訓練指導設定"
+    },
+    "trainingConsistency": {
+        "title": "訓練穩定性",
+        "streak": "連續週數",
+        "longest": "最長",
+        "thisWeek": "本週",
+        "lastWeek": "上週",
+        "weeks_other": "{{count}} 週",
+        "days_other": "{{count}} 日",
+        "daysPerWeek_other": "每週訓練天數，過去 {{count}} 週",
+        "chartLabel": "每週訓練天數",
+        "setsTitle": "各肌肉的組數",
+        "noSets": "本週與上週都沒有記錄組數。",
+        "loadFailed": "無法載入你的訓練穩定性。"
     }
 }
