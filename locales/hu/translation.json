@@ -5,7 +5,10 @@
         "foods": "Ételek",
         "goals": "Célok",
         "settings": "Beállítások",
-        "admin": "Administrátor"
+        "admin": "Administrátor",
+        "foodLog": "Étkezési napló",
+        "wellness": "Wellness",
+        "symptoms": "Tünetek"
     },
     "nutrition": {
         "calories": "Kalóriák",
@@ -26,7 +29,19 @@
         "vitaminA": "A vitamin",
         "vitaminC": "C vitamin",
         "calcium": "Kálcium",
-        "iron": "Vas"
+        "iron": "Vas",
+        "netCarbs": "Tiszta Szénhidrátok",
+        "caffeine": "Koffein",
+        "waterContent": "Víztartalom",
+        "alcohol": "Alkohol",
+        "abv": "Alkoholtartalom (%)",
+        "autoCalculate": "Automatikus számítás",
+        "autoCalculateTooltip": "Automatikus számítás {{algorithm}} használatával",
+        "autoCalculateDisabledNoSex": "Állítsd be a nemedet a Profilban az automatikus kiszámítás engedélyezéséhez",
+        "autoCalculateSelect": "Felvétel a tömeges automatikus számításba",
+        "autoCalculateSelectAll": "Összes kiválasztása",
+        "autoCalculateSelectNone": "Ne válasszon semmit",
+        "autoCalculateApplySelected": "A kijelöltek automatikus kiszámítása ({{count}})"
     },
     "aboutDialog": {
         "title": "SparkyFitness-ről",
@@ -65,7 +80,44 @@
             "categoryStrength": "Erősítés",
             "categoryCardio": "Kardió",
             "categoryYoga": "Jóga",
-            "caloriesPerHourLabel": "Kalóriák/Óra"
+            "caloriesPerHourLabel": "Kalóriák/Óra",
+            "levelExpert": "Szakértő",
+            "mechanicLabel": "Mechanika",
+            "selectMechanicPlaceholder": "Válassz mechanizmust",
+            "mechanicIsolation": "Izoláció",
+            "mechanicCompound": "Összetétel",
+            "equipmentLabel": "Felszerelés",
+            "primaryMusclesLabel": "Elsődleges izmok",
+            "secondaryMusclesLabel": "Másodlagos izmok",
+            "customMuscleBodyMapHint": "Az egyéni izmok nem jelennek meg a testtérképen.",
+            "tagInputPlaceholder": "Írjon ide, hogy hozzáadjon vagy keressen...",
+            "addCustomTag": "\"{{tag}}\" hozzáadása",
+            "instructionsLabel": "Utasítások (soronként egy)",
+            "imagesLabel": "Képek",
+            "addButton": "Gyakorlat hozzáadása",
+            "addSuccess": "Gyakorlat sikeresen hozzáadva",
+            "addError": "Gyakorlat hozzáadása sikertelen",
+            "importSuccess": "Gyakorlati adatok importálása sikeresen megtörtént",
+            "importDuplicateTitle": "Importálás sikertelen: duplikált elemek találhatók",
+            "importDuplicateDescription": "A következő elemek már léteznek: {{duplicateList}}. Kérjük, távolítsd el őket a fájlodból, majd próbáld meg újra.",
+            "importError": "Gyakorlati adatok importálása sikertelen. Kérjük, próbálja meg újra.",
+            "replaceTitle": "Gyakorlat cseréje",
+            "replaceSuccess": "Gyakorlat lecserélve",
+            "suggestedTab": "Ajánlott"
+        },
+        "modality": {
+            "weightReps": "Súly & Ismétlés",
+            "repsOnly": "Ismétlés",
+            "bodyweightReps": "Testsúly (+/- súly)",
+            "weightDistance": "Súly & Távolság (cipelés)",
+            "weightDuration": "Súly & Időtartam (terheléses tartás)",
+            "duration": "Időtartam",
+            "durationDistance": "Időtartam & Távolság"
+        },
+        "addWorkoutPresetDialog": {
+            "searchPlaceholder": "Keress az edzésprogramjaid között...",
+            "recentPresetsTitle": "Legutóbbi előre beállított értékek",
+            "noRecentPresets": "Nincsenek legutóbbi beállítások."
         }
     },
     "chat": {
@@ -614,5 +666,28 @@
             "servingUnit_softgel_one": "lágykapszula",
             "servingUnit_softgel_other": "lágykapszulák"
         }
+    },
+    "calculationSettings": {
+        "showNetCarbs": "A nettó szénhidrátok megjelenítése (szénhidrátok mínusz rosttartalom)",
+        "showNetCarbsHint": "Ha ez az opció be van kapcsolva, a szénhidrát-összefoglalók a teljes szénhidrátmennyiséget az élelmi rostok levonásával jelenítik meg.",
+        "bmrAlgorithm": "BMR algoritmus",
+        "bmrAlgorithmOptions": {
+            "mifflinStJeor": "Mifflin-St Jeor",
+            "revisedHarrisBenedict": "Módosított Harris–Benedict-képlet",
+            "katchMcArdle": "Katch-McArdle",
+            "cunningham": "Cunningham",
+            "oxford": "Oxford"
+        },
+        "bmrAlgorithmHint": "Válassza ki az alapanyagcseréje kiszámításához használt képletet.",
+        "bodyFatAlgorithm": "Testzsír-számítási algoritmus",
+        "bodyFatAlgorithmOptions": {
+            "usNavy": "Amerikai Haditengerészet",
+            "bmiMethod": "BMI-módszer"
+        },
+        "bodyFatAlgorithmHint": "Válassza ki azt a képletet, amelynek segítségével a mérések alapján meg lehet becsülni a testzsírszázalékot.",
+        "calories": "Kalória",
+        "energyUnitHint": "Válassza ki az energiaértékek megjelenítéséhez kívánt mértékegységet (pl. kalória, kilojoule).",
+        "energyUnitLabel": "Energiaegység",
+        "energyUnitSaveError": "Hiba"
     }
 }
