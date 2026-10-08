@@ -4238,8 +4238,7 @@
             "loadFailed": "Impossibile caricare i dati del sonno",
             "empty": "Nessun dato sul sonno per questo periodo",
             "avgTimeInBed": "Tempo a letto medio",
-            "avgTimeAsleep": "Tempo di sonno medio",
-            "rangeLabel": "{{startDate}} – {{endDate}}"
+            "avgTimeAsleep": "Tempo di sonno medio"
         },
         "hydration": {
             "title": "Idratazione",
@@ -5123,15 +5122,12 @@
     },
     "healthTrendsSettings": {
         "description": "Trascina un grafico dalla maniglia per riordinarlo. Rilascialo sotto la linea \"Nascosti\" per rimuoverlo dalla Dashboard.",
-        "hiddenLabel": "Nascosto",
         "reorder": "Riordina {{name}}",
         "reorderHint": "Sposta sotto la linea Nascosta per nascondere questo grafico, o sopra di essa per mostrarlo",
         "moveUp": "Sposta su",
         "moveDown": "Sposta giù",
         "stateShown": "Mostrato",
-        "stateHidden": "Nascosto",
-        "emptyShown": "Nessun grafico mostrato. Trascina uno sopra la linea per riportarlo indietro.",
-        "emptyHidden": "Rilascia un grafico qui per nasconderlo."
+        "stateHidden": "Nascosto"
     },
     "progressPhotos": {
         "card": {

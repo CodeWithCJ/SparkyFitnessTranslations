@@ -4222,8 +4222,7 @@
             "loadFailed": "Schlafdaten konnten nicht geladen werden",
             "empty": "Keine Schlafdaten für diesen Zeitraum",
             "avgTimeInBed": "Ø Zeit im Bett",
-            "avgTimeAsleep": "Ø Schlafzeit",
-            "rangeLabel": "{{startDate}} – {{endDate}}"
+            "avgTimeAsleep": "Ø Schlafzeit"
         },
         "hydration": {
             "title": "Flüssigkeitszufuhr",
@@ -5098,15 +5097,12 @@
     },
     "healthTrendsSettings": {
         "description": "Ziehe ein Diagramm an seinem Griff, um es neu anzuordnen. Lege es unterhalb der Linie „Ausgeblendet“ ab, um es vom Dashboard zu entfernen.",
-        "hiddenLabel": "Ausgeblendet",
         "reorder": "{{name}} neu anordnen",
         "reorderHint": "Nach unten unter die Linie „Ausgeblendet“ verschieben, um dieses Diagramm auszublenden, oder darüber, um es anzuzeigen",
         "moveUp": "Nach oben verschieben",
         "moveDown": "Nach unten verschieben",
         "stateShown": "Angezeigt",
-        "stateHidden": "Ausgeblendet",
-        "emptyShown": "Es werden keine Diagramme angezeigt. Ziehe eines über die Linie, um es zurückzuholen.",
-        "emptyHidden": "Lege hier ein Diagramm ab, um es auszublenden."
+        "stateHidden": "Ausgeblendet"
     },
     "progressPhotos": {
         "card": {

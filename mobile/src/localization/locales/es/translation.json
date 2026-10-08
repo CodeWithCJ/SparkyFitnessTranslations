@@ -4406,7 +4406,6 @@
             "avgTimeInBed": "Tiempo medio en la cama",
             "empty": "No hay datos de sueño para este periodo",
             "loadFailed": "No se pudieron cargar los datos de sueño",
-            "rangeLabel": "{{startDate}} – {{endDate}}",
             "title": "Sueño"
         }
     },
@@ -5008,9 +5007,6 @@
     },
     "healthTrendsSettings": {
         "description": "Arrastra una gráfica por su asa para reordenarla. Suéltala debajo de la línea Ocultas para quitarla del panel.",
-        "emptyHidden": "Suelta aquí una gráfica para ocultarla.",
-        "emptyShown": "No se muestra ninguna gráfica. Arrastra una por encima de la línea para recuperarla.",
-        "hiddenLabel": "Ocultas",
         "moveDown": "Bajar",
         "moveUp": "Subir",
         "reorder": "Reordenar {{name}}",

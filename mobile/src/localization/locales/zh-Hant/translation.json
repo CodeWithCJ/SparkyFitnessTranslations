@@ -4140,8 +4140,7 @@
             "loadFailed": "載入睡眠資料失敗",
             "empty": "此期間沒有睡眠資料",
             "avgTimeInBed": "平均臥床時間",
-            "avgTimeAsleep": "平均入睡時間",
-            "rangeLabel": "{{startDate}} – {{endDate}}"
+            "avgTimeAsleep": "平均入睡時間"
         },
         "loading": "正在載入圖表...",
         "weightLoadFailed": "載入體重資料失敗",
@@ -4942,15 +4941,12 @@
     },
     "healthTrendsSettings": {
         "description": "按住圖表的手柄拖曳以重新排序。將其拖到「已隱藏」線下方即可從儀表板移除。",
-        "hiddenLabel": "已隱藏",
         "reorder": "重新排序 {{name}}",
         "reorderHint": "移到「已隱藏」線下方以隱藏此圖表，或移到上方以顯示",
         "moveUp": "上移",
         "moveDown": "下移",
         "stateShown": "已顯示",
-        "stateHidden": "已隱藏",
-        "emptyShown": "沒有顯示的圖表。拖一個到線上方以恢復。",
-        "emptyHidden": "將圖表拖到這裡以隱藏。"
+        "stateHidden": "已隱藏"
     },
     "progressPhotos": {
         "card": {

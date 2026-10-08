@@ -4004,8 +4004,7 @@
             "loadFailed": "Laden van slaapgegevens mislukt",
             "empty": "Geen slaapgegevens voor deze periode",
             "avgTimeInBed": "Gem. tijd in bed",
-            "avgTimeAsleep": "Gem. tijd geslapen",
-            "rangeLabel": "{{startDate}} – {{endDate}}"
+            "avgTimeAsleep": "Gem. tijd geslapen"
         },
         "allTrendsHidden": "Alle grafieken zijn verborgen. Kies welke u wilt tonen in Dashboardinstellingen."
     },
@@ -4885,15 +4884,12 @@
     },
     "healthTrendsSettings": {
         "description": "Sleep een grafiek aan de hendel om deze te herschikken. Zet hem onder de lijn Verborgen om hem van het Dashboard te halen.",
-        "hiddenLabel": "Verborgen",
         "reorder": "{{name}} herschikken",
         "reorderHint": "Verplaats onder de lijn Verborgen om deze grafiek te verbergen, of erboven om hem te tonen",
         "moveUp": "Omhoog verplaatsen",
         "moveDown": "Omlaag verplaatsen",
         "stateShown": "Getoond",
-        "stateHidden": "Verborgen",
-        "emptyShown": "Er worden geen grafieken getoond. Sleep er een boven de lijn om hem terug te zetten.",
-        "emptyHidden": "Sleep hier een grafiek naartoe om deze te verbergen."
+        "stateHidden": "Verborgen"
     },
     "progressPhotos": {
         "card": {

@@ -813,14 +813,11 @@
     "healthTrendsSettings": {
         "moveDown": "Descendre",
         "description": "Faites glisser un graphique par sa poignée pour le déplacer. Déposez-le sous la ligne Masqués pour le retirer du tableau de bord.",
-        "hiddenLabel": "Masqués",
         "reorder": "Déplacer {{name}}",
         "reorderHint": "Placez-le sous la ligne Masqués pour masquer ce graphique, ou au-dessus pour l'afficher",
         "moveUp": "Monter",
         "stateShown": "Affiché",
-        "stateHidden": "Masqué",
-        "emptyShown": "Aucun graphique affiché. Faites-en glisser un au-dessus de la ligne pour le réafficher.",
-        "emptyHidden": "Déposez un graphique ici pour le masquer."
+        "stateHidden": "Masqué"
     },
     "screens": {
         "library": {
@@ -3016,8 +3013,7 @@
             "loadFailed": "Échec du chargement du sommeil",
             "empty": "Aucune donnée de sommeil sur cette période",
             "avgTimeInBed": "Temps au lit moy",
-            "avgTimeAsleep": "Temps de sommeil moy",
-            "rangeLabel": "{{startDate}} – {{endDate}}"
+            "avgTimeAsleep": "Temps de sommeil moy"
         },
         "hydration": {
             "title": "Hydratation",
