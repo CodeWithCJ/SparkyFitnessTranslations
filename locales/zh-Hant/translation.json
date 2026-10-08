@@ -3434,7 +3434,12 @@
         "cluster": "分段叢集組",
         "technique": "技術修正組",
         "replaceExerciseButton": "替換運動",
-        "duplicateExerciseButton": "複製運動"
+        "duplicateExerciseButton": "複製運動",
+        "formatInterval": "間歇／HIIT",
+        "formatTabata": "Tabata",
+        "formatEmom": "EMOM",
+        "formatAmrap": "AMRAP",
+        "formatForTime": "限時完成"
     },
     "addWorkoutPlanDialog": {
         "editTitle": "編輯運動計畫",
@@ -6014,5 +6019,161 @@
         "quickAdd": "快速新增飲品",
         "caffeineBadge": "{{amount}} 毫克咖啡因",
         "alcoholBadge": "{{abv}}% 酒精濃度"
+    },
+    "muscles": {
+        "abdominals": "腹肌",
+        "abductors": "外展肌",
+        "adductors": "內收肌",
+        "biceps": "二頭肌",
+        "calves": "小腿",
+        "chest": "胸肌",
+        "forearms": "前臂",
+        "glutes": "臀部",
+        "hamstrings": "腿後肌群",
+        "lats": "背闊肌",
+        "lower back": "下背",
+        "middle back": "中背",
+        "neck": "頸部",
+        "quadriceps": "股四頭肌",
+        "shoulders": "肩部",
+        "traps": "斜方肌",
+        "triceps": "三頭肌"
+    },
+    "equipment": {
+        "barbell": "槓鈴",
+        "dumbbell": "啞鈴",
+        "kettlebells": "壺鈴",
+        "cable": "纜繩",
+        "machine": "器械",
+        "bands": "彈力帶",
+        "body only": "徒手",
+        "medicine ball": "藥球",
+        "exercise ball": "健身球",
+        "foam roll": "泡棉滾筒",
+        "e-z curl bar": "E-Z 曲槓",
+        "other": "其他"
+    },
+    "interval": {
+        "ready": "準備",
+        "countdown": "準備就緒",
+        "work": "訓練",
+        "rest": "休息",
+        "roundOfTotal": "回合 {{current}} / {{total}}",
+        "round": "第 {{current}} 回合",
+        "resume": "繼續",
+        "pause": "暫停",
+        "timeCapLabel": "上限：{{cap}}",
+        "wodScoring": "WOD 計分",
+        "rx": "Rx",
+        "scaled": "降階",
+        "extraReps": "額外次數"
+    },
+    "symptoms": {
+        "categories": {
+            "general": "一般",
+            "pain": "疼痛",
+            "skin": "皮膚",
+            "other": "其他"
+        },
+        "severity": {
+            "mild": "輕微",
+            "moderate": "中等",
+            "severe": "嚴重"
+        }
+    },
+    "guidedWorkout": {
+        "cue": {
+            "getReady": "準備。開始 {{name}}。",
+            "setStartReps_other": "{{name}}。做 {{count}} 下。",
+            "setStartSeconds_other": "{{name}}。{{count}} 秒。",
+            "setStartOpen": "{{name}}。",
+            "halfway": "進行到一半。",
+            "rest_other": "休息。{{count}} 秒。",
+            "intervalRest": "休息。",
+            "nextUp": "下一個：{{name}}。",
+            "workoutComplete": "訓練完成。"
+        },
+        "card": {
+            "badge": "引導",
+            "getReady": "準備",
+            "setOfTotal": "第 {{current}} / {{total}} 組",
+            "rest": "休息",
+            "nextUp": "下一個",
+            "targetReps_other": "{{count}} 下",
+            "targetSeconds_other": "{{count}} 秒",
+            "paused": "已暫停",
+            "pause": "暫停",
+            "resume": "繼續",
+            "mute": "靜音語音",
+            "unmute": "取消靜音",
+            "replay": "重播指示",
+            "doneNext": "完成 — 下一個",
+            "doneHintReps_other": "做完 {{count}} 下時點擊",
+            "doneHint": "完成時點擊"
+        },
+        "settings": {
+            "section": "引導訓練",
+            "enabled": "引導模式",
+            "voice": "語音",
+            "rate": "語速",
+            "rateValue": "{{rate}}×",
+            "countdown": "準備倒數",
+            "countdownSubtitle": "在第一個動作之前，以及每個限時組之前。",
+            "countdownValue_other": "{{count}} 秒",
+            "sample": "你的引導訓練聽起來會是這樣。",
+            "test": "測試語音"
+        }
+    },
+    "workoutFeedback": {
+        "title": "感覺如何？",
+        "subtitle": "後續建議會據此調整。",
+        "difficulty": {
+            "tooEasy": "太輕鬆",
+            "justRight": "剛剛好",
+            "tooHard": "太難"
+        },
+        "painQuestion": "是否有任何疼痛或不適？",
+        "painWhere": "在哪些動作期間？（選填）",
+        "painNotePlaceholder": "哪裡疼痛？（選填）",
+        "painPrivacy": "這些動作的建議會變輕，不會加重。",
+        "rateExercises": "為每個動作評分",
+        "saving": "儲存中…",
+        "saved": "已儲存"
+    },
+    "adaptiveCoaching": {
+        "reasons": {
+            "painReported": "今日減輕：你上次在此回報過疼痛。",
+            "painRepeated": "今日減輕：此處連續兩次訓練都有疼痛。可考慮替代動作。",
+            "sessionPain": "維持重量：你上次訓練回報過不適。",
+            "tooHard": "維持重量：上次感覺太難。",
+            "tooHardRepeated": "今日減輕：連續兩次訓練都覺得太難。",
+            "highEffort": "維持重量：你最後的組數接近最大努力。",
+            "tooEasyRepeated": "加重一階：連續兩次訓練都太輕鬆。"
+        },
+        "declined": "使用你的慣常建議。",
+        "variation": "你最近多數訓練都做過這個。試試變化版？",
+        "useUsual": "使用我的慣常選項",
+        "useAdjusted": "使用調整後的建議",
+        "seeAlternatives": "查看替代動作"
+    },
+    "mindfulness": {
+        "actions": {
+            "breathe": "呼吸",
+            "timer": "計時器",
+            "log": "記錄"
+        },
+        "types": {
+            "meditation": "冥想",
+            "breathwork": "呼吸練習",
+            "reflection": "反思",
+            "walking": "正念步行",
+            "yoga": "瑜珈",
+            "other": "其他"
+        },
+        "timer": {
+            "title": "冥想計時器",
+            "pause": "暫停",
+            "resume": "繼續"
+        }
     }
 }
