@@ -667,7 +667,8 @@
             "static": "Statyczne",
             "isolation": "Izolowane",
             "compound": "Wielostawowe"
-        }
+        },
+        "setCount": "{{count}} seria"
     },
     "reports": {
         "activityReport": {
