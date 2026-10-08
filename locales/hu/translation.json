@@ -306,7 +306,7 @@
             "take": "Bevitel",
             "adherenceTitle": "A kezelés betartásának áttekintése",
             "editLogged": "A rögzített adag szerkesztése",
-            "takenAt": "Bevitel",
+            "takenAt": "Bevéve",
             "ring14Day": "14 nap",
             "noScheduledToday": "Nincs előre beütemezett adag.",
             "noScheduledDay": "Erre a napra nincs beütemezett adag.",
@@ -331,7 +331,7 @@
             "title": "Mellékhatásokkal kapcsolatos információk és tippek",
             "subtitle": "A legutóbbi adagolási időpontokra vonatkozó farmakokinetikai összefüggések",
             "disclaimer": "A statisztikai adatok egy 30 napos mozgó időszakra vonatkoznak. Ezek tájékoztató jellegű becslések, nem pedig klinikai tanácsok.",
-            "symptomCorrelation": "{{tünet}} Összefüggés"
+            "symptomCorrelation": "{{symptom}} Összefüggés"
         },
         "reports": {
             "logTableTitle": "Gyógyszeradagolási táblázat",
