@@ -1032,7 +1032,7 @@
             "viewImages": "檢視 {{name}} 的圖片",
             "heartRateFor": "{{name}} 的平均心率",
             "liveHeartRateFor": "{{name}} 的即時心率",
-            "heartRateUnit": "bpm"
+            "heartRateUnit": "次(bpm)/分鐘"
         },
         "nextSet": "下一組",
         "progression": {
@@ -3645,7 +3645,7 @@
             "volume": "訓練量"
         },
         "units": {
-            "bpm": "bpm"
+            "bpm": "次(bpm)/分鐘"
         }
     },
     "createFood": {
@@ -5601,7 +5601,8 @@
         "setInputTitle": "組數輸入",
         "setInputDescription": "訓練期間在手錶輸入重量與次數的方式：使用鍵盤輸入，或點選數值再轉動數位錶冠或拖曳，重量每次增加 0.5。",
         "setInputKeypad": "鍵盤",
-        "setInputCrown": "數位錶冠"
+        "setInputCrown": "數位錶冠",
+        "nutrientsDescription": "在手錶的熱量環下方選擇要顯示的營養素，並拖曳設定順序。每一項都會顯示今日的攝取量與目標的對比。"
     },
     "guidedWorkout": {
         "cue": {
@@ -5737,7 +5738,7 @@
             "unitMi": "mi",
             "calories": "{{value}} 卡路里",
             "minutes_other": "{{formattedCount}} 分鐘",
-            "bpm": "{{value}} bpm",
+            "bpm": "{{value}} 次(bpm)/分鐘",
             "distance": "距離",
             "duration": "時長",
             "pace": "配速",
@@ -5799,7 +5800,7 @@
             "sessionCount_other": "{{count}} 次時段",
             "todayTotal": "今日",
             "minuteUnit": "分鐘",
-            "bpmUnit": "bpm",
+            "bpmUnit": "次(bpm)/分鐘",
             "msUnit": "毫秒",
             "details": "詳情",
             "openDetails": "開啟正念詳情",
