@@ -3434,7 +3434,12 @@
         "cluster": "分段集群组",
         "technique": "动作技术练习组",
         "replaceExerciseButton": "替换运动",
-        "duplicateExerciseButton": "复制运动"
+        "duplicateExerciseButton": "复制运动",
+        "formatInterval": "间歇／HIIT",
+        "formatTabata": "Tabata",
+        "formatEmom": "EMOM",
+        "formatAmrap": "AMRAP",
+        "formatForTime": "限时完成"
     },
     "addWorkoutPlanDialog": {
         "editTitle": "编辑训练计划表",
@@ -6014,5 +6019,161 @@
         "quickAdd": "快速添加饮品",
         "caffeineBadge": "{{amount}} 毫克咖啡因",
         "alcoholBadge": "{{abv}}% 酒精度"
+    },
+    "muscles": {
+        "abdominals": "腹肌",
+        "abductors": "外展肌",
+        "adductors": "内收肌",
+        "biceps": "二头肌",
+        "calves": "小腿",
+        "chest": "胸肌",
+        "forearms": "前臂",
+        "glutes": "臀部",
+        "hamstrings": "腘绳肌",
+        "lats": "背阔肌",
+        "lower back": "下背",
+        "middle back": "中背",
+        "neck": "颈部",
+        "quadriceps": "股四头肌",
+        "shoulders": "肩部",
+        "traps": "斜方肌",
+        "triceps": "三头肌"
+    },
+    "equipment": {
+        "barbell": "杠铃",
+        "dumbbell": "哑铃",
+        "kettlebells": "壶铃",
+        "cable": "绳索",
+        "machine": "器械",
+        "bands": "弹力带",
+        "body only": "徒手",
+        "medicine ball": "药球",
+        "exercise ball": "健身球",
+        "foam roll": "泡沫轴",
+        "e-z curl bar": "E-Z 曲杆",
+        "other": "其他"
+    },
+    "interval": {
+        "ready": "准备",
+        "countdown": "准备就绪",
+        "work": "训练",
+        "rest": "休息",
+        "roundOfTotal": "回合 {{current}} / {{total}}",
+        "round": "第 {{current}} 回合",
+        "resume": "继续",
+        "pause": "暂停",
+        "timeCapLabel": "上限：{{cap}}",
+        "wodScoring": "WOD 计分",
+        "rx": "Rx",
+        "scaled": "降阶",
+        "extraReps": "额外次数"
+    },
+    "symptoms": {
+        "categories": {
+            "general": "一般",
+            "pain": "疼痛",
+            "skin": "皮肤",
+            "other": "其他"
+        },
+        "severity": {
+            "mild": "轻微",
+            "moderate": "中等",
+            "severe": "严重"
+        }
+    },
+    "guidedWorkout": {
+        "cue": {
+            "getReady": "准备。开始 {{name}}。",
+            "setStartReps_other": "{{name}}。做 {{count}} 次。",
+            "setStartSeconds_other": "{{name}}。{{count}} 秒。",
+            "setStartOpen": "{{name}}。",
+            "halfway": "进行到一半。",
+            "rest_other": "休息。{{count}} 秒。",
+            "intervalRest": "休息。",
+            "nextUp": "下一个：{{name}}。",
+            "workoutComplete": "训练完成。"
+        },
+        "card": {
+            "badge": "引导",
+            "getReady": "准备",
+            "setOfTotal": "第 {{current}} / {{total}} 组",
+            "rest": "休息",
+            "nextUp": "下一个",
+            "targetReps_other": "{{count}} 次",
+            "targetSeconds_other": "{{count}} 秒",
+            "paused": "已暂停",
+            "pause": "暂停",
+            "resume": "继续",
+            "mute": "静音语音",
+            "unmute": "取消静音",
+            "replay": "重播指示",
+            "doneNext": "完成 — 下一个",
+            "doneHintReps_other": "做完 {{count}} 次时点击",
+            "doneHint": "完成时点击"
+        },
+        "settings": {
+            "section": "引导训练",
+            "enabled": "引导模式",
+            "voice": "语音",
+            "rate": "语速",
+            "rateValue": "{{rate}}×",
+            "countdown": "准备倒数",
+            "countdownSubtitle": "在第一个动作之前，以及每个限时组之前。",
+            "countdownValue_other": "{{count}} 秒",
+            "sample": "你的引导训练听起来会是这样。",
+            "test": "测试语音"
+        }
+    },
+    "workoutFeedback": {
+        "title": "感觉如何？",
+        "subtitle": "后续建议会据此调整。",
+        "difficulty": {
+            "tooEasy": "太轻松",
+            "justRight": "刚刚好",
+            "tooHard": "太难"
+        },
+        "painQuestion": "是否有任何疼痛或不适？",
+        "painWhere": "在哪些动作期间？（可选）",
+        "painNotePlaceholder": "哪里疼痛？（可选）",
+        "painPrivacy": "这些动作的建议会变轻，不会加重。",
+        "rateExercises": "为每个动作评分",
+        "saving": "保存中…",
+        "saved": "已保存"
+    },
+    "adaptiveCoaching": {
+        "reasons": {
+            "painReported": "今日减轻：你上次在此报告过疼痛。",
+            "painRepeated": "今日减轻：此处连续两次训练都有疼痛。可考虑替代动作。",
+            "sessionPain": "维持重量：你上次训练报告过不适。",
+            "tooHard": "维持重量：上次感觉太难。",
+            "tooHardRepeated": "今日减轻：连续两次训练都觉得太难。",
+            "highEffort": "维持重量：你最后的组数接近最大努力。",
+            "tooEasyRepeated": "加重一阶：连续两次训练都太轻松。"
+        },
+        "declined": "使用你的惯常建议。",
+        "variation": "你最近多数训练都做过这个。试试变化版？",
+        "useUsual": "使用我的惯常选项",
+        "useAdjusted": "使用调整后的建议",
+        "seeAlternatives": "查看替代动作"
+    },
+    "mindfulness": {
+        "actions": {
+            "breathe": "呼吸",
+            "timer": "计时器",
+            "log": "记录"
+        },
+        "types": {
+            "meditation": "冥想",
+            "breathwork": "呼吸练习",
+            "reflection": "反思",
+            "walking": "正念步行",
+            "yoga": "瑜伽",
+            "other": "其他"
+        },
+        "timer": {
+            "title": "冥想计时器",
+            "pause": "暂停",
+            "resume": "继续"
+        }
     }
 }
