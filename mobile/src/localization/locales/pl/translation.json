@@ -1856,7 +1856,7 @@
         "remaining": "{{value}} g pozostało",
         "over": "{{value}} g powyżej celu",
         "met": "cel osiągnięty",
-        "goalSeparator": "/ {{value}}"
+        "goalSeparator": " / {{value}}"
     },
     "foodSummary": {
         "tapToAddFood": "Dotknij, aby dodać produkt",
@@ -3220,7 +3220,7 @@
             "averageRpe": "Średnie RPE"
         },
         "labels": {
-            "todayAt": "· Dzisiaj o",
+            "todayAt": " · Dzisiaj o ",
             "skipped": "pominięto",
             "all": "Wszystkie",
             "of": "z",
