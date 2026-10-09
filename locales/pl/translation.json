@@ -668,7 +668,8 @@
             "isolation": "Izolowane",
             "compound": "Wielostawowe"
         },
-        "setCount": "{{count}} seria"
+        "setCount": "{{count}} seria",
+        "repCount": "{{count}} powt."
     },
     "reports": {
         "activityReport": {
