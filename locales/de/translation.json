@@ -11,7 +11,8 @@
         "pregnancy": "Schwangerschaft",
         "medications": "Medikamente",
         "foodLog": "Ernährungsprotokoll",
-        "wellness": "Wellness"
+        "wellness": "Wellness",
+        "symptoms": "Symptome"
     },
     "settings": {
         "profileInformation": {
@@ -165,15 +166,15 @@
             "accountHint": "Die Person erhält Zugriff, sobald sie ein SparkyFitness-Konto erstellt hat – falls noch keines vorhanden ist",
             "accessPermissions": "Zugriffsberechtigungen",
             "canManageDiary": "Kann Tagebuch verwalten",
-            "canManageDiaryHelp": "Ermöglicht der bevollmächtigten Person, Mahlzeiten, Workouts, Wasseraufnahme und Ziele in deinem Namen zu protokollieren. Wellness-Einträge (Schlaf, Stimmung, Fasten) sind nicht zugänglich. Gewährt schreibgeschützten Zugriff auf das Profil.",
+            "canManageDiaryHelp": "Ermöglicht der bevollmächtigten Person, Mahlzeiten, Trainings, Wasseraufnahme und Ziele in deinem Namen zu protokollieren. Wellness-Einträge (Schlaf, Stimmung, Fasten) sind nicht zugänglich. Gewährt schreibgeschützten Zugriff auf das Profil.",
             "canUseFoodLibrary": "Kann meine Lebensmittel- und Mahlzeitenbibliothek verwenden",
             "canUseFoodLibraryHelp": "Ermöglicht der bevollmächtigten Person, bei aktiviertem Kontextwechsel deine eigenen Lebensmittel, Mahlzeiten und Rezepte zu suchen und auszuwählen. Gewährt keinen Zugriff auf Tagebucheinträge oder Profileinstellungen.",
-            "canUseExerciseLibrary": "Meine Übungs- und Workout-Bibliothek verwenden",
-            "canUseExerciseLibraryHelp": "Ermöglicht der bevollmächtigten Person, bei aktiviertem Kontextwechsel deine eigenen Übungen und Workout-Vorlagen anzuzeigen und zu verwenden. Gewährt keinen Zugriff auf Tagebucheinträge oder Profileinstellungen.",
+            "canUseExerciseLibrary": "Meine Übungs- und Trainingsbibliothek verwenden",
+            "canUseExerciseLibraryHelp": "Ermöglicht der bevollmächtigten Person, bei aktiviertem Kontextwechsel deine eigenen Übungen und Trainingsvorlagen anzuzeigen und zu verwenden. Gewährt keinen Zugriff auf Tagebucheinträge oder Profileinstellungen.",
             "canManageCheckin": "Check-in-Daten verwalten",
             "canManageCheckinHelp": "Ermöglicht der bevollmächtigten Person, in deinem Namen Gewicht, Körpermaße, Fortschrittsfotos, Schlaf- und Stimmungseinträge sowie den Fastenstatus zu erfassen. Tagebucheinträge sind gesperrt. Gewährt ausschließlich Lesezugriff auf das Profil.",
             "canManageMedications": "Medikamente verwalten",
-            "canManageMedicationsHelp": "Ermöglicht der bevollmächtigten Person, in deinem Namen Medikamente, Dosierungen, Dosierungsanpassungspläne, Symptome und Injektionsstellen zu erfassen. Tagebucheinträge sind gesperrt. Gewährt ausschließlich Lesezugriff auf das Profil.",
+            "canManageMedicationsHelp": "Ermöglicht der bevollmächtigten Person, in deinem Namen Medikamente, Dosen, Titrationspläne und Injektionsstellen zu protokollieren. Tagebucheinträge sind gesperrt. Gewährt schreibgeschützten Profilzugriff.",
             "canViewReports": "Berichte anzeigen",
             "canViewReportsHelp": "Ermöglicht der bevollmächtigten Person, Diagramme, Statistiken und vergangene Einträge in deinem Dashboard anzuzeigen. Es werden keine Schreibrechte gewährt. Gewährt ausschließlich Lesezugriff auf das Profil.",
             "shareExternalProviders": "Externe Datenanbieter teilen",
@@ -198,7 +199,10 @@
             "sharesExternalProviders": "Teilt externe Datenanbieter",
             "noEndDate": "Kein Enddatum",
             "editRule": "Zugriffsregel bearbeiten",
-            "deleteRule": "Zugriffsregel löschen"
+            "deleteRule": "Zugriffsregel löschen",
+            "canManageSymptoms": "Symptome verwalten",
+            "canManageSymptomsHelp": "Ermöglicht der bevollmächtigten Person, in deinem Namen Symptome, Episoden, Auslöser, Behandlungen und Fotos zu protokollieren und zu bearbeiten. Symptome zu Menstruationszyklus und Schwangerschaft werden nie geteilt. Tagebucheinträge sind gesperrt.",
+            "managesSymptoms": "Verwaltet Symptome"
         },
         "customCategories": {
             "title": "Eigene Kategorien",
@@ -258,6 +262,14 @@
                 "oura": "Oura Entwickler Dashboard",
                 "googlehealth": "Google Cloud Konsole",
                 "polar": "Polar AccessLink Admin"
+            },
+            "coros": {
+                "regionLabel": "COROS-Region",
+                "regionUs": "USA (mcpus.coros.com)",
+                "regionEu": "Europa (mcpeu.coros.com)",
+                "regionCn": "Chinesisches Festland (mcpcn.coros.com)",
+                "notTested": "noch nicht getestet",
+                "infoText": "Keine API-Schlüssel erforderlich. Du meldest dich mit deinem COROS-Konto an. Deine SparkyFitness-Adresse muss mit https:// beginnen (oder localhost sein), damit COROS die Verbindung akzeptiert."
             }
         },
         "aiService": {
@@ -445,7 +457,8 @@
                 "openrouter": "OpenRouter",
                 "custom": "Benutzerdefiniert",
                 "xai": "xAI (Grok)",
-                "meta": "Meta"
+                "meta": "Meta",
+                "perplexity": "Perplexity AI"
             },
             "test": {
                 "successTitle": "Erfolg",
@@ -498,7 +511,10 @@
             "newKeyGenerated": "Neuer API-Schlüssel generiert!",
             "placeholder": "Beschreibung (z. B. „iPhone Health Shortcut“)",
             "updateError": "API-Schlüssel konnte nicht aktualisiert werden",
-            "updateSuccess": "API-Schlüsselstatus erfolgreich aktualisiert!"
+            "updateSuccess": "API-Schlüsselstatus erfolgreich aktualisiert!",
+            "access": "Zugriff",
+            "accessFull": "Vollzugriff",
+            "accessRead": "Nur Lesen"
         },
         "accountSecurity": {
             "title": "Kontosicherheit",
@@ -944,6 +960,38 @@
                 "WHO_MAXIMUM": "WHO-Maximum (10 % der Kalorien)",
                 "AHA_FIXED": "AHA-Festwert (36 g Männer / 25 g Frauen)"
             }
+        },
+        "cnf": {
+            "dialogTitle": "Canadian Nutrient File: Massenimport & Synchronisierung",
+            "dialogDescription": "Importiere oder aktualisiere den vollständigen Lebensmittelkatalog von Health Canada (ca. 5.700 Einträge) in deine Lebensmittelbibliothek.",
+            "importingProgress": "Katalog wird importiert...",
+            "processed": "Verarbeitet",
+            "imported": "Importiert",
+            "updated": "Aktualisiert",
+            "lastImportSuccess": "Katalogimport erfolgreich abgeschlossen.",
+            "lastImportFailed": "Katalogimport fehlgeschlagen.",
+            "syncScopeLabel": "Synchronisierungsumfang",
+            "modeLibraryOnly": "Nur Bibliothek synchronisieren (empfohlen)",
+            "modeLibraryOnlyDesc": "Legt Lebensmittel an oder aktualisiert sie; Portionsmaße und gespeicherte Rezept-Snapshots werden ebenfalls aktualisiert. Vergangene Tagebucheinträge bleiben unverändert.",
+            "modeLibraryAndPast": "Bibliothek & vergangene Einträge synchronisieren",
+            "modeLibraryAndPastDesc": "Aktualisiert die Bibliothek und berechnet zusätzlich vergangene Tagebucheinträge aus dem Canadian Nutrient File anhand der neuesten Daten neu.",
+            "languageLabel": "Katalogsprache",
+            "sourceLabel": "Quelle",
+            "officialArchive": "Offizielles Open-Data-Archiv von Health Canada (Standard)",
+            "uploadZip": "Lokales ZIP-Archiv hochladen (cnf-fcen-csv.zip)",
+            "needArchive": "Du hast die Datei nicht?",
+            "downloadArchiveLink": "Offizielles CNF-ZIP herunterladen (26 MB)",
+            "uploadHelp": "Wähle das offizielle CNF-ZIP-Archiv aus, das du von open.canada.ca heruntergeladen hast.",
+            "dryRunLabel": "Probeimport (nur die ersten 10 Lebensmittel)",
+            "dryRunHelp": "Importiere bis zu 10 Lebensmittel, um Portionsmaße und benutzerdefinierte Nährstoffzuordnungen vor dem vollständigen Import zu prüfen.",
+            "clearLibrary": "CNF-Bibliothek leeren",
+            "startImport": "Import / Synchronisierung starten",
+            "confirmDeleteTitle": "Canadian-Nutrient-File-Bibliothek leeren?",
+            "confirmDeleteDesc": "Dadurch werden alle Lebensmittel des Canadian Nutrient File aus deiner Bibliothek entfernt. Vergangene Tagebucheinträge, die auf diese Lebensmittel verweisen, bleiben erhalten.",
+            "licenceNotice": "Enthält von Health Canada veröffentlichte Informationen, lizenziert unter der <1>Open Government Licence – Canada</1>.",
+            "providerCardLicence": "Enthält von Health Canada veröffentlichte Informationen, lizenziert unter der <1>Open Government Licence – Canada</1>. Unterstützte Sprachen: <3>Englisch (en)</3> und <5>Französisch (fr)</5>. <7>Canadian Nutrient File</7>",
+            "providerSpecificDescription": "Das Canadian Nutrient File (CNF) enthält Informationen, die von Health Canada unter der <1>Open Government Licence – Canada</1> veröffentlicht wurden. Es ist kostenlos, öffentlich und erfordert keine Zugangsdaten. Unterstützte Sprachen sind <3>Englisch (en)</3> und <5>Französisch (fr)</5>.",
+            "providerSpecificPortal": "Weitere Details findest du im offiziellen Portal unter <1>Canadian Nutrient File</1>."
         }
     },
     "aboutDialog": {
@@ -966,7 +1014,8 @@
         "gotIt": "Verstanden",
         "close": "Schließen",
         "swissFoodApi": "API der Schweizer Nährwertdatenbank",
-        "usdaApi": "API der USDA-Lebensmitteldatenbank"
+        "usdaApi": "API der USDA-Lebensmitteldatenbank",
+        "canadianNutrientFileApi": "Canadian Nutrient File (Health Canada)"
     },
     "exercise": {
         "title": "Training",
@@ -1002,9 +1051,9 @@
             "selectMechanicPlaceholder": "Wähle Technik",
             "mechanicIsolation": "Isolation",
             "mechanicCompound": "Verbundübungen",
-            "equipmentLabel": "Equipment (kommagetrennt)",
-            "primaryMusclesLabel": "Hauptmuskelgruppen (kommagetrennt)",
-            "secondaryMusclesLabel": "Nebenmuskelgruppen (kommagetrennt)",
+            "equipmentLabel": "Ausrüstung",
+            "primaryMusclesLabel": "Hauptmuskelgruppen",
+            "secondaryMusclesLabel": "Sekundärmuskelgruppen",
             "instructionsLabel": "Anweisungen (eine pro Zeile)",
             "imagesLabel": "Bilder",
             "addButton": "Übung hinzufügen",
@@ -1014,9 +1063,15 @@
             "importDuplicateTitle": "Import fehlgeschlagen: Doppelte Einträge gefunden",
             "importDuplicateDescription": "Die folgenden Einträge existieren bereits: {{duplicateList}}. Bitte entferne sie aus deiner Datei und versuche es erneut.",
             "importError": "Trainingsdaten konnten nicht importiert werden. Bitte versuche es erneut.",
-            "categoryCardio": "Kardio",
+            "categoryCardio": "Cardio",
             "importFitTab": "FIT-Datei importieren",
-            "modalityLabel": "Erfassungsart"
+            "modalityLabel": "Erfassungsart",
+            "customMuscleBodyMapHint": "Benutzerdefinierte Muskeln erscheinen nicht auf der Körperkarte.",
+            "tagInputPlaceholder": "Zum Hinzufügen oder Suchen eingeben...",
+            "addCustomTag": "„{{tag}}“ hinzufügen",
+            "replaceTitle": "Übung ersetzen",
+            "replaceSuccess": "Übung ersetzt",
+            "suggestedTab": "Vorgeschlagen"
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "Durchsuche deine Trainingsvorlagen...",
@@ -1037,7 +1092,7 @@
             "noMatchingPresets": "Keine passenden Vorlagen gefunden.",
             "ownership": {
                 "all": "Alle",
-                "mine": "Meine Voreinstellungen",
+                "mine": "Meine Vorlagen",
                 "family": "Familie",
                 "public": "Öffentlich"
             },
@@ -1163,7 +1218,7 @@
             "levelDisplay": "Level: {{level}}",
             "forceDisplay": "Belastungsart: {{force}}",
             "mechanicDisplay": "Technik: {{mechanic}}",
-            "equipmentDisplay": "Equipment: {{equipment}}",
+            "equipmentDisplay": "Ausrüstung: {{equipment}}",
             "primaryMusclesDisplay": "Hauptmuskelgruppen: {{primaryMuscles}}",
             "secondaryMusclesDisplay": "Sekundärmuskelgruppen: {{secondaryMuscles}}",
             "instructionsDisplay": "Anweisungen: {{instruction}}...",
@@ -1204,14 +1259,19 @@
             "hide": "Verstecken",
             "warning": "Warnung!",
             "deleteWithHistory": "Löschen inklusive Verlauf",
-            "diaryEntriesCount": "{{count}} protokollierte Workouts",
+            "diaryEntriesCount": "{{count}} protokollierte Trainings",
             "exerciseUnused": "Diese Übung wird bisher nirgendwo verwendet.",
             "exerciseUsedIn": "Diese Übung wird verwendet in:",
             "workoutPlansCount": "{{count}} Trainingspläne",
-            "workoutPresetsCount": "{{count}} Workout-Voreinstellungen",
-            "bulkDeleteDescription": "Entferne diese {{count}} Übungen aus deiner Bibliothek sowie aus allen Trainingsvorlagen und Trainingsplänen. Bereits protokollierte Workouts bleiben in deinem Tagebuch erhalten.",
-            "deleteKeepsDiaryHint": "Beim Löschen wird die Übung aus deiner Bibliothek, deinen Vorlagen und deinen Plänen entfernt. Bereits protokollierte Workouts behalten ihren Namen, ihr Bild sowie ihre Sätze und Wiederholungen.",
-            "exerciseUsedByOtherUsersWarning": "Diese Übung wird von anderen Nutzern verwendet. Du kannst sie nur ausblenden. Dadurch erscheint sie künftig nicht mehr in der Suche, ihre Historie, Vorlagen oder Pläne werden jedoch nicht beeinflusst."
+            "workoutPresetsCount": "{{count}} Trainingsvorlagen",
+            "bulkDeleteDescription": "Entferne diese {{count}} Übungen aus deiner Bibliothek sowie aus allen Trainingsvorlagen und Trainingsplänen. Bereits protokollierte Trainings bleiben in deinem Tagebuch erhalten.",
+            "deleteKeepsDiaryHint": "Beim Löschen wird die Übung aus deiner Bibliothek, deinen Vorlagen und deinen Plänen entfernt. Bereits protokollierte Trainings behalten ihren Namen, ihr Bild sowie ihre Sätze und Wiederholungen.",
+            "exerciseUsedByOtherUsersWarning": "Diese Übung wird von anderen Nutzern verwendet. Du kannst sie nur ausblenden. Dadurch erscheint sie künftig nicht mehr in der Suche, deren Verlauf, Vorlagen oder Pläne werden jedoch nicht beeinflusst.",
+            "duplicateExercise": "Duplizieren",
+            "duplicateExerciseDialogTitle": "Übung duplizieren",
+            "duplicateExerciseDialogDescription": "Speichere eine Kopie als deine eigene Übung. Das Original bleibt unverändert.",
+            "saveCopy": "Kopie speichern",
+            "copySuffix": "(Kopie)"
         },
         "exerciseImportCSV": {
             "importExerciseData": "Übungsdaten importieren",
@@ -1288,7 +1348,7 @@
             "copyTooltip": "„{{value}}“ kopieren",
             "customFieldsInfo": "Aktivitätsfeld und -wert sind benutzerdefinierte Felder, die du jedem Übungseintrag hinzufügen kannst.",
             "dataCleared": "Alle analysierten Daten gelöscht.",
-            "description": "Lade eine CSV-Datei mit deinen historischen Übungseinträgen hoch. Das System erstellt neue Übungen oder Voreinstellungen, falls diese noch nicht vorhanden sind, und importiert deine Einträge, Sätze und Aktivitätsdetails.",
+            "description": "Lade eine CSV-Datei mit deinen historischen Übungseinträgen hoch. Das System erstellt neue Übungen oder Vorlagen, falls diese noch nicht vorhanden sind, und importiert deine Einträge, Sätze und Aktivitätsdetails.",
             "downloadTemplate": "Vorlage herunterladen",
             "emptyEntryAdded": "Neuer leerer Eintrag hinzugefügt. Bitte gib die Details ein.",
             "emptyFile": "Die ausgewählte Datei ist leer.",
@@ -1307,11 +1367,11 @@
                 "date": "Datum",
                 "exercise": "Übung",
                 "notes": "Notizen",
-                "preset": "Voreinstellung",
+                "preset": "Vorlage",
                 "sets": "Sätze"
             },
             "title": "Historische Übungseinträge importieren",
-            "unitsHint": "Erwartete Einheiten in CSV: Gewicht: {{weightUnit}}; Entfernung: {{distanceUnit}}; Dauer: Minuten; Ruhezeit: Sekunden; Verbrannte Kalorien: Kalorien",
+            "unitsHint": "Erwartete Einheiten in CSV: Gewicht: {{weightUnit}}; Distanz: {{distanceUnit}}; Dauer: Minuten; Pausenzeit: Sekunden; Verbrannte Kalorien: Kalorien",
             "validationError": "Zeile {{rowNum}}: Erforderliches Feld „entry_date“ oder „exercise_name“ fehlt. Zeile wird übersprungen.",
             "copiedToClipboard": "'{{value}}' in die Zwischenablage kopiert.",
             "importError": "Der Trainingsverlauf konnte nicht importiert werden. Bitte versuche es erneut.",
@@ -1328,7 +1388,9 @@
             "finishing": "Speichern...",
             "noDraft": "Für dieses Datum wurde kein aktiver Trainingsentwurf gefunden.",
             "sets": "Sätze",
-            "title": "Live-Training"
+            "title": "Live-Training",
+            "location": "Fitnessstudio / Ort",
+            "locationPlaceholder": "z. B. Fitnessstudio Innenstadt, Garagen-Gym"
         },
         "workoutPlaybackPage": {
             "columnRest": "Pause",
@@ -1346,13 +1408,21 @@
             "description": "Verfolge deine Sätze live, nutze Pausen-Countdowns und speichere das Training, wenn du fertig bist.",
             "restEditorDescription": "Wähle eine Pausendauer für diesen Satz.",
             "restTimer": "Pause",
-            "volume": "Volumen"
+            "volume": "Volumen",
+            "addDropSets": "{{sets}} Dropsätze hinzufügen (-{{percent}} %)",
+            "addDropSetsFor": "Dropsätze für {{name}} hinzufügen",
+            "viewImages": "Bilder von {{name}} ansehen",
+            "replaceExercise": "Übung ersetzen",
+            "replaceExerciseNamed": "{{name}} ersetzen"
         },
         "modality": {
             "weightReps": "Gewicht und Wiederholungen",
             "repsOnly": "Wiederholungen",
             "duration": "Dauer",
-            "durationDistance": "Dauer und Distanz"
+            "durationDistance": "Dauer und Distanz",
+            "bodyweightReps": "Körpergewicht (+/− Gewicht)",
+            "weightDistance": "Gewicht & Distanz (Tragen)",
+            "weightDuration": "Gewicht & Dauer (Halten mit Gewicht)"
         },
         "exerciseSearch": {
             "add": "Hinzufügen",
@@ -1389,6 +1459,38 @@
         "suggestions": {
             "recentLoadError": "Letzte Übungen konnten nicht geladen werden.",
             "topLoadError": "Top-Übungen konnten nicht geladen werden."
+        },
+        "workoutFinishSummary": {
+            "title": "Training abgeschlossen",
+            "duration": "Dauer",
+            "calories": "Kalorien",
+            "sets": "Sätze",
+            "volume": "Volumen",
+            "done": "Fertig"
+        },
+        "alternatives": {
+            "heading": "Statt {{name}}",
+            "modes": {
+                "similar": "Ähnlich",
+                "differentEquipment": "Andere Ausrüstung"
+            },
+            "reasons": {
+                "sameMuscles": "Gleiche Muskeln",
+                "sharesMuscle": "Ähnliche Muskeln",
+                "sameEquipment": "Gleiche Ausrüstung",
+                "differentEquipment": "Andere Ausrüstung",
+                "sameMovement": "Gleiche Bewegung",
+                "recent": "Kürzlich gemacht",
+                "inLibrary": "In deiner Bibliothek"
+            },
+            "newBadge": "Neu",
+            "searchAll": "Alle Übungen durchsuchen",
+            "failed": "Alternativen konnten nicht geladen werden",
+            "noMuscles": "Keine Muskeln für {{name}} hinterlegt",
+            "noMusclesHint": "Füge die Hauptmuskeln in der Übungsbibliothek hinzu, um Vorschläge zu erhalten.",
+            "empty": "Keine Alternativen gefunden",
+            "retry": "Erneut versuchen",
+            "catalogUnavailable": "Free Exercise DB ist nicht verfügbar, daher wird nur deine Bibliothek angezeigt."
         }
     },
     "workoutPresetsManager": {
@@ -1446,7 +1548,17 @@
         "plans": "Pläne",
         "status": "Status",
         "activate": "Aktivieren",
-        "deactivate": "Deaktivieren"
+        "deactivate": "Deaktivieren",
+        "scheduleType": "Modus",
+        "weeklyMode": "Wöchentlich",
+        "weeklyPromptMode": "Wöchentlich (Hinweis)",
+        "weeklyPrefillMode": "Wöchentlich (Vorausfüllen)",
+        "sequentialMode": "Sequenziell",
+        "upNextBadge": "Als Nächstes in der Abfolge",
+        "scheduledTodayBadge": "Heute geplant",
+        "scheduledWorkout": "Trainingseinheit",
+        "activePlanLabel": "Aktiver Plan: {{name}}",
+        "failedToLoadActivePlan": "Aktiver Trainingsplan konnte nicht geladen werden."
     },
     "exerciseCard": {
         "title": "Übung",
@@ -1482,9 +1594,9 @@
         "selectMechanic": "Wähle eine Mechanik aus",
         "mechanicIsolation": "Isolationsübungen",
         "mechanicCompound": "Grundübungen",
-        "equipment": "Ausrüstung (kommagetrennt)",
-        "primaryMuscles": "Hauptmuskelgruppen (kommagetrennt)",
-        "secondaryMuscles": "Nebenmuskelgruppen (kommagetrennt)",
+        "equipment": "Ausrüstung",
+        "primaryMuscles": "Hauptmuskelgruppen",
+        "secondaryMuscles": "Sekundärmuskelgruppen",
         "instructions": "Anweisungen (eine pro Zeile)",
         "images": "Bilder",
         "description": "Beschreibung",
@@ -1506,7 +1618,7 @@
         "nutritionixSource": "Nutritionix",
         "activeCalories": "aktive Kalorien",
         "mechanicLabel": "Mechanik",
-        "equipmentLabel": "Equipment",
+        "equipmentLabel": "Ausrüstung",
         "primaryMusclesLabel": "Hauptmuskelgruppen",
         "secondaryMusclesLabel": "Sekundärmuskelgruppen",
         "instructionsLabel": "Anweisungen",
@@ -1539,7 +1651,21 @@
             "compound": "Grundübung"
         },
         "setCount": "Sätze: {{count}}",
-        "repCount": "{{count}} Wdh."
+        "repCount": "{{count}} Wdh.",
+        "workoutLocation": "Fitnessstudio / Ort",
+        "upNextInPlanBadge": "Als Nächstes im Plan",
+        "scheduledTodayBadge": "Heute geplant",
+        "activePlanHint": "Sequenzieller Plan: {{name}}",
+        "activeWeeklyPlanHint": "Aktiver Plan: {{name}}",
+        "scheduledWorkout": "Trainingseinheit",
+        "logToDiaryButton": "Im Tagebuch protokollieren",
+        "startWorkoutButton": "Training starten",
+        "noExercisesInPlanSession": "Keine Übungen in dieser Einheit gefunden.",
+        "switchSessionLabel": "Einheit wechseln / auswählen:",
+        "sessionNumber": "Einheit {{num}}",
+        "dayNumber": "Tag {{num}}",
+        "suggestedBadge": "Vorgeschlagen",
+        "planWorkoutLogged": "Trainingseinheit im Tagebuch protokolliert."
     },
     "foodSearchDialog": {
         "title": "Lebensmittel suchen und hinzufügen",
@@ -1627,7 +1753,7 @@
         "setTypePlaceholder": "Satz-Typ",
         "workingSet": "Arbeitssatz",
         "warmUp": "Aufwärmsatz",
-        "dropSet": "Reduktionssatz",
+        "dropSet": "Dropsatz",
         "failure": "Muskelversagen",
         "amrap": "AMRAP",
         "backOff": "Entlastungssatz",
@@ -1635,7 +1761,18 @@
         "cluster": "Clustersatz",
         "technique": "Ausführung",
         "replaceExerciseButton": "Übung ersetzen",
-        "duplicateExerciseButton": "Übung duplizieren"
+        "duplicateExerciseButton": "Übung duplizieren",
+        "formatLabel": "Trainingsformat",
+        "formatStandard": "Standard (Sätze & Wdh.)",
+        "formatInterval": "Intervall / HIIT",
+        "formatTabata": "Tabata",
+        "formatEmom": "EMOM",
+        "formatAmrap": "AMRAP",
+        "formatForTime": "Auf Zeit",
+        "timeCapLabel": "Zeitlimit (Minuten)",
+        "rampLabel": "Zuschlag pro Satz (dieses Training, {{unit}})",
+        "rampPlaceholder": "Aus",
+        "rampHint": "Jeder Arbeitssatz nach dem ersten wird im selben Training um diesen Betrag schwerer vorausgefüllt; mit einer negativen Zahl wird reduziert. Aufwärm- und Dropsätze werden übersprungen."
     },
     "addWorkoutPlanDialog": {
         "editTitle": "Trainingsplan bearbeiten",
@@ -1668,7 +1805,34 @@
         "errorToastTitle": "Fehler",
         "errorToastDescription": "Trainingsvorlagen oder Übungen konnten nicht geladen werden.",
         "addExerciseButtonInDay": "Übung hinzufügen",
-        "pasteButton": "Einfügen"
+        "pasteButton": "Einfügen",
+        "planNamePlaceholder": "z. B. Sommerform",
+        "descriptionPlaceholder": "Optionale Planbeschreibung...",
+        "scheduleTypeLabel": "Zeitplanmodus",
+        "weeklyModeTitle": "Wöchentlich (feste Tage)",
+        "weeklyModeSubtitle": "Trainings sind bestimmten Wochentagen zugeordnet (Mo–So)",
+        "sequentialModeTitle": "Sequenziell (Zyklus)",
+        "sequentialModeSubtitle": "Fortlaufende Abfolge; pausiert an ausgelassenen Tagen",
+        "sequentialNoteDescription": "Bei sequenziellen Plänen werden keine Kalendertage vorausgefüllt. Die Abfolge rückt automatisch zur nächsten Einheit vor, sobald du ein Training abschließt.",
+        "sequentialAssignmentsTitle": "Trainingsabfolge",
+        "sequenceOrderHeading": "Reihenfolge der Einheiten",
+        "sequenceOrderHelp": "Ziehe, um die Einheiten im Rotationszyklus neu anzuordnen.",
+        "noSequentialWorkouts": "Noch keine Trainings hinzugefügt. Klicke auf „Training / Übung hinzufügen“, um die erste Einheit des Zyklus hinzuzufügen.",
+        "sessionNumber": "Einheit {{number}}",
+        "addExerciseOrPresetButton": "Training / Übung hinzufügen",
+        "entryModeLabel": "Tagebuch-Integration",
+        "promptModeTitle": "Hinweis & bei Bedarf (empfohlen)",
+        "promptModeSubtitle": "Zeigt an geplanten Tagen ein Banner, um das Training zu starten oder im Tagebuch zu protokollieren",
+        "prefillModeTitle": "Kalender vorausfüllen",
+        "prefillModeSubtitle": "Erstellt Trainingstagebucheinträge automatisch im Voraus",
+        "addNextSessionButton": "Nächste Einheit hinzufügen (Einheit {{number}})",
+        "exerciseSingular": "Übung",
+        "exercisePlural": "Übungen",
+        "noExercisesInSession": "Keine Übungen in dieser Einheit. Klicke auf „Übung hinzufügen“, um Übungen oder Vorlagen hinzuzufügen.",
+        "removeSessionTitle": "Einheit entfernen",
+        "moveSessionUp": "Einheit nach oben verschieben",
+        "moveSessionDown": "Einheit nach unten verschieben",
+        "sessionNamePlaceholder": "Benutzerdefinierter Name (z. B. Push-Tag, Beine)"
     },
     "exerciseReportsDashboard": {
         "totalWorkouts": "Gesamtzahl der Trainingseinheiten",
@@ -1694,8 +1858,8 @@
         "noComparison": "Kein Vergleich",
         "previousPeriod": "Vorheriger Zeitraum",
         "lastYear": "Letztes Jahr",
-        "filterByEquipment": "Nach Equipment filtern",
-        "allEquipment": "Jedes Equipment",
+        "filterByEquipment": "Nach Ausrüstung filtern",
+        "allEquipment": "Gesamte Ausrüstung",
         "filterByMuscleGroup": "Nach Muskelgruppe filtern",
         "allMuscles": "Alle Muskeln",
         "selectExercises": "Übungen auswählen",
@@ -1755,7 +1919,13 @@
         "muscleMass": "Muskelmasse",
         "boneMass": "Knochenmasse",
         "bodyWaterPercentage": "Körperwasser %",
-        "bmr": "BMR"
+        "bmr": "BMR",
+        "heatmapRangeHint": "Letzte 12 Monate. Umrandete Tage liegen im gewählten Zeitraum.",
+        "workoutCount_one": "{{count}} Training",
+        "workoutCount_other": "{{count}} Trainings",
+        "personalRecordsTitle": "Persönliche Rekorde",
+        "prProgressionTitle": "PR-Fortschritt",
+        "repsVsWeightTitle": "Wiederholungen vs. Gewicht"
     },
     "workoutReport": {
         "workoutStats": "Trainingsdaten",
@@ -1777,9 +1947,9 @@
         "setPerformanceAnalysis": "Analyse der Satz-Performance",
         "exerciseName": "Übungsname",
         "exercises": "Übungen",
-        "primaryMuscles": "Primäre Muskeln",
+        "primaryMuscles": "Hauptmuskelgruppen",
         "reps": "Wiederholungen",
-        "rest": "Ruhe",
+        "rest": "Pause",
         "set": "Satz",
         "sets": "Sätze",
         "time": "Zeit",
@@ -1798,7 +1968,9 @@
                 "emergencyFailSafe": "Notfallabsicherung:",
                 "emergencyFailSafeDescription": "Falls du jemals aus deinem Konto ausgesperrt wirst, kannst du die Anmeldung per E-Mail/Passwort erzwingen, indem du auf deinem Server die folgende Umgebungsvariable setzt und ihn neu startest:",
                 "envVarCopied": "Umgebungsvariable in die Zwischenablage kopiert.",
-                "enforceMfaForAllUsers": "MFA für alle Benutzer erzwingen"
+                "enforceMfaForAllUsers": "MFA für alle Benutzer erzwingen",
+                "enablePasskeyLogin": "Passkey-Anmeldung aktivieren",
+                "emergencyFailSafePasskeyDescription": "Falls die Passkey-Anmeldung deaktiviert wurde und du dich nicht mehr anmelden kannst, erzwinge die Reaktivierung mit:"
             },
             "oidcProviderManagement": {
                 "description": "Konfiguriere deine OpenID-Connect-Anbieter (OIDC).",
@@ -1990,12 +2162,12 @@
             "goalsUpdatedSuccess": "Ziele aktualisiert und gelten für die nächsten 6 Monate (oder bis zum nächsten zukünftigen Ziel)",
             "errorSavingGoals": "Unerwarteter Fehler beim Speichern der Ziele",
             "goalPresets": "Zielvorgabe",
-            "createNewPreset": "Neue Vorgabe erstellen",
+            "createNewPreset": "Neue Vorlage erstellen",
             "noGoalPresets": "Noch keine Zielvorgabe definiert. Jetzt eine erstellen, um loszulegen!",
             "presetKcalMacros": "{{calories}} kcal, {{protein}}g P, {{carbs}}g KH, {{fat}}g F",
             "edit": "Bearbeiten",
             "delete": "Löschen",
-            "deletePresetConfirm": "Bist du dir sicher, dass du diese Vorgabe löschen möchtest?",
+            "deletePresetConfirm": "Bist du dir sicher, dass du diese Vorlage löschen möchtest?",
             "presetUpdatedSuccess": "Zielvorgabe erfolgreich aktualisiert.",
             "presetCreatedSuccess": "Zielvorgabe erfolgreich erstellt.",
             "errorSavingPreset": "Erstellung der Zielvorgabe fehlgeschlagen.",
@@ -2004,7 +2176,7 @@
             "editGoalPreset": "Zielvorgabe bearbeiten",
             "createNewGoalPreset": "Neue Zielvorgabe erstellen",
             "defineReusableGoals": "Lege eine wiederverwendbare Kombination aus Ernährungs- und Trainingszielen fest.",
-            "presetName": "Name der Vorgabe",
+            "presetName": "Name der Vorlage",
             "mainNutrients": "Hauptnährstoffe",
             "macrosBy": "Makros nach",
             "grams": "Gramm",
@@ -2022,7 +2194,7 @@
             "exercise": "Übung",
             "exerciseCalories": "Trainingskalorien",
             "exerciseDuration": "Trainingsdauer (min)",
-            "savePreset": "Vorgabe speichern",
+            "savePreset": "Vorlage speichern",
             "weeklyGoalPlans": "Wöchentliche Zielpläne (in Arbeit)",
             "createNewPlan": "Neuen Plan erstellen",
             "noWeeklyPlans": "Bisher wurde noch kein Wochenplan definiert. Erstelle einen, um deine Ziele zu automatisieren!",
@@ -2034,7 +2206,7 @@
             "activePlan": "Aktiver Plan",
             "yes": "Ja",
             "no": "Nein",
-            "selectPreset": "Wähle Vorgabe für {{day}}",
+            "selectPreset": "Wähle Vorlage für {{day}}",
             "saveWeeklyPlan": "Speichere den Wochenplan",
             "weeklyPlanUpdatedSuccess": "Wochenplan erfolgreich aktualisiert.",
             "weeklyPlanCreatedSuccess": "Wochenplan erfolgreich erstellt.",
@@ -2066,7 +2238,7 @@
             "editGoals": "Ziele bearbeiten",
             "editGoalsFor": "Ziele bearbeiten für {{date}}",
             "changesApplyToDate": "Änderungen werden nur für dieses spezifische Datum angewandt.",
-            "applyPreset": "Vorgabe anwenden",
+            "applyPreset": "Vorlage anwenden",
             "selectGoalPreset": "Wähle eine Zielvorgabe, die angewendet werden soll",
             "errorLoading": "Ernährungsziele konnten nicht geladen werden. Bitte versuche es später erneut.",
             "saveForDate": "Für dieses Datum speichern",
@@ -2083,13 +2255,13 @@
             "carbs": "Kohlenhydrate:",
             "fat": "Fett:"
         },
-        "errorSavingPreset": "Voreinstellung konnte nicht gespeichert werden.",
-        "presetCreatedSuccess": "Zielvoreinstellung erfolgreich erstellt!",
-        "presetName": "Voreinstellungsname",
+        "errorSavingPreset": "Vorlage konnte nicht gespeichert werden.",
+        "presetCreatedSuccess": "Zielvorlage erfolgreich erstellt!",
+        "presetName": "Vorlagenname",
         "presetNamePlaceholder": "z. B. Diätphase 1",
         "presetNameRequired": "Gib einen Namen für deine Vorlage ein.",
         "saveAndStart": "Plan speichern und starten",
-        "saveAsPreset": "Voreinstellung speichern und kaskadierendes 6-Monats-Ziel starten",
+        "saveAsPreset": "Vorlage speichern und kaskadierendes 6-Monats-Ziel starten",
         "savePresetDescription": "Gib deiner Zielvorgabe einen Namen. Dadurch wird deine aktuelle Konfiguration für die zukünftige Verwendung gespeichert und ab heute als dein Plan angewendet.",
         "startCascadingPlan": "Gestaffelten 6-Monats-Plan starten"
     },
@@ -2180,7 +2352,9 @@
         "selectRow": "Zeile auswählen",
         "unknown": "Unbekannt",
         "avg": "Durchschnitt",
-        "max": "Max"
+        "max": "Max",
+        "source": "Quelle",
+        "previous": "Zurück"
     },
     "diary": {
         "nutritionSummary": "Ernährungsübersicht",
@@ -2337,10 +2511,10 @@
             "createPresetSessionSuccess": "Training erfolgreich gespeichert.",
             "createSuccess": "Training erfolgreich protokolliert.",
             "deleteError": "Übungseintrag konnte nicht gelöscht werden.",
-            "deletePresetError": "Voreinstellungseintrag konnte nicht gelöscht werden.",
-            "deletePresetSuccess": "Voreinstellungseintrag erfolgreich gelöscht.",
+            "deletePresetError": "Vorlageneintrag konnte nicht gelöscht werden.",
+            "deletePresetSuccess": "Vorlageneintrag erfolgreich gelöscht.",
             "deleteSuccess": "Übungseintrag erfolgreich gelöscht.",
-            "logPresetError": "Trainingsvoreinstellung konnte nicht protokolliert werden.",
+            "logPresetError": "Trainingsvorlage konnte nicht protokolliert werden.",
             "logPresetSuccess": "Trainingsvorlage erfolgreich protokolliert.",
             "updateError": "Übungseintrag konnte nicht aktualisiert werden.",
             "updateSuccess": "Übungseintrag wurde erfolgreich aktualisiert."
@@ -2559,7 +2733,9 @@
             "fasting": "Fasten & Stimmung",
             "measurements": "Messungen",
             "photos": "Fotos",
-            "sleep": "Schlaf"
+            "sleep": "Schlaf",
+            "mindfulness": "Achtsamkeit",
+            "symptoms": "Symptome"
         },
         "bmr": "BMR (kcal)",
         "failedToLoadPreviousCustom": "Vorherige benutzerdefinierte Werte konnten nicht geladen werden.",
@@ -2732,7 +2908,10 @@
         "bulkDeleteDescription": "Entfernt diese {{count}} Lebensmittel aus deiner Bibliothek sowie aus allen Mahlzeiten und Essensplänen. Bereits erfasste Einträge bleiben in deinem Tagebuch erhalten.",
         "deleteKeepsDiaryHint": "Das Löschen entfernt das Lebensmittel aus deiner Bibliothek, Mahlzeiten und Essensplänen. Deine Tagebucheinträge behalten Name, Marke und Nährwerte.",
         "deleteMealPlanKeepsPastHistoryHint": "Dieses Lebensmittel wird in deinen Essensplänen verwendet. Beim Löschen werden geplante Mahlzeiten aus deinem Tagebuch entfernt, während dein bisheriger Verlauf erhalten bleibt.",
-        "deleteWithHistory": "Mit Verlauf löschen"
+        "deleteWithHistory": "Mit Verlauf löschen",
+        "failedToRefreshFoodFromSource": "Lebensmitteldaten konnten nicht aus der Quelle aktualisiert werden.",
+        "foodRefreshedFromSource": "Lebensmitteldaten aus der Quelle aktualisiert. Prüfe und speichere, um sie zu übernehmen.",
+        "manual": "Manuell"
     },
     "mealManagement": {
         "failedToLoadMeals": "Das Laden von Mahlzeiten ist fehlgeschlagen.",
@@ -3048,7 +3227,7 @@
             "totals": "Gesamt",
             "minPerKm": "min/km",
             "minPerMi": "min/mi",
-            "bpm": "S/min",
+            "bpm": "bpm",
             "spm": "SPM",
             "min": "min"
         },
@@ -3060,7 +3239,7 @@
             "metricDescriptorsNotFound": "Messwert-Typ konnte nicht gefunden werden.",
             "metricDescriptorsMissingKeys": "In den Messwertangaben fehlen erforderliche Felder ('directTimestamp' oder 'sumDistance').",
             "heartRateDescriptorNotFound": "Keine Herzfrequenz-Daten gefunden. Das Diagramm kann daher nicht angezeigt werden.",
-            "missingTimestampOrDistanceDescriptor": "Fehlender Zeitstempel- oder Entfernungswert.",
+            "missingTimestampOrDistanceDescriptor": "Fehlender Zeitstempel- oder Distanzwert.",
             "noValidTimestampsFound": "Kein gültiger Zeitstempel in Metrik gefunden.",
             "event": "Event:",
             "course": "Kurs:",
@@ -3082,7 +3261,7 @@
             "paceAndSpeed": "Pace (min/km) & Geschwindigkeit (m/s)",
             "paceMinPerKm": "Tempo (min/km)",
             "speedMPerS": "Geschwindigkeit (m/s)",
-            "heartRateBpm": "Herzfrequenz (S/min)",
+            "heartRateBpm": "Herzfrequenz (bpm)",
             "runCadenceSpM": "Laufkadenz (Schritte/Min.)",
             "elevationM": "Höhe (m)",
             "heartRateTimeInZones": "Herzfrequenzzeit in Zonen",
@@ -3095,15 +3274,15 @@
             "paceAndSpeedChartTitle": "Pace (min/km) & Geschwindigkeit (m/s)",
             "paceMinPerKmLabel": "Tempo (min/km)",
             "speedMPerSLabel": "Geschwindigkeit (m/s)",
-            "heartRateBpmLabel": "Herzfrequenz (S/min)",
+            "heartRateBpmLabel": "Herzfrequenz (bpm)",
             "runCadenceSpMLabel": "Laufkadenz (Schritte/Min.)",
             "lapsTableTitle": "Runden",
             "lapTableLapHeader": "Runde",
             "lapTableDistanceKmHeader": "Strecke (km)",
             "lapTableDurationMinHeader": "Dauer (min)",
             "lapTableAvgPaceMinPerKmHeader": "Ø Pace (min/km)",
-            "lapTableAvgHRBpmHeader": "Ø HF (S/min)",
-            "lapTableMaxHRBpmHeader": "Max HF (S/min)",
+            "lapTableAvgHRBpmHeader": "Ø HF (bpm)",
+            "lapTableMaxHRBpmHeader": "Max. HF (bpm)",
             "lapTableCaloriesHeader": "Kalorien",
             "heartRateTimeInZonesTitle": "Herzfrequenzzeit in Zonen",
             "timeInZoneSLabel": "Zeit in Zone (s)",
@@ -3176,7 +3355,7 @@
         "hrvBaseline": "Ausgangswert",
         "spo2": "SpO2",
         "spo2Status": "SpO2-Status",
-        "supplementShare": "{{percent}} % aus Ergänzungen",
+        "supplementShare": "{{percent}} % aus Supplements",
         "average": "Durchschnitt",
         "avgDailyVariance": "Durchschn. Tagesabweichung",
         "avgVarianceDescription": "Durchschnittliche Abweichung vom Ziel pro Tag",
@@ -3276,7 +3455,9 @@
         "hips": "Hüfte",
         "height": "Größe",
         "bodyFatPercentage": "Körperfettanteil (%)",
-        "nutrientBalance": "{{nutrient}}-Bilanz"
+        "nutrientBalance": "{{nutrient}}-Bilanz",
+        "failedToLoadWorkoutHeatmap": "Daten der Trainings-Heatmap konnten nicht geladen werden.",
+        "symptomsTab": "Symptome"
     },
     "reportsTables": {
         "foodDiaryTable": "Tabelle Mahlzeitenübersicht",
@@ -3349,7 +3530,10 @@
     },
     "muscleGroupRecovery": {
         "title": "Muskelgruppenerholung",
-        "noRecoveryData": "Keine Erholungsdaten der Muskelgruppen verfügbar."
+        "noRecoveryData": "Keine Erholungsdaten der Muskelgruppen verfügbar.",
+        "today": "Heute",
+        "yesterday": "Gestern",
+        "daysAgo": "vor {{count}} Tagen"
     },
     "prProgressionChart": {
         "title": "Entwicklung der persönlichen Rekorde",
@@ -3368,7 +3552,8 @@
         "legs": "Beine",
         "abs": "Bauchmuskeln",
         "calves": "Waden",
-        "forearms": "Unterarme"
+        "forearms": "Unterarme",
+        "_comment": "muscleGroups ist eine gröbere UI-Gruppierung für den RecoveryTracker (MuscleGroupRecoveryTracker.tsx). Nicht mit muscles zusammenführen."
     },
     "sleepAnalyticsCharts": {
         "sleepStages": "Schlafphasen",
@@ -3418,7 +3603,7 @@
     "sleepReport": {
         "loadingSleepData": "Lade Schlafdaten...",
         "sleepReportTitle": "Schlafbericht",
-        "noSleepDataAvailableRange": "Für den gewählten Datumsbereich sind keine Schlafdaten verfügbar.",
+        "noSleepDataAvailableRange": "Für den gewählten Zeitraum sind keine Schlafdaten verfügbar.",
         "noSleepDataToExport": "Keine Schlafdaten zum Exportieren.",
         "csvHeadersDate": "Datum",
         "csvHeadersBedtime": "Schlafenszeit",
@@ -3665,7 +3850,9 @@
         "barcodeConflictDescription": "Dieser Barcode ist bereits mit „{{existing}}“ verknüpft. Trotzdem mit „{{current}}“ verknüpfen?",
         "notesLabel": "Notizen",
         "notesHelp": "Details, die du dir bei jeder Erfassung merken möchtest, etwa eine persönliche Bestellweise oder ein Rezept. Markdown wird unterstützt.",
-        "notesPlaceholder": "z. B. weißer Reis, doppeltes Hähnchen, milde Salsa, ohne Bohnen"
+        "notesPlaceholder": "z. B. weißer Reis, doppeltes Hähnchen, milde Salsa, ohne Bohnen",
+        "dataSource": "Datenquelle",
+        "refreshFromSource": "Aus Quelle aktualisieren"
     },
     "customMeasurements": {
         "title": "Benutzerdefinierte Messungen - {{date}}",
@@ -3984,13 +4171,13 @@
             "medicationsTitle": "Heutige Medikamente",
             "medicationsDescription": "Geplante Dosen erfassen und Bedarfsmedikamente dokumentieren",
             "noMedicationDoses": "Heute keine geplanten Dosen – erfasse unten alle Bedarfsmedikamente.",
-            "supplementsTitle": "Heutige Nahrungsergänzungsmittel",
-            "supplementsDescription": "Verfolge geplante Dosen und protokolliere Ergänzungen nach Bedarf",
-            "noSupplementDoses": "Heute sind keine Dosen geplant. Protokolliere unten bei Bedarf eingenommene Nahrungsergänzungsmittel.",
+            "supplementsTitle": "Heutige Supplements",
+            "supplementsDescription": "Verfolge geplante Dosen und protokolliere Supplements nach Bedarf",
+            "noSupplementDoses": "Heute sind keine Dosen geplant. Protokolliere unten bei Bedarf eingenommene Supplements.",
             "noPrnMedications": "Keine Bedarfsmedikamente oder Medikamente ohne Zeitplan eingerichtet.",
-            "noPrnSupplements": "Keine Nahrungsergänzungsmittel für den Bedarfsfall oder ohne Zeitplan eingerichtet.",
+            "noPrnSupplements": "Keine Supplements für den Bedarfsfall oder ohne Zeitplan eingerichtet.",
             "loadingMedications": "Aktive Medikamente werden geladen…",
-            "loadingSupplements": "Aktive Nahrungsergänzungsmittel werden geladen…",
+            "loadingSupplements": "Aktive Supplements werden geladen…",
             "asNeededHint": "Tippe hier, um eine Dosis jetzt zu protokollieren (kein fester Zeitplan oder heute nicht fällig).",
             "adherenceTitle": "Übersicht zur Therapietreue",
             "editLogged": "Gespeicherte Dosis bearbeiten",
@@ -4079,12 +4266,12 @@
             "fri": "Fr",
             "sat": "Sa",
             "noMeds": "Füge ein Medikament hinzu, um hier seinen Protokollkalender zu sehen.",
-            "titleSupplements": "Nahrungsergänzungsmittel-Protokollkalender",
-            "noSupplements": "Füge ein Nahrungsergänzungsmittel hinzu, um hier seinen Protokollkalender zu sehen.",
+            "titleSupplements": "Supplement-Protokollkalender",
+            "noSupplements": "Füge ein Supplement hinzu, um hier seinen Protokollkalender zu sehen.",
             "selectSupplement": "Wähle ein Supplement",
             "allSupplements": "Alle Supplements",
             "titleAll": "Protokollkalender",
-            "noEntries": "Füge ein Medikament oder Nahrungsergänzungsmittel hinzu, um hier seinen Protokollkalender zu sehen.",
+            "noEntries": "Füge ein Medikament oder Supplement hinzu, um hier seinen Protokollkalender zu sehen.",
             "selectEntry": "Wähle einen Eintrag",
             "allEntries": "Alle",
             "monthTotal": "{{count}} Einnahmen im {{month}} erfasst",
@@ -4238,8 +4425,8 @@
             "servingUnit_capsule_other": "Kapseln",
             "servingUnit_softgel_one": "Softgel-Kapsel",
             "servingUnit_softgel_other": "Softgel-Kapseln",
-            "servingUnit_gummy_one": "Gummibärchen",
-            "servingUnit_gummy_other": "Gummibärchen",
+            "servingUnit_gummy_one": "Fruchtgummi",
+            "servingUnit_gummy_other": "Fruchtgummis",
             "servingUnit_pill_one": "Pille",
             "servingUnit_pill_other": "Pillen",
             "servingEquals": "1 Portion =",
@@ -4250,8 +4437,8 @@
             "macroLabel_protein": "Protein",
             "macroLabel_carbs": "Kohlenhydrate",
             "nutrientUnit": "Einheit",
-            "addSupplement": "Ergänzung hinzufügen",
-            "editSupplement": "Ergänzung bearbeiten",
+            "addSupplement": "Supplement hinzufügen",
+            "editSupplement": "Supplement bearbeiten",
             "doseForm": "Form",
             "strengthUnit": "Stärkeeinheit",
             "dosePerInjection": "Dosis pro Injektion",
@@ -4264,7 +4451,7 @@
             "macroLabel_dietary_fiber": "Ballaststoffe",
             "includeMacros": "Makros einbeziehen",
             "clearNutrients": "Alle entfernen",
-            "nutrientsNeedDiaryAccess": "Nährwerte pro Dosis erfordern Zugriff auf das Ernährungstagebuch dieses Profils. Du kannst das Nahrungsergänzungsmittel trotzdem speichern und Zeitplan, Erinnerungen sowie Dosierungen verfolgen.",
+            "nutrientsNeedDiaryAccess": "Nährwerte pro Dosis erfordern Zugriff auf das Ernährungstagebuch dieses Profils. Du kannst das Supplement trotzdem speichern und Zeitplan, Erinnerungen sowie Dosierungen verfolgen.",
             "addNutrient": "Nährstoff hinzufügen",
             "searchNutrients": "Nährstoffe suchen…",
             "noNutrientMatches": "Keine Treffer. Erstelle es unten.",
@@ -4280,7 +4467,7 @@
             "rxNumber": "Rx-Nummer (optional)",
             "empty": "Noch keine Medikamente. Füge dein erstes hinzu, um loszulegen.",
             "emptyMeds": "Noch keine Medikamente. Füge dein erstes hinzu, um loszulegen.",
-            "emptySupplements": "Noch keine Nahrungsergänzungsmittel. Füge dein erstes hinzu, um loszulegen.",
+            "emptySupplements": "Noch keine Supplements. Füge dein erstes hinzu, um loszulegen.",
             "customCadence": "Rhythmus",
             "customGlp1": "Benutzerdefiniertes GLP-1 / Sonstiges...",
             "customGlpName": "Benutzerdefinierter Medikamentenname (optional)",
@@ -4344,9 +4531,9 @@
             "time": "Tageszeit"
         },
         "checkin": {
-            "subtitle": "Verfolge, wie die Medikation dich beeinflusst — wird in deinen täglichen Messungen gespeichert, taucht also auch in deinen Check-Ins & Berichten auf.",
-            "save": "Check-In speichern",
-            "saveToday": "Heutigen Check-In speichern",
+            "subtitle": "Verfolge, wie die Medikation dich beeinflusst — wird in deinen täglichen Messungen gespeichert, taucht also auch in deinen Check-ins & Berichten auf.",
+            "save": "Check-in speichern",
+            "saveToday": "Heutigen Check-in speichern",
             "metric": {
                 "hunger": "Hunger",
                 "food_noise": "Gedankliche Beschäftigung mit Essen",
@@ -4371,7 +4558,7 @@
             "printPDF": "PDF-Bericht drucken/speichern",
             "logTableTitle": "Medikamentenprotokolltabelle",
             "logTableDesc": "Tagesdosiszahlen und -zeiten für {{start}}–{{end}}, einschließlich Symptomen am selben Tag.",
-            "logTableEmpty": "In diesem Datumsbereich wurden keine Medikamentendosen protokolliert.",
+            "logTableEmpty": "In diesem Zeitraum wurden keine Medikamentendosen protokolliert.",
             "adherenceTrend": "Täglicher Verlauf der Therapietreue (%)",
             "adherenceTrendDesc": "Zeigt den täglichen Anteil der planmäßig eingenommenen und protokollierten Dosen.",
             "configDesc": "Sichtbarkeit bestimmter Diagramme und Korrelations-Widgets umschalten.",
@@ -4439,13 +4626,13 @@
         "subtype": {
             "all": "Alle",
             "meds": "Medikamente",
-            "supplements": "Nahrungsergänzungsmittel"
+            "supplements": "Supplements"
         },
         "forms": {
             "tablet": "Tablette",
             "capsule": "Kapsel",
             "softgel": "Weichkapsel",
-            "gummy": "Gummibärchen",
+            "gummy": "Fruchtgummi",
             "powder": "Pulver",
             "liquid": "Flüssigkeit"
         },
@@ -4495,7 +4682,7 @@
             "recentInjections": "Letzte Injektionen",
             "date": "Datum",
             "doseMg": "Dosis (mg)",
-            "injectionSite": "Einstichstelle",
+            "injectionSite": "Injektionsstelle",
             "notes": "Notizen",
             "recentSymptoms": "Letzte Symptom-Einträge",
             "symptom": "Symptom",
@@ -4981,7 +5168,9 @@
         "weekly": "wöchentlich"
     },
     "layout": {
-        "welcome": "Willkommen {{activeUserName}}"
+        "welcome": "Willkommen {{activeUserName}}",
+        "docs": "Dokumentation",
+        "translate": "Übersetzen"
     },
     "food": {
         "imagesLabel": "Bilder",
@@ -5222,7 +5411,61 @@
         "endFast": "Fasten beenden",
         "totalFasts": "Fastenperioden insgesamt",
         "avgDuration": "Durchschnittliche Dauer",
-        "hoursShort": "{{count}} Std."
+        "hoursShort": "{{count}} Std.",
+        "autoFromMeals": "Auto (aus Mahlzeiten)",
+        "currentlyFastingAfterMeal": "Fasten seit {{meal}}",
+        "eatingWindow": "Essensfenster",
+        "eatingWindowOpen": "Essensfenster offen",
+        "eatingWindowDescription": "Essensfenster offen · noch {{remaining}} (schließt um {{endTime}})",
+        "eatingWindowHint": "Das Fasten wird automatisch fortgesetzt, sobald dein Essensfenster schließt.",
+        "remainingInEatingWindow": "Verbleibend in deinem Essensfenster",
+        "startFastEarly": "Fasten jetzt starten",
+        "startedAt": "Gestartet {{time}}",
+        "targetAt": "Ziel {{time}}",
+        "closesAt": "Schließt {{time}}",
+        "stages": {
+            "open": {
+                "name": "Fenster offen",
+                "desc": "Nährstoffaufnahme und Insulinreaktion."
+            },
+            "fuel": {
+                "name": "Optimale Energie",
+                "desc": "Beste Nährstoffversorgung und anhaltende Energie über den Tag."
+            },
+            "sustain": {
+                "name": "Fenstermitte",
+                "desc": "Ausgewogene Flüssigkeits- und Nahrungszufuhr."
+            },
+            "closing": {
+                "name": "Fenster schließt",
+                "desc": "Letzte Mahlzeit, bevor dein nächstes Fasten beginnt."
+            }
+        },
+        "settings": {
+            "title": "Intervallfasten",
+            "description": "Konfiguriere Intervallfasten-Protokolle, die automatische Berechnung aus Mahlzeiten und Benachrichtigungen",
+            "autoCalculate": "Fasten automatisch aus Mahlzeiten berechnen",
+            "autoCalculateHint": "Wenn aktiviert, erkennt Sparky automatisch, wann deine letzte Mahlzeit endete, und berechnet dein aktives Fastenfenster und den täglichen Verlauf – ganz ohne manuelle Start-/Stopp-Schaltflächen.",
+            "protocol": "Standard-Fastenprotokoll",
+            "customProtocol": "Benutzerdefinierte Stunden",
+            "customProtocolDesc": "Lege die gewünschte Anzahl zusammenhängender Fastenstunden fest.",
+            "targetHours": "Ziel-Fastenstunden",
+            "targetHoursDesc": "Zieldauer in Stunden, bis das Fasten abgeschlossen ist.",
+            "targetEatingHours": "Ziel-Essensstunden",
+            "targetEatingHoursDesc": "Dauer deines Essensfensters in Stunden.",
+            "calorieThreshold": "Kalorienschwelle (kcal)",
+            "calorieThresholdHint": "Snacks oder Getränke unter diesem Wert (z. B. schwarzer Kaffee, Wasser, Elektrolyte) unterbrechen dein Fasten nicht und starten es nicht neu.",
+            "preEndAlert": "Vorwarnung vor dem Ziel (Minuten)",
+            "preEndAlertHint": "Wie viele Minuten vor Erreichen deines Fastenziels du eine Erinnerung erhalten möchtest.",
+            "notifications": "Fasten-Benachrichtigungen",
+            "eatingWindowAlert": "Benachrichtigungen zu Ziel & Essensfenster",
+            "eatingWindowAlertDesc": "Erhalte Benachrichtigungen, wenn dein Fastenziel erreicht ist und wenn sich dein Essensfenster öffnet.",
+            "save": "Fasteneinstellungen speichern",
+            "saved": "Fasteneinstellungen erfolgreich aktualisiert.",
+            "error": "Fasteneinstellungen konnten nicht gespeichert werden.",
+            "errorLoading": "Einstellungen konnten nicht geladen werden.",
+            "retry": "Erneut versuchen"
+        }
     },
     "i18n": {
         "locale": "de-DE"
@@ -5248,7 +5491,23 @@
         "liftosaurSyncErrorDesc": "Liftosaur-Synchronisierung fehlgeschlagen. Bitte überprüfe deinen API-Schlüssel in den Einstellungen.",
         "liftosaurSyncSuccess": "Liftosaur-Daten erfolgreich synchronisiert.",
         "liftosaurSyncSuccessTitle": "Liftosaur erfolgreich synchronisiert",
-        "liftosaurSyncDetails": "Synchronisiert: {{workoutsImported}} Workouts, {{measurementsImported}} Messungen importiert."
+        "liftosaurSyncDetails": "Synchronisiert: {{workoutsImported}} Trainings, {{measurementsImported}} Messungen importiert.",
+        "corosLinkError": "COROS-Konto konnte nicht verknüpft werden.",
+        "corosLinkSuccess": "COROS-Konto erfolgreich verknüpft!",
+        "corosSyncSuccess": "COROS-Synchronisierung abgeschlossen",
+        "corosNoNew": "Keine neuen Aktivitäten gefunden.",
+        "corosProcessingAuth": "COROS-Autorisierung wird verarbeitet...",
+        "corosMissingCodeOrState": "Fehler: COROS-Autorisierungscode oder State fehlt.",
+        "corosOAuthError": "COROS-OAuth-Fehler",
+        "corosMissingParams": "Autorisierungscode oder State fehlt im Callback.",
+        "corosLinkSuccessMsg": "COROS-Konto erfolgreich verknüpft!",
+        "corosLinkErrorMsg": "Fehler beim Verknüpfen des COROS-Kontos.",
+        "syncImported": "{{count}} importiert",
+        "syncUpdated": "{{count}} aktualisiert",
+        "syncSkipped": "{{count}} vorhandene übersprungen",
+        "syncDeferred": "{{count}} zurückgestellt",
+        "syncSummaryOnly": "Nur Zusammenfassung: {{count}}",
+        "googleHealthSyncError": "Google-Health-Synchronisierung wurde nicht abgeschlossen."
     },
     "mealCreation": {
         "convertToMeal": "Mahlzeit aus Tagebuch erstellen",
@@ -5448,8 +5707,8 @@
                 "notTaken": "Dosis protokollieren",
                 "taken": "Heute eingenommen"
             },
-            "noPrenatalsLinked": "Keine pränatalen Medikamente oder Nahrungsergänzungsmittel verknüpft. Verknüpfe sie in den Einstellungen, um die Einnahme zu verfolgen.",
-            "prenatalSupplements": "Pränatale Nahrungsergänzungsmittel",
+            "noPrenatalsLinked": "Keine pränatalen Medikamente oder Supplements verknüpft. Verknüpfe sie in den Einstellungen, um die Einnahme zu verfolgen.",
+            "prenatalSupplements": "Pränatale Supplements",
             "save": "Speichern",
             "title": "Vitalwerte in der Schwangerschaft",
             "weight": {
@@ -5478,7 +5737,7 @@
     },
     "success": "Erfolg",
     "syncRangeDialog": {
-        "description": "Wähle den Datumsbereich aus, den du von {{provider}} synchronisieren möchtest.",
+        "description": "Wähle den Zeitraum aus, den du von {{provider}} synchronisieren möchtest.",
         "endDate": "Enddatum",
         "last180Days": "Letzte 180 Tage",
         "last30Days": "Letzte 30 Tage",
@@ -5488,29 +5747,37 @@
         "polarWarning": "Hinweis: Polar erlaubt nur die Synchronisierung von Daten, die aufgezeichnet wurden, nachdem du dein Konto mit SparkyFitness verbunden hast.",
         "startDate": "Startdatum",
         "syncNow": "Synchronisierung starten",
-        "timeoutWarning": "Bei großen Datumsbereichen kann es zu einer Zeitüberschreitung des Browsers kommen, aber der Server setzt die Synchronisierung im Hintergrund fort.",
+        "timeoutWarning": "Bei großen Zeiträumen kann es zu einer Zeitüberschreitung des Browsers kommen, aber der Server setzt die Synchronisierung im Hintergrund fort.",
         "title": "Daten von {{provider}} synchronisieren",
         "troubleshooting": "Fehlerbehebung",
         "modeLive": "Normal von {{provider}} synchronisieren",
         "modeCapture": "Von {{provider}} synchronisieren und die Rohantworten dieser Synchronisierung in einer Datei auf dem Server speichern",
         "modeReplay": "Aus der zuvor gespeicherten Datei synchronisieren statt von {{provider}}",
-        "replayIgnoresDates": "Der Datumsbereich gilt hier nicht – die gespeicherte Datei wird vollständig wiedergegeben und deckt den Zeitraum ab, für den sie ursprünglich erfasst wurde."
+        "replayIgnoresDates": "Der gewählte Zeitraum gilt hier nicht – die gespeicherte Datei wird vollständig wiedergegeben und deckt den Zeitraum ab, für den sie ursprünglich erfasst wurde.",
+        "corosWarning": "Hinweis: Tägliche FIT-Datei-Downloads unterliegen den Ratenbegrenzungen von COROS (bis zu 50 pro Tag; verbleibende Aktivitäten werden auf spätere Synchronisierungen verschoben). Trainingsaktivitäten werden synchronisiert; tägliche Gesundheits-/Schlafwerte werden noch nicht importiert.",
+        "capturePrivacyNote": "Warnung: Rohdateien der Diagnoseaufzeichnung enthalten deine persönlichen Aktivitäts-, GPS-Routen- und Gesundheitsdaten. Prüfe und schwärze sensible Informationen, bevor du sie teilst."
     },
     "warning": "Warnung",
     "workout": {
         "avgHr": "Durchschn. Herzfrequenz (bpm)",
         "calories": "Kalorien",
         "caloriesAuto": "Auto",
-        "distance": "Entfernung",
+        "distance": "Distanz",
         "durationMin": "Dauer (Min.)",
         "durationSec": "Dauer (s)",
         "durationSet": "Dauer für Satz {{setNumber}}",
         "notesPlaceholder": "Füge eine Notiz für diesen Satz hinzu...",
         "reps": "Wiederholungen",
-        "restSec": "Ruhe (s)",
+        "restSec": "Pause (s)",
         "rpe": "RPE",
         "type": "Typ",
-        "weight": "Gewicht"
+        "weight": "Gewicht",
+        "addedWeight": "+/− Gewicht",
+        "durationSecShort": "Sek.",
+        "distanceUnit": "Distanz ({{unit}})",
+        "rir": "RIR",
+        "startTimer": "Timer starten",
+        "stopTimer": "Timer stoppen"
     },
     "markdownView": {
         "externalImage": "Externes Bild",
@@ -5561,7 +5828,7 @@
         "noHeatmapData": "Keine Trainingsdaten für Heatmap verfügbar.",
         "finder": {
             "title": "Aktivitätsabfrage & Distanzsuche",
-            "description": "Bisherige Aktivitäten nach Distanzmeilensteinen, Strecken oder Stichwörtern abfragen und vergleichen (z. B. Halbmarathons, 10 km, 5 km).",
+            "description": "Bisherige Aktivitäten nach Distanzmeilensteinen, Routen oder Stichwörtern abfragen und vergleichen (z. B. Halbmarathons, 10 km, 5 km).",
             "loadError": "Aktivitäten konnten nicht geladen werden. Bitte versuche es erneut.",
             "allDistances": "Alle Distanzen",
             "distanceMilestone": "Distanzmeilenstein",
@@ -5624,15 +5891,29 @@
         "views": {
             "all": "Alle Einheiten",
             "strength": "Kraft & Widerstand",
-            "cardio": "Cardio & GPS"
+            "cardio": "Cardio & GPS",
+            "allShort": "Alle",
+            "strengthShort": "Kraft",
+            "cardioShort": "Cardio"
         },
-        "interval": "Intervall:",
+        "interval": "Gruppieren nach:",
         "intervals": {
             "day": "Tag",
             "week": "Woche",
             "month": "Monat",
             "year": "Jahr"
-        }
+        },
+        "cardio": {
+            "sessionsTitle": "Sitzungen",
+            "sessionsHint": "Tippe auf ein Training, um Route und Herzfrequenz zu sehen.",
+            "noSessions": "Keine Cardio-Trainings in diesem Zeitraum.",
+            "moreSessions": "Ältere Einheiten",
+            "noRoute": "Keine GPS-Route gespeichert. Indoor-Trainings haben keine. Ein Spaziergang im Freien hat nur dann eine Route, wenn Apple Health sie bei der Synchronisierung des Trainings geteilt hat.",
+            "avgHeartRate": "Durchschnittliche Herzfrequenz {{bpm}} bpm. Einzelne Herzschlagwerte wurden nicht gespeichert.",
+            "noHeartRate": "Keine Herzfrequenzwerte für dieses Training."
+        },
+        "moreAnalysis": "Weitere Analysen",
+        "hideAnalysis": "Zusätzliche Diagramme ausblenden"
     },
     "openFoodFactsContribution": {
         "title": "Zu Open Food Facts hinzufügen",
@@ -6030,5 +6311,545 @@
         "quickAdd": "Getränke-Schnellauswahl",
         "caffeineBadge": "{{amount}} mg Koffein",
         "alcoholBadge": "{{abv}} % Vol."
+    },
+    "mindfulness": {
+        "title": "Achtsamkeit",
+        "stats": {
+            "totalMinutes": "Achtsame Minuten heute",
+            "sessionCount": "Sitzungen",
+            "recorded_one": "Sitzung erfasst",
+            "recorded_other": "Sitzungen erfasst"
+        },
+        "pacer": {
+            "title": "Geführtes Atmen",
+            "subtitle": "Atemübungs-Anleitung",
+            "hide": "Atemtaktgeber ausblenden",
+            "launch": "Atemtaktgeber starten",
+            "boxName": "Box-Atmung",
+            "boxDesc": "Fokus & Stressabbau",
+            "relaxName": "4-7-8-Entspannung",
+            "relaxDesc": "Tiefe Ruhe & Schlafvorbereitung",
+            "coherenceName": "Kohärentes Atmen",
+            "coherenceDesc": "HRV-Maximierung",
+            "inhale": "Einatmen",
+            "hold": "Halten",
+            "exhale": "Ausatmen",
+            "rest": "Pause",
+            "ready": "Bereit",
+            "begin": "Atmung starten",
+            "complete": "Abschließen"
+        },
+        "timer": {
+            "title": "Meditationstimer",
+            "subtitle": "Offene / zeitlich begrenzte Sitzung",
+            "heading": "Timer für Meditationssitzung",
+            "description": "Ruhiger Fokus mit automatischer Erfassung beim Abschluss",
+            "hide": "Timer ausblenden",
+            "launch": "Timer öffnen",
+            "start": "Timer starten",
+            "resume": "Fortsetzen",
+            "pause": "Pausieren",
+            "saveAndFinish": "Speichern & Beenden"
+        },
+        "history": {
+            "title": "Heutige Sitzungen",
+            "subtitle": "Wearable-Importe und manuelle Einträge für {{date}}",
+            "loading": "Achtsamkeitsdaten werden geladen...",
+            "emptyTitle": "Für diesen Tag wurden keine Achtsamkeitssitzungen erfasst",
+            "emptyDescription": "Mach eine kurze 5-minütige Atempause, meditiere oder protokolliere eine Wearable-Sitzung aus Apple Health / Garmin."
+        },
+        "actions": {
+            "logManual": "Sitzung protokollieren",
+            "breathe": "Atmen",
+            "timer": "Timer",
+            "log": "Protokollieren",
+            "edit": "Sitzung bearbeiten",
+            "delete": "Sitzung löschen",
+            "cancel": "Abbrechen",
+            "saving": "Wird gespeichert..."
+        },
+        "types": {
+            "meditation": "Meditation",
+            "breathwork": "Atemübungen",
+            "reflection": "Reflexion",
+            "walking": "Achtsames Gehen",
+            "yoga": "Yoga",
+            "other": "Sonstiges"
+        },
+        "dialog": {
+            "editTitle": "Achtsamkeitssitzung bearbeiten",
+            "createTitle": "Achtsamkeitssitzung protokollieren",
+            "minutes": "Minuten",
+            "seconds": "Sekunden",
+            "type": "Typ",
+            "hrAvg": "Durchschn. Herzfrequenz (bpm)",
+            "hrv": "HRV RMSSD (ms)",
+            "hrStart": "Start-HF (bpm)",
+            "hrEnd": "End-HF (bpm)",
+            "notes": "Notizen",
+            "notesPlaceholder": "Wie hat sich diese Sitzung angefühlt?",
+            "save": "Sitzung speichern",
+            "update": "Sitzung aktualisieren"
+        },
+        "deleteDialog": {
+            "title": "Achtsamkeitssitzung löschen",
+            "description": "Bist du sicher, dass du diese Achtsamkeitssitzung löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.",
+            "confirm": "Löschen",
+            "deleting": "Wird gelöscht …"
+        }
+    },
+    "muscleHeatmap": {
+        "title": "Muskel-Heatmap",
+        "subtitle": "Arbeitssätze für Hauptmuskeln in diesem Zeitraum",
+        "sets": "Sätze",
+        "fewer": "Weniger",
+        "more": "Mehr",
+        "tap": "Tippe auf einen Muskel",
+        "notOnFigure": "Nicht in der Figur dargestellt",
+        "figure": "Körperfigur",
+        "male": "Männlich",
+        "female": "Weiblich"
+    },
+    "muscles": {
+        "abdominals": "Bauchmuskeln",
+        "abductors": "Abduktoren",
+        "adductors": "Adduktoren",
+        "biceps": "Bizeps",
+        "calves": "Waden",
+        "chest": "Brust",
+        "forearms": "Unterarme",
+        "glutes": "Gesäß",
+        "hamstrings": "Beinbeuger",
+        "lats": "Latissimus",
+        "lower back": "Unterer Rücken",
+        "middle back": "Mittlerer Rücken",
+        "neck": "Nacken",
+        "quadriceps": "Quadrizeps",
+        "shoulders": "Schultern",
+        "traps": "Trapezmuskel",
+        "triceps": "Trizeps"
+    },
+    "equipment": {
+        "barbell": "Langhantel",
+        "dumbbell": "Kurzhantel",
+        "kettlebells": "Kettlebells",
+        "cable": "Kabelzug",
+        "machine": "Maschine",
+        "bands": "Bänder",
+        "body only": "Nur Körpergewicht",
+        "medicine ball": "Medizinball",
+        "exercise ball": "Gymnastikball",
+        "foam roll": "Faszienrolle",
+        "e-z curl bar": "SZ-Stange",
+        "other": "Sonstiges"
+    },
+    "interval": {
+        "countdown": "Mach dich bereit",
+        "decrementRound": "1 Runde rückgängig",
+        "extraReps": "Zusätzliche Wiederholungen",
+        "finished": "Zeitlimit erreicht",
+        "pause": "Pausieren",
+        "ready": "Bereit",
+        "rest": "Pause",
+        "resume": "Fortsetzen",
+        "round": "Runde {{current}}",
+        "roundOfTotal": "Runde {{current}} von {{total}}",
+        "roundPlusOne": "+1 Runde ({{current}} abgeschlossen)",
+        "rx": "Rx",
+        "scaled": "Skaliert",
+        "timeCapLabel": "Limit: {{cap}}",
+        "wodScoring": "WOD-Wertung",
+        "work": "Belastung"
+    },
+    "guidedWorkout": {
+        "cue": {
+            "getReady": "Mach dich bereit. Es geht los mit {{name}}.",
+            "setStartReps_one": "{{name}}. {{count}} Wiederholung.",
+            "setStartReps_other": "{{name}}. {{count}} Wiederholungen.",
+            "setStartSeconds_one": "{{name}}. {{count}} Sekunde.",
+            "setStartSeconds_other": "{{name}}. {{count}} Sekunden.",
+            "setStartOpen": "{{name}}.",
+            "halfway": "Halbzeit.",
+            "rest_one": "Pause. {{count}} Sekunde.",
+            "rest_other": "Pause. {{count}} Sekunden.",
+            "intervalRest": "Pause.",
+            "nextUp": "Als Nächstes: {{name}}.",
+            "workoutComplete": "Training abgeschlossen."
+        },
+        "card": {
+            "badge": "GEFÜHRT",
+            "getReady": "Mach dich bereit",
+            "setOfTotal": "Satz {{current}} von {{total}}",
+            "rest": "Pause",
+            "nextUp": "Als Nächstes",
+            "targetReps_one": "{{count}} Wiederholung",
+            "targetReps_other": "{{count}} Wiederholungen",
+            "targetSeconds_one": "{{count}} Sekunde",
+            "targetSeconds_other": "{{count}} Sekunden",
+            "doneWeb": "Alle Sätze erledigt. Schließe das Training ab, um es zu speichern.",
+            "paused": "Pausiert",
+            "pause": "Pausieren",
+            "resume": "Fortsetzen",
+            "mute": "Stimme stummschalten",
+            "unmute": "Stimme einschalten",
+            "replay": "Anweisungen wiederholen",
+            "doneNext": "FERTIG — WEITER",
+            "doneHintReps_one": "Tippe, wenn du {{count}} Wiederholung geschafft hast",
+            "doneHintReps_other": "Tippe, wenn du {{count}} Wiederholungen geschafft hast",
+            "doneHint": "Tippe, wenn du fertig bist"
+        },
+        "settings": {
+            "section": "Geführte Trainings",
+            "description": "Gesprochene Ansagen, Countdowns und automatische Satzwechsel im Trainingsplayer",
+            "enabled": "Geführter Modus",
+            "enabledSubtitleWeb": "Sagt jede Übung und ihr Ziel an, zählt dich ein, lässt zeitbasierte Sätze selbstständig ablaufen und wechselt zum nächsten Satz. Wird nur in diesem Browser gespeichert.",
+            "unsupported": "Dieser Browser unterstützt keine Sprachausgabe. Die geführte Ansicht funktioniert trotzdem, nur ohne Ansagen.",
+            "voice": "Stimme",
+            "voiceDefaultWeb": "Browser-Standard",
+            "rate": "Sprechgeschwindigkeit",
+            "rateValue": "{{rate}}×",
+            "countdown": "Vorbereitungs-Countdown",
+            "countdownSubtitle": "Vor der ersten Übung und vor jedem zeitbasierten Satz.",
+            "countdownValue_one": "{{count}} s",
+            "countdownValue_other": "{{count}} s",
+            "sample": "So klingen deine geführten Trainings.",
+            "test": "Stimme testen"
+        }
+    },
+    "workoutFeedback": {
+        "title": "Wie hat es sich angefühlt?",
+        "subtitle": "Deine nächsten Vorschläge passen sich daran an.",
+        "difficulty": {
+            "tooEasy": "Zu leicht",
+            "justRight": "Genau richtig",
+            "tooHard": "Zu schwer"
+        },
+        "painQuestion": "Schmerzen oder Beschwerden?",
+        "painWhere": "Bei welchen Übungen? (optional)",
+        "painNotePlaceholder": "Was hat wehgetan? (optional)",
+        "painPrivacy": "Vorschläge für diese Übungen werden leichter, nie schwerer.",
+        "rateExercises": "Jede Übung bewerten",
+        "saving": "Speichern…",
+        "saved": "Gespeichert",
+        "saveFailed": "Dein Feedback konnte nicht gespeichert werden. Versuche es erneut.",
+        "loadFailed": "Dein Feedback konnte nicht geladen werden.",
+        "tryAgain": "Erneut versuchen"
+    },
+    "workoutCoaching": {
+        "settingsTitle": "Adaptive Trainingsvorschläge",
+        "settingsSubtitle": "Passt kommende Sätze und Übungsvorschläge anhand deines protokollierten Feedbacks zur Einheit an (Schwierigkeit, Schmerzmarkierungen).",
+        "settingsLoadFailed": "Einstellungen für das Trainingscoaching konnten nicht geladen werden",
+        "settingsSaved": "Einstellungen gespeichert",
+        "settingsSaveFailed": "Einstellungen für das Trainingscoaching konnten nicht gespeichert werden"
+    },
+    "adaptiveCoaching": {
+        "reasons": {
+            "painReported": "Heute leichter: Du hast hier beim letzten Mal Schmerzen gemeldet.",
+            "painRepeated": "Heute leichter: Schmerzen hier in zwei Einheiten in Folge. Erwäge eine Alternative.",
+            "sessionPain": "Gewicht bleibt: Du hast bei deinem letzten Training Beschwerden gemeldet.",
+            "tooHard": "Gewicht bleibt: Beim letzten Mal war es zu schwer.",
+            "tooHardRepeated": "Heute leichter: zwei Einheiten in Folge zu schwer.",
+            "highEffort": "Gewicht bleibt: Deine letzten Sätze waren nahe an der maximalen Anstrengung.",
+            "tooEasyRepeated": "Eine Stufe schwerer: zwei Einheiten in Folge zu leicht."
+        },
+        "declined": "Dein üblicher Vorschlag wird verwendet.",
+        "variation": "Du hast das in den meisten deiner letzten Trainings gemacht. Eine Variante ausprobieren?",
+        "useUsual": "Meinen üblichen Vorschlag verwenden",
+        "useAdjusted": "Angepassten Vorschlag verwenden",
+        "seeAlternatives": "Alternativen ansehen"
+    },
+    "symptoms": {
+        "manage": {
+            "show": "{{name}} anzeigen",
+            "addOption": "Eigene hinzufügen",
+            "title": "Symptome verwalten",
+            "description": "Lege fest, was du erfasst, was du gefragt wirst und welche Auswahlmöglichkeiten du siehst.",
+            "tabSymptoms": "Symptome",
+            "tabLists": "Auswahlmöglichkeiten",
+            "new": "Neues Symptom",
+            "episodeTag": "Episoden",
+            "unpin": "Anheften von {{name}} aufheben",
+            "pin": "{{name}} anheften",
+            "edit": "{{name}} bearbeiten",
+            "hide": "{{name}} ausblenden",
+            "delete": "{{name}} löschen",
+            "hidden": "Ausgeblendet",
+            "restore": "Wieder anzeigen",
+            "keepHistory": "Das Ausblenden oder Löschen eines Symptoms entfernt nie deine bisherigen Einträge.",
+            "name": "Name",
+            "template": "Typ",
+            "category": "Gruppe",
+            "scale": "Bewertungsskala",
+            "episodic": "Meist eine Episode mit Anfang und Ende (wie eine Migräne)",
+            "sections": "Was beim Protokollieren abgefragt wird",
+            "fields": "Deine eigenen Felder",
+            "fieldLabel": "Bezeichnung",
+            "fieldType": "Typ",
+            "removeField": "Feld entfernen",
+            "fieldOptions": "Auswahlmöglichkeiten, durch Kommas getrennt",
+            "fieldUnit": "Einheit (optional)",
+            "addField": "Feld hinzufügen",
+            "section": {
+                "locations": "Wo es auftritt",
+                "phases": "Kopfschmerzphasen",
+                "qualities": "Wie es sich anfühlt",
+                "associated": "Weitere Symptome",
+                "triggers": "Mögliche Auslöser",
+                "treatments": "Behandlungen",
+                "impact": "Auswirkung auf den Tag",
+                "notes": "Notizen",
+                "medication": "Mögliche Nebenwirkung eines Medikaments",
+                "bristol": "Bristol-Stuhlskala",
+                "photos": "Fotos",
+                "custom_fields": "Deine eigenen Felder"
+            }
+        },
+        "chips": {
+            "remove": "{{name}} entfernen",
+            "add": "Hinzufügen",
+            "save": "Speichern",
+            "newLabel": "Name der neuen Option"
+        },
+        "detail": {
+            "delete": "Löschen",
+            "confirmDelete": "Diesen Eintrag löschen?",
+            "edit": "Bearbeiten",
+            "editTitle": "Symptomeintrag bearbeiten"
+        },
+        "treatments": {
+            "addMedication": "Medikament hinzufügen",
+            "didItHelp": "Hat es geholfen?",
+            "helped": "Geholfen",
+            "partly": "Teilweise",
+            "didnt": "Nicht geholfen"
+        },
+        "map": {
+            "view": "Kartenansicht",
+            "front": "Vorderseite",
+            "back": "Rückseite",
+            "headLabel": "Kopfkarte",
+            "bodyLabel": "Körperkarte",
+            "hint": "Tippe dorthin, wo es wehtut. Links und rechts aus deiner Sicht."
+        },
+        "severity": {
+            "label": "Schweregrad",
+            "count": "Wie oft",
+            "mild": "Leicht",
+            "moderate": "Mittel",
+            "severe": "Stark",
+            "low": "1 leicht",
+            "high": "{{max}} am stärksten"
+        },
+        "form": {
+            "started": "Begonnen",
+            "now": "Jetzt",
+            "minutesAgo": "−{{n}} min",
+            "hoursAgo": "−{{n}} h",
+            "pick": "Auswählen…",
+            "startedAt": "Startdatum und -uhrzeit",
+            "ongoing": "Dauert noch an",
+            "ended": "Beendet",
+            "symptom": "Symptom",
+            "newSymptom": "Neues Symptom",
+            "kind": "Art des Eintrags",
+            "quick": "Schnell erfassen",
+            "episode": "Episode",
+            "newSymptomPlaceholder": "z. B. Schmerzen im unteren Rücken",
+            "newSymptomName": "Name des neuen Symptoms",
+            "noMedication": "Kein Medikament zugeordnet",
+            "notesPlaceholder": "Was sonst noch erwähnenswert ist",
+            "cancel": "Abbrechen",
+            "saving": "Speichern…",
+            "update": "Aktualisieren",
+            "saveEpisode": "Episode speichern",
+            "save": "Speichern",
+            "title": "Symptom protokollieren"
+        },
+        "sections": {
+            "where": "Wo",
+            "phases": "Phasen",
+            "optional": "optional",
+            "qualities": "Wie es sich anfühlt",
+            "associated": "Weitere Symptome",
+            "triggers": "Mögliche Auslöser",
+            "treatments": "Behandlungen",
+            "noneYet": "noch keine",
+            "impact": "Auswirkung auf deinen Tag",
+            "bristol": "Stuhlprotokoll (Bristol-Skala)",
+            "medication": "Mögliche Nebenwirkung von",
+            "details": "Weitere Details",
+            "notes": "Notizen",
+            "photos": "Fotos"
+        },
+        "photos": {
+            "saved": "Gespeichertes Foto",
+            "remove": "Foto entfernen",
+            "add": "Fotos hinzufügen"
+        },
+        "episode": {
+            "ongoing": "andauernd",
+            "peak": "Höchstwert {{n}}",
+            "saveTreatments": "Behandlungen speichern",
+            "updateSeverity": "Schweregrad aktualisieren",
+            "saveReading": "Messwert speichern",
+            "addRelief": "Linderung hinzufügen",
+            "addReliefHint": "Halte fest, was du genommen oder getan hast und ob es geholfen hat.",
+            "end": "Episode beenden",
+            "endTitle": "Diese Episode beenden",
+            "endHint": "Lege fest, wann sie geendet hat, und markiere, was geholfen hat.",
+            "endedWhen": "Ende der Episode",
+            "didAnythingHelp": "Hat etwas geholfen?",
+            "startedAt": "begonnen {{time}}"
+        },
+        "history": {
+            "title": "Letzte Symptome",
+            "loading": "Wird geladen…",
+            "empty": "In den letzten 30 Tagen wurde nichts protokolliert. Nutze das Formular, um ein Symptom zu protokollieren.",
+            "cycle": "Zyklus"
+        },
+        "calendar": {
+            "previous": "Vorheriger Monat",
+            "next": "Nächster Monat",
+            "free": "Symptomfrei",
+            "mild": "Leicht bis mittel",
+            "severe": "Stark",
+            "unknown": "Kein Eintrag"
+        },
+        "hub": {
+            "title": "Symptome",
+            "subtitle": "Erfasse Symptome und Episoden und sieh, was häufig damit einhergeht.",
+            "manage": "Verwalten",
+            "anyToday": "Gab es Symptome ({{date}})?",
+            "today": "heute",
+            "markedFree": "Als symptomfreier Tag markiert.",
+            "undo": "Rückgängig",
+            "noneToday": "Keine Symptome",
+            "logAgain": "Erneut protokollieren"
+        },
+        "chart": {
+            "summary": "Schweregrad im Verlauf der Episode, {{count}} Messwerte"
+        },
+        "phases": {
+            "prodrome": "Vor dem Kopfschmerz",
+            "aura": "Aura",
+            "postdrome": "Nach dem Kopfschmerz"
+        },
+        "triggerGroups": {
+            "sleep": "Schlaf",
+            "food_drink": "Essen & Trinken",
+            "lifestyle": "Lebensstil",
+            "environment": "Umgebung",
+            "hormonal": "Hormonell",
+            "other": "Sonstiges",
+            "mine": "Meine"
+        },
+        "impact": {
+            "none": "Keine",
+            "mild": "Leicht",
+            "moderate": "Mittel",
+            "severe": "Stark"
+        },
+        "templates": {
+            "generic": "Allgemein",
+            "headache": "Kopfschmerzen oder Migräne",
+            "pain": "Schmerzen",
+            "gi": "Magen und Darm",
+            "respiratory": "Atmung und Allergie",
+            "skin": "Haut",
+            "mental": "Stimmung und Angst"
+        },
+        "categories": {
+            "general": "Allgemein",
+            "pain": "Schmerzen",
+            "head": "Kopf",
+            "gi": "Magen und Darm",
+            "respiratory": "Atmung",
+            "skin": "Haut",
+            "mental": "Psyche",
+            "other": "Sonstiges"
+        },
+        "scales": {
+            "1-5": "1 bis 5",
+            "1-10": "1 bis 10",
+            "none-severe": "Leicht, mittel, stark",
+            "count": "Eine Anzahl",
+            "text": "Nur Notizen"
+        },
+        "fieldTypes": {
+            "number": "Zahl",
+            "text": "Text",
+            "boolean": "Ja oder nein",
+            "select": "Einfachauswahl",
+            "multiselect": "Mehrfachauswahl"
+        },
+        "optionKinds": {
+            "location": "Körperstellen",
+            "head_location": "Kopfstellen",
+            "quality": "Wie es sich anfühlt",
+            "associated": "Weitere Symptome",
+            "trigger": "Auslöser",
+            "relief": "Linderungsmethoden"
+        },
+        "report": {
+            "symptomDays": "Symptomtage",
+            "episodes": "Episoden",
+            "freeDays": "Symptomfreie Tage",
+            "averageDuration": "Durchschn. Episodendauer",
+            "medicationDays": "Tage mit Medikamenten",
+            "symptom": "Symptom",
+            "allSymptoms": "Alle Symptome",
+            "exportCsv": "CSV exportieren",
+            "print": "Für den Arzt drucken",
+            "medicationCaution": "Wenn du an 10 oder mehr Tagen Medikamente gegen Symptome nimmst, solltest du das mit deinem Arzt besprechen. Dies ist ein Hinweis, keine Diagnose.",
+            "recentEpisodes": "Letzte Episoden",
+            "recentEpisodesHint": "Nebeneinander, mit dem, was dein Tagebuch rund um jede Episode enthält.",
+            "showLast": "Anzuzeigende Anzahl",
+            "lastN": "Letzte {{n}}",
+            "noEpisodes": "Keine Episoden in diesem Zeitraum. Protokolliere eine Episode mit Startzeit, damit sie hier erscheint.",
+            "col": {
+                "started": "Begonnen",
+                "duration": "Dauer",
+                "peak": "Höchstwert",
+                "where": "Wo",
+                "triggers": "Auslöser",
+                "relief": "Linderung",
+                "slept": "Schlafdauer",
+                "food": "Vortag",
+                "water": "Wasser"
+            },
+            "factorsTitle": "Was davor geschah",
+            "factorsHint": "Wie viele deiner letzten {{n}} Episoden jeden dieser Faktoren aufwiesen. Das beschreibt, was passiert ist; es belegt keine Ursache.",
+            "notEnough": "Noch nicht genug Episoden, um ein Muster zu erkennen (mindestens {{n}})",
+            "noFactors": "Füge deinen Episoden Auslöser hinzu und protokolliere Schlaf und Essen, um zu sehen, was ihnen häufig vorausgeht.",
+            "ofKnown": "{{count}} von {{known}}",
+            "timeOfDay": "Tageszeit",
+            "timeOfDayHint": "Wann Symptome protokolliert wurden oder begannen.",
+            "printTitle": "Symptombericht",
+            "printSummary": "{{days}} Symptomtage, {{episodes}} Episoden, {{free}} symptomfreie Tage, {{meds}} Tage mit Medikamenten.",
+            "factor": {
+                "short_sleep": "In der Nacht davor weniger als 6 Stunden geschlafen",
+                "low_water": "Am Vortag weniger als 1,5 l Wasser",
+                "alcohol": "Alkohol in den Lebensmittelnamen",
+                "caffeine": "Koffein in den Lebensmittelnamen",
+                "menstrual_phase": "Während der Menstruationsphase"
+            }
+        }
+    },
+    "trainingConsistency": {
+        "title": "Trainingskonstanz",
+        "streak": "Wochenserie",
+        "longest": "Längste",
+        "thisWeek": "Diese Woche",
+        "lastWeek": "Letzte Woche",
+        "weeks_one": "{{count}} Woche",
+        "weeks_other": "{{count}} Wochen",
+        "days_one": "{{count}} Tag",
+        "days_other": "{{count}} Tage",
+        "daysPerWeek_one": "Trainingstage pro Woche, letzte {{count}} Woche",
+        "daysPerWeek_other": "Trainingstage pro Woche, letzte {{count}} Wochen",
+        "chartLabel": "Trainingstage pro Woche",
+        "setsTitle": "Sätze pro Muskel",
+        "noSets": "Weder diese noch letzte Woche Sätze protokolliert.",
+        "loadFailed": "Trainingskonstanz konnte nicht geladen werden."
     }
 }
