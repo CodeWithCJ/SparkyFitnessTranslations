@@ -681,7 +681,7 @@
         "connect": "Csatlakozás",
         "connectTitle": "Csatlakozz a SparkyFitnesshez",
         "signInWithPasskey": "Bejelentkezés Passkey-el",
-        "orSignInWith": "Vagy jelentkezzen be a következővel:",
+        "orSignInWith": "Vagy jelentkezzen be a következővel",
         "noMethods": "Jelenleg ezen a szerveren nincs engedélyezve egyetlen szabványos bejelentkezési módszer sem. Kérjük, használjon API-kulcsot, vagy vegye fel a kapcsolatot egy rendszergazdával.",
         "pasteUrl": "URL beillesztése a vágólapról",
         "twoFactorTitle": "Kétfaktoros hitelesítés",
