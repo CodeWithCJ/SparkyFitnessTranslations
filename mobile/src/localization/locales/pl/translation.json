@@ -62,7 +62,11 @@
         "selectOption": "Wybierz opcję",
         "requestTimedOut": "Przekroczono limit czasu żądania. Sprawdź połączenie z serwerem.",
         "nextStep": "Następny krok",
-        "notNow": "Później"
+        "notNow": "Później",
+        "more": "więcej",
+        "undo": "Cofnij",
+        "all": "Wszystko",
+        "builtIn": "Wbudowane"
     },
     "settings": {
         "app": "Ustawienia aplikacji",
@@ -77,7 +81,19 @@
             "managedByIOS": "Zarządzane przez iOS",
             "iosSettingsHint": "Zmień język tej aplikacji w Ustawieniach iOS",
             "openSettingsFailed": "Nie udało się otworzyć Ustawień iOS",
-            "iosSubtitle": "{{language}} · {{managedBy}}"
+            "iosSubtitle": "{{language}} · {{managedBy}}",
+            "simplifiedChinese": "简体中文",
+            "traditionalChinese": "正體中文",
+            "cantoneseTraditional": "正體粵語",
+            "german": "Deutsch",
+            "french": "Français",
+            "hungarian": "Magyar",
+            "italian": "Italiano",
+            "latvian": "Latviešu",
+            "norwegianBokmal": "Norsk bokmål",
+            "dutch": "Nederlands",
+            "brazilianPortuguese": "Português (Brasil)",
+            "russian": "Русский"
         },
         "lastSynced": "Ostatnia synchronizacja: {{time}}",
         "addServer": "Dotknij, aby dodać serwer",
@@ -101,7 +117,9 @@
             "whatsNew": "Co nowego",
             "logs": "Wyświetl logi",
             "about": "Informacje",
-            "shareReport": "Udostępnij raport diagnostyczny"
+            "shareReport": "Udostępnij raport diagnostyczny",
+            "watch": "Apple Watch",
+            "ai": "AI"
         },
         "theme": {
             "title": "Motyw",
@@ -208,12 +226,16 @@
         "channels": {
             "medicationReminders": "Przypomnienia o lekach",
             "workoutTimer": "Minutnik treningu",
-            "fasting": "Post"
+            "fasting": "Post",
+            "ongoingWorkout": "Trening w toku",
+            "hydration": "Przypomnienia o nawodnieniu"
         },
         "actions": {
             "completeSet": "Wykonaj serię",
             "logAsTaken": "Oznacz jako przyjęty",
-            "skip": "Pomiń"
+            "skip": "Pomiń",
+            "logAllAsTaken": "Zapisz wszystkie jako przyjęte",
+            "skipAll": "Pomiń wszystkie"
         },
         "permission": {
             "notificationsOff": "Powiadomienia wyłączone",
@@ -237,6 +259,14 @@
         "fasting": {
             "title": "Osiągnięto cel postu",
             "body": "Osiągnięto cel postu. Świetna robota!"
+        },
+        "fastingPreEnd": {
+            "title": "Cel postu kończy się wkrótce",
+            "body": "Twój post osiągnie cel za {{minutes}} min."
+        },
+        "hydration": {
+            "title": "Czas się nawodnić 💧",
+            "body": "Od dłuższego czasu nie zapisano żadnej wody."
         }
     },
     "activeWorkout": {
@@ -291,7 +321,9 @@
             "renameWorkout": "Zmień nazwę treningu",
             "reorderExercises": "Zmień kolejność ćwiczeń",
             "menu": "Menu treningu",
-            "settings": "Ustawienia treningu"
+            "settings": "Ustawienia treningu",
+            "gymLocation": "Siłownia / miejsce",
+            "gymLocationSet": "Siłownia: {{location}}"
         },
         "exerciseCard": {
             "addNote": "Dodaj notatkę do tego ćwiczenia…",
@@ -352,7 +384,11 @@
             "incomplete": "Oznacz serię {{setNumber}} jako nieukończoną",
             "weight": "Obciążenie",
             "rpe": "RPE",
-            "fillFromPrevious": "Uzupełnij serię {{setNumber}} danymi z poprzedniego treningu"
+            "fillFromPrevious": "Uzupełnij serię {{setNumber}} danymi z poprzedniego treningu",
+            "distance": "Dystans",
+            "rir": "RIR",
+            "startTimer": "Uruchom stoper",
+            "stopTimer": "Zatrzymaj stoper"
         },
         "columns": {
             "set": "Seria",
@@ -373,9 +409,39 @@
             "notesForSet": "Notatki do serii {{number}}",
             "addSet": "Dodaj serię: „{{name}}”",
             "caloriesUnit": "kcal",
-            "addSetLabel": "Dodaj serię"
+            "addSetLabel": "Dodaj serię",
+            "viewImages": "Zobacz zdjęcia: {{name}}",
+            "heartRateFor": "Średnie tętno dla {{name}}",
+            "liveHeartRateFor": "Aktualne tętno dla {{name}}",
+            "heartRateUnit": "bpm"
         },
-        "nextSet": "Następna seria"
+        "nextSet": "Następna seria",
+        "failedToDeleteWorkout": "Nie udało się usunąć odrzuconej sesji treningu z dziennika.",
+        "progression": {
+            "toggleSettings": "Przełącz ustawienia progresji",
+            "title": "Progresja",
+            "manualOff": "Ręcznie (wyłączony)",
+            "fixedSummary": "Stały cel · +{{value}} {{unit}}",
+            "stepLoadSummary": "Stopniowe obciążenie · {{reps}} powt. · +{{value}} powt.",
+            "repGoalSummary": "Cel powtórzeń · {{reps}} powt. · +{{value}} {{unit}}",
+            "overloadMode": "Tryb progresji",
+            "modeRepGoal": "Cel powtórzeń",
+            "modeFixed": "Stały",
+            "modeStepLoad": "Stopniowe obciążenie",
+            "modeOff": "Wyłączony",
+            "targetRepsPerSet": "Docelowe powtórzenia / seria",
+            "targetRepsTotal": "Docelowe powtórzenia (łącznie)",
+            "incrementReps": "Przyrost (powtórzenia)",
+            "incrementWeight": "Przyrost ({{unit}})",
+            "equipmentBrand": "Marka sprzętu / maszyny",
+            "equipmentBrandPlaceholder": "np. Hammer Strength, wyciąg",
+            "rampTitle": "Dodawaj na serię (ten trening)",
+            "rampUp": "W górę",
+            "rampDown": "W dół",
+            "rampAmountLabel": "Dodawane obciążenie na serię ({{unit}})",
+            "rampPlaceholder": "Wyłączone ({{unit}})",
+            "rampHint": "Każda seria robocza po pierwszej jest wstępnie wypełniana o tyle cięższa (lub lżejsza) w tym samym treningu. Serie rozgrzewkowe i drop-sety są pomijane."
+        }
     },
     "addSheet": {
         "food": "Produkt",
@@ -392,7 +458,10 @@
         "askSparky": "Zapytaj Sparky’ego",
         "syncHealth": "Synchronizuj dane zdrowotne",
         "logPregnancyEntry": "Zapisz wpis dotyczący ciąży",
-        "logCycle": "Zapisz cykl"
+        "logCycle": "Zapisz cykl",
+        "symptoms": "Objawy",
+        "progressPhotos": "Zdjęcia postępów",
+        "mindfulness": "Uważność"
     },
     "screens": {
         "foods": "Produkty spożywcze",
@@ -470,8 +539,28 @@
             "loadingRecentItems": "Ładowanie ostatnich elementów...",
             "failedRecentItems": "Nie udało się załadować ostatnich elementów.",
             "noRecentItems": "Brak ostatnich elementów",
-            "recentItemsHint": "Zapisane produkty, posiłki i ćwiczenia pojawią się tutaj, aby ułatwić dostęp."
-        }
+            "recentItemsHint": "Zapisane produkty, posiłki i ćwiczenia pojawią się tutaj, aby ułatwić dostęp.",
+            "mealPlans": "Plany posiłków",
+            "mealPlansSubtitle": "Powtarzaj posiłki w wybrane dni",
+            "waterContainers": "Pojemniki na wodę",
+            "waterContainersSubtitle": "Butelki, szklanki i napoje powiązane z produktami",
+            "exerciseStatistics": "Statystyki ćwiczeń",
+            "exerciseStatisticsSubtitle": "Serie wg mięśni i mapa cieplna ciała"
+        },
+        "duplicateExercise": "Zduplikuj ćwiczenie",
+        "symptomLog": "Zapis objawu",
+        "symptomHistory": "Historia objawów",
+        "manageSymptoms": "Zarządzaj objawami",
+        "symptomDefinition": "Szczegóły objawu",
+        "sleep": "Sen",
+        "healthTrendsSettings": "Trendy zdrowotne",
+        "progressPhotos": "Zdjęcia postępu",
+        "progressPhotoCompare": "Porównanie",
+        "progressPhotoTimelapse": "Time-lapse",
+        "exerciseStatistics": "Statystyki ćwiczeń",
+        "cardioSession": "Sesja cardio",
+        "watchSettings": "Apple Watch",
+        "aiSettings": "AI"
     },
     "healthMetrics": {
         "steps": "Kroki",
@@ -533,7 +622,8 @@
         "appleMoveTime": "Czas ruchu (Apple)",
         "appleExerciseTime": "Czas ćwiczeń (Apple)",
         "appleStandTime": "Czas stania (Apple)",
-        "unknown": "Metryka zdrowotna"
+        "unknown": "Metryka zdrowotna",
+        "bodyWaterMass": "Masa wody w ciele"
     },
     "healthCategories": {
         "Common": "Ogólne",
@@ -690,7 +780,14 @@
         "removeWater": "Usuń wodę",
         "addWater": "Dodaj wodę",
         "selectContainer": "Wybierz {{container}}",
-        "perContainer": "{{value}} {{unit}} na pojemnik"
+        "perContainer": "{{value}} {{unit}} na pojemnik",
+        "waterFromFood": "Zawiera {{value}} {{unit}} z produktów",
+        "chooseWaterContainer": "Wybierz pojemnik na wodę, aby włączyć szybkie dodawanie/usuwanie",
+        "quickAddDrinks": "Szybkie dodawanie",
+        "logDrink": "Zapisz: {{drink}}",
+        "perPress": "{{value}} {{unit}}",
+        "logDrinkFailed": "Nie udało się zapisać tego napoju",
+        "exerciseStatistics": "Statystyki"
     },
     "syncScreen": {
         "healthConnectSettings": "ustawieniach Health Connect",
@@ -758,6 +855,14 @@
             "subtitle": "Eksportuj zanonimizowane dane zdrowotne do zgłoszenia błędu",
             "privacy": "Odczytuje dane z ostatnich 4 godzin z Health Connect na potrzeby diagnostyki. Wartości są zaokrąglane dla prywatności. Nic nie jest wysyłane automatycznie.",
             "error": "Nie udało się wygenerować raportu danych zdrowotnych: {{error}}"
+        },
+        "syncChoice": {
+            "title": "Synchronizacja {{start}} – {{end}}",
+            "titleSingleDay": "Synchronizacja {{day}}",
+            "quick": "Szybka synchronizacja",
+            "quickDescription": "Wysyła wszystkie Twoje dane zdrowotne. Zsynchronizowane już treningi zachowują posiadaną mapę i tętno.",
+            "all": "Pełna synchronizacja",
+            "allDescription": "To samo, a dodatkowo ponownie odczytuje mapę i tętno już zsynchronizowanych treningów. Wolniejsza."
         }
     },
     "syncFrequency": {
@@ -836,7 +941,8 @@
             "percentage": "Cel − zjedzone + {{percentage}}% ćwiczeń",
             "tdee": "Cel − zjedzone + (prognoza − TDEE)",
             "adaptive": "Cel − zjedzone",
-            "fixed": "Cel − zjedzone"
+            "fixed": "Cel − zjedzone",
+            "projectedTotal": "Całkowite kalorie Health Connect (zapasowo BMR + kalorie aktywności)"
         },
         "notes": {
             "dynamic": "Cel rośnie wraz z aktywnością",
@@ -854,7 +960,29 @@
             "standardDescription": "Używa wyższej z wartości: szacowane PPM lub minimum kliniczne.",
             "customDescription": "Zastępuje standardowe minimum wybraną przez Ciebie wartością. Zalecenia zdrowotne pozostają widoczne.",
             "disabledDescription": "Wyłącza automatyczne ograniczanie celu. Ostrzeżenia zdrowotne pozostają widoczne."
-        }
+        },
+        "deviceProjectionDescription": "Całkowite kalorie dnia z Health Connect są ekstrapolowane do północy; zakończone dni używają zapisanej sumy. Tryb celu jest stosowany do tego TDEE, z BMR + aktywnymi kaloriami jako metodą zapasową.",
+        "deviceProjectionFallback": "Używane tylko jako metoda zapasowa BMR + kalorie aktywności, gdy suma z urządzenia jest niedostępna.",
+        "goalMode": {
+            "title": "Tryb celu",
+            "description": "Dostosowuje Twój cel kaloryczny do utrzymania, deficytu lub nadwyżki.",
+            "deviceProjectionDescription": "Ten procent jest stosowany bezpośrednio do ekstrapolowanego TDEE z urządzenia.",
+            "maintain": "Utrzymanie (0%)",
+            "recomp": "Rekompozycja (-10%)",
+            "cut": "Redukcja (-15%)",
+            "highCut": "Mocna redukcja (-20%)",
+            "leanBulk": "Lean Bulk (+10%)",
+            "bulk": "Bulk (+20%)",
+            "manual": "Ręcznie (własny %)",
+            "calculationMethod": "Metoda obliczania",
+            "methodAdaptive": "Adaptacyjnie",
+            "methodManual": "Ręcznie",
+            "customPercentage": "Wartość procentowa niestandardowa",
+            "customPercentageDescription": "Wartość dodatnia dodaje kalorie; ujemna tworzy deficyt. Ograniczone do ±40%."
+        },
+        "useExternalBmr": "Używaj zmierzonego BMR z check-inów i zsynchronizowanych urządzeń",
+        "useExternalBmrHint": "Domyślnie wyłączone — wybrana formuła jest zawsze używana, dopóki tego nie włączysz. Po włączeniu BMR zapisany przy check-inie albo zsynchronizowany ze smartwagi lub od dostawcy danych zdrowotnych zastępuje formułę na ten dzień, jeśli jest dla Ciebie fizjologicznie wiarygodny.",
+        "useExternalBmrIosNote": "Spoczynkowa energia z Apple Health obejmuje już lekką codzienną aktywność — rozważ ustawienie Poziomu aktywności na Brak (×1,0), żeby nie liczyć jej dwukrotnie."
     },
     "dashboardSettings": {
         "updateFailed": "Nie udało się zaktualizować ustawienia.",
@@ -871,7 +999,31 @@
         "cyclePregnancySubtitle": "Pokaż kartę zdrowia na pulpicie",
         "medications": "Leki",
         "medicationsSubtitle": "Pokaż kartę leków na pulpicie",
-        "customNutrientDisplay": "Wyświetlanie własnych składników odżywczych"
+        "customNutrientDisplay": "Wyświetlanie własnych składników odżywczych",
+        "description": "Przeciągnij kartę za uchwyt, aby zmienić kolejność na pulpicie. Wyłącz, aby ukryć karty, których nie używasz.",
+        "calorieRing": "Podsumowanie kalorii",
+        "calorieRingSubtitle": "Pokazuj dzienny bilans kaloryczny i pierścień postępu",
+        "macros": "Składniki odżywcze",
+        "macrosSubtitle": "Pokazuj cele makroskładników i sumy niestandardowych składników",
+        "exercise": "Postęp ćwiczeń",
+        "exerciseSubtitle": "Pokazuj minuty ćwiczeń i cele spalania kalorii",
+        "symptoms": "Objawy",
+        "symptomsSubtitle": "Pokazuj status objawów, aktywne epizody i szybkie zapisywanie",
+        "healthTrends": "Trendy zdrowotne",
+        "healthTrendsSubtitle": "Wybierz, które wykresy pokazywać na pulpicie i w jakiej kolejności",
+        "progressPhotos": "Zdjęcia postępu",
+        "progressPhotosSubtitle": "Pokazuj kartę zdjęć postępu na pulpicie",
+        "caffeine": "Kofeina",
+        "caffeineSubtitle": "Pokazuj kartę aktywnej kofeiny na pulpicie",
+        "mindfulness": "Uważność",
+        "mindfulnessSubtitle": "Pokazuj sesje uważności, oddychanie i medytację na pulpicie",
+        "reorder": "Zmień kolejność: {{name}}",
+        "reorderHint": "Zmień kolejność tej karty na pulpicie",
+        "moveUp": "Przenieś w górę",
+        "moveDown": "Przenieś w dół",
+        "stateShown": "Widoczna",
+        "stateHidden": "Ukryta",
+        "configureCard": "Konfiguruj: {{name}}"
     },
     "diarySettings": {
         "updateFailed": "Nie udało się zaktualizować ustawienia.",
@@ -923,7 +1075,19 @@
         "openSettings": "Otwórz ustawienia",
         "permissionTitle": "Włącz powiadomienia",
         "permissionBody": "Powiadomienia SparkyFitness (o zakończeniu odpoczynku, celach postu i lekach) nie będą działać.",
-        "permissionWarningAccessibility": "{{title}}. {{body}} {{action}}."
+        "permissionWarningAccessibility": "{{title}}. {{body}} {{action}}.",
+        "consolidateReminders": "Łączenie przypomnień",
+        "consolidateRemindersSubtitle": "Grupuj leki zaplanowane na tę samą godzinę w jedno powiadomienie.",
+        "hydration": "Nawodnienie",
+        "waterReminders": "Przypomnienia o wodzie",
+        "waterRemindersSubtitle": "Przypominaj o piciu, gdy od dawna nie zapisano wody.",
+        "waterReminderInterval": "Przypominaj po",
+        "waterReminderIntervalOption": "{{hours}} godz.",
+        "waterReminderStart": "Czas początkowy",
+        "waterReminderStartAccessibility": "Czas początkowy, {{time}}",
+        "waterReminderEnd": "Czas końcowy",
+        "waterReminderEndAccessibility": "Czas końcowy, {{time}}",
+        "waterReminderInvalidWindow": "Czas końcowy musi być późniejszy niż czas początkowy."
     },
     "workoutSettings": {
         "title": "Ustawienia treningu",
@@ -935,7 +1099,17 @@
         "keepAwake": "Nie wyłączaj ekranu",
         "keepAwakeSubtitle": "Nie pozwalaj ekranowi zasnąć podczas aktywnego treningu.",
         "restSoundAccessibility": "Dźwięk timera odpoczynku",
-        "keepAwakeAccessibility": "Nie wyłączaj ekranu"
+        "keepAwakeAccessibility": "Nie wyłączaj ekranu",
+        "restSoundSilent": "Odtwarzaj w trybie cichym",
+        "restSoundSilentSubtitleIos": "Odtwarzaj sygnał przerwy nawet wtedy, gdy telefon jest w trybie cichym, także gdy aplikacja działa w tle lub ekran jest zablokowany.",
+        "restSoundSilentSubtitle": "Odtwarzaj sygnał przerwy nawet wtedy, gdy telefon jest w trybie cichym lub wibracji.",
+        "restSoundSilentAccessibility": "Odtwarzaj dźwięk timera przerwy w trybie cichym",
+        "adaptiveCoaching": "Sugestie adaptacyjne",
+        "adaptiveCoachingSubtitle": "Dostosowuje nadchodzące serie i sugestie ćwiczeń na podstawie Twojej informacji zwrotnej z sesji.",
+        "adaptiveCoachingAccessibility": "Sugestie adaptacyjne",
+        "duckMusic": "Ściszaj muzykę podczas sygnałów",
+        "duckMusicSubtitle": "Krótko przycisz muzykę z innych aplikacji podczas sygnału dźwiękowego lub komunikatu głosowego treningu.",
+        "duckMusicAccessibility": "Ściszaj muzykę podczas sygnałów"
     },
     "restPeriod": {
         "title": "Czas przerwy",
@@ -1137,7 +1311,10 @@
             "beforeMeal": "Przed posiłkiem",
             "withMeal": "W trakcie posiłku",
             "afterMeal": "Po posiłku",
-            "awayFromMeals": "Z dala od posiłków"
+            "awayFromMeals": "Z dala od posiłków",
+            "softgel": "Miękka kapsułka",
+            "gummy": "Żelka",
+            "powder": "Proszek"
         },
         "weekdays": {
             "title": "Dni tygodnia",
@@ -1183,6 +1360,47 @@
         "inactiveCount_many": "Nieaktywnych ({{count}})",
         "mealRelation": {
             "awayFromMeals": "Poza posiłkami"
+        },
+        "notificationScheduledDoses_one": "Masz {{count}} zaplanowaną dawkę",
+        "notificationScheduledDoses_few": "Masz {{count}} zaplanowane dawki",
+        "notificationScheduledDoses_many": "Masz {{count}} zaplanowanych dawek",
+        "notificationScheduledDosesNamed": "Zaplanowane dawki: {{names}}",
+        "notificationScheduledDosesOverflow_one": "Zaplanowane dawki: {{names}}, i jeszcze {{count}}",
+        "notificationScheduledDosesOverflow_few": "Zaplanowane dawki: {{names}}, i jeszcze {{count}}",
+        "notificationScheduledDosesOverflow_many": "Zaplanowane dawki: {{names}}, i jeszcze {{count}}",
+        "filter": {
+            "all": "Wszystkie",
+            "meds": "Leki",
+            "supplements": "Suplementy"
+        },
+        "supplement": {
+            "add": "Dodaj suplement",
+            "none": "Brak suplementów",
+            "toggle": "To jest suplement",
+            "form": "Forma",
+            "formTitle": "Forma suplementu",
+            "newTitle": "Nowy suplement",
+            "editTitle": "Edytuj suplement",
+            "nameRequired": "Wprowadź nazwę suplementu.",
+            "invalidAmount": "Ilości składników odżywczych muszą być liczbami nie mniejszymi od zera.",
+            "nutrientsFailed": "Nie udało się skonfigurować składników odżywczych: {{error}}",
+            "nutritionTitle": "Wartości odżywcze na porcję",
+            "nutritionHint": "Wpisz wartości z etykiety dla jednej porcji. Każda zapisana dawka dodaje je do Twojego dnia.",
+            "energyAndMacros": "Energia i makroskładniki",
+            "vitaminsAndMinerals": "Witaminy, minerały i więcej",
+            "addNutrient": "Dodaj składnik odżywczy",
+            "multivitaminPanel": "Panel multivitamin",
+            "amountA11y": "Ilość {{name}} w {{unit}}",
+            "removeNutrient": "Usuń {{name}}",
+            "nutrientCount_one": "{{count}} składnik odżywczy",
+            "nutrientCount_few": "{{count}} składniki odżywcze",
+            "nutrientCount_many": "{{count}} składników odżywczych",
+            "scheduleResetFailed": "Nie udało się zresetować zaplanowanych dawek: {{error}}",
+            "scheduleRestoreFailed": "Nie udało się przywrócić dawki dla {{schedules}}. Ustaw ją ponownie w harmonogramie.",
+            "unnamedSchedule": "harmonogram",
+            "modeUpdateNotApplied": "Żądany tryb suplementu nie został zastosowany.",
+            "nutrientsNotSaved": "Suplement został utworzony, ale jego wartości składników odżywczych nie zostały zapisane, ponieważ to konto nie ma dostępu do dziennika.",
+            "nutrientsNotUpdated": "Zmiany składników odżywczych nie zostały zapisane."
         }
     },
     "scheduleSummary": {
@@ -1303,6 +1521,15 @@
                 "late": "Opóźniona miesiączka — dzień 31",
                 "unknown": "Faza cyklu"
             }
+        },
+        "watch": {
+            "title": "Apple Watch",
+            "description": "Stan połączenia z zegarkiem. Check-iny zapisane na zegarku są kolejkowane i dostarczane nawet wtedy, gdy „osiągalność” jest wyłączona — szara kropka nie oznacza tu utraty danych.",
+            "paired": "Zegarek sparowany",
+            "notPaired": "Brak sparowanego zegarka",
+            "unsupported": "Brak obsługi na tej platformie",
+            "reachable": "Aplikacja zegarka teraz osiągalna",
+            "notReachable": "Aplikacja zegarka nie jest na pierwszym planie"
         }
     },
     "workout": {
@@ -1609,7 +1836,21 @@
         "setOf_many": "Seria {{number}} z {{count}}",
         "repCount_one": "{{formattedCount}} powtórzenie",
         "repCount_few": "{{formattedCount}} powtórzenia",
-        "repCount_many": "{{formattedCount}} powtórzeń"
+        "repCount_many": "{{formattedCount}} powtórzeń",
+        "addDropSets": "Dodaj {{sets}} drop-setów (-{{percent}}%)",
+        "dismissLocation": "Odrzuć lokalizację",
+        "gymLocation": "Siłownia / miejsce",
+        "gymLocationDesc": "Oznacz ten trening obecną siłownią lub obiektem treningowym",
+        "locationPlaceholder": "np. Planet Fitness — Centrum",
+        "metricRir": "RIR",
+        "recentLocations": "Ostatnie lokalizacje",
+        "tagPlaceholder": "Wpisz, aby dodać lub wyszukać...",
+        "addCustomTag": "Dodaj „{{tag}}”",
+        "modalityBodyweight": "Masa ciała (+/− obciążenie)",
+        "bodyweightBanner": "Ćwiczenie z masą ciała: liczy Twoją masę ciała ({{bodyWeight}} {{unit}}) plus wprowadzony ciężar. Użyj znaku minus dla asysty.",
+        "bodyweightBannerNoWeight": "Ćwiczenie z masą ciała: liczy Twoją masę ciała plus wprowadzony ciężar. Użyj znaku minus dla asysty. Zapisz masę ciała, aby móc policzyć objętość.",
+        "modalityWeightDistance": "Ciężar i dystans (przenoszenie)",
+        "modalityWeightDuration": "Ciężar i czas (trzymanie obciążenia)"
     },
     "cycleCard": {
         "mode": {
@@ -1691,7 +1932,14 @@
         "lastFast": "Ostatni post: {{duration}}",
         "lastFastWithDate": "Ostatni post: {{duration}} · {{date}}",
         "today": "dzisiaj",
-        "yesterday": "wczoraj"
+        "yesterday": "wczoraj",
+        "auto": "Auto",
+        "autoFromMeal": "Auto · {{meal}}",
+        "eatingWindow": "Okno jedzenia",
+        "eatingWindowOpen": "Okno jedzenia",
+        "eatingWindowMeal": "Okno · {{meal}}",
+        "eatingWindowProgress": "W oknie jedzenia pozostało {{remaining}}",
+        "details": "Szczegóły"
     },
     "fastingProtocol": {
         "fastStarted": "Post rozpoczęty",
@@ -1840,7 +2088,9 @@
             "tsp": "łyżeczka",
             "piece": "sztuka"
         },
-        "unitPickerLabel": "Jednostka: {{unit}}"
+        "unitPickerLabel": "Jednostka: {{unit}}",
+        "notes": "Notatki (opcjonalnie)",
+        "notesPlaceholder": "np. przepis albo sposób przygotowania"
     },
     "nutrition": {
         "protein": "białko",
@@ -1867,7 +2117,15 @@
     "exerciseSummary": {
         "tapToAdd": "Dotknij, aby dodać ćwiczenie",
         "addExercise": "Dodaj ćwiczenie",
-        "title": "Ćwiczenia"
+        "title": "Ćwiczenia",
+        "planUpNext": "Następne z planu",
+        "sessionNumber": "Sesja {{current}} z {{total}}",
+        "sessionNumberIndex": "Sesja {{current}}",
+        "startWorkout": "Start",
+        "switchSession": "Przełącz",
+        "suggestedPlanSession": "Sugerowana",
+        "scheduledToday": "Zaplanowane na dziś",
+        "selectSession": "Wybierz sesję"
     },
     "foodRow": {
         "unknownFood": "Nieznany produkt",
@@ -1984,7 +2242,14 @@
             "weightStones": "Masa ciała w kamieniach",
             "weightPounds": "Masa ciała w funtach",
             "heightFeet": "Wzrost w stopach",
-            "heightInches": "Wzrost w calach"
+            "heightInches": "Wzrost w calach",
+            "muscleMass": "Masa mięśniowa",
+            "boneMass": "Masa kostna",
+            "bodyWaterPercentage": "Woda w organizmie %",
+            "bmr": "BMR",
+            "muscleMassWithUnit": "Masa mięśniowa ({{unit}})",
+            "boneMassWithUnit": "Masa kostna ({{unit}})",
+            "bmrWithUnit": "BMR (kcal)"
         },
         "validation": {
             "invalid": "Nieprawidłowe: {{label}}",
@@ -1996,7 +2261,10 @@
             "nonNegative": "Wartość musi wynosić 0 lub więcej.",
             "invalidHeight": "Nieprawidłowy wzrost",
             "feetInchesNumber": "Wpisz liczbę stóp i cali.",
-            "bodyFatRange": "Zawartość tkanki tłuszczowej (%) musi wynosić od 0 do 100."
+            "bodyFatRange": "Zawartość tkanki tłuszczowej (%) musi wynosić od 0 do 100.",
+            "min": "Musi wynosić co najmniej {{min}}.",
+            "bodyWaterRange": "Woda w organizmie % musi mieścić się w zakresie 0–100.",
+            "bmrRange": "BMR musi mieścić się w zakresie 600–6000 kcal."
         },
         "nothingToSave": "Brak danych do zapisania",
         "enterValue": "Wpisz wartość lub wyczyść co najmniej jedno pole.",
@@ -2011,7 +2279,8 @@
             "moreCategories": "Więcej kategorii",
             "hideCategories": "Ukryj kategorie",
             "hideCategoriesToggle": "Ukryj kategorie ▴",
-            "moreCategoriesToggle": "Więcej kategorii ▾"
+            "moreCategoriesToggle": "Więcej kategorii ▾",
+            "lastValue": "Ostatnia: {{value}}"
         },
         "confirm": {
             "measurement": "pomiar",
@@ -2028,7 +2297,21 @@
             "in": "cal"
         },
         "title": "Pomiary",
-        "edit": "Edytuj pomiary"
+        "edit": "Edytuj pomiary",
+        "useLast": "Użyj ostatniej",
+        "useLastFor": "Użyj ostatniej wartości {{label}}",
+        "previousUnavailable": "Nie udało się wczytać poprzednich wartości. Twój serwer może wymagać aktualizacji.",
+        "bodyFat": {
+            "calculate": "Oblicz",
+            "useRecent": "Użyj ostatnich",
+            "calculateFailedTitle": "Nie udało się obliczyć tkanki tłuszczowej",
+            "calculatedTitle": "Obliczono tkankę tłuszczową",
+            "calculatedMessage": "Sprawdź wartość, a następnie zapisz, aby ją zachować.",
+            "profileRequired": "Ustaw płeć w profilu, aby użyć tego obliczenia.",
+            "bmiRequiredFields": "Waga, wzrost, wiek i płeć są wymagane dla metody BMI.",
+            "navyRequiredFields": "Płeć, wzrost, talia, szyja oraz (dla kobiet) biodra są wymagane dla metody US Navy.",
+            "uncomputable": "Te pomiary nie dają prawidłowego procentu tkanki tłuszczowej. Sprawdź wartości talii, szyi, wzrostu i bioder."
+        }
     },
     "foodScan": {
         "segment": {
@@ -2043,7 +2326,8 @@
             "analyzeLabel": "Nie udało się przeanalizować etykiety żywieniowej. Spróbuj ponownie.",
             "loadPhoto": "Nie udało się wczytać zdjęcia.",
             "lookupBarcode": "Nie udało się wyszukać tego kodu kreskowego. Spróbuj ponownie.",
-            "timeout": "Upłynął limit czasu żądania. Sprawdź połączenie z serwerem."
+            "timeout": "Upłynął limit czasu żądania. Sprawdź połączenie z serwerem.",
+            "retryOnDevice": "Nie udało się odczytać etykiety na tym iPhonie."
         },
         "permission": {
             "camera": "Aby używać aparatu, potrzebujemy Twojej zgody.",
@@ -2086,7 +2370,11 @@
             "retakePhoto": "Zrób zdjęcie ponownie",
             "takeLabelPhoto": "Zrób zdjęcie etykiety żywieniowej",
             "takeMealPhoto": "Zrób zdjęcie posiłku"
-        }
+        },
+        "labelReadOnDevice": "Etykieta odczytana na tym iPhonie",
+        "labelReadByServer": "Etykieta odczytana przez AI serwera",
+        "retryWithServer": "Odczytaj ponownie przez AI serwera",
+        "retryOnDevice": "Odczytaj ponownie na tym iPhonie"
     },
     "cycleToday": {
         "menstrualFlow": "Krwawienie miesiączkowe",
@@ -2324,7 +2612,10 @@
         "glycemicIndexMedium": "Średni",
         "glycemicIndexHigh": "Wysoki",
         "glycemicIndexVeryHigh": "Bardzo wysoki",
-        "saturatedFatCompact": "Tł. nasycone"
+        "saturatedFatCompact": "Tł. nasycone",
+        "caffeine": "Kofeina",
+        "waterContent": "Zawartość wody",
+        "alcohol": "Alkohol"
     },
     "foodNutrition": {
         "hideExtra": "Ukryj dodatkowe składniki odżywcze",
@@ -2335,7 +2626,12 @@
         "over": "powyżej celu",
         "title": "Podsumowanie",
         "collapse": "Zwiń tę sekcję",
-        "expand": "Rozwiń tę sekcję"
+        "expand": "Rozwiń tę sekcję",
+        "projectedTdee": "Ekstrapolowane TDEE: {{value}} kcal",
+        "goalModeTarget": "Cel trybu celu: {{value}} kcal",
+        "healthConnectProjectionSource": "Suma kalorii z Health Connect",
+        "fallbackProjectionSource": "Zapasowo: BMR + aktywne kalorie",
+        "legacyProjectionSource": "Ekstrapolacja z urządzenia"
     },
     "dateRange": {
         "removeTitle": "Wybierz zakres dat do usunięcia",
@@ -2400,7 +2696,9 @@
         "saved": "Zapisano",
         "equivalentUnitsUpdated_one": "Zapisano · zaktualizowano {{formattedCount}} równoważną jednostkę",
         "equivalentUnitsUpdated_few": "Zapisano · zaktualizowano {{formattedCount}} równoważne jednostki",
-        "equivalentUnitsUpdated_many": "Zapisano · zaktualizowano {{formattedCount}} równoważnych jednostek"
+        "equivalentUnitsUpdated_many": "Zapisano · zaktualizowano {{formattedCount}} równoważnych jednostek",
+        "notes": "Notatki",
+        "notesPlaceholder": "np. biały ryż, podwójny kurczak, bez fasoli (obsługuje markdown)"
     },
     "exerciseHistory": {
         "noSetData": "Brak danych o seriach",
@@ -2546,7 +2844,8 @@
         "iosAuthMethods": "Face ID, Touch ID lub kod urządzenia",
         "androidAuthMethods": "odcisk palca, odblokowanie twarzą lub kod urządzenia",
         "iosNameExample": "Mój iPhone",
-        "androidNameExample": "Mój telefon z Androidem"
+        "androidNameExample": "Mój telefon z Androidem",
+        "disabledHint": "Logowanie passkey jest wyłączone na tym serwerze."
     },
     "whatsNewPage": {
         "title": "Co nowego",
@@ -2783,7 +3082,39 @@
                 "name": "Głęboka ketoza",
                 "description": "Etap często wiązany ze zwiększoną autofagią"
             }
-        }
+        },
+        "tabs": {
+            "fasting": "Post",
+            "history": "Historia"
+        },
+        "startedAt": "Rozpoczęto {{time}}",
+        "targetAt": "Cel {{time}}",
+        "closesAt": "Zamknięcie {{time}}",
+        "eatingBands": {
+            "open": {
+                "name": "Okno otwarte",
+                "shortName": "Otwarte"
+            },
+            "fuel": {
+                "name": "Optymalne paliwo",
+                "shortName": "Paliwo"
+            },
+            "sustain": {
+                "name": "Środek okna",
+                "shortName": "Środek"
+            },
+            "closing": {
+                "name": "Zamykanie okna",
+                "shortName": "Zamykanie"
+            }
+        },
+        "metabolicState": "Stan metaboliczny",
+        "eatingWindowOpen": "Okno żywieniowe otwarte",
+        "remainingInEatingWindow": "Pozostało w oknie żywieniowym",
+        "eatingWindowHint": "Post wznowi się automatycznie po zamknięciu okna żywieniowego.",
+        "startFastEarly": "Rozpocznij post teraz",
+        "eatingWindowOpened": "Okno otwarte",
+        "eatingWindowCloses": "Okno się zamyka"
     },
     "exerciseDetail": {
         "sharedPublicly": "Ćwiczenie udostępniono publicznie",
@@ -2819,7 +3150,11 @@
         "deleting": "Usuwanie…",
         "deleteExercise": "Usuń ćwiczenie",
         "makePrivate": "Ustaw jako prywatne",
-        "shareWithPublic": "Udostępnij publicznie"
+        "shareWithPublic": "Udostępnij publicznie",
+        "duplicate": "Duplikuj ćwiczenie",
+        "viewImages": "Wyświetl obrazy na pełnym ekranie",
+        "duplicateName": "{{name}} (kopia)",
+        "deleteSheetTitle": "Usuń ćwiczenie"
     },
     "mealTypeSettings": {
         "reorder": "Zmień kolejność: {{name}}",
@@ -2882,7 +3217,9 @@
         "items_many": "{{formattedCount}} elementów",
         "makesSummary_one": "Przygotowano: {{servings}} {{servingLabel}} · {{count}} {{ingredientLabel}}",
         "makesSummary_few": "Przygotowano: {{servings}} {{servingLabel}} · {{count}} {{ingredientLabel}}",
-        "makesSummary_many": "Przygotowano: {{servings}} {{servingLabel}} · {{count}} {{ingredientLabel}}"
+        "makesSummary_many": "Przygotowano: {{servings}} {{servingLabel}} · {{count}} {{ingredientLabel}}",
+        "planMeal": "Zaplanuj posiłek",
+        "notes": "Notatki"
     },
     "dailyNutritionDetails": {
         "title": "Szczegóły wartości odżywczych",
@@ -2937,7 +3274,10 @@
             "serving_many": "porcji",
             "mealMakes_one": "posiłek daje {{formattedCount}} porcję",
             "mealMakes_few": "posiłek daje {{formattedCount}} porcje",
-            "mealMakes_many": "posiłek daje {{formattedCount}} porcji"
+            "mealMakes_many": "posiłek daje {{formattedCount}} porcji",
+            "aboutThisFood": "O tym produkcie",
+            "entryNotes": "Notatka do tego wpisu",
+            "entryNotesPlaceholder": "Cokolwiek konkretnego dotyczącego tego spożycia"
         },
         "pickers": {
             "selectServing": "Wybierz porcję",
@@ -2948,7 +3288,8 @@
         "title": "Ćwiczenia",
         "tabs": {
             "search": "Szukaj",
-            "online": "Online"
+            "online": "Online",
+            "suggested": "Proponowane"
         },
         "sections": {
             "recent": "Ostatnie",
@@ -2993,13 +3334,38 @@
         "accessibility": {
             "provider": "Dostawca ćwiczeń: {{provider}}",
             "loadingMore": "Wczytywanie kolejnych ćwiczeń"
+        },
+        "replaceTitle": "Zamień ćwiczenie",
+        "alternatives": {
+            "heading": "Zamiast {{name}}",
+            "modes": {
+                "similar": "Podobne",
+                "differentEquipment": "Inny sprzęt"
+            },
+            "reasons": {
+                "sameMuscles": "Te same mięśnie",
+                "sharesMuscle": "Podobne mięśnie",
+                "sameEquipment": "Ten sam sprzęt",
+                "differentEquipment": "Inny sprzęt",
+                "sameMovement": "Ten sam ruch",
+                "recent": "Wykonywane niedawno",
+                "inLibrary": "W Twojej bibliotece"
+            },
+            "newBadge": "Nowe",
+            "searchAll": "Szukaj we wszystkich ćwiczeniach",
+            "failed": "Nie udało się wczytać alternatyw",
+            "noMuscles": "Brak zapisanych mięśni dla {{name}}",
+            "noMusclesHint": "Dodaj jego mięśnie główne w bibliotece ćwiczeń, aby otrzymywać sugestie.",
+            "empty": "Nie znaleziono alternatyw",
+            "catalogUnavailable": "Baza Free Exercise DB jest niedostępna, więc pokazywana jest tylko Twoja biblioteka."
         }
     },
     "foodSearch": {
         "menu": {
             "newFood": "Nowy produkt",
             "newMeal": "Nowy posiłek",
-            "show": "Pokaż"
+            "show": "Pokaż",
+            "allProviders": "Wszyscy dostawcy"
         },
         "accessibility": {
             "moreFiltered": "Więcej opcji, filtr: {{filter}}",
@@ -3015,7 +3381,8 @@
             "verifiedFood": "Zweryfikowany produkt",
             "providerExpand_one": "{{provider}}, wyników: {{count}}, dotknij, aby {{action}}",
             "providerExpand_few": "{{provider}}, wyniki: {{count}}, dotknij, aby {{action}}",
-            "providerExpand_many": "{{provider}}, wyników: {{count}}, dotknij, aby {{action}}"
+            "providerExpand_many": "{{provider}}, wyników: {{count}}, dotknij, aby {{action}}",
+            "providerChange": "Dostawca {{provider}}, dotknij, aby zmienić"
         },
         "errors": {
             "detailsUnavailable": "Szczegóły niedostępne",
@@ -3028,7 +3395,8 @@
             "yourFoods": "Twoje produkty",
             "yourMeals": "Twoje posiłki",
             "topMatches": "Najlepsze dopasowania",
-            "onlineResults": "Wyniki online"
+            "onlineResults": "Wyniki online",
+            "byProvider": "Według dostawcy"
         },
         "search": {
             "placeholder": "Szukaj produktów..."
@@ -3074,6 +3442,18 @@
             "itemCount_one": "{{count}} element",
             "itemCount_few": "{{count}} elementy",
             "itemCount_many": "{{count}} elementów"
+        },
+        "multiSelect": {
+            "select": "Wybierz",
+            "cancel": "Anuluj",
+            "clear": "Wyczyść",
+            "review": "Przegląd",
+            "selectAll": "Zaznacz wszystkie",
+            "selected_one": "Wybrano {{count}}",
+            "selected_few": "Wybrano {{count}}",
+            "selected_many": "Wybrano {{count}}",
+            "limitReached": "Możesz wybrać do {{limit}} produktów",
+            "foodCheckbox": "Wybierz {{name}}"
         }
     },
     "editBarcode": {
@@ -3117,7 +3497,9 @@
             "exercise_many": "Ćwiczeń",
             "sets": "Serie",
             "volume": "Objętość",
-            "calories": "Kalorie"
+            "calories": "Kalorie",
+            "avgHeartRate": "Śr. tętno",
+            "maxHeartRate": "Maks. tętno"
         },
         "errors": {
             "needsExercise": "Trening musi zawierać ćwiczenie",
@@ -3127,7 +3509,8 @@
         "labels": {
             "details": "Szczegóły",
             "name": "Nazwa",
-            "notes": "Notatki"
+            "notes": "Notatki",
+            "location": "Siłownia / lokalizacja"
         },
         "placeholders": {
             "workoutName": "Nazwa treningu",
@@ -3217,7 +3600,9 @@
             "sets": "Serie",
             "calories": "Kalorie",
             "distance": "Dystans",
-            "averageRpe": "Średnie RPE"
+            "averageRpe": "Średnie RPE",
+            "avgHeartRate": "Śr. tętno",
+            "maxHeartRate": "Maks. tętno"
         },
         "labels": {
             "todayAt": " · Dzisiaj o ",
@@ -3264,6 +3649,9 @@
         "sections": {
             "exercises": "Ćwiczenia",
             "volume": "Objętość"
+        },
+        "units": {
+            "bpm": "bpm"
         }
     },
     "createFood": {
@@ -3289,7 +3677,8 @@
             "invalidAmount": "Nieprawidłowa ilość",
             "amountRequired": "Ilość musi być większa od zera.",
             "noMealType": "Brak typu posiłku",
-            "noMealTypesAvailable": "Brak dostępnych typów posiłków. Sprawdź ustawienia konta."
+            "noMealTypesAvailable": "Brak dostępnych typów posiłków. Sprawdź ustawienia konta.",
+            "foodSaveFailed": "Nie udało się zapisać produktu"
         }
     },
     "foodDetail": {
@@ -3311,7 +3700,9 @@
         "servingOptionsError": "Nie udało się teraz wczytać niektórych opcji porcji.",
         "barcode": "Kod kreskowy",
         "logFood": "Zapisz produkt",
-        "deleteFood": "Usuń produkt"
+        "deleteFood": "Usuń produkt",
+        "notes": "Notatki",
+        "deleteSheetTitle": "Usuń produkt"
     },
     "foodEntryView": {
         "saveChanges": "Zapisz zmiany wpisu",
@@ -3337,7 +3728,8 @@
             "saveFailed": "Nie udało się zapisać zmian",
             "deleteFailed": "Nie udało się usunąć wpisu"
         },
-        "deleteConfirm": "Czy na pewno chcesz usunąć ten wpis produktu?"
+        "deleteConfirm": "Czy na pewno chcesz usunąć ten wpis produktu?",
+        "entryNotes": "Notatka do tego wpisu"
     },
     "presetSearch": {
         "title": "Rozpocznij trening",
@@ -3388,7 +3780,11 @@
         "formatTabata": "Tabata",
         "formatEmom": "EMOM",
         "formatAmrap": "AMRAP",
-        "formatForTime": "Na czas"
+        "formatForTime": "Na czas",
+        "format": "Format",
+        "formatStandard": "Standardowy (serie i powtórzenia)",
+        "timeCapMinutes": "Limit czasu (w minutach)",
+        "timeCapPlaceholder": "np. 20"
     },
     "logScreen": {
         "title": "Dzienniki",
@@ -3514,7 +3910,9 @@
             "meal": "Posiłek",
             "selectMeal": "Wybierz posiłek",
             "time": "Godzina",
-            "foodsInMeal": "Produkty w tym posiłku"
+            "foodsInMeal": "Produkty w tym posiłku",
+            "notes": "Notatka do tego wpisu",
+            "aboutThisMeal": "O tym posiłku"
         },
         "states": {
             "noFoods": "Brak produktów w tym posiłku."
@@ -3557,7 +3955,21 @@
             "deleteActivityTitle": "Usunąć aktywność?",
             "deleteActivityMessage": "Ta aktywność zostanie trwale usunięta.",
             "deleteExerciseTitle": "Usunąć ćwiczenie?",
-            "deleteExerciseMessage": "To ćwiczenie zostanie usunięte z biblioteki. Zapisane wcześniej sesje pozostaną zachowane."
+            "deleteExerciseMessage": "To ćwiczenie zostanie usunięte z biblioteki. Zapisane wcześniej sesje pozostaną zachowane.",
+            "deleteWithHistoryTitle": "Usunąć również treningi?",
+            "deleteWithHistoryMessage": "Spowoduje to również trwałe usunięcie zapisanych treningów dla tego ćwiczenia. Tego nie da się cofnąć."
+        },
+        "hidden": {
+            "title": "Ćwiczenie ukryte",
+            "usedByOthers": "Jest używane przez inne osoby, więc zostało ukryte zamiast usunięte. Ich historia pozostaje nienaruszona."
+        },
+        "options": {
+            "hide": "Ukryj z wyszukiwania",
+            "hideDescription": "Zostawia wszystko bez zmian. Ćwiczenie po prostu przestaje pojawiać się w wyszukiwaniu.",
+            "delete": "Usuń",
+            "deleteDescription": "Usuwa go z Twojej biblioteki, presetów i planów. Zapisane treningi zostają.",
+            "deleteWithHistory": "Usuń wraz z historią",
+            "deleteWithHistoryDescription": "Usuwa również trwale Twoje zapisane treningi dla tego ćwiczenia."
         }
     },
     "foodPhotoEstimate": {
@@ -3585,7 +3997,70 @@
             "invalidRequiredNutrition": "Kalorie, białko, węglowodany i tłuszcz muszą być liczbami nieujemnymi.",
             "invalidOptionalNutrition": "Wszystkie wartości odżywcze muszą być liczbami nieujemnymi.",
             "invalidServingSize": "Nieprawidłowa wielkość porcji",
-            "invalidServingSizeMessage": "Wielkość porcji musi być liczbą większą od zera."
+            "invalidServingSizeMessage": "Wielkość porcji musi być liczbą większą od zera.",
+            "noIngredients": "Zachowaj co najmniej jeden składnik albo przełącz na jeden produkt.",
+            "invalidServings": "Nieprawidłowe porcje",
+            "positiveServings": "Całkowita masa dania, wielkość porcji i zjedzona ilość muszą być większe od zera."
+        },
+        "ingredients": {
+            "editRow": "Edytuj {{name}}",
+            "remove": "Usuń {{name}}",
+            "name": "Nazwa",
+            "grams": "Masa (g)",
+            "calories": "Kalorie",
+            "protein": "Białko (g)",
+            "carbs": "Węglowodany (g)",
+            "fat": "Tłuszcz (g)",
+            "fiber": "Błonnik (g)",
+            "sugar": "Cukry (g)",
+            "recalcFromGrams": "Wartości odżywcze były edytowane ręcznie, więc nie odpowiadają już masie. Dotknij, aby przeliczyć na podstawie masy.",
+            "heading": "Wykryte składniki",
+            "empty": "Wszystkie składniki zostały usunięte. Dodaj ponownie albo przełącz na jeden produkt.",
+            "count_one": "{{count}} składnik",
+            "count_few": "{{count}} składniki",
+            "count_many": "{{count}} składników",
+            "totals": "Suma",
+            "rowSummary": "{{grams}} g · {{calories}} kcal",
+            "macroSummary": "{{calories}} kcal · {{protein}}B · {{carbs}}W · {{fat}}T",
+            "addFood": "Dodaj produkt",
+            "addedFood": "Produkt",
+            "pickedRowSummary": "{{quantity}} {{unit}} · {{calories}} kcal",
+            "pickedFoodNote": "Dodano z Twoich produktów. Usuń go i dodaj ponownie, aby zmienić ilość."
+        },
+        "match": {
+            "useYourFood": "Z Twoich produktów: {{name}} · dotknij, aby użyć",
+            "usingYourFood": "Użyto Twojego produktu: {{name}} · dotknij, aby użyć szacowania AI",
+            "matchedCount_one": "{{count}} składnik dopasowany do Twoich produktów",
+            "matchedCount_few": "{{count}} składniki dopasowane do Twoich produktów",
+            "matchedCount_many": "{{count}} składników dopasowanych do Twoich produktów"
+        },
+        "mode": {
+            "ingredients": "Składniki",
+            "combined": "Jeden produkt",
+            "explainerIngredients": "Zapisuje jeden posiłek, który możesz rozwinąć do poszczególnych składników.",
+            "explainerCombined": "Zapisuje cały talerz jako jeden produkt.",
+            "label": "Zapisz jako",
+            "ingredientsAndMeal": "Składniki + posiłek wielokrotnego użytku",
+            "ingredientsOnly": "Tylko składniki",
+            "oneFood": "Jeden produkt",
+            "mealName": "Nazwa posiłku",
+            "hintIngredientsAndMeal": "Każdy składnik staje się osobnym produktem, a posiłek jest zapisany, więc możesz zapisać go ponownie bez zdjęcia.",
+            "hintIngredientsOnly": "Każdy składnik staje się osobnym produktem. Nie zapisuje posiłka wielokrotnego użytku.",
+            "hintOneFood": "Zapisuje cały talerz jako jeden produkt, bez rozbicia na składniki."
+        },
+        "servings": {
+            "unit": "Jednostka",
+            "total": "Łącznie porcji",
+            "totalAmount": "Całkowita ilość ({{unit}})",
+            "servingSize": "Jedna porcja to ({{unit}})",
+            "eatenServings": "Zjedzone porcje",
+            "eatenAmount": "Zjedzone ({{unit}})",
+            "hint": "Składniki powyżej to całe danie — wskaż, na ile porcji się dzieli, a do dziennika trafia tylko to, co zjedzone.",
+            "derivedYield_one": "Wychodzi ok. {{count}} porcja",
+            "derivedYield_few": "Wychodzi ok. {{count}} porcje",
+            "derivedYield_many": "Wychodzi ok. {{count}} porcji",
+            "perServing": "Na porcję",
+            "logging": "Zapis"
         }
     },
     "mealTypeForm": {
@@ -3783,7 +4258,11 @@
         "meal": "Posiłek",
         "selectMeal": "Wybierz posiłek",
         "date": "Data",
-        "servings": "Liczba porcji"
+        "servings": "Liczba porcji",
+        "groupedSummary_one": "{{count}} składnik zostanie zapisany jako jeden posiłek.",
+        "groupedSummary_few": "{{count}} składniki zostaną zapisane jako jeden posiłek.",
+        "groupedSummary_many": "{{count}} składników zostanie zapisanych jako jeden posiłek.",
+        "failed": "Nie udało się zapisać szacunku"
     },
     "workoutAdd": {
         "addExercise": "Dodaj ćwiczenie",
@@ -3859,7 +4338,8 @@
             "scoop": "miarka",
             "bar": "baton",
             "stick": "paluszek",
-            "whole": "całość"
+            "whole": "całość",
+            "flOz": "fl oz"
         },
         "confidence": {
             "high": "wysoka",
@@ -3929,7 +4409,8 @@
     "charts": {
         "weight": {
             "title": "Masa ciała",
-            "loadFailed": "Nie udało się wczytać danych o masie ciała"
+            "loadFailed": "Nie udało się wczytać danych o masie ciała",
+            "empty": "Brak danych o wadze za ten okres"
         },
         "steps": {
             "title": "Kroki",
@@ -3954,7 +4435,33 @@
         "bbt": {
             "tooltip": "Dotknij linii, aby zobaczyć szczegóły",
             "empty": "Zapisuj codziennie temperaturę, aby wyświetlić wykres BBT."
-        }
+        },
+        "sleep": {
+            "title": "Sen",
+            "loadFailed": "Nie udało się wczytać danych o śnie",
+            "empty": "Brak danych o śnie za ten okres",
+            "avgTimeInBed": "Śr. czas w łóżku",
+            "avgTimeAsleep": "Śr. czas snu",
+            "tooltip": "{{timeInBed}} w łóżku · {{timeAsleep}} snu"
+        },
+        "hydration": {
+            "title": "Nawodnienie",
+            "loadFailed": "Nie udało się wczytać danych o nawodnieniu",
+            "empty": "Brak danych o nawodnieniu za ten okres",
+            "tooltip": "{{formattedVolume}} {{unit}} · {{date}}"
+        },
+        "calories": {
+            "title": "Kalorie",
+            "loadFailed": "Nie udało się wczytać danych o kaloriach",
+            "empty": "Brak danych o kaloriach za ten okres",
+            "tooltip": "{{formattedCount}} kcal spożyte",
+            "tooltipMacro": "{{percent}}% {{macroLabel}}",
+            "otherMacro": "Inne",
+            "avgCalories": "Śr.",
+            "avgCaloriesValue": "{{formattedCount}} kcal",
+            "noAverage": "—"
+        },
+        "allTrendsHidden": "Wszystkie wykresy są ukryte. Wybierz, które pokazać w ustawieniach pulpitu."
     },
     "exerciseLibrary": {
         "title": "Ćwiczenia",
@@ -4068,7 +4575,10 @@
         "heartRateZoneModerate": "Umiarkowana",
         "heartRateZoneIntense": "Intensywna",
         "heartRateZonePeak": "Szczytowa",
-        "durationMinutesSeconds": "{{minutes}} min {{seconds}} s"
+        "durationMinutesSeconds": "{{minutes}} min {{seconds}} s",
+        "wodScoreFormat": "Wynik {{format}}",
+        "timeCap": "Limit czasu",
+        "scalingNotes": "Uwagi o skalowaniu"
     },
     "copyMeal": {
         "title": "Kopiuj posiłek: {{meal}}",
@@ -4159,7 +4669,21 @@
     "foodDelete": {
         "failed": "Nie udało się usunąć produktu",
         "title": "Usuń produkt",
-        "message": "Czy na pewno chcesz usunąć ten produkt? Istniejące wpisy pozostaną bez zmian."
+        "message": "Czy na pewno chcesz usunąć ten produkt? Istniejące wpisy pozostaną bez zmian.",
+        "hidden": {
+            "title": "Produkt ukryty",
+            "usedByOthers": "Jest używany przez inne osoby, więc został ukryty zamiast usunięty. Ich historia pozostaje nienaruszona."
+        },
+        "confirmWithHistoryTitle": "Usunąć również wpisy?",
+        "confirmWithHistoryMessage": "Spowoduje to również trwałe usunięcie zapisanych wpisów w dzienniku dla tego produktu. Tego nie da się cofnąć.",
+        "options": {
+            "hide": "Ukryj z wyszukiwania",
+            "hideDescription": "Zostawia wszystko bez zmian. Produkt po prostu przestaje pojawiać się w wyszukiwaniu.",
+            "delete": "Usuń",
+            "deleteDescription": "Usuwa go z Twojej biblioteki, posiłków i planów posiłków. Zapisane wpisy zostają.",
+            "deleteWithHistory": "Usuń wraz z historią",
+            "deleteWithHistoryDescription": "Usuwa również trwale Twoje zapisane wpisy w dzienniku dla tego produktu."
+        }
     },
     "exerciseEditing": {
         "removeTitle": "Usunąć ćwiczenie?",
@@ -4205,13 +4729,142 @@
         "severity": {
             "mild": "Łagodne",
             "moderate": "Umiarkowane",
-            "severe": "Silne"
+            "severe": "Silne",
+            "unset": "Nie ustawione",
+            "none": "Brak",
+            "substantial": "Znaczne",
+            "unbearable": "Nie do zniesienia"
         },
         "categories": {
             "general": "Ogólne",
             "pain": "Ból",
             "skin": "Skóra",
-            "other": "Inne"
+            "other": "Inne",
+            "head": "Głowa",
+            "gi": "Żołądek i jelita",
+            "respiratory": "Oddychanie",
+            "mental": "Psychika"
+        },
+        "title": "Objawy",
+        "history": "Historia",
+        "historyTitle": "Historia objawów",
+        "logTitle": "Zapisz objaw",
+        "editTitle": "Edytuj objaw",
+        "manageTitle": "Zarządzaj objawami",
+        "newDefinitionTitle": "Nowy typ objawu",
+        "editDefinitionTitle": "Edytuj typ objawu",
+        "symptom": "Objaw",
+        "orCustomName": "Lub wpisz własny objaw...",
+        "ongoingEpisode": "Śledź jako trwający epizod",
+        "startedWhen": "Rozpoczęto:",
+        "endEpisodeNow": "Zakończ epizod teraz",
+        "severityTitle": "Nasilenie",
+        "location": "Lokalizacja",
+        "qualities": "Charakter bólu",
+        "associated": "Objawy towarzyszące / aura",
+        "triggers": "Czynniki wyzwalające",
+        "treatments": "Leczenie i ulga",
+        "impact": "Wpływ na dzień",
+        "notes": "Notatki i obserwacje",
+        "notesPlaceholder": "Dodatkowe notatki lub obserwacje...",
+        "logSymptom": "Zapisz objaw",
+        "logAnother": "Zapisz kolejny objaw",
+        "logShort": "+ Zapisz",
+        "activeEpisode": "Aktywny epizod",
+        "noneToday": "Dziś brak",
+        "anySymptomsQuestion": "Czy odczuwasz dziś jakieś objawy lub ból?",
+        "markedSymptomFreeToday": "Oznaczono dziś brak objawów",
+        "noSymptomsTodayPrompt": "Brak objawów dziś?",
+        "markFree": "Oznacz jako bez objawów",
+        "noSymptomsLoggedToday": "Dziś nie zapisano żadnych objawów",
+        "sparkline7d": "Trend 7-dniowy",
+        "freeDaysShort": "dni bez objawów",
+        "insights30d": "Podsumowanie 30 dni",
+        "topTriggers": "Główne czynniki wyzwalające",
+        "effectiveRelief": "Skuteczna ulga",
+        "countTimes": "({{times}}×)",
+        "noneRecorded": "Brak zapisów",
+        "activeOngoing": "Aktywne trwające epizody",
+        "noHistory": "Nie znaleziono wpisów objawów",
+        "noHistoryDesc": "Wpisy i przeszłe epizody z ostatnich 30 dni pojawią się tutaj.",
+        "yourCustomSymptoms": "Twoje własne objawy",
+        "noCustomSymptoms": "Nie utworzono jeszcze własnych objawów.",
+        "createFirst": "+ Utwórz własny objaw",
+        "builtInTemplates": "Szablony standardowe",
+        "namePlaceholder": "np. migrena, ból kolana, refluks",
+        "templates": {
+            "generic": "Ogólne",
+            "headache": "Ból głowy lub migrena",
+            "pain": "Ból",
+            "gi": "Żołądek i jelita",
+            "respiratory": "Oddychanie i alergia",
+            "skin": "Skóra",
+            "mental": "Nastrój i lęk"
+        },
+        "scales": {
+            "oneToTen": "Skala 1–10",
+            "oneToFive": "Skala 1–5",
+            "noneToSevere": "Brak – Silne (5 poziomów)",
+            "count": "Liczba",
+            "text": "Tylko notatki"
+        },
+        "impacts": {
+            "none": "Brak",
+            "mild": "Łagodny",
+            "moderate": "Umiarkowany",
+            "severe": "Silny"
+        },
+        "timing": {
+            "now": "Teraz",
+            "m15": "-15 min",
+            "h1": "-1 h",
+            "h3": "-3 h",
+            "started": "Rozpoczęto",
+            "episode": "Epizod"
+        },
+        "name": "Nazwa objawu",
+        "nameRequired": "Wprowadź nazwę objawu.",
+        "template": "Szablon (prekonfigurowane sekcje)",
+        "category": "Kategoria",
+        "scaleType": "Skala nasilenia",
+        "isEpisodic": "Epizody z czasem trwania",
+        "isEpisodicDesc": "Śledzi czas rozpoczęcia, baner trwania i łączny czas trwania",
+        "isPinned": "Przypnij na górze listy",
+        "isPinnedDesc": "Wyświetla się pierwszy w chipach szybkiego zapisu",
+        "deleteTitle": "Usuń wpis objawu",
+        "deleteConfirm": "Czy na pewno chcesz usunąć ten wpis?",
+        "mapPerspective": "Lewa i prawa strona odpowiadają Twojemu ciału",
+        "addTreatmentPlaceholder": "Dodaj lek lub metodę ulgi...",
+        "updateFailed": "Nie udało się zaktualizować wpisu objawu",
+        "endFailed": "Nie udało się zakończyć epizodu",
+        "saveDefinitionFailed": "Nie udało się zapisać objawu",
+        "saveOptionFailed": "Nie udało się zapisać opcji",
+        "severityFailed": "Nie udało się zaktualizować nasilenia",
+        "freeFailed": "Nie udało się zaktualizować statusu braku objawów",
+        "photoFailed": "Nie udało się wysłać zdjęcia",
+        "views": {
+            "front": "Przód",
+            "back": "Tył"
+        },
+        "effectiveness": {
+            "helped": "Pomogło",
+            "partly": "Częściowo",
+            "didntHelp": "Nie pomogło",
+            "unknown": "Niepewne"
+        },
+        "kinds": {
+            "relief": "Ulga / bez leków",
+            "medication": "Lek"
+        },
+        "actions": {
+            "endNow": "Zakończ teraz",
+            "stillOngoing": "Wciąż trwa"
+        },
+        "notification": {
+            "dailyTitle": "Codzienny przegląd objawów",
+            "dailyBody": "Jak się dziś czujesz? Dotknij, aby zapisać objawy.",
+            "nudgeTitle": "Epizod nadal aktywny?",
+            "nudgeBody": "{{name}} trwa od {{hours}} godz. Czy nadal trwa, czy już się zakończył?"
         }
     },
     "waterIntake": {
@@ -4220,7 +4873,10 @@
         "noPrimary": "Brak głównego pojemnika",
         "noContainers": "Brak pojemników na wodę",
         "multipleNoPrimary": "Masz kilka pojemników na wodę, ale żaden nie jest oznaczony jako główny. Ustaw główny pojemnik na serwerze.",
-        "configure": "Skonfiguruj pojemnik na wodę na serwerze, aby śledzić nawodnienie."
+        "configure": "Skonfiguruj pojemnik na wodę na serwerze, aby śledzić nawodnienie.",
+        "multipleNoPrimaryMobile": "Masz kilka pojemników na wodę, ale żaden nie jest oznaczony jako główny. Dotknij, aby wybrać.",
+        "configureMobile": "Dodaj pojemnik na wodę, aby rozpocząć śledzenie nawodnienia.",
+        "defaultContainer": "Domyślny"
     },
     "activeWorkoutAutosave": {
         "failedTitle": "Nie zapisano treningu",
@@ -4624,7 +5280,8 @@
         "configure": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić szablony treningów."
     },
     "time": {
-        "hoursShort": "godz."
+        "hoursShort": "godz.",
+        "minutesShort": "min"
     },
     "exerciseImage": {
         "playAnimation": "Odtwórz animację ćwiczenia",
@@ -4677,7 +5334,15 @@
         "timer": {
             "title": "Minutnik medytacji",
             "resume": "Wznów",
-            "pause": "Wstrzymaj"
+            "pause": "Wstrzymaj",
+            "countdownSubtitle": "Sesja medytacji z licznikiem czasu",
+            "stopwatchSubtitle": "Sesja bez limitu czasu",
+            "countdown": "Odliczanie",
+            "openStopwatch": "Otwórz stoper",
+            "meditating": "Medytacja...",
+            "peaceful": "Usiądź wygodnie",
+            "start": "Rozpocznij",
+            "finishAndSave": "Zakończ i zapisz"
         },
         "actions": {
             "breathe": "Oddychaj",
@@ -4690,7 +5355,96 @@
             "reflection": "Refleksja",
             "walking": "Uważny spacer",
             "yoga": "Joga",
-            "other": "Inne"
+            "other": "Inne",
+            "guided": "Z przewodnikiem",
+            "unguided": "Bez przewodnika"
+        },
+        "card": {
+            "title": "Uważność",
+            "sessionCount_one": "{{count}} sesja",
+            "sessionCount_few": "{{count}} sesje",
+            "sessionCount_many": "{{count}} sesji",
+            "todayTotal": "dzisiaj",
+            "minuteUnit": "min",
+            "bpmUnit": "bpm",
+            "msUnit": "ms",
+            "details": "Szczegóły",
+            "openDetails": "Otwórz szczegóły uważności",
+            "noSessions": "Dziś brak sesji",
+            "readyPrompt": "Czas na praktykę",
+            "latestAt": "Ostatnia o",
+            "latestSession": "Ostatnia",
+            "tapToPractice": "Zrób przerwę na uważność · Oddychanie i timer w szczegółach"
+        },
+        "tools": {
+            "title": "Praktyka interaktywna",
+            "breatheTitle": "Oddech sterowany",
+            "breatheSubtitle": "Protokoły Box, 4-7-8, koherencja",
+            "timerTitle": "Timer medytacji",
+            "timerSubtitle": "Odliczanie i otwarty stoper",
+            "startAction": "Uruchom"
+        },
+        "detail": {
+            "title": "Uważność",
+            "practiceTab": "Praktyka i zapisy",
+            "historyTab": "Historia",
+            "historyHint": "Dotknij edycji lub usunięcia, aby zarządzać sesjami",
+            "noHistory": "Brak sesji uważności",
+            "noHistorySubtitle": "Ukończ sesję oddechową lub medytacyjną, aby rozpocząć śledzenie",
+            "logTitle": "Zapisz sesję uważności",
+            "saveSession": "Zapisz sesję uważności",
+            "updateSession": "Zaktualizuj sesję uważności",
+            "sessionSaved": "Sesję zapisano pomyślnie",
+            "sessionDeleted": "Sesję usunięto",
+            "deletePrompt": "Usuń sesję uważności",
+            "deleteConfirm": "Czy na pewno chcesz usunąć tę sesję?"
+        },
+        "modal": {
+            "addTitle": "Zapisz sesję uważności",
+            "editTitle": "Edytuj sesję uważności",
+            "type": "Typ sesji",
+            "durationMinutes": "Czas trwania (minuty)",
+            "durationMinutesAccessibility": "Czas trwania w minutach",
+            "minutes": "Minuty",
+            "seconds": "Sekundy",
+            "durationSecondsAccessibility": "Czas trwania w sekundach",
+            "vitalsHeader": "Tętno i HRV (opcjonalnie)",
+            "avgHr": "Średnie HR (bpm)",
+            "avgHrAccessibility": "Średnie tętno",
+            "hrv": "HRV (ms)",
+            "hrvAccessibility": "HRV RMSSD",
+            "startHr": "HR początkowe",
+            "startHrAccessibility": "Tętno początkowe",
+            "endHr": "HR końcowe",
+            "endHrAccessibility": "Tętno końcowe",
+            "notes": "Notatki (opcjonalnie)",
+            "notesAccessibility": "Notatki",
+            "notesPlaceholder": "Jak przebiegła Twoja praktyka?"
+        },
+        "fields": {
+            "durationMinutes": "Czas trwania (min)",
+            "sessionType": "Typ",
+            "notes": "Notatki",
+            "heartRateAvg": "Średnie tętno (bpm)",
+            "heartRateStart": "Tętno początkowe (bpm)",
+            "heartRateEnd": "Tętno końcowe (bpm)",
+            "hrvRmssd": "HRV RMSSD (ms)"
+        },
+        "breathwork": {
+            "title": "Praca z oddechem",
+            "boxDescription": "4-4-4-4 • Skupienie i spokój",
+            "relaxDescription": "Głęboki spokój i przygotowanie do snu",
+            "coherenceDescription": "5-5 • Równowaga i spadek tętna",
+            "ready": "Przygotuj się",
+            "inhale": "Wdech",
+            "hold": "Zatrzymanie",
+            "exhale": "Wydech",
+            "time": "Czas",
+            "cycles": "Cykle",
+            "start": "Rozpocznij oddychanie",
+            "pause": "Pauza",
+            "resume": "Wznów",
+            "finishAndSave": "Zakończ i zapisz"
         }
     },
     "muscles": {
@@ -4739,7 +5493,14 @@
         "scaled": "Skalowane",
         "timeCapLabel": "Limit: {{cap}}",
         "wodScoring": "Punktacja WOD",
-        "work": "Praca"
+        "work": "Praca",
+        "finished": "Osiągnięto limit czasu",
+        "roundPlusOne": "+1 runda (ukończono {{current}})",
+        "timeCap": "Limit czasu",
+        "wodScore": "Wynik WOD",
+        "amrapScore": "{{rounds}} rund + {{reps}} powt.",
+        "completed": "Ukończono",
+        "roundsCompleted": "Ukończono rund: {{rounds}}"
     },
     "guidedWorkout": {
         "cue": {
@@ -4781,7 +5542,8 @@
             "doneHintReps_one": "Dotknij po wykonaniu {{count}} powt.",
             "doneHintReps_few": "",
             "doneHintReps_many": "",
-            "doneHint": "Dotknij, gdy skończysz"
+            "doneHint": "Dotknij, gdy skończysz",
+            "done": "Wszystkie serie ukończone. Zakończ trening, aby go zapisać."
         },
         "settings": {
             "section": "Treningi prowadzone",
@@ -4795,7 +5557,9 @@
             "countdownValue_few": "",
             "countdownValue_many": "",
             "sample": "Tak będą brzmieć Twoje treningi prowadzone.",
-            "test": "Testuj głos"
+            "test": "Testuj głos",
+            "enabledSubtitle": "Odczytuje każde ćwiczenie i jego cel, odlicza wprowadzenie, automatycznie prowadzi serie czasowe i przechodzi do następnej serii. Podpowiedzi odtwarzają się nawet przy wyciszonym telefonie, a ekran pozostaje włączony podczas treningu.",
+            "voiceDefault": "Domyślny głos urządzenia"
         }
     },
     "workoutFeedback": {
@@ -4812,7 +5576,9 @@
         "painPrivacy": "Podpowiedzi dla tych ćwiczeń będą lżejsze, nigdy cięższe.",
         "rateExercises": "Oceń każde ćwiczenie",
         "saving": "Zapisywanie…",
-        "saved": "Zapisano"
+        "saved": "Zapisano",
+        "saveFailed": "Nie udało się zapisać Twojej opinii. Spróbuj ponownie.",
+        "loadFailed": "Nie udało się wczytać Twojej opinii."
     },
     "adaptiveCoaching": {
         "reasons": {
@@ -4829,5 +5595,544 @@
         "useUsual": "Użyj mojej zwykłej",
         "useAdjusted": "Użyj dostosowanej podpowiedzi",
         "seeAlternatives": "Zobacz alternatywy"
+    },
+    "mealPlans": {
+        "title": "Plany posiłków",
+        "create": "Utwórz plan posiłków",
+        "createTitle": "Utwórz plan posiłków",
+        "editTitle": "Edytuj plan posiłków",
+        "active": "Aktywny",
+        "inactive": "Nieaktywny",
+        "dateRange": "{{start}} – {{end}}",
+        "starting": "Od {{date}}",
+        "moreAssignments_one": "+{{count}} więcej",
+        "moreAssignments_few": "+{{count}} więcej",
+        "moreAssignments_many": "+{{count}} więcej",
+        "duplicateNamed": "Zduplikuj {{name}}",
+        "deleteNamed": "Usuń {{name}}",
+        "duplicateSuccess": "Zduplikowano plan posiłków",
+        "duplicateInactive": "Kopia jest nieaktywna, więc możesz ją najpierw przejrzeć.",
+        "duplicateFailed": "Nie udało się zduplikować planu posiłków",
+        "deleteTitle": "Usuń plan posiłków",
+        "deleteMessage": "Usunąć {{name}}? Przyszłe wpisy w dzienniku wygenerowane przez ten plan zostaną usunięte.",
+        "deleteFailed": "Nie udało się usunąć planu posiłków",
+        "deleteSuccess": "Usunięto plan posiłków",
+        "noServer": "Nie skonfigurowano serwera",
+        "noServerSubtitle": "Skonfiguruj połączenie z serwerem, aby zarządzać planami posiłków.",
+        "goToSettings": "Przejdź do ustawień",
+        "loading": "Wczytywanie planów posiłków...",
+        "loadFailed": "Nie udało się wczytać planów posiłków",
+        "loadFailedSubtitle": "Sprawdź połączenie i spróbuj ponownie.",
+        "futureNotice": "Aktywne plany dodają wpisy do przyszłych dni w dzienniku. Edycja lub usunięcie planu aktualizuje przyszłe wygenerowane wpisy.",
+        "emptyTitle": "Brak planów posiłków",
+        "emptySubtitle": "Planuj posiłki wielokrotnego użytku w wybranych dniach tygodnia, żeby ułatwić przygotowywanie posiłków.",
+        "assignmentUnavailable": "Wymagany jest posiłek wielokrotnego użytku i typ posiłku",
+        "loadingPlanningOptions": "Wczytywanie opcji planowania...",
+        "planningOptionsFailed": "Nie udało się wczytać opcji planowania",
+        "planningOptionsFailedSubtitle": "Sprawdź połączenie i spróbuj ponownie.",
+        "planningSetupNeeded": "Wymagana konfiguracja planowania posiłków",
+        "noReusableMeals": "Utwórz posiłek wielokrotnego użytku przed utworzeniem planu.",
+        "noMealTypes": "Dodaj widoczny typ posiłku przed utworzeniem planu.",
+        "updateSuccess": "Zaktualizowano plan posiłków",
+        "createSuccess": "Utworzono plan posiłków",
+        "updateFailed": "Nie udało się zaktualizować planu posiłków",
+        "createFailed": "Nie udało się utworzyć planu posiłków",
+        "foodAssignment": "Przypisanie produktu",
+        "managedOnWeb": "Zarządzane w aplikacji webowej",
+        "foodPreserved": "To przypisanie produktu zostaje zachowane przy zapisie. Edytuj je w aplikacji webowej.",
+        "mealAssignment": "Przypisanie posiłku",
+        "removeAssignment": "Usuń przypisanie posiłku",
+        "weekday": "Dzień tygodnia",
+        "selectWeekday": "Wybierz dzień tygodnia",
+        "mealType": "Typ posiłku",
+        "selectMealType": "Wybierz typ posiłku",
+        "reusableMeal": "Posiłek wielokrotnego użytku",
+        "selectMeal": "Wybierz posiłek",
+        "quantity": "Ilość",
+        "quantityFor": "Ilość dla {{name}}",
+        "quantityHint": "Użyj jednostki porcji posiłku. Przy ważonym przygotowywaniu posiłków wpisz ilość wkładaną do jednego pojemnika.",
+        "name": "Nazwa planu",
+        "namePlaceholder": "Nazwa planu posiłków",
+        "nameRequired": "Nazwa planu jest wymagana.",
+        "description": "Opis",
+        "descriptionPlaceholder": "Opcjonalne notatki o tym planie",
+        "startDate": "Data rozpoczęcia",
+        "endDate": "Data zakończenia",
+        "noEndDate": "Bez daty zakończenia",
+        "clearEndDate": "Wyczyść datę zakończenia",
+        "endBeforeStart": "Data zakończenia nie może być wcześniejsza niż data rozpoczęcia.",
+        "activePlan": "Aktywny plan",
+        "activePlanHint": "Aktywne plany uzupełniają pasujące przyszłe dni w dzienniku.",
+        "assignments": "Przypisania tygodniowe",
+        "assignmentsHint": "Wybierz, jaka porcja posiłku wielokrotnego użytku ma pojawiać się każdego dnia.",
+        "addMeal": "Dodaj posiłek",
+        "weeklyPlan": "Plan tygodniowy",
+        "oneDayHint": "Wybierz dzień, a następnie dodaj produkty lub posiłki wielokrotnego użytku do każdego typu posiłku.",
+        "mealBadge": "Posiłek",
+        "foodBadge": "Produkt",
+        "replaceAssignmentFor": "Zamień {{name}}",
+        "removeAssignmentFor": "Usuń {{name}}",
+        "addToMealType": "Dodaj produkt lub posiłek do {{mealType}}",
+        "addFoodOrMeal": "Dodaj produkt lub posiłek",
+        "caloriesLabel": "Kalorie",
+        "proteinLabel": "Białko",
+        "carbsLabel": "Węglowodany",
+        "fatLabel": "Tłuszcz",
+        "nutritionLine": "{{calories}} kcal · {{protein}} g B · {{carbs}} g W · {{fat}} g T",
+        "dailyNutritionAccessibility": "Dzienne {{nutrient}}: {{value}} {{unit}}",
+        "mealTypeNutritionAccessibility": "{{mealType}}: łącznie {{calories}} kcal, {{protein}} g białka, {{carbs}} g węglowodanów, {{fat}} g tłuszczu",
+        "mealTypeMacros": "{{protein}} g B · {{carbs}} g W · {{fat}} g T",
+        "caloriesValue": "{{value}} kcal",
+        "nutritionLoading": "Wczytywanie brakujących szczegółów wartości odżywczych. Sumy mogą być niekompletne.",
+        "nutritionLoadFailed": "Nie udało się wczytać niektórych szczegółów wartości odżywczych. Sumy mogą być niekompletne.",
+        "assignmentRequired": "Dodaj co najmniej jedno kompletne przypisanie posiłku.",
+        "familyNotice": "Możesz planować własne posiłki oraz posiłki rodzinne lub publiczne już widoczne w Twojej bibliotece posiłków. Plan pozostaje prywatny dla tego konta i nie zmienia udostępniania posiłków.",
+        "weekdays": {
+            "sunday": "Niedziela",
+            "monday": "Poniedziałek",
+            "tuesday": "Wtorek",
+            "wednesday": "Środa",
+            "thursday": "Czwartek",
+            "friday": "Piątek",
+            "saturday": "Sobota"
+        },
+        "weekdaysShort": {
+            "sunday": "Niedz",
+            "monday": "Pon",
+            "tuesday": "Wt",
+            "wednesday": "Śr",
+            "thursday": "Czw",
+            "friday": "Pt",
+            "saturday": "Sob"
+        }
+    },
+    "foodEntryMultiAdd": {
+        "title": "Przegląd",
+        "addingToDate": "Dodawanie do {{date}}",
+        "labels": {
+            "meal": "Posiłek",
+            "chooseMeal": "Wybierz posiłek"
+        },
+        "pickers": {
+            "selectMeal": "Wybierz posiłek",
+            "selectServing": "Wybierz porcję"
+        },
+        "accessibility": {
+            "mealForAll": "Posiłek dla wszystkich pozycji: {{meal}}",
+            "mealForRow": "Posiłek dla {{food}}: {{meal}}",
+            "increaseQuantity": "Zwiększ ilość",
+            "decreaseQuantity": "Zmniejsz ilość",
+            "changeServing": "Zmień porcję dla {{name}}"
+        },
+        "actions": {
+            "addAll_one": "Dodaj wszystkie ({{count}})",
+            "addAll_few": "Dodaj wszystkie ({{count}})",
+            "addAll_many": "Dodaj wszystkie ({{count}})",
+            "remove": "Usuń {{name}}",
+            "addAnyway": "Dodaj mimo to",
+            "addAnywayFor": "Dodaj {{name}} mimo to"
+        },
+        "banners": {
+            "unknownOutcome": "Niektórych pozycji nie udało się dodać — mogą już być w Twoim dzienniku"
+        },
+        "errors": {
+            "invalidQuantity": "Wpisz ilość większą od zera.",
+            "rowRejected": "Nie udało się dodać tej pozycji. Sprawdź ją i spróbuj ponownie."
+        },
+        "states": {
+            "empty": "Nie wybrano produktów"
+        },
+        "toasts": {
+            "added_one": "Dodano {{count}} produkt",
+            "added_few": "Dodano {{count}} produkty",
+            "added_many": "Dodano {{count}} produktów"
+        }
+    },
+    "waterContainers": {
+        "title": "Pojemniki na wodę",
+        "add": "Dodaj pojemnik",
+        "loading": "Wczytywanie pojemników na wodę...",
+        "loadFailed": "Nie udało się wczytać pojemników na wodę",
+        "loadFailedSubtitle": "Sprawdź połączenie i spróbuj ponownie.",
+        "noServer": "Nie skonfigurowano serwera",
+        "noServerSubtitle": "Skonfiguruj połączenie z serwerem, aby zarządzać pojemnikami na wodę.",
+        "goToSettings": "Przejdź do ustawień",
+        "emptyTitle": "Brak pojemników na wodę",
+        "emptySubtitle": "Dodaj butelkę lub szklankę, aby śledzić nawodnienie — opcjonalnie powiązaną z produktem, żeby jedno dotknięcie zapisywało jedno i drugie.",
+        "linkedTo": "Powiązane z {{food}}",
+        "deleteTitle": "Usuń pojemnik",
+        "deleteMessage": "Usunąć {{name}}?",
+        "deleteNamed": "Usuń {{name}}",
+        "deleteSuccess": "Pojemnik usunięty",
+        "deleteFailed": "Nie udało się usunąć pojemnika",
+        "setPrimaryNamed": "Ustaw {{name}} jako główny",
+        "setPrimaryFailed": "Nie udało się ustawić głównego pojemnika",
+        "moveUp": "Przenieś {{name}} w górę",
+        "moveDown": "Przenieś {{name}} w dół",
+        "reorderFailed": "Nie udało się zmienić kolejności pojemników",
+        "presets": "Presety szybkiego dodawania",
+        "addPresetFailed": "Nie udało się dodać presetu napoju"
+    },
+    "waterContainerEdit": {
+        "createTitle": "Dodaj pojemnik",
+        "editTitle": "Edytuj pojemnik",
+        "loading": "Wczytywanie pojemnika...",
+        "name": "Nazwa",
+        "namePlaceholder": "np. Moja butelka wody",
+        "volume": "Objętość",
+        "unit": "Jednostka",
+        "units": {
+            "ml": "ml",
+            "oz": "oz",
+            "liter": "litr"
+        },
+        "servingsPerContainer": "Porcji na pojemnik",
+        "primary": "Główny pojemnik",
+        "hydrationFactor": "Współczynnik nawodnienia",
+        "hydrationFactorHint": "Skaluje tylko zaliczanie wody: 1 dla wody, około 0,9 dla kawy lub herbaty, 0 dla napoju, który w ogóle nie powinien być liczony jako woda. Kalorie, kofeina i alkohol zawsze liczą się w całości.",
+        "linkedFood": "Powiązany produkt",
+        "selectFood": "Wybierz produkt (opcjonalnie)",
+        "unlinkFood": "Odłącz produkt",
+        "linkedMealType": "Typ posiłku",
+        "noMealType": "Brak (użyj pory dnia)",
+        "delete": "Usuń pojemnik",
+        "saveSuccess": "Zapisano pojemnik na wodę",
+        "saveFailed": "Nie udało się zapisać pojemnika na wodę",
+        "errors": {
+            "title": "Sprawdź formularz",
+            "nameRequired": "Nazwa jest wymagana.",
+            "volumeInvalid": "Objętość musi być większa od zera.",
+            "servingsInvalid": "Porcji na pojemnik musi być co najmniej 1.",
+            "factorInvalid": "Współczynnik nawodnienia musi mieścić się w zakresie od 0 do 2.",
+            "foodRequired": "Wybierz produkt, który ten pojemnik przechowuje.",
+            "quantityInvalid": "Ilość musi być większa od zera."
+        },
+        "tabWater": "Woda",
+        "tabDrink": "Napój (powiązany produkt)",
+        "quantity": "Ilość",
+        "hydrationFactorExample": "Przy {{factor}} jedno naciśnięcie dodaje {{credited}} {{unit}} do Twojego pierścienia wody z {{total}} {{unit}} napoju. Kalorie, kofeina i alkohol zawsze liczą się w całości.",
+        "hydrationFactorApplies": "Dotyczy napojów zapisywanych od teraz — wcześniejsze wpisy zachowują współczynnik z chwili zapisu."
+    },
+    "sleep": {
+        "wakeUp": "Pobudka",
+        "wakeUpA11y": "Otwórz szczegóły snu porannego",
+        "bedTime": "Pora snu",
+        "bedTimeA11y": "Otwórz szczegóły snu wieczornego",
+        "napCount_one": "{{count}} drzemka",
+        "napCount_few": "{{count}} drzemki",
+        "napCount_many": "{{count}} drzemek",
+        "napA11y": "Otwórz szczegóły drzemki, {{time}}, {{duration}}",
+        "timeAsleep": "Czas snu",
+        "timeInBed": "Czas w łóżku",
+        "score": "Wynik",
+        "valueUnavailable": "—",
+        "detailTitle": "Sen",
+        "loading": "Wczytywanie snu...",
+        "notFound": "Nie znaleziono wpisu snu",
+        "notFoundSubtitle": "Ta sesja snu mogła zostać usunięta lub nie jest już synchronizowana.",
+        "loadFailed": "Nie udało się wczytać tej sesji snu",
+        "loadFailedSubtitle": "Sprawdź połączenie i spróbuj ponownie.",
+        "bedtimeToWake": "{{bedtime}} – {{wakeTime}}",
+        "hypnogram": "Fazy snu",
+        "hypnogramEmpty": "To źródło nie zapisywało faz snu.",
+        "stageBreakdown": "Podział faz",
+        "percentValue": "{{percent}}%",
+        "stage": {
+            "awake": "Jawa",
+            "rem": "REM",
+            "light": "Płyt",
+            "deep": "Głęboki",
+            "other": "Inne"
+        },
+        "biometrics": "Nocna biometria",
+        "averageSpo2": "Średnie SpO2",
+        "lowestSpo2": "Najniższe SpO2",
+        "highestSpo2": "Najwyższe SpO2",
+        "restingHeartRate": "Spoczynkowe tętno",
+        "percentUnit": "%",
+        "bpmUnit": "bpm",
+        "quality": "Jakość snu"
+    },
+    "foodProvenance": {
+        "aiEstimate": "Szacunek AI",
+        "aiEstimateAccessibility": "Wartości odżywcze oszacowane przez AI"
+    },
+    "notes": {
+        "label": "Notatki",
+        "placeholder": "Dodaj notatkę… (obsługuje markdown)",
+        "write": "Pisz",
+        "preview": "Podgląd",
+        "nothingToPreview": "Nie ma jeszcze nic do podglądu.",
+        "toolbar": {
+            "bold": "Pogrubienie",
+            "italic": "Kursywa",
+            "strikethrough": "Przekreślenie",
+            "heading": "Nagłówek",
+            "bulletList": "Lista punktowana",
+            "numberedList": "Lista numerowana",
+            "taskList": "Lista zadań (tylko wyświetlanie)",
+            "quote": "Cytat",
+            "code": "Kod",
+            "link": "Link",
+            "table": "Tabela",
+            "insertImage": "Wstaw zdjęcie",
+            "photoNumber": "Zdjęcie {{number}}"
+        },
+        "photoUnavailable": "Zdjęcie niedostępne"
+    },
+    "healthTrendsSettings": {
+        "description": "Przeciągnij wykres za uchwyt, aby zmienić jego kolejność. Wyłącz przełącznik, aby ukryć go na Pulpicie.",
+        "reorder": "Zmień kolejność: {{name}}",
+        "reorderHint": "Zmień kolejność tego wykresu w trendach zdrowotnych na Pulpicie",
+        "moveUp": "Przenieś w górę",
+        "moveDown": "Przenieś w dół",
+        "stateShown": "Widoczny",
+        "stateHidden": "Ukryty"
+    },
+    "quickActions": {
+        "scanFood": "Skanuj produkt",
+        "searchFood": "Zapisz produkt",
+        "logWater": "Zapisz wodę",
+        "fasting": "Post",
+        "waterLogged": "Woda zapisana",
+        "waterFailed": "Nie udało się zapisać wody"
+    },
+    "watchSettings": {
+        "gesturesTitle": "Gesty",
+        "doubleTapTitle": "Podwójne dotknięcie zapisuje serię",
+        "doubleTapSubtitle": "Podwójne dotknięcie na wspieranym zegarku (Series 9, Ultra 2 lub nowszym, watchOS 11) zapisuje serię wyświetlaną na ekranie podczas treningu.",
+        "pagesTitle": "Strony",
+        "description": "Przeciągnij stronę za uchwyt, aby zmienić kolejność przesuwania ich na zegarku. Wyłącz stronę, aby ją ukryć. Strona Trening nadal pojawia się podczas trwającego treningu.",
+        "reorder": "Zmień kolejność: {{name}}",
+        "reorderHint": "Zmienia, gdzie ta strona znajduje się na zegarku",
+        "pages": {
+            "goals": "Cele",
+            "water": "Woda",
+            "entry": "Check-in wagi",
+            "trend": "Trend wagi",
+            "workout": "Trening"
+        },
+        "nutrientsTitle": "Składniki strony celów",
+        "nutrientsDescription": "Wybierz składniki wyświetlane pod pierścieniem kalorii na zegarku i przeciągnij, aby ustawić ich kolejność. Każdy pokazuje dzisiejszą ilość względem celu.",
+        "nutrientReorderHint": "Zmienia, gdzie ten składnik znajduje się na zegarku",
+        "setInputTitle": "Wprowadzanie serii",
+        "setInputDescription": "Sposób wpisywania wagi i powtórzeń na zegarku podczas treningu: wpisz je na klawiaturze albo dotknij wartości i obróć lub przeciągnij Digital Crown — dla wagi co 0,5.",
+        "setInputKeypad": "Klawiatura",
+        "setInputCrown": "Digital Crown"
+    },
+    "progressPhotos": {
+        "card": {
+            "title": "Postęp",
+            "viewAll": "Zobacz wszystkie",
+            "openA11y": "Zobacz zdjęcia postępu"
+        },
+        "title": "Zdjęcia postępu",
+        "angle": {
+            "front": "Przód",
+            "back": "Tył",
+            "side": "Bok"
+        },
+        "noWeight": "Nie zapisano wagi",
+        "logWeight": "Zapisz wagę",
+        "logWeightA11y": "Zapisz swoją wagę dla tego dnia",
+        "openPhotoA11y": "Zobacz to zdjęcie na pełnym ekranie",
+        "sincePrevious": "{{delta}} względem poprzedniego",
+        "emptyTitle": "Brak zdjęć {{angle}}",
+        "emptyBody": "Dodaj powyżej, a pojawi się tutaj wraz z wagą z tego dnia.",
+        "loadError": "Nie udało się wczytać zdjęć postępu.",
+        "takePhoto": "Zrób zdjęcie",
+        "chooseLibrary": "Wybierz z biblioteki",
+        "remove": "Usuń zdjęcie",
+        "cameraPermission": "Wymagane jest uprawnienie dostępu do aparatu",
+        "cameraPermissionHint": "Włącz dostęp aparatu do SparkyFitness w ustawieniach.",
+        "compare": "Porównaj",
+        "compareTitle": "Porównanie",
+        "before": "Przed",
+        "after": "Po",
+        "pickWhich": "Dotknij dowolnej daty, aby porównać inny dzień",
+        "timelapse": "Time-lapse",
+        "timelapseTitle": "Time-lapse",
+        "timelapseEmpty": "Dodaj co najmniej dwa zdjęcia tego ujęcia, aby odtworzyć time-lapse.",
+        "previousFrame": "Poprzednie zdjęcie",
+        "nextFrame": "Następne zdjęcie",
+        "play": "Odtwórz",
+        "pause": "Pauza",
+        "speedSlow": "Wolno",
+        "speedNormal": "Normalnie",
+        "speedFast": "Szybko",
+        "daysApart_one": "{{count}} dzień różnicy",
+        "daysApart_few": "{{count}} dni różnicy",
+        "daysApart_many": "{{count}} dni różnicy",
+        "noPhotoOnDay": "Brak zdjęcia w tym ujęciu w tym dniu",
+        "pickDayA11y": "Wybierz dzień: {{side}}",
+        "range30d": "Ostatnie 30 dni",
+        "range3m": "Ostatnie 3 miesiące",
+        "chooseDayA11y": "Wybierz dzień",
+        "diarySection": "Zdjęcia postępu",
+        "tapToAdd": "Dotknij, aby dodać zdjęcia",
+        "addDayA11y": "Dodaj zdjęcia postępu dla tego dnia",
+        "angleCount": "{{taken}} z {{total}}",
+        "openDayA11y": "Otwórz zdjęcia postępu dla tego dnia",
+        "missingAngleA11y": "Brak zdjęcia {{angle}} w tym dniu",
+        "historySection": "Historia",
+        "historyDescription": "Twoje zdjęcia dla tego ujęcia, od najnowszych.",
+        "historyDescriptionCapped": "Twoje {{limit}} najnowszych. Porównanie lub Time-lapse sięgają dalej w przeszłość.",
+        "slotSheetTitle": "Zdjęcie postępu",
+        "removeTitle": "Usunąć zdjęcie?",
+        "removeMessage": "Spowoduje to usunięcie zdjęcia z tego dnia.",
+        "uploadError": "Nie udało się zapisać tego zdjęcia",
+        "deleteError": "Nie udało się usunąć tego zdjęcia",
+        "viewAngleA11y": "Zobacz zdjęcie {{angle}} na pełnym ekranie",
+        "addAngleA11y": "Dodaj zdjęcie {{angle}}",
+        "manageAngleA11y": "Zamień lub usuń zdjęcie {{angle}}",
+        "rangeAll": "Cały okres",
+        "rangeCustom": "Zakres niestandardowy…",
+        "rangeSheetTitle": "Odtwórz zakres dat",
+        "rangeSheetAction": "Odtwórz ten zakres",
+        "rangeSection": "Odtwarzanie",
+        "rangeA11y": "Wybierz, jak daleko wstecz odtwarzać",
+        "deltaBadge": "Δ {{value}}",
+        "frameCountRanged": "{{current}} z {{total}} · {{range}}"
+    },
+    "caffeine": {
+        "title": "Aktywna kofeina",
+        "activeNow": "Aktualnie aktywne",
+        "atBedtime": "O {{time}}",
+        "lastDose": "Ostatnia dawka do",
+        "cutoffPassed": "Za późno",
+        "cutoffOver": "Powyżej limitu",
+        "anytimeSafe": "O każdej porze",
+        "crossingNote": "Spadek poniżej {{threshold}} mg od {{time}}",
+        "underThreshold": "Dziś wieczorem pozostaje poniżej {{threshold}} mg",
+        "estimatedTimes": "Niektóre czasy dawek były szacowane",
+        "legendCurve": "Aktywna kofeina",
+        "legendThreshold": "próg {{threshold}} mg",
+        "unitMg": "mg"
+    },
+    "exerciseStatistics": {
+        "title": "Statystyki ćwiczeń",
+        "sets_one": "{{formattedCount}} seria",
+        "sets_few": "{{formattedCount}} serie",
+        "sets_many": "{{formattedCount}} serii",
+        "stats": {
+            "workouts": "Treningi",
+            "volume": "Objętość",
+            "reps": "Powtórzenia"
+        },
+        "setsPerMuscle": {
+            "title": "Serie wg mięśni",
+            "subtitle": "Serie robocze na mięśniach głównych w tym zakresie",
+            "none": "Brak serii roboczych z mięśniem głównym."
+        },
+        "heatMap": {
+            "title": "Mapa cieplna mięśni",
+            "subtitle": "Przód i tył, zabarwione wg serii roboczych",
+            "a11y": "Sylwetka ciała zabarwiona wg serii roboczych. Te same liczby znajdują się na liście Serie wg mięśni — wybranie mięśnia podświetla go tutaj.",
+            "tap": "Dotknij mięśnia",
+            "fewer": "Mniej",
+            "more": "Więcej",
+            "notOnFigure": "Poza sylwetką",
+            "male": "Mężczyzna",
+            "female": "Kobieta"
+        },
+        "analysis": {
+            "title": "Więcej analiz",
+            "recovery": "Ostatni trening",
+            "variety": "Różnorodność ćwiczeń",
+            "volume": "Objętość wg mięśni",
+            "exerciseCount_one": "{{count}} ćwiczenie",
+            "exerciseCount_few": "{{count}} ćwiczenia",
+            "exerciseCount_many": "{{count}} ćwiczeń"
+        },
+        "recovery": {
+            "today": "Dziś",
+            "yesterday": "Wczoraj",
+            "daysAgo_one": "{{count}} dzień temu",
+            "daysAgo_few": "{{count}} dni temu",
+            "daysAgo_many": "{{count}} dni temu"
+        },
+        "states": {
+            "loadFailed": "Nie udało się wczytać statystyk ćwiczeń",
+            "empty": "Brak treningów w tym zakresie",
+            "emptyHint": "Zapisz trening, a jego serie pojawią się tutaj pogrupowane wg mięśni."
+        },
+        "views": {
+            "strength": "Siłowe",
+            "cardio": "Cardio"
+        },
+        "cardio": {
+            "hint": "Dotknij treningu, aby zobaczyć trasę i tętno.",
+            "empty": "Brak treningów cardio w tym zakresie",
+            "loadFailed": "Nie udało się wczytać sesji cardio",
+            "olderSessions": "Starsze sesje",
+            "unitKm": "km",
+            "unitMi": "mi",
+            "calories": "{{value}} kcal",
+            "minutes_one": "{{formattedCount}} min",
+            "minutes_few": "{{formattedCount}} min",
+            "minutes_many": "{{formattedCount}} min",
+            "bpm": "{{value}} bpm",
+            "distance": "Dystans",
+            "duration": "Czas trwania",
+            "pace": "Tempo",
+            "avgHeartRate": "Średnie tętno",
+            "caloriesLabel": "Kalorie",
+            "route": "Trasa",
+            "routeA11y": "Trasa tego treningu, od zielonego punktu do czerwonego pierścienia",
+            "noRoute": "Nie zapisano trasy GPS. Treningi w pomieszczeniach jej nie mają. Spacer na zewnątrz ma trasę tylko wtedy, gdy Apple Health udostępniło ją podczas synchronizacji treningu.",
+            "heartRate": "Tętno",
+            "average": "Śr. {{value}}",
+            "peak": "Maks. {{value}}",
+            "onlyAverage": "Średnie tętno {{value}}. Szczegółowe próbki tętna nie zostały zapisane.",
+            "noHeartRate": "Brak próbek tętna dla tego treningu.",
+            "zones": "Strefy tętna",
+            "zone": "Strefa {{zone}}",
+            "zoneFrom": "od {{bpm}} bpm",
+            "minutesAxis": "Minuty od startu",
+            "underOneMinute": "<1 min"
+        },
+        "consistency": {
+            "title": "Systematyczność treningów",
+            "subtitle_one": "Ostatni {{formattedCount}} tydzień, od {{first}} do {{last}}",
+            "subtitle_few": "Ostatnie {{formattedCount}} tygodnie, od {{first}} do {{last}}",
+            "subtitle_many": "Ostatnie {{formattedCount}} tygodni, od {{first}} do {{last}}",
+            "legendTrained": "Dzień treningu",
+            "legendRest": "Bez treningu",
+            "legendHelp": "Każdy kwadrat to dzień, a każda kolumna to tydzień.",
+            "streak": "Seria tygodni",
+            "longest": "Najdłuższy",
+            "thisWeek": "Ten tydzień",
+            "lastWeek": "Ostatni tydzień",
+            "weeks_one": "{{formattedCount}} tydzień",
+            "weeks_few": "{{formattedCount}} tygodnie",
+            "weeks_many": "{{formattedCount}} tygodni",
+            "days_one": "{{formattedCount}} dzień",
+            "days_few": "{{formattedCount}} dni",
+            "days_many": "{{formattedCount}} dni",
+            "calendarA11y_one": "Kalendarz treningów: {{count}} dzień treningowy w ostatnich {{weeks}} tygodniach",
+            "calendarA11y_few": "Kalendarz treningów: {{count}} dni treningowe w ostatnich {{weeks}} tygodniach",
+            "calendarA11y_many": "Kalendarz treningów: {{count}} dni treningowych w ostatnich {{weeks}} tygodniach",
+            "setsTitle": "Serie wg mięśni",
+            "noSets": "W tym ani w ostatnim tygodniu nie zapisano żadnych serii.",
+            "loadFailed": "Nie udało się wczytać Twojej systematyczności treningów."
+        }
+    },
+    "aiSettings": {
+        "server": {
+            "title": "Serwerowy dostawca AI",
+            "loading": "Sprawdzanie…",
+            "error": "Nie udało się sprawdzić dostawcy AI.",
+            "none": "Nie skonfigurowano dostawcy AI",
+            "description": "Używany do skanowania etykiet, chyba że obsłuży je opcja na urządzeniu poniżej. Dostawcy konfiguruje się w aplikacji webowej."
+        },
+        "onDevice": {
+            "title": "Na urządzeniu (Apple Intelligence)",
+            "description": "Działają na tym telefonie. Wszystko, czego model na urządzeniu nie obsłuży, przechodzi na dostawcę serwerowego.",
+            "unavailable": "Niedostępne na tym urządzeniu. Wymaga iOS 27 lub nowszego z włączonym i gotowym Apple Intelligence.",
+            "labelScan": {
+                "title": "Skanuj etykiety na urządzeniu",
+                "description": "Odczytuj etykiety wartości odżywczych przez Apple Intelligence na tym urządzeniu. Jeśli nie odczyta etykiety, używany jest serwerowy dostawca AI."
+            }
+        }
     }
 }
