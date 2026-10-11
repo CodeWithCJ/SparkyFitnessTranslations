@@ -1,6 +1,7 @@
 {
     "layout": {
-        "welcome": "Vitajte, {{activeUserName}}"
+        "welcome": "Vitajte, {{activeUserName}}",
+        "translate": "Preložiť"
     },
     "chat": {
         "toolCategories": {
@@ -54,7 +55,9 @@
         "trainingLoad": "Tréningová záťaž",
         "acute": "akútny",
         "empty": "Pre tento deň neboli synchronizované žiadne údaje z nositeľného zariadenia.",
-        "skinTemp": "Teplota pokožky"
+        "skinTemp": "Teplota pokožky",
+        "chronic": "Chronický: {{val}}",
+        "weekly": "týždenný"
     },
     "foodCsvImport": {
         "title": "Importovať údaje o jedle",
@@ -693,7 +696,8 @@
         "pregnancy": "Tehotenstvo",
         "medications": "Lieky",
         "foodLog": "Záznam jedla",
-        "wellness": "Zdravie"
+        "wellness": "Zdravie",
+        "symptoms": "Príznaky"
     },
     "nutrition": {
         "calories": "Kalórie",
@@ -722,7 +726,11 @@
         "autoCalculateSelect": "Zahrnúť do hromadného automatického výpočtu",
         "autoCalculateSelectAll": "Vybrať všetko",
         "autoCalculateSelectNone": "Zrušiť výber všetkých",
-        "autoCalculateApplySelected": "Automaticky vypočítať vybrané ({{count}})"
+        "autoCalculateApplySelected": "Automaticky vypočítať vybrané ({{count}})",
+        "caffeine": "Kofeín",
+        "waterContent": "Obsah vody",
+        "alcohol": "Alkohol",
+        "abv": "Obsah alkoholu (%)"
     },
     "calculationSettings": {
         "showNetCarbs": "Zobraziť čisté sacharidy (sacharidy mínus vláknina)",
@@ -758,7 +766,9 @@
         "saveSuccessDesc": "Nastavenia výpočtu boli úspešne uložené!",
         "selectBmrAlgorithm": "Vyberte algoritmus BMR",
         "selectBodyFatAlgorithm": "Vyberte algoritmus telesného tuku",
-        "selectEnergyUnitPlaceholder": "Vyberte jednotku energie"
+        "selectEnergyUnitPlaceholder": "Vyberte jednotku energie",
+        "useExternalBmr": "Použite nameranú hodnotu BMR z registrácií a synchronizovaných zariadení.",
+        "useExternalBmrHint": "Predvolene vypnuté – vždy sa používa vami zvolený vzorec, pokiaľ túto funkciu neaktivujete. Po aktivácii hodnota BMR zaznamenaná pri registrácii (check-in) alebo synchronizovaná z inteligentnej váhy či od poskytovateľa zdravotnej starostlivosti nahradí pre daný deň vypočítaný vzorec, za predpokladu, že je pre vás fyziologicky reálna. Niektoré zariadenia uvádzajú BMR ako priebežný denný súčet namiesto rýchlosti metabolizmu, a preto je táto funkcia voliteľná."
     },
     "aboutDialog": {
         "title": "O aplikácii SparkyFitness",
@@ -780,7 +790,8 @@
         "gotIt": "Rozumiem",
         "close": "Zavrieť",
         "swissFoodApi": "Swiss Food Composition Database API",
-        "usdaApi": "USDA Food Database API"
+        "usdaApi": "USDA Food Database API",
+        "canadianNutrientFileApi": "Kanadská databáza údajov o výživových hodnotách (Health Canada)"
     },
     "exercise": {
         "title": "Cvičenia",
@@ -819,9 +830,9 @@
             "selectMechanicPlaceholder": "Vyberte mechaniku",
             "mechanicIsolation": "Izolovaný cvik",
             "mechanicCompound": "Komplexný cvik",
-            "equipmentLabel": "Vybavenie (oddelené čiarkami)",
-            "primaryMusclesLabel": "Primárne svaly (oddelené čiarkami)",
-            "secondaryMusclesLabel": "Sekundárne svaly (oddelené čiarkami)",
+            "equipmentLabel": "Vybavenie",
+            "primaryMusclesLabel": "Primárne svaly",
+            "secondaryMusclesLabel": "Sekundárne svaly",
             "instructionsLabel": "Pokyny (jeden na riadok)",
             "imagesLabel": "Obrázky",
             "addButton": "Pridať cvičenie",
@@ -829,13 +840,23 @@
             "addError": "Nepodarilo sa pridať cvičenie",
             "importSuccess": "Údaje o cvičeniach boli úspešne importované",
             "importDuplicateTitle": "Import zlyhal: Nájdené duplicitné položky",
-            "importError": "Nepodarilo sa importovať údaje o cvičeniach. Skúste to znova."
+            "importError": "Nepodarilo sa importovať údaje o cvičeniach. Skúste to znova.",
+            "customMuscleBodyMapHint": "Vlastné svaly sa na mape tela nezobrazia.",
+            "tagInputPlaceholder": "Napíšte, ak chcete pridať alebo vyhľadať...",
+            "addCustomTag": "Pridať „{{tag}}“",
+            "importDuplicateDescription": "Nasledujúce položky už existujú: {{duplicateList}}. Odstráňte ich zo súboru a skúste to znova.",
+            "replaceTitle": "Nahradiť cvik",
+            "replaceSuccess": "Cvičenie nahradené",
+            "suggestedTab": "Navrhované"
         },
         "modality": {
             "weightReps": "Váha a opakovania",
             "repsOnly": "Opakovania",
             "duration": "Trvanie",
-            "durationDistance": "Trvanie a vzdialenosť"
+            "durationDistance": "Trvanie a vzdialenosť",
+            "bodyweightReps": "Telesná hmotnosť (+/− závažie)",
+            "weightDistance": "Hmotnosť a vzdialenosť (prenášanie)",
+            "weightDuration": "Hmotnosť a trvanie (výdrže so záťažou)"
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "Hľadať vo vašich predvoľbách cvičenia...",
@@ -1016,7 +1037,22 @@
             "exercises": "cvičenia",
             "name": "Názov",
             "deleteConfirmationDescription": "Naozaj chcete vymazať toto cvičenie? Túto akciu nie je možné vrátiť späť.",
-            "deleteImpactDescription": "Toto cvičenie sa používa v iných záznamoch alebo tréningových plánoch. Jeho vymazanie môže ovplyvniť tieto záznamy."
+            "deleteImpactDescription": "Toto cvičenie sa používa v iných záznamoch alebo tréningových plánoch. Jeho vymazanie môže ovplyvniť tieto záznamy.",
+            "duplicateExercise": "Duplikuj",
+            "duplicateExerciseDialogTitle": "Duplikovať cvičenie",
+            "duplicateExerciseDialogDescription": "Uložte si kópiu ako vlastné cvičenie. Pôvodný súbor zostane nezmenený.",
+            "saveCopy": "Uložiť kópiu",
+            "copySuffix": "(kópia)",
+            "bulkDeleteDescription": "Odstráňte tieto {{count}} cviky zo svojej knižnice a zo všetkých prednastavených tréningov a plánov. Tréningy, ktoré ste už zaznamenali, zostanú vo vašom denníku.",
+            "cancel": "Zrušiť",
+            "delete": "Odstrániť",
+            "deleteExerciseConfirmTitle": "Odstrániť {{exerciseName}}?",
+            "deleteKeepsDiaryHint": "Odstránenie vymaže cvik z vašej knižnice, predvolieb a plánov. Vaše zaznamenané tréningy si zachovajú svoj názov, obrázok, série aj opakovania.",
+            "deleteWithHistory": "Odstrániť vrátane histórie",
+            "diaryEntriesCount": "{{count}} zaznamenaných tréningov",
+            "exerciseUnused": "Toto cvičenie sa zatiaľ nikde nepoužíva.",
+            "exerciseUsedByOtherUsersWarning": "Toto cvičenie používajú aj iní používatelia. Môžete ho iba skryť. Skrytie spôsobí, že sa odteraz nebude zobrazovať vo výsledkoch vyhľadávania, no neovplyvní históriu, predvoľby ani plány ostatných používateľov.",
+            "exerciseUsedIn": "Toto cvičenie sa používa v:"
         },
         "exerciseImportCSV": {
             "importExerciseData": "Importovať údaje o cvičeniach",
