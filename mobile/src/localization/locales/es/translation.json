@@ -3779,7 +3779,12 @@
             "nameRequired": "Introduce un nombre para esta plantilla.",
             "addExercise": "Añade un ejercicio",
             "addExerciseSet": "Añade al menos un ejercicio con una serie antes de guardar."
-        }
+        },
+        "formatInterval": "Intervalo / HIIT",
+        "formatTabata": "Tabata",
+        "formatEmom": "EMOM",
+        "formatAmrap": "AMRAP",
+        "formatForTime": "Por tiempo"
     },
     "workoutPresetMutations": {
         "errors": {
@@ -5325,5 +5330,25 @@
         "setPrimaryFailed": "No se pudo marcar el recipiente principal",
         "setPrimaryNamed": "Marcar {{name}} como principal",
         "title": "Recipientes de agua"
+    },
+    "mindfulness": {
+        "timer": {
+            "title": "Temporizador de meditación",
+            "resume": "Reanudar",
+            "pause": "Pausar"
+        },
+        "actions": {
+            "breathe": "Respirar",
+            "timer": "Temporizador",
+            "log": "Registro"
+        },
+        "types": {
+            "meditation": "Meditación",
+            "breathwork": "Trabajo de respiración",
+            "reflection": "Reflexión",
+            "yoga": "Yoga",
+            "walking": "Caminata consciente",
+            "other": "Otro"
+        }
     }
 }
