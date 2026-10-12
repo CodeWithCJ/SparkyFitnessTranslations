@@ -496,7 +496,42 @@
             "addDropSetsFor": "Drop setek hozzáadása a {{name}}-hez",
             "viewImages": "{{name}} kép megtekintése",
             "columnReps": "Ismétlések",
-            "columnRest": "Pihen"
+            "columnRest": "Pihen",
+            "volume": "Volumen",
+            "replaceExercise": "Gyakorlat cseréje",
+            "replaceExerciseNamed": "Csere {{name}}"
+        },
+        "workoutFinishSummary": {
+            "title": "Gyakorlat befejezve",
+            "duration": "Időtartam",
+            "calories": "Kalória",
+            "sets": "Sorozatok",
+            "volume": "Volumen",
+            "done": "Kész"
+        },
+        "alternatives": {
+            "heading": "Helyett {{name}}",
+            "modes": {
+                "similar": "Hasonló",
+                "differentEquipment": "Egyéb felszerelés"
+            },
+            "reasons": {
+                "sameMuscles": "Ugyanazok az izmok",
+                "sharesMuscle": "Hasonló izmok",
+                "sameEquipment": "Ugyanazon felszerelés",
+                "differentEquipment": "Más felszerelés",
+                "sameMovement": "Ugyanaz a mozgás",
+                "recent": "Nemrégiben elvégzett",
+                "inLibrary": "Könyvtáradban"
+            },
+            "newBadge": "Új",
+            "searchAll": "Összes gyakorlat keresése",
+            "failed": "Alternatívák betöltése sikertelen",
+            "noMuscles": "A {{name}}-hez nincs regisztrálva izom",
+            "noMusclesHint": "Adja hozzá az adott testrész főbb izmait a gyakorlatok könyvtárához, hogy javaslatokat kapjon.",
+            "empty": "Nem találtunk alternatívákat",
+            "retry": "Újrapróbálás",
+            "catalogUnavailable": "A Free Exercise DB jelenleg nem elérhető, ezért csak a saját könyvtárad jelenik meg."
         }
     },
     "chat": {
@@ -1295,5 +1330,18 @@
         "appleMoveTime": "Apple Move idő",
         "appleExerciseTime": "Apple edzésidő",
         "appleStandTime": "Apple állási idő"
+    },
+    "workoutPresetsManager": {
+        "addPresetButton": "Előre beállított érték hozzáadása",
+        "noPresetsFound": "Nem találtunk előre beállított edzésprogramokat. Hozz létre egyet, és kezdj el edzeni!",
+        "logPresetToDiaryTooltip": "Naplóbejegyzés előre beállítása",
+        "makePresetPrivateTooltip": "Beállítás priváttá tétele",
+        "sharePresetTooltip": "Ossza meg ezt az előre beállított profilt a közösséggel",
+        "editPresetTooltip": "Beállítás szerkesztése",
+        "deletePresetTooltip": "Előbeállítás törlése",
+        "loading": "Betöltés..."
+    },
+    "workoutPlansManager": {
+        "deleteError": "Edzésterv törlése sikertelen."
     }
 }
