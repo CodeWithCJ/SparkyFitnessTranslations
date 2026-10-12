@@ -5489,7 +5489,7 @@
                 },
                 "diphenhydramine": {
                     "name": "Difenhydramin (Benadryl)",
-                    "note": "Krátkodobě se často považuje za přijatelný, ale poraďte se se svým lékařem."
+                    "note": "Krátkodobě se často považuje za přijatelný, ale poraďte se, se svým lékařem."
                 },
                 "ibuprofen_gel": {
                     "name": "Ibuprofenový gel",
@@ -5574,7 +5574,7 @@
     },
     "healthDataDisplay": {
         "distance": "{{value}} km",
-        "kcal": "{{value}} kcal",
+        "kcal": "{{hodnota}} kcal",
         "bpm": "{{value}} tepů/min",
         "kg": "{{value}} kg",
         "percent": "{{value}} %",
