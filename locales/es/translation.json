@@ -498,8 +498,19 @@
                 "sameMuscles": "Mismos músculos",
                 "sharesMuscle": "Músculos similares",
                 "sameEquipment": "Mismo equipamiento",
-                "differentEquipment": "Equipamiento diferente"
-            }
+                "differentEquipment": "Equipamiento diferente",
+                "sameMovement": "Mismo movimiento",
+                "recent": "Completado recientemente",
+                "inLibrary": "En tu biblioteca"
+            },
+            "newBadge": "Nuevo",
+            "searchAll": "Buscar todos los ejercicios",
+            "failed": "No se pudieron cargar las alternativas",
+            "noMuscles": "No hay músculos registrados para {{name}}",
+            "noMusclesHint": "Añade sus músculos principales en la biblioteca de ejercicios para obtener sugerencias.",
+            "empty": "No se encontraron alternativas",
+            "retry": "Reintentar",
+            "catalogUnavailable": "Free Exercise DB no está disponible, por lo que solo se muestra tu biblioteca."
         }
     },
     "workoutPresetsManager": {
@@ -557,7 +568,15 @@
         "duration": "Duración",
         "planName": "Nombre del plan",
         "plans": "planes",
-        "status": "Estado"
+        "status": "Estado",
+        "scheduleType": "Modo",
+        "weeklyMode": "Semanalmente",
+        "weeklyPromptMode": "Semanal (Aviso)",
+        "weeklyPrefillMode": "Semanal (Autocompletar)",
+        "sequentialMode": "Secuencial",
+        "upNextBadge": "Siguiente en la secuencia",
+        "scheduledTodayBadge": "Programado hoy",
+        "scheduledWorkout": "Sesión de entrenamiento"
     },
     "exerciseCard": {
         "title": "Ejercicio",
