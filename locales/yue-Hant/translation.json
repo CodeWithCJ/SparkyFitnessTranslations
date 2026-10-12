@@ -3418,7 +3418,7 @@
         "totalNutritionLabel": "總營養數值：",
         "fullRecipeNutritionLabel": "成個食譜總營養：",
         "totalServings": "總份量",
-        "totalAmount": "食材總重量/份量",
+        "totalAmount": "食材總重量",
         "servingSize": "單份份量",
         "defaultServingSize": "系統預設單份大小",
         "consumedQuantity": "實際食咗嘅份量",
