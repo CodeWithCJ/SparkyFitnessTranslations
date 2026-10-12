@@ -324,7 +324,16 @@
             "hide": "Elrejt",
             "warning": "Figyelmeztetés!",
             "workoutPlansCount": "{{count}} edzésterv",
-            "workoutPresetsCount": "{{count}} edzésprogram"
+            "workoutPresetsCount": "{{count}} edzésprogram",
+            "syncSuccess": "Korábbi naplóbejegyzéseket frissítettük.",
+            "syncError": "Korábbi naplóbejegyzések frissítése sikertelen.",
+            "badgeSystem": "Rendszer",
+            "badgePrivate": "Privát",
+            "badgeFamily": "Család",
+            "cardTitle": "Gyakorlatok",
+            "searchPlaceholder": "Gyakorlatok keresése...",
+            "allCategoriesPlaceholder": "Összes Kategória",
+            "allCategoriesItem": "Összes Kategória"
         },
         "exerciseImportCSV": {
             "importExerciseData": "Edzési Adatok Importálása",
@@ -465,6 +474,29 @@
         "suggestions": {
             "recentLoadError": "Legutóbbi feladatok betöltése nem sikerült.",
             "topLoadError": "Legnépszerűbb gyakorlatok betöltése nem sikerült."
+        },
+        "workoutPlaybackDialog": {
+            "closeKeepDraft": "Bezárás",
+            "completeAtLeastOneSet": "A befejezés előtt végezzen el legalább egy sorozatot.",
+            "discard": "Elvetés",
+            "discardConfirm": "El akarod vetni ezt a folyamatban lévő edzést? Ezt a műveletet nem lehet visszavonni.",
+            "finish": "Edzés Befejezése",
+            "finishError": "Az edzés mentése nem sikerült. A helyi előrehaladásod továbbra is megmarad, és újra megpróbálhatod.",
+            "finishing": "Mentés...",
+            "location": "Edzőterem / Helyszín",
+            "locationPlaceholder": "pl. Downtown Equinox, Garage Gym",
+            "noDraft": "Erre a dátumra nem található aktív edzésterv.",
+            "setRow": "Sorozat {{setNumber}}",
+            "sets": "sorozatok",
+            "title": "Élő edzés"
+        },
+        "workoutPlaybackPage": {
+            "addSet": "Sorozat Hozzáadása",
+            "addDropSets": "Drop Hozzáadása {{sets}} Csökkentése (-{{percent}}%)",
+            "addDropSetsFor": "Drop setek hozzáadása a {{name}}-hez",
+            "viewImages": "{{name}} kép megtekintése",
+            "columnReps": "Ismétlések",
+            "columnRest": "Pihen"
         }
     },
     "chat": {
