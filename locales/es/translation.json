@@ -576,7 +576,9 @@
         "sequentialMode": "Secuencial",
         "upNextBadge": "Siguiente en la secuencia",
         "scheduledTodayBadge": "Programado hoy",
-        "scheduledWorkout": "Sesión de entrenamiento"
+        "scheduledWorkout": "Sesión de entrenamiento",
+        "activePlanLabel": "Plan activo: {{name}}",
+        "failedToLoadActivePlan": "No se pudo cargar el plan de entrenamiento activo."
     },
     "exerciseCard": {
         "title": "Ejercicio",
@@ -669,7 +671,21 @@
             "static": "Estático",
             "isolation": "Aislamiento",
             "compound": "Compuesto"
-        }
+        },
+        "workoutLocation": "Gimnasio / Ubicación",
+        "upNextInPlanBadge": "Siguiente en el plan",
+        "scheduledTodayBadge": "Programado hoy",
+        "activePlanHint": "Plan secuencial: {{name}}",
+        "activeWeeklyPlanHint": "Plan activo: {{name}}",
+        "scheduledWorkout": "Sesión de entrenamiento",
+        "logToDiaryButton": "Registrar en el diario",
+        "startWorkoutButton": "Iniciar entrenamiento",
+        "noExercisesInPlanSession": "No se encontraron ejercicios en esta sesión.",
+        "switchSessionLabel": "Cambiar / Seleccionar sesión:",
+        "sessionNumber": "Sesión {{num}}",
+        "dayNumber": "Día {{num}}",
+        "suggestedBadge": "Sugerido",
+        "planWorkoutLogged": "Sesión de entrenamiento registrada en el diario."
     },
     "foodSearchDialog": {
         "title": "Buscar y añadir comida",
@@ -918,7 +934,10 @@
             "sharesExternalProviders": "Comparte proveedores externos",
             "noEndDate": "Sin fecha de finalización",
             "editRule": "Editar regla de acceso",
-            "deleteRule": "Eliminar regla de acceso"
+            "deleteRule": "Eliminar regla de acceso",
+            "canManageSymptoms": "Puede gestionar síntomas",
+            "canManageSymptomsHelp": "Permite al delegado registrar y editar síntomas, episodios, desencadenantes, tratamientos y fotos en tu nombre. Los síntomas del ciclo menstrual y del embarazo nunca se comparten. Los registros del diario están bloqueados.",
+            "managesSymptoms": "Gestionar Sintomas"
         },
         "customCategories": {
             "title": "Categorías personalizadas",
@@ -978,6 +997,14 @@
                 "oura": "Portal para desarrolladores de Oura",
                 "googlehealth": "Google Cloud Console",
                 "polar": "Polar AccessLink Admin"
+            },
+            "coros": {
+                "regionLabel": "Región de COROS",
+                "regionUs": "Estados Unidos (mcpus.coros.com)",
+                "regionEu": "Europa (mcpeu.coros.com)",
+                "regionCn": "China continental (mcpcn.coros.com)",
+                "notTested": "aún no probado",
+                "infoText": "No se necesitan claves API. Iniciarás sesión con tu cuenta de COROS. Tu dirección de SparkyFitness debe ser https:// (o localhost) para que COROS acepte la conexión."
             }
         },
         "aiService": {
@@ -1165,7 +1192,8 @@
                 "openrouter": "OpenRouter",
                 "custom": "Personalizado",
                 "xai": "xAI (Grok)",
-                "meta": "Meta"
+                "meta": "Meta",
+                "perplexity": "Perplexity AI"
             },
             "test": {
                 "successTitle": "Éxito",
@@ -1218,7 +1246,10 @@
             "newKeyGenerated": "¡Nueva clave API generada!",
             "placeholder": "Descripción (p. ej., 'Atajo de Salud del iPhone')",
             "updateError": "Error al actualizar la clave API",
-            "updateSuccess": "¡Estado de la clave API actualizado con éxito!"
+            "updateSuccess": "¡Estado de la clave API actualizado con éxito!",
+            "access": "Acceso",
+            "accessFull": "Acceso completo",
+            "accessRead": "Solo lectura"
         },
         "accountSecurity": {
             "title": "Seguridad de la cuenta",
@@ -1664,6 +1695,38 @@
                 "WHO_MAXIMUM": "Máximo según la OMS (10% de calorías)",
                 "AHA_FIXED": "Fijo según la AHA (36 g hombres / 25 g mujeres)"
             }
+        },
+        "cnf": {
+            "dialogTitle": "Importación masiva y sincronización del Archivo Canadiense de Nutrientes",
+            "dialogDescription": "Importar o actualizar el catálogo completo de alimentos de Health Canada (~5.700 elementos) en tu biblioteca de alimentos.",
+            "importingProgress": "Importación del catálogo en curso...",
+            "processed": "Procesado",
+            "imported": "Importado",
+            "updated": "Actualizado",
+            "lastImportSuccess": "Importación del catálogo completada con éxito.",
+            "lastImportFailed": "La importación del catálogo falló.",
+            "syncScopeLabel": "Alcance de sincronización",
+            "modeLibraryOnly": "Sincronizar solo la biblioteca (Recomendado)",
+            "modeLibraryOnlyDesc": "Inserta o actualiza alimentos, actualiza las medidas de las porciones y las instantáneas de recetas guardadas. Las entradas anteriores del diario se conservan intactas.",
+            "modeLibraryAndPast": "Sincronizar biblioteca y entradas anteriores",
+            "modeLibraryAndPastDesc": "Actualiza la biblioteca y también recalcula los registros históricos del diario añadidos desde el Archivo Canadiense de Nutrientes para que coincidan con los datos más recientes.",
+            "languageLabel": "Idioma del catálogo",
+            "sourceLabel": "Fuente",
+            "officialArchive": "Archivo oficial de datos abiertos de Health Canada (Predeterminado)",
+            "uploadZip": "Subir archivo ZIP local (cnf-fcen-csv.zip)",
+            "needArchive": "¿No tienes el archivo?",
+            "downloadArchiveLink": "Descargar ZIP oficial del CNF (26 MB)",
+            "uploadHelp": "Selecciona el archivo ZIP oficial del CNF descargado desde open.canada.ca.",
+            "dryRunLabel": "Importación de prueba (solo los primeros 10 alimentos)",
+            "dryRunHelp": "Importa hasta 10 alimentos para verificar las medidas de las porciones y las asignaciones de nutrientes personalizadas antes de ejecutar la importación completa.",
+            "clearLibrary": "Limpiar biblioteca del CNF",
+            "startImport": "Iniciar importación / sincronización",
+            "confirmDeleteTitle": "¿Limpiar la biblioteca del Archivo Canadiense de Nutrientes?",
+            "confirmDeleteDesc": "Esto eliminará todos los alimentos del Archivo Canadiense de Nutrientes de tu biblioteca. Tus entradas anteriores del diario que hacen referencia a estos alimentos se conservarán de forma segura.",
+            "licenceNotice": "Contiene información publicada por Health Canada bajo la <1>Licencia de Gobierno Abierto – Canadá</1>.",
+            "providerCardLicence": "Contiene información publicada por Health Canada bajo la <1>Licencia de Gobierno Abierto – Canadá</1>. Idiomas admitidos: <3>inglés (en)</3> y <5>francés (fr)</5>. <7>Archivo Canadiense de Nutrientes</7>",
+            "providerSpecificDescription": "El Archivo Canadiense de Nutrientes (CNF) contiene información publicada por Health Canada bajo la <1>Licencia de Gobierno Abierto – Canadá</1>. Es gratuito, público y no requiere credenciales. Los idiomas admitidos son <3>inglés (en)</3> y <5>francés (fr)</5>.",
+            "providerSpecificPortal": "Para más detalles, consulta el portal oficial en <1>Archivo Canadiense de Nutrientes</1>."
         }
     },
     "admin": {
@@ -1678,7 +1741,9 @@
                 "emergencyFailSafe": "Protección de emergencia:",
                 "emergencyFailSafeDescription": "Si alguna vez te quedas sin acceso a tu cuenta, puedes forzar la activación del inicio de sesión con correo/contraseña estableciendo la siguiente variable de entorno en tu servidor y reiniciándolo:",
                 "envVarCopied": "Variable de entorno copiada al portapapeles.",
-                "enforceMfaForAllUsers": "Exigir MFA para todos los usuarios"
+                "enforceMfaForAllUsers": "Exigir MFA para todos los usuarios",
+                "enablePasskeyLogin": "Habilitar inicio de sesión con clave de acceso",
+                "emergencyFailSafePasskeyDescription": "Si se desactivó el inicio de sesión con llave de acceso y ya no puedes iniciar sesión, fuerza su activación con:"
             },
             "oidcProviderManagement": {
                 "title": "Gestión de proveedores OIDC",
@@ -2061,7 +2126,9 @@
         "selectRow": "Seleccionar fila",
         "unknown": "Desconocido",
         "avg": "Prom.",
-        "max": "Máx."
+        "max": "Máx.",
+        "source": "Fuente",
+        "previous": "Anterior"
     },
     "diary": {
         "nutritionSummary": "Resumen nutricional",
@@ -2440,7 +2507,9 @@
             "fasting": "Ayuno y estado de ánimo",
             "measurements": "Medidas",
             "photos": "Fotos",
-            "sleep": "Sueño"
+            "sleep": "Sueño",
+            "mindfulness": "Mindfulness",
+            "symptoms": "Síntomas"
         },
         "bmr": "TMB (kcal)",
         "noRecentActivity": "No se encontró actividad reciente.",
@@ -2613,7 +2682,10 @@
         "bulkDeleteDescription": "Elimina estos {{count}} alimentos de tu biblioteca y de cualquier comida o plan de comidas. Los registros que ya hayas hecho se conservan en tu diario.",
         "deleteKeepsDiaryHint": "Al eliminarlo, el alimento desaparece de tu biblioteca, comidas y planes de comidas. Los registros de tu diario conservan su nombre, marca e información nutricional.",
         "deleteMealPlanKeepsPastHistoryHint": "Este alimento se usa en tus planes de comidas. Al eliminarlo se quitarán de tu diario las comidas planificadas futuras, conservando el historial ya registrado.",
-        "deleteWithHistory": "Eliminar incluyendo el historial"
+        "deleteWithHistory": "Eliminar incluyendo el historial",
+        "failedToRefreshFoodFromSource": "No se pudieron actualizar los datos de los alimentos desde la fuente.",
+        "foodRefreshedFromSource": "Datos de los alimentos actualizados desde la fuente. Revisa y guarda para aplicar.",
+        "manual": "Manual"
     },
     "mealManagement": {
         "failedToLoadMeals": "Error al cargar las comidas.",
@@ -2856,7 +2928,18 @@
         "cluster": "Clúster",
         "technique": "Técnica",
         "replaceExerciseButton": "Reemplazar ejercicio",
-        "duplicateExerciseButton": "Duplicar ejercicio"
+        "duplicateExerciseButton": "Duplicar ejercicio",
+        "formatLabel": "Formato de entrenamiento",
+        "formatStandard": "Estándar (Series y Repeticiones)",
+        "formatInterval": "Intervalo / HIIT",
+        "formatTabata": "Tabata",
+        "formatEmom": "EMOM",
+        "formatAmrap": "AMRAP",
+        "formatForTime": "Por tiempo",
+        "timeCapLabel": "Límite de tiempo (minutos)",
+        "rampLabel": "Añadir por serie (este entrenamiento, {{unit}})",
+        "rampPlaceholder": "Desactivado",
+        "rampHint": "Cada serie efectiva posterior a la primera se autocompleta con este incremento de peso en el mismo entrenamiento; usa un número negativo para descender. Las series de calentamiento y de descenso (drop sets) no se tienen en cuenta."
     },
     "addWorkoutPlanDialog": {
         "editTitle": "Editar plan de entrenamiento",
@@ -2889,7 +2972,34 @@
         "errorToastTitle": "Error",
         "errorToastDescription": "Error al cargar las plantillas de entrenamiento o ejercicios.",
         "addExerciseButtonInDay": "Añadir ejercicio",
-        "pasteButton": "Pegar"
+        "pasteButton": "Pegar",
+        "planNamePlaceholder": "p. ej., Operación Verano",
+        "descriptionPlaceholder": "Descripción opcional del plan...",
+        "scheduleTypeLabel": "Modo de programación",
+        "weeklyModeTitle": "Semanal (Días fijos)",
+        "weeklyModeSubtitle": "Entrenamientos asignados a días específicos de la semana (Lun-Dom)",
+        "sequentialModeTitle": "Secuencial (Ciclo)",
+        "sequentialModeSubtitle": "Secuencia continua; se pausa en los días omitidos",
+        "sequentialNoteDescription": "Los planes secuenciales no rellenan los días del calendario de antemano. La secuencia avanza automáticamente a la siguiente sesión cada vez que completas un entrenamiento.",
+        "sequentialAssignmentsTitle": "Secuencia de entrenamientos",
+        "sequenceOrderHeading": "Sesiones ordenadas",
+        "sequenceOrderHelp": "Arrastra para reordenar las sesiones en el ciclo de rotación.",
+        "noSequentialWorkouts": "No se han añadido entrenamientos todavía. Haz clic en \"Añadir entrenamiento/ejercicio\" para añadir la primera sesión del ciclo.",
+        "sessionNumber": "Sesión {{number}}",
+        "addExerciseOrPresetButton": "Añadir entrenamiento / ejercicio",
+        "entryModeLabel": "Integración con el diario",
+        "promptModeTitle": "Pregunta y bajo demanda (Recomendado)",
+        "promptModeSubtitle": "Muestra un banner en los días programados para iniciar el entrenamiento o registrarlo en el diario",
+        "prefillModeTitle": "Rellenar calendario",
+        "prefillModeSubtitle": "Genera automáticamente entradas en el diario de ejercicios con antelación",
+        "exerciseSingular": "ejercicio",
+        "addNextSessionButton": "Añadir siguiente sesión (Sesión {{number}})",
+        "exercisePlural": "ejercicios",
+        "noExercisesInSession": "No hay ejercicios en esta sesión. Haz clic en \"Añadir ejercicio\" para añadir ejercicios o preajustes.",
+        "removeSessionTitle": "Eliminar sesión",
+        "moveSessionUp": "Mover sesión hacia arriba",
+        "moveSessionDown": "Mover sesión hacia abajo",
+        "sessionNamePlaceholder": "Nombre personalizado (ej. Día de empuje, Piernas)"
     },
     "reports": {
         "errorToastTitle": "Error",
@@ -3226,7 +3336,9 @@
         "failedToLoadHydrationTrend": "No se pudieron cargar los datos de tendencia de hidratación.",
         "hydration": {
             "title": "Hidratación"
-        }
+        },
+        "failedToLoadWorkoutHeatmap": "No se pudieron cargar los datos del mapa de calor de entrenamientos.",
+        "symptomsTab": "Síntomas"
     },
     "exerciseReportsDashboard": {
         "loadingExerciseData": "Cargando datos de ejercicio...",
@@ -3313,7 +3425,14 @@
         "muscleMass": "Masa Muscular",
         "boneMass": "Masa Ósea",
         "bodyWaterPercentage": "% de Agua Corporal",
-        "bmr": "TMB"
+        "bmr": "TMB",
+        "heatmapRangeHint": "Últimos 12 meses. Los días marcados con un contorno se encuentran dentro del rango de fechas seleccionado.",
+        "workoutCount_one": "{{count}} entrenamiento",
+        "workoutCount_many": "{{count}} entrenamientos",
+        "workoutCount_other": "{{count}} entrenamientos",
+        "personalRecordsTitle": "Récords personales",
+        "prProgressionTitle": "Evolución de récords personales",
+        "repsVsWeightTitle": "Reps vs peso"
     },
     "reportsTables": {
         "foodDiaryTable": "Tabla de diario de comida",
@@ -6110,5 +6229,95 @@
         "imageBlocked": "Imagen externa bloqueada",
         "imageBlockedFrom": "Imagen externa bloqueada: {{host}}",
         "imageFromHost": "imagen de {{host}}"
+    },
+    "mindfulness": {
+        "title": "Mindfulness",
+        "stats": {
+            "totalMinutes": "Minutos de mindfulness hoy",
+            "sessionCount": "Sesiones",
+            "recorded_one": "sesión registrada",
+            "recorded_many": "sesiones registradas",
+            "recorded_other": "sesiones registradas"
+        },
+        "pacer": {
+            "title": "Respiración pautada",
+            "subtitle": "Guía de respiración",
+            "hide": "Ocultar guía",
+            "launch": "Iniciar guía",
+            "boxName": "Respiración cuadrada",
+            "boxDesc": "Concentración y alivio del estrés",
+            "relaxName": "Relajación 4-7-8",
+            "relaxDesc": "Calma profunda y preparación para dormir",
+            "coherenceName": "Resonancia coherente",
+            "coherenceDesc": "Maximización de la VRC",
+            "inhale": "Inhala",
+            "hold": "Mantén",
+            "exhale": "Exhala",
+            "rest": "Descansa",
+            "ready": "Listo",
+            "begin": "Comenzar a respirar",
+            "complete": "Completar"
+        },
+        "timer": {
+            "title": "Temporizador de meditación",
+            "subtitle": "Sesión libre o temporizada",
+            "heading": "Temporizador de sesión de meditación",
+            "description": "Enfoque silencioso con registro automático de finalización",
+            "hide": "Ocultar temporizador",
+            "launch": "Iniciar temporizador",
+            "start": "Iniciar temporizador",
+            "resume": "Reanudar",
+            "pause": "Pausar",
+            "saveAndFinish": "Guardar y finalizar"
+        },
+        "history": {
+            "title": "Sesiones de hoy",
+            "subtitle": "Importaciones de dispositivos y registros manuales para {{date}}",
+            "loading": "Cargando datos de mindfulness...",
+            "emptyTitle": "No hay sesiones de mindfulness registradas para este día",
+            "emptyDescription": "Tómate un breve descanso de 5 minutos para respirar, medita o registra una sesión de tu dispositivo de Apple Health o Garmin."
+        },
+        "actions": {
+            "logManual": "Registrar sesión",
+            "breathe": "Respirar",
+            "timer": "Temporizador",
+            "log": "Registro",
+            "edit": "Editar sesión",
+            "delete": "Eliminar sesión",
+            "cancel": "Cancelar",
+            "saving": "Guardando..."
+        },
+        "types": {
+            "meditation": "Meditación",
+            "breathwork": "Trabajo de respiración",
+            "reflection": "Reflexión",
+            "yoga": "Yoga",
+            "walking": "Caminata consciente",
+            "other": "Otro"
+        },
+        "dialog": {
+            "editTitle": "Editar sesión de mindfulness",
+            "createTitle": "Registrar sesión de mindfulness",
+            "minutes": "Minutos",
+            "seconds": "Segundos",
+            "type": "Tipo",
+            "hrAvg": "Frecuencia cardiaca media (lpm)",
+            "hrv": "VFC RMSSD (ms)",
+            "hrStart": "Frecuencia cardiaca inicial (lpm)",
+            "hrEnd": "Frecuencia cardiaca final (lpm)",
+            "notes": "Notas",
+            "save": "Guardar Sesión",
+            "update": "Actualizar Sesión",
+            "notesPlaceholder": "¿Cómo se sintió esta sesión?"
+        },
+        "deleteDialog": {
+            "title": "Eliminar sesión de mindfulness",
+            "description": "¿Estás seguro de que quieres eliminar esta sesión de mindfulness? Esta acción no se puede deshacer.",
+            "confirm": "Eliminar",
+            "deleting": "Eliminando..."
+        }
+    },
+    "muscleHeatmap": {
+        "title": "Mapa de calor muscular"
     }
 }
