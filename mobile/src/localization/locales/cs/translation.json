@@ -2138,7 +2138,8 @@
         "calories": "kalorie",
         "remaining": "zbývá {{value}} g",
         "over": "o {{value}} g více",
-        "met": "splněno"
+        "met": "splněno",
+        "goalSeparator": " {{value}} %"
     },
     "foodSummary": {
         "tapToAddFood": "Klepnutím přidáte potravinu",
@@ -3807,7 +3808,8 @@
             "sets_other": "{{count}} sérií",
             "personalRecordCount_one": "{{formattedCount}} osobní rekord",
             "personalRecordCount_few": "{{formattedCount}} osobní rekordy",
-            "personalRecordCount_other": "{{formattedCount}} osobních rekordů"
+            "personalRecordCount_other": "{{formattedCount}} osobních rekordů",
+            "todayAt": " Dnes v "
         },
         "accessibility": {
             "calculating": "Výpočet"
