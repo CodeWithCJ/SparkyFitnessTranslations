@@ -237,8 +237,16 @@
             "checkin": "Krop og check-ins",
             "goals": "Mål",
             "reports": "Rapporter og Analyser",
-            "coaching": "Coaching"
-        }
+            "coaching": "Coaching",
+            "presetCore": "Kerne",
+            "vision": "Vision",
+            "profile": "Profil & Vaner",
+            "medications": "Medicin"
+        },
+        "errorClearingHistory": "Kunne ikke rydde chat-historikken.",
+        "errorLoadingHistory": "Kunne ikke hente chat-historikken.",
+        "errorLoadingPreferences": "Kunne ikke indlæse chatpræferencer.",
+        "successClearingHistory": "Chat-historikken er ryddet"
     },
     "foodCsvImport": {
         "title": "Import af fødevaredata",
@@ -274,5 +282,46 @@
         "protein": "Protein",
         "carbohydrates": "Kulhydrater",
         "netCarbs": "Netto Kulhydrater"
+    },
+    "openFoodFactsContribution": {
+        "title": "Bidrag til Open Food Facts",
+        "unavailable": "Bidrag kræver din egen tilpassede madvare, en aktiveret serverindstilling og en tilgængelig Open Food Facts-konto.",
+        "introduction": "Din madvare er gemt lokalt. Vælg et billede, du har taget af dette produkt, og gennemgå derefter præcist, hvad der vil blive offentliggjort. Forberedelse eller annullering af en forhåndsvisning ændrer ikke Open Food Facts.",
+        "saveAndPreview": "Gem og forhåndsvis bidrag",
+        "photoLabel": "Dit eget produkt billede",
+        "photoHelp": "Brug et tydeligt billede af forsiden, næringsdeklarationen eller emballagen. Lokation og andre billedmetadata fjernes før offentliggørelse.",
+        "imageTypeLabel": "Billedindhold",
+        "nutritionPhoto": "Næringsdeklaration",
+        "frontPhoto": "Front af produkt",
+        "packagingPhoto": "Indpakning",
+        "imageError": "Vælg et tydeligt JPEG-, PNG- eller WebP-billede på under 20 MB, med mindst 640 pixels på den længste side og 160 på den korteste, og på højst 40 megapixel.",
+        "preview": "Forhåndsvis bidrag",
+        "preparing": "Forbereder forhåndsvisning…",
+        "previewError": "Kunne ikke forberede forhåndsvisning.",
+        "previewTitle": "Gennemgå dette nøjagtige bidrag",
+        "existingProduct": "Denne opdatering opdaterer et eksisterende offentligt produkt. Gennemgå dens aktuelle oplysninger før bekræftelse.",
+        "newProduct": "Dette bidrag opretter et offentligt produkt.",
+        "personalAccount": "Din personlige Open Food Facts-konto",
+        "globalAccount": "Den delte Open Food Facts-serverkonto",
+        "imageAlt": "Billede der offentliggøres",
+        "fieldsCaption": "Hvert felt, der vil blive offentliggjort",
+        "field": "Felt",
+        "value": "Nøjagtig værdi",
+        "dataConsent": "Jeg har indtastet disse data fra den fysiske emballage, tjekket de nøjagtige værdier ovenfor og accepterer at offentliggøre dem under ODbL- og Database Contents License.",
+        "imageConsent": "Jeg har taget dette billede, ejer rettighederne til at dele det og accepterer at offentliggøre det under CC BY-SA.",
+        "publish": "Offentliggør dette bidrag",
+        "publishing": "Offentliggør…",
+        "publishError": "Offentliggørelsen kunne ikke bekræftes. Tjek produktet, før du forbereder et nyt bidrag.",
+        "expired": "Forhåndsvisningen er udløbet. Anmod om en ny forhåndsvisning.",
+        "successTitle": "Bidrag offentliggjort",
+        "partialTitle": "Billede offentliggjort; produktdata ikke bekræftet"
+    },
+    "layout": {
+        "welcome": "Velkommen {{activeUserName}}",
+        "docs": "Dokumenter",
+        "translate": "Oversæt"
+    },
+    "workoutLaps": {
+        "title": "Træningsopdeling Intervaller & Omgange"
     }
 }
