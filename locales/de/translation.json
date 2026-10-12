@@ -1015,7 +1015,7 @@
         "close": "Schließen",
         "swissFoodApi": "API der Schweizer Nährwertdatenbank",
         "usdaApi": "API der USDA-Lebensmitteldatenbank",
-        "canadianNutrientFileApi": "Canadian Nutrient File (Health Canada)"
+        "canadianNutrientFileApi": "Kanadische Nährstoffdatei (Health Canada)"
     },
     "exercise": {
         "title": "Training",
@@ -1066,10 +1066,10 @@
             "categoryCardio": "Cardio",
             "importFitTab": "FIT-Datei importieren",
             "modalityLabel": "Erfassungsart",
-            "customMuscleBodyMapHint": "Benutzerdefinierte Muskeln erscheinen nicht auf der Körperkarte.",
-            "tagInputPlaceholder": "Zum Hinzufügen oder Suchen eingeben...",
-            "addCustomTag": "„{{tag}}“ hinzufügen",
-            "replaceTitle": "Übung ersetzen",
+            "customMuscleBodyMapHint": "Benutzerdefinierte Muskeln werden nicht auf der Körperübersicht angezeigt.",
+            "tagInputPlaceholder": "Tippe, um hinzuzufügen oder zu suchen...",
+            "addCustomTag": "Hinzufügen \"{{tag}}\"",
+            "replaceTitle": "Übung ersetzten",
             "replaceSuccess": "Übung ersetzt",
             "suggestedTab": "Vorgeschlagen"
         },
@@ -1421,7 +1421,7 @@
             "duration": "Dauer",
             "durationDistance": "Dauer und Distanz",
             "bodyweightReps": "Körpergewicht (+/− Gewicht)",
-            "weightDistance": "Gewicht & Distanz (Tragen)",
+            "weightDistance": "Gewicht & Entfernung (trägt)",
             "weightDuration": "Gewicht & Dauer (Halten mit Gewicht)"
         },
         "exerciseSearch": {
@@ -2164,7 +2164,7 @@
             "goalPresets": "Zielvorgabe",
             "createNewPreset": "Neue Vorlage erstellen",
             "noGoalPresets": "Noch keine Zielvorgabe definiert. Jetzt eine erstellen, um loszulegen!",
-            "presetKcalMacros": "{{calories}} kcal, {{protein}}g P, {{carbs}}g KH, {{fat}}g F",
+            "presetKcalMacros": "{{Kalorien}} kcal, {{Eiweiß}}g P, {{Kohlenhydrate}}g KH, {{Fett}}g F",
             "edit": "Bearbeiten",
             "delete": "Löschen",
             "deletePresetConfirm": "Bist du dir sicher, dass du diese Vorlage löschen möchtest?",
@@ -4234,7 +4234,7 @@
             "weeklyOn": "Wöchentlich an {{days}}",
             "everyNDays": "Alle {{n}} Tage",
             "cyclic": "Zyklus: {{on}} Tage aktiv, {{off}} Tage inaktiv",
-            "monthly": "Monatlich am {{day}}.",
+            "monthly": "Monatlich am {{day}}",
             "prn": "Nach Bedarf",
             "taper": "Ausschleichen / Titration",
             "mealRelationSuffix": " ({{meal}})"
@@ -4434,7 +4434,7 @@
             "supplementNamePlaceholder": "z. B. Vitamin D3",
             "dose": "Dosis",
             "doseUnit": "Dosiseinheit",
-            "macroLabel_protein": "Protein",
+            "macroLabel_protein": "Eiweiß",
             "macroLabel_carbs": "Kohlenhydrate",
             "nutrientUnit": "Einheit",
             "addSupplement": "Supplement hinzufügen",
@@ -4626,7 +4626,7 @@
         "subtype": {
             "all": "Alle",
             "meds": "Medikamente",
-            "supplements": "Supplements"
+            "supplements": "Nahrungsergänzungsmittel"
         },
         "forms": {
             "tablet": "Tablette",
@@ -5038,7 +5038,7 @@
             "emptyHint": "Keine Kategorien ausgewählt – der Chatbot verwendet seine Standard-Tools.",
             "checkin": "Körper & Check-ins",
             "reports": "Berichte & Analysen",
-            "coaching": "Coaching",
+            "coaching": "Betreuung",
             "clearAll": "Alle abwählen",
             "vision": "Bilderkennung",
             "presetCore": "Basis"
@@ -5169,8 +5169,8 @@
     },
     "layout": {
         "welcome": "Willkommen {{activeUserName}}",
-        "docs": "Dokumentation",
-        "translate": "Übersetzen"
+        "docs": "Dokumente",
+        "translate": "Übersetzten"
     },
     "food": {
         "imagesLabel": "Bilder",
@@ -5916,11 +5916,11 @@
         "hideAnalysis": "Zusätzliche Diagramme ausblenden"
     },
     "openFoodFactsContribution": {
-        "title": "Zu Open Food Facts hinzufügen",
-        "unavailable": "Für Beiträge wird ein eigenes benutzerdefiniertes Lebensmittel, eine aktivierte Servereinstellung und ein verfügbares Open Food Facts-Konto benötigt.",
-        "introduction": "Deine Lebensmittel sind lokal gespeichert. Wähle ein Foto aus, das du von diesem Produkt aufgenommen hast, und überprüfe anschließend genau, welche Informationen veröffentlicht werden. Das Erstellen oder Abbrechen einer Vorschau führt zu keinen Änderungen bei Open Food Facts.",
+        "title": "Zu Open Food Facts beitragen",
+        "unavailable": "Für Beiträge benötigen Sie Ihre eigenen benutzerdefinierten Lebensmittel, eine aktivierte Servereinstellung und ein verfügbares Open Food Facts-Konto.",
+        "introduction": "Ihre Lebensmittel werden lokal gespeichert. Wählen Sie ein Foto aus, das Sie von diesem Produkt aufgenommen haben, und überprüfen Sie anschließend genau, was veröffentlicht wird. Das Erstellen oder Löschen einer Vorschau hat keine Auswirkungen auf Open Food Facts.",
         "saveAndPreview": "Eintrag speichern und Vorschau anzeigen",
-        "photoLabel": "Eigenes Produktfoto",
+        "photoLabel": "Dein eigenes Produktfoto",
         "photoHelp": "Nutze ein scharfes Foto der Vorderseite, der Nährwertangaben oder der Verpackung. Standortdaten und andere Bildmetadaten werden vor der Veröffentlichung entfernt.",
         "nutritionPhoto": "Nährwertangaben",
         "frontPhoto": "Vorderseite des Produkts",
