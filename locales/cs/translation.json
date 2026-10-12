@@ -3582,7 +3582,12 @@
         "backOff": "Odlehčovací série",
         "restPause": "Rest-pause",
         "cluster": "Clusterová série",
-        "technique": "Technika"
+        "technique": "Technika",
+        "formatInterval": "Intervalový / HIIT",
+        "formatTabata": "Tabata",
+        "formatEmom": "EMOM",
+        "formatAmrap": "AMRAP",
+        "formatForTime": "Na čas"
     },
     "addWorkoutPlanDialog": {
         "editTitle": "Upravit cvičební plán",
@@ -5879,6 +5884,173 @@
         "externalImage": "externí obrázek"
     },
     "muscles": {
-        "abdominals": "Břišní svaly"
+        "abdominals": "Břišní svaly",
+        "abductors": "Abduktory",
+        "adductors": "Adduktory",
+        "biceps": "Biceps",
+        "calves": "Lýtka",
+        "chest": "Hrudník",
+        "forearms": "Předloktí",
+        "glutes": "Hýžďové svaly",
+        "hamstrings": "Zadní stehenní svaly",
+        "lats": "Široké svaly zádové",
+        "lower back": "Dolní část zad",
+        "middle back": "Střední část zad",
+        "neck": "Krk",
+        "quadriceps": "Čtyřhlavé svaly stehenní",
+        "shoulders": "Ramena",
+        "traps": "Trapézy",
+        "triceps": "Triceps"
+    },
+    "equipment": {
+        "barbell": "Velká činka",
+        "dumbbell": "Jednoruční činka",
+        "kettlebells": "Kettlebelly",
+        "cable": "Kladka",
+        "machine": "Stroj",
+        "bands": "Gumy",
+        "body only": "Pouze vlastní váha",
+        "medicine ball": "Medicinbal",
+        "exercise ball": "Gymnastický míč",
+        "foam roll": "Válec",
+        "e-z curl bar": "Zalomená tyč EZ",
+        "other": "Ostatní"
+    },
+    "interval": {
+        "ready": "Připraveno",
+        "countdown": "Připravte se",
+        "work": "Práce",
+        "rest": "Odpočinek",
+        "roundOfTotal": "Kolo {{current}} z {{total}}",
+        "round": "Kolo {{current}}",
+        "resume": "Pokračovat",
+        "pause": "Pozastavit",
+        "timeCapLabel": "Limit: {{cap}}",
+        "wodScoring": "Hodnocení WOD",
+        "rx": "Rx",
+        "scaled": "Upraveno",
+        "extraReps": "Další opakování"
+    },
+    "symptoms": {
+        "categories": {
+            "general": "Obecné",
+            "pain": "Bolest",
+            "skin": "Kůže",
+            "other": "Ostatní"
+        },
+        "severity": {
+            "mild": "Mírná",
+            "moderate": "Mírný",
+            "severe": "Silná"
+        }
+    },
+    "guidedWorkout": {
+        "cue": {
+            "getReady": "Připravte se. Začíná cvik {{name}}.",
+            "setStartReps_one": "{{name}}. {{count}} opakování.",
+            "setStartReps_few": "{{name}}. {{count}} opakování.",
+            "setStartReps_other": "{{name}}. {{count}} opakování.",
+            "setStartSeconds_one": "{{name}}. {{count}} sekunda.",
+            "setStartSeconds_few": "{{name}}. {{count}} sekundy.",
+            "setStartSeconds_other": "{{name}}. {{count}} sekund.",
+            "setStartOpen": "{{name}}.",
+            "halfway": "Půlka.",
+            "rest_one": "Odpočinek. {{count}} sekunda.",
+            "rest_few": "Odpočinek. {{count}} sekundy.",
+            "rest_other": "Odpočinek. {{count}} sekund.",
+            "intervalRest": "Odpočinek.",
+            "nextUp": "Další: {{name}}.",
+            "workoutComplete": "Trénink dokončen."
+        },
+        "card": {
+            "badge": "VEDENÝ",
+            "getReady": "Připravte se",
+            "setOfTotal": "Série {{current}} z {{total}}",
+            "rest": "Odpočinek",
+            "nextUp": "Další na řadě",
+            "targetReps_one": "{{count}} opakování",
+            "targetReps_few": "{{count}} opakování",
+            "targetReps_other": "{{count}} opakování",
+            "targetSeconds_one": "{{count}} sekunda",
+            "targetSeconds_few": "{{count}} sekundy",
+            "targetSeconds_other": "{{count}} sekund",
+            "paused": "Pozastaveno",
+            "pause": "Pozastavit",
+            "resume": "Pokračovat",
+            "mute": "Vypnout hlas",
+            "unmute": "Zapnout hlas",
+            "replay": "Přehrát pokyny znovu",
+            "doneNext": "HOTOVO – DALŠÍ",
+            "doneHintReps_one": "Klepněte, až provedete {{count}} opakování",
+            "doneHintReps_few": "Klepněte, až provedete {{count}} opakování",
+            "doneHintReps_other": "Klepněte, až provedete {{count}} opakování",
+            "doneHint": "Klepněte, až skončíte"
+        },
+        "settings": {
+            "section": "Vedené tréninky",
+            "enabled": "Vedený režim",
+            "voice": "Hlas",
+            "rate": "Rychlost řeči",
+            "rateValue": "{{rate}}×",
+            "countdown": "Odpočet před startem",
+            "countdownSubtitle": "Před prvním cvikem a před každou časovanou sérií.",
+            "countdownValue_one": "{{count}} s",
+            "countdownValue_few": "{{count}} s",
+            "countdownValue_other": "{{count}} s",
+            "sample": "Takto budou znít vaše vedené tréninky.",
+            "test": "Vyzkoušet hlas"
+        }
+    },
+    "workoutFeedback": {
+        "title": "Jaký to byl pocit?",
+        "subtitle": "Další návrhy se tomu přizpůsobí.",
+        "difficulty": {
+            "tooEasy": "Příliš snadné",
+            "justRight": "Tak akorát",
+            "tooHard": "Příliš těžké"
+        },
+        "painQuestion": "Měli jste nějakou bolest nebo nepohodlí?",
+        "painWhere": "Při kterých cvicích? (volitelné)",
+        "painNotePlaceholder": "Co bolelo? (volitelné)",
+        "painPrivacy": "Návrhy pro tyto cviky budou lehčí, nikdy těžší.",
+        "rateExercises": "Ohodnoťte každý cvik",
+        "saving": "Ukládání…",
+        "saved": "Uloženo"
+    },
+    "adaptiveCoaching": {
+        "reasons": {
+            "painReported": "Dnes lehčí: posledně jste zde hlásili bolest.",
+            "painRepeated": "Dnes lehčí: bolest zde dva tréninky po sobě. Zvažte alternativu.",
+            "sessionPain": "Zachování zátěže: v posledním tréninku jste hlásili nepohodlí.",
+            "tooHard": "Zachování zátěže: posledně to bylo příliš těžké.",
+            "tooHardRepeated": "Dnes lehčí: příliš těžké dva tréninky po sobě.",
+            "highEffort": "Zachování zátěže: vaše poslední série byly téměř na maximum.",
+            "tooEasyRepeated": "O krok těžší: příliš snadné dva tréninky po sobě."
+        },
+        "declined": "Používá se váš obvyklý návrh.",
+        "variation": "Dělali jste to ve většině nedávných tréninků. Zkusit variaci?",
+        "useUsual": "Použít můj obvyklý",
+        "useAdjusted": "Použít upravený návrh",
+        "seeAlternatives": "Zobrazit alternativy"
+    },
+    "mindfulness": {
+        "actions": {
+            "breathe": "Dýchat",
+            "timer": "Časovač",
+            "log": "Zaznamenat"
+        },
+        "types": {
+            "meditation": "Meditace",
+            "breathwork": "Dechová cvičení",
+            "reflection": "Reflexe",
+            "walking": "Všímavá chůze",
+            "yoga": "Jóga",
+            "other": "Ostatní"
+        },
+        "timer": {
+            "title": "Časovač meditace",
+            "pause": "Pozastavit",
+            "resume": "Pokračovat"
+        }
     }
 }
