@@ -33,7 +33,8 @@
         "partialTitle": "Fotografie zveřejněna; údaje o produktu nepotvrzeny"
     },
     "layout": {
-        "welcome": "Vítejte, {{activeUserName}}"
+        "welcome": "Vítejte, {{activeUserName}}",
+        "docs": "Dokumenty"
     },
     "chat": {
         "toolCategories": {
@@ -110,7 +111,7 @@
         "importing": "Probíhá import…",
         "importData": "Importovat data",
         "importRecords_one": "Importovat {{count}} záznam",
-        "importRecords_few": "",
+        "importRecords_few": "Importovat {{count}} záznamy",
         "importRecords_other": "Importovat {{count}} záznamů",
         "importErrorTitle": "Chyba importu",
         "pasteFirst": "Nejprve prosím vložte data ve formátu CSV.",
@@ -525,19 +526,19 @@
             "macroLabel_dietary_fiber": "Vláknina",
             "includeMacros": "Zahrnout makroživiny",
             "servingUnit_tablet_one": "tableta",
-            "servingUnit_tablet_few": "",
+            "servingUnit_tablet_few": "tablety",
             "servingUnit_tablet_other": "tablet",
             "servingUnit_capsule_one": "tobolka",
-            "servingUnit_capsule_few": "",
+            "servingUnit_capsule_few": "tobolky",
             "servingUnit_capsule_other": "tobolek",
             "servingUnit_softgel_one": "měkká tobolka",
-            "servingUnit_softgel_few": "",
+            "servingUnit_softgel_few": "měkké tobolky",
             "servingUnit_softgel_other": "měkkých tobolek",
             "servingUnit_gummy_one": "želé bonbon",
-            "servingUnit_gummy_few": "",
+            "servingUnit_gummy_few": "želé bonbony",
             "servingUnit_gummy_other": "želé bonbonů",
             "servingUnit_pill_one": "pilulka",
-            "servingUnit_pill_few": "",
+            "servingUnit_pill_few": "pilulky",
             "servingUnit_pill_other": "pilulek",
             "servingEquals": "1 porce =",
             "clearNutrients": "Odebrat vše",
@@ -1274,7 +1275,7 @@
         "deletePlanTooltip": "Smazat cvičební plán",
         "activatePlanTooltip": "Aktivujte plán",
         "deactivatePlanTooltip": "Deaktivovat plán",
-        "statusLabel": "Stav:",
+        "statusLabel": "Stav ",
         "activeStatus": "Aktivní",
         "inactiveStatus": "Neaktivní",
         "ongoingStatus": "- Probíhá",
@@ -1375,13 +1376,13 @@
         "workoutPreset": "Předvolba tréninku",
         "activeCaloriesValue": "Aktivní výdej: {{calories}}",
         "setCount": "{{count}} série",
-        "setCount_one": "",
-        "setCount_few": "",
+        "setCount_one": "{{count}} série{{count}} série{{count}} sérií{{count}} série{{count}} sérií",
+        "setCount_few": "{{count}} série",
         "setCount_other": "{{count}} sérií",
         "secondsShort": "{{count}} s",
         "repCount": "{{count}} opakování",
-        "repCount_one": "",
-        "repCount_few": "",
+        "repCount_one": "{{count}} opakování",
+        "repCount_few": "{{count}} opakování",
         "repCount_other": "{{count}} opakování",
         "meta": {
             "beginner": "Začátečník",
@@ -1461,10 +1462,10 @@
         "syncingAll": "Synchronizace všech poskytovatelů...",
         "noActiveProviders": "Nebyli nalezeni žádní aktivní poskytovatelé k synchronizaci.",
         "syncCompleted_one": "Poskytovatel {{count}} byl úspěšně synchronizován.",
-        "syncCompleted_few": "",
+        "syncCompleted_few": "Úspěšně synchronizováni {{count}} poskytovatelé.",
         "syncCompleted_other": "Poskytovatelé {{count}} byli úspěšně synchronizováni.",
         "syncFailed_one": "Synchronizace poskytovatele {{count}} se nezdařila.",
-        "syncFailed_few": "",
+        "syncFailed_few": "Synchronizace {{count}} poskytovatelů se nezdařila.",
         "syncFailed_other": "Synchronizace poskytovatelů {{count}} se nezdařila."
     },
     "settings": {
@@ -2435,7 +2436,7 @@
             "availableBackupsDescription": "Vyberte záložní soubor ke stažení.",
             "noBackupsFound": "Nebyly nalezeny žádné záložní soubory.",
             "backupCount_one": "Záloha {{count}}",
-            "backupCount_few": "",
+            "backupCount_few": "{{count}} zálohy",
             "backupCount_other": "Zálohy {{count}}",
             "backupFileName": "Název souboru",
             "backupDate": "Zahájeno",
@@ -4654,7 +4655,7 @@
     "cycle": {
         "hub": "Centrum cyklu a těhotenství",
         "pregnancyHub": "Těhotenské centrum",
-        "hubSubtitle": "Sledujte, rozumějte a synchronizujte se se svým tělem.",
+        "hubSubtitle": "Sledujte, rozumět a synchronizujte se svým tělem.",
         "tabs": {
             "today": "Dnes",
             "calendar": "Kalendář",
@@ -5936,7 +5937,8 @@
             "general": "Obecné",
             "pain": "Bolest",
             "skin": "Kůže",
-            "other": "Ostatní"
+            "other": "Ostatní",
+            "gi": "Žaludek a střeva"
         },
         "severity": {
             "mild": "Mírná",
