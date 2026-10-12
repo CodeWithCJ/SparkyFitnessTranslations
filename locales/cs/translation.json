@@ -34,7 +34,8 @@
     },
     "layout": {
         "welcome": "Vítejte, {{activeUserName}}",
-        "docs": "Dokumenty"
+        "docs": "Dokumenty",
+        "translate": "Přeložit"
     },
     "chat": {
         "toolCategories": {
@@ -729,7 +730,8 @@
         "pregnancy": "Těhotenství",
         "medications": "Léky",
         "foodLog": "Zapsat jídlo",
-        "wellness": "Zdraví"
+        "wellness": "Zdraví",
+        "symptoms": "Příznaky"
     },
     "nutrition": {
         "calories": "Kalorie",
@@ -4255,7 +4257,7 @@
         "target": "Cíl",
         "weight": "Hmotnost",
         "personalRecords": "Osobní záznamy (PR)",
-        "prs": "PR –",
+        "prs": "PR ",
         "estimated1RM": "Odhadované 1RM",
         "maxWeight": "Maximální hmotnost",
         "maxReps": "Maximální počet opakování",
