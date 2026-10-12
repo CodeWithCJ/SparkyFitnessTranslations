@@ -5877,5 +5877,8 @@
         "imageBlockedFrom": "Externí obrázek zablokován: {{host}}",
         "imageFromHost": "obrázek z webu {{host}}",
         "externalImage": "externí obrázek"
+    },
+    "muscles": {
+        "abdominals": "Břišní svaly"
     }
 }
