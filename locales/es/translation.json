@@ -11,7 +11,8 @@
         "pregnancy": "Embarazo",
         "medications": "Medicamentos",
         "foodLog": "Registro de alimentos",
-        "wellness": "Bienestar"
+        "wellness": "Bienestar",
+        "symptoms": "Síntomas"
     },
     "aboutDialog": {
         "title": "Sobre SparkyFitness",
@@ -33,7 +34,8 @@
         "fatsecretApi": "API FatSecret",
         "openFoodFactsApi": "API Open Food Facts",
         "swissFoodApi": "API de la Base de datos Suiza de Composición de Alimentos",
-        "usdaApi": "API de la Base de datos de Alimentos del USDA"
+        "usdaApi": "API de la Base de datos de Alimentos del USDA",
+        "canadianNutrientFileApi": "Archivo Canadiense de Nutrientes (Health Canada)"
     },
     "exercise": {
         "title": "Ejercicios",
@@ -83,7 +85,13 @@
             "importDuplicateDescription": "Los siguientes elementos ya existen: {{duplicateList}}. Por favor, elimínalos de tu archivo e inténtalo de nuevo.",
             "importError": "Error al importar los datos del ejercicio. Por favor, inténtalo de nuevo.",
             "importFitTab": "Importar FIT",
-            "modalityLabel": "Tipo de seguimiento"
+            "modalityLabel": "Tipo de seguimiento",
+            "customMuscleBodyMapHint": "Los músculos personalizados no aparecerán en el mapa corporal.",
+            "tagInputPlaceholder": "Escribe para añadir o buscar...",
+            "addCustomTag": "Añadir \"{{tag}}\"",
+            "replaceTitle": "Remplazar Ejercicio",
+            "replaceSuccess": "Ejercicio remplazado",
+            "suggestedTab": "Sugeridos"
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "Busca tus rutinas predefinidas...",
@@ -278,7 +286,12 @@
             "hide": "Ocultar",
             "warning": "¡Atención!",
             "workoutPlansCount": "{{count}} planes de entrenamiento",
-            "workoutPresetsCount": "{{count}} rutinas predefinidas"
+            "workoutPresetsCount": "{{count}} rutinas predefinidas",
+            "duplicateExercise": "Duplicar",
+            "duplicateExerciseDialogTitle": "Duplicar Ejercicio",
+            "duplicateExerciseDialogDescription": "Guarda una copia como tu propio ejercicio. El original no se modifica.",
+            "saveCopy": "Guardar Copia",
+            "copySuffix": "(copiar)"
         },
         "exerciseImportCSV": {
             "importExerciseData": "Importar datos de ejercicios",
@@ -344,7 +357,10 @@
             "weightReps": "Peso y repeticiones",
             "repsOnly": "Repeticiones",
             "duration": "Duración",
-            "durationDistance": "Duración y distancia"
+            "durationDistance": "Duración y distancia",
+            "bodyweightReps": "Peso corporal (+/- peso)",
+            "weightDistance": "Peso y distancia (transportes)",
+            "weightDuration": "Peso y Duración (isométricos con peso)"
         },
         "importHistoryCSV": {
             "fileTooLarge": "El archivo seleccionado es demasiado grande. Sube un archivo menor a 25 MB.",
@@ -437,7 +453,9 @@
             "noDraft": "No se encontró ningún borrador de entrenamiento activo para esta fecha.",
             "setRow": "Serie {{setNumber}}",
             "sets": "series",
-            "title": "Entrenamiento en vivo"
+            "title": "Entrenamiento en vivo",
+            "location": "Gimnasio / Ubicación",
+            "locationPlaceholder": "p. eg., Gimnasio del centro, Gimnasio en casa"
         },
         "workoutPlaybackPage": {
             "addSet": "Añadir serie",
@@ -455,7 +473,33 @@
             "restEditorDescription": "Elige la duración del descanso para esta serie.",
             "restEditorTitle": "Editar descanso",
             "restTimer": "Descanso",
-            "volume": "Volumen"
+            "volume": "Volumen",
+            "addDropSets": "Añadir {{sets}} series descendientes (-{{percent}}%)",
+            "addDropSetsFor": "Añadir series descendentes para {{name}}",
+            "viewImages": "Ver imágenes de {{name}}",
+            "replaceExercise": "Reemplazar ejercicio",
+            "replaceExerciseNamed": "Remplazar {{name}}"
+        },
+        "workoutFinishSummary": {
+            "title": "Entrenamiento completado",
+            "duration": "Duración",
+            "calories": "Calorías",
+            "sets": "Series",
+            "volume": "Volumen",
+            "done": "Completado"
+        },
+        "alternatives": {
+            "heading": "En lugar de {{name}}",
+            "modes": {
+                "similar": "Similar",
+                "differentEquipment": "Otro equipamiento"
+            },
+            "reasons": {
+                "sameMuscles": "Mismos músculos",
+                "sharesMuscle": "Músculos similares",
+                "sameEquipment": "Mismo equipamiento",
+                "differentEquipment": "Equipamiento diferente"
+            }
         }
     },
     "workoutPresetsManager": {
@@ -4540,7 +4584,8 @@
         }
     },
     "layout": {
-        "welcome": "Bienvenido/a {{activeUserName}}"
+        "welcome": "Bienvenido/a {{activeUserName}}",
+        "translate": "Traducir"
     },
     "workoutLaps": {
         "lap": "Vuelta",
