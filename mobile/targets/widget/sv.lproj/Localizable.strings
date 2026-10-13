@@ -1,1 +1,17 @@
-
+"widget.calorie.name" = "Kalorier";
+"widget.calorie.description" = "Dagens kaloriintag i korthet.";
+"widget.macro.name" = "Makron";
+"widget.macro.description" = "Dagens protein, kolhydrater och fett i korthet.";
+"widget.kcal_left" = "kcal kvar";
+"widget.kcal" = "kcal";
+"widget.food" = "Mat";
+"widget.burned" = "Förbränt";
+"widget.goal" = "Mål";
+"widget.protein" = "Protein";
+"widget.carbs" = "Kolhydrater";
+"widget.fat" = "Fett";
+"widget.grams" = "%@ g";
+"widget.a11y.kcal_left" = "%@ kcal kvar";
+"widget.a11y.kcal" = "%@ kcal";
+"widget.search_food" = "Sök mat";
+"widget.scan_barcode" = "Skanna streckkod";
