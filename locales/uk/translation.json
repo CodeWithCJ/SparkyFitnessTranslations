@@ -100,11 +100,11 @@
             "eaten": "спожито",
             "burned": "спалено",
             "burnedCaloriesBreakdown": "Розподіл спалених калорій:",
-            "otherExerciseCalories": "Інші вправи: {{exerciseCalories}} кал",
-            "activeCalories": "Активні калорії: {{activeCaloriesFromExercise}} кал",
-            "stepsCalories": "Кроки: {{dailySteps}} = {{stepsCalories}} кал",
-            "bmrCalories": "BMR: {{bmr}} кал",
-            "totalCaloriesBurned": "Разом: {{totalCaloriesBurned}} кал",
+            "otherExerciseCalories": "Інші вправи: {{exerciseCalories}} {{energyUnit}}",
+            "activeCalories": "Активні калорії: {{activeCaloriesFromExercise}} {{energyUnit}}",
+            "stepsCalories": "Кроки: {{dailySteps}} = {{stepsCalories}} {{energyUnit}}",
+            "bmrCalories": "BMR: {{bmr}} {{energyUnit}}",
+            "totalCaloriesBurned": "Разом: {{totalCaloriesBurned}} {{energyUnit}}",
             "goal": "ціль",
             "caloriesBurnedBreakdownTitle": "Розподіл спалених калорій",
             "netCalories": "Чисті калорії: {{netCalories}}",
@@ -1317,7 +1317,9 @@
         "syncFailed_many": "Не вдалося синхронізувати {{count}} постачальників."
     },
     "layout": {
-        "welcome": "Вітання, {{activeUserName}}"
+        "welcome": "Вітання, {{activeUserName}}",
+        "docs": "Документація",
+        "translate": "Перевести"
     },
     "chat": {
         "toolCategories": {
@@ -1349,7 +1351,10 @@
         "distance": "Дистація",
         "time": "Час",
         "pace": "Темп (/{{unit}})",
-        "avgMaxHr": "Срд/макс УД"
+        "avgMaxHr": "Срд/макс УД",
+        "resp": "Частота дихання (у подихах на хвилину)",
+        "cadence": "Темп",
+        "power": "Потужність"
     },
     "workoutPresetForm": {
         "createTitle": "Створити новий шаблон тренування",
@@ -1446,5 +1451,72 @@
         "expired": "Термін дії цього попереднього перегляду минув. Запитайте та перевірте новий попередній перегляд.",
         "successTitle": "Внесок опубліковано",
         "partialTitle": "Фото опубліковано; дані продукту не підтверджено"
+    },
+    "dailyHealthMetrics": {
+        "title": "Щоденний звіт про стан здоров’я за даними носимих пристроїв",
+        "bodyBattery": "Запас енергії",
+        "peak": "Максимум",
+        "avgStress": "Середній рівень стресу",
+        "max": "Макс.: {{val}}",
+        "restingHr": "Частота серцебиття у стані спокою",
+        "recovery": "Відновлення: {{val}}",
+        "vo2Max": "Макс. споживання кисню (VO2)",
+        "fitnessAge": "Фізичний вік: {{val}}",
+        "readiness": "Готовність",
+        "trainingLoad": "Тренувальна нагрузка",
+        "ratio": "Коефіцієнт: {{val}}",
+        "empty": "За цей день дані з носимих пристроїв не синхронізовано.",
+        "skinTemp": "Температура шкіри",
+        "weekly": "щотижня"
+    },
+    "foodCsvImport": {
+        "title": "Імпортувати дані про продукти харчування",
+        "uploadCsv": "Загрузити CSV",
+        "downloadTemplate": "Завантажити шаблон",
+        "clearData": "Очистити дані",
+        "pastePlaceholder": "Або вставте вміст CSV-файлу сюди...",
+        "parseText": "Аналіз тексту",
+        "recordsLoaded": "Успішно завантажено {{count}} записів.",
+        "actions": "Дії",
+        "booleanTrue": "Так",
+        "booleanFalse": "Неправда",
+        "deleteRow": "Видалити строку",
+        "overrideLabel": "Замінити існуючі дані про продукт харчування",
+        "overrideDescription": "Якщо продукт з такою самою назвою та брендом уже існує, оновлюйте його харчову цінність, а не припиняйте імпорт. Залиште поле незазначеним, щоб пропустити дублікати та вивести повідомлення про помилку.",
+        "importing": "Імпортується...",
+        "importData": "Імпорт даних",
+        "importRecords_one": "Імпортувати {{count}} запис",
+        "importRecords_few": "Імпортувати {{count}} записи",
+        "importRecords_many": "Імпортувати {{count}} записів",
+        "importErrorTitle": "Помилка імпорту",
+        "pasteFirst": "Будь ласка, спочатку вставте данні у форматі CSV.",
+        "invalidFormatTitle": "Невірний формат CSV",
+        "headersMismatchText": "Заголовки не відповідають необхідному формату. Скористайтеся шаблоном.",
+        "successTitle": "Успішно",
+        "loadedRowsFromText": "Завантажено {{count}} рядків із тексту.",
+        "emptyFile": "Вибраний файл порожній.",
+        "headersMismatchFile": "Заголовки файлу CSV не відповідають необхідному формату. Будь ласка, призначте поля, щоб продовжити.",
+        "noDataTitle": "Даних не знайдено",
+        "noDataText": "Файл у форматі CSV містить заголовки, але не містить рядків з даними.",
+        "validationErrorTitle": "Помилка перевірки",
+        "nameRequired": "Поле «назва» не може бути порожнім.",
+        "fileTooLarge": "Вибраний файл занадто великий. Будь ласка, завантажте файл розміром менше 25 МБ.",
+        "defaultVariantNote": "Для кожного продукту харчування необхідно встановити принаймні один варіант як одиницю виміру за замовчуванням ( «За замовчуванням» = Так).",
+        "missingDefaultValidationError": "Для кожного продукту харчування як одиницю виміру за замовчуванням має бути встановлено принаймні один варіант.",
+        "filterMissingDefault": "Показати відсутні за замовчуванням ({{count}})",
+        "showAllRows": "Показати всі строки ({{count}})"
+    },
+    "foods": {
+        "providerVerified": "Перевірений продукт",
+        "removeNutrient": "Видалити {{nutrient}}"
+    },
+    "medications": {
+        "tabs": {
+            "cabinet": "Кабінет",
+            "symptoms": "Симптоми"
+        },
+        "calendar": {
+            "title": "Календар прийому ліків"
+        }
     }
 }
