@@ -1446,7 +1446,17 @@
         "caloriesPerHour": "Kalória/Óra",
         "level": "Szint",
         "selectLevel": "Válassz Szintet",
-        "levelBeginner": "Kezdő"
+        "levelBeginner": "Kezdő",
+        "editEntry": "Bejegyzés szerkesztése",
+        "deleteEntry": "Bejegyzés törlése",
+        "unknownExercise": "Ismeretlen gyakorlat",
+        "wgerSource": "Wger",
+        "freeExerciseDBSource": "Free Exercise DB",
+        "nutritionixSource": "Nutritionix",
+        "customSource": "Egyedi",
+        "minutesUnit": "Perc",
+        "primaryMuscles": "Elsődleges izmok",
+        "secondaryMuscles": "Másodlagos izmok"
     },
     "enhancedFoodSearch": {
         "editAndAdd": "Módosít & Hozzáad",
