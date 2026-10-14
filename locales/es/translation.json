@@ -67,9 +67,9 @@
             "mechanicLabel": "Mecánica",
             "selectMechanicPlaceholder": "Selecciona mecánica",
             "mechanicCompound": "Compuesto",
-            "equipmentLabel": "Material (separado por comas)",
-            "primaryMusclesLabel": "Músculos principales (separados por comas)",
-            "secondaryMusclesLabel": "Músculos secundarios (separados por comas)",
+            "equipmentLabel": "Material",
+            "primaryMusclesLabel": "Músculos principales",
+            "secondaryMusclesLabel": "Músculos secundarios",
             "instructionsLabel": "Instrucciones (una por línea)",
             "imagesLabel": "Imágenes",
             "addButton": "Añadir ejercicio",
@@ -614,9 +614,9 @@
         "selectMechanic": "Selecciona mecánica",
         "mechanicIsolation": "Aislamiento",
         "mechanicCompound": "Compuesto",
-        "equipment": "Material (separado por comas)",
-        "primaryMuscles": "Músculos principales (separados por comas)",
-        "secondaryMuscles": "Músculos secundarios (separados por comas)",
+        "equipment": "Material",
+        "primaryMuscles": "Músculos principales",
+        "secondaryMuscles": "Músculos secundarios",
         "instructions": "Instrucciones (una por línea)",
         "images": "Imágenes",
         "description": "Descripción",
@@ -909,7 +909,7 @@
             "canManageCheckin": "Puede gestionar los datos de seguimiento",
             "canManageCheckinHelp": "Permite al delegado registrar peso, medidas corporales, fotos de progreso, registros de sueño, estado de ánimo y estado de ayuno en tu nombre. Los registros del diario están bloqueados. Otorga acceso al perfil en modo de solo lectura.",
             "canManageMedications": "Puede gestionar medicamentos",
-            "canManageMedicationsHelp": "Permite al delegado registrar medicamentos, dosis, planes de titulación, síntomas y zonas de inyección en tu nombre. Los registros del diario están bloqueados. Otorga acceso al perfil en modo de solo lectura.",
+            "canManageMedicationsHelp": "Permite al delegado registrar medicamentos, dosis, planes de titulación y zonas de inyección en tu nombre. Los registros del diario están bloqueados. Otorga acceso al perfil en modo de solo lectura.",
             "canViewReports": "Puede ver informes",
             "canViewReportsHelp": "Permite al delegado ver gráficos, estadísticas y registros históricos en tu panel. No se conceden privilegios de escritura. Otorga acceso al perfil en modo de solo lectura.",
             "shareExternalProviders": "Compartir proveedores de datos externos",
@@ -1283,7 +1283,7 @@
             "namePlaceholder": "p. ej., Azúcares añadidos",
             "unit": "Unidad",
             "unitPlaceholder": "p. ej., g, mg, UI",
-            "providerAliases": "Si no se marca, los valores antiguos se mantendrán en tu historial, pero el nutriente se ocultará de la interfaz.",
+            "providerAliases": "Alias de proveedores",
             "aliasPlaceholder": "Escribe un nombre y presiona Entrar",
             "aliasesHelp": "Los alias son los nombres exactos que las bases de datos de alimentos en línea utilizan para este nutriente (presiona Entrar para añadir cada uno). Al importar, los campos de nutrientes del proveedor se comparan (sin distinguir mayúsculas de minúsculas) con el nombre y estos alias. Consejo: usa el panel \"Campos de nutrientes informados por…\" al importar un alimento para añadir el nombre exacto de un proveedor con un solo clic.",
             "add": "Añadir nutriente personalizado",
@@ -2121,7 +2121,7 @@
         "workout": "Entrenamiento",
         "caloriesUnit": "calorías",
         "mealSlot": "Momento de la Comida",
-        "welcomeUser": "¡Te damos la bienvenida, {{name}}!",
+        "welcomeUser": "Te damos la bienvenida, {{name}}",
         "selectAll": "Seleccionar todo",
         "selectRow": "Seleccionar fila",
         "unknown": "Desconocido",
@@ -3505,7 +3505,10 @@
     },
     "muscleGroupRecovery": {
         "title": "Recuperación por grupo muscular",
-        "noRecoveryData": "No hay datos de recuperación por grupo muscular disponibles."
+        "noRecoveryData": "No hay datos de recuperación por grupo muscular disponibles.",
+        "today": "Hoy",
+        "yesterday": "Ayer",
+        "daysAgo": "Hace {{count}} días"
     },
     "prProgressionChart": {
         "title": "Progresión de récords personales",
@@ -3524,7 +3527,8 @@
         "legs": "Piernas",
         "abs": "Abdominales",
         "calves": "Gemelos",
-        "forearms": "Antebrazos"
+        "forearms": "Antebrazos",
+        "_comment": "muscleGroups es una agrupación de interfaz más amplia para RecoveryTracker (MuscleGroupRecoveryTracker.tsx). No consolidar con muscles."
     },
     "sleepAnalyticsCharts": {
         "sleepStages": "Fases del sueño",
@@ -3850,7 +3854,9 @@
         "barcodeConflictDescription": "Este código de barras ya está asociado a “{{existing}}”. ¿Quieres asociarlo a “{{current}}” de todos modos?",
         "notesLabel": "Notas",
         "notesHelp": "Detalles que quieras recordar cada vez que registres esto: cómo lo pides o una receta. Compatible con markdown.",
-        "notesPlaceholder": "ej. Arroz blanco, doble pollo, salsa suave, sin frijoles"
+        "notesPlaceholder": "ej. Arroz blanco, doble pollo, salsa suave, sin frijoles",
+        "dataSource": "Fuente de datos",
+        "refreshFromSource": "Actualizar desde el origen"
     },
     "customMeasurements": {
         "title": "Mediciones personalizadas - {{date}}",
@@ -4000,7 +4006,7 @@
             "oxford": "Oxford"
         },
         "bodyFatAlgorithmOptions": {
-            "usNavy": "Marina de EE. UU.",
+            "usNavy": "Marina de EE.UU",
             "bmiMethod": "Método IMC"
         },
         "useExternalBmr": "Usar la TMB medida de los controles y los dispositivos sincronizados",
@@ -4218,7 +4224,7 @@
             "noPrnMedications": "No hay medicamentos según necesidad ni medicamentos no programados configurados.",
             "noPrnSupplements": "No hay suplementos según necesidad ni suplementos no programados configurados.",
             "loadingMedications": "Cargando medicamentos activos…",
-            "loadingSupplements": "Cargando suplementos activos..",
+            "loadingSupplements": "Cargando suplementos activos…",
             "loadingChecklist": "Cargando lista de control…",
             "dueToday": "Previsto hoy",
             "asNeeded": "Según sea necesario",
@@ -4322,13 +4328,13 @@
                 "moderate": "moderada",
                 "weak": "débil"
             },
-            "hydrationBenefit": "<strong>Gran beneficio de la hidratación:</strong> Un mayor consumo de agua se relaciona con un menor estreñimiento. ¡Mantente hidratado para reducir los efectos secundarios intestinales!",
+            "hydrationBenefit": "<strong>Gran beneficio de la hidratación:</strong> Un mayor consumo de agua se relaciona con un menor estreñimiento. Mantente hidratado para reducir los efectos secundarios intestinales.",
             "hydrationUnexpected": "<strong>Asociación positiva inesperada:</strong> Aumenta tu consumo de líquidos de forma activa para potenciar la respuesta a la fibra o al medicamento.",
-            "hydrationInsufficient": "No hay suficientes datos para establecer una relación. ¡Sigue registrando tu consumo de agua y tus síntomas!",
-            "proteinTolerance": "<strong>Tolerancia a la proteína:</strong> Un mayor consumo diario de proteína se asocia con menores niveles de náusea. ¡Sigue incluyendo comidas magras ricas en proteína!",
+            "hydrationInsufficient": "No hay suficientes datos para establecer una relación. Sigue registrando tu consumo de agua y tus síntomas.",
+            "proteinTolerance": "<strong>Tolerancia a la proteína:</strong> Un mayor consumo diario de proteína se asocia con menores niveles de náusea. Sigue incluyendo comidas magras ricas en proteína.",
             "reducedIntake": "<strong>Ingesta reducida:</strong> Los picos de náuseas corresponden a días con menor registro de proteínas, probablemente debido a la supresión del apetito.",
             "proteinInsufficient": "Datos insuficientes. Registra tus comidas diarias y los efectos secundarios de náuseas para ver las correlaciones.",
-            "restBenefit": "<strong>Beneficio del descanso:</strong> Una mayor duración del sueño se relaciona con una menor fatiga. ¡Mantén hábitos de sueño constantes para sentirte al máximo!",
+            "restBenefit": "<strong>Beneficio del descanso:</strong> Una mayor duración del sueño se relaciona con una menor fatiga. Mantén hábitos de sueño constantes para sentirte al máximo.",
             "hypersomnia": "<strong>Asociación con hipersomnia:</strong> Una mayor fatiga podría estar desencadenando una mayor necesidad de sueño o periodos de descanso en cama.",
             "sleepInsufficient": "Insuficientes registros de sueño o fatiga para calcular la correlación en este periodo.",
             "doseDependentNausea": "<strong>Náuseas dependientes de la dosis:</strong> Dosis más altas del medicamento se correlacionan con mayor nivel de náuseas. Considera consultar con tu médico sobre la graduación de dosis o dividir los horarios.",
@@ -4402,7 +4408,7 @@
             "bristol": "Registro intestinal (Escala de Bristol)",
             "bristolType": "Tipo Bristol {{n}}",
             "calendarDescription": "Frecuencia y severidad del registro de síntomas en los últimos 30 días",
-            "clear": "Sin síntomas",
+            "clear": "Quitar síntomas",
             "trendingUp": "Tendencia al alza respecto a principios de este periodo",
             "trendingDown": "Tendencia a la baja respecto a principios de este periodo",
             "dayTooltip": "{{date}}: {{count}} registrados, severidad máx. {{severity}}"
@@ -4723,7 +4729,8 @@
     },
     "layout": {
         "welcome": "Bienvenido/a {{activeUserName}}",
-        "translate": "Traducir"
+        "translate": "Traducir",
+        "docs": "Documentación"
     },
     "workoutLaps": {
         "lap": "Vuelta",
@@ -5418,7 +5425,61 @@
         "endFast": "Terminar ayuno",
         "totalFasts": "Ayunos totales",
         "avgDuration": "Duración promedio",
-        "hoursShort": "{{count}}h"
+        "hoursShort": "{{count}}h",
+        "autoFromMeals": "Automático (desde las comidas)",
+        "currentlyFastingAfterMeal": "Ayunando desde {{meal}}",
+        "eatingWindow": "Ventana de alimentación",
+        "eatingWindowOpen": "Ventana de alimentación abierta",
+        "eatingWindowDescription": "Ventana de alimentación abierta · Quedan {{remaining}} (cierra a las {{endTime}})",
+        "eatingWindowHint": "El ayuno se reanudará automáticamente en cuanto cierre tu ventana de alimentación.",
+        "remainingInEatingWindow": "Tiempo restante en tu ventana de alimentación",
+        "startFastEarly": "¡Comienza tu ayuno ahora!",
+        "startedAt": "Iniciado a las {{time}}",
+        "targetAt": "Objetivo: {{time}}",
+        "closesAt": "Cierra a las {{time}}",
+        "stages": {
+            "open": {
+                "name": "Ventana abierta",
+                "desc": "Absorción de nutrientes y respuesta a la insulina."
+            },
+            "fuel": {
+                "name": "Combustible óptimo",
+                "desc": "Nutrición al máximo y energía constante durante el día."
+            },
+            "sustain": {
+                "name": "Mitad de la ventana",
+                "desc": "Hidratación equilibrada y nutrición intermedia."
+            },
+            "closing": {
+                "name": "Cierre de ventana",
+                "desc": "Última comida antes de comenzar tu próximo ayuno."
+            }
+        },
+        "settings": {
+            "title": "Ayuno intermitente",
+            "description": "Configura los protocolos de ayuno intermitente, el cálculo automático desde tus comidas y las notificaciones",
+            "autoCalculate": "Calcular ayuno automáticamente desde las comidas",
+            "autoCalculateHint": "Al activarse, Sparky detecta de forma automática cuándo terminó tu última comida y calcula tu ventana activa de ayuno y tu historial diario, ¡sin necesidad de registrar inicios ni pausas!",
+            "protocol": "Protocolo de ayuno predeterminado",
+            "customProtocol": "Horas personalizadas",
+            "customProtocolDesc": "Indica tus horas deseadas de ayuno continuo.",
+            "targetHours": "Horas de ayuno objetivo",
+            "targetHoursDesc": "Duración objetivo en horas para completar tu ayuno.",
+            "targetEatingHours": "Horas de alimentación objetivo",
+            "targetEatingHoursDesc": "Duración en horas para tu ventana de alimentación.",
+            "calorieThreshold": "Límite de calorías (kcal)",
+            "calorieThresholdHint": "Los snacks o bebidas por debajo de este valor (p. ej., café solo, agua, electrolitos) no romperán ni reiniciarán tu ayuno.",
+            "preEndAlert": "Aviso previo al objetivo (minutos)",
+            "preEndAlertHint": "Cuántos minutos antes de alcanzar tu meta de ayuno deseas recibir un recordatorio.",
+            "notifications": "Alertas de ayuno",
+            "eatingWindowAlert": "Notificaciones de meta y ventana de alimentación",
+            "eatingWindowAlertDesc": "Recibe alertas motivacionales al alcanzar tu meta de ayuno y cuando se abra tu ventana para comer.",
+            "save": "Guardar ajustes de ayuno",
+            "saved": "¡Preferencias de ayuno actualizadas con éxito!",
+            "error": "No se pudieron guardar las preferencias de ayuno.",
+            "errorLoading": "Error al cargar las preferencias.",
+            "retry": "Reintentar"
+        }
     },
     "i18n": {
         "locale": "es-ES"
@@ -5444,7 +5505,23 @@
         "liftosaurSyncError": "Falló la sincronización con Liftosaur. Comprueba tu clave de API en los ajustes.",
         "liftosaurSyncErrorDesc": "Falló la sincronización con Liftosaur. Comprueba tu clave de API en los ajustes.",
         "liftosaurSyncSuccess": "Datos de Liftosaur sincronizados correctamente.",
-        "liftosaurSyncSuccessTitle": "Liftosaur sincronizado correctamente"
+        "liftosaurSyncSuccessTitle": "Liftosaur sincronizado correctamente",
+        "corosLinkError": "Error al vincular la cuenta de COROS.",
+        "corosLinkSuccess": "¡Cuenta de COROS vinculada con éxito!",
+        "corosSyncSuccess": "¡Sincronización con COROS completada!",
+        "corosNoNew": "No se encontraron nuevas actividades.",
+        "corosProcessingAuth": "Procesando autorización de COROS...",
+        "corosMissingCodeOrState": "Error: Falta el código de autorización o el estado de COROS.",
+        "corosOAuthError": "Error de autenticación OAuth con COROS",
+        "corosMissingParams": "Falta el código de autorización o el estado en la respuesta.",
+        "corosLinkSuccessMsg": "¡Cuenta de COROS vinculada con éxito!",
+        "corosLinkErrorMsg": "Error al vincular la cuenta de COROS.",
+        "syncImported": "Se importaron {{count}}",
+        "syncUpdated": "Se actualizaron {{count}}",
+        "syncSkipped": "Se omitieron {{count}} existentes",
+        "syncDeferred": "Aplazados: {{count}}",
+        "syncSummaryOnly": "Solo resumen: {{count}}",
+        "googleHealthSyncError": "La sincronización con Google Health no finalizó."
     },
     "mealCreation": {
         "convertToMeal": "Crear comida desde el diario",
@@ -5690,7 +5767,9 @@
         "modeLive": "Sincronizar normalmente desde {{provider}}",
         "modeReplay": "Sincronizar desde el fichero guardado anteriormente en lugar de desde {{provider}}",
         "replayIgnoresDates": "Aquí no se aplica el rango de fechas: el fichero guardado se reproduce por completo, cubriendo el periodo en el que se capturó.",
-        "troubleshooting": "Solución de problemas"
+        "troubleshooting": "Solución de problemas",
+        "corosWarning": "Nota: Las descargas diarias de archivos FIT están sujetas a los límites de COROS (hasta 50/día; las actividades restantes se aplazan a las siguientes sincronizaciones). Los entrenamientos de actividad están sincronizados; las métricas diarias de salud y sueño aún no se han importado.",
+        "capturePrivacyNote": "Advertencia: Los archivos de captura de diagnóstico sin procesar contienen tu actividad personal, ruta GPS y datos de salud. Revisa y oculta cualquier información confidencial antes de compartirlos."
     },
     "warning": "Advertencia",
     "workout": {
@@ -5706,7 +5785,13 @@
         "restSec": "Descanso (s)",
         "rpe": "RPE",
         "type": "Tipo",
-        "weight": "peso"
+        "weight": "peso",
+        "addedWeight": "+/− peso",
+        "durationSecShort": "Seg",
+        "distanceUnit": "Distancia ({{unit}})",
+        "rir": "RIR",
+        "startTimer": "Iniciar cronómetro",
+        "stopTimer": "Detener cronómetro"
     },
     "foodPhoto": {
         "title": "Estimar a partir de una foto",
@@ -6108,9 +6193,12 @@
         "views": {
             "all": "Todos los entrenamientos",
             "strength": "Fuerza y resistencia",
-            "cardio": "Cardio y GPS"
+            "cardio": "Cardio y GPS",
+            "allShort": "Todos",
+            "strengthShort": "Fuerza",
+            "cardioShort": "Cardio"
         },
-        "interval": "Intervalo:",
+        "interval": "Agrupar por:",
         "intervals": {
             "day": "día",
             "week": "semana",
@@ -6122,7 +6210,18 @@
             "strength": "Historial de entrenamientos de fuerza",
             "cardio": "Mapas de actividad de cardio y GPS",
             "all": "Historial de entrenamientos y mapas"
-        }
+        },
+        "cardio": {
+            "sessionsTitle": "Sesiones",
+            "sessionsHint": "Toca un entrenamiento para ver su ruta y frecuencia cardíaca.",
+            "noSessions": "No hay entrenamientos de cardio en este rango de fechas.",
+            "moreSessions": "Sesiones anteriores",
+            "noRoute": "No hay ninguna ruta GPS guardada. Los entrenamientos en interiores no tienen ruta. Una caminata al aire libre solo tiene ruta si Apple Health la compartió al sincronizar el entrenamiento.",
+            "avgHeartRate": "Frecuencia cardíaca promedio: {{bpm}} ppm. No se guardaron muestras latido a latido.",
+            "noHeartRate": "No hay muestras de frecuencia cardíaca para este entrenamiento."
+        },
+        "moreAnalysis": "Más análisis",
+        "hideAnalysis": "Ocultar gráficos adicionales"
     },
     "exerciseDisplayNames": {
         "mixedCardio": "Cardio mixto",
@@ -6264,7 +6363,7 @@
             "heading": "Temporizador de sesión de meditación",
             "description": "Enfoque silencioso con registro automático de finalización",
             "hide": "Ocultar temporizador",
-            "launch": "Iniciar temporizador",
+            "launch": "Abrir temporizador",
             "start": "Iniciar temporizador",
             "resume": "Reanudar",
             "pause": "Pausar",
@@ -6318,6 +6417,467 @@
         }
     },
     "muscleHeatmap": {
-        "title": "Mapa de calor muscular"
+        "title": "Mapa de calor muscular",
+        "subtitle": "Series efectivas en músculos principales en este rango de fechas",
+        "sets": "series",
+        "fewer": "Menos",
+        "more": "Más",
+        "tap": "Toca un músculo",
+        "notOnFigure": "No está en la figura",
+        "figure": "Figura corporal",
+        "male": "Hombre",
+        "female": "Mujer"
+    },
+    "muscles": {
+        "abdominals": "Abdominales",
+        "abductors": "Abductores",
+        "adductors": "Aductores",
+        "biceps": "Bíceps",
+        "calves": "Gemelos",
+        "chest": "Pecho",
+        "forearms": "Antebrazos",
+        "glutes": "Glúteos",
+        "hamstrings": "Isquiotibiales",
+        "lats": "Dorsales",
+        "lower back": "Espalda baja",
+        "middle back": "Espalda media",
+        "neck": "Cuello",
+        "quadriceps": "Cuádriceps",
+        "shoulders": "Hombros",
+        "traps": "Trapecios",
+        "triceps": "Tríceps"
+    },
+    "equipment": {
+        "barbell": "Barra",
+        "dumbbell": "Mancuerna",
+        "kettlebells": "Pesas rusas",
+        "cable": "Polea",
+        "machine": "Máquina",
+        "bands": "Bandas",
+        "body only": "Solo peso corporal",
+        "medicine ball": "Balón medicinal",
+        "exercise ball": "Pelota de ejercicio",
+        "foam roll": "Rodillo de espuma",
+        "e-z curl bar": "Barra Z",
+        "other": "Otro"
+    },
+    "interval": {
+        "countdown": "¡Prepárate!",
+        "decrementRound": "Deshacer 1 ronda",
+        "extraReps": "Reps adicionales",
+        "finished": "Límite de tiempo alcanzado",
+        "pause": "Pausa",
+        "ready": "Listo",
+        "rest": "Descanso",
+        "resume": "Reanudar",
+        "round": "Ronda {{current}}",
+        "roundOfTotal": "Ronda {{current}} de {{total}}",
+        "roundPlusOne": "+1 ronda ({{current}} completadas)",
+        "rx": "Rx",
+        "scaled": "Escalado",
+        "timeCapLabel": "Límite: {{cap}}",
+        "wodScoring": "Puntuación de WOD",
+        "work": "Trabajo"
+    },
+    "guidedWorkout": {
+        "cue": {
+            "getReady": "¡Prepárate! Empezando {{name}}.",
+            "setStartOpen": "{{name}}.",
+            "halfway": "¡A mitad de camino!",
+            "intervalRest": "Descanso.",
+            "nextUp": "Siguiente: {{name}}.",
+            "workoutComplete": "¡Entrenamiento completado!",
+            "setStartReps_one": "{{name}}. {{count}} rep.",
+            "setStartReps_many": "{{name}}. {{count}} reps.",
+            "setStartReps_other": "{{name}}. {{count}} reps.",
+            "setStartSeconds_one": "{{name}}. {{count}} segundo.",
+            "setStartSeconds_many": "{{name}}. {{count}} segundos.",
+            "setStartSeconds_other": "{{name}}. {{count}} segundos.",
+            "rest_one": "Rest. {{count}} segundo.",
+            "rest_many": "Rest. {{count}} segundos.",
+            "rest_other": "Rest. {{count}} segundos."
+        },
+        "card": {
+            "badge": "GUIADO",
+            "getReady": "Prepárate",
+            "setOfTotal": "Serie {{current}} de {{total}}",
+            "rest": "Descanso",
+            "nextUp": "A continuación",
+            "doneWeb": "¡Todas las series listas! Finaliza el entrenamiento para guardarlo.",
+            "paused": "Pausado",
+            "pause": "Pausar",
+            "resume": "Reanudar",
+            "mute": "Silenciar voz",
+            "unmute": "Activar voz",
+            "replay": "Repetir instrucciones",
+            "doneNext": "LISTO — SIGUIENTE",
+            "doneHint": "Toca cuando hayas terminado",
+            "targetReps_one": "{{count}} rep",
+            "targetReps_many": "{{count}} reps",
+            "targetReps_other": "{{count}} reps",
+            "targetSeconds_one": "{{count}} segundo",
+            "targetSeconds_many": "{{count}} segundos",
+            "targetSeconds_other": "{{count}} segundos",
+            "doneHintReps_one": "Pulsa cuando hayas hecho {{count}} repetición",
+            "doneHintReps_many": "Pulsa cuando hayas hecho {{count}} repeticiones",
+            "doneHintReps_other": "Pulsa cuando hayas hecho {{count}} repeticiones"
+        },
+        "settings": {
+            "section": "Entrenamientos guiados",
+            "description": "Indicaciones por voz, cuentas regresivas y cambios automáticos de serie en el reproductor",
+            "enabled": "Modo guiado",
+            "enabledSubtitleWeb": "Menciona cada ejercicio y su objetivo, cuenta regresiva, cronometra las series automáticamente y pasa a la siguiente serie. Guardado solo en este navegador.",
+            "unsupported": "Este navegador no admite voz. La vista guiada sigue funcionando, sin narración.",
+            "voice": "Voz",
+            "voiceDefaultWeb": "Predeterminada del navegador",
+            "rate": "Velocidad de voz",
+            "rateValue": "{{rate}}×",
+            "countdown": "Cuenta regresiva de preparación",
+            "countdownSubtitle": "Antes del primer ejercicio y antes de cada serie por tiempo.",
+            "sample": "Así se escucharán tus entrenamientos guiados.",
+            "test": "Probar voz",
+            "countdownValue_one": "{{count}} s",
+            "countdownValue_many": "{{count}} s",
+            "countdownValue_other": "{{count}} s"
+        }
+    },
+    "workoutFeedback": {
+        "title": "¿Cómo se sintió?",
+        "subtitle": "Tus próximas sugerencias se adaptarán a esto.",
+        "difficulty": {
+            "tooEasy": "Muy fácil",
+            "justRight": "Perfecto",
+            "tooHard": "Muy difícil"
+        },
+        "painQuestion": "¿Algún dolor o molestia?",
+        "painWhere": "¿En qué ejercicios? (opcional)",
+        "painNotePlaceholder": "¿Qué dolió? (opcional)",
+        "painPrivacy": "Las sugerencias para estos ejercicios serán más ligeras, nunca más pesadas.",
+        "rateExercises": "Califica cada ejercicio",
+        "saving": "Guardando…",
+        "saved": "Guardado",
+        "saveFailed": "No se pudo guardar tu valoración. Inténtalo de nuevo.",
+        "loadFailed": "No se pudo cargar tu valoración.",
+        "tryAgain": "Reintentar"
+    },
+    "workoutCoaching": {
+        "settingsTitle": "Sugerencias adaptativas de entrenamiento",
+        "settingsSubtitle": "Adapta las próximas series y sugerencias de ejercicios según los comentarios de tu sesión registrada (dificultad, alertas de dolor).",
+        "settingsLoadFailed": "No se pudieron cargar los ajustes de entrenamiento guiado",
+        "settingsSaved": "Ajustes guardados",
+        "settingsSaveFailed": "No se pudieron guardar los ajustes de entrenamiento guiado"
+    },
+    "adaptiveCoaching": {
+        "reasons": {
+            "painReported": "Más ligero hoy: reportaste dolor aquí la última vez.",
+            "painRepeated": "Más ligero hoy: molestia en esta zona dos sesiones seguidas. Considera una alternativa.",
+            "sessionPain": "Manteniendo peso: indicaste molestias en tu último entrenamiento.",
+            "tooHard": "Manteniendo peso: la última vez se sintió demasiado duro.",
+            "tooHardRepeated": "Más ligero hoy: demasiado duro dos sesiones seguidas.",
+            "highEffort": "Manteniendo peso: tus últimas series estuvieron cerca de tu esfuerzo máximo.",
+            "tooEasyRepeated": "Un poco más pesado: demasiado fácil dos sesiones seguidas. ¡A por ello!"
+        },
+        "declined": "Usando tu sugerencia habitual.",
+        "variation": "Has hecho esto en tus entrenamientos más recientes. ¿Probamos una variación?",
+        "useUsual": "Usar mi habitual",
+        "useAdjusted": "Usar la sugerencia ajustada",
+        "seeAlternatives": "Ver alternativas"
+    },
+    "symptoms": {
+        "manage": {
+            "show": "Mostrar {{name}}",
+            "addOption": "Añadir el tuyo",
+            "title": "Gestionar síntomas",
+            "description": "Elige qué registrar, qué se te pregunta y las opciones que ves.",
+            "tabSymptoms": "Síntomas",
+            "tabLists": "Opciones",
+            "new": "Nuevo síntoma",
+            "episodeTag": "episodios",
+            "unpin": "Desfijar {{name}}",
+            "pin": "Fijar {{name}}",
+            "edit": "Editar {{name}}",
+            "hide": "Ocultar {{name}}",
+            "delete": "Eliminar {{name}}",
+            "hidden": "Oculto",
+            "restore": "Mostrar de nuevo",
+            "keepHistory": "Ocultar o eliminar un síntoma nunca borrará tus registros anteriores.",
+            "name": "Nombre",
+            "template": "Tipo",
+            "category": "Grupo",
+            "scale": "Escala de",
+            "episodic": "Normalmente un episodio con inicio y fin (como una migraña)",
+            "sections": "Qué preguntar al registrar",
+            "fields": "Tus propios campos",
+            "fieldLabel": "Etiqueta",
+            "fieldType": "Tipo",
+            "removeField": "Eliminar campo",
+            "fieldOptions": "Opciones, separadas por comas",
+            "fieldUnit": "Unidad (opcional)",
+            "addField": "Añadir un campo",
+            "section": {
+                "locations": "Dónde está",
+                "phases": "Fases del dolor de cabeza",
+                "qualities": "Sensación",
+                "associated": "Otros síntomas",
+                "triggers": "Posibles desencadenantes",
+                "treatments": "Tratamientos",
+                "impact": "Impacto en el día",
+                "notes": "Notas",
+                "medication": "Posible efecto secundario de un medicamento",
+                "bristol": "Escala de heces de Bristol",
+                "photos": "Fotos",
+                "custom_fields": "Tus propios campos"
+            }
+        },
+        "chips": {
+            "remove": "Eliminar {{name}}",
+            "add": "Añadir",
+            "save": "Guardar",
+            "newLabel": "Nombre de la nueva opción"
+        },
+        "detail": {
+            "delete": "Eliminar",
+            "confirmDelete": "¿Eliminar este registro?",
+            "edit": "Editar",
+            "editTitle": "Editar registro de síntoma"
+        },
+        "treatments": {
+            "addMedication": "Añadir un medicamento",
+            "didItHelp": "¿Ayudó?",
+            "helped": "Ayudó",
+            "partly": "En parte",
+            "didnt": "No ayudó"
+        },
+        "map": {
+            "view": "Vista de mapa",
+            "front": "Frontal",
+            "back": "Posterior",
+            "headLabel": "Mapa de la cabeza",
+            "bodyLabel": "Mapa corporal",
+            "hint": "Toca donde te duela. Izquierda y derecha corresponden a tu cuerpo."
+        },
+        "severity": {
+            "label": "Intensidad",
+            "count": "Cuántas veces",
+            "mild": "Leve",
+            "moderate": "Moderado",
+            "severe": "Grave",
+            "low": "1 leve",
+            "high": "{{max}} peor"
+        },
+        "form": {
+            "started": "Iniciado",
+            "now": "Ahora",
+            "minutesAgo": "−{{n}} min",
+            "hoursAgo": "−{{n}} h",
+            "pick": "Elegir…",
+            "startedAt": "Fecha y hora de inicio",
+            "ongoing": "Aún en curso",
+            "ended": "Finalizado",
+            "symptom": "Síntoma",
+            "newSymptom": "Nuevo síntoma",
+            "kind": "Tipo de entrada",
+            "quick": "Registro rápido",
+            "episode": "Episodio",
+            "newSymptomPlaceholder": "p. ej., Dolor lumbar",
+            "newSymptomName": "Nombre del nuevo síntoma",
+            "noMedication": "Sin medicación vinculada",
+            "notesPlaceholder": "Algo más que valga la pena recordar",
+            "cancel": "Cancelar",
+            "saving": "Guardando…",
+            "update": "Actualizar",
+            "saveEpisode": "Guardar episodio",
+            "save": "Guardar",
+            "title": "Registrar un síntoma"
+        },
+        "sections": {
+            "where": "Dónde",
+            "phases": "Fases",
+            "optional": "opcional",
+            "qualities": "Cómo se siente",
+            "associated": "Otros síntomas",
+            "triggers": "Posibles desencadenantes",
+            "treatments": "Tratamientos",
+            "noneYet": "ninguno aún",
+            "impact": "Impacto en tu día",
+            "bristol": "Registro intestinal (escala de Bristol)",
+            "medication": "Posible efecto secundario de",
+            "details": "Más detalles",
+            "notes": "Notas",
+            "photos": "Fotos"
+        },
+        "photos": {
+            "saved": "Foto guardada",
+            "remove": "Eliminar foto",
+            "add": "Añadir fotos"
+        },
+        "episode": {
+            "ongoing": "en curso",
+            "peak": "pico {{n}}",
+            "saveTreatments": "Guardar tratamientos",
+            "updateSeverity": "Actualizar intensidad",
+            "saveReading": "Guardar registro",
+            "addRelief": "Añadir alivio",
+            "addReliefHint": "Registra qué tomaste o hiciste y si te ayudó.",
+            "end": "Finalizar episodio",
+            "endTitle": "Finalizar este episodio",
+            "endHint": "Indica cuándo terminó y señala qué te ayudó.",
+            "endedWhen": "Terminó",
+            "didAnythingHelp": "¿Te ayudó algo?",
+            "startedAt": "inició {{time}}"
+        },
+        "history": {
+            "title": "Síntomas recientes",
+            "loading": "Cargando…",
+            "empty": "No hay registros en los últimos 30 días. ¡Usa el formulario para registrar un síntoma!",
+            "cycle": "Ciclo"
+        },
+        "calendar": {
+            "previous": "Mes anterior",
+            "next": "Mes siguiente",
+            "free": "Sin síntomas",
+            "mild": "Leve a moderado",
+            "severe": "Severo",
+            "unknown": "Sin registros"
+        },
+        "hub": {
+            "title": "Síntomas",
+            "subtitle": "Monitorea tus síntomas y episodios para descubrir patrones y cuidar de ti.",
+            "manage": "Gestionar",
+            "anyToday": "¿Algún síntoma el {{date}}?",
+            "today": "hoy",
+            "markedFree": "Marcado como día sin síntomas.",
+            "undo": "Deshacer",
+            "noneToday": "Sin síntomas",
+            "logAgain": "Registrar de nuevo"
+        },
+        "chart": {
+            "summary": "Intensidad durante el episodio, {{count}} registros"
+        },
+        "phases": {
+            "prodrome": "Antes del dolor de cabeza",
+            "aura": "Aura",
+            "postdrome": "Después del dolor de cabeza"
+        },
+        "triggerGroups": {
+            "sleep": "Sueño",
+            "food_drink": "Comida y bebida",
+            "lifestyle": "Estilo de vida",
+            "environment": "Entorno",
+            "hormonal": "Hormonal",
+            "other": "Otro",
+            "mine": "Míos"
+        },
+        "impact": {
+            "none": "Ninguno",
+            "mild": "Leve",
+            "moderate": "Moderado",
+            "severe": "Severo"
+        },
+        "templates": {
+            "generic": "General",
+            "headache": "Dolor de cabeza o migraña",
+            "pain": "Dolor",
+            "gi": "Estómago e intestino",
+            "respiratory": "Respiración y alergia",
+            "skin": "Piel",
+            "mental": "Estado de ánimo y ansiedad"
+        },
+        "categories": {
+            "general": "General",
+            "pain": "Dolor",
+            "head": "Cabeza",
+            "gi": "Estómago e intestino",
+            "respiratory": "Respiración",
+            "skin": "Piel",
+            "mental": "Mente",
+            "other": "Otro"
+        },
+        "scales": {
+            "1-5": "1 a 5",
+            "1-10": "1 a 10",
+            "none-severe": "Leve, moderado, severo",
+            "count": "Un recuento",
+            "text": "Solo notas"
+        },
+        "fieldTypes": {
+            "number": "Número",
+            "text": "Texto",
+            "boolean": "Sí o no",
+            "select": "Una opción",
+            "multiselect": "Varias opciones"
+        },
+        "optionKinds": {
+            "location": "Zonas del cuerpo",
+            "head_location": "Zonas de la cabeza",
+            "quality": "Cómo se siente",
+            "associated": "Otros síntomas",
+            "trigger": "Desencadenantes",
+            "relief": "Métodos de alivio"
+        },
+        "report": {
+            "symptomDays": "Días con síntomas",
+            "episodes": "Episodios",
+            "freeDays": "Días sin síntomas",
+            "averageDuration": "Episodio promedio",
+            "medicationDays": "Días con medicación",
+            "symptom": "Síntoma",
+            "allSymptoms": "Todos los síntomas",
+            "exportCsv": "Exportar CSV",
+            "print": "Imprimir para el médico",
+            "medicationCaution": "Tomar medicación para los síntomas durante 10 o más días es algo que conviene consultar con tu médico. Esto es un recordatorio, no un diagnóstico.",
+            "recentEpisodes": "Episodios recientes",
+            "recentEpisodesHint": "Lado a lado, con lo que registra tu diario sobre cada uno.",
+            "showLast": "Cuántos mostrar",
+            "lastN": "Últimos {{n}}",
+            "noEpisodes": "No hay episodios en este rango de fechas. Registra un episodio con una hora de inicio para verlo aquí.",
+            "col": {
+                "started": "Comenzó",
+                "duration": "Duración",
+                "peak": "Pico",
+                "where": "Dónde",
+                "triggers": "Desencadenantes",
+                "relief": "Alivio",
+                "slept": "Sueño",
+                "food": "Día anterior",
+                "water": "Agua"
+            },
+            "factorsTitle": "Qué ocurrió antes",
+            "factorsHint": "En cuántos de tus últimos {{n}} episodios estuvo presente cada uno de estos factores. Describe lo sucedido; no demuestra una causa.",
+            "notEnough": "Aún no hay suficientes episodios para identificar un patrón (al menos {{n}})",
+            "noFactors": "Añade desencadenantes a tus episodios y registra el sueño y las comidas para descubrir qué suele ocurrir antes.",
+            "ofKnown": "{{count}} de {{known}}",
+            "timeOfDay": "Momento del día",
+            "timeOfDayHint": "Cuándo se registraron o comenzaron los síntomas.",
+            "printTitle": "Informe de síntomas",
+            "printSummary": "{{days}} días con síntomas, {{episodes}} episodios, {{free}} días sin síntomas, {{meds}} días con medicación.",
+            "factor": {
+                "short_sleep": "Menos de 6 horas de sueño la noche anterior",
+                "low_water": "Menos de 1,5 l de agua el día anterior",
+                "alcohol": "Alcohol en los nombres de las comidas",
+                "caffeine": "Cafeína en los nombres de las comidas",
+                "menstrual_phase": "Durante la fase menstrual"
+            }
+        }
+    },
+    "trainingConsistency": {
+        "title": "Constancia de entrenamiento",
+        "streak": "Racha de semanas",
+        "longest": "Más larga",
+        "thisWeek": "Esta semana",
+        "lastWeek": "La semana pasada",
+        "chartLabel": "Días de entrenamiento por semana",
+        "setsTitle": "Series por músculo",
+        "noSets": "No hay series registradas esta semana ni la anterior.",
+        "loadFailed": "Error al cargar la constancia de entrenamiento.",
+        "weeks_one": "{{count}} semana",
+        "weeks_many": "{{count}} semanas",
+        "weeks_other": "{{count}} semanas",
+        "days_one": "{{count}} día",
+        "days_many": "{{count}} días",
+        "days_other": "{{count}} días",
+        "daysPerWeek_one": "Días de entrenamiento a la semana, la última {{count}} semana",
+        "daysPerWeek_many": "Días de entrenamiento a la semana, las últimas {{count}} semanas",
+        "daysPerWeek_other": "Días de entrenamiento a la semana, las últimas {{count}} semanas"
     }
 }
