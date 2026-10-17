@@ -55,9 +55,9 @@
             "categoryGeneral": "Загальні",
             "sourceLabel": "Джерело",
             "caloriesPerHourHint": "Лишіть порожнім, щоб використати системний підрахунок калорій за годину ({{newExerciseCalories}} кал/год).",
-            "equipmentLabel": "Обладнання (розділено комами)",
-            "primaryMusclesLabel": "Основні м’язи(розділено комами)",
-            "secondaryMusclesLabel": "Додаткові м’язи (розділено комами)",
+            "equipmentLabel": "Обладнання",
+            "primaryMusclesLabel": "Основні м’язи",
+            "secondaryMusclesLabel": "Додаткові м’язи",
             "imagesLabel": "Фото",
             "addButton": "Додати вправу",
             "addSuccess": "Вправу успішно додано",
@@ -324,9 +324,9 @@
         "selectMechanic": "Оберіть механіку",
         "mechanicIsolation": "Ізоляційна",
         "mechanicCompound": "Багатосуглобова",
-        "equipment": "Обладнання (через кому)",
-        "primaryMuscles": "Основні м’язи (через кому)",
-        "secondaryMuscles": "Додаткові м’язи (через кому)",
+        "equipment": "Обладнання",
+        "primaryMuscles": "Основні м’язи",
+        "secondaryMuscles": "Додаткові м’язи",
         "instructions": "Інструкції (по одному на рядок)",
         "images": "Зображення",
         "description": "Опис",
@@ -583,7 +583,7 @@
             "exportSuccess": "Експорт виконано успішно"
         },
         "customNutrients": {
-            "title": "Користувальницькі поживні речовини",
+            "title": "Управління користувацькими поживними речовинам",
             "subtitle": "Керуйте своїми користувальницькими визначеннями поживних речовин"
         },
         "customMeals": {
@@ -666,7 +666,7 @@
             "willBeSetOnUpload": "Буде встановлено після завантаження",
             "issuerUrl": "URL-адреса емітента",
             "clientId": "Ідентифікатор клієнта",
-            "leaveUnchanged": "Не змінюйте, якщо *****",
+            "leaveUnchanged": "Залиште поле порожнім, щоб зберегти існуючий",
             "redirectUri": "URI перенаправлення",
             "redirectUriPlaceholder": "наприклад, {{uri}}",
             "tokenEndpointAuthMethod": "Метод авторизації Token Endpoint",
@@ -1013,7 +1013,7 @@
         "addAnotherSleepSession": "Додати ще один сеанс",
         "savingSleep": "Збереження сну...",
         "saveSleep": "Зберегти со",
-        "sleepEntryFor": "Запис сну за",
+        "sleepEntryFor": "Запис сну за {{date}}",
         "cancel": "Скасувати",
         "save": "Зберегти",
         "edit": "Редагувати",
@@ -1467,7 +1467,9 @@
         "ratio": "Коефіцієнт: {{val}}",
         "empty": "За цей день дані з носимих пристроїв не синхронізовано.",
         "skinTemp": "Температура шкіри",
-        "weekly": "щотижня"
+        "weekly": "щотижня",
+        "low": "низький {{val}}",
+        "recHours": "запис: {{val}}"
     },
     "foodCsvImport": {
         "title": "Імпортувати дані про продукти харчування",
@@ -1549,13 +1551,49 @@
             "loggedCount_few": "{{count}} записаних симптоми",
             "loggedCount_many": "{{count}} записаних симптомів",
             "maxSeverity": "Максимальний рівень серйозності: {{n}}",
-            "skipped": "Пропущено"
+            "skipped": "Пропущено",
+            "titleAll": "Календар записів",
+            "allSkipped": "Всі дози пропущені",
+            "tooltipSkipped": "{{count}} пропущено",
+            "tooltipSnoozed": "{{count}} відкладено"
         },
         "common": {
             "logging": "Запис…",
             "saving": "Збереження…",
             "save": "Збрегти",
-            "reset": "Скинути"
+            "reset": "Скинути",
+            "custom": "Користувацький",
+            "clear": "Очистити",
+            "inactive": "Неактивний"
+        },
+        "today": {
+            "medicationsTitle": "Сучасні лікарські засоби",
+            "supplementsTitle": "Сьогоднішні добавки",
+            "noPrnSupplements": "Не налаштовано жодних додаткових доз за потребою або поза графіком.",
+            "loadingMedications": "Завантаження активних лікарських засобів…",
+            "loadingSupplements": "Завантаження активних добавок…",
+            "dueToday": "Спливае сьогодні",
+            "asNeeded": "За потреби",
+            "logIntake": "Записати прийом",
+            "noIntake": "Сьогодні ще немає записів.",
+            "doses": "Дози",
+            "dosesToday": "Дози сьогодні",
+            "adherence14": "14-денна прихильність до лікування",
+            "perfectDays": "Ідеальні дні (14 днів)",
+            "last14": "Останні 14 днів",
+            "streak": "{{count}}-денна серія",
+            "checklistToday": "Чекліст на сьогодні",
+            "checklistMed": "Чекліст лікарських засобів",
+            "scheduled": "Заплановано",
+            "undo": "Відмінити",
+            "snooze": "Відкласти",
+            "snoozed": "Відкладено",
+            "skip": "Пропустити",
+            "take": "Прийняти",
+            "editLogged": "Редагувати внесену дозу",
+            "takenAt": "Прийнято в",
+            "ring14Day": "14-денний",
+            "noScheduledToday": "На сьогодні дози не передбачені."
         }
     }
 }
