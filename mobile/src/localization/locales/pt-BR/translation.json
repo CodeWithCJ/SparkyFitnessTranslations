@@ -149,5 +149,19 @@
         "loadingDiary": "Carregando diário familiar…",
         "loadDiaryFailed": "Acesso ao diário familiar indisponível",
         "back": "Voltar"
+    },
+    "healthMetrics": {
+        "restingHeartRate": "Frequência cardíaca em repouso",
+        "respiratoryRate": "Frequência respiratória"
+    },
+    "mindfulness": {
+        "timer": {
+            "title": "Temporizador de meditação",
+            "countdownSubtitle": "Sessão de meditação cronometrada",
+            "start": "Começar meditação"
+        },
+        "tools": {
+            "timerTitle": "Temporizador de meditação"
+        }
     }
 }
