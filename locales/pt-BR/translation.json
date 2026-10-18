@@ -83,7 +83,8 @@
         },
         "familyAccess": {
             "title": "Acesso Familiar",
-            "description": "Gerencie o acesso aos seus dados para membros da família"
+            "description": "Gerencie o acesso aos seus dados para membros da família",
+            "canManageCheckinHelp": "Permite que o representante registre, em seu nome, peso, medidas corporais, fotos de progresso, registros de sono, registros de humor e status de jejum. Os registros de diário ficam bloqueados. Concede acesso ao perfil apenas para leitura."
         },
         "customCategories": {
             "title": "Categorias Personalizadas",
@@ -263,7 +264,10 @@
             "caloriesBurnedBreakdownTitle": "Detalhamento de Calorias Queimadas",
             "netCalories": "Calorias líquidas: {{netCalories}}",
             "netCaloriesBreakdown": "{{dailyIntakeCalories}} consumida - {{finalTotalCaloriesBurned}} queimada",
-            "dailyProgress": "Progresso Diário"
+            "dailyProgress": "Progresso Diário",
+            "dailyEnergyGoal": "Meta diária de energia",
+            "energyBurnedBreakdownTitle": "Detalhamento da energia gasta",
+            "netEnergy": "Energia Líquida: {{netCalories}}"
         },
         "editExerciseEntryDialog": {
             "setLabel": "Série",
@@ -400,6 +404,10 @@
             "voiceLabel": "Voz:",
             "selectVoicePlaceholder": "Selecione uma voz",
             "stepCount": "Passo {{currentInstructionIndex}} de {{totalInstructions}}"
+        },
+        "modality": {
+            "weightDistance": "Peso e Distância (transportes)",
+            "durationDistance": "Duração e distância"
         }
     },
     "workoutPresetForm": {
@@ -533,7 +541,9 @@
         "exerciseEntryAddedSuccessfully": "Entrada de exercício adicionada com sucesso.",
         "failedToDeleteExerciseEntry": "Falha ao excluir entrada de exercício.",
         "exerciseEntryDeletedSuccessfully": "Entrada de exercício excluída com sucesso.",
-        "loadingExercises": "Carregando exercícios..."
+        "loadingExercises": "Carregando exercícios...",
+        "setCount": "{{count}} série",
+        "repCount": "{{count}} rep"
     },
     "reports": {
         "exerciseEntriesExportHeaders": {
@@ -696,7 +706,11 @@
             "value": "Valor"
         },
         "noMapDataAvailable": "Não há dados de mapa disponíveis.",
-        "spo2Minimum": "Mínimo"
+        "spo2Minimum": "Mínimo",
+        "fasting": {
+            "totalFasts": "Jejuns totais",
+            "avgDuration": "Duração média (hrs)"
+        }
     },
     "logExerciseEntryDialog": {
         "typeLabel": "Tipo",
@@ -822,7 +836,7 @@
         "neutral": "Neutro",
         "anyThoughtsOrFeelings": "Há pensamentos ou sentimentos que gostaria de acrescentar?",
         "addAnotherSleepSession": "Adicionar outra sessão de sono",
-        "sleepTracking": "Rastreamento do Sono",
+        "sleepTracking": "Registro do sono",
         "sleepSession1": "Sessão de sono 1",
         "bedtime": "Hora que Deitou",
         "wakeTime": "Hora que Levantou",
@@ -875,14 +889,25 @@
         "photos": {
             "upload": "Enviar",
             "uploadError": "Envio falhou",
-            "uploadSuccess": "Foto salva"
+            "uploadSuccess": "Foto salva",
+            "title": "Fotos de progresso",
+            "addPhotos": "Adicionar foto de progresso",
+            "calendarLegend": "Fotos de progresso"
         },
         "tabs": {
             "measurements": "Medidas",
             "photos": "Fotos",
-            "sleep": "Sono"
+            "sleep": "Sono",
+            "fasting": "Jejum e Humor",
+            "mindfulness": "Mindfulness"
         },
-        "useLast": "Usar último"
+        "useLast": "Usar último",
+        "recentMeasurementsDescription": "Seus registros mais recentes, incluindo medições, jejuns concluídos e dados de saúde sincronizados.",
+        "failedToSaveMood": "Falha ao salvar humor.",
+        "moodSaved": "Humor salvo",
+        "moodSavedSuccessfully": "Humor salvo com sucesso.",
+        "saveMood": "Salvar Humor",
+        "noRecentActivity": "Nenhuma atividade recente encontrada."
     },
     "workoutReport": {
         "weight": "Peso",
@@ -1455,7 +1480,8 @@
             "updated": "Consumo de água atualizado",
             "updateError": "Falha ao salvar ingestão de água",
             "perDrink": "{{volume}} {{unit}} por bebida",
-            "defaultPerDrink": "{{volume}} {{unit}} por bebida (padrão)"
+            "defaultPerDrink": "{{volume}} {{unit}} por bebida (padrão)",
+            "logTitle": "Água tomada hoje"
         },
         "copyFoodEntryDialog": {
             "title": "Copiar Entrada de Comidas",
@@ -1757,7 +1783,7 @@
         "edit": "Editar",
         "delete": "Excluir",
         "addAnotherSleepSession": "Adicionar outra sessão de sono",
-        "sleepTracking": "Rastreamento do Sono",
+        "sleepTracking": "Registro do Sono",
         "sleepSession": "Sessão de sono {{sessionNumber}}",
         "bedtime": "Hora que Deitou",
         "wakeTime": "Hora que Levantou",
@@ -1980,7 +2006,12 @@
         "calm": "Calmo",
         "confident": "Confiante",
         "happy": "Feliz",
-        "excited": "Empolgado"
+        "excited": "Empolgado",
+        "intensity": "Humor geral",
+        "low": "Energia baixa",
+        "energetic": "Energético",
+        "anxious": "Ansioso",
+        "irritable": "Irritado"
     },
     "muscleGroupRecovery": {
         "title": "Recuperação do grupo muscular",
@@ -2042,7 +2073,7 @@
     "medications": {
         "tabs": {
             "log": "Log",
-            "cabinet": "Gabinete",
+            "cabinet": "Armário",
             "symptoms": "Sintomas"
         },
         "common": {
@@ -2050,7 +2081,9 @@
             "saving": "Salvando…",
             "save": "Salvar",
             "reset": "Resetar",
-            "custom": "Personalizado"
+            "custom": "Personalizado",
+            "clear": "Limpar",
+            "inactive": "Inativo"
         },
         "today": {
             "noIntake": "Nenhuma entrada registrada hoje.",
@@ -2066,12 +2099,51 @@
             "undo": "Desfazer",
             "snooze": "Soneca",
             "skip": "Pular",
-            "take": "Tomar"
+            "take": "Tomar",
+            "medicationsTitle": "Medicamentos de hoje",
+            "medicationsDescription": "Acompanhe as doses agendadas e registre os medicamentos administrados conforme a necessidade",
+            "noMedicationDoses": "Não há doses agendadas para hoje — registre abaixo qualquer medicação tomada se necessário.",
+            "supplementsTitle": "Suplementos de hoje",
+            "supplementsDescription": "Acompanhe as doses programadas e registre os suplementos tomados, se necessário",
+            "noSupplementDoses": "Não há doses agendadas para hoje — registre abaixo qualquer suplemento, se necessário.",
+            "noPrnMedications": "Nenhum medicamento necessário ou não programado está configurado.",
+            "noPrnSupplements": "Nenhum suplemento necessário ou sem agendamento configurado.",
+            "loadingMedications": "Carregando medicamentos em uso…",
+            "loadingSupplements": "Carregando suplementos em uso…",
+            "loadingChecklist": "Carregando lista…",
+            "dueToday": "Previsto hoje",
+            "asNeeded": "Conforme necessário",
+            "asNeededHint": "Toque para registrar uma dose agora (sem horário fixo ou sem dose prevista para hoje).",
+            "logIntake": "Registrar ingestão",
+            "snoozed": "Adiado",
+            "adherenceTitle": "Visão geral da adesão",
+            "editLogged": "Editar dose registrada",
+            "takenAt": "Tomado em",
+            "ring14Day": "14 dias",
+            "noScheduledToday": "Não há doses agendadas para hoje.",
+            "noScheduledDay": "Não há doses agendadas para este dia.",
+            "loggedToday": "{{completed}} de {{total}} doses registradas hoje.",
+            "loggedDay": "{{completed}} de {{total}} doses registradas para este dia.",
+            "loggedActivity": "Registrado hoje",
+            "loggedActivityDescription": "Tudo o que você tomou ou pulou nesta data.",
+            "loadingHistory": "Carregando histórico…",
+            "addNote": "Adicionar nota...",
+            "note": "Nota:",
+            "injectionDueToday": "Injeção de {{name}} — programada para hoje",
+            "injectionScheduled": "Injeção de {{name}} — programada",
+            "scheduledAt": "Programado para {{time}}",
+            "anyTimeToday": "A qualquer hora hoje",
+            "logShot": "Registrar injeção",
+            "taken": "Tomado",
+            "prnTaken": "Tomado conforme a necessidade",
+            "editEntryTime": "Editar horário de registro",
+            "removeEntry": "Remover registro"
         },
         "insights": {
             "title": "Informações e dicas sobre efeitos colaterais",
             "subtitle": "Correlações farmacocinéticas sobrepostas aos horários de administração de doses recentes",
-            "disclaimer": "As informações são calculadas em uma janela de 30 dias. Tratam-se de estimativas educacionais, não de aconselhamento clínico."
+            "disclaimer": "As informações são calculadas em uma janela de 30 dias. Tratam-se de estimativas educacionais, não de aconselhamento clínico.",
+            "symptomCorrelation": "Correlação com {{symptom}}"
         },
         "locations": {
             "general": "Geral",
@@ -2107,14 +2179,84 @@
             "noMeds": "Adicione um medicamento para ver o seu calendário de registro aqui.",
             "selectMedication": "Selecione um medicamento",
             "allMedications": "Todos os medicamentos",
-            "generalSymptom": "Sintomas gerais"
+            "generalSymptom": "Sintomas gerais",
+            "titleSupplements": "Calendário de Registro de Suplementos",
+            "noSupplements": "Adicione um suplemento para ver seu calendário de registros aqui.",
+            "selectSupplement": "Selecione um suplemento",
+            "allSupplements": "Todos os suplementos",
+            "titleAll": "Calendário de registros",
+            "noEntries": "Adicione um medicamento ou suplemento para ver seu calendário de registros aqui.",
+            "selectEntry": "Selecione um item",
+            "allEntries": "Todos",
+            "monthTotal": "{{count}} doses registradas em {{month}}",
+            "allTaken": "Todas as doses tomadas",
+            "partialTaken": "Parcialmente tomada",
+            "mostlySkipped": "Mais puladas",
+            "allSkipped": "Todas doses puladas",
+            "snoozedOnly": "Apenas adiadas",
+            "sideEffect": "Sintoma de efeito colateral",
+            "tooltipTaken": "{{count}} tomado",
+            "tooltipPrn": "{{count}} doses administradas conforme a necessidade",
+            "tooltipSkipped": "{{count}} puladas",
+            "tooltipSnoozed": "{{count}} adiadas",
+            "tooltipSymptoms": "Sintomas: {{names}}",
+            "sun": "Dom",
+            "mon": "Seg",
+            "tue": "Ter",
+            "wed": "Qua",
+            "thu": "Qui",
+            "fri": "Sex",
+            "sat": "Sáb",
+            "loggedCount_one": "{{count}} sintoma registrado",
+            "loggedCount_many": "{{count}} sintomas registrados",
+            "loggedCount_other": "{{count}} sintomas registrados",
+            "maxSeverity": "Gravidade máxima: {{n}}",
+            "skipped": "Puladas"
         },
         "symptoms": {
             "addCustom": "Adicionar sintomas personalizados"
+        },
+        "reports": {
+            "symptomsColumn": "Sintomas",
+            "logTableTitle": "Tabela de registro de medicamentos",
+            "logTableDesc": "Contagem de doses e horários por dia para o período de {{start}} a {{end}}, incluindo sintomas ocorridos no mesmo dia.",
+            "logTableEmpty": "Nenhuma dose de medicamento registrada neste intervalo de datas.",
+            "dosesLogged": "{{count}} doses registradas",
+            "dosesTaken": "Doses tomadas",
+            "times": "Vezes",
+            "injectionAbbrev": "inj",
+            "adherenceTrend": "Tendência de adesão diária (%)",
+            "adherenceTrendDesc": "Mostra a porcentagem diária de adesão (porcentagem das doses programadas que foram tomadas).",
+            "configDesc": "Ativa ou desativa a visibilidade de gráficos específicos e widgets de correlação.",
+            "configTitle": "Ativar/Desativar visualizações",
+            "corrDose": "Dose de GLP-1 versus intensidade da náusea",
+            "corrHydration": "Hidratação vs. Constipação",
+            "corrProtein": "Ingestão de proteínas vs. Náusea",
+            "corrSleep": "Duração do sono vs. Fadiga",
+            "correlationsDisclaimer": "Nota: As correlações são cálculos puramente descritivos dentro do período selecionado e não implicam causalidade clínica.",
+            "correlationsTitle": "Correlações informativas entre sintomas e efeitos colaterais",
+            "customize": "Personalizar gráficos",
+            "downloadCSV": "Baixar dados em CSV",
+            "exportDesc": "Baixe um relatório coerente, contendo detalhes sobre medicamentos, registros, horários, sintomas e dados de peso, para apresentar ao seu médico."
+        },
+        "fasting": {
+            "title": "Cronômetro de jejum para GLP-1 oral",
+            "start": "Comprimido tomado — iniciar cronômetro"
+        },
+        "beta": {
+            "title": "Lançamento Beta inicial",
+            "description": "Ainda pode haver algumas imperfeições. Se encontrar algum erro ou problema, relate-o no GitHub para nos ajudar a melhorar!"
+        },
+        "cabinet": {
+            "nutrientCount_one": "{{count}} nutriente",
+            "nutrientCount_many": "{{count}} nutrientes",
+            "nutrientCount_other": "{{count}} nutrientes"
         }
     },
     "layout": {
-        "welcome": "Bem-vindo {{activeUserName}}"
+        "welcome": "Bem-vindo {{activeUserName}}",
+        "docs": "Documentos",
+        "translate": "Traduzir"
     },
     "calculationSettings": {
         "calories": "Calorias",
@@ -2144,8 +2286,24 @@
             "profile": "Perfil e Hábitos",
             "goals": "Objetivos",
             "food": "Comida e Água",
-            "exercise": "Exercícios"
-        }
+            "exercise": "Exercícios",
+            "tooltip": "Escolha ferramentas de chatbot",
+            "title": "Ferramentas de chatbot",
+            "description": "Menos ferramentas ajudam modelos locais menores a responder de forma confiável.",
+            "presetFull": "Completo",
+            "presetCore": "Básico",
+            "clearAll": "Apagar tudo",
+            "emptyHint": "Nenhuma categoria selecionada - o chatbot utilizará seu conjunto de ferramentas padrão.",
+            "checkin": "Corpo e Check-ins",
+            "reports": "Relatórios e Análises",
+            "coaching": "Coaching",
+            "vision": "Visão",
+            "medications": "Medicamentos"
+        },
+        "errorClearingHistory": "Falha ao limpar o histórico do chat.",
+        "errorLoadingHistory": "Falha ao carregar o histórico do chat.",
+        "errorLoadingPreferences": "Falha ao carregar as preferências de chat.",
+        "successClearingHistory": "Histórico de chat limpo com sucesso."
     },
     "csvImport": {
         "cancel": "Cancelar",
@@ -2195,7 +2353,9 @@
         "missingDefaultWarning": "Aviso: {{count}} comida(s) não têm uma variante padrão. Por favor, defina pelo menos uma variante como padrão (destacada em amarelo abaixo).",
         "missingDefaultValidationError": "Pelo menos uma variante por alimento deve ser definida como a unidade padrão.",
         "showAllRows": "Mostrar todas as linhas ({{count}})",
-        "defaultVariantNote": "Pelo menos uma variante por alimento deve ser definida como a unidade padrão."
+        "defaultVariantNote": "Pelo menos uma variante por alimento deve ser definida como a unidade padrão.",
+        "upfrontNote": "Observação: Cada alimento deve ter pelo menos uma variante definida como unidade padrão (Is Default = True).",
+        "filterMissingDefault": "Exibir valor padrão ausente ({{count}})"
     },
     "workout": {
         "weight": "peso",
@@ -2275,6 +2435,10 @@
     "cycle": {
         "history": {
             "startDate": "Data de início"
+        },
+        "beta": {
+            "title": "Versão beta inicial",
+            "description": "Ainda pode haver algumas imperfeições. Se encontrar algum erro ou problema, relate-o no GitHub para nos ajudar a melhorar!"
         }
     },
     "warning": "Atenção",
@@ -2283,7 +2447,16 @@
         "errorLoadingCount": "Falha ao carregar itens para revisão."
     },
     "workoutLaps": {
-        "power": "Potência"
+        "power": "Potência",
+        "title": "Intervalos e voltas do treino fracionado",
+        "lapsCount": "{{count}} voltas",
+        "lap": "Volta",
+        "distance": "Distância",
+        "time": "Tempo",
+        "pace": "Ritmo (/{{unit}})",
+        "avgMaxHr": "FC média / máx",
+        "resp": "Resp (rpm)",
+        "cadence": "Cadência"
     },
     "dailyHealthMetrics": {
         "bodyBattery": "Body Battery",
@@ -2297,7 +2470,14 @@
         "fitnessAge": "Idade Corporal: {{val}}",
         "readiness": "Prontidão",
         "recHours": "Rec: {{val}}",
-        "title": "Resumo Diário de Saúde do Dispositivo"
+        "title": "Resumo Diário de Saúde do Dispositivo",
+        "trainingLoad": "Carga de treinamento",
+        "acute": "aguda",
+        "ratio": "Proporção: {{val}}",
+        "chronic": "Crônica: {{val}}",
+        "empty": "Nenhum dado de wearable foi sincronizado para este dia.",
+        "skinTemp": "Temperatura da pele",
+        "weekly": "semanal"
     },
     "preferences": {
         "resetError": "Falha ao redefinir as preferências"
@@ -2365,6 +2545,110 @@
         "imageTypeLabel": "Conteúdo da foto",
         "nutritionPhoto": "Rótulo nutricional",
         "frontPhoto": "Frente do produto",
-        "packagingPhoto": "Embalagem"
+        "packagingPhoto": "Embalagem",
+        "imageError": "Escolha uma foto nítida nos formatos JPEG, PNG ou WebP, com menos de 20 MB, medindo pelo menos 640 pixels no lado mais longo e 160 pixels no lado mais curto, e com no máximo 40 megapixels.",
+        "preparing": "Preparando prévia…",
+        "previewError": "Não foi possível preparar a prévia.",
+        "previewTitle": "Analise esta contribuição específica",
+        "existingProduct": "Esta contribuição atualiza um produto público já existente. Analise as informações atuais antes de confirmar.",
+        "newProduct": "Esta contribuição cria um produto público.",
+        "personalAccount": "Sua conta pessoal no Open Food Facts",
+        "globalAccount": "A conta compartilhada do Open Food Facts no servidor",
+        "imageAlt": "Foto para publicar",
+        "fieldsCaption": "Todos os campos que serão publicados",
+        "field": "Campo",
+        "value": "Valor exato",
+        "dataConsent": "Inseri estes dados a partir da embalagem física, conferi os valores exatos acima e concordo em publicá-los sob a ODbL e Database Contents License.",
+        "imageConsent": "Eu tirei esta foto, detenho os direitos de compartilhá-la e concordo em publicá-la sob a licença CC BY-SA.",
+        "publish": "Publicar esta contribuição",
+        "publishing": "Publicando…",
+        "publishError": "Não foi possível confirmar a publicação. Verifique o produto antes de preparar uma nova contribuição.",
+        "expired": "Esta prévia expirou. Solicite e analise uma nova prévia.",
+        "successTitle": "Contribuição publicada",
+        "partialTitle": "Foto publicada; dados do produto não confirmados",
+        "preview": "Visualizar contribuição"
+    },
+    "sleepHealth": {
+        "restingHeartRate": "Frequência cardíaca em repouso",
+        "hrvStatus": "Status da VFC",
+        "hrv": "Variabilidade da Frequência Cardíaca",
+        "hrvCurrent": "VFC atual",
+        "hrvBaseline": "Faixa de Referência",
+        "hrvTrend": "Tendência da VFC",
+        "hrvLow": "Baixa",
+        "hrvNormal": "Normal",
+        "hrvElevated": "Elevada",
+        "avgHRV": "Média",
+        "hrvDisclaimer": "*Valor de referência dos seus dados (média ± desvio padrão)",
+        "overnightHrvSeriesDesc": "Série de VFC noturna com intervalos de 5 minutos"
+    },
+    "healthMetrics": {
+        "restingHeartRate": "Frequência cardíaca em repouso",
+        "hrv": "VFC",
+        "hrvSdnn": "SDNN da VFC",
+        "hrvSdnnAvg": "Média de SDNN da VFC",
+        "hrvSdnnMax": "Máx de SDNN da VFC",
+        "hrvSdnnMin": "Mín de SDNN da VFC",
+        "hrvAvg": "VFC Média",
+        "hrvMax": "VFC Máx",
+        "hrvMin": "VFC Mín",
+        "respiratoryRate": "Frequência respiratória",
+        "respiratoryRateAvg": "Frequência respiratória média",
+        "respiratoryRateMax": "Frequência respiratória máxima",
+        "respiratoryRateMin": "Frequência respiratória mínima"
+    },
+    "fasting": {
+        "checklistTitle": "Temporizador de Jejum",
+        "readyToStart": "Pronto para começar um novo jejum?",
+        "totalFasts": "Jejuns totais",
+        "avgDuration": "Duração Média"
+    },
+    "mood": {
+        "intensityTrend": "Humor geral ao longo do tempo"
+    },
+    "mindfulness": {
+        "stats": {
+            "totalMinutes": "Minutos de mindfulness hoje",
+            "recorded_one": "sessão gravada",
+            "recorded_many": "sessões gravadas",
+            "recorded_other": "sessões gravadas"
+        },
+        "history": {
+            "emptyTitle": "Nenhuma sessão de mindfulness registrada para este dia",
+            "emptyDescription": "Faça uma breve pausa de 5 minutos para respirar, medite ou registre uma sessão a partir do seu dispositivo Apple Health ou Garmin."
+        },
+        "pacer": {
+            "title": "Respiração ritmada",
+            "subtitle": "Guia de respiração",
+            "launch": "Iniciar guia",
+            "boxName": "Respiração quadrada",
+            "boxDesc": "Foco e alívio do estresse",
+            "ready": "Preparar",
+            "begin": "Começar a respirar",
+            "relaxName": "Relaxamento 4-7-8",
+            "coherenceName": "Ressonância coerente",
+            "relaxDesc": "Calma profunda e preparação para dormir",
+            "coherenceDesc": "Maximização da VFC"
+        },
+        "timer": {
+            "title": "Temporizador de meditação",
+            "heading": "Temporizador para sessão de meditação",
+            "subtitle": "Sessão livre ou temporizada"
+        },
+        "dialog": {
+            "hrv": "RMSSD da VFC (ms)",
+            "hrStart": "Frequência cardíaca inicial (bpm)",
+            "hrEnd": "Frequência cardíaca final (bpm)",
+            "notes": "Notas",
+            "notesPlaceholder": "Como foi esta sessão?",
+            "save": "Salvar Sessão",
+            "update": "Atualizar Sessão"
+        },
+        "deleteDialog": {
+            "title": "Excluir sessão de mindfulness",
+            "description": "Tem certeza de que deseja excluir esta sessão de mindfulness? Esta ação não pode ser desfeita.",
+            "confirm": "Deletar",
+            "deleting": "Deletando..."
+        }
     }
 }
