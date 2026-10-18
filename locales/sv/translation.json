@@ -176,7 +176,8 @@
             "selectLevelPlaceholder": "Välj nivå",
             "levelBeginner": "Nybörjare",
             "levelIntermediate": "Mellannivå",
-            "levelExpert": "Expert"
+            "levelExpert": "Expert",
+            "imagesLabel": "Bilder"
         },
         "title": "Övningar",
         "dailyProgress": {
@@ -222,7 +223,18 @@
             "errorLoadingExercises": "Fel vid inläsning av övningar:",
             "failedToLoadExercises": "Det gick inte att ladda övningar",
             "editSuccess": "Övningen har redigerats",
-            "errorEditingExercise": "Fel vid redigering av övning:"
+            "errorEditingExercise": "Fel vid redigering av övning:",
+            "categoryStrongman": "Strongman",
+            "allOwnershipPlaceholder": "Alla",
+            "allOwnershipItem": "Alla",
+            "myOwnOwnershipItem": "Mina Egna",
+            "allExercisesCount": "Alla Övningar {{totalExercisesCount}}",
+            "editExerciseTooltip": "Redigera övning",
+            "deleteExerciseTooltip": "Radera övning",
+            "editExerciseDialogTitle": "Redigera Övning"
+        },
+        "modality": {
+            "repsOnly": "Repetitioner"
         }
     },
     "nutrition": {
@@ -457,7 +469,8 @@
             "save": "Spara",
             "reset": "Återställ",
             "custom": "Anpassad",
-            "clear": "Rensa"
+            "clear": "Rensa",
+            "inactive": "Inaktiv"
         },
         "today": {
             "medicationsTitle": "Dagens läkemedel",
@@ -492,7 +505,10 @@
             "take": "Ta",
             "adherenceTitle": "Översikt över följsamhet",
             "editLogged": "Redigera loggad dos",
-            "takenAt": "Tagen kl."
+            "takenAt": "Tagen kl.",
+            "noScheduledToday": "Inga schemalagda doser idag.",
+            "noScheduledDay": "Inga schemalagda doser idag.",
+            "loggedActivity": "Registrerat idag"
         },
         "insights": {
             "title": "Insikter och tips om biverkningar",
