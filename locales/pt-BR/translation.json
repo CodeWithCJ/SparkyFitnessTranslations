@@ -71,7 +71,12 @@
             "milliliters": "Mililitros (ml)",
             "fluidOunces": "Onças líquidas (oz)",
             "cups": "Copos",
-            "saveWaterDisplayUnit": "Salvar a unidade de exibição de água"
+            "saveWaterDisplayUnit": "Salvar a unidade de exibição de água",
+            "addExerciseWater": "Adicionar a perda de água por exercícios à meta diária",
+            "addExerciseWaterHint": "Aumenta sua meta diária de água com base na perda estimada de suor durante as atividades.",
+            "addFoodWater": "Considerar a água dos alimentos como parte da sua ingestão",
+            "addFoodWaterHint": "Soma o conteúdo de água de um alimento registrado no seu total diário de água, a menos que ele já tenha sido contabilizado por um recipiente vinculado.",
+            "liters": "Litros"
         },
         "nutrientDisplay": {
             "title": "Exibição Nutrientes",
@@ -161,6 +166,12 @@
             "exporting": "Preparando...",
             "exportSuccess": "Exportação concluída",
             "exportSuccessDescription": "Seu diário foi exportado com sucesso."
+        },
+        "tabs": {
+            "profileAccount": "Perfil e conta",
+            "nutritionDiet": "Nutrição e dieta",
+            "wellness": "Bem-estar",
+            "developerIntegrations": "Desenvolvedor e integrações"
         }
     },
     "aboutDialog": {
@@ -2172,7 +2183,9 @@
             "everyNDays": "Cada {{n}} dias",
             "monthly": "Mensal no dia {{day}}",
             "prn": "Conforme necessário (PRN)",
-            "taper": "Afinamento/titulação"
+            "taper": "Afinamento/titulação",
+            "mealRelationSuffix": " ({{meal}})",
+            "cyclic": "Ciclo: {{on}} dias de atividade, {{off}} dias de descanso"
         },
         "calendar": {
             "title": "Calendário de Registro de Medicamentos",
@@ -2214,7 +2227,34 @@
             "skipped": "Puladas"
         },
         "symptoms": {
-            "addCustom": "Adicionar sintomas personalizados"
+            "addCustom": "Adicionar sintomas personalizados",
+            "logTitle": "Registrar sintoma",
+            "calendarTitle": "Calendário de Atividade de Sintomas",
+            "logsTitle": "Registros de sintomas",
+            "subtitle": "Registre a gravidade e o contexto físico dos seus efeitos colaterais",
+            "symptom": "Sintoma",
+            "customName": "Nome do sintoma (interno)",
+            "customNamePlaceholder": "ex., erupcao_cutanea",
+            "displayLabel": "Rótulo visível",
+            "displayLabelPlaceholder": "ex., Erupção cutânea",
+            "saveCustom": "Salvar sintoma personalizado",
+            "severity": "Intensidade",
+            "mild": "Leve (1-3)",
+            "moderate": "Moderado (4-6)",
+            "severe": "Grave (7-10)",
+            "primaryLocation": "Localização principal",
+            "customLocationPlaceholder": "ex. Ombro esquerdo, Mandíbula…",
+            "linkMed": "Vincular a medicamento (opcional)",
+            "noMedLinked": "Nenhum medicamento vinculado",
+            "context": "Contexto / Observações",
+            "contextPlaceholder": "ex. Ocorreu 4 horas após tomar a dose do jantar.",
+            "bristol": "Registro de evacuações (Escala de Bristol)",
+            "bristolType": "Bristol Tipo {{n}}",
+            "calendarDescription": "Registro da frequência e da gravidade dos sintomas nos últimos 30 dias",
+            "clear": "Apagar sintomas",
+            "trendingUp": "Em tendência de alta em comparação com o início deste período",
+            "trendingDown": "Em tendência de queda em comparação com o início deste período",
+            "dayTooltip": "{{date}}: {{count}} registrados, gravidade máxima {{severity}}"
         },
         "reports": {
             "symptomsColumn": "Sintomas",
@@ -2237,11 +2277,70 @@
             "correlationsTitle": "Correlações informativas entre sintomas e efeitos colaterais",
             "customize": "Personalizar gráficos",
             "downloadCSV": "Baixar dados em CSV",
-            "exportDesc": "Baixe um relatório coerente, contendo detalhes sobre medicamentos, registros, horários, sintomas e dados de peso, para apresentar ao seu médico."
+            "exportDesc": "Baixe um relatório coerente, contendo detalhes sobre medicamentos, registros, horários, sintomas e dados de peso, para apresentar ao seu médico.",
+            "exportTitle": "Exportação de dados para o médico",
+            "failedToLoadPrefs": "Falha ao carregar as preferências de exibição de medicamentos.",
+            "glp1CheckinTrends": "Tendências de registro diário de GLP-1",
+            "glp1CheckinTrendsDesc": "Registra a fome subjetiva, pensamentos persistentes sobre comida, a saciedade e os níveis de energia (0-10), juntamente com as doses de GLP-1.",
+            "kpiAdherence": "Adesão média",
+            "kpiAdherenceDetail": "Percentual de doses agendadas que foram registradas como tomadas.",
+            "kpiGlp1": "Injeções de GLP-1",
+            "kpiGlp1Detail": "Total de doses de injeção de GLP-1 ativas registradas neste período.",
+            "kpiSymptomCount": "Efeitos colaterais relatados",
+            "kpiSymptomCountDetail": "Número de sintomas únicos registrados (predefinidos ou personalizados).",
+            "nauseaVsDose": "Nível de náusea vs. Dose de medicação GLP-1",
+            "nauseaVsDoseDesc": "Registra a gravidade máxima de náusea (barras) em relação aos horários de administração da dose (linha).",
+            "printPDF": "Imprimir / Salvar relatório em PDF",
+            "subtitle": "Analise correlações de dose, efeitos colaterais e tendências de adesão.",
+            "title": "Relatório de medicamentos",
+            "weightVsGoalDesc": "Visualiza as medições diárias de peso em comparação com a sua meta de peso geral.",
+            "weightVsGoal": "Tendência de peso vs. Peso-alvo ({{weightUnit}})",
+            "configNauseaDose": "Gráfico de náuseas vs. doses",
+            "configWeightGoal": "Gráfico de Peso vs. Meta",
+            "configAdherence": "Gráfico de tendência de adesão",
+            "configMedicationLog": "Tabela de registro de medicamentos",
+            "configGlp1Checkin": "Gráfico de acompanhamento diário de GLP-1",
+            "configHydrationConstipation": "Cartão de Hidratação vs. Constipação",
+            "configProteinNausea": "Cartão de Proteína vs. Náusea",
+            "configSleepFatigue": "Cartão de Sono vs. Fadiga",
+            "configDoseNausea": "Cartão de Tamanho da dose vs. Náusea",
+            "chartNauseaSeverity": "Gravidade das náuseas",
+            "chartDoseMg": "Dose (mg)",
+            "chartMedicationDose": "Dose do medicamento (mg)",
+            "chartWeight": "Peso",
+            "chartTargetWeight": "Peso-alvo",
+            "chartAdherenceRate": "Taxa de adesão",
+            "chartCheckInScore": "Nota de check-in (0-10)",
+            "chartHunger": "Fome",
+            "chartFoodNoise": "Ruído alimentar",
+            "chartFullness": "Saciedade",
+            "chartEnergy": "Energia",
+            "confidenceScore": "Pontuação de confiança:",
+            "correlationStrength": "Correlação {{strength}}",
+            "strength": {
+                "strong": "forte",
+                "moderate": "moderada",
+                "weak": "fraca"
+            },
+            "hydrationBenefit": "<strong>Benefício de uma boa hidratação:</strong> Uma maior ingestão de água está associada a uma menor gravidade da constipação. Mantenha-se hidratado para reduzir efeitos colaterais intestinais.",
+            "hydrationUnexpected": "<strong>Associação positiva inesperada:</strong> Aumente ativamente a ingestão de líquidos para auxiliar nas respostas ao alto consumo de fibras ou ao uso de medicamentos.",
+            "hydrationInsufficient": "Dados insuficientes para mapear a relação. Continue registrando a ingestão de água e os sintomas.",
+            "proteinTolerance": "<strong>Tolerância a proteínas:</strong> Uma maior ingestão diária de proteínas está associada a níveis mais baixos de náusea. Continue incluindo comidas magras e ricas em proteínas.",
+            "reducedIntake": "<strong>Ingestão reduzida:</strong> Picos de náusea coincidem com dias em que o registro de consumo de proteínas foi mais baixo, provavelmente devido à supressão do apetite.",
+            "proteinInsufficient": "Dados insuficientes. Registre diariamente os alimentos consumidos e os episódios de náusea para identificar correlações.",
+            "restBenefit": "<strong>Benefício do repouso:</strong> Uma maior duração do sono está associada a uma menor intensidade de fadiga. Mantenha hábitos consistentes em relação ao horário de dormir.",
+            "hypersomnia": "<strong>Associação com hipersonia:</strong> Uma maior fadiga pode estar levando a uma necessidade de dormir por mais tempo ou a períodos de repouso na cama.",
+            "sleepInsufficient": "Registros de sono insuficiente ou de fadiga insuficientes para calcular a correlação neste período.",
+            "doseDependentNausea": "<strong>Náusea dependente da dose:</strong> Doses mais elevadas do medicamento estão associadas a uma maior intensidade de náusea. Considere conversar com seu médico sobre o ajuste da dose ou o fracionamento dos horários.",
+            "adaptationBenefit": "<strong>Benefício da adaptação:</strong> Nenhuma correlação positiva. O organismo adaptou-se bem aos níveis de dosagem, sem apresentar efeitos colaterais.",
+            "doseInsufficient": "Requer registros de doses de GLP-1 e anotações de episódios de náusea dentro deste intervalo de datas."
         },
         "fasting": {
             "title": "Cronômetro de jejum para GLP-1 oral",
-            "start": "Comprimido tomado — iniciar cronômetro"
+            "start": "Comprimido tomado — iniciar cronômetro",
+            "instructions": "Tome com 120 a 180 ml de água e, em seguida, aguarde {{min}} minutos antes de ingerir alimentos, café ou outros medicamentos.",
+            "complete": "Jejum concluído! Você já pode comer.",
+            "waterOnly": "Só água"
         },
         "beta": {
             "title": "Lançamento Beta inicial",
@@ -2251,6 +2350,21 @@
             "nutrientCount_one": "{{count}} nutriente",
             "nutrientCount_many": "{{count}} nutrientes",
             "nutrientCount_other": "{{count}} nutrientes"
+        },
+        "bodymap": {
+            "label": "Mapa corporal dos locais de injeção"
+        },
+        "gi": {
+            "title": "Seguimento gastrointestinal",
+            "subtitle": "Frequência semanal nos últimos 30 dias",
+            "nausea": "Náusea / sem",
+            "vomiting": "Vômitos / sem",
+            "reflux": "Refluxo / sem",
+            "avgBristol": "Média de Bristol"
+        },
+        "checkin": {
+            "title": "Registro diário de GLP-1",
+            "subtitle": "Acompanhe como a medicação está afetando você — os dados são salvos junto às suas medições diárias e, por isso, também aparecem em \"Check-in e Relatórios\"."
         }
     },
     "layout": {
