@@ -1645,8 +1645,6 @@
         "failedToDeleteExerciseEntry": "Falha ao excluir o exercício.",
         "exerciseEntryDeletedSuccessfully": "Exercício excluído com sucesso.",
         "loadingExercises": "Carregando exercícios...",
-        "setCount": "",
-        "repCount": "",
         "workoutLocation": "Academia / local",
         "upNextInPlanBadge": "Próximo do plano",
         "scheduledTodayBadge": "Agendado para hoje",
