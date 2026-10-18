@@ -144,7 +144,7 @@
         },
         "calculationSettings": {
             "title": "Configurações de Cálculos",
-            "description": "Gerenciar as preferências de cálculo da taxa metabólica basal e da gordura corporal"
+            "description": "Gerencie as fórmulas de TMB, os algoritmos de gordura corporal, os ajustes diários de energia, os modos de déficit da meta e os pisos de segurança."
         },
         "familyAccess": {
             "title": "Acesso Familiar",
@@ -1231,7 +1231,7 @@
             "deleteExerciseTooltip": "Excluir exercício",
             "errorFetchingDeletionImpact": "Erro ao identificar o impacto da exclusão:",
             "failedToFetchDeletionImpact": "Não foi possível identificar o impacto da exclusão. Tente novamente.",
-            "workoutPresetsCardTitle": "Exercícios Predefinidos",
+            "workoutPresetsCardTitle": "Treinos predefinidos",
             "workoutPlansCardTitle": "Planos de exercício",
             "editExerciseDialogTitle": "Editar Exercício",
             "editExerciseDialogDescription": "Edite os detalhes do exercício selecionado.",
@@ -1675,7 +1675,9 @@
             "static": "Estático",
             "isolation": "Isolado",
             "compound": "Composto"
-        }
+        },
+        "setCount": "Séries: {{count}}",
+        "repCount": "Repetições: {{count}}"
     },
     "reports": {
         "exerciseEntriesExportHeaders": {
@@ -1700,7 +1702,7 @@
             "activityDurationMin": "Duração da atividade (min)",
             "activityMap": "Mapa de Atividades",
             "lapTableAvgHRBpmHeader": "FC(bpm) Média",
-            "lapTableMaxHRBpmHeader": "FC(bpm) Max.",
+            "lapTableMaxHRBpmHeader": "FC máx. (bpm)",
             "loadingActivityReport": "Carregando relatório de atividades...",
             "error": "Erro:",
             "noActivityDataAvailable": "Sem dados de atividade disponíveis.",
@@ -3839,7 +3841,7 @@
         "avgHrUnit": "FC média",
         "copyRawJson": "Copiar JSON não formatado",
         "skip": "Pular",
-        "view": "Ver detalher",
+        "view": "Ver detalhes",
         "weight": "Peso",
         "source": "Origem",
         "bulkDeleteDescription": "Tem certeza de que quer excluir estes {{selectedCount}} itens? Esta ação não pode ser desfeita.",
@@ -4069,7 +4071,7 @@
         },
         "symptomNames": {
             "nausea": "Náusea",
-            "fatigue": "Fatiga",
+            "fatigue": "Fadiga",
             "headache": "Dor de Cabeça",
             "constipation": "Constipação",
             "diarrhea": "Diarreia",
@@ -4123,8 +4125,8 @@
             "fri": "Sex",
             "sat": "Sáb",
             "loggedCount_one": "{{count}} sintoma registrado",
-            "loggedCount_many": "",
-            "loggedCount_other": "",
+            "loggedCount_many": "{{count}} sintomas registrados",
+            "loggedCount_other": "{{count}} sintomas registrados",
             "maxSeverity": "Gravidade máxima: {{n}}",
             "skipped": "Puladas"
         },
@@ -4250,8 +4252,8 @@
         },
         "cabinet": {
             "nutrientCount_one": "{{count}} nutriente",
-            "nutrientCount_many": "",
-            "nutrientCount_other": "",
+            "nutrientCount_many": "{{count}} nutrientes",
+            "nutrientCount_other": "{{count}} nutrientes",
             "addMed": "Adicionar medicamento",
             "editMed": "Editar medicamento",
             "addSupplement": "Adicionar suplemento",
@@ -4834,7 +4836,7 @@
         "passkeySuccess": "Entrou com Passkey!",
         "passkeyErrorTitle": "Erro de Passkey",
         "loginSuccess": "Login bem sucedido!",
-        "invalidOrigin": "Acesso negado: Esta conexão",
+        "invalidOrigin": "Acesso negado: a origem desta conexão não é reconhecida. Se você está acessando pela rede local (LAN), este endereço precisa ser cadastrado como confiável.",
         "emailExists": "Usuário com este e-mail já existe.",
         "passkeySecureContextError": "A autenticação passkey requer um contexto seguro (HTTPS ou localhost). Por favor, inscreva-se usando e-mail e senha.",
         "passwordResetSuccess": "A senha foi redefinida com sucesso. Você pode entrar agora.",
@@ -5419,7 +5421,7 @@
         "nutritionPhoto": "Rótulo nutricional",
         "frontPhoto": "Frente do produto",
         "packagingPhoto": "Embalagem",
-        "imageError": "Escolha uma foto nítida nos formatos JPEG, PNG ou WebP, com menos de 20 MB, medindo pelo menos 640 pixels no lado mais longo e 160 pixels no lado mais curto, e com no máximo 40 megapixels.",
+        "imageError": "Escolha uma foto nítida nos formatos JPEG, PNG ou WebP, com menos de 20 MB, com pelo menos 640 pixels no maior lado e 160 no menor, com no máximo 40 megapixels.",
         "preparing": "Preparando prévia…",
         "previewError": "Não foi possível preparar a prévia.",
         "previewTitle": "Analise esta contribuição específica",
