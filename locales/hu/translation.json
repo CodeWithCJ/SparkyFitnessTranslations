@@ -1456,7 +1456,13 @@
         "customSource": "Egyedi",
         "minutesUnit": "Perc",
         "primaryMuscles": "Elsődleges izmok",
-        "secondaryMuscles": "Másodlagos izmok"
+        "secondaryMuscles": "Másodlagos izmok",
+        "levelIntermediate": "Haladó",
+        "force": "Erő",
+        "forcePull": "Húzás",
+        "forcePush": "Tolás",
+        "forceStatic": "Statikus",
+        "mechanic": "Mechanika"
     },
     "enhancedFoodSearch": {
         "editAndAdd": "Módosít & Hozzáad",
