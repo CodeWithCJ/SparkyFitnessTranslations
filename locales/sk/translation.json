@@ -2359,5 +2359,9 @@
         "date": "Dátum",
         "add": "Pridať",
         "loading": "Načítava sa..."
+    },
+    "prProgressionChart": {
+        "reps": "Opakovania",
+        "weightKg": "Váha (kg)"
     }
 }
