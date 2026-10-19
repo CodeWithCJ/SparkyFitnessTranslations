@@ -5723,7 +5723,8 @@
             "openStopwatch": "Abrir cronómetro",
             "meditating": "Meditando...",
             "peaceful": "Busca un asiento cómodo",
-            "start": "Comienza la meditación"
+            "start": "Comienza la meditación",
+            "finishAndSave": "Finalizar y Guardar"
         },
         "actions": {
             "breathe": "Respirar",
@@ -5736,7 +5737,9 @@
             "reflection": "Reflexión",
             "yoga": "Yoga",
             "walking": "Caminata consciente",
-            "other": "Otro"
+            "other": "Otro",
+            "guided": "Guiado",
+            "unguided": "SIn guía"
         },
         "card": {
             "title": "Mindfulness",
@@ -5807,7 +5810,11 @@
             "hold": "Mantén",
             "exhale": "Exhala",
             "start": "Empieza a respirar",
-            "finishAndSave": "Finalizar y guardar"
+            "finishAndSave": "Finalizar y guardar",
+            "title": "Respiración",
+            "pause": "Pausar",
+            "resume": "Reanudar",
+            "ready": "Listo"
         }
     },
     "muscles": {
