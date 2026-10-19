@@ -2661,6 +2661,10 @@
         },
         "mealDistribution": {
             "selectTemplate": "选择热量分配模板",
+            "evenDistribution": "平均分配",
+            "intermittentFasting": "间歇性禁食",
+            "proteinFocusedMorning": "早餐侧重蛋白质",
+            "noSnacks": "不吃零食",
             "custom": "自定义分配比例",
             "distributeRemaining": "剩余热量平均分配",
             "total": "合计数值",
@@ -4694,6 +4698,158 @@
     },
     "onboarding": {
         "completeSetup": "完成初始化配置",
+        "skip": "跳过",
+        "continue": "继续",
+        "sexQuestion": "你的生理性别是什么？",
+        "sexDescription": "用于计算基础代谢率。",
+        "male": "男性",
+        "female": "女性",
+        "goalQuestion": "你的主要目标是什么？",
+        "loseWeight": "减重",
+        "maintainWeight": "保持体重",
+        "gainWeight": "增重",
+        "currentWeightQuestion": "你目前的体重是多少？",
+        "heightQuestion": "你的身高是多少？",
+        "enterInUnit": "请使用 {{unit}} 输入。",
+        "birthDateQuestion": "你的出生日期是什么？",
+        "birthDateDescription": "年龄是影响代谢的重要因素。",
+        "selectDateFormat": "选择日期格式",
+        "pickDate": "选择日期",
+        "bodyFatQuestion": "估计你的体脂率",
+        "bodyFatDescription": "根据外观大致估计即可。",
+        "bodyFatLow": "较低（<15%）",
+        "bodyFatMedium": "中等（15–25%）",
+        "bodyFatHigh": "较高（25–35%）",
+        "bodyFatVeryHigh": "很高（>35%）",
+        "targetWeightQuestion": "你的目标体重是多少？",
+        "targetWeightDescription": "你最终希望达到的体重。",
+        "mealsQuestion": "你通常一天吃几餐？",
+        "mealsPerDay": "每天 {{number}} 餐",
+        "preparingPlan": "正在制定你的专属计划…",
+        "preparingPlanDescription": "正在根据你的资料计算目标。",
+        "foodSources": {
+            "title": "连接食物数据库",
+            "description": "此步骤可选。添加 USDA 和 FatSecret 后，食物搜索结果通常比默认的 Open Food Facts 更丰富。你也可以稍后在设置中添加或修改。",
+            "getUsdaKey": "获取免费 API 密钥",
+            "usdaKey": "USDA API 密钥",
+            "getFatsecretCredentials": "获取 API 凭据",
+            "fatsecretClientId": "FatSecret 客户端 ID",
+            "fatsecretClientSecret": "FatSecret 客户端密钥",
+            "fatsecretHelp": "请使用开发者面板中的 REST API OAuth 2.0 凭据，而不是 OAuth 1.0 Consumer Key/Secret。FatSecret 还要求在开发者面板中将你的公网 IP 加入白名单；生效可能需要 24 小时。",
+            "missingField": "FatSecret 信息不完整",
+            "missingFieldDescription": "请同时填写 FatSecret 客户端 ID 和客户端密钥，或两项都留空以跳过。",
+            "notSignedIn": "尚未登录",
+            "notSignedInDescription": "请重新登录后再保存食物数据库设置。"
+        },
+        "plan": {
+            "title": "你的专属计划",
+            "goalDescription": "已为你的“{{goal}}”目标制定计划。",
+            "medicalDisclaimerTitle": "健康提示：",
+            "medicalDisclaimer": "此计划仅供参考，不能代替专业医疗建议。大幅调整饮食或运动安排前，请咨询医生或专业营养师。",
+            "dailyCalorieBudget": "每日热量预算",
+            "perDay": "{{unit}} / 天",
+            "baseBmr": "基础代谢率：",
+            "calorieBuyback": "运动热量加回：",
+            "on": "开启",
+            "off": "关闭",
+            "nutrientGoals": "营养目标"
+        },
+        "diet": {
+            "title": "饮食方案",
+            "description": "选择预设饮食方案，或自定义宏量营养素比例",
+            "macroSplit": "碳水 {{carbs}}% / 蛋白质 {{protein}}% / 脂肪 {{fat}}%",
+            "customMacroSplit": "自定义宏量营养素比例",
+            "total": "合计：",
+            "carbohydrates": "碳水化合物",
+            "protein": "蛋白质",
+            "fat": "脂肪",
+            "adjustHint": "拖动或输入数值。未锁定的营养素会自动调整，使总和保持为 100%。",
+            "templates": {
+                "balanced": {
+                    "name": "均衡饮食",
+                    "description": "营养搭配均衡，适合一般健康需求"
+                },
+                "mediterranean": {
+                    "name": "地中海饮食",
+                    "description": "富含健康脂肪，有益心脏健康"
+                },
+                "dash": {
+                    "name": "DASH 饮食",
+                    "description": "有助于控制血压的饮食方案"
+                },
+                "atkins": {
+                    "name": "阿特金斯饮食",
+                    "description": "碳水化合物很少，脂肪较多"
+                },
+                "low_fat": {
+                    "name": "低脂饮食",
+                    "description": "碳水化合物较多，脂肪较少"
+                },
+                "low_carb": {
+                    "name": "低碳水 / 生酮",
+                    "description": "生酮风格的饮食方案"
+                },
+                "custom": {
+                    "name": "自定义",
+                    "description": "自行设定各营养素比例"
+                }
+            }
+        },
+        "calculation": {
+            "title": "计算设置",
+            "fatBreakdownMethod": "脂肪分类计算方式",
+            "mineralCalculation": "矿物质计算方式",
+            "vitaminCalculation": "维生素计算方式",
+            "sugarRecommendation": "糖分建议方式",
+            "description": "这些设置决定营养目标的计算方式。你可以稍后在设置中修改。",
+            "fatAlgorithms": {
+                "AHA_GUIDELINES": "美国心脏协会指南（心脏健康）",
+                "KETO_ADAPTED": "生酮适配",
+                "MEDITERRANEAN": "地中海饮食"
+            },
+            "mineralAlgorithms": {
+                "RDA_STANDARD": "标准推荐摄入量（按年龄和性别）",
+                "ATHLETIC_PERFORMANCE": "运动表现",
+                "HEART_HEALTH": "心脏健康（低钠）"
+            },
+            "vitaminAlgorithms": {
+                "RDA_STANDARD": "标准推荐摄入量",
+                "IMMUNE_SUPPORT": "免疫支持",
+                "ANTIOXIDANT_FOCUS": "抗氧化重点"
+            },
+            "sugarAlgorithms": {
+                "WHO_GUIDELINES": "世卫组织指南（最多 10%）",
+                "LOW_CARB_KETO": "低碳水 / 生酮（最多 5%）",
+                "BALANCED": "均衡（最多 15%）"
+            }
+        },
+        "nutrients": {
+            "dailyMacroTargets": "每日宏量营养素目标",
+            "carbohydrates": "碳水化合物",
+            "protein": "蛋白质",
+            "fats": "脂肪",
+            "fiber": "膳食纤维",
+            "fatBreakdown": "脂肪分类",
+            "saturatedFat": "饱和脂肪",
+            "transFat": "反式脂肪",
+            "polyunsaturated": "多不饱和脂肪",
+            "monounsaturated": "单不饱和脂肪",
+            "mineralsOther": "矿物质及其他",
+            "cholesterol": "胆固醇",
+            "sodium": "钠",
+            "potassium": "钾",
+            "calcium": "钙",
+            "iron": "铁",
+            "sugarsVitamins": "糖分与维生素",
+            "sugar": "糖",
+            "vitaminA": "维生素 A",
+            "vitaminC": "维生素 C",
+            "customNutrients": "自定义营养素",
+            "hydrationExercise": "饮水与运动",
+            "waterGoal": "饮水目标",
+            "exerciseDuration": "运动时长",
+            "exerciseCalories": "运动消耗热量"
+        },
         "activityHeavy": "高强度（每周 6-7 天）",
         "activityHeavyDesc": "剧烈运动或体育运动.",
         "activityLevelTitle": "你多久运动一次？",
