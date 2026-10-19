@@ -171,8 +171,6 @@
             "activeCalories": "Aktív kalóriák: {{activeCaloriesFromExercise}} {{energyUnit}}",
             "stepsCalories": "Lépések: {{dailySteps}} = {{stepsCalories}} {{energyUnit}}",
             "bmrCalories": "BMR: {{bmr}} {{energyUnit}}",
-            "bmrSourceMeasured": "Mért",
-            "bmrSourceAlgorithm": "Algoritmus",
             "totalCaloriesBurned": "Összes: {{totalCaloriesBurned}} {{energyUnit}}",
             "goal": "cél",
             "caloriesBurnedBreakdownTitle": "Elégetett kalóriák lebontva",

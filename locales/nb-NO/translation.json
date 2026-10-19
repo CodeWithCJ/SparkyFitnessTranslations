@@ -375,7 +375,6 @@
         },
         "dailyProgress": {
             "remaining": "gjenstår",
-            "bmrSourceMeasured": "Målt",
             "dailyBurn": "Enhetsberegning",
             "dailyEnergyGoal": "Daglig energimål",
             "summaryUnavailableDesc": "Kunne ikke laste inn din daglige energioppsummering. Prøv å oppdatere siden."
