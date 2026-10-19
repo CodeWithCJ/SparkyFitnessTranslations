@@ -922,9 +922,7 @@
             "loadingRecentItems": "Chargement des éléments récents...",
             "failedRecentItems": "Échec du chargement des éléments récents.",
             "noRecentItems": "Aucun élément récent pour l'instant",
-            "recentItemsHint": "Les aliments, les repas et les exercices que vous enregistrez apparaîtront ici pour un accès rapide.",
-            "exerciseStatistics": "Statistiques d'exercice",
-            "exerciseStatisticsSubtitle": "Séries par muscle et carte thermique du corps"
+            "recentItemsHint": "Les aliments, les repas et les exercices que vous enregistrez apparaîtront ici pour un accès rapide."
         },
         "serverSettings": "Paramètres du serveur",
         "passkeys": "Clés d'accès",
@@ -6048,8 +6046,7 @@
             "countdownValue_other": "{{count}} s",
             "sample": "Voici comment sonneront vos séances guidées.",
             "test": "Tester la voix",
-            "enabledSubtitle": "Annonce chaque exercice et son objectif, lance le décompte, gère seul les séries chronométrées et passe à la série suivante. Les annonces passent même en mode silencieux, et l'écran reste allumé pendant la séance.",
-            "voiceDefault": "Voix de l'appareil"
+            "enabledSubtitle": "Annonce chaque exercice et son objectif, lance le décompte, gère seul les séries chronométrées et passe à la série suivante. Les annonces passent même en mode silencieux, et l'écran reste allumé pendant la séance."
         }
     },
     "workoutFeedback": {

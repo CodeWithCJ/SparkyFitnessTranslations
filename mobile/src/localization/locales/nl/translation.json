@@ -942,9 +942,7 @@
             "mealPlans": "Maaltijdplannen",
             "mealPlansSubtitle": "Maaltijden op bepaalde dagen herhalen",
             "waterContainers": "Watercontainers",
-            "waterContainersSubtitle": "Flessen, glazen en dranken gekoppeld aan voedingsmiddelen",
-            "exerciseStatistics": "Oefenstatistieken",
-            "exerciseStatisticsSubtitle": "Sets per spier en een lichaamsheatmap"
+            "waterContainersSubtitle": "Flessen, glazen en dranken gekoppeld aan voedingsmiddelen"
         },
         "sleep": "Slaap",
         "healthTrendsSettings": "Gezondheidstrends",
@@ -5715,8 +5713,7 @@
             "countdownValue_other": "",
             "sample": "Zo klinken uw gegidste trainingen.",
             "test": "Stem testen",
-            "enabledSubtitle": "Noemt elke oefening en het doel, telt u in, laat getimede sets zelf lopen en gaat door naar de volgende set. Aanwijzingen klinken ook als de telefoon op stil staat en het scherm blijft aan tijdens de training.",
-            "voiceDefault": "Standaard van het apparaat"
+            "enabledSubtitle": "Noemt elke oefening en het doel, telt u in, laat getimede sets zelf lopen en gaat door naar de volgende set. Aanwijzingen klinken ook als de telefoon op stil staat en het scherm blijft aan tijdens de training."
         }
     },
     "workoutFeedback": {

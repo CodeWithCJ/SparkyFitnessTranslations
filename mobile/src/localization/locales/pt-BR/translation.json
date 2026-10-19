@@ -860,8 +860,7 @@
             "countdownValue_other": "{{count}} s",
             "sample": "É assim que seus treinos guiados vão soar.",
             "test": "Testar voz",
-            "enabledSubtitle": "Fala cada exercício e a meta, faz a contagem de início, conduz sozinho as séries por tempo e passa para a próxima série. Os avisos tocam mesmo com o celular no silencioso, e a tela fica ligada durante o treino.",
-            "voiceDefault": "Padrão do aparelho"
+            "enabledSubtitle": "Fala cada exercício e a meta, faz a contagem de início, conduz sozinho as séries por tempo e passa para a próxima série. Os avisos tocam mesmo com o celular no silencioso, e a tela fica ligada durante o treino."
         }
     },
     "workoutFeedback": {
@@ -1369,9 +1368,7 @@
             "loadingRecentItems": "Carregando itens recentes...",
             "failedRecentItems": "Falha ao carregar os itens recentes.",
             "noRecentItems": "Nenhum item recente ainda",
-            "recentItemsHint": "Os alimentos, refeições e exercícios que você registrar aparecem aqui para acesso rápido.",
-            "exerciseStatistics": "Estatísticas de exercícios",
-            "exerciseStatisticsSubtitle": "Séries por músculo e mapa de calor do corpo"
+            "recentItemsHint": "Os alimentos, refeições e exercícios que você registrar aparecem aqui para acesso rápido."
         },
         "sleep": "Sono",
         "healthTrendsSettings": "Tendências de saúde",

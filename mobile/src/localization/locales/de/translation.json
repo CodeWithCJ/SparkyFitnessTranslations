@@ -916,9 +916,7 @@
             "loadingRecentItems": "Kürzliche Einträge werden geladen …",
             "failedRecentItems": "Kürzliche Einträge konnten nicht geladen werden.",
             "noRecentItems": "Noch keine aktuellen Einträge",
-            "recentItemsHint": "Lebensmittel, Mahlzeiten und Übungen, die du erfasst, erscheinen hier für den schnellen Zugriff.",
-            "exerciseStatistics": "Übungsstatistiken",
-            "exerciseStatisticsSubtitle": "Sätze pro Muskel und eine Körper-Heatmap"
+            "recentItemsHint": "Lebensmittel, Mahlzeiten und Übungen, die du erfasst, erscheinen hier für den schnellen Zugriff."
         },
         "sleep": "Schlaf",
         "healthTrendsSettings": "Gesundheitstrends",
@@ -5835,8 +5833,7 @@
             "countdownValue_other": "{{count}} s",
             "sample": "So klingen deine geführten Trainings.",
             "test": "Stimme testen",
-            "enabledSubtitle": "Sagt jede Übung und ihr Ziel an, zählt dich ein, lässt zeitbasierte Sätze selbstständig ablaufen und wechselt zum nächsten Satz. Ansagen werden auch bei stummgeschaltetem Telefon abgespielt, und der Bildschirm bleibt während des Trainings an.",
-            "voiceDefault": "Gerätestandard"
+            "enabledSubtitle": "Sagt jede Übung und ihr Ziel an, zählt dich ein, lässt zeitbasierte Sätze selbstständig ablaufen und wechselt zum nächsten Satz. Ansagen werden auch bei stummgeschaltetem Telefon abgespielt, und der Bildschirm bleibt während des Trainings an."
         }
     },
     "workoutFeedback": {

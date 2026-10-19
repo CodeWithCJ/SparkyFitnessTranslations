@@ -1162,9 +1162,7 @@
             "noRecentItems": "暫無最近專案",
             "recentItemsHint": "你記錄的食物、餐點和運動會顯示在這裡，方便快速訪問。",
             "waterContainers": "水容器",
-            "waterContainersSubtitle": "水瓶、水杯，以及連結食物的飲品",
-            "exerciseStatistics": "動作統計",
-            "exerciseStatisticsSubtitle": "各肌肉的組數與身體熱度圖"
+            "waterContainersSubtitle": "水瓶、水杯，以及連結食物的飲品"
         },
         "sleep": "睡眠",
         "healthTrendsSettings": "健康趨勢",
@@ -5640,7 +5638,6 @@
             "enabled": "引導模式",
             "enabledSubtitle": "會朗讀每個動作與目標、倒數開始、自動執行限時組，並進入下一組。提示音在手機靜音時也會播放，訓練期間螢幕會保持開啟。",
             "voice": "語音",
-            "voiceDefault": "跟隨裝置預設",
             "rate": "語速",
             "rateValue": "{{rate}}×",
             "countdown": "準備倒數",

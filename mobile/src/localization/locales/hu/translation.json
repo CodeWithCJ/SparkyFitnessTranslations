@@ -547,8 +547,7 @@
             "loadingRecentItems": "Legutóbbi elemek betöltése...",
             "failedRecentItems": "A legutóbbi elemek betöltése nem sikerült.",
             "noRecentItems": "Egyelőre nincsenek friss bejegyzések",
-            "recentItemsHint": "Az általad rögzített ételek, étkezések és edzések itt jelennek meg, hogy gyorsan hozzáférhess hozzájuk.",
-            "exerciseStatistics": "Edzésstatisztikák"
+            "recentItemsHint": "Az általad rögzített ételek, étkezések és edzések itt jelennek meg, hogy gyorsan hozzáférhess hozzájuk."
         },
         "sleep": "Alvás",
         "healthTrendsSettings": "Egészségügyi trendek",

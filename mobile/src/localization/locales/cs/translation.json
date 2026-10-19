@@ -581,9 +581,7 @@
             "loadingRecentItems": "Načítání nedávných položek...",
             "failedRecentItems": "Nedávné položky se nepodařilo načíst.",
             "noRecentItems": "Zatím žádné nedávné položky",
-            "recentItemsHint": "Potraviny, jídla a cviky, které zaznamenáte, se zde zobrazí pro rychlý přístup.",
-            "exerciseStatistics": "Statistiky cviků",
-            "exerciseStatisticsSubtitle": "Série na sval a teplotní mapa těla"
+            "recentItemsHint": "Potraviny, jídla a cviky, které zaznamenáte, se zde zobrazí pro rychlý přístup."
         },
         "sleep": "Spánek",
         "healthTrendsSettings": "Zdravotní trendy",
@@ -5846,7 +5844,6 @@
             "enabled": "Vedený režim",
             "enabledSubtitle": "Nahlas říká každý cvik a jeho cíl, odpočítává start, samostatně spouští časované série a přechází na další sérii. Pokyny se přehrávají i při ztlumeném telefonu a displej zůstává během tréninku zapnutý.",
             "voice": "Hlas",
-            "voiceDefault": "Výchozí v zařízení",
             "rate": "Rychlost řeči",
             "rateValue": "{{rate}}×",
             "countdown": "Odpočet před startem",

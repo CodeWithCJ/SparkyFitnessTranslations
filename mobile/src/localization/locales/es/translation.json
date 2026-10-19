@@ -693,9 +693,7 @@
             "mealPlans": "Planes de comidas",
             "mealPlansSubtitle": "Repetir comidas en los días seleccionados",
             "waterContainers": "Recipientes de agua",
-            "waterContainersSubtitle": "Botellas, vasos, y bebidas asociadas a comidas",
-            "exerciseStatistics": "Estadísticas del ejercicio",
-            "exerciseStatisticsSubtitle": "Series por músculo y mapa térmico corporal"
+            "waterContainersSubtitle": "Botellas, vasos, y bebidas asociadas a comidas"
         },
         "sleep": "Sueño",
         "healthTrendsSettings": "Tendencias de salud",
@@ -5928,8 +5926,7 @@
             "countdownValue_one": "{{count}} s",
             "countdownValue_many": "{{count}} s",
             "countdownValue_other": "{{count}} s",
-            "enabledSubtitle": "Te dicta cada ejercicio y su objetivo, hace la cuenta regresiva, cronometra las series automáticamente y pasa a la siguiente serie. Las indicaciones suenan incluso con el teléfono en silencio y la pantalla permanece encendida durante el entrenamiento.",
-            "voiceDefault": "Predeterminado del dispositivo"
+            "enabledSubtitle": "Te dicta cada ejercicio y su objetivo, hace la cuenta regresiva, cronometra las series automáticamente y pasa a la siguiente serie. Las indicaciones suenan incluso con el teléfono en silencio y la pantalla permanece encendida durante el entrenamiento."
         }
     },
     "workoutFeedback": {

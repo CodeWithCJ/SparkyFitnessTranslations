@@ -543,9 +543,7 @@
             "mealPlans": "Plany posiłków",
             "mealPlansSubtitle": "Powtarzaj posiłki w wybrane dni",
             "waterContainers": "Pojemniki na wodę",
-            "waterContainersSubtitle": "Butelki, szklanki i napoje powiązane z produktami",
-            "exerciseStatistics": "Statystyki ćwiczeń",
-            "exerciseStatisticsSubtitle": "Serie wg mięśni i mapa cieplna ciała"
+            "waterContainersSubtitle": "Butelki, szklanki i napoje powiązane z produktami"
         },
         "duplicateExercise": "Zduplikuj ćwiczenie",
         "symptomLog": "Zapis objawu",
@@ -5558,8 +5556,7 @@
             "countdownValue_many": "{{count}} s",
             "sample": "Tak będą brzmieć Twoje treningi prowadzone.",
             "test": "Testuj głos",
-            "enabledSubtitle": "Odczytuje każde ćwiczenie i jego cel, odlicza wprowadzenie, automatycznie prowadzi serie czasowe i przechodzi do następnej serii. Podpowiedzi odtwarzają się nawet przy wyciszonym telefonie, a ekran pozostaje włączony podczas treningu.",
-            "voiceDefault": "Domyślny głos urządzenia"
+            "enabledSubtitle": "Odczytuje każde ćwiczenie i jego cel, odlicza wprowadzenie, automatycznie prowadzi serie czasowe i przechodzi do następnej serii. Podpowiedzi odtwarzają się nawet przy wyciszonym telefonie, a ekran pozostaje włączony podczas treningu."
         }
     },
     "workoutFeedback": {

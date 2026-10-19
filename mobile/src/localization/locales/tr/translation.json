@@ -577,9 +577,7 @@
             "loadingRecentItems": "Son öğeler yükleniyor...",
             "failedRecentItems": "Son öğeler yüklenemedi.",
             "noRecentItems": "Henüz son öğe yok",
-            "recentItemsHint": "Kaydettiğiniz besinler, öğünler ve egzersizler hızlı erişim için burada görünecek.",
-            "exerciseStatistics": "Egzersiz istatistikleri",
-            "exerciseStatisticsSubtitle": "Kas başına set ve vücut ısı haritası"
+            "recentItemsHint": "Kaydettiğiniz besinler, öğünler ve egzersizler hızlı erişim için burada görünecek."
         },
         "sleep": "Uyku",
         "healthTrendsSettings": "Sağlık Eğilimleri",
@@ -4319,6 +4317,7 @@
             "duplicate": "Antrenman hazır ayarını kopyala"
         },
         "duplicateName": "{{name}} (Kopya)",
+        "exerciseCount_one": "{{count}} egzersiz",
         "exerciseCount_other": "{{count}} egzersiz",
         "actions": {
             "starting": "Başlatılıyor…",
@@ -4328,8 +4327,7 @@
             "deleting": "Siliniyor…",
             "duplicating": "Kopyalanıyor…",
             "duplicate": "Hazır ayarı kopyala"
-        },
-        "exerciseCount_one": "{{count}} egzersiz"
+        }
     },
     "workoutPresetMutations": {
         "errors": {
@@ -5743,7 +5741,6 @@
             "enabled": "Rehberli mod",
             "enabledSubtitle": "Her egzersizi ve hedefini sesli söyler, geri sayım yapar, süreli setleri kendisi yürütür ve bir sonraki sete geçer. Yönlendirmeler telefon sessizdeyken de çalar ve antrenman boyunca ekran açık kalır.",
             "voice": "Ses",
-            "voiceDefault": "Cihaz varsayılanı",
             "rate": "Konuşma hızı",
             "rateValue": "{{rate}}×",
             "countdown": "Hazırlık geri sayımı",
