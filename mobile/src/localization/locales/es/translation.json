@@ -5263,7 +5263,10 @@
             "goals": "Objetivos",
             "lookedUp": "Se consultó {{name}}"
         },
-        "typing": "Sparky está escribiendo"
+        "typing": "Sparky está escribiendo",
+        "voice": {
+            "stop": "Detener dictado"
+        }
     },
     "foodEntryMeal": {
         "failed": "No se pudo añadir la comida"
@@ -6119,5 +6122,21 @@
                 "description": "Lee etiquetas nutricionales con Apple Intelligence en este dispositivo. Si no puede leer una etiqueta, se usará el proveedor de IA del servidor."
             }
         }
+    },
+    "voiceSettings": {
+        "title": "Entrada por voz",
+        "open": "Ajustes de voz",
+        "recognition": "Reconocimiento",
+        "system": "Sistema (predeterminado)",
+        "ai": "Transcripción por IA",
+        "model": "Modelo de voz",
+        "chooseModel": "Elegir un modelo",
+        "chatModel": "Usado para el chat",
+        "syncHint": "Estos ajustes se aplican a la web y a la aplicación móvil. Desactivar la entrada por voz oculta el micrófono sin cambiar el modelo seleccionado.",
+        "systemHint": "Utiliza el reconocedor de voz de tu dispositivo o navegador sin coste por transcripción de Sparky AI. La disponibilidad y el procesamiento en línea dependen de tu dispositivo o navegador.",
+        "aiHint": "El audio se envía al proveedor de IA seleccionado a través de tu servidor. Pueden aplicarse cargos del proveedor. Elige un modelo para activar la transcripción por IA.",
+        "noModels": "No hay modelos de voz compatibles habilitados. Configura un modelo compatible con audio en los ajustes del servicio de IA de la aplicación web y, después, actualiza la página.",
+        "unavailable": "El modelo de voz seleccionado no está disponible. Elige otro modelo o cambia a Sistema.",
+        "manualSend": "El dictado completa el borrador. Revísalo o edítalo y envíalo tú mismo."
     }
 }
