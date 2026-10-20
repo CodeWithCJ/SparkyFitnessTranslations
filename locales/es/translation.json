@@ -4099,7 +4099,33 @@
         "errorClearingHistory": "Fallo al borrar el historial del chat.",
         "errorLoadingHistory": "Fallo al cargar el historial del chat.",
         "errorLoadingPreferences": "Fallo al cargar las preferencias del chat.",
-        "successClearingHistory": "Historial del chat borrado correctamente."
+        "successClearingHistory": "Historial del chat borrado correctamente.",
+        "voice": {
+            "start": "Dictar mensaje",
+            "stop": "Detener dictado",
+            "cancel": "Cancelar dictado",
+            "listening": "Escuchando…",
+            "starting": "Iniciando…",
+            "processing": "Transcribiendo…",
+            "unsupported": "Este modo de voz no es compatible con este navegador. Elige la transcripción por IA en los ajustes de voz o prueba con otro navegador. La IA nunca se activa automáticamente.",
+            "permission": "Permite el acceso al micrófono en la configuración de tu navegador para dictar un mensaje.",
+            "tooLarge": "La grabación supera los 10 MB. Prueba con un mensaje más corto.",
+            "noSpeech": "No se ha reconocido ninguna voz. El borrador no ha cambiado.",
+            "failed": "La entrada por voz ha fallado. El borrador no ha cambiado. Comprueba tu conexión y los ajustes de voz e inténtalo de nuevo."
+        },
+        "sparkyChat": {
+            "sparkyAICoach": "Entrenador de Sparky AI",
+            "yourPersonalAINutritionAnd": "Tu entrenador personal de nutrición y fitness con IA.",
+            "selectProvider": "Seleccionar proveedor",
+            "clearChatHistory": "Borrar historial del chat",
+            "expandChat": "Expandir chat",
+            "minimizeChat": "Minimizar chat",
+            "closeChat": "Cerrar chat"
+        },
+        "sparkyChatInterface": {
+            "chatError": "Error en el chat",
+            "failedToProcessMessagePlease": "No se ha podido procesar el mensaje. Comprueba la configuración del servicio de IA."
+        }
     },
     "foodCsvImport": {
         "title": "Importar datos de comida",
@@ -4143,7 +4169,47 @@
     },
     "foods": {
         "providerVerified": "Alimentos verificados",
-        "removeNutrient": "Quitar {{nutrient}}"
+        "removeNutrient": "Quitar {{nutrient}}",
+        "aliasChipInput": {
+            "remove": "Eliminar {{alias}}"
+        },
+        "customNutrientDialog": {
+            "nutrientNameAndUnitAre": "El nombre y la unidad del nutriente son obligatorios.",
+            "customNutrientCreated": "Nutriente personalizado creado",
+            "failedToCreateCustomNutrient": "Error al crear el nutriente personalizado. Inténtalo de nuevo.",
+            "addCustomNutrient": "Añadir nutriente personalizado",
+            "setTheDisplayUnitAnd": "Establece la unidad de visualización y los nombres de los proveedores (alias) que deben importarse en este nutriente.",
+            "nutrientName": "Nombre del nutriente",
+            "eGMagnesium": "ej., magnesio",
+            "unit": "Unidad",
+            "eGMgGIU": "e.g., mg, µg, IU",
+            "providerAliases": "Alias de proveedores",
+            "typeANamePressEnter": "Escribe un nombre y pulsa Intro",
+            "adding": "Añadiendo…",
+            "nutrientAdded": "Se ha añadido \"{{name}}\""
+        },
+        "deleteFoodDialog": {
+            "view": "Ver",
+            "otherUser": "otro usuario"
+        },
+        "openMenu": "Abrir menú",
+        "mealManagement": {
+            "openMenu": "Abrir menú"
+        },
+        "mealUnitSelector": {
+            "selectTheQuantityForThis": "Selecciona la cantidad de esta comida en tu plan de comidas.",
+            "quantity": "Cantidad",
+            "unit": "Unidad",
+            "nutritionFor": "Información nutricional para {{quantity}} {{displayUnit}}:",
+            "updateMeal": "Actualizar comida",
+            "addToMealPlan": "Añadir al plan de comidas",
+            "gProtein2": "{{protein}}g de proteínas",
+            "gCarbs2": "{{carbs}}g de carbohidratos",
+            "gFat2": "{{fat}}g de grasas",
+            "editMeal": "Editar {{name}}",
+            "addMealToPlan": "Añadir {{name}} al plan de comidas",
+            "editQuantityFor": "Editar la cantidad de {{name}}."
+        }
     },
     "medications": {
         "tabs": {
@@ -4251,7 +4317,8 @@
             "taken": "Tomado",
             "prnTaken": "Tomado (PRN)",
             "editEntryTime": "Editar hora de registro",
-            "removeEntry": "Eliminar registro"
+            "removeEntry": "Eliminar registro",
+            "note2": "Nota: {{notes}}"
         },
         "insights": {
             "title": "Información y consejos sobre efectos secundarios",
@@ -4336,7 +4403,10 @@
             "sleepInsufficient": "Insuficientes registros de sueño o fatiga para calcular la correlación en este periodo.",
             "doseDependentNausea": "<strong>Náuseas dependientes de la dosis:</strong> Dosis más altas del medicamento se correlacionan con mayor nivel de náuseas. Considera consultar con tu médico sobre la graduación de dosis o dividir los horarios.",
             "adaptationBenefit": "<strong>Beneficio de adaptación:</strong> Sin correlación positiva. Tu cuerpo se ha adaptado muy bien a los niveles de dosis sin presentar efectos secundarios.",
-            "doseInsufficient": "Requiere registros activos de dosis de GLP-1 y de náuseas en este rango de fechas."
+            "doseInsufficient": "Requiere registros activos de dosis de GLP-1 y de náuseas en este rango de fechas.",
+            "dosesLogged2": "{{display_name}} — {{count}} dosis registradas",
+            "inj": "({{injections}} inyecciones)",
+            "reportingPeriodTo": "Periodo del informe: {{startDate}} a {{endDate}}"
         },
         "locations": {
             "general": "General",
@@ -4408,7 +4478,11 @@
             "clear": "Quitar síntomas",
             "trendingUp": "Tendencia al alza respecto a principios de este periodo",
             "trendingDown": "Tendencia a la baja respecto a principios de este periodo",
-            "dayTooltip": "{{date}}: {{count}} registrados, severidad máx. {{severity}}"
+            "dayTooltip": "{{date}}: {{count}} registrados, severidad máx. {{severity}}",
+            "clear2": "<span></span> Ninguno",
+            "mild13": "<span></span> Leve (1-3)",
+            "moderate46": "<span></span> Moderado (4-6)",
+            "severe710": "<span></span> Grave (7-10)"
         },
         "fasting": {
             "title": "Temporizador de ayuno para GLP-1 oral",
@@ -4489,7 +4563,11 @@
             "notesPlaceholder": "ej. Leve escozor, me sentí bien",
             "quickLogHint": "{{name}} — la dosis se descuenta de tu pluma activa automáticamente. Verde = zona de rotación sugerida.",
             "quickLogTitle": "¿Dónde te inyectaste?",
-            "skipSite": "Omitir zona"
+            "skipSite": "Omitir zona",
+            "pkSerumLevel": "Nivel sérico farmacocinético — {{drugName}}",
+            "now": "~{{currentLevelFraction}}% actualmente",
+            "injectionSiteGreenSuggestedAmber": "Zona de inyección · <span>green = suggested</span>, <span2>amber = resting <{{days}}d</span2>",
+            "left": "{{kind}}{{dose_mg}} · {{doses_total}} restantes"
         },
         "types": {
             "pill": "pastilla",
@@ -4600,7 +4678,9 @@
             "effectivenessDetail": "Efectividad",
             "adherenceDescriptionBefore": "Los horarios y listas de control diario para medicamentos no GLP-1 están totalmente activos. Gestiona las reglas de programación abajo y registra la toma diaria desde la pestaña",
             "todayTab": "Hoy",
-            "adherenceDescriptionAfter": "."
+            "adherenceDescriptionAfter": ".",
+            "drPrescriber": "Dr. {{prescriber}}",
+            "schedulesAndDailyChecklistsFor": "Los horarios y las listas de verificación diarias de los medicamentos que no son GLP-1 están totalmente operativos. Gestiona las reglas de programación a continuación y registra las tomas diarias desde la pestaña <strong>Hoy</strong>."
         },
         "schedule": {
             "heading": "Horarios y Recordatorios",
@@ -4722,6 +4802,32 @@
         "noSelection": {
             "title": "Ningún medicamento seleccionado",
             "description": "Selecciona un medicamento de la lista para ver horarios, notas y herramientas de guía GLP-1."
+        },
+        "addMedicationDialog": {
+            "eGRetatrutideCompoundSemaglutide": "ej., retatrutida, semaglutida compuesta",
+            "weekly": "Semanal",
+            "daily": "Diario",
+            "rateStars_one": "Valorar {{count}} estrella",
+            "rateStars_many": "Valorar {{count}} estrellas",
+            "rateStars_other": "Valorar {{count}} estrellas"
+        },
+        "glp1InventoryManager": {
+            "mgML": "· {{concentration_mg_ml}} mg/mL",
+            "inUse": "en uso",
+            "reorder": "Reponer",
+            "doses": "dosis",
+            "editPenVial": "Editar pluma/vial",
+            "removePenVial": "Eliminar pluma/vial",
+            "exp": "Cad {{expiry_date}}",
+            "expired": "Caducado",
+            "nearExp": "Próximo a caducar",
+            "bud": "FUC {{bud_date}}",
+            "expiredBUD": "Caducado (FUC)",
+            "budWarning": "Aviso de FUC",
+            "notes": "Notas: {{notes}}",
+            "editPenVialInventory": "Editar inventario de plumas/viales",
+            "addPenVialInventory": "Añadir al inventario de plumas/viales",
+            "kind": "Tipo"
         }
     },
     "layout": {
@@ -4760,7 +4866,8 @@
         "ratio": "Ratio: {{val}}",
         "skinTemp": "Temperatura de la piel",
         "trainingLoad": "Carga de entrenamiento",
-        "weekly": "semanal"
+        "weekly": "semanal",
+        "low2": "(bajo: {{val}})"
     },
     "food": {
         "imagesReorderHint": "Arrastra para reordenar. La primera imagen se utilizará como miniatura.",
@@ -6876,5 +6983,21 @@
         "daysPerWeek_one": "Días de entrenamiento a la semana, la última {{count}} semana",
         "daysPerWeek_many": "Días de entrenamiento a la semana, las últimas {{count}} semanas",
         "daysPerWeek_other": "Días de entrenamiento a la semana, las últimas {{count}} semanas"
+    },
+    "voiceSettings": {
+        "title": "Entrada por voz",
+        "open": "Ajustes de voz",
+        "recognition": "Reconocimiento",
+        "system": "Sistema (predeterminado)",
+        "ai": "Transcripción por IA",
+        "model": "Modelo de voz",
+        "chooseModel": "Elegir un modelo",
+        "chatModel": "Usado para el chat",
+        "syncHint": "Estos ajustes se aplican a la web y a la aplicación móvil. Desactivar la entrada por voz oculta el micrófono sin cambiar el modelo seleccionado.",
+        "systemHint": "Utiliza el reconocedor de voz de tu dispositivo o navegador sin coste por transcripción de Sparky AI. La disponibilidad y el procesamiento en línea dependen de tu dispositivo o navegador.",
+        "aiHint": "El audio se envía al proveedor de IA seleccionado a través de tu servidor. Pueden aplicarse cargos del proveedor. Elige un modelo para activar la transcripción por IA.",
+        "noModels": "No hay modelos de voz compatibles habilitados. Configura un modelo compatible con audio en los ajustes del servicio de IA de la aplicación web y, después, actualiza la página.",
+        "unavailable": "El modelo de voz seleccionado no está disponible. Elige otro modelo o cambia a Sistema.",
+        "manualSend": "El dictado completa el borrador. Revísalo o edítalo y envíalo tú mismo."
     }
 }
