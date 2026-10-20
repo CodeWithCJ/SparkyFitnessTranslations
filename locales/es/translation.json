@@ -12,7 +12,8 @@
         "medications": "Medicamentos",
         "foodLog": "Registro de alimentos",
         "wellness": "Bienestar",
-        "symptoms": "Síntomas"
+        "symptoms": "Síntomas",
+        "sparkyFitnessV": "SparkyFitness v{{version}}"
     },
     "aboutDialog": {
         "title": "Sobre SparkyFitness",
@@ -35,7 +36,16 @@
         "openFoodFactsApi": "API Open Food Facts",
         "swissFoodApi": "API de la Base de datos Suiza de Composición de Alimentos",
         "usdaApi": "API de la Base de datos de Alimentos del USDA",
-        "canadianNutrientFileApi": "Archivo Canadiense de Nutrientes (Health Canada)"
+        "canadianNutrientFileApi": "Archivo Canadiense de Nutrientes (Health Canada)",
+        "react": "React",
+        "typeScript": "TypeScript",
+        "tailwindCSS": "Tailwind CSS",
+        "nodeJs": "Node.js",
+        "express": "Express",
+        "postgreSQL": "PostgreSQL",
+        "applicationVersion2": "Versión de la aplicación: <strong>{{version}}</strong>",
+        "joinOurCommunityOnDiscord": "Únete a nuestra comunidad en Discord: <link>discord.gg/vcnMT5cPEA</link>",
+        "forMoreInformationVisitThe": "Para obtener más información, visita el <link>GitHub repository</link>.."
     },
     "exercise": {
         "title": "Ejercicios",
@@ -160,7 +170,14 @@
             "goalModeTarget": "Objetivo del modo meta",
             "healthConnectProjectionSource": "Calorías totales de Health Connect",
             "fallbackProjectionSource": "Respaldo de TMB + calorías activas",
-            "legacyProjectionSource": "Proyección del dispositivo"
+            "legacyProjectionSource": "Proyección del dispositivo",
+            "eaten2": "{{energyUnitString}} consumidas",
+            "burned2": "{{energyUnitString}} quemadas",
+            "goal2": "{{energyUnitString}} objetivo",
+            "days2": "{{daysOfData}} días",
+            "remaining2": "restantes {{energyUnitString}}",
+            "bmrMeasured": "TMB: {{bmr}} {{energyUnit}} (medida)",
+            "bmrAlgorithm": "TMB: {{bmr}} {{energyUnit}} (calculada)"
         },
         "editExerciseEntryDialog": {
             "setLabel": "Serie",
@@ -476,7 +493,8 @@
             "addDropSetsFor": "Añadir series descendentes para {{name}}",
             "viewImages": "Ver imágenes de {{name}}",
             "replaceExercise": "Reemplazar ejercicio",
-            "replaceExerciseNamed": "Remplazar {{name}}"
+            "replaceExerciseNamed": "Remplazar {{name}}",
+            "sets": "{{completedSets}}/{{totalSets}} series"
         },
         "workoutFinishSummary": {
             "title": "Entrenamiento completado",
@@ -576,7 +594,8 @@
         "scheduledTodayBadge": "Programado hoy",
         "scheduledWorkout": "Sesión de entrenamiento",
         "activePlanLabel": "Plan activo: {{name}}",
-        "failedToLoadActivePlan": "No se pudo cargar el plan de entrenamiento activo."
+        "failedToLoadActivePlan": "No se pudo cargar el plan de entrenamiento activo.",
+        "currentOfTotal": "({{current}} de {{total}})"
     },
     "exerciseCard": {
         "title": "Ejercicio",
@@ -683,7 +702,11 @@
         "sessionNumber": "Sesión {{num}}",
         "dayNumber": "Día {{num}}",
         "suggestedBadge": "Sugerido",
-        "planWorkoutLogged": "Sesión de entrenamiento registrada en el diario."
+        "planWorkoutLogged": "Sesión de entrenamiento registrada en el diario.",
+        "exerciseTotal2": "Total del ejercicio:",
+        "primaryMuscles2": "Músculos principales:",
+        "secondaryMuscles2": "Músculos secundarios",
+        "equipment2": "Equipamiento:"
     },
     "foodSearchDialog": {
         "title": "Buscar y añadir comida",
@@ -745,7 +768,10 @@
         "failedToLoadFavorites": "Error al cargar los favoritos.",
         "failedToUpdateFavorite": "Error al actualizar el favorito.",
         "provider": "Proveedor de datos",
-        "selectBarcodeProvider": "Seleccionar proveedor"
+        "selectBarcodeProvider": "Seleccionar proveedor",
+        "dataProvider": "Proveedor de datos:",
+        "aiEstimate": "AI {{ai_confidence}} estimación",
+        "per": "Por {{default_variant}}"
     },
     "settings": {
         "profileInformation": {
@@ -770,7 +796,10 @@
             "saving": "Guardando...",
             "enterHeight": "Ingresa tu altura",
             "height": "Altura",
-            "uploading": "Subiendo..."
+            "uploading": "Subiendo...",
+            "pleaseSelectAnImageFile": "Selecciona un archivo de imagen",
+            "imageMustBeLessThan": "La imagen debe ocupar menos de 5 MB",
+            "user": "Usuario"
         },
         "preferences": {
             "title": "Preferencias",
@@ -971,7 +1000,8 @@
                 "serverDisabled": "El administrador de este servidor ha desactivado las contribuciones a Open Food Facts.",
                 "serverGateHelp": "Este interruptor del servidor habilita las contribuciones manuales. Cada usuario debe previsualizar y confirmar un producto y su propia foto antes de publicar. Las credenciales globales son una alternativa opcional para los usuarios sin cuenta personal.",
                 "serverGateLabel": "Permitir contribuciones a Open Food Facts en este servidor",
-                "sharedDataWarning": "Solo son válidos los datos que hayas introducido a partir del envase físico. Open Food Facts publica los datos estructurados bajo la ODbL y la Database Contents License, y tus propias fotos bajo CC BY-SA. Cada contribución requiere confirmar por separado los derechos de los datos y los de la foto."
+                "sharedDataWarning": "Solo son válidos los datos que hayas introducido a partir del envase físico. Open Food Facts publica los datos estructurados bajo la ODbL y la Database Contents License, y tus propias fotos bajo CC BY-SA. Cada contribución requiere confirmar por separado los derechos de los datos y los de la foto.",
+                "onlyDataYouEnteredFrom": "Solo se admiten datos que hayas introducido a partir de envases físicos. Open Food Facts publica datos estructurados bajo las licencias ODbL y Database Contents License, y tus propias fotografías bajo CC BY-SA. Cada contribución requiere confirmaciones independientes de los derechos sobre los datos y las fotografías. <link>Contributor terms</link>"
             },
             "yazio": {
                 "unofficialApiTitle": "⚠️ API no oficial: Úsala bajo tu propio riesgo",
@@ -1075,7 +1105,10 @@
                 "visionNone": "Ninguno",
                 "visionService": "Servicio global de IA de visión",
                 "allowPrivateNetworkAi": "Permitir endpoints en redes privadas (p. ej. Ollama/vLLM local)",
-                "allowPrivateNetworkAiDescription": "Permite conectarse a endpoints de IA alojados en direcciones IP privadas (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, localhost)."
+                "allowPrivateNetworkAiDescription": "Permite conectarse a endpoints de IA alojados en direcciones IP privadas (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, localhost).",
+                "supportsAudioInput": "Mostrar esta configuración en la lista de voz",
+                "supportsAudioInputDescription": "Activa esta opción solo si el modelo seleccionado admite archivos de audio. Cuando elijas esta configuración para la función de voz, el audio grabado se enviará a ese modelo para su transcripción.",
+                "audioInputProviderUnsupported": "La transcripción de voz todavía no es compatible con este tipo de proveedor."
             },
             "userSettings": {
                 "title": "Servicios de IA",
@@ -1177,7 +1210,11 @@
                 "ollamaFullProfileWarningTitle": "Posible impacto en el rendimiento de los modelos locales",
                 "ollamaFullProfileWarningHint": "Ejecutar un modelo local con el conjunto completo de herramientas (Full) puede causar retrasos o errores significativos a menos que tengas un sistema muy potente (p. ej., GPU con mucha VRAM). Si el rendimiento es lento o el modelo se confunde, cambia al conjunto de herramientas básico (Core).",
                 "activeVisionProvider": "Proveedor activo de IA de visión",
-                "sameAsDefault": "Igual que el predeterminado"
+                "sameAsDefault": "Igual que el predeterminado",
+                "supportsAudioInput": "Mostrar esta configuración en la lista de voz",
+                "supportsAudioInputDescription": "Activa esta opción solo si el modelo seleccionado admite archivos de audio. Cuando elijas esta configuración para la función de voz, el audio grabado se enviará a ese modelo para su transcripción.",
+                "audioInputProviderUnsupported": "La transcripción de voz todavía no es compatible con este tipo de proveedor.",
+                "activeVoiceProvider": "Configuración de voz"
             },
             "serviceTypes": {
                 "openai": "OpenAI",
@@ -1723,7 +1760,28 @@
             "licenceNotice": "Contiene información publicada por Health Canada bajo la <1>Licencia de Gobierno Abierto – Canadá</1>.",
             "providerCardLicence": "Contiene información publicada por Health Canada bajo la <1>Licencia de Gobierno Abierto – Canadá</1>. Idiomas admitidos: <3>inglés (en)</3> y <5>francés (fr)</5>. <7>Archivo Canadiense de Nutrientes</7>",
             "providerSpecificDescription": "El Archivo Canadiense de Nutrientes (CNF) contiene información publicada por Health Canada bajo la <1>Licencia de Gobierno Abierto – Canadá</1>. Es gratuito, público y no requiere credenciales. Los idiomas admitidos son <3>inglés (en)</3> y <5>francés (fr)</5>.",
-            "providerSpecificPortal": "Para más detalles, consulta el portal oficial en <1>Archivo Canadiense de Nutrientes</1>."
+            "providerSpecificPortal": "Para más detalles, consulta el portal oficial en <1>Archivo Canadiense de Nutrientes</1>.",
+            "processed2": "Procesados: <processed>{{processed}}</processed> / <total>{{total}}</total>",
+            "importedUpdated": "Importados: <imported>{{imported}}</imported> | Actualizados: <updated>{{updated}}</updated>"
+        },
+        "livsmedelsverket": {
+            "dialogTitle": "Importación masiva de la Agencia Sueca de Alimentación (Livsmedelsverket)",
+            "dialogDescription": "Descarga la base de datos oficial sueca de composición de alimentos (unos 2.600 alimentos) en tu biblioteca para poder buscarlos al instante y sin conexión.",
+            "importing": "Importando alimentos...",
+            "progressText": "{{processed}} / {{total}} alimentos procesados ({{imported}} importados, {{updated}} actualizados)",
+            "completed": "Última importación completada: {{imported}} importados, {{updated}} actualizados ({{total}} total).",
+            "failed": "Error al importar: ",
+            "language": "Idioma",
+            "syncMode": "Modo de sincronización",
+            "libraryOnly": "Solo alimentos de la biblioteca (recomendado)",
+            "libraryAndPast": "Alimentos de la biblioteca y actualizar entradas anteriores del diario",
+            "testMode": "Modo de prueba (importar solo 10 alimentos para verificar)",
+            "attributionText": "Datos proporcionados por la Agencia Sueca de Alimentación (Livsmedelsverket), bajo licencia <1>Creative Commons Attribution 4.0 (CC BY 4.0)</1>.",
+            "clearLibrary": "Eliminar alimentos de la biblioteca",
+            "startImport": "Iniciar importación",
+            "confirmDeleteTitle": "¿Eliminar los alimentos de la biblioteca de Livsmedelsverket?",
+            "confirmDeleteMessage": "Se eliminarán permanentemente todos los alimentos de la Agencia Sueca de Alimentación de tu biblioteca personal. Se conservarán las entradas anteriores del diario de alimentos registradas con estos productos.",
+            "providerCardLicence": "Contiene información publicada por la Agencia Sueca de Alimentación (Livsmedelsverket), bajo licencia <1>Creative Commons Attribution 4.0 (CC BY 4.0)</1>. Idiomas disponibles: <3>Swedish (sv)</3> and <5>English (en)</5>. <7>Swedish Food Composition Database</7>"
         }
     },
     "admin": {
@@ -4827,8 +4885,55 @@
             "notes": "Notas: {{notes}}",
             "editPenVialInventory": "Editar inventario de plumas/viales",
             "addPenVialInventory": "Añadir al inventario de plumas/viales",
-            "kind": "Tipo"
-        }
+            "kind": "Tipo",
+            "pen": "Pluma",
+            "vial": "Vial",
+            "labelName": "Etiqueta / Nombre",
+            "eGPen2Vial": "ej., pluma n.º 2, lote de vial A",
+            "doseStrengthMg": "Intensidad de la dosis (mg)",
+            "totalDoses": "Dosis totales",
+            "concentrationMgML": "Concentración (mg/mL)",
+            "volumeML": "Volumen (mL)",
+            "dateOpened": "Fecha de apertura",
+            "expiryDate": "Fecha de caducidad",
+            "calculatedBeyondUseDateBUD": "Fecha límite de uso calculada (FUC):",
+            "basedOn28DayStability": "Basado en un periodo de estabilidad de 28 días desde la primera apertura.",
+            "enableReorderWarning": "Activar aviso de reposición",
+            "alertWhenRemainingDosesAre": "Avisar cuando queden pocas dosis",
+            "reorderThresholdDosesLeft": "Umbral de reposición (dosis restantes)",
+            "notes2": "Notas",
+            "batchNumberBrandPharmacyInfo": "Número de lote, marca, información de la farmacia...",
+            "addInventory": "Añadir al inventario"
+        },
+        "glp1RecentInjections": {
+            "mg": "{{dose_mg}} mg · ",
+            "note": "Nota: {{notes}}",
+            "editInjectionEntry": "Editar registro de inyección",
+            "deleteInjectionEntry": "Eliminar registro de inyección"
+        },
+        "glp1TitrationManager": {
+            "yourPlannedGLP1Dose": "Tu pauta prevista de aumento progresivo de dosis de GLP-1 (p. ej., 0,25 → 0,5 → 1,0 mg). Añade cada paso con su fecha de inicio y marca uno como «activo» para indicar tu dosis actual.",
+            "dose": "Dosis",
+            "startDate": "Fecha de inicio",
+            "weeksAtThisDose": "Semanas con esta dosis",
+            "status": "Estado",
+            "taperDoseReduction": "Reducción gradual de la dosis",
+            "wks": "· {{planned_weeks}} sem",
+            "taper": "reducción gradual",
+            "editTitrationStep": "Editar paso de titulación",
+            "deleteTitrationStep": "Eliminar paso de titulación"
+        },
+        "injectionSiteSettings": {
+            "moveUp": "Mover {{label}} hacia arriba",
+            "moveDown": "Mover {{label}} hacia abajo",
+            "toggle": "Activar o desactivar {{label}}"
+        },
+        "scheduleManager": {
+            "eGForPainFor": "ej., para el dolor, para el dolor de cabeza",
+            "noScheduleRulesConfiguredYet": "Todavía no hay reglas de programación configuradas.",
+            "deleteScheduleRule": "Eliminar regla de programación"
+        },
+        "glp1Name": "GLP-1"
     },
     "layout": {
         "welcome": "Bienvenido/a {{activeUserName}}",
