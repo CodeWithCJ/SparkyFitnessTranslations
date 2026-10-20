@@ -268,7 +268,10 @@
             "quickLogHint": "{{name}} — 劑量會自動由您嘅在用筆扣數，綠色 = 建議輪換嘅注射部位.",
             "quickLogTitle": "您喺邊度注射㗎？",
             "skipSite": "跳過部位",
-            "now": "иҖҢе®¶зҙ„ {{currentLevelFraction}}%"
+            "now": "иҖҢе®¶зҙ„ {{currentLevelFraction}}%",
+            "pkSerumLevel": "PK 血清濃度 — {{drugName}}",
+            "injectionSiteGreenSuggestedAmber": "注射部位 · <span>綠色 = 建議</span>、<span2>琥珀色 = 休息 <{{days}}d</span2>",
+            "left": "{{kind}}{{dose_mg}} · 剩 {{doses_total}} 劑"
         },
         "types": {
             "pill": "藥丸",
@@ -490,7 +493,8 @@
             "adaptationBenefit": "<strong>適應益處：</strong> 冇正相關，身體已適應而家嘅劑量，冇出現副作用.",
             "doseInsufficient": "需要呢段日期範圍內有 GLP-1 劑量記錄同噁心日誌.",
             "inj": "пјҲ{{injections}} ж¬ЎжіЁе°„пјү",
-            "reportingPeriodTo": "е ұе‘Ҡжңҹй–“пјҡ{{startDate}} иҮі {{endDate}}"
+            "reportingPeriodTo": "е ұе‘Ҡжңҹй–“пјҡ{{startDate}} иҮі {{endDate}}",
+            "dosesLogged2": "{{display_name}} — 已記錄 {{count}} 次劑量"
         },
         "subtype": {
             "all": "全部",
@@ -612,12 +616,14 @@
             "reorderThresholdDosesLeft": "иЈңиІЁй–ҖжӘ»пјҲеү©йӨҳеҠ‘йҮҸпјү",
             "notes2": "еӮҷиЁ»",
             "batchNumberBrandPharmacyInfo": "жү№иҷҹгҖҒе“ҒзүҢгҖҒи—ҘжҲҝиіҮж–ҷвҖҰ",
-            "addInventory": "еҠ е…Ҙеә«еӯҳ"
+            "addInventory": "еҠ е…Ҙеә«еӯҳ",
+            "mgML": "· {{concentration_mg_ml}} mg/mL"
         },
         "glp1RecentInjections": {
             "note": "еӮҷиЁ»пјҡ{{notes}}",
             "editInjectionEntry": "з·ЁијҜжіЁе°„иЁҳйҢ„",
-            "deleteInjectionEntry": "еҲӘйҷӨжіЁе°„иЁҳйҢ„"
+            "deleteInjectionEntry": "еҲӘйҷӨжіЁе°„иЁҳйҢ„",
+            "mg": "{{dose_mg}} mg · "
         },
         "glp1TitrationManager": {
             "dose": "еҠ‘йҮҸ",
@@ -627,7 +633,9 @@
             "taperDoseReduction": "йҒһжёӣпјҲеҠ‘йҮҸжёӣе°‘пјү",
             "taper": "йҒһжёӣ",
             "editTitrationStep": "з·ЁијҜйҒһеўһйҡҺж®ө",
-            "deleteTitrationStep": "еҲӘйҷӨйҒһеўһйҡҺж®ө"
+            "deleteTitrationStep": "еҲӘйҷӨйҒһеўһйҡҺж®ө",
+            "yourPlannedGLP1Dose": "您計劃嘅 GLP-1 劑量遞增（例如 0.25 → 0.5 → 1.0 mg）。每個階段加一個步驟同開始日期；將其中一個標記做「使用中」當作而家嘅劑量.",
+            "wks": "· {{planned_weeks}} 週"
         },
         "injectionSiteSettings": {
             "moveUp": "е°Ү {{label}} з§»дёҠ",
@@ -1485,7 +1493,7 @@
         "failedToUpdateFavorite": "更新收藏失敗.",
         "provider": "資料提供方",
         "selectBarcodeProvider": "揀提供方",
-        "dataProvider": "ж•ёж“ҡдҫӣжҮүе•Ҷпјҡ",
+        "dataProvider": "ж•ёж“ҡжҸҗдҫӣж–№пјҡ",
         "aiEstimate": "AI дј°з®—пјҲ{{ai_confidence}}пјү",
         "per": "жҜҸ {{default_variant}}"
     },
@@ -1932,7 +1940,7 @@
                 "allowPrivateNetworkAiDescription": "容許連接位於私人 IP 地址（10.0.0.0/8、172.16.0.0/12、192.168.0.0/16、localhost）上嘅 AI 端點.",
                 "supportsAudioInput": "е–әиӘһйҹіжё…е–®еәҰйЎҜзӨәе‘ўеҖӢиЁӯе®ҡ",
                 "supportsAudioInputDescription": "ж·ЁдҝӮе–әжүҖйҒёжЁЎеһӢжҺҘеҸ—йҹіиЁҠжӘ”жЎҲе—°йҷЈе…Ҳй–Ӣе‘ўеҖӢйҒёй …гҖӮз•¶е‘ўеҖӢиЁӯе®ҡиў«жҸҖеҡҹеҒҡиӘһйҹіз”Ёеҳ…жҷӮеҖҷпјҢйҢ„дҪҺеҳ…йҹіиЁҠжңғйҖҒеҺ»е—°еҖӢжЁЎеһӢиҪүйҢ„.",
-                "audioInputProviderUnsupported": "е‘ўеҖӢдҫӣжҮүе•ҶйЎһеһӢд»ІжңӘж”ҜжҸҙиӘһйҹіиҪүйҢ„."
+                "audioInputProviderUnsupported": "е‘ўеҖӢжҸҗдҫӣж–№йЎһеһӢд»ІжңӘж”ҜжҸҙиӘһйҹіиҪүйҢ„."
             },
             "userSettings": {
                 "title": "所有功能",
@@ -1964,7 +1972,7 @@
                 "delete": "刪除",
                 "configuredServices": "已配置嘅服務清單",
                 "availableServices": "可選用嘅人工智能服務",
-                "activeProvider": "з•¶еүҚз”ҹж•Ҳеҳ…дәәе·ҘжҷәиғҪдҫӣжҮүе•Ҷ",
+                "activeProvider": "з•¶еүҚз”ҹж•Ҳеҳ…дәәе·ҘжҷәиғҪжҸҗдҫӣж–№",
                 "noServices": "暫時未有配置任何人工智能服務.",
                 "noServicesDescription": "新增第一組人工智能服務，就可以開始使用 Sparky 整套功能.",
                 "noServicesDescriptionDisabled": "麻煩聯絡管理員幫您配置對應嘅人工智能服務先可以使用.",
@@ -2037,7 +2045,7 @@
                 "sameAsDefault": "еҗҢй җиЁӯдёҖжЁЈ",
                 "supportsAudioInput": "е–әиӘһйҹіжё…е–®еәҰйЎҜзӨәе‘ўеҖӢиЁӯе®ҡ",
                 "supportsAudioInputDescription": "ж·ЁдҝӮе–әжүҖйҒёжЁЎеһӢжҺҘеҸ—йҹіиЁҠжӘ”жЎҲе—°йҷЈе…Ҳй–Ӣе‘ўеҖӢйҒёй …гҖӮз•¶е‘ўеҖӢиЁӯе®ҡиў«жҸҖеҡҹеҒҡиӘһйҹіз”Ёеҳ…жҷӮеҖҷпјҢйҢ„дҪҺеҳ…йҹіиЁҠжңғйҖҒеҺ»е—°еҖӢжЁЎеһӢиҪүйҢ„.",
-                "audioInputProviderUnsupported": "е‘ўеҖӢдҫӣжҮүе•ҶйЎһеһӢд»ІжңӘж”ҜжҸҙиӘһйҹіиҪүйҢ„.",
+                "audioInputProviderUnsupported": "е‘ўеҖӢжҸҗдҫӣж–№йЎһеһӢд»ІжңӘж”ҜжҸҙиӘһйҹіиҪүйҢ„.",
                 "activeVoiceProvider": "иӘһйҹіиЁӯе®ҡ",
                 "systemVoiceFree": "зі»зөұиҫЁиӘҚпјҲе…ҚиІ»пјү"
             },
@@ -2330,7 +2338,11 @@
             "cut15": "жёӣи„ӮпјҲ-15%пјү",
             "highCut20": "й«ҳеәҰжёӣи„ӮпјҲ-20%пјү",
             "customMinimum": "иҮӘиЁӮдёӢйҷҗпјҲ{{energyUnitString}}пјү",
-            "measuredAdaptiveTDEEDoesNot": "йҮҸеәҰеҳ…иҮӘйҒ©жҮү TDEEпјҡ<span>{{energy}} {{energyUnitString}}</span>пјҲе””жңғи·ҹзӣ®жЁҷжЁЎејҸи®Ҡпјү"
+            "measuredAdaptiveTDEEDoesNot": "йҮҸеәҰеҳ…иҮӘйҒ©жҮү TDEEпјҡ<span>{{energy}} {{energyUnitString}}</span>пјҲе””жңғи·ҹзӣ®жЁҷжЁЎејҸи®Ҡпјү",
+            "inAdaptiveModeThisIs": "💡 喺自適應模式下，呢個係您有足夠追蹤數據之前嘅後備估算，之後仲會繼續用嚟設定合理性上限。您量度到嘅 TDEE 會限制喺 BMR × 呢個倍數嘅 ±500 kcal 範圍內，所以設得太低會壓住其實更高嘅消耗量.",
+            "bodyRecomposition10Unreachable": "身體重組（-10%）— 達唔到",
+            "cut15Unreachable": "減脂（-15%）— 達唔到",
+            "highCut20Unreachable": "高度減脂（-20%）— 達唔到"
         },
         "mfa": {
             "confirmPassword": "輸入密碼以繼續",
@@ -2537,23 +2549,24 @@
             "userNotAuthenticatedPleaseLog": "з”ЁжҲ¶жңӘй©—иӯүгҖӮи«ӢйҮҚж–°зҷ»е…Ҙ.",
             "garminMFARequired": "йңҖиҰҒ Garmin MFA",
             "pleaseCompleteMultiFactorAuthentication": "и«Ӣе®ҢжҲҗ Garmin еҳ…еӨҡйҮҚй©—иӯүпјҲMFAпјү.",
-            "externalDataProviderAddedSuccessfully": "еӨ–йғЁж•ёж“ҡдҫӣжҮүе•Ҷе·ІжҲҗеҠҹеҠ е…Ҙ",
-            "failedToAddExternalData": "еҠ е…Ҙе””еҲ°еӨ–йғЁж•ёж“ҡдҫӣжҮүе•Ҷпјҡ{{message}}",
-            "addNewDataProvider": "еҠ е…Ҙж–°ж•ёж“ҡдҫӣжҮүе•Ҷ",
-            "providerName": "дҫӣжҮүе•ҶеҗҚзЁұ",
-            "myProviderName": "жҲ‘еҳ…дҫӣжҮүе•ҶеҗҚзЁұ",
-            "providerType": "дҫӣжҮүе•ҶйЎһеһӢ",
+            "externalDataProviderAddedSuccessfully": "еӨ–йғЁж•ёж“ҡжҸҗдҫӣж–№е·ІжҲҗеҠҹеҠ е…Ҙ",
+            "failedToAddExternalData": "еҠ е…Ҙе””еҲ°еӨ–йғЁж•ёж“ҡжҸҗдҫӣж–№пјҡ{{message}}",
+            "addNewDataProvider": "еҠ е…Ҙж–°ж•ёж“ҡжҸҗдҫӣж–№",
+            "providerName": "жҸҗдҫӣж–№еҗҚзЁұ",
+            "myProviderName": "жҲ‘еҳ…жҸҗдҫӣж–№еҗҚзЁұ",
+            "providerType": "жҸҗдҫӣж–№йЎһеһӢ",
             "urlCopiedToClipboard": "URL е·ІиӨҮиЈҪеҲ°еүӘиІјз°ҝ.",
-            "activateThisProvider": "е•ҹеӢ•е‘ўеҖӢдҫӣжҮүе•Ҷ",
+            "activateThisProvider": "е•ҹеӢ•е‘ўеҖӢжҸҗдҫӣж–№",
             "connecting": "йҖЈз·ҡз·ҠвҖҰ",
-            "addProvider": "еҠ е…ҘдҫӣжҮүе•Ҷ"
+            "addProvider": "еҠ е…ҘжҸҗдҫӣж–№"
         },
         "cnfBulkImportDialog": {
-            "englishDefault": "иӢұж–ҮпјҲй җиЁӯпјү"
+            "englishDefault": "иӢұж–ҮпјҲй җиЁӯпјү",
+            "franAisFrench": "法文（French）"
         },
         "editProviderForm": {
-            "providerName": "дҫӣжҮүе•ҶеҗҚзЁұ",
-            "providerType": "дҫӣжҮүе•ҶйЎһеһӢ",
+            "providerName": "жҸҗдҫӣж–№еҗҚзЁұ",
+            "providerType": "жҸҗдҫӣж–№йЎһеһӢ",
             "openFoodFactsUsernameOptional": "Open Food Facts з”ЁжҲ¶еҗҚзЁұпјҲеҸҜйҒёпјү",
             "leaveBlankToKeepExisting": "пјҲз•ҷз©әе°ұдҝқз•ҷиҖҢе®¶еҳ…пјү",
             "openFoodFactsPasswordOptional": "Open Food Facts еҜҶзўјпјҲеҸҜйҒёпјү",
@@ -2587,7 +2600,7 @@
             "enterWithingsClientSecret": "ијёе…Ҙ Withings Client Secret",
             "callbackURLCopiedToClipboard": "еӣһе‘ј URL е·ІиӨҮиЈҪеҲ°еүӘиІјз°ҝ.",
             "connectedToGarmin": "е·ІйҖЈз·ҡиҮі Garmin",
-            "yourGarminAccountIsConnected": "жӮЁеҳ… Garmin еёіжҲ¶е·ІйҖЈз·ҡгҖӮжғіз”Ёе””еҗҢжҶ‘иӯүйҮҚж–°йҖЈз·ҡеҳ…и©ұпјҢе…Ҳж–·й–ӢпјҢеҶҚж–°еўһдҫӣжҮүе•Ҷ.",
+            "yourGarminAccountIsConnected": "жӮЁеҳ… Garmin еёіжҲ¶е·ІйҖЈз·ҡгҖӮжғіз”Ёе””еҗҢжҶ‘иӯүйҮҚж–°йҖЈз·ҡеҳ…и©ұпјҢе…Ҳж–·й–ӢпјҢеҶҚж–°еўһжҸҗдҫӣж–№.",
             "garminEmail": "Garmin йӣ»йғө",
             "enterGarminEmail": "ијёе…Ҙ Garmin йӣ»йғө",
             "garminPassword": "Garmin еҜҶзўј",
@@ -2614,7 +2627,7 @@
             "hourly": "жҜҸе°ҸжҷӮ",
             "daily": "жҜҸж—Ҙ",
             "selectRegion": "жҸҖең°еҚҖ",
-            "activateThisProvider": "е•ҹеӢ•е‘ўеҖӢдҫӣжҮүе•Ҷ",
+            "activateThisProvider": "е•ҹеӢ•е‘ўеҖӢжҸҗдҫӣж–№",
             "openFoodFactsIsA2": "Open Food Facts дҝӮдёҖеҖӢж”ҜжҸҙжң¬ең°еҢ–еҳ…зӨҫзҫӨиіҮж–ҷеә«гҖӮSparky жңғиҮӘеӢ•з”ЁжӮЁе–ә SparkyFitness е…Ҙйқўе•ҹеӢ•еҳ…иӘһиЁҖжҹҘз”ўе“ҒгҖӮжғізҹҘеӨҡе•ІпјҢеҺ»<link>Open Food Facts е…ҘеҸЈз¶Із«ҷ</link>пјҢжҲ–иҖ…е–ә<link2>Open Food Facts зҝ»иӯҜ Wiki</link2>зқҮиӘһиЁҖж”ҜжҸҙ.",
             "noteForFatsecretYouNeed2": "жіЁж„Ҹпјҡз”Ё Fatsecret еҳ…и©ұпјҢжӮЁиҰҒе–ә Fatsecret й–ӢзҷјиҖ…еёіжҲ¶еәҰиЁӯе®ҡ<strong>жӮЁеҳ…е…¬й–Ӣ IP</strong>зҷҪеҗҚе–®гҖӮе‘ўеҖӢзЁӢеәҸжңҖй•·еҸҜиғҪиҰҒ 24 еҖӢйҗҳ.",
             "yazioIntegrationUsesAnUnofficial": "YAZIO ж•ҙеҗҲз”ЁдёҖеҖӢ<strong>йқһе®ҳж–№гҖҒеҶҮиЁҳијүеҳ… API</strong>пјҢе””дҝӮ YAZIO жҸҗдҫӣжҲ–иҖ…иӘҚеҸҜеҳ…гҖӮз”ЁдҪўжңүеҸҜиғҪ<strong2>жҗһеҲ°жӮЁеҖӢ YAZIO еёіжҲ¶дҝҫдәәе°Ғ</strong2>гҖӮеҰӮжһң YAZIO ж”№е’—дҪўе“ӢеҫҢеҸ°пјҢе‘ўеҖӢ API дәҰйғҪеҸҜиғҪ<strong3>йҡЁжҷӮеҒңз”Ё</strong3>иҖҢе””жңғйҖҡзҹҘ.",
@@ -2622,35 +2635,38 @@
             "getYourAppIDAnd2": "е–ә<link>Nutritionix й–ӢзҷјиҖ…е…ҘеҸЈз¶Із«ҷ</link>ж”һжӮЁеҳ… App ID еҗҢ App Key.",
             "getYourClientIDAnd2": "е–ә<link>Fatsecret е№іеҸ°е„ҖиЎЁжқҝ</link>еҳ…<strong>REST API OAuth 2.0 жҶ‘иӯү</strong>дёӢйқўж”һжӮЁеҳ… Client ID еҗҢ Client SecretпјҲе””дҝӮ OAuth 1.0 Consumer KeyпјҸSecretпјү.",
             "getYourAPIKeyFrom3": "е–ә<link>USDA FoodData Central API жҢҮеҚ—</link>еәҰж”һжӮЁеҳ… API йҮ‘й‘°.",
-            "withingsIntegrationUsesOAuth2You2": "Withings ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘдҫӣжҮүе•Ҷд№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Withings жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Withings й–ӢзҷјиҖ…е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
+            "withingsIntegrationUsesOAuth2You2": "Withings ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Withings жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Withings й–ӢзҷјиҖ…е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
             "noteGarminConnectIntegrationIs2": "жіЁж„ҸпјҡGarmin Connect ж•ҙеҗҲеҸӘжё¬и©Ұе’—е°‘ж•ёжҢҮжЁҷгҖӮзўәдҝқжӮЁеҳ… Docker Compose е·Із¶“жӣҙж–°еҲ°еҢ…еҗ« Garmin йғЁеҲҶгҖӮ<br/>Sparky Fitness е””жңғе„ІжӮЁеҳ… Garmin йӣ»йғөжҲ–иҖ…еҜҶзўјгҖӮдҪўе“Ӣж·ЁдҝӮе–әзҷ»е…Ҙе—°йҷЈз”Ёеҡҹж”һе®үе…Ёж¬Ҡжқ–.",
-            "fitbitIntegrationUsesOAuth2You2": "Fitbit ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘдҫӣжҮүе•Ҷд№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Fitbit жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Fitbit й–ӢзҷјиҖ…е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
-            "ouraIntegrationUsesOAuth2You2": "Oura ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘдҫӣжҮүе•Ҷд№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Oura жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Oura й–ӢзҷјиҖ…е…ҘеҸЈз¶Із«ҷ</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
-            "stravaIntegrationUsesOAuth2You2": "Strava ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°дҫӣжҮүе•Ҷд№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Strava жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Strava API е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°ҮгҖҢAuthorization Callback DomainгҖҚиЁӯеҒҡпјҡ",
-            "googleHealthIntegrationUsesOAuth22": "Google Health ж•ҙеҗҲз”Ё OAuth2гҖӮе„Іеӯҳд№ӢеҫҢпјҢе–әдҫӣжҮүе•ҶеҚЎзүҮдёҠж’і<strong>йҖЈз·ҡ</strong>еҡҹжҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Google Cloud дё»жҺ§еҸ°</link>еәҰпјҢжӮЁеҳ… OAuth 2.0 Web жҮүз”ЁзЁӢејҸз”ЁжҲ¶з«ҜдёҖе®ҡиҰҒиЁӯе®ҡе‘ўеҖӢеӣһе‘ј URLпјҡ",
+            "fitbitIntegrationUsesOAuth2You2": "Fitbit ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Fitbit жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Fitbit й–ӢзҷјиҖ…е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
+            "ouraIntegrationUsesOAuth2You2": "Oura ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Oura жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Oura й–ӢзҷјиҖ…е…ҘеҸЈз¶Із«ҷ</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
+            "stravaIntegrationUsesOAuth2You2": "Strava ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°жҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Strava жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Strava API е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°ҮгҖҢAuthorization Callback DomainгҖҚиЁӯеҒҡпјҡ",
+            "googleHealthIntegrationUsesOAuth22": "Google Health ж•ҙеҗҲз”Ё OAuth2гҖӮе„Іеӯҳд№ӢеҫҢпјҢе–әжҸҗдҫӣж–№еҚЎзүҮдёҠж’і<strong>йҖЈз·ҡ</strong>еҡҹжҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Google Cloud дё»жҺ§еҸ°</link>еәҰпјҢжӮЁеҳ… OAuth 2.0 Web жҮүз”ЁзЁӢејҸз”ЁжҲ¶з«ҜдёҖе®ҡиҰҒиЁӯе®ҡе‘ўеҖӢеӣһе‘ј URLпјҡ",
             "generateAnAPIKeyIn2": "е–ә Liftosaur жҮүз”ЁзЁӢејҸеәҰз”ўз”ҹ API йҮ‘й‘°пјҡиЁӯе®ҡ > API йҮ‘й‘°пјҲд»Ҙ <span>lftsk_</span> й–Ӣй ӯпјүгҖӮз”Ё Liftosaur API иҰҒиЁӮ Liftosaur Pro.",
             "theSwissFoodCompositionDatabase2": "з‘һеЈ«йЈҹзү©жҲҗеҲҶиіҮж–ҷеә« API е…ҚиІ»гҖҒе…¬й–ӢпјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮжҗңе°ӢеҗҢзҮҹйӨҠж•ёеҖјжЁҷзұӨж”ҜжҸҙеҳ…иӘһиЁҖдҝӮ<strong>иӢұж–ҮпјҲenпјү</strong>гҖҒ<strong2>еҫ·ж–ҮпјҲdeпјү</strong2>гҖҒ<strong3>жі•ж–ҮпјҲfrпјү</strong3>еҗҢ<strong4>ж„ҸеӨ§еҲ©ж–ҮпјҲitпјү</strong4>.",
             "ifYourActiveLanguageIn2": "еҰӮжһңжӮЁе–ә SparkyFitness е…Ҙйқўе•ҹеӢ•еҳ…иӘһиЁҖе””еҸ—ж”ҜжҸҙпјҢAPI жҹҘи©ўжңғй җиЁӯз”ЁиӢұж–ҮгҖӮжӣҙеӨҡи©іжғ…зқҮ<link>з‘һеЈ«йЈҹзү©жҲҗеҲҶиіҮж–ҷеә«</link>еҳ…е®ҳж–№е…ҘеҸЈз¶Із«ҷ.",
             "forMoreDetailsSeeThe2": "жӣҙеӨҡи©іжғ…зқҮ<link>еҠ жӢҝеӨ§зҮҹйӨҠзҙ жӘ”жЎҲпјҲеҠ жӢҝеӨ§иЎӣз”ҹйғЁпјү</link>еҳ…е®ҳж–№е…ҘеҸЈз¶Із«ҷ.",
-            "theFreeExerciseDBProvider2": "Free Exercise DB дҫӣжҮүе•Ҷе…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұ<link>GitHub дёҠеҳ… yuhonas/free-exercise-db</link>зӨҫзҫӨе„Іеӯҳеә«ж”һеӢ•дҪңж•ёж“ҡ.",
-            "theWgerProviderIsPublic2": "wger дҫӣжҮүе•Ҷе…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұе®ҳж–№<link>wger е°ҲжЎҲз¶Із«ҷ</link>ж”һиЁ“з·ҙеҗҢеӢ•дҪңж•ёж“ҡ.",
+            "theFreeExerciseDBProvider2": "Free Exercise DB жҸҗдҫӣж–№е…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұ<link>GitHub дёҠеҳ… yuhonas/free-exercise-db</link>зӨҫзҫӨе„Іеӯҳеә«ж”һеӢ•дҪңж•ёж“ҡ.",
+            "theWgerProviderIsPublic2": "wger жҸҗдҫӣж–№е…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұе®ҳж–№<link>wger е°ҲжЎҲз¶Із«ҷ</link>ж”һиЁ“з·ҙеҗҢеӢ•дҪңж•ёж“ҡ.",
             "europeMcpeuCorosComNot": "жӯҗжҙІпјҲmcpeu.coros.comпјү<span>пјҲжңӘжё¬и©Ұпјү</span>",
             "mainlandChinaMcpcnCorosCom": "дёӯеңӢеӨ§йҷёпјҲmcpcn.coros.comпјү<span>пјҲжңӘжё¬и©Ұпјү</span>",
             "ensureLocalUrl": "еҰӮжһңе–әжң¬ж©ҹжё¬и©ҰпјҢйғҪиҰҒзўәдҝқжӮЁеҳ…жң¬ж©ҹ URL жӯЈзўә.",
-            "stravaCallbackNote": "жіЁж„ҸпјҡдјәжңҚеҷЁдёҠеҳ… Strava еӣһе‘ј URL иЁӯе®ҡеҒҡпјҡ<strong>{{value}}</strong>"
+            "stravaCallbackNote": "жіЁж„ҸпјҡдјәжңҚеҷЁдёҠеҳ… Strava еӣһе‘ј URL иЁӯе®ҡеҒҡпјҡ<strong>{{value}}</strong>",
+            "leaveBlankToKeepExisting2": "••••••••（留空就保留而家嘅）",
+            "unofficialAPIUseAtYour": "⚠️ 非官方 API — 用咗風險自負",
+            "theCanadianNutrientFileCNF2": "加拿大營養素檔案（CNF）包含加拿大衛生部根據<link>開放政府授權 – 加拿大</link>. 發布嘅資訊。佢免費、公開，而且唔使任何憑證。支援嘅語言係<strong>英文（en）</strong>同<strong2>法文（fr）</strong2>."
         },
         "externalProviderList": {
-            "dragToReorderProvider": "жӢ–еҡҹжӢ–еҺ»жҺ’еәҸдҫӣжҮүе•Ҷ",
-            "noDataProvidersConfiguredYet": "жңӘиЁӯе®ҡд»»дҪ•ж•ёж“ҡдҫӣжҮүе•Ҷ.",
-            "addYourFirstDataProvider": "еҠ е…ҘжӮЁз¬¬дёҖеҖӢж•ёж“ҡдҫӣжҮүе•ҶпјҢе…ҲеҸҜд»Ҙз”ЁеӨ–йғЁдҫҶжәҗжҗңе°Ӣ."
+            "dragToReorderProvider": "жӢ–еҡҹжӢ–еҺ»жҺ’еәҸжҸҗдҫӣж–№",
+            "noDataProvidersConfiguredYet": "жңӘиЁӯе®ҡд»»дҪ•ж•ёж“ҡжҸҗдҫӣж–№.",
+            "addYourFirstDataProvider": "еҠ е…ҘжӮЁз¬¬дёҖеҖӢж•ёж“ҡжҸҗдҫӣж–№пјҢе…ҲеҸҜд»Ҙз”ЁеӨ–йғЁдҫҶжәҗжҗңе°Ӣ."
         },
         "externalProviderSettings": {
-            "configuredExternalDataProviders": "е·ІиЁӯе®ҡеҳ…еӨ–йғЁж•ёж“ҡдҫӣжҮүе•Ҷ",
-            "externalDataProviders": "еӨ–йғЁж•ёж“ҡдҫӣжҮүе•Ҷ",
-            "defaultFoodDataProvider": "й җиЁӯйЈҹзү©ж•ёж“ҡдҫӣжҮүе•Ҷ",
-            "selectAFoodProvider": "жҸҖйЈҹзү©дҫӣжҮүе•Ҷ",
-            "defaultBarcodeProvider": "й җиЁӯжўқзўјдҫӣжҮүе•Ҷ",
-            "selectABarcodeProvider": "жҸҖжўқзўјдҫӣжҮүе•Ҷ",
+            "configuredExternalDataProviders": "е·ІиЁӯе®ҡеҳ…еӨ–йғЁж•ёж“ҡжҸҗдҫӣж–№",
+            "externalDataProviders": "еӨ–йғЁж•ёж“ҡжҸҗдҫӣж–№",
+            "defaultFoodDataProvider": "й җиЁӯйЈҹзү©ж•ёж“ҡжҸҗдҫӣж–№",
+            "selectAFoodProvider": "жҸҖйЈҹзү©жҸҗдҫӣж–№",
+            "defaultBarcodeProvider": "й җиЁӯжўқзўјжҸҗдҫӣж–№",
+            "selectABarcodeProvider": "жҸҖжўқзўјжҸҗдҫӣж–№",
             "openFoodFactsFallback": "Open Food Facts еҫҢеӮҷ"
         },
         "fastingSettings": {
@@ -2717,12 +2733,12 @@
             "supportedLanguagesEnglishEnGerman": "ж”ҜжҸҙиӘһиЁҖпјҡ<strong>иӢұж–ҮпјҲenпјү</strong>гҖҒ<strong2>еҫ·ж–ҮпјҲdeпјү</strong2>гҖҒ<strong3>жі•ж–ҮпјҲfrпјү</strong3>еҗҢ<strong4>ж„ҸеӨ§еҲ©ж–ҮпјҲitпјү</strong4>гҖӮеҰӮжһңжӮЁе•ҹеӢ•еҳ…иӘһиЁҖе””еҸ—ж”ҜжҸҙпјҢжңғй җиЁӯз”ЁиӢұж–ҮгҖӮ<link>з‘һеЈ«йЈҹзү©жҲҗеҲҶиіҮж–ҷеә«</link>",
             "importingCatalogFoods": "еҢҜе…Ҙзӣ®йҢ„дёӯпјҡ{{processed}}пјҸ{{total}} зЁ®йЈҹзү©",
             "fetchesExerciseDataDirectlyFrom2": "зӣҙжҺҘз”ұ<link>GitHub дёҠеҳ… yuhonas/free-exercise-db</link>зӨҫзҫӨе„Іеӯҳеә«ж”һеӢ•дҪңж•ёж“ҡ.",
-            "theWgerProviderIsPublic2": "wger дҫӣжҮүе•Ҷе…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұе®ҳж–№<link>wger е°ҲжЎҲз¶Із«ҷ</link>ж”һиЁ“з·ҙеҗҢеӢ•дҪңж•ёж“ҡ.",
+            "theWgerProviderIsPublic2": "wger жҸҗдҫӣж–№е…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұе®ҳж–№<link>wger е°ҲжЎҲз¶Із«ҷ</link>ж”һиЁ“з·ҙеҗҢеӢ•дҪңж•ёж“ҡ.",
             "forMoreDetailsOrTo2": "жӣҙеӨҡи©іжғ…жҲ–иҖ…з®ЎзҗҶжӮЁеҳ…ж•ҙеҗҲпјҢеҺ»<link>{{label}}</link>зқҮеҗ“.",
             "lastSync2": "дёҠж¬ЎеҗҢжӯҘпјҡ{{value}}",
             "tokenExpires2": "ж¬Ҡжқ–еҲ°жңҹпјҡ{{value}}",
             "noteFromCodewithCJIDon": "<strong>CodewithCJ еҳ…еӮҷиЁ»пјҡ</strong>жҲ‘еҶҮ {{provider_name}} иЈқзҪ®пјҸиЁӮй–ұ.",
-            "enableAllowLocalProviderResponse": "е–ә<strong2>з®ЎзҗҶе“Ў > е…ЁеҹҹдҫӣжҮүе•ҶиЁӯе®ҡ</strong2>еәҰй–Ӣе•ҹ<strong>е…ҒиЁұжң¬ж©ҹдҫӣжҮүе•ҶеӣһжҮүж“·еҸ–</strong>пјҢеҶҚе–әеҗҢжӯҘзҜ„еңҚе°Қи©ұжЎҶеәҰжҸҖ<strong3>ж“·еҸ–еҺҹе§ӢдҫӣжҮүе•ҶеӣһжҮү</strong3>.",
+            "enableAllowLocalProviderResponse": "е–ә<strong2>з®ЎзҗҶе“Ў > е…ЁеҹҹжҸҗдҫӣж–№иЁӯе®ҡ</strong2>еәҰй–Ӣе•ҹ<strong>е…ҒиЁұжң¬ж©ҹжҸҗдҫӣж–№еӣһжҮүж“·еҸ–</strong>пјҢеҶҚе–әеҗҢжӯҘзҜ„еңҚе°Қи©ұжЎҶеәҰжҸҖ<strong3>ж“·еҸ–еҺҹе§ӢжҸҗдҫӣж–№еӣһжҮү</strong3>.",
             "shareTheExportedDiagnosticBundle2": "е–ә Discord дёҠеҗҢ<strong>CodewithCJ</strong>еҲҶдә«еҢҜеҮәе’—еҳ…иЁәж–·еҘ—д»¶.",
             "urlLabel": "URLпјҡ",
             "appIdLabel": "App IDпјҡ",
@@ -2754,8 +2770,8 @@
             "syncEntireHistoryOnConnect": "йҖЈз·ҡе—°йҷЈеҗҢжӯҘжҲҗж®өжӯ·еҸІ",
             "selectRegion": "жҸҖең°еҚҖ",
             "openFoodFactsIsA2": "Open Food Facts дҝӮдёҖеҖӢж”ҜжҸҙжң¬ең°еҢ–еҳ…зӨҫзҫӨиіҮж–ҷеә«гҖӮSparky жңғиҮӘеӢ•з”ЁжӮЁе–ә SparkyFitness е…Ҙйқўе•ҹеӢ•еҳ…иӘһиЁҖжҹҘз”ўе“ҒгҖӮжғізҹҘеӨҡе•ІпјҢеҺ»<link>Open Food Facts е…ҘеҸЈз¶Із«ҷ</link>пјҢжҲ–иҖ…е–ә<link2>Open Food Facts зҝ»иӯҜ Wiki</link2>зқҮиӘһиЁҖж”ҜжҸҙ.",
-            "thisIntegrationUsesOAuth2You2": "е‘ўеҖӢж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°дҫӣжҮүе•Ҷд№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ»дҫӣжҮүе•ҶжҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>{{dashboard}}</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
-            "stravaIntegrationUsesOAuth2You2": "Strava ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°дҫӣжҮүе•Ҷд№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Strava жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Strava API е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°ҮгҖҢAuthorization Callback DomainгҖҚиЁӯеҒҡпјҡ",
+            "thisIntegrationUsesOAuth2You2": "е‘ўеҖӢж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°жҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ»жҸҗдҫӣж–№жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>{{dashboard}}</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
+            "stravaIntegrationUsesOAuth2You2": "Strava ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°жҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Strava жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Strava API е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°ҮгҖҢAuthorization Callback DomainгҖҚиЁӯеҒҡпјҡ",
             "noteGarminConnectIntegrationIs2": "жіЁж„ҸпјҡGarmin Connect ж•ҙеҗҲеҸӘжё¬и©Ұе’—е°‘ж•ёжҢҮжЁҷгҖӮзўәдҝқжӮЁеҳ… Docker Compose е·Із¶“жӣҙж–°еҲ°еҢ…еҗ« Garmin йғЁеҲҶгҖӮ<br/>Sparky Fitness е””жңғе„ІжӮЁеҳ… Garmin йӣ»йғөжҲ–иҖ…еҜҶзўјгҖӮдҪўе“Ӣж·ЁдҝӮе–әзҷ»е…Ҙе—°йҷЈз”Ёеҡҹж”һе®үе…Ёж¬Ҡжқ–.",
             "generateAnAPIKeyIn2": "е–ә Liftosaur жҮүз”ЁзЁӢејҸеәҰз”ўз”ҹ API йҮ‘й‘°пјҡиЁӯе®ҡ > API йҮ‘й‘°пјҲд»Ҙ <span>lftsk_</span> й–Ӣй ӯпјүгҖӮз”Ё Liftosaur API иҰҒиЁӮ Liftosaur Pro.",
             "getYourAppIDAnd2": "е–ә<link>Nutritionix й–ӢзҷјиҖ…е…ҘеҸЈз¶Із«ҷ</link>ж”һжӮЁеҳ… App ID еҗҢ App Key.",
@@ -2763,8 +2779,8 @@
             "getYourAPIKeyFrom3": "е–ә<link>USDA FoodData Central API жҢҮеҚ—</link>еәҰж”һжӮЁеҳ… API йҮ‘й‘°.",
             "theSwissFoodCompositionDatabase2": "з‘һеЈ«йЈҹзү©жҲҗеҲҶиіҮж–ҷеә« API е…ҚиІ»гҖҒе…¬й–ӢпјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮжҗңе°ӢеҗҢзҮҹйӨҠж•ёеҖјжЁҷзұӨж”ҜжҸҙеҳ…иӘһиЁҖдҝӮ<strong>иӢұж–ҮпјҲenпјү</strong>гҖҒ<strong2>еҫ·ж–ҮпјҲdeпјү</strong2>гҖҒ<strong3>жі•ж–ҮпјҲfrпјү</strong3>еҗҢ<strong4>ж„ҸеӨ§еҲ©ж–ҮпјҲitпјү</strong4>.",
             "ifYourActiveLanguageIn2": "еҰӮжһңжӮЁе–ә SparkyFitness е…Ҙйқўе•ҹеӢ•еҳ…иӘһиЁҖе””еҸ—ж”ҜжҸҙпјҢAPI жҹҘи©ўжңғй җиЁӯз”ЁиӢұж–ҮгҖӮжӣҙеӨҡи©іжғ…зқҮ<link>з‘һеЈ«йЈҹзү©жҲҗеҲҶиіҮж–ҷеә«</link>еҳ…е®ҳж–№е…ҘеҸЈз¶Із«ҷ.",
-            "theFreeExerciseDBProvider2": "Free Exercise DB дҫӣжҮүе•Ҷе…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұ<link>GitHub дёҠеҳ… yuhonas/free-exercise-db</link>зӨҫзҫӨе„Іеӯҳеә«ж”һеӢ•дҪңж•ёж“ҡ.",
-            "theWgerProviderIsPublic2": "wger дҫӣжҮүе•Ҷе…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұе®ҳж–№<link>wger е°ҲжЎҲз¶Із«ҷ</link>ж”һиЁ“з·ҙеҗҢеӢ•дҪңж•ёж“ҡ.",
+            "theFreeExerciseDBProvider2": "Free Exercise DB жҸҗдҫӣж–№е…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұ<link>GitHub дёҠеҳ… yuhonas/free-exercise-db</link>зӨҫзҫӨе„Іеӯҳеә«ж”һеӢ•дҪңж•ёж“ҡ.",
+            "theWgerProviderIsPublic2": "wger жҸҗдҫӣж–№е…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұе®ҳж–№<link>wger е°ҲжЎҲз¶Із«ҷ</link>ж”һиЁ“з·ҙеҗҢеӢ•дҪңж•ёж“ҡ.",
             "europeMcpeuCorosComNot": "жӯҗжҙІпјҲmcpeu.coros.comпјү<span>пјҲжңӘжё¬и©Ұпјү</span>",
             "mainlandChinaMcpcnCorosCom": "дёӯеңӢеӨ§йҷёпјҲmcpcn.coros.comпјү<span>пјҲжңӘжё¬и©Ұпјү</span>",
             "ensureLocalUrl": "еҰӮжһңе–әжң¬ж©ҹжё¬и©ҰпјҢйғҪиҰҒзўәдҝқжӮЁеҳ…жң¬ж©ҹ URL жӯЈзўә.",
@@ -2915,7 +2931,7 @@
             "error": "錯誤",
             "logoUploadFailed": "提供方已建立，但 Logo 上載失敗.",
             "logo2": "{{display_name}} жЁҷиӘҢ",
-            "loadFailed": "ијүе…Ҙе””еҲ° OIDC дҫӣжҮүе•Ҷ."
+            "loadFailed": "ијүе…Ҙе””еҲ° OIDC жҸҗдҫӣж–№."
         },
         "userManagement": {
             "title": "系統用戶管理面板",
@@ -2956,21 +2972,24 @@
             "emailMFA": "Email MFA"
         },
         "globalProviderSettings": {
-            "globalDataProviders": "е…Ёеҹҹж•ёж“ҡдҫӣжҮүе•Ҷ",
+            "globalDataProviders": "е…Ёеҹҹж•ёж“ҡжҸҗдҫӣж–№",
             "configureInstanceLevelAPIKeys": "иЁӯе®ҡйЈҹзү©еҗҢеӢ•дҪңеә«еҳ…еҜҰдҫӢеұӨзҙҡ API йҮ‘й‘°еҗҢз«Ҝй»һ.",
-            "globalProvidersAreSharedTransparently": "е…ЁеҹҹдҫӣжҮүе•Ҷжңғе–әжҲҗеҖӢеҜҰдҫӢе…ҘйқўйҖҸжҳҺе…ұз”ЁгҖӮз•¶з”ЁжҲ¶жҗңе°ӢйЈҹзү©жҲ–иҖ…еӢ•дҪңе—°йҷЈпјҢе•ҹеӢ•е’—еҳ…е…ЁеҹҹдҫӣжҮүе•ҶпјҲдҫӢеҰӮ USDA Food DatabaseпјүжңғиҮӘеӢ•з”Ёзі»зөұйҮ‘й‘°жҹҘи©ўгҖӮз”Ё OAuth еҗҢеҖӢдәәз”ЁжҲ¶еёіжҲ¶еҳ…йҖЈз·ҡпјҲдҫӢеҰӮ GarminгҖҒStravaпјүеҶҮеҫ—е…ЁеҹҹеҠ е…Ҙ.",
-            "allowPrivateLANRecipeProviders": "е…ҒиЁұз§ҒдәәпјҸLAN йЈҹиӯңдҫӣжҮүе•Ҷ",
-            "allowNonAdminUsersTo": "е…ҒиЁұйқһз®ЎзҗҶе“Ўз”ЁжҲ¶е°ҮиҮӘиЁӮйЈҹиӯңдҫӣжҮүе•ҶпјҲдҫӢеҰӮ MealieгҖҒTandoorпјүйҖЈеҺ»з§Ғдәә LAN IP ең°еқҖ.",
-            "allowLocalProviderResponseCapture": "е…ҒиЁұжң¬ж©ҹдҫӣжҮүе•ҶеӣһжҮүж“·еҸ–",
-            "addsTwoOptionsToThe": "е–әдҫӣжҮүе•ҶеҗҢжӯҘе°Қи©ұжЎҶе…ҘйқўеҠ е…©еҖӢж·ЁдҝӮз®ЎзҗҶе“Ўз”Ёеҳ…йҒёй …пјҡе°ҮдҫӣжҮүе•Ҷеҳ…еҺҹе§ӢеӣһжҮүе„ІеӯҳеҒҡдјәжңҚеҷЁдёҠеҳ… JSON жӘ”жЎҲпјҢеҗҢеҹӢйҮҚж’ӯе—°еҖӢжӘ”жЎҲиҖҢе””дҝӮе‘јеҸ«дҫӣжҮүе•ҶгҖӮзӣ®зҡ„дҝӮж”¶йӣҶжЁЈжң¬пјҢж–№дҫҝжҺ’жҹҘеҗҢжӯҘе•ҸйЎҢе—°йҷЈеҲҶдә«гҖӮж“·еҸ–е’—еҳ…жӘ”жЎҲдҝӮи·ҹдҫӣжҮүе•ҶиҖҢе””дҝӮи·ҹз”ЁжҲ¶е„ІеӯҳпјҢжүҖд»Ҙж”һеҲ°жӮЁжғіиҰҒеҳ…еҳўд№ӢеҫҢе°ұиҰҒй–Ӯиҝ”е‘ўеҖӢеҠҹиғҪ.",
-            "configuredGlobalProviders": "е·ІиЁӯе®ҡеҳ…е…ЁеҹҹдҫӣжҮүе•Ҷ"
+            "globalProvidersAreSharedTransparently": "е…ЁеҹҹжҸҗдҫӣж–№жңғе–әжҲҗеҖӢеҜҰдҫӢе…ҘйқўйҖҸжҳҺе…ұз”ЁгҖӮз•¶з”ЁжҲ¶жҗңе°ӢйЈҹзү©жҲ–иҖ…еӢ•дҪңе—°йҷЈпјҢе•ҹеӢ•е’—еҳ…е…ЁеҹҹжҸҗдҫӣж–№пјҲдҫӢеҰӮ USDA Food DatabaseпјүжңғиҮӘеӢ•з”Ёзі»зөұйҮ‘й‘°жҹҘи©ўгҖӮз”Ё OAuth еҗҢеҖӢдәәз”ЁжҲ¶еёіжҲ¶еҳ…йҖЈз·ҡпјҲдҫӢеҰӮ GarminгҖҒStravaпјүеҶҮеҫ—е…ЁеҹҹеҠ е…Ҙ.",
+            "allowPrivateLANRecipeProviders": "е…ҒиЁұз§ҒдәәпјҸLAN йЈҹиӯңжҸҗдҫӣж–№",
+            "allowNonAdminUsersTo": "е…ҒиЁұйқһз®ЎзҗҶе“Ўз”ЁжҲ¶е°ҮиҮӘиЁӮйЈҹиӯңжҸҗдҫӣж–№пјҲдҫӢеҰӮ MealieгҖҒTandoorпјүйҖЈеҺ»з§Ғдәә LAN IP ең°еқҖ.",
+            "allowLocalProviderResponseCapture": "е…ҒиЁұжң¬ж©ҹжҸҗдҫӣж–№еӣһжҮүж“·еҸ–",
+            "addsTwoOptionsToThe": "е–әжҸҗдҫӣж–№еҗҢжӯҘе°Қи©ұжЎҶе…ҘйқўеҠ е…©еҖӢж·ЁдҝӮз®ЎзҗҶе“Ўз”Ёеҳ…йҒёй …пјҡе°ҮжҸҗдҫӣж–№еҳ…еҺҹе§ӢеӣһжҮүе„ІеӯҳеҒҡдјәжңҚеҷЁдёҠеҳ… JSON жӘ”жЎҲпјҢеҗҢеҹӢйҮҚж’ӯе—°еҖӢжӘ”жЎҲиҖҢе””дҝӮе‘јеҸ«жҸҗдҫӣж–№гҖӮзӣ®зҡ„дҝӮж”¶йӣҶжЁЈжң¬пјҢж–№дҫҝжҺ’жҹҘеҗҢжӯҘе•ҸйЎҢе—°йҷЈеҲҶдә«гҖӮж“·еҸ–е’—еҳ…жӘ”жЎҲдҝӮи·ҹжҸҗдҫӣж–№иҖҢе””дҝӮи·ҹз”ЁжҲ¶е„ІеӯҳпјҢжүҖд»Ҙж”һеҲ°жӮЁжғіиҰҒеҳ…еҳўд№ӢеҫҢе°ұиҰҒй–Ӯиҝ”е‘ўеҖӢеҠҹиғҪ.",
+            "configuredGlobalProviders": "е·ІиЁӯе®ҡеҳ…е…ЁеҹҹжҸҗдҫӣж–№"
         },
         "oidcProviderDialog": {
             "eGAuthentikGoogleKeycloak": "дҫӢеҰӮпјҡauthentikгҖҒgoogleгҖҒkeycloak",
             "eGSparkyfitnessCom": "дҫӢеҰӮпјҡsparkyfitness.com",
             "expertModeCustomDomain": "йҖІйҡҺжЁЎејҸпјҡиҮӘиЁӮз¶Іеҹҹ",
             "copyFullRedirectURI": "иӨҮиЈҪе®Ңж•ҙ Redirect URI",
-            "none": "з„Ў"
+            "none": "з„Ў",
+            "urlMustStartWithHttp": "⚠️ URL 一定要以 http:// 或者 https:// 開頭",
+            "automaticallySyncedWithYourCurrent": "✓ 已自動同您而家嘅 URL 同步。路徑尾碼已鎖死嚟確保路由安全.",
+            "expertEnsureYourBaseURL": "⚠️ 進階：確保您嘅 Base URL 可以由互聯網入到，OIDC 供應商先會回傳數據."
         }
     },
     "goals": {
@@ -3501,7 +3520,9 @@
             "humidity": "жҝ•еәҰпјҲ%пјү",
             "gearName": "иЈқеӮҷеҗҚзЁұ",
             "eGNikePegasus40": "дҫӢеҰӮпјҡNike Pegasus 40",
-            "exercise": "еӢ•дҪң"
+            "exercise": "еӢ•дҪң",
+            "avgTempC": "平均溫度（°C）",
+            "weatherTempC": "天氣溫度（°C）"
         },
         "editMealFoodEntryDialog": {
             "modifyTheFoodsAndQuantities": "дҝ®ж”№е‘ўзӯҶе·ІиЁҳйҢ„йӨҗиҶіиЁҳйҢ„е…Ҙйқўеҳ…йЈҹзү©еҗҢд»ҪйҮҸ.",
@@ -3730,7 +3751,8 @@
             "speed": "йҖҹеәҰ",
             "speedSlow": "ж…ў",
             "speedNormal": "жӯЈеёё",
-            "speedFast": "еҝ«"
+            "speedFast": "еҝ«",
+            "frameCount": "{{current}}／{{total}} · {{range}}"
         },
         "useLast": "用上次",
         "bmr": "BMR基礎代謝率（kcal）",
@@ -4111,7 +4133,7 @@
         "mealNotes": "備註（選填）",
         "mealNotesPlaceholder": "例如：食譜，或者您嘅做法",
         "templateNotes": "關於呢個餐膳",
-        "unit": "單位",
+        "unit": "е–®дҪҚ",
         "totalAmount2": "зёҪйҮҸпјҲ{{servingUnit}}пјү",
         "defaultServingSize2": "й җиЁӯд»ҪйҮҸпјҲ{{servingUnit}}пјү",
         "totalDishAmount2": "иҸңејҸзёҪйҮҸпјҲ{{servingUnit}}пјү",
@@ -4668,7 +4690,10 @@
         "totalEaten2": "зёҪж”қеҸ–пјҡ{{displayTotalEaten}} {{unitStr}}",
         "totalGoal2": "зёҪзӣ®жЁҷпјҡ{{displayTotalGoal}} {{unitStr}}",
         "avg2": "е№іеқҮпјҡ{{formattedAverageEaten}} {{unitStr}}",
-        "normalAdultRestingRange12": "жҲҗдәәйқңжӯўжӯЈеёёзҜ„еңҚпјҡ12-20 brpm"
+        "normalAdultRestingRange12": "жҲҗдәәйқңжӯўжӯЈеёёзҜ„еңҚпјҡ12-20 brpm",
+        "weightTrendRateAndForecast": "趨勢 {{weight}} · 每週 {{rate}} · 目標預測 {{date}}",
+        "weightTrendWithRate": "趨勢 {{weight}} · 每週 {{rate}}",
+        "weightTrendWithForecast": "趨勢 {{weight}} · 目標預測 {{date}}"
     },
     "sleepHealth": {
         "hrvStatus": "HRV 心率變異度狀態",
@@ -5200,7 +5225,8 @@
         "displayNameLabel": "顯示名稱（選填，最多 100 個字元）",
         "displayNamePlaceholder": "例如：早晨血糖水平",
         "nameHelp": "用嚟同步嘅內部識別碼",
-        "unitPrecisionNote": "用標準單位（例如 kcal、mmHg、BPM）會自動最佳化圖表精度."
+        "unitPrecisionNote": "用標準單位（例如 kcal、mmHg、BPM）會自動最佳化圖表精度.",
+        "usingStandardUnitsLikeKcal": "💡 用標準單位（好似 kcal、mmHg、BPM）會自動最佳化圖表準確度."
     },
     "customFoodForm": {
         "foodNameLabel": "食材名稱 *",
@@ -6076,23 +6102,25 @@
         "successClearingHistory": "聊天記錄已成功清除.",
         "voice": {
             "start": "еҸЈиҝ°иЁҠжҒҜ",
-            "stop": "停止口述",
+            "stop": "еҒңжӯўеҸЈиҝ°",
             "cancel": "еҸ–ж¶ҲеҸЈиҝ°",
             "unsupported": "е‘ўеҖӢзҖҸиҰҪеҷЁе””ж”ҜжҸҙе‘ўеҖӢиӘһйҹіжЁЎејҸгҖӮеҺ»иӘһйҹіиЁӯе®ҡжҸҖ AI иҪүйҢ„пјҢжҲ–иҖ…иҪүз”Ёз¬¬дәҢеҖӢзҖҸиҰҪеҷЁгҖӮAI дёҖе®ҡе””жңғиҮӘеӢ•й–Ӣ.",
             "permission": "еҺ»зҖҸиҰҪеҷЁиЁӯе®ҡеәҰз•ҖеҖӢе’ӘжӮЁжҺӮпјҢе…ҲеҸҜд»ҘеҸЈиҝ°иЁҠжҒҜ.",
             "tooLarge": "йҢ„йҹіи¶…йҒҺе’— 10 MBгҖӮи©Ұеҗ“и¬ӣзҹӯе•І.",
             "noSpeech": "иҒҪе””еҲ°д»»дҪ•иӘһйҹігҖӮжӮЁд»ҪиҚүзЁҝеҶҮи®ҠйҒҺ.",
             "failed": "иӘһйҹіијёе…ҘеӨұж•—е’—гҖӮжӮЁд»ҪиҚүзЁҝеҶҮи®ҠйҒҺгҖӮжӘўжҹҘеҗ“йҖЈз·ҡеҗҢиӘһйҹіиЁӯе®ҡпјҢеҶҚи©ҰеӨҡж¬Ў.",
-            "listening": "聽緊…"
+            "listening": "聽緊…",
+            "starting": "開緊…",
+            "processing": "轉錄緊…"
         },
         "sparkyChat": {
             "sparkyAICoach": "Sparky AI ж•ҷз·ҙ",
             "yourPersonalAINutritionAnd": "жӮЁе°Ҳеұ¬еҳ… AI зҮҹйӨҠеҗҢеҒҘиә«ж•ҷз·ҙ.",
-            "selectProvider": "жҸҖдҫӣжҮүе•Ҷ",
+            "selectProvider": "жҸҖжҸҗдҫӣж–№",
             "clearChatHistory": "жё…иө°иҒҠеӨ©иЁҳйҢ„",
             "expandChat": "еұ•й–ӢиҒҠеӨ©",
             "minimizeChat": "ж”¶еҹӢиҒҠеӨ©",
-            "closeChat": "й–ӮиҒҠеӨ©"
+            "closeChat": "еҒңжӯўиҒҠеӨ©"
         },
         "sparkyChatInterface": {
             "chatError": "иҒҠеӨ©йҢҜиӘӨ",
@@ -6148,13 +6176,15 @@
             "customNutrientCreated": "е·Іе»әз«ӢиҮӘиЁӮзҮҹйӨҠзҙ",
             "failedToCreateCustomNutrient": "е»әз«Ӣе””еҲ°иҮӘиЁӮзҮҹйӨҠзҙ гҖӮеҶҚи©ҰеӨҡж¬Ў.",
             "addCustomNutrient": "еҠ е…ҘиҮӘиЁӮзҮҹйӨҠзҙ",
-            "setTheDisplayUnitAnd": "иЁӯе®ҡйЎҜзӨәе–®дҪҚпјҢеҗҢеҹӢжҮүи©ІеҢҜе…Ҙе‘ўеҖӢзҮҹйӨҠзҙ еҳ…дҫӣжҮүе•ҶеҗҚзЁұпјҲеҲҘеҗҚпјү.",
+            "setTheDisplayUnitAnd": "иЁӯе®ҡйЎҜзӨәе–®дҪҚпјҢеҗҢеҹӢжҮүи©ІеҢҜе…Ҙе‘ўеҖӢзҮҹйӨҠзҙ еҳ…жҸҗдҫӣж–№еҗҚзЁұпјҲеҲҘеҗҚпјү.",
             "nutrientName": "зҮҹйӨҠзҙ еҗҚзЁұ",
             "eGMagnesium": "дҫӢеҰӮпјҡйҺӮ",
             "unit": "е–®дҪҚ",
-            "providerAliases": "дҫӣжҮүе•ҶеҲҘеҗҚ",
+            "providerAliases": "жҸҗдҫӣж–№еҲҘеҗҚ",
             "typeANamePressEnter": "жү“еҖӢеҗҚеҶҚж’і Enter",
-            "nutrientAdded": "гҖҢ{{name}}гҖҚе·ІеҠ е…Ҙ."
+            "nutrientAdded": "гҖҢ{{name}}гҖҚе·ІеҠ е…Ҙ.",
+            "eGMgGIU": "例如：mg、µg、IU",
+            "adding": "加入緊…"
         },
         "deleteFoodDialog": {
             "view": "зқҮ",
@@ -6438,7 +6468,7 @@
         "registrationIsCurrentlyDisabled": "иЁ»еҶҠиҖҢе®¶еҒңе’—.",
         "email": "йӣ»йғө",
         "enterYourEmail": "ијёе…ҘжӮЁеҳ…йӣ»йғө",
-        "password": "密碼",
+        "password": "еҜҶзўј",
         "enterYourPassword": "ијёе…ҘжӮЁеҳ…еҜҶзўј",
         "forgotPassword": "е””иЁҳеҫ—еҜҶзўјпјҹ",
         "signingIn": "зҷ»е…Ҙз·ҠвҖҰ",
@@ -6485,7 +6515,8 @@
             "sending": "еӮійҖҒз·ҠвҖҰ",
             "sendResetLink": "еӮійҖҒйҮҚиЁӯйҖЈзөҗ",
             "backToSignIn": "иҝ”еҺ»зҷ»е…Ҙ"
-        }
+        },
+        "builtForFamiliesPoweredBy": "為家庭而建。由 AI 驅動。一齊追蹤食材、健身、水份同健康."
     },
     "copied": "已複製！",
     "copyFoodEntryDialog": {
@@ -6608,7 +6639,8 @@
             "startTime": "й–Ӣе§ӢжҷӮй–“",
             "endTime": "зөҗжқҹжҷӮй–“",
             "endFast": "зөҗжқҹж–·йЈҹ",
-            "youFastedFor2": "жӮЁж–·е’— <span>{{durationFormatted}}</span>."
+            "youFastedFor2": "жӮЁж–·е’— <span>{{durationFormatted}}</span>.",
+            "fastCompleted": "斷食完成！🎉"
         },
         "fastingTimerRing": {
             "goalReached": "е·ІйҒ”еҲ°зӣ®жЁҷ"
@@ -6816,7 +6848,8 @@
             "start": "開始宮縮",
             "stop": "停止",
             "title": "宮縮計時器",
-            "duration": "жҢҒзәҢжҷӮй–“пјҡ{{duration}}"
+            "duration": "жҢҒзәҢжҷӮй–“пјҡ{{duration}}",
+            "durationWithInterval": "持續時間：{{duration}} · 間隔：{{interval}}"
         },
         "disclaimer": "孕期資訊僅供教育用途，唔可以取代醫療護理.",
         "growth": {
@@ -6901,7 +6934,9 @@
                 "title": "母體體重",
                 "withinRange": "喺典型範圍內"
             },
-            "kgSinceStart": "з”ұй–Ӣе§Ӣд»Ҙеҡҹ {{weightDelta}} kg"
+            "kgSinceStart": "з”ұй–Ӣе§Ӣд»Ҙеҡҹ {{weightDelta}} kg",
+            "iomRangeWkKg": "IOM 範圍（第 {{wk}} 週）：<strong>{{lowKg}} – {{highKg}} kg</strong>",
+            "iomRangeKg": "IOM 範圍：<strong>{{lowKg}} – {{highKg}} kg</strong>"
         },
         "pregnancyToday": {
             "babyGrowth": "BB жҲҗй•·",
@@ -6910,7 +6945,9 @@
             "bumpPhoto": "иӮҡзӣё",
             "foodMeds": "йЈҹзү©еҗҢи—Ҙзү©",
             "vitals": "з”ҹе‘Ҫй«”еҫө",
-            "checklist": "жӘўжҹҘжё…е–®"
+            "checklist": "жӘўжҹҘжё…е–®",
+            "lengthAndWeight": "≈ {{lengthCm}} cm · {{weightG}} g",
+            "lengthOnly": "≈ {{lengthCm}} cm"
         },
         "vitalsCard": {
             "weightInKg": "й«”йҮҚпјҲkgпјү",
@@ -7078,7 +7115,8 @@
         "analyzingHint": "識別緊食材、克數份量同巨量營養素",
         "editInMealBuilder": "喺餐膳建立器編輯",
         "loggedSuccess": "餐膳已成功記錄到您嘅日記.",
-        "openInMealBuilder": "喺餐膳建立器打開"
+        "openInMealBuilder": "喺餐膳建立器打開",
+        "kcalPGCG": "{{calories_kcal}} kcal · 蛋白質：{{protein_g}} 克 · 碳水：{{carbs_g}} 克 · 脂肪：{{fat_g}} 克"
     },
     "waterContainerManager": {
         "title": "管理飲水容器",
@@ -7125,7 +7163,9 @@
         "hydrationFactorX": "ж°ҙд»Ҫзі»ж•ёпјҡ{{hydration_factor}}x",
         "water": "{{hydrationFactor}}% ж°ҙд»Ҫ",
         "linkedFoodServing": "е·ІйҖЈзөҗйЈҹжқҗпјҡ{{food}}пјҲ{{serving}}пјү",
-        "linkedFoodOnly": "е·ІйҖЈзөҗйЈҹжқҗпјҡ{{food}}"
+        "linkedFoodOnly": "е·ІйҖЈзөҗйЈҹжқҗпјҡ{{food}}",
+        "linkedFoodServingMeal": "已連結食材：{{food}}（{{serving}}）• {{meal}}",
+        "linkedFoodMeal": "已連結食材：{{food}} • {{meal}}"
     },
     "homeFasting": {
         "startNew": "開始新嘅禁食",
@@ -7413,7 +7453,8 @@
                 "swim": "游水",
                 "other": "其他"
             },
-            "pace2": "й…ҚйҖҹпјҡ{{formattedPace}}"
+            "pace2": "й…ҚйҖҹпјҡ{{formattedPace}}",
+            "bestSetReps": "最佳組：{{weightKg}} × {{reps}} 下"
         },
         "views": {
             "all": "所有訓練",
@@ -7785,7 +7826,8 @@
             "endHint": "設定結束時間，並標記有幫助嘅嘢.",
             "endedWhen": "已經結束",
             "didAnythingHelp": "有啲咩幫到手？",
-            "startedAt": "{{time}} 開始"
+            "startedAt": "{{time}} 開始",
+            "ongoing2": "· 持續緊"
         },
         "history": {
             "title": "近期症狀",
@@ -7908,144 +7950,145 @@
                 "alcohol": "食物名稱含酒精",
                 "caffeine": "食物名稱含咖啡因",
                 "menstrual_phase": "月經期間"
-            }
+            },
+            "symptomReport": "症狀報告 · {{startDate}} – {{endDate}}"
         },
         "builtIn": {
-            "head": "頭部",
-            "neck": "頸部",
-            "shoulders": "膊頭",
-            "upperBack": "上背",
-            "lowerBack": "下背",
-            "chest": "心口",
-            "abdomen": "腹部",
-            "pelvis": "盆骨",
-            "hips": "髖部",
-            "arms": "手臂",
-            "handsWrists": "手／手腕",
-            "legs": "腳",
-            "knees": "膝頭",
-            "feetAnkles": "腳／腳眼",
-            "wholeBody": "成身",
-            "forehead": "額頭",
-            "behindBothEyes": "兩隻眼後面",
-            "behindLeftEye": "左眼後面",
-            "behindRightEye": "右眼後面",
-            "leftTemple": "左邊太陽穴",
-            "rightTemple": "右邊太陽穴",
-            "topOfHead": "頭頂",
-            "backOfHead": "後尾枕",
-            "jaw": "下巴",
-            "sinuses": "鼻竇",
-            "face": "塊面",
-            "wholeHead": "成個頭",
-            "throbbing": "跳住痛",
-            "pulsing": "脈動感",
-            "sharp": "刺痛",
-            "dullAche": "鈍痛／痠痛",
-            "burning": "灼熱感",
-            "stiffness": "僵硬",
-            "shooting": "放射痛",
-            "stabbing": "拮住痛",
-            "pressure": "壓迫感",
-            "cramping": "抽筋痛",
-            "itchy": "痕",
-            "aura": "先兆",
-            "nausea": "作嘔",
-            "vomiting": "嘔吐",
-            "neckPain": "頸痛",
-            "stuffyNose": "鼻塞",
-            "dizziness": "頭暈",
-            "lightSensitivity": "怕光",
-            "soundSensitivity": "怕嘈",
-            "touchSensitivity": "掂親都敏感",
-            "smellSensitivity": "對氣味敏感",
-            "fatigue": "攰",
-            "irritability": "忟憎",
-            "confusion": "思緒混亂",
-            "sweating": "出汗",
-            "bodyTemperatureChange": "體溫變化",
-            "stomachAche": "肚痛",
-            "visionProblems": "視力問題",
-            "numbnessTingling": "麻痺／針拮感",
-            "difficultySpeaking": "講嘢困難",
-            "ringingInEars": "耳鳴",
-            "poorSleep": "瞓得唔好",
-            "tooMuchSleep": "瞓太多",
-            "irregularSleepSchedule": "瞓覺時間唔定時",
-            "skippedMeal": "跳過一餐",
-            "dehydration": "缺水",
-            "caffeine": "咖啡因",
-            "alcohol": "酒精",
-            "redWine": "紅酒",
-            "chocolate": "朱古力",
-            "agedCheese": "陳年芝士",
-            "curedMeats": "醃製肉類",
-            "mSG": "味精",
-            "artificialSweeteners": "人工甜味劑",
-            "histamineRichFood": "高組胺食材",
-            "stress": "壓力",
-            "overexertion": "過度操勞",
-            "screenTime": "睇螢幕時間",
-            "travel": "去旅行",
-            "weatherChange": "天氣轉變",
-            "brightLight": "強光",
-            "loudNoise": "好大聲",
-            "strongSmell": "強烈氣味",
-            "pollen": "花粉",
-            "dust": "塵",
-            "menstruation": "經期",
-            "hormonalChange": "荷爾蒙變化",
-            "medicationOveruse": "藥物用得太多",
-            "illness": "病咗",
-            "rest": "休息",
-            "darkQuietRoom": "又黑又靜嘅房",
-            "coldCompress": "凍敷",
-            "warmCompress": "暖敷",
-            "heatPack": "熱敷包",
-            "scalpMassage": "頭皮按摩",
-            "templePressure": "撳太陽穴",
-            "stretching": "拉筋",
-            "meditation": "冥想",
-            "hydration": "補充水份",
-            "sleep": "瞓覺",
-            "moodChange": "情緒轉變",
-            "poorConcentration": "好難集中",
-            "yawning": "打喊露",
-            "foodCravings": "好想食嘢",
-            "neckStiffness": "頸梗",
-            "frequentUrination": "成日去小便",
-            "visual": "視覺",
-            "sensory": "感覺",
-            "motor": "運動功能",
-            "speech": "語言",
-            "drained": "散晒",
-            "stiffNeck": "頸梗",
-            "foodDrink": "食材同飲品",
-            "lifestyle": "生活習慣",
-            "environment": "環境",
-            "hormonal": "荷爾蒙",
-            "other": "其他",
-            "headache": "頭痛",
-            "constipation": "便秘",
-            "diarrhea": "肚屙",
-            "acidRefluxGERD": "胃酸倒流／GERD",
-            "stomachPainCramping": "肚痛／絞痛",
-            "migraine": "偏頭痛",
-            "backPain": "背痛",
-            "jointPain": "關節痛",
-            "musclePain": "肌肉痛",
-            "bloating": "肚脹",
-            "anxiety": "焦慮",
-            "panicAttack": "恐慌發作",
-            "brainFog": "腦霧",
-            "hayFever": "花粉症",
-            "cough": "咳",
-            "wheezing": "哮喘聲",
-            "soreThroat": "喉嚨痛",
-            "rash": "出疹",
-            "eczemaFlare": "濕疹發作",
-            "itching": "痕",
-            "fever": "發燒"
+            "head": "й ӯйғЁ",
+            "neck": "й ёйғЁ",
+            "shoulders": "иҶҠй ӯ",
+            "upperBack": "дёҠиғҢ",
+            "lowerBack": "дёӢиғҢ",
+            "chest": "еҝғеҸЈ",
+            "abdomen": "и…№йғЁ",
+            "pelvis": "зӣҶйӘЁ",
+            "hips": "й«–йғЁ",
+            "arms": "жүӢиҮӮ",
+            "handsWrists": "жүӢпјҸжүӢи…•",
+            "legs": "и…і",
+            "knees": "иҶқй ӯ",
+            "feetAnkles": "и…іпјҸи…ізңј",
+            "wholeBody": "жҲҗиә«",
+            "forehead": "йЎҚй ӯ",
+            "behindBothEyes": "е…©йҡ»зңјеҫҢйқў",
+            "behindLeftEye": "е·ҰзңјеҫҢйқў",
+            "behindRightEye": "еҸізңјеҫҢйқў",
+            "leftTemple": "е·ҰйӮҠеӨӘйҷҪз©ҙ",
+            "rightTemple": "еҸійӮҠеӨӘйҷҪз©ҙ",
+            "topOfHead": "й ӯй Ӯ",
+            "backOfHead": "еҫҢе°ҫжһ•",
+            "jaw": "дёӢе·ҙ",
+            "sinuses": "йј»з«Ү",
+            "face": "еЎҠйқў",
+            "wholeHead": "жҲҗеҖӢй ӯ",
+            "throbbing": "и·ідҪҸз—ӣ",
+            "pulsing": "и„ҲеӢ•ж„ҹ",
+            "sharp": "еҲәз—ӣ",
+            "dullAche": "йҲҚз—ӣпјҸз— з—ӣ",
+            "burning": "зҒјзҶұж„ҹ",
+            "stiffness": "еғөзЎ¬",
+            "shooting": "ж”ҫе°„з—ӣ",
+            "stabbing": "жӢ®дҪҸз—ӣ",
+            "pressure": "еЈ“иҝ«ж„ҹ",
+            "cramping": "жҠҪзӯӢз—ӣ",
+            "itchy": "з—•",
+            "aura": "е…Ҳе…Ҷ",
+            "nausea": "дҪңеҳ”",
+            "vomiting": "еҳ”еҗҗ",
+            "neckPain": "й ёз—ӣ",
+            "stuffyNose": "йј»еЎһ",
+            "dizziness": "й ӯжҡҲ",
+            "lightSensitivity": "жҖ•е…ү",
+            "soundSensitivity": "жҖ•еҳҲ",
+            "touchSensitivity": "жҺӮиҰӘйғҪж•Ҹж„ҹ",
+            "smellSensitivity": "е°Қж°Је‘іж•Ҹж„ҹ",
+            "fatigue": "ж”°",
+            "irritability": "еҝҹжҶҺ",
+            "confusion": "жҖқз·’ж··дәӮ",
+            "sweating": "еҮәжұ—",
+            "bodyTemperatureChange": "й«”жә«и®ҠеҢ–",
+            "stomachAche": "иӮҡз—ӣ",
+            "visionProblems": "иҰ–еҠӣе•ҸйЎҢ",
+            "numbnessTingling": "йә»з—әпјҸйҮқжӢ®ж„ҹ",
+            "difficultySpeaking": "и¬ӣеҳўеӣ°йӣЈ",
+            "ringingInEars": "иҖійіҙ",
+            "poorSleep": "зһ“еҫ—е””еҘҪ",
+            "tooMuchSleep": "зһ“еӨӘеӨҡ",
+            "irregularSleepSchedule": "зһ“иҰәжҷӮй–“е””е®ҡжҷӮ",
+            "skippedMeal": "и·ійҒҺдёҖйӨҗ",
+            "dehydration": "зјәж°ҙ",
+            "caffeine": "е’–е•Ўеӣ",
+            "alcohol": "й…’зІҫ",
+            "redWine": "зҙ…й…’",
+            "chocolate": "жңұеҸӨеҠӣ",
+            "agedCheese": "йҷіе№ҙиҠқеЈ«",
+            "curedMeats": "йҶғиЈҪиӮүйЎһ",
+            "mSG": "е‘ізІҫ",
+            "artificialSweeteners": "дәәе·Ҙз”ңе‘іеҠ‘",
+            "histamineRichFood": "й«ҳзө„иғәйЈҹжқҗ",
+            "stress": "еЈ“еҠӣ",
+            "overexertion": "йҒҺеәҰж“ҚеӢһ",
+            "screenTime": "зқҮиһўе№•жҷӮй–“",
+            "travel": "еҺ»ж—…иЎҢ",
+            "weatherChange": "еӨ©ж°ЈиҪүи®Ҡ",
+            "brightLight": "еј·е…ү",
+            "loudNoise": "еҘҪеӨ§иҒІ",
+            "strongSmell": "еј·зғҲж°Је‘і",
+            "pollen": "иҠұзІү",
+            "dust": "еЎө",
+            "menstruation": "з¶“жңҹ",
+            "hormonalChange": "иҚ·зҲҫи’ҷи®ҠеҢ–",
+            "medicationOveruse": "и—Ҙзү©з”Ёеҫ—еӨӘеӨҡ",
+            "illness": "з—…е’—",
+            "rest": "дј‘жҒҜ",
+            "darkQuietRoom": "еҸҲй»‘еҸҲйқңеҳ…жҲҝ",
+            "coldCompress": "еҮҚж•·",
+            "warmCompress": "жҡ–ж•·",
+            "heatPack": "зҶұж•·еҢ…",
+            "scalpMassage": "й ӯзҡ®жҢүж‘©",
+            "templePressure": "ж’іеӨӘйҷҪз©ҙ",
+            "stretching": "жӢүзӯӢ",
+            "meditation": "еҶҘжғі",
+            "hydration": "иЈңе……ж°ҙд»Ҫ",
+            "sleep": "зһ“иҰә",
+            "moodChange": "жғ…з·’иҪүи®Ҡ",
+            "poorConcentration": "еҘҪйӣЈйӣҶдёӯ",
+            "yawning": "жү“е–ҠйңІ",
+            "foodCravings": "еҘҪжғійЈҹеҳў",
+            "neckStiffness": "й ёжў—",
+            "frequentUrination": "жҲҗж—ҘеҺ»е°Ҹдҫҝ",
+            "visual": "иҰ–иҰә",
+            "sensory": "ж„ҹиҰә",
+            "motor": "йҒӢеӢ•еҠҹиғҪ",
+            "speech": "иӘһиЁҖ",
+            "drained": "ж•Јжҷ’",
+            "stiffNeck": "й ёжў—",
+            "foodDrink": "йЈҹзү©еҗҢйЈІе“Ғ",
+            "lifestyle": "з”ҹжҙ»зҝ’ж…Ј",
+            "environment": "з’°еўғ",
+            "hormonal": "иҚ·зҲҫи’ҷ",
+            "other": "е…¶д»–",
+            "headache": "й ӯз—ӣ",
+            "constipation": "дҫҝз§ҳ",
+            "diarrhea": "иӮҡеұҷ",
+            "acidRefluxGERD": "иғғй…ёеҖ’жөҒпјҸGERD",
+            "stomachPainCramping": "иӮҡз—ӣпјҸзөһз—ӣ",
+            "migraine": "еҒҸй ӯз—ӣ",
+            "backPain": "иғҢз—ӣ",
+            "jointPain": "й—ңзҜҖз—ӣ",
+            "musclePain": "иӮҢиӮүз—ӣ",
+            "bloating": "иӮҡи„№",
+            "anxiety": "з„Ұж…®",
+            "panicAttack": "жҒҗж…ҢзҷјдҪң",
+            "brainFog": "и…Ұйң§",
+            "hayFever": "иҠұзІүз—Ү",
+            "cough": "е’і",
+            "wheezing": "е“®е–ҳиҒІ",
+            "soreThroat": "е–үеҡЁз—ӣ",
+            "rash": "еҮәз–№",
+            "eczemaFlare": "жҝ•з–№зҷјдҪң",
+            "itching": "з—•",
+            "fever": "зҷјзҮ’"
         }
     },
     "guidedWorkout": {
@@ -8251,20 +8294,20 @@
         "loadFailed": "無法載入訓練穩定性."
     },
     "voiceSettings": {
-        "title": "語音輸入",
-        "open": "語音設定",
-        "recognition": "辨認方式",
-        "system": "系統（預設）",
-        "ai": "AI 轉錄",
-        "model": "語音模型",
-        "chooseModel": "揀個模型",
-        "chatModel": "用嚟傾偈",
-        "syncHint": "呢啲設定網頁版同手機版都啱用。熄咗語音輸入只係會收埋個咪，唔會改您揀咗嘅模型.",
-        "systemHint": "用您部機或者瀏覽器嘅語音辨認器，唔會收 Sparky AI 轉錄錢。用唔用到同要唔要上網處理，就睇您部機或者瀏覽器.",
-        "aiHint": "錄音會經您個伺服器送去揀咗嘅 AI 供應商。供應商可能要收錢。揀個模型先開到 AI 轉錄.",
-        "noModels": "未開任何相容嘅語音模型。去網頁版嘅 AI 服務設定揀返一個支援音訊嘅模型，然後重新整理.",
-        "unavailable": "揀咗嘅語音模型而家唔用得。揀第二個模型，或者轉返系統.",
-        "manualSend": "聽寫會幫您填好草稿。睇吓、改吓，跟住自己撳傳送."
+        "title": "иӘһйҹіијёе…Ҙ",
+        "open": "иӘһйҹіиЁӯе®ҡ",
+        "recognition": "иҫЁиӘҚж–№ејҸ",
+        "system": "зі»зөұпјҲй җиЁӯпјү",
+        "ai": "AI иҪүйҢ„",
+        "model": "иӘһйҹіжЁЎеһӢ",
+        "chooseModel": "жҸҖеҖӢжЁЎеһӢ",
+        "chatModel": "з”ЁеҡҹеӮҫеҒҲ",
+        "syncHint": "е‘ўе•ІиЁӯе®ҡз¶Ій ҒзүҲеҗҢжүӢж©ҹзүҲйғҪе•ұз”ЁгҖӮзҶ„е’—иӘһйҹіијёе…ҘеҸӘдҝӮжңғж”¶еҹӢеҖӢе’ӘпјҢе””жңғж”№жӮЁжҸҖе’—еҳ…жЁЎеһӢ.",
+        "systemHint": "з”ЁжӮЁйғЁж©ҹжҲ–иҖ…зҖҸиҰҪеҷЁеҳ…иӘһйҹіиҫЁиӘҚеҷЁпјҢе””жңғж”¶ Sparky AI иҪүйҢ„йҢўгҖӮз”Ёе””з”ЁеҲ°еҗҢиҰҒе””иҰҒдёҠз¶Іиҷ•зҗҶпјҢе°ұзқҮжӮЁйғЁж©ҹжҲ–иҖ…зҖҸиҰҪеҷЁ.",
+        "aiHint": "йҢ„йҹіжңғз¶“жӮЁеҖӢдјәжңҚеҷЁйҖҒеҺ»жҸҖе’—еҳ… AI жҸҗдҫӣж–№гҖӮжҸҗдҫӣж–№еҸҜиғҪиҰҒж”¶йҢўгҖӮжҸҖеҖӢжЁЎеһӢе…Ҳй–ӢеҲ° AI иҪүйҢ„.",
+        "noModels": "жңӘй–Ӣд»»дҪ•зӣёе®№еҳ…иӘһйҹіжЁЎеһӢгҖӮеҺ»з¶Ій ҒзүҲеҳ… AI жңҚеӢҷиЁӯе®ҡжҸҖиҝ”дёҖеҖӢж”ҜжҸҙйҹіиЁҠеҳ…жЁЎеһӢпјҢз„¶еҫҢйҮҚж–°ж•ҙзҗҶ.",
+        "unavailable": "жҸҖе’—еҳ…иӘһйҹіжЁЎеһӢиҖҢе®¶е””з”Ёеҫ—гҖӮжҸҖз¬¬дәҢеҖӢжЁЎеһӢпјҢжҲ–иҖ…иҪүиҝ”зі»зөұ.",
+        "manualSend": "иҒҪеҜ«жңғе№«жӮЁеЎ«еҘҪиҚүзЁҝгҖӮзқҮеҗ“гҖҒж”№еҗ“пјҢи·ҹдҪҸиҮӘе·ұж’іеӮійҖҒ."
     },
     "app": {
         "loadingSite": "ијүе…Ҙз·Ҡз¶Із«ҷвҖҰ"
@@ -8276,8 +8319,8 @@
             "demoLoginSuccessful": "зӨәзҜ„зҷ»е…ҘжҲҗеҠҹ"
         },
         "nutrionix": {
-            "failedToRetrieveFoodData": "ж”һе””еҲ°йЈҹжқҗж•ёж“ҡдҫӣжҮүе•Ҷи©іжғ…пјҡ{{message}}",
-            "noDefaultNutritionixProviderConfigured": "жңӘиЁӯе®ҡй җиЁӯеҳ… Nutritionix дҫӣжҮүе•Ҷ.",
+            "failedToRetrieveFoodData": "ж”һе””еҲ°йЈҹжқҗж•ёж“ҡжҸҗдҫӣж–№и©іжғ…пјҡ{{message}}",
+            "noDefaultNutritionixProviderConfigured": "жңӘиЁӯе®ҡй җиЁӯеҳ… Nutritionix жҸҗдҫӣж–№.",
             "networkErrorDuringNutritionixSearch": "Nutritionix жҗңе°Ӣжңҹй–“зҷјз”ҹз¶ІзөЎйҢҜиӘӨгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў.",
             "networkErrorDuringNutritionixNutrient": "Nutritionix зҮҹйӨҠзҙ жҹҘи©ўжңҹй–“зҷјз”ҹз¶ІзөЎйҢҜиӘӨгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў.",
             "networkErrorDuringNutritionixBranded": "Nutritionix е“ҒзүҢе•Ҷе“ҒжҹҘи©ўжңҹй–“зҷјз”ҹз¶ІзөЎйҢҜиӘӨгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў."
@@ -8575,7 +8618,7 @@
             "false": "е””дҝӮ"
         },
         "exerciseSearch": {
-            "selectAProvider": "жҸҖдҫӣжҮүе•Ҷ",
+            "selectAProvider": "жҸҖжҸҗдҫӣж–№",
             "all": "е…ЁйғЁ"
         },
         "exerciseSearchListItem": {
@@ -8638,7 +8681,14 @@
             "supersetA": "и¶…зҙҡзө„ A",
             "supersetB": "и¶…зҙҡзө„ B",
             "supersetC": "и¶…зҙҡзө„ C",
-            "supersetD": "и¶…зҙҡзө„ D"
+            "supersetD": "и¶…зҙҡзө„ D",
+            "bestForMachinesCablesDumbbells": "• 最啱：器械、纜繩、啞鈴同增肌輔助動作.",
+            "exampleGoalIs75Reps": "• 例子：目標係 7.5 磅 75 下。您做咗 78 下 → 下次訓練自動升到 10.0 磅！",
+            "bestForHeavyBarbellCompound": "• 最啱：重槓鈴複合動作（臥推、深蹲、過頭推舉）.",
+            "exampleTarget8RepsYou": "• 例子：目標 8 下。您做咗 8、8、8 → 下次訓練按您嘅遞增量加（+5 磅）.",
+            "bestForCalisthenicsPullUps": "• 最啱：徒手訓練（引體上升、雙槓撐體、掌上壓）同核心動作.",
+            "exampleTarget40RepsAt": "• 例子：目標係自重 40 下，遞增 3 下 → 下次訓練目標 43 下！",
+            "examples24For38": "例子：24（用於 3×8）、45（用於 3×15）、75（用於 5×15）."
         },
         "workoutPlansManager": {
             "openMenu": "й–Ӣе•ҹйҒёе–®"
@@ -8667,7 +8717,7 @@
             "cameraName": "зӣёж©ҹ {{id}}вҖҰ"
         },
         "barcodeScannerDialog": {
-            "noActiveProvidersFound": "жҗөе””еҲ°е•ҹз”Ёз·Ҡеҳ…дҫӣжҮүе•Ҷ",
+            "noActiveProvidersFound": "жҗөе””еҲ°е•ҹз”Ёз·Ҡеҳ…жҸҗдҫӣж–№",
             "loadingCameraModule": "ијүе…Ҙз·Ҡзӣёж©ҹжЁЎзө„вҖҰ"
         },
         "foodResultCard": {
@@ -8680,7 +8730,7 @@
         "barcodeScannedSuccessfully": "жўқзўјжҺғжҸҸжҲҗеҠҹ",
         "foundProduct": "жҗөеҲ°з”ўе“Ғпјҡ{{name}}",
         "productNotFound": "жҗөе””еҲ°з”ўе“Ғ",
-        "noProductFoundForThis": "з”ЁжүҖжҸҖеҳ…дҫӣжҮүе•ҶпјҢе‘ўеҖӢжўқзўјжҗөе””еҲ°з”ўе“Ғ.",
+        "noProductFoundForThis": "з”ЁжүҖжҸҖеҳ…жҸҗдҫӣж–№пјҢе‘ўеҖӢжўқзўјжҗөе””еҲ°з”ўе“Ғ.",
         "failedToSearchBarcode": "жҗңе°Ӣе””еҲ°жўқзўј.",
         "foodAdded": "йЈҹжқҗе·ІеҠ е…Ҙ",
         "hasBeenAddedAndIs": "{{name}} е·ІеҠ е…ҘпјҢеҸҜд»ҘеҠ е…ҘжӮЁеҳ…йӨҗиҶі",
@@ -8744,7 +8794,8 @@
             "nutritionPer2": "жҜҸ {{variant}} еҳ…зҮҹйӨҠ",
             "estimate2": "{{ai_confidence}} дј°з®—",
             "custom": "иҮӘиЁӮ",
-            "aiEstimateConfidence": "AI дј°з®—пјҲ{{confidence}} дҝЎеҝғеәҰпјү"
+            "aiEstimateConfidence": "AI дј°з®—пјҲ{{confidence}} дҝЎеҝғеәҰпјү",
+            "customAllergen": "自訂致敏原…"
         }
     },
     "gitHubSponsorButton": {
@@ -8763,7 +8814,8 @@
         "published2": "зҷјеёғжҷӮй–“пјҡ{{value}}",
         "iAcknowledgeThatThisRelease2": "жҲ‘зўәиӘҚе‘ўеҖӢзүҲжң¬еҢ…еҗ«<span>з ҙеЈһжҖ§и®Ҡжӣҙ</span>пјҢиҖҢдё”жҲ‘е·Із¶“зқҮе’—зӣёй—ңи®Ҡжӣҙ.",
         "toConfirmYouUnderstandPlease2": "зӮәе’—зўәиӘҚжӮЁжҳҺзҷҪпјҢи«Ӣе–әдёӢйқўијёе…Ҙ<strong>BREAKING</strong>пјҡ",
-        "viewOnGitHub2": "е–ә GitHub дёҠзқҮпјҡ<link>{{htmlUrl}}</link>"
+        "viewOnGitHub2": "е–ә GitHub дёҠзқҮпјҡ<link>{{htmlUrl}}</link>",
+        "pleaseScrollToTheBottom": "⚠️ 請碌到版本說明最底先算睇完."
     },
     "oidcCallback": {
         "completingSecureLogin": "е®ҢжҲҗз·Ҡе®үе…Ёзҷ»е…ҘвҖҰ",
@@ -8786,7 +8838,8 @@
     },
     "ai": {
         "foodPhotoEstimateToolUI": {
-            "eGChickenPennePasta": "дҫӢеҰӮпјҡйӣһиӮүй•·йҖҡзІү"
+            "eGChickenPennePasta": "дҫӢеҰӮпјҡйӣһиӮүй•·йҖҡзІү",
+            "matched": "✓ 已比對"
         },
         "userServiceListItem": {
             "editService": "з·ЁијҜжңҚеӢҷ",
@@ -8856,7 +8909,8 @@
             "lowLH": "LH еҒҸдҪҺ",
             "highLH": "LH еҒҸй«ҳ",
             "peakSurge": "йҒ”еі°жҝҖеўһ",
-            "faintLine": "ж·әиүІз·ҡ"
+            "faintLine": "ж·әиүІз·ҡ",
+            "positive": "陽性 ✓"
         }
     },
     "errors": {
@@ -8902,36 +8956,36 @@
         }
     },
     "shoes": {
-        "title": "跑鞋",
+        "title": "и·‘йһӢ",
         "subtitle": "иҝҪи№ӨжҜҸе°Қи·‘йһӢеҳ…йҮҢзЁӢ.",
-        "shoe": "跑鞋",
-        "noShoe": "冇跑鞋",
-        "addShoe": "加跑鞋",
-        "editShoe": "編輯跑鞋",
+        "shoe": "и·‘йһӢ",
+        "noShoe": "еҶҮи·‘йһӢ",
+        "addShoe": "еҠ и·‘йһӢ",
+        "editShoe": "з·ЁијҜи·‘йһӢ",
         "formDescription": "иҝҪи№ӨдёҖе°ҚйһӢеҳ…йҮҢзЁӢпјҢдёҰе–әиҰҒжҸӣе—°йҷЈж”¶еҲ°жҸҗйҶ’.",
-        "name": "名稱",
-        "brand": "品牌",
-        "model": "型號",
-        "nickname": "花名",
-        "purchaseDate": "購買日期",
-        "purchasePrice": "價錢",
-        "startingDistance": "起始里程（{{unit}}）",
-        "retireAt": "退役里程（{{unit}}）",
-        "useAsDefault": "做我嘅預設跑鞋",
+        "name": "еҗҚзЁұ",
+        "brand": "е“ҒзүҢ",
+        "model": "еһӢиҷҹ",
+        "nickname": "иҠұеҗҚ",
+        "purchaseDate": "иіјиІ·ж—Ҙжңҹ",
+        "purchasePrice": "еғ№йҢў",
+        "startingDistance": "иө·е§ӢйҮҢзЁӢпјҲ{{unit}}пјү",
+        "retireAt": "йҖҖеҪ№йҮҢзЁӢпјҲ{{unit}}пјү",
+        "useAsDefault": "еҒҡжҲ‘еҳ…й җиЁӯи·‘йһӢ",
         "default": "й җиЁӯи·‘йһӢ",
-        "retired": "已退役",
-        "retiredSection": "已退役",
-        "wornOut": "已磨蝕",
+        "retired": "е·ІйҖҖеҪ№",
+        "retiredSection": "е·ІйҖҖеҪ№",
+        "wornOut": "е·ІзЈЁиқ•",
         "mileage": "йҮҢзЁӢ",
-        "ofLimit": "／{{limit}} {{unit}}",
-        "runCount_other": "{{count}} 次跑",
-        "lastUsed": "上次用 {{date}}",
-        "retire": "退役",
-        "retirePrompt": "呢對鞋已經到咗里程上限。要退役嗎？",
-        "reactivate": "重新啟用",
+        "ofLimit": "пјҸ{{limit}} {{unit}}",
+        "runCount_other": "{{count}} ж¬Ўи·‘",
+        "lastUsed": "дёҠж¬Ўз”Ё {{date}}",
+        "retire": "йҖҖеҪ№",
+        "retirePrompt": "е‘ўе°ҚйһӢе·Із¶“еҲ°е’—йҮҢзЁӢдёҠйҷҗгҖӮиҰҒйҖҖеҪ№е—Һпјҹ",
+        "reactivate": "йҮҚж–°е•ҹз”Ё",
         "empty": "жңӘжңүи·‘йһӢгҖӮеҠ дёҖе°ҚпјҢз„¶еҫҢи·‘е—°йҷЈжҸҖдҪўпјҢй–Ӣе§ӢзҙҜиЁҲйҮҢзЁӢ.",
-        "deleteTitle": "刪除呢對鞋？",
-        "deleteDescription": "用呢對鞋記錄嘅跑步會保留喺日記，但唔會再連結去跑鞋.",
+        "deleteTitle": "еҲӘйҷӨе‘ўе°ҚйһӢпјҹ",
+        "deleteDescription": "з”Ёе‘ўе°ҚйһӢиЁҳйҢ„еҳ…и·‘жӯҘжңғдҝқз•ҷе–әж—ҘиЁҳпјҢдҪҶе””жңғеҶҚйҖЈзөҗеҺ»и·‘йһӢ.",
         "added": "и·‘йһӢе·ІеҠ е…Ҙ.",
         "updated": "и·‘йһӢе·Іжӣҙж–°.",
         "deleted": "и·‘йһӢе·ІеҲӘйҷӨ.",
@@ -8947,7 +9001,8 @@
             "program": "иЁ“з·ҙиЁҲеҠғпјҡ{{name}}",
             "scheduled": "е·ІжҺ’зЁӢ",
             "scheduledToday": "д»Ҡж—Ҙе·ІжҺ’зЁӢ",
-            "upNext": "дёӢдёҖиӘІ"
+            "upNext": "дёӢдёҖиӘІ",
+            "title": "{{title}} · {{minutes}} 分鐘"
         },
         "calendar": {
             "done": "е®ҢжҲҗ",
@@ -9007,7 +9062,8 @@
             "switchHint": "и·ҹдёҖеҖӢжҜҸжҳҹжңҹйҖҗжӯҘеҠ еј·еҳ…иЁҲеҠғ.",
             "title": "иЁ“з·ҙиЁҲеҠғ",
             "use": "з”ЁиЁ“з·ҙиЁҲеҠғ",
-            "week": "з¬¬ {{week}} йҖұ"
+            "week": "з¬¬ {{week}} йҖұ",
+            "progress": "已完成 {{done}}／{{total}} 堂 · 今日 {{minutes}} 分鐘"
         },
         "custom": {
             "intro": "жӮЁе–әжүӢж©ҹжҮүз”ЁзЁӢејҸе…ҘйқўеҜ«жҲ–иҖ…е»әз«Ӣеҳ…иЁҲеҠғгҖӮй–Ӣе§ӢдёҖеҖӢиЁҲеҠғе°ұеҸҜд»ҘеҘҪдјјд»»дҪ•иЁҲеҠғе’Ғи·ҹ.",
@@ -9057,11 +9113,14 @@
                 "structure": "з¬¬ 1 иҮі 4 жҳҹжңҹз”Ёзҹӯи·‘еҗҢиЎҢдәӨжӣҝпјҢз”ұ 1 еҲҶйҗҳи·‘й–Ӣе§ӢпјҢйҖҗжӯҘдёҠеҲ° 5 еҲҶйҗҳи·‘гҖӮз¬¬ 5 еҗҢ 6 жҳҹжңҹж··еҗҲи·‘иЎҢй–“жӯҮеҗҢдёҖж¬ЎйҖЈзәҢи·‘гҖӮз¬¬ 7 иҮі 9 жҳҹжңҹдҝӮйҖЈзәҢи·‘ 25гҖҒ28 еҗҢ 30 еҲҶйҗҳ."
             },
             "beginnerMarathon": {
-                "name": "ж–°жүӢйҰ¬жӢүжқҫ"
+                "name": "ж–°жүӢйҰ¬жӢүжқҫ",
+                "description": "新手馬拉松：十八週，每週跑三次，長跑逐步上到 2.5 個鐘仲有減量期。啱跑得到 10K 嘅人.",
+                "structure": "每個星期有一次短跑、一次中距離跑同一次長跑。長跑由 70 分鐘逐步上到 2.5 個鐘，每第四個星期輕鬆啲，最後三個星期喺比賽日前減量."
             },
             "beginnerMarathon4": {
                 "name": "ж–°жүӢйҰ¬жӢүжқҫпјҲжҜҸйҖұи·‘еӣӣж¬Ўпјү",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүе…©ж¬Ўзҹӯи·‘гҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 80 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 2 еҖӢйҗҳ 40 еҲҶпјҢжҜҸз¬¬еӣӣеҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢдёүеҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚжёӣйҮҸгҖӮжңҖеҫҢдёҖеҖӢжҳҹжңҹдҝӮдёүж¬Ўзҹӯе•Іеҳ…и·‘."
+                "structure": "жҜҸеҖӢжҳҹжңҹжңүе…©ж¬Ўзҹӯи·‘гҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 80 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 2 еҖӢйҗҳ 40 еҲҶпјҢжҜҸз¬¬еӣӣеҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢдёүеҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚжёӣйҮҸгҖӮжңҖеҫҢдёҖеҖӢжҳҹжңҹдҝӮдёүж¬Ўзҹӯе•Іеҳ…и·‘.",
+                "description": "新手馬拉松：十八週，每週跑四次，長跑逐步上到 2 個鐘 40 分仲有減量期。啱跑得到 10K 嘅人."
             },
             "faster10k": {
                 "description": "жӣҙеҝ« 10Kпјҡе…«йҖұеҳ…йҖҹеәҰиЁ“з·ҙгҖҒиј•й¬Ҷи·‘еҗҢзҜҖеҘҸи·‘пјҢе•ұе·Із¶“и·‘еҫ—еҲ° 10K еҳ…дәә.",
@@ -9104,7 +9163,9 @@
                 "structure": "жҜҸеҖӢжҳҹжңҹжңүе…©ж¬Ўиј•й¬Ҷи·‘гҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 60 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 125 еҲҶйҗҳпјҢжҜҸз¬¬еӣӣеҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢе…©еҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚжёӣйҮҸгҖӮжңҖеҫҢдёҖеҖӢжҳҹжңҹдҝӮдёүж¬Ўзҹӯе•Іеҳ…и·‘."
             },
             "marathon": {
-                "name": "йҰ¬жӢүжқҫ"
+                "name": "йҰ¬жӢүжқҫ",
+                "description": "馬拉松：十六週，每週跑四次，長跑逐步上到大約 2 個鐘 45 分仲有減量期。啱已經有規律跑步習慣嘅人.",
+                "structure": "大多數星期有兩次輕鬆跑、一次中距離跑同一次長跑。長跑由 70 分鐘逐步上到 2 個鐘 45 分，每第四個星期輕鬆啲，最後兩個星期喺比賽日前減量."
             },
             "returnToRunning": {
                 "description": "йҮҚиҝ”и·‘жӯҘпјҡеӣӣйҖұпјҢжҜҸйҖұи·‘дёүж¬ЎпјҢе•ұдј‘жҒҜе’—дёҖжҺ’д№ӢеҫҢйҮҚж–°иө·жӯҘгҖӮжӮЁжңғз”ұ 1 еҲҶйҗҳи·‘йҖҗжӯҘдёҠеҲ°еӨ§зҙ„ 20 еҲҶйҗҳеҳ…и·‘гҖӮе…©ж¬Ўи·‘д№Ӣй–“з•ҷдёҖе…©ж—Ҙдј‘жҒҜпјҢдёҰдҝқжҢҒиј•й¬Ҷй…ҚйҖҹгҖӮеҰӮжһңжӮЁдҝӮз”ұеӮ·жӮЈжҒўеҫ©з·ҠпјҢе…Ҳе•Ҹеҗ“зү©зҗҶжІ»зҷӮеё«жҲ–иҖ…йҶ«з”ҹ.",
@@ -9147,7 +9208,8 @@
         "workout": {
             "number": "иЁ“з·ҙ {{number}}",
             "titleRun": "з¬¬ {{week}} йҖұпјҢи·‘з¬¬ {{run}} ж¬Ў",
-            "titleWalk": "з¬¬ {{week}} йҖұпјҢиЎҢз¬¬ {{walk}} ж¬Ў"
+            "titleWalk": "з¬¬ {{week}} йҖұпјҢиЎҢз¬¬ {{walk}} ж¬Ў",
+            "label": "{{name}} · {{workout}}"
         }
     }
 }
