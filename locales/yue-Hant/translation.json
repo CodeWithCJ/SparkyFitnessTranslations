@@ -4133,7 +4133,7 @@
         "mealNotes": "備註（選填）",
         "mealNotesPlaceholder": "例如：食譜，或者您嘅做法",
         "templateNotes": "關於呢個餐膳",
-        "unit": "е–®дҪҚ",
+        "unit": "單位",
         "totalAmount2": "總量（{{servingUnit}}）",
         "defaultServingSize2": "預設份量（{{servingUnit}}）",
         "totalDishAmount2": "菜式總量（{{servingUnit}}）",
