@@ -579,44 +579,44 @@
         },
         "addMedicationDialog": {
             "eGRetatrutideCompoundSemaglutide": "дҫӢеҰӮпјҡRetatrutideгҖҒCompound Semaglutide",
-            "weekly": "每週",
-            "daily": "每日",
+            "weekly": "жҜҸйҖұ",
+            "daily": "жҜҸж—Ҙ",
             "rateStars_other": "и©• {{count}} зІ’жҳҹ"
         },
         "glp1InventoryManager": {
-            "inUse": "用緊",
-            "reorder": "補貨",
-            "doses": "劑",
+            "inUse": "з”Ёз·Ҡ",
+            "reorder": "иЈңиІЁ",
+            "doses": "еҠ‘",
             "editPenVial": "編輯筆／藥瓶",
             "removePenVial": "移除筆／藥瓶",
             "exp": "еҲ°жңҹ {{expiry_date}}",
-            "expired": "已過期",
-            "nearExp": "就快到期",
+            "expired": "е·ІйҒҺжңҹ",
+            "nearExp": "е°ұеҝ«еҲ°жңҹ",
             "bud": "BUD {{bud_date}}",
             "expiredBUD": "已過期（BUD）",
             "budWarning": "BUD 警告",
             "notes": "еӮҷиЁ»пјҡ{{notes}}",
             "editPenVialInventory": "編輯筆／藥瓶庫存",
             "addPenVialInventory": "加入筆／藥瓶庫存",
-            "kind": "類型",
-            "pen": "筆",
-            "vial": "藥瓶",
+            "kind": "йЎһеһӢ",
+            "pen": "зӯҶ",
+            "vial": "и—Ҙз“¶",
             "labelName": "標籤／名稱",
             "eGPen2Vial": "дҫӢеҰӮпјҡзӯҶ #2гҖҒи—Ҙз“¶ A жү№",
             "doseStrengthMg": "劑量強度（mg）",
             "totalDoses": "總劑量數",
             "concentrationMgML": "жҝғеәҰпјҲmg/mLпјү",
             "volumeML": "容量（mL）",
-            "dateOpened": "開啟日期",
-            "expiryDate": "到期日",
+            "dateOpened": "й–Ӣе•ҹж—Ҙжңҹ",
+            "expiryDate": "еҲ°жңҹж—Ҙ",
             "calculatedBeyondUseDateBUD": "иЁҲз®—еҮәеҳ…дҪҝз”ЁжңҹйҷҗпјҲBUDпјүпјҡ",
             "basedOn28DayStability": "д»ҘйҰ–ж¬Ўй–Ӣе•ҹиө·иЁҲ 28 ж—Ҙеҳ…з©©е®ҡжңҹеҒҡжә–.",
             "enableReorderWarning": "開啟補貨提醒",
             "alertWhenRemainingDosesAre": "еү©йӨҳеҠ‘йҮҸеҒҸдҪҺе—°йҷЈжҸҗйҶ’",
             "reorderThresholdDosesLeft": "иЈңиІЁй–ҖжӘ»пјҲеү©йӨҳеҠ‘йҮҸпјү",
-            "notes2": "備註",
+            "notes2": "еӮҷиЁ»",
             "batchNumberBrandPharmacyInfo": "жү№иҷҹгҖҒе“ҒзүҢгҖҒи—ҘжҲҝиіҮж–ҷвҖҰ",
-            "addInventory": "加入庫存",
+            "addInventory": "еҠ е…Ҙеә«еӯҳ",
             "mgML": "· {{concentration_mg_ml}} mg/mL"
         },
         "glp1RecentInjections": {
@@ -626,12 +626,12 @@
             "mg": "{{dose_mg}} mg · "
         },
         "glp1TitrationManager": {
-            "dose": "劑量",
-            "startDate": "開始日期",
+            "dose": "еҠ‘йҮҸ",
+            "startDate": "й–Ӣе§Ӣж—Ҙжңҹ",
             "weeksAtThisDose": "е‘ўеҖӢеҠ‘йҮҸз¶ӯжҢҒе№ҫеӨҡйҖұ",
-            "status": "狀態",
+            "status": "зӢҖж…Ӣ",
             "taperDoseReduction": "遞減（劑量減少）",
-            "taper": "遞減",
+            "taper": "йҒһжёӣ",
             "editTitrationStep": "編輯遞增階段",
             "deleteTitrationStep": "刪除遞增階段",
             "yourPlannedGLP1Dose": "您計劃嘅 GLP-1 劑量遞增（例如 0.25 → 0.5 → 1.0 mg）。每個階段加一個步驟同開始日期；將其中一個標記做「使用中」當作而家嘅劑量.",
@@ -1430,7 +1430,7 @@
         "exerciseTotal2": "動作總計：",
         "primaryMuscles2": "主要肌群：",
         "secondaryMuscles2": "次要肌群：",
-        "equipment2": "器材："
+        "equipment2": "еҷЁжқҗпјҡ"
     },
     "foodSearchDialog": {
         "title": "搜尋並新增食材",
@@ -1530,7 +1530,7 @@
             "uploading": "上載緊…",
             "pleaseSelectAnImageFile": "揀一個圖片檔案",
             "imageMustBeLessThan": "ең–зүҮдёҖе®ҡиҰҒзҙ°йҒҺ 5MB",
-            "user": "用戶"
+            "user": "з”ЁжҲ¶"
         },
         "cycle": {
             "title": "生理週期 & 懷孕監察",
@@ -2530,14 +2530,14 @@
             "progressText": "е·Іиҷ•зҗҶ {{processed}}пјҸ{{total}} зЁ®йЈҹзү©пјҲеҢҜе…Ҙ {{imported}} зЁ®гҖҒжӣҙж–° {{updated}} зЁ®пјү",
             "completed": "дёҠж¬ЎеҢҜе…Ҙе·Іе®ҢжҲҗпјҡеҢҜе…Ҙ {{imported}} зЁ®гҖҒжӣҙж–° {{updated}} зЁ®пјҲе…ұ {{total}} зЁ®пјү.",
             "failed": "匯入失敗： ",
-            "language": "語言",
-            "syncMode": "同步模式",
+            "language": "иӘһиЁҖ",
+            "syncMode": "еҗҢжӯҘжЁЎејҸ",
             "libraryOnly": "еҸӘдҝӮйЈҹзү©еә«пјҲе»әиӯ°пјү",
             "libraryAndPast": "йЈҹзү©еә«еҗҢеҹӢйҮҚж–°ж•ҙзҗҶйҒҺеҺ»еҳ…ж—ҘиЁҳиЁҳйҢ„",
             "testMode": "жё¬и©ҰжЁЎејҸпјҲеҸӘеҢҜе…Ҙ 10 зЁ®йЈҹзү©еҡҹй©—иӯүпјү",
             "attributionText": "ж•ёж“ҡз”ұз‘һе…ёйЈҹзү©еұҖпјҲLivsmedelsverketпјүжҸҗдҫӣпјҢдҫқ <1>е…ұдә«еүөж„Ҹе§“еҗҚжЁҷзӨә 4.0пјҲCC BY 4.0пјү</1> жҺҲж¬Ҡ.",
             "clearLibrary": "清除食物庫",
-            "startImport": "開始匯入",
+            "startImport": "й–Ӣе§ӢеҢҜе…Ҙ",
             "confirmDeleteTitle": "жё…йҷӨ Livsmedelsverket йЈҹзү©еә«йЈҹзү©пјҹ",
             "confirmDeleteMessage": "е‘ўеҖӢжңғж°ёд№…еҲӘйҷӨжӮЁеҖӢдәәйЈҹзү©еә«е…ҘйқўжүҖжңүз‘һе…ёйЈҹзү©еұҖеҳ…й …зӣ®гҖӮд»ҘеүҚз”Ёе‘ўе•Ій …зӣ®иЁҳйҢ„еҳ…йЈҹзү©ж—ҘиЁҳиЁҳйҢ„жңғдҝқз•ҷ.",
             "providerCardLicence": "еҢ…еҗ«з‘һе…ёйЈҹзү©еұҖпјҲLivsmedelsverketпјүзҷјеёғеҳ…иіҮиЁҠпјҢдҫқ <1>е…ұдә«еүөж„Ҹе§“еҗҚжЁҷзӨә 4.0пјҲCC BY 4.0пјү</1> жҺҲж¬ҠгҖӮж”ҜжҸҙиӘһиЁҖпјҡ<3>з‘һе…ёж–ҮпјҲsvпјү</3>еҗҢ<5>иӢұж–ҮпјҲenпјү</5>гҖӮ<7>з‘һе…ёйЈҹзү©жҲҗеҲҶиіҮж–ҷеә«</7>"
@@ -2557,7 +2557,7 @@
             "providerType": "提供方類型",
             "urlCopiedToClipboard": "URL е·ІиӨҮиЈҪеҲ°еүӘиІјз°ҝ.",
             "activateThisProvider": "啟動呢個提供方",
-            "connecting": "連線緊…",
+            "connecting": "йҖЈз·ҡз·ҠвҖҰ",
             "addProvider": "加入提供方"
         },
         "cnfBulkImportDialog": {
@@ -2621,12 +2621,12 @@
             "getYourAPIKeyFrom2": "е–ә Hevy иЁӯе®ҡ > API йҮ‘й‘°еәҰж”һжӮЁеҳ… API йҮ‘й‘°.",
             "liftosaurAPIKey": "Liftosaur API йҮ‘й‘°",
             "enterLiftosaurAPIKeyLftsk": "ијёе…Ҙ Liftosaur API йҮ‘й‘°пјҲlftsk_вҖҰпјү",
-            "syncFrequency": "同步頻率",
+            "syncFrequency": "еҗҢжӯҘй »зҺҮ",
             "selectSyncFrequency": "揀同步頻率",
-            "manual": "手動",
-            "hourly": "每小時",
-            "daily": "每日",
-            "selectRegion": "揀地區",
+            "manual": "жүӢеӢ•",
+            "hourly": "жҜҸе°ҸжҷӮ",
+            "daily": "жҜҸж—Ҙ",
+            "selectRegion": "жҸҖең°еҚҖ",
             "activateThisProvider": "啟動呢個提供方",
             "openFoodFactsIsA2": "Open Food Facts дҝӮдёҖеҖӢж”ҜжҸҙжң¬ең°еҢ–еҳ…зӨҫзҫӨиіҮж–ҷеә«гҖӮSparky жңғиҮӘеӢ•з”ЁжӮЁе–ә SparkyFitness е…Ҙйқўе•ҹеӢ•еҳ…иӘһиЁҖжҹҘз”ўе“ҒгҖӮжғізҹҘеӨҡе•ІпјҢеҺ»<link>Open Food Facts е…ҘеҸЈз¶Із«ҷ</link>пјҢжҲ–иҖ…е–ә<link2>Open Food Facts зҝ»иӯҜ Wiki</link2>зқҮиӘһиЁҖж”ҜжҸҙ.",
             "noteForFatsecretYouNeed2": "жіЁж„Ҹпјҡз”Ё Fatsecret еҳ…и©ұпјҢжӮЁиҰҒе–ә Fatsecret й–ӢзҷјиҖ…еёіжҲ¶еәҰиЁӯе®ҡ<strong>жӮЁеҳ…е…¬й–Ӣ IP</strong>зҷҪеҗҚе–®гҖӮе‘ўеҖӢзЁӢеәҸжңҖй•·еҸҜиғҪиҰҒ 24 еҖӢйҗҳ.",
@@ -2681,11 +2681,11 @@
             "enterYourGarminEmail": "ијёе…ҘжӮЁеҳ… Garmin йӣ»йғө",
             "garminPassword": "Garmin еҜҶзўј",
             "enterYourGarminPassword": "ијёе…ҘжӮЁеҳ… Garmin еҜҶзўј",
-            "connecting": "連線緊…",
+            "connecting": "йҖЈз·ҡз·ҠвҖҰ",
             "connectGarmin": "йҖЈз·ҡ Garmin",
             "garminMFACode": "Garmin MFA д»Јзўј",
             "enterMFACode": "ијёе…Ҙ MFA д»Јзўј",
-            "submitting": "提交緊…",
+            "submitting": "жҸҗдәӨз·ҠвҖҰ",
             "submitMFACode": "жҸҗдәӨ MFA д»Јзўј"
         },
         "mfaSettings": {
@@ -2700,7 +2700,7 @@
             "failedToEnableEmailMFA": "е•ҹз”Ёе””еҲ° Email MFA",
             "emailMFADisabled": "Email MFA е·ІеҒңз”Ё.",
             "failedToDisableEmailMFA": "еҒңз”Ёе””еҲ° Email MFA",
-            "copied": "已複製",
+            "copied": "е·ІиӨҮиЈҪ",
             "recoveryCodesCopiedToClipboard": "еҫ©еҺҹзўје·ІиӨҮиЈҪеҲ°еүӘиІјз°ҝ."
         },
         "nutrientDisplaySettings": {
@@ -2717,15 +2717,15 @@
             "gPureAlcohol": "{{label}}пјҲзҙ”й…’зІҫ {{grams}} е…Ӣпјү"
         },
         "providerCard": {
-            "global": "全域",
-            "private": "私人",
+            "global": "е…Ёеҹҹ",
+            "private": "з§Ғдәә",
             "bulkImportReSync": "жү№ж¬ЎеҢҜе…ҘпјҸйҮҚж–°еҗҢжӯҘ",
             "importing": "еҢҜе…Ҙз·ҠпјҲ{{progress}}%пјүвҖҰ",
             "bulkImportSync": "批次匯入／同步",
-            "manualSync": "手動同步",
-            "connect": "連線",
+            "manualSync": "жүӢеӢ•еҗҢжӯҘ",
+            "connect": "йҖЈз·ҡ",
             "disconnect": "斷開連線",
-            "readOnly": "唯讀",
+            "readOnly": "е”Ҝи®Җ",
             "imported": "е·ІеҢҜе…Ҙ {{imported}} й …",
             "updated": "е·Іжӣҙж–° {{updated}} й …",
             "howToImproveThis": "點樣改進呢樣嘢？",
@@ -2740,10 +2740,10 @@
             "noteFromCodewithCJIDon": "<strong>CodewithCJ еҳ…еӮҷиЁ»пјҡ</strong>жҲ‘еҶҮ {{provider_name}} иЈқзҪ®пјҸиЁӮй–ұ.",
             "enableAllowLocalProviderResponse": "е–ә<strong2>з®ЎзҗҶе“Ў > е…ЁеҹҹжҸҗдҫӣж–№иЁӯе®ҡ</strong2>еәҰй–Ӣе•ҹ<strong>е…ҒиЁұжң¬ж©ҹжҸҗдҫӣж–№еӣһжҮүж“·еҸ–</strong>пјҢеҶҚе–әеҗҢжӯҘзҜ„еңҚе°Қи©ұжЎҶеәҰжҸҖ<strong3>ж“·еҸ–еҺҹе§ӢжҸҗдҫӣж–№еӣһжҮү</strong3>.",
             "shareTheExportedDiagnosticBundle2": "е–ә Discord дёҠеҗҢ<strong>CodewithCJ</strong>еҲҶдә«еҢҜеҮәе’—еҳ…иЁәж–·еҘ—д»¶.",
-            "urlLabel": "URL：",
+            "urlLabel": "URLпјҡ",
             "appIdLabel": "App ID：",
             "appKeyLabel": "App Key：",
-            "syncLabel": "同步："
+            "syncLabel": "еҗҢжӯҘпјҡ"
         },
         "providerSpecificFields": {
             "appURL": "App URL",
@@ -2768,7 +2768,7 @@
             "enterGarminPassword": "ијёе…Ҙ Garmin еҜҶзўј",
             "getYourAPIKeyFrom": "е–ә Hevy иЁӯе®ҡ > API йҮ‘й‘°еәҰж”һжӮЁеҳ… API йҮ‘й‘°.",
             "syncEntireHistoryOnConnect": "йҖЈз·ҡе—°йҷЈеҗҢжӯҘжҲҗж®өжӯ·еҸІ",
-            "selectRegion": "揀地區",
+            "selectRegion": "жҸҖең°еҚҖ",
             "openFoodFactsIsA2": "Open Food Facts дҝӮдёҖеҖӢж”ҜжҸҙжң¬ең°еҢ–еҳ…зӨҫзҫӨиіҮж–ҷеә«гҖӮSparky жңғиҮӘеӢ•з”ЁжӮЁе–ә SparkyFitness е…Ҙйқўе•ҹеӢ•еҳ…иӘһиЁҖжҹҘз”ўе“ҒгҖӮжғізҹҘеӨҡе•ІпјҢеҺ»<link>Open Food Facts е…ҘеҸЈз¶Із«ҷ</link>пјҢжҲ–иҖ…е–ә<link2>Open Food Facts зҝ»иӯҜ Wiki</link2>зқҮиӘһиЁҖж”ҜжҸҙ.",
             "thisIntegrationUsesOAuth2You2": "е‘ўеҖӢж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°жҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ»жҸҗдҫӣж–№жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>{{dashboard}}</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
             "stravaIntegrationUsesOAuth2You2": "Strava ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°жҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Strava жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Strava API е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°ҮгҖҢAuthorization Callback DomainгҖҚиЁӯеҒҡпјҡ",
@@ -2787,7 +2787,7 @@
             "stravaCallbackNote": "жіЁж„ҸпјҡдјәжңҚеҷЁдёҠеҳ… Strava еӣһе‘ј URL иЁӯе®ҡеҒҡпјҡ<strong>{{value}}</strong>"
         },
         "waterContainerManager": {
-            "food": "食物",
+            "food": "йЈҹзү©",
             "mgCaffeine": "{{caffeineMg}} mg е’–е•Ўеӣ",
             "abv": "{{abvPercent}}% ABV"
         }
@@ -2986,7 +2986,7 @@
             "eGSparkyfitnessCom": "дҫӢеҰӮпјҡsparkyfitness.com",
             "expertModeCustomDomain": "йҖІйҡҺжЁЎејҸпјҡиҮӘиЁӮз¶Іеҹҹ",
             "copyFullRedirectURI": "иӨҮиЈҪе®Ңж•ҙ Redirect URI",
-            "none": "無",
+            "none": "з„Ў",
             "urlMustStartWithHttp": "⚠️ URL 一定要以 http:// 或者 https:// 開頭",
             "automaticallySyncedWithYourCurrent": "✓ 已自動同您而家嘅 URL 同步。路徑尾碼已鎖死嚟確保路由安全.",
             "expertEnsureYourBaseURL": "⚠️ 進階：確保您嘅 Base URL 可以由互聯網入到，OIDC 供應商先會回傳數據."
@@ -3106,12 +3106,12 @@
             "saveForDate": "為呢個日期儲存",
             "loadingDailyGoals": "載入緊每日目標…",
             "targetSteps": "每日步數目標",
-            "goalWeight": "目標體重",
+            "goalWeight": "зӣ®жЁҷй«”йҮҚ",
             "goalWeightDescription": "жӮЁеҳ…зӣ®жЁҷй«”йҮҚгҖӮй«”йҮҚи¶ЁеӢўең–жңғз”ЁдҪўеҡҹжҺЁз®—жӮЁе№ҫжҷӮйҒ”еҲ°.",
             "goalWeightInputLabel": "зӣ®жЁҷй«”йҮҚпјҲ{{unit}}пјү",
             "goalWeightInvalid": "ијёе…ҘдёҖеҖӢеӨ§йҒҺйӣ¶еҸҲе””и¶…йҒҺ {{max}} {{unit}} еҳ…й«”йҮҚ.",
             "goalWeightSave": "儲存目標體重",
-            "goalWeightClear": "清除",
+            "goalWeightClear": "жё…йҷӨ",
             "goalWeightSaved": "目標體重已儲存.",
             "goalWeightSaveFailed": "е„Іеӯҳе””еҲ°зӣ®жЁҷй«”йҮҚ.",
             "total": "зёҪиЁҲпјҡ{{currentMacroTotal}}%",
@@ -3119,9 +3119,9 @@
             "carbsG": "зўіж°ҙеҢ–еҗҲзү©пјҡ{{grams}} е…Ӣ",
             "fatG": "и„ӮиӮӘпјҡ{{grams}} е…Ӣ",
             "calories2": "еҚЎи·ҜйҮҢпјҲ{{energyUnitString}}пјү",
-            "protein2": "蛋白質：",
+            "protein2": "иӣӢзҷҪиіӘпјҡ",
             "carbs": "碳水化合物：",
-            "fat2": "脂肪：",
+            "fat2": "и„ӮиӮӘпјҡ",
             "startDateToEndDate": "{{start_date}} иҮі {{end_date}}"
         },
         "mealDistribution": {
@@ -3134,10 +3134,10 @@
             "protein": "蛋白質：",
             "carbs": "碳水：",
             "fat": "脂肪：",
-            "evenDistribution": "平均分配",
+            "evenDistribution": "е№іеқҮеҲҶй…Қ",
             "intermittentFasting": "間歇性斷食",
             "proteinFocusedMorning": "朝早集中蛋白質",
-            "noSnacks": "唔食零食"
+            "noSnacks": "е””йЈҹйӣ¶йЈҹ"
         },
         "errorSavingPreset": "儲存預設失敗.",
         "presetCreatedSuccess": "目標預設建立成功！",
@@ -3239,7 +3239,7 @@
         "max": "最高",
         "source": "來源",
         "previous": "上一個",
-        "pickTime": "揀時間",
+        "pickTime": "жҸҖжҷӮй–“",
         "pickDateTime": "揀日期同時間"
     },
     "diary": {
@@ -3467,13 +3467,13 @@
             "atBedtime2": "иҮЁзһ“жҷӮпјҲ{{target_bedtime}}пјү"
         },
         "caffeineCard": {
-            "dose": "劑量"
+            "dose": "еҠ‘йҮҸ"
         },
         "editExerciseEntryDialog": {
             "startTimeOptional": "開始時間（可選）",
-            "clear": "清除",
-            "clearTime": "清除時間",
-            "now": "而家",
+            "clear": "жё…йҷӨ",
+            "clearTime": "жё…йҷӨжҷӮй–“",
+            "now": "иҖҢе®¶",
             "setToCurrentLocalTime": "иЁӯеҒҡиҖҢе®¶еҳ…з•¶ең°жҷӮй–“",
             "autoCalculatedFromSets": "跟組數自動計",
             "heartRateRespiration": "心率同呼吸",
@@ -3485,12 +3485,12 @@
             "maxSpeedMS": "жңҖеӨ§йҖҹеәҰпјҲm/sпјү",
             "avgMovingSpeedMS": "е№іеқҮз§»еӢ•йҖҹеәҰпјҲm/sпјү",
             "avgCadenceSpmRpm": "е№іеқҮжӯҘй »пјҲspm/rpmпјү",
-            "maxCadence": "最大步頻",
+            "maxCadence": "жңҖеӨ§жӯҘй »",
             "avgPowerW": "平均功率（W）",
             "maxPowerW": "最大功率（W）",
             "normPowerW": "標準化功率（W）",
             "tssScore": "TSS 分數",
-            "runningDynamics": "跑步動態",
+            "runningDynamics": "и·‘жӯҘеӢ•ж…Ӣ",
             "groundContactMs": "觸地時間（ms）",
             "vertOscillationMm": "垂直振幅（mm）",
             "strideLengthCm": "步幅（cm）",
@@ -3500,8 +3500,8 @@
             "minElevationM": "最低海拔（m）",
             "maxElevationM": "最高海拔（m）",
             "floorsClimbed": "上咗幾多層",
-            "strokeCount": "划水次數",
-            "steps": "步數",
+            "strokeCount": "еҲ’ж°ҙж¬Ўж•ё",
+            "steps": "жӯҘж•ё",
             "estWaterLossML": "дј°иЁҲж°ҙд»ҪжөҒеӨұпјҲmLпјү",
             "timeCalorieBreakdown": "時間同卡路里明細",
             "movingTimeSec": "移動時間（秒）",
@@ -3509,18 +3509,18 @@
             "activeCaloriesKcal": "жҙ»еӢ•еҚЎи·ҜйҮҢпјҲkcalпјү",
             "restingCaloriesKcal": "йқңжӯўеҚЎи·ҜйҮҢпјҲkcalпјү",
             "trainingLoadPerformance": "訓練負荷同表現",
-            "trainingLoad": "訓練負荷",
+            "trainingLoad": "иЁ“з·ҙиІ иҚ·",
             "aerobicEffect05": "её¶ж°§ж•ҲжһңпјҲ0-5пјү",
             "anaerobicEffect05": "з„Ўж°§ж•ҲжһңпјҲ0-5пјү",
             "vO2MaxEstimate": "VO2 Max дј°з®—",
             "environmentGear": "環境同裝備",
-            "weatherCondition": "天氣狀況",
+            "weatherCondition": "еӨ©ж°ЈзӢҖжіҒ",
             "eGSunny": "例如：天晴",
             "windSpeedMS": "風速（m/s）",
             "humidity": "濕度（%）",
             "gearName": "裝備名稱",
             "eGNikePegasus40": "дҫӢеҰӮпјҡNike Pegasus 40",
-            "exercise": "動作",
+            "exercise": "еӢ•дҪң",
             "avgTempC": "平均溫度（°C）",
             "weatherTempC": "天氣溫度（°C）"
         },
@@ -3536,9 +3536,9 @@
         },
         "logExerciseEntryDialog": {
             "startTimeOptional": "開始時間（可選）",
-            "clear": "清除",
-            "clearTime": "清除時間",
-            "now": "而家",
+            "clear": "жё…йҷӨ",
+            "clearTime": "жё…йҷӨжҷӮй–“",
+            "now": "иҖҢе®¶",
             "setToCurrentLocalTime": "иЁӯеҒҡиҖҢе®¶еҳ…з•¶ең°жҷӮй–“"
         },
         "logMealDialog": {
@@ -3575,10 +3575,10 @@
             "setNotes": "з¬¬ {{setNumber}} зө„еӮҷиЁ»"
         },
         "workoutPlaybackSummary": {
-            "startTime": "開始時間",
-            "clear": "清除",
-            "clearTime": "清除時間",
-            "now": "而家",
+            "startTime": "й–Ӣе§ӢжҷӮй–“",
+            "clear": "жё…йҷӨ",
+            "clearTime": "жё…йҷӨжҷӮй–“",
+            "now": "иҖҢе®¶",
             "setToCurrentLocalTime": "иЁӯеҒҡиҖҢе®¶еҳ…з•¶ең°жҷӮй–“"
         },
         "exerciseEntryDisplay": {
@@ -3626,7 +3626,7 @@
             "linkedDrink": "已連結食材記錄",
             "noWaterCredit": "唔計水份",
             "noWaterCreditHint": "呢杯飲品設定咗唔計水份",
-            "logTime": "飲用時間",
+            "logTime": "йЈІз”ЁжҷӮй–“",
             "zeroPercentWater": "0% 水份",
             "todaySDrinks": "д»Ҡж—ҘйЈІе“ҒпјҲ{{logEntriesCount}}пјү"
         },
@@ -3719,39 +3719,39 @@
             "deleteSuccess": "相片已經刪走",
             "deleteError": "移除相片操作失敗",
             "calendarLegend": "進度相",
-            "remove": "移除相片",
-            "compare": "比較",
-            "timelapse": "縮時",
-            "angle": "角度",
-            "before": "之前",
-            "after": "之後",
+            "remove": "з§»йҷӨзӣёзүҮ",
+            "compare": "жҜ”ијғ",
+            "timelapse": "зё®жҷӮ",
+            "angle": "и§’еәҰ",
+            "before": "д№ӢеүҚ",
+            "after": "д№ӢеҫҢ",
             "noWeight": "未記錄體重",
-            "logWeight": "記錄體重",
+            "logWeight": "иЁҳйҢ„й«”йҮҚ",
             "viewFull": "зқҮ {{label}} еҺҹе°әеҜё",
             "pickDay": "жҸҖ {{label}} е—°ж—Ҙ",
             "compareTitle": "比較進度相片",
             "compareDescription": "жҸҖд»»дҪ•е…©ж—ҘпјҢзқҮеҗ“е‘ўеҖӢи§’еәҰй»һи®Ҡ.",
             "compareEmpty": "иҮіе°‘иҰҒе–әе…©ж—ҘеҠ е‘ўеҖӢи§’еәҰеҳ…зӣёпјҢе…ҲеҸҜд»ҘжҜ”ијғ.",
             "daysApart_other": "зӣёйҡ” {{count}} ж—Ҙ",
-            "timelapseTitle": "進度縮時",
+            "timelapseTitle": "йҖІеәҰзё®жҷӮ",
             "timelapseDescription": "зқҮдёҖеҖӢи§’еәҰйҡЁжҷӮй–“й»һи®ҠгҖӮз”Ёж–№еҗ‘йҚөйҖҗж јзқҮ.",
             "timelapseEmpty": "иҮіе°‘иҰҒе–әе…©ж—ҘеҠ е‘ўеҖӢи§’еәҰеҳ…зӣёпјҢе…ҲеҸҜд»Ҙж’ӯзё®жҷӮ.",
             "timelapseEmptyRange": "е—°еҖӢзҜ„еңҚе…Ҙйқўе‘ўеҖӢи§’еәҰеҳ…зӣёе””еӨ е…©ејө.",
-            "rangeLabel": "播放",
+            "rangeLabel": "ж’ӯж”ҫ",
             "range30d": "最近 30 日",
             "range3m": "最近 3 個月",
-            "rangeAll": "全部時間",
-            "rangeCustom": "自訂範圍",
-            "pickRange": "揀日期",
+            "rangeAll": "е…ЁйғЁжҷӮй–“",
+            "rangeCustom": "иҮӘиЁӮзҜ„еңҚ",
+            "pickRange": "жҸҖж—Ҙжңҹ",
             "playRange": "播放呢個範圍",
-            "previousPhoto": "上一張相",
-            "nextPhoto": "下一張相",
-            "play": "播放",
-            "pause": "暫停",
-            "speed": "速度",
-            "speedSlow": "慢",
-            "speedNormal": "正常",
-            "speedFast": "快",
+            "previousPhoto": "дёҠдёҖејөзӣё",
+            "nextPhoto": "дёӢдёҖејөзӣё",
+            "play": "ж’ӯж”ҫ",
+            "pause": "жҡ«еҒң",
+            "speed": "йҖҹеәҰ",
+            "speedSlow": "ж…ў",
+            "speedNormal": "жӯЈеёё",
+            "speedFast": "еҝ«",
             "frameCount": "{{current}}／{{total}} · {{range}}"
         },
         "useLast": "用上次",
@@ -3792,7 +3792,7 @@
         "failedToLoadPreviousCustom": "載入唔到之前自訂嘅數值.",
         "healthDataImportCSV": {
             "addMoodTag": "加心情標籤",
-            "unit": "單位"
+            "unit": "е–®дҪҚ"
         },
         "mindfulnessSection": {
             "hrvMs": "HRV {{hrv_rmssd}} ms"
@@ -3818,11 +3818,11 @@
         "duration2": "持續時間：",
         "timeAsleep2": "瞓着時間：",
         "sleepScore2": "瞓覺分數：",
-        "source2": "來源：",
-        "deep2": "深睡：",
-        "light2": "淺睡：",
-        "rem2": "REM：",
-        "awake2": "醒住：",
+        "source2": "дҫҶжәҗпјҡ",
+        "deep2": "ж·ұзқЎпјҡ",
+        "light2": "ж·әзқЎпјҡ",
+        "rem2": "REMпјҡ",
+        "awake2": "йҶ’дҪҸпјҡ",
         "avgSpO2": "平均 SpO2：",
         "avgHRV": "平均 HRV：",
         "avgStress": "平均壓力：",
@@ -4133,7 +4133,7 @@
         "mealNotes": "備註（選填）",
         "mealNotesPlaceholder": "例如：食譜，或者您嘅做法",
         "templateNotes": "關於呢個餐膳",
-        "unit": "單位",
+        "unit": "е–®дҪҚ",
         "totalAmount2": "зёҪйҮҸпјҲ{{servingUnit}}пјү",
         "defaultServingSize2": "й җиЁӯд»ҪйҮҸпјҲ{{servingUnit}}пјү",
         "totalDishAmount2": "иҸңејҸзёҪйҮҸпјҲ{{servingUnit}}пјү",
@@ -4657,7 +4657,7 @@
         "daysInTargetRange": "{{total}} 日入面有 {{inRange}} 日喺範圍內",
         "failedToLoadWorkoutHeatmap": "無法載入訓練熱力圖數據.",
         "symptomsTab": "症狀",
-        "weightTrend": "趨勢",
+        "weightTrend": "и¶ЁеӢў",
         "weightTrendSummary": "и¶ЁеӢў {{weight}}",
         "weightTrendRate": "жҜҸйҖұ {{rate}}",
         "weightGoalForecast": "зӣ®жЁҷй җжё¬ {{date}}",
@@ -4682,11 +4682,11 @@
             "noStressDataAvailableFor": "е‘ўж®өжңҹй–“еҶҮеЈ“еҠӣж•ёж“ҡ."
         },
         "workoutHeatmap": {
-            "tu": "二",
-            "th": "四"
+            "tu": "дәҢ",
+            "th": "еӣӣ"
         },
         "avg": "е№іеқҮпјҡ{{formattedAverage}} {{unit}}",
-        "primary2": "（主要）",
+        "primary2": "пјҲдё»иҰҒпјү",
         "totalEaten2": "зёҪж”қеҸ–пјҡ{{displayTotalEaten}} {{unitStr}}",
         "totalGoal2": "зёҪзӣ®жЁҷпјҡ{{displayTotalGoal}} {{unitStr}}",
         "avg2": "е№іеқҮпјҡ{{formattedAverageEaten}} {{unitStr}}",
@@ -4981,7 +4981,7 @@
         "total": "總計",
         "showAll": "顯示全部（{{count}}）",
         "sleepDebtDisclaimerPersonalized": "*瞓覺債按您個人化嘅瞓覺需求 {{time}} 計.",
-        "total2": "總計："
+        "total2": "зёҪиЁҲпјҡ"
     },
     "sleepAnalyticsTable": {
         "exportToCSV": "匯出檔案 CSV",
@@ -5293,12 +5293,12 @@
         "notesPlaceholder": "例如：白飯、雙份雞肉、微辣莎莎醬、唔加豆",
         "dataSource": "數據來源",
         "refreshFromSource": "由來源重新整理",
-        "portions": "具名份量",
+        "portions": "е…·еҗҚд»ҪйҮҸ",
         "portionNutritionCalculated": "зҮҹйӨҠи·ҹеҸғиҖғе–®дҪҚиЁҲгҖӮж”№е—°еҖӢе–®дҪҚе°ұжңғж”№зҮҹйӨҠ.",
-        "addPortion": "加份量",
+        "addPortion": "еҠ д»ҪйҮҸ",
         "portionsHelp": "з”Ёе·ІзҹҘйҮҚйҮҸжҲ–иҖ…й«”з©Қе®ҡзҫ©еҢ…иЈқгҖҒеҲҮзүҮжҲ–иҖ…е…¶д»–д»ҪйҮҸгҖӮзҮҹйӨҠжңғз”ұе‘ўеҖӢйЈҹзү©иЁҲпјӣжӮЁд»Қз„¶еҸҜд»ҘиЁҳйҢ„д»»дҪ•е…ӢжҲ–иҖ…жҜ«еҚҮж•ёйҮҸ.",
         "portionsNeedReference": "иҰҒеҠ е’—йҮҚйҮҸжҲ–иҖ…й«”з©Қе–®дҪҚпјҢе…ҲиЁҲеҲ°д»ҪйҮҸ.",
-        "portionName": "份量名稱",
+        "portionName": "д»ҪйҮҸеҗҚзЁұ",
         "portionNamePlaceholder": "例如：包裝",
         "portionWeight": "重量（g）",
         "portionVolume": "體積（ml）",
@@ -5306,7 +5306,7 @@
         "addPortionToFood": "加份量入呢個食材",
         "hidePortionDetails": "收埋詳細資料",
         "editPortionDetails": "編輯單位",
-        "removePortion": "移除份量"
+        "removePortion": "з§»йҷӨд»ҪйҮҸ"
     },
     "customMeasurements": {
         "title": "自訂身體數值記錄 — {{date}}",
@@ -5468,23 +5468,23 @@
         "skipFailed": "冇辦法跳過引導.請再試.",
         "submissionFailed": "冇辦法儲存您嘅計劃.請再試.",
         "setupShort": "設定",
-        "skip": "跳過",
-        "continue": "繼續",
+        "skip": "и·ійҒҺ",
+        "continue": "з№јзәҢ",
         "sexQuestion": "您嘅性別係？",
         "sexDescription": "з”ЁеҡҹиЁҲжӮЁеҳ…еҹәзӨҺд»Ји¬қзҺҮ.",
-        "male": "男",
-        "female": "女",
+        "male": "з”·",
+        "female": "еҘі",
         "goalQuestion": "жӮЁеҳ…дё»иҰҒзӣ®жЁҷдҝӮе’©пјҹ",
-        "loseWeight": "減磅",
+        "loseWeight": "жёӣзЈ…",
         "maintainWeight": "維持體重",
-        "gainWeight": "增磅",
+        "gainWeight": "еўһзЈ…",
         "currentWeightQuestion": "您而家幾重？",
-        "heightQuestion": "您幾高？",
+        "heightQuestion": "жӮЁе№ҫй«ҳпјҹ",
         "enterInUnit": "з”Ё {{unit}} ијёе…Ҙ.",
         "birthDateQuestion": "您幾時出世？",
         "birthDateDescription": "е№ҙйҪЎдҝӮж–°йҷід»Ји¬қеҳ…дёҖеҖӢйҮҚиҰҒеӣ зҙ .",
         "selectDateFormat": "揀日期格式",
-        "pickDate": "揀日期",
+        "pickDate": "жҸҖж—Ҙжңҹ",
         "bodyFatQuestion": "估算您嘅體脂",
         "bodyFatDescription": "肉眼估算就夠.",
         "bodyFatLow": "低（<15%）",
@@ -5508,7 +5508,7 @@
             "fatsecretHelp": "з”Ёе„ҖиЎЁжқҝе…Ҙйқўеҳ… REST API OAuth 2.0 жҶ‘иӯүпјҢе””еҘҪз”Ё OAuth 1.0 Consumer KeyпјҸSecretгҖӮFatSecret дәҰйғҪиҰҒжұӮжӮЁе–әдҪўе“Ӣй–ӢзҷјиҖ…е„ҖиЎЁжқҝеәҰе°ҮжӮЁеҳ…е…¬й–Ӣ IP еҠ е…ҘзҷҪеҗҚе–®гҖӮе‘ўеҖӢжңҖеӨҡеҸҜиғҪиҰҒ 24 еҖӢйҗҳе…Ҳз”ҹж•Ҳ.",
             "missingField": "е°‘е’— FatSecret ж¬„дҪҚ",
             "missingFieldDescription": "еҗҢжҷӮијёе…Ҙ FatSecret Client ID еҗҢ Client SecretпјҢжҲ–иҖ…е…©жЁЈйғҪз•ҷз©әеҡҹи·ійҒҺ.",
-            "notSignedIn": "未登入",
+            "notSignedIn": "жңӘзҷ»е…Ҙ",
             "notSignedInDescription": "йҮҚж–°зҷ»е…Ҙе…ҲеҸҜд»Ҙе„ІеӯҳйЈҹжқҗдҫҶжәҗ."
         },
         "plan": {
@@ -5520,23 +5520,23 @@
             "perDay": "{{unit}}пјҸж—Ҙ",
             "baseBmr": "基礎 BMR：",
             "calorieBuyback": "卡路里回補：",
-            "on": "開",
-            "off": "關",
+            "on": "й–Ӣ",
+            "off": "й—ң",
             "nutrientGoals": "營養目標"
         },
         "diet": {
-            "title": "飲食方式",
+            "title": "йЈІйЈҹж–№ејҸ",
             "description": "жҸҖй җиЁӯйЈІйЈҹжҲ–иҖ…иҮӘиЁӮжӮЁеҳ…е·ЁйҮҸзҮҹйӨҠзҙ жҜ”дҫӢ",
             "macroSplit": "{{carbs}}% зўіж°ҙпјҸ{{protein}}% иӣӢзҷҪиіӘпјҸ{{fat}}% и„ӮиӮӘ",
             "customMacroSplit": "иҮӘиЁӮе·ЁйҮҸзҮҹйӨҠзҙ жҜ”дҫӢ",
-            "total": "總計：",
+            "total": "зёҪиЁҲпјҡ",
             "carbohydrates": "碳水化合物",
-            "protein": "蛋白質",
-            "fat": "脂肪",
+            "protein": "иӣӢзҷҪиіӘ",
+            "fat": "и„ӮиӮӘ",
             "adjustHint": "иӘҝж•ҙжҲ–иҖ…ијёе…Ҙж•ёеҖјгҖӮе·Іи§ЈйҺ–еҳ…е·ЁйҮҸзҮҹйӨҠзҙ жңғиҮӘеӢ•иӘҝж•ҙеҡҹз¶ӯжҢҒзёҪж•ё 100%.",
             "templates": {
                 "balanced": {
-                    "name": "均衡",
+                    "name": "еқҮиЎЎ",
                     "description": "йҒ©еҗҲдёҖиҲ¬еҒҘеә·еҳ…еқҮиЎЎзҮҹйӨҠ"
                 },
                 "mediterranean": {
@@ -5548,11 +5548,11 @@
                     "description": "з”ЁйЈІйЈҹж–№жі•еҡҹжҺ§еҲ¶й«ҳиЎҖеЈ“"
                 },
                 "atkins": {
-                    "name": "阿特金斯",
+                    "name": "йҳҝзү№йҮ‘ж–Ҝ",
                     "description": "極低碳水、高脂肪"
                 },
                 "low_fat": {
-                    "name": "低脂",
+                    "name": "дҪҺи„Ӯ",
                     "description": "高碳水、極少脂肪"
                 },
                 "low_carb": {
@@ -5560,13 +5560,13 @@
                     "description": "生酮式飲食"
                 },
                 "custom": {
-                    "name": "自訂",
+                    "name": "иҮӘиЁӮ",
                     "description": "иЁӯе®ҡжӮЁиҮӘе·ұеҳ…зҷҫеҲҶжҜ”"
                 }
             }
         },
         "calculation": {
-            "title": "計算設定",
+            "title": "иЁҲз®—иЁӯе®ҡ",
             "fatBreakdownMethod": "脂肪分解方法",
             "mineralCalculation": "礦物質計算",
             "vitaminCalculation": "維他命計算",
@@ -5574,7 +5574,7 @@
             "description": "е‘ўе•ІиЁӯе®ҡжҺ§еҲ¶жӮЁеҳ…зҮҹйӨҠзӣ®жЁҷй»һжЁЈиЁҲгҖӮжӮЁд№ӢеҫҢйҡЁжҷӮеҸҜд»Ҙе–әиЁӯе®ҡеәҰж”№.",
             "fatAlgorithms": {
                 "AHA_GUIDELINES": "AHA жҢҮеј•пјҲеҝғиҮҹеҒҘеә·пјү",
-                "KETO_ADAPTED": "生酮適應",
+                "KETO_ADAPTED": "з”ҹй…®йҒ©жҮү",
                 "MEDITERRANEAN": "地中海飲食"
             },
             "mineralAlgorithms": {
@@ -5584,7 +5584,7 @@
             },
             "vitaminAlgorithms": {
                 "RDA_STANDARD": "RDA 標準",
-                "IMMUNE_SUPPORT": "免疫支援",
+                "IMMUNE_SUPPORT": "е…Қз–«ж”ҜжҸҙ",
                 "ANTIOXIDANT_FOCUS": "抗氧化重點"
             },
             "sugarAlgorithms": {
@@ -5596,32 +5596,32 @@
         "nutrients": {
             "dailyMacroTargets": "жҜҸж—Ҙе·ЁйҮҸзҮҹйӨҠзҙ зӣ®жЁҷ",
             "carbohydrates": "碳水化合物",
-            "protein": "蛋白質",
-            "fats": "脂肪",
+            "protein": "иӣӢзҷҪиіӘ",
+            "fats": "и„ӮиӮӘ",
             "fiber": "膳食纖維",
-            "fatBreakdown": "脂肪分解",
+            "fatBreakdown": "и„ӮиӮӘеҲҶи§Ј",
             "saturatedFat": "飽和脂肪",
-            "transFat": "反式脂肪",
+            "transFat": "еҸҚејҸи„ӮиӮӘ",
             "polyunsaturated": "多元不飽和脂肪",
             "monounsaturated": "單元不飽和脂肪",
             "mineralsOther": "礦物質同其他",
-            "cholesterol": "膽固醇",
-            "sodium": "鈉",
-            "potassium": "鉀",
-            "calcium": "鈣",
-            "iron": "鐵",
+            "cholesterol": "иҶҪеӣәйҶҮ",
+            "sodium": "йҲү",
+            "potassium": "йүҖ",
+            "calcium": "йҲЈ",
+            "iron": "йҗө",
             "sugarsVitamins": "糖分同維他命",
-            "sugar": "糖分",
+            "sugar": "зі–еҲҶ",
             "vitaminA": "維他命 A",
             "vitaminC": "維他命 C",
             "customNutrients": "自訂營養素",
             "hydrationExercise": "水份同運動",
-            "waterGoal": "水份目標",
+            "waterGoal": "ж°ҙд»Ҫзӣ®жЁҷ",
             "exerciseDuration": "運動時間",
             "exerciseCalories": "運動卡路里"
         },
         "calculationSettings": {
-            "calculationSettings": "計算設定",
+            "calculationSettings": "иЁҲз®—иЁӯе®ҡ",
             "fatBreakdownMethod": "脂肪分解方法",
             "mineralCalculation": "礦物質計算",
             "vitaminCalculation": "維他命計算",
@@ -5629,20 +5629,20 @@
             "theseSettingsControlHowYour": "е‘ўе•ІиЁӯе®ҡжҺ§еҲ¶жӮЁеҳ…зҮҹйӨҠзӣ®жЁҷй»һжЁЈиЁҲгҖӮжӮЁд№ӢеҫҢйҡЁжҷӮеҸҜд»Ҙе–әиЁӯе®ҡеәҰж”№."
         },
         "dietApproach": {
-            "dietApproach": "飲食方式",
+            "dietApproach": "йЈІйЈҹж–№ејҸ",
             "chooseAPresetDietOr": "жҸҖй җиЁӯйЈІйЈҹжҲ–иҖ…иҮӘиЁӮжӮЁеҳ…е·ЁйҮҸзҮҹйӨҠзҙ жҜ”дҫӢ",
             "carbsProteinFat": "{{carbsPercentage}}% зўіж°ҙпјҸ{{proteinPercentage}}% иӣӢзҷҪиіӘпјҸ{{fatPercentage}}% и„ӮиӮӘ",
             "customMacroSplit": "иҮӘиЁӮе·ЁйҮҸзҮҹйӨҠзҙ жҜ”дҫӢ",
             "carbohydrates": "碳水化合物",
-            "protein": "蛋白質",
-            "fat": "脂肪",
+            "protein": "иӣӢзҷҪиіӘ",
+            "fat": "и„ӮиӮӘ",
             "adjustOrTypeInA": "иӘҝж•ҙжҲ–иҖ…ијёе…Ҙж•ёеҖјгҖӮе·Іи§ЈйҺ–еҳ…е·ЁйҮҸзҮҹйӨҠзҙ жңғиҮӘеӢ•иӘҝж•ҙеҡҹз¶ӯжҢҒзёҪж•ё 100%.",
             "total2": "зёҪиЁҲпјҡ{{carbs}}%"
         },
         "foodSourcesStep": {
             "missingFatSecretField": "е°‘е’— FatSecret ж¬„дҪҚ",
             "enterBothTheFatSecretClient": "еҗҢжҷӮијёе…Ҙ FatSecret Client ID еҗҢ Client SecretпјҢжҲ–иҖ…е…©жЁЈйғҪз•ҷз©әеҡҹи·ійҒҺ.",
-            "notSignedIn": "未登入",
+            "notSignedIn": "жңӘзҷ»е…Ҙ",
             "pleaseSignInAgainTo": "йҮҚж–°зҷ»е…Ҙе…ҲеҸҜд»Ҙе„ІеӯҳйЈҹжқҗдҫҶжәҗ.",
             "connectFoodDatabases": "連線食材資料庫",
             "optionalButAddingUSDAAnd": "еҸҜйҒёпјҢдҪҶеҠ е’— USDA еҗҢ FatSecret е…ҘжӮЁеҳ…жҗңе°ӢпјҢжңғжҜ”й җиЁӯеҳ… Open Food Facts еҘҪжҳҺйЎҜеҘҪеӨҡгҖӮжӮЁд№ӢеҫҢйҡЁжҷӮеҸҜд»Ҙе–әиЁӯе®ҡеәҰеҠ жҲ–иҖ…ж”№.",
@@ -5652,30 +5652,30 @@
             "getAPICredentials": "攞 API 憑證",
             "fatSecretClientID": "FatSecret Client ID",
             "fatSecretClientSecret": "FatSecret Client Secret",
-            "continue": "繼續",
+            "continue": "з№јзәҢ",
             "useTheRESTAPIOAuth": "з”Ёе„ҖиЎЁжқҝе…Ҙйқўеҳ…<strong>REST API OAuth 2.0</strong>жҶ‘иӯүпјҢе””еҘҪз”Ё OAuth 1.0 Consumer KeyпјҸSecretгҖӮFatSecret дәҰйғҪиҰҒжұӮжӮЁе–әдҪўе“Ӣй–ӢзҷјиҖ…е„ҖиЎЁжқҝеәҰе°ҮжӮЁеҳ…е…¬й–Ӣ IP еҠ е…ҘзҷҪеҗҚе–®гҖӮе‘ўеҖӢжңҖеӨҡеҸҜиғҪиҰҒ 24 еҖӢйҗҳе…Ҳз”ҹж•Ҳ."
         },
         "nutrientGoals": {
             "dailyMacroTargets": "жҜҸж—Ҙе·ЁйҮҸзҮҹйӨҠзҙ зӣ®жЁҷ",
             "fiber": "膳食纖維",
-            "fatBreakdown": "脂肪分解",
+            "fatBreakdown": "и„ӮиӮӘеҲҶи§Ј",
             "saturatedFat": "飽和脂肪",
-            "transFat": "反式脂肪",
+            "transFat": "еҸҚејҸи„ӮиӮӘ",
             "polyunsaturated": "多元不飽和脂肪",
             "monounsaturated": "單元不飽和脂肪",
             "mineralsOther": "礦物質同其他",
-            "cholesterol": "膽固醇",
-            "sodium": "鈉",
-            "potassium": "鉀",
-            "calcium": "鈣",
-            "iron": "鐵",
+            "cholesterol": "иҶҪеӣәйҶҮ",
+            "sodium": "йҲү",
+            "potassium": "йүҖ",
+            "calcium": "йҲЈ",
+            "iron": "йҗө",
             "sugarsVitamins": "糖分同維他命",
-            "sugar": "糖分",
+            "sugar": "зі–еҲҶ",
             "vitaminA": "維他命 A",
             "vitaminC": "維他命 C",
             "customNutrients": "自訂營養素",
             "hydrationExercise": "水份同運動",
-            "waterGoal": "水份目標",
+            "waterGoal": "ж°ҙд»Ҫзӣ®жЁҷ",
             "exerciseDuration": "運動時間",
             "exerciseCalories": "運動卡路里",
             "carbohydratesShare": "зўіж°ҙеҢ–еҗҲзү©пјҲ{{percent}}%пјү",
@@ -5685,17 +5685,17 @@
         "onBoardingSteps": {
             "whatIsYourSex": "您嘅性別係？",
             "usedToCalculateYourBase": "з”ЁеҡҹиЁҲжӮЁеҳ…еҹәзӨҺд»Ји¬қзҺҮ.",
-            "male": "男",
-            "female": "女",
+            "male": "з”·",
+            "female": "еҘі",
             "whatIsYourPrimaryGoal": "жӮЁеҳ…дё»иҰҒзӣ®жЁҷдҝӮе’©пјҹ",
-            "loseWeight": "減磅",
+            "loseWeight": "жёӣзЈ…",
             "maintainWeight": "維持體重",
-            "gainWeight": "增磅",
+            "gainWeight": "еўһзЈ…",
             "whatIsYourCurrentWeight": "您而家幾重？",
             "enterIn": "з”Ё {{weightUnit}} ијёе…Ҙ.",
             "stLb": "st/lb",
-            "continue": "繼續",
-            "whatIsYourHeight": "您幾高？",
+            "continue": "з№јзәҢ",
+            "whatIsYourHeight": "жӮЁе№ҫй«ҳпјҹ",
             "enterIn2": "з”Ё {{heightUnit}} ијёе…Ҙ.",
             "ftIn": "ft/in",
             "whenWereYouBorn": "您幾時出世？",
@@ -5724,8 +5724,8 @@
         "personalPlanHeader": {
             "dailyCalorieBudget": "每日卡路里預算",
             "baseBMR": "基礎 BMR：",
-            "on": "開",
-            "off": "關",
+            "on": "й–Ӣ",
+            "off": "й—ң",
             "calorieBuyback2": "еҚЎи·ҜйҮҢеӣһиЈңпјҡ<span>{{addBurnedCalories}}</span>",
             "perDay": "{{unit}}пјҸж—Ҙ"
         }
@@ -5913,8 +5913,8 @@
             "tue": "二",
             "wed": "三",
             "flow": "жөҒйҮҸпјҡ{{flow_level}}",
-            "mucus": "分泌物：",
-            "energy": "精力："
+            "mucus": "еҲҶжіҢзү©пјҡ",
+            "energy": "зІҫеҠӣпјҡ"
         },
         "care": {
             "add": "加",
@@ -6049,14 +6049,14 @@
         "cycleInsights": {
             "total": "е…ұ {{total}} ж¬Ў",
             "logs": "{{phase}}пјҡ{{val}} зӯҶиЁҳйҢ„",
-            "menstrual": "月經期",
-            "fertile": "易孕期",
-            "ovulation": "排卵期",
-            "luteal": "黃體期"
+            "menstrual": "жңҲз¶“жңҹ",
+            "fertile": "жҳ“еӯ•жңҹ",
+            "ovulation": "жҺ’еҚөжңҹ",
+            "luteal": "й»ғй«”жңҹ"
         },
         "cycleSymptomPicker": {
-            "symptomName": "症狀名稱",
-            "eGFatigue": "例如：攰"
+            "symptomName": "з—ҮзӢҖеҗҚзЁұ",
+            "eGFatigue": "дҫӢеҰӮпјҡж”°"
         },
         "cycleToday": {
             "editCycleSettings": "編輯週期設定",
@@ -6064,10 +6064,10 @@
         },
         "dailyLogPanel": {
             "kg": "-- kg",
-            "hideProduct": "收埋產品",
+            "hideProduct": "ж”¶еҹӢз”ўе“Ғ",
             "showProduct": "顯示產品",
-            "deleteProduct": "刪除產品",
-            "productName": "產品名稱",
+            "deleteProduct": "еҲӘйҷӨз”ўе“Ғ",
+            "productName": "з”ўе“ҒеҗҚзЁұ",
             "eGOrganicTampon": "дҫӢеҰӮпјҡжңүж©ҹиЎӣз”ҹжЈүжўқ",
             "capacityMl": "容量（ml）",
             "decrease": "жёӣе°‘ {{displayName}}",
@@ -6101,9 +6101,9 @@
         "errorLoadingPreferences": "無法載入聊天喜好設定.",
         "successClearingHistory": "聊天記錄已成功清除.",
         "voice": {
-            "start": "口述訊息",
-            "stop": "停止口述",
-            "cancel": "取消口述",
+            "start": "еҸЈиҝ°иЁҠжҒҜ",
+            "stop": "еҒңжӯўеҸЈиҝ°",
+            "cancel": "еҸ–ж¶ҲеҸЈиҝ°",
             "unsupported": "е‘ўеҖӢзҖҸиҰҪеҷЁе””ж”ҜжҸҙе‘ўеҖӢиӘһйҹіжЁЎејҸгҖӮеҺ»иӘһйҹіиЁӯе®ҡжҸҖ AI иҪүйҢ„пјҢжҲ–иҖ…иҪүз”Ёз¬¬дәҢеҖӢзҖҸиҰҪеҷЁгҖӮAI дёҖе®ҡе””жңғиҮӘеӢ•й–Ӣ.",
             "permission": "еҺ»зҖҸиҰҪеҷЁиЁӯе®ҡеәҰз•ҖеҖӢе’ӘжӮЁжҺӮпјҢе…ҲеҸҜд»ҘеҸЈиҝ°иЁҠжҒҜ.",
             "tooLarge": "йҢ„йҹіи¶…йҒҺе’— 10 MBгҖӮи©Ұеҗ“и¬ӣзҹӯе•І.",
@@ -6116,14 +6116,14 @@
         "sparkyChat": {
             "sparkyAICoach": "Sparky AI ж•ҷз·ҙ",
             "yourPersonalAINutritionAnd": "жӮЁе°Ҳеұ¬еҳ… AI зҮҹйӨҠеҗҢеҒҘиә«ж•ҷз·ҙ.",
-            "selectProvider": "揀提供方",
+            "selectProvider": "жҸҖжҸҗдҫӣж–№",
             "clearChatHistory": "清走聊天記錄",
-            "expandChat": "展開聊天",
-            "minimizeChat": "收埋聊天",
-            "closeChat": "停止聊天"
+            "expandChat": "еұ•й–ӢиҒҠеӨ©",
+            "minimizeChat": "ж”¶еҹӢиҒҠеӨ©",
+            "closeChat": "еҒңжӯўиҒҠеӨ©"
         },
         "sparkyChatInterface": {
-            "chatError": "聊天錯誤",
+            "chatError": "иҒҠеӨ©йҢҜиӘӨ",
             "failedToProcessMessagePlease": "иҷ•зҗҶе””еҲ°иЁҠжҒҜгҖӮжӘўжҹҘеҗ“жӮЁеҳ… AI жңҚеӢҷиЁӯе®ҡ."
         }
     },
@@ -6178,8 +6178,8 @@
             "addCustomNutrient": "加入自訂營養素",
             "setTheDisplayUnitAnd": "иЁӯе®ҡйЎҜзӨәе–®дҪҚпјҢеҗҢеҹӢжҮүи©ІеҢҜе…Ҙе‘ўеҖӢзҮҹйӨҠзҙ еҳ…жҸҗдҫӣж–№еҗҚзЁұпјҲеҲҘеҗҚпјү.",
             "nutrientName": "營養素名稱",
-            "eGMagnesium": "例如：鎂",
-            "unit": "單位",
+            "eGMagnesium": "дҫӢеҰӮпјҡйҺӮ",
+            "unit": "е–®дҪҚ",
             "providerAliases": "提供方別名",
             "typeANamePressEnter": "жү“еҖӢеҗҚеҶҚж’і Enter",
             "nutrientAdded": "гҖҢ{{name}}гҖҚе·ІеҠ е…Ҙ.",
@@ -6187,19 +6187,19 @@
             "adding": "加入緊…"
         },
         "deleteFoodDialog": {
-            "view": "睇",
-            "otherUser": "其他用戶"
+            "view": "зқҮ",
+            "otherUser": "е…¶д»–з”ЁжҲ¶"
         },
-        "openMenu": "開選單",
+        "openMenu": "й–ӢйҒёе–®",
         "mealManagement": {
-            "openMenu": "開選單"
+            "openMenu": "й–ӢйҒёе–®"
         },
         "mealUnitSelector": {
             "selectTheQuantityForThis": "жҸҖе‘ўйӨҗе–әйӨҗиҶіиЁҲеҠғе…Ҙйқўеҳ…д»ҪйҮҸ.",
-            "quantity": "份量",
-            "unit": "單位",
+            "quantity": "д»ҪйҮҸ",
+            "unit": "е–®дҪҚ",
             "nutritionFor": "{{quantity}} {{displayUnit}}еҳ…зҮҹйӨҠпјҡ",
-            "updateMeal": "更新餐膳",
+            "updateMeal": "жӣҙж–°йӨҗиҶі",
             "addToMealPlan": "加入餐膳計劃",
             "gProtein2": "иӣӢзҷҪиіӘ {{protein}} е…Ӣ",
             "gCarbs2": "зўіж°ҙеҢ–еҗҲзү© {{carbs}} е…Ӣ",
@@ -6325,16 +6325,16 @@
         "title": "匯入健康資料",
         "uploadCSV": "上載 CSV",
         "validationError": "冇嘢可以匯入",
-        "bodyMeasurements": "身體量度",
-        "sleep": "瞓覺",
+        "bodyMeasurements": "иә«й«”йҮҸеәҰ",
+        "sleep": "зһ“иҰә",
         "optionalStageEventsJSONLeave": "еҸҜйҒёеҳ… stage_events JSONпјҲз•ҷз©әе°ұж·ЁдҝӮжңүжҢҒзәҢжҷӮй–“пјүгҖӮйҡҺж®өйЎһеһӢпјҡdeepгҖҒlightгҖҒremгҖҒawake",
         "vitalsCustom": "生命體徵同自訂",
         "acceptedVitalTypesOrUse": "жҺҘеҸ—еҳ…з”ҹе‘Ҫй«”еҫөйЎһеһӢпјҲжҲ–иҖ…з”Ёд»»дҪ•иҮӘиЁӮйЎһеҲҘеҗҚзЁұпјү",
-        "dailyActivity": "每日活動",
+        "dailyActivity": "жҜҸж—Ҙжҙ»еӢ•",
         "acceptedActivityTypes": "接受嘅活動類型",
-        "hydration": "水份",
+        "hydration": "ж°ҙд»Ҫ",
         "dailyWaterIntakeValuesAre": "жҜҸж—Ҙж°ҙд»Ҫж”қеҸ–гҖӮж•ёеҖјжңғиҪүеҒҡжҜ«еҚҮ.",
-        "mood": "心情"
+        "mood": "еҝғжғ…"
     },
     "diaryCsvImport": {
         "fileTooLarge": "所選檔案太大.請上載細過 25MB 嘅檔案.",
@@ -6461,30 +6461,30 @@
         "almostThere": "差唔多喇！",
         "securingYourFamilyDashboard": "дҝқиӯ·з·ҠжӮЁеҳ…е®¶еәӯе„ҖиЎЁжқҝвҖҰ",
         "sparkyFitnessLogo": "SparkyFitness жЁҷиӘҢ",
-        "warning": "警告",
+        "warning": "иӯҰе‘Ҡ",
         "authenticationFailed": "驗證失敗",
-        "signIn": "登入",
-        "signUp": "註冊",
+        "signIn": "зҷ»е…Ҙ",
+        "signUp": "иЁ»еҶҠ",
         "registrationIsCurrentlyDisabled": "註冊而家停咗.",
-        "email": "電郵",
+        "email": "йӣ»йғө",
         "enterYourEmail": "輸入您嘅電郵",
-        "password": "密碼",
+        "password": "еҜҶзўј",
         "enterYourPassword": "輸入您嘅密碼",
         "forgotPassword": "唔記得密碼？",
-        "signingIn": "登入緊…",
+        "signingIn": "зҷ»е…Ҙз·ҠвҖҰ",
         "orSignInWith": "жҲ–иҖ…з”Ёд»ҘдёӢж–№ејҸзҷ»е…Ҙ",
         "signInWithPasskey": "з”Ё Passkey зҷ»е…Ҙ",
         "requestMagicLink": "攞魔法連結",
         "logo": "{{display_name}} жЁҷиӘҢ",
         "signInWithOIDC": "з”Ё OIDC зҷ»е…Ҙ",
-        "fullName": "全名",
+        "fullName": "е…ЁеҗҚ",
         "enterYourFullName": "輸入您嘅全名",
-        "createAPassword": "建立密碼",
+        "createAPassword": "е»әз«ӢеҜҶзўј",
         "creatingAccount": "建立緊帳戶…",
         "magicLinkRequestDialog": {
             "requestMagicLink": "攞魔法連結",
             "enterYourEmailToReceive": "ијёе…ҘжӮЁеҳ…йӣ»йғөпјҢж”¶дёҖеҖӢзҷ»е…Ҙз”Ёеҳ…йӯ”жі•йҖЈзөҗ.",
-            "email": "電郵",
+            "email": "йӣ»йғө",
             "enterYourEmail": "輸入您嘅電郵",
             "sending": "傳送緊…",
             "sendMagicLink": "傳送魔法連結"
@@ -6499,22 +6499,22 @@
             "invalidOrMissingPasswordReset": "еҜҶзўјйҮҚиЁӯж¬Ҡжқ–з„Ўж•ҲжҲ–иҖ…е””иҰӢе’—.",
             "sparkyFitnessLogo": "SparkyFitness жЁҷиӘҢ",
             "setYourNewPassword": "設定您嘅新密碼.",
-            "newPassword": "新密碼",
+            "newPassword": "ж–°еҜҶзўј",
             "enterNewPassword": "輸入新密碼",
             "confirmNewPassword": "確認新密碼",
             "confirmNewPassword2": "確認新密碼",
-            "resetting": "重設緊…",
-            "resetPassword": "重設密碼",
-            "backToSignIn": "返去登入"
+            "resetting": "йҮҚиЁӯз·ҠвҖҰ",
+            "resetPassword": "йҮҚиЁӯеҜҶзўј",
+            "backToSignIn": "иҝ”еҺ»зҷ»е…Ҙ"
         },
         "forgotPasswordPage": {
             "sparkyFitnessLogo": "SparkyFitness жЁҷиӘҢ",
             "enterYourEmailToReceive": "ијёе…ҘжӮЁеҳ…йӣ»йғөпјҢж”¶дёҖеҖӢеҜҶзўјйҮҚиЁӯйҖЈзөҗ.",
-            "email": "電郵",
+            "email": "йӣ»йғө",
             "enterYourEmail": "輸入您嘅電郵",
             "sending": "傳送緊…",
             "sendResetLink": "傳送重設連結",
-            "backToSignIn": "返去登入"
+            "backToSignIn": "иҝ”еҺ»зҷ»е…Ҙ"
         },
         "builtForFamiliesPoweredBy": "為家庭而建。由 AI 驅動。一齊追蹤食材、健身、水份同健康."
     },
@@ -6636,9 +6636,9 @@
         },
         "endFastDialog": {
             "greatJobYouCanEdit": "еҒҡеҫ—еҘҪпјҒеҰӮжһңжӮЁжјҸе’—ж’іжҺЈпјҢеҸҜд»Ҙе–әдёӢйқўж”№й–Ӣе§ӢпјҸзөҗжқҹжҷӮй–“.",
-            "startTime": "開始時間",
-            "endTime": "結束時間",
-            "endFast": "結束斷食",
+            "startTime": "й–Ӣе§ӢжҷӮй–“",
+            "endTime": "зөҗжқҹжҷӮй–“",
+            "endFast": "зөҗжқҹж–·йЈҹ",
             "youFastedFor2": "жӮЁж–·е’— <span>{{durationFormatted}}</span>.",
             "fastCompleted": "斷食完成！🎉"
         },
@@ -6646,7 +6646,7 @@
             "goalReached": "已達到目標"
         },
         "fastingZoneBar": {
-            "metabolicState": "代謝狀態",
+            "metabolicState": "д»Ји¬қзӢҖж…Ӣ",
             "hours": "{{start}}-{{end}} еҖӢйҗҳ"
         }
     },
@@ -6941,10 +6941,10 @@
         "pregnancyToday": {
             "babyGrowth": "BB 成長",
             "kickCounter": "胎動計數器",
-            "contractions": "宮縮",
-            "bumpPhoto": "肚相",
+            "contractions": "е®®зё®",
+            "bumpPhoto": "иӮҡзӣё",
             "foodMeds": "食物同藥物",
-            "vitals": "生命體徵",
+            "vitals": "з”ҹе‘Ҫй«”еҫө",
             "checklist": "檢查清單",
             "lengthAndWeight": "≈ {{lengthCm}} cm · {{weightG}} g",
             "lengthOnly": "≈ {{lengthCm}} cm"
@@ -6958,9 +6958,9 @@
             "babyAtWeekInsideThe": "еӯҗе®®е…Ҙйқўз¬¬ {{week}} йҖұеҳ… BB"
         },
         "foodMedSafetySearch": {
-            "safe": "安全",
-            "caution": "小心",
-            "avoid": "避免"
+            "safe": "е®үе…Ё",
+            "caution": "е°Ҹеҝғ",
+            "avoid": "йҒҝе…Қ"
         }
     },
     "providers": {
@@ -7258,11 +7258,11 @@
         "aiEstimateSection": {
             "convertWithAI": "用 AI 換算",
             "estimatingIn": "дј°з®—з·Ҡ {{fromAmount}} {{fromUnit}} зӯүж–је№ҫеӨҡ {{toUnit}}вҖҰ",
-            "tryAgain": "再試多次",
-            "dismiss": "唔理",
+            "tryAgain": "еҶҚи©ҰеӨҡж¬Ў",
+            "dismiss": "е””зҗҶ",
             "estimatedAbout": "дј°з®— - еӨ§зҙ„ {{estimatedAmount}} {{toUnit}}",
             "genericEstimateVerifyIfAccuracy": "дёҖиҲ¬дј°з®— - иҰҒжә–зўәе°ұиҮӘе·ұж ёе°Қеҗ“.",
-            "useThis": "用呢個",
+            "useThis": "з”Ёе‘ўеҖӢ",
             "estimate2": "- {{confidence}} дј°з®—"
         }
     },
@@ -7487,21 +7487,21 @@
             "noHeartRate": "今次訓練冇心率樣本.",
             "trends": {
                 "title": "и·‘жӯҘпјҢжңҖиҝ‘ 12 йҖұ",
-                "thisWeek": "今個星期",
+                "thisWeek": "д»ҠеҖӢжҳҹжңҹ",
                 "thisWeekAbove": "д»ҠеҖӢжҳҹжңҹжҜ”жӮЁиҝ‘жңҹе№іеқҮй«ҳ {{percent}}%",
                 "thisWeekBelow": "д»ҠеҖӢжҳҹжңҹжҜ”жӮЁиҝ‘жңҹе№іеқҮдҪҺ {{percent}}%",
-                "longestRun": "最長跑程",
-                "efficiency": "效率",
+                "longestRun": "жңҖй•·и·‘зЁӢ",
+                "efficiency": "ж•ҲзҺҮ",
                 "efficiencyHint": "ж•ҲзҺҮдҝӮжҢҮ 20 еҲҶйҗҳжҲ–д»ҘдёҠи·‘зЁӢе…ҘйқўпјҢжҜҸж¬Ўеҝғи·іиЎҢеҲ°еҳ…и·қйӣўпјӣз”Ёијғж—©йҖұж•ёе°ҚжҜ”иҝ‘жңҹгҖӮж•ёеҖјж„Ҳй«ҳпјҢеҚідҝӮе–әзӣёеҗҢеҠӘеҠӣдёӢж„ҲеҒҘеә·.",
                 "raceTimes": "比賽時間估算",
                 "race5k": "5K",
                 "race10k": "10K",
-                "raceHalf": "半馬拉松",
-                "raceMarathon": "馬拉松",
+                "raceHalf": "еҚҠйҰ¬жӢүжқҫ",
+                "raceMarathon": "йҰ¬жӢүжқҫ",
                 "basis1k": "1K",
-                "basis1mi": "1 英里",
+                "basis1mi": "1 иӢұйҮҢ",
                 "basis15k": "15K",
-                "yourRecord": "您嘅紀錄",
+                "yourRecord": "жӮЁеҳ…зҙҖйҢ„",
                 "fromBest": "еҡҹиҮӘжӮЁеҳ… {{distance}}",
                 "raceTimesHint": "дј°з®—жңғе°ҮжӮЁеҳ…жңҖдҪіиЎЁзҸҫжҢүжҜ”дҫӢеҘ—з”ЁеҺ»жҜҸеҖӢи·қйӣўгҖӮе°ҚжӮЁжңӘиЁ“з·ҙйҒҺеҳ…и·қйӣўпјҢдј°з®—жңғжЁӮи§Җе°‘е°‘."
             }
@@ -7653,7 +7653,7 @@
         "foam roll": "泡棉滾筒",
         "e-z curl bar": "E-Z 曲槓",
         "other": "其他",
-        "title": "器材"
+        "title": "еҷЁжқҗ"
     },
     "interval": {
         "ready": "準備",
@@ -7954,141 +7954,141 @@
             "symptomReport": "症狀報告 · {{startDate}} – {{endDate}}"
         },
         "builtIn": {
-            "head": "頭部",
-            "neck": "頸部",
-            "shoulders": "膊頭",
-            "upperBack": "上背",
-            "lowerBack": "下背",
-            "chest": "心口",
-            "abdomen": "腹部",
-            "pelvis": "盆骨",
-            "hips": "髖部",
-            "arms": "手臂",
-            "handsWrists": "手／手腕",
-            "legs": "腳",
-            "knees": "膝頭",
+            "head": "й ӯйғЁ",
+            "neck": "й ёйғЁ",
+            "shoulders": "иҶҠй ӯ",
+            "upperBack": "дёҠиғҢ",
+            "lowerBack": "дёӢиғҢ",
+            "chest": "еҝғеҸЈ",
+            "abdomen": "и…№йғЁ",
+            "pelvis": "зӣҶйӘЁ",
+            "hips": "й«–йғЁ",
+            "arms": "жүӢиҮӮ",
+            "handsWrists": "жүӢпјҸжүӢи…•",
+            "legs": "и…і",
+            "knees": "иҶқй ӯ",
             "feetAnkles": "腳／腳眼",
-            "wholeBody": "成身",
-            "forehead": "額頭",
+            "wholeBody": "жҲҗиә«",
+            "forehead": "йЎҚй ӯ",
             "behindBothEyes": "兩隻眼後面",
-            "behindLeftEye": "左眼後面",
-            "behindRightEye": "右眼後面",
+            "behindLeftEye": "е·ҰзңјеҫҢйқў",
+            "behindRightEye": "еҸізңјеҫҢйқў",
             "leftTemple": "左邊太陽穴",
             "rightTemple": "右邊太陽穴",
-            "topOfHead": "頭頂",
-            "backOfHead": "後尾枕",
-            "jaw": "下巴",
-            "sinuses": "鼻竇",
-            "face": "塊面",
-            "wholeHead": "成個頭",
-            "throbbing": "跳住痛",
-            "pulsing": "脈動感",
-            "sharp": "刺痛",
+            "topOfHead": "й ӯй Ӯ",
+            "backOfHead": "еҫҢе°ҫжһ•",
+            "jaw": "дёӢе·ҙ",
+            "sinuses": "йј»з«Ү",
+            "face": "еЎҠйқў",
+            "wholeHead": "жҲҗеҖӢй ӯ",
+            "throbbing": "и·ідҪҸз—ӣ",
+            "pulsing": "и„ҲеӢ•ж„ҹ",
+            "sharp": "еҲәз—ӣ",
             "dullAche": "鈍痛／痠痛",
-            "burning": "灼熱感",
-            "stiffness": "僵硬",
-            "shooting": "放射痛",
-            "stabbing": "拮住痛",
-            "pressure": "壓迫感",
-            "cramping": "抽筋痛",
-            "itchy": "痕",
-            "aura": "先兆",
-            "nausea": "作嘔",
-            "vomiting": "嘔吐",
-            "neckPain": "頸痛",
-            "stuffyNose": "鼻塞",
-            "dizziness": "頭暈",
-            "lightSensitivity": "怕光",
-            "soundSensitivity": "怕嘈",
+            "burning": "зҒјзҶұж„ҹ",
+            "stiffness": "еғөзЎ¬",
+            "shooting": "ж”ҫе°„з—ӣ",
+            "stabbing": "жӢ®дҪҸз—ӣ",
+            "pressure": "еЈ“иҝ«ж„ҹ",
+            "cramping": "жҠҪзӯӢз—ӣ",
+            "itchy": "з—•",
+            "aura": "е…Ҳе…Ҷ",
+            "nausea": "дҪңеҳ”",
+            "vomiting": "еҳ”еҗҗ",
+            "neckPain": "й ёз—ӣ",
+            "stuffyNose": "йј»еЎһ",
+            "dizziness": "й ӯжҡҲ",
+            "lightSensitivity": "жҖ•е…ү",
+            "soundSensitivity": "жҖ•еҳҲ",
             "touchSensitivity": "掂親都敏感",
             "smellSensitivity": "對氣味敏感",
-            "fatigue": "攰",
-            "irritability": "忟憎",
-            "confusion": "思緒混亂",
-            "sweating": "出汗",
+            "fatigue": "ж”°",
+            "irritability": "еҝҹжҶҺ",
+            "confusion": "жҖқз·’ж··дәӮ",
+            "sweating": "еҮәжұ—",
             "bodyTemperatureChange": "體溫變化",
-            "stomachAche": "肚痛",
-            "visionProblems": "視力問題",
+            "stomachAche": "иӮҡз—ӣ",
+            "visionProblems": "иҰ–еҠӣе•ҸйЎҢ",
             "numbnessTingling": "麻痺／針拮感",
             "difficultySpeaking": "講嘢困難",
-            "ringingInEars": "耳鳴",
+            "ringingInEars": "иҖійіҙ",
             "poorSleep": "瞓得唔好",
-            "tooMuchSleep": "瞓太多",
+            "tooMuchSleep": "зһ“еӨӘеӨҡ",
             "irregularSleepSchedule": "瞓覺時間唔定時",
             "skippedMeal": "跳過一餐",
-            "dehydration": "缺水",
-            "caffeine": "咖啡因",
-            "alcohol": "酒精",
-            "redWine": "紅酒",
-            "chocolate": "朱古力",
-            "agedCheese": "陳年芝士",
+            "dehydration": "зјәж°ҙ",
+            "caffeine": "е’–е•Ўеӣ",
+            "alcohol": "й…’зІҫ",
+            "redWine": "зҙ…й…’",
+            "chocolate": "жңұеҸӨеҠӣ",
+            "agedCheese": "йҷіе№ҙиҠқеЈ«",
             "curedMeats": "醃製肉類",
-            "mSG": "味精",
+            "mSG": "е‘ізІҫ",
             "artificialSweeteners": "人工甜味劑",
             "histamineRichFood": "高組胺食材",
-            "stress": "壓力",
+            "stress": "еЈ“еҠӣ",
             "overexertion": "過度操勞",
             "screenTime": "睇螢幕時間",
-            "travel": "去旅行",
-            "weatherChange": "天氣轉變",
-            "brightLight": "強光",
-            "loudNoise": "好大聲",
-            "strongSmell": "強烈氣味",
-            "pollen": "花粉",
-            "dust": "塵",
-            "menstruation": "經期",
+            "travel": "еҺ»ж—…иЎҢ",
+            "weatherChange": "еӨ©ж°ЈиҪүи®Ҡ",
+            "brightLight": "еј·е…ү",
+            "loudNoise": "еҘҪеӨ§иҒІ",
+            "strongSmell": "еј·зғҲж°Је‘і",
+            "pollen": "иҠұзІү",
+            "dust": "еЎө",
+            "menstruation": "з¶“жңҹ",
             "hormonalChange": "荷爾蒙變化",
             "medicationOveruse": "藥物用得太多",
-            "illness": "病咗",
-            "rest": "休息",
+            "illness": "з—…е’—",
+            "rest": "дј‘жҒҜ",
             "darkQuietRoom": "又黑又靜嘅房",
-            "coldCompress": "凍敷",
-            "warmCompress": "暖敷",
-            "heatPack": "熱敷包",
+            "coldCompress": "еҮҚж•·",
+            "warmCompress": "жҡ–ж•·",
+            "heatPack": "зҶұж•·еҢ…",
             "scalpMassage": "頭皮按摩",
             "templePressure": "撳太陽穴",
-            "stretching": "拉筋",
-            "meditation": "冥想",
+            "stretching": "жӢүзӯӢ",
+            "meditation": "еҶҘжғі",
             "hydration": "補充水份",
-            "sleep": "瞓覺",
-            "moodChange": "情緒轉變",
-            "poorConcentration": "好難集中",
-            "yawning": "打喊露",
-            "foodCravings": "好想食嘢",
-            "neckStiffness": "頸梗",
+            "sleep": "зһ“иҰә",
+            "moodChange": "жғ…з·’иҪүи®Ҡ",
+            "poorConcentration": "еҘҪйӣЈйӣҶдёӯ",
+            "yawning": "жү“е–ҠйңІ",
+            "foodCravings": "еҘҪжғійЈҹеҳў",
+            "neckStiffness": "й ёжў—",
             "frequentUrination": "成日去小便",
-            "visual": "視覺",
-            "sensory": "感覺",
+            "visual": "иҰ–иҰә",
+            "sensory": "ж„ҹиҰә",
             "motor": "運動功能",
-            "speech": "語言",
-            "drained": "散晒",
-            "stiffNeck": "頸梗",
+            "speech": "иӘһиЁҖ",
+            "drained": "ж•Јжҷ’",
+            "stiffNeck": "й ёжў—",
             "foodDrink": "食物同飲品",
-            "lifestyle": "生活習慣",
-            "environment": "環境",
-            "hormonal": "荷爾蒙",
-            "other": "其他",
-            "headache": "頭痛",
-            "constipation": "便秘",
-            "diarrhea": "肚屙",
+            "lifestyle": "з”ҹжҙ»зҝ’ж…Ј",
+            "environment": "з’°еўғ",
+            "hormonal": "иҚ·зҲҫи’ҷ",
+            "other": "е…¶д»–",
+            "headache": "й ӯз—ӣ",
+            "constipation": "дҫҝз§ҳ",
+            "diarrhea": "иӮҡеұҷ",
             "acidRefluxGERD": "иғғй…ёеҖ’жөҒпјҸGERD",
             "stomachPainCramping": "肚痛／絞痛",
-            "migraine": "偏頭痛",
-            "backPain": "背痛",
-            "jointPain": "關節痛",
-            "musclePain": "肌肉痛",
-            "bloating": "肚脹",
-            "anxiety": "焦慮",
-            "panicAttack": "恐慌發作",
-            "brainFog": "腦霧",
-            "hayFever": "花粉症",
-            "cough": "咳",
-            "wheezing": "哮喘聲",
-            "soreThroat": "喉嚨痛",
-            "rash": "出疹",
+            "migraine": "еҒҸй ӯз—ӣ",
+            "backPain": "иғҢз—ӣ",
+            "jointPain": "й—ңзҜҖз—ӣ",
+            "musclePain": "иӮҢиӮүз—ӣ",
+            "bloating": "иӮҡи„№",
+            "anxiety": "з„Ұж…®",
+            "panicAttack": "жҒҗж…ҢзҷјдҪң",
+            "brainFog": "и…Ұйң§",
+            "hayFever": "иҠұзІүз—Ү",
+            "cough": "е’і",
+            "wheezing": "е“®е–ҳиҒІ",
+            "soreThroat": "е–үеҡЁз—ӣ",
+            "rash": "еҮәз–№",
             "eczemaFlare": "濕疹發作",
-            "itching": "痕",
-            "fever": "發燒"
+            "itching": "з—•",
+            "fever": "зҷјзҮ’"
         }
     },
     "guidedWorkout": {
@@ -8300,8 +8300,8 @@
         "system": "系統（預設）",
         "ai": "AI 轉錄",
         "model": "語音模型",
-        "chooseModel": "揀個模型",
-        "chatModel": "用嚟傾偈",
+        "chooseModel": "жҸҖеҖӢжЁЎеһӢ",
+        "chatModel": "з”ЁеҡҹеӮҫеҒҲ",
         "syncHint": "е‘ўе•ІиЁӯе®ҡз¶Ій ҒзүҲеҗҢжүӢж©ҹзүҲйғҪе•ұз”ЁгҖӮзҶ„е’—иӘһйҹіијёе…ҘеҸӘдҝӮжңғж”¶еҹӢеҖӢе’ӘпјҢе””жңғж”№жӮЁжҸҖе’—еҳ…жЁЎеһӢ.",
         "systemHint": "з”ЁжӮЁйғЁж©ҹжҲ–иҖ…зҖҸиҰҪеҷЁеҳ…иӘһйҹіиҫЁиӘҚеҷЁпјҢе””жңғж”¶ Sparky AI иҪүйҢ„йҢўгҖӮз”Ёе””з”ЁеҲ°еҗҢиҰҒе””иҰҒдёҠз¶Іиҷ•зҗҶпјҢе°ұзқҮжӮЁйғЁж©ҹжҲ–иҖ…зҖҸиҰҪеҷЁ.",
         "aiHint": "йҢ„йҹіжңғз¶“жӮЁеҖӢдјәжңҚеҷЁйҖҒеҺ»жҸҖе’—еҳ… AI жҸҗдҫӣж–№гҖӮжҸҗдҫӣж–№еҸҜиғҪиҰҒж”¶йҢўгҖӮжҸҖеҖӢжЁЎеһӢе…Ҳй–ӢеҲ° AI иҪүйҢ„.",
@@ -8315,7 +8315,7 @@
     "hooks": {
         "auth": {
             "userRegisteredSuccessfully": "用戶註冊成功",
-            "loginSuccessful": "登入成功",
+            "loginSuccessful": "зҷ»е…ҘжҲҗеҠҹ",
             "demoLoginSuccessful": "示範登入成功"
         },
         "nutrionix": {
@@ -8348,7 +8348,7 @@
             "importError": "匯入錯誤",
             "canadianNutrientFileLibraryCleared": "еҠ жӢҝеӨ§зҮҹйӨҠзҙ жӘ”жЎҲеә«е·Іжё…йҷӨ",
             "successfullyRemovedFoodItemsFrom": "е·ІжҲҗеҠҹз”ұжӮЁеҳ…еә«еәҰз§»йҷӨ {{deletedCount}} зЁ®йЈҹжқҗ.",
-            "deletionError": "刪除錯誤"
+            "deletionError": "еҲӘйҷӨйҢҜиӘӨ"
         },
         "useCustomNutrients": {
             "failedToAddCustomNutrient": "еҠ е””еҲ°иҮӘиЁӮзҮҹйӨҠзҙ .",
@@ -8556,7 +8556,7 @@
             "allergenSyncComplete": "致敏原同步完成",
             "allYourOpenFoodFactsFoodsAlready": "жӮЁеҳ…жүҖжңү OpenFoodFacts йЈҹжқҗе·Із¶“жңүиҮҙж•ҸеҺҹж•ёж“ҡ.",
             "updatedOfFoodS": "е·Іжӣҙж–° {{updated}}пјҸ{{total}} зЁ®йЈҹжқҗ.",
-            "syncFailed": "同步失敗",
+            "syncFailed": "еҗҢжӯҘеӨұж•—",
             "couldNotSyncAllergensPlease": "еҗҢжӯҘе””еҲ°иҮҙж•ҸеҺҹгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў."
         }
     },
@@ -8564,12 +8564,12 @@
         "trace": "еҫ®йҮҸпјҡ{{trace}}"
     },
     "announcementDialog": {
-        "announcement": "公告",
+        "announcement": "е…¬е‘Ҡ",
         "gotItDonTShow": "зҹҘйҒ“е–ҮпјҢе””еҘҪеҶҚйЎҜзӨә",
         "published2": "зҷјеёғжҷӮй–“пјҡ{{value}}"
     },
     "dayNavigator": {
-        "today": "今日"
+        "today": "д»Ҡж—Ҙ"
     },
     "draggableChatbotButton": {
         "restoreAIChat": "還原 AI 聊天",
@@ -8579,16 +8579,16 @@
     },
     "exerciseCharts": {
         "workoutSessionBreakdown": {
-            "set": "組 #",
-            "rest": "休息",
-            "reps": "次數",
-            "volume": "訓練量",
+            "set": "зө„ #",
+            "rest": "дј‘жҒҜ",
+            "reps": "ж¬Ўж•ё",
+            "volume": "иЁ“з·ҙйҮҸ",
             "set2": "з¬¬ {{setNumber}} зө„",
-            "muscleGroupName": "肌群名稱",
-            "exerciseName": "動作名稱",
-            "set3": "組",
-            "primaryMuscles": "主要肌群",
-            "secondaryMuscles": "次要肌群",
+            "muscleGroupName": "иӮҢзҫӨеҗҚзЁұ",
+            "exerciseName": "еӢ•дҪңеҗҚзЁұ",
+            "set3": "зө„",
+            "primaryMuscles": "дё»иҰҒиӮҢзҫӨ",
+            "secondaryMuscles": "ж¬ЎиҰҒиӮҢзҫӨ",
             "untargetedMuscles": "未針對肌群"
         }
     },
@@ -8614,30 +8614,30 @@
             "preview": "й җиҰҪ {{index}}"
         },
         "exerciseImportCSV": {
-            "true": "係",
-            "false": "唔係"
+            "true": "дҝӮ",
+            "false": "е””дҝӮ"
         },
         "exerciseSearch": {
-            "selectAProvider": "揀提供方",
-            "all": "全部"
+            "selectAProvider": "жҸҖжҸҗдҫӣж–№",
+            "all": "е…ЁйғЁ"
         },
         "exerciseSearchListItem": {
-            "primary": "主要：",
-            "secondary": "次要：",
-            "equipment": "器材：",
+            "primary": "дё»иҰҒпјҡ",
+            "secondary": "ж¬ЎиҰҒпјҡ",
+            "equipment": "еҷЁжқҗпјҡ",
             "readInstructionsAloud": "讀出動作說明",
             "wger": "Wger",
             "freeDB": "Free DB",
             "perHour": "{{unit}}пјҸеҖӢйҗҳ"
         },
-        "muscles": "肌群：",
-        "equipment": "器材：",
-        "openMenu": "開啟選單",
+        "muscles": "иӮҢзҫӨпјҡ",
+        "equipment": "еҷЁжқҗпјҡ",
+        "openMenu": "й–Ӣе•ҹйҒёе–®",
         "sortableExerciseItem": {
             "progressionMode": "漸進模式",
             "progressionOverloadGuide": "漸進同超負荷指南",
             "totalRepGoal": "總次數目標",
-            "fixedTarget": "固定目標",
+            "fixedTarget": "еӣәе®ҡзӣ®жЁҷ",
             "stepLoadRepsOnly": "йҡҺжўҜеҠ ијүпјҲеғ…ж¬Ўж•ёпјү",
             "manualNoOverload": "手動（無超負荷）",
             "targetRepsSet": "每組目標次數",
@@ -8647,7 +8647,7 @@
             "repsRepCount": "次數（次數計）",
             "incrementReps": "遞增（次數）",
             "increment": "йҒһеўһпјҲ{{weightUnit}}пјү",
-            "supersetGroup": "超級組",
+            "supersetGroup": "и¶…зҙҡзө„",
             "soloNoSuperset": "單獨（無超級組）",
             "supersetABlue": "и¶…зҙҡзө„ AпјҲи—ҚиүІпјү",
             "supersetBPurple": "и¶…зҙҡзө„ BпјҲзҙ«иүІпјү",
@@ -8657,7 +8657,7 @@
             "eGHammerStrength": "дҫӢеҰӮпјҡHammer Strength",
             "exerciseNotesCuesOptional": "еӢ•дҪңеӮҷиЁ»пјҸжҸҗзӨәпјҲеҸҜйҒёпјү",
             "eGSeatSetting4": "дҫӢеҰӮпјҡеә§жӨ…иЁӯ 4гҖҒеҜ¬жҸЎгҖҒеә•йғЁеҒңй “вҖҰ",
-            "addSet": "加一組",
+            "addSet": "еҠ дёҖзө„",
             "workoutPresetBlockEditIndividual": "иЁ“з·ҙй җиЁӯеҚҖеЎҠпјҡе–әй җиЁӯз®ЎзҗҶеҷЁеәҰз·ЁијҜеҖӢеҲҘеӢ•дҪң.",
             "understandProgressionTechniquesAndConfig": "дәҶи§ЈжјёйҖІжҠҖе·§пјҢдёҰзӮәжӮЁеҳ…иЁ“з·ҙй…ҚзҪ®иҮӘеӢ•и¶…иІ иҚ·зӣ®жЁҷ.",
             "n1ProgressionModes": "1. 漸進模式",
@@ -8670,7 +8670,7 @@
             "disablesAutomatedOverloadMathFor": "еҒңз”ЁзҶұиә«гҖҒжёӣйҮҸйҖұжҲ–иҖ…иҮӘз”ұиЁ“з·ҙеҳ…иҮӘеӢ•и¶…иІ иҚ·иЁҲз®—.",
             "n2ConfigurationFieldsExamples": "2. й…ҚзҪ®ж¬„дҪҚеҗҢдҫӢеӯҗ",
             "theTotalRepCeilingFor": "е‘ўеҖӢеӢ•дҪңеҳ…зёҪж¬Ўж•ёдёҠйҷҗ.",
-            "incrementAmount": "遞增量",
+            "incrementAmount": "йҒһеўһйҮҸ",
             "theWeightOrRepJump": "йҒ”еҲ°зӣ®жЁҷд№ӢеҫҢеҘ—з”Ёеҳ…йҮҚйҮҸжҲ–иҖ…ж¬Ўж•ёи·іе№….",
             "examples25LbsCables": "дҫӢеӯҗпјҡ+2.5 зЈ…пјҲзәңз№©пјҸеҫ®зҙ°зүҮпјүгҖҒ+5.0 зЈ…пјҲе•һйҲҙпјүгҖҒ+10.0 зЈ…пјҲзЎ¬иҲүпјү.",
             "theMachineOrStationBranding": "ж©ҹеҷЁжҲ–иҖ…иЁ“з·ҙз«ҷе“ҒзүҢгҖӮе””еҗҢиЈҪйҖ е•Ҷеҳ…ж§“жЎҝе·®з•°еҘҪеӨ§.",
@@ -8691,27 +8691,27 @@
             "examples24For38": "例子：24（用於 3×8）、45（用於 3×15）、75（用於 5×15）."
         },
         "workoutPlansManager": {
-            "openMenu": "開啟選單"
+            "openMenu": "й–Ӣе•ҹйҒёе–®"
         },
         "workoutPresetSelector": {
-            "all": "全部",
-            "exercise": "動作",
-            "exercises": "動作",
-            "preset": "預設"
+            "all": "е…ЁйғЁ",
+            "exercise": "еӢ•дҪң",
+            "exercises": "еӢ•дҪң",
+            "preset": "й җиЁӯ"
         },
         "workoutPresetsManager": {
             "sets": "{{totalSets}} зө„",
-            "openMenu": "開啟選單"
+            "openMenu": "й–Ӣе•ҹйҒёе–®"
         },
-        "level": "等級：",
+        "level": "зӯүзҙҡпјҡ",
         "force": "力量類型：",
         "mechanic": "動作機制："
     },
     "foodSearch": {
         "barcodeScanner": {
-            "engine": "引擎",
-            "camera": "相機",
-            "continuousScan": "連續掃描",
+            "engine": "еј•ж“Һ",
+            "camera": "зӣёж©ҹ",
+            "continuousScan": "йҖЈзәҢжҺғжҸҸ",
             "alignBarcode": "對準條碼",
             "quagga2": "quagga2",
             "cameraName": "зӣёж©ҹ {{id}}вҖҰ"
@@ -8737,37 +8737,37 @@
         "failedToProcessTheEdited": "иҷ•зҗҶе””еҲ°е·Із·ЁијҜеҳ…йЈҹжқҗ",
         "failedToRetrieveDetailedNutrition": "ж”һе””еҲ°е‘ўеҖӢй …зӣ®еҳ…и©ізҙ°зҮҹйӨҠ.",
         "failedToRetrieveDetailedNutrition2": "ж”һе””еҲ°и©ізҙ°зҮҹйӨҠгҖӮж”№з”ЁйғЁеҲҶж•ёж“ҡ.",
-        "all": "全部",
+        "all": "е…ЁйғЁ",
         "nutrientFormGrid": {
             "glycemicIndexGI": "升糖指數（GI）",
-            "selectGI": "揀 GI",
+            "selectGI": "жҸҖ GI",
             "calories": "еҚЎи·ҜйҮҢпјҲ{{energyUnit}}пјү",
-            "none": "無",
-            "veryLow": "極低",
-            "low": "低",
-            "medium": "中",
-            "high": "高",
-            "veryHigh": "極高"
+            "none": "з„Ў",
+            "veryLow": "жҘөдҪҺ",
+            "low": "дҪҺ",
+            "medium": "дёӯ",
+            "high": "й«ҳ",
+            "veryHigh": "жҘөй«ҳ"
         },
         "nutrientGrid": {
-            "protein": "蛋白質",
-            "carbs": "碳水",
-            "fat": "脂肪",
-            "fiber": "纖維",
-            "sugar": "糖分",
-            "sodium": "鈉",
-            "cholesterol": "膽固醇",
+            "protein": "иӣӢзҷҪиіӘ",
+            "carbs": "зўіж°ҙ",
+            "fat": "и„ӮиӮӘ",
+            "fiber": "зә–з¶ӯ",
+            "sugar": "зі–еҲҶ",
+            "sodium": "йҲү",
+            "cholesterol": "иҶҪеӣәйҶҮ",
             "satFat": "飽和脂肪",
-            "transFat": "反式脂肪",
-            "potassium": "鉀",
+            "transFat": "еҸҚејҸи„ӮиӮӘ",
+            "potassium": "йүҖ",
             "vitA": "維他命 A",
             "vitC": "維他命 C",
-            "iron": "鐵",
-            "calcium": "鈣",
+            "iron": "йҗө",
+            "calcium": "йҲЈ",
             "gi": "GI"
         },
         "providerNutrientViewer": {
-            "alreadyMapped": "已對應",
+            "alreadyMapped": "е·Іе°ҚжҮү",
             "alreadyMapsTo": "гҖҢ{{label}}гҖҚе·Із¶“е°ҚжҮүе’—еҺ» {{name}}.",
             "aliasAdded": "別名已加入",
             "willNowImportInto": "гҖҢ{{label}}гҖҚиҖҢе®¶жңғеҢҜе…ҘеҺ» {{name}}.",
@@ -8776,30 +8776,30 @@
             "theseAreTheExactField": "е‘ўе•ІдҝӮ {{providerLabel}} з”Ёеҳ…зўәеҜҰж¬„дҪҚеҗҚзЁұгҖӮеҠ дёҖеҖӢеҒҡеҲҘеҗҚпјҢе°ұеҸҜд»ҘеҢҜе…ҘеҺ»жӮЁеҳ…иҮӘиЁӮзҮҹйӨҠзҙ гҖӮжҜ”е°Қжңғе””зҗҶеӨ§е°ҸеҜ«еҗҢжЁҷй»һ.",
             "viewThisFoodOn": "е–ә {{providerLabel}} еәҰзқҮе‘ўеҖӢйЈҹжқҗ",
             "standard": "жЁҷжә–пјҡ{{standardLabel}}",
-            "addAsAlias": "加做別名",
+            "addAsAlias": "еҠ еҒҡеҲҘеҗҚ",
             "addTo": "е°ҮгҖҢ{{label}}гҖҚеҠ е…Ҙ",
             "newCustomNutrient": "新增自訂營養素"
         },
         "variantCard": {
-            "servingSize": "份量大小",
-            "unitType": "單位類型",
-            "default": "預設",
-            "autoScale": "自動縮放",
+            "servingSize": "д»ҪйҮҸеӨ§е°Ҹ",
+            "unitType": "е–®дҪҚйЎһеһӢ",
+            "default": "й җиЁӯ",
+            "autoScale": "иҮӘеӢ•зё®ж”ҫ",
             "addEquivalentUnit": "加等效單位",
             "duplicateUnit": "複製單位",
-            "removeUnit": "移除單位",
-            "equivalentSize": "等效大小",
-            "removeEquivalent": "移除等效",
-            "allergens": "致敏原",
+            "removeUnit": "з§»йҷӨе–®дҪҚ",
+            "equivalentSize": "зӯүж•ҲеӨ§е°Ҹ",
+            "removeEquivalent": "з§»йҷӨзӯүж•Ҳ",
+            "allergens": "иҮҙж•ҸеҺҹ",
             "nutritionPer2": "жҜҸ {{variant}} еҳ…зҮҹйӨҠ",
             "estimate2": "{{ai_confidence}} дј°з®—",
-            "custom": "自訂",
+            "custom": "иҮӘиЁӮ",
             "aiEstimateConfidence": "AI дј°з®—пјҲ{{confidence}} дҝЎеҝғеәҰпјү",
             "customAllergen": "自訂致敏原…"
         }
     },
     "gitHubSponsorButton": {
-        "sponsor": "贊助"
+        "sponsor": "иҙҠеҠ©"
     },
     "newReleaseDialog": {
         "criticalWARNINGTHISRELEASECONTAINS": "йҮҚеӨ§иӯҰе‘Ҡпјҡе‘ўеҖӢзүҲжң¬еҢ…еҗ«з ҙеЈһжҖ§и®ҠжӣҙпјҒ",
@@ -8827,14 +8827,14 @@
     },
     "profileSwitcher": {
         "yourProfile": "您嘅個人資料",
-        "family": "（家庭）"
+        "family": "пјҲе®¶еәӯпјү"
     },
     "tooltipWarning": {
-        "note": "注意："
+        "note": "жіЁж„Ҹпјҡ"
     },
     "zoomableChart": {
         "maximizedViewOfTheChart": "ең–иЎЁж”ҫеӨ§жӘўиҰ–гҖӮз”ЁжҺ§еҲ¶й …зё®ж”ҫжҲ–иҖ…ж”¶зҙ°.",
-        "reset": "重設"
+        "reset": "йҮҚиЁӯ"
     },
     "ai": {
         "foodPhotoEstimateToolUI": {
@@ -8843,55 +8843,55 @@
         },
         "userServiceListItem": {
             "editService": "編輯服務",
-            "deleteService": "刪除服務"
+            "deleteService": "еҲӘйҷӨжңҚеӢҷ"
         }
     },
     "attachment": {
-        "attachmentPreview": "附件預覽",
+        "attachmentPreview": "йҷ„д»¶й җиҰҪ",
         "imageAttachmentPreview": "圖片附件預覽",
         "attachment": "{{typeLabel}} йҷ„д»¶",
-        "removeFile": "移除檔案",
-        "addAttachment": "加附件"
+        "removeFile": "з§»йҷӨжӘ”жЎҲ",
+        "addAttachment": "еҠ йҷ„д»¶"
     },
     "markdowntext": {
-        "copy": "複製"
+        "copy": "иӨҮиЈҪ"
     },
     "reasoning": {
         "reasoning": "жҺЁзҗҶ{{durationText}}"
     },
     "thread": {
         "scrollToBottom": "碌到最底",
-        "helloThere": "您好！",
+        "helloThere": "жӮЁеҘҪпјҒ",
         "howCanIHelpYou": "д»Ҡж—Ҙжңүе’©еҸҜд»Ҙе№«еҲ°жӮЁпјҹ",
         "sendAMessage": "傳送訊息…",
-        "messageInput": "訊息輸入",
+        "messageInput": "иЁҠжҒҜијёе…Ҙ",
         "sendMessage": "傳送訊息",
-        "stopGenerating": "停止生成",
+        "stopGenerating": "еҒңжӯўз”ҹжҲҗ",
         "thisSession": "今次工作階段",
-        "copy": "複製",
-        "refresh": "重新整理",
-        "more": "更多",
+        "copy": "иӨҮиЈҪ",
+        "refresh": "йҮҚж–°ж•ҙзҗҶ",
+        "more": "жӣҙеӨҡ",
         "exportAsMarkdown": "еҢҜеҮәеҒҡ Markdown",
-        "update": "更新"
+        "update": "жӣҙж–°"
     },
     "toolfallback": {
-        "result": "結果："
+        "result": "зөҗжһңпјҡ"
     },
     "ui": {
         "confirmationDialog": {
-            "warning": "警告"
+            "warning": "иӯҰе‘Ҡ"
         },
         "dataTable": {
-            "search": "搜尋…"
+            "search": "жҗңе°ӢвҖҰ"
         },
         "dateRangeWithPresets": {
-            "quickSelect": "快速揀選",
+            "quickSelect": "еҝ«йҖҹжҸҖйҒё",
             "last7Days": "最近 7 日",
             "last14Days": "最近 14 日",
             "last30Days": "最近 30 日",
             "last90Days": "最近 90 日",
-            "n6Months": "6 個月",
-            "n1Year": "1 年"
+            "n6Months": "6 еҖӢжңҲ",
+            "n1Year": "1 е№ҙ"
         },
         "dialog": {
             "closeWindow": "關閉視窗",
@@ -8905,26 +8905,26 @@
         "testQuickLog": {
             "opkLH": "OPK（LH）",
             "pregnancyHPT": "懷孕（HPT）",
-            "negative": "陰性",
+            "negative": "йҷ°жҖ§",
             "lowLH": "LH 偏低",
             "highLH": "LH 偏高",
             "peakSurge": "達峰激增",
-            "faintLine": "淺色線",
+            "faintLine": "ж·әиүІз·ҡ",
             "positive": "陽性 ✓"
         }
     },
     "errors": {
         "chartErrorFallback": {
             "failedToLoadComponent": "載入唔到元件",
-            "tryAgain": "再試多次"
+            "tryAgain": "еҶҚи©ҰеӨҡж¬Ў"
         },
         "errorComponents": {
-            "returnToHome": "返去主頁",
+            "returnToHome": "иҝ”еҺ»дё»й Ғ",
             "reloadPage": "重新載入頁面"
         },
         "notFound": {
             "oopsPageNotFoundOr": "е“Һе‘ҖпјҒжҗөе””еҲ°й ҒйқўпјҢжҲ–иҖ…зҷјз”ҹе’—ж„ҸеӨ–йҢҜиӘӨ.",
-            "returnToHome": "返去主頁"
+            "returnToHome": "иҝ”еҺ»дё»й Ғ"
         }
     },
     "dietTemplates": {
@@ -8944,11 +8944,11 @@
         "setYourOwnFastingDuration": "иЁӯе®ҡжӮЁиҮӘе·ұеҳ…ж–·йЈҹжҷӮй•·."
     },
     "foodForm": {
-        "volume": "體積",
-        "quantity": "數量"
+        "volume": "й«”з©Қ",
+        "quantity": "ж•ёйҮҸ"
     },
     "moodUtils": {
-        "neutral": "中性"
+        "neutral": "дёӯжҖ§"
     },
     "components": {
         "tagInput": {
@@ -8956,33 +8956,33 @@
         }
     },
     "shoes": {
-        "title": "跑鞋",
+        "title": "и·‘йһӢ",
         "subtitle": "иҝҪи№ӨжҜҸе°Қи·‘йһӢеҳ…йҮҢзЁӢ.",
-        "shoe": "跑鞋",
-        "noShoe": "冇跑鞋",
-        "addShoe": "加跑鞋",
+        "shoe": "и·‘йһӢ",
+        "noShoe": "еҶҮи·‘йһӢ",
+        "addShoe": "еҠ и·‘йһӢ",
         "editShoe": "編輯跑鞋",
         "formDescription": "иҝҪи№ӨдёҖе°ҚйһӢеҳ…йҮҢзЁӢпјҢдёҰе–әиҰҒжҸӣе—°йҷЈж”¶еҲ°жҸҗйҶ’.",
-        "name": "名稱",
-        "brand": "品牌",
-        "model": "型號",
-        "nickname": "花名",
+        "name": "еҗҚзЁұ",
+        "brand": "е“ҒзүҢ",
+        "model": "еһӢиҷҹ",
+        "nickname": "иҠұеҗҚ",
         "purchaseDate": "購買日期",
-        "purchasePrice": "價錢",
+        "purchasePrice": "еғ№йҢў",
         "startingDistance": "иө·е§ӢйҮҢзЁӢпјҲ{{unit}}пјү",
         "retireAt": "йҖҖеҪ№йҮҢзЁӢпјҲ{{unit}}пјү",
         "useAsDefault": "做我嘅預設跑鞋",
         "default": "預設跑鞋",
-        "retired": "已退役",
-        "retiredSection": "已退役",
-        "wornOut": "已磨蝕",
-        "mileage": "里程",
+        "retired": "е·ІйҖҖеҪ№",
+        "retiredSection": "е·ІйҖҖеҪ№",
+        "wornOut": "е·ІзЈЁиқ•",
+        "mileage": "йҮҢзЁӢ",
         "ofLimit": "пјҸ{{limit}} {{unit}}",
         "runCount_other": "{{count}} ж¬Ўи·‘",
         "lastUsed": "дёҠж¬Ўз”Ё {{date}}",
-        "retire": "退役",
+        "retire": "йҖҖеҪ№",
         "retirePrompt": "е‘ўе°ҚйһӢе·Із¶“еҲ°е’—йҮҢзЁӢдёҠйҷҗгҖӮиҰҒйҖҖеҪ№е—Һпјҹ",
-        "reactivate": "重新啟用",
+        "reactivate": "йҮҚж–°е•ҹз”Ё",
         "empty": "жңӘжңүи·‘йһӢгҖӮеҠ дёҖе°ҚпјҢз„¶еҫҢи·‘е—°йҷЈжҸҖдҪўпјҢй–Ӣе§ӢзҙҜиЁҲйҮҢзЁӢ.",
         "deleteTitle": "刪除呢對鞋？",
         "deleteDescription": "з”Ёе‘ўе°ҚйһӢиЁҳйҢ„еҳ…и·‘жӯҘжңғдҝқз•ҷе–әж—ҘиЁҳпјҢдҪҶе””жңғеҶҚйҖЈзөҗеҺ»и·‘йһӢ.",
@@ -8997,29 +8997,29 @@
     "trainingPrograms": {
         "banner": {
             "markDone": "標記做完成",
-            "open": "開啟計劃",
+            "open": "й–Ӣе•ҹиЁҲеҠғ",
             "program": "иЁ“з·ҙиЁҲеҠғпјҡ{{name}}",
-            "scheduled": "已排程",
+            "scheduled": "е·ІжҺ’зЁӢ",
             "scheduledToday": "今日已排程",
-            "upNext": "下一課",
+            "upNext": "дёӢдёҖиӘІ",
             "title": "{{title}} · {{minutes}} 分鐘"
         },
         "calendar": {
-            "done": "完成",
+            "done": "е®ҢжҲҗ",
             "doneOn": "{{date}} е®ҢжҲҗ",
-            "due": "下一課",
+            "due": "дёӢдёҖиӘІ",
             "finish": "{{date}} зөҗжқҹ.",
             "finishedNote": "жҜҸе ӮиЁ“з·ҙйғҪе®ҢжҲҗе’—гҖӮйҮҚж–°й–Ӣе§ӢиЁҲеҠғеҡҹиҰҸеҠғеҸҰдёҖијӘ.",
-            "legendAhead": "已規劃",
-            "legendDone": "完成",
-            "legendNext": "下一課",
+            "legendAhead": "е·ІиҰҸеҠғ",
+            "legendDone": "е®ҢжҲҗ",
+            "legendNext": "дёӢдёҖиӘІ",
             "moves": "йҢҜйҒҺе’—еҳ…иЁ“з·ҙе””жңғдҝҫдәәи·ійҒҺпјҡд№ӢеҫҢеҳ…ж—Ҙжңҹжңғй ҶдҪҸе»¶еҫҢ.",
             "noWorkoutsDay": "呢日冇訓練.",
-            "notScheduled": "未排程",
+            "notScheduled": "жңӘжҺ’зЁӢ",
             "showLess": "顯示少啲",
-            "title": "時間表",
-            "today": "今日",
-            "upcoming": "就嚟到",
+            "title": "жҷӮй–“иЎЁ",
+            "today": "д»Ҡж—Ҙ",
+            "upcoming": "е°ұеҡҹеҲ°",
             "fitsBefore_other": "йҖІеәҰй ҶеҲ©пјҡжӮЁжңғе–ә {{date}} е®ҢжҲҗпјҢжҜ”зӣ®жЁҷж—Ҙжңҹж—© {{count}} ж—Ҙ.",
             "fitsAfter_other": "д»Ҙе‘ўеҖӢйҖІеәҰжӮЁжңғе–ә {{date}} е®ҢжҲҗпјҢжҜ”зӣ®жЁҷж—ҘжңҹйҒІ {{count}} ж—ҘгҖӮеҠ еҖӢиЁ“з·ҙж—ҘжҲ–иҖ…ж”№ж—Ҙжңҹ.",
             "noDays_other": "еү©дҪҺ {{count}} е ӮиЁ“з·ҙгҖӮжҸҖжӮЁеҳ…и·‘жӯҘж—ҘеҡҹзқҮжҜҸе Ӯе№ҫжҷӮеҒҡпјӣе–әе—°д№ӢеүҚпјҢж—ҘиЁҳжҜҸж—ҘйғҪжңғжҸҗдҫӣдёӢдёҖе Ӯ.",
@@ -9036,8 +9036,8 @@
             "chooseWorkout": "揀另一堂訓練",
             "finished": "{{name}} е·Іе®ҢжҲҗ",
             "finishedHint": "еҒҡеҫ—еҘҪгҖӮжӮЁеҸҜд»ҘйҮҚж–°й–Ӣе§ӢжҲ–иҖ…з№јзәҢ.",
-            "goalClear": "清除",
-            "goalDay": "目標日期",
+            "goalClear": "жё…йҷӨ",
+            "goalDay": "зӣ®жЁҷж—Ҙжңҹ",
             "goalDayHint": "еҸҜйҒёпјҢдҫӢеҰӮжҜ”иіҪж—ҘгҖӮдёӢйқўеҳ…жҷӮй–“иЎЁжңғйЎҜзӨәиЁҲеҠғи¶•е””и¶•еҫ—еҲҮ.",
             "goalDaySet": "{{date}} д№ӢеҫҢеҶҮжҺ’зЁӢгҖӮдёӢйқўеҳ…жҷӮй–“иЎЁжңғйЎҜзӨәиЁҲеҠғеҡҹе””еҡҹеҫ—еҲҮ.",
             "markDone": "標記訓練做完成",
@@ -9046,34 +9046,34 @@
             "pickRun": "и·‘ {{number}}",
             "pickWalk": "иЎҢ {{number}}",
             "pickWorkout": "揀一堂訓練",
-            "progressBar": "計劃進度",
-            "restart": "重新開始",
-            "runDays": "跑步日",
+            "progressBar": "иЁҲеҠғйҖІеәҰ",
+            "restart": "йҮҚж–°й–Ӣе§Ӣ",
+            "runDays": "и·‘жӯҘж—Ҙ",
             "runDaysHint": "жҸҖжӮЁжү“з®—иЁ“з·ҙеҳ…ж—ҘеӯҗпјҢжҲ–иҖ…з•ҷз©әе°ұжҜҸж—ҘйЎҜзӨәиЁ“з·ҙ.",
             "runDaysSet": "ж—ҘиЁҳжңғе–әе‘ўе№ҫж—ҘйЎҜзӨәиЁ“з·ҙгҖӮйҢҜйҒҺе’—еҳ…иЁ“з·ҙжңғз¶ӯжҢҒеҫ…е®ҢжҲҗ.",
-            "schedule": "時間表",
-            "skip": "跳過",
-            "startClear": "今日開始",
+            "schedule": "жҷӮй–“иЎЁ",
+            "skip": "и·ійҒҺ",
+            "startClear": "д»Ҡж—Ҙй–Ӣе§Ӣ",
             "startDay": "第一堂訓練",
             "startDayPast": "{{date}} й–Ӣе§ӢгҖӮжӮЁеҳ…дёӢдёҖе ӮиЁ“з·ҙз”ұд»Ҡж—Ҙиө·жҺ’зЁӢ.",
             "startDaySet": "{{date}} й–Ӣе§ӢгҖӮе–әе—°д№ӢеүҚж—ҘиЁҳе””жңғйЎҜзӨәд»»дҪ•еҳў.",
             "startDayToday": "д»Ҡж—Ҙ {{date}} й–Ӣе§ӢгҖӮжғійҒІе•Іе…Ҳй–Ӣе§Ӣеҳ…и©ұпјҢжҸҖеҖӢйҒІе•Іеҳ…ж—Ҙеӯҗ.",
-            "startOver": "重新開始",
+            "startOver": "йҮҚж–°й–Ӣе§Ӣ",
             "switchHint": "и·ҹдёҖеҖӢжҜҸжҳҹжңҹйҖҗжӯҘеҠ еј·еҳ…иЁҲеҠғ.",
-            "title": "訓練計劃",
+            "title": "иЁ“з·ҙиЁҲеҠғ",
             "use": "用訓練計劃",
             "week": "з¬¬ {{week}} йҖұ",
             "progress": "已完成 {{done}}／{{total}} 堂 · 今日 {{minutes}} 分鐘"
         },
         "custom": {
             "intro": "жӮЁе–әжүӢж©ҹжҮүз”ЁзЁӢејҸе…ҘйқўеҜ«жҲ–иҖ…е»әз«Ӣеҳ…иЁҲеҠғгҖӮй–Ӣе§ӢдёҖеҖӢиЁҲеҠғе°ұеҸҜд»ҘеҘҪдјјд»»дҪ•иЁҲеҠғе’Ғи·ҹ.",
-            "title": "您嘅計劃",
+            "title": "жӮЁеҳ…иЁҲеҠғ",
             "workoutCount_other": "{{count}} е ӮиЁ“з·ҙ"
         },
         "entry": {
             "description": "и·ҹдёҖеҖӢжҜҸжҳҹжңҹйҖҗжӯҘеҠ еј·еҳ…и·‘жӯҘжҲ–иҖ…жӯҘиЎҢиЁҲеҠғпјҢжңүж—ҘжӣҶеҗҢж—ҘиЁҳе…Ҙйқўеҳ…иЁ“з·ҙ.",
             "open": "開啟訓練計劃",
-            "title": "訓練計劃"
+            "title": "иЁ“з·ҙиЁҲеҠғ"
         },
         "errors": {
             "load": "ијүе…Ҙе””еҲ°жӮЁеҳ…иЁ“з·ҙиЁҲеҠғ.",
@@ -9081,18 +9081,18 @@
             "update": "жӣҙж–°е””еҲ°жӮЁеҳ…иЁҲеҠғгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў."
         },
         "page": {
-            "allPrograms": "所有計劃",
-            "back": "動作",
+            "allPrograms": "жүҖжңүиЁҲеҠғ",
+            "back": "еӢ•дҪң",
             "intro": "и·ҹдёҖеҖӢжҜҸжҳҹжңҹйҖҗжӯҘеҠ еј·еҳ…иЁҲеҠғгҖӮжҸҖдёҖеҖӢиЁҲеҠғзқҮе…§е®№пјҢжә–еӮҷеҘҪе°ұеҸҜд»Ҙй–Ӣе§Ӣ.",
             "ownOnly": "иЁ“з·ҙиЁҲеҠғдҝӮеҖӢдәәеҳ…гҖӮеҲҮиҝ”еҺ»жӮЁиҮӘе·ұеҳ…еёіжҲ¶еҡҹзқҮжӮЁеҳ…иЁҲеҠғ.",
-            "title": "訓練計劃"
+            "title": "иЁ“з·ҙиЁҲеҠғ"
         },
         "picker": {
             "current": "而家嘅計劃",
             "outline": "з¬¬ 1 йҖұпјҡжҜҸе Ӯ {{weekOne}} еҲҶйҗҳгҖӮйҖҗжӯҘжҸҗеҚҮиҮі {{peak}} еҲҶйҗҳеҳ…и·‘жӯҘ.",
             "outlineWalk": "з¬¬ 1 йҖұпјҡжҜҸе Ӯ {{weekOne}} еҲҶйҗҳгҖӮйҖҗжӯҘжҸҗеҚҮиҮі {{peak}} еҲҶйҗҳеҳ…еҝ«иЎҢ.",
             "runsPerWeekHint": "з¬¬еӣӣж¬Ўи·‘жӯҘдҝӮзҹӯи·қйӣўиј•й¬Ҷи·‘пјҢжүҖд»Ҙй•·и·‘е–әжӮЁжҜҸйҖұе…ҘйқўдҪ”еҳ…жҜ”дҫӢзҙ°е•І.",
-            "start": "開始計劃",
+            "start": "й–Ӣе§ӢиЁҲеҠғ",
             "weeksRuns": "{{weeks}} йҖұпјҢжҜҸйҖұ {{runs}} е ӮиЁ“з·ҙ",
             "runsPerWeekOption_other": "жҜҸйҖұ {{count}} ж¬Ўи·‘"
         },
@@ -9154,7 +9154,7 @@
             },
             "halfMarathon": {
                 "description": "еҚҠйҰ¬жӢүжқҫпјҡеҚҒдәҢйҖұпјҢжҜҸйҖұи·‘дёүж¬ЎпјҢй•·и·‘йҖҗжӯҘдёҠеҲ°еӨ§зҙ„е…©еҖӢйҗҳгҖӮе•ұеҸҜд»Ҙиј•й¬Ҷи·‘ 30 еҲҶйҗҳеҳ…дәә.",
-                "name": "半馬拉松",
+                "name": "еҚҠйҰ¬жӢүжқҫ",
                 "structure": "жҜҸеҖӢжҳҹжңҹжңүдёҖж¬Ўиј•й¬Ҷи·‘гҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 50 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 115 еҲҶйҗҳпјҢжҜҸз¬¬еӣӣеҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢдёҖеҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚзё®зҹӯ."
             },
             "halfMarathon4": {
@@ -9163,13 +9163,13 @@
                 "structure": "жҜҸеҖӢжҳҹжңҹжңүе…©ж¬Ўиј•й¬Ҷи·‘гҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 60 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 125 еҲҶйҗҳпјҢжҜҸз¬¬еӣӣеҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢе…©еҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚжёӣйҮҸгҖӮжңҖеҫҢдёҖеҖӢжҳҹжңҹдҝӮдёүж¬Ўзҹӯе•Іеҳ…и·‘."
             },
             "marathon": {
-                "name": "馬拉松",
+                "name": "йҰ¬жӢүжқҫ",
                 "description": "馬拉松：十六週，每週跑四次，長跑逐步上到大約 2 個鐘 45 分仲有減量期。啱已經有規律跑步習慣嘅人.",
                 "structure": "大多數星期有兩次輕鬆跑、一次中距離跑同一次長跑。長跑由 70 分鐘逐步上到 2 個鐘 45 分，每第四個星期輕鬆啲，最後兩個星期喺比賽日前減量."
             },
             "returnToRunning": {
                 "description": "йҮҚиҝ”и·‘жӯҘпјҡеӣӣйҖұпјҢжҜҸйҖұи·‘дёүж¬ЎпјҢе•ұдј‘жҒҜе’—дёҖжҺ’д№ӢеҫҢйҮҚж–°иө·жӯҘгҖӮжӮЁжңғз”ұ 1 еҲҶйҗҳи·‘йҖҗжӯҘдёҠеҲ°еӨ§зҙ„ 20 еҲҶйҗҳеҳ…и·‘гҖӮе…©ж¬Ўи·‘д№Ӣй–“з•ҷдёҖе…©ж—Ҙдј‘жҒҜпјҢдёҰдҝқжҢҒиј•й¬Ҷй…ҚйҖҹгҖӮеҰӮжһңжӮЁдҝӮз”ұеӮ·жӮЈжҒўеҫ©з·ҠпјҢе…Ҳе•Ҹеҗ“зү©зҗҶжІ»зҷӮеё«жҲ–иҖ…йҶ«з”ҹ.",
-                "name": "重返跑步",
+                "name": "йҮҚиҝ”и·‘жӯҘ",
                 "structure": "з¬¬ 1 иҮі 3 еҖӢжҳҹжңҹз”Ёзҹӯи·‘еҗҢиЎҢдәӨжӣҝпјҢз”ұ 1 еҲҶйҗҳи·‘йҖҗжӯҘеҲ° 5 еҲҶйҗҳи·‘гҖӮз¬¬ 4 еҖӢжҳҹжңҹжңүдёүзҜҖи·‘иЎҢзөҗеҗҲиЁ“з·ҙпјҢи·‘жӯҘдҝӮ 6гҖҒ10 еҗҢ 12 еҲҶйҗҳпјҢзёҪе…ұ 18гҖҒ20 еҗҢ 22 еҲҶйҗҳеҳ…и·‘."
             },
             "tenKToHalf": {
@@ -9189,19 +9189,19 @@
             },
             "walkFit": {
                 "description": "еҒҘиә«жӯҘиЎҢпјҡе…«йҖұпјҢжҜҸйҖұиЎҢдёүж¬ЎпјҢе””дҪҝи·‘гҖӮжӮЁжңғеҝ«жӯҘеҗҢиј•й¬ҶиЎҢдәӨжӣҝпјҢйҖҗжӯҘдёҠеҲ° 30 еҲҶйҗҳеҳ…еҝ«иЎҢ.",
-                "name": "健身步行",
+                "name": "еҒҘиә«жӯҘиЎҢ",
                 "structure": "з¬¬ 1 иҮі 4 еҖӢжҳҹжңҹдәӨжӣҝеҝ«жӯҘпјҲ3 иҮі 8 еҲҶйҗҳпјүеҗҢ 2 еҲҶйҗҳиј•й¬ҶиЎҢгҖӮз¬¬ 5 еҗҢ 6 еҖӢжҳҹжңҹз”Ёе…©ж®өй•·е•Іеҳ…еҝ«жӯҘпјҢеҗ„ 12 еҗҢ 15 еҲҶйҗҳгҖӮз¬¬ 7 еҗҢ 8 еҖӢжҳҹжңҹдҝӮ 20 иҮі 30 еҲҶйҗҳеҳ…йҖЈзәҢеҝ«иЎҢ."
             }
         },
         "start": {
             "message": "жӮЁеҳ…з¬¬дёҖе ӮиЁ“з·ҙдҝӮе№ҫжҷӮпјҹ",
-            "pickDate": "揀日期",
+            "pickDate": "жҸҖж—Ҙжңҹ",
             "startOnDate": "喺嗰日開始",
             "title": "й–Ӣе§Ӣ {{name}}",
-            "today": "今日開始"
+            "today": "д»Ҡж—Ҙй–Ӣе§Ӣ"
         },
         "switch": {
-            "confirm": "切換",
+            "confirm": "еҲҮжҸӣ",
             "message": "жӮЁжңғз”ұз¬¬ 1 йҖұй–Ӣе§Ӣж–°иЁҲеҠғгҖӮжӮЁе–әиҖҢе®¶иЁҲеҠғе…Ҙйқўеҳ…йҖІеәҰе””жңғдҝқз•ҷ.",
             "title": "еҲҮжҸӣеҺ» {{name}}пјҹ"
         },
