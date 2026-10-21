@@ -5700,16 +5700,16 @@
             "mineralsOther": "礦物質同其他",
             "cholesterol": "膽固醇",
             "sodium": "йҲү",
-            "potassium": "йүҖ",
+            "potassium": "鉀",
             "calcium": "鈣",
-            "iron": "йҗө",
+            "iron": "鐵",
             "sugarsVitamins": "糖分同維他命",
             "sugar": "糖",
             "vitaminA": "維他命 A",
             "vitaminC": "維他命 C",
             "customNutrients": "自訂營養素",
             "hydrationExercise": "水份同運動",
-            "waterGoal": "ж°ҙд»Ҫзӣ®жЁҷ",
+            "waterGoal": "水份目標",
             "exerciseDuration": "運動時間",
             "exerciseCalories": "運動卡路里",
             "carbohydratesShare": "碳水化合物（{{percent}}%）",
@@ -5719,8 +5719,8 @@
         "onBoardingSteps": {
             "whatIsYourSex": "您嘅性別係？",
             "usedToCalculateYourBase": "用嚟計您嘅基礎代謝率.",
-            "male": "з”·",
-            "female": "еҘі",
+            "male": "男",
+            "female": "女",
             "whatIsYourPrimaryGoal": "您嘅主要目標係咩？",
             "loseWeight": "減磅",
             "maintainWeight": "維持體重",
@@ -5728,7 +5728,7 @@
             "whatIsYourCurrentWeight": "您而家幾重？",
             "enterIn": "用 {{weightUnit}} 輸入.",
             "stLb": "st/lb",
-            "continue": "з№јзәҢ",
+            "continue": "繼續",
             "whatIsYourHeight": "您幾高？",
             "enterIn2": "用 {{heightUnit}} 輸入.",
             "ftIn": "ft/in",
@@ -5758,8 +5758,8 @@
         "personalPlanHeader": {
             "dailyCalorieBudget": "每日卡路里預算",
             "baseBMR": "基礎 BMR：",
-            "on": "й–Ӣ",
-            "off": "й—ң",
+            "on": "開",
+            "off": "關",
             "calorieBuyback2": "卡路里回補：<span>{{addBurnedCalories}}</span>",
             "perDay": "{{unit}}／日"
         }
@@ -6083,10 +6083,10 @@
         "cycleInsights": {
             "total": "共 {{total}} 次",
             "logs": "{{phase}}：{{val}} 筆記錄",
-            "menstrual": "жңҲз¶“жңҹ",
-            "fertile": "жҳ“еӯ•жңҹ",
-            "ovulation": "жҺ’еҚөжңҹ",
-            "luteal": "й»ғй«”жңҹ"
+            "menstrual": "月經期",
+            "fertile": "易孕期",
+            "ovulation": "排卵期",
+            "luteal": "黃體期"
         },
         "cycleSymptomPicker": {
             "symptomName": "症狀名稱",
@@ -6098,10 +6098,10 @@
         },
         "dailyLogPanel": {
             "kg": "-- kg",
-            "hideProduct": "ж”¶еҹӢз”ўе“Ғ",
+            "hideProduct": "收埋產品",
             "showProduct": "顯示產品",
             "deleteProduct": "刪除產品",
-            "productName": "з”ўе“ҒеҗҚзЁұ",
+            "productName": "產品名稱",
             "eGOrganicTampon": "例如：有機衛生棉條",
             "capacityMl": "容量（ml）",
             "decrease": "減少 {{displayName}}",
@@ -6360,13 +6360,13 @@
         "uploadCSV": "上載 CSV",
         "validationError": "冇嘢可以匯入",
         "bodyMeasurements": "身體測量",
-        "sleep": "зһ“иҰә",
+        "sleep": "瞓覺",
         "optionalStageEventsJSONLeave": "可選嘅 stage_events JSON（留空就淨係有持續時間）。階段類型：deep、light、rem、awake",
         "vitalsCustom": "生命體徵同自訂",
         "acceptedVitalTypesOrUse": "接受嘅生命體徵類型（或者用任何自訂類別名稱）",
         "dailyActivity": "每日活動",
         "acceptedActivityTypes": "接受嘅活動類型",
-        "hydration": "ж°ҙд»Ҫ",
+        "hydration": "水份",
         "dailyWaterIntakeValuesAre": "每日水份攝取。數值會轉做毫升.",
         "mood": "心情"
     },
@@ -6495,12 +6495,12 @@
         "almostThere": "差唔多喇！",
         "securingYourFamilyDashboard": "保護緊您嘅家庭儀表板…",
         "sparkyFitnessLogo": "SparkyFitness 標誌",
-        "warning": "иӯҰе‘Ҡ",
+        "warning": "警告",
         "authenticationFailed": "驗證失敗",
         "signIn": "登入",
         "signUp": "註冊",
         "registrationIsCurrentlyDisabled": "註冊而家停咗.",
-        "email": "йӣ»йғө",
+        "email": "電郵",
         "enterYourEmail": "輸入您嘅電郵",
         "password": "密碼",
         "enterYourPassword": "輸入您嘅密碼",
@@ -6511,14 +6511,14 @@
         "requestMagicLink": "攞魔法連結",
         "logo": "{{display_name}} 標誌",
         "signInWithOIDC": "用 OIDC 登入",
-        "fullName": "е…ЁеҗҚ",
+        "fullName": "全名",
         "enterYourFullName": "輸入您嘅全名",
         "createAPassword": "建立密碼",
         "creatingAccount": "建立緊帳戶…",
         "magicLinkRequestDialog": {
             "requestMagicLink": "攞魔法連結",
             "enterYourEmailToReceive": "輸入您嘅電郵，收一個登入用嘅魔法連結.",
-            "email": "йӣ»йғө",
+            "email": "電郵",
             "enterYourEmail": "輸入您嘅電郵",
             "sending": "傳送緊…",
             "sendMagicLink": "傳送魔法連結"
@@ -6539,7 +6539,7 @@
             "confirmNewPassword2": "確認新密碼",
             "resetting": "重設緊…",
             "resetPassword": "重設密碼",
-            "backToSignIn": "иҝ”еҺ»зҷ»е…Ҙ"
+            "backToSignIn": "返去登入"
         },
         "forgotPasswordPage": {
             "sparkyFitnessLogo": "SparkyFitness 標誌",
@@ -6548,7 +6548,7 @@
             "enterYourEmail": "輸入您嘅電郵",
             "sending": "傳送緊…",
             "sendResetLink": "傳送重設連結",
-            "backToSignIn": "иҝ”еҺ»зҷ»е…Ҙ"
+            "backToSignIn": "返去登入"
         },
         "builtForFamiliesPoweredBy": "為家庭而建。由 AI 驅動。一齊追蹤食物、健身、水份同健康."
     },
