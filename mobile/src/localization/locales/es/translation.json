@@ -7729,7 +7729,10 @@
         "insightGoal": "¡Alcanzaste tu objetivo de agua en {{met}} de {{total}} días!",
         "insightUp": "Estás bebiendo un {{pct}}% más que en el período anterior.",
         "insightDown": "Estás bebiendo un {{pct}}% menos que en el período anterior.",
-        "insightLowDay": "El {{weekday}} es tu día más bajo, con un promedio de {{volume}}."
+        "insightLowDay": "El {{weekday}} es tu día más bajo, con un promedio de {{volume}}.",
+        "daysCount_one": "{{count}} día",
+        "daysCount_many": "{{count}} días",
+        "daysCount_other": "{{count}} días"
     },
     "measurementsReport": {
         "title": "Medidas",
