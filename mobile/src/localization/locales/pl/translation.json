@@ -93,7 +93,8 @@
             "norwegianBokmal": "Norsk bokmål",
             "dutch": "Nederlands",
             "brazilianPortuguese": "Português (Brasil)",
-            "russian": "Русский"
+            "russian": "Русский",
+            "turkish": "Turecki"
         },
         "lastSynced": "Ostatnia synchronizacja: {{time}}",
         "addServer": "Dotknij, aby dodać serwer",
@@ -119,7 +120,10 @@
             "about": "Informacje",
             "shareReport": "Udostępnij raport diagnostyczny",
             "watch": "Apple Watch",
-            "ai": "AI"
+            "ai": "AI",
+            "fasting": "Post",
+            "goals": "Cele",
+            "reports": "Raporty"
         },
         "theme": {
             "title": "Motyw",
@@ -235,7 +239,8 @@
             "logAsTaken": "Oznacz jako przyjęty",
             "skip": "Pomiń",
             "logAllAsTaken": "Zapisz wszystkie jako przyjęte",
-            "skipAll": "Pomiń wszystkie"
+            "skipAll": "Pomiń wszystkie",
+            "remindInMinutes": "Przypomnij za {{minutes}} min"
         },
         "permission": {
             "notificationsOff": "Powiadomienia wyłączone",
@@ -282,7 +287,17 @@
             "workout": "Trening",
             "exercise": "Ćwiczenie",
             "set": "Seria",
-            "setOf": "z"
+            "setOf": "z",
+            "subtractFifteenSeconds": "Odejmij 15 sekund",
+            "subtractFifteenSecondsShort": "-15 s",
+            "skip": "Pomiń",
+            "next": "Następna",
+            "setProgress": "Seria {{number}} z {{total}}",
+            "nextSet": "Następna: {{set}}",
+            "nextSetWithTarget": "Następna: {{set}} ({{target}})",
+            "repCount_one": "{{count}} powtórzenie",
+            "repCount_few": "{{count}} powtórzenia",
+            "repCount_many": "{{count}} powtórzeń"
         },
         "bar": {
             "clearWorkout": "Wyczyść",
@@ -388,7 +403,8 @@
             "distance": "Dystans",
             "rir": "RIR",
             "startTimer": "Uruchom stoper",
-            "stopTimer": "Zatrzymaj stoper"
+            "stopTimer": "Zatrzymaj stoper",
+            "inputToolbar": "Akcje wpisu serii"
         },
         "columns": {
             "set": "Seria",
@@ -461,7 +477,10 @@
         "logCycle": "Zapisz cykl",
         "symptoms": "Objawy",
         "progressPhotos": "Zdjęcia postępów",
-        "mindfulness": "Uważność"
+        "mindfulness": "Uważność",
+        "mood": "Nastrój",
+        "recordActivity": "Aktywność",
+        "recordActivityHint": "Zapisz spacer, bieg lub jazdę z GPS"
     },
     "screens": {
         "foods": "Produkty spożywcze",
@@ -543,7 +562,20 @@
             "mealPlans": "Plany posiłków",
             "mealPlansSubtitle": "Powtarzaj posiłki w wybrane dni",
             "waterContainers": "Pojemniki na wodę",
-            "waterContainersSubtitle": "Butelki, szklanki i napoje powiązane z produktami"
+            "waterContainersSubtitle": "Butelki, szklanki i napoje powiązane z produktami",
+            "workoutPlans": "Plany treningów",
+            "workoutPlansSubtitle": "Rozłóż treningi na tygodnie",
+            "reports": "Raporty",
+            "reportsSubtitle": "Trendy żywienia, snu, nastroju i aktywności",
+            "runPrograms": "Programy treningowe",
+            "runProgramsSubtitle": "Plany biegów i spacerów od Beginner 5K do maratonu",
+            "runProgramsActive": "{{name}} · {{progress}}",
+            "personalRecords": "Rekordy osobiste",
+            "personalRecordsSubtitle": "Twoje najlepsze 1 km, 5 km, 10 km i więcej",
+            "routes": "Trasy",
+            "routesSubtitle": "Rysuj, importuj i zapisuj trasy do naśladowania",
+            "equipment": "Sprzęt",
+            "equipmentSubtitle": "Buty i pozostały ekwipunek"
         },
         "duplicateExercise": "Zduplikuj ćwiczenie",
         "symptomLog": "Zapis objawu",
@@ -558,7 +590,36 @@
         "exerciseStatistics": "Statystyki ćwiczeń",
         "cardioSession": "Sesja cardio",
         "watchSettings": "Apple Watch",
-        "aiSettings": "AI"
+        "aiSettings": "AI",
+        "moodLog": "Nastrój",
+        "activityShare": "Udostępnij aktywność",
+        "fastingSettings": "Ustawienia postu",
+        "fasting": "Post",
+        "warmupSettings": "Kalkulator rozgrzewki",
+        "symptomEpisodeDetail": "Szczegóły epizodu",
+        "recordActivity": "Aktywność",
+        "reports": "Raporty",
+        "nutritionReport": "Żywienie",
+        "sleepAnalytics": "Analiza snu",
+        "moodReport": "Nastrój",
+        "reportsSettings": "Dostosuj raporty",
+        "hydrationReport": "Nawodnienie",
+        "measurementsReport": "Pomiary",
+        "substancesReport": "Kofeina i alkohol",
+        "runSummary": "Aktywność zapisana",
+        "runPrograms": "Programy treningowe",
+        "personalRecords": "Rekordy osobiste",
+        "watchRunLive": "Na zegarku",
+        "watchRunLiveRun": "Bieg na zegarku",
+        "watchWalkLive": "Spacer na zegarku",
+        "allergenSettings": "Alergeny",
+        "runProgramCalendar": "Kalendarz programu",
+        "runProgramWorkout": "Trening",
+        "runProgramEdit": "Edytuj plan",
+        "runProgramNew": "Nowy plan",
+        "runProgramRace": "Zaplanuj zawody",
+        "routes": "Trasy",
+        "routeDraw": "Narysuj trasę"
     },
     "healthMetrics": {
         "steps": "Kroki",
@@ -785,7 +846,8 @@
         "logDrink": "Zapisz: {{drink}}",
         "perPress": "{{value}} {{unit}}",
         "logDrinkFailed": "Nie udało się zapisać tego napoju",
-        "exerciseStatistics": "Statystyki"
+        "exerciseStatistics": "Statystyki",
+        "reportsLink": "Raporty"
     },
     "syncScreen": {
         "healthConnectSettings": "ustawieniach Health Connect",
@@ -980,7 +1042,8 @@
         },
         "useExternalBmr": "Używaj zmierzonego BMR z check-inów i zsynchronizowanych urządzeń",
         "useExternalBmrHint": "Domyślnie wyłączone — wybrana formuła jest zawsze używana, dopóki tego nie włączysz. Po włączeniu BMR zapisany przy check-inie albo zsynchronizowany ze smartwagi lub od dostawcy danych zdrowotnych zastępuje formułę na ten dzień, jeśli jest dla Ciebie fizjologicznie wiarygodny.",
-        "useExternalBmrIosNote": "Spoczynkowa energia z Apple Health obejmuje już lekką codzienną aktywność — rozważ ustawienie Poziomu aktywności na Brak (×1,0), żeby nie liczyć jej dwukrotnie."
+        "useExternalBmrIosNote": "Spoczynkowa energia z Apple Health obejmuje już lekką codzienną aktywność — rozważ ustawienie Poziomu aktywności na Brak (×1,0), żeby nie liczyć jej dwukrotnie.",
+        "adaptiveEarnBack": "Cele adaptacyjne już uwzględniają aktywność. Pozostałe kalorie to Cel minus Spożyte. Zarabianie kalorii za trening dotyczy tylko celów ręcznych."
     },
     "dashboardSettings": {
         "updateFailed": "Nie udało się zaktualizować ustawienia.",
@@ -1021,7 +1084,11 @@
         "moveDown": "Przenieś w dół",
         "stateShown": "Widoczna",
         "stateHidden": "Ukryta",
-        "configureCard": "Konfiguruj: {{name}}"
+        "configureCard": "Konfiguruj: {{name}}",
+        "mood": "Nastrój",
+        "moodSubtitle": "Pokazuje dzisiejszy nastrój, trend z 7 dni i szybkie zapisywanie",
+        "trainingLoad": "Obciążenie treningowe",
+        "trainingLoadSubtitle": "Pokazuje ten tydzień na tle Twojego zwykłego treningu, z przypomnieniem o odpoczynku"
     },
     "diarySettings": {
         "updateFailed": "Nie udało się zaktualizować ustawienia.",
@@ -1085,7 +1152,9 @@
         "waterReminderStartAccessibility": "Czas początkowy, {{time}}",
         "waterReminderEnd": "Czas końcowy",
         "waterReminderEndAccessibility": "Czas końcowy, {{time}}",
-        "waterReminderInvalidWindow": "Czas końcowy musi być późniejszy niż czas początkowy."
+        "waterReminderInvalidWindow": "Czas końcowy musi być późniejszy niż czas początkowy.",
+        "medicationSnoozeInterval": "Przypomnij po",
+        "snoozeMinutesOption": "{{minutes}} min"
     },
     "workoutSettings": {
         "title": "Ustawienia treningu",
@@ -1107,7 +1176,9 @@
         "adaptiveCoachingAccessibility": "Sugestie adaptacyjne",
         "duckMusic": "Ściszaj muzykę podczas sygnałów",
         "duckMusicSubtitle": "Krótko przycisz muzykę z innych aplikacji podczas sygnału dźwiękowego lub komunikatu głosowego treningu.",
-        "duckMusicAccessibility": "Ściszaj muzykę podczas sygnałów"
+        "duckMusicAccessibility": "Ściszaj muzykę podczas sygnałów",
+        "warmupCalculator": "Kalkulator rozgrzewki",
+        "warmupCalculatorSubtitle": "Ramp i ciężary, do których zaokrągla, dla serii rozgrzewkowych dodawanych do ćwiczenia."
     },
     "restPeriod": {
         "title": "Czas przerwy",
@@ -1398,7 +1469,162 @@
             "unnamedSchedule": "harmonogram",
             "modeUpdateNotApplied": "Żądany tryb suplementu nie został zastosowany.",
             "nutrientsNotSaved": "Suplement został utworzony, ale jego wartości składników odżywczych nie zostały zapisane, ponieważ to konto nie ma dostępu do dziennika.",
-            "nutrientsNotUpdated": "Zmiany składników odżywczych nie zostały zapisane."
+            "nutrientsNotUpdated": "Zmiany składników odżywczych nie zostały zapisane.",
+            "scan": "Zeskanuj kod, aby wypełnić",
+            "lookingUp": "Sprawdzam etykietę…",
+            "fromOpenFoodFacts": "Z Open Food Facts. Porównaj ilości z etykietą.",
+            "scanLabel": "Zeskanuj etykietę, aby wypełnić",
+            "scanLabelHint": "Zsfotografuj panel z wartościami odżywczymi.",
+            "takePhoto": "Zrób zdjęcie",
+            "choosePhoto": "Wybierz z biblioteki",
+            "readingLabel": "Odczytuję etykietę…",
+            "photoFailed": "Nie udało się użyć tego zdjęcia. Spróbuj innego.",
+            "labelNoMatchTitle": "Nic nie da się odczytać",
+            "labelNoMatchMessage": "Z tego zdjęcia nie udało się odczytać wartości odżywczych. Przytnij dokładnie do panelu wartości odżywczych albo wpisz etykietę ręcznie.",
+            "labelFailed": "Nie udało się odczytać etykiety. Sprawdź, czy skonfigurowano dostawcę AI, i spróbuj ponownie.",
+            "labelReadOnDevice": "Etykieta odczytana na tym iPhonie",
+            "labelReadByServer": "Etykieta odczytana przez AI serwera",
+            "noMatchTitle": "Nie znaleziono dopasowania",
+            "noMatchMessage": "Nie znaleziono suplementu dla tego kodu. Możesz wpisać etykietę ręcznie.",
+            "lookupFailed": "Nie udało się połączyć z bazą etykiet suplementów. Spróbuj później.",
+            "servingNote": "Porcja z etykiety: {{serving}}",
+            "notAdded": "Nie dodano z etykiety: {{names}}",
+            "notAddedMore_one": "{{names}} i jeszcze {{count}}",
+            "notAddedMore_few": "{{names}} i jeszcze {{count}}",
+            "notAddedMore_many": "{{names}} i jeszcze {{count}}"
+        },
+        "glp1": {
+            "inventory": {
+                "expired": "Wygasł {{date}}",
+                "expires": "Wygasa {{date}}",
+                "title": "Aplikatory i fiolki",
+                "add": "Dodaj",
+                "empty": "Brak aplikatorów i fiolek. Dodaj jeden, aby śledzić pozostałe dawki i datę ważności.",
+                "vial": "Fiolka",
+                "pen": "Aplikator",
+                "status": {
+                    "in_use": "W użyciu",
+                    "finished": "Zakończony",
+                    "sealed": "Zamknięty"
+                },
+                "left_one": "Została {{count}} dawka",
+                "left_few": "Zostały {{count}} dawki",
+                "left_many": "Zostało {{count}} dawek",
+                "reorder": "Czas na zamówienie",
+                "expiredWarning": "Po terminie ważności",
+                "expiringSoon": "Wygasa w ciągu tygodnia"
+            },
+            "checkIn": {
+                "saved": "Zapisano check-in",
+                "saveFailed": "Nie udało się zapisać check-in",
+                "title": "Codzienny check-in",
+                "subtitle": "Jak lek wpływa na Ciebie dzisiaj. Zapisywane w codziennych pomiarach.",
+                "save": "Zapisz check-in",
+                "metric": {
+                    "hunger": "Głód",
+                    "food_noise": "Natłok myśli o jedzeniu",
+                    "fullness": "Sytość",
+                    "energy": "Energia"
+                }
+            },
+            "log": {
+                "dontDeduct": "Nie odliczaj",
+                "invalidDose": "Podaj prawidłową dawkę",
+                "logged": "Zapisano zastrzyk",
+                "failed": "Nie udało się zapisać zastrzyku",
+                "title": "Zapisz zastrzyk",
+                "legend": "Zielony to sugerowane miejsce. Bursztynowy był używany w ostatnich {{days}} dniach.",
+                "chooseSite": "Wybierz miejsce",
+                "siteTitle": "Miejsce wstrzyknięcia",
+                "dose": "Dawka (mg)",
+                "dosePlaceholder": "Automatycznie",
+                "pen": "Z aplikatora / fiolki",
+                "penTitle": "Odlicz od",
+                "notes": "Notatki",
+                "notesPlaceholder": "np. lekkie pieczenie",
+                "logAt": "Zapisz zastrzyk: {{site}}"
+            },
+            "serum": {
+                "title": "Poziom modelowany: {{name}}",
+                "now": "~{{percent}}% teraz",
+                "empty": "Zapisuj zastrzyki, aby modelować swój poziom. Wymaga uznania leku GLP-1 na leku."
+            },
+            "recent": {
+                "deleteTitle": "Usuń zastrzyk",
+                "deleteMessage": "Usunąć ten zastrzyk? Dawka odliczona od aplikatora lub fiolki zostanie zwrócona.",
+                "deleteFailed": "Nie udało się usunąć zastrzyku",
+                "title": "Ostatnie zastrzyki",
+                "empty": "Brak zapisanych zastrzyków."
+            },
+            "titration": {
+                "title": "Plan tytracji dawki",
+                "add": "Dodaj krok",
+                "empty": "Brak kroków. Dodaj każdą planowaną dawkę i oznacz bieżącą jako aktywną.",
+                "status": {
+                    "active": "Bieżący",
+                    "done": "Zakończony",
+                    "planned": "Zaplanowany"
+                },
+                "weeks_one": "{{count}} tydz.",
+                "weeks_few": "{{count}} tydz.",
+                "weeks_many": "{{count}} tydz.",
+                "taper": "Redukcja",
+                "invalidNumbers": "Podaj dawkę, a tygodnie — jeśli je ustawiasz — jako liczby.",
+                "deleteTitle": "Usuń krok",
+                "deleteMessage": "Usunąć ten krok tytracji?",
+                "editStep": "Edytuj krok",
+                "newStep": "Nowy krok",
+                "dose": "Dawka",
+                "startDate": "Data rozpoczęcia",
+                "weeksAtDose": "Tygodnie na tej dawce",
+                "statusLabel": "Status",
+                "taperLabel": "Redukcja (zmniejszenie dawki)"
+            },
+            "form": {
+                "notSet": "Nie ustawiono",
+                "clear": "Wyczyść",
+                "invalidNumbers": "Podaj prawidłowe liczby.",
+                "saveFailed": "Nie udało się zapisać: {{error}}",
+                "deletePenTitle": "Usuń aplikator lub fiolkę",
+                "deletePenMessage": "Usunąć ten aplikator lub fiolkę z inwentarza?",
+                "editPen": "Edytuj aplikator lub fiolkę",
+                "newPen": "Nowy aplikator lub fiolka",
+                "kind": "Rodzaj",
+                "label": "Nazwa",
+                "doseMg": "Dawka na zastrzyk (mg)",
+                "dosesTotal": "Liczba dawek",
+                "concentration": "mg na mL",
+                "volume": "Objętość (mL)",
+                "openedAt": "Otwarto",
+                "expiry": "Wygasa",
+                "reorderFlag": "Przypomnij mi o zamówieniu",
+                "reorderThreshold": "Zamów, gdy zostanie dawek",
+                "isGlp1": "Lek GLP-1",
+                "drug": "Lek",
+                "drugPlaceholder": "Wybierz lek",
+                "drugHelp": "Używane do modelowanego poziomu i rotacji. Aplikatory, mapa ciała i inwentarz pokazują się dla typu Zastrzyk."
+            },
+            "tracker": {
+                "title": "Śledzenie GLP-1",
+                "subtitle": "Zastrzyki, mapa miejsc, aplikatory, tytracja i codzienny check-in"
+            },
+            "sites": {
+                "stomach_upper_left": "Brzuch - górny lewy",
+                "stomach_upper_mid": "Brzuch - górny środkowy",
+                "stomach_upper_right": "Brzuch - górny prawy",
+                "stomach_mid_left": "Brzuch - środkowy lewy",
+                "stomach_mid_right": "Brzuch - środkowy prawy",
+                "stomach_lower_left": "Brzuch - dolny lewy",
+                "stomach_lower_mid": "Brzuch - dolny środkowy",
+                "stomach_lower_right": "Brzuch - dolny prawy",
+                "left_arm": "Lewe ramię",
+                "right_arm": "Prawe ramię",
+                "left_thigh": "Lewe udo",
+                "right_thigh": "Prawe udo",
+                "left_hip": "Lewe biodro",
+                "right_hip": "Prawe biodro",
+                "unknown": "Nieznane"
+            }
         }
     },
     "scheduleSummary": {
@@ -1848,7 +2074,8 @@
         "bodyweightBanner": "Ćwiczenie z masą ciała: liczy Twoją masę ciała ({{bodyWeight}} {{unit}}) plus wprowadzony ciężar. Użyj znaku minus dla asysty.",
         "bodyweightBannerNoWeight": "Ćwiczenie z masą ciała: liczy Twoją masę ciała plus wprowadzony ciężar. Użyj znaku minus dla asysty. Zapisz masę ciała, aby móc policzyć objętość.",
         "modalityWeightDistance": "Ciężar i dystans (przenoszenie)",
-        "modalityWeightDuration": "Ciężar i czas (trzymanie obciążenia)"
+        "modalityWeightDuration": "Ciężar i czas (trzymanie obciążenia)",
+        "addWarmups": "Dodaj rozgrzewki"
     },
     "cycleCard": {
         "mode": {
@@ -2325,7 +2552,8 @@
             "loadPhoto": "Nie udało się wczytać zdjęcia.",
             "lookupBarcode": "Nie udało się wyszukać tego kodu kreskowego. Spróbuj ponownie.",
             "timeout": "Upłynął limit czasu żądania. Sprawdź połączenie z serwerem.",
-            "retryOnDevice": "Nie udało się odczytać etykiety na tym iPhonie."
+            "retryOnDevice": "Nie udało się odczytać etykiety na tym iPhonie.",
+            "restartApp": "Nie można otworzyć galerii. Uruchom aplikację ponownie."
         },
         "permission": {
             "camera": "Aby używać aparatu, potrzebujemy Twojej zgody.",
@@ -2696,12 +2924,37 @@
         "equivalentUnitsUpdated_few": "Zapisano · zaktualizowano {{formattedCount}} równoważne jednostki",
         "equivalentUnitsUpdated_many": "Zapisano · zaktualizowano {{formattedCount}} równoważnych jednostek",
         "notes": "Notatki",
-        "notesPlaceholder": "np. biały ryż, podwójny kurczak, bez fasoli (obsługuje markdown)"
+        "notesPlaceholder": "np. biały ryż, podwójny kurczak, bez fasoli (obsługuje markdown)",
+        "portions": {
+            "title": "Nazwane porcje",
+            "help": "Zachowaj ten produkt w gramach lub mililitrach i dodaj porcje, np. saszetkę lub butelkę.",
+            "remove": "Usuń porcję {{name}}",
+            "metricReference": "Wybierz porcję gramową lub mililitrową, aby zdefiniować wielkości porcji.",
+            "metricReferenceRequired": "Wybierz porcję gramową lub mililitrową, która pasuje do Twoich nowych porcji.",
+            "name": "Nazwa porcji",
+            "namePlaceholder": "np. saszetka",
+            "equals": "1 porcja =",
+            "amount": "Ilość w porcji",
+            "confirm": "Dodaj porcję",
+            "add": "+ Dodaj porcję",
+            "saveFailed": "Nie udało się zapisać wszystkich porcji. Spróbuj zapisać ponownie."
+        },
+        "scanNutritionLabel": "Zeskanuj etykietę wartości odżywczych"
     },
     "exerciseHistory": {
         "noSetData": "Brak danych o seriach",
         "loadError": "Nie udało się wczytać historii.",
-        "empty": "Nie zarejestrowano jeszcze sesji."
+        "empty": "Nie zarejestrowano jeszcze sesji.",
+        "columns": {
+            "set": "Seria",
+            "weightReps": "Ciężar i powtórzenia",
+            "timeDistance": "Czas i dystans",
+            "time": "Czas",
+            "weightDistance": "Ciężar i dystans",
+            "weightTime": "Ciężar i czas",
+            "reps": "Powtórzenia",
+            "rpe": "RPE"
+        }
     },
     "foodFormPersistence": {
         "discardTitle": "Odrzucić niezapisane odpowiedniki?",
@@ -3083,7 +3336,8 @@
         },
         "tabs": {
             "fasting": "Post",
-            "history": "Historia"
+            "history": "Historia",
+            "report": "Raport"
         },
         "startedAt": "Rozpoczęto {{time}}",
         "targetAt": "Cel {{time}}",
@@ -3112,7 +3366,8 @@
         "eatingWindowHint": "Post wznowi się automatycznie po zamknięciu okna żywieniowego.",
         "startFastEarly": "Rozpocznij post teraz",
         "eatingWindowOpened": "Okno otwarte",
-        "eatingWindowCloses": "Okno się zamyka"
+        "eatingWindowCloses": "Okno się zamyka",
+        "settings": "Ustawienia postu"
     },
     "exerciseDetail": {
         "sharedPublicly": "Ćwiczenie udostępniono publicznie",
@@ -3588,6 +3843,17 @@
             "default": "Domyślny",
             "retryTitle": "Spróbuj ponownie z Open Food Facts",
             "retryDescription": "Jeśli nie znaleziono wyniku, automatycznie spróbuj Open Food Facts."
+        },
+        "nutrients": {
+            "title": "Składniki odżywcze",
+            "custom": "Własne składniki odżywcze",
+            "customSubtitle": "Twórz i edytuj własne składniki odżywcze",
+            "display": "Wyświetlanie składników",
+            "displaySubtitle": "Wybierz i uporządkuj składniki pokazywane w poszczególnych widokach"
+        },
+        "allergens": {
+            "title": "Alergeny",
+            "subtitle": "Otrzymuj ostrzeżenia o produktach i skanach zawierających śledzone alergeny"
         }
     },
     "workoutComplete": {
@@ -3873,11 +4139,15 @@
             "exercise": "Ćwiczenie",
             "checkin": "Kontrola",
             "goals": "Cele",
-            "lookedUp": "Wyszukano: {{name}}"
+            "lookedUp": "Wyszukano: {{name}}",
+            "runProgram": "Program treningowy"
         },
         "typing": "Sparky pisze",
         "voice": {
-            "stop": "Zatrzymaj dyktowanie"
+            "stop": "Zatrzymaj dyktowanie",
+            "label": "Nagraj wiadomość dyktowaną",
+            "aiLabel": "Dyktuj z AI",
+            "listening": "Słucham"
         }
     },
     "foodImagePicker": {
@@ -6287,7 +6557,10 @@
         "aiHint": "Audio jest wysyłane do wybranego dostawcy AI przez Twój serwer. Mogą obowiązywać opłaty dostawcy. Wybierz model, aby włączyć transkrypcję AI.",
         "noModels": "Brak włączonych kompatybilnych modeli głosowych. Skonfiguruj model obsługujący audio w ustawieniach usługi AI w aplikacji webowej, a następnie odśwież.",
         "unavailable": "Wybrany model głosowy jest niedostępny. Wybierz inny model lub przełącz się na opcję systemową.",
-        "manualSend": "Dyktowanie wypełnia wersję roboczą. Sprawdź lub zedytuj ją, a następnie wyślij samodzielnie."
+        "manualSend": "Dyktowanie wypełnia wersję roboczą. Sprawdź lub zedytuj ją, a następnie wyślij samodzielnie.",
+        "saveFailed": "Nie udało się zapisać ustawień głosu. Spróbuj ponownie.",
+        "loadFailed": "Nie udało się wczytać ustawień głosu.",
+        "modelsFailed": "Nie udało się wczytać modeli głosu."
     },
     "shoes": {
         "title": "Buty",
@@ -6317,5 +6590,100 @@
         "reactivate": "Aktywuj ponownie",
         "deleteTitle": "Usunąć te buty?",
         "deleteDescription": "Biegi zapisane z tą parą zostaną w dzienniku, ale nie będą już powiązane z butami."
+    },
+    "activityShare": {
+        "title": "Udostępnij aktywność",
+        "choosePhoto": "Wybierz zdjęcie",
+        "takePhoto": "Zrób zdjęcie",
+        "removePhoto": "Usuń",
+        "transparentHint": "Bez zdjęcia obraz to przezroczysty PNG, który możesz nałożyć na zdjęcie lub wideo w innej aplikacji.",
+        "cameraDenied": "Zezwól na dostęp do kamery w Ustawieniach, aby zrobić zdjęcie",
+        "noRoute": "Ten trening nie ma zapisanej trasy GPS, więc układ pokazuje tylko statystyki.",
+        "layout": "Układ",
+        "layoutClassic": "Klasyczny",
+        "layoutRoute": "Trasa",
+        "layoutMinimal": "Minimalny",
+        "textColor": "Kolor",
+        "customColor": "Własny kod hex koloru",
+        "share": "Udostępnij obraz",
+        "shareFailed": "Nie udało się utworzyć obrazu"
+    },
+    "exerciseEffort": {
+        "title": "Wysiłek",
+        "lastAvg": "Śr. RPE, ostatnia sesja",
+        "trendLabel_one": "Średnie RPE z ostatniej {{count}} sesji",
+        "trendLabel_few": "Średnie RPE z ostatnich {{count}} sesji",
+        "trendLabel_many": "Średnie RPE z ostatnich {{count}} sesji",
+        "oneRmEffort": "Szac. 1RM z wysiłkiem",
+        "oneRmPlain": "Tylko z powtórzeń",
+        "oneRmNote": "Uwzględnia powtórzenia, które zostały Ci w zapasie: RPE 8 to dwa powtórzenia więcej. Używane są tylko serie z RPE."
+    },
+    "workoutPlans": {
+        "changeScheduleTitle": "Zmienić typ harmonogramu?",
+        "changeScheduleMessage": "Plany tygodniowe i sekwencyjne mają inny układ, więc dodane treningi zostaną wyczyszczone.",
+        "changeScheduleConfirm": "Zmień",
+        "updateSuccess": "Zaktualizowano plan treningów",
+        "createSuccess": "Utworzono plan treningów",
+        "updateFailed": "Nie udało się zaktualizować planu treningów",
+        "createFailed": "Nie udało się utworzyć planu treningów",
+        "editTitle": "Edytuj plan treningów",
+        "createTitle": "Utwórz plan treningów",
+        "loadingWorkouts": "Wczytuję Twoje treningi...",
+        "workoutsLoadFailed": "Nie udało się wczytać Twoich treningów",
+        "loadFailedSubtitle": "Sprawdź połączenie i spróbuj ponownie.",
+        "unnamedWorkout": "Trening",
+        "singleExercise": "Pojedyncze ćwiczenie",
+        "removeNamed": "Usuń {{name}}",
+        "chooseWorkout": "Wybierz trening",
+        "addWorkout": "Dodaj trening",
+        "noEndDate": "Bez daty końcowej",
+        "clearEndDate": "Wyczyść datę końcową",
+        "name": "Nazwa planu",
+        "namePlaceholder": "Nazwa planu treningów",
+        "nameRequired": "Nazwa planu jest wymagana.",
+        "description": "Opis",
+        "descriptionPlaceholder": "Opcjonalne notatki o tym planie",
+        "startDate": "Data rozpoczęcia",
+        "endDate": "Data końcowa (opcjonalna)",
+        "endBeforeStart": "Data końcowa nie może być wcześniejsza niż data rozpoczęcia.",
+        "activePlan": "Aktywny plan",
+        "activePlanHint": "Aktywny plan umieszcza swoje treningi w Twoich dniach i w harmonogramie zegarka.",
+        "scheduleType": "Harmonogram",
+        "weekly": "Tygodniowy",
+        "sequential": "Sekwencyjny",
+        "weeklyHint": "Treningi powtarzają się w te same dni każdego tygodnia.",
+        "sequentialHint": "Treningi tworzą cykl. Robisz następną sesję, kiedy trenujesz.",
+        "prefillDiary": "Wypełnij mój Dziennik",
+        "prefillDiaryHint": "Dodaje treningi każdego dnia do Dziennika z wyprzedzeniem. Przy wyłączonej opcji jesteś pytany przy rozpoczynaniu treningu.",
+        "weeklyPlan": "Plan tygodniowy",
+        "restDay": "Nic nie zaplanowano. Dzień odpoczynku.",
+        "sessions": "Sesje",
+        "sessionNumber": "Sesja {{number}}",
+        "removeSessionNumber": "Usuń sesję {{number}}",
+        "sessionNamePlaceholder": "Nazwa sesji (opcjonalna)",
+        "addSession": "Dodaj sesję",
+        "assignmentRequired": "Dodaj do planu co najmniej jeden trening.",
+        "presetNotice": "Możesz dodać treningi zapisane w bibliotece. Aby zaplanować pojedyncze ćwiczenie, użyj aplikacji webowej.",
+        "deleteTitle": "Usuń plan treningów",
+        "deleteMessage": "Usunąć {{name}}? Nadchodzące treningi, które ten plan dodał do Twojego Dziennika, zostaną usunięte.",
+        "deleteSuccess": "Usunięto plan treningów",
+        "deleteFailed": "Nie udało się usunąć planu treningów",
+        "title": "Plany treningów",
+        "create": "Utwórz plan treningów",
+        "active": "Aktywny",
+        "inactive": "Nieaktywny",
+        "dateRange": "{{start}} – {{end}}",
+        "starting": "Od {{date}}",
+        "deleteNamed": "Usuń {{name}}",
+        "noServer": "Brak skonfigurowanego serwera",
+        "noServerSubtitle": "Skonfiguruj połączenie z serwerem, aby zarządzać planami treningów.",
+        "goToSettings": "Przejdź do Ustawień",
+        "loading": "Wczytuję plany treningów...",
+        "loadFailed": "Nie udało się wczytać planów treningów",
+        "emptyTitle": "Brak planów treningów",
+        "emptySubtitle": "Rozłóż zapisane treningi na wybrane dni lub jako cykl do przechodzenia.",
+        "moreAssignments_one": "+{{count}} więcej",
+        "moreAssignments_few": "+{{count}} więcej",
+        "moreAssignments_many": "+{{count}} więcej"
     }
 }
