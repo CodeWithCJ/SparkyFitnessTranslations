@@ -7014,7 +7014,7 @@
             "pickOptionCustom": "{{mark}}{{title}} · {{minutes}} 分钟",
             "doThis": "做此训练",
             "switchHint": "遵循逐周建立的计划。默认关闭。",
-            "paused": "{{name}} 在完成 {{done}} 堂中的第 {{done}} 堂时暂停，共 {{total}} 堂。开启以继续。",
+            "paused": "{{name}} 在完成第 {{done}} 堂时暂停，共 {{total}} 堂。开启以继续。",
             "startOver": "重新开始",
             "startOverHint": "回到第一次训练",
             "skipHint": "不进行此训练，直接继续",
