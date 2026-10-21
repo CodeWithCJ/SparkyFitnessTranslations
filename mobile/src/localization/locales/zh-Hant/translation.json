@@ -4610,7 +4610,7 @@
             "goalDate": "目標日期",
             "steady": "穩定",
             "awayFromGoal": "偏離目標",
-            "tooFar": "目標太遠，無法顯示進度。"
+            "tooFar": "目標以超過2年太遠，無法顯示進度。"
         },
         "steps": {
             "title": "步數",
@@ -4664,7 +4664,7 @@
         "vo2max": {
             "title": "VO2 Max",
             "loadFailed": "無法載入 VO2 Max 數據。",
-            "empty": "此期間沒有 VO2 Max 數據。"
+            "empty": "此期間沒有 VO2 Max 數據"
         }
     },
     "exerciseLibrary": {
@@ -5206,7 +5206,7 @@
             "itching": "發癢",
             "fever": "發燒"
         },
-        "noHistoryForDay": "此日期無記錄",
+        "noHistoryForDay": "此日期無記錄.",
         "chart": {
             "summary_other": "發作期間的嚴重程度，{{count}} 次讀數"
         },
@@ -6047,7 +6047,7 @@
         "setInputCrown": "數位錶冠",
         "nutrientsDescription": "在手錶的熱量環下方選擇要顯示的營養素，並拖曳設定順序。每一項都會顯示今日的攝取量與目標的對比。",
         "rpeTitle": "RPE",
-        "rpeSubtitle": "在運動摘要中顯示 RPE。"
+        "rpeSubtitle": "在手錶上記錄一組動作後，轉動數位錶冠來選擇吃力程度（1 至 10），然後點按「儲存」，或點按「跳過」。"
     },
     "guidedWorkout": {
         "cue": {
@@ -6259,16 +6259,16 @@
             "weekA11y": "週負荷 {{load}}",
             "fourWeeksAgo": "4 週前",
             "last7": "最近 7 天",
-            "loadFailed": "無法載入訓練負荷",
-            "takeRest": "休息一天",
-            "ready": "已恢復",
+            "loadFailed": "無法載入訓練負荷.",
+            "takeRest": "在下次高強度訓練前，休息一天或做一次輕鬆的訓練。",
+            "ready": "你已充分休息，準備好迎接一堂好的訓練。",
             "status": {
-                "noData": "無數據",
-                "learning": "仍在學習",
-                "low": "低於平時",
-                "steady": "與平時一致",
-                "high": "高於平時",
-                "spike": "急升"
+                "noData": "過去四週沒有記錄任何訓練。",
+                "learning": "仍在學習你的正常水平。持續記錄，之後就會開始比較你的各週。",
+                "low": "比平時輕。是稍微增加一點，或享受休息的好時機。",
+                "steady": "與你的平時訓練一致。穩步累積。",
+                "high": "比平時高。一週尚可，但接下來幾次請保持輕鬆。",
+                "spike": "比平時大幅上升。這麼快增加負荷會提高受傷風險，請放緩。"
             }
         },
         "paceZones": {
@@ -6467,7 +6467,7 @@
         "loadFailed": "無法載入你的鞋。",
         "notFound": "找不到此鞋。",
         "assignFailed": "無法指派鞋",
-        "empty": "尚無跑鞋。新增一雙，然後在跑步時選用它，開始累計里程。",
+        "empty": "尚無跑鞋。新增一雙，然後在跑步時選用它，開始累計里程",
         "emptyHint": "新增一雙鞋，然後在跑步時選用它以開始累計里程。",
         "nameRequired": "輸入名稱。",
         "startingInvalid": "輸入 0 或更大的數字。",
@@ -6594,7 +6594,7 @@
         "description": "新增你想追蹤的自訂營養素。",
         "editTitle": "編輯自訂營養素",
         "createTitle": "新增自訂營養素",
-        "notFound": "找不到此自訂營養素。",
+        "notFound": "找不到此自訂營養素",
         "name": "名稱",
         "namePlaceholder": "例如：肌酸",
         "unit": "單位",
@@ -6607,14 +6607,14 @@
         "deleteFailed": "無法刪除自訂營養素",
         "delete": "刪除",
         "deleteTitle": "刪除營養素",
-        "deleteMessage": "刪除 {{name}}？",
+        "deleteMessage": "刪除 {{name}}？你也可以從過去的目標和日記條目中移除它。",
         "deleteKeepHistory": "刪除但保留歷史記錄",
         "deleteAllHistory": "刪除並清除歷史記錄"
     },
     "nutrientDisplay": {
         "title": "自訂營養素",
         "loading": "正在載入…",
-        "loadFailed": "無法載入營養素顯示。",
+        "loadFailed": "無法載入營養素顯示",
         "description": "選擇各處顯示的自訂營養素及其順序。",
         "groupPicker": "顯示於",
         "updateFailed": "無法更新營養素顯示。",
@@ -6713,7 +6713,7 @@
         },
         "unitMi": "mi",
         "unitKm": "km",
-        "unitBpm": "bpm",
+        "unitBpm": "次(bpm)/分鐘",
         "bar": {
             "recording": "記錄中",
             "saveHint": "點按以檢閱並儲存",
@@ -7041,7 +7041,7 @@
             "description": "需要你的 Apple Watch。當你的心率超出此範圍時震動，並在開啟語音提示時口頭提醒。",
             "lowest": "最低",
             "highest": "最高",
-            "value": "{{value}} bpm",
+            "value": "{{value}} 次(bpm)/分鐘",
             "lower": "{{edge}} 低 5 bpm",
             "higher": "{{edge}} 高 5 bpm",
             "workTitle": "快速段心率",
@@ -7244,7 +7244,7 @@
         "dailyAverages": "每日平均",
         "loadFailed": "無法載入營養數據",
         "empty": "此期間沒有記錄食物",
-        "kcal": "{{value}} kcal",
+        "kcal": "{{value}} 千卡",
         "grams": "{{value}} g",
         "changeHint": "{{change}}，相比前 {{days}} 天",
         "onTarget": "在目標的 10% 以內",
@@ -7853,7 +7853,7 @@
         "running": "正在你的手錶上跑步",
         "next": "下一個：{{step}}",
         "calories": "熱量",
-        "kcal": "kcal",
+        "kcal": "千卡",
         "ended": "你手錶上的訓練已結束或超出範圍。完成的訓練會加入你的日記。",
         "indoorNote": "室內距離是手錶的估算。你可以在結束時更正為跑步機的數字。",
         "starting": "正在你的手錶上開始…",
