@@ -4610,7 +4610,7 @@
             "goalDate": "目标日期",
             "steady": "稳定",
             "awayFromGoal": "偏离目标",
-            "tooFar": "目标太远，无法显示进度。"
+            "tooFar": "目标以超2年太远，无法显示进度"
         },
         "steps": {
             "title": "步数",
@@ -4663,8 +4663,8 @@
         "noTrendData": "无足够数据显示趋势。",
         "vo2max": {
             "title": "VO2 Max",
-            "loadFailed": "无法加载 VO2 Max 数据。",
-            "empty": "此期间没有 VO2 Max 数据。"
+            "loadFailed": "无法加载 VO2 Max 数据",
+            "empty": "此期间没有 VO2 Max 数据"
         }
     },
     "exerciseLibrary": {
@@ -5206,7 +5206,7 @@
             "itching": "发痒",
             "fever": "发烧"
         },
-        "noHistoryForDay": "此日期无记录",
+        "noHistoryForDay": "此日期无记录.",
         "chart": {
             "summary_other": "发作期间的严重程度，{{count}} 次读数"
         },
@@ -6047,7 +6047,7 @@
         "setInputCrown": "数码表冠",
         "nutrientsDescription": "在手表的卡路里环下方选择要显示的营养素，并拖动设置顺序。每一项都会显示今日的摄入量与目标的对比。",
         "rpeTitle": "RPE",
-        "rpeSubtitle": "在运动摘要中显示 RPE。"
+        "rpeSubtitle": "在手表上记录一组动作后，转动数码表冠来选择吃力程度（1 至 10），然后点击 “保存”，或点击 “跳过”。"
     },
     "guidedWorkout": {
         "cue": {
@@ -6259,16 +6259,16 @@
             "weekA11y": "周负荷 {{load}}",
             "fourWeeksAgo": "4 周前",
             "last7": "最近 7 天",
-            "loadFailed": "无法加载训练负荷",
-            "takeRest": "休息一天",
-            "ready": "已恢复",
+            "loadFailed": "无法加载训练负荷.",
+            "takeRest": "在下次高强度训练前，休息一天或做一次轻松的训练。",
+            "ready": "你已充分休息，准备好迎接一堂好的训练。",
             "status": {
-                "noData": "无数据",
-                "learning": "仍在学习",
-                "low": "低于平时",
-                "steady": "与平时一致",
-                "high": "高于平时",
-                "spike": "急升"
+                "noData": "过去四周没有记录任何训练。",
+                "learning": "仍在学习你的正常水平。持续记录，之后就会开始比较你的各周。",
+                "low": "比平时轻。是稍微增加一点，或享受休息的好时机。",
+                "steady": "与你的平时训练一致。稳步累积。",
+                "high": "比平时高。一周尚可，但接下来几次请保持轻松。",
+                "spike": "比平时大幅上升。这么快增加负荷会提高受伤风险，请放缓。"
             }
         },
         "paceZones": {
@@ -6467,7 +6467,7 @@
         "loadFailed": "无法加载你的鞋。",
         "notFound": "找不到此鞋。",
         "assignFailed": "无法指派鞋",
-        "empty": "暂无跑鞋。添加一双，然后在跑步时选用它，开始累计里程。",
+        "empty": "暂无跑鞋。添加一双，然后在跑步时选用它，开始累计里程",
         "emptyHint": "添加一双鞋，然后在跑步时选用它来开始累计里程。",
         "nameRequired": "输入名称。",
         "startingInvalid": "输入 0 或更大的数字。",
@@ -6594,7 +6594,7 @@
         "description": "添加你想追踪的自定义营养素。",
         "editTitle": "编辑自定义营养素",
         "createTitle": "添加自定义营养素",
-        "notFound": "找不到此自定义营养素。",
+        "notFound": "找不到此自定义营养素",
         "name": "名称",
         "namePlaceholder": "例如：肌酸",
         "unit": "单位",
@@ -6607,14 +6607,14 @@
         "deleteFailed": "无法删除自定义营养素",
         "delete": "删除",
         "deleteTitle": "删除营养素",
-        "deleteMessage": "删除 {{name}}？",
+        "deleteMessage": "删除 {{name}}？你也可以从过去的目标和日记条目中移除它。",
         "deleteKeepHistory": "删除但保留历史记录",
         "deleteAllHistory": "删除并清除历史记录"
     },
     "nutrientDisplay": {
         "title": "自定义营养素",
         "loading": "正在加载…",
-        "loadFailed": "无法加载营养素显示。",
+        "loadFailed": "无法加载营养素显示",
         "description": "选择各处显示的自定义营养素及其顺序。",
         "groupPicker": "显示在",
         "updateFailed": "无法更新营养素显示。",
@@ -6713,7 +6713,7 @@
         },
         "unitMi": "mi",
         "unitKm": "km",
-        "unitBpm": "bpm",
+        "unitBpm": "次/分钟",
         "bar": {
             "recording": "记录中",
             "saveHint": "点击以检阅并保存",
@@ -7041,7 +7041,7 @@
             "description": "需要你的 Apple Watch。当你的心率超出此范围时震动，并在开启语音提示时口头提醒。",
             "lowest": "最低",
             "highest": "最高",
-            "value": "{{value}} bpm",
+            "value": "{{value}} 次/分钟",
             "lower": "{{edge}} 低 5 bpm",
             "higher": "{{edge}} 高 5 bpm",
             "workTitle": "快速段心率",
@@ -7244,7 +7244,7 @@
         "dailyAverages": "每日平均",
         "loadFailed": "无法加载营养数据",
         "empty": "此期间没有记录食物",
-        "kcal": "{{value}} kcal",
+        "kcal": "{{value}} 千卡",
         "grams": "{{value}} g",
         "changeHint": "{{change}}，相比前 {{days}} 天",
         "onTarget": "在目标的 10% 以内",
@@ -7853,7 +7853,7 @@
         "running": "正在你的手表上跑步",
         "next": "下一个：{{step}}",
         "calories": "热量",
-        "kcal": "kcal",
+        "kcal": "千卡",
         "ended": "你手表上的训练已结束或超出范围。完成的训练会加入你的日记。",
         "indoorNote": "室内距离是手表的估算。你可以在结束时更正为跑步机的数字。",
         "starting": "正在你的手表上开始…",
