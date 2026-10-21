@@ -6576,7 +6576,10 @@
             "floorsCount_one": "{{formattedCount}} planta",
             "floorsCount_many": "{{formattedCount}} plantas",
             "floorsCount_other": "{{formattedCount}} plantas",
-            "cadence": "Cadencia media"
+            "cadence": "Cadencia media",
+            "spm": "{{value}} spm",
+            "strideLength": "Longitud de zancada",
+            "shareImage": "Compartir como imagen"
         },
         "consistency": {
             "subtitle_one": "La última {{formattedCount}} semana, de {{first}} a {{last}}",
@@ -8312,5 +8315,21 @@
         "customColor": "Código hexadecimal de color personalizado",
         "share": "Compartir imagen",
         "shareFailed": "No se pudo crear la imagen"
+    },
+    "routes": {
+        "addTitle": "Añadir una ruta",
+        "draw": "Trazar en el mapa",
+        "importGpx": "Importar un archivo GPX",
+        "importFailed": "No se pudo importar ese archivo",
+        "importFailedHint": "Elige un archivo GPX que contenga un track o una ruta.",
+        "loadFailed": "No se pudieron cargar tus rutas.",
+        "loadOneFailed": "No se pudo cargar esta ruta.",
+        "empty": "Aún no tienes rutas. Traza una en el mapa, importa un archivo GPX o guarda una carrera o caminata desde sus detalles.",
+        "mapA11y": "Mapa de esta ruta, desde el punto verde hasta el círculo rojo",
+        "nameLabel": "Nombre de la ruta",
+        "namePlaceholder": "Nombra esta ruta",
+        "climb": "{{climb}} de ascenso",
+        "rename": "Renombrar",
+        "renameFailed": "No se pudo renombrar"
     }
 }
