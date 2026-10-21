@@ -484,6 +484,15 @@
                 "perplexity": "Perplexity AI",
                 "meta": "Meta",
                 "custom": "Personalizado"
+            },
+            "reasoningEffort": {
+                "label": "Nível de raciocínio",
+                "low": "Baixo",
+                "medium": "Médio (recomendado)",
+                "high": "Alto",
+                "xhigh": "Muito alto",
+                "max": "Máximo",
+                "description": "Mais raciocínio dá às tarefas complexas de alimentos e refeições mais tempo para pensar, e pode aumentar o tempo de resposta e o custo."
             }
         },
         "apiKeyManagement": {
@@ -2682,7 +2691,31 @@
         "mindfulnessSection": {
             "hrvMs": "VFC {{hrv_rmssd}} ms"
         },
-        "failedToCalculateBodyFatWithError": "Falha ao calcular a gordura corporal: {{error}}"
+        "failedToCalculateBodyFatWithError": "Falha ao calcular a gordura corporal: {{error}}",
+        "newCheckin": "Novo check-in",
+        "editCheckin": "Editar check-in",
+        "addCheckin": "Adicionar check-in",
+        "saveChanges": "Salvar alterações",
+        "cancelEdit": "Cancelar",
+        "checkinTime": "Horário",
+        "dayCheckins": "Check-ins de hoje",
+        "otherDayCheckins": "Check-ins",
+        "noCheckins": "Nenhum check-in neste dia ainda.",
+        "dayAverage": "Média do dia",
+        "checkinNeedsContent": "Adicione humor, energia, foco, uma etiqueta ou uma anotação no diário para salvar.",
+        "checkinCount_one": "{{count}} check-in",
+        "checkinCount_many": "{{count}} check-ins",
+        "checkinCount_other": "{{count}} check-ins",
+        "energyOutOfFive": "Energia {{value}}/5",
+        "focusOutOfFive": "Foco {{value}}/5",
+        "editCheckinAt": "Editar check-in das {{time}}",
+        "deleteCheckinAt": "Excluir check-in das {{time}}",
+        "checkinSaved": "Check-in salvo",
+        "checkinUpdated": "Check-in atualizado",
+        "checkinDeleted": "Check-in excluído",
+        "deleteCheckinTitle": "Excluir este check-in?",
+        "deleteCheckinDescription": "Isto remove o check-in e a anotação do diário.",
+        "journalOptional": "Diário (opcional)"
     },
     "workoutReport": {
         "weight": "Peso",
@@ -4569,7 +4602,15 @@
         "sensitive": "Sensível",
         "showMood": "Mostrar humor",
         "hideMood": "Ocultar humor",
-        "deleteMood": "Excluir humor"
+        "deleteMood": "Excluir humor",
+        "noMoodSelected": "Nenhum humor selecionado",
+        "clearMood": "Limpar humor",
+        "energy": "Energia",
+        "energyLow": "Esgotado",
+        "energyHigh": "Cheio de energia",
+        "focus": "Foco",
+        "focusLow": "Disperso",
+        "focusHigh": "Concentrado"
     },
     "muscleGroupRecovery": {
         "title": "Recuperação do grupo muscular",
@@ -7898,7 +7939,8 @@
             "tooHard": "Mantendo a carga: na última vez foi difícil demais.",
             "tooHardRepeated": "Mais leve hoje: difícil demais duas sessões seguidas.",
             "highEffort": "Mantendo a carga: suas últimas séries ficaram perto do esforço máximo.",
-            "tooEasyRepeated": "Um pouco mais pesado: fácil demais duas sessões seguidas."
+            "tooEasyRepeated": "Um pouco mais pesado: fácil demais duas sessões seguidas.",
+            "lowEffort": "Um passo mais pesado: as suas últimas séries foram registradas como fáceis."
         },
         "declined": "Usando a sugestão de sempre.",
         "variation": "Você fez este exercício na maioria dos treinos recentes. Que tal uma variação?",
@@ -9282,6 +9324,29 @@
             "number": "Treino {{number}}",
             "titleRun": "Semana {{week}}, corrida {{run}}",
             "titleWalk": "Semana {{week}}, caminhada {{walk}}"
+        }
+    },
+    "foodAssistant": {
+        "state": "Preferências e tarefas de alimentação",
+        "error": "Não foi possível atualizar o estado do assistente. Atualize a página para ler a versão mais recente.",
+        "memoryHelp": "As preferências alimentares duradouras ficam salvas à parte do histórico do chat. Um pedido para hoje pode passar por cima delas sem alterá-las.",
+        "preference": "Preferência",
+        "forget": "Esquecer",
+        "noPreferences": "Nenhuma preferência alimentar salva.",
+        "resume": "Continuar no chat",
+        "noTasks": "Nenhuma tarefa de alimentação salva.",
+        "status": {
+            "draft": "Rascunho",
+            "running": "Em andamento",
+            "awaiting_input": "Aguardando resposta",
+            "complete": "Concluída",
+            "cancelled": "Cancelada",
+            "failed": "Falhou"
+        },
+        "ingredient": {
+            "unresolved": "Precisa de correspondência",
+            "selected": "Selecionado",
+            "verified": "Verificado"
         }
     }
 }
