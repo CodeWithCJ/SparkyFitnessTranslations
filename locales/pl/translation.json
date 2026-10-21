@@ -828,7 +828,7 @@
         },
         "bodyMeasurementsExportHeaders": {
             "date": "Data",
-            "weight": "Waga ({{unit}})",
+            "weight": "Masa ciała ({{unit}})",
             "neck": "Szyja ({{unit}})",
             "waist": "Talia ({{unit}})",
             "hips": "Biodra ({{unit}})",
@@ -1149,7 +1149,7 @@
         "failedToLoadExerciseProgressData": "Błąd ładowania danych postępu.",
         "noProgressDataAvailable": "Brak danych postępu dla wybranych ćwiczeń w tym zakresie dat.",
         "activityMaps": "Mapy aktywności",
-        "weight": "Waga",
+        "weight": "Masa ciała",
         "kg": "kg",
         "lbs": "lbs",
         "neck": "Szyja",
@@ -1210,7 +1210,7 @@
         "boneMass": "Masa kostna",
         "bodyWaterPercentage": "Woda w ciele %",
         "bmr": "BMR",
-        "weight2": "Waga ({{weightUnit}})",
+        "weight2": "Masa ciała ({{weightUnit}})",
         "neck2": "Szyja ({{measurementUnit}})",
         "waist2": "Talia ({{measurementUnit}})",
         "hips2": "Biodra ({{measurementUnit}})",
@@ -2165,7 +2165,7 @@
             "activityNotMuch": "Siedzący tryb życia (×1,2)",
             "adaptiveActivityHint": "W trybie adaptacyjnym jest to szacunek zapasowy do czasu zebrania wystarczającej ilości danych — a później nadal wyznacza limity wiarygodności. Twój zmierzony TDEE jest ograniczane do ±500 kcal od BMR × ten mnożnik, więc zbyt nisko ustawiony poziom może zaniżać faktycznie wyższy wydatek energetyczny.",
             "adaptiveGoal": "Cel adaptacyjny",
-            "adaptiveGoalDescription": "Twój cel kaloryczny jest wyliczany z Twojego zmierzonego wydatku energetycznego — porównujemy zapisane spożycie z trendem Twojej wagi z ostatnich 28 dni. To najdokładniejsza opcja po kilku tygodniach konsekwentnego zapisywania wagi i jedzenia.",
+            "adaptiveGoalDescription": "Twój cel kaloryczny jest wyliczany z Twojego zmierzonego wydatku energetycznego — porównujemy zapisane spożycie z trendem Twojej masy ciała z ostatnich 28 dni. To najdokładniejsza opcja po kilku tygodniach konsekwentnego zapisywania masy ciała i jedzenia.",
             "allowNegativeAdjustment": "Zezwalaj na ujemną korektę (uwzględniaj spalenie mniejszej liczby kalorii niż TDEE)",
             "dynamicGoal": "Cel dynamiczny",
             "dynamicGoalDescription": "Twój cel kaloryczny będzie dynamicznie dostosowywany do dziennego poziomu aktywności (np. ćwiczeń i kroków). To rozwiązanie jest idealne dla osób aktywnych lub takich, których poziom aktywności zmienia się z dnia na dzień.",
@@ -2251,8 +2251,8 @@
                 "manual": "Ręcznie"
             },
             "coaching": {
-                "maintenanceTitle": "Wskazówki: utrzymanie wagi",
-                "maintenanceText": "Kalorie utrzymania mają za zadanie utrzymać względnie stabilną masę ciała. Skup się na regularnym spożyciu białka (1,6–2,2 g/kg masy ciała), regularnych treningach siłowych i monitorowaniu trendów wagi, aby wprowadzać drobne korekty.",
+                "maintenanceTitle": "Wskazówki: utrzymanie masy ciała",
+                "maintenanceText": "Kalorie utrzymania mają za zadanie utrzymać względnie stabilną masę ciała. Skup się na regularnym spożyciu białka (1,6–2,2 g/kg masy ciała), regularnych treningach siłowych i monitorowaniu trendów masy ciała, aby wprowadzać drobne korekty.",
                 "aggressiveSurplusTitle": "Ostrzeżenie: agresywna nadwyżka",
                 "aggressiveSurplusText": "Tak duża nadwyżka doda tłuszcz szybciej niż mięśnie. Przyrost mięśni ograniczają trening i regeneracja, a nie ilość jedzenia ponad poziom utrzymania — powyżej ok. 0,5% masy ciała tygodniowo dodatkowa masa to głównie tłuszcz. Połącz to z mocnym programem treningu siłowego, utrzymuj białko na poziomie 1,6–2,2 g/kg i co kilka tygodni oceniaj tempo przyrostu.",
                 "leanBulkTitle": "Zalecenia: chuda masa",
@@ -2310,7 +2310,7 @@
             "livePreviewSavedNote": "BMR i tkanka tłuszczowa aktualizują się wraz ze zmianą ustawień. Wydatek energetyczny jest obliczany na serwerze na podstawie zapisanych ustawień, dlatego on i ostateczny cel zmienią się dopiero po zapisie.",
             "kcalCalories": "kcal (kalorie)",
             "kJJoules": "kJ (dżule)",
-            "adaptiveGoalTheGoldStandard": "<span>Cel adaptacyjny:</span> „złoty standard”. SparkyFitness oblicza Twoje TDEE, korelując rzeczywiste zmiany wagi z przyjmowanymi kaloriami z ostatnich 35 dni. „Uczy się” Twojego unikalnego metabolizmu.",
+            "adaptiveGoalTheGoldStandard": "<span>Cel adaptacyjny:</span> „złoty standard”. SparkyFitness oblicza Twoje TDEE, korelując rzeczywiste zmiany masy ciała z przyjmowanymi kaloriami z ostatnich 35 dni. „Uczy się” Twojego unikalnego metabolizmu.",
             "dynamicGoalYourCalorieGoal": "<span>Cel dynamiczny:</span> Twój cel kaloryczny będzie dostosowywany dynamicznie w oparciu o dzienny poziom aktywności (np. trening, kroki). Idealny dla aktywnych osób lub tych, których poziom aktywności zmienia się z dnia na dzień.",
             "fixedGoalYourCalorieGoal": "<span>Cel stały:</span> Twój cel kaloryczny pozostanie stały niezależnie od dziennej aktywności. Odpowiedni dla osób o stałym poziomie aktywności lub preferujących stabilny cel.",
             "percentageEarnBackOnlyEarn": "<span>Odzyskiwanie procentowe:</span> odzyskujesz tylko ustalony procent kalorii z treningu. Np. 50% tworzy bufor bezpieczeństwa, aby uniknąć przejadania z powodu zawyżonych szacunków spalania.",
@@ -2407,7 +2407,7 @@
             "surplus": "Nadwyżka",
             "deficit": "Deficyt",
             "adaptiveFormula": "Wzór: średnie dzienne kalorie − (dzienna zmiana masy w {{massUnit}} × {{kcalPerUnit}} kcal/{{massUnit}})",
-            "adaptiveFormulaExplainer": "{{kcalPerUnit}} kcal/{{massUnit}} to ilość energii odpowiadająca {{unitName}} masy ciała, dzięki czemu trend wagi można przeliczyć na kalorie. Utrata lub przyrost masy ciała to połączenie tłuszczu (~{{fatPerUnit}} kcal/{{massUnit}}) oraz tkanek beztłuszczowych i wody (~{{leanPerUnit}} kcal/{{massUnit}}), a wartość {{kcalPerUnit}} odzwierciedla typową mieszankę.",
+            "adaptiveFormulaExplainer": "{{kcalPerUnit}} kcal/{{massUnit}} to ilość energii odpowiadająca {{unitName}} masy ciała, dzięki czemu trend masy ciała można przeliczyć na kalorie. Utrata lub przyrost masy ciała to połączenie tłuszczu (~{{fatPerUnit}} kcal/{{massUnit}}) oraz tkanek beztłuszczowych i wody (~{{leanPerUnit}} kcal/{{massUnit}}), a wartość {{kcalPerUnit}} odzwierciedla typową mieszankę.",
             "adjustment": "Korekta",
             "goalAdjustmentLabel": "Korekta od celu:"
         },
@@ -2458,8 +2458,8 @@
             }
         },
         "goalCoaching": {
-            "maintenanceTitle": "Wskazówki: utrzymanie wagi",
-            "maintenanceText": "Kalorie utrzymania mają za zadanie utrzymać względnie stabilną masę ciała. Skup się na regularnym spożyciu białka (1,6–2,2 g/kg masy ciała), regularnych treningach siłowych i monitorowaniu trendów wagi, aby wprowadzać drobne korekty.",
+            "maintenanceTitle": "Wskazówki: utrzymanie masy ciała",
+            "maintenanceText": "Kalorie utrzymania mają za zadanie utrzymać względnie stabilną masę ciała. Skup się na regularnym spożyciu białka (1,6–2,2 g/kg masy ciała), regularnych treningach siłowych i monitorowaniu trendów masy ciała, aby wprowadzać drobne korekty.",
             "highAggressiveTitle": "Ostrzeżenie: bardzo agresywny deficyt",
             "highAggressiveText": "Bardzo agresywny deficyt. Deficyty powyżej 25% istotnie zwiększają ryzyko utraty mięśni, spadku wyników treningowych, silnego głodu i słabej regeneracji. Rozważ mniejszy deficyt, chyba że jesteś pod stałą opieką profesjonalisty. Jeśli kontynuujesz, postaw na wysokie białko (2,2–2,5 g/kg) i sen.",
             "aggressiveTitle": "Zalecenia: agresywny deficyt",
@@ -2888,7 +2888,7 @@
             "issuerUrl": "Adres URL wystawcy",
             "clientId": "Identyfikator klienta",
             "clientSecret": "Klucz tajny klienta",
-            "leaveUnchanged": "Zostaw puste, jeśli bez zmian",
+            "leaveUnchanged": "Pozostaw puste, aby zachować dotychczasowy sekret",
             "scope": "Zakres",
             "redirectUri": "URI przekierowania",
             "redirectUriPlaceholder": "np. {{uri}}",
@@ -3646,7 +3646,7 @@
         "saveSleep": "Zapisz sen",
         "dailyCheckIn": "Codzienne pomiary",
         "bodyMeasurementsTitle": "Pomiary ciała",
-        "weight": "Waga",
+        "weight": "Masa ciała",
         "enterWeight": "Wpisz masę ciała w",
         "steps": "Kroki",
         "enterDailySteps": "Wpisz dzisiejszą liczbę kroków",
@@ -3673,7 +3673,7 @@
         "failedToSaveCheckIn": "Błąd zapisu danych",
         "couldNotLoadUserProfile": "Nie udało się wczytać profilu do obliczeń.",
         "couldNotLoadUserPreferences": "Nie udało się wczytać preferencji do obliczeń.",
-        "bmiMethodRequiredFields": "Waga, wzrost, wiek i płeć są wymagane dla metody BMI.",
+        "bmiMethodRequiredFields": "Masa ciała, wzrost, wiek i płeć są wymagane dla metody BMI.",
         "usNavyMethodRequiredFields": "Płeć, wzrost, talia, szyja (i biodra u kobiet) są wymagane dla metody US Navy.",
         "failedToCalculateBodyFat": "Błąd obliczeń tkanki tłuszczowej:",
         "anUnknownErrorOccurred": "Wystąpił nieznany błąd.",
@@ -7508,7 +7508,7 @@
         "activeCalories": "Aktywne kalorie",
         "activeCaloriesBurned": "Spalone aktywne kalorie",
         "basalBodyTemperature": "Podstawowa temperatura ciała",
-        "basalMetabolicRate": "Podstawowa przemiana materii",
+        "basalMetabolicRate": "Podstawowa przemiana materii (BMR)",
         "bloodAlcoholContent": "Zawartość alkoholu we krwi",
         "bloodGlucose": "Glukoza we krwi",
         "bloodOxygenSaturation": "Saturacja krwi",
@@ -7901,7 +7901,7 @@
             "countdownValue_one": "{{count}} s",
             "countdownValue_few": "{{count}} s",
             "countdownValue_many": "{{count}} s",
-            "sample": "Tak będą brzmieć Twoje treningi prowadzone.",
+            "sample": "Tak będą brzmieć Twoje treningi w trybie prowadzonym.",
             "test": "Testuj głos"
         }
     },
@@ -8103,8 +8103,8 @@
             "previous": "Poprzedni miesiąc",
             "next": "Następny miesiąc",
             "free": "Bez objawów",
-            "mild": "Łagodne do umiarkowanych",
-            "severe": "Silne",
+            "mild": "Od łagodnego do umiarkowanego",
+            "severe": "Ciężkie",
             "unknown": "Brak wpisu"
         },
         "hub": {
@@ -8297,7 +8297,7 @@
             "chocolate": "Czekolada",
             "agedCheese": "Sery dojrzewające",
             "curedMeats": "Wędliny",
-            "mSG": "Glutaminian sodu (MSG)",
+            "mSG": "Glutaminian sodu",
             "artificialSweeteners": "Sztuczne słodziki",
             "histamineRichFood": "Produkty bogate w histaminę",
             "stress": "Stres",
@@ -8318,7 +8318,7 @@
             "darkQuietRoom": "Ciemne, ciche pomieszczenie",
             "coldCompress": "Zimny okład",
             "warmCompress": "Ciepły okład",
-            "heatPack": "Termofor",
+            "heatPack": "Okład rozgrzewający",
             "scalpMassage": "Masaż skóry głowy",
             "templePressure": "Ucisk na skronie",
             "stretching": "Rozciąganie",
@@ -8422,7 +8422,7 @@
         "aiHint": "Audio jest wysyłane do wybranego dostawcy AI przez Twój serwer. Mogą obowiązywać opłaty dostawcy. Wybierz model, aby włączyć transkrypcję AI.",
         "noModels": "Brak włączonych kompatybilnych modeli głosowych. Skonfiguruj model obsługujący audio w ustawieniach usługi AI w aplikacji webowej, a następnie odśwież.",
         "unavailable": "Wybrany model głosowy jest niedostępny. Wybierz inny model lub przełącz się na opcję systemową.",
-        "manualSend": "Dyktowanie wypełnia wersję roboczą. Sprawdź lub zedytuj ją, a następnie wyślij samodzielnie."
+        "manualSend": "Dyktowanie wypełnia wersję roboczą. Sprawdź ją lub popraw, a następnie wyślij samodzielnie."
     },
     "app": {
         "loadingSite": "Ładowanie strony…"
@@ -9305,7 +9305,7 @@
                 "structure": "Większość tygodni ma dwa łatwe biegi, średni bieg i długi bieg. Długi bieg narasta od 70 minut do 2¾ godziny, co czwarty tydzień jest lżejszy, a ostatnie dwa tygodnie to redukcja obciążeń przed dniem startu."
             },
             "returnToRunning": {
-                "description": "Powrót do biegania: cztery tygodnie, trzy biegi tygodniowo, do łagodnego wznowienia po przerwie. Budujesz od biegów jednominutowych do około 20 minut biegu. Zostaw dzień lub dwa między biegami i trzymaj łatwe tempo. Jeśli wracasz po kontuzji, najpierw skonsultuj się z fizjoterapeutą lub lekarzem.",
+                "description": "Powrót do biegania: cztery tygodnie, trzy biegi tygodniowo, do łagodnego wznowienia po przerwie. Budujesz od biegów jednominutowych do około 20 minut biegu. Pozostaw dzień lub dwa między biegami i trzymaj łatwe tempo. Jeśli wracasz po kontuzji, najpierw skonsultuj się z fizjoterapeutą lub lekarzem.",
                 "name": "Powrót do biegania",
                 "structure": "Tygodnie 1–3 naprzemiennie łączą krótkie biegi z marszem, od biegów 1-minutowych do 5-minutowych. Tydzień 4 ma trzy sesje biegowo-marszowe z biegami po 6, 10 i 12 minut, co daje łącznie 18, 20 i 22 minuty biegu."
             },
