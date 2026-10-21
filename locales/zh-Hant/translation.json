@@ -2583,7 +2583,7 @@
             "appID": "App ID",
             "enterClientID": "輸入 Client ID",
             "enterAppID": "輸入 App ID",
-            "clientSecret": "Client Secret",
+            "clientSecret": "客戶端密鑰",
             "appKey": "App Key",
             "enterClientSecret": "輸入 Client Secret",
             "enterAppKey": "輸入 App Key",
@@ -2593,9 +2593,9 @@
             "yazioPasswordOptional": "YAZIO 密碼（選填）",
             "leaveBlankToKeepExisting3": "留空以保留現有密碼",
             "emailAndPasswordAreOptional": "電子郵件與密碼為選填。僅需 Client ID 與 Client Secret。",
-            "yazioClientID": "YAZIO Client ID",
+            "yazioClientID": "YAZIO 用戶端 ID",
             "enterYAZIOClientID": "輸入 YAZIO Client ID",
-            "yazioClientSecret": "YAZIO Client Secret",
+            "yazioClientSecret": "YAZIO 用戶端密鑰",
             "leaveBlankToKeepExisting4": "留空以保留現有 client secret",
             "enterUSDAAPIKey": "輸入 USDA API 金鑰",
             "enterWithingsClientID": "輸入 Withings Client ID",
@@ -3582,7 +3582,7 @@
             "setToCurrentLocalTime": "設為目前的當地時間"
         },
         "exerciseEntryDisplay": {
-            "wger": "Wger",
+            "wger": "Wger 運動資料",
             "freeDB": "Free DB"
         }
     },
@@ -5646,7 +5646,7 @@
             "pleaseSignInAgainTo": "請重新登入以儲存食物來源。",
             "connectFoodDatabases": "連線食物資料庫",
             "optionalButAddingUSDAAnd": "選填，但加入 USDA 與 FatSecret 到你的搜尋中，會比預設的 Open Food Facts 帶來明顯更好的結果。你之後隨時可在設定中新增或變更。",
-            "usdaFoodDataCentral": "USDA FoodData Central",
+            "usdaFoodDataCentral": "USDA 食物資料中心",
             "getAFreeAPIKey": "取得免費 API 金鑰",
             "usdaAPIKey": "USDA API 金鑰",
             "getAPICredentials": "取得 API 憑證",
@@ -8626,7 +8626,7 @@
             "secondary": "次要：",
             "equipment": "器材：",
             "readInstructionsAloud": "朗讀動作說明",
-            "wger": "Wger",
+            "wger": "Wger 運動資料",
             "freeDB": "Free DB",
             "perHour": "{{unit}}／小時"
         },
