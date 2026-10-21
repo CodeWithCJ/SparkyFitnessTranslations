@@ -8146,7 +8146,13 @@
             "targetHint": "Usa m:ss para el ritmo y ppm para el pulso, manteniendo al menos 10 puntos de diferencia entre ambos extremos. Déjalo en blanco si no quieres objetivo.",
             "customize": "Personalizar este programa",
             "customizeHint": "Cópialo como un plan para poder editarlo",
-            "copyName": "{{name}} (mi copia)"
+            "copyName": "{{name}} (mi copia)",
+            "optionLabel_one": "{{name}} · {{formattedCount}} sesión de entrenamiento",
+            "optionLabel_many": "{{name}} · {{formattedCount}} sesiones de entrenamiento",
+            "optionLabel_other": "{{name}} · {{formattedCount}} sesiones de entrenamiento",
+            "workoutCount_one": "{{formattedCount}} sesión de entrenamiento",
+            "workoutCount_many": "{{formattedCount}} sesiones de entrenamiento",
+            "workoutCount_other": "{{formattedCount}} sesiones de entrenamiento"
         },
         "race": {
             "distance": {
