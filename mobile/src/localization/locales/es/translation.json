@@ -23,7 +23,8 @@
             "norwegianBokmal": "Norsk bokmål",
             "russian": "Русский",
             "simplifiedChinese": "简体中文",
-            "traditionalChinese": "正體中文"
+            "traditionalChinese": "正體中文",
+            "turkish": "Türkçe"
         },
         "app": "Ajustes de la app",
         "lastSynced": "Última sincronización {{time}}",
@@ -50,7 +51,10 @@
             "about": "Acerca de",
             "shareReport": "Compartir informe de diagnóstico",
             "watch": "Apple Watch",
-            "ai": "IA"
+            "ai": "IA",
+            "fasting": "Ayuno",
+            "goals": "Objetivos",
+            "reports": "Informes"
         },
         "theme": {
             "title": "Tema",
@@ -205,7 +209,8 @@
         "perPress": "{{value}} {{unit}}",
         "quickAddDrinks": "Añadido rápido",
         "waterFromFood": "Incluye {{value}} {{unit}} procedentes de alimentos",
-        "exerciseStatistics": "Estadísticas"
+        "exerciseStatistics": "Estadísticas",
+        "reportsLink": "Informes"
     },
     "addSheet": {
         "food": "Comida",
@@ -225,7 +230,10 @@
         "logCycle": "Registrar ciclo",
         "progressPhotos": "Fotos del progreso",
         "symptoms": "Síntomas",
-        "mindfulness": "Mindfulness"
+        "mindfulness": "Mindfulness",
+        "mood": "Estado de ánimo",
+        "recordActivity": "Registrar actividad",
+        "recordActivityHint": "Monitorea una caminata, carrera o ruta en bici con GPS"
     },
     "addSheetActions": {
         "noServerTitle": "Sin servidor conectado",
@@ -430,7 +438,11 @@
         "moveDown": "Mover abajo",
         "stateShown": "Visible",
         "stateHidden": "Oculto",
-        "configureCard": "Configurar {{name}}"
+        "configureCard": "Configurar {{name}}",
+        "mood": "Estado de ánimo",
+        "moodSubtitle": "Muestra tu ánimo de hoy, la tendencia de 7 días y registro rápido",
+        "trainingLoad": "Carga de entrenamiento",
+        "trainingLoadSubtitle": "Compara esta semana con tu entrenamiento habitual y te recuerda descansar"
     },
     "workoutSettings": {
         "title": "Ajustes de entrenamiento",
@@ -452,7 +464,9 @@
         "adaptiveCoachingAccessibility": "Sugerencias adaptativas",
         "duckMusic": "Bajar música durante los avisos",
         "duckMusicSubtitle": "Baja brevemente la música de otras apps mientras suena un pitido o aviso de voz de tu entrenamiento.",
-        "duckMusicAccessibility": "Bajar música durante los avisos"
+        "duckMusicAccessibility": "Bajar música durante los avisos",
+        "warmupCalculator": "Calculadora de calentamiento",
+        "warmupCalculatorSubtitle": "La progresión y el redondeo de pesos para las series de calentamiento que añadas a un ejercicio."
     },
     "foodSettings": {
         "title": "Ajustes de comida",
@@ -485,6 +499,17 @@
             "default": "Predeterminado",
             "retryTitle": "Reintentar con Open Food Facts",
             "retryDescription": "Si no se encuentra ningún resultado, prueba Open Food Facts automáticamente."
+        },
+        "nutrients": {
+            "title": "Nutrientes",
+            "custom": "Nutrientes personalizados",
+            "customSubtitle": "Crea y edita tus propios nutrientes",
+            "display": "Visualización de nutrientes",
+            "displaySubtitle": "Elige y ordena los nutrientes visibles en cada vista"
+        },
+        "allergens": {
+            "title": "Alérgenos",
+            "subtitle": "Recibe alertas en alimentos y escaneos que contengan los alérgenos que controlas"
         }
     },
     "mealTypes": {
@@ -693,7 +718,18 @@
             "mealPlans": "Planes de comidas",
             "mealPlansSubtitle": "Repetir comidas en los días seleccionados",
             "waterContainers": "Recipientes de agua",
-            "waterContainersSubtitle": "Botellas, vasos, y bebidas asociadas a comidas"
+            "waterContainersSubtitle": "Botellas, vasos, y bebidas asociadas a comidas",
+            "workoutPlans": "Planes de entrenamiento",
+            "workoutPlansSubtitle": "Organiza tus entrenamientos durante la semana",
+            "reports": "Informes",
+            "reportsSubtitle": "Tendencias de nutrición, sueño, ánimo y ejercicio",
+            "runPrograms": "Programas de entrenamiento",
+            "runProgramsSubtitle": "Planes de carrera y marcha desde 5K principiante hasta maratón",
+            "runProgramsActive": "{{name}} · {{progress}}",
+            "personalRecords": "Récords personales",
+            "personalRecordsSubtitle": "Tus mejores marcas en 1 km, 5 km, 10 km y más",
+            "equipment": "Equipamiento",
+            "equipmentSubtitle": "Zapatillas y material deportivo"
         },
         "sleep": "Sueño",
         "healthTrendsSettings": "Tendencias de salud",
@@ -708,7 +744,33 @@
         "exerciseStatistics": "Estadísticas del ejercicio",
         "cardioSession": "Sesión de cardio",
         "watchSettings": "Apple Watch",
-        "aiSettings": "IA"
+        "aiSettings": "IA",
+        "moodLog": "Estado de ánimo",
+        "fastingSettings": "Ajustes de ayuno",
+        "fasting": "Ayuno",
+        "warmupSettings": "Calculadora de calentamiento",
+        "symptomEpisodeDetail": "Detalles del episodio",
+        "recordActivity": "Registrar actividad",
+        "reports": "Informes",
+        "nutritionReport": "Nutrición",
+        "sleepAnalytics": "Análisis del sueño",
+        "moodReport": "Estado de ánimo",
+        "reportsSettings": "Personalizar informes",
+        "hydrationReport": "Hidratación",
+        "measurementsReport": "Mediciones",
+        "substancesReport": "Cafeína y alcohol",
+        "runSummary": "Actividad guardada",
+        "runPrograms": "Programas de entrenamiento",
+        "personalRecords": "Récords personales",
+        "watchRunLive": "En tu reloj",
+        "watchRunLiveRun": "Corre con tu reloj",
+        "watchWalkLive": "Camina con tu reloj",
+        "allergenSettings": "Alérgenos",
+        "runProgramCalendar": "Calendario del programa",
+        "runProgramWorkout": "Entrenamiento",
+        "runProgramEdit": "Editar plan",
+        "runProgramNew": "Nuevo plan",
+        "runProgramRace": "Planificar una carrera"
     },
     "nutrients": {
         "calories": "Calorías",
@@ -993,7 +1055,22 @@
         "equivalentUnitsUpdated_many": "",
         "equivalentUnitsUpdated_other": "Guardado · {{formattedCount}} unidades equivalentes actualizadas",
         "notes": "Notas",
-        "notesPlaceholder": "p. ej. Arroz blanco, doble de pollo, sin alubias (admite markdown)"
+        "notesPlaceholder": "p. ej. Arroz blanco, doble de pollo, sin alubias (admite markdown)",
+        "portions": {
+            "title": "Porciones con nombre",
+            "help": "Mantén este alimento en gramos o mililitros y añade porciones habituales como un paquete o una botella.",
+            "remove": "Eliminar porción {{name}}",
+            "metricReference": "Selecciona una ración en gramos o mililitros para definir los tamaños de porción.",
+            "metricReferenceRequired": "Selecciona una porción en gramos o mililitros que coincida con tus nuevas medidas.",
+            "name": "Nombre de la porción",
+            "namePlaceholder": "p. ej., paquete",
+            "equals": "1 porción =",
+            "amount": "Cantidad de la porción",
+            "confirm": "Añadir porción",
+            "add": "+ Añadir porción",
+            "saveFailed": "No se pudieron guardar todas las porciones. Inténtalo de nuevo."
+        },
+        "scanNutritionLabel": "Escanear etiqueta nutricional"
     },
     "foodDetail": {
         "sharedPublicly": "Alimento compartido públicamente",
@@ -1131,7 +1208,8 @@
             "loadPhoto": "No se pudo cargar la foto.",
             "lookupBarcode": "No se pudo buscar este código de barras. Inténtalo de nuevo.",
             "timeout": "La solicitud caducó. Comprueba la conexión con tu servidor.",
-            "retryOnDevice": "Este iPhone no pudo leer la etiqueta."
+            "retryOnDevice": "Este iPhone no pudo leer la etiqueta.",
+            "restartApp": "No se puede abrir la galería. Por favor, reinicia la app."
         },
         "permission": {
             "camera": "Necesitamos tu permiso para mostrar la cámara",
@@ -1315,7 +1393,8 @@
         },
         "tabs": {
             "fasting": "Ayuno",
-            "history": "Historial"
+            "history": "Historial",
+            "report": "Informe"
         },
         "startedAt": "Iniciado {{time}}",
         "targetAt": "Objetivo {{time}}",
@@ -1344,7 +1423,8 @@
         "eatingWindowHint": "El ayuno se reanudará automáticamente cuando cierre tu ventana de alimentación.",
         "startFastEarly": "Comenzar ayuno ahora",
         "eatingWindowOpened": "Ventana abierta",
-        "eatingWindowCloses": "La ventana se cierra"
+        "eatingWindowCloses": "La ventana se cierra",
+        "settings": "Ajustes de ayuno"
     },
     "fastingCard": {
         "title": "Ayuno",
@@ -1988,7 +2068,8 @@
         "bodyweightBanner": "Ejercicio con peso corporal: suma tu peso corporal ({{bodyWeight}} {{unit}}) al peso ingresado. Usa el signo menos para ejercicios asistidos.",
         "bodyweightBannerNoWeight": "Ejercicio con peso corporal: suma tu peso corporal al peso ingresado. Usa el signo menos para ejercicios asistidos. Registra tu peso corporal para calcular el volumen.",
         "modalityWeightDistance": "Peso y distancia (cargas)",
-        "modalityWeightDuration": "Peso y duración (isometrías con peso)"
+        "modalityWeightDuration": "Peso y duración (isometrías con peso)",
+        "addWarmups": "Añadir calentamientos"
     },
     "activeWorkout": {
         "liveActivity": {
@@ -2003,7 +2084,14 @@
             "workout": "Entrenamiento",
             "exercise": "Ejercicio",
             "set": "Serie",
-            "setOf": "de"
+            "setOf": "de",
+            "subtractFifteenSeconds": "Restar 15 segundos",
+            "subtractFifteenSecondsShort": "-15 s",
+            "skip": "Omitir",
+            "next": "Siguiente",
+            "setProgress": "Serie {{number}} de {{total}}",
+            "nextSet": "Siguiente: {{set}}",
+            "nextSetWithTarget": "Siguiente: {{set}} ({{target}})"
         },
         "bar": {
             "clearWorkout": "Borrar entrenamiento",
@@ -2109,7 +2197,8 @@
             "distance": "Distancia",
             "rir": "RIR",
             "startTimer": "Iniciar cronómetro",
-            "stopTimer": "Detener cronómetro"
+            "stopTimer": "Detener cronómetro",
+            "inputToolbar": "Acciones de registro de serie"
         },
         "columns": {
             "set": "Serie",
@@ -2594,14 +2683,160 @@
             "nutrientsNotUpdated": "No se guardaron los cambios en los nutrientes.",
             "nutrientCount_one": "{{count}} nutriente",
             "nutrientCount_many": "{{count}} nutrientes",
-            "nutrientCount_other": "{{count}} nutrientes"
+            "nutrientCount_other": "{{count}} nutrientes",
+            "scan": "Escanear código de barras para autocompletar",
+            "lookingUp": "Buscando información de la etiqueta…",
+            "fromOpenFoodFacts": "De Open Food Facts. Comprueba los valores con la etiqueta real.",
+            "scanLabel": "Escanear etiqueta para rellenar",
+            "scanLabelHint": "Fotografía la tabla de información nutricional o de suplementos.",
+            "takePhoto": "Tomar foto",
+            "choosePhoto": "Elegir de la galería",
+            "readingLabel": "Leyendo la etiqueta…",
+            "photoFailed": "No se pudo usar esa foto. Prueba con otra.",
+            "labelNoMatchTitle": "No se puede leer",
+            "labelNoMatchMessage": "No se encontraron datos legibles en esa foto. Encuadra bien la tabla de suplementos o añade los datos manualmente.",
+            "labelFailed": "No se pudo leer la etiqueta. Comprueba que el proveedor de IA esté configurado e inténtalo de nuevo.",
+            "labelReadOnDevice": "Etiqueta leída en este iPhone",
+            "labelReadByServer": "Etiqueta procesada por la IA del servidor",
+            "noMatchTitle": "No se encontraron coincidencias",
+            "noMatchMessage": "No se encontró ningún suplemento para ese código de barras. Puedes introducir la etiqueta manualmente.",
+            "lookupFailed": "No se pudo conectar con la base de datos de etiquetas de suplementos. Inténtalo más tarde.",
+            "servingNote": "Porción según etiqueta: {{serving}}",
+            "notAdded": "No añadidos desde la etiqueta: {{names}}"
         },
         "notificationScheduledDoses_one": "Tienes {{count}} dosis programada",
         "notificationScheduledDoses_many": "Tienes {{count}} dosis programadas",
         "notificationScheduledDoses_other": "Tienes {{count}} dosis programadas",
         "notificationScheduledDosesOverflow_one": "Dosis programada: {{names}} y {{count}} más",
         "notificationScheduledDosesOverflow_many": "Dosis programadas: {{names}} y {{count}} más",
-        "notificationScheduledDosesOverflow_other": "Dosis programadas: {{names}} y {{count}} más"
+        "notificationScheduledDosesOverflow_other": "Dosis programadas: {{names}} y {{count}} más",
+        "glp1": {
+            "inventory": {
+                "expired": "Caducó el {{date}}",
+                "expires": "Caduca el {{date}}",
+                "title": "Plumas y viales",
+                "add": "Añadir",
+                "empty": "Aún no tienes plumas ni viales. Añade uno para controlar las dosis restantes y la fecha de caducidad.",
+                "vial": "Vial",
+                "pen": "Pluma",
+                "status": {
+                    "in_use": "En uso",
+                    "finished": "Agotado",
+                    "sealed": "Sellado"
+                },
+                "reorder": "Momento de renovar",
+                "expiredWarning": "Fecha de caducidad vencida",
+                "expiringSoon": "Caduca en menos de una semana"
+            },
+            "checkIn": {
+                "saved": "Registro guardado",
+                "saveFailed": "Error al guardar el registro",
+                "title": "Registro diario",
+                "subtitle": "Cómo te afecta la medicación hoy. Se guarda en tus mediciones diarias.",
+                "save": "Guardar registro",
+                "metric": {
+                    "hunger": "Apetito",
+                    "food_noise": "Obsesión por la comida",
+                    "fullness": "Saciedad",
+                    "energy": "Energía"
+                }
+            },
+            "log": {
+                "dontDeduct": "No descontar",
+                "invalidDose": "Introduce una dosis válida",
+                "logged": "Inyección registrada",
+                "failed": "Error al registrar la inyección",
+                "title": "Registrar inyección",
+                "legend": "En verde la zona sugerida. En ámbar las usadas en los últimos {{days}} días.",
+                "chooseSite": "Elige una zona",
+                "siteTitle": "Zona de inyección",
+                "dose": "Dosis (mg)",
+                "dosePlaceholder": "Automático",
+                "pen": "De pluma / vial",
+                "penTitle": "Descontar de",
+                "notes": "Notas",
+                "notesPlaceholder": "p. ej., Leve escozor",
+                "logAt": "Registrar inyección: {{site}}"
+            },
+            "serum": {
+                "title": "Nivel estimado: {{name}}",
+                "now": "~{{percent}}% ahora",
+                "empty": "Registra inyecciones para estimar tus niveles. Requiere configurar un fármaco GLP-1 reconocido en la medicación."
+            },
+            "recent": {
+                "deleteTitle": "Eliminar inyección",
+                "deleteMessage": "¿Eliminar esta inyección? La dosis descontada de una pluma o vial se restaurará.",
+                "deleteFailed": "Error al eliminar la inyección",
+                "title": "Inyecciones recientes",
+                "empty": "Aún no hay inyecciones registradas."
+            },
+            "titration": {
+                "title": "Plan de ajuste de dosis",
+                "add": "Añadir paso",
+                "empty": "No hay pasos aún. Añade cada dosis prevista y marca como activa la actual.",
+                "status": {
+                    "active": "Actual",
+                    "done": "Completado",
+                    "planned": "Planificado"
+                },
+                "taper": "Reducción",
+                "invalidNumbers": "Introduce la dosis y las semanas como números.",
+                "deleteTitle": "Eliminar paso",
+                "deleteMessage": "¿Eliminar este paso de ajuste?",
+                "editStep": "Editar paso",
+                "newStep": "Nuevo paso",
+                "dose": "Dosis",
+                "startDate": "Fecha de inicio",
+                "weeksAtDose": "Semanas con esta dosis",
+                "statusLabel": "Estado",
+                "taperLabel": "Reducción paulatina de dosis"
+            },
+            "form": {
+                "notSet": "No establecido",
+                "clear": "Borrar",
+                "invalidNumbers": "Por favor, introduce números válidos.",
+                "saveFailed": "Error al guardar: {{error}}",
+                "deletePenTitle": "Eliminar pluma o vial",
+                "deletePenMessage": "¿Eliminar esta pluma o vial de tu inventario?",
+                "editPen": "Editar pluma o vial",
+                "newPen": "Nueva pluma o vial",
+                "kind": "Tipo",
+                "label": "Etiqueta",
+                "doseMg": "Dosis por toma (mg)",
+                "dosesTotal": "Dosis totales",
+                "concentration": "mg por mL",
+                "volume": "Volumen (mL)",
+                "openedAt": "Abierto el",
+                "expiry": "Caduca",
+                "reorderFlag": "Avisarme para reponer",
+                "reorderThreshold": "Avisar cuando las dosis restantes lleguen a",
+                "isGlp1": "Medicación GLP-1",
+                "drug": "Fármaco",
+                "drugPlaceholder": "Elige un fármaco",
+                "drugHelp": "Se usa para el nivel modelado y la rotación. Las plumas, el mapa corporal y el inventario se muestran para el tipo Inyección."
+            },
+            "tracker": {
+                "title": "Control de GLP-1",
+                "subtitle": "Inyecciones, mapa de zonas, plumas, ajustes de dosis y seguimiento diario"
+            },
+            "sites": {
+                "stomach_upper_left": "Abdomen - Superior izquierdo",
+                "stomach_upper_mid": "Abdomen - Superior central",
+                "stomach_upper_right": "Abdomen - Superior derecho",
+                "stomach_mid_left": "Abdomen - Medio izquierdo",
+                "stomach_mid_right": "Abdomen - Medio derecho",
+                "stomach_lower_left": "Abdomen - Inferior izquierdo",
+                "stomach_lower_mid": "Abdomen - Inferior central",
+                "stomach_lower_right": "Abdomen - Inferior derecho",
+                "left_arm": "Brazo izquierdo",
+                "right_arm": "Brazo derecho",
+                "left_thigh": "Muslo izquierdo",
+                "right_thigh": "Muslo derecho",
+                "left_hip": "Cadera izquierda",
+                "right_hip": "Cadera derecha",
+                "unknown": "Desconocido"
+            }
+        }
     },
     "pregnancy": {
         "prompt": {
@@ -3308,7 +3543,11 @@
             "helped": "Ayudó",
             "partly": "En parte",
             "didntHelp": "No ayudó",
-            "unknown": "No lo sé"
+            "unknown": "No lo sé",
+            "full": "alivio total",
+            "partial": "alivio parcial",
+            "none": "sin alivio",
+            "unrated": "sin calificar"
         },
         "kinds": {
             "relief": "Alivio / Sin medicamentos",
@@ -3323,6 +3562,160 @@
             "dailyBody": "¿Cómo te sientes hoy? Toca para registrar cualquier síntoma.",
             "nudgeTitle": "¿El episodio sigue activo?",
             "nudgeBody": "{{name}} lleva activo {{hours}} horas. ¿Sigue en curso o ha terminado?"
+        },
+        "builtIn": {
+            "head": "Cabeza",
+            "neck": "Cuello",
+            "shoulders": "Hombros",
+            "upperBack": "Espalda alta",
+            "lowerBack": "Espalda baja",
+            "chest": "Pecho",
+            "abdomen": "Abdomen",
+            "pelvis": "Pelvis",
+            "hips": "Caderas",
+            "arms": "Brazos",
+            "handsWrists": "Manos / muñecas",
+            "legs": "Piernas",
+            "knees": "Rodillas",
+            "feetAnkles": "Pies / tobillos",
+            "wholeBody": "Todo el cuerpo",
+            "forehead": "Frente",
+            "behindBothEyes": "Detrás de ambos ojos",
+            "behindLeftEye": "Detrás del ojo izquierdo",
+            "behindRightEye": "Detrás del ojo derecho",
+            "leftTemple": "Sien izquierda",
+            "rightTemple": "Sien derecha",
+            "topOfHead": "Parte superior de la cabeza",
+            "backOfHead": "Parte posterior de la cabeza",
+            "jaw": "Mandíbula",
+            "sinuses": "Senos paranasales",
+            "face": "Rostro",
+            "wholeHead": "Toda la cabeza",
+            "throbbing": "Pulsátil",
+            "pulsing": "Palpitante",
+            "sharp": "Agudo",
+            "dullAche": "Sordo / molestia",
+            "burning": "Ardor",
+            "stiffness": "Rigidez",
+            "shooting": "Fulgurante",
+            "stabbing": "Punzante",
+            "pressure": "Presión",
+            "cramping": "Calambres / espasmos",
+            "itchy": "Picazón",
+            "aura": "Aura",
+            "nausea": "Náuseas",
+            "vomiting": "Vómitos",
+            "neckPain": "Dolor de cuello",
+            "stuffyNose": "Congestión nasal",
+            "dizziness": "Mareos",
+            "lightSensitivity": "Sensibilidad a la luz",
+            "soundSensitivity": "Sensibilidad al sonido",
+            "touchSensitivity": "Sensibilidad al tacto",
+            "smellSensitivity": "Sensibilidad a los olores",
+            "fatigue": "Fatiga",
+            "irritability": "Irritabilidad",
+            "confusion": "Confusión",
+            "sweating": "Sudoración",
+            "bodyTemperatureChange": "Cambio de temperatura corporal",
+            "stomachAche": "Dolor de estómago",
+            "visionProblems": "Problemas de visión",
+            "numbnessTingling": "Entumecimiento / hormigueo",
+            "difficultySpeaking": "Dificultad para hablar",
+            "ringingInEars": "Zumbido en los oídos",
+            "poorSleep": "Sueño deficiente",
+            "tooMuchSleep": "Exceso de sueño",
+            "irregularSleepSchedule": "Horario de sueño irregular",
+            "skippedMeal": "Comida omitida",
+            "dehydration": "Deshidratación",
+            "caffeine": "Cafeína",
+            "alcohol": "Alcohol",
+            "redWine": "Vino tinto",
+            "chocolate": "Chocolate",
+            "agedCheese": "Queso curado",
+            "curedMeats": "Embutidos",
+            "mSG": "GMS",
+            "artificialSweeteners": "Edulcorantes artificiales",
+            "histamineRichFood": "Alimentos ricos en histamina",
+            "stress": "Estrés",
+            "overexertion": "Sobreexfuerzo",
+            "screenTime": "Tiempo frente a pantallas",
+            "travel": "Viajes",
+            "weatherChange": "Cambio de clima",
+            "brightLight": "Luz brillante",
+            "loudNoise": "Ruido fuerte",
+            "strongSmell": "Olor fuerte",
+            "pollen": "Polen",
+            "dust": "Polvo",
+            "menstruation": "Menstruación",
+            "hormonalChange": "Cambio hormonal",
+            "medicationOveruse": "Uso excesivo de medicamentos",
+            "illness": "Enfermedad",
+            "rest": "Descanso",
+            "darkQuietRoom": "Habitación oscura y silenciosa",
+            "coldCompress": "Compresa fría",
+            "warmCompress": "Compresa tibia",
+            "heatPack": "Bolsa de calor",
+            "scalpMassage": "Masaje de cuero cabelludo",
+            "templePressure": "Presión en las sienes",
+            "stretching": "Estiramiento",
+            "meditation": "Meditación",
+            "hydration": "Hidratación",
+            "sleep": "Sueño",
+            "moodChange": "Cambio de humor",
+            "poorConcentration": "Falta de concentración",
+            "yawning": "Bostezos",
+            "foodCravings": "Antojos de comida",
+            "neckStiffness": "Rigidez en el cuello",
+            "frequentUrination": "Micción frecuente",
+            "visual": "Visual",
+            "sensory": "Sensorial",
+            "motor": "Motor",
+            "speech": "Habla",
+            "drained": "Agotamiento",
+            "stiffNeck": "Cuello rígido",
+            "foodDrink": "Comida y bebida",
+            "lifestyle": "Estilo de vida",
+            "environment": "Entorno",
+            "hormonal": "Hormonal",
+            "other": "Otro",
+            "headache": "Dolor de cabeza",
+            "constipation": "Estreñimiento",
+            "diarrhea": "Diarrea",
+            "acidRefluxGERD": "Reflujo ácido / ERGE",
+            "stomachPainCramping": "Dolor / cólicos estomacales",
+            "migraine": "Migraña",
+            "backPain": "Dolor de espalda",
+            "jointPain": "Dolor articular",
+            "musclePain": "Dolor muscular",
+            "bloating": "Hinchazón",
+            "anxiety": "Ansiedad",
+            "panicAttack": "Ataque de pánico",
+            "brainFog": "Niebla mental",
+            "hayFever": "Fiebre del heno",
+            "cough": "Tos",
+            "wheezing": "Sibilancias",
+            "soreThroat": "Dolor de garganta",
+            "rash": "Erupción cutánea",
+            "eczemaFlare": "Brote de eccema",
+            "itching": "Picazón",
+            "fever": "Fiebre"
+        },
+        "noHistoryForDay": "No se registraron síntomas en este día.",
+        "calendar": {
+            "previous": "Mes anterior",
+            "next": "Mes siguiente",
+            "free": "Sin síntomas",
+            "mild": "Leve a moderado",
+            "severe": "Grave",
+            "unknown": "Sin entrada"
+        },
+        "detail": {
+            "edit": "Editar",
+            "notFound": "Esta entrada ya no está disponible."
+        },
+        "episode": {
+            "ongoing": "en curso",
+            "peak": "pico de {{n}}"
         }
     },
     "checkIn": {
@@ -3883,7 +4276,8 @@
         },
         "useExternalBmr": "Usar la TMB medida de los controles y los dispositivos sincronizados",
         "useExternalBmrHint": "Desactivado por defecto: hasta que lo actives se usa siempre la fórmula que hayas elegido. Si lo activas, una TMB registrada en un control o sincronizada desde una báscula inteligente o un proveedor de salud sustituye a la fórmula ese día, siempre que sea fisiológicamente plausible para ti.",
-        "useExternalBmrIosNote": "La energía en reposo de Apple Health ya incluye la actividad diaria ligera, así que plantéate poner el nivel de actividad en Ninguno (×1,0) para no contarla dos veces."
+        "useExternalBmrIosNote": "La energía en reposo de Apple Health ya incluye la actividad diaria ligera, así que plantéate poner el nivel de actividad en Ninguno (×1,0) para no contarla dos veces.",
+        "adaptiveEarnBack": "Los objetivos adaptativos ya tienen en cuenta tu actividad diaria. Las calorías restantes son Objetivo menos Consumidas. La compensación por ejercicio solo aplica a objetivos manuales."
     },
     "foodUnit": {
         "updateFailed": "No se pudo actualizar esa unidad",
@@ -4739,7 +5133,13 @@
         "weight": {
             "title": "Peso",
             "loadFailed": "No se pudieron cargar los datos de peso",
-            "empty": "No hay datos de peso para este periodo"
+            "empty": "No hay datos de peso para este periodo",
+            "trend": "Tendencia",
+            "perWeek": "Por semana",
+            "goalDate": "Fecha objetivo",
+            "steady": "Manteniéndose estable",
+            "awayFromGoal": "Alejándose",
+            "tooFar": "Más de 2 años"
         },
         "steps": {
             "title": "Pasos",
@@ -4790,6 +5190,12 @@
             "avgCalories": "Media",
             "avgCaloriesValue": "{{formattedCount}} kcal",
             "noAverage": "—"
+        },
+        "noTrendData": "Aún no hay datos para graficar.",
+        "vo2max": {
+            "title": "VO2 máx.",
+            "loadFailed": "Error al cargar los datos de VO2 máx.",
+            "empty": "Sin datos de VO2 máx. para este periodo"
         }
     },
     "passkeySettings": {
@@ -5030,7 +5436,10 @@
     "ranges": {
         "7d": "7d",
         "30d": "30d",
-        "90d": "90d"
+        "90d": "90d",
+        "custom": "Personalizado",
+        "customTitle": "Elige un rango de fechas",
+        "customConfirm": "Mostrar este rango"
     },
     "dateRange": {
         "removeTitle": "Selecciona un intervalo de fechas para quitar",
@@ -5261,11 +5670,22 @@
             "exercise": "Ejercicio",
             "checkin": "Registro",
             "goals": "Objetivos",
-            "lookedUp": "Se consultó {{name}}"
+            "lookedUp": "Se consultó {{name}}",
+            "runProgram": "Ejecutar programa"
         },
         "typing": "Sparky está escribiendo",
         "voice": {
-            "stop": "Detener dictado"
+            "stop": "Detener dictado",
+            "label": "Dictar mensaje",
+            "aiLabel": "Dictar con IA",
+            "listening": "Escuchando",
+            "permissionTitle": "La entrada de voz necesita el micrófono",
+            "permissionMessage": "Permite el acceso al micrófono y al reconocimiento de voz en los ajustes del sistema para dictar mensajes.",
+            "errorTitle": "Error en la entrada de voz",
+            "aiErrorTitle": "Error en la transcripción de voz por IA",
+            "aiErrorMessage": "Comprueba el proveedor de voz seleccionado e inténtalo de nuevo.",
+            "noSpeechTitle": "No se detectó voz",
+            "noSpeechMessage": "Inténtalo de nuevo hablando más cerca del micrófono."
         }
     },
     "foodEntryMeal": {
@@ -5711,7 +6131,18 @@
         "reorderFailed": "No se pudieron reordenar los recipientes",
         "setPrimaryFailed": "No se pudo marcar el recipiente principal",
         "setPrimaryNamed": "Marcar {{name}} como principal",
-        "title": "Recipientes de agua"
+        "title": "Recipientes de agua",
+        "settings": {
+            "displayUnit": "Unidad de visualización de agua",
+            "unitMl": "Mililitros (ml)",
+            "unitOz": "Onzas líquidas (oz)",
+            "unitLiter": "Litros",
+            "addExerciseWater": "Sumar la pérdida de agua por ejercicio al objetivo diario",
+            "addExerciseWaterHint": "Aumenta tu objetivo diario de agua según la estimación de sudor perdido en tus entrenamientos.",
+            "addFoodWater": "Contar el agua de los alimentos en tu consumo",
+            "addFoodWaterHint": "Suma el contenido de agua de las comidas registradas al total diario, salvo que ya esté contabilizado en un recipiente vinculado.",
+            "updateFailed": "Error al actualizar la configuración."
+        }
     },
     "mindfulness": {
         "timer": {
@@ -5775,14 +6206,19 @@
             "endHrAccessibility": "Frecuencia cardíaca final",
             "notes": "Notas (opcional)",
             "notesAccessibility": "Notas",
-            "notesPlaceholder": "¿Qué tal te ha ido el entrenamiento?"
+            "notesPlaceholder": "¿Qué tal te ha ido el entrenamiento?",
+            "hrv": "VFC (ms)",
+            "hrvAccessibility": "VFC RMSSD",
+            "startHr": "FC inicial",
+            "endHr": "FC final"
         },
         "tools": {
             "title": "Practica Interactiva",
             "breatheTitle": "Respiración rítmica",
             "breatheSubtitle": "Cuadro, 4-7-8, Protocolos de coherencia",
             "timerTitle": "Temporizador de meditación",
-            "timerSubtitle": "Cuenta atrás programada y cronómetro abierto"
+            "timerSubtitle": "Cuenta atrás programada y cronómetro abierto",
+            "startAction": "Iniciar"
         },
         "detail": {
             "historyTab": "Historial",
@@ -5796,13 +6232,17 @@
             "sessionSaved": "La sesión se ha guardado correctamente",
             "sessionDeleted": "Sesión eliminada",
             "deletePrompt": "Eliminar sesión de Mindfulness",
-            "deleteConfirm": "¿Estás seguro de que quieres borrar esta sesión?"
+            "deleteConfirm": "¿Estás seguro de que quieres borrar esta sesión?",
+            "practiceTab": "Practicar y registrar"
         },
         "fields": {
             "durationMinutes": "Duración (min)",
             "sessionType": "Tipo",
             "notes": "Notas",
-            "heartRateAvg": "Frecuencia cardíaca media (lpm)"
+            "heartRateAvg": "Frecuencia cardíaca media (lpm)",
+            "heartRateStart": "FC inicial (ppm)",
+            "heartRateEnd": "FC final (ppm)",
+            "hrvRmssd": "VFC RMSSD (ms)"
         },
         "breathwork": {
             "boxDescription": "4-4-4-4 • Concentración y tranquilidad",
@@ -5815,7 +6255,10 @@
             "title": "Respiración",
             "pause": "Pausar",
             "resume": "Reanudar",
-            "ready": "Listo"
+            "ready": "Listo",
+            "coherenceDescription": "5-5 • Equilibrio y descenso de FC",
+            "time": "Tiempo",
+            "cycles": "Ciclos"
         }
     },
     "muscles": {
@@ -5987,7 +6430,10 @@
             "water": "Agua",
             "entry": "Control de peso",
             "trend": "Tendencia de peso",
-            "workout": "Entrenamiento"
+            "workout": "Entrenamiento",
+            "medications": "Medicamentos",
+            "fasting": "Ayuno",
+            "steps": "Pasos"
         },
         "nutrientsTitle": "Nutrientes de la página de objetivos",
         "nutrientsDescription": "Elige los nutrientes que aparecen bajo el anillo de calorías en tu reloj y arrastra para definir su orden. Cada uno muestra la cantidad de hoy frente a su objetivo.",
@@ -5995,7 +6441,9 @@
         "setInputTitle": "Introducción de series",
         "setInputDescription": "Cómo introduces el peso y las repeticiones en el reloj durante un entrenamiento: escríbelos en el teclado numérico, o toca un valor y gira la Digital Crown o deslízala, de 0,5 en 0,5 para el peso.",
         "setInputKeypad": "Teclado numérico",
-        "setInputCrown": "Digital Crown"
+        "setInputCrown": "Digital Crown",
+        "rpeTitle": "Preguntar esfuerzo percibido (RPE) tras cada serie",
+        "rpeSubtitle": "Tras registrar una serie en el reloj, gira la Digital Crown para elegir la dificultad del 1 al 10 y pulsa Guardar, o bien Omitir."
     },
     "exerciseStatistics": {
         "analysis": {
@@ -6043,7 +6491,39 @@
             "zone": "Zona {{zone}}",
             "zoneFrom": "a partir de {{bpm}} ppm",
             "minutesAxis": "Minutos desde el inicio",
-            "underOneMinute": "<1 min"
+            "underOneMinute": "<1 min",
+            "meters": "{{value}} m",
+            "feet": "{{value}} ft",
+            "floors": "Pisos subidos",
+            "elevationGain": "Desnivel positivo",
+            "trends": {
+                "title": "Carrera, últimas 12 semanas",
+                "thisWeek": "Esta semana",
+                "thisWeekAbove": "Esta semana, {{percent}}% por encima de tu media reciente",
+                "thisWeekBelow": "Esta semana, {{percent}}% por debajo de tu media reciente",
+                "chartA11y": "Distancia semanal de carrera en las últimas 12 semanas",
+                "longestRun": "Carrera más larga",
+                "efficiency": "Eficiencia",
+                "raceTimes": "Estimaciones de tiempo de carrera",
+                "race5k": "5K",
+                "race10k": "10K",
+                "raceHalf": "Medio maratón",
+                "raceMarathon": "Maratón",
+                "basis1k": "1K",
+                "basis1mi": "milla",
+                "basis15k": "15K",
+                "yourRecord": "tu récord",
+                "fromBest": "a partir de tus {{distance}}",
+                "raceTimesHint": "Las estimaciones proyectan tus mejores esfuerzos a cada distancia. Suelen ser optimistas para distancias en las que no has entrenado específicamente.",
+                "efficiencyHint": "La eficiencia es la distancia por latido en carreras de 20 minutos o más, comparando semanas anteriores con las recientes. Cuanto mayor sea, mejor forma física al mismo esfuerzo."
+            },
+            "kilometersAxis": "Kilómetros desde el inicio",
+            "milesAxis": "Millas desde el inicio",
+            "bestPace": "Mejor {{value}}",
+            "perKm": "/km",
+            "perMile": "/mi",
+            "exportGpx": "Exportar GPX",
+            "exportGpxFailed": "No se pudo exportar la ruta"
         },
         "consistency": {
             "subtitle_one": "La última {{formattedCount}} semana, de {{first}} a {{last}}",
@@ -6103,7 +6583,38 @@
         },
         "sets_one": "{{formattedCount}} serie",
         "sets_many": "{{formattedCount}} series",
-        "sets_other": "{{formattedCount}} series"
+        "sets_other": "{{formattedCount}} series",
+        "load": {
+            "title": "Carga de entrenamiento",
+            "subtitle": "Minutos de entrenamiento ponderados por frecuencia cardíaca, esta semana frente a las últimas cuatro.",
+            "thisWeek": "esta semana · habitual {{average}}",
+            "weekA11y": "Carga semanal {{load}}",
+            "fourWeeksAgo": "Hace 4 semanas",
+            "last7": "Últimos 7 días",
+            "loadFailed": "No se pudo cargar tu carga de entrenamiento.",
+            "takeRest": "Tómate un día de descanso o una sesión suave antes de tu próximo esfuerzo intenso.",
+            "ready": "¡Estás descansado y con la energía a tope para una gran sesión!",
+            "status": {
+                "noData": "No hay entrenamientos registrados en las últimas cuatro semanas.",
+                "learning": "Aún conociendo tu ritmo habitual. Sigue registrando y pronto empezará a comparar tus semanas.",
+                "low": "Más suave de lo habitual. Buen momento para sumar un poco más o disfrutar de la recuperación.",
+                "steady": "En línea con tu entrenamiento habitual. ¡Una progresión constante y sólida!",
+                "high": "Mayor de lo habitual. Excelente por una semana, pero conviene suavizar las siguientes.",
+                "spike": "Un aumento considerable respecto a lo habitual. Subir tan rápido incrementa el riesgo de lesión, baja un poco la intensidad."
+            }
+        },
+        "paceZones": {
+            "title": "Zonas de ritmo",
+            "perKm": "/km",
+            "perMile": "/mi",
+            "easy": "Suave",
+            "steady": "Constante",
+            "threshold": "Umbral",
+            "interval": "Intervalo",
+            "repetition": "Repetición",
+            "range": "{{fast}} – {{slow}} {{unit}}",
+            "fromEffort": "Calculado a partir de tu mejor carrera reciente. El ritmo de umbral es de aproximadamente {{pace}} {{unit}}."
+        }
     },
     "aiSettings": {
         "server": {
@@ -6137,6 +6648,720 @@
         "aiHint": "El audio se envía al proveedor de IA seleccionado a través de tu servidor. Pueden aplicarse cargos del proveedor. Elige un modelo para activar la transcripción por IA.",
         "noModels": "No hay modelos de voz compatibles habilitados. Configura un modelo compatible con audio en los ajustes del servicio de IA de la aplicación web y, después, actualiza la página.",
         "unavailable": "El modelo de voz seleccionado no está disponible. Elige otro modelo o cambia a Sistema.",
-        "manualSend": "El dictado completa el borrador. Revísalo o edítalo y envíalo tú mismo."
+        "manualSend": "El dictado completa el borrador. Revísalo o edítalo y envíalo tú mismo.",
+        "saveFailed": "No se pudieron guardar los ajustes de voz. Inténtalo de nuevo.",
+        "loadFailed": "No se pudieron cargar los ajustes de voz.",
+        "modelsFailed": "No se pudieron cargar los modelos de voz."
+    },
+    "shoes": {
+        "title": "Zapatillas",
+        "shoe": "Zapatilla",
+        "noShoe": "Sin zapatilla",
+        "addShoe": "Añadir zapatilla",
+        "editShoe": "Editar zapatilla",
+        "name": "Nombre",
+        "brand": "Marca",
+        "model": "Modelo",
+        "nickname": "Apodo",
+        "purchaseDate": "Fecha de compra",
+        "purchasePrice": "Precio",
+        "startingDistance": "Kilometraje inicial ({{unit}})",
+        "retireAt": "Retirar a los ({{unit}})",
+        "useAsDefault": "Usar como mi par predeterminado",
+        "retired": "Retiradas",
+        "retiredSection": "Retiradas",
+        "wornOut": "Desgastadas",
+        "ofLimit": "de {{limit}} {{unit}}",
+        "lastUsed": "último uso {{date}}",
+        "retire": "Retirar",
+        "retirePrompt": "Este par ha alcanzado su límite de kilómetros. ¿Deseas retirarlo?",
+        "reactivate": "Reactivar",
+        "deleteTitle": "¿Eliminar esta zapatilla?",
+        "deleteDescription": "Las carreras registradas con este par se mantendrán en tu diario, pero ya no estarán vinculadas a la zapatilla.",
+        "add": "Añadir",
+        "loadFailed": "No se pudieron cargar tus zapatillas.",
+        "notFound": "Zapatilla no encontrada.",
+        "assignFailed": "Error al asignar la zapatilla",
+        "empty": "Aún no hay zapatillas",
+        "emptyHint": "Añade un par y selecciónalo en una carrera para empezar a contabilizar sus kilómetros.",
+        "nameRequired": "Introduce un nombre.",
+        "startingInvalid": "Introduce 0 o más.",
+        "retireInvalid": "Introduce una distancia superior a 0.",
+        "selectDate": "Seleccionar fecha",
+        "clearDate": "Borrar fecha",
+        "priceInvalid": "Introduce 0 o más.",
+        "useAsDefaultHint": "Las nuevas carreras registradas, en exterior o interior, se asignarán a tu par predeterminado.",
+        "limitReachedTitle": "¿Toca estrenar zapatillas?",
+        "limitReachedMessage": "{{name}} ha alcanzado su límite de kilometraje. ¿Quieres retirarlo?",
+        "updateFailed": "Error al actualizar la zapatilla",
+        "saveFailed": "Error al guardar la zapatilla"
+    },
+    "workoutPlans": {
+        "changeScheduleTitle": "¿Cambiar el tipo de programación?",
+        "changeScheduleMessage": "Los planes semanales y secuenciales se estructuran de forma diferente, por lo que se borrarán los entrenamientos que hayas añadido.",
+        "changeScheduleConfirm": "Cambiar",
+        "updateSuccess": "Plan de entrenamiento actualizado",
+        "createSuccess": "Plan de entrenamiento creado",
+        "updateFailed": "Error al actualizar el plan de entrenamiento",
+        "createFailed": "Error al crear el plan de entrenamiento",
+        "editTitle": "Editar plan de entrenamiento",
+        "createTitle": "Crear plan de entrenamiento",
+        "loadingWorkouts": "Cargando tus entrenamientos...",
+        "workoutsLoadFailed": "Error al cargar tus entrenamientos",
+        "loadFailedSubtitle": "Comprueba tu conexión e inténtalo de nuevo.",
+        "unnamedWorkout": "Entrenamiento",
+        "singleExercise": "Ejercicio individual",
+        "removeNamed": "Eliminar {{name}}",
+        "chooseWorkout": "Elige un entrenamiento",
+        "addWorkout": "Añadir entrenamiento",
+        "noEndDate": "Sin fecha de finalización",
+        "clearEndDate": "Borrar fecha de finalización",
+        "name": "Nombre del plan",
+        "namePlaceholder": "Nombre del plan de entrenamiento",
+        "nameRequired": "El nombre del plan es obligatorio.",
+        "description": "Descripción",
+        "descriptionPlaceholder": "Notas opcionales sobre este plan",
+        "startDate": "Fecha de inicio",
+        "endDate": "Fecha de finalización (opcional)",
+        "endBeforeStart": "La fecha de fin no puede ser anterior a la de inicio.",
+        "activePlan": "Plan activo",
+        "activePlanHint": "Un plan activo distribuye sus sesiones en tus días y en la programación del reloj.",
+        "scheduleType": "Programación",
+        "weekly": "Semanal",
+        "sequential": "Secuencial",
+        "weeklyHint": "Los entrenamientos se repiten los mismos días de cada semana.",
+        "sequentialHint": "Los entrenamientos forman un ciclo. Haces la siguiente sesión cada vez que entrenas.",
+        "prefillDiary": "Completar mi diario",
+        "prefillDiaryHint": "Añade con antelación los entrenamientos de cada día al diario. Si está desactivado, se te preguntará al iniciar uno.",
+        "weeklyPlan": "Plan semanal",
+        "restDay": "Nada programado. ¡Día de descanso!",
+        "sessions": "Sesiones",
+        "sessionNumber": "Sesión {{number}}",
+        "removeSessionNumber": "Eliminar sesión {{number}}",
+        "sessionNamePlaceholder": "Nombre de la sesión (opcional)",
+        "addSession": "Añadir sesión",
+        "assignmentRequired": "Añade al menos un entrenamiento al plan.",
+        "presetNotice": "Puedes añadir los entrenamientos guardados en tu biblioteca. Para planificar un solo ejercicio, utiliza la app web.",
+        "deleteTitle": "Eliminar plan de entrenamiento",
+        "deleteMessage": "¿Eliminar {{name}}? Se borrarán los entrenamientos futuros que este plan añadió a tu diario.",
+        "deleteSuccess": "Plan de entrenamiento eliminado",
+        "deleteFailed": "Error al eliminar el plan de entrenamiento",
+        "title": "Planes de entrenamiento",
+        "create": "Crear plan de entrenamiento",
+        "active": "Activo",
+        "inactive": "Inactivo",
+        "dateRange": "{{start}} – {{end}}",
+        "starting": "Comienza el {{date}}",
+        "deleteNamed": "Eliminar {{name}}",
+        "noServer": "No hay servidor configurado",
+        "noServerSubtitle": "Configura la conexión con tu servidor para gestionar los planes de entrenamiento.",
+        "goToSettings": "Ir a Ajustes",
+        "loading": "Cargando planes de entrenamiento...",
+        "loadFailed": "Error al cargar los planes de entrenamiento",
+        "emptyTitle": "Aún no hay planes de entrenamiento",
+        "emptySubtitle": "Organiza tus sesiones guardadas en días fijos o como un ciclo dinámico."
+    },
+    "mood": {
+        "logTitle": "Estado de ánimo",
+        "overall": "Ánimo general",
+        "tags": "Estados de ánimo",
+        "loggingForDate": "Registro del {{date}}",
+        "chartTitle": "Ánimo a lo largo del tiempo",
+        "mostCommon": "Estados de ánimo más frecuentes",
+        "chartEmpty": "No hay estados de ánimo registrados para este periodo",
+        "chartLoadFailed": "Error al cargar los datos de ánimo",
+        "loadFailed": "No se pudo cargar el ánimo de este día",
+        "saveFailed": "No se pudo guardar el ánimo",
+        "names": {
+            "angry": "Enfadado",
+            "anxious": "Ansioso",
+            "calm": "Tranquilo",
+            "confident": "Confiado",
+            "energetic": "Lleno de energía",
+            "excited": "Emocionado",
+            "happy": "Feliz",
+            "irritable": "Irritable",
+            "low": "Poca energía",
+            "neutral": "Neutro",
+            "sad": "Triste",
+            "sensitive": "Sensible",
+            "thoughtful": "Pensativo",
+            "tired": "Cansado",
+            "worried": "Preocupado"
+        },
+        "card": {
+            "notLogged": "No se ha registrado ánimo para este día",
+            "emptyA11y": "Ánimo el {{date}}: no registrado",
+            "loggedA11y": "Ánimo el {{date}}: {{mood}}",
+            "log": "+ Registrar",
+            "trend7d": "Tendencia de 7 días"
+        }
+    },
+    "customNutrients": {
+        "title": "Nutrientes personalizados",
+        "add": "Añadir nutriente personalizado",
+        "loading": "Cargando nutrientes personalizados...",
+        "loadFailed": "Error al cargar los nutrientes personalizados",
+        "empty": "Aún no hay nutrientes personalizados",
+        "emptyHint": "Lleva el control de cualquier elemento no incluido de serie, como magnesio u omega-3.",
+        "description": "Toca un nutriente para editar su nombre, unidad o alias de proveedores.",
+        "editTitle": "Editar nutriente",
+        "createTitle": "Añadir nutriente",
+        "notFound": "Nutriente personalizado no encontrado",
+        "name": "Nombre del nutriente",
+        "namePlaceholder": "p. ej., Magnesio",
+        "unit": "Unidad",
+        "unitPlaceholder": "p. ej., mg, µg, UI",
+        "aliases": "Alias de proveedores",
+        "aliasPlaceholder": "Escribe un nombre y pulsa intro",
+        "aliasesHelp": "Nombres que las bases de datos de alimentos usan para este nutriente. Al importar un alimento, los campos coincidentes lo rellenarán.",
+        "required": "El nombre y la unidad del nutriente son obligatorios.",
+        "saveFailed": "Error al guardar el nutriente personalizado",
+        "deleteFailed": "Error al eliminar el nutriente personalizado",
+        "delete": "Eliminar nutriente",
+        "deleteTitle": "Eliminar nutriente personalizado",
+        "deleteMessage": "¿Eliminar {{name}}? También puedes quitarlo de objetivos pasados y entradas del diario.",
+        "deleteKeepHistory": "Eliminar y conservar historial",
+        "deleteAllHistory": "Eliminar y borrar historial"
+    },
+    "nutrientDisplay": {
+        "title": "Visualización de nutrientes",
+        "loading": "Cargando visualización de nutrientes...",
+        "loadFailed": "Error al cargar la visualización de nutrientes",
+        "description": "Elige qué nutrientes muestra la app en cada pantalla y en qué orden. El panel y el diario tienen su propia configuración.",
+        "groupPicker": "Mostrar en",
+        "updateFailed": "Error al actualizar la visualización de nutrientes.",
+        "moveUp": "Subir {{name}}",
+        "moveDown": "Bajar {{name}}",
+        "show": "Mostrar {{name}}",
+        "reset": "Restablecer a valores predeterminados",
+        "groups": {
+            "foodDatabase": "Base de datos de alimentos",
+            "reportTabular": "Informe (tabular)"
+        }
+    },
+    "equipmentHub": {
+        "title": "Equipamiento",
+        "shoesSubtitle": "Zapatillas de correr y su kilometraje"
+    },
+    "fastingSettings": {
+        "title": "Ajustes de ayuno",
+        "loadFailed": "No se pudieron cargar los ajustes de ayuno.",
+        "autoCalculate": "Calcular ayuno automáticamente a partir de comidas",
+        "autoCalculateHint": "Detecta cuándo terminó tu última comida y calcula tu ventana e historial de ayuno de forma automática, sin pulsar iniciar ni parar.",
+        "protocol": "Protocolo de ayuno predeterminado",
+        "protocolOption": "{{name}} ({{fast}} h ayuno / {{eat}} h ingesta)",
+        "customProtocol": "Horas personalizadas",
+        "customProtocolHint": "Define tus propias horas de ayuno y alimentación.",
+        "targetFastingHours": "Horas objetivo de ayuno",
+        "targetEatingHours": "Horas objetivo de alimentación",
+        "fastingHoursRange": "Introduce de 0.5 a 168 horas.",
+        "eatingHoursRange": "Introduce de 0 a 24 horas.",
+        "calorieThreshold": "Umbral de calorías (kcal)",
+        "calorieThresholdHint": "Los tentempiés o bebidas por debajo de este valor (café solo, agua, electrolitos) no romperán tu ayuno.",
+        "calorieThresholdRange": "Introduce un número entero de 0 a 500.",
+        "preEndAlert": "Aviso previo al objetivo (minutos)",
+        "preEndAlertHint": "Tiempo de antelación para avisarte antes de cumplir tu meta de ayuno. Usa 0 para desactivarlo.",
+        "preEndAlertRange": "Introduce un número entero de 0 a 180.",
+        "eatingWindowAlert": "Alertas de objetivo y ventana de alimentación",
+        "eatingWindowAlertHint": "Recibe un aviso al alcanzar tu meta de ayuno y al abrirse la ventana para comer.",
+        "save": "Guardar ajustes de ayuno",
+        "saved": "Ajustes de ayuno guardados",
+        "saveFailed": "Error al guardar los ajustes de ayuno"
+    },
+    "fastingReport": {
+        "range": {
+            "7d": "7 días",
+            "30d": "30 días",
+            "90d": "90 días"
+        },
+        "loadFailed": "No se pudo cargar tu informe de ayuno.",
+        "totalFasts": "Ayunos totales",
+        "totalHours": "Horas totales",
+        "avgDuration": "Ayuno medio",
+        "longestFast": "Más largo",
+        "dailyDuration": "Duración diaria del ayuno",
+        "dailyDurationA11y": "Gráfico de barras de horas de ayuno por día",
+        "peakHours": "Máximo {{hours}} h",
+        "zoneDistribution": "Fases de ayuno alcanzadas",
+        "heatmap": "Constancia (últimos 90 días)",
+        "heatmapA11y": "Mapa de calor de días con ayuno",
+        "less": "Menos",
+        "more": "Más"
+    },
+    "warmupSettings": {
+        "title": "Calculadora de calentamiento",
+        "description": "Utiliza la calculadora de calentamiento para añadir series basadas en porcentajes de forma rápida a tus ejercicios.",
+        "enabled": "Calculadora de calentamiento",
+        "enabledSubtitle": "Cuando esté activa, toca los tres puntos junto a un ejercicio para añadir series de calentamiento.",
+        "enabledAccessibility": "Calculadora de calentamiento",
+        "method": "Método de calentamiento",
+        "methodSubtitle": "Cada serie de calentamiento es un porcentaje de tu primera serie efectiva, para un número determinado de repeticiones.",
+        "setLetter": "C",
+        "percentLabel": "Calentamiento {{number}} porcentaje",
+        "repsLabel": "Calentamiento {{number}} reps",
+        "removeSet": "Eliminar serie",
+        "addSet": "Añadir serie",
+        "reset": "Restablecer a valores por defecto",
+        "plateRounding": "Redondeo de discos",
+        "plateRoundingSubtitle": "Establece los incrementos de peso de discos para los cálculos de calentamiento.",
+        "dumbbellRounding": "Redondeo de mancuernas",
+        "dumbbellRoundingSubtitle": "Establece los incrementos de peso de mancuernas para los cálculos de calentamiento."
+    },
+    "recordActivity": {
+        "checkIn": {
+            "title": "Actualizaciones por voz",
+            "description": "Escucha tu tiempo, distancia y ritmo medio cada pocos minutos.",
+            "off": "Desactivado",
+            "minutes": "{{minutes}} min"
+        },
+        "liveActivity": {
+            "step": "{{name}} · {{current}} de {{total}}"
+        },
+        "notification": {
+            "title": "Registrando tu actividad",
+            "bodyWalk": "Monitoreando tu caminata con GPS",
+            "bodyRun": "Monitoreando tu carrera con GPS",
+            "bodyRide": "Monitoreando tu ruta en bici con GPS"
+        },
+        "unitMi": "mi",
+        "unitKm": "km",
+        "unitBpm": "ppm",
+        "bar": {
+            "recording": "Registrando",
+            "saveHint": "Toca para revisar y guardar",
+            "open": "Abrir registro",
+            "discard": "Descartar registro",
+            "review": "Revisar y guardar"
+        },
+        "introIndoor": "Registra una sesión en cinta u otro ejercicio de interior. No se usa GPS y puedes introducir la distancia que marque la máquina al terminar.",
+        "location": {
+            "outdoor": "Exterior",
+            "indoor": "Interior"
+        },
+        "indoorDistance": {
+            "title": "Distancia",
+            "hint": "Opcional. Introduce la distancia mostrada en la cinta o máquina.",
+            "invalid": "Introduce una distancia de cero o superior."
+        },
+        "heartRate": "Frecuencia cardíaca",
+        "errors": {
+            "start": "No se pudo iniciar el registro",
+            "resume": "No se pudo reanudar el registro",
+            "finish": "No se pudo finalizar el registro",
+            "discard": "No se pudo descartar el registro",
+            "save": "No se pudo guardar la actividad",
+            "saveHint": "Tu registro se mantiene en este teléfono. Inténtalo de nuevo.",
+            "pause": "No se pudo pausar el registro"
+        },
+        "discard": {
+            "title": "¿Descartar esta actividad?",
+            "message": "La ruta y las estadísticas registradas se eliminarán.",
+            "confirm": "Descartar",
+            "action": "Descartar"
+        },
+        "saved": "Actividad guardada",
+        "carriedOver": "Esta grabación comenzó a las {{time}} y seguía activa en este teléfono.",
+        "intro": "Registra una caminata, carrera o ruta en bici con el GPS de tu teléfono. Continúa grabando con la pantalla bloqueada.",
+        "activity": {
+            "walk": "Caminata",
+            "run": "Carrera",
+            "ride": "Ciclismo"
+        },
+        "permission": {
+            "denied": "SparkyFitness necesita acceso a la ubicación para registrar tu ruta. Puedes activarlo en Ajustes.",
+            "servicesOff": "Los servicios de ubicación están desactivados. Actívalos en Ajustes para poder registrar.",
+            "openSettings": "Abrir Ajustes"
+        },
+        "androidTips": {
+            "title": "Grabando con la pantalla apagada",
+            "body": "Algunos teléfonos detienen las aplicaciones en segundo plano. Si notas cortes en el registro, pon SparkyFitness en «Sin restricciones» en los ajustes de batería.",
+            "link": "Pasos específicos de tu teléfono"
+        },
+        "start": "Iniciar",
+        "unitFt": "ft",
+        "unitM": "m",
+        "perUnit": "/{{unit}}",
+        "routeA11y": "Mapa de tu ruta hasta ahora",
+        "waitingForGps": "Esperando señal GPS…",
+        "countdown": {
+            "title": "Cuenta atrás para iniciar",
+            "off": "Desactivada",
+            "seconds": "{{seconds}} s",
+            "getReady": "¡Prepárate!",
+            "cancel": "Cancelar"
+        },
+        "audioCues": {
+            "title": "Indicaciones por voz",
+            "description": "Te informa del tiempo en cada kilómetro o milla, y al pausar o reanudar."
+        },
+        "cues": {
+            "started": "Grabación iniciada",
+            "paused": "Pausado",
+            "autoPaused": "Pausado automáticamente",
+            "resumed": "Reanudado",
+            "lap": "Vuelta {{number}}. {{distance}}. {{time}}.",
+            "splitKm": "{{distance}}. Tiempo {{time}}. Último kilómetro {{split}}.",
+            "splitMiles": "{{distance}}. Tiempo {{time}}. Última milla {{split}}.",
+            "finished": "Entrenamiento finalizado. {{distance}}. Tiempo {{time}}.",
+            "interval": "{{name}}. {{time}}.",
+            "intervalsDone": "Intervalos completados.",
+            "stepWarning": "Diez segundos. Siguiente: {{name}}.",
+            "stepWarningLast": "Quedan diez segundos.",
+            "halfway": "¡A mitad de camino! Sigue así.",
+            "lastMinute": "Queda un minuto. ¡Termina con fuerza!",
+            "checkInTime": "{{time}} completados.",
+            "checkInDistance": "{{time}}. {{distance}}.",
+            "checkInKm": "{{time}}. {{distance}}. Ritmo medio {{pace}} por kilómetro.",
+            "checkInMiles": "{{time}}. {{distance}}. Ritmo medio {{pace}} por milla.",
+            "splitFaster": "{{amount}} más rápido que el anterior.",
+            "splitSlower": "{{amount}} más lento que el anterior.",
+            "programPlaceRun": "Semana {{week}}, carrera {{day}}",
+            "programPlaceWalk": "Semana {{week}}, caminata {{day}}",
+            "programStart": "{{place}}. {{time}}.",
+            "programEased": "Sesión suave por hoy.",
+            "programDone": "{{done}} de {{total}} entrenamientos completados. Siguiente: {{next}}.",
+            "programComplete": "¡Programa completado! ¡Excelente trabajo!",
+            "paceTooFast": "Vas muy rápido. Baja un poco el ritmo.",
+            "paceTooSlow": "Ritmo bajo. ¡Aumenta la marcha!",
+            "heartRateTooHigh": "Frecuencia cardíaca alta. Afloja un poco.",
+            "heartRateTooLow": "Frecuencia cardíaca baja. ¡Aprieta un poco más!",
+            "intervalToGo": "Quedan {{distance}}.",
+            "stepCountdown": "Tres. Dos. Uno.",
+            "milestone5k": "5K completados. ¡Gran trabajo!",
+            "milestone10k": "10K completados. ¡Un esfuerzo tremendo!",
+            "milestoneHalfMarathon": "Distancia de medio maratón superada. ¡Impresionante!",
+            "milestoneMarathon": "Distancia de maratón superada. ¡Increíble hazaña!",
+            "customProgramStart": "Entrenamiento {{workout}}. {{time}}.",
+            "customProgramDone": "{{done}} de {{total}} entrenamientos completados. Siguiente: entrenamiento {{next}}."
+        },
+        "autoPause": {
+            "title": "Pausa automática",
+            "description": "Detiene el cronómetro cuando te paras y continúa cuando reanudas la marcha."
+        },
+        "status": {
+            "paused": "En pausa",
+            "autoPaused": "Pausa automática",
+            "finished": "Finalizado"
+        },
+        "time": "Tiempo",
+        "distance": "Distancia",
+        "avgPace": "Ritmo medio",
+        "elevationLoss": "Desnivel negativo",
+        "currentPace": "Ritmo",
+        "elevationGain": "Desnivel positivo",
+        "splits": "Tiempos por km/milla",
+        "laps": "Vueltas",
+        "lap": "Vuelta",
+        "lapLabel": "Vuelta {{number}}",
+        "fastest": "Más rápida",
+        "save": "Guardar actividad",
+        "pause": "Pausar",
+        "resume": "Reanudar",
+        "finish": "Finalizar",
+        "intervals": {
+            "title": "Intervalos",
+            "description": "Sigue fases por tiempo, como correr/caminar o series de velocidad. Recibirás avisos para cambiar.",
+            "descriptionNoRun": "Sigue fases cronometradas alternando esfuerzo rápido y suave. Recibirás avisos para cambiar.",
+            "distanceOutdoorOnly": "Las series por distancia necesitan GPS, por lo que solo están disponibles en exteriores.",
+            "off": "Desactivado",
+            "custom": "Personalizado",
+            "preset": {
+                "beginnerRunWalk": "Correr/caminar para principiantes",
+                "runWalk2": "Correr/caminar, 2 minutos",
+                "runWalk5": "Correr/caminar, 5 minutos",
+                "short": "Series cortas",
+                "threeMinutes": "Repeticiones de 3 minutos",
+                "fourByFour": "4 × 4 minutos",
+                "sixBy400m": "6 × 400 m",
+                "fiveBy1k": "5 × 1 km"
+            },
+            "styleRunWalk": "Correr / caminar",
+            "styleFastEasy": "Rápido / suave",
+            "warmup": "Calentamiento",
+            "cooldown": "Enfriamiento",
+            "run": "Correr",
+            "walk": "Caminar",
+            "fast": "Rápido",
+            "easy": "Suave",
+            "byTime": "Por tiempo",
+            "byDistance": "Por distancia",
+            "unitMeters": "Metros",
+            "unitMiles": "Millas",
+            "rounds": "Rondas",
+            "decrease": "Disminuir {{label}}",
+            "increase": "Aumentar {{label}}",
+            "complete": "Intervalos completados",
+            "round": "Ronda {{round}} de {{rounds}}",
+            "next": "Siguiente: {{name}} {{time}}"
+        },
+        "program": {
+            "title": "Programa de entrenamiento",
+            "name": {
+                "beginner5k": "5K para principiantes",
+                "fiveToTenK": "De 5K a 10K",
+                "faster5k": "5K más rápido",
+                "walkFit": "Caminar para estar en forma",
+                "halfMarathon": "Medio maratón",
+                "marathon": "Maratón",
+                "halfMarathon4": "Medio maratón (4 carreras a la semana)",
+                "tenKToHalf4": "De 10K a medio maratón (4 carreras a la semana)",
+                "fasterHalf4": "Medio maratón más rápido (4 carreras a la semana)",
+                "beginnerMarathon4": "Maratón para principiantes (4 carreras a la semana)",
+                "walk10k": "Caminata rápida 10K",
+                "returnToRunning": "Volver a correr",
+                "gentle5k": "5K suave",
+                "beginner10k": "10K para principiantes",
+                "faster10k": "10K más rápido",
+                "tenKToHalf": "De 10K a medio maratón",
+                "fasterHalf": "Medio maratón más rápido",
+                "beginnerMarathon": "Maratón para principiantes",
+                "advancedMarathon": "Maratón avanzado"
+            },
+            "beginner5kDescription": "5K para principiantes: nueve semanas, tres carreras por semana. Alternas carrera y caminata hasta lograr 30 minutos de carrera continua.",
+            "workoutLabel": "{{name}} · Semana {{week}}, carrera {{run}}",
+            "workoutLabelWalk": "{{name}} · Semana {{week}}, caminata {{walk}}",
+            "progress": "{{done}} de {{total}} entrenamientos completados · {{minutes}} min hoy",
+            "finished": "{{name}} completado",
+            "finishedHint": "¡Bien hecho! Puedes repetirlo o pasar a un nuevo reto.",
+            "restart": "Empezar de nuevo",
+            "use": "Usar un programa de entrenamiento",
+            "using": "Usando este entrenamiento",
+            "skip": "Omitir",
+            "diaryDays": "Días en tu diario",
+            "diaryDaysSet": "El diario muestra el entrenamiento en estos días. Las sesiones perdidas siguen pendientes.",
+            "diaryDaysHint": "Elige los días en que vas a entrenar o déjalos vacíos para verlo cada día.",
+            "startDay": "Primer entrenamiento",
+            "startChange": "Cambiar fecha de inicio",
+            "startClear": "Empezar hoy",
+            "tickFailed": "Actividad guardada, programa no actualizado",
+            "tickFailedHint": "Usa \"Contabilizar\" en la tarjeta del diario para marcar el entrenamiento como hecho.",
+            "savedNext": "Siguiente: {{label}}",
+            "savedNextOn": "Siguiente: {{label}} el {{date}}",
+            "savedFinished": "¡Programa completado! ¡Felicidades!",
+            "startDaySet": "Comienza el {{date}}. No aparecerá nada en el diario antes de esa fecha.",
+            "startDayToday": "Empieza hoy, {{date}}. Elige una fecha posterior si deseas empezar más tarde.",
+            "goalDay": "Fecha objetivo",
+            "goalDaySet": "No hay nada programado después del {{date}}. El calendario inferior indica si el programa encaja.",
+            "goalDayHint": "Opcional, por ejemplo para una competición. El calendario indica si el programa cabe antes de esa fecha.",
+            "goalChange": "Cambiar fecha objetivo",
+            "goalPick": "Establecer fecha objetivo",
+            "goalClear": "Borrar",
+            "pick": "Elegir un entrenamiento diferente",
+            "pickTitle": "Elegir un entrenamiento",
+            "weekTitle": "Semana {{week}}",
+            "pickOption": "{{mark}}Carrera {{run}} · {{minutes}} min",
+            "pickOptionWalk": "{{mark}}Caminata {{walk}} · {{minutes}} min",
+            "pickOptionCustom": "{{mark}}{{title}} · {{minutes}} min",
+            "doThis": "Hacer este entrenamiento",
+            "switchHint": "Sigue un plan que progresa semana a semana. Desactivado por defecto.",
+            "paused": "{{name}} está pausado con {{done}} de {{total}} entrenamientos completados. Actívalo para continuar.",
+            "startOver": "Reiniciar",
+            "startOverHint": "Volver al primer entrenamiento",
+            "skipHint": "Avanzar sin realizar este entrenamiento",
+            "scheduleTitle": "Programación",
+            "manageTitle": "Gestionar",
+            "errors": {
+                "update": "No se pudo actualizar tu programa"
+            },
+            "changedBySparky": "Sparky modificó tu plan el {{date}}: {{summary}}",
+            "changed": "Plan modificado el {{date}}: {{summary}}",
+            "fiveToTenKDescription": "De 5K a 10K: ocho semanas, tres carreras a la semana, para cuando puedas correr 30 minutos. Avanza hasta una tirada larga de 65 minutos.",
+            "faster5kDescription": "5K más rápido: seis semanas de velocidad, rodajes suaves y ritmos controlados, para cuando ya corres 5K.",
+            "walkFitDescription": "Caminar para estar en forma: ocho semanas, tres caminatas por semana, sin carrera. Alterna marcha rápida y suave hasta 30 minutos de caminata rápida continua.",
+            "halfMarathonDescription": "Medio maratón: doce semanas, tres carreras a la semana, con tiradas largas de hasta dos horas. Para cuando corras 30 minutos sin dificultad.",
+            "walk10kDescription": "Caminata rápida 10K: diez semanas, tres salidas a la semana, sin correr. Progresa hasta una caminata de 10K de una hora y tres cuartos.",
+            "returnToRunningDescription": "Volver a correr: cuatro semanas, tres sesiones por semana, para retomar el ritmo tras una pausa. Progresa desde 1 minuto hasta 20 minutos corriendo. Deja descanso entre días y mantén un ritmo cómodo. Si sales de una lesión, consúltalo antes con un médico o fisioterapeuta.",
+            "gentle5kDescription": "5K suave: doce semanas, tres salidas semanales. Un inicio gradual con trotes muy cortos entre caminatas largas, hasta correr 30 minutos.",
+            "beginner10kDescription": "10K para principiantes: doce semanas, tres salidas por semana, partiendo de la caminata hasta lograr una hora de carrera.",
+            "faster10kDescription": "10K más rápido: ocho semanas de velocidad, rodajes suaves y ritmos controlados, para cuando ya corres 10K.",
+            "tenKToHalfDescription": "De 10K a medio maratón: diez semanas, tres entrenamientos por semana, para quienes ya corren 10K. Las tiradas largas progresan de 65 a 115 minutos.",
+            "fasterHalfDescription": "Medio maratón más rápido: diez semanas de velocidad, rodajes suaves y tiradas con ritmo, para quienes ya han completado una media maratón.",
+            "beginnerMarathonDescription": "Maratón para principiantes: dieciocho semanas, tres carreras por semana, con tiradas largas de hasta 2 h y media y tapering. Diseñado para quienes corren 10K.",
+            "advancedMarathonDescription": "Maratón avanzado: dieciséis semanas, cinco carreras a la semana, con velocidad, ritmo y tiradas largas de hasta tres horas. Para corredores con experiencia.",
+            "halfMarathon4Description": "Medio maratón: doce semanas, cuatro carreras por semana, con tiradas de hasta unas dos horas. Si corres 30 minutos cómodamente, este es tu plan.",
+            "tenKToHalf4Description": "De 10K a medio maratón: diez semanas, cuatro carreras a la semana, con tiradas largas de hasta dos horas. Para corredores que ya hacen 10K.",
+            "beginnerMarathon4Description": "Maratón para principiantes: dieciocho semanas, cuatro carreras por semana, con tiradas largas hasta 2 h 40 min y tapering. Para cuando ya corres 10K.",
+            "fasterHalf4Description": "Medio maratón más rápido: diez semanas, cuatro salidas a la semana, con velocidad, rodajes suaves y tirada larga con tramos de ritmo. Para corredores con experiencia en media maratón.",
+            "marathonDescription": "Maratón: dieciséis semanas, cuatro salidas por semana, con tiradas largas que alcanzan unas 2 h y 45 min y puesta a punto. Para personas que ya corren habitualmente.",
+            "outlineWalk": "Semana 1: sesiones de {{weekOne}} minutos. Progresa hasta {{peak}} minutos de marcha rápida.",
+            "outline": "Semana 1: sesiones de {{weekOne}} minutos. Progresa hasta {{peak}} minutos de carrera continua.",
+            "minutes": "{{minutes}} min",
+            "workoutsDone": "{{done}} de {{total}} entrenamientos",
+            "optionLabel": "{{name}} · {{weeks}} semanas, {{runs}} entrenamientos por semana",
+            "chooseTitle": "Elegir un programa",
+            "change": "Cambiar programa",
+            "switchTitle": "¿Cambiar a {{name}}?",
+            "switchMessage": "Empezarás el nuevo programa en la semana 1. No se conservará el progreso del plan actual.",
+            "switchConfirm": "Cambiar",
+            "startDayPast": "Iniciado el {{date}}. Tu próximo entrenamiento está planificado para hoy.",
+            "customWorkoutLabel": "{{name}} · {{workout}}"
+        },
+        "watch": {
+            "title": "Registrar con",
+            "phone": "GPS del teléfono",
+            "outdoor": "GPS del reloj",
+            "phoneIndoor": "Teléfono",
+            "watchIndoor": "Reloj",
+            "phoneIndoorHint": "Tu teléfono cuenta los pasos para calcular la distancia. Podrás ajustarla al valor de la cinta al acabar.",
+            "phoneHint": "El GPS del teléfono registra la ruta y la distancia.",
+            "indoorHint": "Tu reloj cuenta los pasos y estima la distancia. Podrás corregirla con la cifra de la cinta al terminar.",
+            "outdoorHint": "Tu reloj graba con su propio GPS y sensor de pulso. ¡Puedes dejar el móvil en casa!",
+            "planName": "Intervalos"
+        },
+        "title": {
+            "outdoorRun": "Carrera exterior",
+            "indoorRun": "Carrera en cinta",
+            "outdoorWalk": "Caminata exterior",
+            "indoorWalk": "Caminata interior",
+            "outdoorRide": "Ciclismo exterior",
+            "indoorRide": "Ciclismo estático"
+        },
+        "gps": {
+            "good": "GPS óptimo",
+            "fair": "GPS aceptable",
+            "weak": "GPS débil",
+            "none": "Sin señal GPS"
+        },
+        "warmRanges": {
+            "title": "Calentamiento y enfriamiento",
+            "off": "Desactivado"
+        },
+        "paceBand": {
+            "title": "Alerta de ritmo",
+            "description": "Vibra y emite aviso por voz si te sales de tu rango de ritmo fijado.",
+            "fastest": "Más rápido",
+            "slowest": "Más lento",
+            "faster": "{{edge}} 5 segundos más rápido",
+            "slower": "{{edge}} 5 segundos más lento",
+            "workTitle": "Ritmo de tramo rápido",
+            "workDescription": "Te avisa cuando un tramo rápido se sale de este rango.",
+            "easyTitle": "Ritmo de tramo suave",
+            "easyDescription": "Te avisa cuando un tramo suave se sale de este rango.",
+            "warmTitle": "Ritmo de calentamiento y enfriamiento",
+            "warmDescription": "Te avisa si el calentamiento o enfriamiento se salen de este rango."
+        },
+        "heartRateBand": {
+            "title": "Alerta de frecuencia cardíaca",
+            "description": "Requiere Apple Watch. Vibra y da avisos de voz cuando tu pulso se sale de este rango.",
+            "lowest": "Mínima",
+            "highest": "Máxima",
+            "value": "{{value}} ppm",
+            "lower": "{{edge}} 5 ppm menos",
+            "higher": "{{edge}} 5 ppm más",
+            "workTitle": "Pulso en tramo rápido",
+            "workDescription": "Te avisa si tu frecuencia cardíaca en tramos rápidos se sale de este rango.",
+            "easyTitle": "Pulso en tramo suave",
+            "easyDescription": "Te avisa si tu pulso en tramos suaves se sale de este rango.",
+            "warmTitle": "Pulso en calentamiento y enfriamiento",
+            "warmDescription": "Te avisa si tu pulso en el calentamiento o enfriamiento se sale de este rango."
+        },
+        "suggestedRanges": {
+            "title": "Rangos recomendados",
+            "pace": "Ritmo: rápido {{fast}}, suave {{easy}}, calentamiento y enfriamiento {{warm}}",
+            "heartRate": "Frecuencia cardíaca: rápida {{fast}}, suave {{easy}}, calentamiento y enfriamiento {{warm}}",
+            "heartRateSource": "A partir de un máximo estimado de {{max}} ppm para tu edad.",
+            "use": "Usar estos",
+            "tempo": "ritmo controlado {{range}}",
+            "marathonPace": "ritmo de maratón {{range}}",
+            "strides": "rectas dinámicas {{range}}",
+            "paceSourceRace": "Basado en tu última carrera: {{race}}."
+        }
+    },
+    "goals": {
+        "title": "Objetivos",
+        "description": "Metas diarias aplicables a partir de hoy. Los días pasados conservan sus registros.",
+        "loading": "Cargando objetivos…",
+        "loadFailed": "No se pudieron cargar tus objetivos.",
+        "saveFailed": "Error al guardar los objetivos.",
+        "invalidValue": "Introduce un número válido para cada objetivo.",
+        "fields": {
+            "water": "Agua ({{unit}})",
+            "exerciseCalories": "Calorías por ejercicio (kcal)",
+            "exerciseMinutes": "Duración del ejercicio (min)",
+            "steps": "Pasos diarios",
+            "baselineCalories": "Calorías de base (kcal)"
+        },
+        "adaptiveNoteToday": "El modo adaptativo está activado, por lo que tu meta de calorías cambia día a día. Hoy es de {{calories}} kcal. La línea base inferior define cuánto deseas estar por encima o por debajo de tu mantenimiento; no es una meta fija.",
+        "adaptiveNote": "El modo adaptativo está activo, por lo que tu objetivo calórico varía a diario. La línea base indica tu diferencia con respecto al mantenimiento estimado; no es una meta fija diaria.",
+        "customNutrients": {
+            "notSet": "Sin objetivo"
+        },
+        "sections": {
+            "macros": "Calorías y macros",
+            "nutrients": "Otros nutrientes",
+            "customNutrients": "Nutrientes personalizados",
+            "activity": "Agua y ejercicio",
+            "meals": "Distribución calórica por comida",
+            "presets": "Plantillas de objetivos",
+            "weekly": "Planes semanales"
+        },
+        "meals": {
+            "mustBe100": "Los porcentajes de las comidas deben sumar 100%.",
+            "total": "Total: {{total}}% (debe sumar 100% para poder guardar)",
+            "totalOk": "Total: {{total}}%",
+            "mealCalories": "{{meal}} ({{calories}} kcal)",
+            "distributeRemaining": "Distribuir el resto a partes iguales",
+            "lock": "Bloquear {{meal}}",
+            "unlock": "Desbloquear {{meal}}",
+            "mealPercent": "{{meal}} (%)"
+        },
+        "directions": {
+            "minimum": "Mín",
+            "maximum": "Máx",
+            "range": "Rango",
+            "rangeMin": "Mínimo del rango",
+            "rangeMax": "Máximo del rango",
+            "invalidRange": "Un rango requiere un valor mínimo y uno máximo, con el mínimo menor o igual al máximo.",
+            "note": "Mín significa que más es mejor, Máx significa no pasarse y Rango mantenerse entre dos valores. Esto orienta la medición del progreso, no las cifras de la meta.",
+            "guide": {
+                "title": "¿Dudas sobre qué elegir? Depende de tu meta",
+                "intro": "Estas direcciones solo condicionan cómo se visualiza el progreso. Elige lo que mejor se adapte a tu meta o pulsa Aplicar para configurarlo automáticamente:",
+                "apply": "Aplicar a mis objetivos",
+                "applied": "Direcciones actualizadas. Toca Guardar para conservarlas.",
+                "loseWeight": {
+                    "title": "Pérdida de peso",
+                    "body": "Establece las calorías en Máximo (límite) o en un Rango objetivo."
+                },
+                "gainWeight": {
+                    "title": "Aumento de peso o ganar masa muscular",
+                    "body": "Establece las Calorías y Proteínas en Mínimo (umbral que debes alcanzar)."
+                },
+                "maintain": {
+                    "title": "Mantenimiento de peso",
+                    "body": "Establece las Calorías en un Rango objetivo cercano a tu mantenimiento."
+                },
+                "diabetes": {
+                    "title": "Control de glucosa en sangre (diabetes)",
+                    "body": "Establece Carbohidratos y Azúcares en Máximo."
+                },
+                "heart": {
+                    "title": "Colesterol alto o salud cardiovascular",
+                    "body": "Mantén Colesterol, Grasas saturadas y Sodio en Máximo (predeterminados)."
+                },
+                "lowCarb": {
+                    "title": "Bajo en carbohidratos o cetogénica",
+                    "body": "Configura Carbohidratos en Máximo; mantén Grasas y Proteínas en Mínimo."
+                }
+            },
+            "legend": {
+                "minimum": {
+                    "label": "Mín",
+                    "body": "Más es mejor: la barra de progreso se llena al alcanzar el objetivo"
+                },
+                "maximum": {
+                    "label": "Máx",
+                    "body": "Menos es mejor: mantente en el objetivo o por debajo"
+                },
+                "target": {
+                    "label": "Rango",
+                    "body": "Mantente dentro del intervalo entre un mínimo y un máximo"
+                }
+            }
+        },
+        "calculator": {
+            "calculate": "Calcular",
+            "calculateField": "Calcular {{nutrient}}"
+        }
     }
 }
