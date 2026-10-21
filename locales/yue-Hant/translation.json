@@ -584,39 +584,39 @@
             "rateStars_other": "評 {{count}} 粒星"
         },
         "glp1InventoryManager": {
-            "inUse": "з”Ёз·Ҡ",
+            "inUse": "用緊",
             "reorder": "補貨",
-            "doses": "еҠ‘",
+            "doses": "劑",
             "editPenVial": "編輯筆／藥瓶",
             "removePenVial": "移除筆／藥瓶",
             "exp": "到期 {{expiry_date}}",
             "expired": "已過期",
-            "nearExp": "е°ұеҝ«еҲ°жңҹ",
+            "nearExp": "就快到期",
             "bud": "BUD {{bud_date}}",
             "expiredBUD": "已過期（BUD）",
             "budWarning": "BUD 警告",
             "notes": "備註：{{notes}}",
             "editPenVialInventory": "編輯筆／藥瓶庫存",
             "addPenVialInventory": "加入筆／藥瓶庫存",
-            "kind": "йЎһеһӢ",
-            "pen": "зӯҶ",
-            "vial": "и—Ҙз“¶",
+            "kind": "類型",
+            "pen": "筆",
+            "vial": "藥瓶",
             "labelName": "標籤／名稱",
             "eGPen2Vial": "例如：筆 #2、藥瓶 A 批",
             "doseStrengthMg": "劑量強度（mg）",
             "totalDoses": "總劑量數",
             "concentrationMgML": "濃度（mg/mL）",
             "volumeML": "容量（mL）",
-            "dateOpened": "й–Ӣе•ҹж—Ҙжңҹ",
-            "expiryDate": "еҲ°жңҹж—Ҙ",
+            "dateOpened": "開啟日期",
+            "expiryDate": "到期日",
             "calculatedBeyondUseDateBUD": "計算出嘅使用期限（BUD）：",
             "basedOn28DayStability": "以首次開啟起計 28 日嘅穩定期做準.",
             "enableReorderWarning": "開啟補貨提醒",
             "alertWhenRemainingDosesAre": "剩餘劑量偏低嗰陣提醒",
             "reorderThresholdDosesLeft": "補貨門檻（剩餘劑量）",
-            "notes2": "еӮҷиЁ»",
+            "notes2": "備註",
             "batchNumberBrandPharmacyInfo": "批號、品牌、藥房資料…",
-            "addInventory": "еҠ е…Ҙеә«еӯҳ",
+            "addInventory": "加入庫存",
             "mgML": "· {{concentration_mg_ml}} mg/mL"
         },
         "glp1RecentInjections": {
@@ -627,11 +627,11 @@
         },
         "glp1TitrationManager": {
             "dose": "劑量",
-            "startDate": "й–Ӣе§Ӣж—Ҙжңҹ",
+            "startDate": "開始日期",
             "weeksAtThisDose": "呢個劑量維持幾多週",
             "status": "狀態",
             "taperDoseReduction": "遞減（劑量減少）",
-            "taper": "йҒһжёӣ",
+            "taper": "遞減",
             "editTitrationStep": "編輯遞增階段",
             "deleteTitrationStep": "刪除遞增階段",
             "yourPlannedGLP1Dose": "您計劃嘅 GLP-1 劑量遞增（例如 0.25 → 0.5 → 1.0 mg）。每個階段加一個步驟同開始日期；將其中一個標記做「使用中」當作而家嘅劑量.",
@@ -1530,7 +1530,7 @@
             "uploading": "上載緊…",
             "pleaseSelectAnImageFile": "揀一個圖片檔案",
             "imageMustBeLessThan": "圖片一定要細過 5MB",
-            "user": "з”ЁжҲ¶"
+            "user": "用戶"
         },
         "cycle": {
             "title": "生理週期 & 懷孕監察",
@@ -2632,7 +2632,7 @@
             "enterLiftosaurAPIKeyLftsk": "輸入 Liftosaur API 金鑰（lftsk_…）",
             "syncFrequency": "同步頻次",
             "selectSyncFrequency": "揀同步頻率",
-            "manual": "жүӢеӢ•",
+            "manual": "手動",
             "hourly": "每小時",
             "daily": "每日",
             "selectRegion": "揀地區",
@@ -2726,7 +2726,7 @@
             "gPureAlcohol": "{{label}}（純酒精 {{grams}} 克）"
         },
         "providerCard": {
-            "global": "е…Ёеҹҹ",
+            "global": "全域",
             "private": "з§Ғдәә",
             "bulkImportReSync": "批次匯入／重新同步",
             "importing": "匯入緊（{{progress}}%）…",
@@ -6222,18 +6222,18 @@
         },
         "deleteFoodDialog": {
             "view": "睇",
-            "otherUser": "е…¶д»–з”ЁжҲ¶"
+            "otherUser": "其他用戶"
         },
-        "openMenu": "й–ӢйҒёе–®",
+        "openMenu": "開選單",
         "mealManagement": {
-            "openMenu": "й–ӢйҒёе–®"
+            "openMenu": "開選單"
         },
         "mealUnitSelector": {
             "selectTheQuantityForThis": "揀呢餐喺餐膳計劃入面嘅份量.",
             "quantity": "食用份量",
             "unit": "單位",
             "nutritionFor": "{{quantity}} {{displayUnit}}嘅營養：",
-            "updateMeal": "жӣҙж–°йӨҗиҶі",
+            "updateMeal": "更新餐膳",
             "addToMealPlan": "加入餐膳計劃",
             "gProtein2": "蛋白質 {{protein}} 克",
             "gCarbs2": "碳水化合物 {{carbs}} 克",
