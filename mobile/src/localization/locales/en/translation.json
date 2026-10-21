@@ -271,7 +271,8 @@
       "logAsTaken": "Log as taken",
       "logAllAsTaken": "Log all as taken",
       "skip": "Skip",
-      "skipAll": "Skip all"
+      "skipAll": "Skip all",
+      "remindInMinutes": "Remind in {{minutes}}m"
     },
     "permission": {
       "notificationsOff": "Notifications off",
@@ -605,6 +606,8 @@
       "runProgramsActive": "{{name}} · {{progress}}",
       "personalRecords": "Personal records",
       "personalRecordsSubtitle": "Your best 1 km, 5 km, 10 km and more",
+      "routes": "Routes",
+      "routesSubtitle": "Draw, import and save routes to follow",
       "equipment": "Equipment",
       "equipmentSubtitle": "Shoes and other gear"
     },
@@ -615,6 +618,7 @@
     "progressPhotoTimelapse": "Time-lapse",
     "exerciseStatistics": "Exercise Statistics",
     "cardioSession": "Cardio Session",
+    "activityShare": "Share Activity",
     "watchSettings": "Apple Watch",
     "aiSettings": "AI",
     "fastingSettings": "Fasting Settings",
@@ -641,7 +645,26 @@
     "runProgramWorkout": "Workout",
     "runProgramEdit": "Edit plan",
     "runProgramNew": "New plan",
-    "runProgramRace": "Plan a race"
+    "runProgramRace": "Plan a race",
+    "routes": "Routes",
+    "routeDraw": "Draw a route"
+  },
+  "activityShare": {
+    "title": "Share Activity",
+    "choosePhoto": "Choose photo",
+    "takePhoto": "Take photo",
+    "removePhoto": "Remove",
+    "transparentHint": "With no photo the image is a transparent PNG you can lay over a photo or video in another app.",
+    "cameraDenied": "Allow camera access in Settings to take a photo",
+    "noRoute": "This workout has no stored GPS route, so the layout shows stats only.",
+    "layout": "Layout",
+    "layoutClassic": "Classic",
+    "layoutRoute": "Route",
+    "layoutMinimal": "Minimal",
+    "textColor": "Color",
+    "customColor": "Custom color hex code",
+    "share": "Share image",
+    "shareFailed": "Could not create the image"
   },
   "healthMetrics": {
     "steps": "Steps",
@@ -1157,6 +1180,8 @@
     "hideMedicationNamesSubtitle": "Show a generic reminder instead of the medication name and dose.",
     "consolidateReminders": "Consolidate Reminders",
     "consolidateRemindersSubtitle": "Group medications scheduled for the same time into a single notification.",
+    "medicationSnoozeInterval": "Remind In",
+    "snoozeMinutesOption": "{{minutes}}m",
     "hydration": "Hydration",
     "waterReminders": "Water Reminders",
     "waterRemindersSubtitle": "Remind you to drink when you haven't logged water in a while.",
@@ -2924,10 +2949,29 @@
     "notes": "Notes",
     "notesPlaceholder": "e.g. White rice, double chicken, no beans (supports markdown)"
   },
+  "exerciseEffort": {
+    "title": "Effort",
+    "lastAvg": "Avg RPE, last session",
+    "trendLabel_one": "Average RPE of your last {{count}} session",
+    "trendLabel_other": "Average RPE of your last {{count}} sessions",
+    "oneRmEffort": "Est. 1RM with effort",
+    "oneRmPlain": "From reps alone",
+    "oneRmNote": "Counts the reps you had left: RPE 8 is two more reps. Only sets with an RPE are used."
+  },
   "exerciseHistory": {
     "noSetData": "No set data",
     "loadError": "Couldn't load history.",
-    "empty": "No sessions logged yet."
+    "empty": "No sessions logged yet.",
+    "columns": {
+      "set": "Set",
+      "weightReps": "Weight & reps",
+      "timeDistance": "Time & distance",
+      "time": "Time",
+      "weightDistance": "Weight & distance",
+      "weightTime": "Weight & time",
+      "reps": "Reps",
+      "rpe": "RPE"
+    }
   },
   "foodFormPersistence": {
     "discardTitle": "Discard unsaved equivalents?",
@@ -4632,6 +4676,15 @@
       "targetGoal": "Target Daily Goal",
       "averageVsTarget": "Average vs. Target",
       "percentOfGoal": "{{percent}}% of goal"
+    },
+    "topSources": {
+      "title": "Top Sources",
+      "allMeals": "All meals",
+      "clearDay": "Show whole period",
+      "empty": "No {{nutrient}} logged for this selection",
+      "loadFailed": "Failed to load food sources",
+      "share": "{{percent}}%",
+      "servingAmount": "{{quantity}} {{unit}}"
     }
   },
   "workoutPresetDetail": {
@@ -5200,14 +5253,46 @@
     "logTitle": "Mood",
     "overall": "Overall mood",
     "tags": "Moods",
-    "notesPlaceholder": "Add a note (optional)",
+    "energy": "Energy",
+    "energyLow": "Drained",
+    "energyHigh": "Energized",
+    "focus": "Focus",
+    "focusLow": "Scattered",
+    "focusHigh": "Locked in",
+    "journalOptional": "Journal (optional)",
+    "journalPlaceholder": "Any thoughts or feelings you'd like to add?",
+    "ratingsUnsupported": "Your server doesn't save energy and focus yet. Update SparkyFitness to keep them.",
     "loggingForDate": "Logging for {{date}}",
     "chartTitle": "Mood over time",
     "mostCommon": "Most common moods",
     "chartEmpty": "No mood logged for this period",
     "chartLoadFailed": "Failed to load mood data",
     "loadFailed": "Could not load this day's mood",
+    "serverCheckFailed": "Couldn't reach your server. Check your connection and try again.",
     "saveFailed": "Could not save mood",
+    "newCheckinTitle": "New check-in",
+    "editCheckinTitle": "Edit check-in",
+    "time": "Time",
+    "timeA11y": "Time, {{time}}",
+    "deleteCheckin": "Delete check-in",
+    "deleteCheckinConfirm": "Delete this check-in?",
+    "deleteCheckinMessage": "This removes the check-in and its journal entry.",
+    "deleteFailed": "Could not delete check-in",
+    "checkinNeedsContent": "Add a mood, energy, focus, a tag or a journal entry to save.",
+    "checkinMissing": "This check-in no longer exists.",
+    "dayTitle": "Mood",
+    "dayAverage": "Day average",
+    "checkinCount_one": "{{count}} check-in",
+    "checkinCount_other": "{{count}} check-ins",
+    "noCheckins": "No check-ins yet for this day.",
+    "addCheckin": "Add check-in",
+    "checkinRowA11y": "{{summary}}. Edit check-in.",
+    "checkinAtTime": "check-in at {{time}}",
+    "a11yListSeparator": ", ",
+    "energyA11y": "energy {{value}} of 5",
+    "focusA11y": "focus {{value}} of 5",
+    "energyOutOfFive": "Energy {{value}}/5",
+    "focusOutOfFive": "Focus {{value}}/5",
     "names": {
       "angry": "Angry",
       "anxious": "Anxious",
@@ -6155,6 +6240,7 @@
     "scanFood": "Scan food",
     "searchFood": "Log food",
     "logWater": "Log water",
+    "logWaterInBackground": "Log water without opening the app",
     "fasting": "Fasting",
     "waterLogged": "Water logged",
     "waterFailed": "Could not log water"
@@ -6353,6 +6439,7 @@
       "tooHard": "Holding weight: last time felt too hard.",
       "tooHardRepeated": "Lighter today: too hard two sessions running.",
       "highEffort": "Holding weight: your last sets were near max effort.",
+      "lowEffort": "A step heavier: your last sets were logged as easy.",
       "tooEasyRepeated": "A step heavier: too easy two sessions running."
     },
     "declined": "Using your usual suggestion.",
@@ -6422,6 +6509,9 @@
       "floorsCount_one": "{{formattedCount}} floor",
       "floorsCount_other": "{{formattedCount}} floors",
       "elevationGain": "Elevation gain",
+      "cadence": "Avg cadence",
+      "spm": "{{value}} spm",
+      "strideLength": "Stride length",
       "calories": "{{value}} Cal",
       "minutes_one": "{{formattedCount}} min",
       "minutes_other": "{{formattedCount}} min",
@@ -6471,7 +6561,8 @@
       "perMile": "/mi",
       "underOneMinute": "<1 min",
       "exportGpx": "Export GPX",
-      "exportGpxFailed": "Could not export the route"
+      "exportGpxFailed": "Could not export the route",
+      "shareImage": "Share as image"
     },
     "load": {
       "title": "Training Load",
@@ -8102,5 +8193,36 @@
       "lupin": "lupin",
       "sulphites": "sulphites"
     }
+  },
+  "routes": {
+    "addTitle": "Add a route",
+    "draw": "Draw on a map",
+    "importGpx": "Import a GPX file",
+    "importFailed": "Could not import that file",
+    "importFailedHint": "Choose a GPX file with a track or route in it.",
+    "loadFailed": "Could not load your routes.",
+    "loadOneFailed": "Could not load this route.",
+    "empty": "No routes yet. Draw one on a map, import a GPX file, or save a recorded run or walk from its details.",
+    "mapA11y": "Map of this route, from the green dot to the red ring",
+    "nameLabel": "Route name",
+    "namePlaceholder": "Name this route",
+    "climb": "{{climb}} climb",
+    "rename": "Rename",
+    "renameFailed": "Could not rename",
+    "shareGpx": "Share as GPX",
+    "shareFailed": "Could not share the route",
+    "deleteTitle": "Delete this route?",
+    "deleteMessage": "Recorded activities it was saved from are not affected.",
+    "deleteFailed": "Could not delete the route",
+    "saveFailed": "Could not save the route",
+    "drawHint": "Tap the map to add points",
+    "undo": "Undo",
+    "clear": "Clear",
+    "saveAsRoute": "Save as route",
+    "savedAsRoute": "Saved to Routes",
+    "saveAsRouteFailed": "Could not save the route",
+    "fileTooLarge": "That file is too large",
+    "fileTooLargeHint": "A route file can be up to 10 MB.",
+    "drawLimit": "That is as many points as a route can have here. Undo some or save this one."
   }
 }
