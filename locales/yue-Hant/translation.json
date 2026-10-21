@@ -2074,6 +2074,15 @@
                 "openrouter": "開源路由器 OpenRouter",
                 "meta": "元",
                 "perplexity": "Perplexity AI"
+            },
+            "reasoningEffort": {
+                "label": "推理強度",
+                "low": "低",
+                "medium": "中（建議）",
+                "high": "高",
+                "xhigh": "極高",
+                "max": "最高",
+                "description": "高啲嘅強度會俾複雜嘅食材同餐膳任務更多推理時間，亦都可能增加回應時間同成本."
             }
         },
         "apiKeyManagement": {
@@ -3792,7 +3801,29 @@
         "mindfulnessSection": {
             "hrvMs": "HRV {{hrv_rmssd}} ms"
         },
-        "failedToCalculateBodyFatWithError": "計唔到體脂：{{error}}"
+        "failedToCalculateBodyFatWithError": "計唔到體脂：{{error}}",
+        "newCheckin": "新增打卡",
+        "editCheckin": "編輯打卡",
+        "addCheckin": "新增打卡",
+        "saveChanges": "儲存變更",
+        "cancelEdit": "取消",
+        "checkinTime": "時間",
+        "dayCheckins": "今日嘅打卡",
+        "otherDayCheckins": "打卡",
+        "noCheckins": "呢一日仲未有打卡.",
+        "dayAverage": "當日平均",
+        "checkinNeedsContent": "要加心情、能量、專注度、標籤或者日記條目先儲存到.",
+        "checkinCount_other": "{{count}} 次打卡",
+        "energyOutOfFive": "能量 {{value}}/5",
+        "focusOutOfFive": "專注度 {{value}}/5",
+        "editCheckinAt": "編輯 {{time}} 嘅打卡",
+        "deleteCheckinAt": "刪除 {{time}} 嘅打卡",
+        "checkinSaved": "打卡已儲存",
+        "checkinUpdated": "打卡已更新",
+        "checkinDeleted": "打卡已刪除",
+        "deleteCheckinTitle": "刪除呢個打卡？",
+        "deleteCheckinDescription": "咁會刪除嗰個打卡同日記條目.",
+        "journalOptional": "日記（可選）"
     },
     "sleepTimelineEditor": {
         "sleepTimeline": "瞓覺階段時間軸",
@@ -3853,7 +3884,15 @@
         "irritable": "易嬲",
         "showMood": "顯示心情",
         "hideMood": "隱藏心情",
-        "deleteMood": "刪除心情"
+        "deleteMood": "刪除心情",
+        "noMoodSelected": "未揀心情",
+        "clearMood": "清除心情",
+        "energy": "精力",
+        "energyLow": "冇晒力",
+        "energyHigh": "好有精神",
+        "focus": "專注度",
+        "focusLow": "心散",
+        "focusHigh": "好專注"
     },
     "sleepEntrySection": {
         "sleepTracking": "瞓覺記錄",
@@ -9201,6 +9240,29 @@
             "titleRun": "第 {{week}} 週，跑第 {{run}} 次",
             "titleWalk": "第 {{week}} 週，行第 {{walk}} 次",
             "label": "{{name}} · {{workout}}"
+        }
+    },
+    "foodAssistant": {
+        "state": "食材偏好同任務",
+        "error": "更新唔到助手狀態。請重新整理嚟讀取最新版本.",
+        "memoryHelp": "長期食材偏好會同對話記錄分開儲存。今日嘅請求可以覆蓋佢哋，而唔會改變佢哋本身.",
+        "preference": "偏好",
+        "forget": "忘記",
+        "noPreferences": "冇已儲存嘅食材偏好.",
+        "resume": "喺對話度繼續",
+        "noTasks": "冇已儲存嘅食材任務.",
+        "status": {
+            "draft": "草稿",
+            "running": "進行緊",
+            "awaiting_input": "需要輸入",
+            "complete": "已完成",
+            "cancelled": "已取消",
+            "failed": "失敗"
+        },
+        "ingredient": {
+            "unresolved": "需要比對",
+            "selected": "已揀",
+            "verified": "已驗證"
         }
     }
 }
