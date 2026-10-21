@@ -7147,8 +7147,8 @@
             "totalMinutes": "Minuty uważności dzisiaj",
             "sessionCount": "Sesje",
             "recorded_one": "zapisano sesję",
-            "recorded_few": "",
-            "recorded_many": ""
+            "recorded_few": "zapisano sesje",
+            "recorded_many": "zapisano sesji"
         },
         "pacer": {
             "title": "Metronom oddechu",
