@@ -8740,7 +8740,7 @@
     "foodSearch": {
         "barcodeScanner": {
             "engine": "引擎",
-            "camera": "зӣёж©ҹ",
+            "camera": "相機",
             "continuousScan": "連續掃描",
             "alignBarcode": "對準條碼",
             "quagga2": "quagga2",
