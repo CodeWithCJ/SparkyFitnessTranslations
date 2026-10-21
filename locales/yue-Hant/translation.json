@@ -8687,7 +8687,7 @@
             "eGHammerStrength": "例如：Hammer Strength",
             "exerciseNotesCuesOptional": "動作備註／提示（可選）",
             "eGSeatSetting4": "例如：座椅設 4、寬握、底部停頓…",
-            "addSet": "еҠ дёҖзө„",
+            "addSet": "加一組",
             "workoutPresetBlockEditIndividual": "訓練預設區塊：喺預設管理器度編輯個別動作.",
             "understandProgressionTechniquesAndConfig": "了解漸進技巧，並為您嘅訓練配置自動超負荷目標.",
             "n1ProgressionModes": "1. 漸進模式",
@@ -8721,17 +8721,17 @@
             "examples24For38": "例子：24（用於 3×8）、45（用於 3×15）、75（用於 5×15）."
         },
         "workoutPlansManager": {
-            "openMenu": "й–Ӣе•ҹйҒёе–®"
+            "openMenu": "開啟選單"
         },
         "workoutPresetSelector": {
-            "all": "е…ЁйғЁ",
-            "exercise": "еӢ•дҪң",
-            "exercises": "еӢ•дҪң",
-            "preset": "й җиЁӯ"
+            "all": "全部",
+            "exercise": "動作",
+            "exercises": "動作",
+            "preset": "預設"
         },
         "workoutPresetsManager": {
             "sets": "{{totalSets}} 組",
-            "openMenu": "й–Ӣе•ҹйҒёе–®"
+            "openMenu": "開啟選單"
         },
         "level": "難度：",
         "force": "力量類型：",
@@ -8739,7 +8739,7 @@
     },
     "foodSearch": {
         "barcodeScanner": {
-            "engine": "еј•ж“Һ",
+            "engine": "引擎",
             "camera": "зӣёж©ҹ",
             "continuousScan": "連續掃描",
             "alignBarcode": "對準條碼",
