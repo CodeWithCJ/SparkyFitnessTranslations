@@ -1432,7 +1432,7 @@
     "auth": {
         "frontendUrl": "前端 URL",
         "email": "йӣ»йғө",
-        "password": "еҜҶзўј",
+        "password": "密碼",
         "apiKey": "API 金鑰",
         "signIn": "зҷ»е…Ҙ",
         "sso": "SSO 單一登入",
