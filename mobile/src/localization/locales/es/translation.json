@@ -7732,7 +7732,10 @@
         "insightLowDay": "El {{weekday}} es tu día más bajo, con un promedio de {{volume}}.",
         "daysCount_one": "{{count}} día",
         "daysCount_many": "{{count}} días",
-        "daysCount_other": "{{count}} días"
+        "daysCount_other": "{{count}} días",
+        "insightStreak_one": "Tu mayor racha de objetivos fue de {{count}} día.",
+        "insightStreak_many": "Tu mayor racha de objetivos fue de {{count}} días.",
+        "insightStreak_other": "Tu mayor racha de objetivos fue de {{count}} días."
     },
     "measurementsReport": {
         "title": "Medidas",
@@ -7789,7 +7792,16 @@
         "alcoholTitle": "Alcohol",
         "weekly": "Semana a semana",
         "weekCaffeineAlcohol": "cafeína al día · {{alcohol}} de alcohol",
-        "weekAlcohol": "alcohol"
+        "weekAlcohol": "alcohol",
+        "insightOver_one": "Superaste tu límite de cafeína de {{limit}} durante {{count}} día.",
+        "insightOver_many": "Superaste tu límite de cafeína de {{limit}} durante {{count}} días.",
+        "insightOver_other": "Superaste tu límite de cafeína de {{limit}} durante {{count}} días.",
+        "insightOverVaries_one": "Superaste tu límite de cafeína en {{count}} día.",
+        "insightOverVaries_many": "Superaste tu límite de cafeína en {{count}} días.",
+        "insightOverVaries_other": "Superaste tu límite de cafeína en {{count}} días.",
+        "daysCount_one": "{{count}} día",
+        "daysCount_many": "{{count}} días",
+        "daysCount_other": "{{count}} días"
     },
     "runSummary": {
         "done": "Listo",
@@ -7826,7 +7838,10 @@
         "saveDistance": "Actualizar",
         "distanceInvalid": "Introduce la distancia de la máquina.",
         "distanceFailed": "No se pudo guardar la distancia.",
-        "heartRate": "Frecuencia cardíaca"
+        "heartRate": "Frecuencia cardíaca",
+        "newRecords_one": "Nuevo record personal",
+        "newRecords_many": "Nuevos records personal",
+        "newRecords_other": "Nuevos records personal"
     },
     "runPrograms": {
         "startWhenTitle": "Iniciar {{name}}",
