@@ -3723,11 +3723,19 @@
         },
         "detail": {
             "edit": "Editar",
-            "notFound": "Esta entrada ya no está disponible."
+            "notFound": "Esta entrada ya no está disponible.",
+            "photoCount_one": "{{count}} foto adjunta",
+            "photoCount_many": "{{count}} fotos adjuntas",
+            "photoCount_other": "{{count}} fotos adjuntas"
         },
         "episode": {
             "ongoing": "en curso",
             "peak": "pico de {{n}}"
+        },
+        "chart": {
+            "summary_one": "Gravedad a lo largo del episodio, {{count}} lectura",
+            "summary_many": "Gravedad a lo largo del episodio, {{count}} lecturas",
+            "summary_other": "Gravedad a lo largo del episodio, {{count}} lecturas"
         }
     },
     "checkIn": {
@@ -6536,7 +6544,10 @@
             "perKm": "/km",
             "perMile": "/mi",
             "exportGpx": "Exportar GPX",
-            "exportGpxFailed": "No se pudo exportar la ruta"
+            "exportGpxFailed": "No se pudo exportar la ruta",
+            "floorsCount_one": "{{formattedCount}} planta",
+            "floorsCount_many": "{{formattedCount}} plantas",
+            "floorsCount_other": "{{formattedCount}} plantas"
         },
         "consistency": {
             "subtitle_one": "La última {{formattedCount}} semana, de {{first}} a {{last}}",
@@ -6626,7 +6637,10 @@
             "interval": "Intervalo",
             "repetition": "Repetición",
             "range": "{{fast}} – {{slow}} {{unit}}",
-            "fromEffort": "Calculado a partir de tu mejor carrera reciente. El ritmo de umbral es de aproximadamente {{pace}} {{unit}}."
+            "fromEffort": "Calculado a partir de tu mejor carrera reciente. El ritmo de umbral es de aproximadamente {{pace}} {{unit}}.",
+            "fromTypical_one": "Estimated from your last {{formattedCount}} run, so less precise. A hard run of 3 km or more sharpens it.",
+            "fromTypical_many": "Estimado a partir de tus últimas {{formattedCount}} carreras, por lo que es menos preciso. Una carrera intensa de 3 km o más lo ajustará mejor.",
+            "fromTypical_other": "Estimado a partir de tus últimas {{formattedCount}} carreras, por lo que es menos preciso. Una carrera intensa de 3 km o más lo ajustará mejor."
         }
     },
     "aiSettings": {
@@ -6961,7 +6975,13 @@
         "indoorDistance": {
             "title": "Distancia",
             "hint": "Opcional. Introduce la distancia mostrada en la cinta o máquina.",
-            "invalid": "Introduce una distancia de cero o superior."
+            "invalid": "Introduce una distancia de cero o superior.",
+            "estimateLearned_one": "Estimado a partir de {{formattedCount}} paso usando tu zancada. Cámbialo para que coincida con tu cinta de correr y la aplicación seguirá aprendiendo.",
+            "estimateLearned_many": "Estimado a partir de {{formattedCount}} pasos usando tu zancada. Cámbialo para que coincida con tu cinta de correr y la aplicación seguirá aprendiendo.",
+            "estimateLearned_other": "Estimado a partir de {{formattedCount}} pasos usando tu zancada. Cámbialo para que coincida con tu cinta de correr y la aplicación seguirá aprendiendo.",
+            "estimateRough_one": "Una estimación aproximada a partir de {{formattedCount}} paso con una zancada habitual. Introduce lo que muestra tu cinta de correr y la aplicación aprenderá la tuya.",
+            "estimateRough_many": "Una estimación aproximada a partir de {{formattedCount}} pasos con una zancada habitual. Introduce lo que muestra tu cinta de correr y la aplicación aprenderá la tuya.",
+            "estimateRough_other": "Una estimación aproximada a partir de {{formattedCount}} pasos con una zancada habitual. Introduce lo que muestra tu cinta de correr y la aplicación aprenderá la tuya."
         },
         "heartRate": "Frecuencia cardíaca",
         "errors": {
@@ -7052,7 +7072,13 @@
             "milestoneHalfMarathon": "Distancia de medio maratón superada. ¡Impresionante!",
             "milestoneMarathon": "Distancia de maratón superada. ¡Increíble hazaña!",
             "customProgramStart": "Entrenamiento {{workout}}. {{time}}.",
-            "customProgramDone": "{{done}} de {{total}} entrenamientos completados. Siguiente: entrenamiento {{next}}."
+            "customProgramDone": "{{done}} de {{total}} entrenamientos completados. Siguiente: entrenamiento {{next}}.",
+            "hours_one": "{{count}} hora",
+            "hours_many": "{{count}} horas",
+            "hours_other": "{{count}} horas",
+            "minutes_one": "{{count}} minuto",
+            "minutes_many": "{{count}} minutos",
+            "minutes_other": "{{count}} minutos"
         },
         "autoPause": {
             "title": "Pausa automática",
