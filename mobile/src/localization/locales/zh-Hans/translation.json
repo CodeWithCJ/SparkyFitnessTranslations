@@ -6551,7 +6551,6 @@
         "logTitle": "记录心情",
         "overall": "整体",
         "tags": "标签",
-        "notesPlaceholder": "今天感觉如何？",
         "loggingForDate": "记录 {{date}} 的心情",
         "chartTitle": "每日心情",
         "mostCommon": "最常记录",
