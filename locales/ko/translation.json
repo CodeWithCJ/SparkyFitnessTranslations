@@ -2276,7 +2276,6 @@
         "editingTemporarilyUnavailable": "스키마 변경으로 인해 음식 세부정보를 일시적으로 편집할 수 없습니다."
     },
     "checkIn": {
-        "howAreYouFeelingToday": "오늘 기분이 어떤가요?",
         "neutral": "보통",
         "anyThoughtsOrFeelings": "추가하고 싶은 생각이나 감정이 있나요?",
         "sleepTracking": "수면 추적",
@@ -2358,17 +2357,13 @@
         "failedToLoadRecentCustom": "최근 사용자 지정 측정값을 불러오지 못했습니다.",
         "failedToLoadRecentStandard": "최근 표준 측정값을 불러오지 못했습니다.",
         "failedToSaveCustomMeasurement": "사용자 지정 측정값을 저장하지 못했습니다.",
-        "failedToSaveMood": "기분을 저장하지 못했습니다.",
         "failedToUpdateMeasurement": "측정값을 업데이트하지 못했습니다.",
         "level": "수준",
         "measurementUpdatedSuccessfully": "측정이 성공적으로 업데이트되었습니다.",
-        "moodSaved": "기분이 저장되었습니다.",
-        "moodSavedSuccessfully": "기분을 저장했습니다.",
         "muscleMass": "근육량",
         "recentFasts": "최근 단식",
         "recentFastsDescription": "최근 단식 기록 및 상태",
         "recentMeasurementsDescription": "측정값, 완료한 단식, 동기화된 건강 데이터가 포함된 최신 로그입니다.",
-        "saveMood": "무드 저장",
         "stressLevel": "스트레스 수준",
         "tabs": {
             "fasting": "단식 및 기분",
@@ -5333,7 +5328,6 @@
     "mood": {
         "dailyMood": "오늘의 기분",
         "date": "날짜",
-        "deletedSuccessfully": "기분 항목이 성공적으로 삭제되었습니다.",
         "failedAddCustom": "분위기를 추가할 수 없습니다.",
         "failedDeleteCustom": "무드를 삭제할 수 없습니다.",
         "failedLoadPrefs": "기분 설정을 불러오지 못했습니다.",
@@ -5341,17 +5335,13 @@
         "failedToDelete": "기분 항목을 삭제하지 못했습니다.",
         "failedToLoadCustom": "분위기를 불러오지 못했습니다.",
         "failedToLoadEntries": "기분 항목을 불러오지 못했습니다.",
-        "failedToLoadEntry": "기분 항목을 불러오지 못했습니다.",
         "failedToSave": "기분 기록을 저장하지 못했습니다.",
         "failedToUpdate": "기분 기록을 업데이트하지 못했습니다.",
         "intensityTrend": "시간에 따른 전반적인 기분",
         "mood": "기분",
         "moodValue": "분위기 값",
         "mostCommon": "가장 많이 사용되는 분위기",
-        "noMoodData": "이 기간에는 기분 데이터가 없습니다.",
-        "notes": "메모: ",
-        "savedSuccessfully": "기분 기록이 성공적으로 저장되었습니다.",
-        "updatedSuccessfully": "기분 기록이 성공적으로 업데이트되었습니다."
+        "noMoodData": "이 기간에는 기분 데이터가 없습니다."
     },
     "preferences": {
         "resetError": "기본 설정을 초기화하지 못했습니다."

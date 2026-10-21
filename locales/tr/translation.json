@@ -3266,7 +3266,6 @@
         "editingTemporarilyUnavailable": "Şema değişiklikleri nedeniyle besin ayrıntılarını düzenleme geçici olarak kullanılamıyor."
     },
     "checkIn": {
-        "howAreYouFeelingToday": "Bugün nasıl hissediyorsun?",
         "neutral": "Nötr",
         "anyThoughtsOrFeelings": "Eklemek istediğiniz herhangi bir düşünce veya duygu var mı?",
         "sleepTracking": "Uyku Takibi",
@@ -3348,17 +3347,13 @@
         "failedToLoadRecentCustom": "Son özel ölçümler yüklenemedi.",
         "failedToLoadRecentStandard": "Son standart ölçümler yüklenemedi.",
         "failedToSaveCustomMeasurement": "Özel ölçüm kaydedilemedi.",
-        "failedToSaveMood": "Ruh hali kaydedilemedi.",
         "failedToUpdateMeasurement": "Ölçüm güncellenemedi.",
         "level": "düzey",
         "measurementUpdatedSuccessfully": "Ölçüm başarıyla güncellendi.",
-        "moodSaved": "Ruh Hali Kaydedildi",
-        "moodSavedSuccessfully": "Ruh hali başarıyla kaydedildi.",
         "muscleMass": "Kas Kütlesi",
         "recentFasts": "Son Oruçlar",
         "recentFastsDescription": "En son oruç kayıtlarınız ve durumunuz.",
         "recentMeasurementsDescription": "Ölçümler, tamamlanan oruçlar ve senkronize sağlık verileri dahil en son kayıtlarınız.",
-        "saveMood": "Ruh Halini Kaydet",
         "stressLevel": "Stres Düzeyi",
         "tabs": {
             "fasting": "Oruç ve Ruh Hali",
@@ -5742,7 +5737,6 @@
     "mood": {
         "dailyMood": "Günlük Ruh Hali",
         "date": "Tarih",
-        "deletedSuccessfully": "Ruh hali kaydı başarıyla silindi.",
         "failedAddCustom": "Ruh hali eklenemedi.",
         "failedDeleteCustom": "Ruh hali kaldırılamadı.",
         "failedLoadPrefs": "Ruh hali tercihleri yüklenemedi.",
@@ -5750,17 +5744,13 @@
         "failedToDelete": "Ruh hali kaydı silinemedi.",
         "failedToLoadCustom": "Ruh halleri yüklenemedi.",
         "failedToLoadEntries": "Ruh hali kayıtları yüklenemedi.",
-        "failedToLoadEntry": "Ruh hali kaydı yüklenemedi.",
         "failedToSave": "Ruh hali kaydı kaydedilemedi.",
         "failedToUpdate": "Ruh hali kaydı güncellenemedi.",
         "intensityTrend": "Zaman içinde genel ruh hali",
         "mood": "Ruh Hali",
         "moodValue": "Ruh Hali Değeri",
         "mostCommon": "En sık ruh halleri",
-        "noMoodData": "Bu dönem için ruh hali verisi yok.",
-        "notes": "Notlar: ",
-        "savedSuccessfully": "Ruh hali kaydı başarıyla kaydedildi.",
-        "updatedSuccessfully": "Ruh hali kaydı başarıyla güncellendi."
+        "noMoodData": "Bu dönem için ruh hali verisi yok."
     },
     "preferences": {
         "resetError": "Tercihler sıfırlanamadı"

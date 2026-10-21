@@ -2634,7 +2634,6 @@
         "editingTemporarilyUnavailable": "Das Bearbeiten von Lebensmitteldetails ist wegen Schemaänderungen vorübergehend nicht verfügbar."
     },
     "checkIn": {
-        "howAreYouFeelingToday": "Wie fühlst du dich heute?",
         "neutral": "neutral",
         "anyThoughtsOrFeelings": "Gibt es Gedanken oder Gefühle, die du hinzufügen möchtest?",
         "sleepTracking": "Schlaftracking",
@@ -2714,17 +2713,13 @@
         "failedToLoadRecentCustom": "Letzte benutzerdefinierte Messungen konnten nicht geladen werden.",
         "failedToLoadRecentStandard": "Letzte Standardmessungen konnten nicht geladen werden.",
         "failedToSaveCustomMeasurement": "Benutzerdefinierte Messung konnte nicht gespeichert werden.",
-        "failedToSaveMood": "Stimmung konnte nicht gespeichert werden.",
         "failedToUpdateMeasurement": "Messung konnte nicht aktualisiert werden.",
         "level": "Stufe",
         "measurementUpdatedSuccessfully": "Messung erfolgreich aktualisiert.",
-        "moodSaved": "Stimmung gespeichert",
-        "moodSavedSuccessfully": "Stimmung erfolgreich gespeichert.",
         "muscleMass": "Muskelmasse",
         "recentFasts": "Letzte Fastenzeiten",
         "recentFastsDescription": "Deine neuesten Fastenprotokolle und Status.",
         "recentMeasurementsDescription": "Deine neuesten Protokolle einschließlich Messungen, abgeschlossener Fastenzeiten und synchronisierter Gesundheitsdaten.",
-        "saveMood": "Stimmung speichern",
         "stressLevel": "Stresslevel",
         "tabs": {
             "fasting": "Fasten & Stimmung",
@@ -5589,7 +5584,6 @@
     "mood": {
         "dailyMood": "Tägliche Stimmung",
         "date": "Datum",
-        "deletedSuccessfully": "Stimmungseintrag erfolgreich gelöscht.",
         "failedAddCustom": "Stimmung konnte nicht hinzugefügt werden.",
         "failedDeleteCustom": "Stimmung konnte nicht entfernt werden.",
         "failedLoadPrefs": "Stimmungseinstellungen konnten nicht geladen werden.",
@@ -5597,17 +5591,13 @@
         "failedToDelete": "Stimmungseintrag konnte nicht gelöscht werden.",
         "failedToLoadCustom": "Stimmungen konnten nicht geladen werden.",
         "failedToLoadEntries": "Stimmungseinträge konnten nicht geladen werden.",
-        "failedToLoadEntry": "Stimmungseintrag konnte nicht geladen werden.",
         "failedToSave": "Stimmungseintrag konnte nicht gespeichert werden.",
         "failedToUpdate": "Stimmungseintrag konnte nicht aktualisiert werden.",
         "intensityTrend": "Gesamtstimmung im Zeitverlauf",
         "mood": "Stimmung",
         "moodValue": "Stimmungswert",
         "mostCommon": "Häufigste Stimmungen",
-        "noMoodData": "Für diesen Zeitraum sind keine Stimmungsdaten verfügbar.",
-        "notes": "Notizen: ",
-        "savedSuccessfully": "Stimmungseintrag erfolgreich gespeichert.",
-        "updatedSuccessfully": "Stimmungseintrag erfolgreich aktualisiert."
+        "noMoodData": "Für diesen Zeitraum sind keine Stimmungsdaten verfügbar."
     },
     "preferences": {
         "resetError": "Einstellungen konnten nicht zurückgesetzt werden."

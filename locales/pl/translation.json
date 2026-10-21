@@ -3035,7 +3035,6 @@
         "editingTemporarilyUnavailable": "Edycja szczegółów produktu jest chwilowo niedostępna z powodu zmian schematu."
     },
     "checkIn": {
-        "howAreYouFeelingToday": "Jak się dziś czujesz?",
         "neutral": "Neutralnie",
         "anyThoughtsOrFeelings": "Jakieś dodatkowe przemyślenia?",
         "sleepTracking": "Monitorowanie snu",
@@ -3105,7 +3104,6 @@
         "useLast": "Użyj ostatniej wartości",
         "failedToLoadRecentStandard": "Nie udało się wczytać ostatnich standardowych pomiarów.",
         "failedToSaveCustomMeasurement": "Nie udało się zapisać własnego pomiaru.",
-        "failedToSaveMood": "Nie udało się zapisać nastroju.",
         "level": "poziom",
         "stressLevel": "Poziom stresu",
         "bodyWater": "Nawodnienie organizmu (%)",
@@ -3120,13 +3118,10 @@
         "failedToLoadRecentCustom": "Nie udało się wczytać ostatnich niestandardowych pomiarów.",
         "failedToUpdateMeasurement": "Nie udało się zaktualizować pomiaru.",
         "measurementUpdatedSuccessfully": "Pomiar zaktualizowano pomyślnie.",
-        "moodSaved": "Zapisano nastrój",
-        "moodSavedSuccessfully": "Nastrój zapisano pomyślnie.",
         "muscleMass": "Masa mięśniowa",
         "recentFasts": "Ostatnie posty",
         "recentFastsDescription": "Twoje najnowsze posty i ich status.",
         "recentMeasurementsDescription": "Twoje najnowsze wpisy obejmujące pomiary, zakończone posty i zsynchronizowane dane zdrowotne.",
-        "saveMood": "Zapisz nastrój",
         "tabs": {
             "fasting": "Post i nastrój",
             "measurements": "Pomiary",
@@ -5530,7 +5525,6 @@
         "moodValue": "Wartość nastroju",
         "dailyMood": "Dzienny nastrój",
         "date": "Data",
-        "deletedSuccessfully": "Wpis nastroju usunięto pomyślnie.",
         "failedAddCustom": "Nie udało się dodać nastroju.",
         "failedDeleteCustom": "Nie udało się usunąć nastroju.",
         "failedLoadPrefs": "Nie udało się wczytać ustawień nastrojów.",
@@ -5538,15 +5532,11 @@
         "failedToDelete": "Nie udało się usunąć wpisu nastroju.",
         "failedToLoadCustom": "Nie udało się wczytać nastrojów.",
         "failedToLoadEntries": "Nie udało się wczytać wpisów nastroju.",
-        "failedToLoadEntry": "Nie udało się wczytać wpisu nastroju.",
         "failedToSave": "Nie udało się zapisać wpisu nastroju.",
         "failedToUpdate": "Nie udało się zaktualizować wpisu nastroju.",
         "intensityTrend": "Ogólny nastrój w czasie",
         "mood": "Nastrój",
-        "noMoodData": "Brak danych o nastroju dla tego okresu.",
-        "notes": "Uwagi: ",
-        "savedSuccessfully": "Wpis nastroju zapisano pomyślnie.",
-        "updatedSuccessfully": "Wpis nastroju zaktualizowano pomyślnie."
+        "noMoodData": "Brak danych o nastroju dla tego okresu."
     },
     "fasting": {
         "startTime": "Godzina rozpoczęcia",

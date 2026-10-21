@@ -2466,7 +2466,6 @@
         "editingTemporarilyUnavailable": "La edición de detalles de alimentos no está disponible temporalmente debido a cambios de esquema."
     },
     "checkIn": {
-        "howAreYouFeelingToday": "¿Cómo te sientes hoy?",
         "neutral": "Neutral",
         "anyThoughtsOrFeelings": "¿Quieres añadir algún pensamiento o sentimiento?",
         "sleepTracking": "Registro de sueño",
@@ -2546,17 +2545,13 @@
         "failedToLoadRecentCustom": "Error al cargar las mediciones personalizadas recientes.",
         "failedToLoadRecentStandard": "Error al cargar las mediciones estándar recientes.",
         "failedToSaveCustomMeasurement": "Error al guardar la medición personalizada.",
-        "failedToSaveMood": "Error al guardar el estado de ánimo.",
         "failedToUpdateMeasurement": "Error al actualizar la medición.",
         "level": "nivel",
         "measurementUpdatedSuccessfully": "Medición actualizada con éxito.",
-        "moodSaved": "Estado de ánimo guardado",
-        "moodSavedSuccessfully": "Estado de ánimo guardado con éxito.",
         "muscleMass": "Masa muscular",
         "recentFasts": "Ayunos recientes",
         "recentFastsDescription": "Tus últimos registros de ayuno y tu estado.",
         "recentMeasurementsDescription": "Tus últimos registros, incluyendo medidas, ayunos completados y datos de salud sincronizados.",
-        "saveMood": "Guardar estado de ánimo",
         "stressLevel": "Nivel de estrés",
         "tabs": {
             "fasting": "Ayuno y estado de ánimo",
@@ -5815,7 +5810,6 @@
     "mood": {
         "dailyMood": "Estado de ánimo diario",
         "date": "Fecha",
-        "deletedSuccessfully": "Entrada de estado de ánimo eliminada con éxito.",
         "failedAddCustom": "No se pudo añadir el estado de ánimo.",
         "failedDeleteCustom": "No se pudo eliminar el estado de ánimo.",
         "failedLoadPrefs": "Error al cargar las preferencias de estado de ánimo.",
@@ -5823,17 +5817,13 @@
         "failedToDelete": "Error al eliminar la entrada de estado de ánimo.",
         "failedToLoadCustom": "Error al cargar los estados de ánimo.",
         "failedToLoadEntries": "Error al cargar las entradas de estado de ánimo.",
-        "failedToLoadEntry": "Error al cargar la entrada de estado de ánimo.",
         "failedToSave": "Error al guardar la entrada de estado de ánimo.",
         "failedToUpdate": "Error al actualizar la entrada de estado de ánimo.",
         "intensityTrend": "Estado de ánimo general a lo largo del tiempo",
         "mood": "Estado de ánimo",
         "moodValue": "Valor de estado de ánimo",
         "mostCommon": "Estados de ánimo más frecuentes",
-        "noMoodData": "No hay datos de estado de ánimo disponibles para este periodo.",
-        "notes": "Notas: ",
-        "savedSuccessfully": "Entrada de estado de ánimo guardada con éxito.",
-        "updatedSuccessfully": "Entrada de estado de ánimo actualizada con éxito."
+        "noMoodData": "No hay datos de estado de ánimo disponibles para este periodo."
     },
     "preferences": {
         "resetError": "Error al restablecer las preferencias"

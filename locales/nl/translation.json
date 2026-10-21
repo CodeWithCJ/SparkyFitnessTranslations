@@ -3054,7 +3054,6 @@
         "editingTemporarilyUnavailable": "Voedingsdetails bewerken is tijdelijk niet beschikbaar vanwege schemawijzigingen."
     },
     "checkIn": {
-        "howAreYouFeelingToday": "Hoe voelt u zich vandaag?",
         "neutral": "Neutraal",
         "anyThoughtsOrFeelings": "Heeft u nog gedachten of gevoelens die u toe wilt voegen?",
         "sleepTracking": "Slaapregistratie",
@@ -3134,17 +3133,13 @@
         "failedToLoadRecentCustom": "De meest recente aangepaste meting kon niet worden geladen.",
         "failedToLoadRecentStandard": "De meest recente standaard meting kon niet worden geladen.",
         "failedToSaveCustomMeasurement": "Het opslaan van de aangepaste meting is mislukt.",
-        "failedToSaveMood": "Het opslaan van de stemming is mislukt.",
         "failedToUpdateMeasurement": "Het bijwerken van de meting is mislukt.",
         "level": "niveau",
         "measurementUpdatedSuccessfully": "De meting is succesvol bijgewerkt.",
-        "moodSaved": "Stemming opgeslagen",
-        "moodSavedSuccessfully": "Stemming succesvol opgeslagen.",
         "muscleMass": "Spiermassa",
         "recentFasts": "Recente vastenperiodes",
         "recentFastsDescription": "Uw meest recente vasten en status.",
         "recentMeasurementsDescription": "Uw meest recente logboekgegevens, waaronder metingen, voltooide vastenperiodes en gesynchroniseerde gezondheidsgegevens.",
-        "saveMood": "Stemming opslaan",
         "stressLevel": "Stressniveau",
         "tabs": {
             "fasting": "Vasten en stemming",
@@ -5589,7 +5584,6 @@
     "mood": {
         "dailyMood": "Dagelijkse stemming",
         "date": "Datum",
-        "deletedSuccessfully": "De stemmingsnotitie is succesvol verwijderd.",
         "failedAddCustom": "Het is niet gelukt om een stemming toe te voegen.",
         "failedDeleteCustom": "Het is niet gelukt om een stemming te verwijderen.",
         "failedLoadPrefs": "Het laden van de stemmingsvoorkeuren is mislukt.",
@@ -5597,17 +5591,13 @@
         "failedToDelete": "Het verwijderen van de stemming is mislukt.",
         "failedToLoadCustom": "Het laden van de stemmingen is mislukt.",
         "failedToLoadEntries": "Het laden van de stemmingen is mislukt.",
-        "failedToLoadEntry": "Het laden van de stemming is mislukt.",
         "failedToSave": "Het opslaan van de stemmingen is mislukt.",
         "failedToUpdate": "Het bijwerken van de stemming is mislukt.",
         "intensityTrend": "Algemene stemming in de loop van de tijd",
         "mood": "Stemming",
         "moodValue": "Stemmingswaarde",
         "mostCommon": "Meest voorkomende stemmingen",
-        "noMoodData": "Er zijn geen stemmingsgegevens beschikbaar voor deze periode.",
-        "notes": "Notities: ",
-        "savedSuccessfully": "De stemming is succesvol opgeslagen.",
-        "updatedSuccessfully": "De stemming is succesvol bijgewerkt."
+        "noMoodData": "Er zijn geen stemmingsgegevens beschikbaar voor deze periode."
     },
     "preferences": {
         "resetError": "Het resetten van de voorkeuren is mislukt"

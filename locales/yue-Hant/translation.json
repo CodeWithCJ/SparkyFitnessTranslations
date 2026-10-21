@@ -3653,7 +3653,6 @@
         "editingTemporarilyUnavailable": "由於架構更改，編輯食材詳情暫時唔可用."
     },
     "checkIn": {
-        "howAreYouFeelingToday": "今日身體同心情點呀？",
         "neutral": "普通平靜",
         "anyThoughtsOrFeelings": "有冇其他心情或者身體狀況想寫低？",
         "sleepTracking": "瞓覺監察",
@@ -3768,17 +3767,13 @@
         "failedToLoadRecentCustom": "載入近期自訂測量值失敗.",
         "failedToLoadRecentStandard": "載入近期標準測量值失敗.",
         "failedToSaveCustomMeasurement": "儲存自訂測量值失敗.",
-        "failedToSaveMood": "儲存心情失敗.",
         "failedToUpdateMeasurement": "更新測量值失敗.",
         "level": "等級",
         "measurementUpdatedSuccessfully": "測量值更新成功.",
-        "moodSaved": "心情已儲存",
-        "moodSavedSuccessfully": "心情儲存成功.",
         "muscleMass": "肌肉量",
         "recentFasts": "近期禁食",
         "recentFastsDescription": "您最近嘅禁食記錄同狀態.",
         "recentMeasurementsDescription": "您最近嘅記錄，包括測量值、完成嘅禁食同同步嘅健康資料.",
-        "saveMood": "儲存心情",
         "stressLevel": "壓力水平",
         "tabs": {
             "fasting": "禁食與心情",
@@ -6804,7 +6799,6 @@
     "mood": {
         "dailyMood": "每日心情",
         "date": "日期",
-        "deletedSuccessfully": "心情記錄刪除成功.",
         "failedAddCustom": "冇辦法加心情.",
         "failedDeleteCustom": "冇辦法移除心情.",
         "failedLoadPrefs": "載入心情偏好失敗.",
@@ -6812,17 +6806,13 @@
         "failedToDelete": "刪除心情記錄失敗.",
         "failedToLoadCustom": "載入心情失敗.",
         "failedToLoadEntries": "載入心情記錄失敗.",
-        "failedToLoadEntry": "載入心情目項失敗.",
         "failedToSave": "儲存心情記錄失敗.",
         "failedToUpdate": "更新心情記錄失敗.",
         "intensityTrend": "隨時間變化嘅總體心情",
         "mood": "心情",
         "moodValue": "心情分數",
         "mostCommon": "最常記錄",
-        "noMoodData": "呢段期間冇可用嘅心情資料.",
-        "notes": "備忘： ",
-        "savedSuccessfully": "心情記錄儲存成功.",
-        "updatedSuccessfully": "心情記錄更新成功."
+        "noMoodData": "呢段期間冇可用嘅心情資料."
     },
     "preferences": {
         "resetError": "重設偏好設定失敗"

@@ -2542,7 +2542,6 @@
     },
     "checkIn": {
         "weight": "Peso",
-        "howAreYouFeelingToday": "Como está se sentido hoje?",
         "neutral": "Neutro",
         "anyThoughtsOrFeelings": "Há pensamentos ou sentimentos que gostaria de acrescentar?",
         "addAnotherSleepSession": "Adicionar outra sessão de sono",
@@ -2659,10 +2658,6 @@
         },
         "useLast": "Usar último",
         "recentMeasurementsDescription": "Seus registros mais recentes, incluindo medições, jejuns concluídos e dados de saúde sincronizados.",
-        "failedToSaveMood": "Falha ao salvar humor.",
-        "moodSaved": "Humor salvo",
-        "moodSavedSuccessfully": "Humor salvo com sucesso.",
-        "saveMood": "Salvar Humor",
         "noRecentActivity": "Nenhuma atividade recente encontrada.",
         "bmr": "TMB (kcal)",
         "couldNotLoadUserProfileOrPrefs": "Não foi possível carregar o perfil ou as preferências do usuário para o cálculo.",
@@ -6633,7 +6628,6 @@
         "intensityTrend": "Humor geral ao longo do tempo",
         "dailyMood": "Humor do dia",
         "date": "Data",
-        "deletedSuccessfully": "Registro de humor excluído com sucesso.",
         "failedAddCustom": "Não foi possível adicionar o humor.",
         "failedDeleteCustom": "Não foi possível remover o humor.",
         "failedLoadPrefs": "Falha ao carregar as preferências de humor.",
@@ -6641,16 +6635,12 @@
         "failedToDelete": "Falha ao excluir o registro de humor.",
         "failedToLoadCustom": "Falha ao carregar os humores.",
         "failedToLoadEntries": "Falha ao carregar os registros de humor.",
-        "failedToLoadEntry": "Falha ao carregar o registro de humor.",
         "failedToSave": "Falha ao salvar o registro de humor.",
         "failedToUpdate": "Falha ao atualizar o registro de humor.",
         "mood": "Humor",
         "moodValue": "Nota do humor",
         "mostCommon": "Humores mais frequentes",
-        "noMoodData": "Nenhum dado de humor neste período.",
-        "notes": "Notas: ",
-        "savedSuccessfully": "Registro de humor salvo com sucesso.",
-        "updatedSuccessfully": "Registro de humor atualizado com sucesso."
+        "noMoodData": "Nenhum dado de humor neste período."
     },
     "mindfulness": {
         "stats": {

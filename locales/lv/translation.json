@@ -2267,7 +2267,6 @@
         "editingTemporarilyUnavailable": "Ēdiena detaļu rediģēšana uz laiku nav pieejama datu struktūras izmaiņu dēļ."
     },
     "checkIn": {
-        "howAreYouFeelingToday": "Kā tu šodien jūties?",
         "neutral": "Neitrāls",
         "anyThoughtsOrFeelings": "Vai vēlaties pievienot kādas papildu domas vai atsauksmes?",
         "sleepTracking": "Miega uzraudzība",
@@ -2347,17 +2346,13 @@
         "failedToLoadRecentCustom": "Neizdevās ielādēt nesenos pielāgotos mērījumus.",
         "failedToLoadRecentStandard": "Neizdevās ielādēt nesenos standarta mērījumus.",
         "failedToSaveCustomMeasurement": "Neizdevās saglabāt pielāgoto mērījumu.",
-        "failedToSaveMood": "Neizdevās saglabāt noskaņojumu.",
         "failedToUpdateMeasurement": "Neizdevās atjaunināt mērījumu.",
         "level": "līmenis",
         "measurementUpdatedSuccessfully": "Mērījums veiksmīgi atjaunināts.",
-        "moodSaved": "Noskaņojums saglabāts",
-        "moodSavedSuccessfully": "Noskaņojums veiksmīgi saglabāts.",
         "muscleMass": "Muskuļu masa",
         "recentFasts": "Nesenie gavēņi",
         "recentFastsDescription": "Jūsu jaunākie gavēņu žurnāli un statuss.",
         "recentMeasurementsDescription": "Jūsu jaunākie žurnāli, tostarp mērījumi, pabeigti gavēņi un sinhronizēti veselības dati.",
-        "saveMood": "Saglabāt noskaņojumu",
         "stressLevel": "Stresa līmenis",
         "tabs": {
             "fasting": "Gavēnis un noskaņojums",
@@ -5294,7 +5289,6 @@
     "mood": {
         "dailyMood": "Ikdienas noskaņojums",
         "date": "Datums",
-        "deletedSuccessfully": "Noskaņojuma ieraksts veiksmīgi dzēsts.",
         "failedAddCustom": "Neizdevās pievienot noskaņojumu.",
         "failedDeleteCustom": "Neizdevās noņemt noskaņojumu.",
         "failedLoadPrefs": "Neizdevās ielādēt noskaņojuma preferences.",
@@ -5302,17 +5296,13 @@
         "failedToDelete": "Neizdevās dzēst noskaņojuma ierakstu.",
         "failedToLoadCustom": "Neizdevās ielādēt noskaņojumus.",
         "failedToLoadEntries": "Neizdevās ielādēt noskaņojuma ierakstus.",
-        "failedToLoadEntry": "Neizdevās ielādēt noskaņojuma ierakstu.",
         "failedToSave": "Neizdevās saglabāt noskaņojuma ierakstu.",
         "failedToUpdate": "Neizdevās atjaunināt noskaņojuma ierakstu.",
         "intensityTrend": "Kopējais noskaņojums laika gaitā",
         "mood": "Noskaņojums",
         "moodValue": "Noskaņojuma vērtība",
         "mostCommon": "Biežākie noskaņojumi",
-        "noMoodData": "Šim periodam nav pieejamu noskaņojuma datu.",
-        "notes": "Piezīmes: ",
-        "savedSuccessfully": "Noskaņojuma ieraksts veiksmīgi saglabāts.",
-        "updatedSuccessfully": "Noskaņojuma ieraksts veiksmīgi atjaunināts."
+        "noMoodData": "Šim periodam nav pieejamu noskaņojuma datu."
     },
     "preferences": {
         "resetError": "Neizdevās atiestatīt preferences"

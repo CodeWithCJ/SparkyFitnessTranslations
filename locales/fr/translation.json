@@ -2408,7 +2408,6 @@
         "editingTemporarilyUnavailable": "La modification des détails de l'aliment est temporairement indisponible en raison de changements de schéma."
     },
     "checkIn": {
-        "howAreYouFeelingToday": "Comment vous sentez-vous aujourd'hui ?",
         "neutral": "Neutre",
         "anyThoughtsOrFeelings": "Des pensées ou des ressentis à ajouter ?",
         "sleepTracking": "Suivi du sommeil",
@@ -2490,17 +2489,13 @@
         "failedToLoadRecentCustom": "Échec du chargement des mesures personnalisées récentes.",
         "failedToLoadRecentStandard": "Échec du chargement des mesures standards récentes.",
         "failedToSaveCustomMeasurement": "Échec de la sauvegarde de la mesure personnalisée.",
-        "failedToSaveMood": "Échec de la sauvegarde de l'humeur.",
         "failedToUpdateMeasurement": "Échec de la mise à jour de la mesure.",
         "level": "niveau",
         "measurementUpdatedSuccessfully": "Mesure mise à jour avec succès.",
-        "moodSaved": "Humeur enregistrée",
-        "moodSavedSuccessfully": "Humeur enregistrée avec succès.",
         "muscleMass": "Masse musculaire",
         "recentFasts": "Jeûnes récents",
         "recentFastsDescription": "Vos derniers jeûnes enregistrés et leur statut.",
         "recentMeasurementsDescription": "Vos derniers enregistrements : mesures, jeûnes terminés et données de santé synchronisées.",
-        "saveMood": "Enregistrer l'humeur",
         "stressLevel": "Niveau de stress",
         "tabs": {
             "fasting": "Jeûne & Humeur",
@@ -6150,7 +6145,6 @@
     "mood": {
         "dailyMood": "Humeur du jour",
         "date": "Date",
-        "deletedSuccessfully": "Entrée d'humeur supprimée avec succès.",
         "failedAddCustom": "Impossible d'ajouter l'humeur.",
         "failedDeleteCustom": "Impossible de retirer l'humeur.",
         "failedLoadPrefs": "Échec du chargement des préférences d'humeur.",
@@ -6158,17 +6152,13 @@
         "failedToDelete": "Échec de la suppression de l'entrée d'humeur.",
         "failedToLoadCustom": "Échec du chargement des humeurs.",
         "failedToLoadEntries": "Échec du chargement des entrées d'humeur.",
-        "failedToLoadEntry": "Échec du chargement de l'entrée d'humeur.",
         "failedToSave": "Échec de l'enregistrement de l'entrée d'humeur.",
         "failedToUpdate": "Échec de la mise à jour de l'entrée d'humeur.",
         "intensityTrend": "Humeur globale au fil du temps",
         "mood": "Humeur",
         "moodValue": "Valeur d'humeur",
         "mostCommon": "Humeurs les plus fréquentes",
-        "noMoodData": "Aucune donnée d'humeur disponible pour cette période.",
-        "notes": "Notes : ",
-        "savedSuccessfully": "Entrée d'humeur enregistrée avec succès.",
-        "updatedSuccessfully": "Entrée d'humeur mise à jour avec succès."
+        "noMoodData": "Aucune donnée d'humeur disponible pour cette période."
     },
     "i18n": {
         "locale": "fr-FR"
