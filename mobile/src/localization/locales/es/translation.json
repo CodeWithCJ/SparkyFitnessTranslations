@@ -7581,7 +7581,10 @@
         "mostLogged": "Estado de ánimo más registrado",
         "insightBestWeekday": "El {{weekday}} es tu mejor día de la semana{{mood}}.",
         "insightUp": "Tu estado de ánimo promedio mejoró respecto al período anterior.",
-        "insightDown": "Tu estado de ánimo promedio bajó respecto al período anterior."
+        "insightDown": "Tu estado de ánimo promedio bajó respecto al período anterior.",
+        "insightTopMood_one": "El estado de ánimo que más has registrado ha sido {{mood}}, {{count}} vez.",
+        "insightTopMood_many": "El estado de ánimo que más has registrado ha sido {{mood}}, {{count}} veces.",
+        "insightTopMood_other": "El estado de ánimo que más has registrado ha sido {{mood}}, {{count}} veces."
     },
     "sleepAnalytics": {
         "title": "Análisis del sueño",
