@@ -318,7 +318,8 @@
             "logAsTaken": "Registrar como tomada",
             "skip": "Omitir",
             "logAllAsTaken": "Marcar todo como tomado",
-            "skipAll": "Omitir todo"
+            "skipAll": "Omitir todo",
+            "remindInMinutes": "Recordar en {{minutes}} min"
         },
         "permission": {
             "notificationsOff": "Notificaciones desactivadas",
@@ -384,7 +385,9 @@
         "waterReminders": "Recordatorios de agua",
         "waterRemindersSubtitle": "Te recuerda que bebas cuando llevas un rato sin registrar agua.",
         "consolidateReminders": "Consolidar recordatorios",
-        "consolidateRemindersSubtitle": "Agrupa los medicamentos programados a la misma hora en una sola notificación."
+        "consolidateRemindersSubtitle": "Agrupa los medicamentos programados a la misma hora en una sola notificación.",
+        "medicationSnoozeInterval": "Recordar en",
+        "snoozeMinutesOption": "{{minutes}} min"
     },
     "diarySettings": {
         "updateFailed": "No se pudo actualizar el ajuste.",
@@ -729,7 +732,9 @@
             "personalRecords": "Récords personales",
             "personalRecordsSubtitle": "Tus mejores marcas en 1 km, 5 km, 10 km y más",
             "equipment": "Equipamiento",
-            "equipmentSubtitle": "Zapatillas y material deportivo"
+            "equipmentSubtitle": "Zapatillas y material deportivo",
+            "routes": "Rutas",
+            "routesSubtitle": "Traza, importa y guarda rutas para seguir"
         },
         "sleep": "Sueño",
         "healthTrendsSettings": "Tendencias de salud",
@@ -770,7 +775,10 @@
         "runProgramWorkout": "Entrenamiento",
         "runProgramEdit": "Editar plan",
         "runProgramNew": "Nuevo plan",
-        "runProgramRace": "Planificar una carrera"
+        "runProgramRace": "Planificar una carrera",
+        "activityShare": "Compartir actividad",
+        "routes": "Rutas",
+        "routeDraw": "Trazar una ruta"
     },
     "nutrients": {
         "calories": "Calorías",
@@ -1710,7 +1718,17 @@
     "exerciseHistory": {
         "noSetData": "Sin datos de series",
         "loadError": "No se pudo cargar el historial.",
-        "empty": "Aún no hay sesiones registradas."
+        "empty": "Aún no hay sesiones registradas.",
+        "columns": {
+            "set": "Serie",
+            "weightReps": "Peso y repeticiones",
+            "timeDistance": "Tiempo y distancia",
+            "time": "Tiempo",
+            "weightDistance": "Peso y distancia",
+            "weightTime": "Peso y tiempo",
+            "reps": "Repeticiones",
+            "rpe": "RPE"
+        }
     },
     "exerciseEditing": {
         "removeTitle": "¿Quitar ejercicio?",
@@ -4193,6 +4211,15 @@
             "targetGoal": "Objetivo diario",
             "averageVsTarget": "Media frente al objetivo",
             "percentOfGoal": "{{percent}}% del objetivo"
+        },
+        "topSources": {
+            "title": "Fuentes principales",
+            "allMeals": "Todas las comidas",
+            "clearDay": "Mostrar todo el período",
+            "empty": "No hay {{nutrient}} registrado para esta selección",
+            "loadFailed": "No se pudieron cargar las fuentes de alimentos",
+            "share": "{{percent}}%",
+            "servingAmount": "{{quantity}} {{unit}}"
         }
     },
     "diarySummary": {
@@ -6436,7 +6463,8 @@
         "logWater": "Registrar agua",
         "fasting": "Ayuno",
         "waterLogged": "Agua registrada",
-        "waterFailed": "No se pudo registrar el agua"
+        "waterFailed": "No se pudo registrar el agua",
+        "logWaterInBackground": "Registra agua sin abrir la app"
     },
     "watchSettings": {
         "gesturesTitle": "Gestos",
@@ -6547,7 +6575,8 @@
             "exportGpxFailed": "No se pudo exportar la ruta",
             "floorsCount_one": "{{formattedCount}} planta",
             "floorsCount_many": "{{formattedCount}} plantas",
-            "floorsCount_other": "{{formattedCount}} plantas"
+            "floorsCount_other": "{{formattedCount}} plantas",
+            "cadence": "Cadencia media"
         },
         "consistency": {
             "subtitle_one": "La última {{formattedCount}} semana, de {{first}} a {{last}}",
@@ -6831,7 +6860,38 @@
         },
         "checkinCount_one": "{{count}} check-in",
         "checkinCount_many": "{{count}} check-ins",
-        "checkinCount_other": "{{count}} check-ins"
+        "checkinCount_other": "{{count}} check-ins",
+        "energy": "Energía",
+        "energyLow": "Agotado",
+        "energyHigh": "Con energía",
+        "focus": "Concentración",
+        "focusLow": "Disperso",
+        "focusHigh": "Totalmente enfocado",
+        "journalOptional": "Diario (opcional)",
+        "journalPlaceholder": "¿Algún pensamiento o sensación que quieras registrar?",
+        "ratingsUnsupported": "Tu servidor aún no guarda los niveles de energía y concentración. Actualiza SparkyFitness para conservarlos.",
+        "serverCheckFailed": "No se pudo conectar con tu servidor. Comprueba tu conexión e inténtalo de nuevo.",
+        "newCheckinTitle": "Nuevo registro",
+        "editCheckinTitle": "Editar registro",
+        "time": "Hora",
+        "timeA11y": "Hora, {{time}}",
+        "deleteCheckin": "Eliminar registro",
+        "deleteCheckinConfirm": "¿Eliminar este registro?",
+        "deleteCheckinMessage": "Esto eliminará el registro y su entrada en el diario.",
+        "deleteFailed": "No se pudo eliminar el registro",
+        "checkinNeedsContent": "Añade un estado de ánimo, energía, concentración, una etiqueta o una nota en el diario para guardar.",
+        "checkinMissing": "Este registro ya no existe.",
+        "dayTitle": "Estado de ánimo",
+        "dayAverage": "Promedio del día",
+        "noCheckins": "Aún no hay registros para este día.",
+        "addCheckin": "Añadir registro",
+        "checkinRowA11y": "{{summary}}. Editar registro.",
+        "checkinAtTime": "registro a las {{time}}",
+        "a11yListSeparator": ", ",
+        "energyA11y": "energía {{value}} de 5",
+        "focusA11y": "concentración {{value}} de 5",
+        "energyOutOfFive": "Energía {{value}}/5",
+        "focusOutOfFive": "Concentración {{value}}/5"
     },
     "customNutrients": {
         "title": "Nutrientes personalizados",
@@ -7509,7 +7569,12 @@
     "exerciseEffort": {
         "trendLabel_one": "RPE medio de tu última {{count}} sesión",
         "trendLabel_many": "RPE medio de tus últimas {{count}} sesiones",
-        "trendLabel_other": "RPE medio de tus últimas {{count}} sesiones"
+        "trendLabel_other": "RPE medio de tus últimas {{count}} sesiones",
+        "title": "Esfuerzo",
+        "lastAvg": "RPE medio, última sesión",
+        "oneRmEffort": "1RM est. con esfuerzo",
+        "oneRmPlain": "Solo a partir de repeticiones",
+        "oneRmNote": "Cuenta las repeticiones en recámara: un RPE 8 equivale a dos repeticiones más. Solo se usan series con RPE."
     },
     "nutritionReport": {
         "title": "Nutrición",
@@ -7937,7 +8002,10 @@
             "moves": "Si te saltas un entrenamiento, no desaparece: el calendario simplemente se desplaza.",
             "row": "Semana {{week}}, carrera {{run}} · {{minutes}} min",
             "rowWalk": "Semana {{week}}, caminata {{walk}} · {{minutes}} min",
-            "showLess": "Mostrar menos"
+            "showLess": "Mostrar menos",
+            "noDays_one": "Queda {{count}} entrenamiento. Elige tus días de entrenamiento para ver cuándo cae; hasta entonces, la Agenda te ofrecerá el siguiente cada día.",
+            "noDays_many": "Quedan {{count}} entrenamientos. Elige tus días de entrenamiento para ver cuándo cae cada uno; hasta entonces, la Agenda te ofrecerá el siguiente cada día.",
+            "noDays_other": "Quedan {{count}} entrenamientos. Elige tus días de entrenamiento para ver cuándo cae cada uno; hasta entonces, la Agenda te ofrecerá el siguiente cada día."
         },
         "select": {
             "today": "Entrenamiento del programa de hoy",
@@ -8074,7 +8142,175 @@
             "replaceMessage": "El plan de carrera empezará ahora y sustituirá al que estás siguiendo. No se mantendrá tu progreso actual en él.",
             "replaceConfirm": "Reemplazar",
             "intro": "Elige tu carrera y los días que puedes salir a correr. El plan irá subiendo la intensidad hacia la meta, con una semana de descarga cada cuatro y reducción final antes del gran día.",
-            "distanceLabel": "Distancia"
+            "distanceLabel": "Distancia",
+            "levelLabel": "¿Cuánto corres actualmente?",
+            "dayLabel": "Día de la carrera",
+            "daysLabel": "Días que puedes correr",
+            "daysHint": "El día de la carrera siempre está incluido. Elige al menos dos días; tres o cuatro se adaptan a la mayoría.",
+            "pastDay": "Elige un día de carrera que aún no haya pasado.",
+            "summaryTitle": "{{weeks}} semanas para el día de la carrera",
+            "summaryBody": "{{workouts}} entrenamientos, con la tirada más larga de unos {{long}} minutos.",
+            "estimate": "El día de la carrera está planificado en unos {{minutes}} minutos a ritmo suave; podrás ajustarlo en el plan más adelante.",
+            "tooShort": "Es menos tiempo del recomendado: al menos {{min}} semanas para esta distancia. Elige un día de carrera posterior.",
+            "tooFewDays": "Elige al menos dos días para correr.",
+            "create": "Crear y comenzar el plan",
+            "open": "Planificar una carrera"
+        },
+        "runsPerWeekOption_one": "{{count}} carrera a la semana",
+        "runsPerWeekOption_many": "{{count}} carreras a la semana",
+        "runsPerWeekOption_other": "{{count}} carreras a la semana"
+    },
+    "speechVoice": {
+        "automatic": "Automática (mejor instalada)",
+        "premium": "Premium",
+        "enhanced": "Mejorada",
+        "standard": "Estándar",
+        "hintIos": "Para una voz más natural, descarga una Premium o Mejorada en Ajustes → Accesibilidad → Leer y hablar → Voces, y luego regresa aquí.",
+        "hintAndroid": "Para una voz más natural, instala una de mayor calidad en los ajustes de texto a voz de tu teléfono y luego regresa aquí.",
+        "title": "Voz",
+        "test": "Probar voz",
+        "sample": "Así sonarán tus avisos durante el registro."
+    },
+    "personalRecords": {
+        "group": {
+            "run": "Carrera",
+            "walk": "Caminata",
+            "ride": "Ciclismo",
+            "swim": "Natación",
+            "other": "Otro"
+        },
+        "standard": {
+            "1k": "1 km",
+            "1mi": "1 milla",
+            "5k": "5 km",
+            "10k": "10 km",
+            "15k": "15 km",
+            "halfMarathon": "Media maratón",
+            "marathon": "Maratón"
+        },
+        "loadFailed": "No se pudieron cargar tus récords.",
+        "empty": "Aún no tienes récords. Registra o importa una carrera, caminata o ruta en bici de al menos 1 km y aquí aparecerán tus mejores marcas.",
+        "rowA11y": "{{distance}}, {{time}}, {{pace}}, {{date}}"
+    },
+    "watchRunLive": {
+        "paceAlert": "Alerta de ritmo",
+        "heartRateAlert": "Alerta de frecuencia cardíaca",
+        "open": "Abre el entrenamiento en tu reloj",
+        "onWatch": "En tu reloj",
+        "autoPaused": "Pausa automática",
+        "walking": "Caminata en tu reloj",
+        "running": "Carrera en tu reloj",
+        "next": "Siguiente: {{step}}",
+        "calories": "Calorías",
+        "kcal": "kcal",
+        "ended": "El entrenamiento en tu reloj ha finalizado o está fuera de alcance. El entrenamiento completado se añadirá a tu diario.",
+        "indoorNote": "En interiores, la distancia es una estimación del reloj. Podrás ajustarla con los datos de la cinta al terminar.",
+        "starting": "Iniciando en tu reloj…",
+        "startingHint": "Levanta la muñeca y abre SparkyFitness si no se inicia automáticamente. El entrenamiento comenzará en cuanto el reloj reciba la solicitud.",
+        "controlFailed": "No se pudo conectar con tu reloj"
+    },
+    "trainingLoadCard": {
+        "loadFailed": "No se pudo cargar tu carga de entrenamiento.",
+        "title": "Carga de entrenamiento",
+        "details": "Detalles",
+        "openA11y": "Abrir carga de entrenamiento",
+        "usual": "esta semana · habitual {{average}}",
+        "learning": "Conociendo aún tu ritmo habitual",
+        "low": "Más ligera de lo habitual",
+        "steady": "Acorde a tu nivel habitual",
+        "high": "Más alta de lo habitual: haz las siguientes sesiones suaves",
+        "spike": "Gran incremento: baja el ritmo",
+        "takeRest": "Tómate un día de descanso o haz una sesión suave.",
+        "ready": "¡Estás descansado y listo para darlo todo!",
+        "explain": "Suma la duración y la exigencia de tus entrenamientos. Lo habitual es tu promedio de 4 semanas. Las barras muestran las últimas 4 semanas; el verde es esta semana."
+    },
+    "paceReference": {
+        "title": "Tu ritmo de carrera",
+        "intro": "Introduce un tiempo de carrera reciente para obtener rangos de ritmo para rodajes suaves, tempo, ritmo de maratón, progresivos y series rápidas. Se guarda en este dispositivo.",
+        "race": {
+            "5k": "5K",
+            "10k": "10K",
+            "half": "Media maratón",
+            "halfShort": "Media",
+            "marathon": "Maratón",
+            "other": "{{km}} km"
+        },
+        "result": "{{race}} en {{time}}",
+        "finishTime": "Tiempo final",
+        "hours": "h",
+        "minutes": "min",
+        "seconds": "seg",
+        "invalid": "Ese tiempo no parece correcto para esta distancia. Revisa las horas, minutos y segundos.",
+        "saved": "Guardado: {{race}} en {{time}}.",
+        "save": "Guardar",
+        "clear": "Borrar",
+        "watch": "Usar también en mi Apple Watch",
+        "watchHint": "Ajusta los entrenamientos del programa mostrados en el reloj a estos rangos. Solo para carreras."
+    },
+    "allergens": {
+        "trace": "trazas: {{name}}",
+        "warningTitle": "Contiene un alérgeno que monitoreas",
+        "traceWarningTitle": "Puede contener un alérgeno que monitoreas",
+        "mayContainTraces": "Puede contener trazas de: {{names}}"
+    },
+    "allergenSettings": {
+        "title": "Alérgenos",
+        "description": "Añade los alérgenos de los que deseas recibir alertas. Cuando un alimento contenga uno de estos, aparecerá un aviso en los alimentos y en las entradas del diario.",
+        "common": "Alérgenos comunes",
+        "custom": "Alérgeno personalizado",
+        "customPlaceholder": "p. ej., altramuz, moluscos…",
+        "tracked": "Tus alérgenos registrados",
+        "empty": "Aún no registras alérgenos. Añade algunos arriba para recibir advertencias en tus comidas.",
+        "remove": "Eliminar {{name}}",
+        "alreadyAdded": "Ya añadido",
+        "alreadyAddedDescription": "{{name}} ya está en tu lista.",
+        "errors": {
+            "error": "Error",
+            "updateFailed": "No se pudieron actualizar los alérgenos."
+        },
+        "sync": {
+            "title": "Sincronizar desde OpenFoodFacts",
+            "description": "Obtén los datos de alérgenos de tus alimentos guardados de OpenFoodFacts. Solo es necesario hacerlo una vez.",
+            "button": "Sincronizar alérgenos",
+            "complete": "Sincronización de alérgenos completada",
+            "upToDate": "Todos tus alimentos de OpenFoodFacts ya cuentan con información de alérgenos.",
+            "result": "Se actualizaron {{updated}} de {{total}} alimento(s).",
+            "failed": "Error de sincronización",
+            "failedDescription": "No se pudieron sincronizar los alérgenos. Inténtalo de nuevo."
+        },
+        "names": {
+            "gluten": "gluten",
+            "wheat": "trigo",
+            "milk": "leche",
+            "eggs": "huevos",
+            "peanuts": "cacahuetes",
+            "treeNuts": "frutos de cáscara",
+            "soy": "soja",
+            "fish": "pescado",
+            "shellfish": "mariscos",
+            "crustaceans": "crustáceos",
+            "sesame": "sésamo",
+            "celery": "apio",
+            "mustard": "mostaza",
+            "lupin": "altramuces",
+            "sulphites": "sulfitos"
         }
+    },
+    "activityShare": {
+        "title": "Compartir actividad",
+        "choosePhoto": "Elegir foto",
+        "takePhoto": "Hacer foto",
+        "removePhoto": "Eliminar",
+        "transparentHint": "Sin foto, la imagen será un PNG transparente que podrás superponer sobre una foto o video en otra app.",
+        "cameraDenied": "Permite el acceso a la cámara en Ajustes para tomar fotos",
+        "noRoute": "Este entrenamiento no tiene una ruta GPS guardada, por lo que el diseño solo muestra estadísticas.",
+        "layout": "Diseño",
+        "layoutClassic": "Clásico",
+        "layoutRoute": "Ruta",
+        "layoutMinimal": "Minimalista",
+        "textColor": "Color",
+        "customColor": "Código hexadecimal de color personalizado",
+        "share": "Compartir imagen",
+        "shareFailed": "No se pudo crear la imagen"
     }
 }
