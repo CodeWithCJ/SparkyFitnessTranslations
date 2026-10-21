@@ -6670,9 +6670,9 @@
         },
         "endFastDialog": {
             "greatJobYouCanEdit": "做得好！如果您漏咗撳掣，可以喺下面改開始／結束時間.",
-            "startTime": "й–Ӣе§ӢжҷӮй–“",
-            "endTime": "зөҗжқҹжҷӮй–“",
-            "endFast": "зөҗжқҹж–·йЈҹ",
+            "startTime": "開始時間",
+            "endTime": "結束時間",
+            "endFast": "結束斷食",
             "youFastedFor2": "您斷咗 <span>{{durationFormatted}}</span>.",
             "fastCompleted": "斷食完成！🎉"
         },
@@ -6970,10 +6970,10 @@
         "pregnancyToday": {
             "babyGrowth": "BB 成長",
             "kickCounter": "胎動計數器",
-            "contractions": "е®®зё®",
-            "bumpPhoto": "иӮҡзӣё",
+            "contractions": "宮縮",
+            "bumpPhoto": "肚相",
             "foodMeds": "食物同藥物",
-            "vitals": "з”ҹе‘Ҫй«”еҫө",
+            "vitals": "生命體徵",
             "checklist": "檢查清單",
             "lengthAndWeight": "≈ {{lengthCm}} cm · {{weightG}} g",
             "lengthOnly": "≈ {{lengthCm}} cm"
@@ -6987,9 +6987,9 @@
             "babyAtWeekInsideThe": "子宮入面第 {{week}} 週嘅 BB"
         },
         "foodMedSafetySearch": {
-            "safe": "е®үе…Ё",
-            "caution": "е°Ҹеҝғ",
-            "avoid": "йҒҝе…Қ"
+            "safe": "安全",
+            "caution": "小心",
+            "avoid": "避免"
         }
     },
     "providers": {
@@ -7288,7 +7288,7 @@
             "convertWithAI": "用 AI 換算",
             "estimatingIn": "估算緊 {{fromAmount}} {{fromUnit}} 等於幾多 {{toUnit}}…",
             "tryAgain": "再試試",
-            "dismiss": "е””зҗҶ",
+            "dismiss": "唔理",
             "estimatedAbout": "估算 - 大約 {{estimatedAmount}} {{toUnit}}",
             "genericEstimateVerifyIfAccuracy": "一般估算 - 要準確就自己核對吓.",
             "useThis": "用呢個",
@@ -7526,7 +7526,7 @@
                 "race5k": "5K",
                 "race10k": "10K",
                 "raceHalf": "半馬拉松",
-                "raceMarathon": "йҰ¬жӢүжқҫ",
+                "raceMarathon": "馬拉松",
                 "basis1k": "1K",
                 "basis1mi": "1 英里",
                 "basis15k": "15K",
@@ -7983,19 +7983,19 @@
             "symptomReport": "症狀報告 · {{startDate}} – {{endDate}}"
         },
         "builtIn": {
-            "head": "й ӯйғЁ",
-            "neck": "й ёйғЁ",
+            "head": "頭部",
+            "neck": "頸部",
             "shoulders": "膊頭",
-            "upperBack": "дёҠиғҢ",
-            "lowerBack": "дёӢиғҢ",
+            "upperBack": "上背",
+            "lowerBack": "下背",
             "chest": "胸口",
-            "abdomen": "и…№йғЁ",
+            "abdomen": "腹部",
             "pelvis": "盆骨",
-            "hips": "й«–йғЁ",
+            "hips": "髖部",
             "arms": "手臂",
-            "handsWrists": "жүӢпјҸжүӢи…•",
-            "legs": "и…і",
-            "knees": "иҶқй ӯ",
+            "handsWrists": "手／手腕",
+            "legs": "腳",
+            "knees": "膝頭",
             "feetAnkles": "腳／腳眼",
             "wholeBody": "成身",
             "forehead": "額頭",
@@ -8345,7 +8345,7 @@
     "hooks": {
         "auth": {
             "userRegisteredSuccessfully": "用戶註冊成功",
-            "loginSuccessful": "зҷ»е…ҘжҲҗеҠҹ",
+            "loginSuccessful": "登入成功",
             "demoLoginSuccessful": "示範登入成功"
         },
         "nutrionix": {
@@ -8586,7 +8586,7 @@
             "allergenSyncComplete": "致敏原同步完成",
             "allYourOpenFoodFactsFoodsAlready": "您嘅所有 OpenFoodFacts 食材已經有致敏原數據.",
             "updatedOfFoodS": "已更新 {{updated}}／{{total}} 種食材.",
-            "syncFailed": "еҗҢжӯҘеӨұж•—",
+            "syncFailed": "同步失敗",
             "couldNotSyncAllergensPlease": "同步唔到致敏原。請再試多次."
         }
     },
@@ -8594,12 +8594,12 @@
         "trace": "微量：{{trace}}"
     },
     "announcementDialog": {
-        "announcement": "е…¬е‘Ҡ",
+        "announcement": "公告",
         "gotItDonTShow": "知道喇，唔好再顯示",
         "published2": "發布時間：{{value}}"
     },
     "dayNavigator": {
-        "today": "д»Ҡж—Ҙ"
+        "today": "今日"
     },
     "draggableChatbotButton": {
         "restoreAIChat": "還原 AI 聊天",
@@ -8609,14 +8609,14 @@
     },
     "exerciseCharts": {
         "workoutSessionBreakdown": {
-            "set": "зө„ #",
+            "set": "組",
             "rest": "休息",
-            "reps": "ж¬Ўж•ё",
+            "reps": "次數",
             "volume": "訓練量",
             "set2": "第 {{setNumber}} 組",
             "muscleGroupName": "肌群名稱",
-            "exerciseName": "еӢ•дҪңеҗҚзЁұ",
-            "set3": "зө„",
+            "exerciseName": "動作名稱",
+            "set3": "組",
             "primaryMuscles": "主要肌群",
             "secondaryMuscles": "輔助肌肉",
             "untargetedMuscles": "未針對肌群"
@@ -8644,12 +8644,12 @@
             "preview": "預覽 {{index}}"
         },
         "exerciseImportCSV": {
-            "true": "дҝӮ",
-            "false": "е””дҝӮ"
+            "true": "係",
+            "false": "唔係"
         },
         "exerciseSearch": {
             "selectAProvider": "揀提供方",
-            "all": "е…ЁйғЁ"
+            "all": "全部"
         },
         "exerciseSearchListItem": {
             "primary": "主要：",
@@ -8667,7 +8667,7 @@
             "progressionMode": "漸進模式",
             "progressionOverloadGuide": "漸進同超負荷指南",
             "totalRepGoal": "總次數目標",
-            "fixedTarget": "еӣәе®ҡзӣ®жЁҷ",
+            "fixedTarget": "固定目標",
             "stepLoadRepsOnly": "階梯加載（僅次數）",
             "manualNoOverload": "手動（無超負荷）",
             "targetRepsSet": "每組目標次數",
