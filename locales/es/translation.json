@@ -1214,7 +1214,8 @@
                 "supportsAudioInput": "Mostrar esta configuración en la lista de voz",
                 "supportsAudioInputDescription": "Activa esta opción solo si el modelo seleccionado admite archivos de audio. Cuando elijas esta configuración para la función de voz, el audio grabado se enviará a ese modelo para su transcripción.",
                 "audioInputProviderUnsupported": "La transcripción de voz todavía no es compatible con este tipo de proveedor.",
-                "activeVoiceProvider": "Configuración de voz"
+                "activeVoiceProvider": "Configuración de voz",
+                "systemVoiceFree": "Reconocimiento del sistema (gratis)"
             },
             "serviceTypes": {
                 "openai": "OpenAI",
@@ -1284,7 +1285,10 @@
             "updateSuccess": "¡Estado de la clave API actualizado con éxito!",
             "access": "Acceso",
             "accessFull": "Acceso completo",
-            "accessRead": "Solo lectura"
+            "accessRead": "Solo lectura",
+            "created2": "Creado: {{createdAt}}",
+            "expires2": "Vence: {{value}}",
+            "lastUsed2": "Último uso: {{value}}"
         },
         "accountSecurity": {
             "title": "Seguridad de la cuenta",
@@ -1307,7 +1311,9 @@
             "currentPassword": "Contraseña actual",
             "enterCurrentPassword": "Introduce la contraseña actual",
             "passwordUpdateError": "Error al actualizar la contraseña",
-            "passwordUpdateSuccess": "Contraseña actualizada con éxito"
+            "passwordUpdateSuccess": "Contraseña actualizada con éxito",
+            "pleaseEnterANewEmail": "Por favor, introduce un nuevo correo electrónico",
+            "currentPasswordIsRequired": "Se requiere la contraseña actual"
         },
         "customNutrients": {
             "title": "Gestión de nutrientes personalizados",
@@ -1459,7 +1465,8 @@
             "tdeeGoal": "Proyección del dispositivo",
             "tdeeGoalDescription": "Utiliza las calorías totales de Health Connect cuando están disponibles, proyecta el gasto actual hasta la medianoche y aplica el Objetivo directamente a ese TDEE. Si no hay un total del dispositivo disponible, utiliza como respaldo la TMB más las calorías activas.",
             "title": "Ajuste del objetivo diario de calorías",
-            "tdeeActivityHint": "El nivel de actividad solo se utiliza en el respaldo de TMB + calorías activas cuando no hay un total del dispositivo disponible."
+            "tdeeActivityHint": "El nivel de actividad solo se utiliza en el respaldo de TMB + calorías activas cuando no hay un total del dispositivo disponible.",
+            "adaptiveEarnBack": "Los objetivos adaptativos ya incluyen tu actividad. Las calorías restantes son el Objetivo menos lo Consumido. La recuperación por ejercicio solo se aplica a los objetivos manuales."
         },
         "dataImport": {
             "checkin": {
@@ -1492,7 +1499,11 @@
         },
         "developerResources": {
             "description": "Accede a la documentación y recursos de la API",
-            "title": "Recursos para desarrolladores"
+            "title": "Recursos para desarrolladores",
+            "apiDocumentation": "Documentación de la API",
+            "exploreTheSparkyFitnessAPIDocumentation": "Explora la documentación de la API de SparkyFitness para crear integraciones o comprender mejor la plataforma.",
+            "swaggerUIInteractive": "Swagger UI (Interactivo)",
+            "redocReadOnly": "Redoc (Solo lectura)"
         },
         "goalMode": {
             "baselineAdaptiveGoal": "Línea base (Objetivo adaptativo)",
@@ -1584,7 +1595,23 @@
             "calibrationDescription": "El motor de TDEE adaptativo de Sparky requiere al menos {{required}} días de seguimiento constante para calcular tu metabolismo con precisión (actualmente utiliza estimaciones alternativas). Para acelerar la calibración:",
             "calibrationWeightTip": "Registra tu peso al menos 3 o 4 veces por semana.",
             "calibrationFoodTip": "Registra tu ingesta de alimentos a diario (>200 kcal/día).",
-            "livePreviewSavedNote": "La TMB y la grasa corporal se actualizan a medida que cambias los ajustes. El gasto se calcula en el servidor a partir de tus ajustes guardados, así que tanto este como el objetivo final solo cambian después de guardar."
+            "livePreviewSavedNote": "La TMB y la grasa corporal se actualizan a medida que cambias los ajustes. El gasto se calcula en el servidor a partir de tus ajustes guardados, así que tanto este como el objetivo final solo cambian después de guardar.",
+            "kcalCalories": "kcal (Calorías)",
+            "kJJoules": "kJ (Julios)",
+            "adaptiveGoalTheGoldStandard": "<span>Objetivo adaptativo:</span> El 'estándar de oro'. SparkyFitness calcula tu TDEE correlacionando los cambios reales de tu peso con tu ingesta calórica durante los últimos 35 días. ¡Aprende tu metabolismo único!",
+            "dynamicGoalYourCalorieGoal": "<span>Objetivo dinámico:</span> Tu objetivo calórico se ajustará dinámicamente según tu nivel de actividad diaria (ej. ejercicio, pasos). Es ideal si eres activo o si tu nivel de actividad varía a diario.",
+            "fixedGoalYourCalorieGoal": "<span>Objetivo fijo:</span> Tu meta calórica se mantendrá fija, sin importar tu actividad diaria. Es perfecto si mantienes un nivel constante de actividad o prefieres un objetivo estable.",
+            "percentageEarnBackOnlyEarn": "<span>Recuperación porcentual:</span> Recupera solo un porcentaje establecido de las calorías de tu ejercicio. Por ejemplo, el 50% crea un margen de seguridad para evitar comer de más por sobreestimaciones de gasto calórico.",
+            "deviceProjectionUsesHealthConnect": "<span>Proyección del dispositivo:</span> Utiliza las calorías totales de Health Connect cuando están disponibles, proyecta el gasto calórico actual hasta la medianoche y aplica el Modo de Objetivo directamente a ese TDEE. Vuelve al BMR más calorías activas cuando no hay un total del dispositivo disponible.",
+            "inAdaptiveModeThisIs": "💡 En el modo Adaptativo, esta es la estimación de reserva hasta que tengas suficientes datos de seguimiento, y sigue definiendo los límites de plausibilidad más adelante. Tu TDEE medido se limita a un rango de ±500 kcal de BMR × este multiplicador, por lo que un nivel fijado demasiado bajo puede frenar un gasto calórico genuinamente mayor.",
+            "bodyRecomposition10": "Recomposición corporal (-10%)",
+            "cut15": "Definición (-15%)",
+            "highCut20": "Definición alta (-20%)",
+            "customMinimum": "Mínimo personalizado ({{energyUnitString}})",
+            "measuredAdaptiveTDEEDoesNot": "TDEE adaptativo medido: <span>{{energy}} {{energyUnitString}}</span> (no cambia con el Modo de Objetivo)",
+            "bodyRecomposition10Unreachable": "Recomposición corporal (-10%) — inalcanzable",
+            "cut15Unreachable": "Definición (-15%) — inalcanzable",
+            "highCut20Unreachable": "Definición alta (-20%) — inalcanzable"
         },
         "mfa": {
             "confirmPassword": "Confirma la contraseña para continuar",
@@ -1618,7 +1645,8 @@
             "noPasskeys": "Aún no hay claves de acceso registradas.",
             "title": "Claves de acceso",
             "unnamed": "Clave de acceso sin nombre",
-            "yourPasskeys": "Tus claves de acceso registradas"
+            "yourPasskeys": "Tus claves de acceso registradas",
+            "addedOn2": "Añadido el {{format}}"
         },
         "tabs": {
             "developerIntegrations": "Desarrollador e integraciones",
@@ -1782,6 +1810,85 @@
             "confirmDeleteTitle": "¿Eliminar los alimentos de la biblioteca de Livsmedelsverket?",
             "confirmDeleteMessage": "Se eliminarán permanentemente todos los alimentos de la Agencia Sueca de Alimentación de tu biblioteca personal. Se conservarán las entradas anteriores del diario de alimentos registradas con estos productos.",
             "providerCardLicence": "Contiene información publicada por la Agencia Sueca de Alimentación (Livsmedelsverket), bajo licencia <1>Creative Commons Attribution 4.0 (CC BY 4.0)</1>. Idiomas disponibles: <3>Swedish (sv)</3> and <5>English (en)</5>. <7>Swedish Food Composition Database</7>"
+        },
+        "aiServiceSettings": {
+            "pleaseWaitWhileSettingsAre": "Por favor, espera mientras se cargan los ajustes..."
+        },
+        "addExternalProviderForm": {
+            "userNotAuthenticatedPleaseLog": "Usuario no autenticado. Por favor, inicia sesión de nuevo.",
+            "garminMFARequired": "Autenticación MFA de Garmin requerida",
+            "pleaseCompleteMultiFactorAuthentication": "Por favor, completa la autenticación multifactor para Garmin.",
+            "externalDataProviderAddedSuccessfully": "Proveedor de datos externo añadido con éxito",
+            "failedToAddExternalData": "Error al añadir el proveedor de datos externo: {{message}}",
+            "addNewDataProvider": "Añadir nuevo proveedor de datos",
+            "providerName": "Nombre del proveedor",
+            "myProviderName": "Nombre de mi proveedor",
+            "providerType": "Tipo de proveedor",
+            "urlCopiedToClipboard": "URL copiada al portapapeles.",
+            "activateThisProvider": "Activar este proveedor",
+            "connecting": "Conectando...",
+            "addProvider": "Añadir proveedor"
+        },
+        "cnfBulkImportDialog": {
+            "englishDefault": "English (predeterminado)",
+            "franAisFrench": "Français (Francés)"
+        },
+        "editProviderForm": {
+            "providerName": "Nombre del proveedor",
+            "providerType": "Tipo de proveedor",
+            "openFoodFactsUsernameOptional": "Usuario de Open Food Facts (opcional)",
+            "leaveBlankToKeepExisting": "(deja en blanco para mantener el actual)",
+            "openFoodFactsPasswordOptional": "Contraseña de Open Food Facts (opcional)",
+            "leaveBlankToKeepExisting2": "•••••••• (deja en blanco para mantener la actual)",
+            "appURL": "URL de la app",
+            "eGHttpsNorishYour": "ej., https://norish.your-domain.com",
+            "eGHttpYourTandoor": "ej., http://your-tandoor-instance.com",
+            "eGHttpYourMealie": "ej., http://your-mealie-instance.com",
+            "apiKey": "Clave de API",
+            "enterNorishAPIKey": "Introduce la clave de API de Norish",
+            "enterTandoorAPIKey": "Introduce la clave de API de Tandoor",
+            "enterMealieAPIKey": "Introduce la clave de API de Mealie",
+            "clientID": "ID de cliente",
+            "appID": "ID de la app",
+            "enterClientID": "Introduce el ID de cliente",
+            "enterAppID": "Introduce el ID de la app",
+            "clientSecret": "Secreto de cliente",
+            "appKey": "Clave de la app",
+            "enterClientSecret": "Introduce el secreto de cliente",
+            "enterAppKey": "Introduce la clave de la app",
+            "unofficialAPIUseAtYour": "⚠️ API no oficial — Úsala bajo tu propio riesgo",
+            "yazioEmailUsernameOptional": "Correo / Usuario de YAZIO (opcional)",
+            "enterYAZIOEmailOrUsername": "Introduce el correo o usuario de YAZIO",
+            "yazioPasswordOptional": "Contraseña de YAZIO (opcional)",
+            "leaveBlankToKeepExisting3": "Deja en blanco para mantener la contraseña actual",
+            "emailAndPasswordAreOptional": "El correo y la contraseña son opcionales. Solo se requieren el ID de cliente y el Secreto de cliente.",
+            "yazioClientID": "ID de cliente de YAZIO",
+            "enterYAZIOClientID": "Introduce el ID de cliente de YAZIO",
+            "yazioClientSecret": "Secreto de cliente de YAZIO",
+            "leaveBlankToKeepExisting4": "Deja en blanco para mantener el secreto de cliente actual",
+            "enterUSDAAPIKey": "Introduce la clave de API de USDA",
+            "enterWithingsClientID": "Introduce el ID de cliente de Withings",
+            "enterWithingsClientSecret": "Introduce el secreto de cliente de Withings",
+            "callbackURLCopiedToClipboard": "URL de callback copiada al portapapeles.",
+            "connectedToGarmin": "Conectado a Garmin",
+            "yourGarminAccountIsConnected": "Tu cuenta de Garmin está conectada. Para volver a conectarte con credenciales diferentes, desconéctate primero y añade un nuevo proveedor.",
+            "garminEmail": "Correo de Garmin",
+            "enterGarminEmail": "Introduce el correo de Garmin",
+            "garminPassword": "Contraseña de Garmin",
+            "enterGarminPassword": "Introduce la contraseña de Garmin",
+            "enterFitbitClientID": "Introduce el ID de cliente de Fitbit",
+            "enterFitbitClientSecret": "Introduce el secreto de cliente de Fitbit",
+            "enterOuraClientID": "Introduce el ID de cliente de Oura",
+            "enterOuraClientSecret": "Introduce el secreto de cliente de Oura",
+            "enterStravaClientID": "Introduce el ID de cliente de Strava",
+            "enterStravaClientSecret": "Introduce el secreto de cliente de Strava",
+            "domainCopiedToClipboard": "Dominio copiado al portapapeles.",
+            "enterGoogleCloudClientID": "Introduce el ID de cliente de Google Cloud",
+            "enterGoogleCloudClientSecret": "Introduce el secreto de cliente de Google Cloud",
+            "copyFailed": "Error al copiar",
+            "clipboardAccessRequiresASecure": "El acceso al portapapeles requiere un entorno seguro (HTTPS).",
+            "hevyAPIKey": "Clave de API de Hevy",
+            "enterHevyAPIKey": "Introduce la clave de API de Hevy"
         }
     },
     "admin": {
@@ -4928,7 +5035,10 @@
             "noScheduleRulesConfiguredYet": "Todavía no hay reglas de programación configuradas.",
             "deleteScheduleRule": "Eliminar regla de programación"
         },
-        "glp1Name": "GLP-1"
+        "glp1Name": "GLP-1",
+        "todayMedications": {
+            "prn": "PRN"
+        }
     },
     "layout": {
         "welcome": "Bienvenido/a {{activeUserName}}",
