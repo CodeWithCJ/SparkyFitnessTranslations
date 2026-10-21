@@ -8064,7 +8064,10 @@
             "due": "Siguiente",
             "pickDays_one": "Aún no se han incluido {{count}} sesiones de entrenamiento más en el calendario. Elige los días de entrenamiento en la pantalla del programa para ver cuándo corresponde cada una.",
             "pickDays_many": "Aún no se han incluido {{count}} sesiones de entrenamiento más en el calendario. Elige los días de entrenamiento en la pantalla del programa para ver cuándo corresponde cada una.",
-            "pickDays_other": "Aún no se han incluido {{count}} sesiones de entrenamiento más en el calendario. Elige los días de entrenamiento en la pantalla del programa para ver cuándo corresponde cada una."
+            "pickDays_other": "Aún no se han incluido {{count}} sesiones de entrenamiento más en el calendario. Elige los días de entrenamiento en la pantalla del programa para ver cuándo corresponde cada una.",
+            "pastGoal_one": "El entrenamiento {{count}} no cabe antes de la fecha prevista.",
+            "pastGoal_many": "Los entrenamientos {{count}} no caben antes de la fecha prevista.",
+            "pastGoal_other": "Los entrenamientos {{count}} no caben antes de la fecha prevista."
         },
         "detail": {
             "workoutTitle": "Semana {{week}}, carrera {{run}}",
