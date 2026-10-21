@@ -8078,7 +8078,7 @@
             "add": "Dodaj zdjęcia"
         },
         "episode": {
-            "ongoing": "trwa",
+            "ongoing": "w trakcie",
             "peak": "szczyt {{n}}",
             "saveTreatments": "Zapisz leczenie",
             "updateSeverity": "Zaktualizuj nasilenie",
