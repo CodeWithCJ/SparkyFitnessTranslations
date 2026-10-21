@@ -8008,7 +8008,19 @@
             "showLess": "Mostrar menos",
             "noDays_one": "Queda {{count}} entrenamiento. Elige tus días de entrenamiento para ver cuándo cae; hasta entonces, la Agenda te ofrecerá el siguiente cada día.",
             "noDays_many": "Quedan {{count}} entrenamientos. Elige tus días de entrenamiento para ver cuándo cae cada uno; hasta entonces, la Agenda te ofrecerá el siguiente cada día.",
-            "noDays_other": "Quedan {{count}} entrenamientos. Elige tus días de entrenamiento para ver cuándo cae cada uno; hasta entonces, la Agenda te ofrecerá el siguiente cada día."
+            "noDays_other": "Quedan {{count}} entrenamientos. Elige tus días de entrenamiento para ver cuándo cae cada uno; hasta entonces, la Agenda te ofrecerá el siguiente cada día.",
+            "fitsBefore_one": "Vas por buen camino: terminarás el {{date}}, {{count}} día antes de la fecha prevista.",
+            "fitsBefore_many": "Vas por buen camino: terminarás el {{date}}, {{count}} días antes de la fecha prevista.",
+            "fitsBefore_other": "Vas por buen camino: terminarás el {{date}}, {{count}} días antes de la fecha prevista.",
+            "fitsAfter_one": "A este ritmo, terminarás el {{date}}, {{count}} día después de la fecha prevista. Añade un día de entrenamiento o cambia la fecha.",
+            "fitsAfter_many": "A este ritmo, terminarás el {{date}}, {{count}} días después de la fecha prevista. Añade un día de entrenamiento o cambia la fecha.",
+            "fitsAfter_other": "A este ritmo, terminarás el {{date}}, {{count}} días después de la fecha prevista. Añade un día de entrenamiento o cambia la fecha.",
+            "showAll_one": "Mostrar {{count}}",
+            "showAll_many": "Mostrar todo {{count}}",
+            "showAll_other": "Mostrar todo {{count}}",
+            "cutOff_one": "El entrenamiento {{count}} no cabe antes de la fecha prevista.",
+            "cutOff_many": "Los entrenamientos {{count}} no caben antes de la fecha prevista.",
+            "cutOff_other": "Los entrenamientos {{count}} no caben antes de la fecha prevista."
         },
         "select": {
             "today": "Entrenamiento del programa de hoy",
@@ -8330,6 +8342,21 @@
         "namePlaceholder": "Nombra esta ruta",
         "climb": "{{climb}} de ascenso",
         "rename": "Renombrar",
-        "renameFailed": "No se pudo renombrar"
+        "renameFailed": "No se pudo renombrar",
+        "shareGpx": "Compartir como GPX",
+        "shareFailed": "No se pudo compartir la ruta",
+        "deleteTitle": "¿Eliminar esta ruta?",
+        "deleteMessage": "Las actividades registradas de las que se guardó no se verán afectadas.",
+        "deleteFailed": "No se pudo eliminar la ruta",
+        "saveFailed": "No se pudo guardar la ruta",
+        "drawHint": "Toca el mapa para añadir puntos",
+        "undo": "Deshacer",
+        "clear": "Borrar",
+        "saveAsRoute": "Guardar como ruta",
+        "savedAsRoute": "Guardado en Rutas",
+        "saveAsRouteFailed": "No se pudo guardar la ruta",
+        "fileTooLarge": "Ese archivo es demasiado grande",
+        "fileTooLargeHint": "Un archivo de ruta puede ocupar hasta 10 MB.",
+        "drawLimit": "Has alcanzado el límite máximo de puntos para una ruta. Deshaz algunos o guarda la ruta actual."
     }
 }
