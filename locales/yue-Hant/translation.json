@@ -67,7 +67,7 @@
             "prnTaken": "已按需食",
             "editEntryTime": "編輯記錄時間",
             "removeEntry": "刪除記錄",
-            "note2": "еӮҷиЁ»пјҡ{{notes}}"
+            "note2": "備註：{{notes}}"
         },
         "insights": {
             "title": "副作用分析及提示",
@@ -183,10 +183,10 @@
             "trendingUp": "同本期較早時相比，趨勢向上",
             "trendingDown": "同本期較早時相比，趨勢向下",
             "dayTooltip": "{{date}}：已記錄 {{count}} 次，最大嚴重程度 {{severity}}",
-            "clear2": "<span></span> жё…йҷӨ",
-            "mild13": "<span></span> иј•еҫ®пјҲ1-3пјү",
-            "moderate46": "<span></span> дёӯеәҰпјҲ4-6пјү",
-            "severe710": "<span></span> еҡҙйҮҚпјҲ7-10пјү"
+            "clear2": "<span></span> 清除",
+            "mild13": "<span></span> 輕微（1-3）",
+            "moderate46": "<span></span> 中度（4-6）",
+            "severe710": "<span></span> 嚴重（7-10）"
         },
         "fasting": {
             "title": "口服 GLP-1 類藥物，空腹倒數計時",
@@ -268,7 +268,7 @@
             "quickLogHint": "{{name}} — 劑量會自動由您嘅在用筆扣數，綠色 = 建議輪換嘅注射部位.",
             "quickLogTitle": "您喺邊度注射㗎？",
             "skipSite": "跳過部位",
-            "now": "иҖҢе®¶зҙ„ {{currentLevelFraction}}%",
+            "now": "而家約 {{currentLevelFraction}}%",
             "pkSerumLevel": "PK 血清濃度 — {{drugName}}",
             "injectionSiteGreenSuggestedAmber": "注射部位 · <span>綠色 = 建議</span>、<span2>琥珀色 = 休息 <{{days}}d</span2>",
             "left": "{{kind}}{{dose_mg}} · 剩 {{doses_total}} 劑"
@@ -371,8 +371,8 @@
             "adherenceDescriptionBefore": "非 GLP-1 藥物嘅時間表同每日清單已完全啟用，請喺下面管理時間表規則，並由",
             "todayTab": "今日",
             "adherenceDescriptionAfter": "標籤頁記錄每日攝取.",
-            "drPrescriber": "{{prescriber}} йҶ«з”ҹ",
-            "schedulesAndDailyChecklistsFor": "йқһ GLP-1 и—Ҙзү©еҳ…жңҚи—ҘжҷӮй–“еҗҢжҜҸж—Ҙжё…е–®е·Із¶“е…Ёйқўй–Ӣе’—гҖӮе–әдёӢйқўз®ЎзҗҶжҷӮй–“иҰҸеүҮпјҢеҶҚе–ә<strong>д»Ҡж—Ҙ</strong>еҲҶй ҒиЁҳйҢ„жҜҸж—ҘжңҚз”Ё."
+            "drPrescriber": "{{prescriber}} 醫生",
+            "schedulesAndDailyChecklistsFor": "非 GLP-1 藥物嘅服藥時間同每日清單已經全面開咗。喺下面管理時間規則，再喺<strong>今日</strong>分頁記錄每日服用."
         },
         "schedule": {
             "heading": "定時服藥 & 提示設定",
@@ -492,8 +492,8 @@
             "doseDependentNausea": "<strong>劑量相關噁心：</strong> 用藥劑量越高，噁心越嚴重，可以同醫生商量逐步調整劑量或分開服用.",
             "adaptationBenefit": "<strong>適應益處：</strong> 冇正相關，身體已適應而家嘅劑量，冇出現副作用.",
             "doseInsufficient": "需要呢段日期範圍內有 GLP-1 劑量記錄同噁心日誌.",
-            "inj": "пјҲ{{injections}} ж¬ЎжіЁе°„пјү",
-            "reportingPeriodTo": "е ұе‘Ҡжңҹй–“пјҡ{{startDate}} иҮі {{endDate}}",
+            "inj": "（{{injections}} 次注射）",
+            "reportingPeriodTo": "報告期間：{{startDate}} 至 {{endDate}}",
             "dosesLogged2": "{{display_name}} — 已記錄 {{count}} 次劑量"
         },
         "subtype": {
@@ -578,10 +578,10 @@
             "description": "由列表揀一種藥，睇時間表、備註同 GLP-1 指導工具."
         },
         "addMedicationDialog": {
-            "eGRetatrutideCompoundSemaglutide": "дҫӢеҰӮпјҡRetatrutideгҖҒCompound Semaglutide",
+            "eGRetatrutideCompoundSemaglutide": "例如：Retatrutide、Compound Semaglutide",
             "weekly": "жҜҸйҖұ",
             "daily": "жҜҸж—Ҙ",
-            "rateStars_other": "и©• {{count}} зІ’жҳҹ"
+            "rateStars_other": "評 {{count}} 粒星"
         },
         "glp1InventoryManager": {
             "inUse": "з”Ёз·Ҡ",
@@ -589,38 +589,38 @@
             "doses": "еҠ‘",
             "editPenVial": "編輯筆／藥瓶",
             "removePenVial": "移除筆／藥瓶",
-            "exp": "еҲ°жңҹ {{expiry_date}}",
+            "exp": "到期 {{expiry_date}}",
             "expired": "е·ІйҒҺжңҹ",
             "nearExp": "е°ұеҝ«еҲ°жңҹ",
             "bud": "BUD {{bud_date}}",
             "expiredBUD": "已過期（BUD）",
             "budWarning": "BUD 警告",
-            "notes": "еӮҷиЁ»пјҡ{{notes}}",
+            "notes": "備註：{{notes}}",
             "editPenVialInventory": "編輯筆／藥瓶庫存",
             "addPenVialInventory": "加入筆／藥瓶庫存",
             "kind": "йЎһеһӢ",
             "pen": "зӯҶ",
             "vial": "и—Ҙз“¶",
             "labelName": "標籤／名稱",
-            "eGPen2Vial": "дҫӢеҰӮпјҡзӯҶ #2гҖҒи—Ҙз“¶ A жү№",
+            "eGPen2Vial": "例如：筆 #2、藥瓶 A 批",
             "doseStrengthMg": "劑量強度（mg）",
             "totalDoses": "總劑量數",
-            "concentrationMgML": "жҝғеәҰпјҲmg/mLпјү",
+            "concentrationMgML": "濃度（mg/mL）",
             "volumeML": "容量（mL）",
             "dateOpened": "й–Ӣе•ҹж—Ҙжңҹ",
             "expiryDate": "еҲ°жңҹж—Ҙ",
-            "calculatedBeyondUseDateBUD": "иЁҲз®—еҮәеҳ…дҪҝз”ЁжңҹйҷҗпјҲBUDпјүпјҡ",
-            "basedOn28DayStability": "д»ҘйҰ–ж¬Ўй–Ӣе•ҹиө·иЁҲ 28 ж—Ҙеҳ…з©©е®ҡжңҹеҒҡжә–.",
+            "calculatedBeyondUseDateBUD": "計算出嘅使用期限（BUD）：",
+            "basedOn28DayStability": "以首次開啟起計 28 日嘅穩定期做準.",
             "enableReorderWarning": "開啟補貨提醒",
-            "alertWhenRemainingDosesAre": "еү©йӨҳеҠ‘йҮҸеҒҸдҪҺе—°йҷЈжҸҗйҶ’",
-            "reorderThresholdDosesLeft": "иЈңиІЁй–ҖжӘ»пјҲеү©йӨҳеҠ‘йҮҸпјү",
+            "alertWhenRemainingDosesAre": "剩餘劑量偏低嗰陣提醒",
+            "reorderThresholdDosesLeft": "補貨門檻（剩餘劑量）",
             "notes2": "еӮҷиЁ»",
-            "batchNumberBrandPharmacyInfo": "жү№иҷҹгҖҒе“ҒзүҢгҖҒи—ҘжҲҝиіҮж–ҷвҖҰ",
+            "batchNumberBrandPharmacyInfo": "批號、品牌、藥房資料…",
             "addInventory": "еҠ е…Ҙеә«еӯҳ",
             "mgML": "· {{concentration_mg_ml}} mg/mL"
         },
         "glp1RecentInjections": {
-            "note": "еӮҷиЁ»пјҡ{{notes}}",
+            "note": "備註：{{notes}}",
             "editInjectionEntry": "編輯注射記錄",
             "deleteInjectionEntry": "刪除注射記錄",
             "mg": "{{dose_mg}} mg · "
@@ -628,7 +628,7 @@
         "glp1TitrationManager": {
             "dose": "еҠ‘йҮҸ",
             "startDate": "й–Ӣе§Ӣж—Ҙжңҹ",
-            "weeksAtThisDose": "е‘ўеҖӢеҠ‘йҮҸз¶ӯжҢҒе№ҫеӨҡйҖұ",
+            "weeksAtThisDose": "呢個劑量維持幾多週",
             "status": "зӢҖж…Ӣ",
             "taperDoseReduction": "遞減（劑量減少）",
             "taper": "йҒһжёӣ",
@@ -638,13 +638,13 @@
             "wks": "· {{planned_weeks}} 週"
         },
         "injectionSiteSettings": {
-            "moveUp": "е°Ү {{label}} з§»дёҠ",
-            "moveDown": "е°Ү {{label}} з§»иҗҪ",
-            "toggle": "й–Ӣй—ң {{label}}"
+            "moveUp": "將 {{label}} 移上",
+            "moveDown": "將 {{label}} 移落",
+            "toggle": "開關 {{label}}"
         },
         "scheduleManager": {
-            "eGForPainFor": "дҫӢеҰӮпјҡжӯўз—ӣз”ЁгҖҒй ӯз—ӣз”Ё",
-            "noScheduleRulesConfiguredYet": "жңӘиЁӯе®ҡд»»дҪ•жңҚи—ҘжҷӮй–“иҰҸеүҮ.",
+            "eGForPainFor": "例如：止痛用、頭痛用",
+            "noScheduleRulesConfiguredYet": "未設定任何服藥時間規則.",
             "deleteScheduleRule": "刪除服藥時間規則"
         },
         "todayMedications": {
@@ -767,9 +767,9 @@
         "nodeJs": "Node.js",
         "express": "Express",
         "postgreSQL": "PostgreSQL",
-        "applicationVersion2": "жҮүз”ЁзЁӢејҸзүҲжң¬пјҡ<strong>{{version}}</strong>",
-        "joinOurCommunityOnDiscord": "е–ә Discord еҠ е…ҘжҲ‘е“Ӣеҳ…зӨҫзҫӨпјҡ<link>discord.gg/vcnMT5cPEA</link>",
-        "forMoreInformationVisitThe": "жғізҹҘеӨҡе•ІпјҢеҺ»<link>GitHub е„Іеӯҳеә«</link>зқҮеҗ“."
+        "applicationVersion2": "應用程式版本：<strong>{{version}}</strong>",
+        "joinOurCommunityOnDiscord": "喺 Discord 加入我哋嘅社群：<link>discord.gg/vcnMT5cPEA</link>",
+        "forMoreInformationVisitThe": "想知多啲，去<link>GitHub 儲存庫</link>睇吓."
     },
     "exercise": {
         "title": "運動項目",
@@ -895,13 +895,13 @@
             "summaryUnavailableTitle": "每日摘要唔可用",
             "updateProfile": "更新個人資料",
             "weightTrend": "體重趨勢",
-            "eaten2": "е·ІйЈҹе’— {{energyUnitString}}",
-            "burned2": "е·ІзҮ’е’— {{energyUnitString}}",
-            "goal2": "зӣ®жЁҷ {{energyUnitString}}",
-            "days2": "{{daysOfData}} ж—Ҙ",
-            "remaining2": "д»Іеү© {{energyUnitString}}",
-            "bmrMeasured": "BMRпјҡ{{bmr}} {{energyUnit}}пјҲе·ІйҮҸеәҰпјү",
-            "bmrAlgorithm": "BMRпјҡ{{bmr}} {{energyUnit}}пјҲжј”з®—жі•пјү"
+            "eaten2": "已食咗 {{energyUnitString}}",
+            "burned2": "已燒咗 {{energyUnitString}}",
+            "goal2": "目標 {{energyUnitString}}",
+            "days2": "{{daysOfData}} 日",
+            "remaining2": "仲剩 {{energyUnitString}}",
+            "bmrMeasured": "BMR：{{bmr}} {{energyUnit}}（已量度）",
+            "bmrAlgorithm": "BMR：{{bmr}} {{energyUnit}}（演算法）"
         },
         "editExerciseEntryDialog": {
             "setLabel": "組數",
@@ -1218,7 +1218,7 @@
             "viewImages": "檢視 {{name}} 嘅圖片",
             "replaceExercise": "取代動作",
             "replaceExerciseNamed": "取代 {{name}}",
-            "sets": "{{completedSets}}пјҸ{{totalSets}} зө„"
+            "sets": "{{completedSets}}／{{totalSets}} 組"
         },
         "workoutFinishSummary": {
             "title": "訓練完成",
@@ -1319,7 +1319,7 @@
         "scheduledWorkout": "訓練時段",
         "activePlanLabel": "生效中嘅計劃：{{name}}",
         "failedToLoadActivePlan": "無法載入生效中嘅訓練計劃.",
-        "currentOfTotal": "пјҲ{{current}}пјҸ{{total}}пјү"
+        "currentOfTotal": "（{{current}}／{{total}}）"
     },
     "exerciseCard": {
         "title": "運動項目",
@@ -1494,8 +1494,8 @@
         "provider": "資料提供方",
         "selectBarcodeProvider": "揀提供方",
         "dataProvider": "數據提供方：",
-        "aiEstimate": "AI дј°з®—пјҲ{{ai_confidence}}пјү",
-        "per": "жҜҸ {{default_variant}}"
+        "aiEstimate": "AI 估算（{{ai_confidence}}）",
+        "per": "每 {{default_variant}}"
     },
     "sync": {
         "syncAll": "同步所有已開啟嘅第三方服務",
@@ -1529,7 +1529,7 @@
             "height": "身高",
             "uploading": "上載緊…",
             "pleaseSelectAnImageFile": "揀一個圖片檔案",
-            "imageMustBeLessThan": "ең–зүҮдёҖе®ҡиҰҒзҙ°йҒҺ 5MB",
+            "imageMustBeLessThan": "圖片一定要細過 5MB",
             "user": "з”ЁжҲ¶"
         },
         "cycle": {
@@ -1833,7 +1833,7 @@
                 "adminTitle": "Open Food Facts 貢獻",
                 "serverGateLabel": "容許喺呢個伺服器進行 Open Food Facts 貢獻",
                 "serverGateHelp": "呢個伺服器開關可以啟動手動貢獻，每個用戶發布之前必須預覽並確認一個產品同自己嘅相，全局憑證係可選嘅後備方案，俾冇個人帳號嘅用戶用.",
-                "onlyDataYouEnteredFrom": "еҸӘжңүжӮЁз”ұеҜҰй«”еҢ…иЈқијёе…Ҙеҳ…ж•ёж“ҡе…Ҳз¬ҰеҗҲиіҮж јгҖӮOpen Food Facts д»Ҙ ODbL еҗҢиіҮж–ҷеә«е…§е®№жҺҲж¬Ҡзҷјеёғзөҗж§ӢеҢ–ж•ёж“ҡпјҢжӮЁиҮӘе·ұеҳ…зӣёе°ұд»Ҙ CC BY-SA жҺҲж¬ҠгҖӮжҜҸзӯҶиІўзҚ»йғҪиҰҒеҲҶеҲҘзўәиӘҚж•ёж“ҡеҗҢзӣёеҳ…ж¬ҠеҲ©гҖӮ<link>иІўзҚ»иҖ…жўқж¬ҫ</link>"
+                "onlyDataYouEnteredFrom": "只有您由實體包裝輸入嘅數據先符合資格。Open Food Facts 以 ODbL 同資料庫內容授權發布結構化數據，您自己嘅相就以 CC BY-SA 授權。每筆貢獻都要分別確認數據同相嘅權利。<link>貢獻者條款</link>"
             },
             "yazio": {
                 "unofficialApiTitle": "⚠️ 非官方 API — 使用風險自負",
@@ -1908,8 +1908,8 @@
                 "recommendedModel": "小貼士：揀 {{- model}} 最抵玩，速度同效果平衡得岩岩好，唔使嘥錢又唔會太卡機.",
                 "systemPrompt": "系統指令（額外補充提示）",
                 "systemPromptPlaceholder": "寫低您想 AI 跟從嘅額外規矩、說話口吻、回答格式等等…",
-                "setAsActive": "иЁӯжҲҗиҖҢе®¶еңЁз”Ёеҳ…жңҚеӢҷ",
-                "activeService": "з”Ёз·Ҡеҳ…дәәе·ҘжҷәиғҪжңҚеӢҷ",
+                "setAsActive": "設成而家在用嘅服務",
+                "activeService": "用緊嘅人工智能服務",
                 "global": "系統統一設定",
                 "error": "出事喇",
                 "success": "搞掂晒",
@@ -1938,9 +1938,9 @@
                 "visionService": "全局視覺 AI 服務",
                 "allowPrivateNetworkAi": "允許私人網絡端點（例如本機 Ollama/vLLM）",
                 "allowPrivateNetworkAiDescription": "容許連接位於私人 IP 地址（10.0.0.0/8、172.16.0.0/12、192.168.0.0/16、localhost）上嘅 AI 端點.",
-                "supportsAudioInput": "е–әиӘһйҹіжё…е–®еәҰйЎҜзӨәе‘ўеҖӢиЁӯе®ҡ",
-                "supportsAudioInputDescription": "ж·ЁдҝӮе–әжүҖйҒёжЁЎеһӢжҺҘеҸ—йҹіиЁҠжӘ”жЎҲе—°йҷЈе…Ҳй–Ӣе‘ўеҖӢйҒёй …гҖӮз•¶е‘ўеҖӢиЁӯе®ҡиў«жҸҖеҡҹеҒҡиӘһйҹіз”Ёеҳ…жҷӮеҖҷпјҢйҢ„дҪҺеҳ…йҹіиЁҠжңғйҖҒеҺ»е—°еҖӢжЁЎеһӢиҪүйҢ„.",
-                "audioInputProviderUnsupported": "е‘ўеҖӢжҸҗдҫӣж–№йЎһеһӢд»ІжңӘж”ҜжҸҙиӘһйҹіиҪүйҢ„."
+                "supportsAudioInput": "喺語音清單度顯示呢個設定",
+                "supportsAudioInputDescription": "淨係喺所選模型接受音訊檔案嗰陣先開呢個選項。當呢個設定被揀嚟做語音用嘅時候，錄低嘅音訊會送去嗰個模型轉錄.",
+                "audioInputProviderUnsupported": "呢個提供方類型仲未支援語音轉錄."
             },
             "userSettings": {
                 "title": "所有功能",
@@ -1972,7 +1972,7 @@
                 "delete": "刪除",
                 "configuredServices": "已配置嘅服務清單",
                 "availableServices": "可選用嘅人工智能服務",
-                "activeProvider": "з•¶еүҚз”ҹж•Ҳеҳ…дәәе·ҘжҷәиғҪжҸҗдҫӣж–№",
+                "activeProvider": "當前生效嘅人工智能提供方",
                 "noServices": "暫時未有配置任何人工智能服務.",
                 "noServicesDescription": "新增第一組人工智能服務，就可以開始使用 Sparky 整套功能.",
                 "noServicesDescriptionDisabled": "麻煩聯絡管理員幫您配置對應嘅人工智能服務先可以使用.",
@@ -2041,11 +2041,11 @@
                 "ollamaContextHint": "Ollama 預設用 4096 token 嘅內容並靜默截斷更大嘅內容，會整壞工具定義令聊天機械人行為唔可靠，請喺 Ollama 伺服器設定 OLLAMA_CONTEXT_LENGTH=16384（或者喺模型嘅 Modelfile 加 PARAMETER num_ctx 16384），然後重啟 Ollama，8GB 記憶體嘅機，由 8192 開始.",
                 "ollamaFullProfileWarningTitle": "本地模型嘅潛在效能影響",
                 "ollamaFullProfileWarningHint": "除非您部機效能好強（例如高顯存 GPU），否則用完整工具集行本地模型可能會明顯延遲或出錯，如果效能慢或者模型變亂，就轉用核心工具集.",
-                "activeVisionProvider": "зӣ®еүҚиҰ–иҰә AI жҸҗдҫӣж–№",
+                "activeVisionProvider": "目前視覺 AI 提供方",
                 "sameAsDefault": "同預設一樣",
-                "supportsAudioInput": "е–әиӘһйҹіжё…е–®еәҰйЎҜзӨәе‘ўеҖӢиЁӯе®ҡ",
-                "supportsAudioInputDescription": "ж·ЁдҝӮе–әжүҖйҒёжЁЎеһӢжҺҘеҸ—йҹіиЁҠжӘ”жЎҲе—°йҷЈе…Ҳй–Ӣе‘ўеҖӢйҒёй …гҖӮз•¶е‘ўеҖӢиЁӯе®ҡиў«жҸҖеҡҹеҒҡиӘһйҹіз”Ёеҳ…жҷӮеҖҷпјҢйҢ„дҪҺеҳ…йҹіиЁҠжңғйҖҒеҺ»е—°еҖӢжЁЎеһӢиҪүйҢ„.",
-                "audioInputProviderUnsupported": "е‘ўеҖӢжҸҗдҫӣж–№йЎһеһӢд»ІжңӘж”ҜжҸҙиӘһйҹіиҪүйҢ„.",
+                "supportsAudioInput": "喺語音清單度顯示呢個設定",
+                "supportsAudioInputDescription": "淨係喺所選模型接受音訊檔案嗰陣先開呢個選項。當呢個設定被揀嚟做語音用嘅時候，錄低嘅音訊會送去嗰個模型轉錄.",
+                "audioInputProviderUnsupported": "呢個提供方類型仲未支援語音轉錄.",
                 "activeVoiceProvider": "語音設定",
                 "systemVoiceFree": "系統辨認（免費）"
             },
@@ -2118,9 +2118,9 @@
             "access": "存取",
             "accessFull": "完整存取",
             "accessRead": "唯讀",
-            "created2": "е»әз«ӢжҷӮй–“пјҡ{{createdAt}}",
-            "expires2": "еҲ°жңҹпјҡ{{value}}",
-            "lastUsed2": "дёҠж¬ЎдҪҝз”Ёпјҡ{{value}}"
+            "created2": "建立時間：{{createdAt}}",
+            "expires2": "到期：{{value}}",
+            "lastUsed2": "上次使用：{{value}}"
         },
         "accountSecurity": {
             "title": "帳號安全",
@@ -2144,7 +2144,7 @@
             "enterNewEmailAddress": "唔好留空，一定要入一個有效嘅電郵地址",
             "passwordUpdateError": "更新密碼失敗",
             "passwordUpdateSuccess": "密碼更新成功",
-            "pleaseEnterANewEmail": "ијёе…ҘдёҖеҖӢж–°еҳ…йӣ»йғөең°еқҖ",
+            "pleaseEnterANewEmail": "輸入一個新嘅電郵地址",
             "currentPasswordIsRequired": "要填而家嘅密碼"
         },
         "nutrientGoalDirection": {
@@ -2197,7 +2197,7 @@
             "tdeeActivityHint": "活動水平只用嚟 BMR + 活動消耗回退（當裝置總計值唔可用時）.",
             "tdeeGoalDescription": "可用時用 Health Connect 總熱量，將目前消耗推算到午夜，並將目標模式直接套用喺嗰個 TDEE，冇裝置總計值時，回退到 BMR 加活動消耗.",
             "title": "每日熱量目標調整",
-            "adaptiveEarnBack": "иҮӘйҒ©жҮүзӣ®жЁҷе·Із¶“еҢ…еҹӢжҙ»еӢ•йҮҸгҖӮеү©йӨҳеҚЎи·ҜйҮҢзӯүж–јзӣ®жЁҷжёӣеҺ»е·ІйЈҹеҳ…гҖӮйҒӢеӢ•еӣһиЈңж·ЁдҝӮйҒ©з”Ёж–јжүӢеӢ•зӣ®жЁҷ."
+            "adaptiveEarnBack": "自適應目標已經包埋活動量。剩餘卡路里等於目標減去已食嘅。運動回補淨係適用於手動目標."
         },
         "dataImport": {
             "checkin": {
@@ -2232,9 +2232,9 @@
             "description": "存取 API 檔案同資源",
             "title": "開發者資源",
             "apiDocumentation": "API 文件",
-            "exploreTheSparkyFitnessAPIDocumentation": "зқҮеҗ“ SparkyFitness API ж–Үд»¶пјҢеҸҜд»Ҙж•ҙж•ҙеҗҲжҲ–иҖ…жӣҙж·ұе…ҘзҗҶи§Је‘ўеҖӢе№іеҸ°.",
-            "swaggerUIInteractive": "Swagger UIпјҲдә’еӢ•ејҸпјү",
-            "redocReadOnly": "RedocпјҲе”Ҝи®Җпјү"
+            "exploreTheSparkyFitnessAPIDocumentation": "睇吓 SparkyFitness API 文件，可以整整合或者更深入理解呢個平台.",
+            "swaggerUIInteractive": "Swagger UI（互動式）",
+            "redocReadOnly": "Redoc（唯讀）"
         },
         "goalMode": {
             "baselineAdaptiveGoal": "基線（自適應目標）",
@@ -2327,18 +2327,18 @@
             "calibrationWeightTip": "每星期至少記錄體重 3-4 次.",
             "calibrationFoodTip": "每日記錄食材攝取（>200 千卡/日）.",
             "livePreviewSavedNote": "BMR基礎代謝率 同體脂會隨您改設定而更新，消耗量係由伺服器按您儲存嘅設定計，所以消耗量同最終目標要等您儲存之後先會變.",
-            "kcalCalories": "kcalпјҲеҚЎи·ҜйҮҢпјү",
+            "kcalCalories": "kcal（卡路里）",
             "kJJoules": "kJ（焦耳）",
-            "adaptiveGoalTheGoldStandard": "<span>иҮӘйҒ©жҮүзӣ®жЁҷпјҡ</span>гҖҢй»ғйҮ‘жЁҷжә–гҖҚгҖӮSparkyFitness жңғе°ҚжҜ”жӮЁйҒҺеҺ» 35 ж—Ҙеҳ…еҜҰйҡӣй«”йҮҚи®ҠеҢ–еҗҢеҚЎи·ҜйҮҢж”қеҸ–пјҢеҡҹиЁҲжӮЁеҳ… TDEEгҖӮдҪўжңғгҖҢеӯёзҝ’гҖҚжӮЁзҚЁзү№еҳ…ж–°йҷід»Ји¬қ.",
-            "dynamicGoalYourCalorieGoal": "<span>еӢ•ж…Ӣзӣ®жЁҷпјҡ</span>жӮЁеҳ…еҚЎи·ҜйҮҢзӣ®жЁҷжңғи·ҹдҪҸжҜҸж—Ҙжҙ»еӢ•йҮҸпјҲдҫӢеҰӮйҒӢеӢ•гҖҒжӯҘж•ёпјүеӢ•ж…ӢиӘҝж•ҙгҖӮе•ұжҷ’жҲҗж—ҘйғҒжҲ–иҖ…жҙ»еӢ•йҮҸж—Ҙж—ҘйғҪе””еҗҢеҳ…дәә.",
-            "fixedGoalYourCalorieGoal": "<span>еӣәе®ҡзӣ®жЁҷпјҡ</span>жӮЁеҳ…еҚЎи·ҜйҮҢзӣ®жЁҷжңғдёҖзӣҙеӣәе®ҡпјҢе””зҗҶжҜҸж—Ҙжҙ»еӢ•йҮҸгҖӮе•ұжҷ’жҙ»еӢ•йҮҸз©©е®ҡжҲ–иҖ…йҚҫж„Ҹеӣәе®ҡзӣ®жЁҷеҳ…дәә.",
-            "percentageEarnBackOnlyEarn": "<span>зҷҫеҲҶжҜ”еӣһиЈңпјҡ</span>еҸӘеӣһиЈңжӮЁйҒӢеӢ•еҚЎи·ҜйҮҢеҳ…дёҖе®ҡзҷҫеҲҶжҜ”гҖӮдҫӢеҰӮ 50% еҸҜд»Ҙе»әз«Ӣе®үе…Ёз·©иЎқпјҢйҒҝе…Қеӣ зӮәй«ҳдј°ж¶ҲиҖ—иҖҢйЈҹеӨҡе’—.",
-            "deviceProjectionUsesHealthConnect": "<span>иЈқзҪ®жҺЁз®—пјҡ</span>е–әз”Ёеҫ—еҳ…жҷӮеҖҷз”Ё Health Connect зёҪеҚЎи·ҜйҮҢпјҢе°ҮиҖҢе®¶еҳ…ж¶ҲиҖ—жҺЁз®—еҲ°еҚҲеӨңпјҢеҶҚзӣҙжҺҘе°Үзӣ®жЁҷжЁЎејҸеҘ—з”Ёе–әе—°еҖӢ TDEEгҖӮеҶҮиЈқзҪ®зёҪеҚЎи·ҜйҮҢеҳ…жҷӮеҖҷпјҢжңғйҖҖеӣһз”Ё BMR еҠ жҙ»еӢ•еҚЎи·ҜйҮҢ.",
-            "bodyRecomposition10": "иә«й«”йҮҚзө„пјҲ-10%пјү",
+            "adaptiveGoalTheGoldStandard": "<span>自適應目標：</span>「黃金標準」。SparkyFitness 會對比您過去 35 日嘅實際體重變化同卡路里攝取，嚟計您嘅 TDEE。佢會「學習」您獨特嘅新陳代謝.",
+            "dynamicGoalYourCalorieGoal": "<span>動態目標：</span>您嘅卡路里目標會跟住每日活動量（例如運動、步數）動態調整。啱晒成日郁或者活動量日日都唔同嘅人.",
+            "fixedGoalYourCalorieGoal": "<span>固定目標：</span>您嘅卡路里目標會一直固定，唔理每日活動量。啱晒活動量穩定或者鍾意固定目標嘅人.",
+            "percentageEarnBackOnlyEarn": "<span>百分比回補：</span>只回補您運動卡路里嘅一定百分比。例如 50% 可以建立安全緩衝，避免因為高估消耗而食多咗.",
+            "deviceProjectionUsesHealthConnect": "<span>裝置推算：</span>喺用得嘅時候用 Health Connect 總卡路里，將而家嘅消耗推算到午夜，再直接將目標模式套用喺嗰個 TDEE。冇裝置總卡路里嘅時候，會退回用 BMR 加活動卡路里.",
+            "bodyRecomposition10": "身體重組（-10%）",
             "cut15": "減脂（-15%）",
-            "highCut20": "й«ҳеәҰжёӣи„ӮпјҲ-20%пјү",
-            "customMinimum": "иҮӘиЁӮдёӢйҷҗпјҲ{{energyUnitString}}пјү",
-            "measuredAdaptiveTDEEDoesNot": "йҮҸеәҰеҳ…иҮӘйҒ©жҮү TDEEпјҡ<span>{{energy}} {{energyUnitString}}</span>пјҲе””жңғи·ҹзӣ®жЁҷжЁЎејҸи®Ҡпјү",
+            "highCut20": "高度減脂（-20%）",
+            "customMinimum": "自訂下限（{{energyUnitString}}）",
+            "measuredAdaptiveTDEEDoesNot": "量度嘅自適應 TDEE：<span>{{energy}} {{energyUnitString}}</span>（唔會跟目標模式變）",
             "inAdaptiveModeThisIs": "💡 喺自適應模式下，呢個係您有足夠追蹤數據之前嘅後備估算，之後仲會繼續用嚟設定合理性上限。您量度到嘅 TDEE 會限制喺 BMR × 呢個倍數嘅 ±500 kcal 範圍內，所以設得太低會壓住其實更高嘅消耗量.",
             "bodyRecomposition10Unreachable": "身體重組（-10%）— 達唔到",
             "cut15Unreachable": "減脂（-15%）— 達唔到",
@@ -2377,7 +2377,7 @@
             "title": "密鑰",
             "unnamed": "未命名密鑰",
             "yourPasskeys": "您已註冊嘅密鑰",
-            "addedOn2": "еҠ е…Ҙж–ј {{format}}"
+            "addedOn2": "加入於 {{format}}"
         },
         "tabs": {
             "developerIntegrations": "開發者與整合",
@@ -2520,42 +2520,42 @@
             "providerCardLicence": "包含加拿大衛生部發佈、以<1>加拿大開放政府許可證</1>授權嘅資訊，支援語言：<3>英文（en）</3>同<5>法文（fr）</5>，<7>加拿大營養資料庫</7>",
             "providerSpecificDescription": "加拿大營養資料庫（CNF）包含加拿大衛生部以<1>加拿大開放政府許可證</1>發佈嘅資訊，佢係免費、公開，唔需要任何憑證，支援語言係<3>英文（en）</3>同<5>法文（fr）</5>.",
             "providerSpecificPortal": "想知更多詳情，請睇官方入口網站<1>加拿大營養資料庫</1>.",
-            "processed2": "е·Іиҷ•зҗҶпјҡ<processed>{{processed}}</processed>пјҸ<total>{{total}}</total>",
-            "importedUpdated": "е·ІеҢҜе…Ҙпјҡ<imported>{{imported}}</imported> | е·Іжӣҙж–°пјҡ<updated>{{updated}}</updated>"
+            "processed2": "已處理：<processed>{{processed}}</processed>／<total>{{total}}</total>",
+            "importedUpdated": "已匯入：<imported>{{imported}}</imported> | 已更新：<updated>{{updated}}</updated>"
         },
         "livsmedelsverket": {
-            "dialogTitle": "з‘һе…ёйЈҹзү©еұҖпјҲLivsmedelsverketпјүжү№ж¬ЎеҢҜе…Ҙ",
-            "dialogDescription": "е°Үе®ҳж–№з‘һе…ёйЈҹзү©жҲҗеҲҶиіҮж–ҷеә«пјҲзҙ„ 2,600 зЁ®йЈҹзү©пјүдёӢијүе…ҘжӮЁеҳ…йЈҹзү©еә«пјҢеҸҜд»Ҙйӣўз·ҡеҚіжҷӮжҗңе°ӢгҖӮ",
+            "dialogTitle": "瑞典食物局（Livsmedelsverket）批次匯入",
+            "dialogDescription": "將官方瑞典食物成分資料庫（約 2,600 種食物）下載入您嘅食物庫，可以離線即時搜尋。",
             "importing": "匯入緊食物…",
-            "progressText": "е·Іиҷ•зҗҶ {{processed}}пјҸ{{total}} зЁ®йЈҹзү©пјҲеҢҜе…Ҙ {{imported}} зЁ®гҖҒжӣҙж–° {{updated}} зЁ®пјү",
-            "completed": "дёҠж¬ЎеҢҜе…Ҙе·Іе®ҢжҲҗпјҡеҢҜе…Ҙ {{imported}} зЁ®гҖҒжӣҙж–° {{updated}} зЁ®пјҲе…ұ {{total}} зЁ®пјү.",
+            "progressText": "已處理 {{processed}}／{{total}} 種食物（匯入 {{imported}} 種、更新 {{updated}} 種）",
+            "completed": "上次匯入已完成：匯入 {{imported}} 種、更新 {{updated}} 種（共 {{total}} 種）.",
             "failed": "匯入失敗： ",
             "language": "иӘһиЁҖ",
             "syncMode": "еҗҢжӯҘжЁЎејҸ",
-            "libraryOnly": "еҸӘдҝӮйЈҹзү©еә«пјҲе»әиӯ°пјү",
-            "libraryAndPast": "йЈҹзү©еә«еҗҢеҹӢйҮҚж–°ж•ҙзҗҶйҒҺеҺ»еҳ…ж—ҘиЁҳиЁҳйҢ„",
-            "testMode": "жё¬и©ҰжЁЎејҸпјҲеҸӘеҢҜе…Ҙ 10 зЁ®йЈҹзү©еҡҹй©—иӯүпјү",
-            "attributionText": "ж•ёж“ҡз”ұз‘һе…ёйЈҹзү©еұҖпјҲLivsmedelsverketпјүжҸҗдҫӣпјҢдҫқ <1>е…ұдә«еүөж„Ҹе§“еҗҚжЁҷзӨә 4.0пјҲCC BY 4.0пјү</1> жҺҲж¬Ҡ.",
+            "libraryOnly": "只係食物庫（建議）",
+            "libraryAndPast": "食物庫同埋重新整理過去嘅日記記錄",
+            "testMode": "測試模式（只匯入 10 種食物嚟驗證）",
+            "attributionText": "數據由瑞典食物局（Livsmedelsverket）提供，依 <1>共享創意姓名標示 4.0（CC BY 4.0）</1> 授權.",
             "clearLibrary": "清除食物庫",
             "startImport": "й–Ӣе§ӢеҢҜе…Ҙ",
-            "confirmDeleteTitle": "жё…йҷӨ Livsmedelsverket йЈҹзү©еә«йЈҹзү©пјҹ",
-            "confirmDeleteMessage": "е‘ўеҖӢжңғж°ёд№…еҲӘйҷӨжӮЁеҖӢдәәйЈҹзү©еә«е…ҘйқўжүҖжңүз‘һе…ёйЈҹзү©еұҖеҳ…й …зӣ®гҖӮд»ҘеүҚз”Ёе‘ўе•Ій …зӣ®иЁҳйҢ„еҳ…йЈҹзү©ж—ҘиЁҳиЁҳйҢ„жңғдҝқз•ҷ.",
-            "providerCardLicence": "еҢ…еҗ«з‘һе…ёйЈҹзү©еұҖпјҲLivsmedelsverketпјүзҷјеёғеҳ…иіҮиЁҠпјҢдҫқ <1>е…ұдә«еүөж„Ҹе§“еҗҚжЁҷзӨә 4.0пјҲCC BY 4.0пјү</1> жҺҲж¬ҠгҖӮж”ҜжҸҙиӘһиЁҖпјҡ<3>з‘һе…ёж–ҮпјҲsvпјү</3>еҗҢ<5>иӢұж–ҮпјҲenпјү</5>гҖӮ<7>з‘һе…ёйЈҹзү©жҲҗеҲҶиіҮж–ҷеә«</7>"
+            "confirmDeleteTitle": "清除 Livsmedelsverket 食物庫食物？",
+            "confirmDeleteMessage": "呢個會永久刪除您個人食物庫入面所有瑞典食物局嘅項目。以前用呢啲項目記錄嘅食物日記記錄會保留.",
+            "providerCardLicence": "包含瑞典食物局（Livsmedelsverket）發布嘅資訊，依 <1>共享創意姓名標示 4.0（CC BY 4.0）</1> 授權。支援語言：<3>瑞典文（sv）</3>同<5>英文（en）</5>。<7>瑞典食物成分資料庫</7>"
         },
         "aiServiceSettings": {
-            "pleaseWaitWhileSettingsAre": "ијүе…Ҙз·ҠиЁӯе®ҡпјҢи«ӢзЁҚзӯүвҖҰ"
+            "pleaseWaitWhileSettingsAre": "載入緊設定，請稍等…"
         },
         "addExternalProviderForm": {
-            "userNotAuthenticatedPleaseLog": "з”ЁжҲ¶жңӘй©—иӯүгҖӮи«ӢйҮҚж–°зҷ»е…Ҙ.",
-            "garminMFARequired": "йңҖиҰҒ Garmin MFA",
-            "pleaseCompleteMultiFactorAuthentication": "и«Ӣе®ҢжҲҗ Garmin еҳ…еӨҡйҮҚй©—иӯүпјҲMFAпјү.",
-            "externalDataProviderAddedSuccessfully": "еӨ–йғЁж•ёж“ҡжҸҗдҫӣж–№е·ІжҲҗеҠҹеҠ е…Ҙ",
-            "failedToAddExternalData": "еҠ е…Ҙе””еҲ°еӨ–йғЁж•ёж“ҡжҸҗдҫӣж–№пјҡ{{message}}",
+            "userNotAuthenticatedPleaseLog": "用戶未驗證。請重新登入.",
+            "garminMFARequired": "需要 Garmin MFA",
+            "pleaseCompleteMultiFactorAuthentication": "請完成 Garmin 嘅多重驗證（MFA）.",
+            "externalDataProviderAddedSuccessfully": "外部數據提供方已成功加入",
+            "failedToAddExternalData": "加入唔到外部數據提供方：{{message}}",
             "addNewDataProvider": "加入新數據提供方",
             "providerName": "提供方名稱",
             "myProviderName": "我嘅提供方名稱",
             "providerType": "提供方類型",
-            "urlCopiedToClipboard": "URL е·ІиӨҮиЈҪеҲ°еүӘиІјз°ҝ.",
+            "urlCopiedToClipboard": "URL 已複製到剪貼簿.",
             "activateThisProvider": "啟動呢個提供方",
             "connecting": "йҖЈз·ҡз·ҠвҖҰ",
             "addProvider": "加入提供方"
@@ -2567,60 +2567,60 @@
         "editProviderForm": {
             "providerName": "提供方名稱",
             "providerType": "提供方類型",
-            "openFoodFactsUsernameOptional": "Open Food Facts з”ЁжҲ¶еҗҚзЁұпјҲеҸҜйҒёпјү",
-            "leaveBlankToKeepExisting": "пјҲз•ҷз©әе°ұдҝқз•ҷиҖҢе®¶еҳ…пјү",
-            "openFoodFactsPasswordOptional": "Open Food Facts еҜҶзўјпјҲеҸҜйҒёпјү",
+            "openFoodFactsUsernameOptional": "Open Food Facts 用戶名稱（可選）",
+            "leaveBlankToKeepExisting": "（留空就保留而家嘅）",
+            "openFoodFactsPasswordOptional": "Open Food Facts 密碼（可選）",
             "appURL": "App URL",
-            "eGHttpsNorishYour": "дҫӢеҰӮпјҡhttps://norish.your-domain.com",
-            "eGHttpYourTandoor": "дҫӢеҰӮпјҡhttp://your-tandoor-instance.com",
-            "eGHttpYourMealie": "дҫӢеҰӮпјҡhttp://your-mealie-instance.com",
+            "eGHttpsNorishYour": "例如：https://norish.your-domain.com",
+            "eGHttpYourTandoor": "例如：http://your-tandoor-instance.com",
+            "eGHttpYourMealie": "例如：http://your-mealie-instance.com",
             "apiKey": "API 金鑰",
-            "enterNorishAPIKey": "ијёе…Ҙ Norish API йҮ‘й‘°",
-            "enterTandoorAPIKey": "ијёе…Ҙ Tandoor API йҮ‘й‘°",
-            "enterMealieAPIKey": "ијёе…Ҙ Mealie API йҮ‘й‘°",
+            "enterNorishAPIKey": "輸入 Norish API 金鑰",
+            "enterTandoorAPIKey": "輸入 Tandoor API 金鑰",
+            "enterMealieAPIKey": "輸入 Mealie API 金鑰",
             "clientID": "Client ID",
             "appID": "App ID",
-            "enterClientID": "ијёе…Ҙ Client ID",
-            "enterAppID": "ијёе…Ҙ App ID",
+            "enterClientID": "輸入 Client ID",
+            "enterAppID": "輸入 App ID",
             "clientSecret": "Client Secret",
             "appKey": "App Key",
-            "enterClientSecret": "ијёе…Ҙ Client Secret",
-            "enterAppKey": "ијёе…Ҙ App Key",
-            "yazioEmailUsernameOptional": "YAZIO йӣ»йғөпјҸз”ЁжҲ¶еҗҚзЁұпјҲеҸҜйҒёпјү",
-            "enterYAZIOEmailOrUsername": "ијёе…Ҙ YAZIO йӣ»йғөжҲ–з”ЁжҲ¶еҗҚзЁұ",
-            "yazioPasswordOptional": "YAZIO еҜҶзўјпјҲеҸҜйҒёпјү",
-            "leaveBlankToKeepExisting3": "з•ҷз©әе°ұдҝқз•ҷиҖҢе®¶еҳ…еҜҶзўј",
-            "emailAndPasswordAreOptional": "йӣ»йғөеҗҢеҜҶзўјдҝӮеҸҜйҒёгҖӮж·ЁдҝӮиҰҒ Client ID еҗҢ Client Secret.",
+            "enterClientSecret": "輸入 Client Secret",
+            "enterAppKey": "輸入 App Key",
+            "yazioEmailUsernameOptional": "YAZIO 電郵／用戶名稱（可選）",
+            "enterYAZIOEmailOrUsername": "輸入 YAZIO 電郵或用戶名稱",
+            "yazioPasswordOptional": "YAZIO 密碼（可選）",
+            "leaveBlankToKeepExisting3": "留空就保留而家嘅密碼",
+            "emailAndPasswordAreOptional": "電郵同密碼係可選。淨係要 Client ID 同 Client Secret.",
             "yazioClientID": "YAZIO Client ID",
-            "enterYAZIOClientID": "ијёе…Ҙ YAZIO Client ID",
+            "enterYAZIOClientID": "輸入 YAZIO Client ID",
             "yazioClientSecret": "YAZIO Client Secret",
-            "leaveBlankToKeepExisting4": "з•ҷз©әе°ұдҝқз•ҷиҖҢе®¶еҳ… client secret",
-            "enterUSDAAPIKey": "ијёе…Ҙ USDA API йҮ‘й‘°",
-            "enterWithingsClientID": "ијёе…Ҙ Withings Client ID",
-            "enterWithingsClientSecret": "ијёе…Ҙ Withings Client Secret",
-            "callbackURLCopiedToClipboard": "еӣһе‘ј URL е·ІиӨҮиЈҪеҲ°еүӘиІјз°ҝ.",
-            "connectedToGarmin": "е·ІйҖЈз·ҡиҮі Garmin",
-            "yourGarminAccountIsConnected": "жӮЁеҳ… Garmin еёіжҲ¶е·ІйҖЈз·ҡгҖӮжғіз”Ёе””еҗҢжҶ‘иӯүйҮҚж–°йҖЈз·ҡеҳ…и©ұпјҢе…Ҳж–·й–ӢпјҢеҶҚж–°еўһжҸҗдҫӣж–№.",
-            "garminEmail": "Garmin йӣ»йғө",
-            "enterGarminEmail": "ијёе…Ҙ Garmin йӣ»йғө",
-            "garminPassword": "Garmin еҜҶзўј",
-            "enterGarminPassword": "ијёе…Ҙ Garmin еҜҶзўј",
-            "enterFitbitClientID": "ијёе…Ҙ Fitbit Client ID",
-            "enterFitbitClientSecret": "ијёе…Ҙ Fitbit Client Secret",
-            "enterOuraClientID": "ијёе…Ҙ Oura Client ID",
-            "enterOuraClientSecret": "ијёе…Ҙ Oura Client Secret",
-            "enterStravaClientID": "ијёе…Ҙ Strava Client ID",
-            "enterStravaClientSecret": "ијёе…Ҙ Strava Client Secret",
-            "domainCopiedToClipboard": "з¶Іеҹҹе·ІиӨҮиЈҪеҲ°еүӘиІјз°ҝ.",
-            "enterGoogleCloudClientID": "ијёе…Ҙ Google Cloud Client ID",
-            "enterGoogleCloudClientSecret": "ијёе…Ҙ Google Cloud Client Secret",
+            "leaveBlankToKeepExisting4": "留空就保留而家嘅 client secret",
+            "enterUSDAAPIKey": "輸入 USDA API 金鑰",
+            "enterWithingsClientID": "輸入 Withings Client ID",
+            "enterWithingsClientSecret": "輸入 Withings Client Secret",
+            "callbackURLCopiedToClipboard": "回呼 URL 已複製到剪貼簿.",
+            "connectedToGarmin": "已連線至 Garmin",
+            "yourGarminAccountIsConnected": "您嘅 Garmin 帳戶已連線。想用唔同憑證重新連線嘅話，先斷開，再新增提供方.",
+            "garminEmail": "Garmin 電郵",
+            "enterGarminEmail": "輸入 Garmin 電郵",
+            "garminPassword": "Garmin 密碼",
+            "enterGarminPassword": "輸入 Garmin 密碼",
+            "enterFitbitClientID": "輸入 Fitbit Client ID",
+            "enterFitbitClientSecret": "輸入 Fitbit Client Secret",
+            "enterOuraClientID": "輸入 Oura Client ID",
+            "enterOuraClientSecret": "輸入 Oura Client Secret",
+            "enterStravaClientID": "輸入 Strava Client ID",
+            "enterStravaClientSecret": "輸入 Strava Client Secret",
+            "domainCopiedToClipboard": "網域已複製到剪貼簿.",
+            "enterGoogleCloudClientID": "輸入 Google Cloud Client ID",
+            "enterGoogleCloudClientSecret": "輸入 Google Cloud Client Secret",
             "copyFailed": "複製失敗",
-            "clipboardAccessRequiresASecure": "еүӘиІјз°ҝеӯҳеҸ–йңҖиҰҒе®үе…Ёз’°еўғпјҲHTTPSпјү.",
-            "hevyAPIKey": "Hevy API йҮ‘й‘°",
-            "enterHevyAPIKey": "ијёе…Ҙ Hevy API йҮ‘й‘°",
-            "getYourAPIKeyFrom2": "е–ә Hevy иЁӯе®ҡ > API йҮ‘й‘°еәҰж”һжӮЁеҳ… API йҮ‘й‘°.",
-            "liftosaurAPIKey": "Liftosaur API йҮ‘й‘°",
-            "enterLiftosaurAPIKeyLftsk": "ијёе…Ҙ Liftosaur API йҮ‘й‘°пјҲlftsk_вҖҰпјү",
+            "clipboardAccessRequiresASecure": "剪貼簿存取需要安全環境（HTTPS）.",
+            "hevyAPIKey": "Hevy API 金鑰",
+            "enterHevyAPIKey": "輸入 Hevy API 金鑰",
+            "getYourAPIKeyFrom2": "喺 Hevy 設定 > API 金鑰度攞您嘅 API 金鑰.",
+            "liftosaurAPIKey": "Liftosaur API 金鑰",
+            "enterLiftosaurAPIKeyLftsk": "輸入 Liftosaur API 金鑰（lftsk_…）",
             "syncFrequency": "еҗҢжӯҘй »зҺҮ",
             "selectSyncFrequency": "揀同步頻率",
             "manual": "жүӢеӢ•",
@@ -2628,118 +2628,118 @@
             "daily": "жҜҸж—Ҙ",
             "selectRegion": "жҸҖең°еҚҖ",
             "activateThisProvider": "啟動呢個提供方",
-            "openFoodFactsIsA2": "Open Food Facts дҝӮдёҖеҖӢж”ҜжҸҙжң¬ең°еҢ–еҳ…зӨҫзҫӨиіҮж–ҷеә«гҖӮSparky жңғиҮӘеӢ•з”ЁжӮЁе–ә SparkyFitness е…Ҙйқўе•ҹеӢ•еҳ…иӘһиЁҖжҹҘз”ўе“ҒгҖӮжғізҹҘеӨҡе•ІпјҢеҺ»<link>Open Food Facts е…ҘеҸЈз¶Із«ҷ</link>пјҢжҲ–иҖ…е–ә<link2>Open Food Facts зҝ»иӯҜ Wiki</link2>зқҮиӘһиЁҖж”ҜжҸҙ.",
-            "noteForFatsecretYouNeed2": "жіЁж„Ҹпјҡз”Ё Fatsecret еҳ…и©ұпјҢжӮЁиҰҒе–ә Fatsecret й–ӢзҷјиҖ…еёіжҲ¶еәҰиЁӯе®ҡ<strong>жӮЁеҳ…е…¬й–Ӣ IP</strong>зҷҪеҗҚе–®гҖӮе‘ўеҖӢзЁӢеәҸжңҖй•·еҸҜиғҪиҰҒ 24 еҖӢйҗҳ.",
-            "yazioIntegrationUsesAnUnofficial": "YAZIO ж•ҙеҗҲз”ЁдёҖеҖӢ<strong>йқһе®ҳж–№гҖҒеҶҮиЁҳијүеҳ… API</strong>пјҢе””дҝӮ YAZIO жҸҗдҫӣжҲ–иҖ…иӘҚеҸҜеҳ…гҖӮз”ЁдҪўжңүеҸҜиғҪ<strong2>жҗһеҲ°жӮЁеҖӢ YAZIO еёіжҲ¶дҝҫдәәе°Ғ</strong2>гҖӮеҰӮжһң YAZIO ж”№е’—дҪўе“ӢеҫҢеҸ°пјҢе‘ўеҖӢ API дәҰйғҪеҸҜиғҪ<strong3>йҡЁжҷӮеҒңз”Ё</strong3>иҖҢе””жңғйҖҡзҹҘ.",
-            "forMoreInformationClientCredentials2": "жғізҹҘеӨҡе•ІеҗҢж”һз”ЁжҲ¶з«ҜжҶ‘иӯүпјҢзқҮ<link>saganos/yazio_public_api</link>.",
-            "getYourAppIDAnd2": "е–ә<link>Nutritionix й–ӢзҷјиҖ…е…ҘеҸЈз¶Із«ҷ</link>ж”һжӮЁеҳ… App ID еҗҢ App Key.",
-            "getYourClientIDAnd2": "е–ә<link>Fatsecret е№іеҸ°е„ҖиЎЁжқҝ</link>еҳ…<strong>REST API OAuth 2.0 жҶ‘иӯү</strong>дёӢйқўж”һжӮЁеҳ… Client ID еҗҢ Client SecretпјҲе””дҝӮ OAuth 1.0 Consumer KeyпјҸSecretпјү.",
-            "getYourAPIKeyFrom3": "е–ә<link>USDA FoodData Central API жҢҮеҚ—</link>еәҰж”һжӮЁеҳ… API йҮ‘й‘°.",
-            "withingsIntegrationUsesOAuth2You2": "Withings ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Withings жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Withings й–ӢзҷјиҖ…е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
-            "noteGarminConnectIntegrationIs2": "жіЁж„ҸпјҡGarmin Connect ж•ҙеҗҲеҸӘжё¬и©Ұе’—е°‘ж•ёжҢҮжЁҷгҖӮзўәдҝқжӮЁеҳ… Docker Compose е·Із¶“жӣҙж–°еҲ°еҢ…еҗ« Garmin йғЁеҲҶгҖӮ<br/>Sparky Fitness е””жңғе„ІжӮЁеҳ… Garmin йӣ»йғөжҲ–иҖ…еҜҶзўјгҖӮдҪўе“Ӣж·ЁдҝӮе–әзҷ»е…Ҙе—°йҷЈз”Ёеҡҹж”һе®үе…Ёж¬Ҡжқ–.",
-            "fitbitIntegrationUsesOAuth2You2": "Fitbit ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Fitbit жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Fitbit й–ӢзҷјиҖ…е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
-            "ouraIntegrationUsesOAuth2You2": "Oura ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Oura жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Oura й–ӢзҷјиҖ…е…ҘеҸЈз¶Із«ҷ</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
-            "stravaIntegrationUsesOAuth2You2": "Strava ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°жҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Strava жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Strava API е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°ҮгҖҢAuthorization Callback DomainгҖҚиЁӯеҒҡпјҡ",
-            "googleHealthIntegrationUsesOAuth22": "Google Health ж•ҙеҗҲз”Ё OAuth2гҖӮе„Іеӯҳд№ӢеҫҢпјҢе–әжҸҗдҫӣж–№еҚЎзүҮдёҠж’і<strong>йҖЈз·ҡ</strong>еҡҹжҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Google Cloud дё»жҺ§еҸ°</link>еәҰпјҢжӮЁеҳ… OAuth 2.0 Web жҮүз”ЁзЁӢејҸз”ЁжҲ¶з«ҜдёҖе®ҡиҰҒиЁӯе®ҡе‘ўеҖӢеӣһе‘ј URLпјҡ",
-            "generateAnAPIKeyIn2": "е–ә Liftosaur жҮүз”ЁзЁӢејҸеәҰз”ўз”ҹ API йҮ‘й‘°пјҡиЁӯе®ҡ > API йҮ‘й‘°пјҲд»Ҙ <span>lftsk_</span> й–Ӣй ӯпјүгҖӮз”Ё Liftosaur API иҰҒиЁӮ Liftosaur Pro.",
-            "theSwissFoodCompositionDatabase2": "з‘һеЈ«йЈҹзү©жҲҗеҲҶиіҮж–ҷеә« API е…ҚиІ»гҖҒе…¬й–ӢпјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮжҗңе°ӢеҗҢзҮҹйӨҠж•ёеҖјжЁҷзұӨж”ҜжҸҙеҳ…иӘһиЁҖдҝӮ<strong>иӢұж–ҮпјҲenпјү</strong>гҖҒ<strong2>еҫ·ж–ҮпјҲdeпјү</strong2>гҖҒ<strong3>жі•ж–ҮпјҲfrпјү</strong3>еҗҢ<strong4>ж„ҸеӨ§еҲ©ж–ҮпјҲitпјү</strong4>.",
-            "ifYourActiveLanguageIn2": "еҰӮжһңжӮЁе–ә SparkyFitness е…Ҙйқўе•ҹеӢ•еҳ…иӘһиЁҖе””еҸ—ж”ҜжҸҙпјҢAPI жҹҘи©ўжңғй җиЁӯз”ЁиӢұж–ҮгҖӮжӣҙеӨҡи©іжғ…зқҮ<link>з‘һеЈ«йЈҹзү©жҲҗеҲҶиіҮж–ҷеә«</link>еҳ…е®ҳж–№е…ҘеҸЈз¶Із«ҷ.",
-            "forMoreDetailsSeeThe2": "жӣҙеӨҡи©іжғ…зқҮ<link>еҠ жӢҝеӨ§зҮҹйӨҠзҙ жӘ”жЎҲпјҲеҠ жӢҝеӨ§иЎӣз”ҹйғЁпјү</link>еҳ…е®ҳж–№е…ҘеҸЈз¶Із«ҷ.",
-            "theFreeExerciseDBProvider2": "Free Exercise DB жҸҗдҫӣж–№е…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұ<link>GitHub дёҠеҳ… yuhonas/free-exercise-db</link>зӨҫзҫӨе„Іеӯҳеә«ж”һеӢ•дҪңж•ёж“ҡ.",
-            "theWgerProviderIsPublic2": "wger жҸҗдҫӣж–№е…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұе®ҳж–№<link>wger е°ҲжЎҲз¶Із«ҷ</link>ж”һиЁ“з·ҙеҗҢеӢ•дҪңж•ёж“ҡ.",
-            "europeMcpeuCorosComNot": "жӯҗжҙІпјҲmcpeu.coros.comпјү<span>пјҲжңӘжё¬и©Ұпјү</span>",
-            "mainlandChinaMcpcnCorosCom": "дёӯеңӢеӨ§йҷёпјҲmcpcn.coros.comпјү<span>пјҲжңӘжё¬и©Ұпјү</span>",
-            "ensureLocalUrl": "еҰӮжһңе–әжң¬ж©ҹжё¬и©ҰпјҢйғҪиҰҒзўәдҝқжӮЁеҳ…жң¬ж©ҹ URL жӯЈзўә.",
-            "stravaCallbackNote": "жіЁж„ҸпјҡдјәжңҚеҷЁдёҠеҳ… Strava еӣһе‘ј URL иЁӯе®ҡеҒҡпјҡ<strong>{{value}}</strong>",
+            "openFoodFactsIsA2": "Open Food Facts 係一個支援本地化嘅社群資料庫。Sparky 會自動用您喺 SparkyFitness 入面啟動嘅語言查產品。想知多啲，去<link>Open Food Facts 入口網站</link>，或者喺<link2>Open Food Facts 翻譯 Wiki</link2>睇語言支援.",
+            "noteForFatsecretYouNeed2": "注意：用 Fatsecret 嘅話，您要喺 Fatsecret 開發者帳戶度設定<strong>您嘅公開 IP</strong>白名單。呢個程序最長可能要 24 個鐘.",
+            "yazioIntegrationUsesAnUnofficial": "YAZIO 整合用一個<strong>非官方、冇記載嘅 API</strong>，唔係 YAZIO 提供或者認可嘅。用佢有可能<strong2>搞到您個 YAZIO 帳戶俾人封</strong2>。如果 YAZIO 改咗佢哋後台，呢個 API 亦都可能<strong3>隨時停用</strong3>而唔會通知.",
+            "forMoreInformationClientCredentials2": "想知多啲同攞用戶端憑證，睇<link>saganos/yazio_public_api</link>.",
+            "getYourAppIDAnd2": "喺<link>Nutritionix 開發者入口網站</link>攞您嘅 App ID 同 App Key.",
+            "getYourClientIDAnd2": "喺<link>Fatsecret 平台儀表板</link>嘅<strong>REST API OAuth 2.0 憑證</strong>下面攞您嘅 Client ID 同 Client Secret（唔係 OAuth 1.0 Consumer Key／Secret）.",
+            "getYourAPIKeyFrom3": "喺<link>USDA FoodData Central API 指南</link>度攞您嘅 API 金鑰.",
+            "withingsIntegrationUsesOAuth2You2": "Withings 整合用 OAuth2。加入提供方之後，您會俾人帶去 Withings 授權存取。<br/>喺<link>Withings 開發者儀表板</link>度，您要將回呼 URL 設做：",
+            "noteGarminConnectIntegrationIs2": "注意：Garmin Connect 整合只測試咗少數指標。確保您嘅 Docker Compose 已經更新到包含 Garmin 部分。<br/>Sparky Fitness 唔會儲您嘅 Garmin 電郵或者密碼。佢哋淨係喺登入嗰陣用嚟攞安全權杖.",
+            "fitbitIntegrationUsesOAuth2You2": "Fitbit 整合用 OAuth2。加入提供方之後，您會俾人帶去 Fitbit 授權存取。<br/>喺<link>Fitbit 開發者儀表板</link>度，您要將回呼 URL 設做：",
+            "ouraIntegrationUsesOAuth2You2": "Oura 整合用 OAuth2。加入提供方之後，您會俾人帶去 Oura 授權存取。<br/>喺<link>Oura 開發者入口網站</link>度，您要將回呼 URL 設做：",
+            "stravaIntegrationUsesOAuth2You2": "Strava 整合用 OAuth2。加入或者更新提供方之後，您會俾人帶去 Strava 授權存取。<br/>喺<link>Strava API 儀表板</link>度，您要將「Authorization Callback Domain」設做：",
+            "googleHealthIntegrationUsesOAuth22": "Google Health 整合用 OAuth2。儲存之後，喺提供方卡片上撳<strong>連線</strong>嚟授權存取。<br/>喺<link>Google Cloud 主控台</link>度，您嘅 OAuth 2.0 Web 應用程式用戶端一定要設定呢個回呼 URL：",
+            "generateAnAPIKeyIn2": "喺 Liftosaur 應用程式度產生 API 金鑰：設定 > API 金鑰（以 <span>lftsk_</span> 開頭）。用 Liftosaur API 要訂 Liftosaur Pro.",
+            "theSwissFoodCompositionDatabase2": "瑞士食物成分資料庫 API 免費、公開，而且唔使任何憑證。搜尋同營養數值標籤支援嘅語言係<strong>英文（en）</strong>、<strong2>德文（de）</strong2>、<strong3>法文（fr）</strong3>同<strong4>意大利文（it）</strong4>.",
+            "ifYourActiveLanguageIn2": "如果您喺 SparkyFitness 入面啟動嘅語言唔受支援，API 查詢會預設用英文。更多詳情睇<link>瑞士食物成分資料庫</link>嘅官方入口網站.",
+            "forMoreDetailsSeeThe2": "更多詳情睇<link>加拿大營養素檔案（加拿大衛生部）</link>嘅官方入口網站.",
+            "theFreeExerciseDBProvider2": "Free Exercise DB 提供方公開、免費，而且唔使任何憑證。佢直接由<link>GitHub 上嘅 yuhonas/free-exercise-db</link>社群儲存庫攞動作數據.",
+            "theWgerProviderIsPublic2": "wger 提供方公開、免費，而且唔使任何憑證。佢直接由官方<link>wger 專案網站</link>攞訓練同動作數據.",
+            "europeMcpeuCorosComNot": "歐洲（mcpeu.coros.com）<span>（未測試）</span>",
+            "mainlandChinaMcpcnCorosCom": "中國大陸（mcpcn.coros.com）<span>（未測試）</span>",
+            "ensureLocalUrl": "如果喺本機測試，都要確保您嘅本機 URL 正確.",
+            "stravaCallbackNote": "注意：伺服器上嘅 Strava 回呼 URL 設定做：<strong>{{value}}</strong>",
             "leaveBlankToKeepExisting2": "••••••••（留空就保留而家嘅）",
             "unofficialAPIUseAtYour": "⚠️ 非官方 API — 用咗風險自負",
-            "theCanadianNutrientFileCNF2": "加拿大營養素檔案（CNF）包含加拿大衛生部根據<link>開放政府授權 – 加拿大</link>. 發布嘅資訊。佢免費、公開，而且唔使任何憑證。支援嘅語言係<strong>英文（en）</strong>同<strong2>法文（fr）</strong2>."
+            "theCanadianNutrientFileCNF2": "加拿大營養素檔案（CNF）包含加拿大衛生部根據<link>開放政府授權 – 加拿大</link>發布嘅資訊。佢免費、公開，而且唔使任何憑證。支援嘅語言係<strong>英文（en）</strong>同<strong2>法文（fr）</strong2>."
         },
         "externalProviderList": {
-            "dragToReorderProvider": "жӢ–еҡҹжӢ–еҺ»жҺ’еәҸжҸҗдҫӣж–№",
-            "noDataProvidersConfiguredYet": "жңӘиЁӯе®ҡд»»дҪ•ж•ёж“ҡжҸҗдҫӣж–№.",
-            "addYourFirstDataProvider": "еҠ е…ҘжӮЁз¬¬дёҖеҖӢж•ёж“ҡжҸҗдҫӣж–№пјҢе…ҲеҸҜд»Ҙз”ЁеӨ–йғЁдҫҶжәҗжҗңе°Ӣ."
+            "dragToReorderProvider": "拖嚟拖去排序提供方",
+            "noDataProvidersConfiguredYet": "未設定任何數據提供方.",
+            "addYourFirstDataProvider": "加入您第一個數據提供方，先可以用外部來源搜尋."
         },
         "externalProviderSettings": {
-            "configuredExternalDataProviders": "е·ІиЁӯе®ҡеҳ…еӨ–йғЁж•ёж“ҡжҸҗдҫӣж–№",
+            "configuredExternalDataProviders": "已設定嘅外部數據提供方",
             "externalDataProviders": "外部數據提供方",
-            "defaultFoodDataProvider": "й җиЁӯйЈҹзү©ж•ёж“ҡжҸҗдҫӣж–№",
+            "defaultFoodDataProvider": "預設食物數據提供方",
             "selectAFoodProvider": "揀食物提供方",
             "defaultBarcodeProvider": "預設條碼提供方",
             "selectABarcodeProvider": "揀條碼提供方",
-            "openFoodFactsFallback": "Open Food Facts еҫҢеӮҷ"
+            "openFoodFactsFallback": "Open Food Facts 後備"
         },
         "fastingSettings": {
-            "hFastHEating": "{{name}}пјҲж–·йЈҹ {{fastingHours}} еҖӢйҗҳпјҸйҖІйЈҹ {{eatingHours}} еҖӢйҗҳпјү"
+            "hFastHEating": "{{name}}（斷食 {{fastingHours}} 個鐘／進食 {{eatingHours}} 個鐘）"
         },
         "garminConnectSettings": {
-            "userNotAuthenticatedPleaseLog": "з”ЁжҲ¶жңӘй©—иӯүгҖӮи«Ӣзҷ»е…Ҙ.",
+            "userNotAuthenticatedPleaseLog": "用戶未驗證。請登入.",
             "mfaRequired": "需要 MFA",
-            "pleaseEnterTheMFACode": "и«Ӣијёе…Ҙ Garmin Connect жҮүз”ЁзЁӢејҸе…Ҙйқўеҳ… MFA д»Јзўј.",
-            "sparkyFitnessDoesNotStore": "Sparky Fitness е””жңғе„ІжӮЁеҳ… Garmin йӣ»йғөжҲ–иҖ…еҜҶзўјгҖӮдҪўе“Ӣж·ЁдҝӮе–әзҷ»е…Ҙе—°йҷЈз”Ёеҡҹж”һе®үе…Ёж¬Ҡжқ–.",
-            "garminEmail": "Garmin йӣ»йғө",
-            "enterYourGarminEmail": "ијёе…ҘжӮЁеҳ… Garmin йӣ»йғө",
-            "garminPassword": "Garmin еҜҶзўј",
-            "enterYourGarminPassword": "ијёе…ҘжӮЁеҳ… Garmin еҜҶзўј",
+            "pleaseEnterTheMFACode": "請輸入 Garmin Connect 應用程式入面嘅 MFA 代碼.",
+            "sparkyFitnessDoesNotStore": "Sparky Fitness 唔會儲您嘅 Garmin 電郵或者密碼。佢哋淨係喺登入嗰陣用嚟攞安全權杖.",
+            "garminEmail": "Garmin 電郵",
+            "enterYourGarminEmail": "輸入您嘅 Garmin 電郵",
+            "garminPassword": "Garmin 密碼",
+            "enterYourGarminPassword": "輸入您嘅 Garmin 密碼",
             "connecting": "йҖЈз·ҡз·ҠвҖҰ",
-            "connectGarmin": "йҖЈз·ҡ Garmin",
-            "garminMFACode": "Garmin MFA д»Јзўј",
-            "enterMFACode": "ијёе…Ҙ MFA д»Јзўј",
+            "connectGarmin": "連線 Garmin",
+            "garminMFACode": "Garmin MFA 代碼",
+            "enterMFACode": "輸入 MFA 代碼",
             "submitting": "жҸҗдәӨз·ҠвҖҰ",
-            "submitMFACode": "жҸҗдәӨ MFA д»Јзўј"
+            "submitMFACode": "提交 MFA 代碼"
         },
         "mfaSettings": {
             "passwordIsRequired": "要填密碼.",
-            "scanQRCodeToVerify": "жҺғ QR code еҡҹй©—иӯү.",
-            "totpDisabled": "TOTP е·ІеҒңз”Ё.",
+            "scanQRCodeToVerify": "掃 QR code 嚟驗證.",
+            "totpDisabled": "TOTP 已停用.",
             "backupCodesGenerated": "備用碼已產生.",
             "failedToPerformAction": "做唔到呢個操作",
-            "totpVerifiedAndEnabled": "TOTP е·Ій©—иӯүдёҰе•ҹз”ЁпјҒ",
-            "failedToVerifyTOTP": "й©—иӯүе””еҲ° TOTPпјҡ{{message}}",
-            "emailMFAEnabled": "Email MFA е·Іе•ҹз”ЁпјҒ",
-            "failedToEnableEmailMFA": "е•ҹз”Ёе””еҲ° Email MFA",
-            "emailMFADisabled": "Email MFA е·ІеҒңз”Ё.",
-            "failedToDisableEmailMFA": "еҒңз”Ёе””еҲ° Email MFA",
+            "totpVerifiedAndEnabled": "TOTP 已驗證並啟用！",
+            "failedToVerifyTOTP": "驗證唔到 TOTP：{{message}}",
+            "emailMFAEnabled": "Email MFA 已啟用！",
+            "failedToEnableEmailMFA": "啟用唔到 Email MFA",
+            "emailMFADisabled": "Email MFA 已停用.",
+            "failedToDisableEmailMFA": "停用唔到 Email MFA",
             "copied": "е·ІиӨҮиЈҪ",
-            "recoveryCodesCopiedToClipboard": "еҫ©еҺҹзўје·ІиӨҮиЈҪеҲ°еүӘиІјз°ҝ."
+            "recoveryCodesCopiedToClipboard": "復原碼已複製到剪貼簿."
         },
         "nutrientDisplaySettings": {
-            "failedToSavePreferences": "е„Іеӯҳе””еҲ° {{view_group}}пјҲ{{platform}}пјүеҒҸеҘҪиЁӯе®ҡпјҡ{{message}}",
-            "failedToResetPreferences": "йҮҚиЁӯе””еҲ° {{viewGroup}}пјҲ{{pform}}пјүеҒҸеҘҪиЁӯе®ҡпјҡ{{message}}",
-            "preferencesReset": "{{viewGroup}}пјҲ{{platforms}}пјүеҳ…еҒҸеҘҪиЁӯе®ҡе·ІйҮҚиЁӯеҒҡй җиЁӯ."
+            "failedToSavePreferences": "儲存唔到 {{view_group}}（{{platform}}）偏好設定：{{message}}",
+            "failedToResetPreferences": "重設唔到 {{viewGroup}}（{{pform}}）偏好設定：{{message}}",
+            "preferencesReset": "{{viewGroup}}（{{platforms}}）嘅偏好設定已重設做預設."
         },
         "preferenceSettings": {
-            "mmDdYyyy1225": "MM/dd/yyyyпјҲ12/25/2024пјү",
-            "ddMMYyyy2512": "dd/MM/yyyyпјҲ25/12/2024пјү",
-            "ddMMMYyyy25Dec": "dd-MMM-yyyyпјҲ25-Dec-2024пјү",
-            "yyyyMMDd202412": "yyyy-MM-ddпјҲ2024-12-25пјү",
-            "mmmDdYyyyDec25": "MMM dd, yyyyпјҲDec 25, 2024пјү",
-            "gPureAlcohol": "{{label}}пјҲзҙ”й…’зІҫ {{grams}} е…Ӣпјү"
+            "mmDdYyyy1225": "MM/dd/yyyy（12/25/2024）",
+            "ddMMYyyy2512": "dd/MM/yyyy（25/12/2024）",
+            "ddMMMYyyy25Dec": "dd-MMM-yyyy（25-Dec-2024）",
+            "yyyyMMDd202412": "yyyy-MM-dd（2024-12-25）",
+            "mmmDdYyyyDec25": "MMM dd, yyyy（Dec 25, 2024）",
+            "gPureAlcohol": "{{label}}（純酒精 {{grams}} 克）"
         },
         "providerCard": {
             "global": "е…Ёеҹҹ",
             "private": "з§Ғдәә",
-            "bulkImportReSync": "жү№ж¬ЎеҢҜе…ҘпјҸйҮҚж–°еҗҢжӯҘ",
-            "importing": "еҢҜе…Ҙз·ҠпјҲ{{progress}}%пјүвҖҰ",
+            "bulkImportReSync": "批次匯入／重新同步",
+            "importing": "匯入緊（{{progress}}%）…",
             "bulkImportSync": "批次匯入／同步",
             "manualSync": "жүӢеӢ•еҗҢжӯҘ",
             "connect": "йҖЈз·ҡ",
             "disconnect": "斷開連線",
             "readOnly": "е”Ҝи®Җ",
-            "imported": "е·ІеҢҜе…Ҙ {{imported}} й …",
-            "updated": "е·Іжӣҙж–° {{updated}} й …",
+            "imported": "已匯入 {{imported}} 項",
+            "updated": "已更新 {{updated}} 項",
             "howToImproveThis": "點樣改進呢樣嘢？",
-            "helpImproveThisIntegrationBy": "йҖҸйҒҺеҲҶдә«еҢҝеҗҚжЁЎж“¬ж•ёж“ҡеҡҹе№«жүӢж”№йҖІе‘ўеҖӢж•ҙеҗҲпјҒ",
-            "supportedLanguagesEnglishEnGerman": "ж”ҜжҸҙиӘһиЁҖпјҡ<strong>иӢұж–ҮпјҲenпјү</strong>гҖҒ<strong2>еҫ·ж–ҮпјҲdeпјү</strong2>гҖҒ<strong3>жі•ж–ҮпјҲfrпјү</strong3>еҗҢ<strong4>ж„ҸеӨ§еҲ©ж–ҮпјҲitпјү</strong4>гҖӮеҰӮжһңжӮЁе•ҹеӢ•еҳ…иӘһиЁҖе””еҸ—ж”ҜжҸҙпјҢжңғй җиЁӯз”ЁиӢұж–ҮгҖӮ<link>з‘һеЈ«йЈҹзү©жҲҗеҲҶиіҮж–ҷеә«</link>",
-            "importingCatalogFoods": "еҢҜе…Ҙзӣ®йҢ„дёӯпјҡ{{processed}}пјҸ{{total}} зЁ®йЈҹзү©",
-            "fetchesExerciseDataDirectlyFrom2": "зӣҙжҺҘз”ұ<link>GitHub дёҠеҳ… yuhonas/free-exercise-db</link>зӨҫзҫӨе„Іеӯҳеә«ж”һеӢ•дҪңж•ёж“ҡ.",
-            "theWgerProviderIsPublic2": "wger жҸҗдҫӣж–№е…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұе®ҳж–№<link>wger е°ҲжЎҲз¶Із«ҷ</link>ж”һиЁ“з·ҙеҗҢеӢ•дҪңж•ёж“ҡ.",
-            "forMoreDetailsOrTo2": "жӣҙеӨҡи©іжғ…жҲ–иҖ…з®ЎзҗҶжӮЁеҳ…ж•ҙеҗҲпјҢеҺ»<link>{{label}}</link>зқҮеҗ“.",
-            "lastSync2": "дёҠж¬ЎеҗҢжӯҘпјҡ{{value}}",
-            "tokenExpires2": "ж¬Ҡжқ–еҲ°жңҹпјҡ{{value}}",
-            "noteFromCodewithCJIDon": "<strong>CodewithCJ еҳ…еӮҷиЁ»пјҡ</strong>жҲ‘еҶҮ {{provider_name}} иЈқзҪ®пјҸиЁӮй–ұ.",
-            "enableAllowLocalProviderResponse": "е–ә<strong2>з®ЎзҗҶе“Ў > е…ЁеҹҹжҸҗдҫӣж–№иЁӯе®ҡ</strong2>еәҰй–Ӣе•ҹ<strong>е…ҒиЁұжң¬ж©ҹжҸҗдҫӣж–№еӣһжҮүж“·еҸ–</strong>пјҢеҶҚе–әеҗҢжӯҘзҜ„еңҚе°Қи©ұжЎҶеәҰжҸҖ<strong3>ж“·еҸ–еҺҹе§ӢжҸҗдҫӣж–№еӣһжҮү</strong3>.",
-            "shareTheExportedDiagnosticBundle2": "е–ә Discord дёҠеҗҢ<strong>CodewithCJ</strong>еҲҶдә«еҢҜеҮәе’—еҳ…иЁәж–·еҘ—д»¶.",
+            "helpImproveThisIntegrationBy": "透過分享匿名模擬數據嚟幫手改進呢個整合！",
+            "supportedLanguagesEnglishEnGerman": "支援語言：<strong>英文（en）</strong>、<strong2>德文（de）</strong2>、<strong3>法文（fr）</strong3>同<strong4>意大利文（it）</strong4>。如果您啟動嘅語言唔受支援，會預設用英文。<link>瑞士食物成分資料庫</link>",
+            "importingCatalogFoods": "匯入目錄中：{{processed}}／{{total}} 種食物",
+            "fetchesExerciseDataDirectlyFrom2": "直接由<link>GitHub 上嘅 yuhonas/free-exercise-db</link>社群儲存庫攞動作數據.",
+            "theWgerProviderIsPublic2": "wger 提供方公開、免費，而且唔使任何憑證。佢直接由官方<link>wger 專案網站</link>攞訓練同動作數據.",
+            "forMoreDetailsOrTo2": "更多詳情或者管理您嘅整合，去<link>{{label}}</link>睇吓.",
+            "lastSync2": "上次同步：{{value}}",
+            "tokenExpires2": "權杖到期：{{value}}",
+            "noteFromCodewithCJIDon": "<strong>CodewithCJ 嘅備註：</strong>我冇 {{provider_name}} 裝置／訂閱.",
+            "enableAllowLocalProviderResponse": "喺<strong2>管理員 > 全域提供方設定</strong2>度開啟<strong>允許本機提供方回應擷取</strong>，再喺同步範圍對話框度揀<strong3>擷取原始提供方回應</strong3>.",
+            "shareTheExportedDiagnosticBundle2": "喺 Discord 上同<strong>CodewithCJ</strong>分享匯出咗嘅診斷套件.",
             "urlLabel": "URLпјҡ",
             "appIdLabel": "App ID：",
             "appKeyLabel": "App Key：",
@@ -2747,48 +2747,48 @@
         },
         "providerSpecificFields": {
             "appURL": "App URL",
-            "eGHttpYourInstance": "дҫӢеҰӮпјҡhttp://your-{{provider_type}}-instance.com",
+            "eGHttpYourInstance": "例如：http://your-{{provider_type}}-instance.com",
             "clientID": "Client ID",
-            "yazioEmailUsername": "YAZIO йӣ»йғөпјҸз”ЁжҲ¶еҗҚзЁұ",
+            "yazioEmailUsername": "YAZIO 電郵／用戶名稱",
             "appID": "App ID",
             "enterID": "輸入 ID",
             "clientSecret": "Client Secret",
             "yazioPassword": "YAZIO 密碼",
-            "liftosaurAPIKey": "Liftosaur API йҮ‘й‘°",
-            "apiKeyAppKey": "API йҮ‘й‘°пјҸApp Key",
-            "enterLiftosaurAPIKeyLftsk": "ијёе…Ҙ Liftosaur API йҮ‘й‘°пјҲlftsk_вҖҰпјү",
+            "liftosaurAPIKey": "Liftosaur API 金鑰",
+            "apiKeyAppKey": "API 金鑰／App Key",
+            "enterLiftosaurAPIKeyLftsk": "輸入 Liftosaur API 金鑰（lftsk_…）",
             "enterKey": "輸入金鑰",
-            "openFoodFactsUsernameOptional": "Open Food Facts з”ЁжҲ¶еҗҚзЁұпјҲеҸҜйҒёпјү",
-            "enterOpenFoodFactsUsername": "ијёе…Ҙ Open Food Facts з”ЁжҲ¶еҗҚзЁұ",
-            "openFoodFactsPasswordOptional": "Open Food Facts еҜҶзўјпјҲеҸҜйҒёпјү",
-            "enterOpenFoodFactsPassword": "ијёе…Ҙ Open Food Facts еҜҶзўј",
-            "garminEmail": "Garmin йӣ»йғө",
-            "enterGarminEmail": "ијёе…Ҙ Garmin йӣ»йғө",
-            "garminPassword": "Garmin еҜҶзўј",
-            "enterGarminPassword": "ијёе…Ҙ Garmin еҜҶзўј",
-            "getYourAPIKeyFrom": "е–ә Hevy иЁӯе®ҡ > API йҮ‘й‘°еәҰж”һжӮЁеҳ… API йҮ‘й‘°.",
-            "syncEntireHistoryOnConnect": "йҖЈз·ҡе—°йҷЈеҗҢжӯҘжҲҗж®өжӯ·еҸІ",
+            "openFoodFactsUsernameOptional": "Open Food Facts 用戶名稱（可選）",
+            "enterOpenFoodFactsUsername": "輸入 Open Food Facts 用戶名稱",
+            "openFoodFactsPasswordOptional": "Open Food Facts 密碼（可選）",
+            "enterOpenFoodFactsPassword": "輸入 Open Food Facts 密碼",
+            "garminEmail": "Garmin 電郵",
+            "enterGarminEmail": "輸入 Garmin 電郵",
+            "garminPassword": "Garmin 密碼",
+            "enterGarminPassword": "輸入 Garmin 密碼",
+            "getYourAPIKeyFrom": "喺 Hevy 設定 > API 金鑰度攞您嘅 API 金鑰.",
+            "syncEntireHistoryOnConnect": "連線嗰陣同步成段歷史",
             "selectRegion": "жҸҖең°еҚҖ",
-            "openFoodFactsIsA2": "Open Food Facts дҝӮдёҖеҖӢж”ҜжҸҙжң¬ең°еҢ–еҳ…зӨҫзҫӨиіҮж–ҷеә«гҖӮSparky жңғиҮӘеӢ•з”ЁжӮЁе–ә SparkyFitness е…Ҙйқўе•ҹеӢ•еҳ…иӘһиЁҖжҹҘз”ўе“ҒгҖӮжғізҹҘеӨҡе•ІпјҢеҺ»<link>Open Food Facts е…ҘеҸЈз¶Із«ҷ</link>пјҢжҲ–иҖ…е–ә<link2>Open Food Facts зҝ»иӯҜ Wiki</link2>зқҮиӘһиЁҖж”ҜжҸҙ.",
-            "thisIntegrationUsesOAuth2You2": "е‘ўеҖӢж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°жҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ»жҸҗдҫӣж–№жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>{{dashboard}}</link>еәҰпјҢжӮЁиҰҒе°Үеӣһе‘ј URL иЁӯеҒҡпјҡ",
-            "stravaIntegrationUsesOAuth2You2": "Strava ж•ҙеҗҲз”Ё OAuth2гҖӮеҠ е…ҘжҲ–иҖ…жӣҙж–°жҸҗдҫӣж–№д№ӢеҫҢпјҢжӮЁжңғдҝҫдәәеё¶еҺ» Strava жҺҲж¬ҠеӯҳеҸ–гҖӮ<br/>е–ә<link>Strava API е„ҖиЎЁжқҝ</link>еәҰпјҢжӮЁиҰҒе°ҮгҖҢAuthorization Callback DomainгҖҚиЁӯеҒҡпјҡ",
-            "noteGarminConnectIntegrationIs2": "жіЁж„ҸпјҡGarmin Connect ж•ҙеҗҲеҸӘжё¬и©Ұе’—е°‘ж•ёжҢҮжЁҷгҖӮзўәдҝқжӮЁеҳ… Docker Compose е·Із¶“жӣҙж–°еҲ°еҢ…еҗ« Garmin йғЁеҲҶгҖӮ<br/>Sparky Fitness е””жңғе„ІжӮЁеҳ… Garmin йӣ»йғөжҲ–иҖ…еҜҶзўјгҖӮдҪўе“Ӣж·ЁдҝӮе–әзҷ»е…Ҙе—°йҷЈз”Ёеҡҹж”һе®үе…Ёж¬Ҡжқ–.",
-            "generateAnAPIKeyIn2": "е–ә Liftosaur жҮүз”ЁзЁӢејҸеәҰз”ўз”ҹ API йҮ‘й‘°пјҡиЁӯе®ҡ > API йҮ‘й‘°пјҲд»Ҙ <span>lftsk_</span> й–Ӣй ӯпјүгҖӮз”Ё Liftosaur API иҰҒиЁӮ Liftosaur Pro.",
-            "getYourAppIDAnd2": "е–ә<link>Nutritionix й–ӢзҷјиҖ…е…ҘеҸЈз¶Із«ҷ</link>ж”һжӮЁеҳ… App ID еҗҢ App Key.",
-            "noteForFatsecretYouNeed2": "жіЁж„Ҹпјҡз”Ё Fatsecret еҳ…и©ұпјҢжӮЁиҰҒе–ә Fatsecret й–ӢзҷјиҖ…еёіжҲ¶еәҰиЁӯе®ҡ<strong>жӮЁеҳ…е…¬й–Ӣ IP</strong>зҷҪеҗҚе–®гҖӮе‘ўеҖӢзЁӢеәҸжңҖй•·еҸҜиғҪиҰҒ 24 еҖӢйҗҳгҖӮ<br/>е–ә<link>Fatsecret е№іеҸ°е„ҖиЎЁжқҝ</link>еҳ…<strong2>REST API OAuth 2.0 жҶ‘иӯү</strong2>дёӢйқўж”һжӮЁеҳ… Client ID еҗҢ Client SecretпјҲе””дҝӮ OAuth 1.0 Consumer KeyпјҸSecretпјү.",
-            "getYourAPIKeyFrom3": "е–ә<link>USDA FoodData Central API жҢҮеҚ—</link>еәҰж”һжӮЁеҳ… API йҮ‘й‘°.",
-            "theSwissFoodCompositionDatabase2": "з‘һеЈ«йЈҹзү©жҲҗеҲҶиіҮж–ҷеә« API е…ҚиІ»гҖҒе…¬й–ӢпјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮжҗңе°ӢеҗҢзҮҹйӨҠж•ёеҖјжЁҷзұӨж”ҜжҸҙеҳ…иӘһиЁҖдҝӮ<strong>иӢұж–ҮпјҲenпјү</strong>гҖҒ<strong2>еҫ·ж–ҮпјҲdeпјү</strong2>гҖҒ<strong3>жі•ж–ҮпјҲfrпјү</strong3>еҗҢ<strong4>ж„ҸеӨ§еҲ©ж–ҮпјҲitпјү</strong4>.",
-            "ifYourActiveLanguageIn2": "еҰӮжһңжӮЁе–ә SparkyFitness е…Ҙйқўе•ҹеӢ•еҳ…иӘһиЁҖе””еҸ—ж”ҜжҸҙпјҢAPI жҹҘи©ўжңғй җиЁӯз”ЁиӢұж–ҮгҖӮжӣҙеӨҡи©іжғ…зқҮ<link>з‘һеЈ«йЈҹзү©жҲҗеҲҶиіҮж–ҷеә«</link>еҳ…е®ҳж–№е…ҘеҸЈз¶Із«ҷ.",
-            "theFreeExerciseDBProvider2": "Free Exercise DB жҸҗдҫӣж–№е…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұ<link>GitHub дёҠеҳ… yuhonas/free-exercise-db</link>зӨҫзҫӨе„Іеӯҳеә«ж”һеӢ•дҪңж•ёж“ҡ.",
-            "theWgerProviderIsPublic2": "wger жҸҗдҫӣж–№е…¬й–ӢгҖҒе…ҚиІ»пјҢиҖҢдё”е””дҪҝд»»дҪ•жҶ‘иӯүгҖӮдҪўзӣҙжҺҘз”ұе®ҳж–№<link>wger е°ҲжЎҲз¶Із«ҷ</link>ж”һиЁ“з·ҙеҗҢеӢ•дҪңж•ёж“ҡ.",
-            "europeMcpeuCorosComNot": "жӯҗжҙІпјҲmcpeu.coros.comпјү<span>пјҲжңӘжё¬и©Ұпјү</span>",
-            "mainlandChinaMcpcnCorosCom": "дёӯеңӢеӨ§йҷёпјҲmcpcn.coros.comпјү<span>пјҲжңӘжё¬и©Ұпјү</span>",
-            "ensureLocalUrl": "еҰӮжһңе–әжң¬ж©ҹжё¬и©ҰпјҢйғҪиҰҒзўәдҝқжӮЁеҳ…жң¬ж©ҹ URL жӯЈзўә.",
-            "stravaCallbackNote": "жіЁж„ҸпјҡдјәжңҚеҷЁдёҠеҳ… Strava еӣһе‘ј URL иЁӯе®ҡеҒҡпјҡ<strong>{{value}}</strong>"
+            "openFoodFactsIsA2": "Open Food Facts 係一個支援本地化嘅社群資料庫。Sparky 會自動用您喺 SparkyFitness 入面啟動嘅語言查產品。想知多啲，去<link>Open Food Facts 入口網站</link>，或者喺<link2>Open Food Facts 翻譯 Wiki</link2>睇語言支援.",
+            "thisIntegrationUsesOAuth2You2": "呢個整合用 OAuth2。加入或者更新提供方之後，您會俾人帶去提供方授權存取。<br/>喺<link>{{dashboard}}</link>度，您要將回呼 URL 設做：",
+            "stravaIntegrationUsesOAuth2You2": "Strava 整合用 OAuth2。加入或者更新提供方之後，您會俾人帶去 Strava 授權存取。<br/>喺<link>Strava API 儀表板</link>度，您要將「Authorization Callback Domain」設做：",
+            "noteGarminConnectIntegrationIs2": "注意：Garmin Connect 整合只測試咗少數指標。確保您嘅 Docker Compose 已經更新到包含 Garmin 部分。<br/>Sparky Fitness 唔會儲您嘅 Garmin 電郵或者密碼。佢哋淨係喺登入嗰陣用嚟攞安全權杖.",
+            "generateAnAPIKeyIn2": "喺 Liftosaur 應用程式度產生 API 金鑰：設定 > API 金鑰（以 <span>lftsk_</span> 開頭）。用 Liftosaur API 要訂 Liftosaur Pro.",
+            "getYourAppIDAnd2": "喺<link>Nutritionix 開發者入口網站</link>攞您嘅 App ID 同 App Key.",
+            "noteForFatsecretYouNeed2": "注意：用 Fatsecret 嘅話，您要喺 Fatsecret 開發者帳戶度設定<strong>您嘅公開 IP</strong>白名單。呢個程序最長可能要 24 個鐘。<br/>喺<link>Fatsecret 平台儀表板</link>嘅<strong2>REST API OAuth 2.0 憑證</strong2>下面攞您嘅 Client ID 同 Client Secret（唔係 OAuth 1.0 Consumer Key／Secret）.",
+            "getYourAPIKeyFrom3": "喺<link>USDA FoodData Central API 指南</link>度攞您嘅 API 金鑰.",
+            "theSwissFoodCompositionDatabase2": "瑞士食物成分資料庫 API 免費、公開，而且唔使任何憑證。搜尋同營養數值標籤支援嘅語言係<strong>英文（en）</strong>、<strong2>德文（de）</strong2>、<strong3>法文（fr）</strong3>同<strong4>意大利文（it）</strong4>.",
+            "ifYourActiveLanguageIn2": "如果您喺 SparkyFitness 入面啟動嘅語言唔受支援，API 查詢會預設用英文。更多詳情睇<link>瑞士食物成分資料庫</link>嘅官方入口網站.",
+            "theFreeExerciseDBProvider2": "Free Exercise DB 提供方公開、免費，而且唔使任何憑證。佢直接由<link>GitHub 上嘅 yuhonas/free-exercise-db</link>社群儲存庫攞動作數據.",
+            "theWgerProviderIsPublic2": "wger 提供方公開、免費，而且唔使任何憑證。佢直接由官方<link>wger 專案網站</link>攞訓練同動作數據.",
+            "europeMcpeuCorosComNot": "歐洲（mcpeu.coros.com）<span>（未測試）</span>",
+            "mainlandChinaMcpcnCorosCom": "中國大陸（mcpcn.coros.com）<span>（未測試）</span>",
+            "ensureLocalUrl": "如果喺本機測試，都要確保您嘅本機 URL 正確.",
+            "stravaCallbackNote": "注意：伺服器上嘅 Strava 回呼 URL 設定做：<strong>{{value}}</strong>"
         },
         "waterContainerManager": {
             "food": "йЈҹзү©",
-            "mgCaffeine": "{{caffeineMg}} mg е’–е•Ўеӣ",
+            "mgCaffeine": "{{caffeineMg}} mg 咖啡因",
             "abv": "{{abvPercent}}% ABV"
         }
     },
@@ -2807,7 +2807,7 @@
                 "enforceMfaForAllUsers": "對所有用戶強制啟用 MFA",
                 "enablePasskeyLogin": "啟用 Passkey 登入",
                 "emergencyFailSafePasskeyDescription": "如果 Passkey 登入已經關閉，而你又冇辦法再登入，可以用以下方式強制重新開啟：",
-                "emergencyFailSafeIfYou": "<strong>з·ҠжҖҘе®үе…Ёж©ҹеҲ¶пјҡ</strong>еҰӮжһңжӮЁе°ҮдҫҶзҷ»е…Ҙе””еҲ°еёіжҲ¶пјҢеҸҜд»Ҙе–әдјәжңҚеҷЁдёҠиЁӯе®ҡдёӢйқўе‘ўеҖӢз’°еўғи®Ҡж•ёеҶҚйҮҚж–°е•ҹеӢ•пјҢеј·еҲ¶й–Ӣиҝ”йӣ»йғөпјҸеҜҶзўјзҷ»е…Ҙпјҡ"
+                "emergencyFailSafeIfYou": "<strong>緊急安全機制：</strong>如果您將來登入唔到帳戶，可以喺伺服器上設定下面呢個環境變數再重新啟動，強制開返電郵／密碼登入："
             },
             "oidcProviderManagement": {
                 "title": "OIDC 第三方登入商管理",
@@ -2872,8 +2872,8 @@
             "invalidTimeTitle": "備份時間無效",
             "saveWarningSchedulerFailed": "設定已儲存，但實時排程器更新唔到，更改會喺下次伺服器重啟時生效.",
             "failedToLoadSettings": "載入唔到設定.",
-            "importantNoteThisBackupFunctionality": "<strong>йҮҚиҰҒеӮҷиЁ»пјҡ</strong>е‘ўеҖӢеӮҷд»ҪеҠҹиғҪдҝӮж–°еҠҹиғҪпјҢиҰҒе°Ҹеҝғе’Ғз”ЁгҖӮйӣ–з„¶дҪўжңғж•ҙеҲ°еӮҷд»ҪпјҢйғҪеј·зғҲе»әиӯ°е–әе‘ўеҖӢжҮүз”ЁзЁӢејҸд»ҘеӨ–еҸҰеӨ–ж•ҙеӮҷд»ҪгҖӮдёҖе®ҡиҰҒи·ҹ 3-2-1 еӮҷд»Ҫзӯ–з•ҘпјҲ3 д»Ҫж•ёж“ҡеүҜжң¬гҖҒж”ҫе–ә 2 зЁ®е””еҗҢеӘ’й«”гҖҒе…¶дёӯ 1 д»Ҫж”ҫе–әз¬¬дәҢеәҰпјүе…Ҳзўәдҝқж•ёж“ҡе®үе…ЁгҖӮйӮ„еҺҹеҠҹиғҪжңӘеҝ…е–әжүҖжңүжғ…жіҒдёӢйғҪжӯЈеёёйҒӢдҪңпјҢжүҖд»Ҙе””еҘҪж·ЁдҝӮйқ е‘ўеҖӢжҮүз”ЁзЁӢејҸе…Ҙйқўеҳ…еӮҷд»Ҫ.",
-            "warningRestoringABackupWill": "иӯҰе‘ҠпјҡйӮ„еҺҹеӮҷд»Ҫжңғжё…иө°жҷ’жүҖжңүзҸҫжңүж•ёж“ҡпјҢеҶҚд»ҘеӮҷд»Ҫе…§е®№еҸ–д»ЈгҖӮи«ӢжҘөеәҰе°ҸеҝғгҖӮйӮ„еҺҹд№ӢеҫҢиҰҒжүӢеӢ•йҮҚж–°е•ҹеӢ•дјәжңҚеҷЁ."
+            "importantNoteThisBackupFunctionality": "<strong>重要備註：</strong>呢個備份功能係新功能，要小心咁用。雖然佢會整到備份，都強烈建議喺呢個應用程式以外另外整備份。一定要跟 3-2-1 備份策略（3 份數據副本、放喺 2 種唔同媒體、其中 1 份放喺第二度）先確保數據安全。還原功能未必喺所有情況下都正常運作，所以唔好淨係靠呢個應用程式入面嘅備份.",
+            "warningRestoringABackupWill": "警告：還原備份會清走晒所有現有數據，再以備份內容取代。請極度小心。還原之後要手動重新啟動伺服器."
         },
         "oidcSettings": {
             "title": "OIDC 第三方登入認證商",
@@ -2930,8 +2930,8 @@
             "envManagedSecret": "密鑰由環境變數管理",
             "error": "錯誤",
             "logoUploadFailed": "提供方已建立，但 Logo 上載失敗.",
-            "logo2": "{{display_name}} жЁҷиӘҢ",
-            "loadFailed": "ијүе…Ҙе””еҲ° OIDC жҸҗдҫӣж–№."
+            "logo2": "{{display_name}} 標誌",
+            "loadFailed": "載入唔到 OIDC 提供方."
         },
         "userManagement": {
             "title": "系統用戶管理面板",
@@ -2973,23 +2973,23 @@
         },
         "globalProviderSettings": {
             "globalDataProviders": "全域數據提供方",
-            "configureInstanceLevelAPIKeys": "иЁӯе®ҡйЈҹзү©еҗҢеӢ•дҪңеә«еҳ…еҜҰдҫӢеұӨзҙҡ API йҮ‘й‘°еҗҢз«Ҝй»һ.",
-            "globalProvidersAreSharedTransparently": "е…ЁеҹҹжҸҗдҫӣж–№жңғе–әжҲҗеҖӢеҜҰдҫӢе…ҘйқўйҖҸжҳҺе…ұз”ЁгҖӮз•¶з”ЁжҲ¶жҗңе°ӢйЈҹзү©жҲ–иҖ…еӢ•дҪңе—°йҷЈпјҢе•ҹеӢ•е’—еҳ…е…ЁеҹҹжҸҗдҫӣж–№пјҲдҫӢеҰӮ USDA Food DatabaseпјүжңғиҮӘеӢ•з”Ёзі»зөұйҮ‘й‘°жҹҘи©ўгҖӮз”Ё OAuth еҗҢеҖӢдәәз”ЁжҲ¶еёіжҲ¶еҳ…йҖЈз·ҡпјҲдҫӢеҰӮ GarminгҖҒStravaпјүеҶҮеҫ—е…ЁеҹҹеҠ е…Ҙ.",
-            "allowPrivateLANRecipeProviders": "е…ҒиЁұз§ҒдәәпјҸLAN йЈҹиӯңжҸҗдҫӣж–№",
-            "allowNonAdminUsersTo": "е…ҒиЁұйқһз®ЎзҗҶе“Ўз”ЁжҲ¶е°ҮиҮӘиЁӮйЈҹиӯңжҸҗдҫӣж–№пјҲдҫӢеҰӮ MealieгҖҒTandoorпјүйҖЈеҺ»з§Ғдәә LAN IP ең°еқҖ.",
-            "allowLocalProviderResponseCapture": "е…ҒиЁұжң¬ж©ҹжҸҗдҫӣж–№еӣһжҮүж“·еҸ–",
-            "addsTwoOptionsToThe": "е–әжҸҗдҫӣж–№еҗҢжӯҘе°Қи©ұжЎҶе…ҘйқўеҠ е…©еҖӢж·ЁдҝӮз®ЎзҗҶе“Ўз”Ёеҳ…йҒёй …пјҡе°ҮжҸҗдҫӣж–№еҳ…еҺҹе§ӢеӣһжҮүе„ІеӯҳеҒҡдјәжңҚеҷЁдёҠеҳ… JSON жӘ”жЎҲпјҢеҗҢеҹӢйҮҚж’ӯе—°еҖӢжӘ”жЎҲиҖҢе””дҝӮе‘јеҸ«жҸҗдҫӣж–№гҖӮзӣ®зҡ„дҝӮж”¶йӣҶжЁЈжң¬пјҢж–№дҫҝжҺ’жҹҘеҗҢжӯҘе•ҸйЎҢе—°йҷЈеҲҶдә«гҖӮж“·еҸ–е’—еҳ…жӘ”жЎҲдҝӮи·ҹжҸҗдҫӣж–№иҖҢе””дҝӮи·ҹз”ЁжҲ¶е„ІеӯҳпјҢжүҖд»Ҙж”һеҲ°жӮЁжғіиҰҒеҳ…еҳўд№ӢеҫҢе°ұиҰҒй–Ӯиҝ”е‘ўеҖӢеҠҹиғҪ.",
-            "configuredGlobalProviders": "е·ІиЁӯе®ҡеҳ…е…ЁеҹҹжҸҗдҫӣж–№"
+            "configureInstanceLevelAPIKeys": "設定食物同動作庫嘅實例層級 API 金鑰同端點.",
+            "globalProvidersAreSharedTransparently": "全域提供方會喺成個實例入面透明共用。當用戶搜尋食物或者動作嗰陣，啟動咗嘅全域提供方（例如 USDA Food Database）會自動用系統金鑰查詢。用 OAuth 同個人用戶帳戶嘅連線（例如 Garmin、Strava）冇得全域加入.",
+            "allowPrivateLANRecipeProviders": "允許私人／LAN 食譜提供方",
+            "allowNonAdminUsersTo": "允許非管理員用戶將自訂食譜提供方（例如 Mealie、Tandoor）連去私人 LAN IP 地址.",
+            "allowLocalProviderResponseCapture": "允許本機提供方回應擷取",
+            "addsTwoOptionsToThe": "喺提供方同步對話框入面加兩個淨係管理員用嘅選項：將提供方嘅原始回應儲存做伺服器上嘅 JSON 檔案，同埋重播嗰個檔案而唔係呼叫提供方。目的係收集樣本，方便排查同步問題嗰陣分享。擷取咗嘅檔案係跟提供方而唔係跟用戶儲存，所以攞到您想要嘅嘢之後就要閂返呢個功能.",
+            "configuredGlobalProviders": "已設定嘅全域提供方"
         },
         "oidcProviderDialog": {
-            "eGAuthentikGoogleKeycloak": "дҫӢеҰӮпјҡauthentikгҖҒgoogleгҖҒkeycloak",
-            "eGSparkyfitnessCom": "дҫӢеҰӮпјҡsparkyfitness.com",
-            "expertModeCustomDomain": "йҖІйҡҺжЁЎејҸпјҡиҮӘиЁӮз¶Іеҹҹ",
-            "copyFullRedirectURI": "иӨҮиЈҪе®Ңж•ҙ Redirect URI",
+            "eGAuthentikGoogleKeycloak": "例如：authentik、google、keycloak",
+            "eGSparkyfitnessCom": "例如：sparkyfitness.com",
+            "expertModeCustomDomain": "進階模式：自訂網域",
+            "copyFullRedirectURI": "複製完整 Redirect URI",
             "none": "з„Ў",
             "urlMustStartWithHttp": "⚠️ URL 一定要以 http:// 或者 https:// 開頭",
             "automaticallySyncedWithYourCurrent": "✓ 已自動同您而家嘅 URL 同步。路徑尾碼已鎖死嚟確保路由安全.",
-            "expertEnsureYourBaseURL": "⚠️ 進階：確保您嘅 Base URL 可以由互聯網入到，OIDC 供應商先會回傳數據."
+            "expertEnsureYourBaseURL": "⚠️ 進階：確保您嘅 Base URL 可以由互聯網入到，OIDC 提供方先會回傳數據."
         }
     },
     "goals": {
@@ -3107,22 +3107,22 @@
             "loadingDailyGoals": "載入緊每日目標…",
             "targetSteps": "每日步數目標",
             "goalWeight": "зӣ®жЁҷй«”йҮҚ",
-            "goalWeightDescription": "жӮЁеҳ…зӣ®жЁҷй«”йҮҚгҖӮй«”йҮҚи¶ЁеӢўең–жңғз”ЁдҪўеҡҹжҺЁз®—жӮЁе№ҫжҷӮйҒ”еҲ°.",
-            "goalWeightInputLabel": "зӣ®жЁҷй«”йҮҚпјҲ{{unit}}пјү",
-            "goalWeightInvalid": "ијёе…ҘдёҖеҖӢеӨ§йҒҺйӣ¶еҸҲе””и¶…йҒҺ {{max}} {{unit}} еҳ…й«”йҮҚ.",
+            "goalWeightDescription": "您嘅目標體重。體重趨勢圖會用佢嚟推算您幾時達到.",
+            "goalWeightInputLabel": "目標體重（{{unit}}）",
+            "goalWeightInvalid": "輸入一個大過零又唔超過 {{max}} {{unit}} 嘅體重.",
             "goalWeightSave": "儲存目標體重",
             "goalWeightClear": "жё…йҷӨ",
             "goalWeightSaved": "目標體重已儲存.",
-            "goalWeightSaveFailed": "е„Іеӯҳе””еҲ°зӣ®жЁҷй«”йҮҚ.",
-            "total": "зёҪиЁҲпјҡ{{currentMacroTotal}}%",
-            "proteinG": "иӣӢзҷҪиіӘпјҡ{{grams}} е…Ӣ",
-            "carbsG": "зўіж°ҙеҢ–еҗҲзү©пјҡ{{grams}} е…Ӣ",
-            "fatG": "и„ӮиӮӘпјҡ{{grams}} е…Ӣ",
-            "calories2": "еҚЎи·ҜйҮҢпјҲ{{energyUnitString}}пјү",
+            "goalWeightSaveFailed": "儲存唔到目標體重.",
+            "total": "總計：{{currentMacroTotal}}%",
+            "proteinG": "蛋白質：{{grams}} 克",
+            "carbsG": "碳水化合物：{{grams}} 克",
+            "fatG": "脂肪：{{grams}} 克",
+            "calories2": "卡路里（{{energyUnitString}}）",
             "protein2": "иӣӢзҷҪиіӘпјҡ",
             "carbs": "碳水化合物：",
             "fat2": "и„ӮиӮӘпјҡ",
-            "startDateToEndDate": "{{start_date}} иҮі {{end_date}}"
+            "startDateToEndDate": "{{start_date}} 至 {{end_date}}"
         },
         "mealDistribution": {
             "selectTemplate": "揀一套分配範本",
@@ -3360,13 +3360,13 @@
             "modeFixed": "固定目標",
             "modePercentage": "百分比賺返",
             "modeDevice": "裝置推算",
-            "averageDailyCalorieIntake": "е№іеқҮжҜҸж—ҘеҚЎи·ҜйҮҢж”қеҸ–пјҡ{{displayAdaptiveIntake}} {{energyUnitString}}",
-            "calculatedExpenditureTDEE": "иЁҲз®—ж¶ҲиҖ—йҮҸпјҲTDEEпјүпјҡ{{energy}} {{energyUnitString}}",
-            "adaptiveTDEEExpenditure": "иҮӘйҒ©жҮү TDEEпјҲж¶ҲиҖ—йҮҸпјү= {{energy}} {{energyUnitString}}",
-            "adaptiveManualCalorieGoal": "иҮӘйҒ©жҮүжүӢеӢ•еҚЎи·ҜйҮҢзӣ®жЁҷ = {{energy}} {{energyUnitString}}",
-            "manualDailyCalorieGoal": "жүӢеӢ•жҜҸж—ҘеҚЎи·ҜйҮҢзӣ®жЁҷ = {{energy}} {{energyUnitString}}",
-            "rmrFloor2": "RMR дёӢйҷҗпјҡ{{displayBmrVal}} {{energyUnitString}}",
-            "clinicalAbsoluteFloor": "иҮЁеәҠзө•е°ҚдёӢйҷҗпјҡ{{energy}} {{energyUnitString}}"
+            "averageDailyCalorieIntake": "平均每日卡路里攝取：{{displayAdaptiveIntake}} {{energyUnitString}}",
+            "calculatedExpenditureTDEE": "計算消耗量（TDEE）：{{energy}} {{energyUnitString}}",
+            "adaptiveTDEEExpenditure": "自適應 TDEE（消耗量）= {{energy}} {{energyUnitString}}",
+            "adaptiveManualCalorieGoal": "自適應手動卡路里目標 = {{energy}} {{energyUnitString}}",
+            "manualDailyCalorieGoal": "手動每日卡路里目標 = {{energy}} {{energyUnitString}}",
+            "rmrFloor2": "RMR 下限：{{displayBmrVal}} {{energyUnitString}}",
+            "clinicalAbsoluteFloor": "臨床絕對下限：{{energy}} {{energyUnitString}}"
         },
         "copyAllError": "複製全日失敗.",
         "copyAllFromYesterday": "由琴日複製全部",
@@ -3464,7 +3464,7 @@
             "legendEstimated": "假設時間",
             "legendCutoff": "最後 {{dose}} 毫克劑量，{{time}}",
             "empty": "今日冇記錄任何咖啡因.",
-            "atBedtime2": "иҮЁзһ“жҷӮпјҲ{{target_bedtime}}пјү"
+            "atBedtime2": "臨瞓時（{{target_bedtime}}）"
         },
         "caffeineCard": {
             "dose": "еҠ‘йҮҸ"
@@ -3474,17 +3474,17 @@
             "clear": "жё…йҷӨ",
             "clearTime": "жё…йҷӨжҷӮй–“",
             "now": "иҖҢе®¶",
-            "setToCurrentLocalTime": "иЁӯеҒҡиҖҢе®¶еҳ…з•¶ең°жҷӮй–“",
+            "setToCurrentLocalTime": "設做而家嘅當地時間",
             "autoCalculatedFromSets": "跟組數自動計",
             "heartRateRespiration": "心率同呼吸",
-            "maxHRBpm": "жңҖеӨ§еҝғзҺҮпјҲbpmпјү",
-            "avgRespirationBrpm": "е№іеқҮе‘јеҗёзҺҮпјҲbrpmпјү",
-            "maxRespirationBrpm": "жңҖеӨ§е‘јеҗёзҺҮпјҲbrpmпјү",
+            "maxHRBpm": "最大心率（bpm）",
+            "avgRespirationBrpm": "平均呼吸率（brpm）",
+            "maxRespirationBrpm": "最大呼吸率（brpm）",
             "speedCadencePower": "速度、步頻同功率",
-            "avgSpeedMS": "е№іеқҮйҖҹеәҰпјҲm/sпјү",
-            "maxSpeedMS": "жңҖеӨ§йҖҹеәҰпјҲm/sпјү",
-            "avgMovingSpeedMS": "е№іеқҮз§»еӢ•йҖҹеәҰпјҲm/sпјү",
-            "avgCadenceSpmRpm": "е№іеқҮжӯҘй »пјҲspm/rpmпјү",
+            "avgSpeedMS": "平均速度（m/s）",
+            "maxSpeedMS": "最大速度（m/s）",
+            "avgMovingSpeedMS": "平均移動速度（m/s）",
+            "avgCadenceSpmRpm": "平均步頻（spm/rpm）",
             "maxCadence": "жңҖеӨ§жӯҘй »",
             "avgPowerW": "平均功率（W）",
             "maxPowerW": "最大功率（W）",
@@ -3502,84 +3502,84 @@
             "floorsClimbed": "上咗幾多層",
             "strokeCount": "еҲ’ж°ҙж¬Ўж•ё",
             "steps": "жӯҘж•ё",
-            "estWaterLossML": "дј°иЁҲж°ҙд»ҪжөҒеӨұпјҲmLпјү",
+            "estWaterLossML": "估計水份流失（mL）",
             "timeCalorieBreakdown": "時間同卡路里明細",
             "movingTimeSec": "移動時間（秒）",
             "elapsedTimeSec": "經過時間（秒）",
-            "activeCaloriesKcal": "жҙ»еӢ•еҚЎи·ҜйҮҢпјҲkcalпјү",
-            "restingCaloriesKcal": "йқңжӯўеҚЎи·ҜйҮҢпјҲkcalпјү",
+            "activeCaloriesKcal": "活動卡路里（kcal）",
+            "restingCaloriesKcal": "靜止卡路里（kcal）",
             "trainingLoadPerformance": "訓練負荷同表現",
             "trainingLoad": "иЁ“з·ҙиІ иҚ·",
-            "aerobicEffect05": "её¶ж°§ж•ҲжһңпјҲ0-5пјү",
-            "anaerobicEffect05": "з„Ўж°§ж•ҲжһңпјҲ0-5пјү",
-            "vO2MaxEstimate": "VO2 Max дј°з®—",
+            "aerobicEffect05": "帶氧效果（0-5）",
+            "anaerobicEffect05": "無氧效果（0-5）",
+            "vO2MaxEstimate": "VO2 Max 估算",
             "environmentGear": "環境同裝備",
             "weatherCondition": "еӨ©ж°ЈзӢҖжіҒ",
             "eGSunny": "例如：天晴",
             "windSpeedMS": "風速（m/s）",
             "humidity": "濕度（%）",
             "gearName": "裝備名稱",
-            "eGNikePegasus40": "дҫӢеҰӮпјҡNike Pegasus 40",
+            "eGNikePegasus40": "例如：Nike Pegasus 40",
             "exercise": "еӢ•дҪң",
             "avgTempC": "平均溫度（°C）",
             "weatherTempC": "天氣溫度（°C）"
         },
         "editMealFoodEntryDialog": {
-            "modifyTheFoodsAndQuantities": "дҝ®ж”№е‘ўзӯҶе·ІиЁҳйҢ„йӨҗиҶіиЁҳйҢ„е…Ҙйқўеҳ…йЈҹзү©еҗҢд»ҪйҮҸ.",
-            "noteChangesMadeHereWill": "жіЁж„Ҹпјҡе‘ўеәҰеҒҡеҳ…ж”№еӢ•еҸӘжңғеҪұйҹҝйЈҹзү©ж—ҘиЁҳе…Ҙйқўе‘ўзӯҶзү№е®ҡиЁҳйҢ„пјҢе””жңғеҪұйҹҝдё»йӨҗиҶізҜ„жң¬.",
-            "editLoggedMeal2": "з·ЁијҜе·ІиЁҳйҢ„йӨҗиҶіпјҡ{{name}}"
+            "modifyTheFoodsAndQuantities": "修改呢筆已記錄餐膳記錄入面嘅食物同份量.",
+            "noteChangesMadeHereWill": "注意：呢度做嘅改動只會影響食物日記入面呢筆特定記錄，唔會影響主餐膳範本.",
+            "editLoggedMeal2": "編輯已記錄餐膳：{{name}}"
         },
         "exerciseCard": {
-            "session": "{{plan_name}} иЁ“з·ҙ",
+            "session": "{{plan_name}} 訓練",
             "loadingExercises": "載入緊動作…",
-            "of": "пјҲ{{sessionIndex}}пјҸ{{totalSessions}}пјү"
+            "of": "（{{sessionIndex}}／{{totalSessions}}）"
         },
         "logExerciseEntryDialog": {
             "startTimeOptional": "開始時間（可選）",
             "clear": "жё…йҷӨ",
             "clearTime": "жё…йҷӨжҷӮй–“",
             "now": "иҖҢе®¶",
-            "setToCurrentLocalTime": "иЁӯеҒҡиҖҢе®¶еҳ…з•¶ең°жҷӮй–“"
+            "setToCurrentLocalTime": "設做而家嘅當地時間"
         },
         "logMealDialog": {
-            "logMeal": "иЁҳйҢ„йӨҗиҶіпјҡ{{name}}",
-            "adjustThePortionSizeOr": "иӘҝж•ҙе‘ўйӨҗиЁҳйҢ„еҳ…д»ҪйҮҸжҲ–иҖ…йЈҹжқҗ."
+            "logMeal": "記錄餐膳：{{name}}",
+            "adjustThePortionSizeOr": "調整呢餐記錄嘅份量或者食材."
         },
         "mealCard": {
-            "gi": "GIпјҡ{{giValue}}"
+            "gi": "GI：{{giValue}}"
         },
         "miniNutritionTrends": {
             "loadingCharts": "載入緊圖表…",
-            "noTrendDataAvailableFor": "йҒҺеҺ» 14 ж—ҘеҶҮи¶ЁеӢўж•ёж“ҡ",
+            "noTrendDataAvailableFor": "過去 14 日冇趨勢數據",
             "n14DayNutritionTrends": "14 日營養趨勢"
         },
         "nutrientsGrid": {
-            "calories2": "еҚЎи·ҜйҮҢпјҲ{{energyUnitString}}пјү",
-            "baseValuesPer2": "еҹәзӨҺж•ёеҖјпјҲжҜҸ {{baseVariant}}пјүпјҡ",
-            "gProtein2": "иӣӢзҷҪиіӘ {{protein}} е…Ӣ",
-            "gCarbs2": "зўіж°ҙеҢ–еҗҲзү© {{carbs}} е…Ӣ",
-            "gFat2": "и„ӮиӮӘ {{fat}} е…Ӣ"
+            "calories2": "卡路里（{{energyUnitString}}）",
+            "baseValuesPer2": "基礎數值（每 {{baseVariant}}）：",
+            "gProtein2": "蛋白質 {{protein}} 克",
+            "gCarbs2": "碳水化合物 {{carbs}} 克",
+            "gFat2": "脂肪 {{fat}} 克"
         },
         "workoutPlaybackExercisesList": {
-            "addSetFor": "зӮә {{exercise_name}} еҠ дёҖзө„"
+            "addSetFor": "為 {{exercise_name}} 加一組"
         },
         "workoutPlaybackSetRow": {
-            "completeSet": "е®ҢжҲҗз¬¬ {{setNumber}} зө„",
-            "selectSetFor": "жҸҖ {{exerciseName}} еҳ…з¬¬ {{setNumber}} зө„",
-            "typeSet": "ијёе…Ҙз¬¬ {{setNumber}} зө„еҳ…йЎһеһӢ",
-            "repsSet": "з¬¬ {{setNumber}} зө„ж¬Ўж•ё",
-            "weightSet": "з¬¬ {{setNumber}} зө„йҮҚйҮҸ",
-            "editRestForSet": "з·ЁијҜз¬¬ {{setNumber}} зө„еҳ…дј‘жҒҜ",
-            "toggleNotesForSet": "й–Ӣй—ңз¬¬ {{setNumber}} зө„еҳ…еӮҷиЁ»",
-            "removeSetFor": "з§»йҷӨ {{exerciseName}} еҳ…з¬¬ {{setNumber}} зө„",
-            "setNotes": "з¬¬ {{setNumber}} зө„еӮҷиЁ»"
+            "completeSet": "完成第 {{setNumber}} 組",
+            "selectSetFor": "揀 {{exerciseName}} 嘅第 {{setNumber}} 組",
+            "typeSet": "輸入第 {{setNumber}} 組嘅類型",
+            "repsSet": "第 {{setNumber}} 組次數",
+            "weightSet": "第 {{setNumber}} 組重量",
+            "editRestForSet": "編輯第 {{setNumber}} 組嘅休息",
+            "toggleNotesForSet": "開關第 {{setNumber}} 組嘅備註",
+            "removeSetFor": "移除 {{exerciseName}} 嘅第 {{setNumber}} 組",
+            "setNotes": "第 {{setNumber}} 組備註"
         },
         "workoutPlaybackSummary": {
             "startTime": "й–Ӣе§ӢжҷӮй–“",
             "clear": "жё…йҷӨ",
             "clearTime": "жё…йҷӨжҷӮй–“",
             "now": "иҖҢе®¶",
-            "setToCurrentLocalTime": "иЁӯеҒҡиҖҢе®¶еҳ…з•¶ең°жҷӮй–“"
+            "setToCurrentLocalTime": "設做而家嘅當地時間"
         },
         "exerciseEntryDisplay": {
             "wger": "Wger",
@@ -3628,7 +3628,7 @@
             "noWaterCreditHint": "呢杯飲品設定咗唔計水份",
             "logTime": "йЈІз”ЁжҷӮй–“",
             "zeroPercentWater": "0% 水份",
-            "todaySDrinks": "д»Ҡж—ҘйЈІе“ҒпјҲ{{logEntriesCount}}пјү"
+            "todaySDrinks": "今日飲品（{{logEntriesCount}}）"
         },
         "copyFoodEntryDialog": {
             "title": "複製飲食紀錄",
@@ -3727,16 +3727,16 @@
             "after": "д№ӢеҫҢ",
             "noWeight": "未記錄體重",
             "logWeight": "иЁҳйҢ„й«”йҮҚ",
-            "viewFull": "зқҮ {{label}} еҺҹе°әеҜё",
-            "pickDay": "жҸҖ {{label}} е—°ж—Ҙ",
+            "viewFull": "睇 {{label}} 原尺寸",
+            "pickDay": "揀 {{label}} 嗰日",
             "compareTitle": "比較進度相片",
-            "compareDescription": "жҸҖд»»дҪ•е…©ж—ҘпјҢзқҮеҗ“е‘ўеҖӢи§’еәҰй»һи®Ҡ.",
-            "compareEmpty": "иҮіе°‘иҰҒе–әе…©ж—ҘеҠ е‘ўеҖӢи§’еәҰеҳ…зӣёпјҢе…ҲеҸҜд»ҘжҜ”ијғ.",
-            "daysApart_other": "зӣёйҡ” {{count}} ж—Ҙ",
+            "compareDescription": "揀任何兩日，睇吓呢個角度點變.",
+            "compareEmpty": "至少要喺兩日加呢個角度嘅相，先可以比較.",
+            "daysApart_other": "相隔 {{count}} 日",
             "timelapseTitle": "йҖІеәҰзё®жҷӮ",
-            "timelapseDescription": "зқҮдёҖеҖӢи§’еәҰйҡЁжҷӮй–“й»һи®ҠгҖӮз”Ёж–№еҗ‘йҚөйҖҗж јзқҮ.",
-            "timelapseEmpty": "иҮіе°‘иҰҒе–әе…©ж—ҘеҠ е‘ўеҖӢи§’еәҰеҳ…зӣёпјҢе…ҲеҸҜд»Ҙж’ӯзё®жҷӮ.",
-            "timelapseEmptyRange": "е—°еҖӢзҜ„еңҚе…Ҙйқўе‘ўеҖӢи§’еәҰеҳ…зӣёе””еӨ е…©ејө.",
+            "timelapseDescription": "睇一個角度隨時間點變。用方向鍵逐格睇.",
+            "timelapseEmpty": "至少要喺兩日加呢個角度嘅相，先可以播縮時.",
+            "timelapseEmptyRange": "嗰個範圍入面呢個角度嘅相唔夠兩張.",
             "rangeLabel": "ж’ӯж”ҫ",
             "range30d": "最近 30 日",
             "range3m": "最近 3 個月",
@@ -3797,7 +3797,7 @@
         "mindfulnessSection": {
             "hrvMs": "HRV {{hrv_rmssd}} ms"
         },
-        "failedToCalculateBodyFatWithError": "иЁҲе””еҲ°й«”и„Ӯпјҡ{{error}}"
+        "failedToCalculateBodyFatWithError": "計唔到體脂：{{error}}"
     },
     "sleepTimelineEditor": {
         "sleepTimeline": "瞓覺階段時間軸",
@@ -4134,10 +4134,10 @@
         "mealNotesPlaceholder": "例如：食譜，或者您嘅做法",
         "templateNotes": "關於呢個餐膳",
         "unit": "е–®дҪҚ",
-        "totalAmount2": "зёҪйҮҸпјҲ{{servingUnit}}пјү",
-        "defaultServingSize2": "й җиЁӯд»ҪйҮҸпјҲ{{servingUnit}}пјү",
-        "totalDishAmount2": "иҸңејҸзёҪйҮҸпјҲ{{servingUnit}}пјү",
-        "quantityConsumed": "йЈҹе’—е№ҫеӨҡпјҲ{{servingUnit}}пјү"
+        "totalAmount2": "總量（{{servingUnit}}）",
+        "defaultServingSize2": "預設份量（{{servingUnit}}）",
+        "totalDishAmount2": "菜式總量（{{servingUnit}}）",
+        "quantityConsumed": "食咗幾多（{{servingUnit}}）"
     },
     "mealPlanCalendar": {
         "title": "定期餐膳計劃",
@@ -4198,13 +4198,13 @@
         "proteinShort": "蛋白：",
         "carbsShort": "碳水：",
         "fatShort": "脂肪：",
-        "pProteing": "иӣӢзҷҪиіӘпјҡ{{protein}} е…Ӣ",
-        "cCarbsg": "зўіж°ҙпјҡ{{carbs}} е…Ӣ",
-        "fFatg": "и„ӮиӮӘпјҡ{{fat}} е…Ӣ",
-        "totalKcalPGC": "<strong>зёҪиЁҲпјҡ</strong>{{totalCalories}} kcal | иӣӢзҷҪиіӘпјҡ{{totalProtein}} е…Ӣ | зўіж°ҙпјҡ{{totalCarbs}} е…Ӣ | и„ӮиӮӘпјҡ{{totalFat}} е…Ӣ",
-        "pTotalProteing": "иӣӢзҷҪиіӘпјҡ{{totalProtein}} е…Ӣ",
-        "cTotalCarbsg": "зўіж°ҙпјҡ{{totalCarbs}} е…Ӣ",
-        "fTotalFatg": "и„ӮиӮӘпјҡ{{totalFat}} е…Ӣ"
+        "pProteing": "蛋白質：{{protein}} 克",
+        "cCarbsg": "碳水：{{carbs}} 克",
+        "fFatg": "脂肪：{{fat}} 克",
+        "totalKcalPGC": "<strong>總計：</strong>{{totalCalories}} kcal | 蛋白質：{{totalProtein}} 克 | 碳水：{{totalCarbs}} 克 | 脂肪：{{totalFat}} 克",
+        "pTotalProteing": "蛋白質：{{totalProtein}} 克",
+        "cTotalCarbsg": "碳水：{{totalCarbs}} 克",
+        "fTotalFatg": "脂肪：{{totalFat}} 克"
     },
     "workoutPresetForm": {
         "createTitle": "建立全新訓練套裝",
@@ -4419,14 +4419,14 @@
             "bpm": "次(bpm)/分鐘",
             "spm": "步(spm)/分鐘",
             "min": "分鐘 (Mins)",
-            "distance2": "и·қйӣўпјҲ{{distanceUnit}}пјү",
-            "cumulativeDistance2": "зҙҜиЁҲи·қйӣўпјҲ{{distanceUnit}}пјү",
-            "avgPace2": "е№іеқҮй…ҚйҖҹпјҲ{{distanceUnit}}пјү",
-            "avgMovingPace2": "е№іеқҮз§»еӢ•й…ҚйҖҹпјҲ{{distanceUnit}}пјү",
-            "avgHRBpm": "е№іеқҮеҝғзҺҮпјҲbpmпјү",
-            "maxHRBpm": "жңҖеӨ§еҝғзҺҮпјҲbpmпјү",
-            "avgCadenceSpm": "е№іеқҮжӯҘй »пјҲspmпјү",
-            "maxCadenceSpm": "жңҖеӨ§жӯҘй »пјҲspmпјү"
+            "distance2": "距離（{{distanceUnit}}）",
+            "cumulativeDistance2": "累計距離（{{distanceUnit}}）",
+            "avgPace2": "平均配速（{{distanceUnit}}）",
+            "avgMovingPace2": "平均移動配速（{{distanceUnit}}）",
+            "avgHRBpm": "平均心率（bpm）",
+            "maxHRBpm": "最大心率（bpm）",
+            "avgCadenceSpm": "平均步頻（spm）",
+            "maxCadenceSpm": "最大步頻（spm）"
         },
         "noMapDataAvailable": "冇任何路線地圖數據.",
         "activityReport": {
@@ -4643,13 +4643,13 @@
             "drinksRemaining_other": "仲剩 {{count}} 杯",
             "drinksOver_other": "超咗 {{count}} 杯",
             "upcomingDay": "仲未",
-            "stdDrinksG": "жЁҷжә–йЈІй…’е–®дҪҚпјҲ{{total_g}} е…Ӣпјү",
-            "limitG": "дёҠйҷҗпјҡ{{limit_standard_drinks}}пјҲ<span>{{limit_g}}</span> е…Ӣпјү"
+            "stdDrinksG": "標準飲酒單位（{{total_g}} 克）",
+            "limitG": "上限：{{limit_standard_drinks}}（<span>{{limit_g}}</span> 克）"
         },
         "hydration": {
             "title": "水份",
-            "hydration": "ж°ҙд»ҪпјҲ{{water_display_unit}}пјү",
-            "avg": "е№іеқҮпјҡ{{average}} {{water_display_unit}}"
+            "hydration": "水份（{{water_display_unit}}）",
+            "avg": "平均：{{average}} {{water_display_unit}}"
         },
         "failedToLoadAlcoholWeek": "載入唔到每星期嘅酒精數據.",
         "failedToLoadHydrationTrend": "載入唔到水份趨勢數據.",
@@ -4658,20 +4658,20 @@
         "failedToLoadWorkoutHeatmap": "無法載入訓練熱力圖數據.",
         "symptomsTab": "症狀",
         "weightTrend": "и¶ЁеӢў",
-        "weightTrendSummary": "и¶ЁеӢў {{weight}}",
-        "weightTrendRate": "жҜҸйҖұ {{rate}}",
-        "weightGoalForecast": "зӣ®жЁҷй җжё¬ {{date}}",
+        "weightTrendSummary": "趨勢 {{weight}}",
+        "weightTrendRate": "每週 {{rate}}",
+        "weightGoalForecast": "目標預測 {{date}}",
         "medicationLogTable": {
-            "prn": "пјҲ{{prn}} PRNпјү"
+            "prn": "（{{prn}} PRN）"
         },
         "prProgressionChart": {
-            "noPRDataAvailableFor": "е‘ўж®өжңҹй–“еҶҮ PR ж•ёж“ҡ.",
+            "noPRDataAvailableFor": "呢段期間冇 PR 數據.",
             "prProgression": "PR 進展"
         },
         "respirationCard": {
-            "belowNormalBreathingRateAt": "йқңжӯўе‘јеҗёзҺҮдҪҺйҒҺжӯЈеёё.",
-            "healthyBreathingRateForAdults": "жҲҗдәәйқңжӯўжҷӮеҳ…еҒҘеә·е‘јеҗёзҺҮ.",
-            "aboveNormalRestingBreathingRate": "йқңжӯўе‘јеҗёзҺҮй«ҳйҒҺжӯЈеёё.",
+            "belowNormalBreathingRateAt": "靜止呼吸率低過正常.",
+            "healthyBreathingRateForAdults": "成人靜止時嘅健康呼吸率.",
+            "aboveNormalRestingBreathingRate": "靜止呼吸率高過正常.",
             "brpm": "brpm"
         },
         "sleepRespirationCard": {
@@ -4679,18 +4679,18 @@
         },
         "stressChart": {
             "loadingStressData": "載入緊壓力數據…",
-            "noStressDataAvailableFor": "е‘ўж®өжңҹй–“еҶҮеЈ“еҠӣж•ёж“ҡ."
+            "noStressDataAvailableFor": "呢段期間冇壓力數據."
         },
         "workoutHeatmap": {
             "tu": "дәҢ",
             "th": "еӣӣ"
         },
-        "avg": "е№іеқҮпјҡ{{formattedAverage}} {{unit}}",
+        "avg": "平均：{{formattedAverage}} {{unit}}",
         "primary2": "пјҲдё»иҰҒпјү",
-        "totalEaten2": "зёҪж”қеҸ–пјҡ{{displayTotalEaten}} {{unitStr}}",
-        "totalGoal2": "зёҪзӣ®жЁҷпјҡ{{displayTotalGoal}} {{unitStr}}",
-        "avg2": "е№іеқҮпјҡ{{formattedAverageEaten}} {{unitStr}}",
-        "normalAdultRestingRange12": "жҲҗдәәйқңжӯўжӯЈеёёзҜ„еңҚпјҡ12-20 brpm",
+        "totalEaten2": "總攝取：{{displayTotalEaten}} {{unitStr}}",
+        "totalGoal2": "總目標：{{displayTotalGoal}} {{unitStr}}",
+        "avg2": "平均：{{formattedAverageEaten}} {{unitStr}}",
+        "normalAdultRestingRange12": "成人靜止正常範圍：12-20 brpm",
         "weightTrendRateAndForecast": "趨勢 {{weight}} · 每週 {{rate}} · 目標預測 {{date}}",
         "weightTrendWithRate": "趨勢 {{weight}} · 每週 {{rate}}",
         "weightTrendWithForecast": "趨勢 {{weight}} · 目標預測 {{date}}"
@@ -4729,9 +4729,9 @@
         "overnightSeries": "夜間序列",
         "overnightHrvSeriesDesc": "每 5 分鐘一次嘅整夜 HRV 序列",
         "spotTests": "抽查測試",
-        "avg": "е№іеқҮпјҡ{{avg}} {{unit}}",
-        "min": "жңҖдҪҺпјҡ{{min}}",
-        "max": "жңҖй«ҳпјҡ{{max}}"
+        "avg": "平均：{{avg}} {{unit}}",
+        "min": "最低：{{min}}",
+        "max": "最高：{{max}}"
     },
     "sleepSummary": {
         "title": "尋晚瞓覺總覽",
@@ -4848,10 +4848,10 @@
         "personalRecordsTitle": "個人紀錄",
         "prProgressionTitle": "PR 進展",
         "repsVsWeightTitle": "次數對比重量",
-        "repsOn": "пјҲ{{reps}} дёӢпјҢ{{weight}}пјҢ{{date}}пјү",
-        "repsOn2": "пјҲ{{reps}} дёӢпјҢ{{date}}пјү",
-        "reps2": "{{reps}} дёӢ",
-        "weightOnDate": "пјҲ{{weight}}пјҢ{{date}}пјү"
+        "repsOn": "（{{reps}} 下，{{weight}}，{{date}}）",
+        "repsOn2": "（{{reps}} 下，{{date}}）",
+        "reps2": "{{reps}} 下",
+        "weightOnDate": "（{{weight}}，{{date}}）"
     },
     "reportsTables": {
         "foodDiaryTable": "飲食日記表格",
@@ -4886,15 +4886,15 @@
         "bmr": "BMR基礎代謝率",
         "allTables": "所有表格",
         "showTable": "顯示表格",
-        "weight2": "й«”йҮҚпјҲ{{weightUnit}}пјү",
-        "neck2": "й ёеңҚпјҲ{{measurementUnit}}пјү",
-        "waist2": "и…°еңҚпјҲ{{measurementUnit}}пјү",
-        "hips2": "й«–еңҚпјҲ{{measurementUnit}}пјү",
-        "height2": "иә«й«ҳпјҲ{{measurementUnit}}пјү",
-        "muscleMass2": "иӮҢиӮүйҮҸпјҲ{{weightUnit}}пјү",
-        "boneMass2": "йӘЁйҮҸпјҲ{{weightUnit}}пјү",
-        "bmr2": "BMRпјҲ{{energyUnitString}}пјү",
-        "value": "ж•ёеҖјпјҲ{{value}}пјү"
+        "weight2": "體重（{{weightUnit}}）",
+        "neck2": "頸圍（{{measurementUnit}}）",
+        "waist2": "腰圍（{{measurementUnit}}）",
+        "hips2": "髖圍（{{measurementUnit}}）",
+        "height2": "身高（{{measurementUnit}}）",
+        "muscleMass2": "肌肉量（{{weightUnit}}）",
+        "boneMass2": "骨量（{{weightUnit}}）",
+        "bmr2": "BMR（{{energyUnitString}}）",
+        "value": "數值（{{value}}）"
     },
     "moodReports": {
         "title": "心情走勢報告",
@@ -5032,7 +5032,7 @@
         "csvHeadersTimeAsleep": "瞓覺時長",
         "sleepHistoryTableTitle": "瞓覺歷史同分析",
         "sessionCount": "{{count}} 次記錄",
-        "sleepHypnogram2": "зһ“иҰәең–иӯң - {{date}}"
+        "sleepHypnogram2": "瞓覺圖譜 - {{date}}"
     },
     "workoutReport": {
         "workoutStats": "訓練數據總覽",
@@ -5062,11 +5062,11 @@
         "time": "時間",
         "totalTime": "時間",
         "volume": "訓練量",
-        "sets2": "зө„ж•ёпјҲ{{setListCount}}пјү",
-        "exercises2": "еӢ•дҪңпјҲ{{groupedExercisesCount}}пјү",
-        "weight2": "йҮҚйҮҸпјҲ{{weightUnit}}пјү",
+        "sets2": "組數（{{setListCount}}）",
+        "exercises2": "動作（{{groupedExercisesCount}}）",
+        "weight2": "重量（{{weightUnit}}）",
         "pRs": "PR - {{exerciseName}}",
-        "reps2": "{{reps}} дёӢ"
+        "reps2": "{{reps}} 下"
     },
     "exerciseHistoryDisplay": {
         "loadingHistory": "載入舊紀錄中…",
@@ -5294,15 +5294,15 @@
         "dataSource": "數據來源",
         "refreshFromSource": "由來源重新整理",
         "portions": "е…·еҗҚд»ҪйҮҸ",
-        "portionNutritionCalculated": "зҮҹйӨҠи·ҹеҸғиҖғе–®дҪҚиЁҲгҖӮж”№е—°еҖӢе–®дҪҚе°ұжңғж”№зҮҹйӨҠ.",
+        "portionNutritionCalculated": "營養跟參考單位計。改嗰個單位就會改營養.",
         "addPortion": "еҠ д»ҪйҮҸ",
-        "portionsHelp": "з”Ёе·ІзҹҘйҮҚйҮҸжҲ–иҖ…й«”з©Қе®ҡзҫ©еҢ…иЈқгҖҒеҲҮзүҮжҲ–иҖ…е…¶д»–д»ҪйҮҸгҖӮзҮҹйӨҠжңғз”ұе‘ўеҖӢйЈҹзү©иЁҲпјӣжӮЁд»Қз„¶еҸҜд»ҘиЁҳйҢ„д»»дҪ•е…ӢжҲ–иҖ…жҜ«еҚҮж•ёйҮҸ.",
-        "portionsNeedReference": "иҰҒеҠ е’—йҮҚйҮҸжҲ–иҖ…й«”з©Қе–®дҪҚпјҢе…ҲиЁҲеҲ°д»ҪйҮҸ.",
+        "portionsHelp": "用已知重量或者體積定義包裝、切片或者其他份量。營養會由呢個食物計；您仍然可以記錄任何克或者毫升數量.",
+        "portionsNeedReference": "要加咗重量或者體積單位，先計到份量.",
         "portionName": "д»ҪйҮҸеҗҚзЁұ",
         "portionNamePlaceholder": "例如：包裝",
         "portionWeight": "重量（g）",
         "portionVolume": "體積（ml）",
-        "portionInvalid": "ијёе…ҘдёҖеҖӢзҚЁзү№еҳ…д»ҪйҮҸеҗҚзЁұеҗҢжӯЈж•ёж•ёйҮҸгҖӮе‘ўеҖӢеҗҚзЁұеҗҢж•ёйҮҸеҳ…д»ҪйҮҸеҸҜиғҪе·Із¶“еӯҳеңЁ.",
+        "portionInvalid": "輸入一個獨特嘅份量名稱同正數數量。呢個名稱同數量嘅份量可能已經存在.",
         "addPortionToFood": "加份量入呢個食材",
         "hidePortionDetails": "收埋詳細資料",
         "editPortionDetails": "編輯單位",
@@ -5447,9 +5447,9 @@
         "noDataDesc": "即刻開始記錄瞓覺情況，就會解鎖呢一頁嘅深度分析功能.",
         "baselineCalculated": "個人基礎瞓覺需求值計算完畢",
         "baselineError": "運算個人瞓覺基準數值嘅時候發生錯誤",
-        "method2": "ж–№жі•пјҡ{{method}}",
-        "workdays2": "е·ҘдҪңж—Ҙпјҡ{{workdaysAvailable}}пјҸ{{workdaysNeeded}}",
-        "freeDays": "дј‘жҒҜж—Ҙпјҡ{{freedaysAvailable}}пјҸ{{freedaysNeeded}}"
+        "method2": "方法：{{method}}",
+        "workdays2": "工作日：{{workdaysAvailable}}／{{workdaysNeeded}}",
+        "freeDays": "休息日：{{freedaysAvailable}}／{{freedaysNeeded}}"
     },
     "onboarding": {
         "completeSetup": "完成全部初始設定",
@@ -5471,53 +5471,53 @@
         "skip": "и·ійҒҺ",
         "continue": "з№јзәҢ",
         "sexQuestion": "您嘅性別係？",
-        "sexDescription": "з”ЁеҡҹиЁҲжӮЁеҳ…еҹәзӨҺд»Ји¬қзҺҮ.",
+        "sexDescription": "用嚟計您嘅基礎代謝率.",
         "male": "з”·",
         "female": "еҘі",
-        "goalQuestion": "жӮЁеҳ…дё»иҰҒзӣ®жЁҷдҝӮе’©пјҹ",
+        "goalQuestion": "您嘅主要目標係咩？",
         "loseWeight": "жёӣзЈ…",
         "maintainWeight": "維持體重",
         "gainWeight": "еўһзЈ…",
         "currentWeightQuestion": "您而家幾重？",
         "heightQuestion": "жӮЁе№ҫй«ҳпјҹ",
-        "enterInUnit": "з”Ё {{unit}} ијёе…Ҙ.",
+        "enterInUnit": "用 {{unit}} 輸入.",
         "birthDateQuestion": "您幾時出世？",
-        "birthDateDescription": "е№ҙйҪЎдҝӮж–°йҷід»Ји¬қеҳ…дёҖеҖӢйҮҚиҰҒеӣ зҙ .",
+        "birthDateDescription": "年齡係新陳代謝嘅一個重要因素.",
         "selectDateFormat": "揀日期格式",
         "pickDate": "жҸҖж—Ҙжңҹ",
         "bodyFatQuestion": "估算您嘅體脂",
         "bodyFatDescription": "肉眼估算就夠.",
         "bodyFatLow": "低（<15%）",
-        "bodyFatMedium": "дёӯпјҲ15-25%пјү",
-        "bodyFatHigh": "й«ҳпјҲ25-35%пјү",
+        "bodyFatMedium": "中（15-25%）",
+        "bodyFatHigh": "高（25-35%）",
         "bodyFatVeryHigh": "極高（>35%）",
-        "targetWeightQuestion": "жӮЁеҳ…зӣ®жЁҷй«”йҮҚдҝӮе№ҫеӨҡпјҹ",
+        "targetWeightQuestion": "您嘅目標體重係幾多？",
         "targetWeightDescription": "您嘅最終目標.",
-        "mealsQuestion": "жӮЁе№іжҷӮдёҖж—ҘйЈҹе№ҫеӨҡйӨҗпјҹ",
-        "mealsPerDay": "жҜҸж—Ҙ {{number}} йӨҗ",
-        "preparingPlan": "ж•ҙз·ҠжӮЁеҳ…еҖӢдәәеҢ–иЁҲеҠғвҖҰ",
-        "preparingPlanDescription": "и·ҹз·ҠжӮЁеҳ…зҚЁзү№иіҮж–ҷиЁҲз·Ҡ.",
+        "mealsQuestion": "您平時一日食幾多餐？",
+        "mealsPerDay": "每日 {{number}} 餐",
+        "preparingPlan": "整緊您嘅個人化計劃…",
+        "preparingPlanDescription": "跟緊您嘅獨特資料計緊.",
         "foodSources": {
             "title": "連線食材資料庫",
-            "description": "еҸҜйҒёпјҢдҪҶеҠ е’— USDA еҗҢ FatSecret е…ҘжӮЁеҳ…жҗңе°ӢпјҢжңғжҜ”й җиЁӯеҳ… Open Food Facts еҘҪжҳҺйЎҜеҘҪеӨҡгҖӮжӮЁд№ӢеҫҢйҡЁжҷӮеҸҜд»Ҙе–әиЁӯе®ҡеәҰеҠ жҲ–иҖ…ж”№.",
-            "getUsdaKey": "ж”һе…ҚиІ» API йҮ‘й‘°",
-            "usdaKey": "USDA API йҮ‘й‘°",
+            "description": "可選，但加咗 USDA 同 FatSecret 入您嘅搜尋，會比預設嘅 Open Food Facts 好明顯好多。您之後隨時可以喺設定度加或者改.",
+            "getUsdaKey": "攞免費 API 金鑰",
+            "usdaKey": "USDA API 金鑰",
             "getFatsecretCredentials": "攞 API 憑證",
             "fatsecretClientId": "FatSecret Client ID",
             "fatsecretClientSecret": "FatSecret Client Secret",
-            "fatsecretHelp": "з”Ёе„ҖиЎЁжқҝе…Ҙйқўеҳ… REST API OAuth 2.0 жҶ‘иӯүпјҢе””еҘҪз”Ё OAuth 1.0 Consumer KeyпјҸSecretгҖӮFatSecret дәҰйғҪиҰҒжұӮжӮЁе–әдҪўе“Ӣй–ӢзҷјиҖ…е„ҖиЎЁжқҝеәҰе°ҮжӮЁеҳ…е…¬й–Ӣ IP еҠ е…ҘзҷҪеҗҚе–®гҖӮе‘ўеҖӢжңҖеӨҡеҸҜиғҪиҰҒ 24 еҖӢйҗҳе…Ҳз”ҹж•Ҳ.",
-            "missingField": "е°‘е’— FatSecret ж¬„дҪҚ",
-            "missingFieldDescription": "еҗҢжҷӮијёе…Ҙ FatSecret Client ID еҗҢ Client SecretпјҢжҲ–иҖ…е…©жЁЈйғҪз•ҷз©әеҡҹи·ійҒҺ.",
+            "fatsecretHelp": "用儀表板入面嘅 REST API OAuth 2.0 憑證，唔好用 OAuth 1.0 Consumer Key／Secret。FatSecret 亦都要求您喺佢哋開發者儀表板度將您嘅公開 IP 加入白名單。呢個最多可能要 24 個鐘先生效.",
+            "missingField": "少咗 FatSecret 欄位",
+            "missingFieldDescription": "同時輸入 FatSecret Client ID 同 Client Secret，或者兩樣都留空嚟跳過.",
             "notSignedIn": "жңӘзҷ»е…Ҙ",
-            "notSignedInDescription": "йҮҚж–°зҷ»е…Ҙе…ҲеҸҜд»Ҙе„ІеӯҳйЈҹжқҗдҫҶжәҗ."
+            "notSignedInDescription": "重新登入先可以儲存食材來源."
         },
         "plan": {
             "title": "您嘅個人計劃",
-            "goalDescription": "жә–еӮҷеҘҪйҒ”жҲҗжӮЁ {{goal}} еҳ…зӣ®жЁҷ.",
+            "goalDescription": "準備好達成您 {{goal}} 嘅目標.",
             "medicalDisclaimerTitle": "醫療免責聲明：",
-            "medicalDisclaimer": "е‘ўеҖӢиЁҲеҠғеҸӘдҝӮдҝҫжӮЁеҸғиҖғпјҢе””жҮүи©ІеҸ–д»Је°ҲжҘӯйҶ«зҷӮе»әиӯ°гҖӮе°ҚйЈІйЈҹжҲ–иҖ…йҒӢеӢ•зҝ’ж…ЈеҒҡйҮҚеӨ§ж”№и®Ҡд№ӢеүҚпјҢи«Ӣе…Ҳе•Ҹеҗ“жӮЁеҳ…йҶ«з”ҹжҲ–иҖ…иЁ»еҶҠзҮҹйӨҠеё«.",
+            "medicalDisclaimer": "呢個計劃只係俾您參考，唔應該取代專業醫療建議。對飲食或者運動習慣做重大改變之前，請先問吓您嘅醫生或者註冊營養師.",
             "dailyCalorieBudget": "每日卡路里預算",
-            "perDay": "{{unit}}пјҸж—Ҙ",
+            "perDay": "{{unit}}／日",
             "baseBmr": "基礎 BMR：",
             "calorieBuyback": "卡路里回補：",
             "on": "й–Ӣ",
@@ -5526,26 +5526,26 @@
         },
         "diet": {
             "title": "йЈІйЈҹж–№ејҸ",
-            "description": "жҸҖй җиЁӯйЈІйЈҹжҲ–иҖ…иҮӘиЁӮжӮЁеҳ…е·ЁйҮҸзҮҹйӨҠзҙ жҜ”дҫӢ",
-            "macroSplit": "{{carbs}}% зўіж°ҙпјҸ{{protein}}% иӣӢзҷҪиіӘпјҸ{{fat}}% и„ӮиӮӘ",
-            "customMacroSplit": "иҮӘиЁӮе·ЁйҮҸзҮҹйӨҠзҙ жҜ”дҫӢ",
+            "description": "揀預設飲食或者自訂您嘅巨量營養素比例",
+            "macroSplit": "{{carbs}}% 碳水／{{protein}}% 蛋白質／{{fat}}% 脂肪",
+            "customMacroSplit": "自訂巨量營養素比例",
             "total": "зёҪиЁҲпјҡ",
             "carbohydrates": "碳水化合物",
             "protein": "иӣӢзҷҪиіӘ",
             "fat": "и„ӮиӮӘ",
-            "adjustHint": "иӘҝж•ҙжҲ–иҖ…ијёе…Ҙж•ёеҖјгҖӮе·Іи§ЈйҺ–еҳ…е·ЁйҮҸзҮҹйӨҠзҙ жңғиҮӘеӢ•иӘҝж•ҙеҡҹз¶ӯжҢҒзёҪж•ё 100%.",
+            "adjustHint": "調整或者輸入數值。已解鎖嘅巨量營養素會自動調整嚟維持總數 100%.",
             "templates": {
                 "balanced": {
                     "name": "еқҮиЎЎ",
-                    "description": "йҒ©еҗҲдёҖиҲ¬еҒҘеә·еҳ…еқҮиЎЎзҮҹйӨҠ"
+                    "description": "適合一般健康嘅均衡營養"
                 },
                 "mediterranean": {
                     "name": "地中海飲食",
-                    "description": "еҗ«еҒҘеә·и„ӮиӮӘпјҢе°ҚеҝғиҮҹеҘҪ"
+                    "description": "含健康脂肪，對心臟好"
                 },
                 "dash": {
                     "name": "DASH",
-                    "description": "з”ЁйЈІйЈҹж–№жі•еҡҹжҺ§еҲ¶й«ҳиЎҖеЈ“"
+                    "description": "用飲食方法嚟控制高血壓"
                 },
                 "atkins": {
                     "name": "йҳҝзү№йҮ‘ж–Ҝ",
@@ -5561,7 +5561,7 @@
                 },
                 "custom": {
                     "name": "иҮӘиЁӮ",
-                    "description": "иЁӯе®ҡжӮЁиҮӘе·ұеҳ…зҷҫеҲҶжҜ”"
+                    "description": "設定您自己嘅百分比"
                 }
             }
         },
@@ -5571,14 +5571,14 @@
             "mineralCalculation": "礦物質計算",
             "vitaminCalculation": "維他命計算",
             "sugarRecommendation": "糖分建議",
-            "description": "е‘ўе•ІиЁӯе®ҡжҺ§еҲ¶жӮЁеҳ…зҮҹйӨҠзӣ®жЁҷй»һжЁЈиЁҲгҖӮжӮЁд№ӢеҫҢйҡЁжҷӮеҸҜд»Ҙе–әиЁӯе®ҡеәҰж”№.",
+            "description": "呢啲設定控制您嘅營養目標點樣計。您之後隨時可以喺設定度改.",
             "fatAlgorithms": {
-                "AHA_GUIDELINES": "AHA жҢҮеј•пјҲеҝғиҮҹеҒҘеә·пјү",
+                "AHA_GUIDELINES": "AHA 指引（心臟健康）",
                 "KETO_ADAPTED": "з”ҹй…®йҒ©жҮү",
                 "MEDITERRANEAN": "地中海飲食"
             },
             "mineralAlgorithms": {
-                "RDA_STANDARD": "RDA жЁҷжә–пјҲдҫқе№ҙйҪЎпјҸжҖ§еҲҘпјү",
+                "RDA_STANDARD": "RDA 標準（依年齡／性別）",
                 "ATHLETIC_PERFORMANCE": "運動表現",
                 "HEART_HEALTH": "心臟健康（低鈉）"
             },
@@ -5588,13 +5588,13 @@
                 "ANTIOXIDANT_FOCUS": "抗氧化重點"
             },
             "sugarAlgorithms": {
-                "WHO_GUIDELINES": "WHO жҢҮеј•пјҲдёҠйҷҗ 10%пјү",
-                "LOW_CARB_KETO": "дҪҺзўіпјҸз”ҹй…®пјҲдёҠйҷҗ 5%пјү",
-                "BALANCED": "еқҮиЎЎпјҲдёҠйҷҗ 15%пјү"
+                "WHO_GUIDELINES": "WHO 指引（上限 10%）",
+                "LOW_CARB_KETO": "低碳／生酮（上限 5%）",
+                "BALANCED": "均衡（上限 15%）"
             }
         },
         "nutrients": {
-            "dailyMacroTargets": "жҜҸж—Ҙе·ЁйҮҸзҮҹйӨҠзҙ зӣ®жЁҷ",
+            "dailyMacroTargets": "每日巨量營養素目標",
             "carbohydrates": "碳水化合物",
             "protein": "иӣӢзҷҪиіӘ",
             "fats": "и„ӮиӮӘ",
@@ -5626,37 +5626,37 @@
             "mineralCalculation": "礦物質計算",
             "vitaminCalculation": "維他命計算",
             "sugarRecommendation": "糖分建議",
-            "theseSettingsControlHowYour": "е‘ўе•ІиЁӯе®ҡжҺ§еҲ¶жӮЁеҳ…зҮҹйӨҠзӣ®жЁҷй»һжЁЈиЁҲгҖӮжӮЁд№ӢеҫҢйҡЁжҷӮеҸҜд»Ҙе–әиЁӯе®ҡеәҰж”№."
+            "theseSettingsControlHowYour": "呢啲設定控制您嘅營養目標點樣計。您之後隨時可以喺設定度改."
         },
         "dietApproach": {
             "dietApproach": "йЈІйЈҹж–№ејҸ",
-            "chooseAPresetDietOr": "жҸҖй җиЁӯйЈІйЈҹжҲ–иҖ…иҮӘиЁӮжӮЁеҳ…е·ЁйҮҸзҮҹйӨҠзҙ жҜ”дҫӢ",
-            "carbsProteinFat": "{{carbsPercentage}}% зўіж°ҙпјҸ{{proteinPercentage}}% иӣӢзҷҪиіӘпјҸ{{fatPercentage}}% и„ӮиӮӘ",
-            "customMacroSplit": "иҮӘиЁӮе·ЁйҮҸзҮҹйӨҠзҙ жҜ”дҫӢ",
+            "chooseAPresetDietOr": "揀預設飲食或者自訂您嘅巨量營養素比例",
+            "carbsProteinFat": "{{carbsPercentage}}% 碳水／{{proteinPercentage}}% 蛋白質／{{fatPercentage}}% 脂肪",
+            "customMacroSplit": "自訂巨量營養素比例",
             "carbohydrates": "碳水化合物",
             "protein": "иӣӢзҷҪиіӘ",
             "fat": "и„ӮиӮӘ",
-            "adjustOrTypeInA": "иӘҝж•ҙжҲ–иҖ…ијёе…Ҙж•ёеҖјгҖӮе·Іи§ЈйҺ–еҳ…е·ЁйҮҸзҮҹйӨҠзҙ жңғиҮӘеӢ•иӘҝж•ҙеҡҹз¶ӯжҢҒзёҪж•ё 100%.",
-            "total2": "зёҪиЁҲпјҡ{{carbs}}%"
+            "adjustOrTypeInA": "調整或者輸入數值。已解鎖嘅巨量營養素會自動調整嚟維持總數 100%.",
+            "total2": "總計：{{carbs}}%"
         },
         "foodSourcesStep": {
-            "missingFatSecretField": "е°‘е’— FatSecret ж¬„дҪҚ",
-            "enterBothTheFatSecretClient": "еҗҢжҷӮијёе…Ҙ FatSecret Client ID еҗҢ Client SecretпјҢжҲ–иҖ…е…©жЁЈйғҪз•ҷз©әеҡҹи·ійҒҺ.",
+            "missingFatSecretField": "少咗 FatSecret 欄位",
+            "enterBothTheFatSecretClient": "同時輸入 FatSecret Client ID 同 Client Secret，或者兩樣都留空嚟跳過.",
             "notSignedIn": "жңӘзҷ»е…Ҙ",
-            "pleaseSignInAgainTo": "йҮҚж–°зҷ»е…Ҙе…ҲеҸҜд»Ҙе„ІеӯҳйЈҹжқҗдҫҶжәҗ.",
+            "pleaseSignInAgainTo": "重新登入先可以儲存食材來源.",
             "connectFoodDatabases": "連線食材資料庫",
-            "optionalButAddingUSDAAnd": "еҸҜйҒёпјҢдҪҶеҠ е’— USDA еҗҢ FatSecret е…ҘжӮЁеҳ…жҗңе°ӢпјҢжңғжҜ”й җиЁӯеҳ… Open Food Facts еҘҪжҳҺйЎҜеҘҪеӨҡгҖӮжӮЁд№ӢеҫҢйҡЁжҷӮеҸҜд»Ҙе–әиЁӯе®ҡеәҰеҠ жҲ–иҖ…ж”№.",
+            "optionalButAddingUSDAAnd": "可選，但加咗 USDA 同 FatSecret 入您嘅搜尋，會比預設嘅 Open Food Facts 好明顯好多。您之後隨時可以喺設定度加或者改.",
             "usdaFoodDataCentral": "USDA FoodData Central",
-            "getAFreeAPIKey": "ж”һе…ҚиІ» API йҮ‘й‘°",
-            "usdaAPIKey": "USDA API йҮ‘й‘°",
+            "getAFreeAPIKey": "攞免費 API 金鑰",
+            "usdaAPIKey": "USDA API 金鑰",
             "getAPICredentials": "攞 API 憑證",
             "fatSecretClientID": "FatSecret Client ID",
             "fatSecretClientSecret": "FatSecret Client Secret",
             "continue": "з№јзәҢ",
-            "useTheRESTAPIOAuth": "з”Ёе„ҖиЎЁжқҝе…Ҙйқўеҳ…<strong>REST API OAuth 2.0</strong>жҶ‘иӯүпјҢе””еҘҪз”Ё OAuth 1.0 Consumer KeyпјҸSecretгҖӮFatSecret дәҰйғҪиҰҒжұӮжӮЁе–әдҪўе“Ӣй–ӢзҷјиҖ…е„ҖиЎЁжқҝеәҰе°ҮжӮЁеҳ…е…¬й–Ӣ IP еҠ е…ҘзҷҪеҗҚе–®гҖӮе‘ўеҖӢжңҖеӨҡеҸҜиғҪиҰҒ 24 еҖӢйҗҳе…Ҳз”ҹж•Ҳ."
+            "useTheRESTAPIOAuth": "用儀表板入面嘅<strong>REST API OAuth 2.0</strong>憑證，唔好用 OAuth 1.0 Consumer Key／Secret。FatSecret 亦都要求您喺佢哋開發者儀表板度將您嘅公開 IP 加入白名單。呢個最多可能要 24 個鐘先生效."
         },
         "nutrientGoals": {
-            "dailyMacroTargets": "жҜҸж—Ҙе·ЁйҮҸзҮҹйӨҠзҙ зӣ®жЁҷ",
+            "dailyMacroTargets": "每日巨量營養素目標",
             "fiber": "膳食纖維",
             "fatBreakdown": "и„ӮиӮӘеҲҶи§Ј",
             "saturatedFat": "飽和脂肪",
@@ -5678,56 +5678,56 @@
             "waterGoal": "ж°ҙд»Ҫзӣ®жЁҷ",
             "exerciseDuration": "運動時間",
             "exerciseCalories": "運動卡路里",
-            "carbohydratesShare": "зўіж°ҙеҢ–еҗҲзү©пјҲ{{percent}}%пјү",
-            "proteinShare": "иӣӢзҷҪиіӘпјҲ{{percent}}%пјү",
-            "fatsShare": "и„ӮиӮӘпјҲ{{percent}}%пјү"
+            "carbohydratesShare": "碳水化合物（{{percent}}%）",
+            "proteinShare": "蛋白質（{{percent}}%）",
+            "fatsShare": "脂肪（{{percent}}%）"
         },
         "onBoardingSteps": {
             "whatIsYourSex": "您嘅性別係？",
-            "usedToCalculateYourBase": "з”ЁеҡҹиЁҲжӮЁеҳ…еҹәзӨҺд»Ји¬қзҺҮ.",
+            "usedToCalculateYourBase": "用嚟計您嘅基礎代謝率.",
             "male": "з”·",
             "female": "еҘі",
-            "whatIsYourPrimaryGoal": "жӮЁеҳ…дё»иҰҒзӣ®жЁҷдҝӮе’©пјҹ",
+            "whatIsYourPrimaryGoal": "您嘅主要目標係咩？",
             "loseWeight": "жёӣзЈ…",
             "maintainWeight": "維持體重",
             "gainWeight": "еўһзЈ…",
             "whatIsYourCurrentWeight": "您而家幾重？",
-            "enterIn": "з”Ё {{weightUnit}} ијёе…Ҙ.",
+            "enterIn": "用 {{weightUnit}} 輸入.",
             "stLb": "st/lb",
             "continue": "з№јзәҢ",
             "whatIsYourHeight": "жӮЁе№ҫй«ҳпјҹ",
-            "enterIn2": "з”Ё {{heightUnit}} ијёе…Ҙ.",
+            "enterIn2": "用 {{heightUnit}} 輸入.",
             "ftIn": "ft/in",
             "whenWereYouBorn": "您幾時出世？",
-            "ageIsAKeyFactor": "е№ҙйҪЎдҝӮж–°йҷід»Ји¬қеҳ…дёҖеҖӢйҮҚиҰҒеӣ зҙ .",
+            "ageIsAKeyFactor": "年齡係新陳代謝嘅一個重要因素.",
             "selectFormat": "揀日期格式",
-            "mmDdYyyy1225": "MM/dd/yyyyпјҲ12/25/2024пјү",
-            "ddMMYyyy2512": "dd/MM/yyyyпјҲ25/12/2024пјү",
-            "ddMMMYyyy25Dec": "dd-MMM-yyyyпјҲ25-Dec-2024пјү",
-            "yyyyMMDd202412": "yyyy-MM-ddпјҲ2024-12-25пјү",
-            "mmmDdYyyyDec25": "MMM dd, yyyyпјҲDec 25, 2024пјү",
+            "mmDdYyyy1225": "MM/dd/yyyy（12/25/2024）",
+            "ddMMYyyy2512": "dd/MM/yyyy（25/12/2024）",
+            "ddMMMYyyy25Dec": "dd-MMM-yyyy（25-Dec-2024）",
+            "yyyyMMDd202412": "yyyy-MM-dd（2024-12-25）",
+            "mmmDdYyyyDec25": "MMM dd, yyyy（Dec 25, 2024）",
             "estimateYourBodyFat": "估算您嘅體脂",
             "aVisualEstimateIsSufficient": "肉眼估算就夠.",
-            "whatIsYourTargetWeight": "жӮЁеҳ…зӣ®жЁҷй«”йҮҚдҝӮе№ҫеӨҡпјҹ",
+            "whatIsYourTargetWeight": "您嘅目標體重係幾多？",
             "yourUltimateGoal": "您嘅最終目標.",
-            "howManyMealsDoYou": "жӮЁе№іжҷӮдёҖж—ҘйЈҹе№ҫеӨҡйӨҗпјҹ",
-            "mealsPerDay": "жҜҸж—Ҙ {{num}} йӨҗ",
-            "preparingYourPersonalizedPlan": "ж•ҙз·ҠжӮЁеҳ…еҖӢдәәеҢ–иЁҲеҠғвҖҰ",
-            "crunchingTheNumbersBasedOn": "и·ҹз·ҠжӮЁеҳ…зҚЁзү№иіҮж–ҷиЁҲз·Ҡ."
+            "howManyMealsDoYou": "您平時一日食幾多餐？",
+            "mealsPerDay": "每日 {{num}} 餐",
+            "preparingYourPersonalizedPlan": "整緊您嘅個人化計劃…",
+            "crunchingTheNumbersBasedOn": "跟緊您嘅獨特資料計緊."
         },
         "personalPlan": {
             "yourPersonalPlan": "您嘅個人計劃",
             "nutrientGoals": "營養目標",
-            "readyToReachYourGoal2": "жә–еӮҷеҘҪйҒ”жҲҗжӮЁ {{primaryGoal}} еҳ…зӣ®жЁҷ.",
-            "medicalDisclaimerThisPlanIs": "<strong>йҶ«зҷӮе…ҚиІ¬иҒІжҳҺпјҡ</strong>е‘ўеҖӢиЁҲеҠғеҸӘдҝӮдҝҫжӮЁеҸғиҖғпјҢе””жҮүи©ІеҸ–д»Је°ҲжҘӯйҶ«зҷӮе»әиӯ°гҖӮе°ҚйЈІйЈҹжҲ–иҖ…йҒӢеӢ•зҝ’ж…ЈеҒҡйҮҚеӨ§ж”№и®Ҡд№ӢеүҚпјҢи«Ӣе…Ҳе•Ҹеҗ“жӮЁеҳ…йҶ«з”ҹжҲ–иҖ…иЁ»еҶҠзҮҹйӨҠеё«."
+            "readyToReachYourGoal2": "準備好達成您 {{primaryGoal}} 嘅目標.",
+            "medicalDisclaimerThisPlanIs": "<strong>醫療免責聲明：</strong>呢個計劃只係俾您參考，唔應該取代專業醫療建議。對飲食或者運動習慣做重大改變之前，請先問吓您嘅醫生或者註冊營養師."
         },
         "personalPlanHeader": {
             "dailyCalorieBudget": "每日卡路里預算",
             "baseBMR": "基礎 BMR：",
             "on": "й–Ӣ",
             "off": "й—ң",
-            "calorieBuyback2": "еҚЎи·ҜйҮҢеӣһиЈңпјҡ<span>{{addBurnedCalories}}</span>",
-            "perDay": "{{unit}}пјҸж—Ҙ"
+            "calorieBuyback2": "卡路里回補：<span>{{addBurnedCalories}}</span>",
+            "perDay": "{{unit}}／日"
         }
     },
     "cycle": {
@@ -5817,10 +5817,10 @@
                 "periodDescDynamic": "計算方式：",
                 "periodTitle": "下次經期開始",
                 "title": "預測係點樣計？",
-                "calculatedAsDays": "иЁҲз®—ж–№ејҸпјҡ<span>{{lastStartFormatted}} + {{cycleLength}} ж—Ҙ = {{nextStartFormatted}}</span>",
-                "calculatedAsDays2": "иЁҲз®—ж–№ејҸпјҡ<span>{{nextStartFormatted}} - {{lutealPhase}} ж—Ҙ = {{ovulationFormatted}}</span>",
-                "calculatedAsDaysDaysDays": "иЁҲз®—ж–№ејҸпјҡ<span>{{cycleLength}} ж—Ҙ - {{lutealPhase}} ж—Ҙ = {{follicularLength}} ж—Ҙ</span>пјҲ{{lastStartFormatted}} иҮі {{ovulationFormatted}}пјү.",
-                "calculatedAs5DaysTo": "иЁҲз®—ж–№ејҸпјҡ<span>{{ovulationFormatted}} - 5 ж—ҘиҮі {{ovulationFormatted}} + 1 ж—Ҙ</span>пјҲ{{fertileStartFormatted}} иҮі {{fertileEndFormatted}}пјү."
+                "calculatedAsDays": "計算方式：<span>{{lastStartFormatted}} + {{cycleLength}} 日 = {{nextStartFormatted}}</span>",
+                "calculatedAsDays2": "計算方式：<span>{{nextStartFormatted}} - {{lutealPhase}} 日 = {{ovulationFormatted}}</span>",
+                "calculatedAsDaysDaysDays": "計算方式：<span>{{cycleLength}} 日 - {{lutealPhase}} 日 = {{follicularLength}} 日</span>（{{lastStartFormatted}} 至 {{ovulationFormatted}}）.",
+                "calculatedAs5DaysTo": "計算方式：<span>{{ovulationFormatted}} - 5 日至 {{ovulationFormatted}} + 1 日</span>（{{fertileStartFormatted}} 至 {{fertileEndFormatted}}）."
             },
             "ttcModeActive": "備孕模式已啟用"
         },
@@ -5912,7 +5912,7 @@
             "thu": "四",
             "tue": "二",
             "wed": "三",
-            "flow": "жөҒйҮҸпјҡ{{flow_level}}",
+            "flow": "流量：{{flow_level}}",
             "mucus": "еҲҶжіҢзү©пјҡ",
             "energy": "зІҫеҠӣпјҡ"
         },
@@ -5946,7 +5946,7 @@
             "higher": "更高",
             "insight": "您嘅 {{metric}} 喺 {{phase}} 階段傾向{{dir}}（同您嘅平均值相差 {{delta}}{{unit}}）.",
             "lower": "更低",
-            "byCyclePhase": "{{label}} и·ҹйҖұжңҹйҡҺж®ө"
+            "byCyclePhase": "{{label}} 跟週期階段"
         },
         "history": {
             "addSuccess": "週期已加入",
@@ -6005,8 +6005,8 @@
             "symptoms": "按階段統計嘅症狀頻率",
             "symptomsDesc": "跨您記錄嘅週期匯總嘅發生次數.",
             "yearlySpend": "年度支出（估算）",
-            "productsAverage": "е№іеқҮ {{avgProductsPerPeriod}} д»¶з”ўе“Ғ",
-            "needed2": "йңҖиҰҒ {{count}} д»¶"
+            "productsAverage": "平均 {{avgProductsPerPeriod}} 件產品",
+            "needed2": "需要 {{count}} 件"
         },
         "ttc": {
             "chartLegend": "較高嘅柱狀表示距離排卵更近嘅日子，懷孕機率更高.",
@@ -6040,15 +6040,15 @@
             "testReady": "您已經到 {{dpo}} DPO！而家記錄嘅驗孕結果非常準.請用晨起第一次尿液攞最佳濃度.",
             "twoWeekWaitTitle": "兩星期等待（TWW）",
             "ovulationEstimateBasis": " 基於 ",
-            "ovulationIsEstimatedOnBased": "жҺ’еҚөж—Ҙдј°иЁҲдҝӮ <strong>{{ovulationDate}}</strong>пјҢж №ж“ҡ <span>{{basis}}</span>."
+            "ovulationIsEstimatedOnBased": "排卵日估計係 <strong>{{ovulationDate}}</strong>，根據 <span>{{basis}}</span>."
         },
         "cycleHistoryList": {
-            "dCycle": "{{cycle_length}} ж—ҘйҖұжңҹ",
-            "dPeriod": "{{period_length}} ж—Ҙз¶“жңҹ"
+            "dCycle": "{{cycle_length}} 日週期",
+            "dPeriod": "{{period_length}} 日經期"
         },
         "cycleInsights": {
-            "total": "е…ұ {{total}} ж¬Ў",
-            "logs": "{{phase}}пјҡ{{val}} зӯҶиЁҳйҢ„",
+            "total": "共 {{total}} 次",
+            "logs": "{{phase}}：{{val}} 筆記錄",
             "menstrual": "жңҲз¶“жңҹ",
             "fertile": "жҳ“еӯ•жңҹ",
             "ovulation": "жҺ’еҚөжңҹ",
@@ -6068,13 +6068,13 @@
             "showProduct": "顯示產品",
             "deleteProduct": "еҲӘйҷӨз”ўе“Ғ",
             "productName": "з”ўе“ҒеҗҚзЁұ",
-            "eGOrganicTampon": "дҫӢеҰӮпјҡжңүж©ҹиЎӣз”ҹжЈүжўқ",
+            "eGOrganicTampon": "例如：有機衛生棉條",
             "capacityMl": "容量（ml）",
-            "decrease": "жёӣе°‘ {{displayName}}",
-            "increase": "еўһеҠ  {{displayName}}",
+            "decrease": "減少 {{displayName}}",
+            "increase": "增加 {{displayName}}",
             "energyLevel": "精力程度",
-            "displayNameCapacityMlml": "{{displayName}}пјҲ<span>{{capacityMl}}</span>mlпјү",
-            "energy": "зІҫеҠӣпјҡ{{energy}}"
+            "displayNameCapacityMlml": "{{displayName}}（<span>{{capacityMl}}</span>ml）",
+            "energy": "精力：{{energy}}"
         }
     },
     "chat": {
@@ -6104,18 +6104,18 @@
             "start": "еҸЈиҝ°иЁҠжҒҜ",
             "stop": "еҒңжӯўеҸЈиҝ°",
             "cancel": "еҸ–ж¶ҲеҸЈиҝ°",
-            "unsupported": "е‘ўеҖӢзҖҸиҰҪеҷЁе””ж”ҜжҸҙе‘ўеҖӢиӘһйҹіжЁЎејҸгҖӮеҺ»иӘһйҹіиЁӯе®ҡжҸҖ AI иҪүйҢ„пјҢжҲ–иҖ…иҪүз”Ёз¬¬дәҢеҖӢзҖҸиҰҪеҷЁгҖӮAI дёҖе®ҡе””жңғиҮӘеӢ•й–Ӣ.",
-            "permission": "еҺ»зҖҸиҰҪеҷЁиЁӯе®ҡеәҰз•ҖеҖӢе’ӘжӮЁжҺӮпјҢе…ҲеҸҜд»ҘеҸЈиҝ°иЁҠжҒҜ.",
-            "tooLarge": "йҢ„йҹіи¶…йҒҺе’— 10 MBгҖӮи©Ұеҗ“и¬ӣзҹӯе•І.",
-            "noSpeech": "иҒҪе””еҲ°д»»дҪ•иӘһйҹігҖӮжӮЁд»ҪиҚүзЁҝеҶҮи®ҠйҒҺ.",
-            "failed": "иӘһйҹіијёе…ҘеӨұж•—е’—гҖӮжӮЁд»ҪиҚүзЁҝеҶҮи®ҠйҒҺгҖӮжӘўжҹҘеҗ“йҖЈз·ҡеҗҢиӘһйҹіиЁӯе®ҡпјҢеҶҚи©ҰеӨҡж¬Ў.",
+            "unsupported": "呢個瀏覽器唔支援呢個語音模式。去語音設定揀 AI 轉錄，或者轉用第二個瀏覽器。AI 一定唔會自動開.",
+            "permission": "去瀏覽器設定度畀個咪您掂，先可以口述訊息.",
+            "tooLarge": "錄音超過咗 10 MB。試吓講短啲.",
+            "noSpeech": "聽唔到任何語音。您份草稿冇變過.",
+            "failed": "語音輸入失敗咗。您份草稿冇變過。檢查吓連線同語音設定，再試多次.",
             "listening": "聽緊…",
             "starting": "開緊…",
             "processing": "轉錄緊…"
         },
         "sparkyChat": {
-            "sparkyAICoach": "Sparky AI ж•ҷз·ҙ",
-            "yourPersonalAINutritionAnd": "жӮЁе°Ҳеұ¬еҳ… AI зҮҹйӨҠеҗҢеҒҘиә«ж•ҷз·ҙ.",
+            "sparkyAICoach": "Sparky AI 教練",
+            "yourPersonalAINutritionAnd": "您專屬嘅 AI 營養同健身教練.",
             "selectProvider": "жҸҖжҸҗдҫӣж–№",
             "clearChatHistory": "清走聊天記錄",
             "expandChat": "еұ•й–ӢиҒҠеӨ©",
@@ -6124,7 +6124,7 @@
         },
         "sparkyChatInterface": {
             "chatError": "иҒҠеӨ©йҢҜиӘӨ",
-            "failedToProcessMessagePlease": "иҷ•зҗҶе””еҲ°иЁҠжҒҜгҖӮжӘўжҹҘеҗ“жӮЁеҳ… AI жңҚеӢҷиЁӯе®ҡ."
+            "failedToProcessMessagePlease": "處理唔到訊息。檢查吓您嘅 AI 服務設定."
         }
     },
     "foodCsvImport": {
@@ -6169,20 +6169,20 @@
         "providerVerified": "已核實嘅食材",
         "removeNutrient": "移除 {{nutrient}}",
         "aliasChipInput": {
-            "remove": "з§»йҷӨ {{alias}}"
+            "remove": "移除 {{alias}}"
         },
         "customNutrientDialog": {
-            "nutrientNameAndUnitAre": "иҰҒеЎ«зҮҹйӨҠзҙ еҗҚзЁұеҗҢе–®дҪҚ.",
+            "nutrientNameAndUnitAre": "要填營養素名稱同單位.",
             "customNutrientCreated": "已建立自訂營養素",
-            "failedToCreateCustomNutrient": "е»әз«Ӣе””еҲ°иҮӘиЁӮзҮҹйӨҠзҙ гҖӮеҶҚи©ҰеӨҡж¬Ў.",
+            "failedToCreateCustomNutrient": "建立唔到自訂營養素。再試多次.",
             "addCustomNutrient": "加入自訂營養素",
-            "setTheDisplayUnitAnd": "иЁӯе®ҡйЎҜзӨәе–®дҪҚпјҢеҗҢеҹӢжҮүи©ІеҢҜе…Ҙе‘ўеҖӢзҮҹйӨҠзҙ еҳ…жҸҗдҫӣж–№еҗҚзЁұпјҲеҲҘеҗҚпјү.",
+            "setTheDisplayUnitAnd": "設定顯示單位，同埋應該匯入呢個營養素嘅提供方名稱（別名）.",
             "nutrientName": "營養素名稱",
             "eGMagnesium": "дҫӢеҰӮпјҡйҺӮ",
             "unit": "е–®дҪҚ",
             "providerAliases": "提供方別名",
-            "typeANamePressEnter": "жү“еҖӢеҗҚеҶҚж’і Enter",
-            "nutrientAdded": "гҖҢ{{name}}гҖҚе·ІеҠ е…Ҙ.",
+            "typeANamePressEnter": "打個名再撳 Enter",
+            "nutrientAdded": "「{{name}}」已加入.",
             "eGMgGIU": "例如：mg、µg、IU",
             "adding": "加入緊…"
         },
@@ -6195,18 +6195,18 @@
             "openMenu": "й–ӢйҒёе–®"
         },
         "mealUnitSelector": {
-            "selectTheQuantityForThis": "жҸҖе‘ўйӨҗе–әйӨҗиҶіиЁҲеҠғе…Ҙйқўеҳ…д»ҪйҮҸ.",
+            "selectTheQuantityForThis": "揀呢餐喺餐膳計劃入面嘅份量.",
             "quantity": "д»ҪйҮҸ",
             "unit": "е–®дҪҚ",
-            "nutritionFor": "{{quantity}} {{displayUnit}}еҳ…зҮҹйӨҠпјҡ",
+            "nutritionFor": "{{quantity}} {{displayUnit}}嘅營養：",
             "updateMeal": "жӣҙж–°йӨҗиҶі",
             "addToMealPlan": "加入餐膳計劃",
-            "gProtein2": "иӣӢзҷҪиіӘ {{protein}} е…Ӣ",
-            "gCarbs2": "зўіж°ҙеҢ–еҗҲзү© {{carbs}} е…Ӣ",
-            "gFat2": "и„ӮиӮӘ {{fat}} е…Ӣ",
-            "editMeal": "з·ЁијҜ {{name}}",
-            "addMealToPlan": "е°Ү {{name}} еҠ е…ҘйӨҗиҶіиЁҲеҠғ",
-            "editQuantityFor": "з·ЁијҜ {{name}} еҳ…д»ҪйҮҸ."
+            "gProtein2": "蛋白質 {{protein}} 克",
+            "gCarbs2": "碳水化合物 {{carbs}} 克",
+            "gFat2": "脂肪 {{fat}} 克",
+            "editMeal": "編輯 {{name}}",
+            "addMealToPlan": "將 {{name}} 加入餐膳計劃",
+            "editQuantityFor": "編輯 {{name}} 嘅份量."
         }
     },
     "nutrientGoalDirection": {
@@ -6327,13 +6327,13 @@
         "validationError": "冇嘢可以匯入",
         "bodyMeasurements": "иә«й«”йҮҸеәҰ",
         "sleep": "зһ“иҰә",
-        "optionalStageEventsJSONLeave": "еҸҜйҒёеҳ… stage_events JSONпјҲз•ҷз©әе°ұж·ЁдҝӮжңүжҢҒзәҢжҷӮй–“пјүгҖӮйҡҺж®өйЎһеһӢпјҡdeepгҖҒlightгҖҒremгҖҒawake",
+        "optionalStageEventsJSONLeave": "可選嘅 stage_events JSON（留空就淨係有持續時間）。階段類型：deep、light、rem、awake",
         "vitalsCustom": "生命體徵同自訂",
-        "acceptedVitalTypesOrUse": "жҺҘеҸ—еҳ…з”ҹе‘Ҫй«”еҫөйЎһеһӢпјҲжҲ–иҖ…з”Ёд»»дҪ•иҮӘиЁӮйЎһеҲҘеҗҚзЁұпјү",
+        "acceptedVitalTypesOrUse": "接受嘅生命體徵類型（或者用任何自訂類別名稱）",
         "dailyActivity": "жҜҸж—Ҙжҙ»еӢ•",
         "acceptedActivityTypes": "接受嘅活動類型",
         "hydration": "ж°ҙд»Ҫ",
-        "dailyWaterIntakeValuesAre": "жҜҸж—Ҙж°ҙд»Ҫж”қеҸ–гҖӮж•ёеҖјжңғиҪүеҒҡжҜ«еҚҮ.",
+        "dailyWaterIntakeValuesAre": "每日水份攝取。數值會轉做毫升.",
         "mood": "еҝғжғ…"
     },
     "diaryCsvImport": {
@@ -6412,9 +6412,9 @@
         "none": "無",
         "confirmMapping": "確認",
         "cancel": "取消",
-        "imported": "е·ІеҢҜе…Ҙпјҡ{{processedCount}}",
-        "skipped": "е·Іи·ійҒҺпјҡ{{skippedCount}}",
-        "failed": "еӨұж•—пјҡ{{errorsCount}}"
+        "imported": "已匯入：{{processedCount}}",
+        "skipped": "已跳過：{{skippedCount}}",
+        "failed": "失敗：{{errorsCount}}"
     },
     "auth": {
         "agreeAndEnter": "我同意並進入示範",
@@ -6459,8 +6459,8 @@
         "signOutFailed": "登出失敗",
         "signOut": "登出",
         "almostThere": "差唔多喇！",
-        "securingYourFamilyDashboard": "дҝқиӯ·з·ҠжӮЁеҳ…е®¶еәӯе„ҖиЎЁжқҝвҖҰ",
-        "sparkyFitnessLogo": "SparkyFitness жЁҷиӘҢ",
+        "securingYourFamilyDashboard": "保護緊您嘅家庭儀表板…",
+        "sparkyFitnessLogo": "SparkyFitness 標誌",
         "warning": "иӯҰе‘Ҡ",
         "authenticationFailed": "驗證失敗",
         "signIn": "зҷ»е…Ҙ",
@@ -6472,18 +6472,18 @@
         "enterYourPassword": "輸入您嘅密碼",
         "forgotPassword": "唔記得密碼？",
         "signingIn": "зҷ»е…Ҙз·ҠвҖҰ",
-        "orSignInWith": "жҲ–иҖ…з”Ёд»ҘдёӢж–№ејҸзҷ»е…Ҙ",
-        "signInWithPasskey": "з”Ё Passkey зҷ»е…Ҙ",
+        "orSignInWith": "或者用以下方式登入",
+        "signInWithPasskey": "用 Passkey 登入",
         "requestMagicLink": "攞魔法連結",
-        "logo": "{{display_name}} жЁҷиӘҢ",
-        "signInWithOIDC": "з”Ё OIDC зҷ»е…Ҙ",
+        "logo": "{{display_name}} 標誌",
+        "signInWithOIDC": "用 OIDC 登入",
         "fullName": "е…ЁеҗҚ",
         "enterYourFullName": "輸入您嘅全名",
         "createAPassword": "е»әз«ӢеҜҶзўј",
         "creatingAccount": "建立緊帳戶…",
         "magicLinkRequestDialog": {
             "requestMagicLink": "攞魔法連結",
-            "enterYourEmailToReceive": "ијёе…ҘжӮЁеҳ…йӣ»йғөпјҢж”¶дёҖеҖӢзҷ»е…Ҙз”Ёеҳ…йӯ”жі•йҖЈзөҗ.",
+            "enterYourEmailToReceive": "輸入您嘅電郵，收一個登入用嘅魔法連結.",
             "email": "йӣ»йғө",
             "enterYourEmail": "輸入您嘅電郵",
             "sending": "傳送緊…",
@@ -6491,13 +6491,13 @@
         },
         "mfaChallenge": {
             "codeSent": "驗證碼已傳送",
-            "aVerificationCodeHasBeen": "й©—иӯүзўје·ІеӮіе’—еҺ»жӮЁеҳ…йӣ»йғө.",
+            "aVerificationCodeHasBeen": "驗證碼已傳咗去您嘅電郵.",
             "failedToSendCode": "傳送唔到驗證碼.",
             "invalidEmailCode": "電郵驗證碼無效."
         },
         "resetPassword": {
-            "invalidOrMissingPasswordReset": "еҜҶзўјйҮҚиЁӯж¬Ҡжқ–з„Ўж•ҲжҲ–иҖ…е””иҰӢе’—.",
-            "sparkyFitnessLogo": "SparkyFitness жЁҷиӘҢ",
+            "invalidOrMissingPasswordReset": "密碼重設權杖無效或者唔見咗.",
+            "sparkyFitnessLogo": "SparkyFitness 標誌",
             "setYourNewPassword": "設定您嘅新密碼.",
             "newPassword": "ж–°еҜҶзўј",
             "enterNewPassword": "輸入新密碼",
@@ -6508,15 +6508,15 @@
             "backToSignIn": "иҝ”еҺ»зҷ»е…Ҙ"
         },
         "forgotPasswordPage": {
-            "sparkyFitnessLogo": "SparkyFitness жЁҷиӘҢ",
-            "enterYourEmailToReceive": "ијёе…ҘжӮЁеҳ…йӣ»йғөпјҢж”¶дёҖеҖӢеҜҶзўјйҮҚиЁӯйҖЈзөҗ.",
+            "sparkyFitnessLogo": "SparkyFitness 標誌",
+            "enterYourEmailToReceive": "輸入您嘅電郵，收一個密碼重設連結.",
             "email": "йӣ»йғө",
             "enterYourEmail": "輸入您嘅電郵",
             "sending": "傳送緊…",
             "sendResetLink": "傳送重設連結",
             "backToSignIn": "иҝ”еҺ»зҷ»е…Ҙ"
         },
-        "builtForFamiliesPoweredBy": "為家庭而建。由 AI 驅動。一齊追蹤食材、健身、水份同健康."
+        "builtForFamiliesPoweredBy": "為家庭而建。由 AI 驅動。一齊追蹤食物、健身、水份同健康."
     },
     "copied": "已複製！",
     "copyFoodEntryDialog": {
@@ -6635,11 +6635,11 @@
             "retry": "重試"
         },
         "endFastDialog": {
-            "greatJobYouCanEdit": "еҒҡеҫ—еҘҪпјҒеҰӮжһңжӮЁжјҸе’—ж’іжҺЈпјҢеҸҜд»Ҙе–әдёӢйқўж”№й–Ӣе§ӢпјҸзөҗжқҹжҷӮй–“.",
+            "greatJobYouCanEdit": "做得好！如果您漏咗撳掣，可以喺下面改開始／結束時間.",
             "startTime": "й–Ӣе§ӢжҷӮй–“",
             "endTime": "зөҗжқҹжҷӮй–“",
             "endFast": "зөҗжқҹж–·йЈҹ",
-            "youFastedFor2": "жӮЁж–·е’— <span>{{durationFormatted}}</span>.",
+            "youFastedFor2": "您斷咗 <span>{{durationFormatted}}</span>.",
             "fastCompleted": "斷食完成！🎉"
         },
         "fastingTimerRing": {
@@ -6647,7 +6647,7 @@
         },
         "fastingZoneBar": {
             "metabolicState": "д»Ји¬қзӢҖж…Ӣ",
-            "hours": "{{start}}-{{end}} еҖӢйҗҳ"
+            "hours": "{{start}}-{{end}} 個鐘"
         }
     },
     "i18n": {
@@ -6696,28 +6696,28 @@
             "redirectingYouBackToSettings": "帶緊您返去設定…"
         },
         "fitbitCallback": {
-            "fitbitOAuthError": "Fitbit OAuth йҢҜиӘӨ",
-            "missingAuthorizationCodeInCallback": "еӣһе‘је…Ҙйқўзјәе°‘жҺҲж¬Ҡзўј."
+            "fitbitOAuthError": "Fitbit OAuth 錯誤",
+            "missingAuthorizationCodeInCallback": "回呼入面缺少授權碼."
         },
         "googleHealthCallback": {
-            "googleHealthOAuthError": "Google Health OAuth йҢҜиӘӨ",
-            "missingAuthorizationCodeInCallback": "еӣһе‘је…Ҙйқўзјәе°‘жҺҲж¬Ҡзўј."
+            "googleHealthOAuthError": "Google Health OAuth 錯誤",
+            "missingAuthorizationCodeInCallback": "回呼入面缺少授權碼."
         },
         "ouraCallback": {
-            "ouraOAuthError": "Oura OAuth йҢҜиӘӨ",
-            "missingAuthorizationCodeInCallback": "еӣһе‘је…Ҙйқўзјәе°‘жҺҲж¬Ҡзўј."
+            "ouraOAuthError": "Oura OAuth 錯誤",
+            "missingAuthorizationCodeInCallback": "回呼入面缺少授權碼."
         },
         "polarCallback": {
-            "polarOAuthError": "Polar OAuth йҢҜиӘӨ",
-            "missingAuthorizationCodeInCallback": "еӣһе‘је…Ҙйқўзјәе°‘жҺҲж¬Ҡзўј."
+            "polarOAuthError": "Polar OAuth 錯誤",
+            "missingAuthorizationCodeInCallback": "回呼入面缺少授權碼."
         },
         "stravaCallback": {
-            "stravaOAuthError": "Strava OAuth йҢҜиӘӨ",
-            "missingAuthorizationCodeInCallback": "еӣһе‘је…Ҙйқўзјәе°‘жҺҲж¬Ҡзўј."
+            "stravaOAuthError": "Strava OAuth 錯誤",
+            "missingAuthorizationCodeInCallback": "回呼入面缺少授權碼."
         },
         "withingsCallback": {
-            "withingsOAuthError": "Withings OAuth йҢҜиӘӨ",
-            "missingOAuthCodeOrState": "еӣһе‘је…Ҙйқўзјәе°‘ OAuth д»ЈзўјжҲ–иҖ…зӢҖж…Ӣ."
+            "withingsOAuthError": "Withings OAuth 錯誤",
+            "missingOAuthCodeOrState": "回呼入面缺少 OAuth 代碼或者狀態."
         }
     },
     "mealCreation": {
@@ -6799,7 +6799,7 @@
         "verify": "驗證",
         "verifyLogin": "請用您嘅多因素身份驗證方式之一驗證登入.",
         "verifyRecovery": "驗證恢復代碼",
-        "loggedInAs2": "е·Ізҷ»е…ҘзӮәпјҡ<strong>{{email}}</strong>"
+        "loggedInAs2": "已登入為：<strong>{{email}}</strong>"
     },
     "mood": {
         "dailyMood": "每日心情",
@@ -6848,7 +6848,7 @@
             "start": "開始宮縮",
             "stop": "停止",
             "title": "宮縮計時器",
-            "duration": "жҢҒзәҢжҷӮй–“пјҡ{{duration}}",
+            "duration": "持續時間：{{duration}}",
             "durationWithInterval": "持續時間：{{duration}} · 間隔：{{interval}}"
         },
         "disclaimer": "孕期資訊僅供教育用途，唔可以取代醫療護理.",
@@ -6871,7 +6871,7 @@
             "stop": "結束記錄",
             "tap": "點按計一次胎動",
             "title": "胎動計數器",
-            "movements2": "{{kick_count}} ж¬ЎиғҺеӢ•"
+            "movements2": "{{kick_count}} 次胎動"
         },
         "photos": {
             "add": "加第 {{n}} 週",
@@ -6934,7 +6934,7 @@
                 "title": "母體體重",
                 "withinRange": "喺典型範圍內"
             },
-            "kgSinceStart": "з”ұй–Ӣе§Ӣд»Ҙеҡҹ {{weightDelta}} kg",
+            "kgSinceStart": "由開始以嚟 {{weightDelta}} kg",
             "iomRangeWkKg": "IOM 範圍（第 {{wk}} 週）：<strong>{{lowKg}} – {{highKg}} kg</strong>",
             "iomRangeKg": "IOM 範圍：<strong>{{lowKg}} – {{highKg}} kg</strong>"
         },
@@ -6955,7 +6955,7 @@
             "mmHg": "--/-- mmHg"
         },
         "wombScene": {
-            "babyAtWeekInsideThe": "еӯҗе®®е…Ҙйқўз¬¬ {{week}} йҖұеҳ… BB"
+            "babyAtWeekInsideThe": "子宮入面第 {{week}} 週嘅 BB"
         },
         "foodMedSafetySearch": {
             "safe": "е®үе…Ё",
@@ -7020,7 +7020,7 @@
         "rir": "RIR",
         "startTimer": "開始計時",
         "stopTimer": "停止計時",
-        "distance2": "и·қйӣўпјҲ{{distanceUnit}}пјү"
+        "distance2": "距離（{{distanceUnit}}）"
     },
     "food": {
         "imagesLabel": "圖片",
@@ -7157,13 +7157,13 @@
         "perPress": "每撳一下記錄",
         "changeQuantity": "改數量／單位",
         "hydrationFactorExample": "以 {{factor}} 計，每撳一下會由飲品嘅 {{total}} {{unit}} 入面，將 {{credited}} {{unit}} 加入您嘅水份環.卡路里、咖啡因同酒精一律全數計入.",
-        "linkedFood2": "е·ІйҖЈзөҗйЈҹжқҗпјҡ{{linked_food_name}}",
-        "hydration": "ж°ҙд»Ҫпјҡ{{hydration_factor}}%",
-        "onePressLogs": "ж’ідёҖдёӢиЁҳйҢ„ <span>{{describeLink}}</span>",
-        "hydrationFactorX": "ж°ҙд»Ҫзі»ж•ёпјҡ{{hydration_factor}}x",
-        "water": "{{hydrationFactor}}% ж°ҙд»Ҫ",
-        "linkedFoodServing": "е·ІйҖЈзөҗйЈҹжқҗпјҡ{{food}}пјҲ{{serving}}пјү",
-        "linkedFoodOnly": "е·ІйҖЈзөҗйЈҹжқҗпјҡ{{food}}",
+        "linkedFood2": "已連結食材：{{linked_food_name}}",
+        "hydration": "水份：{{hydration_factor}}%",
+        "onePressLogs": "撳一下記錄 <span>{{describeLink}}</span>",
+        "hydrationFactorX": "水份系數：{{hydration_factor}}x",
+        "water": "{{hydrationFactor}}% 水份",
+        "linkedFoodServing": "已連結食材：{{food}}（{{serving}}）",
+        "linkedFoodOnly": "已連結食材：{{food}}",
         "linkedFoodServingMeal": "已連結食材：{{food}}（{{serving}}）• {{meal}}",
         "linkedFoodMeal": "已連結食材：{{food}} • {{meal}}"
     },
@@ -7257,13 +7257,13 @@
         "entryNotesPlaceholder": "呢次食用有咩特別",
         "aiEstimateSection": {
             "convertWithAI": "用 AI 換算",
-            "estimatingIn": "дј°з®—з·Ҡ {{fromAmount}} {{fromUnit}} зӯүж–је№ҫеӨҡ {{toUnit}}вҖҰ",
+            "estimatingIn": "估算緊 {{fromAmount}} {{fromUnit}} 等於幾多 {{toUnit}}…",
             "tryAgain": "еҶҚи©ҰеӨҡж¬Ў",
             "dismiss": "е””зҗҶ",
-            "estimatedAbout": "дј°з®— - еӨ§зҙ„ {{estimatedAmount}} {{toUnit}}",
-            "genericEstimateVerifyIfAccuracy": "дёҖиҲ¬дј°з®— - иҰҒжә–зўәе°ұиҮӘе·ұж ёе°Қеҗ“.",
+            "estimatedAbout": "估算 - 大約 {{estimatedAmount}} {{toUnit}}",
+            "genericEstimateVerifyIfAccuracy": "一般估算 - 要準確就自己核對吓.",
             "useThis": "з”Ёе‘ўеҖӢ",
-            "estimate2": "- {{confidence}} дј°з®—"
+            "estimate2": "- {{confidence}} 估算"
         }
     },
     "healthMetrics": {
@@ -7413,7 +7413,7 @@
             "avgPace": "平均配速",
             "avgHeartRate": "平均心率",
             "noMatches": "冇活動符合查詢篩選條件.",
-            "min": "{{durationMinutes}} еҲҶйҗҳ"
+            "min": "{{durationMinutes}} 分鐘"
         },
         "matchedCourses": {
             "title": "比對路線同路線歷史（ 「比對跑」 ）",
@@ -7421,9 +7421,9 @@
             "runs_other": "{{count}} 次跑步",
             "average": "平均：",
             "bestPace": "最佳配速：",
-            "avg": "е№іеқҮпјҡ{{avgDistanceFormatted}} {{isMiles}}",
-            "bestPace2": "жңҖдҪій…ҚйҖҹпјҡ{{bestPaceFormatted}}",
-            "min": "{{durationMinutes}} еҲҶйҗҳ"
+            "avg": "平均：{{avgDistanceFormatted}} {{isMiles}}",
+            "bestPace2": "最佳配速：{{bestPaceFormatted}}",
+            "min": "{{durationMinutes}} 分鐘"
         },
         "volume": {
             "emptyTitle": "運動量與時間總計",
@@ -7453,7 +7453,7 @@
                 "swim": "游水",
                 "other": "其他"
             },
-            "pace2": "й…ҚйҖҹпјҡ{{formattedPace}}",
+            "pace2": "配速：{{formattedPace}}",
             "bestSetReps": "最佳組：{{weightKg}} × {{reps}} 下"
         },
         "views": {
@@ -7486,13 +7486,13 @@
             "avgHeartRate": "平均心率 {{bpm}} bpm，未有儲存逐跳樣本.",
             "noHeartRate": "今次訓練冇心率樣本.",
             "trends": {
-                "title": "и·‘жӯҘпјҢжңҖиҝ‘ 12 йҖұ",
+                "title": "跑步，最近 12 週",
                 "thisWeek": "д»ҠеҖӢжҳҹжңҹ",
-                "thisWeekAbove": "д»ҠеҖӢжҳҹжңҹжҜ”жӮЁиҝ‘жңҹе№іеқҮй«ҳ {{percent}}%",
-                "thisWeekBelow": "д»ҠеҖӢжҳҹжңҹжҜ”жӮЁиҝ‘жңҹе№іеқҮдҪҺ {{percent}}%",
+                "thisWeekAbove": "今個星期比您近期平均高 {{percent}}%",
+                "thisWeekBelow": "今個星期比您近期平均低 {{percent}}%",
                 "longestRun": "жңҖй•·и·‘зЁӢ",
                 "efficiency": "ж•ҲзҺҮ",
-                "efficiencyHint": "ж•ҲзҺҮдҝӮжҢҮ 20 еҲҶйҗҳжҲ–д»ҘдёҠи·‘зЁӢе…ҘйқўпјҢжҜҸж¬Ўеҝғи·іиЎҢеҲ°еҳ…и·қйӣўпјӣз”Ёијғж—©йҖұж•ёе°ҚжҜ”иҝ‘жңҹгҖӮж•ёеҖјж„Ҳй«ҳпјҢеҚідҝӮе–әзӣёеҗҢеҠӘеҠӣдёӢж„ҲеҒҘеә·.",
+                "efficiencyHint": "效率係指 20 分鐘或以上跑程入面，每次心跳行到嘅距離；用較早週數對比近期。數值愈高，即係喺相同努力下愈健康.",
                 "raceTimes": "比賽時間估算",
                 "race5k": "5K",
                 "race10k": "10K",
@@ -7502,8 +7502,8 @@
                 "basis1mi": "1 иӢұйҮҢ",
                 "basis15k": "15K",
                 "yourRecord": "жӮЁеҳ…зҙҖйҢ„",
-                "fromBest": "еҡҹиҮӘжӮЁеҳ… {{distance}}",
-                "raceTimesHint": "дј°з®—жңғе°ҮжӮЁеҳ…жңҖдҪіиЎЁзҸҫжҢүжҜ”дҫӢеҘ—з”ЁеҺ»жҜҸеҖӢи·қйӣўгҖӮе°ҚжӮЁжңӘиЁ“з·ҙйҒҺеҳ…и·қйӣўпјҢдј°з®—жңғжЁӮи§Җе°‘е°‘."
+                "fromBest": "嚟自您嘅 {{distance}}",
+                "raceTimesHint": "估算會將您嘅最佳表現按比例套用去每個距離。對您未訓練過嘅距離，估算會樂觀少少."
             }
         },
         "moreAnalysis": "更多分析",
@@ -7586,7 +7586,7 @@
         "empty": "今日冇同步到任何穿戴裝置數據.",
         "skinTemp": "皮膚溫度",
         "weekly": "每週",
-        "low2": "пјҲдҪҺпјҡ{{val}}пјү"
+        "low2": "（低：{{val}}）"
     },
     "drink_presets": {
         "title": "快速加入飲品預設",
@@ -7806,7 +7806,7 @@
             "details": "更多詳情",
             "notes": "備註",
             "photos": "相片",
-            "severity": "еҡҙйҮҚзЁӢеәҰ <strong>{{severity}}</strong>"
+            "severity": "嚴重程度 <strong>{{severity}}</strong>"
         },
         "photos": {
             "saved": "已儲存相片",
@@ -8071,7 +8071,7 @@
             "headache": "й ӯз—ӣ",
             "constipation": "дҫҝз§ҳ",
             "diarrhea": "иӮҡеұҷ",
-            "acidRefluxGERD": "иғғй…ёеҖ’жөҒпјҸGERD",
+            "acidRefluxGERD": "胃酸倒流／GERD",
             "stomachPainCramping": "肚痛／絞痛",
             "migraine": "еҒҸй ӯз—ӣ",
             "backPain": "иғҢз—ӣ",
@@ -8229,7 +8229,7 @@
             "ready": "準備",
             "begin": "開始呼吸",
             "complete": "完成",
-            "complete2": "е®ҢжҲҗпјҲ{{breathElapsed}}пјү"
+            "complete2": "完成（{{breathElapsed}}）"
         },
         "history": {
             "title": "今日時段",
@@ -8302,12 +8302,12 @@
         "model": "語音模型",
         "chooseModel": "жҸҖеҖӢжЁЎеһӢ",
         "chatModel": "з”ЁеҡҹеӮҫеҒҲ",
-        "syncHint": "е‘ўе•ІиЁӯе®ҡз¶Ій ҒзүҲеҗҢжүӢж©ҹзүҲйғҪе•ұз”ЁгҖӮзҶ„е’—иӘһйҹіијёе…ҘеҸӘдҝӮжңғж”¶еҹӢеҖӢе’ӘпјҢе””жңғж”№жӮЁжҸҖе’—еҳ…жЁЎеһӢ.",
-        "systemHint": "з”ЁжӮЁйғЁж©ҹжҲ–иҖ…зҖҸиҰҪеҷЁеҳ…иӘһйҹіиҫЁиӘҚеҷЁпјҢе””жңғж”¶ Sparky AI иҪүйҢ„йҢўгҖӮз”Ёе””з”ЁеҲ°еҗҢиҰҒе””иҰҒдёҠз¶Іиҷ•зҗҶпјҢе°ұзқҮжӮЁйғЁж©ҹжҲ–иҖ…зҖҸиҰҪеҷЁ.",
-        "aiHint": "йҢ„йҹіжңғз¶“жӮЁеҖӢдјәжңҚеҷЁйҖҒеҺ»жҸҖе’—еҳ… AI жҸҗдҫӣж–№гҖӮжҸҗдҫӣж–№еҸҜиғҪиҰҒж”¶йҢўгҖӮжҸҖеҖӢжЁЎеһӢе…Ҳй–ӢеҲ° AI иҪүйҢ„.",
-        "noModels": "жңӘй–Ӣд»»дҪ•зӣёе®№еҳ…иӘһйҹіжЁЎеһӢгҖӮеҺ»з¶Ій ҒзүҲеҳ… AI жңҚеӢҷиЁӯе®ҡжҸҖиҝ”дёҖеҖӢж”ҜжҸҙйҹіиЁҠеҳ…жЁЎеһӢпјҢз„¶еҫҢйҮҚж–°ж•ҙзҗҶ.",
-        "unavailable": "жҸҖе’—еҳ…иӘһйҹіжЁЎеһӢиҖҢе®¶е””з”Ёеҫ—гҖӮжҸҖз¬¬дәҢеҖӢжЁЎеһӢпјҢжҲ–иҖ…иҪүиҝ”зі»зөұ.",
-        "manualSend": "иҒҪеҜ«жңғе№«жӮЁеЎ«еҘҪиҚүзЁҝгҖӮзқҮеҗ“гҖҒж”№еҗ“пјҢи·ҹдҪҸиҮӘе·ұж’іеӮійҖҒ."
+        "syncHint": "呢啲設定網頁版同手機版都啱用。熄咗語音輸入只係會收埋個咪，唔會改您揀咗嘅模型.",
+        "systemHint": "用您部機或者瀏覽器嘅語音辨認器，唔會收 Sparky AI 轉錄錢。用唔用到同要唔要上網處理，就睇您部機或者瀏覽器.",
+        "aiHint": "錄音會經您個伺服器送去揀咗嘅 AI 提供方。提供方可能要收錢。揀個模型先開到 AI 轉錄.",
+        "noModels": "未開任何相容嘅語音模型。去網頁版嘅 AI 服務設定揀返一個支援音訊嘅模型，然後重新整理.",
+        "unavailable": "揀咗嘅語音模型而家唔用得。揀第二個模型，或者轉返系統.",
+        "manualSend": "聽寫會幫您填好草稿。睇吓、改吓，跟住自己撳傳送."
     },
     "app": {
         "loadingSite": "載入緊網站…"
@@ -8319,14 +8319,14 @@
             "demoLoginSuccessful": "示範登入成功"
         },
         "nutrionix": {
-            "failedToRetrieveFoodData": "ж”һе””еҲ°йЈҹжқҗж•ёж“ҡжҸҗдҫӣж–№и©іжғ…пјҡ{{message}}",
-            "noDefaultNutritionixProviderConfigured": "жңӘиЁӯе®ҡй җиЁӯеҳ… Nutritionix жҸҗдҫӣж–№.",
-            "networkErrorDuringNutritionixSearch": "Nutritionix жҗңе°Ӣжңҹй–“зҷјз”ҹз¶ІзөЎйҢҜиӘӨгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў.",
-            "networkErrorDuringNutritionixNutrient": "Nutritionix зҮҹйӨҠзҙ жҹҘи©ўжңҹй–“зҷјз”ҹз¶ІзөЎйҢҜиӘӨгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў.",
-            "networkErrorDuringNutritionixBranded": "Nutritionix е“ҒзүҢе•Ҷе“ҒжҹҘи©ўжңҹй–“зҷјз”ҹз¶ІзөЎйҢҜиӘӨгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў."
+            "failedToRetrieveFoodData": "攞唔到食材數據提供方詳情：{{message}}",
+            "noDefaultNutritionixProviderConfigured": "未設定預設嘅 Nutritionix 提供方.",
+            "networkErrorDuringNutritionixSearch": "Nutritionix 搜尋期間發生網絡錯誤。請再試多次.",
+            "networkErrorDuringNutritionixNutrient": "Nutritionix 營養素查詢期間發生網絡錯誤。請再試多次.",
+            "networkErrorDuringNutritionixBranded": "Nutritionix 品牌商品查詢期間發生網絡錯誤。請再試多次."
         },
         "api": {
-            "failedToParseJSONError": "и§Јжһҗе””еҲ° JSON йҢҜиӘӨеӣһжҮү.",
+            "failedToParseJSONError": "解析唔到 JSON 錯誤回應.",
             "apiError": "API 錯誤",
             "networkError": "網絡錯誤",
             "couldNotConnectToThe": "連唔到伺服器."
@@ -8335,44 +8335,44 @@
             "restoredLoggingOut": "已還原。登出緊…"
         },
         "useExerciseImport": {
-            "bodyweightExerciseForChestShoulders": "з·ҙиғёгҖҒиҶҠй ӯеҗҢдёүй ӯиӮҢеҳ…иҮӘйҮҚеӢ•дҪң."
+            "bodyweightExerciseForChestShoulders": "練胸、膊頭同三頭肌嘅自重動作."
         },
         "useExercises": {
-            "couldNotFetchDeletionImpact": "ж”һе””еҲ°еҲӘйҷӨеҪұйҹҝгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў.",
-            "failedToFetchActivityDetails": "ж”һе””еҲ° {{providerName}} жҙ»еӢ•и©іжғ….",
-            "errorFetchingBodyMapSVG": "ж”һиә«й«”ең°ең– SVG е—°йҷЈеҮәйҢҜ"
+            "couldNotFetchDeletionImpact": "攞唔到刪除影響。請再試多次.",
+            "failedToFetchActivityDetails": "攞唔到 {{providerName}} 活動詳情.",
+            "errorFetchingBodyMapSVG": "攞身體地圖 SVG 嗰陣出錯"
         },
         "useCanadianNutrientFile": {
-            "canadianNutrientFileImport": "еҠ жӢҝеӨ§зҮҹйӨҠзҙ жӘ”жЎҲеҢҜе…Ҙ",
+            "canadianNutrientFileImport": "加拿大營養素檔案匯入",
             "importProcessedSuccessfully": "匯入處理成功.",
             "importError": "匯入錯誤",
-            "canadianNutrientFileLibraryCleared": "еҠ жӢҝеӨ§зҮҹйӨҠзҙ жӘ”жЎҲеә«е·Іжё…йҷӨ",
-            "successfullyRemovedFoodItemsFrom": "е·ІжҲҗеҠҹз”ұжӮЁеҳ…еә«еәҰз§»йҷӨ {{deletedCount}} зЁ®йЈҹжқҗ.",
+            "canadianNutrientFileLibraryCleared": "加拿大營養素檔案庫已清除",
+            "successfullyRemovedFoodItemsFrom": "已成功由您嘅庫度移除 {{deletedCount}} 種食材.",
             "deletionError": "еҲӘйҷӨйҢҜиӘӨ"
         },
         "useCustomNutrients": {
-            "failedToAddCustomNutrient": "еҠ е””еҲ°иҮӘиЁӮзҮҹйӨҠзҙ .",
-            "customNutrientAddedSuccessfully": "иҮӘиЁӮзҮҹйӨҠзҙ еҠ е…ҘжҲҗеҠҹ.",
-            "failedToUpdateCustomNutrient": "жӣҙж–°е””еҲ°иҮӘиЁӮзҮҹйӨҠзҙ .",
-            "customNutrientUpdatedSuccessfully": "иҮӘиЁӮзҮҹйӨҠзҙ жӣҙж–°жҲҗеҠҹ.",
-            "failedToDeleteCustomNutrient": "еҲӘйҷӨе””еҲ°иҮӘиЁӮзҮҹйӨҠзҙ .",
-            "customNutrientDeletedSuccessfully": "иҮӘиЁӮзҮҹйӨҠзҙ еҲӘйҷӨжҲҗеҠҹ."
+            "failedToAddCustomNutrient": "加唔到自訂營養素.",
+            "customNutrientAddedSuccessfully": "自訂營養素加入成功.",
+            "failedToUpdateCustomNutrient": "更新唔到自訂營養素.",
+            "customNutrientUpdatedSuccessfully": "自訂營養素更新成功.",
+            "failedToDeleteCustomNutrient": "刪除唔到自訂營養素.",
+            "customNutrientDeletedSuccessfully": "自訂營養素刪除成功."
         },
         "useFoodForm": {
             "manualNutritionUpdate": "手動營養更新",
-            "canTConvertBetweenUnits": "еҶҮеҫ—е–әе–®дҪҚд№Ӣй–“жҸӣз®—гҖӮи«ӢжүӢеӢ•жӣҙж–°зҮҹйӨҠж•ёеҖј.",
+            "canTConvertBetweenUnits": "冇得喺單位之間換算。請手動更新營養數值.",
             "cannotRemoveDefaultUnit": "移除唔到預設單位",
-            "theDefaultUnitRepresentsThe": "й җиЁӯе–®дҪҚд»ЈиЎЁйЈҹжқҗеҳ…дё»иҰҒд»ҪйҮҸпјҢеҶҮеҫ—з§»йҷӨ.",
+            "theDefaultUnitRepresentsThe": "預設單位代表食材嘅主要份量，冇得移除.",
             "setTheDefaultVariantFirst": "請先設定預設變體",
-            "theDefaultVariantNeedsA": "й җиЁӯи®Ҡй«”иҰҒжңүжӯЈж•ёеҳ…д»ҪйҮҸпјҢAI е…ҲеҸҜд»Ҙдј°з®—е…¶д»–е–®дҪҚ.",
+            "theDefaultVariantNeedsA": "預設變體要有正數嘅份量，AI 先可以估算其他單位.",
             "validationError": "驗證錯誤",
-            "pleaseCorrectTheErrorsIn": "и«Ӣдҝ®жӯЈе–®дҪҚи®Ҡй«”е…Ҙйқўеҳ…йҢҜиӘӨ.",
-            "atLeastOneVariantMust": "иҮіе°‘дёҖеҖӢи®Ҡй«”иҰҒжЁҷиЁҳеҒҡй җиЁӯе–®дҪҚ.",
-            "onlyOneVariantCanBe": "еҫ—дёҖеҖӢи®Ҡй«”еҸҜд»ҘжЁҷиЁҳеҒҡй җиЁӯе–®дҪҚ.",
-            "barcodeMustBe814": "жўқзўјдёҖе®ҡиҰҒдҝӮ 8-14 дҪҚж•ёеӯ—."
+            "pleaseCorrectTheErrorsIn": "請修正單位變體入面嘅錯誤.",
+            "atLeastOneVariantMust": "至少一個變體要標記做預設單位.",
+            "onlyOneVariantCanBe": "得一個變體可以標記做預設單位.",
+            "barcodeMustBe814": "條碼一定要係 8-14 位數字."
         },
         "useFoodVariants": {
-            "failedToCreateFoodVariant": "е»әз«Ӣе””еҲ°йЈҹжқҗи®Ҡй«”.",
+            "failedToCreateFoodVariant": "建立唔到食材變體.",
             "foodSavedSuccessfully": "食材儲存成功.",
             "failedToSaveFood": "儲存唔到食材."
         },
@@ -8380,29 +8380,29 @@
             "foodDeletedSuccessfully": "食材刪除成功."
         },
         "useFoodsV2": {
-            "failedToSearchFoods": "жҗңе°Ӣе””еҲ° {{providerType}} йЈҹжқҗ.",
+            "failedToSearchFoods": "搜尋唔到 {{providerType}} 食材.",
             "failedToSearchBarcode": "搜尋唔到條碼.",
-            "failedToLoadFoodDetails": "ијүе…Ҙе””еҲ° {{providerType}} йЈҹжқҗи©іжғ…."
+            "failedToLoadFoodDetails": "載入唔到 {{providerType}} 食材詳情."
         },
         "useNutrionix": {
-            "failedToSearchNutritionixFoods": "жҗңе°Ӣе””еҲ° Nutritionix йЈҹжқҗ.",
-            "failedToLoadNutritionixNatural": "ијүе…Ҙе””еҲ° Nutritionix еӨ©з„¶зҮҹйӨҠзҙ .",
-            "failedToLoadNutritionixBranded": "ијүе…Ҙе””еҲ° Nutritionix е“ҒзүҢзҮҹйӨҠзҙ ."
+            "failedToSearchNutritionixFoods": "搜尋唔到 Nutritionix 食材.",
+            "failedToLoadNutritionixNatural": "載入唔到 Nutritionix 天然營養素.",
+            "failedToLoadNutritionixBranded": "載入唔到 Nutritionix 品牌營養素."
         },
         "useGoals": {
-            "failedToLoadGoalPresets": "ијүе…Ҙе””еҲ°зӣ®жЁҷй җиЁӯ.",
-            "failedToLoadWeeklyPlans": "ијүе…Ҙе””еҲ°жҜҸйҖұиЁҲеҠғ."
+            "failedToLoadGoalPresets": "載入唔到目標預設.",
+            "failedToLoadWeeklyPlans": "載入唔到每週計劃."
         },
         "useIntegrations": {
-            "garminConnectLinkedSuccessfully": "Garmin Connect йҖЈз·ҡжҲҗеҠҹпјҒ",
-            "failedToSubmitMFACode": "жҸҗдәӨе””еҲ° MFA д»ЈзўјгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў."
+            "garminConnectLinkedSuccessfully": "Garmin Connect 連線成功！",
+            "failedToSubmitMFACode": "提交唔到 MFA 代碼。請再試多次."
         },
         "usePasskeys": {
-            "failedToFetchPasskeys": "ж”һе””еҲ° Passkey",
-            "passkeyRegisteredSuccessfully": "Passkey иЁ»еҶҠжҲҗеҠҹпјҒ",
-            "couldNotRegisterPasskeyEnsure": "иЁ»еҶҠе””еҲ° PasskeyгҖӮи«ӢзўәдҝқжӮЁз”Ёз·Ҡ HTTPS жҲ–иҖ… localhost.",
-            "passkeyDeleted": "Passkey е·ІеҲӘйҷӨ.",
-            "failedToDeletePasskey": "еҲӘйҷӨе””еҲ° Passkey"
+            "failedToFetchPasskeys": "攞唔到 Passkey",
+            "passkeyRegisteredSuccessfully": "Passkey 註冊成功！",
+            "couldNotRegisterPasskeyEnsure": "註冊唔到 Passkey。請確保您用緊 HTTPS 或者 localhost.",
+            "passkeyDeleted": "Passkey 已刪除.",
+            "failedToDeletePasskey": "刪除唔到 Passkey"
         },
         "useProfile": {
             "failedToLoadProfile": "載入唔到個人資料",
@@ -8413,7 +8413,7 @@
         },
         "useWaterContainers": {
             "failedToFetchWaterContainers": "攞唔到水容器.",
-            "failedToFetchDrinkPreset": "ж”һе””еҲ°йЈІе“Ғй җиЁӯзӣ®йҢ„.",
+            "failedToFetchDrinkPreset": "攞唔到飲品預設目錄.",
             "drinkPresetAdded": "飲品預設已加入.",
             "failedToAddDrinkPreset": "加唔到飲品預設.",
             "waterContainerAdded": "水容器已加入.",
@@ -8426,54 +8426,54 @@
             "failedToSetPrimaryContainer": "設唔到主要容器."
         },
         "useAllergenPreferences": {
-            "failedToLoadAllergenPreferences": "ијүе…Ҙе””еҲ°иҮҙж•ҸеҺҹеҒҸеҘҪиЁӯе®ҡ.",
+            "failedToLoadAllergenPreferences": "載入唔到致敏原偏好設定.",
             "failedToAddAllergen": "加唔到致敏原.",
             "allergenAdded": "致敏原已加入.",
             "failedToRemoveAllergen": "移除唔到致敏原.",
             "allergenRemoved": "致敏原已移除."
         },
         "useCycle": {
-            "failedToLoadCycleSettings": "ијүе…Ҙе””еҲ°йҖұжңҹиЁӯе®ҡ.",
-            "failedToLoadCycleOverview": "ијүе…Ҙе””еҲ°йҖұжңҹзёҪиҰҪ.",
-            "failedToLoadCycleHistory": "ијүе…Ҙе””еҲ°йҖұжңҹжӯ·еҸІ.",
-            "failedToLoadCycleLogs": "ијүе…Ҙе””еҲ°йҖұжңҹиЁҳйҢ„.",
-            "couldNotSaveCycleSettings": "е„Іеӯҳе””еҲ°йҖұжңҹиЁӯе®ҡ.",
+            "failedToLoadCycleSettings": "載入唔到週期設定.",
+            "failedToLoadCycleOverview": "載入唔到週期總覽.",
+            "failedToLoadCycleHistory": "載入唔到週期歷史.",
+            "failedToLoadCycleLogs": "載入唔到週期記錄.",
+            "couldNotSaveCycleSettings": "儲存唔到週期設定.",
             "settingsSaved": "設定已儲存.",
-            "couldNotSaveYourLog": "е„Іеӯҳе””еҲ°жӮЁеҳ…иЁҳйҢ„.",
+            "couldNotSaveYourLog": "儲存唔到您嘅記錄.",
             "couldNotUpdate": "更新唔到.",
-            "failedToLoadCycleInsights": "ијүе…Ҙе””еҲ°йҖұжңҹжҙһеҜҹ.",
-            "couldNotPaintPeriodDates": "жЁҷиЁҳе””еҲ°з¶“жңҹж—Ҙжңҹ.",
-            "couldNotCreateManualCycle": "е»әз«Ӣе””еҲ°жүӢеӢ•йҖұжңҹ.",
+            "failedToLoadCycleInsights": "載入唔到週期洞察.",
+            "couldNotPaintPeriodDates": "標記唔到經期日期.",
+            "couldNotCreateManualCycle": "建立唔到手動週期.",
             "couldNotUpdateCycle": "更新唔到週期.",
             "couldNotDeleteCycle": "刪除唔到週期.",
-            "failedToLoadFertilityDetails": "ијүе…Ҙе””еҲ°еҸ—еӯ•и©іжғ….",
-            "failedToLoadTestEntries": "ијүе…Ҙе””еҲ°жё¬и©ҰиЁҳйҢ„.",
-            "couldNotLogTestEntry": "иЁҳйҢ„е””еҲ°жё¬и©Ұзөҗжһң.",
-            "couldNotDeleteTestEntry": "еҲӘйҷӨе””еҲ°жё¬и©ҰиЁҳйҢ„.",
-            "failedToLoadCorrelations": "ијүе…Ҙе””еҲ°й—ңиҒҜж•ёж“ҡ.",
-            "couldNotExportYourData": "еҢҜеҮәе””еҲ°жӮЁеҳ…ж•ёж“ҡ.",
-            "failedToLoadDisplayPreferences": "ијүе…Ҙе””еҲ°йЎҜзӨәеҒҸеҘҪиЁӯе®ҡ.",
-            "couldNotSaveDisplayPreferences": "е„Іеӯҳе””еҲ°йЎҜзӨәеҒҸеҘҪиЁӯе®ҡ."
+            "failedToLoadFertilityDetails": "載入唔到受孕詳情.",
+            "failedToLoadTestEntries": "載入唔到測試記錄.",
+            "couldNotLogTestEntry": "記錄唔到測試結果.",
+            "couldNotDeleteTestEntry": "刪除唔到測試記錄.",
+            "failedToLoadCorrelations": "載入唔到關聯數據.",
+            "couldNotExportYourData": "匯出唔到您嘅數據.",
+            "failedToLoadDisplayPreferences": "載入唔到顯示偏好設定.",
+            "couldNotSaveDisplayPreferences": "儲存唔到顯示偏好設定."
         },
         "useGenericHealth": {
-            "failedToLoadHealthMetric": "ијүе…Ҙе””еҲ°еҒҘеә·жҢҮжЁҷжЁЈжң¬.",
-            "failedToLoadDailyHealth": "ијүе…Ҙе””еҲ°жҜҸж—ҘеҒҘеә·жҢҮжЁҷ.",
-            "failedToLoadWorkoutLaps": "ијүе…Ҙе””еҲ°иЁ“з·ҙеңҲж•ё.",
-            "failedToLoadWorkoutGPS": "ијүе…Ҙе””еҲ°иЁ“з·ҙ GPS й»һ.",
-            "failedToLoadHeartRate": "ијүе…Ҙе””еҲ°еҝғзҺҮеҚҖй–“."
+            "failedToLoadHealthMetric": "載入唔到健康指標樣本.",
+            "failedToLoadDailyHealth": "載入唔到每日健康指標.",
+            "failedToLoadWorkoutLaps": "載入唔到訓練圈數.",
+            "failedToLoadWorkoutGPS": "載入唔到訓練 GPS 點.",
+            "failedToLoadHeartRate": "載入唔到心率區間."
         },
         "useMedications": {
             "failedToLoadMedications": "載入唔到藥物.",
-            "failedToLoadPensVials": "ијүе…Ҙе””еҲ°зӯҶпјҸи—Ҙз“¶.",
-            "failedToLoadInjections": "ијүе…Ҙе””еҲ°жіЁе°„иЁҳйҢ„.",
-            "failedToLoadTitrationPlan": "ијүе…Ҙе””еҲ°еҠ‘йҮҸиӘҝж•ҙиЁҲеҠғ.",
-            "couldNotAddTitrationStep": "еҠ е””еҲ°еҠ‘йҮҸиӘҝж•ҙжӯҘй©ҹ.",
-            "titrationStepAdded": "еҠ‘йҮҸиӘҝж•ҙжӯҘй©ҹе·ІеҠ е…Ҙ.",
-            "couldNotUpdateTitrationStep": "жӣҙж–°е””еҲ°еҠ‘йҮҸиӘҝж•ҙжӯҘй©ҹ.",
-            "titrationStepUpdated": "еҠ‘йҮҸиӘҝж•ҙжӯҘй©ҹе·Іжӣҙж–°.",
-            "couldNotRemoveTitrationStep": "з§»йҷӨе””еҲ°еҠ‘йҮҸиӘҝж•ҙжӯҘй©ҹ.",
-            "failedToLoadSerumCurve": "ијүе…Ҙе””еҲ°иЎҖжё…жҝғеәҰжӣІз·ҡ.",
-            "failedToLoadSiteSuggestion": "ијүе…Ҙе””еҲ°жіЁе°„йғЁдҪҚе»әиӯ°.",
+            "failedToLoadPensVials": "載入唔到筆／藥瓶.",
+            "failedToLoadInjections": "載入唔到注射記錄.",
+            "failedToLoadTitrationPlan": "載入唔到劑量調整計劃.",
+            "couldNotAddTitrationStep": "加唔到劑量調整步驟.",
+            "titrationStepAdded": "劑量調整步驟已加入.",
+            "couldNotUpdateTitrationStep": "更新唔到劑量調整步驟.",
+            "titrationStepUpdated": "劑量調整步驟已更新.",
+            "couldNotRemoveTitrationStep": "移除唔到劑量調整步驟.",
+            "failedToLoadSerumCurve": "載入唔到血清濃度曲線.",
+            "failedToLoadSiteSuggestion": "載入唔到注射部位建議.",
             "couldNotAddMedication": "加唔到藥物.",
             "medicationAdded": "藥物已加入.",
             "couldNotUpdateMedication": "更新唔到藥物.",
@@ -8482,23 +8482,23 @@
             "medicationRemoved": "藥物已移除.",
             "couldNotLogInjection": "記錄唔到注射.",
             "injectionLogged": "注射已記錄.",
-            "couldNotUpdateInjectionEntry": "жӣҙж–°е””еҲ°жіЁе°„иЁҳйҢ„.",
+            "couldNotUpdateInjectionEntry": "更新唔到注射記錄.",
             "injectionEntryUpdated": "注射記錄已更新.",
-            "couldNotRemoveInjectionEntry": "з§»йҷӨе””еҲ°жіЁе°„иЁҳйҢ„.",
+            "couldNotRemoveInjectionEntry": "移除唔到注射記錄.",
             "injectionEntryRemoved": "注射記錄已移除.",
             "couldNotAddPenVial": "加唔到筆／藥瓶.",
             "penVialAdded": "筆／藥瓶已加入.",
-            "couldNotUpdatePenVial": "жӣҙж–°е””еҲ°зӯҶпјҸи—Ҙз“¶.",
+            "couldNotUpdatePenVial": "更新唔到筆／藥瓶.",
             "penVialUpdated": "筆／藥瓶已更新.",
-            "couldNotRemovePenVial": "з§»йҷӨе””еҲ°зӯҶпјҸи—Ҙз“¶.",
+            "couldNotRemovePenVial": "移除唔到筆／藥瓶.",
             "penVialRemoved": "筆／藥瓶已移除.",
-            "failedToLoadLoggedDoses": "ијүе…Ҙе””еҲ°е·ІиЁҳйҢ„еҠ‘йҮҸ.",
+            "failedToLoadLoggedDoses": "載入唔到已記錄劑量.",
             "couldNotLogDose": "記錄唔到劑量.",
             "doseLogged": "劑量已記錄.",
-            "couldNotUpdateLoggedDose": "жӣҙж–°е””еҲ°е·ІиЁҳйҢ„еҠ‘йҮҸ.",
-            "loggedDoseUpdated": "е·ІиЁҳйҢ„еҠ‘йҮҸе·Іжӣҙж–°.",
-            "couldNotRemoveLoggedDose": "з§»йҷӨе””еҲ°е·ІиЁҳйҢ„еҠ‘йҮҸ.",
-            "loggedDoseRemoved": "е·ІиЁҳйҢ„еҠ‘йҮҸе·Із§»йҷӨ.",
+            "couldNotUpdateLoggedDose": "更新唔到已記錄劑量.",
+            "loggedDoseUpdated": "已記錄劑量已更新.",
+            "couldNotRemoveLoggedDose": "移除唔到已記錄劑量.",
+            "loggedDoseRemoved": "已記錄劑量已移除.",
             "couldNotAddSchedule": "加唔到時間表.",
             "scheduleAdded": "時間表已加入.",
             "couldNotDeleteSchedule": "刪除唔到時間表.",
@@ -8509,64 +8509,64 @@
             "couldNotSaveAppointment": "儲存唔到預約.",
             "appointmentSaved": "預約已儲存.",
             "couldNotDeleteAppointment": "刪除唔到預約.",
-            "failedToLoadPregnancyOverview": "ијүе…Ҙе””еҲ°жҮ·еӯ•зёҪиҰҪ.",
-            "failedToLoadContractions": "ијүе…Ҙе””еҲ°е®®зё®иЁҳйҢ„.",
-            "couldNotStartPregnancyTracking": "й–Ӣе§Ӣе””еҲ°жҮ·еӯ•иҝҪи№Ө.",
+            "failedToLoadPregnancyOverview": "載入唔到懷孕總覽.",
+            "failedToLoadContractions": "載入唔到宮縮記錄.",
+            "couldNotStartPregnancyTracking": "開始唔到懷孕追蹤.",
             "pregnancyTrackingStarted": "懷孕追蹤已開始.",
-            "couldNotStartKickSession": "й–Ӣе§Ӣе””еҲ°иғҺеӢ•жҷӮж®ө.",
-            "couldNotUpdateKickSession": "жӣҙж–°е””еҲ°иғҺеӢ•жҷӮж®ө.",
+            "couldNotStartKickSession": "開始唔到胎動時段.",
+            "couldNotUpdateKickSession": "更新唔到胎動時段.",
             "couldNotLogContraction": "記錄唔到宮縮.",
             "couldNotUpdateContraction": "更新唔到宮縮.",
             "failedToLoadPhotos": "載入唔到相.",
             "couldNotUploadPhoto": "上傳唔到相.",
             "photoAdded": "相已加入.",
             "couldNotDeletePhoto": "刪除唔到相.",
-            "couldNotUpdateChecklist": "жӣҙж–°е””еҲ°жӘўжҹҘжё…е–®."
+            "couldNotUpdateChecklist": "更新唔到檢查清單."
         },
         "useSymptoms": {
-            "failedToLoadYourSymptoms": "ијүе…Ҙе””еҲ°жӮЁеҳ…з—ҮзӢҖ.",
-            "failedToLoadSymptomOptions": "ијүе…Ҙе””еҲ°з—ҮзӢҖйҒёй ….",
-            "failedToLoadSymptomLogs": "ијүе…Ҙе””еҲ°з—ҮзӢҖиЁҳйҢ„.",
-            "failedToLoadOngoingEpisodes": "ијүе…Ҙе””еҲ°жҢҒзәҢз·Ҡеҳ…зҷјдҪң.",
-            "failedToLoadTheDiary": "ијүе…Ҙе””еҲ°е‘ўе•ІзҷјдҪңеүҚеҫҢеҳ…ж—ҘиЁҳ.",
-            "failedToLoadSymptomFree": "ијүе…Ҙе””еҲ°з„Ўз—ҮзӢҖж—Ҙж•ё.",
+            "failedToLoadYourSymptoms": "載入唔到您嘅症狀.",
+            "failedToLoadSymptomOptions": "載入唔到症狀選項.",
+            "failedToLoadSymptomLogs": "載入唔到症狀記錄.",
+            "failedToLoadOngoingEpisodes": "載入唔到持續緊嘅發作.",
+            "failedToLoadTheDiary": "載入唔到呢啲發作前後嘅日記.",
+            "failedToLoadSymptomFree": "載入唔到無症狀日數.",
             "couldNotSaveSymptom": "儲存唔到症狀.",
             "symptomSaved": "症狀已儲存.",
             "couldNotUpdateSymptom": "更新唔到症狀.",
             "couldNotDeleteSymptom": "刪除唔到症狀.",
-            "symptomDeletedYourPastLogs": "з—ҮзӢҖе·ІеҲӘйҷӨгҖӮжӮЁд»ҘеүҚеҳ…иЁҳйҢ„жңғдҝқз•ҷ.",
+            "symptomDeletedYourPastLogs": "症狀已刪除。您以前嘅記錄會保留.",
             "couldNotSaveOption": "儲存唔到選項.",
             "couldNotRemoveOption": "移除唔到選項.",
             "couldNotLogSymptom": "記錄唔到症狀.",
             "symptomLogged": "症狀已記錄.",
-            "couldNotUpdateSymptomLog": "жӣҙж–°е””еҲ°з—ҮзӢҖиЁҳйҢ„.",
+            "couldNotUpdateSymptomLog": "更新唔到症狀記錄.",
             "symptomLogUpdated": "症狀記錄已更新.",
             "couldNotEndTheEpisode": "結束唔到發作.",
             "episodeEnded": "發作已結束.",
-            "couldNotUpdateSeverity": "жӣҙж–°е””еҲ°еҡҙйҮҚзЁӢеәҰ.",
-            "couldNotRemoveSymptomLog": "з§»йҷӨе””еҲ°з—ҮзӢҖиЁҳйҢ„.",
+            "couldNotUpdateSeverity": "更新唔到嚴重程度.",
+            "couldNotRemoveSymptomLog": "移除唔到症狀記錄.",
             "symptomLogRemoved": "症狀記錄已移除.",
             "couldNotSaveThat": "儲存唔到嗰樣嘢.",
-            "markedAsASymptomFree": "е·ІжЁҷиЁҳеҒҡз„Ўз—ҮзӢҖж—Ҙ.",
-            "couldNotUndoThat": "йӮ„еҺҹе””еҲ°е—°еҖӢж“ҚдҪң.",
+            "markedAsASymptomFree": "已標記做無症狀日.",
+            "couldNotUndoThat": "還原唔到嗰個操作.",
             "couldNotUploadThePhoto": "上傳唔到張相.",
             "couldNotRemoveThePhoto": "移除唔到張相."
         },
         "useSyncAllergens": {
             "allergenSyncComplete": "致敏原同步完成",
-            "allYourOpenFoodFactsFoodsAlready": "жӮЁеҳ…жүҖжңү OpenFoodFacts йЈҹжқҗе·Із¶“жңүиҮҙж•ҸеҺҹж•ёж“ҡ.",
-            "updatedOfFoodS": "е·Іжӣҙж–° {{updated}}пјҸ{{total}} зЁ®йЈҹжқҗ.",
+            "allYourOpenFoodFactsFoodsAlready": "您嘅所有 OpenFoodFacts 食材已經有致敏原數據.",
+            "updatedOfFoodS": "已更新 {{updated}}／{{total}} 種食材.",
             "syncFailed": "еҗҢжӯҘеӨұж•—",
-            "couldNotSyncAllergensPlease": "еҗҢжӯҘе””еҲ°иҮҙж•ҸеҺҹгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў."
+            "couldNotSyncAllergensPlease": "同步唔到致敏原。請再試多次."
         }
     },
     "allergenBadges": {
-        "trace": "еҫ®йҮҸпјҡ{{trace}}"
+        "trace": "微量：{{trace}}"
     },
     "announcementDialog": {
         "announcement": "е…¬е‘Ҡ",
-        "gotItDonTShow": "зҹҘйҒ“е–ҮпјҢе””еҘҪеҶҚйЎҜзӨә",
-        "published2": "зҷјеёғжҷӮй–“пјҡ{{value}}"
+        "gotItDonTShow": "知道喇，唔好再顯示",
+        "published2": "發布時間：{{value}}"
     },
     "dayNavigator": {
         "today": "д»Ҡж—Ҙ"
@@ -8583,7 +8583,7 @@
             "rest": "дј‘жҒҜ",
             "reps": "ж¬Ўж•ё",
             "volume": "иЁ“з·ҙйҮҸ",
-            "set2": "з¬¬ {{setNumber}} зө„",
+            "set2": "第 {{setNumber}} 組",
             "muscleGroupName": "иӮҢзҫӨеҗҚзЁұ",
             "exerciseName": "еӢ•дҪңеҗҚзЁұ",
             "set3": "зө„",
@@ -8594,24 +8594,24 @@
     },
     "exercises": {
         "workoutGpsMap": {
-            "loadingWorkoutGPSRoute": "ијүе…Ҙз·ҠиЁ“з·ҙ GPS и·Ҝз·ҡвҖҰ",
-            "workoutGPSRouteMap": "иЁ“з·ҙ GPS и·Ҝз·ҡең°ең–",
-            "max": "пјҲжңҖй«ҳ {{maxHr}}пјү",
+            "loadingWorkoutGPSRoute": "載入緊訓練 GPS 路線…",
+            "workoutGPSRouteMap": "訓練 GPS 路線地圖",
+            "max": "（最高 {{maxHr}}）",
             "brpm": "{{avgResp}} brpm",
-            "avgBpm2": "е№іеқҮ {{avgHr}} bpmпјҢжңҖй«ҳ {{maxHr}}",
-            "startPointLatLon": "<strong>иө·й»һ</strong><br/>з·ҜеәҰпјҡ{{startPos}}пјҢз¶“еәҰпјҡ{{startPos2}}",
-            "finishPointLatLon": "<strong>зөӮй»һ</strong><br/>з·ҜеәҰпјҡ{{endPos}}пјҢз¶“еәҰпјҡ{{endPos2}}"
+            "avgBpm2": "平均 {{avgHr}} bpm，最高 {{maxHr}}",
+            "startPointLatLon": "<strong>起點</strong><br/>緯度：{{startPos}}，經度：{{startPos2}}",
+            "finishPointLatLon": "<strong>終點</strong><br/>緯度：{{endPos}}，經度：{{endPos2}}"
         },
         "addCustomExerciseForm": {
             "calculated300": "已計算：300",
-            "preview": "й җиҰҪ {{index}}"
+            "preview": "預覽 {{index}}"
         },
         "bodyMapFilter": {
             "loadingBodyMap": "載入緊身體地圖…"
         },
         "editExerciseDialog": {
-            "existing": "зҸҫжңү {{index}}",
-            "preview": "й җиҰҪ {{index}}"
+            "existing": "現有 {{index}}",
+            "preview": "預覽 {{index}}"
         },
         "exerciseImportCSV": {
             "true": "дҝӮ",
@@ -8628,7 +8628,7 @@
             "readInstructionsAloud": "讀出動作說明",
             "wger": "Wger",
             "freeDB": "Free DB",
-            "perHour": "{{unit}}пјҸеҖӢйҗҳ"
+            "perHour": "{{unit}}／個鐘"
         },
         "muscles": "иӮҢзҫӨпјҡ",
         "equipment": "еҷЁжқҗпјҡ",
@@ -8638,46 +8638,46 @@
             "progressionOverloadGuide": "漸進同超負荷指南",
             "totalRepGoal": "總次數目標",
             "fixedTarget": "еӣәе®ҡзӣ®жЁҷ",
-            "stepLoadRepsOnly": "йҡҺжўҜеҠ ијүпјҲеғ…ж¬Ўж•ёпјү",
+            "stepLoadRepsOnly": "階梯加載（僅次數）",
             "manualNoOverload": "手動（無超負荷）",
             "targetRepsSet": "每組目標次數",
             "repGoalTotal": "次數目標（總計）",
             "incrementType": "遞增類型",
-            "weight": "йҮҚйҮҸпјҲ{{weightUnit}}пјү",
+            "weight": "重量（{{weightUnit}}）",
             "repsRepCount": "次數（次數計）",
             "incrementReps": "遞增（次數）",
-            "increment": "йҒһеўһпјҲ{{weightUnit}}пјү",
+            "increment": "遞增（{{weightUnit}}）",
             "supersetGroup": "и¶…зҙҡзө„",
             "soloNoSuperset": "單獨（無超級組）",
-            "supersetABlue": "и¶…зҙҡзө„ AпјҲи—ҚиүІпјү",
-            "supersetBPurple": "и¶…зҙҡзө„ BпјҲзҙ«иүІпјү",
-            "supersetCGreen": "и¶…зҙҡзө„ CпјҲз¶ иүІпјү",
-            "supersetDAmber": "и¶…зҙҡзө„ DпјҲзҗҘзҸҖиүІпјү",
+            "supersetABlue": "超級組 A（藍色）",
+            "supersetBPurple": "超級組 B（紫色）",
+            "supersetCGreen": "超級組 C（綠色）",
+            "supersetDAmber": "超級組 D（琥珀色）",
             "equipmentBrand": "器材／品牌",
-            "eGHammerStrength": "дҫӢеҰӮпјҡHammer Strength",
-            "exerciseNotesCuesOptional": "еӢ•дҪңеӮҷиЁ»пјҸжҸҗзӨәпјҲеҸҜйҒёпјү",
-            "eGSeatSetting4": "дҫӢеҰӮпјҡеә§жӨ…иЁӯ 4гҖҒеҜ¬жҸЎгҖҒеә•йғЁеҒңй “вҖҰ",
+            "eGHammerStrength": "例如：Hammer Strength",
+            "exerciseNotesCuesOptional": "動作備註／提示（可選）",
+            "eGSeatSetting4": "例如：座椅設 4、寬握、底部停頓…",
             "addSet": "еҠ дёҖзө„",
-            "workoutPresetBlockEditIndividual": "иЁ“з·ҙй җиЁӯеҚҖеЎҠпјҡе–әй җиЁӯз®ЎзҗҶеҷЁеәҰз·ЁијҜеҖӢеҲҘеӢ•дҪң.",
-            "understandProgressionTechniquesAndConfig": "дәҶи§ЈжјёйҖІжҠҖе·§пјҢдёҰзӮәжӮЁеҳ…иЁ“з·ҙй…ҚзҪ®иҮӘеӢ•и¶…иІ иҚ·зӣ®жЁҷ.",
+            "workoutPresetBlockEditIndividual": "訓練預設區塊：喺預設管理器度編輯個別動作.",
+            "understandProgressionTechniquesAndConfig": "了解漸進技巧，並為您嘅訓練配置自動超負荷目標.",
             "n1ProgressionModes": "1. 漸進模式",
-            "totalRepGoalCumulativeAutoregulation": "зёҪж¬Ўж•ёзӣ®жЁҷпјҲзҙҜиЁҲпјҸиҮӘеӢ•иӘҝзҜҖпјү",
-            "aimForATotalRep": "д»ҘжүҖжңүзө„ж•ёеҠ еҹӢеҳ…зёҪж¬Ўж•ёй–ҖжӘ»еҒҡзӣ®жЁҷгҖӮйҡЁдҪҸзө„ж•ёжҺЁйҖІеҗҢз–ІеӢһзҙҜз©ҚпјҲдҫӢеҰӮ 18гҖҒ15гҖҒ15гҖҒ15гҖҒ15 = 78 дёӢпјүпјҢйҒ”еҲ°зёҪж¬Ўж•ёзӣ®жЁҷжңғиҮӘеӢ•и§ёзҷјдёӢж¬ЎиЁ“з·ҙеҳ…йҮҚйҮҸжҸҗеҚҮ.",
-            "fixedTargetAllSetsHit": "еӣәе®ҡзӣ®жЁҷпјҲжүҖжңүзө„ж•ёйҒ”жҲҗпјү",
-            "everyWorkingSetMustReach": "жҜҸеҖӢжӯЈејҸзө„йғҪиҰҒйҒ”еҲ°жҲ–иҖ…и¶…йҒҺзӣ®жЁҷж¬Ўж•ёгҖӮеҰӮжһңд»»дҪ•дёҖзө„жңӘйҒ”жЁҷпјҲдҫӢеҰӮ 8 ж¬Ўзӣ®жЁҷдҪҶеҒҡе’— 8гҖҒ8гҖҒ7пјүпјҢиІ иҚ·з¶ӯжҢҒдёҚи®ҠпјҢзӣҙеҲ°жүҖжңүзө„ж•ёйғҪйҒ”жЁҷ.",
-            "stepLoadProgressRepsOnly": "йҡҺжўҜеҠ ијүпјҲеғ…йҖІеәҰж¬Ўж•ёпјү",
-            "keepsTheLoadFixedE": "дҝқжҢҒиІ иҚ·еӣәе®ҡпјҲдҫӢеҰӮиҮӘйҮҚжҲ–иҖ…еӣәе®ҡе•һйҲҙпјүпјҢжҜҸж¬ЎйҒ”жҲҗж¬Ўж•ёзӣ®жЁҷд№ӢеҫҢйҒһеўһзӣ®жЁҷж¬Ўж•ёпјҢд№ӢеҫҢе…ҲжҸӣжӣҙйҮҚеҳ…еҷЁжқҗ.",
-            "disablesAutomatedOverloadMathFor": "еҒңз”ЁзҶұиә«гҖҒжёӣйҮҸйҖұжҲ–иҖ…иҮӘз”ұиЁ“з·ҙеҳ…иҮӘеӢ•и¶…иІ иҚ·иЁҲз®—.",
-            "n2ConfigurationFieldsExamples": "2. й…ҚзҪ®ж¬„дҪҚеҗҢдҫӢеӯҗ",
-            "theTotalRepCeilingFor": "е‘ўеҖӢеӢ•дҪңеҳ…зёҪж¬Ўж•ёдёҠйҷҗ.",
+            "totalRepGoalCumulativeAutoregulation": "總次數目標（累計／自動調節）",
+            "aimForATotalRep": "以所有組數加埋嘅總次數門檻做目標。隨住組數推進同疲勞累積（例如 18、15、15、15、15 = 78 下），達到總次數目標會自動觸發下次訓練嘅重量提升.",
+            "fixedTargetAllSetsHit": "固定目標（所有組數達成）",
+            "everyWorkingSetMustReach": "每個正式組都要達到或者超過目標次數。如果任何一組未達標（例如 8 次目標但做咗 8、8、7），負荷維持不變，直到所有組數都達標.",
+            "stepLoadProgressRepsOnly": "階梯加載（僅進度次數）",
+            "keepsTheLoadFixedE": "保持負荷固定（例如自重或者固定啞鈴），每次達成次數目標之後遞增目標次數，之後先換更重嘅器材.",
+            "disablesAutomatedOverloadMathFor": "停用熱身、減量週或者自由訓練嘅自動超負荷計算.",
+            "n2ConfigurationFieldsExamples": "2. 配置欄位同例子",
+            "theTotalRepCeilingFor": "呢個動作嘅總次數上限.",
             "incrementAmount": "йҒһеўһйҮҸ",
-            "theWeightOrRepJump": "йҒ”еҲ°зӣ®жЁҷд№ӢеҫҢеҘ—з”Ёеҳ…йҮҚйҮҸжҲ–иҖ…ж¬Ўж•ёи·іе№….",
-            "examples25LbsCables": "дҫӢеӯҗпјҡ+2.5 зЈ…пјҲзәңз№©пјҸеҫ®зҙ°зүҮпјүгҖҒ+5.0 зЈ…пјҲе•һйҲҙпјүгҖҒ+10.0 зЈ…пјҲзЎ¬иҲүпјү.",
-            "theMachineOrStationBranding": "ж©ҹеҷЁжҲ–иҖ…иЁ“з·ҙз«ҷе“ҒзүҢгҖӮе””еҗҢиЈҪйҖ е•Ҷеҳ…ж§“жЎҝе·®з•°еҘҪеӨ§.",
-            "examplesHammerStrengthLifeFitnessCable": "дҫӢеӯҗпјҡHammer StrengthгҖҒLifeFitnessгҖҒCable StackгҖҒе•һйҲҙгҖҒPower Rack.",
+            "theWeightOrRepJump": "達到目標之後套用嘅重量或者次數跳幅.",
+            "examples25LbsCables": "例子：+2.5 磅（纜繩／微細片）、+5.0 磅（啞鈴）、+10.0 磅（硬舉）.",
+            "theMachineOrStationBranding": "機器或者訓練站品牌。唔同製造商嘅槓桿差異好大.",
+            "examplesHammerStrengthLifeFitnessCable": "例子：Hammer Strength、LifeFitness、Cable Stack、啞鈴、Power Rack.",
             "exerciseNotesCues": "動作備註／提示",
-            "equipmentSetupAndFormReminders": "еҷЁжқҗиЁӯе®ҡеҗҢе§ҝеӢўжҸҗйҶ’.",
-            "examplesSeatSetting4Pin": "дҫӢеӯҗпјҡеә§жӨ…иЁӯ 4гҖҒжҸ’жўў 3гҖҒеҜ¬жҸЎгҖҒеҝғеҸЈеҒңй “ 2 з§’.",
+            "equipmentSetupAndFormReminders": "器材設定同姿勢提醒.",
+            "examplesSeatSetting4Pin": "例子：座椅設 4、插梢 3、寬握、心口停頓 2 秒.",
             "supersetA": "超級組 A",
             "supersetB": "超級組 B",
             "supersetC": "超級組 C",
@@ -8700,7 +8700,7 @@
             "preset": "й җиЁӯ"
         },
         "workoutPresetsManager": {
-            "sets": "{{totalSets}} зө„",
+            "sets": "{{totalSets}} 組",
             "openMenu": "й–Ӣе•ҹйҒёе–®"
         },
         "level": "зӯүзҙҡпјҡ",
@@ -8714,34 +8714,34 @@
             "continuousScan": "йҖЈзәҢжҺғжҸҸ",
             "alignBarcode": "對準條碼",
             "quagga2": "quagga2",
-            "cameraName": "зӣёж©ҹ {{id}}вҖҰ"
+            "cameraName": "相機 {{id}}…"
         },
         "barcodeScannerDialog": {
-            "noActiveProvidersFound": "жҗөе””еҲ°е•ҹз”Ёз·Ҡеҳ…жҸҗдҫӣж–№",
+            "noActiveProvidersFound": "搵唔到啟用緊嘅提供方",
             "loadingCameraModule": "載入緊相機模組…"
         },
         "foodResultCard": {
-            "gi": "GIпјҡ{{glycemic_index}}"
+            "gi": "GI：{{glycemic_index}}"
         },
         "searchingBarcode": "搜尋緊條碼",
-        "lookingUp": "жҹҘз·Ҡпјҡ{{barcode}}вҖҰ",
+        "lookingUp": "查緊：{{barcode}}…",
         "foodFoundInDatabase": "資料庫搵到食材",
-        "found": "жҗөеҲ°пјҡ{{name}}",
+        "found": "搵到：{{name}}",
         "barcodeScannedSuccessfully": "條碼掃描成功",
-        "foundProduct": "жҗөеҲ°з”ўе“Ғпјҡ{{name}}",
+        "foundProduct": "搵到產品：{{name}}",
         "productNotFound": "搵唔到產品",
-        "noProductFoundForThis": "з”ЁжүҖжҸҖеҳ…жҸҗдҫӣж–№пјҢе‘ўеҖӢжўқзўјжҗөе””еҲ°з”ўе“Ғ.",
+        "noProductFoundForThis": "用所揀嘅提供方，呢個條碼搵唔到產品.",
         "failedToSearchBarcode": "搜尋唔到條碼.",
         "foodAdded": "食材已加入",
-        "hasBeenAddedAndIs": "{{name}} е·ІеҠ е…ҘпјҢеҸҜд»ҘеҠ е…ҘжӮЁеҳ…йӨҗиҶі",
-        "failedToProcessTheEdited": "иҷ•зҗҶе””еҲ°е·Із·ЁијҜеҳ…йЈҹжқҗ",
-        "failedToRetrieveDetailedNutrition": "ж”һе””еҲ°е‘ўеҖӢй …зӣ®еҳ…и©ізҙ°зҮҹйӨҠ.",
-        "failedToRetrieveDetailedNutrition2": "ж”һе””еҲ°и©ізҙ°зҮҹйӨҠгҖӮж”№з”ЁйғЁеҲҶж•ёж“ҡ.",
+        "hasBeenAddedAndIs": "{{name}} 已加入，可以加入您嘅餐膳",
+        "failedToProcessTheEdited": "處理唔到已編輯嘅食材",
+        "failedToRetrieveDetailedNutrition": "攞唔到呢個項目嘅詳細營養.",
+        "failedToRetrieveDetailedNutrition2": "攞唔到詳細營養。改用部分數據.",
         "all": "е…ЁйғЁ",
         "nutrientFormGrid": {
             "glycemicIndexGI": "升糖指數（GI）",
             "selectGI": "жҸҖ GI",
-            "calories": "еҚЎи·ҜйҮҢпјҲ{{energyUnit}}пјү",
+            "calories": "卡路里（{{energyUnit}}）",
             "none": "з„Ў",
             "veryLow": "жҘөдҪҺ",
             "low": "дҪҺ",
@@ -8768,16 +8768,16 @@
         },
         "providerNutrientViewer": {
             "alreadyMapped": "е·Іе°ҚжҮү",
-            "alreadyMapsTo": "гҖҢ{{label}}гҖҚе·Із¶“е°ҚжҮүе’—еҺ» {{name}}.",
+            "alreadyMapsTo": "「{{label}}」已經對應咗去 {{name}}.",
             "aliasAdded": "別名已加入",
-            "willNowImportInto": "гҖҢ{{label}}гҖҚиҖҢе®¶жңғеҢҜе…ҘеҺ» {{name}}.",
-            "failedToAddAliasPlease": "еҠ е””еҲ°еҲҘеҗҚгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў.",
-            "nutrientFieldsReportedBy": "{{providerLabel}} еӣһе ұеҳ…зҮҹйӨҠзҙ ж¬„дҪҚпјҲ{{length}}пјү",
-            "theseAreTheExactField": "е‘ўе•ІдҝӮ {{providerLabel}} з”Ёеҳ…зўәеҜҰж¬„дҪҚеҗҚзЁұгҖӮеҠ дёҖеҖӢеҒҡеҲҘеҗҚпјҢе°ұеҸҜд»ҘеҢҜе…ҘеҺ»жӮЁеҳ…иҮӘиЁӮзҮҹйӨҠзҙ гҖӮжҜ”е°Қжңғе””зҗҶеӨ§е°ҸеҜ«еҗҢжЁҷй»һ.",
-            "viewThisFoodOn": "е–ә {{providerLabel}} еәҰзқҮе‘ўеҖӢйЈҹжқҗ",
-            "standard": "жЁҷжә–пјҡ{{standardLabel}}",
+            "willNowImportInto": "「{{label}}」而家會匯入去 {{name}}.",
+            "failedToAddAliasPlease": "加唔到別名。請再試多次.",
+            "nutrientFieldsReportedBy": "{{providerLabel}} 回報嘅營養素欄位（{{length}}）",
+            "theseAreTheExactField": "呢啲係 {{providerLabel}} 用嘅確實欄位名稱。加一個做別名，就可以匯入去您嘅自訂營養素。比對會唔理大小寫同標點.",
+            "viewThisFoodOn": "喺 {{providerLabel}} 度睇呢個食材",
+            "standard": "標準：{{standardLabel}}",
             "addAsAlias": "еҠ еҒҡеҲҘеҗҚ",
-            "addTo": "е°ҮгҖҢ{{label}}гҖҚеҠ е…Ҙ",
+            "addTo": "將「{{label}}」加入",
             "newCustomNutrient": "新增自訂營養素"
         },
         "variantCard": {
@@ -8791,10 +8791,10 @@
             "equivalentSize": "зӯүж•ҲеӨ§е°Ҹ",
             "removeEquivalent": "з§»йҷӨзӯүж•Ҳ",
             "allergens": "иҮҙж•ҸеҺҹ",
-            "nutritionPer2": "жҜҸ {{variant}} еҳ…зҮҹйӨҠ",
-            "estimate2": "{{ai_confidence}} дј°з®—",
+            "nutritionPer2": "每 {{variant}} 嘅營養",
+            "estimate2": "{{ai_confidence}} 估算",
             "custom": "иҮӘиЁӮ",
-            "aiEstimateConfidence": "AI дј°з®—пјҲ{{confidence}} дҝЎеҝғеәҰпјү",
+            "aiEstimateConfidence": "AI 估算（{{confidence}} 信心度）",
             "customAllergen": "自訂致敏原…"
         }
     },
@@ -8802,25 +8802,25 @@
         "sponsor": "иҙҠеҠ©"
     },
     "newReleaseDialog": {
-        "criticalWARNINGTHISRELEASECONTAINS": "йҮҚеӨ§иӯҰе‘Ҡпјҡе‘ўеҖӢзүҲжң¬еҢ…еҗ«з ҙеЈһжҖ§и®ҠжӣҙпјҒ",
-        "newVersionAvailable": "жңүж–°зүҲжң¬еҸҜз”Ёпјҡ{{version}}",
-        "aNewVersionOfSparkyFitness": "SparkyFitness жңүж–°зүҲжң¬еҸҜд»Ҙз”ЁпјҒ",
+        "criticalWARNINGTHISRELEASECONTAINS": "重大警告：呢個版本包含破壞性變更！",
+        "newVersionAvailable": "有新版本可用：{{version}}",
+        "aNewVersionOfSparkyFitness": "SparkyFitness 有新版本可以用！",
         "releaseNotes": "版本說明：",
-        "iHaveReadAndUnderstood": "жҲ‘е·Із¶“зқҮе®ҢдёҰдәҶи§ЈзүҲжң¬иӘӘжҳҺ.",
-        "pleaseContactThePlatformAdministrator": "з№јзәҢд№ӢеүҚи«ӢиҒҜзөЎе№іеҸ°з®ЎзҗҶе“ЎеҚ”иӘҝжӣҙж–°.",
-        "checkingThisBoxConfirmsYou": "еү”е’—е‘ўеҖӢжЎҶеҚідҝӮи©ұжӮЁи·ҹеҫ—дёҠжңҖж–°и®Ҡжӣҙ.",
-        "typeBREAKINGHere": "е–әе‘ўеәҰијёе…ҘгҖҢBREAKINGгҖҚ",
-        "donTShowAgainFor": "е‘ўеҖӢзүҲжң¬е””еҘҪеҶҚйЎҜзӨә",
-        "published2": "зҷјеёғжҷӮй–“пјҡ{{value}}",
-        "iAcknowledgeThatThisRelease2": "жҲ‘зўәиӘҚе‘ўеҖӢзүҲжң¬еҢ…еҗ«<span>з ҙеЈһжҖ§и®Ҡжӣҙ</span>пјҢиҖҢдё”жҲ‘е·Із¶“зқҮе’—зӣёй—ңи®Ҡжӣҙ.",
-        "toConfirmYouUnderstandPlease2": "зӮәе’—зўәиӘҚжӮЁжҳҺзҷҪпјҢи«Ӣе–әдёӢйқўијёе…Ҙ<strong>BREAKING</strong>пјҡ",
-        "viewOnGitHub2": "е–ә GitHub дёҠзқҮпјҡ<link>{{htmlUrl}}</link>",
+        "iHaveReadAndUnderstood": "我已經睇完並了解版本說明.",
+        "pleaseContactThePlatformAdministrator": "繼續之前請聯絡平台管理員協調更新.",
+        "checkingThisBoxConfirmsYou": "剔咗呢個框即係話您跟得上最新變更.",
+        "typeBREAKINGHere": "喺呢度輸入「BREAKING」",
+        "donTShowAgainFor": "呢個版本唔好再顯示",
+        "published2": "發布時間：{{value}}",
+        "iAcknowledgeThatThisRelease2": "我確認呢個版本包含<span>破壞性變更</span>，而且我已經睇咗相關變更.",
+        "toConfirmYouUnderstandPlease2": "為咗確認您明白，請喺下面輸入<strong>BREAKING</strong>：",
+        "viewOnGitHub2": "喺 GitHub 上睇：<link>{{htmlUrl}}</link>",
         "pleaseScrollToTheBottom": "⚠️ 請碌到版本說明最底先算睇完."
     },
     "oidcCallback": {
         "completingSecureLogin": "完成緊安全登入…",
-        "error": "йҢҜиӘӨпјҡ{{error}}",
-        "pleaseWaitWhileWeFinalize": "и«Ӣзӯүеҗ“пјҢжҲ‘е“ӢжӯЈеңЁе®ҢжҲҗжӮЁеҳ…е·ҘдҪңйҡҺж®ө."
+        "error": "錯誤：{{error}}",
+        "pleaseWaitWhileWeFinalize": "請等吓，我哋正在完成您嘅工作階段."
     },
     "passwordToggle": {
         "togglePasswordVisibility": "開關密碼可見性"
@@ -8833,7 +8833,7 @@
         "note": "жіЁж„Ҹпјҡ"
     },
     "zoomableChart": {
-        "maximizedViewOfTheChart": "ең–иЎЁж”ҫеӨ§жӘўиҰ–гҖӮз”ЁжҺ§еҲ¶й …зё®ж”ҫжҲ–иҖ…ж”¶зҙ°.",
+        "maximizedViewOfTheChart": "圖表放大檢視。用控制項縮放或者收細.",
         "reset": "йҮҚиЁӯ"
     },
     "ai": {
@@ -8849,7 +8849,7 @@
     "attachment": {
         "attachmentPreview": "йҷ„д»¶й җиҰҪ",
         "imageAttachmentPreview": "圖片附件預覽",
-        "attachment": "{{typeLabel}} йҷ„д»¶",
+        "attachment": "{{typeLabel}} 附件",
         "removeFile": "з§»йҷӨжӘ”жЎҲ",
         "addAttachment": "еҠ йҷ„д»¶"
     },
@@ -8857,12 +8857,12 @@
         "copy": "иӨҮиЈҪ"
     },
     "reasoning": {
-        "reasoning": "жҺЁзҗҶ{{durationText}}"
+        "reasoning": "推理{{durationText}}"
     },
     "thread": {
         "scrollToBottom": "碌到最底",
         "helloThere": "жӮЁеҘҪпјҒ",
-        "howCanIHelpYou": "д»Ҡж—Ҙжңүе’©еҸҜд»Ҙе№«еҲ°жӮЁпјҹ",
+        "howCanIHelpYou": "今日有咩可以幫到您？",
         "sendAMessage": "傳送訊息…",
         "messageInput": "иЁҠжҒҜијёе…Ҙ",
         "sendMessage": "傳送訊息",
@@ -8871,7 +8871,7 @@
         "copy": "иӨҮиЈҪ",
         "refresh": "йҮҚж–°ж•ҙзҗҶ",
         "more": "жӣҙеӨҡ",
-        "exportAsMarkdown": "еҢҜеҮәеҒҡ Markdown",
+        "exportAsMarkdown": "匯出做 Markdown",
         "update": "жӣҙж–°"
     },
     "toolfallback": {
@@ -8895,11 +8895,11 @@
         },
         "dialog": {
             "closeWindow": "關閉視窗",
-            "areYouSureYouWant": "зўәе®ҡиҰҒй–Ӯе’—дҪўе—Һпјҹд»»дҪ•жңӘе„Іеӯҳеҳ…ж”№еӢ•йғҪжңғеҶҮе’—."
+            "areYouSureYouWant": "確定要閂咗佢嗎？任何未儲存嘅改動都會冇咗."
         }
     },
     "mainLayout": {
-        "sparkyFitnessLogo": "SparkyFitness жЁҷиӘҢ"
+        "sparkyFitnessLogo": "SparkyFitness 標誌"
     },
     "ttc": {
         "testQuickLog": {
@@ -8923,25 +8923,25 @@
             "reloadPage": "重新載入頁面"
         },
         "notFound": {
-            "oopsPageNotFoundOr": "е“Һе‘ҖпјҒжҗөе””еҲ°й ҒйқўпјҢжҲ–иҖ…зҷјз”ҹе’—ж„ҸеӨ–йҢҜиӘӨ.",
+            "oopsPageNotFoundOr": "哎呀！搵唔到頁面，或者發生咗意外錯誤.",
             "returnToHome": "иҝ”еҺ»дё»й Ғ"
         }
     },
     "dietTemplates": {
-        "wellRoundedNutritionForGeneral": "йҒ©еҗҲдёҖиҲ¬еҒҘеә·еҳ…еқҮиЎЎзҮҹйӨҠ",
-        "heartHealthyWithHealthyFats": "еҗ«еҒҘеә·и„ӮиӮӘпјҢе°ҚеҝғиҮҹеҘҪ",
-        "dietaryApproachesToStopHypertension": "з”ЁйЈІйЈҹж–№жі•еҡҹжҺ§еҲ¶й«ҳиЎҖеЈ“",
+        "wellRoundedNutritionForGeneral": "適合一般健康嘅均衡營養",
+        "heartHealthyWithHealthyFats": "含健康脂肪，對心臟好",
+        "dietaryApproachesToStopHypertension": "用飲食方法嚟控制高血壓",
         "veryLowCarbHighFat": "極低碳水、高脂肪",
         "highCarbMinimalFat": "高碳水、極少脂肪",
         "ketogenicStyleDiet": "生酮式飲食",
-        "setYourOwnPercentages": "иЁӯе®ҡжӮЁиҮӘе·ұеҳ…зҷҫеҲҶжҜ”"
+        "setYourOwnPercentages": "設定您自己嘅百分比"
     },
     "fastingPresets": {
-        "skipBreakfastAndEatDuring": "е””йЈҹж—©йӨҗпјҢе–ә 8 еҖӢйҗҳйҖІйЈҹзӘ—еҸЈе…ҘйқўйЈҹ.",
-        "moreAggressiveFastWithA": "жӣҙйҖІеҸ–еҳ…ж–·йЈҹпјҢ6 еҖӢйҗҳйҖІйЈҹзӘ—еҸЈ.",
-        "eatOneLargeMealOr": "йЈҹдёҖйӨҗеӨ§йӨҗпјҢжҲ–иҖ…е°ҮеҚЎи·ҜйҮҢеҲҶж•Је–ә 4 еҖӢйҗҳе…Ҙйқў.",
-        "fastFromSunsetToMorning": "з”ұж—ҘиҗҪж–·йЈҹеҲ°жңқж—©.",
-        "setYourOwnFastingDuration": "иЁӯе®ҡжӮЁиҮӘе·ұеҳ…ж–·йЈҹжҷӮй•·."
+        "skipBreakfastAndEatDuring": "唔食早餐，喺 8 個鐘進食窗口入面食.",
+        "moreAggressiveFastWithA": "更進取嘅斷食，6 個鐘進食窗口.",
+        "eatOneLargeMealOr": "食一餐大餐，或者將卡路里分散喺 4 個鐘入面.",
+        "fastFromSunsetToMorning": "由日落斷食到朝早.",
+        "setYourOwnFastingDuration": "設定您自己嘅斷食時長."
     },
     "foodForm": {
         "volume": "й«”з©Қ",
@@ -8952,53 +8952,53 @@
     },
     "components": {
         "tagInput": {
-            "removeTag": "з§»йҷӨ {{tag}}"
+            "removeTag": "移除 {{tag}}"
         }
     },
     "shoes": {
         "title": "и·‘йһӢ",
-        "subtitle": "иҝҪи№ӨжҜҸе°Қи·‘йһӢеҳ…йҮҢзЁӢ.",
+        "subtitle": "追蹤每對跑鞋嘅里程.",
         "shoe": "и·‘йһӢ",
         "noShoe": "еҶҮи·‘йһӢ",
         "addShoe": "еҠ и·‘йһӢ",
         "editShoe": "編輯跑鞋",
-        "formDescription": "иҝҪи№ӨдёҖе°ҚйһӢеҳ…йҮҢзЁӢпјҢдёҰе–әиҰҒжҸӣе—°йҷЈж”¶еҲ°жҸҗйҶ’.",
+        "formDescription": "追蹤一對鞋嘅里程，並喺要換嗰陣收到提醒.",
         "name": "еҗҚзЁұ",
         "brand": "е“ҒзүҢ",
         "model": "еһӢиҷҹ",
         "nickname": "иҠұеҗҚ",
         "purchaseDate": "購買日期",
         "purchasePrice": "еғ№йҢў",
-        "startingDistance": "иө·е§ӢйҮҢзЁӢпјҲ{{unit}}пјү",
-        "retireAt": "йҖҖеҪ№йҮҢзЁӢпјҲ{{unit}}пјү",
+        "startingDistance": "起始里程（{{unit}}）",
+        "retireAt": "退役里程（{{unit}}）",
         "useAsDefault": "做我嘅預設跑鞋",
         "default": "預設跑鞋",
         "retired": "е·ІйҖҖеҪ№",
         "retiredSection": "е·ІйҖҖеҪ№",
         "wornOut": "е·ІзЈЁиқ•",
         "mileage": "йҮҢзЁӢ",
-        "ofLimit": "пјҸ{{limit}} {{unit}}",
-        "runCount_other": "{{count}} ж¬Ўи·‘",
-        "lastUsed": "дёҠж¬Ўз”Ё {{date}}",
+        "ofLimit": "／{{limit}} {{unit}}",
+        "runCount_other": "{{count}} 次跑",
+        "lastUsed": "上次用 {{date}}",
         "retire": "йҖҖеҪ№",
-        "retirePrompt": "е‘ўе°ҚйһӢе·Із¶“еҲ°е’—йҮҢзЁӢдёҠйҷҗгҖӮиҰҒйҖҖеҪ№е—Һпјҹ",
+        "retirePrompt": "呢對鞋已經到咗里程上限。要退役嗎？",
         "reactivate": "йҮҚж–°е•ҹз”Ё",
-        "empty": "жңӘжңүи·‘йһӢгҖӮеҠ дёҖе°ҚпјҢз„¶еҫҢи·‘е—°йҷЈжҸҖдҪўпјҢй–Ӣе§ӢзҙҜиЁҲйҮҢзЁӢ.",
+        "empty": "未有跑鞋。加一對，然後跑嗰陣揀佢，開始累計里程.",
         "deleteTitle": "刪除呢對鞋？",
-        "deleteDescription": "з”Ёе‘ўе°ҚйһӢиЁҳйҢ„еҳ…и·‘жӯҘжңғдҝқз•ҷе–әж—ҘиЁҳпјҢдҪҶе””жңғеҶҚйҖЈзөҗеҺ»и·‘йһӢ.",
+        "deleteDescription": "用呢對鞋記錄嘅跑步會保留喺日記，但唔會再連結去跑鞋.",
         "added": "跑鞋已加入.",
         "updated": "跑鞋已更新.",
         "deleted": "跑鞋已刪除.",
         "failedToLoad": "載入唔到跑鞋.",
         "failedToSave": "儲存唔到跑鞋.",
         "failedToDelete": "刪除唔到跑鞋.",
-        "failedToAssign": "жӣҙж–°е””еҲ°е‘ўж¬Ўи·‘жӯҘеҳ…и·‘йһӢ."
+        "failedToAssign": "更新唔到呢次跑步嘅跑鞋."
     },
     "trainingPrograms": {
         "banner": {
             "markDone": "標記做完成",
             "open": "й–Ӣе•ҹиЁҲеҠғ",
-            "program": "иЁ“з·ҙиЁҲеҠғпјҡ{{name}}",
+            "program": "訓練計劃：{{name}}",
             "scheduled": "е·ІжҺ’зЁӢ",
             "scheduledToday": "今日已排程",
             "upNext": "дёӢдёҖиӘІ",
@@ -9006,111 +9006,111 @@
         },
         "calendar": {
             "done": "е®ҢжҲҗ",
-            "doneOn": "{{date}} е®ҢжҲҗ",
+            "doneOn": "{{date}} 完成",
             "due": "дёӢдёҖиӘІ",
-            "finish": "{{date}} зөҗжқҹ.",
-            "finishedNote": "жҜҸе ӮиЁ“з·ҙйғҪе®ҢжҲҗе’—гҖӮйҮҚж–°й–Ӣе§ӢиЁҲеҠғеҡҹиҰҸеҠғеҸҰдёҖијӘ.",
+            "finish": "{{date}} 結束.",
+            "finishedNote": "每堂訓練都完成咗。重新開始計劃嚟規劃另一輪.",
             "legendAhead": "е·ІиҰҸеҠғ",
             "legendDone": "е®ҢжҲҗ",
             "legendNext": "дёӢдёҖиӘІ",
-            "moves": "йҢҜйҒҺе’—еҳ…иЁ“з·ҙе””жңғдҝҫдәәи·ійҒҺпјҡд№ӢеҫҢеҳ…ж—Ҙжңҹжңғй ҶдҪҸе»¶еҫҢ.",
+            "moves": "錯過咗嘅訓練唔會俾人跳過：之後嘅日期會順住延後.",
             "noWorkoutsDay": "呢日冇訓練.",
             "notScheduled": "жңӘжҺ’зЁӢ",
             "showLess": "顯示少啲",
             "title": "жҷӮй–“иЎЁ",
             "today": "д»Ҡж—Ҙ",
             "upcoming": "е°ұеҡҹеҲ°",
-            "fitsBefore_other": "йҖІеәҰй ҶеҲ©пјҡжӮЁжңғе–ә {{date}} е®ҢжҲҗпјҢжҜ”зӣ®жЁҷж—Ҙжңҹж—© {{count}} ж—Ҙ.",
-            "fitsAfter_other": "д»Ҙе‘ўеҖӢйҖІеәҰжӮЁжңғе–ә {{date}} е®ҢжҲҗпјҢжҜ”зӣ®жЁҷж—ҘжңҹйҒІ {{count}} ж—ҘгҖӮеҠ еҖӢиЁ“з·ҙж—ҘжҲ–иҖ…ж”№ж—Ҙжңҹ.",
-            "noDays_other": "еү©дҪҺ {{count}} е ӮиЁ“з·ҙгҖӮжҸҖжӮЁеҳ…и·‘жӯҘж—ҘеҡҹзқҮжҜҸе Ӯе№ҫжҷӮеҒҡпјӣе–әе—°д№ӢеүҚпјҢж—ҘиЁҳжҜҸж—ҘйғҪжңғжҸҗдҫӣдёӢдёҖе Ӯ.",
-            "catchUp_other": "и·ійҒҺи·ҹдҪҸеҡҹеҳ… {{count}} е ӮиЁ“з·ҙпјҢе°ұеҸҜд»Ҙе–ә {{date}} е®ҢжҲҗпјҢи¶•дёҠжӮЁеҳ…зӣ®жЁҷгҖӮжңҖеҫҢдёҖе Ӯзө•е””жңғи·ійҒҺ.",
-            "catchUpButton_other": "и·ійҒҺ {{count}} е ӮиЁ“з·ҙ",
-            "tooFar_other": "жӮЁиҗҪеҫҢеӨӘеӨҡпјҢйқ и·ійҒҺйғҪиҝҪе””дёҠпјҡ{{count}} е ӮиЁ“з·ҙжҺ’е””жҷ’гҖӮеҠ е•Іи·‘жӯҘж—ҘжҲ–иҖ…ж”№зӣ®жЁҷж—Ҙжңҹ.",
-            "cutOff_other": "{{count}} е ӮиЁ“з·ҙжҺ’е””еҲ°зӣ®жЁҷж—Ҙжңҹд№ӢеүҚ.",
-            "showAll_other": "йЎҜзӨәе…ЁйғЁ {{count}} е Ӯ"
+            "fitsBefore_other": "進度順利：您會喺 {{date}} 完成，比目標日期早 {{count}} 日.",
+            "fitsAfter_other": "以呢個進度您會喺 {{date}} 完成，比目標日期遲 {{count}} 日。加個訓練日或者改日期.",
+            "noDays_other": "剩低 {{count}} 堂訓練。揀您嘅跑步日嚟睇每堂幾時做；喺嗰之前，日記每日都會提供下一堂.",
+            "catchUp_other": "跳過跟住嚟嘅 {{count}} 堂訓練，就可以喺 {{date}} 完成，趕上您嘅目標。最後一堂絕唔會跳過.",
+            "catchUpButton_other": "跳過 {{count}} 堂訓練",
+            "tooFar_other": "您落後太多，靠跳過都追唔上：{{count}} 堂訓練排唔晒。加啲跑步日或者改目標日期.",
+            "cutOff_other": "{{count}} 堂訓練排唔到目標日期之前.",
+            "showAll_other": "顯示全部 {{count}} 堂"
         },
         "card": {
-            "actionsHint": "и·ійҒҺжңғе””еҒҡе‘ўе ӮиЁ“з·ҙгҖӮйҮҚж–°й–Ӣе§Ӣе°ұиҝ”иҝ”з¬¬дёҖе Ӯ.",
-            "changed": "{{date}} иЁҲеҠғе·Іж”№пјҡ{{summary}}",
-            "changedBySparky": "Sparky е–ә {{date}} ж”№е’—жӮЁеҳ…иЁҲеҠғпјҡ{{summary}}",
+            "actionsHint": "跳過會唔做呢堂訓練。重新開始就返返第一堂.",
+            "changed": "{{date}} 計劃已改：{{summary}}",
+            "changedBySparky": "Sparky 喺 {{date}} 改咗您嘅計劃：{{summary}}",
             "chooseWorkout": "揀另一堂訓練",
-            "finished": "{{name}} е·Іе®ҢжҲҗ",
-            "finishedHint": "еҒҡеҫ—еҘҪгҖӮжӮЁеҸҜд»ҘйҮҚж–°й–Ӣе§ӢжҲ–иҖ…з№јзәҢ.",
+            "finished": "{{name}} 已完成",
+            "finishedHint": "做得好。您可以重新開始或者繼續.",
             "goalClear": "жё…йҷӨ",
             "goalDay": "зӣ®жЁҷж—Ҙжңҹ",
-            "goalDayHint": "еҸҜйҒёпјҢдҫӢеҰӮжҜ”иіҪж—ҘгҖӮдёӢйқўеҳ…жҷӮй–“иЎЁжңғйЎҜзӨәиЁҲеҠғи¶•е””и¶•еҫ—еҲҮ.",
-            "goalDaySet": "{{date}} д№ӢеҫҢеҶҮжҺ’зЁӢгҖӮдёӢйқўеҳ…жҷӮй–“иЎЁжңғйЎҜзӨәиЁҲеҠғеҡҹе””еҡҹеҫ—еҲҮ.",
+            "goalDayHint": "可選，例如比賽日。下面嘅時間表會顯示計劃趕唔趕得切.",
+            "goalDaySet": "{{date}} 之後冇排程。下面嘅時間表會顯示計劃嚟唔嚟得切.",
             "markDone": "標記訓練做完成",
-            "minutes": "{{minutes}} еҲҶйҗҳ",
-            "paused": "{{name}} е·Із¶“е–ә {{done}}пјҸ{{total}} е ӮеәҰжҡ«еҒңе’—гҖӮй–Ӣиҝ”дҪўеҡҹз№јзәҢ.",
-            "pickRun": "и·‘ {{number}}",
-            "pickWalk": "иЎҢ {{number}}",
+            "minutes": "{{minutes}} 分鐘",
+            "paused": "{{name}} 已經喺 {{done}}／{{total}} 堂度暫停咗。開返佢嚟繼續.",
+            "pickRun": "跑 {{number}}",
+            "pickWalk": "行 {{number}}",
             "pickWorkout": "揀一堂訓練",
             "progressBar": "иЁҲеҠғйҖІеәҰ",
             "restart": "йҮҚж–°й–Ӣе§Ӣ",
             "runDays": "и·‘жӯҘж—Ҙ",
-            "runDaysHint": "жҸҖжӮЁжү“з®—иЁ“з·ҙеҳ…ж—ҘеӯҗпјҢжҲ–иҖ…з•ҷз©әе°ұжҜҸж—ҘйЎҜзӨәиЁ“з·ҙ.",
-            "runDaysSet": "ж—ҘиЁҳжңғе–әе‘ўе№ҫж—ҘйЎҜзӨәиЁ“з·ҙгҖӮйҢҜйҒҺе’—еҳ…иЁ“з·ҙжңғз¶ӯжҢҒеҫ…е®ҢжҲҗ.",
+            "runDaysHint": "揀您打算訓練嘅日子，或者留空就每日顯示訓練.",
+            "runDaysSet": "日記會喺呢幾日顯示訓練。錯過咗嘅訓練會維持待完成.",
             "schedule": "жҷӮй–“иЎЁ",
             "skip": "и·ійҒҺ",
             "startClear": "д»Ҡж—Ҙй–Ӣе§Ӣ",
             "startDay": "第一堂訓練",
-            "startDayPast": "{{date}} й–Ӣе§ӢгҖӮжӮЁеҳ…дёӢдёҖе ӮиЁ“з·ҙз”ұд»Ҡж—Ҙиө·жҺ’зЁӢ.",
-            "startDaySet": "{{date}} й–Ӣе§ӢгҖӮе–әе—°д№ӢеүҚж—ҘиЁҳе””жңғйЎҜзӨәд»»дҪ•еҳў.",
-            "startDayToday": "д»Ҡж—Ҙ {{date}} й–Ӣе§ӢгҖӮжғійҒІе•Іе…Ҳй–Ӣе§Ӣеҳ…и©ұпјҢжҸҖеҖӢйҒІе•Іеҳ…ж—Ҙеӯҗ.",
+            "startDayPast": "{{date}} 開始。您嘅下一堂訓練由今日起排程.",
+            "startDaySet": "{{date}} 開始。喺嗰之前日記唔會顯示任何嘢.",
+            "startDayToday": "今日 {{date}} 開始。想遲啲先開始嘅話，揀個遲啲嘅日子.",
             "startOver": "йҮҚж–°й–Ӣе§Ӣ",
-            "switchHint": "и·ҹдёҖеҖӢжҜҸжҳҹжңҹйҖҗжӯҘеҠ еј·еҳ…иЁҲеҠғ.",
+            "switchHint": "跟一個每星期逐步加強嘅計劃.",
             "title": "иЁ“з·ҙиЁҲеҠғ",
             "use": "用訓練計劃",
-            "week": "з¬¬ {{week}} йҖұ",
+            "week": "第 {{week}} 週",
             "progress": "已完成 {{done}}／{{total}} 堂 · 今日 {{minutes}} 分鐘"
         },
         "custom": {
-            "intro": "жӮЁе–әжүӢж©ҹжҮүз”ЁзЁӢејҸе…ҘйқўеҜ«жҲ–иҖ…е»әз«Ӣеҳ…иЁҲеҠғгҖӮй–Ӣе§ӢдёҖеҖӢиЁҲеҠғе°ұеҸҜд»ҘеҘҪдјјд»»дҪ•иЁҲеҠғе’Ғи·ҹ.",
+            "intro": "您喺手機應用程式入面寫或者建立嘅計劃。開始一個計劃就可以好似任何計劃咁跟.",
             "title": "жӮЁеҳ…иЁҲеҠғ",
-            "workoutCount_other": "{{count}} е ӮиЁ“з·ҙ"
+            "workoutCount_other": "{{count}} 堂訓練"
         },
         "entry": {
-            "description": "и·ҹдёҖеҖӢжҜҸжҳҹжңҹйҖҗжӯҘеҠ еј·еҳ…и·‘жӯҘжҲ–иҖ…жӯҘиЎҢиЁҲеҠғпјҢжңүж—ҘжӣҶеҗҢж—ҘиЁҳе…Ҙйқўеҳ…иЁ“з·ҙ.",
+            "description": "跟一個每星期逐步加強嘅跑步或者步行計劃，有日曆同日記入面嘅訓練.",
             "open": "開啟訓練計劃",
             "title": "иЁ“з·ҙиЁҲеҠғ"
         },
         "errors": {
-            "load": "ијүе…Ҙе””еҲ°жӮЁеҳ…иЁ“з·ҙиЁҲеҠғ.",
-            "loadCustom": "ијүе…Ҙе””еҲ°жӮЁеҳ…иЁҲеҠғ.",
-            "update": "жӣҙж–°е””еҲ°жӮЁеҳ…иЁҲеҠғгҖӮи«ӢеҶҚи©ҰеӨҡж¬Ў."
+            "load": "載入唔到您嘅訓練計劃.",
+            "loadCustom": "載入唔到您嘅計劃.",
+            "update": "更新唔到您嘅計劃。請再試多次."
         },
         "page": {
             "allPrograms": "жүҖжңүиЁҲеҠғ",
             "back": "еӢ•дҪң",
-            "intro": "и·ҹдёҖеҖӢжҜҸжҳҹжңҹйҖҗжӯҘеҠ еј·еҳ…иЁҲеҠғгҖӮжҸҖдёҖеҖӢиЁҲеҠғзқҮе…§е®№пјҢжә–еӮҷеҘҪе°ұеҸҜд»Ҙй–Ӣе§Ӣ.",
-            "ownOnly": "иЁ“з·ҙиЁҲеҠғдҝӮеҖӢдәәеҳ…гҖӮеҲҮиҝ”еҺ»жӮЁиҮӘе·ұеҳ…еёіжҲ¶еҡҹзқҮжӮЁеҳ…иЁҲеҠғ.",
+            "intro": "跟一個每星期逐步加強嘅計劃。揀一個計劃睇內容，準備好就可以開始.",
+            "ownOnly": "訓練計劃係個人嘅。切返去您自己嘅帳戶嚟睇您嘅計劃.",
             "title": "иЁ“з·ҙиЁҲеҠғ"
         },
         "picker": {
             "current": "而家嘅計劃",
-            "outline": "з¬¬ 1 йҖұпјҡжҜҸе Ӯ {{weekOne}} еҲҶйҗҳгҖӮйҖҗжӯҘжҸҗеҚҮиҮі {{peak}} еҲҶйҗҳеҳ…и·‘жӯҘ.",
-            "outlineWalk": "з¬¬ 1 йҖұпјҡжҜҸе Ӯ {{weekOne}} еҲҶйҗҳгҖӮйҖҗжӯҘжҸҗеҚҮиҮі {{peak}} еҲҶйҗҳеҳ…еҝ«иЎҢ.",
-            "runsPerWeekHint": "з¬¬еӣӣж¬Ўи·‘жӯҘдҝӮзҹӯи·қйӣўиј•й¬Ҷи·‘пјҢжүҖд»Ҙй•·и·‘е–әжӮЁжҜҸйҖұе…ҘйқўдҪ”еҳ…жҜ”дҫӢзҙ°е•І.",
+            "outline": "第 1 週：每堂 {{weekOne}} 分鐘。逐步提升至 {{peak}} 分鐘嘅跑步.",
+            "outlineWalk": "第 1 週：每堂 {{weekOne}} 分鐘。逐步提升至 {{peak}} 分鐘嘅快行.",
+            "runsPerWeekHint": "第四次跑步係短距離輕鬆跑，所以長跑喺您每週入面佔嘅比例細啲.",
             "start": "й–Ӣе§ӢиЁҲеҠғ",
-            "weeksRuns": "{{weeks}} йҖұпјҢжҜҸйҖұ {{runs}} е ӮиЁ“з·ҙ",
-            "runsPerWeekOption_other": "жҜҸйҖұ {{count}} ж¬Ўи·‘"
+            "weeksRuns": "{{weeks}} 週，每週 {{runs}} 堂訓練",
+            "runsPerWeekOption_other": "每週 {{count}} 次跑"
         },
         "programs": {
             "advancedMarathon": {
-                "description": "йҖІйҡҺйҰ¬жӢүжқҫпјҡеҚҒе…ӯйҖұпјҢжҜҸйҖұи·‘дә”ж¬ЎпјҢжңүйҖҹеәҰжҲ–иҖ…зҜҖеҘҸиЁ“з·ҙпјҢй•·и·‘йҖҗжӯҘдёҠеҲ°дёүеҖӢйҗҳгҖӮе•ұжңүз¶“й©—еҳ…и·‘иҖ….",
+                "description": "進階馬拉松：十六週，每週跑五次，有速度或者節奏訓練，長跑逐步上到三個鐘。啱有經驗嘅跑者.",
                 "name": "進階馬拉松",
-                "structure": "еӨ§еӨҡж•ёжҳҹжңҹжңүе…©ж¬Ўиј•й¬Ҷи·‘гҖҒдёҖж¬ЎйҖҹеәҰжҲ–иҖ…зҜҖеҘҸиЁ“з·ҙгҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 90 еҲҶйҗҳйҖҗжӯҘдёҠеҲ°дёүеҖӢйҗҳпјҢжҜҸз¬¬еӣӣеҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢе…©еҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚжёӣйҮҸ."
+                "structure": "大多數星期有兩次輕鬆跑、一次速度或者節奏訓練、一次中距離跑同一次長跑。長跑由 90 分鐘逐步上到三個鐘，每第四個星期輕鬆啲，最後兩個星期喺比賽日前減量."
             },
             "beginner10k": {
-                "description": "ж–°жүӢ 10KпјҡеҚҒдәҢйҖұпјҢжҜҸйҖұи·‘дёүж¬ЎпјҢз”ұиЎҢй–Ӣе§ӢгҖӮжӮЁжңғйҖҗжӯҘе»әз«ӢеҲ°йҖЈзәҢи·‘дёҖеҖӢйҗҳ.",
+                "description": "新手 10K：十二週，每週跑三次，由行開始。您會逐步建立到連續跑一個鐘.",
                 "name": "新手 10K",
-                "structure": "з¬¬ 1 иҮі 6 жҳҹжңҹи·ҹж–°жүӢ 5K еҳ…е»әз«Ӣж–№ејҸпјҢз”ұзҹӯи·‘еҗҢиЎҢеҲ°йҖЈзәҢи·‘гҖӮз¬¬ 7 иҮі 12 жҳҹжңҹдҝӮжҜҸйҖұи·‘дёүж¬ЎпјҢй•·и·‘з”ұ 30 еҲҶйҗҳйҖҗжӯҘеҠ еҲ° 60 еҲҶйҗҳ."
+                "structure": "第 1 至 6 星期跟新手 5K 嘅建立方式，由短跑同行到連續跑。第 7 至 12 星期係每週跑三次，長跑由 30 分鐘逐步加到 60 分鐘."
             },
             "beginner5k": {
-                "description": "ж–°жүӢ 5Kпјҡд№қйҖұпјҢжҜҸйҖұи·‘дёүж¬ЎгҖӮжӮЁжңғи·‘еҗҢиЎҢдәӨжӣҝпјҢйҖҗжӯҘе»әз«ӢеҲ° 30 еҲҶйҗҳеҳ…йҖЈзәҢи·‘.",
+                "description": "新手 5K：九週，每週跑三次。您會跑同行交替，逐步建立到 30 分鐘嘅連續跑.",
                 "name": "新手 5K",
-                "structure": "з¬¬ 1 иҮі 4 жҳҹжңҹз”Ёзҹӯи·‘еҗҢиЎҢдәӨжӣҝпјҢз”ұ 1 еҲҶйҗҳи·‘й–Ӣе§ӢпјҢйҖҗжӯҘдёҠеҲ° 5 еҲҶйҗҳи·‘гҖӮз¬¬ 5 еҗҢ 6 жҳҹжңҹж··еҗҲи·‘иЎҢй–“жӯҮеҗҢдёҖж¬ЎйҖЈзәҢи·‘гҖӮз¬¬ 7 иҮі 9 жҳҹжңҹдҝӮйҖЈзәҢи·‘ 25гҖҒ28 еҗҢ 30 еҲҶйҗҳ."
+                "structure": "第 1 至 4 星期用短跑同行交替，由 1 分鐘跑開始，逐步上到 5 分鐘跑。第 5 同 6 星期混合跑行間歇同一次連續跑。第 7 至 9 星期係連續跑 25、28 同 30 分鐘."
             },
             "beginnerMarathon": {
                 "name": "新手馬拉松",
@@ -9118,49 +9118,49 @@
                 "structure": "每個星期有一次短跑、一次中距離跑同一次長跑。長跑由 70 分鐘逐步上到 2.5 個鐘，每第四個星期輕鬆啲，最後三個星期喺比賽日前減量."
             },
             "beginnerMarathon4": {
-                "name": "ж–°жүӢйҰ¬жӢүжқҫпјҲжҜҸйҖұи·‘еӣӣж¬Ўпјү",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүе…©ж¬Ўзҹӯи·‘гҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 80 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 2 еҖӢйҗҳ 40 еҲҶпјҢжҜҸз¬¬еӣӣеҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢдёүеҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚжёӣйҮҸгҖӮжңҖеҫҢдёҖеҖӢжҳҹжңҹдҝӮдёүж¬Ўзҹӯе•Іеҳ…и·‘.",
+                "name": "新手馬拉松（每週跑四次）",
+                "structure": "每個星期有兩次短跑、一次中距離跑同一次長跑。長跑由 80 分鐘逐步上到 2 個鐘 40 分，每第四個星期輕鬆啲，最後三個星期喺比賽日前減量。最後一個星期係三次短啲嘅跑.",
                 "description": "新手馬拉松：十八週，每週跑四次，長跑逐步上到 2 個鐘 40 分仲有減量期。啱跑得到 10K 嘅人."
             },
             "faster10k": {
-                "description": "жӣҙеҝ« 10Kпјҡе…«йҖұеҳ…йҖҹеәҰиЁ“з·ҙгҖҒиј•й¬Ҷи·‘еҗҢзҜҖеҘҸи·‘пјҢе•ұе·Із¶“и·‘еҫ—еҲ° 10K еҳ…дәә.",
+                "description": "更快 10K：八週嘅速度訓練、輕鬆跑同節奏跑，啱已經跑得到 10K 嘅人.",
                 "name": "更快 10K",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүдёҖж¬ЎйҖҹеәҰиЁ“з·ҙпјҲеҝ«йҖҹеҗҢиј•й¬ҶеҸҚиҰҶпјүгҖҒдёҖж¬Ўиј•й¬Ҷи·‘еҗҢдёҖж¬Ўијғй•·и·‘гҖӮз¬¬ 5 иҮі 7 еҖӢжҳҹжңҹеҳ…ијғй•·и·‘дҝӮ 20гҖҒ25 еҗҢ 30 еҲҶйҗҳеҳ…зҜҖеҘҸи·‘пјҢжңҖеҫҢдёҖеҖӢжҳҹжңҹж”ҫй¬Ҷ."
+                "structure": "每個星期有一次速度訓練（快速同輕鬆反覆）、一次輕鬆跑同一次較長跑。第 5 至 7 個星期嘅較長跑係 20、25 同 30 分鐘嘅節奏跑，最後一個星期放鬆."
             },
             "faster5k": {
-                "description": "жӣҙеҝ« 5Kпјҡе…ӯйҖұеҳ…йҖҹеәҰиЁ“з·ҙгҖҒиј•й¬Ҷи·‘еҗҢзҜҖеҘҸи·‘пјҢе•ұе·Із¶“и·‘еҫ—еҲ° 5K еҳ…дәә.",
+                "description": "更快 5K：六週嘅速度訓練、輕鬆跑同節奏跑，啱已經跑得到 5K 嘅人.",
                 "name": "更快 5K",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүдёҖж¬ЎйҖҹеәҰиЁ“з·ҙпјҲеҝ«йҖҹеҗҢиј•й¬ҶеҸҚиҰҶпјүгҖҒдёҖж¬Ўиј•й¬Ҷи·‘еҗҢдёҖж¬Ўијғй•·и·‘гҖӮз¬¬ 1 иҮі 3 еҖӢжҳҹжңҹеҳ…ијғй•·и·‘дҝӮиј•й¬Ҷи·‘пјӣз¬¬ 4 иҮі 6 еҖӢжҳҹжңҹи®ҠжҲҗ 15гҖҒ20 еҗҢ 25 еҲҶйҗҳеҳ…зҜҖеҘҸи·‘."
+                "structure": "每個星期有一次速度訓練（快速同輕鬆反覆）、一次輕鬆跑同一次較長跑。第 1 至 3 個星期嘅較長跑係輕鬆跑；第 4 至 6 個星期變成 15、20 同 25 分鐘嘅節奏跑."
             },
             "fasterHalf": {
-                "description": "жӣҙеҝ«еҚҠйҰ¬жӢүжқҫпјҡеҚҒйҖұеҳ…йҖҹеәҰиЁ“з·ҙгҖҒиј•й¬Ҷи·‘еҗҢжңүзҜҖеҘҸиЁ“з·ҙеҳ…й•·и·‘пјҢе•ұи·‘йҒҺеҚҠйҰ¬жӢүжқҫеҳ…дәә.",
+                "description": "更快半馬拉松：十週嘅速度訓練、輕鬆跑同有節奏訓練嘅長跑，啱跑過半馬拉松嘅人.",
                 "name": "更快半馬拉松",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүдёҖж¬ЎйҖҹеәҰиЁ“з·ҙгҖҒдёҖж¬Ўиј•й¬Ҷи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 70 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 110 еҲҶйҗҳпјҢз¬¬ 6 еҗҢ 8 еҖӢжҳҹжңҹз”Ё 25 еҗҢ 30 еҲҶйҗҳеҳ…зҜҖеҘҸи·‘д»ЈжӣҝйҖҹеәҰиЁ“з·ҙпјҢжңҖеҫҢе…©еҖӢжҳҹжңҹжёӣйҮҸ."
+                "structure": "每個星期有一次速度訓練、一次輕鬆跑同一次長跑。長跑由 70 分鐘逐步上到 110 分鐘，第 6 同 8 個星期用 25 同 30 分鐘嘅節奏跑代替速度訓練，最後兩個星期減量."
             },
             "fasterHalf4": {
-                "description": "жӣҙеҝ«еҚҠйҰ¬жӢүжқҫпјҡеҚҒйҖұпјҢжҜҸйҖұи·‘еӣӣж¬ЎпјҢжңүйҖҹеәҰиЁ“з·ҙгҖҒиј•й¬Ҷи·‘еҗҢзҜҖеҘҸиЁ“з·ҙй•·и·‘гҖӮе•ұи·‘йҒҺеҚҠйҰ¬жӢүжқҫеҳ…дәә.",
-                "name": "жӣҙеҝ«еҚҠйҰ¬жӢүжқҫпјҲжҜҸйҖұи·‘еӣӣж¬Ўпјү",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүдёҖж¬ЎйҖҹеәҰиЁ“з·ҙгҖҒе…©ж¬Ўиј•й¬Ҷи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 80 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 120 еҲҶйҗҳпјҢз¬¬ 4 еҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢдёүеҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚжёӣйҮҸгҖӮжңҖеҫҢдёҖеҖӢжҳҹжңҹдҝӮдёүж¬Ўзҹӯе•Іеҳ…и·‘."
+                "description": "更快半馬拉松：十週，每週跑四次，有速度訓練、輕鬆跑同節奏訓練長跑。啱跑過半馬拉松嘅人.",
+                "name": "更快半馬拉松（每週跑四次）",
+                "structure": "每個星期有一次速度訓練、兩次輕鬆跑同一次長跑。長跑由 80 分鐘逐步上到 120 分鐘，第 4 個星期輕鬆啲，最後三個星期喺比賽日前減量。最後一個星期係三次短啲嘅跑."
             },
             "fiveToTenK": {
-                "description": "5K еҲ° 10Kпјҡе…«йҖұпјҢжҜҸйҖұи·‘дёүж¬ЎпјҢе•ұи·‘еҫ—еҲ° 30 еҲҶйҗҳеҳ…дәәгҖӮдҪўжңғйҖҗжӯҘдёҠеҲ° 65 еҲҶйҗҳеҳ…й•·и·‘.",
+                "description": "5K 到 10K：八週，每週跑三次，啱跑得到 30 分鐘嘅人。佢會逐步上到 65 分鐘嘅長跑.",
                 "name": "5K 到 10K",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүе…©ж¬Ўз©©е®ҡи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 40 еҲҶйҗҳйҖҗжӯҘеҠ еҲ° 65 еҲҶйҗҳгҖӮжҜҸз¬¬еӣӣеҖӢжҳҹжңҹиј•й¬Ҷе•Іж–№дҫҝжҒўеҫ©пјҢжңҖеҫҢдёҖеҖӢжҳҹжңҹж”ҫй¬Ҷ."
+                "structure": "每個星期有兩次穩定跑同一次長跑。長跑由 40 分鐘逐步加到 65 分鐘。每第四個星期輕鬆啲方便恢復，最後一個星期放鬆."
             },
             "gentle5k": {
-                "description": "жә«е’Ң 5KпјҡеҚҒдәҢйҖұпјҢжҜҸйҖұи·‘дёүж¬ЎгҖӮиө·жӯҘжҜ”ж–°жүӢ 5K ж…ўпјҢз”Ёй•·йҖ”иЎҢд№Ӣй–“еҳ…жҘөзҹӯи·‘й–Ӣе§ӢпјҢйҖҗжӯҘдёҠеҲ° 30 еҲҶйҗҳеҳ…и·‘.",
+                "description": "溫和 5K：十二週，每週跑三次。起步比新手 5K 慢，用長途行之間嘅極短跑開始，逐步上到 30 分鐘嘅跑.",
                 "name": "溫和 5K",
-                "structure": "жҜҸеҖӢжҳҹжңҹйҮҚиӨҮдёҖж¬Ўи·‘иЎҢзөҗеҗҲеҳ…иЁ“з·ҙдёүж¬ЎгҖӮи·‘жӯҘз”ұ 30 з§’йҖҗжӯҘеҠ еҲ°з¬¬ 8 еҖӢжҳҹжңҹеҳ… 5 еҲҶйҗҳпјҢз„¶еҫҢдҝӮе…©ж¬Ў 10 еҲҶйҗҳи·‘гҖҒдёҖж¬Ў 15 еҗҢ 10 еҲҶйҗҳи·‘пјҢжңҖеҫҢдҝӮ 25 еҗҢ 30 еҲҶйҗҳеҳ…йҖЈзәҢи·‘."
+                "structure": "每個星期重複一次跑行結合嘅訓練三次。跑步由 30 秒逐步加到第 8 個星期嘅 5 分鐘，然後係兩次 10 分鐘跑、一次 15 同 10 分鐘跑，最後係 25 同 30 分鐘嘅連續跑."
             },
             "halfMarathon": {
-                "description": "еҚҠйҰ¬жӢүжқҫпјҡеҚҒдәҢйҖұпјҢжҜҸйҖұи·‘дёүж¬ЎпјҢй•·и·‘йҖҗжӯҘдёҠеҲ°еӨ§зҙ„е…©еҖӢйҗҳгҖӮе•ұеҸҜд»Ҙиј•й¬Ҷи·‘ 30 еҲҶйҗҳеҳ…дәә.",
+                "description": "半馬拉松：十二週，每週跑三次，長跑逐步上到大約兩個鐘。啱可以輕鬆跑 30 分鐘嘅人.",
                 "name": "еҚҠйҰ¬жӢүжқҫ",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүдёҖж¬Ўиј•й¬Ҷи·‘гҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 50 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 115 еҲҶйҗҳпјҢжҜҸз¬¬еӣӣеҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢдёҖеҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚзё®зҹӯ."
+                "structure": "每個星期有一次輕鬆跑、一次中距離跑同一次長跑。長跑由 50 分鐘逐步上到 115 分鐘，每第四個星期輕鬆啲，最後一個星期喺比賽日前縮短."
             },
             "halfMarathon4": {
-                "description": "еҚҠйҰ¬жӢүжқҫпјҡеҚҒдәҢйҖұпјҢжҜҸйҖұи·‘еӣӣж¬ЎпјҢй•·и·‘йҖҗжӯҘдёҠеҲ°еӨ§зҙ„е…©еҖӢйҗҳгҖӮе•ұеҸҜд»Ҙиј•й¬Ҷи·‘ 30 еҲҶйҗҳеҳ…дәә.",
-                "name": "еҚҠйҰ¬жӢүжқҫпјҲжҜҸйҖұи·‘еӣӣж¬Ўпјү",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүе…©ж¬Ўиј•й¬Ҷи·‘гҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 60 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 125 еҲҶйҗҳпјҢжҜҸз¬¬еӣӣеҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢе…©еҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚжёӣйҮҸгҖӮжңҖеҫҢдёҖеҖӢжҳҹжңҹдҝӮдёүж¬Ўзҹӯе•Іеҳ…и·‘."
+                "description": "半馬拉松：十二週，每週跑四次，長跑逐步上到大約兩個鐘。啱可以輕鬆跑 30 分鐘嘅人.",
+                "name": "半馬拉松（每週跑四次）",
+                "structure": "每個星期有兩次輕鬆跑、一次中距離跑同一次長跑。長跑由 60 分鐘逐步上到 125 分鐘，每第四個星期輕鬆啲，最後兩個星期喺比賽日前減量。最後一個星期係三次短啲嘅跑."
             },
             "marathon": {
                 "name": "йҰ¬жӢүжқҫ",
@@ -9168,47 +9168,47 @@
                 "structure": "大多數星期有兩次輕鬆跑、一次中距離跑同一次長跑。長跑由 70 分鐘逐步上到 2 個鐘 45 分，每第四個星期輕鬆啲，最後兩個星期喺比賽日前減量."
             },
             "returnToRunning": {
-                "description": "йҮҚиҝ”и·‘жӯҘпјҡеӣӣйҖұпјҢжҜҸйҖұи·‘дёүж¬ЎпјҢе•ұдј‘жҒҜе’—дёҖжҺ’д№ӢеҫҢйҮҚж–°иө·жӯҘгҖӮжӮЁжңғз”ұ 1 еҲҶйҗҳи·‘йҖҗжӯҘдёҠеҲ°еӨ§зҙ„ 20 еҲҶйҗҳеҳ…и·‘гҖӮе…©ж¬Ўи·‘д№Ӣй–“з•ҷдёҖе…©ж—Ҙдј‘жҒҜпјҢдёҰдҝқжҢҒиј•й¬Ҷй…ҚйҖҹгҖӮеҰӮжһңжӮЁдҝӮз”ұеӮ·жӮЈжҒўеҫ©з·ҠпјҢе…Ҳе•Ҹеҗ“зү©зҗҶжІ»зҷӮеё«жҲ–иҖ…йҶ«з”ҹ.",
+                "description": "重返跑步：四週，每週跑三次，啱休息咗一排之後重新起步。您會由 1 分鐘跑逐步上到大約 20 分鐘嘅跑。兩次跑之間留一兩日休息，並保持輕鬆配速。如果您係由傷患恢復緊，先問吓物理治療師或者醫生.",
                 "name": "йҮҚиҝ”и·‘жӯҘ",
-                "structure": "з¬¬ 1 иҮі 3 еҖӢжҳҹжңҹз”Ёзҹӯи·‘еҗҢиЎҢдәӨжӣҝпјҢз”ұ 1 еҲҶйҗҳи·‘йҖҗжӯҘеҲ° 5 еҲҶйҗҳи·‘гҖӮз¬¬ 4 еҖӢжҳҹжңҹжңүдёүзҜҖи·‘иЎҢзөҗеҗҲиЁ“з·ҙпјҢи·‘жӯҘдҝӮ 6гҖҒ10 еҗҢ 12 еҲҶйҗҳпјҢзёҪе…ұ 18гҖҒ20 еҗҢ 22 еҲҶйҗҳеҳ…и·‘."
+                "structure": "第 1 至 3 個星期用短跑同行交替，由 1 分鐘跑逐步到 5 分鐘跑。第 4 個星期有三節跑行結合訓練，跑步係 6、10 同 12 分鐘，總共 18、20 同 22 分鐘嘅跑."
             },
             "tenKToHalf": {
-                "description": "10K еҲ°еҚҠйҰ¬жӢүжқҫпјҡеҚҒйҖұпјҢжҜҸйҖұи·‘дёүж¬ЎпјҢе•ұи·‘еҫ—еҲ° 10K еҳ…дәәгҖӮй•·и·‘з”ұ 65 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 115 еҲҶйҗҳ.",
-                "name": "10K еҲ°еҚҠйҰ¬жӢүжқҫ",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүдёҖж¬Ўзҹӯи·‘гҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 65 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 115 еҲҶйҗҳпјҢз¬¬ 4 еҗҢ 8 еҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢе…©еҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚжёӣйҮҸ."
+                "description": "10K 到半馬拉松：十週，每週跑三次，啱跑得到 10K 嘅人。長跑由 65 分鐘逐步上到 115 分鐘.",
+                "name": "10K 到半馬拉松",
+                "structure": "每個星期有一次短跑、一次中距離跑同一次長跑。長跑由 65 分鐘逐步上到 115 分鐘，第 4 同 8 個星期輕鬆啲，最後兩個星期喺比賽日前減量."
             },
             "tenKToHalf4": {
-                "description": "10K еҲ°еҚҠйҰ¬жӢүжқҫпјҡеҚҒйҖұпјҢжҜҸйҖұи·‘еӣӣж¬ЎпјҢй•·и·‘йҖҗжӯҘдёҠеҲ°еӨ§зҙ„е…©еҖӢйҗҳгҖӮе•ұи·‘еҫ—еҲ° 10K еҳ…дәә.",
-                "name": "10K еҲ°еҚҠйҰ¬жӢүжқҫпјҲжҜҸйҖұи·‘еӣӣж¬Ўпјү",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүе…©ж¬Ўзҹӯи·‘гҖҒдёҖж¬Ўдёӯи·қйӣўи·‘еҗҢдёҖж¬Ўй•·и·‘гҖӮй•·и·‘з”ұ 75 еҲҶйҗҳйҖҗжӯҘдёҠеҲ° 125 еҲҶйҗҳпјҢз¬¬ 4 еҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢдёүеҖӢжҳҹжңҹе–әжҜ”иіҪж—ҘеүҚжёӣйҮҸгҖӮжңҖеҫҢдёҖеҖӢжҳҹжңҹдҝӮдёүж¬Ўзҹӯе•Іеҳ…и·‘."
+                "description": "10K 到半馬拉松：十週，每週跑四次，長跑逐步上到大約兩個鐘。啱跑得到 10K 嘅人.",
+                "name": "10K 到半馬拉松（每週跑四次）",
+                "structure": "每個星期有兩次短跑、一次中距離跑同一次長跑。長跑由 75 分鐘逐步上到 125 分鐘，第 4 個星期輕鬆啲，最後三個星期喺比賽日前減量。最後一個星期係三次短啲嘅跑."
             },
             "walk10k": {
-                "description": "еҝ«иЎҢ 10KпјҡеҚҒйҖұпјҢжҜҸйҖұиЎҢдёүж¬ЎпјҢе””дҪҝи·‘гҖӮжӮЁжңғйҖҗжӯҘдёҠеҲ°еӨ§зҙ„ 1 еҖӢйҗҳ 45 еҲҶеҳ… 10K жӯҘиЎҢ.",
+                "description": "快行 10K：十週，每週行三次，唔使跑。您會逐步上到大約 1 個鐘 45 分嘅 10K 步行.",
                 "name": "快行 10K",
-                "structure": "жҜҸеҖӢжҳҹжңҹжңүе…©ж¬Ўеҝ«жӯҘж®өиҗҪй…Қзҹӯжҡ«иј•й¬Ҷдј‘жҒҜеҳ…иЎҢпјҢеҗҢдёҖж¬Ўй•·йҖ”еҝ«иЎҢгҖӮй•·иЎҢз”ұ 40 еҲҶйҗҳйҖҗжӯҘеҠ еҲ° 105 еҲҶйҗҳпјҢз¬¬ 4 еҗҢ 8 еҖӢжҳҹжңҹиј•й¬Ҷе•ІпјҢжңҖеҫҢдёҖеҖӢжҳҹжңҹз”Ё 10K жӯҘиЎҢж”¶е°ҫ."
+                "structure": "每個星期有兩次快步段落配短暫輕鬆休息嘅行，同一次長途快行。長行由 40 分鐘逐步加到 105 分鐘，第 4 同 8 個星期輕鬆啲，最後一個星期用 10K 步行收尾."
             },
             "walkFit": {
-                "description": "еҒҘиә«жӯҘиЎҢпјҡе…«йҖұпјҢжҜҸйҖұиЎҢдёүж¬ЎпјҢе””дҪҝи·‘гҖӮжӮЁжңғеҝ«жӯҘеҗҢиј•й¬ҶиЎҢдәӨжӣҝпјҢйҖҗжӯҘдёҠеҲ° 30 еҲҶйҗҳеҳ…еҝ«иЎҢ.",
+                "description": "健身步行：八週，每週行三次，唔使跑。您會快步同輕鬆行交替，逐步上到 30 分鐘嘅快行.",
                 "name": "еҒҘиә«жӯҘиЎҢ",
-                "structure": "з¬¬ 1 иҮі 4 еҖӢжҳҹжңҹдәӨжӣҝеҝ«жӯҘпјҲ3 иҮі 8 еҲҶйҗҳпјүеҗҢ 2 еҲҶйҗҳиј•й¬ҶиЎҢгҖӮз¬¬ 5 еҗҢ 6 еҖӢжҳҹжңҹз”Ёе…©ж®өй•·е•Іеҳ…еҝ«жӯҘпјҢеҗ„ 12 еҗҢ 15 еҲҶйҗҳгҖӮз¬¬ 7 еҗҢ 8 еҖӢжҳҹжңҹдҝӮ 20 иҮі 30 еҲҶйҗҳеҳ…йҖЈзәҢеҝ«иЎҢ."
+                "structure": "第 1 至 4 個星期交替快步（3 至 8 分鐘）同 2 分鐘輕鬆行。第 5 同 6 個星期用兩段長啲嘅快步，各 12 同 15 分鐘。第 7 同 8 個星期係 20 至 30 分鐘嘅連續快行."
             }
         },
         "start": {
-            "message": "жӮЁеҳ…з¬¬дёҖе ӮиЁ“з·ҙдҝӮе№ҫжҷӮпјҹ",
+            "message": "您嘅第一堂訓練係幾時？",
             "pickDate": "жҸҖж—Ҙжңҹ",
             "startOnDate": "喺嗰日開始",
-            "title": "й–Ӣе§Ӣ {{name}}",
+            "title": "開始 {{name}}",
             "today": "д»Ҡж—Ҙй–Ӣе§Ӣ"
         },
         "switch": {
             "confirm": "еҲҮжҸӣ",
-            "message": "жӮЁжңғз”ұз¬¬ 1 йҖұй–Ӣе§Ӣж–°иЁҲеҠғгҖӮжӮЁе–әиҖҢе®¶иЁҲеҠғе…Ҙйқўеҳ…йҖІеәҰе””жңғдҝқз•ҷ.",
-            "title": "еҲҮжҸӣеҺ» {{name}}пјҹ"
+            "message": "您會由第 1 週開始新計劃。您喺而家計劃入面嘅進度唔會保留.",
+            "title": "切換去 {{name}}？"
         },
         "workout": {
-            "number": "иЁ“з·ҙ {{number}}",
-            "titleRun": "з¬¬ {{week}} йҖұпјҢи·‘з¬¬ {{run}} ж¬Ў",
-            "titleWalk": "з¬¬ {{week}} йҖұпјҢиЎҢз¬¬ {{walk}} ж¬Ў",
+            "number": "訓練 {{number}}",
+            "titleRun": "第 {{week}} 週，跑第 {{run}} 次",
+            "titleWalk": "第 {{week}} 週，行第 {{walk}} 次",
             "label": "{{name}} · {{workout}}"
         }
     }
