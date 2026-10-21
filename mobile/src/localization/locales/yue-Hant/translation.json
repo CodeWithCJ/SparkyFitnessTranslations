@@ -2204,7 +2204,7 @@
         "descriptionPlaceholder": "關於呢個餐膳嘅備註",
         "totalServings": "總份量",
         "totalAmount": "總量（{{unit}}） *",
-        "unit": "е–®дҪҚ",
+        "unit": "單位",
         "selectUnit": "揀單位",
         "servingSize": "每份分量（{{unit}}）*",
         "servingUnit": "份",
