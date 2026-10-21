@@ -1437,7 +1437,7 @@
     },
     "auth": {
         "frontendUrl": "前端 URL",
-        "email": "йӣ»йғө",
+        "email": "電郵",
         "password": "密碼",
         "apiKey": "API 金鑰",
         "signIn": "登入",
