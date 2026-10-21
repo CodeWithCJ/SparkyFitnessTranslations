@@ -8156,7 +8156,8 @@
             "tooHard": "维持重量：上次感觉太难。",
             "tooHardRepeated": "今日减轻：连续两次训练都觉得太难。",
             "highEffort": "维持重量：你最后的组数接近最大努力。",
-            "tooEasyRepeated": "加重一阶：连续两次训练都太轻松。"
+            "tooEasyRepeated": "加重一阶：连续两次训练都太轻松。",
+            "lowEffort": "加重一点：你最近的组都记录为轻松。"
         },
         "declined": "使用你的惯常建议。",
         "variation": "你最近多数训练都做过这个。试试变化版？",
