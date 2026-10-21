@@ -1014,7 +1014,8 @@
             "logAsTaken": "記錄為已服用",
             "skip": "跳過",
             "logAllAsTaken": "全部標記為已服用",
-            "skipAll": "全部跳過"
+            "skipAll": "全部跳過",
+            "remindInMinutes": "{{minutes}} 分鐘後提醒"
         },
         "permission": {
             "notificationsOff": "通知已關閉",
@@ -1339,7 +1340,9 @@
             "personalRecords": "個人紀錄",
             "personalRecordsSubtitle": "你最佳的 1 公里、5 公里、10 公里等",
             "equipment": "裝備",
-            "equipmentSubtitle": "跑鞋與其他裝備"
+            "equipmentSubtitle": "跑鞋與其他裝備",
+            "routes": "路線",
+            "routesSubtitle": "繪製、匯入並儲存路線以供跟隨"
         },
         "sleep": "睡眠",
         "healthTrendsSettings": "健康趨勢",
@@ -1380,7 +1383,10 @@
         "runProgramWorkout": "訓練",
         "runProgramEdit": "編輯計劃",
         "runProgramNew": "新計劃",
-        "runProgramRace": "規劃比賽"
+        "runProgramRace": "規劃比賽",
+        "activityShare": "分享活動",
+        "routes": "路線",
+        "routeDraw": "繪製路線"
     },
     "healthCategories": {
         "Common": "常用",
@@ -1844,7 +1850,9 @@
         "waterReminderEndAccessibility": "結束時間，{{time}}",
         "waterReminderInvalidWindow": "結束時間必須晚於開始時間。",
         "consolidateReminders": "合併提醒",
-        "consolidateRemindersSubtitle": "將安排在同一時間的藥物合併為單一通知。"
+        "consolidateRemindersSubtitle": "將安排在同一時間的藥物合併為單一通知。",
+        "medicationSnoozeInterval": "稍後提醒",
+        "snoozeMinutesOption": "{{minutes}} 分鐘"
     },
     "workoutSettings": {
         "title": "訓練設定",
@@ -2852,7 +2860,17 @@
     "exerciseHistory": {
         "noSetData": "無組資料",
         "loadError": "無法載入歷史。",
-        "empty": "暫無已記錄的訓練。"
+        "empty": "暫無已記錄的訓練。",
+        "columns": {
+            "set": "組",
+            "weightReps": "重量與次數",
+            "timeDistance": "時間與距離",
+            "time": "時間",
+            "weightDistance": "重量與距離",
+            "weightTime": "重量與時間",
+            "reps": "次數",
+            "rpe": "RPE"
+        }
     },
     "foodFormPersistence": {
         "discardTitle": "放棄未儲存的等量規格？",
@@ -4384,6 +4402,15 @@
             "targetGoal": "每日目標",
             "averageVsTarget": "平均值 vs 目標",
             "percentOfGoal": "目標的 {{percent}}%"
+        },
+        "topSources": {
+            "title": "主要來源",
+            "allMeals": "所有餐點",
+            "clearDay": "顯示整個期間",
+            "empty": "此選擇沒有記錄 {{nutrient}}",
+            "loadFailed": "無法載入食物來源",
+            "share": "{{percent}}%",
+            "servingAmount": "{{quantity}} {{unit}}"
         }
     },
     "workoutPresetDetail": {
@@ -6019,7 +6046,8 @@
         "logWater": "記錄水分",
         "fasting": "斷食",
         "waterLogged": "已記錄水分",
-        "waterFailed": "無法記錄水分"
+        "waterFailed": "無法記錄水分",
+        "logWaterInBackground": "無需打開應用程式即可記錄飲水"
     },
     "watchSettings": {
         "gesturesTitle": "手勢",
@@ -6120,7 +6148,8 @@
             "tooHard": "維持重量：上次感覺太難。",
             "tooHardRepeated": "今日減輕：連續兩次訓練都覺得太難。",
             "highEffort": "維持重量：你最後的組數接近最大努力。",
-            "tooEasyRepeated": "加重一階：連續兩次訓練都太輕鬆。"
+            "tooEasyRepeated": "加重一階：連續兩次訓練都太輕鬆。",
+            "lowEffort": "加重一點：你最近的組都記錄為輕鬆。"
         },
         "declined": "使用你的慣常建議。",
         "variation": "你最近多數訓練都做過這個。試試變化版？",
@@ -6233,7 +6262,11 @@
             "perKm": "/公里",
             "perMile": "/英里",
             "exportGpx": "匯出 GPX",
-            "exportGpxFailed": "無法匯出 GPX"
+            "exportGpxFailed": "無法匯出 GPX",
+            "cadence": "平均步頻",
+            "spm": "{{value}} spm",
+            "strideLength": "步幅",
+            "shareImage": "以圖片分享"
         },
         "consistency": {
             "title": "訓練穩定性",
@@ -6581,7 +6614,39 @@
             "loggedA11y": "{{date}} 的心情：{{mood}}",
             "log": "記錄心情",
             "trend7d": "7 天趨勢"
-        }
+        },
+        "energy": "精力",
+        "energyLow": "精力耗盡",
+        "energyHigh": "精力充沛",
+        "focus": "專注度",
+        "focusLow": "難以專注",
+        "focusHigh": "全神貫注",
+        "journalOptional": "日記（選填）",
+        "journalPlaceholder": "有沒有想補充的想法或感受？",
+        "ratingsUnsupported": "你的伺服器尚不會儲存能量與專注度。請更新 SparkyFitness 以保留它們。",
+        "serverCheckFailed": "無法連上你的伺服器。請檢查連線後再試一次。",
+        "newCheckinTitle": "新增打卡",
+        "editCheckinTitle": "編輯打卡",
+        "time": "時間",
+        "timeA11y": "時間，{{time}}",
+        "deleteCheckin": "刪除打卡",
+        "deleteCheckinConfirm": "刪除這個打卡？",
+        "deleteCheckinMessage": "這會刪除該打卡及其日記條目。",
+        "deleteFailed": "無法刪除打卡",
+        "checkinNeedsContent": "請加入心情、能量、專注度、標籤或日記條目才能儲存。",
+        "checkinMissing": "此打卡已不存在。",
+        "dayTitle": "心情",
+        "dayAverage": "當日平均",
+        "checkinCount_other": "{{count}} 次打卡",
+        "noCheckins": "這一天還沒有打卡。",
+        "addCheckin": "新增打卡",
+        "checkinRowA11y": "{{summary}}。編輯打卡。",
+        "checkinAtTime": "於 {{time}} 打卡",
+        "a11yListSeparator": "， ",
+        "energyA11y": "能量 {{value}}/5",
+        "focusA11y": "專注度 {{value}}/5",
+        "energyOutOfFive": "能量 {{value}}/5",
+        "focusOutOfFive": "專注度 {{value}}/5"
     },
     "customNutrients": {
         "title": "自訂營養素",
@@ -7945,5 +8010,61 @@
             "lupin": "羽扇豆",
             "sulphites": "亞硫酸鹽"
         }
+    },
+    "activityShare": {
+        "title": "分享活動",
+        "choosePhoto": "選擇照片",
+        "takePhoto": "拍攝照片",
+        "removePhoto": "移除",
+        "transparentHint": "沒有照片時，影像會是透明的 PNG，你可以在其他應用程式中疊在照片或影片上。",
+        "cameraDenied": "請在「設定」中允許相機存取，才能拍攝照片",
+        "noRoute": "此訓練沒有儲存的 GPS 路線，因此版面僅顯示數據。",
+        "layout": "版面",
+        "layoutClassic": "經典",
+        "layoutRoute": "路線",
+        "layoutMinimal": "簡約",
+        "textColor": "顏色",
+        "customColor": "自訂顏色十六進位色碼",
+        "share": "分享圖片",
+        "shareFailed": "無法建立圖片"
+    },
+    "exerciseEffort": {
+        "title": "強度",
+        "lastAvg": "上次訓練平均 RPE",
+        "trendLabel_other": "你最近 {{count}} 次訓練的平均 RPE",
+        "oneRmEffort": "含強度的 1RM 估算",
+        "oneRmPlain": "僅以次數計算",
+        "oneRmNote": "計算你剩下的次數：RPE 8 代表還能多做兩下。只使用有 RPE 的組。"
+    },
+    "routes": {
+        "addTitle": "新增路線",
+        "draw": "在地圖上繪製",
+        "importGpx": "匯入 GPX 檔案",
+        "importFailed": "無法匯入該檔案",
+        "importFailedHint": "請選擇包含軌跡或路線的 GPX 檔案。",
+        "loadFailed": "無法載入你的路線。",
+        "loadOneFailed": "無法載入這條路線。",
+        "empty": "還沒有路線。請在地圖上繪製一條、匯入 GPX 檔案，或從詳細資料儲存已記錄的跑步或步行。",
+        "mapA11y": "此路線的地圖，從綠點到紅圈",
+        "nameLabel": "路線名稱",
+        "namePlaceholder": "為這條路線命名",
+        "climb": "爬升 {{climb}}",
+        "rename": "重新命名",
+        "renameFailed": "無法重新命名",
+        "shareGpx": "以 GPX 分享",
+        "shareFailed": "無法分享路線",
+        "deleteTitle": "刪除這條路線？",
+        "deleteMessage": "從中儲存此路線的已記錄活動不會受影響。",
+        "deleteFailed": "無法刪除路線",
+        "saveFailed": "無法儲存路線",
+        "drawHint": "點按地圖以新增點",
+        "undo": "還原",
+        "clear": "清除",
+        "saveAsRoute": "儲存為路線",
+        "savedAsRoute": "已儲存至路線",
+        "saveAsRouteFailed": "無法儲存路線",
+        "fileTooLarge": "該檔案太大",
+        "fileTooLargeHint": "路線檔案最大可達 10 MB。",
+        "drawLimit": "這已是路線在此可容納的最大點數。請還原一些或儲存這條。"
     }
 }
