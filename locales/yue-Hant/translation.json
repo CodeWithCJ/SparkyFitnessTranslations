@@ -4716,8 +4716,8 @@
             "noStressDataAvailableFor": "呢段期間冇壓力數據."
         },
         "workoutHeatmap": {
-            "tu": "дәҢ",
-            "th": "еӣӣ"
+            "tu": "二",
+            "th": "四"
         },
         "avg": "平均：{{formattedAverage}} {{unit}}",
         "primary2": "（主要）",
@@ -5503,11 +5503,11 @@
         "submissionFailed": "冇辦法儲存您嘅計劃.請再試.",
         "setupShort": "設定",
         "skip": "跳過",
-        "continue": "з№јзәҢ",
+        "continue": "繼續",
         "sexQuestion": "您嘅性別係？",
         "sexDescription": "用嚟計您嘅基礎代謝率.",
-        "male": "з”·",
-        "female": "еҘі",
+        "male": "男",
+        "female": "女",
         "goalQuestion": "您嘅主要目標係咩？",
         "loseWeight": "減磅",
         "maintainWeight": "維持體重",
@@ -5542,7 +5542,7 @@
             "fatsecretHelp": "用儀表板入面嘅 REST API OAuth 2.0 憑證，唔好用 OAuth 1.0 Consumer Key／Secret。FatSecret 亦都要求您喺佢哋開發者儀表板度將您嘅公開 IP 加入白名單。呢個最多可能要 24 個鐘先生效.",
             "missingField": "少咗 FatSecret 欄位",
             "missingFieldDescription": "同時輸入 FatSecret Client ID 同 Client Secret，或者兩樣都留空嚟跳過.",
-            "notSignedIn": "жңӘзҷ»е…Ҙ",
+            "notSignedIn": "未登入",
             "notSignedInDescription": "重新登入先可以儲存食材來源."
         },
         "plan": {
@@ -5554,8 +5554,8 @@
             "perDay": "{{unit}}／日",
             "baseBmr": "基礎 BMR：",
             "calorieBuyback": "卡路里回補：",
-            "on": "й–Ӣ",
-            "off": "й—ң",
+            "on": "開",
+            "off": "關",
             "nutrientGoals": "營養目標"
         },
         "diet": {
@@ -5565,7 +5565,7 @@
             "customMacroSplit": "自訂巨量營養素比例",
             "total": "合計：",
             "carbohydrates": "碳水化合物",
-            "protein": "иӣӢзҷҪиіӘ",
+            "protein": "蛋白質",
             "fat": "脂肪",
             "adjustHint": "調整或者輸入數值。已解鎖嘅巨量營養素會自動調整嚟維持總數 100%.",
             "templates": {
@@ -5582,7 +5582,7 @@
                     "description": "用飲食方法嚟控制高血壓"
                 },
                 "atkins": {
-                    "name": "йҳҝзү№йҮ‘ж–Ҝ",
+                    "name": "阿特金斯",
                     "description": "極低碳水、高脂肪"
                 },
                 "low_fat": {
@@ -5608,7 +5608,7 @@
             "description": "呢啲設定控制您嘅營養目標點樣計。您之後隨時可以喺設定度改.",
             "fatAlgorithms": {
                 "AHA_GUIDELINES": "AHA 指引（心臟健康）",
-                "KETO_ADAPTED": "з”ҹй…®йҒ©жҮү",
+                "KETO_ADAPTED": "生酮適應",
                 "MEDITERRANEAN": "地中海飲食"
             },
             "mineralAlgorithms": {
@@ -5618,7 +5618,7 @@
             },
             "vitaminAlgorithms": {
                 "RDA_STANDARD": "RDA 標準",
-                "IMMUNE_SUPPORT": "е…Қз–«ж”ҜжҸҙ",
+                "IMMUNE_SUPPORT": "免疫支援",
                 "ANTIOXIDANT_FOCUS": "抗氧化重點"
             },
             "sugarAlgorithms": {
@@ -5630,7 +5630,7 @@
         "nutrients": {
             "dailyMacroTargets": "每日巨量營養素目標",
             "carbohydrates": "碳水化合物",
-            "protein": "иӣӢзҷҪиіӘ",
+            "protein": "蛋白質",
             "fats": "脂肪",
             "fiber": "膳食纖維",
             "fatBreakdown": "脂肪細分",
@@ -5640,8 +5640,8 @@
             "monounsaturated": "單元不飽和脂肪",
             "mineralsOther": "礦物質同其他",
             "cholesterol": "膽固醇",
-            "sodium": "йҲү",
-            "potassium": "йүҖ",
+            "sodium": "鈉",
+            "potassium": "鉀",
             "calcium": "鈣",
             "iron": "йҗө",
             "sugarsVitamins": "糖分同維他命",
@@ -5650,7 +5650,7 @@
             "vitaminC": "維他命 C",
             "customNutrients": "自訂營養素",
             "hydrationExercise": "水份同運動",
-            "waterGoal": "ж°ҙд»Ҫзӣ®жЁҷ",
+            "waterGoal": "水份目標",
             "exerciseDuration": "運動時間",
             "exerciseCalories": "運動卡路里"
         },
@@ -5668,7 +5668,7 @@
             "carbsProteinFat": "{{carbsPercentage}}% 碳水／{{proteinPercentage}}% 蛋白質／{{fatPercentage}}% 脂肪",
             "customMacroSplit": "自訂巨量營養素比例",
             "carbohydrates": "碳水化合物",
-            "protein": "иӣӢзҷҪиіӘ",
+            "protein": "蛋白質",
             "fat": "脂肪",
             "adjustOrTypeInA": "調整或者輸入數值。已解鎖嘅巨量營養素會自動調整嚟維持總數 100%.",
             "total2": "總計：{{carbs}}%"
@@ -7682,7 +7682,7 @@
         "foam roll": "泡棉滾筒",
         "e-z curl bar": "E-Z 曲槓",
         "other": "其他",
-        "title": "еҷЁжқҗ"
+        "title": "器材"
     },
     "interval": {
         "ready": "準備",
