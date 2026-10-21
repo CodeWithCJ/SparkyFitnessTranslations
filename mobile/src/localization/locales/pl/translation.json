@@ -108,7 +108,7 @@
             "server": "Serwer",
             "healthSync": "Synchronizacja danych zdrowotnych",
             "app": "Ustawienia aplikacji",
-            "calories": "Kalorie i PPM",
+            "calories": "Kalorie i BMR",
             "food": "Produkty",
             "dashboard": "Pulpit",
             "diary": "Dziennik",
@@ -955,8 +955,8 @@
     },
     "calorieSettings": {
         "restingEnergy": "Energia spoczynkowa",
-        "bmr": "PPM",
-        "title": "Ustawienia kalorii i PPM",
+        "bmr": "BMR",
+        "title": "Ustawienia kalorii i BMR",
         "modeLabel": "Tryb kalorii",
         "adjustmentMode": "Tryb korekty",
         "modeDescription": "Określa, jak dzienny cel kalorii zmienia się w zależności od aktywności.",
@@ -964,11 +964,11 @@
         "exerciseCaloriesDescription": "Określa, jaka część kalorii z ćwiczeń jest dodawana do dziennego celu.",
         "activityLevel": "Poziom aktywności",
         "activityBaseline": "Używany jako wartość bazowa dla TDEE.",
-        "adaptiveFallback": "Działa jako wartość zastępcza, dopóki nie zbierzesz wystarczającej ilości danych.",
-        "allowNegative": "Zezwalaj na ujemną korektę",
-        "negativeDescription": "Obniżaj dzienny cel, gdy spalasz mniej kalorii niż oczekiwano.",
+        "adaptiveFallback": "Szacunek zapasowy do czasu zebrania wystarczającej ilości danych — a później nadal wyznacza limity wiarygodności. Twój zmierzony TDEE jest ograniczane do ±500 kcal od BMR × ten mnożnik.",
+        "allowNegative": "Zezwalaj na niższą prognozę zapasową",
+        "negativeDescription": "Gdy suma z urządzenia jest niedostępna, pozwól, aby zapasowe BMR + kalorie aktywności obniżyły Twój cel.",
         "includeResting": "Uwzględniaj kalorie spoczynkowe",
-        "includeRestingDescription": "Uwzględniaj podstawową energię (PPM) w obliczeniach bilansu.",
+        "includeRestingDescription": "Uwzględniaj podstawową energię (BMR) w obliczeniach bilansu.",
         "howThisWorks": "Jak to działa",
         "burnedCalories": "Spalone kalorie",
         "netEnergy": "Energia netto",
@@ -993,20 +993,20 @@
             "heavy": "Bardzo aktywny (×1,725)"
         },
         "formulas": {
-            "activityWithBmr": "Aktywność + PPM",
+            "activityWithBmr": "Aktywność + BMR",
             "activityOnly": "Tylko aktywność (ćwiczenia + kroki)",
             "eatenBurned": "Zjedzone − spalone",
             "dynamic": "Cel − energia netto",
-            "percentageWithBmr": "Cel − zjedzone + PPM + {{percentage}}% ćwiczeń",
+            "percentageWithBmr": "Cel − zjedzone + BMR + {{percentage}}% ćwiczeń",
             "percentage": "Cel − zjedzone + {{percentage}}% ćwiczeń",
-            "tdee": "Cel − zjedzone + (prognoza − TDEE)",
+            "tdee": "Prognozowane TDEE × Tryb celu − zjedzone",
             "adaptive": "Cel − zjedzone",
             "fixed": "Cel − zjedzone",
             "projectedTotal": "Całkowite kalorie Health Connect (zapasowo BMR + kalorie aktywności)"
         },
         "notes": {
             "dynamic": "Cel rośnie wraz z aktywnością",
-            "tdee": "Prognoza zbiega się o północy",
+            "tdee": "Prognoza zbiega się z sumą z urządzenia o północy",
             "adaptive": "Cel = adaptacyjne TDEE",
             "fixed": "Aktywność nie zmienia budżetu"
         },
@@ -1017,7 +1017,7 @@
             "custom": "Własne",
             "disabled": "Wyłączone",
             "customMinimum": "Własne minimum ({{unit}})",
-            "standardDescription": "Używa wyższej z wartości: szacowane PPM lub minimum kliniczne.",
+            "standardDescription": "Używa wyższej z wartości: szacowany BMR lub minimum kliniczne.",
             "customDescription": "Zastępuje standardowe minimum wybraną przez Ciebie wartością. Zalecenia zdrowotne pozostają widoczne.",
             "disabledDescription": "Wyłącza automatyczne ograniczanie celu. Ostrzeżenia zdrowotne pozostają widoczne."
         },
@@ -1031,8 +1031,8 @@
             "recomp": "Rekompozycja (-10%)",
             "cut": "Redukcja (-15%)",
             "highCut": "Mocna redukcja (-20%)",
-            "leanBulk": "Lean Bulk (+10%)",
-            "bulk": "Bulk (+20%)",
+            "leanBulk": "Czysta masa (+10%)",
+            "bulk": "Masa (+20%)",
             "manual": "Ręcznie (własny %)",
             "calculationMethod": "Metoda obliczania",
             "methodAdaptive": "Adaptacyjnie",
@@ -1043,7 +1043,7 @@
         "useExternalBmr": "Używaj zmierzonego BMR z check-inów i zsynchronizowanych urządzeń",
         "useExternalBmrHint": "Domyślnie wyłączone — wybrana formuła jest zawsze używana, dopóki tego nie włączysz. Po włączeniu BMR zapisany przy check-inie albo zsynchronizowany ze smartwagi lub od dostawcy danych zdrowotnych zastępuje formułę na ten dzień, jeśli jest dla Ciebie fizjologicznie wiarygodny.",
         "useExternalBmrIosNote": "Spoczynkowa energia z Apple Health obejmuje już lekką codzienną aktywność — rozważ ustawienie Poziomu aktywności na Brak (×1,0), żeby nie liczyć jej dwukrotnie.",
-        "adaptiveEarnBack": "Cele adaptacyjne już uwzględniają aktywność. Pozostałe kalorie to Cel minus Spożyte. Zarabianie kalorii za trening dotyczy tylko celów ręcznych."
+        "adaptiveEarnBack": "Cele adaptacyjne już uwzględniają aktywność. Pozostałe kalorie to cel minus spożyte. Odzyskiwanie kalorii za trening dotyczy tylko celów ustawionych ręcznie."
     },
     "dashboardSettings": {
         "updateFailed": "Nie udało się zaktualizować ustawienia.",
@@ -1373,16 +1373,16 @@
             "patch": "Plaster",
             "inhaler": "Inhalator",
             "drops": "Krople",
-            "nasal_spray": "Spray do nosa",
+            "nasal_spray": "Aerozol do nosa",
             "cream": "Krem",
             "suppository": "Czopek",
             "other": "Inne",
             "beforeMeal": "Przed posiłkiem",
             "withMeal": "W trakcie posiłku",
             "afterMeal": "Po posiłku",
-            "awayFromMeals": "Z dala od posiłków",
-            "softgel": "Miękka kapsułka",
-            "gummy": "Żelka",
+            "awayFromMeals": "Poza posiłkami",
+            "softgel": "Kapsułka miękka",
+            "gummy": "Żelek",
             "powder": "Proszek"
         },
         "weekdays": {
@@ -1458,7 +1458,7 @@
             "energyAndMacros": "Energia i makroskładniki",
             "vitaminsAndMinerals": "Witaminy, minerały i więcej",
             "addNutrient": "Dodaj składnik odżywczy",
-            "multivitaminPanel": "Panel multivitamin",
+            "multivitaminPanel": "Panel multiwitaminowy",
             "amountA11y": "Ilość {{name}} w {{unit}}",
             "removeNutrient": "Usuń {{name}}",
             "nutrientCount_one": "{{count}} składnik odżywczy",
@@ -1547,7 +1547,7 @@
             "serum": {
                 "title": "Poziom modelowany: {{name}}",
                 "now": "~{{percent}}% teraz",
-                "empty": "Zapisuj zastrzyki, aby modelować swój poziom. Wymaga uznania leku GLP-1 na leku."
+                "empty": "Zapisuj zastrzyki, aby modelować swój poziom. Wymaga ustawienia rozpoznanego leku GLP-1 w danych leku."
             },
             "recent": {
                 "deleteTitle": "Usuń zastrzyk",
@@ -1598,7 +1598,7 @@
                 "openedAt": "Otwarto",
                 "expiry": "Wygasa",
                 "reorderFlag": "Przypomnij mi o zamówieniu",
-                "reorderThreshold": "Zamów, gdy zostanie dawek",
+                "reorderThreshold": "Zamów ponownie, gdy liczba pozostałych dawek spadnie do",
                 "isGlp1": "Lek GLP-1",
                 "drug": "Lek",
                 "drugPlaceholder": "Wybierz lek",
@@ -2163,7 +2163,7 @@
         "eatingWindow": "Okno jedzenia",
         "eatingWindowOpen": "Okno jedzenia",
         "eatingWindowMeal": "Okno · {{meal}}",
-        "eatingWindowProgress": "W oknie jedzenia pozostało {{remaining}}",
+        "eatingWindowProgress": "W oknie żywieniowym pozostało {{remaining}}",
         "details": "Szczegóły"
     },
     "fastingProtocol": {
@@ -2470,7 +2470,7 @@
             "heightInches": "Wzrost w calach",
             "muscleMass": "Masa mięśniowa",
             "boneMass": "Masa kostna",
-            "bodyWaterPercentage": "Woda w organizmie %",
+            "bodyWaterPercentage": "Woda w organizmie (%)",
             "bmr": "BMR",
             "muscleMassWithUnit": "Masa mięśniowa ({{unit}})",
             "boneMassWithUnit": "Masa kostna ({{unit}})",
@@ -3323,7 +3323,7 @@
             },
             "fatBurning": {
                 "name": "Spalanie tłuszczu",
-                "description": "Spalanie tłuszczu przyspiesza"
+                "description": "Spalanie tłuszczu nabiera tempa"
             },
             "ketosis": {
                 "name": "Ketoza",
@@ -3331,7 +3331,7 @@
             },
             "deepKetosis": {
                 "name": "Głęboka ketoza",
-                "description": "Etap często wiązany ze zwiększoną autofagią"
+                "description": "Etap często kojarzony ze zwiększoną autofagią"
             }
         },
         "tabs": {
@@ -5210,7 +5210,7 @@
             "stabbing": "Kłujący",
             "pressure": "Ucisk",
             "cramping": "Skurczowy",
-            "itchy": "Świąd",
+            "itchy": "Swędzenie",
             "aura": "Aura",
             "nausea": "Nudności",
             "vomiting": "Wymioty",
@@ -5242,7 +5242,7 @@
             "chocolate": "Czekolada",
             "agedCheese": "Sery dojrzewające",
             "curedMeats": "Wędliny",
-            "mSG": "MSG",
+            "mSG": "Glutaminian sodu (MSG)",
             "artificialSweeteners": "Sztuczne słodziki",
             "histamineRichFood": "Produkty bogate w histaminę",
             "stress": "Stres",
@@ -6317,9 +6317,9 @@
         "stageBreakdown": "Podział faz",
         "percentValue": "{{percent}}%",
         "stage": {
-            "awake": "Jawa",
+            "awake": "Czuwanie",
             "rem": "REM",
-            "light": "Płyt",
+            "light": "Lekki",
             "deep": "Głęboki",
             "other": "Inne"
         },
@@ -6588,8 +6588,8 @@
             "trends": {
                 "title": "Bieganie, ostatnie 12 tygodni",
                 "thisWeek": "Ten tydzień",
-                "thisWeekAbove": "Ten tydzień, {{percent}}% powyżej Twojej ostatniej średniej",
-                "thisWeekBelow": "Ten tydzień, {{percent}}% poniżej Twojej ostatniej średniej",
+                "thisWeekAbove": "W tym tygodniu {{percent}}% powyżej Twojej ostatniej średniej",
+                "thisWeekBelow": "W tym tygodniu {{percent}}% poniżej Twojej ostatniej średniej",
                 "chartA11y": "Tygodniowy dystans biegowy z ostatnich 12 tygodni",
                 "longestRun": "Najdłuższy bieg",
                 "efficiency": "Efektywność",
@@ -6603,7 +6603,7 @@
                 "basis15k": "15 km",
                 "yourRecord": "Twój rekord",
                 "fromBest": "od Twojego {{distance}}",
-                "raceTimesHint": "Szacunki przeliczają Twoje najlepsze wysiłki na poszczególne dystanse. Dla dystansów, w których nie trenowałeś, wychodzą zbyt optymistycznie.",
+                "raceTimesHint": "Szacunki przeliczają Twoje najlepsze wysiłki na poszczególne dystanse. Dla dystansów, których nie trenowałeś, wychodzą zbyt optymistycznie.",
                 "efficiencyHint": "Efektywność to dystans na uderzenie serca w biegach po 20 minut lub dłuższych, wcześniejsze tygodnie w porównaniu z ostatnimi. Wyższa wartość oznacza lepszą formę przy tym samym wysiłku."
             },
             "kilometersAxis": "Kilometry od startu",
@@ -6990,7 +6990,7 @@
         "preEndAlertHint": "Ile minut przed celem postu wysłać przypomnienie. Wpisz 0, aby wyłączyć.",
         "preEndAlertRange": "Wpisz liczbę całkowitą od 0 do 180.",
         "eatingWindowAlert": "Alerty celu i okna jedzenia",
-        "eatingWindowAlertHint": "Powiadom, gdy osiągnięty zostanie cel postu i gdy otworzy się okno jedzenia.",
+        "eatingWindowAlertHint": "Powiadom, gdy osiągnięty zostanie cel postu i gdy otworzy się okno żywieniowe.",
         "save": "Zapisz ustawienia postu",
         "saved": "Ustawienia postu zapisane",
         "saveFailed": "Nie udało się zapisać ustawień postu"
@@ -7068,9 +7068,9 @@
         "indoorDistance": {
             "title": "Dystans",
             "hint": "Opcjonalnie. Wpisz dystans pokazany przez bieżnię lub urządzenie.",
-            "estimateLearned_one": "Szacowane z {{formattedCount}} kroku na podstawie Twojego kroku. Zmień, aby pasowało do bieżni, a aplikacja będzie się uczyć.",
-            "estimateLearned_few": "Szacowane z {{formattedCount}} kroków na podstawie Twojego kroku. Zmień, aby pasowało do bieżni, a aplikacja będzie się uczyć.",
-            "estimateLearned_many": "Szacowane z {{formattedCount}} kroków na podstawie Twojego kroku. Zmień, aby pasowało do bieżni, a aplikacja będzie się uczyć.",
+            "estimateLearned_one": "Szacowane na podstawie {{formattedCount}} kroku i Twojej długości kroku. Dopasuj do swojej bieżni, a aplikacja będzie się dalej uczyć.",
+            "estimateLearned_few": "Szacowane na podstawie {{formattedCount}} kroków i Twojej długości kroku. Dopasuj do swojej bieżni, a aplikacja będzie się dalej uczyć.",
+            "estimateLearned_many": "Szacowane na podstawie {{formattedCount}} kroków i Twojej długości kroku. Dopasuj do swojej bieżni, a aplikacja będzie się dalej uczyć.",
             "estimateRough_one": "Zgrubny szacunek z {{formattedCount}} kroku przy typowej długości kroku. Wpisz wartość z bieżni, a aplikacja nauczy się Twojej.",
             "estimateRough_few": "Zgrubny szacunek z {{formattedCount}} kroków przy typowej długości kroku. Wpisz wartość z bieżni, a aplikacja nauczy się Twojej.",
             "estimateRough_many": "Zgrubny szacunek z {{formattedCount}} kroków przy typowej długości kroku. Wpisz wartość z bieżni, a aplikacja nauczy się Twojej.",
@@ -7125,7 +7125,7 @@
         },
         "audioCues": {
             "title": "Podpowiedzi głosowe",
-            "description": "Odgłasza Twój czas na każdym kilometrze lub mili oraz przy pauzie i wznowieniu."
+            "description": "Odczytuje na głos Twój czas na każdym kilometrze lub mili oraz informuje o pauzie i wznowieniu."
         },
         "cues": {
             "started": "Nagrywanie rozpoczęte",
@@ -7285,7 +7285,7 @@
             "startChange": "Zmień datę startu",
             "startClear": "Zacznij dzisiaj",
             "tickFailed": "Aktywność zapisana, program nie został zaktualizowany",
-            "tickFailedHint": "Użyj \"Policz to\" na karcie Dziennika, aby odhaczyć trening.",
+            "tickFailedHint": "Użyj „Policz to” na karcie Dziennika, aby odhaczyć trening.",
             "savedNext": "Następny: {{label}}",
             "savedNextOn": "Następny: {{label}} {{date}}",
             "savedFinished": "Program ukończony. Dobra robota!",
@@ -7691,7 +7691,7 @@
         "stageDeep": "Głęboki",
         "stageLight": "Lekki",
         "stageRem": "REM",
-        "stageAwake": "Obudzenie",
+        "stageAwake": "Czuwanie",
         "tooltip": "{{value}} · {{date}}",
         "averages": "Średnie okresu",
         "noChange": "Taki sam jak w poprzednich {{days}} dniach",
@@ -7720,8 +7720,8 @@
         "wakeVariability": "Regularność pobudki",
         "weekendVsWeekday": "Dni robocze vs weekendy",
         "nights": "Noce",
-        "insightWeekendLonger": "W weekendy śpisz o {{hours}} dłużej niż w noce robocze.",
-        "insightWeekendShorter": "W weekendy śpisz o {{hours}} krócej niż w noce robocze.",
+        "insightWeekendLonger": "W weekendy śpisz o {{hours}} dłużej niż w dni robocze.",
+        "insightWeekendShorter": "W weekendy śpisz o {{hours}} krócej niż w dni robocze.",
         "insightFullNights": "{{full}} z {{total}} nocy osiągnęło 7 godzin.",
         "insightIrregular": "Twoja pora snu waha się o około ±{{minutes}} min.",
         "insightDurationChange": "Czas snu jest {{change}} względem poprzedniego okresu."
@@ -7814,7 +7814,7 @@
         "daysCount_one": "{{count}} dzień",
         "daysCount_few": "{{count}} dni",
         "daysCount_many": "{{count}} dni",
-        "insightGoal": "Osiągnąłeś cel wodny w {{met}} z {{total}} dni.",
+        "insightGoal": "Osiągnąłeś cel nawodnienia w {{met}} z {{total}} dni.",
         "insightUp": "Pijesz o {{pct}}% więcej niż w poprzednim okresie.",
         "insightDown": "Pijesz o {{pct}}% mniej niż w poprzednim okresie.",
         "insightLowDay": "{{weekday}} to Twój najniższy dzień, średnio {{volume}}.",
@@ -7858,14 +7858,14 @@
         "totalAlcohol": "Suma alkoholu",
         "alcoholFreeDays": "Dni bez alkoholu",
         "daysOfWindow": "{{value}} z {{total}}",
-        "insightOver_one": "Przekroczyłeś {{limit}} kofeiny w {{count}} dni.",
+        "insightOver_one": "Przekroczyłeś {{limit}} kofeiny w {{count}} dzień.",
         "insightOver_few": "Przekroczyłeś {{limit}} kofeiny w {{count}} dni.",
         "insightOver_many": "Przekroczyłeś {{limit}} kofeiny w {{count}} dni.",
-        "insightOverVaries_one": "Przekroczyłeś dzienny limit kofeiny w {{count}} dni.",
+        "insightOverVaries_one": "Przekroczyłeś dzienny limit kofeiny w {{count}} dzień.",
         "insightOverVaries_few": "Przekroczyłeś dzienny limit kofeiny w {{count}} dni.",
         "insightOverVaries_many": "Przekroczyłeś dzienny limit kofeiny w {{count}} dni.",
-        "insightUnder": "Trzymałeś się poniżej {{limit}} kofeiny każdego dnia.",
-        "insightUnderVaries": "Trzymałeś się poniżej dziennego limitu kofeiny każdego dnia.",
+        "insightUnder": "Utrzymałeś spożycie poniżej {{limit}} kofeiny każdego dnia.",
+        "insightUnderVaries": "Utrzymałeś spożycie poniżej dziennego limitu kofeiny każdego dnia.",
         "insightFree": "{{free}} z {{total}} zapisanych dni było bezalkoholowych.",
         "insightAlcoholDown": "Alkohol spadł o {{pct}}% względem poprzedniego okresu.",
         "insightAlcoholUp": "Alkohol wzrósł o {{pct}}% względem poprzedniego okresu.",
@@ -7974,7 +7974,7 @@
             "title": "Jak działają plany",
             "workout": {
                 "title": "Każdy trening",
-                "body": "Trening zaczyna się od rozgrzewki marszem (łatwy trucht przed sesjami szybkościowymi), potem kolejne kroki, a na końcu schłodzenie marszem. Aplikacja mówi, kiedy przełączyć, więc możesz schować telefon. Tygodnie nie są powiązane z kalendarzem: jeśli przegapisz trening, ten sam pozostaje do wykonania."
+                "body": "Trening zaczyna się od rozgrzewki marszem (łatwy trucht przed sesjami szybkościowymi), potem kolejne kroki, a na końcu wyciszenie marszem. Aplikacja mówi, kiedy przełączyć, więc możesz schować telefon. Tygodnie nie są powiązane z kalendarzem: jeśli przegapisz trening, ten sam pozostaje do wykonania."
             },
             "run": {
                 "title": "Jak mocno biegać",
@@ -7982,7 +7982,7 @@
             },
             "walk": {
                 "title": "Jak szybko iść",
-                "body": "Idź energicznie, ale wygodnie, około 5–6 km/h (3–3,5 mph), czyli mniej więcej 10–12 minut na kilometr lub 16–19 minut na milę. Raczej utrzymuj ruch niż się zatrzymuj: spacery służą na odzyskanie oddechu, więc pod koniec każdego powinieneś móc normalnie rozmawiać. Rozgrzewka i schłodzenie marszem mogą być trochę łatwiejsze."
+                "body": "Idź energicznie, ale wygodnie, około 5–6 km/h (3–3,5 mph), czyli mniej więcej 10–12 minut na kilometr lub 16–19 minut na milę. Raczej utrzymuj ruch niż się zatrzymuj: spacery służą na odzyskanie oddechu, więc pod koniec każdego powinieneś móc normalnie rozmawiać. Rozgrzewka i wyciszenie marszem mogą być trochę łatwiejsze."
             },
             "listen": {
                 "title": "Słuchaj swojego ciała",
@@ -8159,7 +8159,7 @@
             "addWorkout": "Dodaj trening",
             "delete": "Usuń plan",
             "title": "Twoje plany",
-            "intro": "Napisz własny plan jako listę treningów, z których każdy składa się z kroków czasowych, i realizuj go jak każdy program.",
+            "intro": "Napisz własny plan jako listę treningów, z których każdy składa się z kroków czasowych, i realizuj go jak każdy inny program.",
             "restart": "Zacznij od nowa",
             "edit": "Edytuj",
             "create": "Utwórz plan",
@@ -8301,7 +8301,7 @@
         "save": "Zapisz",
         "clear": "Wyczyść",
         "watch": "Używaj też na moim Apple Watch",
-        "watchHint": "Utrzymuje trening programu oferowany na zegarku w tych zakresach. Tylko biegi."
+        "watchHint": "Trzyma trening programu proponowany na zegarku w tych zakresach. Dotyczy tylko biegów."
     },
     "allergens": {
         "trace": "śladowe: {{name}}",
