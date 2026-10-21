@@ -1863,7 +1863,7 @@
         "calories": "Kalorie",
         "custom": "Niestandardowe…",
         "autoCalculated": "Obliczane automatycznie",
-        "avgHeartRate": "Śr. tętno (uderz./min)",
+        "avgHeartRate": "Śr. tętno (bpm)",
         "notes": "Notatki",
         "optionalNotes": "Opcjonalne notatki...",
         "defaultRest": "Domyślny odpoczynek",
@@ -4367,7 +4367,7 @@
             "duration": "Czas trwania (min)",
             "distance": "Dystans ({{unit}})",
             "calories": "Kalorie",
-            "avgHeartRate": "Średnie tętno (uderzenia/min)",
+            "avgHeartRate": "Średnie tętno (bpm)",
             "notes": "Notatki",
             "notesPlaceholder": "Opcjonalne notatki…"
         },
@@ -5846,8 +5846,8 @@
         },
         "tools": {
             "title": "Praktyka interaktywna",
-            "breatheTitle": "Oddech sterowany",
-            "breatheSubtitle": "Protokoły Box, 4-7-8, koherencja",
+            "breatheTitle": "Oddech prowadzony",
+            "breatheSubtitle": "Protokoły: pudełkowy, 4-7-8 i koherencyjny",
             "timerTitle": "Timer medytacji",
             "timerSubtitle": "Odliczanie i otwarty stoper",
             "startAction": "Uruchom"
