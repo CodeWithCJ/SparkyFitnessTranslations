@@ -1048,7 +1048,8 @@
             "tooHard": "Mantendo a carga: na última vez foi difícil demais.",
             "tooHardRepeated": "Mais leve hoje: difícil demais duas sessões seguidas.",
             "highEffort": "Mantendo a carga: suas últimas séries ficaram perto do esforço máximo.",
-            "tooEasyRepeated": "Um pouco mais pesado: fácil demais duas sessões seguidas."
+            "tooEasyRepeated": "Um pouco mais pesado: fácil demais duas sessões seguidas.",
+            "lowEffort": "Um passo mais pesado: as suas últimas séries foram registradas como fáceis."
         },
         "declined": "Usando a sugestão de sempre.",
         "variation": "Você fez este exercício na maioria dos treinos recentes. Que tal uma variação?",
@@ -1380,7 +1381,8 @@
             "logAsTaken": "Registrar como tomado",
             "logAllAsTaken": "Registrar todos como tomados",
             "skip": "Pular",
-            "skipAll": "Pular todos"
+            "skipAll": "Pular todos",
+            "remindInMinutes": "Lembrar em {{minutes}} min"
         },
         "permission": {
             "notificationsOff": "Notificações desativadas",
@@ -1718,7 +1720,9 @@
             "personalRecords": "Recordes pessoais",
             "personalRecordsSubtitle": "Seus melhores 1 km, 5 km, 10 km e mais",
             "equipment": "Equipamento",
-            "equipmentSubtitle": "Tênis e outros equipamentos"
+            "equipmentSubtitle": "Tênis e outros equipamentos",
+            "routes": "Rotas",
+            "routesSubtitle": "Desenhe, importe e salve rotas para seguir"
         },
         "sleep": "Sono",
         "healthTrendsSettings": "Tendências de saúde",
@@ -1754,7 +1758,10 @@
         "runProgramWorkout": "Treino",
         "runProgramEdit": "Editar plano",
         "runProgramNew": "Novo plano",
-        "runProgramRace": "Planejar uma prova"
+        "runProgramRace": "Planejar uma prova",
+        "activityShare": "Compartilhar atividade",
+        "routes": "Rotas",
+        "routeDraw": "Desenhar uma rota"
     },
     "healthCategories": {
         "Common": "Comuns",
@@ -2224,7 +2231,9 @@
         "openSettings": "Abrir configurações",
         "permissionTitle": "Conceda as permissões",
         "permissionBody": "Os alertas do SparkyFitness (cronômetro de descanso, metas de jejum, lembretes de medicamentos e de água) não vão disparar.",
-        "permissionWarningAccessibility": "{{title}}. {{body}} {{action}}."
+        "permissionWarningAccessibility": "{{title}}. {{body}} {{action}}.",
+        "medicationSnoozeInterval": "Lembrar em",
+        "snoozeMinutesOption": "{{minutes}} min"
     },
     "workoutSettings": {
         "title": "Configurações de treino",
@@ -3537,7 +3546,17 @@
     "exerciseHistory": {
         "noSetData": "Sem dados de séries",
         "loadError": "Não foi possível carregar o histórico.",
-        "empty": "Nenhuma sessão registrada ainda."
+        "empty": "Nenhuma sessão registrada ainda.",
+        "columns": {
+            "set": "Série",
+            "weightReps": "Peso e repetições",
+            "timeDistance": "Tempo e distância",
+            "time": "Tempo",
+            "weightDistance": "Peso e distância",
+            "weightTime": "Peso e tempo",
+            "reps": "Repetições",
+            "rpe": "PSE"
+        }
     },
     "foodFormPersistence": {
         "discardTitle": "Descartar equivalentes não salvos?",
@@ -5135,6 +5154,15 @@
             "targetGoal": "Meta diária",
             "averageVsTarget": "Média x meta",
             "percentOfGoal": "{{percent}}% da meta"
+        },
+        "topSources": {
+            "title": "Principais fontes",
+            "allMeals": "Todas as refeições",
+            "clearDay": "Mostrar o período todo",
+            "empty": "Nenhum registro de {{nutrient}} nesta seleção",
+            "loadFailed": "Falha ao carregar as fontes de alimentos",
+            "share": "{{percent}}%",
+            "servingAmount": "{{quantity}} {{unit}}"
         }
     },
     "workoutPresetDetail": {
@@ -6346,7 +6374,8 @@
         "logWater": "Registrar água",
         "fasting": "Jejum",
         "waterLogged": "Água registrada",
-        "waterFailed": "Não foi possível registrar a água"
+        "waterFailed": "Não foi possível registrar a água",
+        "logWaterInBackground": "Registrar água sem abrir o app"
     },
     "watchSettings": {
         "gesturesTitle": "Gestos",
@@ -6580,7 +6609,11 @@
             "perKm": "/km",
             "perMile": "/mi",
             "exportGpx": "Exportar GPX",
-            "exportGpxFailed": "Não foi possível exportar a rota"
+            "exportGpxFailed": "Não foi possível exportar a rota",
+            "cadence": "Cadência média",
+            "spm": "{{value}} ppm",
+            "strideLength": "Comprimento da passada",
+            "shareImage": "Compartilhar como imagem"
         },
         "consistency": {
             "title": "Constância nos treinos",
@@ -6827,7 +6860,41 @@
             "loggedA11y": "Humor em {{date}}: {{mood}}",
             "log": "+ Registrar",
             "trend7d": "Tendência de 7 dias"
-        }
+        },
+        "energy": "Energia",
+        "energyLow": "Esgotado",
+        "energyHigh": "Cheio de energia",
+        "focus": "Foco",
+        "focusLow": "Disperso",
+        "focusHigh": "Concentrado",
+        "journalOptional": "Diário (opcional)",
+        "journalPlaceholder": "Algum pensamento ou sentimento que queira anotar?",
+        "ratingsUnsupported": "O seu servidor ainda não salva energia e foco. Atualize o SparkyFitness para guardá-los.",
+        "serverCheckFailed": "Não foi possível acessar o seu servidor. Confira a conexão e tente novamente.",
+        "newCheckinTitle": "Novo check-in",
+        "editCheckinTitle": "Editar check-in",
+        "time": "Horário",
+        "timeA11y": "Horário, {{time}}",
+        "deleteCheckin": "Excluir check-in",
+        "deleteCheckinConfirm": "Excluir este check-in?",
+        "deleteCheckinMessage": "Isto remove o check-in e a anotação do diário.",
+        "deleteFailed": "Não foi possível excluir o check-in",
+        "checkinNeedsContent": "Adicione humor, energia, foco, uma etiqueta ou uma anotação no diário para salvar.",
+        "checkinMissing": "Este check-in não existe mais.",
+        "dayTitle": "Humor",
+        "dayAverage": "Média do dia",
+        "checkinCount_one": "{{count}} check-in",
+        "checkinCount_many": "{{count}} check-ins",
+        "checkinCount_other": "{{count}} check-ins",
+        "noCheckins": "Nenhum check-in neste dia ainda.",
+        "addCheckin": "Adicionar check-in",
+        "checkinRowA11y": "{{summary}}. Editar check-in.",
+        "checkinAtTime": "check-in das {{time}}",
+        "a11yListSeparator": ", ",
+        "energyA11y": "energia {{value}} de 5",
+        "focusA11y": "foco {{value}} de 5",
+        "energyOutOfFive": "Energia {{value}}/5",
+        "focusOutOfFive": "Foco {{value}}/5"
     },
     "customNutrients": {
         "title": "Nutrientes personalizados",
@@ -8257,5 +8324,63 @@
             "lupin": "tremoço",
             "sulphites": "sulfitos"
         }
+    },
+    "activityShare": {
+        "title": "Compartilhar atividade",
+        "choosePhoto": "Escolher foto",
+        "takePhoto": "Tirar foto",
+        "removePhoto": "Remover",
+        "transparentHint": "Sem foto, a imagem é um PNG transparente que você pode sobrepor a uma foto ou vídeo em outro app.",
+        "cameraDenied": "Permita o acesso à câmera em Ajustes para tirar uma foto",
+        "noRoute": "Este treino não tem rota de GPS guardada, então o layout mostra só as estatísticas.",
+        "layout": "Layout",
+        "layoutClassic": "Clássico",
+        "layoutRoute": "Rota",
+        "layoutMinimal": "Minimalista",
+        "textColor": "Cor",
+        "customColor": "Código hexadecimal da cor personalizada",
+        "share": "Compartilhar imagem",
+        "shareFailed": "Não foi possível criar a imagem"
+    },
+    "exerciseEffort": {
+        "title": "Esforço",
+        "lastAvg": "PSE média, última sessão",
+        "trendLabel_one": "PSE média da sua última sessão ({{count}})",
+        "trendLabel_many": "PSE média das suas últimas {{count}} sessões",
+        "trendLabel_other": "PSE média das suas últimas {{count}} sessões",
+        "oneRmEffort": "1RM est. com esforço",
+        "oneRmPlain": "Só pelas repetições",
+        "oneRmNote": "Considera as repetições que ainda sobravam: PSE 8 equivale a mais duas repetições. Só entram séries com PSE."
+    },
+    "routes": {
+        "addTitle": "Adicionar uma rota",
+        "draw": "Desenhar num mapa",
+        "importGpx": "Importar um arquivo GPX",
+        "importFailed": "Não foi possível importar esse arquivo",
+        "importFailedHint": "Escolha um arquivo GPX que contenha um trajeto ou rota.",
+        "loadFailed": "Não foi possível carregar as suas rotas.",
+        "loadOneFailed": "Não foi possível carregar esta rota.",
+        "empty": "Nenhuma rota ainda. Desenhe uma num mapa, importe um arquivo GPX ou salve uma corrida ou caminhada gravada a partir dos detalhes dela.",
+        "mapA11y": "Mapa desta rota, do ponto verde ao anel vermelho",
+        "nameLabel": "Nome da rota",
+        "namePlaceholder": "Dê um nome a esta rota",
+        "climb": "{{climb}} de subida",
+        "rename": "Renomear",
+        "renameFailed": "Não foi possível renomear",
+        "shareGpx": "Compartilhar como GPX",
+        "shareFailed": "Não foi possível compartilhar a rota",
+        "deleteTitle": "Excluir esta rota?",
+        "deleteMessage": "As atividades gravadas de onde ela foi salva não são afetadas.",
+        "deleteFailed": "Não foi possível excluir a rota",
+        "saveFailed": "Não foi possível salvar a rota",
+        "drawHint": "Toque no mapa para adicionar pontos",
+        "undo": "Desfazer",
+        "clear": "Limpar",
+        "saveAsRoute": "Salvar como rota",
+        "savedAsRoute": "Salva em Rotas",
+        "saveAsRouteFailed": "Não foi possível salvar a rota",
+        "fileTooLarge": "Esse arquivo é grande demais",
+        "fileTooLargeHint": "Um arquivo de rota pode ter até 10 MB.",
+        "drawLimit": "Este é o máximo de pontos que uma rota pode ter aqui. Desfaça alguns ou salve esta."
     }
 }
