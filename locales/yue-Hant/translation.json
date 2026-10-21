@@ -2727,7 +2727,7 @@
         },
         "providerCard": {
             "global": "全域",
-            "private": "з§Ғдәә",
+            "private": "私人",
             "bulkImportReSync": "批次匯入／重新同步",
             "importing": "匯入緊（{{progress}}%）…",
             "bulkImportSync": "批次匯入／同步",
