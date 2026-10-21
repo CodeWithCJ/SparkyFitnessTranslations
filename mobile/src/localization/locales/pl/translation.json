@@ -103,7 +103,7 @@
         "serverConnected": "Ustawienia serwera. Połączono.",
         "serverConnectionFailed": "Ustawienia serwera. Połączenie nie powiodło się.",
         "serverNotConfigured": "Ustawienia serwera. Nie skonfigurowano serwera.",
-        "shareReportDescription": "Eksportuje lokalny raport diagnostyczny (wersja aplikacji, stan synchronizacji, logi). Nie zawiera danych zdrowotnych ani danych o żywności. Nic nie jest wysyłane automatycznie.",
+        "shareReportDescription": "Eksportuje lokalny raport diagnostyczny (wersja aplikacji, stan synchronizacji, logi). Nie zawiera danych zdrowotnych ani danych żywieniowych. Nic nie jest wysyłane automatycznie.",
         "rows": {
             "server": "Serwer",
             "healthSync": "Synchronizacja danych zdrowotnych",
@@ -626,7 +626,7 @@
         "calories": "Aktywne kalorie",
         "totalCalories": "Łączne kalorie",
         "heartRate": "Tętno",
-        "weight": "Waga",
+        "weight": "Masa ciała",
         "bloodPressure": "Ciśnienie krwi",
         "nutrition": "Odżywianie",
         "sleepSession": "Sesja snu",
@@ -1139,7 +1139,7 @@
         "enableNotifications": "Włącz powiadomienia",
         "openSettings": "Otwórz ustawienia",
         "permissionTitle": "Włącz powiadomienia",
-        "permissionBody": "Powiadomienia SparkyFitness (o zakończeniu odpoczynku, celach postu i lekach) nie będą działać.",
+        "permissionBody": "Powiadomienia SparkyFitness (o zakończeniu odpoczynku, celach postu, lekach i nawodnieniu) nie będą działać.",
         "permissionWarningAccessibility": "{{title}}. {{body}} {{action}}.",
         "consolidateReminders": "Łączenie przypomnień",
         "consolidateRemindersSubtitle": "Grupuj leki zaplanowane na tę samą godzinę w jedno powiadomienie.",
@@ -1694,8 +1694,8 @@
             "reset": "Zresetuj ogłoszenie"
         },
         "popovers": {
-            "title": "Podpowiedzi wyszukiwania żywności",
-            "description": "Wyczyść flagę wyświetlenia, aby podpowiedź pojawiła się ponownie przy następnym wyszukiwaniu żywności.",
+            "title": "Podpowiedzi wyszukiwania produktów",
+            "description": "Wyczyść flagę wyświetlenia, aby podpowiedź pojawiła się ponownie przy następnym wyszukiwaniu produktów.",
             "sources": "Wprowadzenie do źródeł",
             "provider": "Przełącznik źródeł"
         },
@@ -2533,7 +2533,7 @@
             "calculatedTitle": "Obliczono tkankę tłuszczową",
             "calculatedMessage": "Sprawdź wartość, a następnie zapisz, aby ją zachować.",
             "profileRequired": "Ustaw płeć w profilu, aby użyć tego obliczenia.",
-            "bmiRequiredFields": "Waga, wzrost, wiek i płeć są wymagane dla metody BMI.",
+            "bmiRequiredFields": "Masa ciała, wzrost, wiek i płeć są wymagane dla metody BMI.",
             "navyRequiredFields": "Płeć, wzrost, talia, szyja oraz (dla kobiet) biodra są wymagane dla metody US Navy.",
             "uncomputable": "Te pomiary nie dają prawidłowego procentu tkanki tłuszczowej. Sprawdź wartości talii, szyi, wzrostu i bioder."
         }
@@ -4697,7 +4697,7 @@
         "weight": {
             "title": "Masa ciała",
             "loadFailed": "Nie udało się wczytać danych o masie ciała",
-            "empty": "Brak danych o wadze za ten okres",
+            "empty": "Brak danych o masie ciała w tym okresie",
             "trend": "Trend",
             "perWeek": "Na tydzień",
             "goalDate": "Data celu",
@@ -5633,7 +5633,7 @@
                 },
                 "coffee": {
                     "name": "Kawa",
-                    "note": "Ogranicz kofeinę do ok. 200 mg dziennie (mniej więcej jedna duża kawa)."
+                    "note": "Ogranicz kofeinę do ok. 200 mg dziennie (mniej więcej jedna duża kawa, ok. 350 ml)."
                 },
                 "alcohol": {
                     "name": "Alkohol",
@@ -5645,7 +5645,7 @@
                 },
                 "cooked_leafy_greens": {
                     "name": "Gotowane zielone warzywa liściaste",
-                    "note": "Dokładnie umyj; to świetne źródło kwasu foliowego i żelaza."
+                    "note": "Dokładnie umyj; to świetne źródło folianów i żelaza."
                 },
                 "unwashed_produce": {
                     "name": "Niemyte warzywa i owoce",
@@ -5691,7 +5691,7 @@
                 },
                 "ibuprofen_gel": {
                     "name": "Żel ibuprofenowy",
-                    "note": "Przed zastosowaniem skonsultuj miejscowe leki przeciwzapalne (NSAID) z lekarzem."
+                    "note": "Przed zastosowaniem skonsultuj z lekarzem miejscowe NLPZ."
                 },
                 "isotretinoin": {
                     "name": "Izotretynoina (Accutane)",
@@ -5714,11 +5714,11 @@
     "foodPhotoIntro": {
         "title": "Oszacuj wartości odżywcze ze zdjęcia",
         "subtitle": "Zamień zdjęcie posiłku w edytowalne oszacowanie wartości odżywczych.",
-        "weight": "Dodaj wagę, jeśli ją znasz",
+        "weight": "Dodaj masę, jeśli ją znasz",
         "description": "Dodaj krótki opis",
         "review": "Sprawdź przed zapisaniem",
         "logManually": "Dodaj ręcznie",
-        "weightHelp": "Całkowita waga posiłku ułatwia określenie porcji, kalorii i makroskładników.",
+        "weightHelp": "Całkowita masa posiłku ułatwia określenie porcji, kalorii i makroskładników.",
         "descriptionHelp": "Wspomnij o sosach, olejach, dodatkach, nazwie restauracji lub innych ukrytych składnikach.",
         "reviewHelp": "Oszacowanie ze zdjęcia to punkt wyjścia. Przed zapisaniem możesz wszystko edytować."
     },
@@ -5962,7 +5962,7 @@
         "timeCapLabel": "Limit: {{cap}}",
         "wodScoring": "Punktacja WOD",
         "work": "Praca",
-        "finished": "Osiągnięto limit czasu",
+        "finished": "Ukończono",
         "roundPlusOne": "+1 runda (ukończono {{current}})",
         "timeCap": "Limit czasu",
         "wodScore": "Wynik WOD",
@@ -6388,8 +6388,8 @@
         "pages": {
             "goals": "Cele",
             "water": "Woda",
-            "entry": "Check-in wagi",
-            "trend": "Trend wagi",
+            "entry": "Check-in masy ciała",
+            "trend": "Trend masy ciała",
             "workout": "Trening",
             "medications": "Leki",
             "fasting": "Post",
@@ -6399,7 +6399,7 @@
         "nutrientsDescription": "Wybierz składniki wyświetlane pod pierścieniem kalorii na zegarku i przeciągnij, aby ustawić ich kolejność. Każdy pokazuje dzisiejszą ilość względem celu.",
         "nutrientReorderHint": "Zmienia, gdzie ten składnik znajduje się na zegarku",
         "setInputTitle": "Wprowadzanie serii",
-        "setInputDescription": "Sposób wpisywania wagi i powtórzeń na zegarku podczas treningu: wpisz je na klawiaturze albo dotknij wartości i obróć lub przeciągnij Digital Crown — dla wagi co 0,5.",
+        "setInputDescription": "Sposób wpisywania ciężaru i powtórzeń na zegarku podczas treningu: wpisz je na klawiaturze albo dotknij wartości i obróć lub przeciągnij Digital Crown — dla ciężaru co 0,5.",
         "setInputKeypad": "Klawiatura",
         "setInputCrown": "Digital Crown",
         "rpeTitle": "Pytaj o wysiłek (RPE) po każdej serii",
@@ -6417,9 +6417,9 @@
             "back": "Tył",
             "side": "Bok"
         },
-        "noWeight": "Nie zapisano wagi",
-        "logWeight": "Zapisz wagę",
-        "logWeightA11y": "Zapisz swoją wagę dla tego dnia",
+        "noWeight": "Nie zapisano masy ciała",
+        "logWeight": "Zapisz masę ciała",
+        "logWeightA11y": "Zapisz swoją masę ciała dla tego dnia",
         "openPhotoA11y": "Zobacz to zdjęcie na pełnym ekranie",
         "sincePrevious": "{{delta}} względem poprzedniego",
         "emptyTitle": "Brak zdjęć {{angle}}",
@@ -6976,7 +6976,7 @@
         "autoCalculate": "Automatycznie licz post z posiłków",
         "autoCalculateHint": "Wykryj, kiedy skończył się Twój ostatni posiłek, i automatycznie obliczaj okno postu oraz historię — bez przycisków start i stop.",
         "protocol": "Domyślny protokół postu",
-        "protocolOption": "{{name}} ({{fast}}h post / {{eat}}h jedzenie)",
+        "protocolOption": "{{name}} (post {{fast}} h / okno żywieniowe {{eat}} h)",
         "customProtocol": "Własne godziny",
         "customProtocolHint": "Ustaw własne godziny postu i jedzenia.",
         "targetFastingHours": "Docelowe godziny postu",
@@ -7473,15 +7473,15 @@
                 "apply": "Zastosuj do moich celów",
                 "applied": "Kierunki zaktualizowane. Dotknij Zapisz, aby je zachować.",
                 "loseWeight": {
-                    "title": "Redukcja wagi",
+                    "title": "Redukcja masy ciała",
                     "body": "Ustaw Kalorie na Maksimum (sufit) lub Zakres docelowy."
                 },
                 "gainWeight": {
-                    "title": "Zwiększanie wagi lub budowanie mięśni",
+                    "title": "Zwiększanie masy ciała lub budowanie mięśni",
                     "body": "Ustaw Kalorie i Białko na Minimum (próg do osiągnięcia)."
                 },
                 "maintain": {
-                    "title": "Utrzymanie wagi",
+                    "title": "Utrzymanie masy ciała",
                     "body": "Ustaw Kalorie na Zakres wokół Twojego poziomu utrzymania."
                 },
                 "diabetes": {
@@ -7490,11 +7490,11 @@
                 },
                 "heart": {
                     "title": "Wysoki cholesterol lub zdrowie serca",
-                    "body": "Zostaw Cholesterol, Tłuszcze nasycone i Sód jako Maksimum (wartości domyślne)."
+                    "body": "Pozostaw Cholesterol, Tłuszcze nasycone i Sód jako Maksimum (ustawienie domyślne)."
                 },
                 "lowCarb": {
                     "title": "Niskowęglowodanowo lub keto",
-                    "body": "Ustaw Węglowodany na Maksimum; zostaw Tłuszcz i Białko jako Minimum."
+                    "body": "Ustaw Węglowodany na Maksimum; pozostaw Tłuszcz i Białko jako Minimum."
                 }
             },
             "legend": {
@@ -7591,7 +7591,7 @@
         "hydration": "Nawodnienie",
         "hydrationSubtitle": "Codzienna woda, serie celów i najlepsze dni",
         "measurements": "Pomiary",
-        "measurementsSubtitle": "Waga, skład ciała, pomiary taśmą i kroki",
+        "measurementsSubtitle": "Masa ciała, skład ciała, pomiary taśmą i kroki",
         "insights": "Co się wyróżniało",
         "substances": "Kofeina i alkohol",
         "substancesSubtitle": "Codzienna kofeina, sumy alkoholu i tydzień po tygodniu"
@@ -7684,7 +7684,7 @@
             "bodyBattery": "Zyskana energia ciała",
             "duration": "Czas snu"
         },
-        "empty": "Brak danych o snie w tym okresie",
+        "empty": "Brak danych o śnie w tym okresie",
         "emptyHint": "Zsynchronizuj dane zdrowotne, aby zobaczyć trendy snu.",
         "loadFailed": "Nie udało się wczytać danych snu",
         "stages": "Przeciętna noc",
@@ -7762,8 +7762,8 @@
             "waterGoal": "Cel wodny",
             "hydrationHighlights": "Najlepsze i najgorsze dni",
             "hydrationWeekdays": "Średnia wg dnia tygodnia",
-            "weightChart": "Wykres wagi",
-            "weightSummary": "Podsumowanie wagi",
+            "weightChart": "Wykres masy ciała",
+            "weightSummary": "Podsumowanie masy ciała",
             "bodyComposition": "Skład ciała",
             "tape": "Pomiary ciała",
             "stepsChart": "Wykres kroków",
@@ -7831,20 +7831,20 @@
         "waist": "Talia",
         "hips": "Biodra",
         "neck": "Szyja",
-        "currentWeight": "Ostatnia waga",
+        "currentWeight": "Ostatnia masa ciała",
         "weightChange": "Zmiana w okresie",
         "weightRange": "Najniższa / najwyższa",
-        "toGoal": "Do wagi docelowej",
-        "weight": "Waga",
+        "toGoal": "Do docelowej masy ciała",
+        "weight": "Masa ciała",
         "avgSteps": "Śr. kroki",
         "empty": "Brak pomiarów w tym okresie",
         "bodyComposition": "Skład ciała",
         "tape": "Pomiary ciała",
-        "insightWeightDown": "Twoja waga spadła o {{amount}} w tym okresie.",
-        "insightWeightUp": "Twoja waga wzrosła o {{amount}} w tym okresie.",
+        "insightWeightDown": "Twoja masa ciała spadła o {{amount}} w tym okresie.",
+        "insightWeightUp": "Twoja masa ciała wzrosła o {{amount}} w tym okresie.",
         "insightWaistDown": "Twoja talia zmniejszyła się o {{amount}}.",
         "insightWaistUp": "Twoja talia zwiększyła się o {{amount}}.",
-        "insightToGoal": "Do wagi docelowej brakuje Ci {{amount}}.",
+        "insightToGoal": "Do docelowej masy ciała brakuje Ci {{amount}}.",
         "insightSteps": "W dniach z zapisami robiłeś średnio {{steps}} kroków."
     },
     "substancesReport": {
@@ -7858,12 +7858,12 @@
         "totalAlcohol": "Suma alkoholu",
         "alcoholFreeDays": "Dni bez alkoholu",
         "daysOfWindow": "{{value}} z {{total}}",
-        "insightOver_one": "Przekroczyłeś {{limit}} kofeiny w {{count}} dzień.",
-        "insightOver_few": "Przekroczyłeś {{limit}} kofeiny w {{count}} dni.",
-        "insightOver_many": "Przekroczyłeś {{limit}} kofeiny w {{count}} dni.",
-        "insightOverVaries_one": "Przekroczyłeś dzienny limit kofeiny w {{count}} dzień.",
-        "insightOverVaries_few": "Przekroczyłeś dzienny limit kofeiny w {{count}} dni.",
-        "insightOverVaries_many": "Przekroczyłeś dzienny limit kofeiny w {{count}} dni.",
+        "insightOver_one": "Przekroczyłeś {{limit}} kofeiny w {{count}} dniu.",
+        "insightOver_few": "Przekroczyłeś {{limit}} kofeiny w {{count}} dniach.",
+        "insightOver_many": "Przekroczyłeś {{limit}} kofeiny w {{count}} dniach.",
+        "insightOverVaries_one": "Przekroczyłeś dzienny limit kofeiny w {{count}} dniu.",
+        "insightOverVaries_few": "Przekroczyłeś dzienny limit kofeiny w {{count}} dniach.",
+        "insightOverVaries_many": "Przekroczyłeś dzienny limit kofeiny w {{count}} dniach.",
         "insightUnder": "Utrzymałeś spożycie poniżej {{limit}} kofeiny każdego dnia.",
         "insightUnderVaries": "Utrzymałeś spożycie poniżej dziennego limitu kofeiny każdego dnia.",
         "insightFree": "{{free}} z {{total}} zapisanych dni było bezalkoholowych.",
@@ -7908,7 +7908,7 @@
         "effortQuestion": "Jak ciężko było?",
         "effortA11y": "Wysiłek {{rating}} z 10",
         "effortLow": "1 = bardzo łatwo",
-        "effortHigh": "10 = na maksa",
+        "effortHigh": "10 = maksymalny wysiłek",
         "rateFailed": "Nie udało się zapisać oceny wysiłku.",
         "easeSuggestion": "Dwa ciężkie treningi z rzędu. Powtórzenie tego to dobry sposób na bezpieczne budowanie formy.",
         "advanceSuggestion": "Dwa łatwe treningi z rzędu. Możesz pominąć następny i iść dalej.",
@@ -7917,7 +7917,7 @@
         "tapForSummary": "Dotknij, aby zobaczyć podsumowanie",
         "newRecords_one": "Nowy rekord osobisty",
         "newRecords_few": "Nowe rekordy osobiste",
-        "newRecords_many": "Nowych rekordów osobistych",
+        "newRecords_many": "Nowe rekordy osobiste",
         "viewRecords": "Zobacz wszystkie rekordy",
         "treadmillDistance": "Dystans na bieżni",
         "treadmillHint": "Zegarek oszacował ten dystans. Wpisz wartość z urządzenia, aby ją poprawić.",
@@ -7932,7 +7932,7 @@
         "startWhenTitle": "Rozpocznij {{name}}",
         "startWhenMessage": "Kiedy Twój pierwszy trening?",
         "startPickDate": "Wybierz datę",
-        "startToday": "Zacznij dziś",
+        "startToday": "Zacznij dzisiaj",
         "intro": "Podążaj za planem, który buduje formę tydzień po tygodniu. Wybierz program, aby zobaczyć, co obejmuje, i rozpocznij go, gdy będziesz gotowy.",
         "runsPerWeekOption_one": "{{count}} bieg w tygodniu",
         "runsPerWeekOption_few": "{{count}} biegi w tygodniu",
