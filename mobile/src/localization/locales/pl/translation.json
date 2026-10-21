@@ -632,7 +632,7 @@
         "sleepSession": "Sesja snu",
         "stress": "Stres",
         "basalBodyTemperature": "Podstawowa temperatura ciała",
-        "basalMetabolicRate": "Podstawowa przemiana materii",
+        "basalMetabolicRate": "Podstawowa przemiana materii (BMR)",
         "bloodGlucose": "Glukoza we krwi",
         "bodyFat": "Tkanka tłuszczowa",
         "bodyTemperature": "Temperatura ciała",
@@ -1041,7 +1041,7 @@
             "customPercentageDescription": "Wartość dodatnia dodaje kalorie; ujemna tworzy deficyt. Ograniczone do ±40%."
         },
         "useExternalBmr": "Używaj zmierzonego BMR z check-inów i zsynchronizowanych urządzeń",
-        "useExternalBmrHint": "Domyślnie wyłączone — wybrana formuła jest zawsze używana, dopóki tego nie włączysz. Po włączeniu BMR zapisany przy check-inie albo zsynchronizowany ze smartwagi lub od dostawcy danych zdrowotnych zastępuje formułę na ten dzień, jeśli jest dla Ciebie fizjologicznie wiarygodny.",
+        "useExternalBmrHint": "Domyślnie wyłączone — wybrana formuła jest zawsze używana, dopóki tego nie włączysz. Po włączeniu BMR zapisany przy check-inie albo zsynchronizowany z inteligentnej wagi lub od dostawcy danych zdrowotnych zastępuje formułę na ten dzień, jeśli jest dla Ciebie fizjologicznie wiarygodny.",
         "useExternalBmrIosNote": "Spoczynkowa energia z Apple Health obejmuje już lekką codzienną aktywność — rozważ ustawienie Poziomu aktywności na Brak (×1,0), żeby nie liczyć jej dwukrotnie.",
         "adaptiveEarnBack": "Cele adaptacyjne już uwzględniają aktywność. Pozostałe kalorie to cel minus spożyte. Odzyskiwanie kalorii za trening dotyczy tylko celów ustawionych ręcznie."
     },
@@ -5242,7 +5242,7 @@
             "chocolate": "Czekolada",
             "agedCheese": "Sery dojrzewające",
             "curedMeats": "Wędliny",
-            "mSG": "Glutaminian sodu (MSG)",
+            "mSG": "Glutaminian sodu",
             "artificialSweeteners": "Sztuczne słodziki",
             "histamineRichFood": "Produkty bogate w histaminę",
             "stress": "Stres",
@@ -5263,7 +5263,7 @@
             "darkQuietRoom": "Ciemne, ciche pomieszczenie",
             "coldCompress": "Zimny okład",
             "warmCompress": "Ciepły okład",
-            "heatPack": "Termofor",
+            "heatPack": "Okład rozgrzewający",
             "scalpMassage": "Masaż skóry głowy",
             "templePressure": "Ucisk na skronie",
             "stretching": "Rozciąganie",
@@ -5319,8 +5319,8 @@
             "previous": "Poprzedni miesiąc",
             "next": "Następny miesiąc",
             "free": "Bez objawów",
-            "mild": "Łagodne do umiarkowanych",
-            "severe": "Silne",
+            "mild": "Od łagodnego do umiarkowanego",
+            "severe": "Ciężkie",
             "unknown": "Brak wpisu"
         },
         "detail": {
@@ -6024,7 +6024,7 @@
             "countdownValue_one": "{{count}} s",
             "countdownValue_few": "{{count}} s",
             "countdownValue_many": "{{count}} s",
-            "sample": "Tak będą brzmieć Twoje treningi prowadzone.",
+            "sample": "Tak będą brzmieć Twoje treningi w trybie prowadzonym.",
             "test": "Testuj głos",
             "enabledSubtitle": "Odczytuje każde ćwiczenie i jego cel, odlicza wprowadzenie, automatycznie prowadzi serie czasowe i przechodzi do następnej serii. Podpowiedzi odtwarzają się nawet przy wyciszonym telefonie, a ekran pozostaje włączony podczas treningu."
         }
@@ -6423,7 +6423,7 @@
         "openPhotoA11y": "Zobacz to zdjęcie na pełnym ekranie",
         "sincePrevious": "{{delta}} względem poprzedniego",
         "emptyTitle": "Brak zdjęć {{angle}}",
-        "emptyBody": "Dodaj powyżej, a pojawi się tutaj wraz z wagą z tego dnia.",
+        "emptyBody": "Dodaj powyżej, a pojawi się tutaj wraz z masą ciała z tego dnia.",
         "loadError": "Nie udało się wczytać zdjęć postępu.",
         "takePhoto": "Zrób zdjęcie",
         "chooseLibrary": "Wybierz z biblioteki",
@@ -6707,7 +6707,7 @@
         "aiHint": "Audio jest wysyłane do wybranego dostawcy AI przez Twój serwer. Mogą obowiązywać opłaty dostawcy. Wybierz model, aby włączyć transkrypcję AI.",
         "noModels": "Brak włączonych kompatybilnych modeli głosowych. Skonfiguruj model obsługujący audio w ustawieniach usługi AI w aplikacji webowej, a następnie odśwież.",
         "unavailable": "Wybrany model głosowy jest niedostępny. Wybierz inny model lub przełącz się na opcję systemową.",
-        "manualSend": "Dyktowanie wypełnia wersję roboczą. Sprawdź lub zedytuj ją, a następnie wyślij samodzielnie.",
+        "manualSend": "Dyktowanie wypełnia wersję roboczą. Sprawdź ją lub popraw, a następnie wyślij samodzielnie.",
         "saveFailed": "Nie udało się zapisać ustawień głosu. Spróbuj ponownie.",
         "loadFailed": "Nie udało się wczytać ustawień głosu.",
         "modelsFailed": "Nie udało się wczytać modeli głosu."
@@ -7321,7 +7321,7 @@
             "walkFitDescription": "Marsz dla kondycji: osiem tygodni, trzy spacery tygodniowo, bez biegania. Naprzemienny szybki i łatwy marsz, z budowaniem do 30 minut szybkiego marszu.",
             "halfMarathonDescription": "Półmaraton: dwanaście tygodni, trzy biegi tygodniowo, z długimi biegami budowanymi do około dwóch godzin. Gdy biegniesz komfortowo 30 minut.",
             "walk10kDescription": "Szybki marsz 10 km: dziesięć tygodni, trzy spacery tygodniowo, bez biegania. Budujesz do marszu 10 km w około godzinę i trzy kwadranse.",
-            "returnToRunningDescription": "Powrót do biegania: cztery tygodnie, trzy biegi tygodniowo, na łagodny powrót po przerwie. Budujesz od jednominutowych biegów do około 20 minut biegania. Zostaw dzień lub dwa między biegami i trzymaj łatwe tempo. Jeśli wracasz po kontuzji, najpierw skonsultuj się z fizjoterapeutą lub lekarzem.",
+            "returnToRunningDescription": "Powrót do biegania: cztery tygodnie, trzy biegi tygodniowo, na łagodny powrót po przerwie. Budujesz od jednominutowych biegów do około 20 minut biegania. Pozostaw dzień lub dwa między biegami i trzymaj łatwe tempo. Jeśli wracasz po kontuzji, najpierw skonsultuj się z fizjoterapeutą lub lekarzem.",
             "gentle5kDescription": "Łagodne 5 km: dwanaście tygodni, trzy biegi tygodniowo. Wolniejszy start niż 5 km dla początkujących, z bardzo krótkimi biegami między długimi marszami, budując do 30 minut biegania.",
             "beginner10kDescription": "10 km dla początkujących: dwanaście tygodni, trzy biegi tygodniowo, start od marszu. Budujesz do godziny biegania.",
             "faster10kDescription": "Szybsze 10 km: osiem tygodni sesji szybkościowych, łatwych biegów i biegów w tempie, gdy już biegniesz 10 km.",
@@ -7966,7 +7966,7 @@
                 "beginner": "Nie trenuj przez kolejne dni. Trzy treningi w tygodniu z dniem odpoczynku między nimi, np. poniedziałek, środa i sobota, dają nogom czas na adaptację. W dni odpoczynku chodź na spacery, rozciągaj się lub rób coś łagodnego.",
                 "fiveToTenK": "Zachowaj dzień odpoczynku między dwoma równymi biegami i zaplanuj długi bieg dzień lub dwa po dniu odpoczynku. W pozostałe dni odpoczywaj lub trenuj uzupełniająco (rower, pływanie, łatwy spacer).",
                 "faster5k": "Daj sesji szybkościowej i dłuższemu biegowi łatwy lub wolny dzień po każdej stronie. Nigdy nie rób ich jeden po drugim. Wolne dni przeznacz na odpoczynek lub łagodny trening uzupełniający.",
-                "returnToRunning": "Zostaw jeden lub dwa dni między biegami, np. poniedziałek, czwartek i sobota, i utrzymuj każdy bieg łatwy i swobodny. W pozostałe dni odpoczywaj, spaceruj lub jeźdź lekko na rowerze. Jeśli coś boli coraz bardziej, wróć do poprzedniego tygodnia.",
+                "returnToRunning": "Pozostaw jeden lub dwa dni między biegami, np. poniedziałek, czwartek i sobota, i utrzymuj każdy bieg łatwy i swobodny. W pozostałe dni odpoczywaj, spaceruj lub jeźdź lekko na rowerze. Jeśli coś boli coraz bardziej, wróć do poprzedniego tygodnia.",
                 "fourRun": "Przy czterech biegach w tygodniu zaplanuj co najmniej jeden pełny dzień odpoczynku i nigdy nie biegaj więcej niż dwa dni z rzędu. Dzień przed długim biegiem trzymaj łatwy lub wolny, a dzień po nim odpoczywaj lub trenuj uzupełniająco. Pozostałe dni wykorzystaj na odpoczynek, spacery lub trening uzupełniający o niskim obciążeniu.",
                 "advanced": "Przy pięciu biegach w tygodniu zaplanuj dwa dni odpoczynku lub treningu uzupełniającego i unikaj więcej niż dwóch biegów z rzędu. Trzymaj sesję szybkościową lub tempową i długi bieg co najmniej dwa dni od siebie, dni wokół nich utrzymuj łatwe, a w lżejszych tygodniach odpoczywaj więcej.",
                 "longDistance": "Dzień przed długim biegiem trzymaj łatwy lub wolny, a po nim zaplanuj dzień odpoczynku. Rozłóż pozostałe biegi tak, aby żadne dwa ciężkie dni nie sąsiadowały, a wolne dni wykorzystaj na odpoczynek, spacery lub trening uzupełniający o niskim obciążeniu."
