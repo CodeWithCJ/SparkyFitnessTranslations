@@ -703,7 +703,7 @@
         "healthConnect": "Health Connect",
         "appleSummary": "Odczytuje wybrane dane z aplikacji Zdrowie i synchronizuje je z Twoim własnym serwerem.",
         "connectSummary": "Odczytuje wybrane dane z Health Connect i synchronizuje je z Twoim własnym serwerem.",
-        "appleDetail": "SparkyFitness odczytuje wybrane dane zdrowotne z aplikacji Apple Health (HealthKit). Jeśli synchronizacja jest włączona, dane są synchronizowane wyłącznie między urządzeniem a własnym serwerem SparkyFitness (ręcznie lub w tle). Zarządzaj dostępem lub usuń go w Ustawienia → Zdrowie → Dostęp do danych i urządzenia → SparkyFitnessMobile",
+        "appleDetail": "SparkyFitness odczytuje wybrane dane zdrowotne z aplikacji Apple Health (HealthKit). Jeśli synchronizacja jest włączona, dane są synchronizowane wyłącznie między urządzeniem a własnym serwerem SparkyFitness (ręcznie lub w tle).\n\nZarządzaj dostępem lub usuń go w Ustawienia → Zdrowie → Dostęp do danych i urządzenia → SparkyFitnessMobile",
         "connectDetail": "SparkyFitness odczytuje wybrane poniżej dane zdrowotne z Health Connect. Jeśli synchronizacja jest włączona, dane są przesyłane tylko między urządzeniem a Twoim własnym serwerem SparkyFitness (ręcznie lub w tle).",
         "title": "Dane zdrowotne do synchronizacji",
         "notMedicalAdvice": "To nie jest porada medyczna.",
@@ -913,7 +913,7 @@
             "generating": "Generowanie…",
             "title": "Raport danych zdrowotnych",
             "subtitle": "Eksportuj zanonimizowane dane zdrowotne do zgłoszenia błędu",
-            "privacy": "Odczytuje dane z ostatnich 4 godzin z Health Connect na potrzeby diagnostyki. Wartości są zaokrąglane dla prywatności. Nic nie jest wysyłane automatycznie.",
+            "privacy": "Odczytuje dane z ostatnich 4 godzin z Health Connect na potrzeby diagnostyki.\nWartości są zaokrąglane dla prywatności. Nic nie jest wysyłane automatycznie.",
             "error": "Nie udało się wygenerować raportu danych zdrowotnych: {{error}}"
         },
         "syncChoice": {
