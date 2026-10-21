@@ -8020,7 +8020,16 @@
             "showAll_other": "Mostrar todo {{count}}",
             "cutOff_one": "El entrenamiento {{count}} no cabe antes de la fecha prevista.",
             "cutOff_many": "Los entrenamientos {{count}} no caben antes de la fecha prevista.",
-            "cutOff_other": "Los entrenamientos {{count}} no caben antes de la fecha prevista."
+            "cutOff_other": "Los entrenamientos {{count}} no caben antes de la fecha prevista.",
+            "catchUp_one": "Omite el próximo entrenamiento {{count}} para terminar el {{date}}, a tiempo para alcanzar tu objetivo. El último entrenamiento nunca se salta.",
+            "catchUp_many": "Omite los próximos {{count}} entrenamientos para terminar el {{date}}, a tiempo para alcanzar tu objetivo. El último entrenamiento nunca se omite.",
+            "catchUp_other": "Omite los próximos {{count}} entrenamientos para terminar el {{date}}, a tiempo para alcanzar tu objetivo. El último entrenamiento nunca se omite.",
+            "catchUpButton_one": "Saltar {{count}} sesión de entrenamiento",
+            "catchUpButton_many": "Saltar {{count}} sesiones de entrenamientos",
+            "catchUpButton_other": "Saltar {{count}} sesiones de entrenamientos",
+            "tooFar_one": "Vas demasiado atrasado como para ponerte al día saltándote sesiones: {{count}} sesiones no serán suficientes. Añade días de entrenamiento o cambia la fecha de tu objetivo.",
+            "tooFar_many": "Vas demasiado atrasado como para ponerte al día saltándote entrenamientos: no te cabrán {{count}} entrenamientos. Añade días de entrenamiento o cambia la fecha objetivo.",
+            "tooFar_other": "Vas demasiado atrasado como para ponerte al día saltándote entrenamientos: no te cabrán {{count}} entrenamientos. Añade días de entrenamiento o cambia la fecha objetivo."
         },
         "select": {
             "today": "Entrenamiento del programa de hoy",
@@ -8034,7 +8043,10 @@
         "monthGrid": {
             "previous": "Mes anterior",
             "next": "Mes siguiente",
-            "dayA11yNone": "{{date}}, sin entrenamientos"
+            "dayA11yNone": "{{date}}, sin entrenamientos",
+            "dayA11y_one": "{{date}}, {{formattedCount}} sesión de entrenamiento",
+            "dayA11y_many": "{{date}}, {{formattedCount}} sesiones de entrenamiento",
+            "dayA11y_other": "{{date}}, {{formattedCount}} sesiones de entrenamiento"
         },
         "calendarScreen": {
             "noProgram": "Inicia un programa de entrenamiento para ver su calendario.",
@@ -8049,7 +8061,10 @@
             "noWorkoutsDay": "No hay entrenamientos del programa programados para este día.",
             "allWorkouts": "Todos los entrenamientos",
             "today": "Hoy",
-            "due": "Siguiente"
+            "due": "Siguiente",
+            "pickDays_one": "Aún no se han incluido {{count}} sesiones de entrenamiento más en el calendario. Elige los días de entrenamiento en la pantalla del programa para ver cuándo corresponde cada una.",
+            "pickDays_many": "Aún no se han incluido {{count}} sesiones de entrenamiento más en el calendario. Elige los días de entrenamiento en la pantalla del programa para ver cuándo corresponde cada una.",
+            "pickDays_other": "Aún no se han incluido {{count}} sesiones de entrenamiento más en el calendario. Elige los días de entrenamiento en la pantalla del programa para ver cuándo corresponde cada una."
         },
         "detail": {
             "workoutTitle": "Semana {{week}}, carrera {{run}}",
