@@ -17,4 +17,24 @@
     <string name="widget_preview_grams_protein">51 g</string>
     <string name="widget_preview_grams_carbs">136 g</string>
     <string name="widget_preview_grams_fat">32 g</string>
+    <string name="tile_log_water">Registrar agua</string>
+    <string name="tile_calories_left">Calorías restantes</string>
+    <string name="sparky_water_widget_name">Agua</string>
+    <string name="sparky_water_widget_description">Agua de hoy, con botones para añadir o quitar tomas</string>
+    <string name="widget_water_title">Agua</string>
+    <string name="widget_water_amount">%1$s / %2$s %3$s</string>
+    <string name="widget_water_amount_no_goal">%1$s %2$s</string>
+    <string name="widget_water_amount_empty">- %1$s</string>
+    <string name="widget_water_unit_ml">ml</string>
+    <string name="widget_water_unit_oz">oz</string>
+    <string name="widget_water_unit_liter">L</string>
+    <string name="widget_water_add">Añadir una toma</string>
+    <string name="widget_water_remove">Quitar una toma</string>
+    <string name="widget_water_status_sign_in">Abre SparkyFitness e inicia sesión</string>
+    <string name="widget_water_status_pick_container">Elige un recipiente de agua en SparkyFitness</string>
+    <string name="widget_water_status_expired">Sesión caducada. Abre SparkyFitness</string>
+    <string name="widget_water_status_unreachable">No se pudo conectar con el servidor</string>
+    <string name="widget_water_status_failed">No se pudo registrar el agua</string>
+    <string name="widget_water_status_nothing_to_remove">No hay ninguna toma registrada aquí para eliminar</string>
+    <string name="widget_preview_water_amount">1.250 / 2.000 ml</string>
 </resources>
