@@ -7361,7 +7361,45 @@
         },
         "calculator": {
             "calculate": "Calcular",
-            "calculateField": "Calcular {{nutrient}}"
+            "calculateField": "Calcular {{nutrient}}",
+            "calculateAll": "Calcular todo a partir de mi perfil",
+            "needsProfile": "Configura tu sexo en tu perfil web para calcular los objetivos de nutrientes recomendados."
+        },
+        "presets": {
+            "description": "Una plantilla es un conjunto de metas guardadas. Aplicar rellena el formulario de arriba (toca Guardar para fijarlo); Editar modifica la plantilla.",
+            "namePlaceholder": "Nombre de la plantilla",
+            "empty": "Aún no hay plantillas de objetivos.",
+            "summary": "{{calories}} kcal, {{protein}}g P, {{carbs}}g C, {{fat}}g G",
+            "apply": "Aplicar",
+            "deleteTitle": "¿Eliminar plantilla?",
+            "deleteMessage": "¿Eliminar \"{{name}}\"? Los días del plan semanal que la usen se quedarán sin plantilla asignada.",
+            "applied": "Plantilla aplicada. Toca Guardar para mantenerla.",
+            "failed": "No se pudieron actualizar las plantillas de objetivos.",
+            "edit": "Editar",
+            "create": "Nueva plantilla",
+            "editTitle": "Editar plantilla",
+            "newTitle": "Nueva plantilla",
+            "nameLabel": "Nombre de la plantilla",
+            "nameRequired": "Pon un nombre a la plantilla.",
+            "editDescription": "Una plantilla es un conjunto guardado de metas. Aplícala a tus objetivos o asígnala a días específicos en un plan semanal.",
+            "notFound": "No se pudo encontrar esta plantilla."
+        },
+        "weekly": {
+            "sectionDescription": "Usa una plantilla de objetivos diferente para cada día de la semana, por ejemplo más calorías en días de entrenamiento.",
+            "empty": "Aún no hay planes semanales.",
+            "create": "Nuevo plan semanal",
+            "activeBadge": "Activo",
+            "range": "Del {{start}} al {{end}}",
+            "rangeOpen": "Desde el {{start}}, sin fecha de fin",
+            "deleteTitle": "¿Eliminar plan semanal?",
+            "deleteMessage": "¿Eliminar \"{{name}}\"?",
+            "deleteFailed": "No se pudo eliminar el plan semanal.",
+            "editTitle": "Plan semanal",
+            "newTitle": "Nuevo plan semanal",
+            "description": "Elige una plantilla de objetivos para cada día de la semana. Entre las fechas de inicio y fin, cada día aplicará su plantilla en lugar de tus objetivos generales. Solo puede haber un plan activo a la vez.",
+            "planName": "Nombre del plan",
+            "startDate": "Fecha de inicio",
+            "endDate": "Fecha de finalización (opcional)"
         }
     }
 }
