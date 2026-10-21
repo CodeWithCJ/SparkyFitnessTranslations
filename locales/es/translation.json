@@ -1242,6 +1242,15 @@
                     "unsupported_provider": "Este tipo de servicio no es compatible.",
                     "unknown": "La prueba de conexión falló. Comprueba la configuración e inténtalo de nuevo."
                 }
+            },
+            "reasoningEffort": {
+                "label": "Nivel de razonamiento",
+                "low": "Bajo",
+                "medium": "Medio (recomendado)",
+                "high": "Alto",
+                "xhigh": "Muy alto",
+                "max": "Máximo",
+                "description": "Un nivel más alto otorga más tiempo de análisis para comidas y tareas complejas, lo que puede aumentar el tiempo de respuesta y el coste."
             }
         },
         "apiKeyManagement": {
@@ -3021,7 +3030,10 @@
             "speed": "Velocidad",
             "speedSlow": "Lento",
             "speedNormal": "Normal",
-            "speedFast": "Rápido"
+            "speedFast": "Rápido",
+            "daysApart_one": "{{count}} día de diferencia",
+            "daysApart_many": "{{count}} días de diferencia",
+            "daysApart_other": "{{count}} días de diferencia"
         },
         "useLast": "Usar el último",
         "bodyWater": "% de agua corporal",
@@ -3062,7 +3074,31 @@
         "mindfulnessSection": {
             "hrvMs": "VFC {{hrv_rmssd}} ms"
         },
-        "failedToCalculateBodyFatWithError": "Error al calcular la grasa corporal: {{error}}"
+        "failedToCalculateBodyFatWithError": "Error al calcular la grasa corporal: {{error}}",
+        "newCheckin": "Nuevo registro",
+        "editCheckin": "Editar registro",
+        "addCheckin": "Añadir registro",
+        "saveChanges": "Guardar cambios",
+        "cancelEdit": "Cancelar",
+        "checkinTime": "Hora",
+        "dayCheckins": "Registros de hoy",
+        "otherDayCheckins": "Registros",
+        "noCheckins": "Aún no hay registros en este día.",
+        "dayAverage": "Promedio del día",
+        "checkinNeedsContent": "Añade un estado de ánimo, energía, concentración, etiqueta o nota para guardar.",
+        "energyOutOfFive": "Energía {{value}}/5",
+        "focusOutOfFive": "Concentración {{value}}/5",
+        "editCheckinAt": "Editar registro de las {{time}}",
+        "deleteCheckinAt": "Eliminar registro de las {{time}}",
+        "checkinSaved": "Registro guardado",
+        "checkinUpdated": "Registro actualizado",
+        "checkinDeleted": "Registro eliminado",
+        "deleteCheckinTitle": "¿Eliminar este registro?",
+        "deleteCheckinDescription": "Esto eliminará el registro y su entrada de diario correspondiente.",
+        "journalOptional": "Diario (opcional)",
+        "checkinCount_one": "{{count}} check-in",
+        "checkinCount_many": "{{count}} check-ins",
+        "checkinCount_other": "{{count}} check-ins"
     },
     "sleepTimelineEditor": {
         "sleepTimeline": "Línea de tiempo del sueño",
@@ -3123,7 +3159,15 @@
         "irritable": "Irritable",
         "showMood": "Mostrar estado de ánimo",
         "hideMood": "Ocultar estado de ánimo",
-        "deleteMood": "Eliminar estado de ánimo"
+        "deleteMood": "Eliminar estado de ánimo",
+        "noMoodSelected": "Ningún ánimo seleccionado",
+        "clearMood": "Borrar estado de ánimo",
+        "energy": "Energía",
+        "energyLow": "Agotado",
+        "energyHigh": "Con energía",
+        "focus": "Concentración",
+        "focusLow": "Disperso",
+        "focusHigh": "Enfocado al máximo"
     },
     "sleepEntrySection": {
         "sleepTracking": "Registro de sueño",
@@ -7895,7 +7939,8 @@
             "tooHard": "Manteniendo peso: la última vez se sintió demasiado duro.",
             "tooHardRepeated": "Más ligero hoy: demasiado duro dos sesiones seguidas.",
             "highEffort": "Manteniendo peso: tus últimas series estuvieron cerca de tu esfuerzo máximo.",
-            "tooEasyRepeated": "Un poco más pesado: demasiado fácil dos sesiones seguidas. ¡A por ello!"
+            "tooEasyRepeated": "Un poco más pesado: demasiado fácil dos sesiones seguidas. ¡A por ello!",
+            "lowEffort": "Un paso más pesado: tus últimas series se sintieron demasiado fáciles. ¡A por más!"
         },
         "declined": "Usando tu sugerencia habitual.",
         "variation": "Has hecho esto en tus entrenamientos más recientes. ¿Probamos una variación?",
@@ -9038,7 +9083,10 @@
         "failedToLoad": "Error al cargar las zapatillas.",
         "failedToSave": "Error al guardar la zapatilla.",
         "failedToDelete": "Error al eliminar la zapatilla.",
-        "failedToAssign": "Error al actualizar la zapatilla para esta carrera."
+        "failedToAssign": "Error al actualizar la zapatilla para esta carrera.",
+        "runCount_one": "{{count}} carrera",
+        "runCount_many": "{{count}} carreras",
+        "runCount_other": "{{count}} carreras"
     },
     "trainingPrograms": {
         "banner": {
@@ -9065,7 +9113,31 @@
             "showLess": "Mostrar menos",
             "title": "Calendario",
             "today": "Hoy",
-            "upcoming": "Próximamente"
+            "upcoming": "Próximamente",
+            "fitsBefore_one": "Vas por buen camino: terminas el {{date}}, {{count}} día antes de tu fecha objetivo.",
+            "fitsBefore_many": "Vas por buen camino: terminas el {{date}}, {{count}} días antes de tu fecha objetivo.",
+            "fitsBefore_other": "Vas por buen camino: terminas el {{date}}, {{count}} días antes de tu fecha objetivo.",
+            "fitsAfter_one": "A este ritmo terminarás el {{date}}, {{count}} día después de tu fecha objetivo. Añade un día de entrenamiento o cambia la fecha.",
+            "fitsAfter_many": "A este ritmo terminarás el {{date}}, {{count}} días después de tu fecha objetivo. Añade un día de entrenamiento o cambia la fecha.",
+            "fitsAfter_other": "A este ritmo terminarás el {{date}}, {{count}} días después de tu fecha objetivo. Añade un día de entrenamiento o cambia la fecha.",
+            "noDays_one": "Queda {{count}} entrenamiento. Elige tus días de carrera para ver cuándo cae; hasta entonces, la Agenda te ofrecerá el siguiente cada día.",
+            "noDays_many": "Quedan {{count}} entrenamientos. Elige tus días de carrera para ver cuándo cae cada uno; hasta entonces, la Agenda te ofrecerá el siguiente cada día.",
+            "noDays_other": "Quedan {{count}} entrenamientos. Elige tus días de carrera para ver cuándo cae cada uno; hasta entonces, la Agenda te ofrecerá el siguiente cada día.",
+            "catchUp_one": "Sáltate el próximo {{count}} entrenamiento para terminar el {{date}}, a tiempo para tu objetivo. El último entrenamiento nunca se salta.",
+            "catchUp_many": "Sáltate los próximos {{count}} entrenamientos para terminar el {{date}}, a tiempo para tu objetivo. El último entrenamiento nunca se salta.",
+            "catchUp_other": "Sáltate los próximos {{count}} entrenamientos para terminar el {{date}}, a tiempo para tu objetivo. El último entrenamiento nunca se salta.",
+            "catchUpButton_one": "Saltar {{count}} entrenamiento",
+            "catchUpButton_many": "Saltar {{count}} entrenamientos",
+            "catchUpButton_other": "Saltar {{count}} entrenamientos",
+            "tooFar_one": "Estás demasiado atrasado como para recuperarte saltándote sesiones: {{count}} entrenamiento no cabrá. Añade días de carrera o cambia tu fecha objetivo.",
+            "tooFar_many": "Estás demasiado atrasado como para recuperarte saltándote sesiones: {{count}} entrenamientos no cabrán. Añade días de carrera o cambia tu fecha objetivo.",
+            "tooFar_other": "Estás demasiado atrasado como para recuperarte saltándote sesiones: {{count}} entrenamientos no cabrán. Añade días de carrera o cambia tu fecha objetivo.",
+            "cutOff_one": "{{count}} entrenamiento no cabe antes de tu fecha objetivo.",
+            "cutOff_many": "{{count}} entrenamientos no caben antes de tu fecha objetivo.",
+            "cutOff_other": "{{count}} entrenamientos no caben antes de tu fecha objetivo.",
+            "showAll_one": "Mostrar {{count}}",
+            "showAll_many": "Mostrar {{count}}",
+            "showAll_other": "Mostrar {{count}}"
         },
         "card": {
             "actionsHint": "Omitir avanza sin realizar este entrenamiento. Reiniciar vuelve al primer entrenamiento.",
@@ -9105,7 +9177,10 @@
         },
         "custom": {
             "intro": "Planes que creaste o personalizaste en la app móvil. Inicia uno para seguirlo paso a paso.",
-            "title": "Tus planes"
+            "title": "Tus planes",
+            "workoutCount_one": "{{count}} entrenamiento",
+            "workoutCount_many": "{{count}} entrenamientos",
+            "workoutCount_other": "{{count}} entrenamientos"
         },
         "entry": {
             "description": "Sigue un plan de carrera o caminata progresivo semana a semana, con calendario y sesiones en tu diario.",
@@ -9130,7 +9205,10 @@
             "outlineWalk": "Semana 1: entrenamientos de {{weekOne}} minutos. Progresa hasta {{peak}} minutos de caminata rápida.",
             "runsPerWeekHint": "Una cuarta sesión añade una carrera suave y corta para que la tirada larga represente una menor parte de tu semana.",
             "start": "Iniciar programa",
-            "weeksRuns": "{{weeks}} semanas, {{runs}} entrenamientos por semana"
+            "weeksRuns": "{{weeks}} semanas, {{runs}} entrenamientos por semana",
+            "runsPerWeekOption_one": "{{count}} carrera a la semana",
+            "runsPerWeekOption_many": "{{count}} carreras a la semana",
+            "runsPerWeekOption_other": "{{count}} carreras a la semana"
         },
         "programs": {
             "advancedMarathon": {
@@ -9246,6 +9324,29 @@
             "number": "Entrenamiento {{number}}",
             "titleRun": "Semana {{week}}, carrera {{run}}",
             "titleWalk": "Semana {{week}}, caminata {{walk}}"
+        }
+    },
+    "foodAssistant": {
+        "state": "Preferencias de comida y tareas",
+        "error": "No se pudo actualizar el estado del asistente. Actualiza para ver la última versión.",
+        "memoryHelp": "Las preferencias de comida duraderas se guardan al margen del chat. Una petición puntual para hoy puede modificarlas sin cambiarlas permanentemente.",
+        "preference": "Preferencia",
+        "forget": "Olvidar",
+        "noPreferences": "No hay preferencias alimentarias guardadas.",
+        "resume": "Reanudar en el chat",
+        "noTasks": "No hay tareas de comida guardadas.",
+        "status": {
+            "draft": "Borrador",
+            "running": "En progreso",
+            "awaiting_input": "Requiere datos",
+            "complete": "Completado",
+            "cancelled": "Cancelado",
+            "failed": "Fallido"
+        },
+        "ingredient": {
+            "unresolved": "Requiere coincidencia",
+            "selected": "Seleccionado",
+            "verified": "Verificado"
         }
     }
 }
