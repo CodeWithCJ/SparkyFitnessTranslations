@@ -5676,7 +5676,7 @@
         "foodSourcesStep": {
             "missingFatSecretField": "少咗 FatSecret 欄位",
             "enterBothTheFatSecretClient": "同時輸入 FatSecret Client ID 同 Client Secret，或者兩樣都留空嚟跳過.",
-            "notSignedIn": "жңӘзҷ»е…Ҙ",
+            "notSignedIn": "未登入",
             "pleaseSignInAgainTo": "重新登入先可以儲存食材來源.",
             "connectFoodDatabases": "連線食材資料庫",
             "optionalButAddingUSDAAnd": "可選，但加咗 USDA 同 FatSecret 入您嘅搜尋，會比預設嘅 Open Food Facts 好明顯好多。您之後隨時可以喺設定度加或者改.",
