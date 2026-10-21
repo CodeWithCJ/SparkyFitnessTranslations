@@ -7554,7 +7554,13 @@
         "insightOnTarget": "{{onTarget}} de {{total}} días registrados estuvieron dentro del 10% de tu objetivo de calorías.",
         "insightUp": "Tu promedio de calorías subió un {{pct}}% respecto al período anterior.",
         "insightDown": "Tu promedio de calorías bajó un {{pct}}% respecto al período anterior.",
-        "insightWeekday": "El {{weekday}} es tu día con más calorías, con un promedio de {{kcal}}."
+        "insightWeekday": "El {{weekday}} es tu día con más calorías, con un promedio de {{kcal}}.",
+        "daysCount_one": "{{count}} día",
+        "daysCount_many": "{{count}} días",
+        "daysCount_other": "{{count}} días",
+        "insightStreak_one": "Tu mayor racha de registros fue de {{count}} día.",
+        "insightStreak_many": "Tu mayor racha de registros fue de {{count}} días.",
+        "insightStreak_other": "Tu mayor racha de registros fue de {{count}} días."
     },
     "moodReport": {
         "title": "Estado de ánimo",
