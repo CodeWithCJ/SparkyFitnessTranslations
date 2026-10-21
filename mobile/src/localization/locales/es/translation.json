@@ -2091,7 +2091,10 @@
             "next": "Siguiente",
             "setProgress": "Serie {{number}} de {{total}}",
             "nextSet": "Siguiente: {{set}}",
-            "nextSetWithTarget": "Siguiente: {{set}} ({{target}})"
+            "nextSetWithTarget": "Siguiente: {{set}} ({{target}})",
+            "repCount_one": "{{count}} rep",
+            "repCount_many": "{{count}} reps",
+            "repCount_other": "{{count}} reps"
         },
         "bar": {
             "clearWorkout": "Borrar entrenamiento",
@@ -2702,7 +2705,10 @@
             "noMatchMessage": "No se encontró ningún suplemento para ese código de barras. Puedes introducir la etiqueta manualmente.",
             "lookupFailed": "No se pudo conectar con la base de datos de etiquetas de suplementos. Inténtalo más tarde.",
             "servingNote": "Porción según etiqueta: {{serving}}",
-            "notAdded": "No añadidos desde la etiqueta: {{names}}"
+            "notAdded": "No añadidos desde la etiqueta: {{names}}",
+            "notAddedMore_one": "{{names}} y {{count}} más",
+            "notAddedMore_many": "{{names}} y {{count}} más",
+            "notAddedMore_other": "{{names}} y {{count}} más"
         },
         "notificationScheduledDoses_one": "Tienes {{count}} dosis programada",
         "notificationScheduledDoses_many": "Tienes {{count}} dosis programadas",
@@ -2726,7 +2732,10 @@
                 },
                 "reorder": "Momento de renovar",
                 "expiredWarning": "Fecha de caducidad vencida",
-                "expiringSoon": "Caduca en menos de una semana"
+                "expiringSoon": "Caduca en menos de una semana",
+                "left_one": "Queda {{count}}",
+                "left_many": "Quedan {{count}}",
+                "left_other": "Quedan {{count}}"
             },
             "checkIn": {
                 "saved": "Registro guardado",
@@ -2789,7 +2798,10 @@
                 "startDate": "Fecha de inicio",
                 "weeksAtDose": "Semanas con esta dosis",
                 "statusLabel": "Estado",
-                "taperLabel": "Reducción paulatina de dosis"
+                "taperLabel": "Reducción paulatina de dosis",
+                "weeks_one": "{{count}} sem",
+                "weeks_many": "{{count}} sem",
+                "weeks_other": "{{count}} sem"
             },
             "form": {
                 "notSet": "No establecido",
@@ -6401,7 +6413,8 @@
             "tooHard": "Manteniendo peso: la última vez se sintió demasiado duro.",
             "tooHardRepeated": "Más ligero hoy: demasiado duro dos sesiones seguidas.",
             "highEffort": "Manteniendo peso: tus últimas series estuvieron cerca de tu esfuerzo máximo.",
-            "tooEasyRepeated": "Un poco más pesado: demasiado fácil dos sesiones seguidas. ¡A por ello!"
+            "tooEasyRepeated": "Un poco más pesado: demasiado fácil dos sesiones seguidas. ¡A por ello!",
+            "lowEffort": "Un paso más pesado: tus últimas series se sintieron demasiado fáciles. ¡A por más!"
         },
         "declined": "Usando tu sugerencia habitual.",
         "variation": "Has hecho esto en tus entrenamientos más recientes. ¿Probamos una variación?",
@@ -6694,7 +6707,10 @@
         "limitReachedTitle": "¿Toca estrenar zapatillas?",
         "limitReachedMessage": "{{name}} ha alcanzado su límite de kilometraje. ¿Quieres retirarlo?",
         "updateFailed": "Error al actualizar la zapatilla",
-        "saveFailed": "Error al guardar la zapatilla"
+        "saveFailed": "Error al guardar la zapatilla",
+        "runCount_one": "{{count}} carrera",
+        "runCount_many": "{{count}} carreras",
+        "runCount_other": "{{count}} carreras"
     },
     "workoutPlans": {
         "changeScheduleTitle": "¿Cambiar el tipo de programación?",
@@ -6759,7 +6775,10 @@
         "loading": "Cargando planes de entrenamiento...",
         "loadFailed": "Error al cargar los planes de entrenamiento",
         "emptyTitle": "Aún no hay planes de entrenamiento",
-        "emptySubtitle": "Organiza tus sesiones guardadas en días fijos o como un ciclo dinámico."
+        "emptySubtitle": "Organiza tus sesiones guardadas en días fijos o como un ciclo dinámico.",
+        "moreAssignments_one": "+{{count}} más",
+        "moreAssignments_many": "+{{count}} más",
+        "moreAssignments_other": "+{{count}} más"
     },
     "mood": {
         "logTitle": "Estado de ánimo",
@@ -7399,7 +7418,44 @@
             "description": "Elige una plantilla de objetivos para cada día de la semana. Entre las fechas de inicio y fin, cada día aplicará su plantilla en lugar de tus objetivos generales. Solo puede haber un plan activo a la vez.",
             "planName": "Nombre del plan",
             "startDate": "Fecha de inicio",
-            "endDate": "Fecha de finalización (opcional)"
+            "endDate": "Fecha de finalización (opcional)",
+            "noEndDate": "Sin fecha de finalización",
+            "clearEndDate": "Borrar fecha de fin",
+            "active": "Plan activo",
+            "noPreset": "Sin plantilla",
+            "needsPresets": "Crea primero una plantilla de objetivos para luego asignarla a los días aquí.",
+            "nameRequired": "Asigna un nombre al plan.",
+            "endBeforeStart": "La fecha de fin no puede ser anterior a la de inicio.",
+            "saveFailed": "Error al guardar el plan semanal.",
+            "loadFailed": "No se pudo encontrar este plan semanal.",
+            "goBack": "Volver",
+            "days": {
+                "monday": "Lunes",
+                "tuesday": "Martes",
+                "wednesday": "Miércoles",
+                "thursday": "Jueves",
+                "friday": "Viernes",
+                "saturday": "Sábado",
+                "sunday": "Domingo"
+            }
         }
+    },
+    "reports": {
+        "title": "Informes",
+        "nutrition": "Nutrición",
+        "nutritionSubtitle": "Calorías, macronutrientes y medias diarias",
+        "sleepAnalytics": "Análisis del sueño",
+        "sleepAnalyticsSubtitle": "Fases, VFC, SpO2, respiración, estrés y batería corporal",
+        "mood": "Estado de ánimo",
+        "moodSubtitle": "Historial y estados de ánimo más registrados",
+        "exercise": "Ejercicio",
+        "exerciseSubtitle": "Series por grupo muscular, mapa de calor y sesiones de cardio",
+        "customize": "Personalizar informes",
+        "hydration": "Hidratación"
+    },
+    "exerciseEffort": {
+        "trendLabel_one": "RPE medio de tu última {{count}} sesión",
+        "trendLabel_many": "RPE medio de tus últimas {{count}} sesiones",
+        "trendLabel_other": "RPE medio de tus últimas {{count}} sesiones"
     }
 }
