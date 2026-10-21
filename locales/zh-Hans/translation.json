@@ -2583,7 +2583,7 @@
             "appID": "App ID",
             "enterClientID": "输入 Client ID",
             "enterAppID": "输入 App ID",
-            "clientSecret": "Client Secret",
+            "clientSecret": "客户端密钥",
             "appKey": "App Key",
             "enterClientSecret": "输入 Client Secret",
             "enterAppKey": "输入 App Key",
@@ -2593,9 +2593,9 @@
             "yazioPasswordOptional": "YAZIO 密码（选填）",
             "leaveBlankToKeepExisting3": "留空以保留现有密码",
             "emailAndPasswordAreOptional": "邮箱和密码为选填。仅需要 Client ID 和 Client Secret。",
-            "yazioClientID": "YAZIO Client ID",
+            "yazioClientID": "YAZIO 客户端 ID",
             "enterYAZIOClientID": "输入 YAZIO Client ID",
-            "yazioClientSecret": "YAZIO Client Secret",
+            "yazioClientSecret": "YAZIO 客户端密钥",
             "leaveBlankToKeepExisting4": "留空以保留现有 client secret",
             "enterUSDAAPIKey": "输入 USDA API 密钥",
             "enterWithingsClientID": "输入 Withings Client ID",
@@ -2752,7 +2752,7 @@
             "yazioEmailUsername": "YAZIO 邮箱／用户名",
             "appID": "App ID",
             "enterID": "输入 ID",
-            "clientSecret": "Client Secret",
+            "clientSecret": "客户端密钥",
             "yazioPassword": "YAZIO 密码",
             "liftosaurAPIKey": "Liftosaur API 密钥",
             "apiKeyAppKey": "API 密钥／App Key",
@@ -3582,7 +3582,7 @@
             "setToCurrentLocalTime": "设为当前本地时间"
         },
         "exerciseEntryDisplay": {
-            "wger": "Wger",
+            "wger": "Wger 数据源",
             "freeDB": "Free DB"
         }
     },
@@ -5646,7 +5646,7 @@
             "pleaseSignInAgainTo": "请重新登录以保存食物来源。",
             "connectFoodDatabases": "连接食物数据库",
             "optionalButAddingUSDAAnd": "选填，但添加 USDA 和 FatSecret 到你的搜索中，会比默认的 Open Food Facts 带来明显更好的结果。你之后随时可在设置中添加或更改。",
-            "usdaFoodDataCentral": "USDA FoodData Central",
+            "usdaFoodDataCentral": "USDA 食物数据中心",
             "getAFreeAPIKey": "获取免费 API 密钥",
             "usdaAPIKey": "USDA API 密钥",
             "getAPICredentials": "获取 API 凭据",
@@ -8626,7 +8626,7 @@
             "secondary": "次要：",
             "equipment": "器械：",
             "readInstructionsAloud": "朗读动作说明",
-            "wger": "Wger",
+            "wger": "Wger 数据源",
             "freeDB": "Free DB",
             "perHour": "{{unit}}／小时"
         },
