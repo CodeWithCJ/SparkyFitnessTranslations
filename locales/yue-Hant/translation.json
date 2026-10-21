@@ -8998,7 +8998,7 @@
         "model": "型號",
         "nickname": "花名",
         "purchaseDate": "購買日期",
-        "purchasePrice": "еғ№йҢў",
+        "purchasePrice": "價錢",
         "startingDistance": "起始里程（{{unit}}）",
         "retireAt": "退役里程（{{unit}}）",
         "useAsDefault": "做我嘅預設跑鞋",
