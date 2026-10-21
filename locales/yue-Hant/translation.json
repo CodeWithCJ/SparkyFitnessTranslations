@@ -9035,21 +9035,21 @@
             "title": "{{title}} · {{minutes}} 分鐘"
         },
         "calendar": {
-            "done": "е®ҢжҲҗ",
+            "done": "完成",
             "doneOn": "{{date}} 完成",
             "due": "下一課",
             "finish": "{{date}} 結束.",
             "finishedNote": "每堂訓練都完成咗。重新開始計劃嚟規劃另一輪.",
             "legendAhead": "已規劃",
-            "legendDone": "е®ҢжҲҗ",
+            "legendDone": "完成",
             "legendNext": "下一課",
             "moves": "錯過咗嘅訓練唔會俾人跳過：之後嘅日期會順住延後.",
             "noWorkoutsDay": "呢日冇訓練.",
             "notScheduled": "未排程",
             "showLess": "顯示少啲",
             "title": "課時表",
-            "today": "д»Ҡж—Ҙ",
-            "upcoming": "е°ұеҡҹеҲ°",
+            "today": "今日",
+            "upcoming": "就嚟到",
             "fitsBefore_other": "進度順利：您會喺 {{date}} 完成，比目標日期早 {{count}} 日.",
             "fitsAfter_other": "以呢個進度您會喺 {{date}} 完成，比目標日期遲 {{count}} 日。加個訓練日或者改日期.",
             "noDays_other": "剩低 {{count}} 堂訓練。揀您嘅跑步日嚟睇每堂幾時做；喺嗰之前，日記每日都會提供下一堂.",
@@ -9066,8 +9066,8 @@
             "chooseWorkout": "揀另一堂訓練",
             "finished": "{{name}} 已完成",
             "finishedHint": "做得好。您可以重新開始或者繼續.",
-            "goalClear": "жё…йҷӨ",
-            "goalDay": "зӣ®жЁҷж—Ҙжңҹ",
+            "goalClear": "清除",
+            "goalDay": "目標日期",
             "goalDayHint": "可選，例如比賽日。下面嘅時間表會顯示計劃趕唔趕得切.",
             "goalDaySet": "{{date}} 之後冇排程。下面嘅時間表會顯示計劃嚟唔嚟得切.",
             "markDone": "標記訓練做完成",
@@ -9078,12 +9078,12 @@
             "pickWorkout": "揀一堂訓練",
             "progressBar": "計劃進度",
             "restart": "重新開始",
-            "runDays": "и·‘жӯҘж—Ҙ",
+            "runDays": "跑步日",
             "runDaysHint": "揀您打算訓練嘅日子，或者留空就每日顯示訓練.",
             "runDaysSet": "日記會喺呢幾日顯示訓練。錯過咗嘅訓練會維持待完成.",
             "schedule": "課時表",
             "skip": "跳過",
-            "startClear": "д»Ҡж—Ҙй–Ӣе§Ӣ",
+            "startClear": "今日開始",
             "startDay": "第一堂訓練",
             "startDayPast": "{{date}} 開始。您嘅下一堂訓練由今日起排程.",
             "startDaySet": "{{date}} 開始。喺嗰之前日記唔會顯示任何嘢.",
@@ -9112,7 +9112,7 @@
         },
         "page": {
             "allPrograms": "所有計劃",
-            "back": "еӢ•дҪң",
+            "back": "動作",
             "intro": "跟一個每星期逐步加強嘅計劃。揀一個計劃睇內容，準備好就可以開始.",
             "ownOnly": "訓練計劃係個人嘅。切返去您自己嘅帳戶嚟睇您嘅計劃.",
             "title": "訓練計劃"
@@ -9193,7 +9193,7 @@
                 "structure": "每個星期有兩次輕鬆跑、一次中距離跑同一次長跑。長跑由 60 分鐘逐步上到 125 分鐘，每第四個星期輕鬆啲，最後兩個星期喺比賽日前減量。最後一個星期係三次短啲嘅跑."
             },
             "marathon": {
-                "name": "йҰ¬жӢүжқҫ",
+                "name": "馬拉松",
                 "description": "馬拉松：十六週，每週跑四次，長跑逐步上到大約 2 個鐘 45 分仲有減量期。啱已經有規律跑步習慣嘅人.",
                 "structure": "大多數星期有兩次輕鬆跑、一次中距離跑同一次長跑。長跑由 70 分鐘逐步上到 2 個鐘 45 分，每第四個星期輕鬆啲，最後兩個星期喺比賽日前減量."
             },
@@ -9228,7 +9228,7 @@
             "pickDate": "揀日期",
             "startOnDate": "喺嗰日開始",
             "title": "開始 {{name}}",
-            "today": "д»Ҡж—Ҙй–Ӣе§Ӣ"
+            "today": "今日開始"
         },
         "switch": {
             "confirm": "切換",
