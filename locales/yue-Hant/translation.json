@@ -8767,29 +8767,29 @@
         "failedToProcessTheEdited": "處理唔到已編輯嘅食材",
         "failedToRetrieveDetailedNutrition": "攞唔到呢個項目嘅詳細營養.",
         "failedToRetrieveDetailedNutrition2": "攞唔到詳細營養。改用部分數據.",
-        "all": "е…ЁйғЁ",
+        "all": "全部",
         "nutrientFormGrid": {
             "glycemicIndexGI": "升糖指數（GI）",
-            "selectGI": "жҸҖ GI",
+            "selectGI": "揀 GI",
             "calories": "卡路里（{{energyUnit}}）",
-            "none": "з„Ў",
+            "none": "無",
             "veryLow": "極低",
             "low": "低",
-            "medium": "дёӯ",
-            "high": "й«ҳ",
-            "veryHigh": "жҘөй«ҳ"
+            "medium": "中",
+            "high": "高",
+            "veryHigh": "極高"
         },
         "nutrientGrid": {
-            "protein": "иӣӢзҷҪиіӘ",
-            "carbs": "зўіж°ҙ",
+            "protein": "蛋白質",
+            "carbs": "碳水",
             "fat": "脂肪",
-            "fiber": "зә–з¶ӯ",
+            "fiber": "纖維",
             "sugar": "糖",
-            "sodium": "йҲү",
+            "sodium": "鈉",
             "cholesterol": "膽固醇",
             "satFat": "飽和脂肪",
             "transFat": "反式脂肪",
-            "potassium": "йүҖ",
+            "potassium": "鉀",
             "vitA": "維他命 A",
             "vitC": "維他命 C",
             "iron": "йҗө",
@@ -8797,7 +8797,7 @@
             "gi": "GI"
         },
         "providerNutrientViewer": {
-            "alreadyMapped": "е·Іе°ҚжҮү",
+            "alreadyMapped": "已對應",
             "alreadyMapsTo": "「{{label}}」已經對應咗去 {{name}}.",
             "aliasAdded": "別名已加入",
             "willNowImportInto": "「{{label}}」而家會匯入去 {{name}}.",
@@ -8813,14 +8813,14 @@
         "variantCard": {
             "servingSize": "份量大小",
             "unitType": "單位類型",
-            "default": "й җиЁӯ",
+            "default": "預設",
             "autoScale": "自動縮放",
             "addEquivalentUnit": "加等效單位",
             "duplicateUnit": "複製單位",
             "removeUnit": "移除單位",
-            "equivalentSize": "зӯүж•ҲеӨ§е°Ҹ",
-            "removeEquivalent": "з§»йҷӨзӯүж•Ҳ",
-            "allergens": "иҮҙж•ҸеҺҹ",
+            "equivalentSize": "等效大小",
+            "removeEquivalent": "移除等效",
+            "allergens": "致敏原",
             "nutritionPer2": "每 {{variant}} 嘅營養",
             "estimate2": "{{ai_confidence}} 估算",
             "custom": "自訂",
@@ -8829,7 +8829,7 @@
         }
     },
     "gitHubSponsorButton": {
-        "sponsor": "иҙҠеҠ©"
+        "sponsor": "贊助"
     },
     "newReleaseDialog": {
         "criticalWARNINGTHISRELEASECONTAINS": "重大警告：呢個版本包含破壞性變更！",
@@ -8857,7 +8857,7 @@
     },
     "profileSwitcher": {
         "yourProfile": "您嘅個人資料",
-        "family": "пјҲе®¶еәӯпјү"
+        "family": "（家庭）"
     },
     "tooltipWarning": {
         "note": "溫馨提示："
@@ -8881,7 +8881,7 @@
         "imageAttachmentPreview": "圖片附件預覽",
         "attachment": "{{typeLabel}} 附件",
         "removeFile": "移除檔案",
-        "addAttachment": "еҠ йҷ„д»¶"
+        "addAttachment": "加附件"
     },
     "markdowntext": {
         "copy": "複製"
@@ -8896,20 +8896,20 @@
         "sendAMessage": "傳送訊息…",
         "messageInput": "訊息輸入",
         "sendMessage": "傳送訊息",
-        "stopGenerating": "еҒңжӯўз”ҹжҲҗ",
+        "stopGenerating": "停止生成",
         "thisSession": "今次工作階段",
         "copy": "複製",
         "refresh": "刷新",
-        "more": "жӣҙеӨҡ",
+        "more": "更多",
         "exportAsMarkdown": "匯出做 Markdown",
-        "update": "жӣҙж–°"
+        "update": "更新"
     },
     "toolfallback": {
         "result": "結果："
     },
     "ui": {
         "confirmationDialog": {
-            "warning": "иӯҰе‘Ҡ"
+            "warning": "警告"
         },
         "dataTable": {
             "search": "搜索…"
@@ -8921,7 +8921,7 @@
             "last30Days": "最近 30 日",
             "last90Days": "最近 90 日",
             "n6Months": "6 個月",
-            "n1Year": "1 е№ҙ"
+            "n1Year": "1 年"
         },
         "dialog": {
             "closeWindow": "關閉視窗",
@@ -8935,11 +8935,11 @@
         "testQuickLog": {
             "opkLH": "OPK（LH）",
             "pregnancyHPT": "懷孕（HPT）",
-            "negative": "йҷ°жҖ§",
+            "negative": "陰性",
             "lowLH": "LH 偏低",
             "highLH": "LH 偏高",
             "peakSurge": "達峰激增",
-            "faintLine": "ж·әиүІз·ҡ",
+            "faintLine": "淺色線",
             "positive": "陽性 ✓"
         }
     },
@@ -8949,12 +8949,12 @@
             "tryAgain": "再試試"
         },
         "errorComponents": {
-            "returnToHome": "иҝ”еҺ»дё»й Ғ",
+            "returnToHome": "返去主頁",
             "reloadPage": "重新載入頁面"
         },
         "notFound": {
             "oopsPageNotFoundOr": "哎呀！搵唔到頁面，或者發生咗意外錯誤.",
-            "returnToHome": "иҝ”еҺ»дё»й Ғ"
+            "returnToHome": "返去主頁"
         }
     },
     "dietTemplates": {
@@ -8974,11 +8974,11 @@
         "setYourOwnFastingDuration": "設定您自己嘅斷食時長."
     },
     "foodForm": {
-        "volume": "й«”з©Қ",
+        "volume": "體積",
         "quantity": "食用份量"
     },
     "moodUtils": {
-        "neutral": "дёӯжҖ§"
+        "neutral": "中性"
     },
     "components": {
         "tagInput": {
