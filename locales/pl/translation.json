@@ -3703,7 +3703,7 @@
             "calendarLegend": "Zdjęcia postępów",
             "remove": "Usuń zdjęcie",
             "compare": "Porównaj",
-            "timelapse": "Time-lapse",
+            "timelapse": "Poklatkowe wideo",
             "angle": "Kąt",
             "before": "Przed",
             "after": "Po",
@@ -3717,9 +3717,9 @@
             "daysApart_one": "{{count}} dzień różnicy",
             "daysApart_few": "{{count}} dni różnicy",
             "daysApart_many": "{{count}} dni różnicy",
-            "timelapseTitle": "Time-lapse postępów",
+            "timelapseTitle": "Poklatkowe wideo postępów",
             "timelapseDescription": "Obejrzyj, jak jeden kąt zmienia się w czasie. Użyj klawiszy strzałek, aby przełączać klatki.",
-            "timelapseEmpty": "Dodaj zdjęcia z tego kąta z co najmniej dwóch dni, aby odtworzyć time-lapse.",
+            "timelapseEmpty": "Dodaj zdjęcia z tego kąta z co najmniej dwóch dni, aby odtworzyć poklatkowe wideo.",
             "timelapseEmptyRange": "W tym zakresie jest mniej niż dwa zdjęcia z tego kąta.",
             "rangeLabel": "Odtwarzanie",
             "range30d": "Ostatnie 30 dni",
@@ -4675,7 +4675,7 @@
         "caffeine": "Kofeina",
         "waterContent": "Zawartość wody",
         "alcohol": "Alkohol",
-        "abv": "ABV (%)"
+        "abv": "Alkohol (% obj.)"
     },
     "calculationSettings": {
         "showNetCarbs": "Pokaż wartość netto węglowodanów (węglowodany minus błonnik)",
@@ -5458,7 +5458,7 @@
             "exp": "Ważność: {{expiry_date}}",
             "expired": "Po terminie",
             "nearExp": "Blisko terminu",
-            "bud": "BUD {{bud_date}}",
+            "bud": "Ważność po otwarciu: {{bud_date}}",
             "expiredBUD": "Po terminie (BUD)",
             "budWarning": "Ostrzeżenie BUD",
             "notes": "Notatki: {{notes}}",
@@ -5969,7 +5969,7 @@
                     "description": "Dużo węglowodanów, minimalna ilość tłuszczu"
                 },
                 "low_carb": {
-                    "name": "Low Carb / Keto",
+                    "name": "Niskowęglowodanowa / keto",
                     "description": "Dieta w stylu ketogenicznym"
                 },
                 "custom": {
@@ -7822,7 +7822,7 @@
         "spirit_single": "Destylat (porcja, 40%)",
         "quickAdd": "Szybkie dodawanie napojów",
         "caffeineBadge": "kofeina {{amount}} mg",
-        "alcoholBadge": "{{abv}}% ABV"
+        "alcoholBadge": "{{abv}}% alk."
     },
     "interval": {
         "countdown": "Przygotuj się",
@@ -9018,8 +9018,8 @@
     },
     "ttc": {
         "testQuickLog": {
-            "opkLH": "OPK (LH)",
-            "pregnancyHPT": "Ciąża (HPT)",
+            "opkLH": "Test owulacyjny (LH)",
+            "pregnancyHPT": "Ciąża (test ciążowy)",
             "negative": "Negatywny",
             "lowLH": "Niskie LH",
             "highLH": "Wysokie LH",
