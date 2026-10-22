@@ -5808,8 +5808,8 @@
             "implantationTitle": "Okno implantacji",
             "irregularCaveatDesc": "Prognozy mogą być mniej dokładne z powodu zmienności cyklu. Codzienne rejestrowanie podstawowej temperatury ciała (BBT) i testów owulacyjnych (OPK) zapewni najdokładniejsze określenie okna płodności.",
             "irregularCaveatTitle": "Wykryto nieregularny cykl",
-            "logNegativeHpt": "Zarejestruj negatywny wynik HPT",
-            "logPositiveHpt": "Zarejestruj pozytywny wynik HPT",
+            "logNegativeHpt": "Zarejestruj negatywny wynik testu ciążowego",
+            "logPositiveHpt": "Zarejestruj pozytywny wynik testu ciążowego",
             "logTestError": "Nie udało się zarejestrować testu. Spróbuj ponownie.",
             "ovulationIsEstimatedOnBased": "Owulację oszacowano na <strong>{{ovulationDate}}</strong> na podstawie <span>{{basis}}</span>."
         },
