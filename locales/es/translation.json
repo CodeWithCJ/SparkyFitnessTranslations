@@ -1607,7 +1607,7 @@
             "livePreviewSavedNote": "La TMB y la grasa corporal se actualizan a medida que cambias los ajustes. El gasto se calcula en el servidor a partir de tus ajustes guardados, así que tanto este como el objetivo final solo cambian después de guardar.",
             "kcalCalories": "kcal (Calorías)",
             "kJJoules": "kJ (Julios)",
-            "adaptiveGoalTheGoldStandard": "<span>Objetivo adaptativo:</span> El 'estándar de oro'. SparkyFitness calcula tu TDEE correlacionando los cambios reales de tu peso con tu ingesta calórica durante los últimos 35 días. ¡Aprende tu metabolismo único!",
+            "adaptiveGoalTheGoldStandard": "<span>Objetivo adaptativo:</span> El «estándar de referencia». SparkyFitness calcula tu TDEE correlacionando tus cambios de peso reales con tu ingesta calórica durante los últimos 35 días. «Aprende» tu metabolismo único.",
             "dynamicGoalYourCalorieGoal": "<span>Objetivo dinámico:</span> Tu objetivo calórico se ajustará dinámicamente según tu nivel de actividad diaria (ej. ejercicio, pasos). Es ideal si eres activo o si tu nivel de actividad varía a diario.",
             "fixedGoalYourCalorieGoal": "<span>Objetivo fijo:</span> Tu meta calórica se mantendrá fija, sin importar tu actividad diaria. Es perfecto si mantienes un nivel constante de actividad o prefieres un objetivo estable.",
             "percentageEarnBackOnlyEarn": "<span>Recuperación porcentual:</span> Recupera solo un porcentaje establecido de las calorías de tu ejercicio. Por ejemplo, el 50% crea un margen de seguridad para evitar comer de más por sobreestimaciones de gasto calórico.",
