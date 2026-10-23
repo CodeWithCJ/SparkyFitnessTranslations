@@ -8051,7 +8051,7 @@
         },
         "episode": {
             "ongoing": "andauernd",
-            "peak": "Höchstwert {{n}}",
+            "peak": "Max. {{n}}",
             "saveTreatments": "Behandlungen speichern",
             "updateSeverity": "Schweregrad aktualisieren",
             "saveReading": "Messwert speichern",
