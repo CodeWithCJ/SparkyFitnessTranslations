@@ -5443,7 +5443,10 @@
             "goals": "Objectifs",
             "lookedUp": "{{name}} consulté"
         },
-        "typing": "Sparky écrit"
+        "typing": "Sparky écrit",
+        "voice": {
+            "stop": "Arrêter l'enregistrement"
+        }
     },
     "notificationSettings": {
         "title": "Notifications",
