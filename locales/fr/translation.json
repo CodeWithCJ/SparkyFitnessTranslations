@@ -37,7 +37,9 @@
             "saving": "Sauvegarde...",
             "enterHeight": "Saisissez votre taille",
             "height": "Taille",
-            "uploading": "Téléversement…"
+            "uploading": "Téléversement…",
+            "imageMustBeLessThan": "L'image doit peser moins de 5 Mo",
+            "user": "Utilisateur"
         },
         "preferences": {
             "title": "Préférences",
@@ -990,7 +992,8 @@
             "licenceNotice": "Contient des informations publiées par Santé Canada sous la <1>Licence du gouvernement ouvert – Canada</1>.",
             "providerCardLicence": "Contient des informations publiées par Santé Canada sous la <1>Licence du gouvernement ouvert – Canada</1>. Langues prises en charge : <3>anglais (en)</3> et <5>français (fr)</5>. <7>Fichier canadien sur les éléments nutritifs</7>",
             "providerSpecificDescription": "Le Fichier canadien sur les éléments nutritifs (FCEN) contient des informations publiées par Santé Canada sous la <1>Licence du gouvernement ouvert – Canada</1>. Il est gratuit, public et ne demande aucun identifiant. Langues prises en charge : <3>anglais (en)</3> et <5>français (fr)</5>.",
-            "providerSpecificPortal": "Pour en savoir plus, consultez le portail officiel du <1>Fichier canadien sur les éléments nutritifs</1>."
+            "providerSpecificPortal": "Pour en savoir plus, consultez le portail officiel du <1>Fichier canadien sur les éléments nutritifs</1>.",
+            "importedUpdated": "Importé : <imported>{{imported}}</imported> | Mise à jour : <updated>{{updated}}</updated>"
         }
     },
     "aboutDialog": {
@@ -4193,7 +4196,8 @@
             "taken": "Prise",
             "prnTaken": "Pris au besoin",
             "editEntryTime": "Modifier l'heure de saisie",
-            "removeEntry": "Supprimer l'entrée"
+            "removeEntry": "Supprimer l'entrée",
+            "note2": "Note: {{notes}}"
         },
         "locations": {
             "head": "Tête",
@@ -4626,7 +4630,10 @@
             "hypersomnia": "<strong>Association avec l'hypersomnie :</strong> Une fatigue accrue pourrait entraîner un besoin de sommeil plus long ou des périodes de repos au lit.",
             "doseDependentNausea": "<strong>Nausées dose-dépendantes :</strong> Des doses plus élevées de médicament sont associées à une aggravation des nausées. Envisagez de discuter des étapes de titration ou d'un fractionnement de la posologie.",
             "adaptationBenefit": "<strong>Avantage lié à l'adaptation :</strong> Aucune corrélation positive. L'organisme s'est bien adapté aux niveaux de dose, sans effets secondaires.",
-            "doseInsufficient": "Nécessite des relevés de doses de GLP-1 actif et des journaux de nausées enregistrés pour cette période."
+            "doseInsufficient": "Nécessite des relevés de doses de GLP-1 actif et des journaux de nausées enregistrés pour cette période.",
+            "dosesLogged2": "{{display_name}} - {{count}} doses enregistrées",
+            "inj": "({{injections}} inj)",
+            "reportingPeriodTo": "Période : du {{startDate}} au {{endDate}}"
         },
         "subtype": {
             "all": "Tous",
@@ -4732,7 +4739,31 @@
         "errorClearingHistory": "Échec du nettoyage de la conversion.",
         "errorLoadingHistory": "Échec de la récupération de l'historique de la conversation.",
         "errorLoadingPreferences": "Échec de la récupération des préférences de conversation.",
-        "successClearingHistory": "Succès du nettoyage de la conversation."
+        "successClearingHistory": "Succès du nettoyage de la conversation.",
+        "voice": {
+            "start": "Dicter le message",
+            "stop": "Arrêter l'enregistrement",
+            "cancel": "Annuler l'enregistrement",
+            "processing": "Transcription…",
+            "unsupported": "Le mode vocal n'est pas supporté par ce navigateur. Sélectionnez la transcription par IA dans les Paramètres vocaux ou essayez avec un autre navigateur. L'IA n'est jamais activée automatiquement.",
+            "permission": "Autoriser l'accès au microphone dans les paramètres de votre navigateur pour dicter un message.",
+            "tooLarge": "L'enregistrement dépasse les 10 Mo. Essayez avec un message plus court.",
+            "noSpeech": "Aucun discours n'a été détecté. Votre brouillon n'a pas été modifié.",
+            "failed": "L'enregistrement de la voix a échoué. Votre brouillon n'a pas été modifié. Vérifiez votre connexion et vos Paramètres vocaux, puis réessayez."
+        },
+        "sparkyChat": {
+            "sparkyAICoach": "Coach IA Sparky",
+            "yourPersonalAINutritionAnd": "Votre coach IA personnel en nutrition et fitness.",
+            "selectProvider": "Choisissez un fournisseur",
+            "clearChatHistory": "Effacer l'historique de discussions",
+            "expandChat": "Développer la fenêtre de discussion",
+            "minimizeChat": "Réduire la fenêtre de discussion",
+            "closeChat": "Fermer la fenêtre de discussion"
+        },
+        "sparkyChatInterface": {
+            "chatError": "Erreur dans la fenêtre de discussion",
+            "failedToProcessMessagePlease": "Échec lors du traitement du message. Veuillez vérifier les paramètres de votre service IA."
+        }
     },
     "onboarding": {
         "completeSetup": "Terminer la configuration",
@@ -5095,7 +5126,47 @@
     },
     "foods": {
         "providerVerified": "Aliment vérifié",
-        "removeNutrient": "Retirer {{nutrient}}"
+        "removeNutrient": "Retirer {{nutrient}}",
+        "aliasChipInput": {
+            "remove": "Supprimer {{alias}}"
+        },
+        "customNutrientDialog": {
+            "nutrientNameAndUnitAre": "Le nom et l'unité du nutriment sont obligatoires.",
+            "customNutrientCreated": "Nutriment personnalisé créé",
+            "failedToCreateCustomNutrient": "Échec lors de la création du nutriment personnalisé. Veuillez réessayer.",
+            "addCustomNutrient": "Ajouter un nutriment personnalisé",
+            "setTheDisplayUnitAnd": "Définissez l'unité d'affichage et les noms des fournisseurs (alias) qui doivent être importés dans ce nutriment.",
+            "nutrientName": "Nom du nutriment",
+            "eGMagnesium": "exemple, le magnésium",
+            "unit": "Unité",
+            "eGMgGIU": "exemple : mg, µg, IU",
+            "providerAliases": "Alias des fournisseurs",
+            "typeANamePressEnter": "Saisissez un nom, puis appuyez sur Entrée",
+            "adding": "Ajout en cours…",
+            "nutrientAdded": "\"{{name}}\" a été ajouté."
+        },
+        "deleteFoodDialog": {
+            "view": "Voir",
+            "otherUser": "autre utilisateur"
+        },
+        "openMenu": "Ouvrir le menu",
+        "mealManagement": {
+            "openMenu": "Ouvrir le menu"
+        },
+        "mealUnitSelector": {
+            "selectTheQuantityForThis": "Sélectionnez la quantité pour ce repas dans votre régime alimentaire.",
+            "quantity": "Quantité",
+            "unit": "Unité",
+            "nutritionFor": "Valeurs nutritionnelles pour {{quantity}} {{displayUnit}}:",
+            "updateMeal": "Mettre à jour le repas",
+            "addToMealPlan": "Ajouter au régime alimentaire",
+            "gProtein2": "{{protein}}g protéines",
+            "gCarbs2": "{{carbs}}g glucides",
+            "gFat2": "{{fat}}g gras",
+            "editMeal": "Modifier {{name}}",
+            "addMealToPlan": "Ajouter {{name}} au Régime Alimentaire",
+            "editQuantityFor": "Modifier la quantité pour {{name}}."
+        }
     },
     "nutrientGoalDirection": {
         "min": "Min",
@@ -5191,7 +5262,8 @@
         "chronic": "Chronique : {{val}}",
         "empty": "Aucune donnée d'objet connecté synchronisée pour ce jour.",
         "skinTemp": "Température cutanée",
-        "weekly": "hebdomadaire"
+        "weekly": "hebdomadaire",
+        "low2": "(bas: {{val}})"
     },
     "layout": {
         "welcome": "Bienvenue {{activeUserName}}",
