@@ -2541,7 +2541,7 @@
             "goalPresets": "Zielvorgabe",
             "createNewPreset": "Neue Vorlage erstellen",
             "noGoalPresets": "Noch keine Zielvorgabe definiert. Jetzt eine erstellen, um loszulegen!",
-            "presetKcalMacros": "{{Kalorien}} kcal, {{Eiweiß}}g P, {{Kohlenhydrate}}g KH, {{Fett}}g F",
+            "presetKcalMacros": "{{calories}} kcal, {{protein}}g P, {{carbs}}g KH, {{fat}}g F",
             "edit": "Bearbeiten",
             "delete": "Löschen",
             "deletePresetConfirm": "Bist du dir sicher, dass du diese Vorlage löschen möchtest?",
