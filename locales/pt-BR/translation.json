@@ -4455,7 +4455,7 @@
         "legs": "Pernas",
         "calves": "Panturrilhas",
         "forearms": "Antebraços",
-        "_comment": "muscleGroups is a coarser UI grouping for RecoveryTracker (MuscleGroupRecoveryTracker.tsx). Do not consolidate with muscles."
+        "_comment": "muscleGroups é um grupo de interface mais amplo para RecoveryTracker (MuscleGroupRecoveryTracker.tsx). Não consolidar com músculos."
     },
     "common": {
         "active": "Ativo",
