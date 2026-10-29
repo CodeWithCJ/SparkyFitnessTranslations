@@ -1,4 +1,20 @@
 {
+  "barcodeSources": {
+    "currentSource": "Source: {{name}}",
+    "local": "Your foods",
+    "external": "Online provider",
+    "fallback": "Open Food Facts fallback",
+    "otherSources": "Other sources",
+    "empty": "No other sources available",
+    "error": "Could not load barcode sources. Please try again.",
+    "comparison": "Compare the labeled amount for each result. Grams and milliliters are different bases.",
+    "retry": "Could not load sources. Tap to retry.",
+    "providerError": "Source unavailable",
+    "noMatch": "No match",
+    "basis": "Per {{size}} {{unit}}",
+    "macros": "{{calories}} kcal · Protein {{protein}} g · Carbs {{carbs}} g · Fat {{fat}} g",
+    "unknown": "—"
+  },
   "muscles": {
     "abdominals": "Abdominals",
     "abductors": "Abductors",
@@ -152,10 +168,15 @@
       "about": "About",
       "shareReport": "Share Diagnostic Report",
       "watch": "Apple Watch",
+      "addMenu": "Quick Actions",
+      "wearOs": "Wear OS",
+      "customMeasurements": "Custom Measurements",
       "ai": "AI",
       "fasting": "Fasting",
       "goals": "Goals",
-      "reports": "Reports"
+      "reports": "Reports",
+      "heartRateZones": "Heart Rate Zones",
+      "heartRateZonesSubtitle": "Max and resting heart rate, zone method"
     },
     "theme": {
       "title": "Theme",
@@ -225,6 +246,20 @@
     "selectedNutrition": "Selected: {{calories}} kcal · P {{protein}} g · C {{carbs}} g · F {{fat}} g",
     "copyReview": "Review copy",
     "copyFrom": "Copying from {{name}}",
+    "copyTo": "Copying to {{name}}",
+    "copyToFamily": "Copy to family",
+    "copyMealOptions": "Copy meal",
+    "chooseCopyRecipient": "Choose recipient",
+    "noCopyRecipients": "No family members with copy access",
+    "copySourceFailed": "Couldn't load the source meal",
+    "copySourceEmpty": "No food entries in this meal",
+    "copyToMember": "Copy to {{name}}",
+    "copyToFamilySuccess": "Copied to the family diary",
+    "copyOwnStale": "Your source meal changed",
+    "copyOwnStaleGuidance": "Your latest meal is opening for review.",
+    "copyServerUpdateRequired": "Server update required",
+    "copyServerUpdateGuidance": "Update your SparkyFitness server to copy foods to family members.",
+    "copyMealTypesFailed": "Couldn't load the destination meals. Please try again.",
     "copyMealTitle": "{{meal}} meal",
     "quantityForFood": "Quantity for {{food}}",
     "quantityMustBePositive": "Enter a quantity greater than zero.",
@@ -264,7 +299,12 @@
       "ongoingWorkout": "Ongoing workout",
       "workoutTimer": "Workout timer",
       "fasting": "Fasting",
-      "hydration": "Hydration reminders"
+      "hydration": "Hydration reminders",
+      "moodCheckin": "Mood check-ins"
+    },
+    "moodCheckin": {
+      "title": "How are you feeling?",
+      "body": "Take a quick check-in: mood, energy and focus."
     },
     "actions": {
       "completeSet": "Complete Set",
@@ -485,7 +525,16 @@
       "liveHeartRateFor": "Current heart rate for {{name}}",
       "heartRateUnit": "bpm"
     },
-    "nextSet": "Next Set"
+    "nextSet": "Next Set",
+    "now": {
+      "label": "Now",
+      "upNext": "Up next",
+      "swap": "Swap",
+      "swapLabel": "Swap {{name}}",
+      "setOf": "Set {{number}} of {{total}}",
+      "warmupOf": "Warm-up {{number}} of {{total}}",
+      "then": "Then {{name}}"
+    }
   },
   "addSheet": {
     "food": "Food",
@@ -507,8 +556,19 @@
     "logPregnancyEntry": "Log Pregnancy Entry",
     "logCycle": "Log Cycle",
     "mindfulness": "Mindfulness",
+    "title": "Quick Actions",
+    "scanShort": "Scan",
+    "measureShort": "Measure",
+    "symptomsHealth": "Symptoms & Health",
+    "syncHealthShort": "Sync Health",
+    "photosHint": "Visual",
+    "symptomsHint": "Log",
+    "moodHint": "Track state",
+    "mindfulnessHint": "Breathing, zen",
     "recordActivity": "Record Activity",
-    "recordActivityHint": "Track a walk, run or ride with GPS"
+    "recordActivityHint": "Track a walk, run or ride with GPS",
+    "checkIn": "Daily Check-In",
+    "checkInHint": "Habits"
   },
   "screens": {
     "foods": "Foods",
@@ -620,6 +680,8 @@
     "cardioSession": "Cardio Session",
     "activityShare": "Share Activity",
     "watchSettings": "Apple Watch",
+    "addMenuSettings": "Quick Actions",
+    "wearOsSettings": "Wear OS",
     "aiSettings": "AI",
     "fastingSettings": "Fasting Settings",
     "fasting": "Fasting",
@@ -634,11 +696,13 @@
     "hydrationReport": "Hydration",
     "measurementsReport": "Measurements",
     "substancesReport": "Caffeine and alcohol",
+    "heartRateReport": "Heart Rate",
     "runSummary": "Activity saved",
     "runPrograms": "Training programs",
     "personalRecords": "Personal records",
     "watchRunLive": "On your watch",
     "watchRunLiveRun": "Run on your watch",
+    "watchRunLiveJumpRope": "Jump Rope on your watch",
     "watchWalkLive": "Walk on your watch",
     "allergenSettings": "Allergens",
     "runProgramCalendar": "Program calendar",
@@ -646,8 +710,14 @@
     "runProgramEdit": "Edit plan",
     "runProgramNew": "New plan",
     "runProgramRace": "Plan a race",
+    "fitnessTest": "Fitness tests",
+    "fitnessTestResult": "Fitness test",
+    "heartRateZonesSettings": "Heart Rate Zones",
     "routes": "Routes",
-    "routeDraw": "Draw a route"
+    "routeDraw": "Draw a route",
+    "routeEdit": "Edit route",
+    "routeGenerate": "Generate a route",
+    "compareReport": "Compare"
   },
   "activityShare": {
     "title": "Share Activity",
@@ -676,6 +746,7 @@
     "nutrition": "Nutrition",
     "sleepSession": "Sleep Session",
     "stress": "Stress",
+    "mindfulness": "Mindfulness",
     "basalBodyTemperature": "Basal Body Temperature",
     "basalMetabolicRate": "Basal Metabolic Rate",
     "bloodGlucose": "Blood Glucose",
@@ -917,7 +988,8 @@
       "title": "Permission Required",
       "backgroundAccess": "Background access permission is required for background sync. Please grant the permission in Health Connect settings.",
       "allTitle": "Permissions Required",
-      "allMessage": "Some permissions were not granted. Please enable all required health permissions in the {{settings}} to sync all data."
+      "allMessage": "Some permissions were not granted. Please enable all required health permissions in the {{settings}} to sync all data.",
+      "writebackMessage": "Every metric will sync. To write your data back, grant the missing permissions in {{settings}}."
     },
     "permissionError": {
       "title": "Permission Error",
@@ -998,13 +1070,16 @@
   },
   "calorieSettings": {
     "adaptiveEarnBack": "Adaptive targets already include activity. Remaining calories are Target minus Eaten. Exercise earn-back applies only to Manual targets.",
+    "adaptiveActivitySeparate": "Count activity calories separately",
+    "adaptiveActivitySeparateHint": "Learn a baseline excluding historical activity and credit today’s steps and workouts once, without adding BMR again. This needs consistent food, weight, step and workout history. Until enough history is available, use BMR × your non-workout activity multiplier.",
+    "adaptiveActivitySeparateReporting": "BMR stays in Burned and Net Energy when Include Resting Calories is enabled. Only steps and workouts are added to your remaining calorie budget.",
     "restingEnergy": "Resting Energy",
     "bmr": "BMR",
     "title": "Calorie & BMR Settings",
     "modeLabel": "Calorie Mode",
     "adjustmentMode": "Adjustment Mode",
     "modeDescription": "Controls how your daily calorie goal adjusts based on activity.",
-    "deviceProjectionDescription": "Current-day Health Connect total calories are projected to midnight; completed days use the recorded total. Goal Mode is applied to that TDEE, with BMR + active calories as a fallback.",
+    "deviceProjectionDescription": "Current-day device total calories (Health Connect, Garmin or Polar) are projected to midnight; completed days use the recorded total. Goal Mode is applied to that TDEE, with BMR + active calories as a fallback.",
     "deviceProjectionFallback": "Only used for the BMR + active calories fallback when a device total is unavailable.",
     "exerciseCaloriesApplied": "Exercise Calories Applied",
     "exerciseCaloriesDescription": "How much of your exercise calories are added back to your daily goal.",
@@ -1042,11 +1117,13 @@
       "activityWithBmr": "Activity + BMR",
       "activityOnly": "Activity only (exercise + steps)",
       "eatenBurned": "Eaten − Burned",
-      "projectedTotal": "Health Connect total calories (BMR + active calories fallback)",
+      "projectedTotal": "Device total calories (BMR + active calories fallback)",
       "dynamic": "Goal − Net Energy",
+      "dynamicActivitySeparated": "Goal − Eaten + Activity",
       "percentageWithBmr": "Goal − Eaten + BMR + {{percentage}}% of Exercise",
       "percentage": "Goal − Eaten + {{percentage}}% of Exercise",
       "tdee": "Projected TDEE × Goal Mode − Eaten",
+      "tdeeWeekly": "Projected TDEE + Weekly Goal Adjustment − Eaten",
       "adaptive": "Goal − Eaten",
       "fixed": "Goal − Eaten"
     },
@@ -1054,11 +1131,13 @@
       "dynamic": "Goal grows as you move",
       "tdee": "The projection converges with the device total at midnight",
       "adaptive": "Goal = Adaptive TDEE",
+      "adaptiveWeekly": "Goal = Adaptive TDEE + Weekly Goal Adjustment",
       "fixed": "Activity does not change your budget"
     },
     "externalFormula": "formula",
     "goalMode": {
       "title": "Goal Mode",
+      "weekly": "Weekly weight change",
       "description": "Adjusts your calorie target for maintenance, a deficit, or a surplus.",
       "deviceProjectionDescription": "This percentage is applied directly to the projected device TDEE.",
       "maintain": "Maintain (0%)",
@@ -1083,6 +1162,27 @@
       "standardDescription": "Uses the higher of your estimated RMR and the clinical minimum.",
       "customDescription": "Replaces the standard floor with your chosen minimum. Health recommendations remain visible.",
       "disabledDescription": "Stops automatic target clamping. Health warnings remain visible."
+    },
+    "weeklyGoal": {
+      "description": "Choose how much weight you want to lose or gain each week, or keep your weight stable.",
+      "direction": "Weight goal",
+      "maintain": "Keep weight stable",
+      "lose": "Lose weight",
+      "gain": "Gain weight",
+      "rate": "Weight change per week",
+      "amount": "Weekly weight change amount",
+      "amountHint": "Enter a positive amount. The selected weight goal sets the direction.",
+      "unit": "Weekly rate unit",
+      "kilograms": "kg",
+      "grams": "g",
+      "pounds": "lb",
+      "stonePounds": "st / lb",
+      "stones": "st",
+      "poundsAmount": "Weekly weight change pounds",
+      "poundsHint": "Enter the remaining pounds, from 0 to less than 14.",
+      "invalidRate": "Enter a rate above 0 and up to {{max}} kg per week.",
+      "dailyAdjustment": "Estimated daily adjustment: {{sign}}{{amount}} {{unit}}",
+      "estimateHint": "Your weekly goal is converted to a daily calorie adjustment. This is an estimate; your configured safety floor may limit weight loss."
     },
     "useExternalBmr": "Use measured BMR from check-ins and synced devices",
     "useExternalBmrHint": "Off by default — your chosen formula is always used until you turn this on. When enabled, a BMR recorded on a check-in or synced from a smart scale or health provider replaces the formula for that day, provided it is physiologically plausible for you.",
@@ -1143,7 +1243,9 @@
     "summarySubtitle": "Show calories and macronutrients",
     "customNutrientDisplay": "Custom Nutrient Display",
     "limitDescription_one": "Up to {{count}} custom nutrients can be shown here.",
-    "limitDescription_other": "Up to {{count}} custom nutrients can be shown here."
+    "limitDescription_other": "Up to {{count}} custom nutrients can be shown here.",
+    "guidedCheckIn": "Guided check-in",
+    "guidedCheckInSubtitle": "Adds Check-In to the Add menu: log your mood, measurements and progress photos for the day, one step at a time."
   },
   "about": {
     "title": "About",
@@ -1192,6 +1294,13 @@
     "waterReminderEnd": "End Time",
     "waterReminderEndAccessibility": "End time, {{time}}",
     "waterReminderInvalidWindow": "End time must be after start time.",
+    "moodCheckins": "Mood check-ins",
+    "moodCheckinReminders": "Check-in reminders",
+    "moodCheckinRemindersSubtitle": "A daily nudge to log how you feel",
+    "moodCheckinReminderTime": "Reminder {{number}}",
+    "moodCheckinReminderTimeAccessibility": "Reminder {{number}}, {{time}}",
+    "moodCheckinAddReminder": "Add reminder",
+    "moodCheckinRemoveReminder": "Remove reminder {{number}}",
     "enableNotifications": "Enable Notifications",
     "openSettings": "Open Settings",
     "permissionTitle": "Grant permissions",
@@ -1220,7 +1329,9 @@
     "duckMusicSubtitle": "Briefly turn down music from other apps while a workout beep or spoken cue plays.",
     "duckMusicAccessibility": "Lower music during cues",
     "warmupCalculator": "Warm-up calculator",
-    "warmupCalculatorSubtitle": "The ramp, and the weights it rounds to, for warm-up sets you add to an exercise."
+    "warmupCalculatorSubtitle": "The ramp, and the weights it rounds to, for warm-up sets you add to an exercise.",
+    "nowCard": "Now card",
+    "nowCardSubtitle": "Pin the set to do now above the exercise list: its target in large type, the exercise photo, what comes next, and Swap to do another exercise first."
   },
   "restPeriod": {
     "title": "Rest period",
@@ -1656,6 +1767,117 @@
         "right_hip": "Right Hip",
         "unknown": "Unknown"
       }
+    },
+    "adherence": {
+      "screenTitle": "Adherence",
+      "openTitle": "Adherence & log",
+      "openSubtitle": "Checklist, streaks, month calendar and dose history",
+      "openA11y": "Open adherence overview and dose log",
+      "title": "Adherence overview",
+      "loading": "Loading adherence...",
+      "loadFailed": "Failed to load adherence.",
+      "noMedications": "Add a medication to start tracking adherence.",
+      "dosesToday": "Doses today",
+      "doses": "Doses",
+      "windowAdherence_one": "{{count}}-day adherence",
+      "windowAdherence_other": "{{count}}-day adherence",
+      "perfectDays_one": "Perfect days ({{count}}d)",
+      "perfectDays_other": "Perfect days ({{count}}d)",
+      "ringA11y_one": "{{pct}} percent adherence over {{count}} day",
+      "ringA11y_other": "{{pct}} percent adherence over {{count}} days",
+      "ringLabel_one": "{{count}}-day",
+      "ringLabel_other": "{{count}}-day",
+      "lastDays_one": "Last {{count}} day",
+      "lastDays_other": "Last {{count}} days",
+      "streak_one": "{{count}}-day streak",
+      "streak_other": "{{count}}-day streak",
+      "barPrn_one": "{{date}}: {{count}} as-needed dose",
+      "barPrn_other": "{{date}}: {{count}} as-needed doses",
+      "barNone": "{{date}}: no doses",
+      "barTaken": "{{date}}: {{taken}} of {{due}} taken",
+      "viewingDate": "Viewing {{date}}",
+      "backToToday": "Back to today"
+    },
+    "checklist": {
+      "titleToday": "Today's Checklist",
+      "title": "Medication Checklist",
+      "noneToday": "No scheduled doses for today.",
+      "noneDay": "No scheduled doses for this day.",
+      "loggedToday_one": "{{completed}} of {{count}} dose logged today.",
+      "loggedToday_other": "{{completed}} of {{count}} doses logged today.",
+      "loggedDay_one": "{{completed}} of {{count}} dose logged for this day.",
+      "loggedDay_other": "{{completed}} of {{count}} doses logged for this day."
+    },
+    "today": {
+      "dueToday": "Due today",
+      "asNeeded": "As needed",
+      "medicationsTitle": "Today's medications",
+      "medicationsTitleDay": "Medications",
+      "supplementsTitle": "Today's supplements",
+      "supplementsTitleDay": "Supplements",
+      "dueDay": "Due",
+      "noMedicationDoses": "No scheduled doses today, log any medication as-needed below.",
+      "noSupplementDoses": "No scheduled doses today, log any supplement as-needed below.",
+      "noMedicationDosesDay": "No scheduled doses on this day, log any medication as-needed below.",
+      "noSupplementDosesDay": "No scheduled doses on this day, log any supplement as-needed below.",
+      "noPrnMedications": "No as-needed or non-scheduled medications configured.",
+      "noPrnSupplements": "No as-needed or non-scheduled supplements configured.",
+      "loggedActivity": "Logged today",
+      "loggedActivityDescription": "Everything you've taken or skipped on this date.",
+      "loadingHistory": "Loading history…",
+      "prnTaken": "As needed",
+      "snoozed": "Snoozed"
+    },
+    "calendar": {
+      "title": "Medication Log Calendar",
+      "titleAll": "Log Calendar",
+      "titleSupplements": "Supplement Log Calendar",
+      "empty": "Add a medication to see its log calendar here.",
+      "filterTitle": "Show",
+      "allEntries": "All",
+      "allMedications": "All medications",
+      "allSupplements": "All supplements",
+      "monthTotal_one": "{{count}} dose logged in {{month}}",
+      "monthTotal_other": "{{count}} doses logged in {{month}}",
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "allTaken": "All doses taken",
+      "partialTaken": "Partially taken",
+      "mostlySkipped": "Mostly skipped",
+      "allSkipped": "All doses skipped",
+      "snoozedOnly": "Snoozed only",
+      "sideEffect": "Side-effect symptom",
+      "generalSymptom": "General symptom",
+      "tooltipTaken_one": "{{count}} taken",
+      "tooltipTaken_other": "{{count}} taken",
+      "tooltipPrn_one": "{{count}} as needed",
+      "tooltipPrn_other": "{{count}} as needed",
+      "tooltipSkipped_one": "{{count}} skipped",
+      "tooltipSkipped_other": "{{count}} skipped",
+      "tooltipSnoozed_one": "{{count}} snoozed",
+      "tooltipSnoozed_other": "{{count}} snoozed",
+      "tooltipSymptoms": "Symptoms: {{names}}"
+    },
+    "dayLog": {
+      "titleDay": "Logged on {{date}}",
+      "empty": "Nothing logged for this day.",
+      "unknownMedication": "Medication",
+      "editA11y": "Edit {{name}}",
+      "deleteA11y": "Delete {{name}}",
+      "deleteTitle": "Delete entry",
+      "deleteMessage": "Delete this logged dose of {{name}}?",
+      "deleted": "{{name}} entry deleted",
+      "deleteFailed": "Failed to delete {{name}} entry"
+    },
+    "entryEdit": {
+      "title": "Edit logged dose",
+      "takenAt": "Taken at",
+      "setTime": "Set time",
+      "status": "Status",
+      "noSite": "No site",
+      "saved": "Dose updated",
+      "saveFailed": "Failed to save: {{error}}",
+      "site": "Injection site"
     }
   },
   "scheduleSummary": {
@@ -1709,6 +1931,7 @@
     },
     "watch": {
       "title": "Apple Watch",
+      "wearOsTitle": "Wear OS",
       "description": "Status of the watch companion link. Check-ins captured on the watch are queued and delivered even when \"reachable\" is off, so a gray dot here does not mean data is lost.",
       "paired": "Watch paired",
       "notPaired": "No watch paired",
@@ -2096,7 +2319,12 @@
     "repCount_other": "{{formattedCount}} reps",
     "modalityWeightDistance": "Weight & Distance (carries)",
     "modalityWeightDuration": "Weight & Duration (loaded holds)",
-    "addWarmups": "Add warm-ups"
+    "addWarmups": "Add warm-ups",
+    "replaceWithOther": "Replace with another exercise…",
+    "doAnotherFirst": "Do another exercise first…",
+    "swapTitle": "Swap {{name}}",
+    "doNowSets_one": "Do now · {{count}} set",
+    "doNowSets_other": "Do now · {{count}} sets"
   },
   "cycleCard": {
     "mode": {
@@ -2862,7 +3090,7 @@
     "title": "Summary",
     "projectedTdee": "Projected TDEE: {{value}} kcal",
     "goalModeTarget": "Goal Mode target: {{value}} kcal",
-    "healthConnectProjectionSource": "Health Connect total calories",
+    "healthConnectProjectionSource": "Device total calories",
     "fallbackProjectionSource": "BMR + active calories fallback",
     "legacyProjectionSource": "Device projection",
     "collapse": "Collapse this section",
@@ -3139,13 +3367,93 @@
       "caloriesInValue": "1,540",
       "caloriesOutValue": "255",
       "eightAm": "8:00 AM",
-      "eyebrow": "iOS 26"
+      "eyebrow": "iOS 26",
+      "zoneTwoBase": "Zone 2 Base",
+      "weekThree": "Week 3",
+      "easyRun": "Easy run • 40 min",
+      "zoneTwoRange": "125–142 bpm",
+      "riverLoop": "River Loop",
+      "routeDistance": "5.2 km",
+      "routeClimb": "48 m climb",
+      "followRoads": "Follows roads",
+      "checkIn": "Check-in",
+      "stepTwoOfThree": "Step 2 of 3",
+      "checkInStepName": "Measurements",
+      "saveContinue": "Save & continue",
+      "plates": "Plates",
+      "plateTarget": "100 kg",
+      "plateBar": "Bar 20 kg",
+      "platesPerSide": "20 + 20 per side",
+      "heartRate": "Heart rate",
+      "zoneTwo": "Zone 2",
+      "maxResting": "Max 185 • Resting 52",
+      "customZones": "Your own",
+      "compare": "Compare",
+      "thirtyDays": "30 days",
+      "sleepVsMood": "Sleep vs. mood",
+      "moodHigher": "Mood is higher",
+      "watchApp": "Watch app",
+      "caloriesLeftBadge": "1,515 left",
+      "waterMeds": "Water • Meds",
+      "fastingSteps": "Fasting • Steps",
+      "weeklyGoal": "Weekly goal",
+      "weeklyRate": "−0.5 kg",
+      "dailyTarget": "Daily target",
+      "dailyAdjustment": "≈ −550 kcal"
     },
     "features": {
+      "running": {
+        "eyebrow": "RUNNING",
+        "headline": "Train with run programs",
+        "body": "Follow a Zone 2 Base plan with heart rate guidance, set a weekly distance goal and race countdown, take a guided fitness test to set your paces, and review splits after every run.",
+        "cta": "Open run programs"
+      },
+      "routes": {
+        "eyebrow": "ROUTES",
+        "headline": "Plan and follow routes",
+        "body": "Draw routes on a satellite map, snap them to roads, generate loops of a set distance, and follow a saved route on your Apple Watch.",
+        "cta": "Open routes"
+      },
+      "checkIn": {
+        "eyebrow": "GUIDED CHECK-IN",
+        "headline": "Check in in one flow",
+        "body": "Log your mood, measurements, and a progress photo in three quick steps. Turn it on in Diary settings.",
+        "cta": "Open diary settings"
+      },
+      "strength": {
+        "eyebrow": "STRENGTH TOOLS",
+        "headline": "Smarter strength workouts",
+        "body": "Pin the set to do now, swap exercises in a tap, keep your sets when you replace an exercise, and load the bar with the plate calculator.",
+        "cta": "Open workout settings"
+      },
+      "heartRate": {
+        "eyebrow": "HEART RATE",
+        "headline": "Heart rate zones, your way",
+        "body": "Set your own max and resting heart rate and zone method, then dig into detailed heart rate reports.",
+        "cta": "Open zone settings"
+      },
+      "reports": {
+        "eyebrow": "REPORTS & COMPARE",
+        "headline": "See how your habits connect",
+        "body": "Browse nutrition, hydration, sleep, mood, and measurement reports, then use Compare to see whether one habit goes with another, or whether something changed since you started a new habit.",
+        "cta": "Open reports"
+      },
+      "watch": {
+        "eyebrow": "APPLE WATCH & WEAR OS",
+        "headline": "Your day on your wrist",
+        "body": "The watch app now comes to Apple Watch and Wear OS. See your goals, log water, weight, fasting, and medications, and run workouts that save to your diary, with effort ratings, jump rope, and route following on Apple Watch. Choose your pages in Watch settings.",
+        "cta": "Open watch settings"
+      },
+      "weeklyGoal": {
+        "eyebrow": "WEIGHT GOALS",
+        "headline": "Set a weekly weight goal",
+        "body": "Choose how much weight you want to lose or gain each week and Sparky works out your daily calorie target.",
+        "cta": "Open calorie settings"
+      },
       "medications": {
         "eyebrow": "MEDICATIONS",
         "headline": "Track your medications",
-        "body": "Add your medications, set dose schedules, and log each dose from the dashboard with optional reminders.",
+        "body": "Add your medications, set dose schedules, log each dose from the dashboard with optional reminders, and review adherence with a calendar and dose log.",
         "cta": "Set up medications"
       },
       "cycle": {
@@ -3511,6 +3819,32 @@
     "emptySubtitle": "Schedule your saved workouts on set days, or as a cycle you work through.",
     "moreAssignments_one": "+{{count}} more",
     "moreAssignments_other": "+{{count}} more"
+  },
+  "addMenuSettings": {
+    "reorder": "Reorder {{name}}",
+    "reorderHint": "Changes where this row sits in Quick Actions",
+    "reset": "Reset to default",
+    "cardsTitle": "Tiles",
+    "cardsDescription": "The four tiles at the top of Quick Actions. Tap one to choose what goes there. Choosing something already placed swaps the two.",
+    "rowsTitle": "List",
+    "rowsDescription": "Rows under the tiles. Drag a row by its handle to move it. Toggle a row off to hide it.",
+    "previewTitle": "Preview",
+    "previewDescription": "How Quick Actions looks with your choices.",
+    "lineNumber": "Line {{number}}",
+    "needsCheckIn": "Not shown: guided check-in is off",
+    "needsCycle": "Not shown: cycle tracking is off",
+    "showAs": "Show as",
+    "showAsValue": "Show as {{style}}",
+    "styleList": "List",
+    "stylePair": "Pair",
+    "styleButton": "Button",
+    "pairsTitle": "Pairs",
+    "pairsDescription": "Shown two to a line, under the list. One on its own takes the whole line.",
+    "buttonsTitle": "Buttons",
+    "buttonsDescription": "Shown side by side at the bottom of the sheet.",
+    "chooseCard": "Choose a tile",
+    "slotLabel": "Tile {{number}}: {{name}}",
+    "slotHint": "Opens a list to choose what goes here"
   },
   "mealPlans": {
     "title": "Meal plans",
@@ -3969,7 +4303,8 @@
       "volume": "Volume",
       "calories": "Calories",
       "avgHeartRate": "Avg HR",
-      "maxHeartRate": "Max HR"
+      "maxHeartRate": "Max HR",
+      "effort": "Effort"
     },
     "errors": {
       "needsExercise": "Workout needs an exercise",
@@ -4000,6 +4335,32 @@
       "deleteWorkout": "Delete Workout"
     }
   },
+  "calorieLink": {
+    "action": "Link a synced workout",
+    "linked": "Linked to a synced workout",
+    "title": "Link a synced workout",
+    "description": "If a watch or health app recorded this session too, link the two so its calories count once. Both estimates are kept.",
+    "loading": "Looking for synced workouts...",
+    "loadError": "Could not load synced workouts.",
+    "none": "No synced workouts found for this day.",
+    "workoutFallback": "Workout",
+    "minutes": "{{value}} min",
+    "calories": "{{value}} cal",
+    "sameSession": "Same session",
+    "sameTime": "Overlaps in time",
+    "countHeading": "Count in the daily total",
+    "sparkyfitness": "This workout ({{value}})",
+    "synced": "The synced workout ({{value}})",
+    "higher": "The higher of the two ({{value}})",
+    "lower": "The lower of the two ({{value}})",
+    "average": "The average ({{value}})",
+    "custom": "A custom total",
+    "customLabel": "Total for the session (cal)",
+    "link": "Link workouts",
+    "unlink": "Unlink",
+    "linkError": "Failed to link the workouts.",
+    "unlinkError": "Failed to unlink the workouts."
+  },
   "activityDetail": {
     "errors": {
       "saveFailed": "Failed to save activity"
@@ -4009,8 +4370,10 @@
       "calories": "Calories",
       "distance": "Distance",
       "avgHeartRate": "Avg Heart Rate",
+      "caloriesCounted": "Counted in daily total",
       "steps": "Steps",
-      "pace": "Pace"
+      "pace": "Pace",
+      "effort": "Effort"
     },
     "labels": {
       "sets": "Sets",
@@ -4408,6 +4771,16 @@
       "aiErrorMessage": "Check the selected Voice provider and try again.",
       "noSpeechTitle": "No speech detected",
       "noSpeechMessage": "Try again and speak closer to the microphone."
+    },
+    "attachments": {
+      "addPhoto": "Add photo",
+      "takePhoto": "Take Photo",
+      "chooseFromLibrary": "Choose from Library",
+      "removePhoto": "Remove photo",
+      "previewPhoto": "Preview photo",
+      "cameraPermission": "Camera permission needed",
+      "cameraPermissionBody": "Enable camera access to add a photo.",
+      "addFailed": "Could not add photo"
     }
   },
   "foodImagePicker": {
@@ -4984,8 +5357,17 @@
     },
     "allTrendsHidden": "All graphs are hidden. Choose which to show in Dashboard Settings.",
     "noTrendData": "No data to graph yet.",
+    "heartRate": {
+      "title": "Resting Heart Rate",
+      "avgLabel": "AVG",
+      "rangeLabel": "RANGE",
+      "loadFailed": "Failed to load heart rate data",
+      "empty": "No heart rate data for this period"
+    },
     "vo2max": {
       "title": "VO2 max",
+      "estimateTitle": "VO2 max (estimated)",
+      "estimateNote": "Estimated from your logged runs. Not a measurement; a synced reading replaces it.",
       "loadFailed": "Failed to load VO2 max data",
       "empty": "No VO2 max data for this period"
     }
@@ -5249,6 +5631,21 @@
     "saveFailed": "Save failed",
     "saveMessage": "Could not save measurements. Please try again."
   },
+  "guidedCheckIn": {
+    "stepOfTotal": "Check-in: Step {{step}} of {{total}}",
+    "skip": "Skip",
+    "skipA11y": "Skip this step",
+    "saveAndContinue": "Save & continue",
+    "finish": "Finish",
+    "done": "Check-in complete",
+    "skipUnsavedTitle": "Skip this step?",
+    "skipUnsavedMessage": "Your changes on this step won't be saved.",
+    "backA11y": "Go back to the previous step",
+    "backUnsavedTitle": "Go back a step?",
+    "resumeTitle": "Continue your check-in?",
+    "resumeMessage": "You stopped at step {{step}} of {{total}}.",
+    "startOver": "Start over"
+  },
   "mood": {
     "logTitle": "Mood",
     "overall": "Overall mood",
@@ -5261,6 +5658,9 @@
     "focusHigh": "Locked in",
     "journalOptional": "Journal (optional)",
     "journalPlaceholder": "Any thoughts or feelings you'd like to add?",
+    "reminderOfferTitle": "Remind me daily?",
+    "reminderOfferBody": "Get a reminder each evening to check in. You can change the time or add more in Settings → App Settings → Notifications.",
+    "reminderOfferAccept": "Remind me",
     "ratingsUnsupported": "Your server doesn't save energy and focus yet. Update SparkyFitness to keep them.",
     "loggingForDate": "Logging for {{date}}",
     "chartTitle": "Mood over time",
@@ -5468,6 +5868,10 @@
     "orCustomName": "Or type custom symptom...",
     "ongoingEpisode": "Track as ongoing episode",
     "startedWhen": "Started when:",
+    "startDate": "Date",
+    "startDateA11y": "Start date, {{date}}",
+    "startTime": "Time",
+    "startTimeA11y": "Start time, {{time}}",
     "endEpisodeNow": "End Episode Now",
     "severityTitle": "Severity",
     "location": "Location",
@@ -5541,6 +5945,7 @@
       "m15": "-15m",
       "h1": "-1h",
       "h3": "-3h",
+      "d1": "-1d",
       "started": "Started",
       "episode": "Episode"
     },
@@ -6250,6 +6655,7 @@
     "doubleTapTitle": "Double-tap to log a set",
     "rpeTitle": "Ask for effort (RPE) after each set",
     "rpeSubtitle": "After you log a set on the watch, turn the Digital Crown to pick how hard it was, from 1 to 10, then tap Save, or tap Skip.",
+    "rpeSubtitleWearOs": "After you log a set on the watch, turn the rotary crown or tap +/− to pick how hard it was, from 5 to 10, then tap Save, or tap Skip.",
     "doubleTapSubtitle": "Double-tap on a supported watch (Series 9, Ultra 2 or later, watchOS 11) logs the set on screen during a workout.",
     "pagesTitle": "Pages",
     "description": "Drag a page by its handle to change the order you swipe through them on your watch. Toggle a page off to hide it. The Workout page still appears while a workout is running.",
@@ -6271,7 +6677,16 @@
     "setInputTitle": "Set input",
     "setInputDescription": "How you enter weight and reps on the watch during a workout: type them on a keypad, or tap a value and turn the Digital Crown or drag it, 0.5 at a time for weight.",
     "setInputKeypad": "Keypad",
-    "setInputCrown": "Digital Crown"
+    "setInputCrown": "Digital Crown",
+    "layoutTitle": "Layout",
+    "setScreenMetricsTitle": "Metrics on the set screen",
+    "setScreenMetricsSubtitle": "Elapsed time, heart rate and calories. Off moves them to their own page after the set screen (after Up Next, when that page is on).",
+    "upNextTitle": "Up Next page",
+    "upNextSubtitle": "A page one swipe up from the set screen with the next exercise, its target, and a Swap button to do another exercise first.",
+    "largerTextTitle": "Larger text on the watch",
+    "largerTextSubtitle": "Larger type and the newer layouts across the watch: Goals, Water, the workout, Fasting, Steps and more. Off keeps the original look.",
+    "classicWorkoutTitle": "Original workout page",
+    "classicWorkoutSubtitle": "Keep the original workout screen while larger text is on everywhere else. With larger text off the workout always uses it."
   },
   "progressPhotos": {
     "card": {
@@ -6329,6 +6744,7 @@
     "historySection": "History",
     "historyDescription": "Your photos for this angle, newest first.",
     "historyDescriptionCapped": "Your {{limit}} most recent. Compare or Time-lapse look further back.",
+    "historyDescriptionCappedCheckIn": "Your {{limit}} most recent, newest first.",
     "slotSheetTitle": "Progress photo",
     "removeTitle": "Remove photo?",
     "removeMessage": "This deletes the photo from this day.",
@@ -6359,7 +6775,8 @@
     "estimatedTimes": "Some dose times were estimated",
     "legendCurve": "Active caffeine",
     "legendThreshold": "{{threshold}}mg threshold",
-    "unitMg": "mg"
+    "unitMg": "mg",
+    "tomorrow": "Tomorrow"
   },
   "guidedWorkout": {
     "cue": {
@@ -6496,6 +6913,13 @@
       "strength": "Strength",
       "cardio": "Cardio"
     },
+    "runningForm": {
+      "title": "Running form",
+      "subtitle": "Steps per minute and stride length on your runs",
+      "average": "Average {{value}}",
+      "change": "{{value}} vs earlier runs",
+      "hint": "A treadmill run counts once its steps were measured."
+    },
     "cardio": {
       "hint": "Tap a workout for its route and heart rate.",
       "empty": "No cardio workouts in this range",
@@ -6556,13 +6980,15 @@
       },
       "kilometersAxis": "Kilometers from start",
       "milesAxis": "Miles from start",
+      "splits": "Splits",
       "bestPace": "Best {{value}}",
       "perKm": "/km",
       "perMile": "/mi",
       "underOneMinute": "<1 min",
       "exportGpx": "Export GPX",
       "exportGpxFailed": "Could not export the route",
-      "shareImage": "Share as image"
+      "shareImage": "Share as image",
+      "effort": "Effort"
     },
     "load": {
       "title": "Training Load",
@@ -6582,6 +7008,19 @@
         "high": "Higher than your usual. Fine for a week, but keep the next few easy.",
         "spike": "A big jump from your usual. Ramping up this fast raises the risk of injury, so ease off."
       }
+    },
+    "runEstimates": {
+      "title": "Running Estimates",
+      "subtitle": "Estimated from your pace, heart rate, weight and climb. Not a measurement, so expect it to be off by several percent.",
+      "loadFailed": "Could not load your running estimates.",
+      "about": "≈ {{value}}",
+      "vo2Unit": "VO₂ max (ml/kg/min)",
+      "vo2Basis_one": "From {{count}} run in the last 6 weeks",
+      "vo2Basis_other": "From {{count}} runs in the last 6 weeks",
+      "watts": "≈ {{value}} W",
+      "powerUnit": "Running power ({{perKg}} W/kg)",
+      "powerBasis_one": "Average of {{count}} run in the last 4 weeks",
+      "powerBasis_other": "Average of {{count}} runs in the last 4 weeks"
     },
     "consistency": {
       "title": "Training Consistency",
@@ -6604,6 +7043,39 @@
       "noSets": "No sets logged this week or last.",
       "loadFailed": "Could not load your training consistency."
     },
+    "fitness": {
+      "level": {
+        "high": "Ready for a hard session.",
+        "moderate": "Fine for a normal session, but not your hardest.",
+        "low": "Not recovered. An easy day or rest is the better call.",
+        "noData": "Not enough to go on yet. Log workouts and sleep to see your readiness."
+      },
+      "form": {
+        "fresh": "Fresh: recent training is light against what you have built.",
+        "tired": "Tired: recent training is heavy against what you have built.",
+        "neutral": "Balanced: recent training matches what you have built.",
+        "learning": "Still learning your normal. Keep logging."
+      },
+      "factor": {
+        "form": "Training form",
+        "sleep": "Sleep",
+        "restingHeartRate": "Resting heart rate",
+        "hrv": "HRV"
+      },
+      "vital": {
+        "hrv": "{{current}} ms against your usual {{baseline}} ms",
+        "hrvNights": "{{current}} ms against your usual {{baseline}} ms (median of {{count}} nights)",
+        "restingHeartRate": "{{current}} bpm against your usual {{baseline}} bpm",
+        "restingHeartRateNights": "{{current}} bpm against your usual {{baseline}} bpm (median of {{count}} nights)"
+      },
+      "loadFailed": "Could not load your readiness.",
+      "outOf": "readiness out of 100",
+      "fitness": "Fitness",
+      "fatigue": "Fatigue",
+      "formLabel": "Form",
+      "title": "Readiness and Form",
+      "subtitle": "How ready you are today, from training form, sleep and resting heart rate."
+    },
     "paceZones": {
       "title": "Pace zones",
       "perKm": "/km",
@@ -6616,8 +7088,57 @@
       "range": "{{fast}} – {{slow}} {{unit}}",
       "fromEffort": "Built from your best recent run. Threshold pace is about {{pace}} {{unit}}.",
       "fromTypical_one": "Estimated from your last {{formattedCount}} run, so less precise. A hard run of 3 km or more sharpens it.",
-      "fromTypical_other": "Estimated from your last {{formattedCount}} runs, so less precise. A hard run of 3 km or more sharpens it."
+      "fromTypical_other": "Estimated from your last {{formattedCount}} runs, so less precise. A hard run of 3 km or more sharpens it.",
+      "fromTest": "Set by your latest fitness test. Threshold pace is about {{pace}} {{unit}}."
     }
+  },
+  "customCategories": {
+    "title": "Custom measurements",
+    "add": "Add category",
+    "loading": "Loading custom measurements...",
+    "loadFailed": "Failed to load custom measurements",
+    "loadFailedSubtitle": "Check your connection and try again.",
+    "noServer": "No server configured",
+    "noServerSubtitle": "Configure your server connection to manage custom measurements.",
+    "goToSettings": "Go to Settings",
+    "emptyTitle": "No custom categories yet",
+    "emptySubtitle": "Add a category such as blood sugar to track your own measurements.",
+    "editNamed": "Edit {{name}}",
+    "deleteNamed": "Delete {{name}}",
+    "deleteTitle": "Delete category",
+    "deleteMessage": "Delete {{name}}? Measurements logged under it will no longer be available.",
+    "deleteSuccess": "Category deleted",
+    "deleteFailed": "Failed to delete category"
+  },
+  "customCategoryEdit": {
+    "createTitle": "Add category",
+    "editTitle": "Edit category",
+    "loading": "Loading category...",
+    "name": "Name",
+    "namePlaceholder": "e.g. Blood Sugar",
+    "nameHelp": "Internal identifier used for syncing",
+    "displayName": "Display name (optional)",
+    "displayNamePlaceholder": "e.g. Morning Blood Sugar Level",
+    "displayNameHelp": "Optional custom name shown in the app",
+    "measurementType": "Measurement type",
+    "measurementTypePlaceholder": "e.g. mg/dL",
+    "unitPrecisionNote": "Using standard units (like kcal, mmHg, bpm) automatically optimizes chart precision.",
+    "dataType": "Data type",
+    "dataTypeNumeric": "Numeric",
+    "dataTypeText": "Text",
+    "frequency": "Frequency",
+    "frequencyAll": "All (unlimited entries)",
+    "frequencyDaily": "Daily (one per day)",
+    "frequencyHourly": "Hourly (one per hour)",
+    "frequencyAllShort": "Unlimited",
+    "frequencyDailyShort": "Daily",
+    "frequencyHourlyShort": "Hourly",
+    "errors": {
+      "title": "Check the form",
+      "required": "Name and measurement type are required."
+    },
+    "saveSuccess": "Category saved",
+    "saveFailed": "Failed to save category"
   },
   "aiSettings": {
     "server": {
@@ -6682,7 +7203,8 @@
   },
   "equipmentHub": {
     "title": "Equipment",
-    "shoesSubtitle": "Running shoes and their mileage"
+    "shoesSubtitle": "Running shoes and their mileage",
+    "platesSubtitle": "The bars and plates you own, for the plate calculator"
   },
   "shoes": {
     "title": "Shoes",
@@ -6910,6 +7432,11 @@
     }
   },
   "recordActivity": {
+    "route": {
+      "title": "Route",
+      "none": "No route",
+      "watchHint": "Your watch shows the line and buzzes at each turn."
+    },
     "checkIn": {
       "title": "Spoken updates",
       "description": "Hear your time, distance and average pace every few minutes.",
@@ -6971,7 +7498,8 @@
     "activity": {
       "walk": "Walk",
       "run": "Run",
-      "ride": "Ride"
+      "ride": "Ride",
+      "jumpRope": "Jump Rope"
     },
     "permission": {
       "denied": "SparkyFitness needs location access to record your route. You can allow it in Settings.",
@@ -7068,6 +7596,13 @@
     "currentPace": "Pace",
     "elevationGain": "Elevation gain",
     "splits": "Splits",
+    "splitsTable": {
+      "km": "Km",
+      "mi": "Mi",
+      "pace": "Pace",
+      "elev": "Elev",
+      "hr": "HR"
+    },
     "laps": "Laps",
     "lap": "Lap",
     "lapLabel": "Lap {{number}}",
@@ -7100,7 +7635,9 @@
       "run": "Run",
       "walk": "Walk",
       "fast": "Fast",
+      "brisk": "Brisk",
       "easy": "Easy",
+      "zone2": "Zone 2 run",
       "byTime": "By time",
       "byDistance": "By distance",
       "unitMeters": "Meters",
@@ -7117,6 +7654,8 @@
       "name": {
         "beginner5k": "Beginner 5K",
         "fiveToTenK": "5K to 10K",
+        "zone2Base": "Zone 2 base",
+        "zone2Base4": "Zone 2 base (4 runs a week)",
         "faster5k": "Faster 5K",
         "walkFit": "Walk for fitness",
         "halfMarathon": "Half marathon",
@@ -7184,6 +7723,8 @@
       "changedBySparky": "Sparky changed your plan on {{date}}: {{summary}}",
       "changed": "Plan changed on {{date}}: {{summary}}",
       "fiveToTenKDescription": "5K to 10K: eight weeks, three runs a week, for when you can run 30 minutes. It builds to a 65 minute long run.",
+      "zone2BaseDescription": "Zone 2 base: ten weeks, three easy runs a week held to your Zone 2 heart rate (or the talk test), building time in zone with a long run of up to 70 minutes. For when you can run 30 minutes.",
+      "zone2Base4Description": "Zone 2 base: ten weeks, four easy runs a week held to your Zone 2 heart rate (or the talk test), building time in zone with a long run of up to 70 minutes. For when you can run 30 minutes.",
       "faster5kDescription": "Faster 5K: six weeks of speed sessions, easy runs and tempo runs, for when you already run 5K.",
       "walkFitDescription": "Walk for fitness: eight weeks, three walks a week, with no running. You alternate brisk and easy walking and build up to 30 minutes of brisk walking.",
       "halfMarathonDescription": "Half marathon: twelve weeks, three runs a week, with long runs building to about two hours. For when you run 30 minutes comfortably.",
@@ -7198,11 +7739,11 @@
       "advancedMarathonDescription": "Advanced marathon: sixteen weeks, five runs a week, with speed or tempo work and long runs building to three hours. For experienced runners.",
       "halfMarathon4Description": "Half marathon: twelve weeks, four runs a week, with long runs building to about two hours. For when you run 30 minutes comfortably.",
       "tenKToHalf4Description": "10K to half marathon: ten weeks, four runs a week, with long runs building to about two hours. For when you can run 10K.",
-      "beginnerMarathon4Description": "Beginner marathon: eighteen weeks, four runs a week, with long runs building to 2⅔ hours and a taper. For when you can run 10K.",
-      "fasterHalf4Description": "Faster half marathon: ten weeks, four runs a week, with a speed session, easy runs and a long run with tempo work. For when you have run a half marathon before.",
+      "beginnerMarathon4Description": "Beginner marathon: eighteen weeks, four runs a week, with long runs building to 2½ hours and a taper. For when you can run 10K.",
+      "fasterHalf4Description": "Faster half marathon: ten weeks, four runs a week, with a speed session, easy runs and a long run. For when you have run a half marathon before.",
       "marathonDescription": "Marathon: sixteen weeks, four runs a week, with long runs building to about 2¾ hours and a taper. For people who already run regularly.",
       "outlineWalk": "Week 1: workouts of {{weekOne}} minutes. Builds to {{peak}} minutes of brisk walking.",
-      "outline": "Week 1: workouts of {{weekOne}} minutes. Builds to {{peak}} minutes of running.",
+      "outline": "Week 1: workouts of {{weekOne}} minutes. Builds to {{peak}} minutes of effort.",
       "minutes": "{{minutes}} min",
       "workoutsDone": "{{done}} of {{total}} workouts",
       "optionLabel": "{{name}} · {{weeks}} weeks, {{runs}} workouts a week",
@@ -7212,7 +7753,8 @@
       "switchMessage": "You will start the new program at week 1. Your place in the current one is not kept.",
       "switchConfirm": "Switch",
       "startDayPast": "Started {{date}}. Your next workout is scheduled from today.",
-      "customWorkoutLabel": "{{name}} · {{workout}}"
+      "customWorkoutLabel": "{{name}} · {{workout}}",
+      "goalUseRaceDay": "Use race day ({{date}})"
     },
     "watch": {
       "title": "Record with",
@@ -7232,7 +7774,8 @@
       "outdoorWalk": "Outdoor walk",
       "indoorWalk": "Indoor walk",
       "outdoorRide": "Outdoor ride",
-      "indoorRide": "Indoor ride"
+      "indoorRide": "Indoor ride",
+      "jumpRope": "Jump Rope"
     },
     "gps": {
       "good": "GPS good",
@@ -7261,6 +7804,7 @@
     "heartRateBand": {
       "title": "Heart rate alert",
       "description": "Needs your Apple Watch. Buzzes, and speaks with voice cues on, when your heart rate stays outside this range.",
+      "wearOsDescription": "Needs your Wear OS watch. Buzzes, and speaks with voice cues on, when your heart rate stays outside this range.",
       "lowest": "Lowest",
       "highest": "Highest",
       "value": "{{value}} bpm",
@@ -7273,6 +7817,18 @@
       "warmTitle": "Warm-up and cool-down heart rate",
       "warmDescription": "Alerts you when your heart rate in the warm-up or cool-down is outside this range."
     },
+    "zone2": {
+      "target": "Zone 2: {{min}}–{{max}} bpm",
+      "targetSpoken": "Zone 2, {{min}} to {{max}} beats per minute",
+      "inside": "In Zone 2. Keep this effort.",
+      "above": "Above Zone 2. Ease off, or walk until your heart rate settles.",
+      "below": "Below Zone 2. You can pick it up a little.",
+      "waiting": "Waiting for a heart rate reading…",
+      "talkTest": "Zone 2: keep it easy enough to talk in full sentences. If you can only say a few words, slow down.",
+      "noRange": "Add your date of birth in your profile to see a heart rate range for Zone 2. Until then, go by the talk test.",
+      "zoneCheck": "Zone check: run this one on a flat, familiar route at the same effort as last time, and note your pace and how easy it felt. If the same heart rate now gives a faster pace, your aerobic fitness is growing.",
+      "driftNote": "Heart rate drifts up a few beats on a long run, so the top of the range loosens a little after 20 minutes."
+    },
     "suggestedRanges": {
       "title": "Suggested ranges",
       "pace": "Pace: fast {{fast}}, easy {{easy}}, warm-up and cool-down {{warm}}",
@@ -7284,7 +7840,11 @@
       "tempo": "tempo {{range}}",
       "marathonPace": "marathon pace {{range}}",
       "strides": "strides {{range}}",
-      "paceSourceRace": "Based on your recent race: {{race}}."
+      "paceSourceRace": "Based on your recent race: {{race}}.",
+      "paceSourceTest": "Based on your {{test}} on {{date}}.",
+      "heartRateSourceUser": "From your maximum heart rate of {{max}} bpm.",
+      "heartRateSourceReserve": "From your heart rate reserve zones, with a maximum of {{max}} bpm.",
+      "heartRateSourceCustom": "From your custom heart rate zones."
     }
   },
   "goals": {
@@ -7459,7 +8019,30 @@
     "measurementsSubtitle": "Weight, body composition, tape measurements and steps",
     "insights": "What stood out",
     "substances": "Caffeine and alcohol",
-    "substancesSubtitle": "Daily caffeine, alcohol totals and week by week"
+    "substancesSubtitle": "Daily caffeine, alcohol totals and week by week",
+    "compare": "Compare",
+    "compareSubtitle": "How two things move together",
+    "heartRate": "Heart Rate",
+    "heartRateSubtitle": "Resting HR trends and zone distribution",
+    "details": "View report details",
+    "heartRateChangeVsPrevious": "{{change}} bpm vs previous period",
+    "averageRestingHr": "Average Resting Heart Rate",
+    "restingHrRange": "Resting HR Range",
+    "heartRateRecovery1Min": "1-Min Recovery",
+    "heartRateRecoveryHint": "Heart rate drop 1 minute post-exercise",
+    "recordedDays": "Recorded Days",
+    "daysRatio": "{{daysWithData}} of {{totalDays}} days",
+    "heartRateLoadFailed": "Failed to load heart rate data",
+    "heartRateEmpty": "No heart rate data recorded for this period",
+    "restingHeartRateTrend": "Resting Heart Rate Trend",
+    "heartRateZones": "Heart Rate Zones",
+    "zoneSource": "Your zones: {{method}}, max heart rate {{max}} bpm ({{source}}).",
+    "zoneSourceDefault": "Typical zones (% of a 190 bpm max) until your own zones load.",
+    "zoneSettingsLink": "Heart rate zone settings",
+    "heartRateSummary": "Heart Rate Summary",
+    "heartRateInsights": "Resting Heart Rate Insights",
+    "insightAthletic": "Your average resting heart rate is in the athletic range (<60 bpm), reflecting strong cardiovascular efficiency.",
+    "insightNormal": "A typical healthy adult resting heart rate ranges from 60 to 100 bpm. Lower rates generally reflect higher cardiovascular fitness."
   },
   "nutritionReport": {
     "title": "Nutrition",
@@ -7644,7 +8227,9 @@
       "caffeineSummary": "Caffeine summary",
       "alcoholChart": "Alcohol chart",
       "alcoholSummary": "Alcohol summary",
-      "substancesWeekly": "Week by week"
+      "substancesWeekly": "Week by week",
+      "restingHrChart": "Resting heart rate chart",
+      "heartRateZones": "Intensity zones"
     },
     "hydrationSections": "Hydration report",
     "measurementsSections": "Measurements report",
@@ -7652,7 +8237,8 @@
     "nutrientsDescription": "Pick the vitamins, minerals and other nutrients the Nutrition report averages under Your nutrients, and drag to set their order. Custom nutrients are included.",
     "nutrientReorderHint": "Changes where this nutrient sits in the report",
     "substancesSections": "Caffeine and alcohol report",
-    "exerciseSections": "Exercise report"
+    "exerciseSections": "Exercise report",
+    "heartRateSections": "Heart rate report"
   },
   "hydrationReport": {
     "title": "Hydration",
@@ -7750,6 +8336,7 @@
     "runSaved": "Run saved",
     "walkSaved": "Walk saved",
     "rideSaved": "Ride saved",
+    "jumpRopeSaved": "Jump Rope saved",
     "avgHeartRate": "Avg heart rate",
     "programDone": "Program complete",
     "programProgress": "Workout {{done}} of {{total}} done",
@@ -7771,6 +8358,7 @@
     "advanceSuggestion": "Two easy workouts in a row. You could skip the next one and move on.",
     "watchRunSaved": "Run from your watch saved",
     "watchWalkSaved": "Walk from your watch saved",
+    "watchJumpRopeSaved": "Jump Rope from your watch saved",
     "tapForSummary": "Tap to see the summary",
     "newRecords_one": "New personal record",
     "newRecords_other": "New personal records",
@@ -7798,28 +8386,31 @@
       "structure": {
         "beginner5k": "Weeks 1 to 4 alternate short runs with walks, starting at 1 minute of running and building to 5-minute runs. Weeks 5 and 6 mix run and walk intervals with one continuous run. Weeks 7 to 9 are continuous runs of 25, 28 and then 30 minutes.",
         "fiveToTenK": "Each week has two steady runs and a long run. The long run grows from 40 to 65 minutes. Every fourth week is lighter so you can recover, and the last week eases off.",
+        "zone2Base": "Each week has a short run, a middle run and a long run, all easy and held to Zone 2. Time in zone grows from 100 to 155 minutes a week, the long run from 40 to 70 minutes, and weeks 4 and 8 are lighter. Weeks 6, 7 and 9 end the short run with four relaxed strides. The middle run of weeks 4, 8 and 10 is a zone check.",
+        "zone2Base4": "Each week has two short runs, a middle run and a long run, all easy and held to Zone 2. Time in zone grows from 130 to 190 minutes a week, the long run from 40 to 70 minutes, and weeks 4 and 8 are lighter. Weeks 6, 7 and 9 end the first run with four relaxed strides. The middle run of weeks 4, 8 and 10 is a zone check.",
         "faster5k": "Each week has a speed session (fast and easy repeats), an easy run and a longer run. In weeks 1 to 3 the longer run is easy; in weeks 4 to 6 it becomes a tempo run of 15, 20 and then 25 minutes.",
         "walkFit": "Weeks 1 to 4 alternate stretches of brisk walking (3 to 8 minutes) with 2 minutes of easy walking. Weeks 5 and 6 use two longer brisk stretches of 12 and 15 minutes. Weeks 7 and 8 are continuous brisk walks of 20 to 30 minutes.",
         "halfMarathon": "Each week has an easy run, a middle run and a long run. The long run builds from 50 to 115 minutes, every fourth week is lighter, and the last week is short before race day.",
         "marathon": "Most weeks have two easy runs, a middle run and a long run. The long run builds from 70 minutes to 2¾ hours, every fourth week is lighter, and the last two weeks taper before race day.",
-        "halfMarathon4": "Each week has two easy runs, a middle run and a long run. The long run builds from 60 to 125 minutes, every fourth week is lighter, and the last two weeks taper before race day. The final week has three shorter runs.",
-        "tenKToHalf4": "Each week has two short runs, a middle run and a long run. The long run builds from 75 to 125 minutes, week 4 is lighter, and the last three weeks taper before race day. The final week has three shorter runs.",
-        "fasterHalf4": "Each week has a speed session, two easy runs and a long run. The long run builds from 80 to 120 minutes, week 4 is lighter, and the last three weeks taper before race day. The final week has three shorter runs.",
-        "beginnerMarathon4": "Each week has two short runs, a middle run and a long run. The long run builds from 80 minutes to 2 hours 40 minutes, every fourth week is lighter, and the last three weeks taper before race day. The final week has three shorter runs.",
+        "halfMarathon4": "Each week has two easy runs, a middle run and a long run. The long run builds from 50 to 115 minutes, every fourth week is lighter, and the last two weeks taper before race day. The final week has three shorter runs.",
+        "tenKToHalf4": "Each week has two short runs, a middle run and a long run. The long run builds from 65 to 115 minutes, weeks 4 and 8 are lighter, and the last two weeks taper before race day. The final week has three shorter runs.",
+        "fasterHalf4": "Each week has a speed session, two easy runs and a long run. The long run builds from 70 to 110 minutes. Tempo runs of 25 and 30 minutes replace the speed session in weeks 6 and 8, week 4 is lighter, and the last three weeks taper before race day. The final week has three shorter runs.",
+        "beginnerMarathon4": "Each week has two short runs, a middle run and a long run. The long run builds from 70 minutes to 2½ hours, every fourth week is lighter, and the last three weeks taper before race day. The final week has three shorter runs.",
         "walk10k": "Each week has two walks of brisk stretches with short easy breaks and one long brisk walk. The long walk grows from 40 to 105 minutes, weeks 4 and 8 are lighter, and the last week ends with the 10K walk.",
         "returnToRunning": "Weeks 1 to 3 alternate short runs with walks, from 1-minute runs to 5-minute runs. Week 4 has three run/walk sessions with runs of 6, 10 and 12 minutes, adding up to 18, 20 and 22 minutes of running.",
         "gentle5k": "Every week repeats one run/walk session three times. The runs grow from 30 seconds to 5 minutes by week 8, then to two 10-minute runs, a 15 and a 10-minute run, and finally continuous runs of 25 and 30 minutes.",
-        "beginner10k": "Weeks 1 to 6 follow the beginner 5K build from short runs and walks to continuous running. Weeks 7 to 12 are three runs a week, with the long run growing from 30 to 60 minutes.",
-        "faster10k": "Each week has a speed session (fast and easy repeats), an easy run and a longer run. In weeks 5 to 7 the longer run is a tempo run of 20, 25 and then 30 minutes, and the last week eases off.",
+        "beginner10k": "Weeks 1 to 6 follow the beginner 5K build from short runs and walks to continuous running. Weeks 7 to 12 are three runs a week. The long run grows from 30 to 60 minutes, and week 10 is lighter.",
+        "faster10k": "Each week has a speed session (fast repeats or hills), an easy run and a longer run. Week 4 is lighter. In weeks 5 to 7 the longer run is a tempo run of 20, 25 and then 30 minutes, and the last week eases off.",
         "tenKToHalf": "Each week has a short run, a middle run and a long run. The long run builds from 65 to 115 minutes, weeks 4 and 8 are lighter, and the last two weeks taper before race day.",
         "fasterHalf": "Each week has a speed session, an easy run and a long run. The long run builds from 70 to 110 minutes, tempo runs of 25 and 30 minutes replace the speed session in weeks 6 and 8, and the last two weeks taper.",
         "beginnerMarathon": "Each week has a short run, a middle run and a long run. The long run builds from 70 minutes to 2½ hours, every fourth week is lighter, and the last three weeks taper before race day.",
-        "advancedMarathon": "Most weeks have two easy runs, a speed or tempo session, a middle run and a long run. The long run builds from 90 minutes to three hours, every fourth week is lighter, and the last two weeks taper before race day."
+        "advancedMarathon": "Most weeks have two easy runs, a speed, hill or tempo session, a middle run and a long run. Most easy runs from week 3 end with strides. From week 9 the long run includes a block at marathon pace, except in the lighter weeks. The long run builds from 90 minutes to three hours, every fourth week is lighter, and the last two weeks taper before race day."
       },
       "rest": {
         "title": "Rest days",
         "beginner": "Do not train on back-to-back days. Three workouts a week with a rest day between them, for example Monday, Wednesday and Saturday, gives your legs time to adapt. On rest days walk, stretch or do something gentle.",
         "fiveToTenK": "Keep a rest day between the two steady runs, and put the long run a day or two after a rest day. Rest or cross-train (cycling, swimming, an easy walk) on the other days.",
+        "zone2Base": "Keep a rest day between runs where you can, and put the long run a day or two after a rest day. Easy runs add up quickly, so if you feel flat, take the day off rather than running harder. Rest or cross-train on the other days.",
         "faster5k": "Give the speed session and the longer run an easy day or a rest day on each side. Never do them back to back. Spend the free days resting or cross-training gently.",
         "returnToRunning": "Leave a day or two between runs, for example Monday, Thursday and Saturday, and keep every run easy and conversational. Rest, walk or cycle gently on the other days. If anything hurts more as you go, drop back to the previous week.",
         "fourRun": "With four runs a week, take at least one full rest day and never run more than two days in a row. Keep the day before the long run easy or free, and rest or cross-train the day after it. Use the other days for rest, walking or low-impact cross-training.",
@@ -7842,6 +8433,11 @@
       "listen": {
         "title": "Listening to your body",
         "body": "Aches that settle after a day are normal; sharp or lasting pain is not, so stop and rest. If a week was too hard, repeat it or ask Sparky to ease the next workouts. Leave a rest day between workouts while you are starting out. This is general guidance, not medical advice: if you are unsure about starting a new exercise plan, check with your doctor first."
+      },
+      "zone2": {
+        "title": "Zone 2 runs",
+        "body": "Zone 2 is easy aerobic running: about 60 to 70 percent of your maximum heart rate. Zone 2 runs are held to a heart rate range, not a pace, because the same pace is harder on a hot day or a tired week. The Record screen shows the range and tells you when you are above or below it. If you have no heart rate reading, use the talk test: you should be able to speak in full sentences. Heart rate drifts up a little on a long run, so the top of the range loosens after 20 minutes. If your breathing is easy, a few beats over is fine; if it feels harder, slow down or walk. The range comes from your own heart rate zone settings; if you have not set a maximum, it is an estimate from your age, which can be off by ten beats or more either way. If it feels too easy or too hard, trust the talk test.",
+        "check": "Weeks 4, 8 and 10 each have a zone check: the middle run. Run it on the same flat, familiar route at the same heart rate or effort, and compare your pace with the last one. If it is faster at the same effort, your base is growing. If you are slower, do not push: sleep, heat and stress show up here."
       },
       "efforts": {
         "title": "Strides, hills, tempo and marathon pace",
@@ -7905,6 +8501,38 @@
       "setUp": "Set up a program"
     },
     "partOfProgram": "Part of your training program",
+    "goals": {
+      "title": "Running goals",
+      "intro": "Set a weekly distance to aim for and a race to count down to.",
+      "set": "Set a goal",
+      "edit": "Edit",
+      "none": "None",
+      "unit": {
+        "km": "km",
+        "miles": "mi"
+      },
+      "weeklyLabel": "Weekly distance ({{unit}})",
+      "weeklyProgress": "{{done}} of {{target}} {{unit}} this week",
+      "weeklyReached": "Weekly goal reached",
+      "weeklyNeeded_one": "{{amount}} {{unit}} today to reach it ({{count}} day left)",
+      "weeklyNeeded_other": "About {{amount}} {{unit}} a day to reach it ({{count}} days left)",
+      "raceNameLabel": "Race name",
+      "raceDefaultName": "Race day",
+      "raceDistanceLabel": "Race distance ({{unit}})",
+      "raceDateLabel": "Race day",
+      "pickDate": "Pick a date",
+      "clearRace": "Remove race",
+      "raceToday": "Race day is today",
+      "raceIn_one": "{{count}} day to go",
+      "raceIn_other": "{{count}} days to go",
+      "racePast_one": "{{count}} day ago",
+      "racePast_other": "{{count}} days ago",
+      "errors": {
+        "distance": "Enter a distance above zero, or leave it empty.",
+        "raceDay": "Pick the race day, or clear the race name and distance.",
+        "save": "Could not save your goals. Please try again."
+      }
+    },
     "openCalendar": "Open the program calendar",
     "openCalendarHint": "Every workout on a month view",
     "monthGrid": {
@@ -8055,7 +8683,57 @@
       "tooShort": "That is less time than we suggest: at least {{min}} weeks for this distance. Pick a later race day.",
       "tooFewDays": "Pick at least two days to run.",
       "create": "Create and start the plan",
-      "open": "Plan a race"
+      "open": "Plan a race",
+      "useTest": "Plan from my latest test",
+      "useTestDescription": "Uses your {{test}} on {{date}} for your level and race-day pace.",
+      "fromTest": "Starting level: {{level}}. Race-day pace about {{pace}}.",
+      "estimateFromTest": "Race day is planned at about {{minutes}} minutes, at the pace your fitness test points to; you can change it in the plan afterwards."
+    },
+    "realign": {
+      "title": "Realign your plan",
+      "titleMore": "You have time to spare",
+      "titleTight": "Your goal date is too tight",
+      "titleForced": "Continue anyway",
+      "intro": "You have missed some time. Realigning rebuilds the rest of your plan so you still finish on your goal date, keeping your long runs, the taper and the final workout.",
+      "introMore": "You have more days before your goal than workouts. Repeating some base weeks gives you a steadier build and still ends on your goal date.",
+      "introForced": "This drops as many workouts as it takes to end on your goal date. It is a lot to skip, so the build will be thinner than planned. The taper and the final workout are still kept.",
+      "what": "week {{week}}, run {{run}} · {{minutes}} min",
+      "before_one": "Now: {{count}} workout left, ending {{date}}.",
+      "before_other": "Now: {{count}} workouts left, ending {{date}}.",
+      "after_one": "After: {{count}} workout, ending {{date}}.",
+      "after_other": "After: {{count}} workouts, ending {{date}}.",
+      "changes": "What changes",
+      "changesMore": "What it adds",
+      "change": {
+        "droppedRepeat": "Drop {{what}}: it repeats another run that week",
+        "droppedShortest": "Drop {{what}}: the shortest run of that week",
+        "merged": "Fold {{what}} into the next week: a lighter week joins it",
+        "added": "Do {{what}} again, as an extra base week",
+        "repeated": "Repeat {{what}}"
+      },
+      "eased_one": "You have been away {{days}} days, so the running in your next {{count}} workout is eased by {{percent}}%.",
+      "eased_other": "You have been away {{days}} days, so the running in your next {{count}} workouts is eased by {{percent}}%.",
+      "kept": "The taper and the final workout stay exactly as they are.",
+      "spare_one": "{{count}} workout day before your goal stays empty: only so much is added at once.",
+      "spare_other": "{{count}} workout days before your goal stay empty: only so much is added at once.",
+      "accept": "Realign plan",
+      "notNow": "Not now",
+      "back": "Back",
+      "done": "Your plan was realigned",
+      "error": "Could not realign your plan",
+      "tight_one": "Only {{count}} workout day is left before your goal date and {{left}} workouts remain.",
+      "tight_other": "Only {{count}} workout days are left before your goal date and {{left}} workouts remain.",
+      "reason": {
+        "noTimeLeft": "There is no workout day left before your goal date.",
+        "taperDoesNotFit": "There is no longer room for the taper and the final workout.",
+        "tooMuchToDrop": "Fitting everything in would mean dropping a lot of your build.",
+        "tooFewWeeks_one": "{{count}} week is too short a build for this race.",
+        "tooFewWeeks_other": "{{count}} weeks is too short a build for this race."
+      },
+      "choose": "Nothing changes until you choose:",
+      "later": "Move my goal to {{date}}",
+      "lower": "Plan a {{distance}} instead",
+      "continue": "Continue anyway"
     }
   },
   "speechVoice": {
@@ -8098,6 +8776,7 @@
     "autoPaused": "Auto-paused",
     "walking": "Walking on your watch",
     "running": "Running on your watch",
+    "jumpingRope": "Jumping rope on your watch",
     "next": "Next: {{step}}",
     "calories": "Calories",
     "kcal": "kcal",
@@ -8120,7 +8799,11 @@
     "spike": "A big jump: ease off",
     "takeRest": "Take a rest day or an easy session.",
     "ready": "You are rested and ready.",
-    "explain": "Adds up how long and how hard your workouts were. Usual is your 4-week average. Bars show the last 4 weeks; green is this week."
+    "explain": "Adds up how long and how hard your workouts were. Usual is your 4-week average. Bars show the last 4 weeks; green is this week.",
+    "readiness": "Readiness {{score}}",
+    "readinessHigh": "ready for a hard session",
+    "readinessModerate": "fine for a normal session",
+    "readinessLow": "go easy today"
   },
   "paceReference": {
     "title": "Your race pace",
@@ -8143,7 +8826,11 @@
     "save": "Save",
     "clear": "Clear",
     "watch": "Also use on my Apple Watch",
-    "watchHint": "Holds the program workout offered on the watch to these ranges. Runs only."
+    "wearOs": "Also use on my Wear OS watch",
+    "watchHint": "Holds the program workout offered on the watch to these ranges. Runs only.",
+    "testNote": "You have a fitness test, so your latest test sets your paces while it is saved. This race time is used again if you delete your tests.",
+    "collapsedTest": "Your fitness test sets your paces",
+    "collapsedEmpty": "Add a recent race time to set your paces"
   },
   "allergens": {
     "trace": "trace: {{name}}",
@@ -8194,8 +8881,163 @@
       "sulphites": "sulphites"
     }
   },
+  "fitnessTest": {
+    "cue": {
+      "complete": "Test complete. Slow down and finish."
+    },
+    "retest": {
+      "dueTitle": "Time for a retest",
+      "overdueTitle": "Your paces may be out of date",
+      "body_one": "Your last fitness test was {{formattedCount}} week ago. A retest updates your training paces and shows how your fitness has changed.",
+      "body_other": "Your last fitness test was {{formattedCount}} weeks ago. A retest updates your training paces and shows how your fitness has changed.",
+      "action": "Retest",
+      "later": "Later",
+      "sameTreadmill": "You tested on a treadmill last time, so the retest starts on a treadmill too.",
+      "sameOutdoor": "You tested outdoors last time, so the retest starts outdoors too."
+    },
+    "badge": {
+      "title": "Fitness test",
+      "line": "{{test}}: {{result}}"
+    },
+    "live": {
+      "complete": "Test complete. Slow down and tap Finish.",
+      "5k": "Run evenly and hard. {{remaining}} {{unit}} to go until 5 km.",
+      "cooper": "Cover as much distance as you can. {{time}} left.",
+      "30minLast20": "Hold this pace: the last 20 minutes set your threshold. {{time}} left.",
+      "30minFirst10": "Settle into a hard, steady effort. The last 20 minutes start in {{time}}.",
+      "5kIndoor": "Run evenly and hard. Tap Finish when your treadmill reaches 5 km. Time {{time}}.",
+      "30minFirst10Indoor": "Settle into a hard, steady effort. At 10:00, in {{time}}, note the distance on your treadmill."
+    },
+    "finished": {
+      "threshold": "Threshold pace {{pace}}, about {{time}} for 5K. Saving sets your training paces.",
+      "incomplete": "The test was stopped before its mark, so it will be saved as an ordinary run and your paces stay as they were.",
+      "adjusted": "Adjusted for {{incline}}% incline: {{raw}} counts as {{adjusted}}.",
+      "needDistance": "Enter the distance your treadmill shows to save the test. Until then it will be saved as an ordinary run.",
+      "badSplit": "The distance at 10:00 must be more than zero and less than the total.",
+      "badTime": "Enter your time to 5 km as minutes and seconds, like 24:30."
+    },
+    "paces": {
+      "tempo": "Tempo {{range}}",
+      "marathon": "Marathon pace {{range}}",
+      "stride": "Strides {{range}}"
+    },
+    "panel": {
+      "emptyTitle": "Find your training paces",
+      "emptyBody": "Run a guided fitness test: a 5K time trial, a 30-minute all-out run or a 12-minute Cooper test. The result sets your training paces and can start a plan.",
+      "take": "Take a fitness test",
+      "title": "Your fitness test",
+      "latest": "{{test}} on {{date}}: {{result}}",
+      "paces": "Threshold pace {{pace}}, about {{time}} for 5K. Your training paces follow this test.",
+      "startProgram": "Start {{program}} from my test",
+      "planRace": "Plan a race",
+      "open": "Tests and paces",
+      "compactHint": "Take a guided fitness test"
+    },
+    "steps": {
+      "warmUp": "Warm up with 10 to 15 minutes of easy running, then come back here and start.",
+      "flat": "Pick a flat, open route and keep your phone with you. Pauses are not counted.",
+      "5k": "Run 5 km as fast as you can hold evenly. Your time to 5 km is the result; keep going to cool down.",
+      "30min": "Run as hard as you can keep steady for 30 minutes. Your threshold pace is the average pace of the last 20 minutes, so do not start too fast.",
+      "cooper": "Cover as much distance as you can in 12 minutes. The distance you reach is the result."
+    },
+    "setup": {
+      "voiceDescription": "Speaks when the test is complete.",
+      "start": "Start the test",
+      "outdoor": "Outdoor (GPS)",
+      "indoor": "Treadmill",
+      "indoorNote": "On a treadmill nothing is tracked by GPS. The test is timed, and when you finish you enter the distance your treadmill shows and its incline. It is saved as an indoor run and marked as a fitness test.",
+      "outdoorNote": "Outdoors the test is recorded with your phone’s GPS, as a run, and marked as a fitness test on the activity.",
+      "sameAsLast": "Suggested because your last test was the same."
+    },
+    "delete": {
+      "title": "Delete this test?",
+      "message": "The activity stays in your diary. Your training paces follow your latest remaining test.",
+      "confirm": "Delete",
+      "error": "Could not delete the test",
+      "action": "Delete this test"
+    },
+    "result": {
+      "missing": "This test is no longer saved.",
+      "when": "{{date}} · {{test}}",
+      "derived": "Threshold pace {{pace}}. As a 5K that is about {{time}}.",
+      "changeTitle": "Since your test on {{date}}",
+      "changeThreshold": "Threshold pace: {{change}}.",
+      "pacesTitle": "Your training paces",
+      "pacesBody": "These now set your pace zones and the suggested ranges for plans and races.",
+      "plan": "Start a plan from this test",
+      "5k": "5K in {{time}}",
+      "cooperMiles": "{{distance}} mi in 12 minutes",
+      "cooperMeters": "{{distance}} m in 12 minutes",
+      "30min": "{{pace}} over the last 20 minutes"
+    },
+    "describe": {
+      "5k": "Run 5 km as fast as you can hold evenly. Your time sets your paces.",
+      "30min": "Run 30 minutes all-out. Your threshold pace is the average pace of the last 20 minutes.",
+      "cooper": "Cover as far as you can in 12 minutes. Your distance is turned into a 5K time."
+    },
+    "intro": "A fitness test is one hard, measured run. It is recorded with your phone’s GPS, and the result sets your training paces for easy runs, tempo, intervals and race plans.",
+    "choose": "Start this test",
+    "history": {
+      "title": "Your tests",
+      "empty": "No tests yet. Your results and the paces they gave will be listed here.",
+      "rowTitle": "{{date}} · {{test}}",
+      "paces": "Threshold {{threshold}} · Easy {{easy}}",
+      "limit": "Showing your latest {{limit}} tests."
+    },
+    "type": {
+      "5k": "5K time trial",
+      "30min": "30-minute all-out run",
+      "cooper": "12-minute Cooper test"
+    },
+    "pacePerUnit": "{{pace}}/{{unit}}",
+    "perMile": "mi",
+    "perKm": "km",
+    "paceRange": "{{fast}}–{{slow}}/{{unit}}",
+    "change": {
+      "same": "no change",
+      "faster": "{{seconds}} s/{{unit}} faster",
+      "slower": "{{seconds}} s/{{unit}} slower"
+    },
+    "indoor": {
+      "timeTitle": "Time to 5 km",
+      "timeHint": "Your clock time is filled in. Change it if your treadmill showed another time at 5 km.",
+      "splitTitle": "Distance at 10:00",
+      "splitHint": "The distance your treadmill showed after 10 minutes. The last 20 minutes set your threshold pace. Leave it empty to assume a steady pace.",
+      "cooperHint": "Enter the distance your treadmill showed after 12 minutes in the Distance box above.",
+      "inclineTitle": "Incline",
+      "inclineHint": "A treadmill at 0% understates outdoor effort; 1% is about the same as running flat outdoors. Enter the incline you ran at.",
+      "inclineInvalid": "Enter an incline from 0 to 15.",
+      "adjustTitle": "Adjust for incline",
+      "adjustDescription": "Counts your effort as it would be on a flat outdoor course, using the running cost of each percent of incline. At 1% nothing changes. Turn off to use the numbers as they are."
+    },
+    "lastSurface": "Your last test was on: {{surface}}. A new test starts on the same, and you can change it before you start.",
+    "surface": {
+      "indoor": "Treadmill",
+      "outdoor": "Outdoor",
+      "inclineAdjusted": "Treadmill, {{incline}}% incline, adjusted",
+      "inclineNotAdjusted": "Treadmill, {{incline}}% incline, not adjusted"
+    }
+  },
   "routes": {
     "addTitle": "Add a route",
+    "watch": {
+      "title": "Run it without your phone",
+      "hint": "Keep a copy on your watch, then start it from Cardio on the watch with the phone left behind.",
+      "start": "Start on watch",
+      "send": "Send to watch",
+      "sendAgain": "Send again",
+      "remove": "Remove from watch",
+      "sent": "Sent to your watch",
+      "pending": "Sent. Waiting for your watch to confirm.",
+      "onWatch": "On your watch",
+      "outdated": "Out of date, send again",
+      "full": "Your watch is full. Remove a route from it, then send this one again.",
+      "sendFailed": "Could not send the route to your watch",
+      "removeFailed": "Could not remove the route from your watch",
+      "startFailed": "Could not start on your watch",
+      "startTitle": "Start on your watch",
+      "startMessage": "Your watch follows the route and buzzes at each turn."
+    },
     "draw": "Draw on a map",
     "importGpx": "Import a GPX file",
     "importFailed": "Could not import that file",
@@ -8221,8 +9063,469 @@
     "saveAsRoute": "Save as route",
     "savedAsRoute": "Saved to Routes",
     "saveAsRouteFailed": "Could not save the route",
+    "generateRoute": "Generate a loop or out-and-back",
+    "generateUnavailable": "Route generation needs a routing provider. Add one in Settings > External Providers on the web app. You can still draw a route on a map.",
+    "generate": "Generate",
+    "regenerate": "Try another direction",
+    "distanceLabel": "Distance",
+    "distanceRange": "Choose between {{min}} and {{max}} {{unit}}.",
+    "startFrom": "Starting at the green pin. Tap the map to move it.",
+    "startUnknown": "Waiting for your location. Or tap the map to choose a start.",
+    "useMyLocation": "My location",
+    "turnCount_one": "{{count}} turn",
+    "turnCount_other": "{{count}} turns",
+    "style": {
+      "title": "Route style",
+      "surface": "Surface",
+      "hills": "Hills",
+      "any": "Any",
+      "trails": "Trails",
+      "roads": "Roads",
+      "flat": "Flatter",
+      "hilly": "Hillier",
+      "avoidSteps": "Avoid steps",
+      "avoidBusyRoads": "Avoid busy roads"
+    },
+    "option": {
+      "title": "Option {{n}}",
+      "flatter": "Flatter",
+      "moreTrail": "More trail",
+      "shorter": "Shorter"
+    },
+    "followRoads": "Follow roads",
+    "followRoadsNeedsProvider": "A routing provider is needed. Add one in Settings > External Providers on the web app.",
+    "followRoadsUnrouted": "Stretches without a road line show straight. Retry, or turn off Follow roads to save them straight.",
+    "editorPointLimit": "A route takes up to {{max}} points. Delete a point to add another.",
+    "followBefore": "Follow roads before",
+    "followAfter": "Follow roads after",
+    "straightBefore": "Straight before",
+    "straightAfter": "Straight after",
+    "deletePoint": "Delete point",
+    "editLine": "Edit route on map",
+    "mapSatellite": "Satellite",
+    "mapStandard": "Map",
+    "mapUnavailable": "Routes cannot be drawn on a map in this build.",
+    "redo": "Redo",
+    "findingRoute": "Finding a route",
+    "turns": "Turns",
+    "showFewerTurns": "Show fewer",
+    "showAllTurns_one": "Show all {{count}} turn",
+    "showAllTurns_other": "Show all {{count}} turns",
+    "activity": {
+      "run": "Run",
+      "walk": "Walk",
+      "ride": "Ride",
+      "hike": "Hike"
+    },
+    "shape": {
+      "loop": "Loop",
+      "outAndBack": "Out and back"
+    },
+    "generateError": {
+      "noRoute": "No route found there. Try another spot or a different distance.",
+      "rateLimited": "Too many route requests. Wait a few minutes and retry.",
+      "engineError": "The routing service had a problem. Try again shortly.",
+      "timeout": "The routing service took too long. Try again.",
+      "notConfigured": "No routing provider is set up. Add one in Settings > External Providers on the web app.",
+      "invalid": "Those points cannot be routed.",
+      "unknown": "Could not generate a route."
+    },
+    "cue": {
+      "depart": "Start",
+      "straight": "Continue straight",
+      "slight_left": "Bear left",
+      "left": "Turn left",
+      "sharp_left": "Sharp left",
+      "slight_right": "Bear right",
+      "right": "Turn right",
+      "sharp_right": "Sharp right",
+      "uturn": "Make a U-turn",
+      "arrive": "Arrive"
+    },
+    "goBack": "Go back",
     "fileTooLarge": "That file is too large",
     "fileTooLargeHint": "A route file can be up to 10 MB.",
+    "followRoadsTooMany": "Following roads takes up to {{max}} points. Undo points or turn Follow roads off to save.",
     "drawLimit": "That is as many points as a route can have here. Undo some or save this one."
+  },
+  "heartRateZones": {
+    "title": "Heart Rate Zones",
+    "description": "Your zones decide how time in each heart rate zone is counted for new workouts, how training load is judged and what ranges are suggested for runs.",
+    "yourZones": "Your zones",
+    "maxHrSummary": "Max heart rate {{max}} bpm. {{source}}.",
+    "zoneRange": "{{lower}}–{{upper}} bpm",
+    "zoneRangeOpen": "{{lower}}+ bpm",
+    "tier": {
+      "light": "Light",
+      "moderate": "Moderate",
+      "vigorous": "Vigorous",
+      "peak": "Peak"
+    },
+    "display": {
+      "title": "Show",
+      "five": "5 zones",
+      "four": "4 tiers",
+      "hint": "Four tiers are Light (zones 1 and 2), Moderate (zone 3), Vigorous (zone 4) and Peak (zone 5). Only what you see changes: zones are still worked out and stored as five."
+    },
+    "fellBack": "Your chosen method needs more information, so zones are shown as % of max heart rate.",
+    "maxHr": "Max heart rate (bpm)",
+    "maxHrHint": "Leave empty to work it out from your date of birth.",
+    "restingHr": "Resting heart rate (bpm)",
+    "customFloors": "Where each zone starts (bpm)",
+    "floorLabel": "Zone {{zone}} starts at (bpm)",
+    "historyNote": "Changes apply to workouts you record or sync from now on. Time in zone already stored for past workouts is not recalculated.",
+    "reset": "Reset to default",
+    "saved": "Heart rate zones saved",
+    "loadFailed": "Could not load your zones. Tap to retry.",
+    "method": {
+      "title": "How zones are worked out",
+      "percentMax": "% of max heart rate",
+      "heartRateReserve": "Heart rate reserve",
+      "custom": "Custom zones",
+      "percentMaxHint": "Zones start at 50, 60, 70, 80 and 90% of your max heart rate.",
+      "heartRateReserveHint": "Zones are 50, 60, 70, 80 and 90% of the gap between your resting and max heart rate (Karvonen). Needs a resting heart rate.",
+      "customHint": "Set the bpm where each zone starts. Time below zone 1 is not counted."
+    },
+    "source": {
+      "user": "You set it",
+      "age": "From your date of birth",
+      "observed": "From the highest heart rate in the workout",
+      "fallback": "A typical value; add your date of birth or set your own"
+    },
+    "chart": {
+      "method": "Zones: {{method}}. Changing your zone settings does not change past workouts.",
+      "mixed": "Zones were worked out with more than one method. Changing your zone settings does not change past workouts.",
+      "device": "Zones set by your watch or device"
+    },
+    "appleImport": "Use Apple Health zones",
+    "appleReading": "Reading Apple Health…",
+    "appleImported": "Apple Health zones filled in. Save to keep them.",
+    "appleHint": "Fills in the zones from Apple Health as custom zones. Your max heart rate stays as it is, and an empty resting heart rate is filled in too. Save to keep them.",
+    "appleFailed": "Apple Health didn't share five heart rate zones. Check that Health access is allowed, then try again.",
+    "errors": {
+      "maxRange": "Max heart rate must be between {{min}} and {{max}} bpm.",
+      "restingRange": "Resting heart rate must be between {{min}} and {{max}} bpm.",
+      "needsResting": "Heart rate reserve zones need a resting heart rate.",
+      "customFloors": "Each zone must start above the one before it, from 30 to 250 bpm.",
+      "saveFailed": "Could not save. Check the values and try again."
+    }
+  },
+  "compareReport": {
+    "groups": {
+      "feelings": "How you felt",
+      "sleep": "Sleep",
+      "meditation": "Meditation",
+      "food": "Food",
+      "training": "Training",
+      "body": "Body"
+    },
+    "metrics": {
+      "mood": "Mood",
+      "energy": "Energy",
+      "focus": "Focus",
+      "timeAsleep": "Time asleep",
+      "sleepScore": "Sleep score",
+      "overnightHrv": "Overnight HRV",
+      "restingHeartRate": "Resting heart rate",
+      "bedtime": "Bedtime",
+      "bedtimeConsistency": "Bedtime consistency",
+      "meditationMinutes": "Meditation minutes",
+      "meditationSessions7d": "Meditation sessions (7 days)",
+      "meditated": "Meditated",
+      "calories": "Calories",
+      "protein": "Protein",
+      "carbs": "Carbs",
+      "fat": "Fat",
+      "caffeine": "Caffeine",
+      "alcohol": "Alcohol",
+      "workoutMinutes": "Workout minutes",
+      "cardioMinutes": "Cardio minutes",
+      "strengthVolume": "Strength volume",
+      "trainingLoad": "Training load",
+      "weightTrend": "Weight trend",
+      "steps": "Steps"
+    },
+    "phrase": {
+      "lastNights": "last night's {{metric}}",
+      "daysYou": "the number of days you {{verb}}",
+      "your": "your {{metric}}",
+      "yourWhen": "your {{metric}} {{timing}}"
+    },
+    "timing": {
+      "sameDay": "the same day",
+      "thatDay": "that day",
+      "nextDay": "the next day",
+      "dayAfterYouWoke": "the day after you woke",
+      "thatNight": "that night",
+      "dayBefore": "the day before",
+      "nightBefore": "the night before",
+      "twoNightsBefore": "two nights before",
+      "sameNight": "the same night",
+      "nextNight": "the next night",
+      "sameWeek": "the same week",
+      "nextWeek": "the next week"
+    },
+    "yesNo": {
+      "onDays": "On days you {{yes}}",
+      "dayAfter": "The day after you {{yes}}",
+      "dayBefore": "The day before you {{yes}}",
+      "nightAfter": "The night after you {{yes}}",
+      "nightBefore": "The night before you {{yes}}",
+      "twoNightsBefore": "Two nights before you {{yes}}"
+    },
+    "verdict": {
+      "question": "Does {{a}} go with {{b}} {{timing}}?",
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days",
+      "weeks_one": "{{count}} week",
+      "weeks_other": "{{count}} weeks",
+      "strength": {
+        "weak": "weak",
+        "moderate": "moderate",
+        "strong": "strong"
+      },
+      "linkedHeadline": "Yes, a {{strength}} link",
+      "linkedPositive": "When {{a}} was {{aDirection}}, {{b}} {{timing}} was {{bDirection}} too.",
+      "linkedNegative": "When {{a}} was {{aDirection}}, {{b}} {{timing}} was {{bDirection}}.",
+      "noLinkHeadline": "No clear link",
+      "noLinkDetail": "Over these {{n}}, they didn't move together more than chance would explain.",
+      "longerSpan": "A longer span makes a weak link easier to see.",
+      "differenceHeadline": "Yes, a difference",
+      "differenceHigher": "{{when}}, {{outcome}} was higher than on {{others}}.",
+      "differenceLower": "{{when}}, {{outcome}} was lower than on {{others}}.",
+      "differenceLater": "{{when}}, {{outcome}} was later than on {{others}}.",
+      "differenceEarlier": "{{when}}, {{outcome}} was earlier than on {{others}}.",
+      "noDifferenceHeadline": "No clear difference",
+      "noDifferenceDetail": "Over these {{n}}, your {{outcome}} wasn't different enough between the two kinds of day to rule out chance.",
+      "tooFewHeadline": "Not enough days yet",
+      "tooFewHeadlineWeeks": "Not enough weeks yet",
+      "tooFewDetail": "You have {{n}}; an answer needs {{needed}}.",
+      "logDays_one": "Log {{weaker}} on {{count}} more day, or pick a longer span.",
+      "logDays_other": "Log {{weaker}} on {{count}} more days, or pick a longer span.",
+      "logWeeks_one": "Log {{weaker}} for {{count}} more week, or pick a longer span.",
+      "logWeeks_other": "Log {{weaker}} for {{count}} more weeks, or pick a longer span.",
+      "needsHistory": "Each day is compared with your previous two weeks, so a day needs a week of history first.",
+      "fewYesHeadline": "Not enough days when you {{yes}} yet",
+      "fewYesDetail": "You have {{n}}; an answer needs {{needed}}. Try a longer span.",
+      "fewNoHeadline": "Not enough days without {{yesNoun}} yet",
+      "fewNoDetail": "You {{yes}} on almost every day here, so there's nothing to compare against. Try a longer span.",
+      "noVariationHeadline": "Nothing to compare yet",
+      "noVariationDetail": "{{metric}} was the same every time over this span, so there's nothing to compare it with.",
+      "noVariationGeneric": "One of these didn't change over this span.",
+      "longerSpanDifference": "A longer span makes a small difference easier to see."
+    },
+    "since": {
+      "question": "Since I started {{habit}} regularly, has {{outcome}} changed?",
+      "changedHeadline": "Yes, it changed",
+      "changedDetail": "Since {{start}}, your {{outcome}} averaged {{since}} vs {{before}} before ({{diff}}).",
+      "changedDetailLastYear": "Over the last year, your {{outcome}} averaged {{since}} vs {{before}} in the year before you started ({{diff}}).",
+      "noChangeHeadline": "No clear change",
+      "noChangeDetail": "Since {{start}}, your {{outcome}} averaged {{since}} vs {{before}} before, not different enough to rule out chance.",
+      "noChangeDetailLastYear": "Over the last year, your {{outcome}} averaged {{since}} vs {{before}} in the year before you started, not different enough to rule out chance.",
+      "minutesLater": "{{minutes}} min later",
+      "minutesEarlier": "{{minutes}} min earlier",
+      "fewBeforeHeadline": "Not enough before {{start}} yet",
+      "fewSinceHeadline": "Not enough since {{start}} yet",
+      "fewValuesDetail": "You have {{n}} with {{outcome}}; an answer needs {{needed}}.",
+      "shortSinceDetail": "It's been {{days}} since then; an answer needs {{needed}}.",
+      "shortBeforeDetail": "Your {{outcome}} records begin {{days}} before then; an answer needs {{needed}}.",
+      "noStartHeadline": "Pick the day you started",
+      "noStartDetail": "Then this compares your {{outcome}} before and since that day.",
+      "typicalRange": "Usually between {{low}} and {{high}} (before: {{beforeLow}}–{{beforeHigh}}).",
+      "aboveLine": "At or above {{line}} on {{since}} of days (before: {{before}}).",
+      "regularity_one": "You kept it up in {{weeksKept}} of {{count}} week since.",
+      "regularity_other": "You kept it up in {{weeksKept}} of {{count}} weeks since.",
+      "alreadyRising": "⚠ {{metric}} was already rising before you started.",
+      "alreadyFalling": "⚠ {{metric}} was already falling before you started.",
+      "alreadyLater": "⚠ {{metric}} was already getting later before you started.",
+      "alreadyEarlier": "⚠ {{metric}} was already getting earlier before you started.",
+      "caveat": "A lot can change over months; this shows a change since you started, not that {{habit}} caused it.",
+      "startLabel": "Since",
+      "startTitle": "Start date",
+      "suggested": "(suggested)",
+      "pickDate": "Pick a date",
+      "lineLabel": "Line: {{metric}} ≥",
+      "lineTitle": "{{metric}} at or above",
+      "chartBefore": "Before",
+      "chartSince": "Since",
+      "chartLine": "Line {{line}}",
+      "chartLabel": "{{metric}} over time, before and since {{start}}"
+    },
+    "stats": {
+      "p": "p {{p}}",
+      "pTiny": "p < 0.001",
+      "correlation": "r {{r}} · 95% range {{low}} to {{high}} · {{p}} · {{n}}",
+      "difference": "difference {{diff}} · 95% range {{low}} to {{high}} · {{p}} · {{n}}",
+      "differenceMinutes": "difference {{diff}} min · 95% range {{low}} to {{high}} min · {{p}} · {{n}}"
+    },
+    "metricNouns": {
+      "meditated": "meditating"
+    },
+    "direction": {
+      "higher": "higher than usual",
+      "lower": "lower than usual",
+      "later": "later than usual",
+      "earlier": "earlier than usual"
+    },
+    "logged": {
+      "weight": "weight",
+      "sleep": "sleep",
+      "workouts": "workouts",
+      "meditation": "meditation"
+    },
+    "start": {
+      "suggestions": "Try one of these",
+      "recent": "Your recent questions"
+    },
+    "span": {
+      "30d": "30 days",
+      "60d": "60 days",
+      "90d": "90 days",
+      "6m": "6 months",
+      "1y": "1 year"
+    },
+    "sentence": {
+      "something": "something",
+      "sometime": "some time",
+      "does": "Does",
+      "goWith": "go with",
+      "questionMark": "?",
+      "firstTitle": "First thing",
+      "secondTitle": "Second thing",
+      "timingTitle": "When",
+      "dayByDay": "Day by day",
+      "weekByWeek": "Week by week",
+      "sameDay": "The same day",
+      "nextDay": "The next day",
+      "dayBefore": "The day before",
+      "sameWeek": "The same week",
+      "nextWeek": "The next week",
+      "since": "Since",
+      "iStarted": "I started",
+      "regularlyHas": "regularly, has",
+      "changed": "changed?",
+      "sinceHabit": "Since a habit started",
+      "beforeVsSince": "Before vs. since"
+    },
+    "bars": {
+      "yesDays": "Days you {{yes}}",
+      "noDays": "Days without {{yesNoun}}",
+      "otherDays": "Other days",
+      "otherNights": "Other nights",
+      "meanAndDays_one": "{{mean}} · {{count}} day",
+      "meanAndDays_other": "{{mean}} · {{count}} days",
+      "meanAndNights_one": "{{mean}} · {{count}} night",
+      "meanAndNights_other": "{{mean}} · {{count}} nights"
+    },
+    "checks": {
+      "ownNormal": "✓ Compared with your own normal",
+      "notProof": "A link, not proof of cause",
+      "seemsFirst": "{{metric}} seems to come first",
+      "comesFirst": "{{metric}} comes first",
+      "otherWay": "The link is stronger the other way round",
+      "cantTell": "Can't tell which comes first",
+      "weekendHolds": "Still holds after accounting for weekends",
+      "weekendMay": "This may be a weekday-versus-weekend pattern"
+    },
+    "chart": {
+      "eachDay": "Each day as a dot",
+      "eachWeek": "Each week as a dot",
+      "overTime": "Over time",
+      "axis": "{{metric}} vs. your usual",
+      "axisYesNo": "{{metric}} (yes or no)",
+      "axisDaysYou": "Days you {{verb}} vs. your usual",
+      "range": "{{metric}} {{min}}–{{max}}",
+      "noDots": "No days with both yet",
+      "noDotsWeeks": "No weeks with both yet",
+      "noOverTime": "Nothing logged in this range",
+      "dotsLabel": "Each dot pairs {{a}} with {{b}}",
+      "overTimeLabel": "{{a}} and {{b}} over time, each scaled to its own range"
+    },
+    "screen": {
+      "tooOld": "Compare needs a newer SparkyFitness server. Update your server to use it.",
+      "loadFailed": "Couldn't load this comparison.",
+      "retry": "Retry"
+    },
+    "title": "Compare",
+    "answer": {
+      "throughYesterday": "Through yesterday",
+      "throughLastWeek": "Through last week",
+      "throughDate": "Through {{date}}"
+    },
+    "howSure": {
+      "differenceHigher": "{{diff}} higher than on {{others}} (each measured against your own normal)",
+      "differenceLower": "{{diff}} lower than on {{others}} (each measured against your own normal)",
+      "differenceLater": "{{diff}} min later than on {{others}} (each measured against your own normal)",
+      "differenceEarlier": "{{diff}} min earlier than on {{others}} (each measured against your own normal)",
+      "differenceSame": "About the same as on {{others}} (each measured against your own normal)"
+    }
+  },
+  "workoutEffort": {
+    "value": "{{rating}}/10"
+  },
+  "plates": {
+    "title": "Plates & bars",
+    "calculatorTitle": "Plate calculator",
+    "dismiss": "Close plate calculator",
+    "enterWeight": "Enter a weight for the set first.",
+    "collarsWeight": "collars {{weight}} {{unit}}",
+    "loadSummary": "{{perSide}} {{unit}} per side · {{total}} {{unit}} total",
+    "cannotLoad": "Your plates cannot make exactly {{weight}} {{unit}}.",
+    "nearestBelow": "Nearest below: {{weight}} {{unit}}",
+    "nearestAbove": "Nearest above: {{weight}} {{unit}}",
+    "shortBy": "{{diff}} {{unit}} short of the target",
+    "overBy": "{{diff}} {{unit}} over the target",
+    "nothingBelow": "The target is lighter than the empty bar, collars included.",
+    "nothingAbove": "The target is heavier than your plates can load.",
+    "tooLarge": "This inventory is too large to search. Remove some plates or pairs.",
+    "barKind": {
+      "barbell": "Barbell",
+      "womens": "Women's bar",
+      "ez": "EZ bar",
+      "trap": "Trap bar",
+      "other": "Other bar"
+    },
+    "startFrom": "Start from",
+    "useKgPlates": "Use kg plates",
+    "useLbPlates": "Use lb plates",
+    "presetHint": "Starts from the standard set; you can edit it below.",
+    "platesHeading": "Plates ({{unit}})",
+    "barsHeading": "Bars ({{unit}})",
+    "plateWeight": "Weight",
+    "fewerPairs": "Fewer pairs of {{weight}}",
+    "morePairs": "More pairs of {{weight}}",
+    "pairsCount_one": "{{count}} pair",
+    "pairsCount_other": "{{count}} pairs",
+    "pairsShort_one": "{{count}} pr",
+    "pairsShort_other": "{{count}} pr",
+    "addPlate": "Add plate",
+    "removePlate": "Remove plate {{weight}}",
+    "barName": "Name",
+    "barWeightLabel": "Bar weight",
+    "addBar": "Add bar",
+    "removeBar": "Remove bar {{name}}",
+    "collarsCount": "Collars count",
+    "collarsHint": "Add the weight of the collars to each load.",
+    "collarWeight": "Weight of one collar ({{unit}})",
+    "invalid": "Check the weights and pairs: weights have at most 3 decimals, each plate size is listed once, and pairs are whole numbers up to 20.",
+    "saveFailed": "Failed to save plates and bars",
+    "resetTitle": "Reset to standard?",
+    "resetDescription": "Your saved plates and bars are removed and the standard set is used again.",
+    "resetToStandard": "Reset to standard",
+    "resetFailed": "Failed to reset plates and bars",
+    "loadFailed": "Could not load your plates and bars.",
+    "graphicLabel": "{{perSide}} {{unit}} per side on a {{bar}} {{unit}} bar",
+    "graphicNotExact": "Your plates cannot make exactly {{weight}} {{unit}}.",
+    "graphicNearest": "Plates: nearest {{weight}} {{unit}}",
+    "graphicBelowBar": "Plates: lighter than the bar",
+    "targetWeight": "Target weight: {{weight}} {{unit}}",
+    "availableEquipment": "Available equipment",
+    "manage": "Manage",
+    "platesUnit": "Plates ({{unit}})",
+    "barUnit": "Bar ({{unit}})",
+    "calculatorShort": "Calculator",
+    "barCard": "Bar {{number}}: {{name}}",
+    "removeBarShort": "Remove",
+    "barWeightUnit": "Weight ({{unit}})"
   }
 }
