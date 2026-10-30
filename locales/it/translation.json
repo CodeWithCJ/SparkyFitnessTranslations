@@ -2583,7 +2583,6 @@
         "protein": "Proteine: {{value}} g",
         "carbs": "Carboidrati: {{value}} g",
         "yourFoods": "I tuoi alimenti",
-        "fallback": "",
         "sourceFailed": "Non è stato possibile raggiungere questa risorsa."
     },
     "auth": {
@@ -2617,8 +2616,7 @@
         "magicLinkRequestDialog": {
             "email": "Email",
             "enterYourEmail": "Inserisci la tua email",
-            "sending": "Invio in corso...",
-            "sendMagicLink": ""
+            "sending": "Invio in corso..."
         },
         "mfaChallenge": {
             "aVerificationCodeHasBeen": "Il codice di verifica è stato inviato alla tua email.",
