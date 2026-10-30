@@ -2498,6 +2498,11 @@
         },
         "mealRelation": {
             "awayFromMeals": "Lontano dai pasti"
+        },
+        "cabinet": {
+            "nutrientCount_one": "{{count}} nutriente",
+            "nutrientCount_many": "{{count}} nutrienti",
+            "nutrientCount_other": "{{count}} nutrienti"
         }
     },
     "openFoodFactsContribution": {
@@ -2570,5 +2575,74 @@
         "distance": "Distanza",
         "calories": "Calorie",
         "reps": "Ripetizioni"
+    },
+    "barcodeLookup": {
+        "retry": "Riprova",
+        "notFound": "Nessun prodotto trovato. Controlla altre fonti o aggiungi un alimento manualmente.",
+        "fat": "Grassi: {{value}} g",
+        "protein": "Proteine: {{value}} g",
+        "carbs": "Carboidrati: {{value}} g",
+        "yourFoods": "I tuoi alimenti",
+        "fallback": "",
+        "sourceFailed": "Non è stato possibile raggiungere questa risorsa."
+    },
+    "auth": {
+        "warning": "Attenzione",
+        "resetPassword": {
+            "setYourNewPassword": "Imposta la tua nuova password.",
+            "newPassword": "Nuova Password",
+            "enterNewPassword": "Inserisci nuova Password",
+            "confirmNewPassword": "Conferma nuova Password",
+            "confirmNewPassword2": "Conferma nuova Password"
+        },
+        "password": "Password",
+        "demoLoginSuccess": "Benvenuto su SparkyFitness Demo!",
+        "createAPassword": "Crea una Password",
+        "creatingAccount": "Creazione account...",
+        "forgotPasswordPage": {
+            "email": "Email",
+            "enterYourEmail": "Inserisci la tua email",
+            "sending": "Invio..."
+        },
+        "email": "Email",
+        "enterYourEmail": "Inserisci la tua email",
+        "enterYourPassword": "Inserisci la tua password",
+        "forgotPassword": "Password dimenticata?",
+        "signingIn": "Accesso in corso...",
+        "orSignInWith": "Oppure accedi con",
+        "signInWithPasskey": "Accedi con Passkey",
+        "signInWithOIDC": "Accedi con OIDC",
+        "fullName": "Nome e Cognome",
+        "enterYourFullName": "Inserisci il tuo Nome e Cognome",
+        "magicLinkRequestDialog": {
+            "email": "Email",
+            "enterYourEmail": "Inserisci la tua email",
+            "sending": "Invio in corso...",
+            "sendMagicLink": ""
+        },
+        "mfaChallenge": {
+            "aVerificationCodeHasBeen": "Il codice di verifica è stato inviato alla tua email.",
+            "failedToSendCode": "Invio del codice fallito."
+        },
+        "viewLicense": "Visualizza Licenza",
+        "passkeyErrorTitle": "Errore Passkey",
+        "passkeyGenericError": "Accesso tramite Passkey non riuscito. Assicurati che il tuo dispositivo la supporti.",
+        "passkeySecureContextError": "L'autenticazione tramite passkey richiede un contesto sicuro (HTTPS o localhost). Si prega di accedere utilizzando e-mail e password.",
+        "passkeySuccess": "Accesso effettuato con Passkey!",
+        "passwordResetError": "Impossibile reimpostare la password. Il link potrebbe essere scaduto.",
+        "passwordResetSuccess": "La password è stata reimpostata correttamente. Ora puoi effettuare l'accesso.",
+        "registerError": "Si è verificato un errore imprevisto durante la registrazione.",
+        "registerSuccess": "Account creato correttamente!",
+        "resetEmailError": "Impossibile richiedere la reimpostazione della password.",
+        "resetEmailSent": "Se esiste un account, è stata inviata un'email per la reimpostazione della password.",
+        "signedOut": "Disconnessione effettuata con successo",
+        "signOutFailed": "Disconnessione fallita",
+        "signOut": "Disconnetti",
+        "almostThere": "Ci siamo quasi!",
+        "builtForFamiliesPoweredBy": "Pensato per le famiglie. Basato sull'intelligenza artificiale. Monitorate insieme alimentazione, attività fisica, idratazione e salute.",
+        "authenticationFailed": "Autenticazione Fallita",
+        "signIn": "Accedi",
+        "signUp": "Registrati",
+        "registrationIsCurrentlyDisabled": "La registrazione è attualmente disabilitata."
     }
 }
