@@ -2866,6 +2866,10 @@
                 "right_hip": "Cadera derecha",
                 "unknown": "Desconocido"
             }
+        },
+        "calendar": {
+            "allTaken": "Todas las dosis tomadas",
+            "sideEffect": "Síntoma de efecto secundario"
         }
     },
     "pregnancy": {
