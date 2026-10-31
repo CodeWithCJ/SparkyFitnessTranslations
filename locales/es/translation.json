@@ -9343,5 +9343,12 @@
             "selected": "Seleccionado",
             "verified": "Verificado"
         }
+    },
+    "barcodeLookup": {
+        "protein": "Proteína: {{value}} g",
+        "carbs": "Carbohidratos: {{value}} g",
+        "fat": "Grasa: {{value}} g",
+        "sourceFailed": "La fuente es inaccesible.",
+        "retry": "Reintentar"
     }
 }
