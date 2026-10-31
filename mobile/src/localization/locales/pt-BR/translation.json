@@ -828,6 +828,10 @@
                 "right_hip": "Quadril direito",
                 "unknown": "Desconhecido"
             }
+        },
+        "calendar": {
+            "allTaken": "Todas as doses tomadas",
+            "sideEffect": "Sintoma de efeito colateral"
         }
     },
     "mealBuilder": {
