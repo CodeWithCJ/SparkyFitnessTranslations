@@ -37,4 +37,6 @@
     <string name="widget_water_status_failed">Не удалось записать данные об употреблении воды</string>
     <string name="widget_water_status_nothing_to_remove">Здесь нет данных о напитках, которые можно было бы удалить</string>
     <string name="widget_preview_water_amount">1250 / 2000 мл</string>
+    <string name="widget_goal">Цель</string>
+    <string name="widget_burned">Сожжено</string>
 </resources>
