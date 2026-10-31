@@ -247,8 +247,8 @@
             },
             "yazio": {
                 "unofficialApiTitle": "⚠️ Inoffizielle API – Nutzung auf eigenes Risiko",
-                "unofficialApiWarning": "Die YAZIO-Integration verwendet eine inoffizielle, undokumentierte API, die von YAZIO weder bereitgestellt noch unterstützt wird. Bei der Nutzung besteht das Risiko, dass dein YAZIO-Konto gesperrt wird. Außerdem kann die API jederzeit und ohne Vorankündigung ausfallen, wenn YAZIO sein Backend ändert.",
-                "moreInfoLink": "Weitere Informationen und Client-Zugangsdaten findest du unter",
+                "unofficialApiWarning": "Die YAZIO-Integration verwendet eine <1>inoffizielle, undokumentierte API</1>, die von YAZIO weder bereitgestellt noch unterstützt wird. Bei der Nutzung <3>riskierst du eine Sperrung deines YAZIO-Kontos</3>. Außerdem kann die API <5>jederzeit ohne Vorankündigung ausfallen</5>, wenn YAZIO sein Backend ändert.",
+                "moreInfoLink": "Weitere Informationen und Client-Zugangsdaten findest du unter <1>saganos/yazio_public_api</1>.",
                 "emailUsernameLabel": "YAZIO E-Mail/Benutzername",
                 "emailUsernamePlaceholder": "YAZIO-E-Mail oder Benutzernamen eingeben",
                 "passwordLabel": "YAZIO Passwort",
@@ -732,9 +732,9 @@
             "remainingPercentage": "Tagesziel – (Gegessen – {{pct}} % des Trainingsverbrauchs)",
             "remainingTdee": "Prognostizierter TDEE × Zielmodus − Gegessen",
             "remainingTitle": "Verbleibende Kalorien",
-            "tdeeFootnote": "* Aktiviere „Gesamtkalorien“ in der Health-Connect-Synchronisierung. Die Prognose gleicht sich um Mitternacht an den Gesamtwert des Geräts an; ersatzweise werden Grundumsatz plus aktive Kalorien verwendet.",
+            "tdeeFootnote": "* Synchronisiere die Gesamtkalorien aus Health Connect, Garmin oder Polar. Die Prognose gleicht sich um Mitternacht an den Gesamtwert des Geräts an; ersatzweise werden Grundumsatz plus aktive Kalorien verwendet.",
             "title": "So werden deine Kalorien berechnet",
-            "burnedTdee": "Health Connect Gesamtkalorien (Grundumsatz + aktive Kalorien als Fallback)",
+            "burnedTdee": "Gesamtkalorien des Geräts (Grundumsatz + aktive Kalorien als Fallback)",
             "remainingActivitySeparated": "Tagesziel - Gegessen + Aktivität (Schritte und Trainings, ohne BMR)",
             "activitySeparatedFootnote": "Nach dem Speichern lässt die adaptive Grundlinie vergangene Aktivität außen vor; die heutigen Schritte und Trainings werden einmal ohne BMR angerechnet. Vom Server berechnete Vorschauwerte nutzen deine gespeicherten Einstellungen.",
             "remainingTdeeWeekly": "Prognostizierter TDEE + wöchentliche Anpassung − Gegessen"
@@ -758,7 +758,7 @@
             "percentageGoalDescription": "Lass dir nur einen festgelegten Prozentsatz deiner Trainingskalorien gutschreiben. Beispielsweise schafft 50 % einen Sicherheitspuffer, um übermäßiges Essen aufgrund eines überschätzten Kalorienverbrauchs zu vermeiden.",
             "percentageLabel": "Anrechnung in Prozent:",
             "tdeeGoal": "Geräteprojektion",
-            "tdeeGoalDescription": "Verwendet die Gesamtkalorien aus Health Connect, sofern verfügbar, rechnet den aktuellen Verbrauch bis Mitternacht hoch und wendet den Zielmodus direkt auf diesen TDEE an. Ist kein Gesamtwert des Geräts verfügbar, werden Grundumsatz plus aktive Kalorien verwendet.",
+            "tdeeGoalDescription": "Verwendet die Gesamtkalorien des Geräts (Health Connect, Garmin oder Polar), sofern verfügbar, rechnet den aktuellen Verbrauch bis Mitternacht hoch und wendet den Zielmodus direkt auf diesen TDEE an. Ist kein Gesamtwert des Geräts verfügbar, werden Grundumsatz plus aktive Kalorien verwendet.",
             "title": "Tägliche Kalorienzielanpassung",
             "tdeeActivityHint": "Das Aktivitätsniveau wird nur dann vom Fallback-Mechanismus „BMR + aktive Kalorien“ verwendet, wenn keine Gesamtwerte des Geräts verfügbar sind.",
             "adaptiveEarnBack": "Adaptive Ziele enthalten die Aktivität bereits. Verbleibende Kalorien sind Ziel minus Gegessen. Die Anrechnung von Trainingskalorien gilt nur für manuelle Ziele."
@@ -846,7 +846,7 @@
             "projectedWeeklyLoss": "Prognostizierte wöchentliche Abnahme:",
             "raisedToFloorTitle": "Ziel auf dein Sicherheitsminimum angehoben",
             "awaitingCalibrationTitle": "Warten auf adaptive TDEE-Kalibrierung",
-            "deviceProjectionHint": "Im Modus Geräteprojektion wird dieser Prozentsatz direkt auf den projizierten TDEE des Geräts angewendet.",
+            "deviceProjectionHint": "Im Modus Geräteprojektion wird diese Anpassung direkt auf den projizierten TDEE des Geräts angewendet.",
             "safetyFloorCustom": "Benutzerdefiniertes Minimum",
             "safetyFloorCustomHint": "Ersetzt den Standardwert durch den von dir gewählten Mindestwert. Die Gesundheitsempfehlungen bleiben sichtbar.",
             "safetyFloorDisabled": "Deaktiviert",
@@ -897,7 +897,7 @@
             "dynamicGoalYourCalorieGoal": "<span>Dynamisches Ziel:</span> Dein Kalorienziel wird basierend auf deinem täglichen Aktivitätsniveau dynamisch angepasst (z. B. Training, Schritte). Ideal für aktive Personen oder Personen, deren Aktivitätsniveau täglich schwankt.",
             "fixedGoalYourCalorieGoal": "<span>Festes Ziel:</span> Dein Kalorienziel bleibt unabhängig von deiner täglichen Aktivität gleich. Geeignet für Personen mit konstantem Aktivitätsniveau oder für alle, die ein stabiles Ziel bevorzugen.",
             "percentageEarnBackOnlyEarn": "<span>Prozentuale Anrechnung:</span> Lass dir nur einen festgelegten Prozentsatz deiner Trainingskalorien gutschreiben. Beispielsweise schafft 50 % einen Sicherheitspuffer, um übermäßiges Essen aufgrund eines überschätzten Kalorienverbrauchs zu vermeiden.",
-            "deviceProjectionUsesHealthConnect": "<span>Geräteprojektion:</span> Verwendet die Gesamtkalorien aus Health Connect, sofern verfügbar, rechnet den aktuellen Verbrauch bis Mitternacht hoch und wendet den Zielmodus direkt auf diesen TDEE an. Ist kein Gesamtwert des Geräts verfügbar, werden Grundumsatz plus aktive Kalorien verwendet.",
+            "deviceProjectionUsesHealthConnect": "<span>Geräteprojektion:</span> Verwendet die Gesamtkalorien des Geräts (Health Connect, Garmin oder Polar), sofern verfügbar, rechnet den aktuellen Verbrauch bis Mitternacht hoch und wendet den Zielmodus direkt auf diesen TDEE an. Ist kein Gesamtwert des Geräts verfügbar, werden Grundumsatz plus aktive Kalorien verwendet.",
             "inAdaptiveModeThisIs": "💡 Im adaptiven Modus dient diese Einstellung als Ausweichwert, bis genügend Erfassungsdaten vorliegen – und bestimmt danach weiterhin die Plausibilitätsgrenzen. Dein gemessener TDEE wird auf ±500 kcal um BMR × diesen Faktor begrenzt. Ein zu niedrig eingestelltes Niveau kann einen tatsächlich höheren Verbrauch daher nach unten begrenzen.",
             "bodyRecomposition10": "Körperrekomposition (-10 %)",
             "cut15": "Diät (-15 %)",
@@ -1179,7 +1179,7 @@
             "openFoodFactsIsA2": "Open Food Facts ist eine von der Community gepflegte Datenbank mit Unterstützung für Lokalisierung. Sparky fragt Produkte automatisch in der Sprache ab, die du in SparkyFitness eingestellt hast. Weitere Informationen findest du im <link>Open Food Facts Portal</link>, zur Sprachunterstützung im <link2>Open Food Facts Translations Wiki</link2>.",
             "noteForFatsecretYouNeed2": "Hinweis: Für Fatsecret musst du in deinem Fatsecret-Entwicklerkonto <strong>deine öffentliche IP</strong> auf die Whitelist setzen. Das kann bis zu 24 Stunden dauern.",
             "yazioIntegrationUsesAnUnofficial": "Die YAZIO-Integration nutzt eine <strong>inoffizielle, undokumentierte API</strong>, die von YAZIO weder bereitgestellt noch unterstützt wird. Bei der Nutzung <strong2>riskierst du eine Sperrung deines YAZIO-Kontos</strong2>. Außerdem kann die API <strong3>jederzeit ohne Vorankündigung ausfallen</strong3>, wenn YAZIO sein Backend ändert.",
-            "forMoreInformationClientCredentials2": "Weitere Informationen und Client-Zugangsdaten findest du unter <link>saganos/yazio_public_api</link>.",
+            "forMoreInformationClientCredentials2": "Weitere Informationen und Client-Zugangsdaten findest du unter <1>saganos/yazio_public_api</1>.",
             "getYourAppIDAnd2": "App-ID und App-Schlüssel erhältst du im <link>Nutritionix Developer Portal</link>.",
             "getYourClientIDAnd2": "Client-ID und Client-Geheimnis findest du im <link>Fatsecret Platform Dashboard</link> unter <strong>REST API OAuth 2.0 Credentials</strong> (nicht OAuth 1.0 Consumer Key/Secret).",
             "getYourAPIKeyFrom3": "Deinen API-Schlüssel erhältst du über den <link>USDA FoodData Central API Guide</link>.",
@@ -1574,7 +1574,7 @@
             "summaryUnavailableTitle": "Tägliche Zusammenfassung nicht verfügbar",
             "updateProfile": "Profil aktualisieren",
             "weightTrend": "Gewichtstrend",
-            "healthConnectProjectionSource": "Health Connect Kalorien gesamt",
+            "healthConnectProjectionSource": "Gesamtkalorien des Geräts",
             "legacyProjectionSource": "Geräteprojektion",
             "goalModeTarget": "Ziel des Zielmodus",
             "fallbackProjectionSource": "Grundumsatz + aktive Kalorien (Ausweichwert)",
@@ -3029,7 +3029,7 @@
             "adaptiveTdeeExpenditure": "Adaptives TDEE (Verbrauch)",
             "adaptiveManualGoal": "Adaptives manuelles Kalorienziel",
             "targetSafeRange": "✓ Ziel liegt im sicheren Bereich oberhalb des metabolischen Sicherheitsbodens.",
-            "weightTrendTerm": "Gewichtstrend: {{start}} → {{end}} ({{change}} über alle {{days}} Tage des Zeitraums) = {{daily}} {{massUnit}}/Tag — 7-Tage-Durchschnitte deiner erfassten Gewichte, nicht die Einzelmessungen selbst, mit dazwischen ausgefüllten fehlenden Tagen",
+            "weightTrendTerm": "Gewichtstrend: {{start}} → {{end}} ({{change}} über die {{days}} Tage zwischen dem ersten und letzten Tag des Zeitraums) = {{daily}} {{massUnit}}/Tag — 7-Tage-Durchschnitte deiner erfassten Gewichte, nicht die Einzelmessungen selbst, mit dazwischen ausgefüllten fehlenden Tagen",
             "weightTrendCalories": "Energie aus diesem Trend: −({{daily}} {{massUnit}}/Tag × {{kcalPerUnit}} kcal/{{massUnit}}) ≈ {{value}}",
             "tdeeSum": "({{intake}} {{sign}} {{delta}})",
             "adaptiveClamped": "Der Rohschätzwert von {{raw}} {{unit}} wurde auf {{capped}} {{unit}} begrenzt, die Plausibilitätsgrenze von ±{{band}} {{unit}} um deine BMR-basierte Schätzung ({{min}}–{{max}} {{unit}}).",
@@ -9033,7 +9033,7 @@
         "barcodeScannedSuccessfully": "Barcode erfolgreich gescannt",
         "foundProduct": "Produkt gefunden: {{name}}",
         "productNotFound": "Produkt nicht gefunden",
-        "noProductFoundForThis": "Mit dem ausgewählten Anbieter wurde für diesen Barcode kein Produkt gefunden.",
+        "noProductFoundForThis": "Für diesen Barcode wurde kein Produkt gefunden. Prüfe andere Quellen oder lege das Lebensmittel manuell an.",
         "failedToSearchBarcode": "Barcode-Suche fehlgeschlagen.",
         "foodAdded": "Lebensmittel hinzugefügt",
         "hasBeenAddedAndIs": "{{name}} wurde hinzugefügt und kann jetzt zu deiner Mahlzeit hinzugefügt werden",
@@ -9415,7 +9415,7 @@
         },
         "picker": {
             "current": "Aktuelles Programm",
-            "outline": "Woche 1: Trainings mit {{weekOne}} Minuten. Steigert sich auf {{peak}} Minuten Laufen.",
+            "outline": "Woche 1: Trainings mit {{weekOne}} Minuten. Steigert sich auf {{peak}} Minuten Belastung.",
             "outlineWalk": "Woche 1: Trainings mit {{weekOne}} Minuten. Steigert sich auf {{peak}} Minuten zügiges Gehen.",
             "runsPerWeekHint": "Ein vierter Lauf ergänzt einen kurzen lockeren Lauf, sodass der lange Lauf einen kleineren Anteil deiner Woche ausmacht.",
             "start": "Programm starten",
@@ -9427,12 +9427,12 @@
             "advancedMarathon": {
                 "description": "Marathon für Fortgeschrittene: sechzehn Wochen, fünf Läufe pro Woche, mit Intervall- oder Tempoeinheiten und langen Läufen bis zu drei Stunden. Für erfahrene Läuferinnen und Läufer.",
                 "name": "Marathon für Fortgeschrittene",
-                "structure": "Die meisten Wochen haben zwei lockere Läufe, eine Intervall- oder Tempoeinheit, einen mittellangen und einen langen Lauf. Der lange Lauf steigert sich von 90 Minuten auf drei Stunden, jede vierte Woche ist leichter, und in den letzten zwei Wochen wird vor dem Wettkampftag reduziert (Tapering)."
+                "structure": "Die meisten Wochen haben zwei lockere Läufe, eine Intervall-, Hügel- oder Tempoeinheit, einen mittellangen und einen langen Lauf. Die meisten lockeren Läufe enden ab Woche 3 mit Steigerungsläufen. Ab Woche 9 enthält der lange Lauf einen Abschnitt im Marathontempo, außer in den leichteren Wochen. Der lange Lauf steigert sich von 90 Minuten auf drei Stunden, jede vierte Woche ist leichter, und in den letzten zwei Wochen wird vor dem Wettkampftag reduziert (Tapering)."
             },
             "beginner10k": {
                 "description": "10 km für Einsteiger: zwölf Wochen, drei Läufe pro Woche, beginnend mit Gehen. Du steigerst dich, bis du eine Stunde laufen kannst.",
                 "name": "10 km für Einsteiger",
-                "structure": "Die Wochen 1 bis 6 folgen dem Aufbau von „5 km für Einsteiger“: von kurzen Lauf- und Gehabschnitten bis zum Durchlaufen. Die Wochen 7 bis 12 bestehen aus drei Läufen pro Woche, wobei der lange Lauf von 30 auf 60 Minuten wächst."
+                "structure": "Die Wochen 1 bis 6 folgen dem Aufbau von „5 km für Einsteiger“: von kurzen Lauf- und Gehabschnitten bis zum Durchlaufen. Die Wochen 7 bis 12 bestehen aus drei Läufen pro Woche. Der lange Lauf wächst von 30 auf 60 Minuten, Woche 10 ist leichter."
             },
             "beginner5k": {
                 "description": "5 km für Einsteiger: neun Wochen, drei Läufe pro Woche. Du wechselst zwischen Laufen und Gehen und steigerst dich auf 30 Minuten Laufen.",
@@ -9445,14 +9445,14 @@
                 "structure": "Jede Woche hat einen kurzen, einen mittellangen und einen langen Lauf. Der lange Lauf steigert sich von 70 Minuten auf 2½ Stunden, jede vierte Woche ist leichter, und in den letzten drei Wochen wird vor dem Wettkampftag reduziert (Tapering)."
             },
             "beginnerMarathon4": {
-                "description": "Marathon für Einsteiger: achtzehn Wochen, vier Läufe pro Woche, mit langen Läufen bis zu 2⅔ Stunden und einer Tapering-Phase. Für alle, die bereits 10 km laufen können.",
+                "description": "Marathon für Einsteiger: achtzehn Wochen, vier Läufe pro Woche, mit langen Läufen bis zu 2½ Stunden und einer Tapering-Phase. Für alle, die bereits 10 km laufen können.",
                 "name": "Marathon für Einsteiger (4 Läufe pro Woche)",
-                "structure": "Jede Woche hat zwei kurze Läufe, einen mittellangen und einen langen Lauf. Der lange Lauf steigert sich von 80 Minuten auf 2 Stunden 40 Minuten, jede vierte Woche ist leichter, und in den letzten drei Wochen wird vor dem Wettkampftag reduziert (Tapering). Die letzte Woche hat drei kürzere Läufe."
+                "structure": "Jede Woche hat zwei kurze Läufe, einen mittellangen und einen langen Lauf. Der lange Lauf steigert sich von 70 Minuten auf 2½ Stunden, jede vierte Woche ist leichter, und in den letzten drei Wochen wird vor dem Wettkampftag reduziert (Tapering). Die letzte Woche hat drei kürzere Läufe."
             },
             "faster10k": {
                 "description": "Schneller über 10 km: acht Wochen mit Intervalleinheiten, lockeren Läufen und Tempoläufen – für alle, die bereits 10 km laufen.",
                 "name": "Schneller über 10 km",
-                "structure": "Jede Woche hat eine Intervalleinheit (schnelle und lockere Wiederholungen), einen lockeren und einen längeren Lauf. In den Wochen 5 bis 7 ist der längere Lauf ein Tempolauf von 20, 25 und schließlich 30 Minuten, und die letzte Woche ist ruhiger."
+                "structure": "Jede Woche hat eine Intervalleinheit (schnelle Wiederholungen oder Hügel), einen lockeren und einen längeren Lauf. Woche 4 ist leichter. In den Wochen 5 bis 7 ist der längere Lauf ein Tempolauf von 20, 25 und schließlich 30 Minuten, und die letzte Woche ist ruhiger."
             },
             "faster5k": {
                 "description": "Schneller über 5 km: sechs Wochen mit Intervalleinheiten, lockeren Läufen und Tempoläufen – für alle, die bereits 5 km laufen.",
@@ -9465,9 +9465,9 @@
                 "structure": "Jede Woche hat eine Intervalleinheit, einen lockeren und einen langen Lauf. Der lange Lauf steigert sich von 70 auf 110 Minuten, in den Wochen 6 und 8 ersetzen Tempoläufe von 25 und 30 Minuten die Intervalleinheit, und in den letzten zwei Wochen wird reduziert (Tapering)."
             },
             "fasterHalf4": {
-                "description": "Schneller im Halbmarathon: zehn Wochen, vier Läufe pro Woche, mit einer Intervalleinheit, lockeren Läufen und einem langen Lauf mit Tempoanteilen. Für alle, die schon einmal einen Halbmarathon gelaufen sind.",
+                "description": "Schneller im Halbmarathon: zehn Wochen, vier Läufe pro Woche, mit einer Intervalleinheit, lockeren Läufen und einem langen Lauf. Für alle, die schon einmal einen Halbmarathon gelaufen sind.",
                 "name": "Schneller im Halbmarathon (4 Läufe pro Woche)",
-                "structure": "Jede Woche hat eine Intervalleinheit, zwei lockere Läufe und einen langen Lauf. Der lange Lauf steigert sich von 80 auf 120 Minuten, Woche 4 ist leichter, und in den letzten drei Wochen wird vor dem Wettkampftag reduziert (Tapering). Die letzte Woche hat drei kürzere Läufe."
+                "structure": "Jede Woche hat eine Intervalleinheit, zwei lockere Läufe und einen langen Lauf. Der lange Lauf steigert sich von 70 auf 110 Minuten. In den Wochen 6 und 8 ersetzen Tempoläufe von 25 und 30 Minuten die Intervalleinheit, Woche 4 ist leichter, und in den letzten drei Wochen wird vor dem Wettkampftag reduziert (Tapering). Die letzte Woche hat drei kürzere Läufe."
             },
             "fiveToTenK": {
                 "description": "Von 5 auf 10 km: acht Wochen, drei Läufe pro Woche – für alle, die 30 Minuten laufen können. Steigert sich auf einen langen Lauf von 65 Minuten.",
@@ -9487,7 +9487,7 @@
             "halfMarathon4": {
                 "description": "Halbmarathon: zwölf Wochen, vier Läufe pro Woche, mit langen Läufen bis zu etwa zwei Stunden. Für alle, die 30 Minuten bequem laufen können.",
                 "name": "Halbmarathon (4 Läufe pro Woche)",
-                "structure": "Jede Woche hat zwei lockere Läufe, einen mittellangen und einen langen Lauf. Der lange Lauf steigert sich von 60 auf 125 Minuten, jede vierte Woche ist leichter, und in den letzten zwei Wochen wird vor dem Wettkampftag reduziert (Tapering). Die letzte Woche hat drei kürzere Läufe."
+                "structure": "Jede Woche hat zwei lockere Läufe, einen mittellangen und einen langen Lauf. Der lange Lauf steigert sich von 50 auf 115 Minuten, jede vierte Woche ist leichter, und in den letzten zwei Wochen wird vor dem Wettkampftag reduziert (Tapering). Die letzte Woche hat drei kürzere Läufe."
             },
             "marathon": {
                 "description": "Marathon: sechzehn Wochen, vier Läufe pro Woche, mit langen Läufen bis zu etwa 2¾ Stunden und einer Tapering-Phase. Für alle, die bereits regelmäßig laufen.",
@@ -9507,7 +9507,7 @@
             "tenKToHalf4": {
                 "description": "Von 10 km zum Halbmarathon: zehn Wochen, vier Läufe pro Woche, mit langen Läufen bis zu etwa zwei Stunden. Für alle, die 10 km laufen können.",
                 "name": "Von 10 km zum Halbmarathon (4 Läufe pro Woche)",
-                "structure": "Jede Woche hat zwei kurze Läufe, einen mittellangen und einen langen Lauf. Der lange Lauf steigert sich von 75 auf 125 Minuten, Woche 4 ist leichter, und in den letzten drei Wochen wird vor dem Wettkampftag reduziert (Tapering). Die letzte Woche hat drei kürzere Läufe."
+                "structure": "Jede Woche hat zwei kurze Läufe, einen mittellangen und einen langen Lauf. Der lange Lauf steigert sich von 65 auf 115 Minuten, die Wochen 4 und 8 sind leichter, und in den letzten zwei Wochen wird vor dem Wettkampftag reduziert (Tapering). Die letzte Woche hat drei kürzere Läufe."
             },
             "walk10k": {
                 "description": "10 km zügig gehen: zehn Wochen, drei Walking-Einheiten pro Woche, ganz ohne Laufen. Du steigerst dich auf 10 km Gehen in etwa 1¾ Stunden.",
