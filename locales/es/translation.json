@@ -1006,7 +1006,7 @@
             "yazio": {
                 "unofficialApiTitle": "⚠️ API no oficial: Úsala bajo tu propio riesgo",
                 "unofficialApiWarning": "La integración con YAZIO utiliza una API no oficial y no documentada que no está proporcionada ni respaldada por YAZIO. Su uso podría acarrear el riesgo de que se suspenda tu cuenta de YAZIO. Además, la API podría dejar de funcionar en cualquier momento sin previo aviso si YAZIO cambia su infraestructura.",
-                "moreInfoLink": "Para más información y credenciales de cliente, consulta",
+                "moreInfoLink": "Para más información y credenciales de cliente, consulta <1>saganos/yazio_public_api</1>.",
                 "emailUsernameLabel": "Correo electrónico / Usuario de YAZIO",
                 "emailUsernamePlaceholder": "Introduce tu correo electrónico o usuario de YAZIO",
                 "passwordLabel": "Contraseña de YAZIO",
