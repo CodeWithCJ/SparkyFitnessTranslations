@@ -1039,7 +1039,7 @@
             },
             "yazio": {
                 "unofficialApiTitle": "⚠️ API no oficial: Úsala bajo tu propio riesgo",
-                "unofficialApiWarning": "La integración con YAZIO utiliza una API no oficial y no documentada que no está proporcionada ni respaldada por YAZIO. Su uso podría acarrear el riesgo de que se suspenda tu cuenta de YAZIO. Además, la API podría dejar de funcionar en cualquier momento sin previo aviso si YAZIO cambia su infraestructura.",
+                "unofficialApiWarning": "La integración con YAZIO utiliza una <1>API no oficial y no documentada</1> que no está proporcionada ni respaldada por YAZIO. Su uso podría acarrear el <3>riesgo de que se suspenda tu cuenta de YAZIO</3>. Además, la API podría <5>dejar de funcionar en cualquier momento</5> sin previo aviso si YAZIO cambia su infraestructura.",
                 "moreInfoLink": "Para más información y credenciales de cliente, consulta <1>saganos/yazio_public_api</1>.",
                 "emailUsernameLabel": "Correo electrónico / Usuario de YAZIO",
                 "emailUsernamePlaceholder": "Introduce tu correo electrónico o usuario de YAZIO",
@@ -1483,7 +1483,7 @@
             "remainingPercentage": "Objetivo diario - (Consumidas - {{pct}}% del ejercicio quemado)",
             "remainingTdee": "Gasto Proyectado × Objetivo − Consumidas",
             "remainingTitle": "Calorías restantes",
-            "tdeeFootnote": "Activa la opción «Calorías totales» en la sincronización con Health Connect. La estimación se ajusta al total del dispositivo a medianoche; como valor de reserva se utiliza la TMB más las calorías de actividad.",
+            "tdeeFootnote": "* Sincroniza el total de calorías desde Health Connect, Garmin o Polar. La estimación se ajusta al total del dispositivo a medianoche; como valor de reserva se utiliza la TMB más las calorías quemadas durante la actividad.",
             "title": "Cómo se calcularán tus calorías",
             "burnedTdee": "Calorías totales de Health (respaldo de TMB + calorías activas)",
             "remainingActivitySeparated": "Objetivo diario - Consumido + Actividad (Pasos y entrenamientos, sin TMB)",
@@ -1509,7 +1509,7 @@
             "percentageGoalDescription": "Recupera solo un porcentaje determinado de tus calorías de ejercicio. Por ejemplo, un 50 % crea un margen de seguridad para evitar comer en exceso por estimaciones elevadas.",
             "percentageLabel": "Porcentaje de recuperación:",
             "tdeeGoal": "Proyección del dispositivo",
-            "tdeeGoalDescription": "Utiliza las calorías totales de Health Connect cuando están disponibles, proyecta el gasto actual hasta la medianoche y aplica el Objetivo directamente a ese TDEE. Si no hay un total del dispositivo disponible, utiliza como respaldo la TMB más las calorías activas.",
+            "tdeeGoalDescription": "Utiliza el total de calorías del dispositivo (Health Connect, Garmin o Polar) cuando está disponible, extrapola el consumo calórico actual hasta medianoche y aplica el «Modo Objetivo» directamente a ese TDEE. Si no se dispone del total del dispositivo, recurre a la TMB más las calorías de actividad.",
             "title": "Ajuste del objetivo diario de calorías",
             "tdeeActivityHint": "El nivel de actividad solo se utiliza en el respaldo de TMB + calorías activas cuando no hay un total del dispositivo disponible.",
             "adaptiveEarnBack": "Los objetivos adaptativos ya incluyen tu actividad. Las calorías restantes son el Objetivo menos lo Consumido. La recuperación por ejercicio solo se aplica a los objetivos manuales."
@@ -1648,7 +1648,7 @@
             "dynamicGoalYourCalorieGoal": "<span>Objetivo dinámico:</span> Tu objetivo calórico se ajustará dinámicamente según tu nivel de actividad diaria (ej. ejercicio, pasos). Es ideal si eres activo o si tu nivel de actividad varía a diario.",
             "fixedGoalYourCalorieGoal": "<span>Objetivo fijo:</span> Tu meta calórica se mantendrá fija, sin importar tu actividad diaria. Es perfecto si mantienes un nivel constante de actividad o prefieres un objetivo estable.",
             "percentageEarnBackOnlyEarn": "<span>Recuperación porcentual:</span> Recupera solo un porcentaje establecido de las calorías de tu ejercicio. Por ejemplo, el 50% crea un margen de seguridad para evitar comer de más por sobreestimaciones de gasto calórico.",
-            "deviceProjectionUsesHealthConnect": "<span>Proyección del dispositivo:</span> Utiliza las calorías totales de Health Connect cuando están disponibles, proyecta el gasto calórico actual hasta la medianoche y aplica el Modo de Objetivo directamente a ese TDEE. Vuelve al BMR más calorías activas cuando no hay un total del dispositivo disponible.",
+            "deviceProjectionUsesHealthConnect": "<span>Proyección del dispositivo:</span> Utiliza el total de calorías del dispositivo (Health Connect, Garmin o Polar) cuando está disponible, proyecta el consumo actual hasta medianoche y aplica el «Modo Objetivo» directamente a ese TDEE. Si no se dispone del total del dispositivo, recurre al BMR más las calorías de actividad.",
             "inAdaptiveModeThisIs": "💡 En el modo Adaptativo, esta es la estimación de reserva hasta que tengas suficientes datos de seguimiento, y sigue definiendo los límites de plausibilidad más adelante. Tu TDEE medido se limita a un rango de ±500 kcal de BMR × este multiplicador, por lo que un nivel fijado demasiado bajo puede frenar un gasto calórico genuinamente mayor.",
             "bodyRecomposition10": "Recomposición corporal (-10%)",
             "cut15": "Definición (-15%)",
@@ -1971,7 +1971,7 @@
             "openFoodFactsIsA2": "Open Food Facts es una base de datos impulsada por la comunidad que admite la localización. Sparky consulta automáticamente los productos en el idioma activo de tu configuración de SparkyFitness. Para más información, visita el <link>Portal de Open Food Facts</link> o descubre más sobre la compatibilidad de idiomas en la <link2>Wiki de traducciones de Open Food Facts</link2>.",
             "noteForFatsecretYouNeed2": "Nota: Para Fatsecret, necesitas configurar la lista blanca de <strong>tu IP pública</strong> en tu cuenta de desarrollador de Fatsecret. Este proceso puede tardar hasta 24 horas.",
             "yazioIntegrationUsesAnUnofficial": "La integración con YAZIO utiliza una <strong>API no oficial y no documentada</strong> que no está proporcionada ni respaldada por YAZIO. Usarla puede conllevar el <strong2>riesgo de que cancelen tu cuenta de YAZIO</strong2>. La API también podría <strong3>dejar de funcionar en cualquier momento</strong3> sin previo aviso si YAZIO cambia su backend.",
-            "forMoreInformationClientCredentials2": "Para más información y credenciales de cliente, consulta <link>saganos/yazio_public_api</link>.",
+            "forMoreInformationClientCredentials2": "Para más información y credenciales de cliente, consulta <1>saganos/yazio_public_api</1>.",
             "getYourAppIDAnd2": "Obtén tu App ID y App Key desde el <link>Portal de Desarrolladores de Nutritionix</link>.",
             "getYourClientIDAnd2": "Obtén tu Client ID y Client Secret desde el <link>Panel de la plataforma Fatsecret</link>, en <strong>REST API OAuth 2.0 Credentials</strong> (no en OAuth 1.0 Consumer Key/Secret).",
             "getYourAPIKeyFrom3": "Obtén tu clave API desde la <link>Guía de la API de USDA FoodData Central</link>.",
@@ -2194,16 +2194,24 @@
             "authorizedAt": "Autorizado:",
             "description": "Revisar y revocar aplicaciones conectadas mediante Remote MCP OAuth",
             "empty": "No hay actualmente aplicaciones que tengan acceso OAuth para tu cuenta.",
-            "loadError": "Error al cargar aplicaciones conectadas.",
+            "loadError": "Error al cargar las aplicaciones conectadas.",
             "loading": "Cargando aplicaciones conectadas…",
             "permissions": "Permisos:",
             "revoke": "Revocar",
-            "revokeDescription": "{{clientName}} perderá inmediatamente el acceso y deberá autorizarse de nuevo para reconectarse.",
+            "revokeDescription": "{{clientName}} perderá el acceso de inmediato y deberá autorizarse de nuevo para reconectarse.",
             "revokeError": "Error al revocar el acceso",
-            "revokeSuccess": "Acceso de la aplicación revocado",
-            "revokeTitle": "¿Desea revocar el acceso de la aplicación?",
+            "revokeSuccess": "Acceso a la aplicación revocado",
+            "revokeTitle": "¿Revocar el acceso a la aplicación?",
             "title": "Aplicaciones MCP conectadas",
             "unverified": "Aplicación no verificada"
+        },
+        "weatherProvider": {
+            "baseUrlLabel": "URL del servidor Open-Meteo",
+            "apiKeyLabel": "Clave API (opcional)",
+            "apiKeyPlaceholder": "Solo para el servicio comercial de Open-Meteo",
+            "privacyNote": "La hora de inicio y la ubicación de inicio de una actividad grabada con GPS, redondeadas a dos decimales (aprox. 1 km), se envían a este servidor, que puede verlas. Usa un servidor de confianza o ejecuta el tuyo propio. Sin proveedor meteorológico, no se consulta ni envía nada.",
+            "freeTierNote": "No hay servidor predeterminado. El servicio gratuito de Open-Meteo ({{url}}; su archivo para actividades más antiguas se sirve desde archive-api.open-meteo.com) es solo para uso no comercial. Para uso comercial, utiliza su servicio de pago (customer-api.open-meteo.com) con una clave API, o ejecuta tu propio servidor Open-Meteo. La clave API enviada solo se usa para este proveedor.",
+            "resultNote": "Una vez activo este proveedor, las nuevas actividades grabadas con GPS obtendrán la temperatura y las condiciones al inicio. Las actividades que ya tienen datos meteorológicos (como desde Garmin) los conservarán."
         }
     },
     "admin": {
@@ -2241,7 +2249,16 @@
             "versionCheck": "Buscar nuevas versiones",
             "versionCheckDescription": "Consultar a GitHub (api.github.com) sobre la última versión y avisar a los usuarios cuando haya una más reciente disponible. Desactiva esto si las actualizaciones se gestionan fuera de la aplicación o si el servidor no debe contactar con GitHub.",
             "versionCheckUpdated": "Ajuste de comprobación de versiones actualizado con éxito.",
-            "failedToSaveVersionCheck": "Error al guardar la configuración de comprobación de versiones."
+            "failedToSaveVersionCheck": "Error al guardar la configuración de comprobación de versiones.",
+            "mcpOAuth": "OAuth MCP remoto",
+            "mcpOAuthDescription": "Permite que clientes MCP remotos como Claude se conecten mediante OAuth 2.1. Las claves API existentes seguirán funcionando.",
+            "mcpOAuthAccessWarning": "Aprobar una aplicación le da acceso MCP completo, incluidas herramientas para escribir o eliminar datos. Solo aprueba aplicaciones en las que confíes.",
+            "mcpOAuthHttpsRequired": "MCP OAuth remoto requiere HTTPS público. HTTP simple solo se admite para desarrollo en bucle local (loopback).",
+            "mcpOAuthRedirectAllowlist": "URIs de redirección OAuth permitidas",
+            "mcpOAuthRedirectAllowlistDescription": "Introduce una URI exacta o patrón loopback por línea. Usa http://localhost:*, http://127.0.0.1:*, o http://[::1]:* para permitir clientes de escritorio en cualquier puerto de retorno local.",
+            "saveMcpOAuthRedirects": "Guardar lista de redirecciones OAuth permitidas",
+            "mcpOAuthRedirectsUpdated": "Lista de redirecciones OAuth permitidas actualizada con éxito.",
+            "mcpOAuthRedirectsFailed": "Error al guardar la lista de redirecciones OAuth permitidas."
         },
         "backupSettings": {
             "title": "Ajustes de copia de seguridad",
@@ -2807,7 +2824,7 @@
             "modePercentage": "Recuperación por porcentaje",
             "tdeeSum": "({{intake}} {{sign}} {{delta}})",
             "weightTrendCalories": "Energía de esa tendencia: −({{daily}} {{massUnit}}/día × {{kcalPerUnit}} kcal/{{massUnit}}) ≈ {{value}}",
-            "weightTrendTerm": "Tendencia de peso: {{start}} → {{end}} ({{change}} a lo largo de los {{days}} días de la ventana) = {{daily}} {{massUnit}}/día — medias de 7 días de tus pesos registrados, no las lecturas en sí, rellenando los días que faltan a partir de los días anterior y posterior",
+            "weightTrendTerm": "Tendencia de peso: {{start}} → {{end}} ({{change}} a lo largo de los {{days}} días transcurridos entre el primer y el último día del periodo) = {{daily}} {{massUnit}}/día — medias de 7 días de tus pesos registrados, no las lecturas en sí, rellenando los días que faltan a partir de los días anterior y posterior",
             "averageDailyCalorieIntake": "Ingesta calórica media diaria: {{displayAdaptiveIntake}} {{energyUnitString}}",
             "calculatedExpenditureTDEE": "Gasto calculado (TDEE): {{energy}} {{energyUnitString}}",
             "adaptiveTDEEExpenditure": "GETD adaptativo (gasto) = {{energy}} {{energyUnitString}}",
@@ -5086,11 +5103,11 @@
             "loggedCount_one": "{{count}} síntoma registrado",
             "loggedCount_many": "{{count}} síntomas registrados",
             "loggedCount_other": "{{count}} síntomas registrados",
-            "title": "Calendario de Registro de la medicación",
+            "title": "Calendario de registro de medicamentos",
             "noMeds": "Añadir una medicación para ver su calendario de registro aquí.",
             "selectMedication": "Seleccionar una medicación",
             "allMedications": "Todos los medicamentos",
-            "titleSupplements": "Calendario de Registro de suplementos",
+            "titleSupplements": "Calendario de registro de suplementos",
             "noSupplements": "Añadir un suplemento para ver su calendario de registro aquí.",
             "selectSupplement": "Seleccione un suplemento",
             "allSupplements": "Todos los suplementos",
@@ -5100,10 +5117,10 @@
             "allEntries": "Todos",
             "monthTotal": "{{count}} dosis registradas en {{month}}",
             "allTaken": "Todas las dosis tomadas",
-            "partialTaken": "Tomada parcialmente",
-            "mostlySkipped": "Mayormente omitidas",
+            "partialTaken": "Parcialmente tomado",
+            "mostlySkipped": "En su mayoría omitido",
             "allSkipped": "Todas las dosis omitidas",
-            "snoozedOnly": "Solo pospuestas",
+            "snoozedOnly": "Solo pospuesto",
             "sideEffect": "Síntoma de efecto secundario",
             "generalSymptom": "Síntoma general",
             "tooltipTaken": "{{count}} tomado",
@@ -5149,12 +5166,12 @@
             "supplementsTitle": "Suplementos de hoy",
             "supplementsDescription": "Registra las dosis programadas y los suplementos que tomes cuando los necesites",
             "noSupplementDoses": "No hay dosis programadas para hoy. Registra a continuación cualquier suplemento que tomes cuando lo necesite.",
-            "noPrnMedications": "No hay medicamentos según necesidad ni medicamentos no programados configurados.",
-            "noPrnSupplements": "No hay suplementos según necesidad ni suplementos no programados configurados.",
+            "noPrnMedications": "No hay medicamentos según sea necesario o no programados configurados.",
+            "noPrnSupplements": "No hay suplementos según sea necesario o no programados configurados.",
             "loadingMedications": "Cargando medicamentos activos…",
             "loadingSupplements": "Cargando suplementos activos…",
             "loadingChecklist": "Cargando lista de control…",
-            "dueToday": "Previsto hoy",
+            "dueToday": "Pendiente hoy",
             "asNeeded": "Según sea necesario",
             "asNeededHint": "Toca para registrar una dosis ahora (sin horario fijo o no programada para hoy).",
             "logIntake": "Registrar toma",
@@ -6763,6 +6780,25 @@
             "sending": "Enviando...",
             "sendResetLink": "Enviar enlace de restablecimiento",
             "backToSignIn": "Volver a Iniciar sesión"
+        },
+        "oauth": {
+            "allow": "Permitir",
+            "allowAccessDescription": "{{clientName}} quiere conectarse a tu cuenta de SparkyFitness.",
+            "allowAccessTitle": "¿Permitir acceso a SparkyFitness?",
+            "clientWillBeAbleTo": "Este cliente podrá:",
+            "deny": "Denegar",
+            "loadingRequest": "Cargando solicitud de autorización…",
+            "missingRedirectUrl": "El proveedor OAuth no devolvió una URL de redirección.",
+            "declaredWebsite": "Sitio web declarado",
+            "mcpAccessDescription": "Leer y actualizar tus datos de SparkyFitness a través de herramientas MCP.",
+            "offlineAccessDescription": "Mantenerse conectado y acceder a tu cuenta cuando no estés usando activamente SparkyFitness.",
+            "redirectDestination": "Destino de redirección",
+            "requestFailed": "Error de autorización",
+            "securityHint": "Solo permite el acceso si reconoces esta aplicación y confías en ella.",
+            "unknownClient": "Esta aplicación",
+            "unknownScopeDescription": "Solicitar el permiso «{{scope}}».",
+            "unverifiedClient": "Aplicación no verificada",
+            "unverifiedClientDescription": "SparkyFitness no ha verificado la identidad de esta aplicación. Su nombre y sitio web fueron proporcionados por la propia aplicación."
         }
     },
     "copied": "¡Copiado!",
@@ -9005,7 +9041,7 @@
         "barcodeScannedSuccessfully": "Código de barras escaneado con éxito",
         "foundProduct": "Producto encontrado: {{name}}",
         "productNotFound": "Producto no encontrado",
-        "noProductFoundForThis": "No se encontró ningún producto para este código de barras con el proveedor seleccionado.",
+        "noProductFoundForThis": "No se ha encontrado ningún producto con este código de barras. Comprueba otras fuentes o añade un alimento manualmente.",
         "failedToSearchBarcode": "Error al buscar el código de barras.",
         "foodAdded": "Alimento añadido",
         "hasBeenAddedAndIs": "{{name}} se ha añadido y está listo para tu comida",
@@ -9397,7 +9433,7 @@
         },
         "picker": {
             "current": "Programa actual",
-            "outline": "Semana 1: entrenamientos de {{weekOne}} minutos. Progresa hasta {{peak}} minutos de carrera.",
+            "outline": "Semana 1: entrenamientos de {{weekOne}} minutos. Progresa hasta {{peak}} minutos de esfuerzo.",
             "outlineWalk": "Semana 1: entrenamientos de {{weekOne}} minutos. Progresa hasta {{peak}} minutos de caminata rápida.",
             "runsPerWeekHint": "Una cuarta sesión añade una carrera suave y corta para que la tirada larga represente una menor parte de tu semana.",
             "start": "Iniciar programa",
@@ -9410,12 +9446,12 @@
             "advancedMarathon": {
                 "description": "Maratón avanzado: dieciséis semanas, cinco carreras semanales, con series de velocidad o ritmo y tiradas largas de hasta tres horas. Para corredores experimentados.",
                 "name": "Maratón avanzado",
-                "structure": "La mayoría de semanas incluyen dos carreras suaves, una sesión de velocidad o ritmo, una carrera media y una tirada larga. La tirada larga pasa de 90 minutos a tres horas; cada cuarta semana es de descarga y las dos últimas reducen volumen antes del gran día."
+                "structure": "La mayoría de las semanas incluyen dos carreras suaves, una sesión de velocidad, de cuesta o de ritmo, una carrera de distancia media y una carrera larga. La mayoría de las carreras suaves a partir de la semana 3 terminan con zancadas. A partir de la semana 9, la carrera larga incluye un tramo al ritmo de maratón, salvo en las semanas más ligeras. La carrera larga va aumentando de 90 minutos a tres horas; cada cuarta semana es más ligera, y las dos últimas semanas se reduce el volumen de entrenamiento antes del día de la carrera."
             },
             "beginner10k": {
                 "description": "10K para principiantes: doce semanas, tres carreras a la semana, empezando desde caminata. Desarrollarás tu fondo hasta correr una hora seguida.",
                 "name": "10K para principiantes",
-                "structure": "Las semanas 1 a 6 siguen la base de 5K para principiantes alternando tramos cortos de carrera y caminata hasta correr continuo. Las semanas 7 a 12 tienen tres carreras semanales, ampliando la tirada larga de 30 a 60 minutos."
+                "structure": "Las semanas 1 a 6 siguen el programa de preparación para principiantes de 5 km, que va desde carreras cortas y caminatas hasta correr de forma continua. Las semanas 7 a 12 consisten en tres carreras a la semana. La carrera larga pasa de 30 a 60 minutos, y la semana 10 es más ligera."
             },
             "beginner5k": {
                 "description": "5K para principiantes: nueve semanas, tres carreras a la semana. Alternas carrera y caminata hasta alcanzar los 30 minutos continuos de carrera.",
@@ -9428,14 +9464,14 @@
                 "structure": "Cada semana incluye una carrera corta, una media y una tirada larga. La tirada larga sube de 70 minutos a 2 horas y media; cada cuarta semana es más suave y las tres últimas disminuyen la carga antes de la carrera."
             },
             "beginnerMarathon4": {
-                "description": "Maratón para principiantes: dieciocho semanas, cuatro carreras semanales, con tiradas largas de hasta 2 horas y 40 minutos y puesta a punto. Ideal si ya corres 10K.",
+                "description": "Maratón para principiantes: dieciocho semanas, cuatro salidas a correr a la semana, con carreras largas que van aumentando hasta las 2 horas y media y una fase de reducción progresiva del entrenamiento. Para cuando seas capaz de correr 10 km.",
                 "name": "Maratón para principiantes (4 carreras a la semana)",
-                "structure": "Cada semana incluye dos carreras cortas, una media y una tirada larga. La tirada larga sube de 80 minutos a 2 h 40 min; cada cuarta semana es más ligera y las últimas tres reducen volumen antes del día de la carrera. La última semana tiene tres salidas más cortas."
+                "structure": "Cada semana incluye dos carreras cortas, una de distancia media y una larga. La carrera larga va aumentando de 70 minutos a 2 horas y media; cada cuatro semanas se reduce la intensidad, y las tres últimas semanas se reduce progresivamente el volumen de entrenamiento antes del día de la carrera. La última semana incluye tres carreras más cortas."
             },
             "faster10k": {
                 "description": "10K más rápido: ocho semanas de sesiones de velocidad, rodajes suaves y ritmos controlados; para cuando ya corres 10K con comodidad.",
                 "name": "10K más rápido",
-                "structure": "Cada semana incluye una sesión de velocidad (series rápidas y suaves), un rodaje suave y una carrera más larga. En las semanas 5 a 7, la tirada larga es a ritmo controlado de 20, 25 y 30 minutos; la última semana es de descarga."
+                "structure": "Cada semana incluye una sesión de velocidad (repeticiones rápidas o cuestas), una carrera suave y una carrera más larga. La semana 4 es más ligera. En las semanas 5 a 7, la carrera más larga es una carrera de ritmo de 20, 25 y luego 30 minutos, y la última semana es más tranquila."
             },
             "faster5k": {
                 "description": "5K más rápido: seis semanas de sesiones de velocidad, rodajes suaves y ritmos controlados; para cuando ya corres 5K.",
@@ -9448,9 +9484,9 @@
                 "structure": "Cada semana tiene una sesión de velocidad, un rodaje suave y una tirada larga. La tirada larga sube de 70 a 110 minutos; en las semanas 6 y 8 los ritmos controlados de 25 y 30 minutos sustituyen la sesión de velocidad, y las dos últimas semanas son de tapering."
             },
             "fasterHalf4": {
-                "description": "Medio maratón más rápido: diez semanas, cuatro carreras semanales, con sesión de velocidad, rodajes suaves y tirada larga a ritmo. Para corredores que ya han hecho medio maratón.",
+                "description": "Media maratón más rápida: diez semanas, cuatro salidas a correr a la semana, con una sesión de velocidad, salidas suaves y una salida larga. Para quienes ya hayan corrido una media maratón anteriormente.",
                 "name": "Medio maratón más rápido (4 carreras a la semana)",
-                "structure": "Cada semana incluye una sesión de velocidad, dos carreras suaves y una tirada larga. La tirada larga progresa de 80 a 120 minutos, la semana 4 es de descarga y las tres últimas afinan la forma antes del objetivo. La semana final tiene tres carreras cortas."
+                "structure": "Cada semana incluye una sesión de velocidad, dos carreras suaves y una carrera larga. La carrera larga va aumentando de 70 a 110 minutos. Las carreras de ritmo de 25 y 30 minutos sustituyen a la sesión de velocidad en las semanas 6 y 8; la semana 4 es más ligera, y las tres últimas semanas se reducen progresivamente antes del día de la carrera. La última semana cuenta con tres carreras más cortas."
             },
             "fiveToTenK": {
                 "description": "De 5K a 10K: ocho semanas, tres carreras semanales, para cuando logras correr 30 minutos seguidos. Progresa hasta una tirada larga de 65 minutos.",
@@ -9470,7 +9506,7 @@
             "halfMarathon4": {
                 "description": "Medio maratón: doce semanas, cuatro carreras a la semana, con tiradas largas progresivas hasta unas dos horas. Para quienes corren 30 minutos con soltura.",
                 "name": "Medio maratón (4 carreras a la semana)",
-                "structure": "Cada semana tiene dos carreras suaves, una media y una tirada larga. La tirada larga progresa de 60 a 125 minutos; cada cuatro semanas hay descarga y las dos últimas afinan para el día de la carrera. La última semana incluye tres carreras más cortas."
+                "structure": "Cada semana incluye dos carreras suaves, una de distancia media y una larga. La carrera larga va aumentando de 50 a 115 minutos; cada cuatro semanas se reduce la intensidad, y las dos últimas semanas se reduce progresivamente el volumen de entrenamiento antes del día de la carrera. La última semana cuenta con tres carreras más cortas."
             },
             "marathon": {
                 "description": "Maratón: dieciséis semanas, cuatro carreras semanales, con tiradas largas que llegan a unas 2 horas y 45 minutos y puesta a punto final. Para corredores habituales.",
@@ -9490,7 +9526,7 @@
             "tenKToHalf4": {
                 "description": "De 10K a medio maratón: diez semanas, cuatro carreras por semana, con tiradas largas que alcanzan unas dos horas. Diseñado para quienes ya corren 10K.",
                 "name": "De 10K a medio maratón (4 carreras a la semana)",
-                "structure": "Cada semana cuenta con dos carreras cortas, una media y una tirada larga. La tirada larga sube de 75 a 125 minutos, la semana 4 es de descarga y las últimas tres afinan antes de la competición. La semana final tiene tres rodajes cortos."
+                "structure": "Cada semana incluye dos carreras cortas, una de distancia media y una larga. La carrera larga va aumentando de 65 a 115 minutos; las semanas 4 y 8 son más ligeras, y las dos últimas semanas se reducen progresivamente antes del día de la carrera. La última semana cuenta con tres carreras más cortas."
             },
             "walk10k": {
                 "description": "Caminata rápida 10K: diez semanas, tres caminatas semanales, sin correr. Desarrolla tu resistencia para caminar 10K en aproximadamente una hora y tres cuartos.",
@@ -9597,7 +9633,7 @@
             "fresh": "Fresco: el entrenamiento reciente es liviano comparado con la base que has construido.",
             "tired": "Cansado: el entrenamiento reciente es pesado comparado con la base que has construido.",
             "neutral": "Equilibrado: el entrenamiento reciente coincide con la base que has construido.",
-            "learning": "Aún aprendiendo tus valores habituales. ¡Sigue registrando!"
+            "learning": "Aún aprendiendo tus valores habituales. Sigue registrando."
         },
         "factor": {
             "form": "Forma de entrenamiento",
@@ -9617,7 +9653,13 @@
         "subtitle": "Estimado a partir de tu ritmo, frecuencia cardíaca, peso y desnivel. Es una estimación, así que puede variar varios puntos porcentuales.",
         "loadFailed": "Error al cargar las estimaciones de carrera.",
         "vo2Unit": "VO₂ máx. (ml/kg/min)",
-        "powerUnit": "Potencia de carrera ({{perKg}} W/kg)"
+        "powerUnit": "Potencia de carrera ({{perKg}} W/kg)",
+        "vo2Basis_one": "De {{count}} carreras en las últimas 6 semanas",
+        "vo2Basis_many": "De {{count}} carreras en las últimas 6 semanas",
+        "vo2Basis_other": "De {{count}} carreras en las últimas 6 semanas",
+        "powerBasis_one": "Media de {{count}} carrera en las últimas 4 semanas",
+        "powerBasis_many": "Media de {{count}} carreras en las últimas 4 semanas",
+        "powerBasis_other": "Media de {{count}} carreras en las últimas 4 semanas"
     },
     "compareReport": {
         "loadFailed": "No se pudo cargar esta comparación",
@@ -9732,7 +9774,19 @@
             "noVariationHeadline": "Nada que comparar aún",
             "noVariationDetail": "{{metric}} se mantuvo igual todo el tiempo en este período, por lo que no hay con qué compararlo.",
             "noVariationGeneric": "Uno de estos no cambió durante este período.",
-            "longerSpanDifference": "Un período más largo facilita detectar diferencias pequeñas."
+            "longerSpanDifference": "Un período más largo facilita detectar diferencias pequeñas.",
+            "days_one": "{{count}} día",
+            "days_many": "{{count}} días",
+            "days_other": "{{count}} días",
+            "weeks_one": "{{count}} semana",
+            "weeks_many": "{{count}} semanas",
+            "weeks_other": "{{count}} semanas",
+            "logDays_one": "Inicia sesión {{weaker}} durante {{count}} día más, o elige un periodo más largo.",
+            "logDays_many": "Inicia sesión {{weaker}} durante {{count}} días más, o elige un periodo más largo.",
+            "logDays_other": "Inicia sesión {{weaker}} durante {{count}} días más, o elige un periodo más largo.",
+            "logWeeks_one": "Regístrate {{weaker}} durante {{count}} semana más, o elige un periodo más largo.",
+            "logWeeks_many": "Regístrate {{weaker}} durante {{count}} semanas más, o elige un periodo más largo.",
+            "logWeeks_other": "Regístrate {{weaker}} durante {{count}} semanas más, o elige un periodo más largo."
         },
         "howSure": {
             "title": "¿Qué tan seguro es esto?",
@@ -9757,7 +9811,13 @@
             "pAboutChange": "Sin un cambio real, una diferencia tan grande aparecería aproximadamente 1 vez en {{n}} ({{p}})",
             "pCommonChange": "Diferencias como esta son comunes sin un cambio real ({{p}})",
             "daysUsed": "Días utilizados",
-            "weeksUsed": "Semanas utilizadas"
+            "weeksUsed": "Semanas utilizadas",
+            "separateDays_one": "{{n}} (se cuentan como un {{count}} día distinto, ya que los días contiguos son muy parecidos entre sí)",
+            "separateDays_many": "{{n}} (se cuentan como unos {{count}} días distintos, ya que los días contiguos son muy parecidos entre sí)",
+            "separateDays_other": "{{n}} (se cuentan como unos {{count}} días distintos, ya que los días contiguos son muy parecidos entre sí)",
+            "separateWeeks_one": "{{n}} (se cuentan como una {{count}} semana distinta, ya que las semanas contiguas son muy similares entre sí)",
+            "separateWeeks_many": "{{n}} (se cuentan como unas {{count}} semanas distintas, ya que las semanas contiguas son muy similares entre sí)",
+            "separateWeeks_other": "{{n}} (se cuentan como unas {{count}} semanas distintas, ya que las semanas contiguas son muy similares entre sí)"
         },
         "since": {
             "question": "Desde que empecé a {{habit}} con regularidad, ¿ha cambiado {{outcome}}?",
@@ -9810,7 +9870,10 @@
                 "usual": "Habitualmente entre",
                 "atOrAbove": "En o por encima de {{line}}",
                 "stretch": "Período"
-            }
+            },
+            "regularity_one": "Lo has mantenido durante {{weeksKept}} de la {{count}} semana transcurridas desde entonces.",
+            "regularity_many": "Lo has mantenido durante {{weeksKept}} de las {{count}} semanas transcurridas desde entonces.",
+            "regularity_other": "Lo has mantenido durante {{weeksKept}} de las {{count}} semanas transcurridas desde entonces."
         },
         "stats": {
             "pTiny": "p < 0.001"
@@ -9850,7 +9913,13 @@
             "yesDays": "Días que {{yes}}",
             "noDays": "Días sin {{yesNoun}}",
             "otherDays": "Otros días",
-            "otherNights": "Otras noches"
+            "otherNights": "Otras noches",
+            "meanAndDays_one": "{{mean}} · {{count}} día",
+            "meanAndDays_many": "{{mean}} · {{count}} días",
+            "meanAndDays_other": "{{mean}} · {{count}} días",
+            "meanAndNights_one": "{{mean}} · {{count}} noche",
+            "meanAndNights_many": "{{mean}} · {{count}} noches",
+            "meanAndNights_other": "{{mean}} · {{count}} noches"
         },
         "checks": {
             "title": "Comprobaciones",
@@ -9912,7 +9981,10 @@
             "no": "No",
             "daysDeviation": "{{amount}} días",
             "minutesDeviation": "{{amount}} min",
-            "metricWhen": "{{metric}} ({{timing}})"
+            "metricWhen": "{{metric}} ({{timing}})",
+            "count_one": "{{count}} día",
+            "count_many": "{{count}} días",
+            "count_other": "{{count}} días"
         }
     },
     "plates": {
