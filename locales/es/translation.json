@@ -168,7 +168,7 @@
             "updateProfile": "Actualizar perfil",
             "weightTrend": "Tendencia de peso",
             "goalModeTarget": "Objetivo del modo meta",
-            "healthConnectProjectionSource": "Calorías totales de Health Connect",
+            "healthConnectProjectionSource": "Calorías totales del dispositivo",
             "fallbackProjectionSource": "Respaldo de TMB + calorías activas",
             "legacyProjectionSource": "Proyección del dispositivo",
             "eaten2": "{{energyUnitString}} consumidas",
@@ -1485,7 +1485,7 @@
             "remainingTitle": "Calorías restantes",
             "tdeeFootnote": "Activa la opción «Calorías totales» en la sincronización con Health Connect. La estimación se ajusta al total del dispositivo a medianoche; como valor de reserva se utiliza la TMB más las calorías de actividad.",
             "title": "Cómo se calcularán tus calorías",
-            "burnedTdee": "Calorías totales de Health Connect (respaldo de TMB + calorías activas)",
+            "burnedTdee": "Calorías totales de Health (respaldo de TMB + calorías activas)",
             "remainingActivitySeparated": "Objetivo diario - Consumido + Actividad (Pasos y entrenamientos, sin TMB)",
             "activitySeparatedFootnote": "Tras guardar, la línea base adaptativa excluye la actividad histórica; los pasos y entrenamientos de hoy se acreditan una vez sin TMB. Los valores de vista previa derivados del servidor utilizan tu configuración guardada.",
             "remainingTdeeWeekly": "TDEE proyectado + Ajuste semanal − Consumido"
@@ -1571,7 +1571,7 @@
             "modeRecomp": "Recomposición corporal (-10%)",
             "subtitle": "Ajusta tu objetivo calórico diario según tu meta de composición corporal.",
             "title": "Modo de objetivo",
-            "deviceProjectionHint": "En el modo de proyección del dispositivo, este porcentaje se aplica directamente al TDEE proyectado del dispositivo.",
+            "deviceProjectionHint": "En el modo de proyección del dispositivo, este ajuste se aplica directamente al TDEE proyectado del dispositivo.",
             "customPercentageHint": "Un valor positivo añade calorías (superávit) y uno negativo las reduce (déficit).",
             "modeBulk": "Volumen (+20%)",
             "modeLeanBulk": "Volumen Limpio (+10%)",
@@ -2192,7 +2192,18 @@
         },
         "oauthClients": {
             "authorizedAt": "Autorizado:",
-            "description": "Revisar y revocar aplicaciones conectadas mediante Remote MCP OAuth"
+            "description": "Revisar y revocar aplicaciones conectadas mediante Remote MCP OAuth",
+            "empty": "No hay actualmente aplicaciones que tengan acceso OAuth para tu cuenta.",
+            "loadError": "Error al cargar aplicaciones conectadas.",
+            "loading": "Cargando aplicaciones conectadas…",
+            "permissions": "Permisos:",
+            "revoke": "Revocar",
+            "revokeDescription": "{{clientName}} perderá inmediatamente el acceso y deberá autorizarse de nuevo para reconectarse.",
+            "revokeError": "Error al revocar el acceso",
+            "revokeSuccess": "Acceso de la aplicación revocado",
+            "revokeTitle": "¿Desea revocar el acceso de la aplicación?",
+            "title": "Aplicaciones MCP conectadas",
+            "unverified": "Aplicación no verificada"
         }
     },
     "admin": {
