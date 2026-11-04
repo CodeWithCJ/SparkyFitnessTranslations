@@ -9550,7 +9550,7 @@
         }
     },
     "barcodeLookup": {
-        "title": "Strichcode-Ergebnisse",
+        "title": "Strichcode Ergebnisse",
         "yourFoods": "Deine Lebensmittel",
         "fallback": "Ausweichquelle",
         "basis": "Pro {{quantity}} {{unit}}",
