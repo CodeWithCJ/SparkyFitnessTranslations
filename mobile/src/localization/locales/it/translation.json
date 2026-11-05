@@ -1117,7 +1117,7 @@
             "doseOverride": "Sovrascrittura dose ({{unit}})",
             "doseOverridePlain": "Sovrascrittura dose",
             "withMealTitle": "Con pasto",
-            "withMeal": "Con pasto",
+            "withMeal": "Durante il pasto",
             "startDate": "Data di inizio",
             "startDateRequired": "Data di inizio *",
             "setStartDate": "Imposta data di inizio",
@@ -1228,6 +1228,15 @@
         "inactiveCount_other": "Inattivi ({{count}})",
         "mealRelation": {
             "awayFromMeals": "Lontano dai pasti"
+        },
+        "today": {
+            "loggedActivity": "Registrate oggi",
+            "loggedActivityDescription": "Tutte le dosi assunte o saltate in questa data.",
+            "loadingHistory": "caricamento cronologia…"
+        },
+        "calendar": {
+            "allTaken": "Tutte le dosi assunte",
+            "sideEffect": "Sintomo da effetto-collaterale"
         }
     },
     "scheduleSummary": {
@@ -3690,7 +3699,10 @@
             "goals": "Obiettivi",
             "lookedUp": "Cercato {{name}}"
         },
-        "typing": "Sparky sta scrivendo"
+        "typing": "Sparky sta scrivendo",
+        "voice": {
+            "stop": "Interrompi la dettatura"
+        }
     },
     "foodImagePicker": {
         "photos": "Foto",
