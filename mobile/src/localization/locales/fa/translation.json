@@ -31,9 +31,6 @@
         },
         "actions": {
             "selectActivity": "انتخاب فعالیت"
-        },
-        "labels": {
-            "custom": ""
         }
     }
 }
