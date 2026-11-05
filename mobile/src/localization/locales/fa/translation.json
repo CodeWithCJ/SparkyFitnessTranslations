@@ -108,5 +108,63 @@
         "multipleNoPrimaryMobile": "چند ظرف آب دارید، اما هیچ‌کدام به‌عنوان ظرف اصلی مشخص نشده است. برای انتخاب، ضربه بزنید.",
         "configureMobile": "برای شروع ثبت آب مصرفی، یک ظرف آب اضافه کنید.",
         "defaultContainer": "پیش‌فرض"
+    },
+    "mealBuilder": {
+        "linkedMeal": "وعدهٔ غذایی مرتبط",
+        "linkedMealWebEdit": "???? ?????? ??? ????? ????? ?? ????? ?????? ?? ????? ?? ??????? ????.",
+        "editTitle": "ویرایش وعدهٔ غذایی",
+        "createTitle": "ایجاد وعدهٔ غذایی",
+        "loading": "در حال بارگذاری وعدهٔ غذایی...",
+        "loadErrorTitle": "بارگذاری وعدهٔ غذایی ناموفق بود",
+        "mealName": "نام وعدهٔ غذایی",
+        "mealNamePlaceholder": "مثلاً کاسهٔ مرغ و برنج",
+        "descriptionOptional": "توضیحات (اختیاری)",
+        "descriptionPlaceholder": "یادداشت‌هایی دربارهٔ این وعده",
+        "totalServings": "تعداد وعده‌ها",
+        "totalAmount": "مقدار کل ({{unit}}) *",
+        "unit": "واحد",
+        "selectUnit": "انتخاب واحد",
+        "servingSize": "اندازهٔ هر وعده ({{unit}}) *",
+        "servingUnit": "وعده",
+        "foodsInMeal": "غذاهای این وعده",
+        "ingredient": "مادهٔ اولیه",
+        "removeIngredient": "حذف {{name}}",
+        "editIngredient": "ویرایش {{name}}",
+        "addFood": "افزودن غذا",
+        "mealTotal": "مجموع ارزش غذایی",
+        "perServing": "در هر وعده",
+        "errors": {
+            "missingNameTitle": "نام وعدهٔ غذایی وارد نشده است",
+            "missingNameMessage": "لطفاً برای وعدهٔ غذایی خود نامی وارد کنید.",
+            "invalidServingSizeTitle": "اندازهٔ هر وعده معتبر نیست",
+            "invalidServingSizeMessage": "اندازهٔ پیش‌فرض هر وعده باید بیشتر از صفر باشد.",
+            "invalidTotalServingsTitle": "تعداد کل وعده‌ها معتبر نیست",
+            "invalidTotalServingsMessage": "تعداد کل وعده‌ها باید بیشتر از صفر باشد.",
+            "invalidTotalAmountTitle": "مقدار کل معتبر نیست",
+            "invalidTotalAmountMessage": "مقدار کل باید بیشتر از صفر باشد.",
+            "noIngredientsTitle": "هنوز مادهٔ اولیه‌ای اضافه نشده است",
+            "noIngredientsMessage": "برای ذخیرهٔ این وعده، دست‌کم یک غذا اضافه کنید.",
+            "missingIngredientTitle": "اطلاعات مادهٔ اولیه ناقص است",
+            "missingIngredientMessage": "??? ?? ?????? ??????????? ???????? ???? ??????? ???? ?????. ????? ?? ?? ?????? ????? ????."
+        },
+        "units": {
+            "serving": "وعده",
+            "g": "گرم",
+            "ml": "میلی‌لیتر",
+            "oz": "اونس",
+            "cup": "پیمانه",
+            "tbsp": "قاشق غذاخوری",
+            "tsp": "قاشق چای‌خوری",
+            "piece": "عدد"
+        },
+        "unitPickerLabel": "واحد، {{unit}}",
+        "notes": "یادداشت‌ها (اختیاری)",
+        "notesPlaceholder": "مثلاً دستور تهیه یا روش آماده‌سازی"
+    },
+    "nutrition": {
+        "protein": "پروتئین",
+        "carbs": "کربوهیدرات",
+        "fat": "چربی",
+        "calories": "کالری"
     }
 }
