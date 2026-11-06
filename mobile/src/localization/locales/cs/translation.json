@@ -5539,7 +5539,7 @@
     },
     "healthDataDisplay": {
         "distance": "{{value}} km",
-        "kcal": "{{hodnota}} kcal",
+        "kcal": "{{value}} kcal",
         "bpm": "{{value}} tepů/min",
         "kg": "{{value}} kg",
         "percent": "{{value}} %",
