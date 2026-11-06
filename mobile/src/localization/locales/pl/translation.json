@@ -579,9 +579,6 @@
         "medications": "Leki",
         "medication": "Lek",
         "library": {
-            "noServerConfigured": "Brak skonfigurowanego serwera",
-            "configureServer": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić bibliotekę.",
-            "goToSettings": "Przejdź do ustawień",
             "loading": "Ładowanie biblioteki...",
             "title": "Biblioteka",
             "create": "Utwórz",
@@ -869,9 +866,6 @@
     },
     "dashboard": {
         "chooseDate": "Wybierz datę pulpitu",
-        "noServerConfigured": "Nie skonfigurowano serwera",
-        "configureServer": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić dzienne podsumowanie.",
-        "goToSettings": "Przejdź do ustawień",
         "loadingSummary": "Ładowanie podsumowania...",
         "loadFailed": "Nie udało się załadować podsumowania",
         "checkConnection": "Sprawdź połączenie i spróbuj ponownie.",
@@ -1185,9 +1179,7 @@
         "customNutrientDisplay": "Wyświetlanie własnych składników odżywczych",
         "limitDescription_one": "Możesz wyświetlić tutaj maksymalnie {{count}} własny składnik odżywczy.",
         "limitDescription_few": "Możesz wyświetlić tutaj maksymalnie {{count}} własne składniki odżywcze.",
-        "limitDescription_many": "Możesz wyświetlić tutaj maksymalnie {{count}} własnych składników odżywczych.",
-        "guidedCheckIn": "Prowadzony wpis dnia",
-        "guidedCheckInSubtitle": "Dodaje Wpis dnia do menu dodawania: krok po kroku zapisz samopoczucie, pomiary i zdjęcia postępów dnia."
+        "limitDescription_many": "Możesz wyświetlić tutaj maksymalnie {{count}} własnych składników odżywczych."
     },
     "about": {
         "title": "Informacje",
@@ -1286,9 +1278,6 @@
     },
     "diary": {
         "chooseDate": "Wybierz datę dziennika",
-        "noServer": "Nie skonfigurowano serwera",
-        "configureServer": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić dziennik.",
-        "goToSettings": "Przejdź do ustawień",
         "loading": "Wczytywanie dziennika…",
         "loadFailed": "Nie udało się wczytać dziennika",
         "checkConnection": "Sprawdź połączenie i spróbuj ponownie.",
@@ -3756,8 +3745,6 @@
         "makePrivate": "Ustaw jako prywatny",
         "shareWithPublic": "Udostępnij publicznie",
         "editMeal": "Edytuj posiłek",
-        "noServer": "Nie skonfigurowano serwera",
-        "configureServer": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić szczegóły posiłku.",
         "loading": "Wczytywanie posiłku…",
         "loadFailed": "Nie udało się wczytać posiłku",
         "perServing": "Na porcję",
@@ -4271,8 +4258,6 @@
         "makePrivate": "Ustaw jako prywatny",
         "sharePublic": "Udostępnij publicznie",
         "editFood": "Edytuj produkt",
-        "noServer": "Nie skonfigurowano serwera",
-        "configureServer": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić szczegóły produktu.",
         "serving": "Porcja",
         "selectServing": "Wybierz porcję",
         "servingOptions": "Opcje porcji",
@@ -4724,8 +4709,6 @@
     },
     "mealTypeDetail": {
         "states": {
-            "noServer": "Nie skonfigurowano serwera",
-            "noServerHint": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić wartości odżywcze posiłku.",
             "loading": "Wczytywanie posiłku…",
             "loadFailed": "Nie udało się wczytać posiłku",
             "noFoods": "Brak produktów w kategorii „{{meal}}”",
@@ -5100,9 +5083,6 @@
     "exerciseLibrary": {
         "title": "Ćwiczenia",
         "search": "Szukaj ćwiczeń…",
-        "noServer": "Nie skonfigurowano serwera",
-        "configure": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić bibliotekę ćwiczeń.",
-        "go": "Przejdź do ustawień",
         "loading": "Wczytywanie ćwiczeń…",
         "failed": "Nie udało się wczytać ćwiczeń",
         "retry": "Ponów",
@@ -5118,9 +5098,6 @@
     "foodLibrary": {
         "title": "Produkty",
         "search": "Szukaj produktów…",
-        "noServer": "Nie skonfigurowano serwera",
-        "configure": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić bibliotekę produktów.",
-        "go": "Przejdź do ustawień",
         "loading": "Wczytywanie produktów…",
         "failed": "Nie udało się wczytać produktów",
         "retry": "Ponów",
@@ -5135,9 +5112,6 @@
     "mealLibrary": {
         "title": "Posiłki",
         "search": "Szukaj posiłków…",
-        "noServer": "Nie skonfigurowano serwera",
-        "configure": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić bibliotekę posiłków.",
-        "go": "Przejdź do ustawień",
         "loading": "Wczytywanie posiłków…",
         "failed": "Nie udało się wczytać posiłków",
         "searchFailed": "Nie udało się wyszukać posiłków",
@@ -5152,9 +5126,7 @@
     "presetLibrary": {
         "title": "Szablony treningów",
         "search": "Szukaj szablonów treningów…",
-        "noServer": "Nie skonfigurowano serwera",
         "configure": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić szablony treningów.",
-        "go": "Przejdź do ustawień",
         "loading": "Wczytywanie szablonów treningów…",
         "failed": "Nie udało się wczytać szablonów treningów",
         "retry": "Ponów",
@@ -6084,9 +6056,6 @@
             "dayCycle_many": "{{count}}-dniowy cykl"
         }
     },
-    "workoutPresetLibrary": {
-        "configure": "Skonfiguruj połączenie z serwerem w Ustawieniach, aby wyświetlić szablony treningów."
-    },
     "time": {
         "hoursShort": "godz.",
         "minutesShort": "min"
@@ -6425,9 +6394,6 @@
         "deleteMessage": "Usunąć {{name}}? Przyszłe wpisy w dzienniku wygenerowane przez ten plan zostaną usunięte.",
         "deleteFailed": "Nie udało się usunąć planu posiłków",
         "deleteSuccess": "Usunięto plan posiłków",
-        "noServer": "Nie skonfigurowano serwera",
-        "noServerSubtitle": "Skonfiguruj połączenie z serwerem, aby zarządzać planami posiłków.",
-        "goToSettings": "Przejdź do ustawień",
         "loading": "Wczytywanie planów posiłków...",
         "loadFailed": "Nie udało się wczytać planów posiłków",
         "loadFailedSubtitle": "Sprawdź połączenie i spróbuj ponownie.",
@@ -6562,9 +6528,6 @@
         "loading": "Wczytywanie pojemników na wodę...",
         "loadFailed": "Nie udało się wczytać pojemników na wodę",
         "loadFailedSubtitle": "Sprawdź połączenie i spróbuj ponownie.",
-        "noServer": "Nie skonfigurowano serwera",
-        "noServerSubtitle": "Skonfiguruj połączenie z serwerem, aby zarządzać pojemnikami na wodę.",
-        "goToSettings": "Przejdź do ustawień",
         "emptyTitle": "Brak pojemników na wodę",
         "emptySubtitle": "Dodaj butelkę lub szklankę, aby śledzić nawodnienie — opcjonalnie powiązaną z produktem, żeby jedno dotknięcie zapisywało jedno i drugie.",
         "linkedTo": "Powiązane z {{food}}",
@@ -7255,9 +7218,6 @@
         "dateRange": "{{start}} – {{end}}",
         "starting": "Od {{date}}",
         "deleteNamed": "Usuń {{name}}",
-        "noServer": "Brak skonfigurowanego serwera",
-        "noServerSubtitle": "Skonfiguruj połączenie z serwerem, aby zarządzać planami treningów.",
-        "goToSettings": "Przejdź do Ustawień",
         "loading": "Wczytuję plany treningów...",
         "loadFailed": "Nie udało się wczytać planów treningów",
         "emptyTitle": "Brak planów treningów",
@@ -9426,7 +9386,6 @@
         "previewTitle": "Podgląd",
         "previewDescription": "Tak wyglądają szybkie akcje z Twoim wyborem.",
         "lineNumber": "Linia {{number}}",
-        "needsCheckIn": "Niewidoczne: prowadzony wpis dnia jest wyłączony",
         "needsCycle": "Niewidoczne: śledzenie cyklu jest wyłączone",
         "showAs": "Pokaż jako",
         "showAsValue": "Pokaż jako {{style}}",
@@ -9488,9 +9447,6 @@
         "loading": "Ładowanie własnych pomiarów...",
         "loadFailed": "Nie udało się wczytać własnych pomiarów",
         "loadFailedSubtitle": "Sprawdź połączenie i spróbuj ponownie.",
-        "noServer": "Brak skonfigurowanego serwera",
-        "noServerSubtitle": "Skonfiguruj połączenie z serwerem, aby zarządzać własnymi pomiarami.",
-        "goToSettings": "Przejdź do ustawień",
         "emptyTitle": "Brak własnych kategorii",
         "emptySubtitle": "Dodaj kategorię, np. cukier we krwi, aby śledzić własne pomiary.",
         "editNamed": "Edytuj: {{name}}",

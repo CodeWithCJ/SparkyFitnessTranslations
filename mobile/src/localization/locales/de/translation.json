@@ -1215,9 +1215,6 @@
         "medications": "Medikamente",
         "medication": "Medikament",
         "library": {
-            "noServerConfigured": "Kein Server konfiguriert",
-            "configureServer": "Richte deine Serververbindung in den Einstellungen ein, um deine Bibliothek zu sehen.",
-            "goToSettings": "Zu den Einstellungen",
             "loading": "Bibliothek wird geladen...",
             "title": "Bibliothek",
             "create": "Erstellen",
@@ -1441,9 +1438,6 @@
     },
     "dashboard": {
         "chooseDate": "Dashboard-Datum auswählen",
-        "noServerConfigured": "Kein Server konfiguriert",
-        "configureServer": "Richte deine Serververbindung in den Einstellungen ein, um deine Tagesübersicht zu sehen.",
-        "goToSettings": "Zu den Einstellungen",
         "loadingSummary": "Zusammenfassung wird geladen …",
         "loadFailed": "Die Zusammenfassung konnte nicht geladen werden",
         "checkConnection": "Bitte überprüfe deine Verbindung und versuche es erneut.",
@@ -1754,9 +1748,7 @@
         "summarySubtitle": "Kalorien und Makronährstoffe anzeigen",
         "customNutrientDisplay": "Anzeige eigener Nährstoffe",
         "limitDescription_one": "Hier können bis zu {{count}} benutzerdefinierte Nährstoffe angezeigt werden.",
-        "limitDescription_other": "Hier können bis zu {{count}} benutzerdefinierte Nährstoffe angezeigt werden.",
-        "guidedCheckIn": "Geführter Check-in",
-        "guidedCheckInSubtitle": "Fügt dem Hinzufügen-Menü einen Check-in hinzu: Erfasse Stimmung, Messwerte und Fortschrittsfotos des Tages Schritt für Schritt."
+        "limitDescription_other": "Hier können bis zu {{count}} benutzerdefinierte Nährstoffe angezeigt werden."
     },
     "about": {
         "title": "Über",
@@ -1855,9 +1847,6 @@
     },
     "diary": {
         "chooseDate": "Tagebuch-Datum auswählen",
-        "noServer": "Kein Server konfiguriert",
-        "configureServer": "Richte deine Serververbindung in den Einstellungen ein, um dein Tagebuch zu sehen.",
-        "goToSettings": "Zu den Einstellungen",
         "loading": "Tagebuch wird geladen …",
         "loadFailed": "Das Tagebuch konnte nicht geladen werden",
         "checkConnection": "Bitte überprüfe deine Verbindung und versuche es erneut.",
@@ -3704,9 +3693,6 @@
         "deleteMessage": "{{name}} löschen? Künftige von diesem Plan erzeugte Tagebucheinträge werden entfernt.",
         "deleteFailed": "Mahlzeitenplan konnte nicht gelöscht werden",
         "deleteSuccess": "Mahlzeitenplan gelöscht",
-        "noServer": "Kein Server konfiguriert",
-        "noServerSubtitle": "Richte deine Serververbindung ein, um Mahlzeitenpläne zu verwalten.",
-        "goToSettings": "Zu den Einstellungen",
         "loading": "Mahlzeitenpläne werden geladen …",
         "loadFailed": "Mahlzeitenpläne konnten nicht geladen werden",
         "loadFailedSubtitle": "Prüfe deine Verbindung und versuche es erneut.",
@@ -3804,8 +3790,6 @@
         "makePrivate": "Privat machen",
         "shareWithPublic": "Öffentlich teilen",
         "editMeal": "Mahlzeit bearbeiten",
-        "noServer": "Kein Server konfiguriert",
-        "configureServer": "Richte deine Serververbindung in den Einstellungen ein, um Mahlzeitendetails zu sehen.",
         "loading": "Mahlzeit wird geladen …",
         "loadFailed": "Mahlzeit konnte nicht geladen werden",
         "perServing": "Pro Portion",
@@ -4304,8 +4288,6 @@
         "makePrivate": "Privat machen",
         "sharePublic": "Öffentlich teilen",
         "editFood": "Lebensmittel bearbeiten",
-        "noServer": "Kein Server konfiguriert",
-        "configureServer": "Richte deine Serververbindung in den Einstellungen ein, um Lebensmitteldetails zu sehen.",
         "serving": "Portion",
         "selectServing": "Portion auswählen",
         "servingOptions": "Portionsoptionen",
@@ -4752,8 +4734,6 @@
     },
     "mealTypeDetail": {
         "states": {
-            "noServer": "Kein Server konfiguriert",
-            "noServerHint": "Richte deine Serververbindung in den Einstellungen ein, um die Mahlzeiten-Nährwerte zu sehen.",
             "loading": "Mahlzeit wird geladen …",
             "loadFailed": "Mahlzeit konnte nicht geladen werden",
             "noFoods": "Keine Lebensmittel für {{meal}}",
@@ -5106,9 +5086,6 @@
     "exerciseLibrary": {
         "title": "Übungen",
         "search": "Übungen suchen …",
-        "noServer": "Kein Server konfiguriert",
-        "configure": "Richte deine Serververbindung in den Einstellungen ein, um deine Übungsbibliothek zu sehen.",
-        "go": "Zu den Einstellungen",
         "loading": "Übungen werden geladen …",
         "failed": "Übungen konnten nicht geladen werden",
         "retry": "Erneut versuchen",
@@ -5124,9 +5101,6 @@
     "foodLibrary": {
         "title": "Lebensmittel",
         "search": "Lebensmittel suchen …",
-        "noServer": "Kein Server konfiguriert",
-        "configure": "Richte deine Serververbindung in den Einstellungen ein, um deine Lebensmittelbibliothek zu sehen.",
-        "go": "Zu den Einstellungen",
         "loading": "Lebensmittel werden geladen …",
         "failed": "Lebensmittel konnten nicht geladen werden",
         "retry": "Erneut versuchen",
@@ -5141,9 +5115,6 @@
     "mealLibrary": {
         "title": "Mahlzeiten",
         "search": "Mahlzeiten suchen …",
-        "noServer": "Kein Server konfiguriert",
-        "configure": "Richte deine Serververbindung in den Einstellungen ein, um deine Mahlzeitenbibliothek zu sehen.",
-        "go": "Zu den Einstellungen",
         "loading": "Mahlzeiten werden geladen …",
         "failed": "Mahlzeiten konnten nicht geladen werden",
         "searchFailed": "Mahlzeitensuche fehlgeschlagen",
@@ -5158,9 +5129,7 @@
     "presetLibrary": {
         "title": "Trainingsvorlagen",
         "search": "Trainingsvorlagen suchen …",
-        "noServer": "Kein Server konfiguriert",
         "configure": "Richte deine Serververbindung in den Einstellungen ein, um deine Trainingsvorlagen zu sehen.",
-        "go": "Zu den Einstellungen",
         "loading": "Trainingsvorlagen werden geladen …",
         "failed": "Trainingsvorlagen konnten nicht geladen werden",
         "retry": "Erneut versuchen",
@@ -5692,9 +5661,6 @@
         "loading": "Wasserbehälter werden geladen …",
         "loadFailed": "Wasserbehälter konnten nicht geladen werden",
         "loadFailedSubtitle": "Prüfe deine Verbindung und versuche es erneut.",
-        "noServer": "Kein Server konfiguriert",
-        "noServerSubtitle": "Richte deine Serververbindung ein, um Wasserbehälter zu verwalten.",
-        "goToSettings": "Zu den Einstellungen",
         "emptyTitle": "Noch keine Wasserbehälter",
         "emptySubtitle": "Füge eine Flasche oder ein Glas hinzu, um die Flüssigkeitszufuhr zu verfolgen — optional mit einem Lebensmittel verknüpft, sodass ein Tippen beides erfasst.",
         "linkedTo": "Verknüpft mit {{food}}",
@@ -6157,9 +6123,6 @@
             "dayCycle_one": "{{count}}-Tage-Zyklus",
             "dayCycle_other": "{{count}}-Tage-Zyklus"
         }
-    },
-    "workoutPresetLibrary": {
-        "configure": "Richte deine Serververbindung in den Einstellungen ein, um deine Trainingsvorlagen zu sehen."
     },
     "time": {
         "hoursShort": "h",
@@ -7115,9 +7078,6 @@
         "dateRange": "{{start}} – {{end}}",
         "starting": "Ab {{date}}",
         "deleteNamed": "{{name}} löschen",
-        "noServer": "Kein Server konfiguriert",
-        "noServerSubtitle": "Richte deine Serververbindung ein, um Trainingspläne zu verwalten.",
-        "goToSettings": "Zu den Einstellungen",
         "loading": "Trainingspläne werden geladen …",
         "loadFailed": "Trainingspläne konnten nicht geladen werden",
         "emptyTitle": "Noch keine Trainingspläne",
@@ -9231,7 +9191,6 @@
         "previewTitle": "Vorschau",
         "previewDescription": "So sehen die Schnellaktionen mit deiner Auswahl aus.",
         "lineNumber": "Zeile {{number}}",
-        "needsCheckIn": "Ausgeblendet: Geführter Check-in ist aus",
         "needsCycle": "Ausgeblendet: Zyklus-Tracking ist aus",
         "showAs": "Anzeigen als",
         "showAsValue": "Anzeigen als {{style}}",
@@ -9293,9 +9252,6 @@
         "loading": "Eigene Messwerte werden geladen...",
         "loadFailed": "Eigene Messwerte konnten nicht geladen werden",
         "loadFailedSubtitle": "Prüfe deine Verbindung und versuch es erneut.",
-        "noServer": "Kein Server eingerichtet",
-        "noServerSubtitle": "Richte deine Serververbindung ein, um eigene Messwerte zu verwalten.",
-        "goToSettings": "Zu den Einstellungen",
         "emptyTitle": "Noch keine eigenen Kategorien",
         "emptySubtitle": "Füge eine Kategorie wie Blutzucker hinzu, um eigene Messwerte zu erfassen.",
         "editNamed": "{{name}} bearbeiten",

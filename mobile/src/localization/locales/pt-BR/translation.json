@@ -1857,9 +1857,6 @@
         "manageSymptoms": "Gerenciar sintomas",
         "symptomDefinition": "Detalhes do sintoma",
         "library": {
-            "noServerConfigured": "Nenhum servidor configurado",
-            "configureServer": "Configure a conexão com o servidor nas Configurações para ver sua biblioteca.",
-            "goToSettings": "Ir para as configurações",
             "loading": "Carregando biblioteca...",
             "title": "Biblioteca",
             "create": "Criar",
@@ -2078,9 +2075,6 @@
     },
     "dashboard": {
         "chooseDate": "Escolher a data do painel",
-        "noServerConfigured": "Nenhum servidor configurado",
-        "configureServer": "Configure a conexão com o servidor nas Configurações para ver seu resumo diário.",
-        "goToSettings": "Ir para as configurações",
         "loadingSummary": "Carregando resumo...",
         "loadFailed": "Falha ao carregar o resumo",
         "checkConnection": "Confira sua conexão e tente novamente.",
@@ -2394,9 +2388,7 @@
         "customNutrientDisplay": "Exibição de nutrientes personalizados",
         "limitDescription_one": "Dá para mostrar aqui até {{count}} nutriente personalizado.",
         "limitDescription_many": "Dá para mostrar aqui até {{count}} nutrientes personalizados.",
-        "limitDescription_other": "Dá para mostrar aqui até {{count}} nutrientes personalizados.",
-        "guidedCheckIn": "Check-in guiado",
-        "guidedCheckInSubtitle": "Adiciona o Check-in ao menu Adicionar: registre humor, medidas e fotos de progresso do dia, um passo de cada vez."
+        "limitDescription_other": "Dá para mostrar aqui até {{count}} nutrientes personalizados."
     },
     "about": {
         "title": "Sobre",
@@ -2495,9 +2487,6 @@
     },
     "diary": {
         "chooseDate": "Escolher a data do diário",
-        "noServer": "Nenhum servidor configurado",
-        "configureServer": "Configure a conexão com o servidor nas Configurações para ver seu diário.",
-        "goToSettings": "Ir para as configurações",
         "loading": "Carregando diário...",
         "loadFailed": "Falha ao carregar o diário",
         "checkConnection": "Confira sua conexão e tente novamente.",
@@ -4373,9 +4362,6 @@
         "deleteMessage": "Excluir {{name}}? Os registros futuros gerados por este plano serão removidos do diário.",
         "deleteFailed": "Falha ao excluir o plano alimentar",
         "deleteSuccess": "Plano alimentar excluído",
-        "noServer": "Nenhum servidor configurado",
-        "noServerSubtitle": "Configure a conexão com o servidor para gerenciar os planos alimentares.",
-        "goToSettings": "Ir para as configurações",
         "loading": "Carregando planos alimentares...",
         "loadFailed": "Falha ao carregar os planos alimentares",
         "loadFailedSubtitle": "Confira sua conexão e tente novamente.",
@@ -4473,8 +4459,6 @@
         "makePrivate": "Tornar privado",
         "shareWithPublic": "Compartilhar como público",
         "editMeal": "Editar refeição",
-        "noServer": "Nenhum servidor configurado",
-        "configureServer": "Configure a conexão com o servidor nas Configurações para ver os detalhes da refeição.",
         "loading": "Carregando refeição...",
         "loadFailed": "Falha ao carregar a refeição",
         "perServing": "Por porção",
@@ -5030,8 +5014,6 @@
         "makePrivate": "Tornar privado",
         "sharePublic": "Compartilhar como público",
         "editFood": "Editar alimento",
-        "noServer": "Nenhum servidor configurado",
-        "configureServer": "Configure a conexão com o servidor nas Configurações para ver os detalhes do alimento.",
         "serving": "Porção",
         "selectServing": "Selecionar porção",
         "servingOptions": "Opções de porção",
@@ -5457,8 +5439,6 @@
     },
     "mealTypeDetail": {
         "states": {
-            "noServer": "Nenhum servidor configurado",
-            "noServerHint": "Configure a conexão com o servidor nas Configurações para ver os nutrientes da refeição.",
             "loading": "Carregando refeição…",
             "loadFailed": "Falha ao carregar a refeição",
             "noFoods": "Nenhum alimento em {{meal}}",
@@ -5833,9 +5813,6 @@
     "exerciseLibrary": {
         "title": "Exercícios",
         "search": "Buscar exercícios...",
-        "noServer": "Nenhum servidor configurado",
-        "configure": "Configure a conexão com o servidor nas Configurações para ver sua biblioteca de exercícios.",
-        "go": "Ir para as configurações",
         "loading": "Carregando exercícios...",
         "failed": "Falha ao carregar exercícios",
         "retry": "Tentar de novo",
@@ -5851,9 +5828,6 @@
     "foodLibrary": {
         "title": "Alimentos",
         "search": "Buscar alimentos...",
-        "noServer": "Nenhum servidor configurado",
-        "configure": "Configure a conexão com o servidor nas Configurações para ver sua biblioteca de alimentos.",
-        "go": "Ir para as configurações",
         "loading": "Carregando alimentos...",
         "failed": "Falha ao carregar os alimentos",
         "retry": "Tentar de novo",
@@ -5868,9 +5842,6 @@
     "mealLibrary": {
         "title": "Refeições",
         "search": "Buscar refeições...",
-        "noServer": "Nenhum servidor configurado",
-        "configure": "Configure a conexão com o servidor nas Configurações para ver sua biblioteca de refeições.",
-        "go": "Ir para as configurações",
         "loading": "Carregando refeições...",
         "failed": "Falha ao carregar as refeições",
         "searchFailed": "Falha ao buscar refeições",
@@ -5885,9 +5856,7 @@
     "presetLibrary": {
         "title": "Treinos predefinidos",
         "search": "Buscar treinos predefinidos...",
-        "noServer": "Nenhum servidor configurado",
         "configure": "Configure a conexão com o servidor nas Configurações para ver seus treinos predefinidos.",
-        "go": "Ir para as configurações",
         "loading": "Carregando treinos predefinidos...",
         "failed": "Falha ao carregar os treinos predefinidos",
         "retry": "Tentar de novo",
@@ -6110,9 +6079,6 @@
         "loading": "Carregando recipientes de água...",
         "loadFailed": "Falha ao carregar os recipientes de água",
         "loadFailedSubtitle": "Confira sua conexão e tente novamente.",
-        "noServer": "Nenhum servidor configurado",
-        "noServerSubtitle": "Configure a conexão com o servidor para gerenciar os recipientes de água.",
-        "goToSettings": "Ir para as configurações",
         "emptyTitle": "Nenhum recipiente de água ainda",
         "emptySubtitle": "Adicione uma garrafa ou copo para acompanhar a hidratação — se quiser, vinculado a um alimento, para que um toque registre os dois.",
         "linkedTo": "Vinculado a {{food}}",
@@ -6577,9 +6543,6 @@
             "dayCycle_many": "Ciclo de {{count}} dias",
             "dayCycle_other": "Ciclo de {{count}} dias"
         }
-    },
-    "workoutPresetLibrary": {
-        "configure": "Configure a conexão com o servidor nas Configurações para ver seus treinos predefinidos."
     },
     "time": {
         "hoursShort": "h",
@@ -7228,9 +7191,6 @@
         "dateRange": "{{start}} – {{end}}",
         "starting": "A partir de {{date}}",
         "deleteNamed": "Excluir {{name}}",
-        "noServer": "Nenhum servidor configurado",
-        "noServerSubtitle": "Configure a conexão com o servidor para gerenciar planos de treino.",
-        "goToSettings": "Ir para as configurações",
         "loading": "Carregando planos de treino...",
         "loadFailed": "Falha ao carregar os planos de treino",
         "emptyTitle": "Nenhum plano de treino ainda",
@@ -9426,7 +9386,6 @@
         "previewTitle": "Visualizar",
         "previewDescription": "Como as Ações rápidas ficam com as suas escolhas.",
         "lineNumber": "Linha {{number}}",
-        "needsCheckIn": "Oculto: o check-in guiado está desativado",
         "needsCycle": "Oculto: o acompanhamento do ciclo está desativado",
         "showAs": "Mostrar como",
         "showAsValue": "Mostrar como {{style}}",
@@ -9488,9 +9447,6 @@
         "loading": "Carregando as medidas personalizadas...",
         "loadFailed": "Falha ao carregar as medidas personalizadas",
         "loadFailedSubtitle": "Confira sua conexão e tente novamente.",
-        "noServer": "Nenhum servidor configurado",
-        "noServerSubtitle": "Configure a conexão com o servidor para gerenciar as medidas personalizadas.",
-        "goToSettings": "Ir para as configurações",
         "emptyTitle": "Nenhuma categoria personalizada ainda",
         "emptySubtitle": "Adicione uma categoria, como glicemia, para acompanhar as suas próprias medidas.",
         "editNamed": "Editar {{name}}",
