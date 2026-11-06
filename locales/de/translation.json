@@ -3491,7 +3491,7 @@
         "checkinDeleted": "Check-in gelöscht",
         "deleteCheckinTitle": "Diesen Check-in löschen?",
         "deleteCheckinDescription": "Dadurch werden der Check-in und sein Journaleintrag entfernt.",
-        "journalOptional": "Journal (optional)",
+        "journalOptional": "Tagebuch (optional)",
         "healthDataImportCSV": {
             "addMoodTag": "Stimmungs-Tag hinzufügen",
             "unit": "Einheit"
