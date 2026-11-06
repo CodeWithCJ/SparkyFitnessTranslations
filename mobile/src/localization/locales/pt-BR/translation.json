@@ -908,7 +908,7 @@
             "ringLabel_many": "{{count}} dias",
             "ringLabel_other": "{{count}} dias",
             "lastDays_one": "Último dia",
-            "lastDays_many": "Últimos {{count}} dias",
+            "lastDays_many": "Último {{count}} dia",
             "lastDays_other": "Últimos {{count}} dias",
             "streak_one": "Sequência de {{count}} dia",
             "streak_many": "Sequência de {{count}} dias",
