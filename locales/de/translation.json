@@ -6958,7 +6958,8 @@
             "saved": "Fasteneinstellungen erfolgreich aktualisiert.",
             "error": "Fasteneinstellungen konnten nicht gespeichert werden.",
             "errorLoading": "Einstellungen konnten nicht geladen werden.",
-            "retry": "Erneut versuchen"
+            "retry": "Erneut versuchen",
+            "calorieThresholdWithUnit": "Kalorienschwelle ({{unit}})"
         },
         "endFastDialog": {
             "fastCompleted": "Fasten abgeschlossen! 🎉",
@@ -7653,7 +7654,8 @@
         "analyzingHint": "Zutaten, Grammportionen und Makros werden erkannt",
         "editInMealBuilder": "Im Mahlzeiten-Editor bearbeiten",
         "loggedSuccess": "Mahlzeit erfolgreich in dein Tagebuch übernommen.",
-        "openInMealBuilder": "Im Mahlzeiten-Editor öffnen"
+        "openInMealBuilder": "Im Mahlzeiten-Editor öffnen",
+        "energyPGCG": "{{calories_kcal}} {{unit}} · P: {{protein_g}}g · K: {{carbs_g}}g · F: {{fat_g}}g"
     },
     "waterContainerManager": {
         "title": "Wasserbehälter verwalten",
@@ -10234,7 +10236,74 @@
             "amylase": "Amylase",
             "lipase": "Lipase",
             "globulin": "Globulin",
-            "direct_bilirubin": "Bilirubin (direkt)"
-        }
+            "direct_bilirubin": "Bilirubin (direkt)",
+            "ketones": "Ketone (Beta-Hydroxybutyrat)",
+            "fructosamine": "Fructosamin",
+            "anion_gap": "Anionenlücke",
+            "mchc": "MCHC",
+            "mch": "MCH",
+            "bun_creatinine_ratio": "BUN/Kreatinin-Verhältnis",
+            "cystatin_c": "Cystatin C",
+            "ammonia": "Ammoniak",
+            "progesterone": "Progesteron",
+            "prolactin": "Prolaktin",
+            "tpo_antibodies": "TPO-Antikörper",
+            "urine_albumin_creatinine": "Albumin-Kreatinin-Quotient im Urin",
+            "ldh": "LDH",
+            "pth": "PTH",
+            "igf_1": "IGF-1",
+            "dhea_s": "DHEA-S",
+            "shbg": "SHBG",
+            "fsh": "FSH",
+            "lh": "LH",
+            "mpv": "MPV",
+            "rdw": "RDW",
+            "c_peptide": "C-Peptide"
+        },
+        "rangeFromReport": "Nutze den Referenzbereich aus deinem Befund. Er wird mit diesem Ergebnis gespeichert.",
+        "import": {
+            "blocked": {
+                "duplicate": "Aus diesem Befund bereits importiert."
+            },
+            "chooseAnother": "Anderen Befund auswählen",
+            "cta": "Aus Befund importieren",
+            "includeRow": "{{name}} übernehmen",
+            "newMarker": "Neuer Marker",
+            "reading": "Befund wird gelesen ...",
+            "saveCount_one": "{{count}} Ergebnis speichern",
+            "saveCount_other": "{{count}} Ergebnisse speichern",
+            "saved_one": "{{count}} Ergebnis gespeichert",
+            "saved_other": "{{count}} Ergebnisse gespeichert",
+            "scanFailed": "Dieser Befund konnte nicht gelesen werden.",
+            "valueFor": "Ergebnis für {{name}}",
+            "deleteTitle": "Importierte Ergebnisse löschen",
+            "deleteMessage": "Alle aus einem Befund importierten Ergebnisse sowie alle nun leeren eigenen Marker löschen? Selbst eingetragene Ergebnisse bleiben erhalten.",
+            "deleted_one": "{{count}} importiertes Ergebnis gelöscht",
+            "deleted_other": "{{count}} importierte Ergebnisse gelöscht",
+            "deleteFailed": "Die importierten Ergebnisse konnten nicht gelöscht werden",
+            "saveFailed": "Der Befund konnte nicht gespeichert werden. Es wurde nichts gespeichert.",
+            "warning": {
+                "unit": "Deine bisherigen Ergebnisse nutzen {{earlierUnit}}, dieser Befund jedoch {{reportUnit}}. Einheiten werden nicht umgerechnet."
+            },
+            "chooseFile": "PDF oder Foto auswählen",
+            "introWeb": "Wähle das PDF eines Laborbefunds oder ein Foto bzw. einen Screenshot davon aus. Dein KI-Anbieter liest das Dokument aus und du überprüfst die Ergebnisse, bevor etwas gespeichert wird. Der Befund selbst wird nicht gespeichert.",
+            "editHintWeb": "Gleiche die Werte mit deinem Befund ab. Jedes Ergebnis wird mit der hier angegebenen Einheit und dem Referenzbereich gespeichert: entweder wie auf dem Befund abgedruckt oder mit dem Standardwert des Markers, falls der Befund keinen enthält.",
+            "tooLarge": "Diese Datei ist zu groß zum Einlesen (Limit: 14 MB).",
+            "nothingFound": "In diesem Befund wurden keine Ergebnisse gefunden.",
+            "readFailed": "Diese Datei konnte nicht geöffnet werden.",
+            "photoTooLarge": "Dieses Foto ist zu groß zum Einlesen (Limit: 6 MB). Versuche es mit einem kleineren Foto oder einem Screenshot.",
+            "lockedAfterFailedSave": "Das Speichern wurde nicht abgeschlossen, daher ist diese Überprüfung gesperrt: Erneutes Speichern übermittelt exakt denselben Befund und speichert ihn nur einmal. Um Werte zu ändern, wähle den Befund erneut aus.",
+            "unconfirmedNoKey": "Das Speichern wurde nicht abgeschlossen und dieser Browser kann den Befund nicht kennzeichnen, um ein doppeltes Speichern zu verhindern. Der Befund wird möglicherweise noch gespeichert. Schließe dieses Fenster und prüfe deine Laborwerte in wenigen Minuten, bevor du erneut etwas importierst, damit nichts doppelt gespeichert wird."
+        },
+        "moreActions": "Weitere Aktionen",
+        "deleteMarker": "Marker und alle Ergebnisse löschen",
+        "deleteMarkerTitle": "Marker löschen",
+        "deleteMarkerMessage": "{{name}} und alle zugehörigen Ergebnisse löschen? Dies kann nicht rückgängig gemacht werden.",
+        "deleteMarkerFailed": "Der Marker konnte nicht gelöscht werden",
+        "labName": "Labor",
+        "notes": "Notizen",
+        "valueInvalid": "Gib einen Marker und einen numerischen Wert ein.",
+        "historyCutOff": "Der Verlauf zeigt maximal die neuesten {{count}} Ergebnisse.",
+        "dateInvalid": "Gib das Testdatum ein."
     }
 }
