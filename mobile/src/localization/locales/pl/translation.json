@@ -187,7 +187,6 @@
         "emptyForDate": "Brak wpisów żywieniowych dla tej daty",
         "diaryForDate": "Dziennik rodzinny · {{date}}",
         "openMeal": "Otwórz posiłek {{meal}}",
-        "mealCalories": "{{calories}} kcal",
         "unnamedFood": "Nienazwany produkt",
         "selectAll": "Zaznacz wszystko",
         "deselectAll": "Odznacz wszystko",
@@ -195,15 +194,12 @@
         "selectFood": "Zaznacz {{food}}",
         "deselectFood": "Odznacz {{food}}",
         "continue": "Kontynuuj",
-        "nutritionSummary": "{{calories}} kcal · B {{protein}} g · W {{carbs}} g · T {{fat}} g",
-        "selectedNutrition": "Wybrano: {{calories}} kcal · B {{protein}} g · W {{carbs}} g · T {{fat}} g",
         "copyReview": "Sprawdź kopiowanie",
         "copyFrom": "Kopiowanie od {{name}}",
         "copyMealTitle": "Posiłek: {{meal}}",
         "quantityForFood": "Ilość produktu {{food}}",
         "quantityMustBePositive": "Wprowadź ilość większą od zera.",
         "copyNutrition": "Wartości odżywcze do skopiowania",
-        "copyCalories": "{{calories}} kcal",
         "copyProtein": "{{protein}} g białka",
         "copyCarbs": "{{carbs}} g węglowodanów",
         "copyFat": "{{fat}} g tłuszczu",
@@ -450,7 +446,6 @@
             "changeMetric": "Zmień kolumnę metryki",
             "notesForSet": "Notatki do serii {{number}}",
             "addSet": "Dodaj serię: „{{name}}”",
-            "caloriesUnit": "kcal",
             "addSetLabel": "Dodaj serię",
             "viewImages": "Zobacz zdjęcia: {{name}}",
             "heartRateFor": "Średnie tętno dla {{name}}",
@@ -923,7 +918,6 @@
         "healthTrends": "Trendy zdrowotne",
         "consumed": "Spożyte",
         "remaining": "pozostało",
-        "ofCalories": "z {{value}} kcal",
         "burned": "Spalone",
         "hydration": "Nawodnienie",
         "ofVolume": "z {{value}} {{unit}}",
@@ -1061,7 +1055,6 @@
         "exerciseCaloriesDescription": "Określa, jaka część kalorii z ćwiczeń jest dodawana do dziennego celu.",
         "activityLevel": "Poziom aktywności",
         "activityBaseline": "Używany jako wartość bazowa dla TDEE.",
-        "adaptiveFallback": "Szacunek zapasowy do czasu zebrania wystarczającej ilości danych — a później nadal wyznacza limity wiarygodności. Twój zmierzony TDEE jest ograniczane do ±500 kcal od BMR × ten mnożnik.",
         "allowNegative": "Zezwalaj na niższą prognozę zapasową",
         "negativeDescription": "Gdy suma z urządzenia jest niedostępna, pozwól, aby zapasowe BMR + kalorie aktywności obniżyły Twój cel.",
         "includeResting": "Uwzględniaj kalorie spoczynkowe",
@@ -2057,7 +2050,6 @@
         "forceStatic": "Statyczne",
         "mechanicCompound": "Złożone",
         "mechanicIsolation": "Izolowane",
-        "caloriesPerHour": "Kalorie na godzinę",
         "muscles": "Mięśnie",
         "classification": "Klasyfikacja",
         "selectValue": "Wybierz…",
@@ -2324,7 +2316,6 @@
         "setCount_few": "{{formattedCount}} serie",
         "setCount_many": "{{formattedCount}} serii",
         "caloriesShort": "kcal",
-        "caloriesUnit": "kcal",
         "unknownExercise": "Nieznane ćwiczenie",
         "addNotePlaceholder": "Dodaj notatkę…",
         "setOf_one": "Seria {{number}} z {{count}}",
@@ -2599,8 +2590,6 @@
         "protein": "białko",
         "carbs": "węglowodany",
         "fat": "tłuszcz",
-        "caloriesShort": "kcal",
-        "caloriesUnit": "kcal",
         "proteinAmount": "białka",
         "carbsAmount": "węglowodanów",
         "fatAmount": "tłuszczu",
@@ -2614,7 +2603,6 @@
     "foodSummary": {
         "tapToAddFood": "Dotknij, aby dodać produkt",
         "caloriesShort": "kcal",
-        "caloriesUnit": "kcal",
         "nutritionBreakdown": "Podsumowanie wartości odżywczych: {{label}}"
     },
     "exerciseSummary": {
@@ -2634,7 +2622,6 @@
         "unknownFood": "Nieznany produkt",
         "adjustServing": "Dostosuj porcję",
         "caloriesShort": "kcal",
-        "caloriesUnit": "kcal",
         "deleteFood": "Usuń produkt"
     },
     "exerciseRow": {
@@ -2751,8 +2738,7 @@
             "bodyWaterPercentage": "Woda w organizmie (%)",
             "bmr": "BMR",
             "muscleMassWithUnit": "Masa mięśniowa ({{unit}})",
-            "boneMassWithUnit": "Masa kostna ({{unit}})",
-            "bmrWithUnit": "BMR (kcal)"
+            "boneMassWithUnit": "Masa kostna ({{unit}})"
         },
         "validation": {
             "invalid": "Nieprawidłowe: {{label}}",
@@ -2766,8 +2752,7 @@
             "feetInchesNumber": "Wpisz liczbę stóp i cali.",
             "bodyFatRange": "Zawartość tkanki tłuszczowej (%) musi wynosić od 0 do 100.",
             "min": "Musi wynosić co najmniej {{min}}.",
-            "bodyWaterRange": "Woda w organizmie % musi mieścić się w zakresie 0–100.",
-            "bmrRange": "BMR musi mieścić się w zakresie 600–6000 kcal."
+            "bodyWaterRange": "Woda w organizmie % musi mieścić się w zakresie 0–100."
         },
         "nothingToSave": "Brak danych do zapisania",
         "enterValue": "Wpisz wartość lub wyczyść co najmniej jedno pole.",
@@ -3139,8 +3124,6 @@
         "title": "Podsumowanie",
         "collapse": "Zwiń tę sekcję",
         "expand": "Rozwiń tę sekcję",
-        "projectedTdee": "Ekstrapolowane TDEE: {{value}} kcal",
-        "goalModeTarget": "Cel trybu celu: {{value}} kcal",
         "healthConnectProjectionSource": "Suma kalorii z Health Connect",
         "fallbackProjectionSource": "Zapasowo: BMR + aktywne kalorie",
         "legacyProjectionSource": "Ekstrapolacja z urządzenia"
@@ -3173,7 +3156,6 @@
         "servingSize": "Wielkość porcji",
         "servingUnit": "Jednostka porcji",
         "autoScaleNutrition": "Automatycznie przelicz wartości odżywcze",
-        "caloriesRequired": "Kalorie (kcal) *",
         "ai": {
             "couldNotEstimate": "Nie udało się oszacować",
             "noTrustedDefault": "Produkt nie ma zaufanej wartości domyślnej, na której można oprzeć przeliczenie.",
@@ -3759,7 +3741,6 @@
         "showMore": "Pokaż więcej",
         "best": "Najlepszy wynik ({{unit}})",
         "last": "Ostatni wynik ({{unit}})",
-        "caloriesPerHour": "Kalorie / godz.",
         "equipment": "Sprzęt",
         "primaryMuscles": "Główne partie mięśni",
         "secondaryMuscles": "Dodatkowe partie mięśni",
@@ -3830,7 +3811,6 @@
         "protein": "białko",
         "carbs": "węglowodany",
         "fat": "tłuszcz",
-        "calories": "kcal",
         "viewLinkedMeal": "Wyświetl połączony posiłek {{name}}",
         "logMeal": "Zarejestruj posiłek",
         "deleting": "Usuwanie…",
@@ -4060,7 +4040,6 @@
         },
         "labels": {
             "caloriesShort": "kcal",
-            "caloriesUnit": "kcal",
             "foods": "produkty",
             "meals": "posiłki",
             "meal": "Posiłek",
@@ -4681,11 +4660,8 @@
             "count_few": "{{count}} składniki",
             "count_many": "{{count}} składników",
             "totals": "Suma",
-            "rowSummary": "{{grams}} g · {{calories}} kcal",
-            "macroSummary": "{{calories}} kcal · {{protein}}B · {{carbs}}W · {{fat}}T",
             "addFood": "Dodaj produkt",
             "addedFood": "Produkt",
-            "pickedRowSummary": "{{quantity}} {{unit}} · {{calories}} kcal",
             "pickedFoodNote": "Dodano z Twoich produktów. Usuń go i dodaj ponownie, aby zmienić ilość."
         },
         "match": {
@@ -4749,7 +4725,6 @@
             "activity": "Aktywność",
             "duration": "Czas trwania (min)",
             "distance": "Dystans ({{unit}})",
-            "calories": "Kalorie",
             "avgHeartRate": "Średnie tętno (bpm)",
             "notes": "Notatki",
             "notesPlaceholder": "Opcjonalne notatki…"
@@ -4792,8 +4767,7 @@
         "accessibility": {
             "addFood": "Dodaj produkt",
             "copyMeal": "Kopiuj posiłek na inny dzień"
-        },
-        "targetCalories": "Cel: {{calories}} kcal"
+        }
     },
     "nutrientTrends": {
         "title": "Trendy: {{nutrient}}",
@@ -5128,11 +5102,9 @@
             "title": "Kalorie",
             "loadFailed": "Nie udało się wczytać danych o kaloriach",
             "empty": "Brak danych o kaloriach za ten okres",
-            "tooltip": "{{formattedCount}} kcal spożyte",
             "tooltipMacro": "{{percent}}% {{macroLabel}}",
             "otherMacro": "Inne",
             "avgCalories": "Śr.",
-            "avgCaloriesValue": "{{formattedCount}} kcal",
             "noAverage": "—"
         },
         "allTrendsHidden": "Wszystkie wykresy są ukryte. Wybierz, które pokazać w ustawieniach pulpitu.",
@@ -6153,7 +6125,6 @@
     },
     "healthDataDisplay": {
         "distance": "{{value}} km",
-        "kcal": "{{value}} kcal",
         "bpm": "{{value}} bpm",
         "kg": "{{value}} kg",
         "percent": "{{value}}%",
@@ -6524,11 +6495,8 @@
         "proteinLabel": "Białko",
         "carbsLabel": "Węglowodany",
         "fatLabel": "Tłuszcz",
-        "nutritionLine": "{{calories}} kcal · {{protein}} g B · {{carbs}} g W · {{fat}} g T",
         "dailyNutritionAccessibility": "Dzienne {{nutrient}}: {{value}} {{unit}}",
-        "mealTypeNutritionAccessibility": "{{mealType}}: łącznie {{calories}} kcal, {{protein}} g białka, {{carbs}} g węglowodanów, {{fat}} g tłuszczu",
         "mealTypeMacros": "{{protein}} g B · {{carbs}} g W · {{fat}} g T",
-        "caloriesValue": "{{value}} kcal",
         "nutritionLoading": "Wczytywanie brakujących szczegółów wartości odżywczych. Sumy mogą być niekompletne.",
         "nutritionLoadFailed": "Nie udało się wczytać niektórych szczegółów wartości odżywczych. Sumy mogą być niekompletne.",
         "assignmentRequired": "Dodaj co najmniej jedno kompletne przypisanie posiłku.",
@@ -6948,7 +6916,6 @@
             "olderSessions": "Starsze sesje",
             "unitKm": "km",
             "unitMi": "mi",
-            "calories": "{{value}} kcal",
             "minutes_one": "{{formattedCount}} min",
             "minutes_few": "{{formattedCount}} min",
             "minutes_many": "{{formattedCount}} min",
@@ -7441,9 +7408,7 @@
         "targetEatingHours": "Docelowe godziny jedzenia",
         "fastingHoursRange": "Wpisz od 0,5 do 168 godzin.",
         "eatingHoursRange": "Wpisz od 0 do 24 godzin.",
-        "calorieThreshold": "Próg kaloryczny (kcal)",
         "calorieThresholdHint": "Przekąski lub napoje poniżej tej wartości (czarna kawa, woda, elektrolity) nie przerwą postu.",
-        "calorieThresholdRange": "Wpisz liczbę całkowitą od 0 do 500.",
         "preEndAlert": "Ostrzeżenie przed celem (minuty)",
         "preEndAlertHint": "Ile minut przed celem postu wysłać przypomnienie. Wpisz 0, aby wyłączyć.",
         "preEndAlertRange": "Wpisz liczbę całkowitą od 0 do 180.",
@@ -7926,12 +7891,9 @@
         "invalidValue": "Wpisz poprawną liczbę dla każdego celu.",
         "fields": {
             "water": "Woda ({{unit}})",
-            "exerciseCalories": "Kalorie z treningu (kcal)",
             "exerciseMinutes": "Czas treningu (min)",
-            "steps": "Dzienne kroki",
-            "baselineCalories": "Kalorie podstawy (kcal)"
+            "steps": "Dzienne kroki"
         },
-        "adaptiveNoteToday": "Tryb adaptacyjny jest włączony, więc cel kaloryczny zmienia się codziennie. Dziś to {{calories}} kcal. Podstawowa poniżej określa, jak daleko powyżej lub poniżej szacowanego zapotrzebowania chcesz być; to nie jest stały dzienny cel.",
         "adaptiveNote": "Tryb adaptacyjny jest włączony, więc cel kaloryczny zmienia się codziennie. Podstawowa poniżej określa, jak daleko powyżej lub poniżej szacowanego zapotrzebowania chcesz być; to nie jest stały dzienny cel.",
         "customNutrients": {
             "notSet": "Brak celu"
@@ -7949,7 +7911,6 @@
             "mustBe100": "Procenty posiłków muszą sumować się do 100%.",
             "total": "Suma: {{total}}% (do zapisu musi być 100%)",
             "totalOk": "Suma: {{total}}%",
-            "mealCalories": "{{meal}} ({{calories}} kcal)",
             "distributeRemaining": "Rozdziel resztę równomiernie",
             "lock": "Zablokuj {{meal}}",
             "unlock": "Odblokuj {{meal}}",
@@ -8018,7 +7979,6 @@
             "description": "Szablon to zapisany zestaw celów. Zastosuj wypełnia formularz powyżej (dotknij Zapisz, aby stał się Twoimi celami); Edytuj zmienia sam szablon.",
             "namePlaceholder": "Nazwa szablonu",
             "empty": "Brak szablonów celów.",
-            "summary": "{{calories}} kcal, {{protein}} g B, {{carbs}} g W, {{fat}} g T",
             "apply": "Zastosuj",
             "deleteTitle": "Usunąć szablon?",
             "deleteMessage": "Usunąć \"{{name}}\"? Dni planu tygodniowego, które go używają, zostaną bez szablonu.",
@@ -8144,7 +8104,6 @@
         "dailyAverages": "Średnie dzienne",
         "loadFailed": "Nie udało się wczytać danych odżywiania",
         "empty": "W tym okresie nie zapisano żadnych produktów",
-        "kcal": "{{value}} kcal",
         "grams": "{{value}} g",
         "changeHint": "{{change}} wobec poprzednich {{days}} dni",
         "onTarget": "W granicach 10% celu",
@@ -8905,7 +8864,6 @@
         "running": "Bieganie na zegarku",
         "next": "Następny: {{step}}",
         "calories": "Kalorie",
-        "kcal": "kcal",
         "ended": "Trening na zegarku zakończył się lub jest poza zasięgiem. Ukończony trening zostaje dodany do Twojego Dziennika.",
         "indoorNote": "W pomieszczeniach dystans to szacunek zegarka. Po zakończeniu możesz go poprawić na wartość z bieżni.",
         "starting": "Uruchamianie na zegarku…",
@@ -9478,7 +9436,6 @@
         "providerError": "Źródło niedostępne",
         "noMatch": "Brak dopasowania",
         "basis": "Na {{size}} {{unit}}",
-        "macros": "{{calories}} kcal · Białko {{protein}} g · Węglowodany {{carbs}} g · Tłuszcz {{fat}} g",
         "unknown": "—"
     },
     "addMenuSettings": {
@@ -9516,7 +9473,6 @@
         "none": "Nie znaleziono treningów z urządzeń z tego dnia.",
         "workoutFallback": "Trening",
         "minutes": "{{value}} min",
-        "calories": "{{value}} kal",
         "sameSession": "Ta sama sesja",
         "sameTime": "Pokrywa się czasowo",
         "countHeading": "Zaliczaj do dziennej sumy",
@@ -9526,7 +9482,6 @@
         "lower": "Niższa z dwóch ({{value}})",
         "average": "Średnia ({{value}})",
         "custom": "Niestandardowa suma",
-        "customLabel": "Suma dla tej sesji (kal)",
         "link": "Powiąż treningi",
         "unlink": "Odwiąż",
         "linkError": "Nie udało się powiązać treningów.",

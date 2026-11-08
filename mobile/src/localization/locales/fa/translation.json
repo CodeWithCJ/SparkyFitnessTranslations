@@ -8,7 +8,6 @@
     },
     "foodForm": {
         "foodName": "نام غذا",
-        "caloriesRequired": "کالری (kcal) *",
         "servingSize": "اندازهٔ هر وعده",
         "servingUnit": "واحد اندازه‌گیری"
     },
@@ -25,7 +24,6 @@
         "fields": {
             "duration": "مدت‌زمان (دقیقه)",
             "distance": "مسافت ({{unit}})",
-            "calories": "کالری",
             "avgHeartRate": "میانگین ضربان قلب (bpm)",
             "notes": "یادداشت‌ها",
             "activity": "فعالیت",
