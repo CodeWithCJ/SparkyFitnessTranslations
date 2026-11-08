@@ -100,7 +100,9 @@
             "addCustomTag": "Dodaj „{{tag}}”",
             "replaceTitle": "Zamień ćwiczenie",
             "replaceSuccess": "Ćwiczenie zamienione",
-            "suggestedTab": "Proponowane"
+            "suggestedTab": "Proponowane",
+            "caloriesPerHourWithUnit": "Kalorie/godz. ({{unit}})",
+            "caloriesPerHourHintWithUnit": "Pozostaw puste, aby użyć obliczonych przez system kalorii na godzinę ({{newExerciseCalories}} {{unit}}/godz.)."
         },
         "addWorkoutPresetDialog": {
             "searchResultsTitle": "Wyniki wyszukiwania",
@@ -208,7 +210,9 @@
             "telemetryHeader": "Metryki telemetrii i aktywności",
             "caloriesAppliedPlaceholder": "Puste pole zlicza powyższe spalone kalorie",
             "caloriesAppliedHint": "Wpisz 0, gdy trening z zegarka już zlicza tę sesję. Estymata spalonych kalorii jest zachowana.",
-            "caloriesAppliedLinkedHint": "Liczone kalorie pochodzą z powiązania treningów. Zarządzaj tym powiązaniem z poziomu treningu ręcznego."
+            "caloriesAppliedLinkedHint": "Liczone kalorie pochodzą z powiązania treningów. Zarządzaj tym powiązaniem z poziomu treningu ręcznego.",
+            "caloriesBurnedOptionalWithUnit": "Spalone kalorie ({{unit}}, opcjonalnie)",
+            "caloriesAppliedWithUnit": "Kalorie wliczane do sumy dziennej ({{unit}}, opcjonalnie)"
         },
         "activityDetailsEditor": {
             "fieldNamePlaceholder": "np. 'Pogoda', 'Samopoczucie'",
@@ -1113,7 +1117,46 @@
         "weightTrendWithRate": "Trend {{weight}} · {{rate}} tygodniowo",
         "weightTrendWithForecast": "Trend {{weight}} · prognozowane osiągnięcie celu: {{date}}",
         "compareTab": "Porównanie",
-        "heartRateTab": "Analiza tętna"
+        "heartRateTab": "Analiza tętna",
+        "nutritionPeriodSummary": "Podsumowanie żywienia",
+        "glucose": {
+            "title": "Glukoza we krwi",
+            "description": "Zarejestrowane odczyty z Apple Health, w tym dane Dexcom CGM. Dane z Apple Health mogą docierać z opóźnieniem.",
+            "unit": "Jednostka",
+            "source": "Źródło",
+            "error": "Nie udało się wczytać odczytów glukozy.",
+            "loading": "Wczytywanie odczytów glukozy…",
+            "empty": "Brak odczytów glukozy w tym okresie. Włącz udostępnianie Dexcom do Apple Health, zezwól SparkyFitness na odczyt glukozy we krwi i zsynchronizuj dane z aplikacji na iOS.",
+            "chartLabel": "Odczyty glukozy w czasie",
+            "foods": "Zapisane produkty · znaczniki posiłków",
+            "foodError": "Nie udało się wczytać zapisanych produktów.",
+            "mealNote": "Znaczniki posiłków pokazują zapisane czasy, a nie zmierzoną odpowiedź na produkt. Produkty bez zapisanego czasu nie są umieszczane na krzywej.",
+            "layerMeal": "Produkty",
+            "layerExercise": "Trening",
+            "layerSleep": "Sen",
+            "layerMedication": "Leki",
+            "layerStress": "Stres",
+            "layerCaffeine": "Kofeina",
+            "layerAlcohol": "Alkohol",
+            "layerHydration": "Nawodnienie",
+            "context": "Zarejestrowany kontekst · wyświetlane warstwy",
+            "contextLoading": "Wczytywanie zarejestrowanego kontekstu…",
+            "contextError": "Nie udało się wczytać zarejestrowanego kontekstu.",
+            "noTime": "Czas nie został zapisany",
+            "carbs": "Węglowodany",
+            "day": "Dzień",
+            "unavailable": "Część kontekstu jest niedostępna:",
+            "events": "Zarejestrowane zdarzenia i sumy dzienne",
+            "contextNote": "To są zarejestrowane zdarzenia, a nie udowodnione przyczyny. Czasy zakończenia ćwiczeń używają zarejestrowanego czasu trwania. Wpisy bez czasu i sumy dzienne nie są umieszczane na krzywej.",
+            "dailyTotal": "Suma dzienna",
+            "dailyAverage": "Średnia dzienna",
+            "zoomIn": "Powiększ",
+            "zoomOut": "Pomniejsz",
+            "earlier": "Wcześniej",
+            "later": "Później",
+            "resetZoom": "Resetuj powiększenie",
+            "windowEvents": "Zdarzenia w widoku"
+        }
     },
     "exerciseReportsDashboard": {
         "compareTo": "Porównaj z",
@@ -1603,7 +1646,8 @@
             "saturday": "Sobota",
             "temperatureUnit": "Jednostka temperatury",
             "celsius": "Celsjusz (°C)",
-            "fahrenheit": "Fahrenheit (°F)"
+            "fahrenheit": "Fahrenheit (°F)",
+            "glucoseUnit": "Jednostka glukozy"
         },
         "waterTracking": {
             "title": "Śledzenie wody",
@@ -3691,7 +3735,9 @@
             "humidity": "Wilgotność (%)",
             "gearName": "Nazwa sprzętu",
             "eGNikePegasus40": "np. Nike Pegasus 40",
-            "exercise": "Ćwiczenie"
+            "exercise": "Ćwiczenie",
+            "activeCaloriesWithUnit": "Aktywne kalorie ({{unit}})",
+            "restingCaloriesWithUnit": "Kalorie w spoczynku ({{unit}})"
         },
         "editMealFoodEntryDialog": {
             "modifyTheFoodsAndQuantities": "Zmodyfikuj produkty i ilości dla tego konkretnego zapisanego wpisu posiłku.",
@@ -4401,7 +4447,8 @@
         "fFatg": "T: {{fat}}g",
         "pTotalProteing": "B: {{totalProtein}}g",
         "cTotalCarbsg": "W: {{totalCarbs}}g",
-        "fTotalFatg": "T: {{totalFat}}g"
+        "fTotalFatg": "T: {{totalFat}}g",
+        "totalEnergyPGC": "<strong>Razem:</strong> {{totalCalories}} | B: {{totalProtein}}g | W: {{totalCarbs}}g | T: {{totalFat}}g"
     },
     "workoutPresetForm": {
         "createTitle": "Stwórz nowy szablon treningu",
@@ -5461,7 +5508,8 @@
             "doseAmount": "Dawka (zastąpienie)",
             "startDateRequired": "Data rozpoczęcia (wymagana)",
             "time": "Pora dnia",
-            "weekdays": "Wybierz dni"
+            "weekdays": "Wybierz dni",
+            "supplementDoseScalingEnergy": "Każdy zapis liczy {{dose}} porcje: {{dose}} x {{perDose}} {{unit}} = {{total}} {{unit}}."
         },
         "reports": {
             "logTableTitle": "Tabela przyjmowania leków",
@@ -7109,7 +7157,8 @@
             "saved": "Ustawienia postu zaktualizowane pomyślnie.",
             "error": "Nie udało się zapisać ustawień postu.",
             "errorLoading": "Nie udało się wczytać ustawień.",
-            "retry": "Spróbuj ponownie"
+            "retry": "Spróbuj ponownie",
+            "calorieThresholdWithUnit": "Próg kalorii ({{unit}})"
         },
         "endFastDialog": {
             "fastCompleted": "Post zakończony! 🎉",
@@ -7571,7 +7620,8 @@
         "analyzingHint": "Wykrywanie składników, porcji gramowych i makroskładników",
         "editInMealBuilder": "Edytuj w kreatorze posiłków",
         "loggedSuccess": "Posiłek pomyślnie zapisany w dzienniku.",
-        "openInMealBuilder": "Otwórz w kreatorze posiłków"
+        "openInMealBuilder": "Otwórz w kreatorze posiłków",
+        "energyPGCG": "{{calories_kcal}} {{unit}} · B: {{protein_g}}g · W: {{carbs_g}}g · T: {{fat_g}}g"
     },
     "waterContainerManager": {
         "title": "Zarządzaj pojemnikami na wodę",
@@ -10299,7 +10349,9 @@
             "tooLarge": "Ten plik jest za duży, aby go odczytać (limit 14 MB).",
             "nothingFound": "W tym badaniu nie znaleziono wyników.",
             "readFailed": "Nie udało się otworzyć tego pliku.",
-            "photoTooLarge": "To zdjęcie jest za duże, aby je odczytać (limit 6 MB). Spróbuj mniejszego zdjęcia lub zrzutu ekranu."
+            "photoTooLarge": "To zdjęcie jest za duże, aby je odczytać (limit 6 MB). Spróbuj mniejszego zdjęcia lub zrzutu ekranu.",
+            "lockedAfterFailedSave": "Zapis nie został ukończony, dlatego ten przegląd jest zablokowany: ponowne zapisanie wysyła dokładnie ten sam raport i jest przechowywany tylko raz. Aby zmienić wartości, wybierz raport ponownie.",
+            "unconfirmedNoKey": "Zapis nie został ukończony, a ta przeglądarka nie może oznaczyć raportu tak, aby ponowne zapisanie zapisało go tylko raz. Raport może się jeszcze zapisywać. Zamknij to okno i sprawdź swoje wyniki laboratoryjne za kilka minut, zanim ponownie coś zaimportujesz, aby nie zapisać go dwukrotnie."
         },
         "moreActions": "Więcej działań",
         "deleteMarker": "Usuń wskaźnik i wszystkie wyniki",
