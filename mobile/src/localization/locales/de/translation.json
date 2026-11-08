@@ -9538,8 +9538,8 @@
             "vitamin_b12": "Vitamin B12",
             "creatinine": "Kreatinin",
             "egfr": "eGFR",
-            "alt": "ALT",
-            "ast": "AST",
+            "alt": "GPT (ALT)",
+            "ast": "GOT (AST)",
             "non_hdl": "Nicht-HDL-Cholesterin",
             "apob": "Apolipoprotein B",
             "vldl": "VLDL-Cholesterin",
@@ -9576,7 +9576,24 @@
             "cortisol": "Cortisol (morgens)",
             "psa": "PSA",
             "testosterone": "Testosteron (Gesamt)",
-            "estradiol": "Östradiol"
+            "estradiol": "Östradiol",
+            "lipoprotein_a": "Lipoprotein(a)",
+            "eosinophils": "Eosinophile",
+            "monocytes": "Monocyten",
+            "neutrophils": "Neutrophile",
+            "lymphocytes": "Lymphocyten",
+            "ck": "Creatin-Kinase",
+            "zinc": "Zink",
+            "copper": "Kupfer",
+            "selenium": "Selen",
+            "vitamin_b6": "Vitamin B6",
+            "vitamin_a": "Vitamin A",
+            "vitamin_e": "Vitamin E",
+            "free_testosterone": "Freies Testosteron",
+            "amylase": "Amylase",
+            "lipase": "Lipase",
+            "globulin": "Globulin",
+            "direct_bilirubin": "Bilirubin (direkt)"
         }
     }
 }
