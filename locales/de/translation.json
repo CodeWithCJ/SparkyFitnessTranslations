@@ -1487,8 +1487,6 @@
             "categoryGeneral": "Allgemein",
             "categoryStrength": "Kraft",
             "categoryYoga": "Yoga",
-            "caloriesPerHourLabel": "Kalorien / Stunde",
-            "caloriesPerHourHint": "Lass das Feld leer, um die vom System berechneten Kalorien pro Stunde zu nutzen ({{newExerciseCalories}} kcal/Stunde).",
             "descriptionLabel": "Beschreibung",
             "sourceLabel": "Quelle",
             "forceLabel": "Belastungsart",
@@ -1618,7 +1616,6 @@
             "exerciseLabel": "Übung",
             "unknownExercise": "Unbekannte Übung",
             "addSetButton": "Satz hinzufügen",
-            "caloriesBurnedOptionalLabel": "Verbrannte Kalorien (Optional)",
             "caloriesBurnedPlaceholder": "Verbrannte Kalorien eingeben, um die Berechnung zu überschreiben",
             "caloriesBurnedHint": "Kalorien werden automatisch nach dem Speichern berechnet, wenn das Feld leer bleibt.",
             "distanceLabel": "Distanz",
@@ -1632,7 +1629,6 @@
             "updateError": "Übungseintrag konnte nicht aktualisiert werden.",
             "syncedProviderBackup": "Synchronisiertes Anbieter-Backup (geschützt)",
             "telemetryHeader": "Telemetrie- und Aktivitätsmetriken",
-            "caloriesAppliedLabel": "In der Tagessumme gezählte Kalorien (optional)",
             "caloriesAppliedPlaceholder": "Leer: Die oben verbrannten Kalorien werden gezählt",
             "caloriesAppliedHint": "Trage 0 ein, wenn ein Uhren-Training diese Einheit bereits zählt. Die geschätzten verbrannten Kalorien bleiben erhalten.",
             "caloriesAppliedLinkedHint": "Die gezählten Kalorien kommen aus der Trainingsverknüpfung. Verwalte die Verknüpfung im manuellen Training."
@@ -3208,8 +3204,6 @@
             "timeCalorieBreakdown": "Zeit & Kalorienaufteilung",
             "movingTimeSec": "Bewegungszeit (Sek.)",
             "elapsedTimeSec": "Verstrichene Zeit (Sek.)",
-            "activeCaloriesKcal": "Aktivkalorien (kcal)",
-            "restingCaloriesKcal": "Ruhekalorien (kcal)",
             "trainingLoadPerformance": "Trainingsbelastung & Leistung",
             "trainingLoad": "Trainingsbelastung",
             "aerobicEffect05": "Aerober Effekt (0–5)",
@@ -3930,7 +3924,6 @@
         "pProteing": "P: {{protein}}g",
         "cCarbsg": "KH: {{carbs}}g",
         "fFatg": "F: {{fat}}g",
-        "totalKcalPGC": "<strong>Gesamt:</strong> {{totalCalories}} kcal | P: {{totalProtein}}g | KH: {{totalCarbs}}g | F: {{totalFat}}g",
         "pTotalProteing": "P: {{totalProtein}}g",
         "cTotalCarbsg": "KH: {{totalCarbs}}g",
         "fTotalFatg": "F: {{totalFat}}g"
@@ -5434,7 +5427,6 @@
             "servingsPerLog": "Portionen pro Eintrag",
             "servingUnit": "Portion",
             "weekdays": "Tage auswählen",
-            "supplementDoseScalingCalories": "Jeder Eintrag zählt als {{dose}} Portionen: {{dose}} x {{perDose}} kcal = {{total}} kcal.",
             "supplementDoseScaling": "Jeder Eintrag zählt als {{dose}} Portionen, also das {{dose}}-Fache der pro Portion eingegebenen Nährwerte.",
             "cycleOff": "Freie Tage",
             "cycleOn": "Aktive Tage",
@@ -6908,7 +6900,6 @@
             "targetHoursDesc": "Zieldauer in Stunden, bis das Fasten abgeschlossen ist.",
             "targetEatingHours": "Ziel-Essensstunden",
             "targetEatingHoursDesc": "Dauer deines Essensfensters in Stunden.",
-            "calorieThreshold": "Kalorienschwelle (kcal)",
             "calorieThresholdHint": "Snacks oder Getränke unter diesem Wert (z. B. schwarzer Kaffee, Wasser, Elektrolyte) unterbrechen dein Fasten nicht und starten es nicht neu.",
             "preEndAlert": "Vorwarnung vor dem Ziel (Minuten)",
             "preEndAlertHint": "Wie viele Minuten vor Erreichen deines Fastenziels du eine Erinnerung erhalten möchtest.",
@@ -7614,8 +7605,7 @@
         "analyzingHint": "Zutaten, Grammportionen und Makros werden erkannt",
         "editInMealBuilder": "Im Mahlzeiten-Editor bearbeiten",
         "loggedSuccess": "Mahlzeit erfolgreich in dein Tagebuch übernommen.",
-        "openInMealBuilder": "Im Mahlzeiten-Editor öffnen",
-        "kcalPGCG": "{{calories_kcal}} kcal · P: {{protein_g}}g · KH: {{carbs_g}}g · F: {{fat_g}}g"
+        "openInMealBuilder": "Im Mahlzeiten-Editor öffnen"
     },
     "waterContainerManager": {
         "title": "Wasserbehälter verwalten",
