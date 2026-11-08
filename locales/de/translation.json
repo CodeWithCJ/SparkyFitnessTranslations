@@ -107,7 +107,8 @@
             "saturday": "Samstag",
             "temperatureUnit": "Temperatureinheit",
             "celsius": "Celsius (°C)",
-            "fahrenheit": "Fahrenheit (°F)"
+            "fahrenheit": "Fahrenheit (°F)",
+            "glucoseUnit": "Glukose-Einheit"
         },
         "waterTracking": {
             "title": "Wassererfassung",
@@ -1523,7 +1524,9 @@
             "addCustomTag": "Hinzufügen \"{{tag}}\"",
             "replaceTitle": "Übung ersetzten",
             "replaceSuccess": "Übung ersetzt",
-            "suggestedTab": "Vorgeschlagen"
+            "suggestedTab": "Vorgeschlagen",
+            "caloriesPerHourWithUnit": "Kalorien/Stunde ({{unit}})",
+            "caloriesPerHourHintWithUnit": "Lassen Sie das Feld leer, um die vom System berechneten Kalorien pro Stunde zu verwenden ({{newExerciseCalories}} {{unit}}/hour)."
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "Durchsuche deine Trainingsvorlagen...",
@@ -1631,7 +1634,9 @@
             "telemetryHeader": "Telemetrie- und Aktivitätsmetriken",
             "caloriesAppliedPlaceholder": "Leer: Die oben verbrannten Kalorien werden gezählt",
             "caloriesAppliedHint": "Trage 0 ein, wenn ein Uhren-Training diese Einheit bereits zählt. Die geschätzten verbrannten Kalorien bleiben erhalten.",
-            "caloriesAppliedLinkedHint": "Die gezählten Kalorien kommen aus der Trainingsverknüpfung. Verwalte die Verknüpfung im manuellen Training."
+            "caloriesAppliedLinkedHint": "Die gezählten Kalorien kommen aus der Trainingsverknüpfung. Verwalte die Verknüpfung im manuellen Training.",
+            "caloriesBurnedOptionalWithUnit": "Kalorienverbrauch ({{unit}}, optional)",
+            "caloriesAppliedWithUnit": "Kalorien, die in der täglichen Gesamtsumme gezählt werden ({{unit}}, optional)"
         },
         "activityDetailsEditor": {
             "fieldNameLabel": "Feldname",
@@ -3218,7 +3223,9 @@
             "humidity": "Luftfeuchtigkeit (%)",
             "gearName": "Name der Ausrüstung",
             "eGNikePegasus40": "z. B. Nike Pegasus 40",
-            "exercise": "Übung"
+            "exercise": "Übung",
+            "activeCaloriesWithUnit": "Aktive Kalorien ({{unit}})",
+            "restingCaloriesWithUnit": "Kalorienverbrauch im Ruhezustand ({{unit}})"
         },
         "editMealFoodEntryDialog": {
             "modifyTheFoodsAndQuantities": "Passe die Lebensmittel und Mengen für diesen erfassten Mahlzeiteneintrag an.",
@@ -3926,7 +3933,8 @@
         "fFatg": "F: {{fat}}g",
         "pTotalProteing": "P: {{totalProtein}}g",
         "cTotalCarbsg": "KH: {{totalCarbs}}g",
-        "fTotalFatg": "F: {{totalFat}}g"
+        "fTotalFatg": "F: {{totalFat}}g",
+        "totalEnergyPGC": "<strong>Gesamt:</strong> {{totalCalories}} | P: {{totalProtein}}g | C: {{totalCarbs}}g | F: {{totalFat}}g"
     },
     "reports": {
         "errorToastTitle": "Fehler",
@@ -4317,7 +4325,46 @@
         "weightTrendWithRate": "Trend {{weight}} · {{rate}} pro Woche",
         "weightTrendWithForecast": "Trend {{weight}} · Ziel voraussichtlich am {{date}}",
         "compareTab": "Vergleich",
-        "heartRateTab": "Herzfrequenz-Analyse"
+        "heartRateTab": "Herzfrequenz-Analyse",
+        "nutritionPeriodSummary": "Nährwertübersicht",
+        "glucose": {
+            "title": "Blutzucker",
+            "description": "In Apple Health gespeicherte Messwerte, einschließlich Dexcom-CGM-Daten. Apple Health-Daten können mit einer Verzögerung eintreffen.",
+            "unit": "Einheit",
+            "source": "Quelle",
+            "error": "Die Blutzuckerwerte konnten nicht geladen werden.",
+            "loading": "Glukosewerte werden geladen…",
+            "empty": "In diesem Zeitraum liegen keine Blutzuckerwerte vor. Aktivieren Sie die Dexcom-Freigabe für Apple Health, erlauben Sie SparkyFitness den Zugriff auf Ihre Blutzuckerwerte und führen Sie eine Synchronisierung über die iOS-App durch.",
+            "chartLabel": "Glukosewerte im Zeitverlauf",
+            "foods": "Erfasste Lebensmittel · Mahlzeitenmarkierungen",
+            "foodError": "Die protokollierten Lebensmittel konnten nicht geladen werden.",
+            "mealNote": "Die Mahlzeitenmarkierungen zeigen die erfassten Zeiten an, nicht eine gemessene Reaktion auf die Nahrungsaufnahme. Lebensmittel ohne erfasste Zeit werden nicht in die Kurve eingetragen.",
+            "layerMeal": "Essen",
+            "layerExercise": "Übung",
+            "layerSleep": "Schlaf",
+            "layerMedication": "Medikamente",
+            "layerStress": "Stress",
+            "layerCaffeine": "Koffein",
+            "layerAlcohol": "Alkohol",
+            "layerHydration": "Flüssigkeitszufuhr",
+            "context": "Aufgezeichneter Kontext · Anzeigeebenen",
+            "contextLoading": "Aufgezeichneter Kontext wird geladen…",
+            "contextError": "Der gespeicherte Kontext konnte nicht geladen werden.",
+            "noTime": "Zeit nicht erfasst",
+            "carbs": "Kohlenhydrate",
+            "day": "Tag",
+            "unavailable": "Einige Kontextinformationen sind nicht verfügbar:",
+            "events": "Erfasste Ereignisse und Tagesgesamtwerte",
+            "contextNote": "Hierbei handelt es sich um aufgezeichnete Ereignisse, nicht um nachgewiesene Ursachen. Die Endzeiten der Trainingseinheiten basieren auf der protokollierten Dauer. Einträge ohne Zeitangabe und Tagesgesamtwerte werden nicht in die Kurve eingetragen.",
+            "dailyTotal": "Tagesgesamtwert",
+            "dailyAverage": "Tagesdurchschnitt",
+            "zoomIn": "Vergrößern",
+            "zoomOut": "Verkleinern",
+            "earlier": "früher",
+            "later": "danach",
+            "resetZoom": "Zoom zurücksetzen",
+            "windowEvents": "Angezeigte Ereignisse"
+        }
     },
     "reportsTables": {
         "foodDiaryTable": "Tabelle Mahlzeitenübersicht",
@@ -5432,7 +5479,8 @@
             "cycleOn": "Aktive Tage",
             "doseAmount": "Dosismenge (überschreiben)",
             "startDateRequired": "Startdatum (erforderlich)",
-            "time": "Tageszeit"
+            "time": "Tageszeit",
+            "supplementDoseScalingEnergy": "Jeder Eintrag umfasst {{dose}} Portionen: {{dose}} x {{perDose}} {{unit}} = {{total}} {{unit}}."
         },
         "checkin": {
             "subtitle": "Verfolge, wie die Medikation dich beeinflusst — wird in deinen täglichen Messungen gespeichert, taucht also auch in deinen Check-ins & Berichten auf.",
