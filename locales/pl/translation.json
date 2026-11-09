@@ -1721,11 +1721,11 @@
             "canUseExerciseLibrary": "Może korzystać z mojej biblioteki ćwiczeń i treningów",
             "canUseExerciseLibraryHelp": "Umożliwia pełnomocnikowi przeglądanie i używanie Twoich własnych ćwiczeń i szablonów treningów w trybie przełączonym. Nie daje dostępu do wpisów dziennika ani ustawień profilu.",
             "canManageCheckin": "Może zarządzać danymi wpisów dnia",
-            "canManageCheckinHelp": "Umożliwia pełnomocnikowi rejestrowanie masy ciała, pomiarów ciała, zdjęć postępów, snu, nastroju i statusu postu w Twoim imieniu. Wpisy dziennika są zablokowane. Daje dostęp do profilu tylko do odczytu.",
+            "canManageCheckinHelp": "Umożliwia pełnomocnikowi rejestrowanie masy ciała, pomiarów ciała, zdjęć postępów, snu, nastroju i statusu postu w Twoim imieniu. Zapewnia także dostęp do wyników badań laboratoryjnych. Wpisy dziennika są zablokowane. Daje dostęp do profilu tylko do odczytu.",
             "canManageMedications": "Może zarządzać lekami",
             "canManageMedicationsHelp": "Umożliwia pełnomocnikowi rejestrowanie leków, dawek, planów tytracji i miejsc wstrzyknięć w Twoim imieniu. Wpisy dziennika są zablokowane. Daje dostęp do profilu tylko do odczytu.",
             "canViewReports": "Może przeglądać raporty",
-            "canViewReportsHelp": "Umożliwia pełnomocnikowi przeglądanie wykresów, statystyk i historycznych wpisów na Twoim pulpicie. Nie przyznaje uprawnień do zapisu. Daje dostęp do profilu tylko do odczytu.",
+            "canViewReportsHelp": "Umożliwia pełnomocnikowi przeglądanie wykresów, statystyk i historycznych wpisów na Twoim pulpicie. Zapewnia także dostęp tylko do odczytu do wyników badań laboratoryjnych. Nie przyznaje uprawnień do zapisu. Daje dostęp do profilu tylko do odczytu.",
             "shareExternalProviders": "Udostępnia zewnętrznych dostawców danych",
             "shareExternalProvidersHelp": "Umożliwia pełnomocnikowi wyszukiwanie produktów/ćwiczeń z wykorzystaniem skonfigurowanych przez Ciebie dostawców API (np. FatSecret, USDA). Integracje zdrowotne (Garmin, Fitbit itd.) są ściśle prywatne i nigdy nie są udostępniane.",
             "accessEndDate": "Data końca dostępu (opcjonalnie)",
@@ -10450,7 +10450,7 @@
             "other": "Inne"
         },
         "goal": {
-            "description": "Cel: szczotkuj raz dziennie po {{time}}",
+            "description": "Cel: szczotkuj {{count}} razy dziennie po {{time}}",
             "edit": "Cel",
             "title": "Cel szczotkowania",
             "dailyTarget": "Szczotkowania dziennie",
@@ -10465,8 +10465,8 @@
             "time": "Czas szczotkowania",
             "atTarget": "{{count}} razy osiągnięto {{time}}",
             "streak": "Seria",
-            "days": "{{count}} dzień",
-            "best": "Najlepiej: {{count}} dzień",
+            "days": "{{count}} dni",
+            "best": "Najlepiej: {{count}} dni",
             "other": "Inne zabiegi"
         },
         "history": {
