@@ -65,7 +65,10 @@
         "more": "mehr",
         "undo": "Rückgängig",
         "all": "Alle",
-        "builtIn": "Integriert"
+        "builtIn": "Integriert",
+        "energy": "Energie",
+        "kJUnit": "kJ",
+        "kcalUnit": "kcal"
     },
     "settings": {
         "app": "App-Einstellungen",
@@ -127,7 +130,8 @@
             "wearOs": "Wear OS",
             "customMeasurements": "Eigene Messwerte",
             "heartRateZones": "Herzfrequenzzonen",
-            "heartRateZonesSubtitle": "Maximal- und Ruhepuls, Zonenmethode"
+            "heartRateZonesSubtitle": "Maximal- und Ruhepuls, Zonenmethode",
+            "nfcTags": "NFC-Tags"
         },
         "theme": {
             "title": "Darstellung",
@@ -151,6 +155,12 @@
         "cameraShutter": {
             "title": "Auslöseton",
             "subtitle": "Beim Aufnehmen von Fotos einen Ton abspielen."
+        },
+        "glucoseUnit": {
+            "title": "Glukoseeinheit",
+            "subtitle": "Für Blutzucker-Diagramme.",
+            "saveFailed": "Die Glukoseeinheit konnte nicht gespeichert werden.",
+            "loadFailed": "Die Einstellungen konnten nicht geladen werden. Tippen Sie hier, um es erneut zu versuchen."
         }
     },
     "languageSettings": {
@@ -808,7 +818,9 @@
         "headphoneAudioExposure": "Kopfhörer-Lärmbelastung",
         "unknown": "Gesundheitswert",
         "bodyWaterMass": "Körperwassermasse",
-        "mindfulness": "Achtsamkeit"
+        "mindfulness": "Achtsamkeit",
+        "sleepingWristTemperature": "Handgelenkstemperatur im Schlaf",
+        "overnightBodyTemperature": "Körpertemperatur über Nacht"
     },
     "familyDiary": {
         "title": "Familientagebücher",
@@ -878,7 +890,11 @@
         "copyOwnStaleGuidance": "Deine aktuelle Mahlzeit wird zur Durchsicht geöffnet.",
         "copyServerUpdateRequired": "Server-Update erforderlich",
         "copyServerUpdateGuidance": "Aktualisiere deinen SparkyFitness-Server, um Lebensmittel zu Familienmitgliedern zu kopieren.",
-        "copyMealTypesFailed": "Die Zielmahlzeiten konnten nicht geladen werden. Bitte versuche es erneut."
+        "copyMealTypesFailed": "Die Zielmahlzeiten konnten nicht geladen werden. Bitte versuche es erneut.",
+        "selectedNutritionWithUnit": "Ausgewählt: {{calories}} {{unit}} · P {{protein}} g · C {{carbs}} g · F {{fat}} g",
+        "mealCaloriesWithUnit": "{{calories}} {{unit}}",
+        "nutritionSummaryWithUnit": "{{calories}} {{unit}} · P {{protein}} g · K {{carbs}} g · F {{fat}} g",
+        "copyCaloriesWithUnit": "{{calories}} {{unit}}"
     },
     "notifications": {
         "title": "Benachrichtigungen",
@@ -1043,7 +1059,8 @@
         "setDetail": {
             "addNote": "Füge eine Notiz zu diesem Satz hinzu …",
             "notesForSet": "Notizen für Satz {{setNumber}}",
-            "notes": "Satznotizen"
+            "notes": "Satznotizen",
+            "deleteSet": "Menge löschen"
         },
         "setRow": {
             "changeType": "Typ für Satz {{setNumber}} ändern",
@@ -1121,6 +1138,43 @@
             "setOf": "Satz {{number}} von {{total}}",
             "warmupOf": "Aufwärmsatz {{number}} von {{total}}",
             "then": "Dann {{name}}"
+        },
+        "focus": {
+            "media": {
+                "minimize": "verkleinern",
+                "minimizeLabel": "Bild „{{name}}“ verkleinern",
+                "expandLabel": "Bild „{{name}}“ vergrößern",
+                "expandHint": "Langes Drücken, um den Vollbildmodus zu öffnen",
+                "pause": "Pause",
+                "play": "abspielen",
+                "pauseLabel": "Animation von {{name}} anhalten",
+                "playLabel": "Animation „{{name}}“ abspielen",
+                "openFullScreen": "Bild {{name}} im Vollbildmodus anzeigen",
+                "openFullScreenHint": "Öffnet das Bild, damit Sie es vergrößern können"
+            },
+            "sets": {
+                "weightHeader": "Gewicht ({{unit}})",
+                "weightInput": "Gewicht für Satz {{setNumber}}",
+                "repsInput": "Wiederholungen für die Serie {{setNumber}}",
+                "effortInput": "{{metric}} für Satz {{setNumber}}",
+                "increaseWeight": "Gewicht für Satz {{setNumber}} erhöhen",
+                "decreaseWeight": "Gewicht für Satz {{setNumber}} verringern",
+                "increaseReps": "Wiederholungen für Satz {{setNumber}} erhöhen",
+                "decreaseReps": "Wiederholungen für Satz {{setNumber}} verringern"
+            },
+            "chips": {
+                "label": "Übung {{number}} von {{total}}, {{name}}, {{status}}",
+                "done": "erledigt",
+                "inProgress": "in Bearbeitung",
+                "todo": "nicht begonnen"
+            },
+            "plan": "Plan: {{sets}} × {{reps}}",
+            "lastTime": "Letztes Mal: {{sets}}",
+            "previous": "Vorherige",
+            "next": "Nächste",
+            "previousLabel": "Vorherige Übung, {{name}}",
+            "nextLabel": "Nächste Übung, {{name}}",
+            "backToCurrent": "Zurück zur aktuellen Übung"
         }
     },
     "addSheet": {
@@ -1247,7 +1301,9 @@
             "routes": "Routen",
             "routesSubtitle": "Routen zeichnen, importieren und zum Nachlaufen speichern",
             "equipment": "Ausrüstung",
-            "equipmentSubtitle": "Schuhe und andere Ausrüstung"
+            "equipmentSubtitle": "Schuhe und andere Ausrüstung",
+            "labResults": "Laborwerte",
+            "labResultsSubtitle": "Bluttests und weitere Marker im Zeitverlauf"
         },
         "sleep": "Schlaf",
         "healthTrendsSettings": "Gesundheitstrends",
@@ -1301,7 +1357,11 @@
         "heartRateZonesSettings": "Herzfrequenzzonen",
         "routeEdit": "Route bearbeiten",
         "routeGenerate": "Route erstellen",
-        "compareReport": "Vergleichen"
+        "compareReport": "Vergleichen",
+        "labResults": "Laborwerte",
+        "labResultDetail": "Laborwert",
+        "labResultAdd": "Laborwert hinzufügen",
+        "labReportImport": "Bericht importieren"
     },
     "healthCategories": {
         "Common": "Allgemein",
@@ -1462,7 +1522,8 @@
         "perPress": "{{value}} {{unit}}",
         "logDrinkFailed": "Dieses Getränk konnte nicht erfasst werden",
         "exerciseStatistics": "Statistiken",
-        "reportsLink": "Berichte"
+        "reportsLink": "Berichte",
+        "ofCaloriesWithUnit": "von {{value}} {{unit}}"
     },
     "syncScreen": {
         "healthConnectSettings": "Health-Connect-Einstellungen",
@@ -1684,7 +1745,16 @@
             "invalidRate": "Gib einen Wert über 0 und bis {{max}} kg pro Woche ein.",
             "dailyAdjustment": "Geschätzte tägliche Anpassung: {{sign}}{{amount}} {{unit}}",
             "estimateHint": "Dein Wochenziel wird in eine tägliche Kalorienanpassung umgerechnet. Das ist eine Schätzung; deine Sicherheitsuntergrenze kann die Abnahme begrenzen."
-        }
+        },
+        "adaptiveFallbackWithUnit": "Die Fallback-Schätzung, bis genügend Tracking-Daten vorliegen – und bestimmt danach weiterhin die Plausibilitätsgrenzen. Dein gemessener TDEE ist auf maximal ±{{amount}} {{unit}} von BMR × diesem Multiplikator begrenzt.",
+        "adjustMacrosWithExercise": "Prozentuale Makroziele an Trainingskalorien anpassen",
+        "adjustMacrosWithExerciseHint": "Erhöht Protein-, Kohlenhydrat- und Fettziele anhand der gespeicherten Prozentsätze, wenn durch Training Kalorien zum Tagesbudget hinzukommen. Berücksichtigt Einstellungen zur Verrechnung von Trainingskalorien (Earn-Back). In Gramm eingegebene Ziele bleiben unverändert. Änderungen gelten ab heute; vorherige Tage behalten ihre Einstellung bei.",
+        "useMoveRingActiveCalories": "Bewegungsring für Aktivitätskalorien verwenden",
+        "useMoveRingActiveCaloriesHint": "Standardmäßig aus: Aktivitätskalorien stammen aus der gesamten „Aktiven Energie“ in Apple Health. Wenn aktiv, stammen sie aus dem Bewegungsring (passend zur Fitness-App). Er zählt Messungen von Apple Watch und iPhone; auch Trainings anderer Apps fließen ein. Fehlt der Ring (z. B. ohne Aktivitätszugriff), wird der Gesamtwert genutzt. Gilt für Tage, die nach der Änderung synchronisiert werden.",
+        "energyUnitLabel": "Energieeinheit",
+        "energyUnitKcal": "Kalorien (kcal)",
+        "energyUnitKj": "Kilojoule (kJ)",
+        "energyUnitDescription": "Legt fest, wie Energie in der App, in Widgets und auf der Watch angezeigt und eingegeben wird. Ändert auch die Web-App."
     },
     "dashboardSettings": {
         "updateFailed": "Einstellung konnte nicht aktualisiert werden.",
@@ -1729,7 +1799,9 @@
         "mood": "Stimmung",
         "moodSubtitle": "Heutige Stimmung, 7-Tage-Trend und Schnellerfassung anzeigen",
         "trainingLoad": "Trainingslast",
-        "trainingLoadSubtitle": "Diese Woche im Vergleich zu deinem üblichen Training anzeigen, mit Hinweis zur Erholung"
+        "trainingLoadSubtitle": "Diese Woche im Vergleich zu deinem üblichen Training anzeigen, mit Hinweis zur Erholung",
+        "labResults": "Laborwerte",
+        "labResultsSubtitle": "Zeigt deine neuesten Laborwerte und welche außerhalb des Referenzbereichs liegen"
     },
     "diarySettings": {
         "updateFailed": "Einstellung konnte nicht aktualisiert werden.",
@@ -1827,7 +1899,16 @@
         "warmupCalculator": "Aufwärmrechner",
         "warmupCalculatorSubtitle": "Die Steigerung und die Gewichte, auf die gerundet wird, für Aufwärmsätze, die du einer Übung hinzufügst.",
         "nowCard": "Jetzt-Karte",
-        "nowCardSubtitle": "Heftet den aktuellen Satz über die Übungsliste: Ziel in großer Schrift, Übungsfoto, was als Nächstes kommt, und „Tauschen“, um zuerst eine andere Übung zu machen."
+        "nowCardSubtitle": "Heftet den aktuellen Satz über die Übungsliste: Ziel in großer Schrift, Übungsfoto, was als Nächstes kommt, und „Tauschen“, um zuerst eine andere Übung zu machen.",
+        "workoutView": "Workout-Ansicht",
+        "workoutViewSubtitle": "„Liste“ zeigt alle Übungen in einer scrollbaren Liste; „Fokus“ zeigt jeweils eine Übung mit großer Fotokarte.",
+        "workoutViewGuidedSubtitle": "Geführte Workouts nutzen immer die Liste. „Fokus“ gilt, wenn der geführte Modus deaktiviert ist.",
+        "workoutViewList": "Liste",
+        "workoutViewFocus": "Fokus",
+        "focusMedia": "Übungsfoto",
+        "focusMediaSubtitle": "Öffne die Fokus-Ansicht mit der großen Fotokarte oder einer kleinen Vorschau. Du kannst dies während des Workouts anpassen.",
+        "focusMediaLarge": "Groß",
+        "focusMediaSmall": "Klein"
     },
     "restPeriod": {
         "title": "Pausenzeit",
@@ -2290,7 +2371,8 @@
         "doAnotherFirst": "Zuerst eine andere Übung …",
         "swapTitle": "{{name}} tauschen",
         "doNowSets_one": "Jetzt · {{count}} Satz",
-        "doNowSets_other": "Jetzt · {{count}} Sätze"
+        "doNowSets_other": "Jetzt · {{count}} Sätze",
+        "caloriesPerHourWithUnit": "Kalorien pro Stunde ({{unit}})"
     },
     "cycleCard": {
         "mode": {
@@ -2628,7 +2710,8 @@
             "weightStones": "Gewicht in Stones",
             "weightPounds": "Gewicht in Pfund",
             "heightFeet": "Größe in Fuß",
-            "heightInches": "Größe in Zoll"
+            "heightInches": "Größe in Zoll",
+            "bmrWithUnitInUnit": "Grundumsatz ({{unit}})"
         },
         "validation": {
             "invalid": "{{label}} ungültig",
@@ -2642,7 +2725,8 @@
             "invalidHeight": "Ungültige Größe",
             "feetInchesNumber": "Gib eine Zahl für Fuß und Zoll ein.",
             "bodyFatRange": "Der Körperfettanteil (%) muss zwischen 0 und 100 liegen.",
-            "bodyWaterRange": "Der Körperwasseranteil (%) muss zwischen 0 und 100 liegen."
+            "bodyWaterRange": "Der Körperwasseranteil (%) muss zwischen 0 und 100 liegen.",
+            "bmrRangeWithUnit": "Der Grundumsatz muss zwischen {{min}} und {{max}} {{unit}} liegen."
         },
         "nothingToSave": "Nichts zu speichern",
         "enterValue": "Gib mindestens einen Wert ein oder lösche einen.",
@@ -2719,9 +2803,11 @@
         "lookup": {
             "failed": "Nachschlagen fehlgeschlagen",
             "noMatch": "Kein Treffer für den Barcode",
-            "nextSteps": "Du kannst das Nährwertetikett scannen oder es manuell eingeben.",
+            "nextSteps": "Versuche es erneut zu scannen, scanne das Nährwertetikett oder gib das Lebensmittel manuell ein.",
             "scanLabel": "Nährwertetikett scannen",
-            "addManually": "Lebensmittel manuell hinzufügen"
+            "addManually": "Lebensmittel manuell hinzufügen",
+            "searching": "Barcode wird gesucht …",
+            "retry": "Suche wiederholen"
         },
         "photo": {
             "frameMeal": "Die ganze Mahlzeit einrahmen",
@@ -2730,7 +2816,9 @@
             "logManually": "Manuell erfassen"
         },
         "barcode": {
-            "typeInstead": "Barcode stattdessen eingeben"
+            "typeInstead": "Barcode stattdessen eingeben",
+            "scanAgain": "Erneut scannen",
+            "restartCamera": "Kamera neu starten"
         },
         "manual": {
             "title": "Barcode eingeben",
@@ -2752,7 +2840,11 @@
         "labelReadOnDevice": "Etikett auf diesem iPhone gelesen",
         "labelReadByServer": "Etikett von der Server-KI gelesen",
         "retryWithServer": "Erneut mit der Server-KI lesen",
-        "retryOnDevice": "Erneut auf diesem iPhone lesen"
+        "retryOnDevice": "Erneut auf diesem iPhone lesen",
+        "camera": {
+            "unavailable": "Kamera nicht verfügbar",
+            "restartHelp": "Starte die Kamera neu, um es erneut zu versuchen."
+        }
     },
     "cycleToday": {
         "menstrualFlow": "Menstruationsfluss",
@@ -3000,7 +3092,9 @@
         "fallbackProjectionSource": "BMR + aktive Kalorien (Ersatz)",
         "legacyProjectionSource": "Geräteprognose",
         "collapse": "Diesen Abschnitt einklappen",
-        "expand": "Diesen Abschnitt ausklappen"
+        "expand": "Diesen Abschnitt ausklappen",
+        "projectedTdeeWithUnit": "Prognostizierter TDEE: {{value}} {{unit}}",
+        "goalModeTargetWithUnit": "Ziel-Modus: {{value}} {{unit}}"
     },
     "dateRange": {
         "removeTitle": "Wähle einen zu entfernenden Zeitraum aus",
@@ -3086,7 +3180,8 @@
         "sodiumShort": "Natrium",
         "saltShort": "Salz",
         "sodiumOption": "Natrium (mg)",
-        "saltOption": "Salz (g)"
+        "saltOption": "Salz (g)",
+        "caloriesRequiredWithUnit": "Kalorien ({{unit}}) *"
     },
     "exerciseHistory": {
         "noSetData": "Keine Satzdaten",
@@ -3629,7 +3724,8 @@
         "deleteSheetTitle": "Übung löschen",
         "duplicate": "Übung duplizieren",
         "viewImages": "Bilder im Vollbild ansehen",
-        "duplicateName": "{{name}} (Kopie)"
+        "duplicateName": "{{name}} (Kopie)",
+        "caloriesPerHourWithUnit": "{{unit}} / Stunde"
     },
     "mealTypeSettings": {
         "reorder": "{{name}} neu anordnen",
@@ -3755,7 +3851,10 @@
             "thursday": "Do",
             "friday": "Fr",
             "saturday": "Sa"
-        }
+        },
+        "nutritionLineWithUnit": "{{calories}} {{unit}} · {{protein}} g P · {{carbs}} g K · {{fat}} g F",
+        "mealTypeNutritionAccessibilityWithUnit": "{{mealType}} insgesamt {{calories}} {{unit}}, {{protein}} g Protein, {{carbs}} g Kohlenhydrate, {{fat}} g Fett",
+        "caloriesValueWithUnit": "{{value}} {{unit}}"
     },
     "mealDetail": {
         "sharedPublicly": "Mahlzeit öffentlich geteilt",
@@ -3821,7 +3920,9 @@
             "selectFoodInstead": "Wähle ein Lebensmittel statt einer weiteren Mahlzeit.",
             "savedFoodUnitFailed": "Lebensmittel gespeichert, aber nicht die neue Einheit",
             "savedFoodUnitFailedDetails": "Du kannst das Lebensmittel trotzdem hinzufügen und dann versuchen, die Einheit erneut zu speichern.",
-            "chooseDifferentServing": "Wähle eine andere Portion."
+            "chooseDifferentServing": "Wähle eine andere Portion.",
+            "tagNeedsSavedServing": "Wähle eine Portionsgröße dieses Lebensmittels aus",
+            "tagNeedsSavedServingDetails": "Ein Tag erfasst jedes Mal eine gespeicherte Portion. Eine hier manuell geänderte Portion kann daher nicht verwendet werden."
         },
         "actions": {
             "adjustNutrition": "Nährwerte anpassen",
@@ -4062,7 +4163,8 @@
             "calories": "Kalorien",
             "avgHeartRate": "Ø HF",
             "maxHeartRate": "Max. HF",
-            "effort": "Anstrengung"
+            "effort": "Anstrengung",
+            "energy": "Energie"
         },
         "errors": {
             "needsExercise": "Das Training braucht eine Übung",
@@ -4614,7 +4716,10 @@
             "totals": "Gesamt",
             "addFood": "Lebensmittel hinzufügen",
             "addedFood": "Lebensmittel",
-            "pickedFoodNote": "Aus deinen Lebensmitteln hinzugefügt. Entferne es und füge es erneut hinzu, um die Menge zu ändern."
+            "pickedFoodNote": "Aus deinen Lebensmitteln hinzugefügt. Entferne es und füge es erneut hinzu, um die Menge zu ändern.",
+            "macroSummaryWithUnit": "{{calories}} {{unit}} · {{protein}}P · {{carbs}}K · {{fat}}F",
+            "rowSummaryWithUnit": "{{grams}} g · {{calories}} {{energyUnit}}",
+            "pickedRowSummaryWithUnit": "{{quantity}} {{unit}} · {{calories}} {{energyUnit}}"
         },
         "match": {
             "useYourFood": "Aus deinen Lebensmitteln: {{name}} · zum Verwenden tippen",
@@ -4677,7 +4782,8 @@
             "distance": "Distanz ({{unit}})",
             "avgHeartRate": "Durchschn. Herzfrequenz (bpm)",
             "notes": "Notizen",
-            "notesPlaceholder": "Optionale Notizen …"
+            "notesPlaceholder": "Optionale Notizen …",
+            "caloriesWithUnit": "Kalorien ({{unit}})"
         },
         "actions": {
             "useYesterday": "Gestern verwenden",
@@ -4717,7 +4823,8 @@
         "accessibility": {
             "addFood": "Lebensmittel hinzufügen",
             "copyMeal": "Mahlzeit zu einem anderen Tag kopieren"
-        }
+        },
+        "targetCaloriesWithUnit": "Ziel: {{calories}} {{unit}}"
     },
     "nutrientTrends": {
         "title": "{{nutrient}}-Trends",
@@ -5034,7 +5141,9 @@
             "tooltipMacro": "{{percent}} % {{macroLabel}}",
             "otherMacro": "Sonstiges",
             "avgCalories": "Durchschnitt",
-            "noAverage": "—"
+            "noAverage": "—",
+            "tooltipWithUnit": "{{formattedCount}} {{unit}} aufgenommen",
+            "avgCaloriesValueWithUnit": "{{formattedCount}} {{unit}}"
         },
         "noTrendData": "Noch keine Daten für ein Diagramm.",
         "vo2max": {
@@ -9135,7 +9244,8 @@
         "providerError": "Quelle nicht verfügbar",
         "noMatch": "Kein Treffer",
         "basis": "Pro {{size}} {{unit}}",
-        "unknown": "—"
+        "unknown": "—",
+        "macrosWithUnit": "{{calories}} {{unit}} · Protein {{protein}} g · Kohlenhydrate {{carbs}} g · Fett {{fat}} g"
     },
     "addMenuSettings": {
         "reorder": "{{name}} verschieben",
@@ -9184,7 +9294,9 @@
         "link": "Trainings verknüpfen",
         "unlink": "Verknüpfung lösen",
         "linkError": "Trainings konnten nicht verknüpft werden.",
-        "unlinkError": "Verknüpfung der Trainings konnte nicht gelöst werden."
+        "unlinkError": "Verknüpfung der Trainings konnte nicht gelöst werden.",
+        "caloriesWithUnit": "{{value}} {{unit}}",
+        "customLabelWithUnit": "Gesamtwert der Einheit ({{unit}})"
     },
     "guidedCheckIn": {
         "stepOfTotal": "Check-in: Schritt {{step}} von {{total}}",
@@ -9548,7 +9660,75 @@
             "amylase": "Amylase",
             "lipase": "Lipase",
             "globulin": "Globulin",
-            "direct_bilirubin": "Bilirubin (direkt)"
+            "direct_bilirubin": "Bilirubin (direkt)",
+            "ketones": "Ketone (Beta-Hydroxybutyrat)",
+            "fructosamine": "Fructosamin",
+            "anion_gap": "Anionenlücke",
+            "mchc": "MCHC",
+            "mch": "MCH",
+            "bun_creatinine_ratio": "BUN/Kreatinin-Verhältnis",
+            "cystatin_c": "Cystatin C",
+            "ammonia": "Ammoniak",
+            "progesterone": "Progesteron",
+            "prolactin": "Prolaktin",
+            "tpo_antibodies": "TPO-Antikörper",
+            "urine_albumin_creatinine": "Albumin-Kreatinin-Quotient im Urin",
+            "ldh": "LDH",
+            "pth": "PTH",
+            "igf_1": "IGF-1",
+            "dhea_s": "DHEA-S",
+            "shbg": "SHBG",
+            "fsh": "FSH",
+            "lh": "LH",
+            "mpv": "MPV",
+            "rdw": "RDW",
+            "c_peptide": "C-Peptide"
+        },
+        "rangeFromReport": "Nutze den Referenzbereich aus deinem Befund. Er wird mit diesem Ergebnis gespeichert.",
+        "import": {
+            "blocked": {
+                "duplicate": "Aus diesem Befund bereits importiert."
+            },
+            "chooseAnother": "Anderen Befund auswählen",
+            "cta": "Aus Befund importieren",
+            "includeRow": "{{name}} übernehmen",
+            "newMarker": "Neuer Marker",
+            "reading": "Befund wird gelesen ...",
+            "saveCount_one": "{{count}} Ergebnis speichern",
+            "saveCount_other": "{{count}} Ergebnisse speichern",
+            "saved_one": "{{count}} Ergebnis gespeichert",
+            "saved_other": "{{count}} Ergebnisse gespeichert",
+            "scanFailed": "Dieser Befund konnte nicht gelesen werden.",
+            "valueFor": "Ergebnis für {{name}}",
+            "deleteTitle": "Importierte Ergebnisse löschen",
+            "deleteMessage": "Alle aus einem Befund importierten Ergebnisse sowie alle nun leeren eigenen Marker löschen? Selbst eingetragene Ergebnisse bleiben erhalten.",
+            "deleted_one": "{{count}} importiertes Ergebnis gelöscht",
+            "deleted_other": "{{count}} importierte Ergebnisse gelöscht",
+            "deleteFailed": "Die importierten Ergebnisse konnten nicht gelöscht werden",
+            "saveFailed": "Der Befund konnte nicht gespeichert werden. Es wurde nichts gespeichert.",
+            "warning": {
+                "unit": "Deine bisherigen Ergebnisse nutzen {{earlierUnit}}, dieser Befund jedoch {{reportUnit}}. Einheiten werden nicht umgerechnet."
+            },
+            "lockedAfterFailedSave": "Das Speichern wurde nicht abgeschlossen, daher ist diese Überprüfung gesperrt: Erneutes Speichern übermittelt exakt denselben Befund und speichert ihn nur einmal. Um Werte zu ändern, wähle den Befund erneut aus."
+        },
+        "moreActions": "Weitere Aktionen",
+        "deleteMarker": "Marker und alle Ergebnisse löschen",
+        "deleteMarkerTitle": "Marker löschen",
+        "deleteMarkerMessage": "{{name}} und alle zugehörigen Ergebnisse löschen? Dies kann nicht rückgängig gemacht werden.",
+        "deleteMarkerFailed": "Der Marker konnte nicht gelöscht werden"
+    },
+    "actionTags": {
+        "waiting": {
+            "title": "Halte dein Smartphone an den NFC-Tag",
+            "hint": "Halte die Rückseite des Smartphones ruhig an den Tag, bis der Vorgang abgeschlossen ist."
+        },
+        "scan": {
+            "logged": "{{summary}} erfasst",
+            "tapToUndo": "Tippen zum Rückgängigmachen",
+            "undoFailed": "Konnte nicht rückgängig gemacht werden",
+            "tooSoon": "Gerade eben bereits erfasst",
+            "title": "NFC-Tag",
+            "noServer": "Server konnte nicht erreicht werden"
         }
     }
 }
