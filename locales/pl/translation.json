@@ -2959,7 +2959,7 @@
             "maxHrSummary": "Maksymalne tętno {{max}} bpm. {{source}}.",
             "fellBack": "Wybrana metoda wymaga więcej informacji, więc strefy pokazano jako % maksymalnego tętna.",
             "maxHr": "Maksymalne tętno (bpm)",
-            "maxHrHint": "Zostaw puste, aby wyliczyć z daty urodzenia.",
+            "maxHrHint": "Pozostaw puste, aby wyliczyć z daty urodzenia.",
             "restingHr": "Spoczynkowe tętno (bpm)",
             "customFloors": "Od jakiej wartości zaczyna się każda strefa (bpm)",
             "historyNote": "Zmiany dotyczą treningów nagrywanych lub synchronizowanych od teraz. Czas w strefie zapisany dla przeszłych treningów nie jest przeliczany.",
