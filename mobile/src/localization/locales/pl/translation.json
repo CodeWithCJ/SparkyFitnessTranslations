@@ -10,7 +10,7 @@
         "close": "Zamknij",
         "cancel": "Anuluj",
         "continue": "Kontynuuj",
-        "retry": "Spróbuj ponownie",
+        "retry": "Ponów",
         "details": "Szczegóły",
         "error": "Błąd",
         "delete": "Usuń",
@@ -10181,5 +10181,47 @@
         "events": "Szczegóły zdarzeń",
         "eventsInView": "Zdarzenia w widoku",
         "noEventsInView": "Brak zdarzeń z czasem w tym oknie."
+    },
+    "oralCare": {
+        "title": "Higiena jamy ustnej",
+        "loading": "Wczytywanie higieny jamy ustnej...",
+        "types": {
+            "brushing": "Szczotkowanie",
+            "flossing": "Nitkowanie",
+            "mouthwash": "Płukanie ust",
+            "other": "Inne"
+        },
+        "goal": {
+            "title": "Cel szczotkowania",
+            "dailyTarget": "Szczotkowania dziennie",
+            "targetTime": "Czas jednego szczotkowania",
+            "hint": "Dentyści zwykle zalecają szczotkowanie dwa razy dziennie przez 2 minuty."
+        },
+        "stats": {
+            "brushed": "Szczotkowania",
+            "time": "Czas szczotkowania"
+        },
+        "source": {
+            "timer": "Timer",
+            "health": "Apple Health"
+        },
+        "coveredBySync": "Rejestrowane także przez Apple Health · liczone raz",
+        "errors": {
+            "save": "Nie udało się zapisać sesji.",
+            "delete": "Nie udało się usunąć sesji.",
+            "goal": "Nie udało się zapisać celu."
+        },
+        "timer": {
+            "title": "Timer szczotkowania",
+            "subtitle": "{{time}}, ćwierć ust za jednym razem",
+            "upperLeft": "Lewa górna",
+            "upperRight": "Prawa górna",
+            "lowerRight": "Prawa dolna",
+            "lowerLeft": "Lewa dolna",
+            "ready": "Gotowo",
+            "start": "Start",
+            "pause": "Wstrzymaj",
+            "resume": "Wznów"
+        }
     }
 }
