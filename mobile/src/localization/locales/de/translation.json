@@ -413,7 +413,7 @@
             "supplements": "Supplements"
         },
         "supplement": {
-            "add": "Supplement hinzufügen",
+            "add": "Nahrungsergänzung hinzufügen",
             "none": "Noch keine Supplements",
             "toggle": "Dies ist ein Supplement",
             "form": "Form",
