@@ -5310,7 +5310,7 @@
             "partialTaken": "Teilweise eingenommen",
             "mostlySkipped": "Meist übersprungen",
             "allSkipped": "Alle Dosen übersprungen",
-            "sideEffect": "Symptom als Nebenwirkung",
+            "sideEffect": "Symptom (Nebenwirkung)",
             "generalSymptom": "Allgemeines Symptom",
             "tooltipTaken": "{{count}} genommen",
             "tooltipSkipped": "{{count}} übersprungen",
