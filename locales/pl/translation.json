@@ -2247,7 +2247,8 @@
             "burnedTdee": "Kalorie z Health Connect (zamiennie BMR + kalorie z aktywności)",
             "remainingActivitySeparated": "Cel dzienny - Zjedzone + Aktywność (Kroki i treningi, bez BMR)",
             "activitySeparatedFootnote": "Po zapisaniu baza adaptacyjna wyklucza historyczną aktywność; dzisiejsze kroki i treningi są zaliczane raz, bez BMR. Wartości podglądu liczone przez serwer używają Twoich zapisanych ustawień.",
-            "remainingTdeeWeekly": "Prognozowane TDEE + tygodniowa korekta − Zjedzone"
+            "remainingTdeeWeekly": "Prognozowane TDEE + tygodniowa korekta − Zjedzone",
+            "adaptiveEstimateFootnote": "* Stopniowo dostosowuje Dzienny cel na podstawie szacunków z zapisów produktów i masy ciała. Wahania masy ciała i niekompletne zapisy zwiększają niepewność."
         },
         "calorieGoalAdjustment": {
             "activityHeavy": "Bardzo aktywny (×1,725)",
@@ -2444,7 +2445,12 @@
             "weeklyHint": "To zadane tempo, nie gwarancja. Twój cel kaloryczny używa tej samej estymaty co prognoza masy ciała, a skonfigurowany bezpieczny limit nadal obowiązuje.",
             "baselineActivityExcluded": "Baza adaptacyjna (bez aktywności)",
             "adaptiveActivitySeparate": "Licz kalorie aktywności osobno",
-            "adaptiveActivitySeparateHint": "Po zapisaniu ucz bazę bez historycznej aktywności i zaliczaj dzisiejsze kroki i treningi raz, bez ponownego dodawania BMR. To wymaga spójnej historii posiłków, masy ciała, kroków i treningów. Dopóki historia jest niewystarczająca, używaj BMR × Twojego mnożnika aktywności pozatrenningowej."
+            "adaptiveActivitySeparateHint": "Po zapisaniu ucz bazę bez historycznej aktywności i zaliczaj dzisiejsze kroki i treningi raz, bez ponownego dodawania BMR. To wymaga spójnej historii posiłków, masy ciała, kroków i treningów. Dopóki historia jest niewystarczająca, używaj BMR × Twojego mnożnika aktywności pozatrenningowej.",
+            "adaptiveFallbackDescription": "Rozwiązanie zapasowe jest używane, dopóki nie zostanie zebrana użyteczna historia masy ciała i żywienia. Niekompletne dni i wahania masy ciała ważonej nadal zwiększają niepewność; wystarczająca liczba zapisów pozwala na oszacowanie zamiast bezpośredniego pomiaru metabolizmu.",
+            "adaptiveWeightIntervalTip": "Zapisuj rzeczywistą masę ciała o stałych porach, prowadząc zapisy żywienia w całym obserwowanym okresie.",
+            "adaptiveFoodIntervalTip": "Zapisuj posiłki tak kompletnie, jak to możliwe; kwalifikujący się dzień może nadal być częściowy.",
+            "adaptiveGoalMatchedEvidence": "<span>Cel adaptacyjny:</span> Szacuje wydatek energetyczny na podstawie zapisów żywienia i zmierzonych pomiarów masy ciała w odpowiadających sobie okresach obserwacji. Nowe dane są wprowadzane stopniowo; wcześniejsze dane niepewne lub ograniczone mogą nadal wpływać na wynik. Brakujące zapisy żywienia i wahania masy ciała ważonej zwiększają niepewność.",
+            "adaptivePlausibilityBandHint": "💡 W trybie adaptacyjnym ustawia to bazę wzorcową oraz pasmo wiarygodności ±{{band}} {{unit}} dla każdego kompletnego oszacowania. Wyświetlane oszacowanie zmienia się stopniowo i wraca w stronę bazy wzorcowej, gdy dane się starzeją, więc zaniżony poziom aktywności może je utrzymywać w dół."
         },
         "mfa": {
             "confirmPassword": "Potwierdź hasło, aby kontynuować",
@@ -2531,7 +2537,9 @@
             "adaptiveFormula": "Wzór: średnie dzienne kalorie − (dzienna zmiana masy w {{massUnit}} × {{kcalPerUnit}} kcal/{{massUnit}})",
             "adaptiveFormulaExplainer": "{{kcalPerUnit}} kcal/{{massUnit}} to ilość energii odpowiadająca {{unitName}} masy ciała, dzięki czemu trend masy ciała można przeliczyć na kalorie. Utrata lub przyrost masy ciała to połączenie tłuszczu (~{{fatPerUnit}} kcal/{{massUnit}}) oraz tkanek beztłuszczowych i wody (~{{leanPerUnit}} kcal/{{massUnit}}), a wartość {{kcalPerUnit}} odzwierciedla typową mieszankę.",
             "adjustment": "Korekta",
-            "goalAdjustmentLabel": "Korekta od celu:"
+            "goalAdjustmentLabel": "Korekta od celu:",
+            "adaptiveWeightedFormula": "Wzór: ważone dzienne spożycie − (obserwowana dzienna zmiana masy ciała w {{massUnit}} × {{kcalPerUnit}} kcal/{{massUnit}})",
+            "adaptiveCompatibilityDensity": "Współczynnik {{kcalPerUnit}} kcal/{{massUnit}} zachowano jako założenie zgodności. Skuteczna gęstość energetyczna różni się w zależności od składu i kierunku zmiany masy ciała; nie jest to wartość zmierzona dla każdej jednostki masy na wadze. To obliczenie nie identyfikuje wody, tkanki tłuszczowej ani mięśni."
         },
         "calorieBreakdown": {
             "confidence": "Pewność: {{level}}",
@@ -2543,7 +2551,8 @@
             "customFloorDescription": "skonfigurowane własne bezpieczne minimum",
             "customFloorActive": "Własne bezpieczne minimum jest aktywne; zalecane limity nadal są pokazane powyżej.",
             "raisedToSafetyFloor": "⚠️ Dzienny budżet został automatycznie podniesiony do limitu bezpiecznego minimum.",
-            "safetyFloorDisabled": "Automatyczne podnoszenie do bezpiecznego minimum jest wyłączone; zalecane limity nadal są pokazane powyżej."
+            "safetyFloorDisabled": "Automatyczne podnoszenie do bezpiecznego minimum jest wyłączone; zalecane limity nadal są pokazane powyżej.",
+            "latestAdaptiveConfidence": "Pewność ostatniego obliczenia: {{level}}"
         },
         "allergens": {
             "title": "Preferencje alergenów",
@@ -3649,7 +3658,48 @@
             "stepBmr": "Przemiana materii w spoczynku (BMR)",
             "stepBodyFat": "Procent tkanki tłuszczowej",
             "stepAdaptive": "Adaptacyjne TDEE (wydatek)",
-            "stepGoal": "Dzienny cel kaloryczny"
+            "stepGoal": "Dzienny cel kaloryczny",
+            "fallbackOverlap": "Baza wzorcowa ({{value}} {{unit}}) jest używana, ponieważ ostatni okres obserwacji masy ciała miał mniej niż {{required}} kwalifikujących się dni kalorycznych. Potrzebny jest nowy kompletny dzień pomiaru masy ciała z wystarczającą nakładającą się historią żywienia, nawet jeśli obecne liczniki listy kontrolnej są spełnione.",
+            "fallbackAlignedOverlap": "Baza wzorcowa ({{value}} {{unit}}) jest używana, ponieważ ostatni okres obserwacji masy ciała miał mniej niż {{required}} kwalifikujących się dat żywieniowych. Pierwszy dzień pomiaru masy ciała jest uwzględniony, a ostatni wykluczony. Potrzebny jest nowy kompletny dzień pomiaru masy ciała z wystarczającą pasującą historią żywienia, nawet gdy sumy {{window}}-dniowej listy kontrolnej są spełnione.",
+            "fallbackWeightIntervals": "Cel będzie używał bazy wzorcowej opartej na BMR ({{value}} {{unit}}), ponieważ dane o masie ciała są niewystarczające (wymagane co najmniej {{readings}} dni pomiarowych obejmujących {{span}}+ dni w ramach {{window}} zamkniętych dni, z kwalifikującymi się zapisami żywienia pomiędzy pomiarami).",
+            "weightIntervalRequirement": "• Zapisy masy ciała ({{readings}}+ dni pomiarowych obejmujących {{span}}+ dni w ramach {{window}} zamkniętych dni)",
+            "calorieIntervalRequirement": "• Zapisy kalorii w {{window}}-dniowym oknie wstecznym ({{required}}+ kwalifikujących się dat ≥ 200 kcal)",
+            "calorieOverlapAction": "Kompletne oszacowanie wymaga też {{required}} kwalifikujących się dat żywieniowych pomiędzy dopasowanymi pomiarami masy ciała: pierwszy dzień pomiaru uwzględniony, ostatni wykluczony. Sama suma z okna wstecznego nie potwierdza tego nakładania się.",
+            "formulaBaselineDetail": "BMR ({{bmr}} {{unit}}) × mnożnik aktywności ({{multiplier}}) = {{result}} {{unit}}. Żadne wyuczone dane nie wnoszą obecnie wkładu do tej bazy.",
+            "fittedWeightTrend": "Dopasowany trend masy ciała: {{start}} → {{end}} ({{change}} w ciągu {{days}} dni) = {{daily}} {{massUnit}}/dzień — linia dopasowana do rzeczywistych dat pomiarów; brakujące dni nie są uzupełniane.",
+            "observedWeightRateSummary": "Obserwowany trend masy ciała: {{sign}}{{rate}} {{unit}}/tydzień.",
+            "adaptiveCalculationDetails": "Szczegóły obliczeń",
+            "adaptiveSummaryFallback": "Status: baza wzorcowa, dopóki nie zbierze się więcej nakładających się danych o masie ciała i żywieniu.",
+            "adaptiveSummaryFading": "Status: powrót w stronę bazy wzorcowej w miarę starzenia się danych.",
+            "adaptiveSummaryAdjusting": "Status: nadal dostosowywanie; wcześniejsze dane pozostają w stopniowym oszacowaniu.",
+            "adaptiveSummaryWeeklyWeighIn": "Status: waż się co najmniej raz w tygodniu, aby odblokować zalecenia dotyczące celu.",
+            "adaptiveSummaryReady": "Status: oszacowanie adaptacyjne; ostatnia historia spełnia kontrole jakości danych.",
+            "adaptiveLearnedContributions": "Wyuczone wkłady: {{days}} z {{window}} dni w stopniowym oszacowaniu.",
+            "adaptiveHistoryQualityMet": "Wybrana historia spełnia kontrole świeżości, pewności i wiarygodności. Nie gwarantuje to jednak, że oszacowanie nadążyło za rzeczywistą zmianą.",
+            "adaptiveHistoryQualityPending": "Cała wybrana historia nie jest jeszcze potwierdzona: wcześniejsze dane o niskiej pewności, nieaktualne lub ograniczone mogą nadal wpływać na tę liczbę, nawet gdy ostatnie obliczenie wygląda na ustabilizowane. Liczba nadal stopniowo się dostosowuje.",
+            "regressionIntervalAssumption": "Żywność i aktywność używają tych samych dodatnich wag regresyjnych od pierwszego dopasowanego dnia pomiaru masy ciała (uwzględnionego) do ostatniego (wykluczonego). Przy zapisach tylko dziennych model zakłada ważenie się o stałej porze na granicach dni; żywność z ostatniego dnia pomiaru trafia do późniejszego obliczenia.",
+            "weightedDailyCalorieIntake": "Ważone dzienne spożycie: {{displayAdaptiveIntake}} {{energyUnitString}}",
+            "regressionWeightedIntakeWindow": "({{logged}} kwalifikujących się dat żywieniowych używa wag regresyjnych pomiędzy dopasowanymi pomiarami; ostatni dzień pomiaru masy ciała jest wykluczony. Okno wyboru: {{start}}–{{end}}, do {{window}} zamkniętych dni.)",
+            "weightedActivityBaselineMath": "Surowy całodniowy TDEE − ważona aktywność = surowa baza adaptacyjna: {{total}} − {{activity}} = {{baseline}} {{unit}} ({{days}} dni wnoszących wkład z żywności/aktywności, przy tych samych wagach przedziałowych).",
+            "adaptiveWholeChainTiming": "Syntetyczny pomiar czasu przy kompletnych danych dziennych: pełne oszacowanie początkowe zajęło {{startup}} dni ({{startupWeeks}} tygodni). Testowana trwała zmiana wydatku energetycznego osiągnęła około połowę odpowiedzi do dnia {{half}}, 90% do dnia {{ninety}}, a pełną odpowiedź do dnia {{full}} (około {{fullWeeks}} tygodni). Rzadkie zapisy, limity wiarygodności lub zmieniona baza wzorcowa mogą zachowywać się inaczej. Te scenariusze testowe nie są walidacją kliniczną ani prognozą osobistą.",
+            "adaptiveUnknownFoodBias": "Dni poniżej 200 kcal są nieznane: są pomijane, a pozostałe wagi są renormalizowane, a nie wypełniane zerami. Niezapisane wyższe spożycie może zaniżyć szacowany wydatek energetyczny; prawdziwy niezaznaczony post może go zawyżyć. Kwalifikujący się dzień żywieniowy może nadal być niekompletny.",
+            "measuredWeightCoverage": "Obserwowane pomiary masy ciała: {{readings}} dni pomiarowych obejmujących {{span}} dni.",
+            "adaptiveStatusLearning": "Status: uczenie się ({{days}}/{{window}} danych dziennych zawiera wyuczone dane).",
+            "adaptiveStatusAdaptive": "Status: adaptacyjne (stopniowe oszacowanie z kompletnych danych).",
+            "adaptiveStatusHeld": "Status: utrzymanie ostatniego kompletnego oszacowania w oczekiwaniu na nowe kwalifikujące się dane o masie ciała.",
+            "adaptiveStatusFading": "Status: stopniowy powrót do bazy wzorcowej w miarę starzenia się kompletnych danych.",
+            "adaptiveStatusFallback": "Status: baza wzorcowa (żadne kompletne dane nie wnoszą wkładu do oszacowania).",
+            "adaptiveEvidenceAge": "Ostatnie kompletne dane: {{date}} ({{days}} dni temu).",
+            "adaptiveWeightAge": "Ostatni zmierzony pomiar masy ciała: {{date}} ({{days}} dni temu).",
+            "adaptiveAlignedHistoryPolicy": "Oszacowanie uśrednia {{window}} danych dziennych. Kompletne dane są utrzymywane przez {{hold}} dni, a następnie zanikają w stronę bazy wzorcowej przez {{fade}} dni. Wyświetlana średnia może nadal się zmieniać, dopóki te dane są utrzymywane.",
+            "adaptiveAlignedDailyBound": "Przy niezmienionej bazie wzorcowej i niezmienionych zapisach przeszłości przesunięcie o jeden dzień zmienia oszacowanie o co najwyżej {{limit}} {{unit}}/dzień. Urodziny, zmiany zmierzonego BMR lub zmiany profilu/ustawień mogą zmienić bazę; poprawione zapisy przeszłości także mogą spowodować ponowne przeliczenie oszacowania.",
+            "adaptiveWholeChainCaveat": "Okno uśredniania to tylko jedna część odpowiedzi: dopasowanie zmian masy ciała, przenoszenie starszych danych i ich zanikanie również dodają opóźnienie. Nagłe skoki masy ciała są tłumione, a nie identyfikowane jako woda ani eliminowane. Te okna czasowe to wybory inżynierskie, nie klinicznie zwalidowane progi.",
+            "observedWeightCalories": "Energia z obserwowanego tempa zmiany masy ciała: −({{daily}} {{massUnit}}/dzień × {{kcalPerUnit}} kcal/{{massUnit}}) ≈ {{value}}",
+            "rawExpenditureCandidate": "Surowy kandydat wydatku energetycznego: {{energy}} {{energyUnitString}}",
+            "candidatePlausibilityBand": "Limity wiarygodności z Twojego poziomu aktywności (×{{multiplier}}): {{min}}–{{max}} {{unit}}. Surowy kandydat mieści się w tym zakresie; następuje korekta historii.",
+            "adaptiveHistoryAdjustment": "Korekta historii: {{candidate}} {{sign}} {{adjustment}} = {{result}} {{unit}} (średnia {{window}}-dniowa po utrzymaniu i zanikaniu starszych oszacowań).",
+            "activityCandidateCapped": "Po limicie wiarygodności opartym na BMR kandydat z wyłączoną aktywnością wynosi {{baseline}} {{unit}}; następuje jego korekta historii.",
+            "activityHistoryAdjustment": "Korekta historii bazy aktywności: {{candidate}} {{sign}} {{adjustment}} = {{result}} {{unit}}. Tryb celu i bezpieczne minimum mają zastosowanie do tej filtrowanej bazy."
         },
         "copyAllError": "Nie udało się skopiować całego dnia.",
         "copyAllFromYesterday": "Skopiuj wszystko z wczoraj",
