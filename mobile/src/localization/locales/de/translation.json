@@ -670,7 +670,7 @@
             "mostlySkipped": "Meist übersprungen",
             "allSkipped": "Alle Dosen übersprungen",
             "snoozedOnly": "Nur verschoben",
-            "sideEffect": "Symptom als Nebenwirkung",
+            "sideEffect": "Symptom (Nebenwirkung)",
             "generalSymptom": "Allgemeines Symptom",
             "tooltipTaken_one": "{{count}} eingenommen",
             "tooltipTaken_other": "{{count}} eingenommen",
