@@ -4376,7 +4376,7 @@
             "drinksOver_other": "{{count}} Drinks über dem Limit",
             "upcomingDay": "Noch nicht",
             "stdDrinksG": "Standarddrinks ({{total_g}} g)",
-            "limitG": "Limit: {{limit_standard_drinks}} (<span>{{limit_g}}</span> g)"
+            "limitG": "Limit: {{limit_standard_drinks}} (<span>{{limit_g}}</span>g)"
         },
         "hydration": {
             "title": "Flüssigkeitszufuhr",
