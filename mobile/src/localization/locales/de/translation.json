@@ -1746,7 +1746,6 @@
             "dailyAdjustment": "Geschätzte tägliche Anpassung: {{sign}}{{amount}} {{unit}}",
             "estimateHint": "Dein Wochenziel wird in eine tägliche Kalorienanpassung umgerechnet. Das ist eine Schätzung; deine Sicherheitsuntergrenze kann die Abnahme begrenzen."
         },
-        "adaptiveFallbackWithUnit": "Die Fallback-Schätzung, bis genügend Tracking-Daten vorliegen – und bestimmt danach weiterhin die Plausibilitätsgrenzen. Dein gemessener TDEE ist auf maximal ±{{amount}} {{unit}} von BMR × diesem Multiplikator begrenzt.",
         "adjustMacrosWithExercise": "Prozentuale Makroziele an Trainingskalorien anpassen",
         "adjustMacrosWithExerciseHint": "Erhöht Protein-, Kohlenhydrat- und Fettziele anhand der gespeicherten Prozentsätze, wenn durch Training Kalorien zum Tagesbudget hinzukommen. Berücksichtigt Einstellungen zur Verrechnung von Trainingskalorien (Earn-Back). In Gramm eingegebene Ziele bleiben unverändert. Änderungen gelten ab heute; vorherige Tage behalten ihre Einstellung bei.",
         "useMoveRingActiveCalories": "Bewegungsring für Aktivitätskalorien verwenden",
