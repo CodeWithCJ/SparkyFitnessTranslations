@@ -263,7 +263,8 @@
             "ongoingWorkout": "Trening w toku",
             "hydration": "Przypomnienia o nawodnieniu",
             "moodCheckin": "Wpisy nastroju",
-            "oralCare": "Przypomnienia o szczotkowaniu"
+            "oralCare": "Przypomnienia o szczotkowaniu",
+            "mindfulness": "Timer medytacji"
         },
         "actions": {
             "completeSet": "Wykonaj serię",
@@ -315,6 +316,10 @@
         "brushingTimer": {
             "title": "Szczotkowanie zakończone",
             "body": "Otwórz SparkyFitness, aby zapisać szczotkowanie."
+        },
+        "meditationTimer": {
+            "title": "Medytacja zakończona",
+            "body": "Otwórz SparkyFitness, aby zapisać sesję."
         }
     },
     "activeWorkout": {
@@ -1231,7 +1236,8 @@
             "customShort": "Niestandardowy",
             "chartHintTrainingShort": "Dotknij słupka, aby zobaczyć dany dzień. Dotknij dnia poniżej, aby przełączyć trening i odpoczynek.",
             "chartHintCustomHandle": "Dotknij słupka, aby zobaczyć dany dzień. Przeciągnij uchwyt nad słupkiem, aby go zmienić."
-        }
+        },
+        "adaptiveEstimateRangeWithUnit": "Poziom aktywności ustawia oszacowanie początkowe oraz zakres wiarygodności ±{{amount}} {{unit}} wokół BMR × tego mnożnika. Oszacowania mogą potrzebować kilku tygodni na ustabilizowanie; wahania masy ciała i niekompletne zapisy żywieniowe zwiększają niepewność."
     },
     "dashboardSettings": {
         "updateFailed": "Nie udało się zaktualizować ustawienia.",
