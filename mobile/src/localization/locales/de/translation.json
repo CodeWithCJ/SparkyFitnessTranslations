@@ -650,7 +650,7 @@
             "loggedActivityDescription": "Alles, was du an diesem Tag eingenommen oder übersprungen hast.",
             "loadingHistory": "Verlauf wird geladen …",
             "prnTaken": "Bei Bedarf",
-            "snoozed": "Verschoben"
+            "snoozed": "Zurückgestellt"
         },
         "calendar": {
             "title": "Medikamenten-Protokollkalender",
