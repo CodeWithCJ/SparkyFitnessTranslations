@@ -807,7 +807,12 @@
             "weeklyHint": "Il s'agit d'un rythme demandé, pas d'une garantie. Votre objectif calorique utilise la même estimation que la projection de poids, et votre plancher de sécurité configuré s'applique toujours.",
             "baselineActivityExcluded": "Base adaptative (activité exclue)",
             "adaptiveActivitySeparate": "Compter les calories d'activité séparément",
-            "adaptiveActivitySeparateHint": "Après l'enregistrement, apprend une base qui exclut l'activité passée et crédite une seule fois les pas et les séances du jour, sans rajouter le BMR. Il faut pour cela un historique régulier d'alimentation, de poids, de pas et de séances. Tant que l'historique est insuffisant, BMR × votre coefficient d'activité hors séances est utilisé."
+            "adaptiveActivitySeparateHint": "Après l'enregistrement, apprend une base qui exclut l'activité passée et crédite une seule fois les pas et les séances du jour, sans rajouter le BMR. Il faut pour cela un historique régulier d'alimentation, de poids, de pas et de séances. Tant que l'historique est insuffisant, BMR × votre coefficient d'activité hors séances est utilisé.",
+            "adaptiveFallbackDescription": "L'estimation de repli est utilisée le temps de réunir un historique exploitable de pesées et d'alimentation. Les jours incomplets et les fluctuations de la balance ajoutent toujours de l'incertitude ; des saisies suffisantes permettent une estimation, et non une mesure directe du métabolisme.",
+            "adaptiveWeightIntervalTip": "Pesez-vous réellement, à heure régulière, et gardez vos saisies alimentaires sur toute la période observée.",
+            "adaptiveFoodIntervalTip": "Saisissez votre alimentation aussi complètement que possible ; un jour retenu peut tout de même être partiel.",
+            "adaptiveGoalMatchedEvidence": "<span>Objectif adaptatif :</span> estime la dépense à partir de vos saisies alimentaires et de vos pesées sur des périodes d'observation correspondantes. Les nouvelles données sont intégrées progressivement ; des données antérieures incertaines ou plafonnées peuvent encore influer sur le résultat. Les saisies alimentaires manquantes et les fluctuations de la balance ajoutent de l'incertitude.",
+            "adaptivePlausibilityBandHint": "💡 En mode adaptatif, ce réglage fixe la base de la formule et la plage de plausibilité de ±{{band}} {{unit}} de chaque estimation complète. L'estimation affichée évolue progressivement et revient vers la base de la formule à mesure que les données vieillissent : un niveau d'activité sous-estimé peut donc la tirer vers le bas."
         },
         "mfa": {
             "confirmPassword": "Confirmer le mot de passe pour continuer",
@@ -888,7 +893,8 @@
             "title": "Comment vos calories seront calculées",
             "remainingActivitySeparated": "Objectif quotidien - Consommé + Activité (pas et séances, sans BMR)",
             "activitySeparatedFootnote": "Après l'enregistrement, la base adaptative exclut l'activité passée ; les pas et les séances du jour sont crédités une seule fois, sans BMR. Les valeurs d'aperçu calculées par le serveur utilisent vos paramètres enregistrés.",
-            "remainingTdeeWeekly": "TDEE projeté + ajustement hebdomadaire − Consommé"
+            "remainingTdeeWeekly": "TDEE projeté + ajustement hebdomadaire − Consommé",
+            "adaptiveEstimateFootnote": "* Ajuste progressivement votre objectif quotidien à partir d'estimations tirées de vos saisies alimentaires et de vos pesées. Les fluctuations de poids et les saisies incomplètes ajoutent de l'incertitude."
         },
         "calorieGoalAdjustment": {
             "activityHeavy": "Très actif (×1,725)",
@@ -933,7 +939,9 @@
             "adaptiveFormula": "Formule : calories quotidiennes moyennes − (variation de poids quotidienne en {{massUnit}} × {{kcalPerUnit}} kcal/{{massUnit}})",
             "adaptiveFormulaExplainer": "{{kcalPerUnit}} kcal/{{massUnit}} correspond à l'énergie représentée par une unité de poids corporel ({{unitName}}), ce qui permet de convertir la tendance de votre poids en calories. Le poids perdu ou gagné est un mélange de graisse (~{{fatPerUnit}} kcal/{{massUnit}}) et de tissu maigre et d'eau (~{{leanPerUnit}} kcal/{{massUnit}}) ; {{kcalPerUnit}} reflète un mélange typique.",
             "adjustment": "Ajustement",
-            "goalAdjustmentLabel": "Ajustement visé :"
+            "goalAdjustmentLabel": "Ajustement visé :",
+            "adaptiveWeightedFormula": "Formule : apport quotidien pondéré − (variation de poids quotidienne observée en {{massUnit}} × {{kcalPerUnit}} kcal/{{massUnit}})",
+            "adaptiveCompatibilityDensity": "Le facteur de {{kcalPerUnit}} kcal/{{massUnit}} est conservé comme hypothèse de compatibilité. La densité énergétique réelle varie selon la composition et le sens de la variation de poids ; ce n'est pas une valeur mesurée pour chaque unité de poids sur la balance. Ce calcul ne distingue ni l'eau, ni la graisse, ni le muscle."
         },
         "calorieBreakdown": {
             "confidence": "Fiabilité : {{level}}",
@@ -945,7 +953,8 @@
             "customFloorDescription": "plancher de sécurité personnalisé configuré",
             "customFloorActive": "Un plancher de sécurité personnalisé est actif ; les limites recommandées restent affichées ci-dessus.",
             "raisedToSafetyFloor": "⚠️ Le budget quotidien a été automatiquement relevé au plancher de sécurité.",
-            "safetyFloorDisabled": "Le plafonnement automatique au plancher de sécurité est désactivé ; les limites recommandées restent affichées ci-dessus."
+            "safetyFloorDisabled": "Le plafonnement automatique au plancher de sécurité est désactivé ; les limites recommandées restent affichées ci-dessus.",
+            "latestAdaptiveConfidence": "Fiabilité du dernier calcul : {{level}}"
         },
         "goalCoaching": {
             "maintenanceTitle": "Conseils pour le maintien",
@@ -1281,7 +1290,8 @@
             "ddMMMYyyy25Dec": "dd-MMM-yyyy (25-déc.-2024)",
             "yyyyMMDd202412": "yyyy-MM-dd (2024-12-25)",
             "mmmDdYyyyDec25": "MMM dd, yyyy (déc. 25, 2024)",
-            "gPureAlcohol": "{{label}} ({{grams}} g d'alcool pur)"
+            "gPureAlcohol": "{{label}} ({{grams}} g d'alcool pur)",
+            "ddMMDotYyyy2512": "dd.MM.yyyy (25.12.2024)"
         },
         "providerCard": {
             "global": "Global",
@@ -1479,6 +1489,17 @@
             "chartHintTraining": "Touchez une barre pour voir ce jour. Touchez l'icône sous un jour pour le faire passer d'entraînement à repos, et inversement.",
             "chartHintCustom": "Touchez une barre pour voir ce jour, ou faites-la glisser vers le haut ou le bas. Affinez le jour sélectionné ci-dessous.",
             "previewTargetForDay": "Objectif calorique quotidien ({{day}}) :"
+        },
+        "webTabs": {
+            "title": "Onglets",
+            "description": "Choisissez les onglets principaux affichés sur le site",
+            "cycleOn": "Activé",
+            "cycleOff": "Désactivé",
+            "cycleHint": "{{name}} a son propre interrupteur dans l'onglet Bien-être des paramètres.",
+            "footnote": "Journal et Paramètres sont toujours affichés. Masquer un onglet ne change que ce site : rien n'est supprimé, et l'app mobile garde ses propres réglages.",
+            "saveError": "Impossible d'enregistrer votre choix d'onglets. Veuillez réessayer.",
+            "loadError": "Impossible de charger vos choix d'onglets.",
+            "actingOnBehalf": "Vous ne pouvez modifier les onglets que de votre propre compte."
         }
     },
     "aboutDialog": {
@@ -1920,7 +1941,8 @@
             "sets": "séries",
             "title": "Séance en direct",
             "location": "Salle / lieu",
-            "locationPlaceholder": "ex. Basic-Fit centre-ville, garage"
+            "locationPlaceholder": "ex. Basic-Fit centre-ville, garage",
+            "sessionConflictError": "Cette séance a été modifiée sur un autre appareil ou dans un autre onglet. Fermez le lecteur, rechargez le journal, puis reprenez-la."
         },
         "workoutPlaybackPage": {
             "columnReps": "Répétitions",
@@ -2206,7 +2228,17 @@
         "equipment2": "Équipement :",
         "effort": "Effort",
         "effortOutOf": "{{rating}}/10",
-        "effortValue": "Effort {{rating}}/10"
+        "effortValue": "Effort {{rating}}/10",
+        "sessionStatus": {
+            "planned": "Prévue",
+            "in_progress": "En cours",
+            "partial": "Partielle",
+            "completed": "Terminée"
+        },
+        "resumeWorkoutButton": "Reprendre la séance",
+        "resumeWorkoutFailed": "Échec de la reprise de cette séance. Veuillez réessayer.",
+        "resumeEmptySession": "Rien à reprendre dans cette séance.",
+        "sessionUpdatedElsewhere": "Cette séance a été modifiée sur un autre appareil ou dans un autre onglet. Rechargez le journal et réessayez."
     },
     "enhancedFoodSearch": {
         "private": "Privé",
@@ -2986,7 +3018,48 @@
             "stepBmr": "Métabolisme de base (BMR)",
             "stepBodyFat": "Pourcentage de masse grasse",
             "stepAdaptive": "TDEE adaptatif (dépense)",
-            "stepGoal": "Objectif calorique quotidien"
+            "stepGoal": "Objectif calorique quotidien",
+            "fallbackOverlap": "La base de la formule ({{value}} {{unit}}) est utilisée car la dernière période d'observation des pesées comptait moins de {{required}} jours caloriques retenus. Il faut un nouveau jour de pesée terminé, avec assez d'historique alimentaire sur la même période, même si les compteurs actuels de la liste sont atteints.",
+            "fallbackAlignedOverlap": "La base de la formule ({{value}} {{unit}}) est utilisée car la dernière période d'observation des pesées comptait moins de {{required}} jours d'alimentation retenus. Le premier jour de pesée est inclus et le dernier exclu. Il faut un nouveau jour de pesée terminé, avec assez d'historique alimentaire correspondant, même si les totaux de la liste sur {{window}} jours sont atteints.",
+            "fallbackWeightIntervals": "L'objectif utilisera la base de la formule fondée sur le BMR ({{value}} {{unit}}) car les données de poids sont insuffisantes (il faut au moins {{readings}} jours de pesée couvrant {{span}} jours ou plus sur {{window}} jours clos, avec des saisies alimentaires retenues entre les pesées).",
+            "weightIntervalRequirement": "• Pesées ({{readings}} jours de pesée ou plus, couvrant {{span}} jours ou plus sur {{window}} jours clos)",
+            "calorieIntervalRequirement": "• Relevés caloriques sur les {{window}} derniers jours ({{required}} jours retenus ou plus, à ≥ 200 kcal)",
+            "calorieOverlapAction": "Une estimation complète exige aussi {{required}} jours d'alimentation retenus entre les pesées ajustées : premier jour de pesée inclus, dernier exclu. Le total sur la période ne suffit pas à confirmer ce chevauchement.",
+            "formulaBaselineDetail": "BMR ({{bmr}} {{unit}}) × coefficient d'activité ({{multiplier}}) = {{result}} {{unit}}. Aucune donnée apprise ne contribue actuellement à cette base.",
+            "fittedWeightTrend": "Tendance ajustée du poids : {{start}} → {{end}} ({{change}} sur {{days}} jours) = {{daily}} {{massUnit}}/jour — une droite ajustée sur les dates réelles des pesées ; les jours manquants ne sont pas comblés.",
+            "observedWeightRateSummary": "Tendance du poids observée : {{sign}}{{rate}} {{unit}}/semaine.",
+            "adaptiveCalculationDetails": "Détails du calcul",
+            "adaptiveSummaryFallback": "Statut : repli sur la formule, le temps de réunir plus d'historique de pesées et d'alimentation sur les mêmes périodes.",
+            "adaptiveSummaryFading": "Statut : retour vers la base de la formule à mesure que les données vieillissent.",
+            "adaptiveSummaryAdjusting": "Statut : ajustement en cours ; les données antérieures restent dans l'estimation progressive.",
+            "adaptiveSummaryWeeklyWeighIn": "Statut : pesez-vous au moins une fois par semaine pour débloquer les conseils sur l'objectif.",
+            "adaptiveSummaryReady": "Statut : estimation adaptative ; l'historique récent satisfait les contrôles de qualité des données.",
+            "adaptiveLearnedContributions": "Contributions apprises : {{days}} jours sur {{window}} dans l'estimation progressive.",
+            "adaptiveHistoryQualityMet": "L'historique retenu satisfait les contrôles de fraîcheur, de fiabilité et de plausibilité. Cela ne garantit pas que l'estimation a rattrapé un changement réel.",
+            "adaptiveHistoryQualityPending": "L'historique retenu n'est pas encore entièrement confirmé : des données antérieures peu fiables, anciennes ou plafonnées peuvent encore influer sur ce chiffre, même si le dernier calcul semble stable. Le chiffre continue de s'ajuster progressivement.",
+            "regressionIntervalAssumption": "L'alimentation et l'activité utilisent les mêmes pondérations de régression positives, du premier jour de pesée ajustée (inclus) au dernier (exclu). Avec des relevés à la journée, le modèle suppose des pesées à heure régulière, en limite de journée ; l'alimentation du dernier jour de pesée entre dans un calcul ultérieur.",
+            "weightedDailyCalorieIntake": "Apport quotidien pondéré : {{displayAdaptiveIntake}} {{energyUnitString}}",
+            "regressionWeightedIntakeWindow": "({{logged}} jours d'alimentation retenus utilisent les pondérations de régression entre les pesées ajustées ; le dernier jour de pesée ajustée est exclu. Période retenue : {{start}}–{{end}}, jusqu'à {{window}} jours clos.)",
+            "weightedActivityBaselineMath": "TDEE brut sur la journée complète − activité pondérée = base adaptative brute : {{total}} − {{activity}} = {{baseline}} {{unit}} ({{days}} jours d'alimentation/activité contributeurs, avec les mêmes pondérations d'intervalle).",
+            "adaptiveWholeChainTiming": "Délais mesurés sur un banc d'essai synthétique, avec des données quotidiennes régulières : une première estimation complète a pris {{startup}} jours ({{startupWeeks}} semaines). Le changement durable de dépense testé a atteint environ la moitié de sa réponse au jour {{half}}, 90 % au jour {{ninety}}, et la réponse complète au jour {{full}} (environ {{fullWeeks}} semaines). Des saisies clairsemées, les limites de plausibilité ou une base de formule modifiée peuvent donner un comportement différent. Ces scénarios de test ne sont ni une validation clinique ni une prédiction personnelle.",
+            "adaptiveUnknownFoodBias": "Les jours sous 200 kcal sont inconnus : ils sont écartés et les pondérations restantes sont renormalisées, sans être remplacés par zéro. Des apports plus élevés non saisis peuvent rendre la dépense estimée trop basse ; un vrai jeûne non signalé peut la rendre trop haute. Un jour d'alimentation retenu peut tout de même être incomplet.",
+            "measuredWeightCoverage": "Pesées observées : {{readings}} jours de pesée couvrant {{span}} jours.",
+            "adaptiveStatusLearning": "Statut : apprentissage ({{days}}/{{window}} entrées quotidiennes contiennent des données apprises).",
+            "adaptiveStatusAdaptive": "Statut : adaptatif (estimation progressive fondée sur des données complètes).",
+            "adaptiveStatusHeld": "Statut : dernière estimation complète conservée, en attendant de nouvelles pesées exploitables.",
+            "adaptiveStatusFading": "Statut : retour progressif vers la base de la formule à mesure que les données complètes vieillissent.",
+            "adaptiveStatusFallback": "Statut : repli sur la formule (aucune donnée complète ne contribue à l'estimation).",
+            "adaptiveEvidenceAge": "Dernières données complètes : {{date}} (il y a {{days}} jours).",
+            "adaptiveWeightAge": "Dernière pesée : {{date}} (il y a {{days}} jours).",
+            "adaptiveAlignedHistoryPolicy": "L'estimation fait la moyenne de {{window}} entrées quotidiennes. Les données complètes sont conservées {{hold}} jours, puis s'estompent vers la base de la formule sur {{fade}} jours. La moyenne affichée peut continuer d'évoluer pendant que ces données sont conservées.",
+            "adaptiveAlignedDailyBound": "À base de formule et relevés passés inchangés, chaque jour qui passe modifie l'estimation d'au plus {{limit}} {{unit}}/jour. Un anniversaire, un changement de BMR mesuré ou une modification du profil ou des paramètres peuvent changer la base ; la correction de relevés passés peut aussi recalculer l'estimation.",
+            "adaptiveWholeChainCaveat": "La fenêtre de moyenne n'est qu'une partie de la réponse : l'ajustement des variations de poids, le report des données anciennes puis leur estompage ajoutent aussi du délai. Les variations brutales de poids sont atténuées, sans être identifiées comme de l'eau ni éliminées. Ces fenêtres de temps sont des choix techniques, et non des seuils validés cliniquement.",
+            "observedWeightCalories": "Énergie correspondant à la tendance de poids observée : −({{daily}} {{massUnit}}/jour × {{kcalPerUnit}} kcal/{{massUnit}}) ≈ {{value}}",
+            "rawExpenditureCandidate": "Dépense brute candidate : {{energy}} {{energyUnitString}}",
+            "candidatePlausibilityBand": "Limites de plausibilité selon votre niveau d'activité (×{{multiplier}}) : {{min}}–{{max}} {{unit}}. La valeur brute candidate se situe dans cette plage ; l'ajustement par l'historique suit.",
+            "adaptiveHistoryAdjustment": "Ajustement par l'historique : {{candidate}} {{sign}} {{adjustment}} = {{result}} {{unit}} (la moyenne sur {{window}} jours, après conservation puis estompage des estimations plus anciennes).",
+            "activityCandidateCapped": "Après le plafond de plausibilité fondé sur le BMR, la valeur candidate hors activité est de {{baseline}} {{unit}} ; son ajustement par l'historique suit.",
+            "activityHistoryAdjustment": "Ajustement par l'historique de la base hors activité : {{candidate}} {{sign}} {{adjustment}} = {{result}} {{unit}}. Le mode d'objectif et votre plancher de sécurité s'appliquent à cette base filtrée."
         },
         "caffeineCard": {
             "dose": "Dose"
@@ -3698,7 +3771,9 @@
         "totalAmount2": "Quantité totale ({{servingUnit}})",
         "defaultServingSize2": "Portion par défaut ({{servingUnit}})",
         "totalDishAmount2": "Quantité totale du plat ({{servingUnit}})",
-        "quantityConsumed": "Quantité consommée ({{servingUnit}})"
+        "quantityConsumed": "Quantité consommée ({{servingUnit}})",
+        "loadingIngredients": "Chargement des ingrédients du repas…",
+        "retryLoad": "Réessayer de charger le repas"
     },
     "mealPlanCalendar": {
         "title": "Menus",
@@ -6128,7 +6203,8 @@
             "howManyMealsDoYou": "Combien de repas prenez-vous par jour en général ?",
             "mealsPerDay": "{{num}} repas par jour",
             "preparingYourPersonalizedPlan": "Préparation de votre plan personnalisé…",
-            "crunchingTheNumbersBasedOn": "Calcul en cours à partir de votre profil."
+            "crunchingTheNumbersBasedOn": "Calcul en cours à partir de votre profil.",
+            "ddMMDotYyyy2512": "jj.MM.aaaa (25.12.2024)"
         },
         "personalPlan": {
             "yourPersonalPlan": "Votre plan personnalisé",
@@ -7444,7 +7520,16 @@
         "garminSyncPhaseHealth": "Santé",
         "garminSyncPhaseActivities": "Activités",
         "garminSyncPhaseNutrition": "Nutrition",
-        "garminSyncIncomplete": "Certaines données Garmin n'ont pas pu être synchronisées ({{phases}}). Réessayez plus tard."
+        "garminSyncIncomplete": "Certaines données Garmin n'ont pas pu être synchronisées ({{phases}}). Réessayez plus tard.",
+        "intervalsPushLabel": "Envoyer la nutrition quotidienne vers Intervals.icu",
+        "intervalsPushingSince": "Envoi depuis le {{date}}",
+        "intervalsPushedRemain": "Jours de données envoyées restants : {{count}}",
+        "intervalsRemovePushed": "Supprimer les données envoyées",
+        "intervalsRemoveConfirm": "Arrêter l'envoi et supprimer les valeurs nutritionnelles que SparkyFitness a écrites dans Intervals.icu ? Les valeurs modifiées depuis par une autre app ne sont pas touchées.",
+        "intervalsRemoveTitle": "Données nutritionnelles envoyées supprimées",
+        "intervalsRemoveDetails": "Jours effacés : {{cleared}} · conservés car modifiés par une autre app : {{kept}} · en échec : {{failed}}.",
+        "intervalsRemoveError": "Impossible de supprimer les données nutritionnelles envoyées. Veuillez réessayer.",
+        "intervalsPushToggleError": "Impossible d'enregistrer le réglage d'envoi de la nutrition vers Intervals.icu."
     },
     "fasting": {
         "checklistTitle": "Minuteur de jeûne",
