@@ -4671,11 +4671,15 @@
         },
         "tools": {
             "food": "Ernährung",
-            "exercise": "Übung",
+            "exercise": "Training",
             "checkin": "Check-in",
             "goals": "Ziele",
             "lookedUp": "{{name}} nachgeschlagen",
-            "runProgram": "Trainingsprogramm"
+            "runProgram": "Programm ausführen",
+            "generic": "Tool",
+            "outside": "ein externes Tool",
+            "outsideNamed": "{{server}}: {{tool}}",
+            "withAction": "{{tool}} ({{action}})"
         },
         "typing": "Sparky schreibt",
         "voice": {
@@ -4700,6 +4704,44 @@
             "cameraPermission": "Kamerazugriff nötig",
             "cameraPermissionBody": "Erlaube den Kamerazugriff, um ein Foto hinzuzufügen.",
             "addFailed": "Foto konnte nicht hinzugefügt werden"
+        },
+        "approval": {
+            "title": "Diesen Schritt erlauben?",
+            "details": "Details",
+            "allow": "Erlauben",
+            "deny": "Ablehnen",
+            "allowed": "Erlaubt",
+            "denied": "Abgelehnt",
+            "failed": "Deine Antwort konnte nicht gespeichert werden. Bitte versuche es erneut.",
+            "working": "Wird ausgeführt…",
+            "done": "Fertig",
+            "notRun": "Nicht ausgeführt",
+            "cancelled": "Du hast zuerst eine neue Nachricht gesendet.",
+            "nothingChanged": "Es wurde nichts geändert.",
+            "toolFailed": "Erlaubt, aber fehlgeschlagen",
+            "otherPending": "Beantworte zuerst den anderen Schritt, um fortzufahren.",
+            "composerHint": "Beantworte zuerst den Schritt oben oder tippe weiter, um ihn zu überspringen.",
+            "announce": "Sparky benötigt deine Antwort: Diesen Schritt erlauben?"
+        },
+        "outsideSource": {
+            "delete": "Diese Nachricht löschen",
+            "clear": "Chat leeren",
+            "failed": "Diese Nachricht konnte nicht gelöscht werden. Bitte versuche es erneut.",
+            "deleteTitle": "Diese Antwort löschen?",
+            "deleteBody": "Dadurch wird die Antwort aus deinem Chat entfernt. Änderungen, die Sparky bereits vorgenommen hat, werden nicht rückgängig gemacht.",
+            "cancel": "Abbrechen",
+            "confirmDelete": "Löschen",
+            "deleting": "Wird gelöscht…"
+        },
+        "outsideError": {
+            "unavailable": "{{server}} hat nicht geantwortet. Versuche es später erneut.",
+            "turnedOff": "{{server}} ist für dich in den KI-Einstellungen deaktiviert."
+        },
+        "clearConfirm": {
+            "title": "Chat leeren?",
+            "body": "Dadurch wird dein Sparky-Chatverlauf dauerhaft gelöscht. Dies kann nicht rückgängig gemacht werden.",
+            "cancel": "Abbrechen",
+            "clear": "Leeren"
         }
     },
     "foodImagePicker": {
