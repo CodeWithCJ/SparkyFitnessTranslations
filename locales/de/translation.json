@@ -1588,7 +1588,14 @@
             "replaceSuccess": "Übung ersetzt",
             "suggestedTab": "Empfohlen",
             "caloriesPerHourWithUnit": "Kalorien/Stunde ({{unit}})",
-            "caloriesPerHourHintWithUnit": "Lassen Sie das Feld leer, um die vom System berechneten Kalorien pro Stunde zu verwenden ({{newExerciseCalories}} {{unit}}/hour)."
+            "caloriesPerHourHintWithUnit": "Lassen Sie das Feld leer, um die vom System berechneten Kalorien pro Stunde zu verwenden ({{newExerciseCalories}} {{unit}}/hour).",
+            "healthActivityTypeLabel": "Health-Aktivitätstyp",
+            "healthActivityTypeAutomatic": "Automatisch ({{type}})",
+            "healthActivityTypeHint": "Wird verwendet, wenn die mobile App deine Trainings in Apple Health oder Health Connect speichert.",
+            "healthActivityTypeCommon": "Häufig",
+            "healthActivityTypeAll": "Alle Aktivitäten",
+            "healthActivityTypeSearch": "Aktivitäten suchen",
+            "healthActivityTypeNoMatches": "Keine Treffer"
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "Durchsuche deine Trainingsvorlagen...",
@@ -6550,6 +6557,56 @@
         "sparkyChatInterface": {
             "chatError": "Chat-Fehler",
             "failedToProcessMessagePlease": "Die Nachricht konnte nicht verarbeitet werden. Prüfe deine Einstellungen für den KI-Dienst."
+        },
+        "approval": {
+            "title": "Diesen Schritt erlauben?",
+            "details": "Details",
+            "allow": "Erlauben",
+            "deny": "Ablehnen",
+            "allowed": "Erlaubt",
+            "denied": "Abgelehnt",
+            "failed": "Deine Antwort konnte nicht gespeichert werden. Bitte versuche es erneut.",
+            "working": "Wird ausgeführt…",
+            "done": "Fertig",
+            "notRun": "Nicht ausgeführt",
+            "cancelled": "Du hast zuerst eine neue Nachricht gesendet.",
+            "nothingChanged": "Es wurde nichts geändert.",
+            "toolFailed": "Erlaubt, aber fehlgeschlagen",
+            "otherPending": "Beantworte zuerst den anderen Schritt, um fortzufahren.",
+            "composerHint": "Beantworte zuerst den Schritt oben oder tippe weiter, um ihn zu überspringen.",
+            "announce": "Sparky benötigt deine Antwort: Diesen Schritt erlauben?"
+        },
+        "outsideSource": {
+            "delete": "Diese Nachricht löschen",
+            "clear": "Chat leeren",
+            "failed": "Diese Nachricht konnte nicht gelöscht werden. Bitte versuche es erneut.",
+            "deleteTitle": "Diese Antwort löschen?",
+            "deleteBody": "Dadurch wird die Antwort aus deinem Chat entfernt. Änderungen, die Sparky bereits vorgenommen hat, werden nicht rückgängig gemacht.",
+            "cancel": "Abbrechen",
+            "confirmDelete": "Löschen",
+            "deleting": "Wird gelöscht…"
+        },
+        "tools": {
+            "generic": "Tool",
+            "outside": "ein externes Tool",
+            "outsideNamed": "{{server}}: {{tool}}",
+            "withAction": "{{tool}} ({{action}})",
+            "runProgram": "Programm ausführen",
+            "food": "Ernährung",
+            "exercise": "Training",
+            "checkin": "Check-in",
+            "goals": "Ziele",
+            "lookedUp": "{{name}} nachgeschlagen"
+        },
+        "outsideError": {
+            "unavailable": "{{server}} hat nicht geantwortet. Versuche es später erneut.",
+            "turnedOff": "{{server}} ist für dich in den KI-Einstellungen deaktiviert."
+        },
+        "clearConfirm": {
+            "title": "Chat leeren?",
+            "body": "Dadurch wird dein Sparky-Chatverlauf dauerhaft gelöscht. Dies kann nicht rückgängig gemacht werden.",
+            "cancel": "Abbrechen",
+            "clear": "Leeren"
         }
     },
     "foodCsvImport": {
