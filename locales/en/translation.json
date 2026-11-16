@@ -1962,6 +1962,7 @@
     "meals": "Meals",
     "online": "Online",
     "scanBarcode": "Scan Barcode",
+    "scanBarcodeOrLabel": "Scan Barcode or Label",
     "customFood": "Custom Food",
     "importFromCSV": "Import from CSV",
     "searchFoodsPlaceholder": "Search for foods...",
@@ -1998,7 +1999,7 @@
     "editFoodDetailsDescription": "Adjust the food details before adding it to your custom database.",
     "addNewFood": "Add New Food",
     "addNewFoodDescription": "Enter the details for a new food item to add to your database.",
-    "scanBarcodeDescription": "Position the product barcode in front of your camera.",
+    "scanBarcodeDescription": "Position the product barcode in front of your camera, or use a picture of it.",
     "importFromCSVDescription": "Import a CSV file to add multiple foods at once.",
     "allProviders": "All Providers",
     "topMatches": "Top Matches",
@@ -4263,6 +4264,8 @@
     "copyAllSuccess": "Entire day copied successfully.",
     "copyAllToDate": "Copy entire day to date",
     "copyError": "Failed to copy entries.",
+    "copyFoodError": "Failed to copy food.",
+    "copyFoodSuccess": "Food copied.",
     "copyFamilyDesc": "Symmetrically copy diary entries between your diary and family member diaries.",
     "copyFamilyFromError": "Failed to copy entries from family.",
     "copyFamilyFromSuccess": "Entries copied from family successfully.",
@@ -4574,6 +4577,7 @@
   },
   "mealCard": {
     "addFoodToMeal": "Add Food to {{mealName}}",
+    "copyFood": "Copy food",
     "searchFoodsForMeal": "Search for foods to add to your {{mealName}}.",
     "addFoodTo": "Add Food to",
     "searchFoodsToYour": "Search for foods to add to your",
@@ -7238,6 +7242,14 @@
     "importing": "Importing...",
     "loadedRecords": "Loaded {{count}} rows.",
     "noItems": "No importable values were found. Check for empty rows or missing dates.",
+    "unitPrompt": "Your file has no unit column. Choose the unit for the values so they convert correctly.",
+    "weightUnitLabel": "Weight unit",
+    "weightUnitRequired": "Your file has no weight unit. Choose kg or lb before importing.",
+    "lengthUnitLabel": "Length unit",
+    "lengthUnitRequired": "Your file has no length unit. Choose cm, in, or m before importing.",
+    "weightUnitMissing": "Weight is present but no unit is set. Choose a unit (kg or lb) for this import.",
+    "lengthUnitMissing": "{{type}} is present but no unit is set. Choose a unit (cm, in, or m) for this import.",
+    "unitRequired": "Unit required",
     "title": "Import Health Data",
     "uploadCSV": "Upload CSV",
     "validationError": "Nothing to import",
@@ -7255,6 +7267,8 @@
   "diaryCsvImport": {
     "fileTooLarge": "The selected file is too large. Please upload a file smaller than 25MB.",
     "headersMismatch": "The CSV is missing required columns. Please map the fields to continue.",
+    "aggregateLabel": "Import as meal totals (per-meal aggregate)",
+    "aggregateDescription": "This file has one row per meal with no food name or quantity. Log each row's nutrients as a single serving of a meal named after its type.",
     "actions": "Actions",
     "addRow": "Add Row",
     "clearData": "Clear Data",
@@ -7283,6 +7297,7 @@
     "scopeMine": "My Items",
     "scopePublic": "Public",
     "title": "Import Diary Log (CSV)",
+    "unit": "Unit",
     "uploadCsv": "Upload CSV",
     "validationErrorTitle": "Validation Error"
   },
@@ -7456,13 +7471,21 @@
   "copied": "Copied!",
   "copyFoodEntryDialog": {
     "copyButton": "Copy",
+    "copyTo": "Copy to",
     "description": "Select the target date and meal type to copy the food entries.",
     "descriptionAll": "Select the target date to copy all food entries from this day.",
+    "descriptionFood": "Log this food again now, or pick a date and meal type.",
     "mealType": "Meal Type",
     "selectMealTypePlaceholder": "Select meal type",
     "targetDate": "Target Date",
+    "quick": {
+      "now": "Now",
+      "today": "Today",
+      "tomorrow": "Tomorrow"
+    },
     "title": "Copy Food Entries",
-    "titleAll": "Copy Entire Day"
+    "titleAll": "Copy Entire Day",
+    "titleFood": "Copy {{food}}"
   },
   "customNutrients": {
     "failedToAddNutrient": "Failed to add nutrient.",
@@ -9561,6 +9584,33 @@
     "barcodeScannerDialog": {
       "noActiveProvidersFound": "No active providers found",
       "loadingCameraModule": "Loading camera module..."
+    },
+    "barcodeImage": {
+      "upload": "Upload barcode image",
+      "notFound": "No barcode found in this image. Try a sharper picture with the whole barcode in view.",
+      "unreadable": "This image could not be opened. Try a JPEG or PNG file."
+    },
+    "imageSourceInput": {
+      "dropOrPaste": "or drop an image here, or paste a screenshot"
+    },
+    "nutritionLabelImage": {
+      "title": "Scan Nutrition Label",
+      "dialogDescription": "Create a food from a picture of its nutrition label.",
+      "description": "Use a photo of the Nutrition Facts panel. Your AI service reads the values, and you can check them before the food is saved.",
+      "upload": "Upload label image",
+      "reading": "Reading label...",
+      "errors": {
+        "noAiService": "Reading a label needs an AI service that supports images. Add one in Settings → AI Service.",
+        "aiServiceSetup": "Your AI service cannot be used to read labels: {{message}}",
+        "badImage": "This image could not be sent to your AI service. Try a JPEG or PNG photo.",
+        "unreadable": "No nutrition facts could be read from this image. Try a sharper, closer photo of the label.",
+        "unavailable": "Your AI service did not answer. Try again in a moment.",
+        "generic": "The label could not be read. Try again."
+      }
+    },
+    "scanModes": {
+      "barcode": "Barcode",
+      "label": "Nutrition label"
     },
     "foodResultCard": {
       "gi": "GI: {{glycemic_index}}"
