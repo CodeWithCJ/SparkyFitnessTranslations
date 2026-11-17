@@ -5757,7 +5757,7 @@
             "before": "Vor der Mahlzeit",
             "none": "Unabhängig von Mahlzeiten",
             "with": "Zur Mahlzeit",
-            "awayFromMeals": "Zwischen den Mahlzeiten"
+            "awayFromMeals": "Unabhängig von Mahlzeiten"
         },
         "print": {
             "dates": "Berichtszeitraum:",
