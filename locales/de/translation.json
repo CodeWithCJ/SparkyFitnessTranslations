@@ -1561,7 +1561,7 @@
             "levelIntermediate": "Fortgeschritten",
             "levelExpert": "Profi",
             "mechanicLabel": "Übungsmechanik",
-            "selectMechanicPlaceholder": "Übungsmechanik auswählen",
+            "selectMechanicPlaceholder": "Mechanik auswählen",
             "mechanicIsolation": "Isolation",
             "mechanicCompound": "Verbundübungen",
             "equipmentLabel": "Ausrüstung",
@@ -1763,7 +1763,7 @@
             "workoutPlansCardTitle": "Trainingspläne",
             "editExerciseDialogTitle": "Übung bearbeiten",
             "editExerciseDialogDescription": "Bearbeite die Details der ausgewählten Übung.",
-            "deleteConfirmationTitle": "Lösche {{exerciseName}}?",
+            "deleteConfirmationTitle": "lösche {{exerciseName}}?",
             "deleteUsedByOthersDescription": "Diese Übung wird von anderen Nutzern verwendet. Das Löschen würde deren Daten beeinträchtigen und ist daher nicht erlaubt; die Übung wird stattdessen ausgeblendet.",
             "deleteUsedByOthersEntries": "{{exerciseEntriesCount}} Tagebucheinträge (benutzerübergreifend)",
             "deletePermanentDescription": "Dies löscht die Übung und alle verknüpften Daten unwiderruflich aus deinem Konto.",
@@ -1807,7 +1807,7 @@
         "exerciseImportCSV": {
             "importExerciseData": "Übungsdaten importieren",
             "standardValuesForDropdowns": "Standardwerte für Drop-Down-Menüs",
-            "standardValuesDescription": "Achte beim Importieren von Übungen darauf, dass die Werte für „Level“, „Kraft“ und „Mechanik“ diesen Standardmöglichkeiten entsprechen. Du kannst das Kopieren-Icon klicken, um schnell die Liste der gültigen Werte für jedes Feld zu kopieren.",
+            "standardValuesDescription": "Achte beim Importieren von Übungen darauf, dass die Werte für „Level“, „Kraft“ und „Mechanik“ diesen Standardoptionen entsprechen. Du kannst auf das Kopiersymbol klicken, um die Liste der gültigen Werte für jedes Feld schnell zu kopieren.",
             "levelLabel": "Level:",
             "forceLabel": "Kraft:",
             "mechanicLabel": "Mechanik:",
@@ -1826,7 +1826,7 @@
             "importError": "Importfehler",
             "emptyFile": "Die gewählte Datei ist leer.",
             "invalidCSVFormat": "Ungültiges CSV-Format",
-            "invalidCSVFormatDescription": "Die CSV-Kopfzeile stimmt nicht mit dem vorgegebenen Format überein. Bitte lade das Template herunter.",
+            "invalidCSVFormatDescription": "Die CSV-Kopfzeile stimmt nicht mit dem vorgegebenen Format oder der vorgegebenen Reihenfolge überein. Bitte lade die Vorlage herunter.",
             "noDataFound": "Keine Daten gefunden",
             "noDataFoundDescription": "Die CSV-Datei enthält eine Kopfzeile, aber keine Datenzeilen.",
             "validationError": "Validierungsfehler",
@@ -1838,7 +1838,9 @@
             "headersMapped": "Header zugeordnet",
             "mapRequiredFields": "Die Überschriften deiner CSV-Datei stimmen nicht mit dem erforderlichen Format überein. Ordne die Felder zu, um fortzufahren.",
             "parseSuccessful": "Analyse erfolgreich",
-            "readError": "Die ausgewählte Datei konnte nicht gelesen werden."
+            "readError": "Die ausgewählte Datei konnte nicht gelesen werden.",
+            "reparsePending": "Bitte warten",
+            "reparsePendingDescription": "Eine Formatänderung wird noch verarbeitet. Bitte versuche es gleich noch einmal."
         },
         "playbackModal": {
             "voiceLabel": "Stimme:",
@@ -6570,7 +6572,10 @@
             "toolFailed": "Erlaubt, aber fehlgeschlagen",
             "otherPending": "Beantworte zuerst den anderen Schritt, um fortzufahren.",
             "composerHint": "Beantworte zuerst den Schritt oben oder tippe weiter, um ihn zu überspringen.",
-            "announce": "Sparky benötigt deine Antwort: Diesen Schritt erlauben?"
+            "announce": "Sparky benötigt deine Antwort: Diesen Schritt erlauben?",
+            "run": "Sparky wird <bold>{{tool}}</bold> ausführen, nachdem <bold>{{server}}</bold> ausgelesen wurde.",
+            "send": "Nach dem Auslesen von <bold>{{server}}</bold> möchte Sparky <bold>{{tool}}</bold> von <bold>{{otherServer}}</bold> verwenden.",
+            "runPlain": "Sparky möchte <bold>{{tool}}</bold> ausführen."
         },
         "outsideSource": {
             "delete": "Diese Nachricht löschen",
@@ -6642,7 +6647,9 @@
         "upfrontNote": "Hinweis: Jedes Lebensmittel muss mindestens eine Variante als Standardeinheit (Is Default = True) haben.",
         "filterMissingDefault": "Fehlende Standards anzeigen ({{count}})",
         "headersMismatchFile": "Die CSV-Spalten entsprechen nicht dem erforderlichen Format. Bitte ordne die Felder zu, um fortzufahren.",
-        "missingDefaultWarning": "Warnung: Bei {{count}} Lebensmitteln ist keine Standardvariante festgelegt. Bitte lege mindestens eine Variante als Standard fest (unten gelb markiert)."
+        "missingDefaultWarning": "Warnung: Bei {{count}} Lebensmitteln ist keine Standardvariante festgelegt. Bitte lege mindestens eine Variante als Standard fest (unten gelb markiert).",
+        "reparsePendingTitle": "Bitte warten",
+        "reparsePendingDescription": "Eine Formatänderung wird noch verarbeitet. Bitte versuche es gleich noch einmal."
     },
     "foods": {
         "providerVerified": "Verifiziertes Lebensmittel",
