@@ -2203,8 +2203,6 @@
         "cycle": {
             "title": "Cykl i ciąża",
             "description": "Zarządzaj zdrowiem reprodukcyjnym oraz monitorowaniem cyklu menstruacyjnego i ciąży",
-            "enableLabel": "Włącz monitorowanie cyklu i ciąży",
-            "enableHint": "Włącz centrum zdrowia reprodukcyjnego. Po włączeniu na pasku bocznym pojawi się odpowiednia karta.",
             "mode": "Tryb monitora",
             "bcMethod": "Antykoncepcja",
             "terminology": "Terminologia",
@@ -3689,8 +3687,6 @@
             "cunninghamMath": "Wzór: 500 + 22 × LBM (gdzie LBM = masa ciała × (1 − BF/100))\nObliczenia: 500 + 22 × ({{weight}} kg × (1 − {{bodyFat}}/100)) = {{result}} kcal",
             "harrisMaleMath": "Wzór: 13,397 × masa ciała + 4,799 × wzrost − 5,677 × wiek + 88,362\nObliczenia: 13,397 × {{weight}} + 4,799 × {{height}} − 5,677 × {{age}} + 88,362 = {{result}} kcal",
             "harrisFemaleMath": "Wzór: 9,247 × masa ciała + 3,098 × wzrost − 4,33 × wiek + 447,593\nObliczenia: 9,247 × {{weight}} + 3,098 × {{height}} − 4,33 × {{age}} + 447,593 = {{result}} kcal",
-            "oxfordMaleMath": "Wzór: 14,2 × masa ciała + 593\nObliczenia: 14,2 × {{weight}} + 593 = {{result}} kcal",
-            "oxfordFemaleMath": "Wzór: 10,9 × masa ciała + 677\nObliczenia: 10,9 × {{weight}} + 677 = {{result}} kcal",
             "bmiBodyFatMath": "Wzór: 1,2 × BMI + 0,23 × wiek − stała ({{constant}})\nObliczenia: 1,2 × {{bmi}} (BMI) + 0,23 × {{age}} − {{constant}} = {{result}}%",
             "invalidMeasurements": "Nieprawidłowe pomiary do obliczenia.",
             "navyMaleMath": "Wzór (mężczyzna): 86,01 × log10(talia − szyja) − 70,041 × log10(wzrost) + 36,76 (w calach)\nObliczenia: 86,01 × log10({{waist}}in − {{neck}}in) − 70,041 × log10({{height}}in) + 36,76\nWynik: {{result}}%",
