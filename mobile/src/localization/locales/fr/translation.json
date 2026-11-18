@@ -1152,6 +1152,18 @@
         "pickers": {
             "selectServing": "Choisir la portion",
             "selectMeal": "Choisir le repas"
+        },
+        "cooked": {
+            "switch": "Pesé cuit",
+            "sameBatchPrevious": "Même préparation que le {{date}} : {{raw}} {{unit}} cru → {{cooked}} {{unit}} cuit",
+            "sameBatchEntry": "Même préparation que cette entrée : {{raw}} {{unit}} cru → {{cooked}} {{unit}} cuit",
+            "newBatch": "Nouvelle préparation",
+            "rawBatch": "Poids cru de la préparation ({{unit}})",
+            "cookedBatch": "Poids cuit de la préparation ({{unit}})",
+            "eaten": "Vous avez mangé (cuit, {{unit}})",
+            "result": "= {{raw}} {{unit}} cru · {{energy}}",
+            "incomplete": "Saisissez les poids pour calculer la quantité crue.",
+            "enterEaten": "Saisissez le poids cuit que vous avez mangé."
         }
     },
     "mealBuilder": {
@@ -1331,7 +1343,9 @@
             "equipment": "Équipement",
             "equipmentSubtitle": "Chaussures et autre matériel",
             "labResults": "Résultats d'analyses",
-            "labResultsSubtitle": "Prises de sang et autres marqueurs dans le temps"
+            "labResultsSubtitle": "Prises de sang et autres marqueurs dans le temps",
+            "trainingCalendar": "Calendrier d'entraînement",
+            "trainingCalendarSubtitle": "Séances prévues et réalisées, charge par sport"
         },
         "serverSettings": "Paramètres du serveur",
         "passkeys": "Clés d'accès",
@@ -1440,7 +1454,8 @@
         "labResultDetail": "Résultat d'analyse",
         "labResultAdd": "Ajouter un résultat",
         "labReportImport": "Importer un compte rendu",
-        "treadmillSettings": "Tapis et foulée"
+        "treadmillSettings": "Tapis et foulée",
+        "trainingCalendar": "Calendrier d'entraînement"
     },
     "healthMetrics": {
         "steps": "Pas",
@@ -2995,7 +3010,35 @@
         "removeHeader": "Supprimer l'en-tête {{number}}",
         "hideHeaderValue": "Masquer la valeur de l'en-tête",
         "showHeaderValue": "Afficher la valeur de l'en-tête",
-        "noStandardMethods": "Aucune méthode de connexion standard n'est activée sur ce serveur. Utilisez une clé API ou contactez un administrateur."
+        "noStandardMethods": "Aucune méthode de connexion standard n'est activée sur ce serveur. Utilisez une clé API ou contactez un administrateur.",
+        "clientCertificate": {
+            "title": "Certificat client",
+            "experimental": "Expérimental",
+            "experimentalNote": "Cette fonctionnalité est nouvelle et peut ne pas fonctionner avec tous les proxys ou téléphones. En cas d'échec, supprimez le certificat et signalez le problème.",
+            "help": "Utile uniquement si votre proxy inverse exige un certificat client (TLS mutuel). Il n'est envoyé qu'à vos serveurs enregistrés.",
+            "installed": "Certificat installé",
+            "expires": "Expire le {{date}}",
+            "expiresSoon": "Expire bientôt, le {{date}}",
+            "expired": "Expiré le {{date}}. Importez-en un nouveau.",
+            "gap": "Cette version de l'app ne peut pas utiliser le certificat pour toutes les requêtes. Merci de le signaler.",
+            "passwordPlaceholder": "Mot de passe du certificat",
+            "import": "Importer",
+            "choose": "Importer un certificat",
+            "replace": "Remplacer le certificat",
+            "remove": "Supprimer",
+            "restartHint": "Fermez complètement l'app puis rouvrez-la pour appliquer ce changement. D'ici là, le serveur peut encore répondre comme avant.",
+            "restartTitle": "Redémarrez l'app",
+            "restartAfterImport": "Pour utiliser le nouveau certificat, fermez complètement l'app (balayez-la dans le sélecteur d'apps), rouvrez-la, puis connectez-vous.",
+            "restartAfterRemove": "Pour ne plus utiliser l'ancien certificat, fermez complètement l'app (balayez-la dans le sélecteur d'apps) et rouvrez-la.",
+            "connectionHint": "Si votre serveur exige un certificat client, ajoutez-le dans Options avancées.",
+            "connectionHintRestart": "Si votre serveur exige un certificat client, ajoutez-le dans Options avancées, puis fermez complètement l'app et rouvrez-la.",
+            "errors": {
+                "wrongPassword": "Ce mot de passe n'ouvre pas ce fichier.",
+                "invalidFile": "Impossible de lire ce fichier. Vérifiez le mot de passe et qu'il s'agit bien d'un fichier .p12 ou .pfx. Un fichier créé avec un OpenSSL récent devra peut-être être réexporté au format hérité (legacy).",
+                "noPrivateKey": "Ce fichier contient un certificat mais pas de clé privée. Réexportez-le en incluant la clé.",
+                "storage": "Impossible d'enregistrer le certificat sur cet appareil."
+            }
+        }
     },
     "passkeySettings": {
         "loadFailed": "Échec du chargement des clés d'accès : {{error}}",
@@ -7380,7 +7423,8 @@
         "countdownOff": "Désactivé",
         "countdownSeconds": "{{seconds}} s",
         "holdCountdownTitle": "Compte à rebours avant les maintiens",
-        "holdCountdownSubtitle": "Un écran « 3, 2, 1, préparez-vous » avant le début d'un maintien chronométré, pour vous mettre en position. Touchez-le pour le passer."
+        "holdCountdownSubtitle": "Un écran « 3, 2, 1, préparez-vous » avant le début d'un maintien chronométré, pour vous mettre en position. Touchez-le pour le passer.",
+        "newWorkoutSubtitleWearOs": "Un bouton Valider la série, un bouton pour modifier la série précédente, des démos d'exercices, le calculateur de disques, une page Plus avec les actions de la séance et un résumé unique à la fin. Désactivé, l'écran de séance d'origine est conservé."
     },
     "aiSettings": {
         "server": {
@@ -8574,8 +8618,8 @@
             "setUp": "Configurer un programme"
         },
         "partOfProgram": "Fait partie de votre programme",
-        "openCalendar": "Ouvrir le calendrier du programme",
-        "openCalendarHint": "Toutes les séances sur une vue mensuelle",
+        "openCalendar": "Ouvrir le calendrier d'entraînement",
+        "openCalendarHint": "Séances du programme et du plan, réalisées et à venir",
         "calendarScreen": {
             "minutes": "{{minutes}} min"
         },
@@ -10907,5 +10951,93 @@
         "underwater_diving": "Plongée sous-marine",
         "paragliding": "Parapente",
         "other": "Autre"
+    },
+    "trainingCalendar": {
+        "load": {
+            "title": "Charge par sport",
+            "subtitle": "D'où vient votre charge d'entraînement : course, vélo, marche, musculation et autres.",
+            "thisWeek": "Cette semaine",
+            "thisMonth": "Ce mois-ci",
+            "weekly": "Charge hebdo",
+            "noneYet": "Aucune séance enregistrée pour l'instant.",
+            "loadFailed": "Impossible de charger votre charge par sport.",
+            "method": "La charge correspond aux minutes pondérées par votre fréquence cardiaque moyenne (de 1 à 5, selon sa proximité avec votre maximum). Une séance sans fréquence cardiaque compte avec un poids modéré de 2 : une séance de musculation sans montre compte donc quand même selon sa durée. Les notes d'effort ne sont pas utilisées.",
+            "openCalendar": "Ouvrir le calendrier d'entraînement"
+        },
+        "sport": {
+            "running": "Course",
+            "cycling": "Vélo",
+            "walking": "Marche",
+            "cardio": "Cardio",
+            "strength": "Musculation",
+            "other": "Autre"
+        },
+        "status": {
+            "done": "Terminée",
+            "partial": "Partielle",
+            "missed": "Manquée",
+            "upcoming": "À venir"
+        },
+        "programWorkout": "{{name}} · séance {{number}}",
+        "workoutPlanFallback": "Plan de séances",
+        "weekOf": "Semaine du {{date}}",
+        "minutesShort": "{{value}} min",
+        "minutesOf": "{{done}} sur {{planned}} min",
+        "loadValue": "charge {{value}}",
+        "estimated": "(estimée, sans FC)",
+        "extra": "En plus",
+        "totals": {
+            "title": "Prévu / réalisé",
+            "sessions": "{{done}} sur {{planned}} séances prévues",
+            "extra_one": "{{formattedCount}} en plus",
+            "extra_many": "{{formattedCount}} en plus",
+            "extra_other": "{{formattedCount}} en plus",
+            "minutes": "Durée {{done}} sur {{planned}} min",
+            "load": "Charge d'entraînement {{done}} sur {{planned}}",
+            "sessionsLogged_one": "{{formattedCount}} séance enregistrée",
+            "sessionsLogged_many": "{{formattedCount}} séances enregistrées",
+            "sessionsLogged_other": "{{formattedCount}} séances enregistrées",
+            "minutesDone": "Durée {{done}} min",
+            "loadDone": "Charge d'entraînement {{done}}",
+            "minutesExtra": "(+{{extra}} min en plus)",
+            "loadExtra": "(+{{extra}} en plus)",
+            "thisWeek": "Cette semaine",
+            "ahead": "À venir"
+        },
+        "loadFailed": "Impossible de charger votre calendrier d'entraînement.",
+        "refreshFailed": "Actualisation impossible. Dernier résultat affiché.",
+        "emptyDay": "Rien de prévu ni d'enregistré ce jour-là.",
+        "planned": "Prévue",
+        "completed": "Réalisée",
+        "month": "Mois",
+        "week": "Semaine",
+        "previous": "Précédent",
+        "next": "Suivant",
+        "distanceKm": "{{value}} km",
+        "distanceMiles": "{{value}} mi",
+        "restDay": "Jour de repos",
+        "hideEarlier": "Masquer les semaines précédentes",
+        "loadHelpA11y": "Qu'est-ce que la charge d'entraînement ?",
+        "progressA11y": "{{done}} terminées, {{partial}} partielles, {{missed}} manquées, sur {{planned}} prévues",
+        "markA11y": "{{sport}}, {{status}}",
+        "extraA11y": "en plus, non prévue",
+        "moreA11y_one": "{{formattedCount}} séance de plus",
+        "moreA11y_many": "{{formattedCount}} séances de plus",
+        "moreA11y_other": "{{formattedCount}} séances de plus",
+        "dayA11y": "{{date}} : {{marks}}",
+        "dayA11yNone": "{{date}}, rien de prévu ni d'enregistré",
+        "weekTotalA11y": "{{done}} sur {{planned}} séances prévues réalisées",
+        "weekTotalShort": "{{done}}/{{planned}}",
+        "weekTotalHeader": "Total",
+        "weekLoggedA11y_one": "{{formattedCount}} séance enregistrée",
+        "weekLoggedA11y_many": "{{formattedCount}} séances enregistrées",
+        "weekLoggedA11y_other": "{{formattedCount}} séances enregistrées",
+        "weekEmptyA11y": "Aucune séance cette semaine",
+        "more_one": "+{{formattedCount}}",
+        "more_many": "+{{formattedCount}}",
+        "more_other": "+{{formattedCount}}",
+        "showEarlier_one": "Afficher la semaine précédente ({{formattedCount}})",
+        "showEarlier_many": "Afficher les semaines précédentes ({{formattedCount}})",
+        "showEarlier_other": "Afficher les semaines précédentes ({{formattedCount}})"
     }
 }
