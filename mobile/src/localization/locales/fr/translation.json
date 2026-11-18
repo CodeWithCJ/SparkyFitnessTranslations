@@ -621,7 +621,9 @@
         "kJUnit": "kJ",
         "energy": "Énergie",
         "apply": "Appliquer",
-        "reset": "Réinitialiser"
+        "reset": "Réinitialiser",
+        "search": "Rechercher",
+        "noMatches": "Aucun résultat"
     },
     "settings": {
         "app": "Paramètres de l'application",
@@ -1438,7 +1440,8 @@
         "labResults": "Résultats d'analyses",
         "labResultDetail": "Résultat d'analyse",
         "labResultAdd": "Ajouter un résultat",
-        "labReportImport": "Importer un compte rendu"
+        "labReportImport": "Importer un compte rendu",
+        "treadmillSettings": "Tapis et foulée"
     },
     "healthMetrics": {
         "steps": "Pas",
@@ -3697,7 +3700,9 @@
             "dailyTitle": "Point symptômes",
             "dailyBody": "Comment vous sentez-vous aujourd'hui ? Touchez pour noter vos symptômes.",
             "nudgeTitle": "Épisode toujours en cours ?",
-            "nudgeBody": "{{name}} dure depuis {{hours}} heures. Est-ce toujours en cours ou terminé ?"
+            "nudgeBody": "{{name}} dure depuis {{hours}} heures. Est-ce toujours en cours ou terminé ?",
+            "episodeEnded": "Épisode terminé",
+            "otherServer": "Ce rappel vient d'un autre serveur"
         },
         "builtIn": {
             "head": "Tête",
@@ -6396,7 +6401,9 @@
         "labResults": "Résultats d'analyses",
         "labResultsSubtitle": "Afficher vos derniers résultats d'analyses et ceux hors plage",
         "oralCare": "Hygiène dentaire",
-        "oralCareSubtitle": "Afficher le brossage vs objectif et votre série"
+        "oralCareSubtitle": "Afficher le brossage vs objectif et votre série",
+        "bloodAlcohol": "Alcoolémie estimée",
+        "bloodAlcoholSubtitle": "Afficher sur le tableau de bord une estimation approximative de l'alcoolémie d'après les boissons notées"
     },
     "chat": {
         "title": "Sparky",
@@ -8795,7 +8802,8 @@
             "activity": "Eau et exercice",
             "meals": "Répartition des calories par repas",
             "presets": "Modèles d'objectifs",
-            "weekly": "Plans hebdomadaires"
+            "weekly": "Plans hebdomadaires",
+            "goalWeight": "Poids cible"
         },
         "meals": {
             "mustBe100": "Le total des pourcentages des repas doit faire 100%.",
@@ -8927,7 +8935,16 @@
         "adaptiveNoteTodayWithUnit": "Le mode adaptatif est activé : votre objectif calorique change chaque jour. Aujourd'hui, il est de {{calories}} {{unit}}. La base ci-dessous fixe l'écart visé au-dessus ou en dessous de votre maintien estimé ; ce n'est pas une cible quotidienne fixe.",
         "cyclingNoteTodayWithUnit": "Le cycle calorique est activé : les calories ci-dessous sont votre cible de base, et chaque jour est plus haut ou plus bas. Aujourd'hui, c'est {{calories}} {{unit}}.",
         "cyclingPausedWeeklyPlan": "Le cycle calorique est suspendu aujourd'hui par un plan d'objectifs hebdomadaire actif. Les calories ci-dessous fixent directement la cible du plan pour aujourd'hui.",
-        "adjustedGoalFailed": "Impossible de charger l'objectif ajusté du jour."
+        "adjustedGoalFailed": "Impossible de charger l'objectif ajusté du jour.",
+        "goalWeight": {
+            "description": "Votre poids visé. Les graphiques de poids s'en servent pour montrer votre progression.",
+            "placeholder": "Poids cible ({{unit}})",
+            "invalid": "Saisissez un poids supérieur à zéro.",
+            "save": "Enregistrer le poids cible",
+            "clear": "Effacer",
+            "saved": "Poids cible enregistré.",
+            "saveFailed": "Échec de l'enregistrement du poids cible."
+        }
     },
     "recordActivity": {
         "checkIn": {
@@ -10715,5 +10732,21 @@
         "watchScaleSame_one": "La montre correspond au tapis. Apprise sur {{count}} sortie.",
         "watchScaleSame_many": "La montre correspond au tapis. Apprise sur {{count}} sorties.",
         "watchScaleSame_other": "La montre correspond au tapis. Apprise sur {{count}} sorties."
+    },
+    "bloodAlcohol": {
+        "title": "Alcoolémie estimée",
+        "estimatedNow": "Estimation actuelle",
+        "peakAt": "Pic à {{time}}",
+        "unitPermille": "‰",
+        "unitPercent": "%",
+        "estimatedTimes": "Certaines heures de boisson ont été estimées",
+        "disclaimer": "Estimation approximative uniquement. La valeur réelle peut différer de 20 % ou plus. Ne l'utilisez jamais pour décider si vous êtes en état de conduire.",
+        "missingInputs": "Ajoutez ces données à votre profil pour voir une estimation :",
+        "missingSex": "Sexe : à renseigner dans votre profil sur le web",
+        "missingWeight": "Poids : à noter dans Mesures",
+        "missingHeight": "Taille : à noter dans Mesures",
+        "missingAge": "Âge : renseignez votre date de naissance dans votre profil sur le web",
+        "implausibleInputs": "Votre poids ou votre taille semble erroné, aucune estimation n'est donc possible. Vérifiez vos derniers poids et taille dans Mesures.",
+        "formulaFallback": "La formule choisie ne convient pas à vos mensurations, la formule de Watson est donc utilisée."
     }
 }
