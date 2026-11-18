@@ -8179,6 +8179,18 @@
             "genericEstimateVerifyIfAccuracy": "Estimation générique : vérifiez si la précision compte.",
             "useThis": "Utiliser",
             "estimate2": "- estimation {{confidence}}"
+        },
+        "cooked": {
+            "switch": "Pesé cuit",
+            "sameBatchPrevious": "Même préparation que le {{date}} : {{raw}} {{unit}} cru → {{cooked}} {{unit}} cuit",
+            "sameBatchEntry": "Même préparation que cette entrée : {{raw}} {{unit}} cru → {{cooked}} {{unit}} cuit",
+            "newBatch": "Nouvelle préparation",
+            "rawBatch": "Poids cru de la préparation ({{unit}})",
+            "cookedBatch": "Poids cuit de la préparation ({{unit}})",
+            "eaten": "Vous avez mangé (cuit, {{unit}})",
+            "result": "= {{raw}} {{unit}} cru · {{calories}} {{energyUnit}}",
+            "incomplete": "Saisissez les poids pour calculer la quantité crue.",
+            "enterEaten": "Saisissez le poids cuit que vous avez mangé."
         }
     },
     "diaryCsvImport": {
