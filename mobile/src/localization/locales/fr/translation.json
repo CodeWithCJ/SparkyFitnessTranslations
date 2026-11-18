@@ -2913,7 +2913,14 @@
         "resumeFailedTitle": "Impossible de reprendre la séance",
         "resumeFailedMessage": "Veuillez réessayer.",
         "finishStampFailedTitle": "Impossible de marquer la séance terminée",
-        "finishStampFailedMessage": "Vos séries sont enregistrées, mais la séance n'a pas pu être marquée terminée. Réessayez pour la clôturer."
+        "finishStampFailedMessage": "Vos séries sont enregistrées, mais la séance n'a pas pu être marquée terminée. Réessayez pour la clôturer.",
+        "healthActivityType": "Type d'activité santé",
+        "healthActivityTypeAutomatic": "Automatique ({{type}})",
+        "healthActivityTypeHintApple": "Utilisé quand vos séances sont écrites dans Apple Health.",
+        "healthActivityTypeHintHealthConnect": "Utilisé quand vos séances sont écrites dans Health Connect.",
+        "healthActivityTypeCommon": "Courantes",
+        "healthActivityTypeAll": "Toutes les activités",
+        "healthActivityTypeSearch": "Rechercher une activité"
     },
     "auth": {
         "frontendUrl": "URL du frontend",
@@ -4804,7 +4811,8 @@
             "deleteFailed": "Échec de la suppression"
         },
         "deleteConfirm": "Voulez-vous vraiment supprimer cette entrée ?",
-        "entryNotes": "Note pour cette entrée"
+        "entryNotes": "Note pour cette entrée",
+        "copyEntry": "Copier l'aliment"
     },
     "exerciseSearch": {
         "title": "Exercices",
@@ -5305,7 +5313,14 @@
         "copy": "Copier",
         "copying": "Copie…",
         "duplicateTitle": "Copie impossible",
-        "duplicateMessage": "Des types de repas portant le même nom ne peuvent pas encore être utilisés pour copier un repas."
+        "duplicateMessage": "Des types de repas portant le même nom ne peuvent pas encore être utilisés pour copier un repas.",
+        "foodTitle": "Copier l'aliment : {{food}}",
+        "copyTo": "Copier vers",
+        "quick": {
+            "now": "Maintenant",
+            "today": "Aujourd'hui",
+            "tomorrow": "Demain"
+        }
     },
     "mealTypeTime": {
         "defaultTitle": "Heure par défaut",
@@ -5348,7 +5363,12 @@
         "focusMediaSmall": "Petite",
         "plannedPlaceholders": "Valeurs prévues comme indications",
         "plannedPlaceholdersSubtitle": "Les séances lancées depuis un plan ou une séance enregistrée proposent le poids et les répétitions prévus au lieu de ceux de la dernière séance. S'applique à partir de la prochaine séance.",
-        "plannedPlaceholdersAccessibility": "Valeurs prévues comme indications"
+        "plannedPlaceholdersAccessibility": "Valeurs prévues comme indications",
+        "restEndFocus": "Passer à la série suivante après le repos",
+        "restEndFocusSubtitle": "Quand un minuteur de repos se termine de lui-même, place le curseur sur la première valeur de la série suivante et ouvre le clavier.",
+        "restEndFocusAccessibility": "Passer à la série suivante après le repos",
+        "treadmillStride": "Tapis et foulée",
+        "treadmillStrideSubtitle": "Consultez et réglez la foulée utilisée pour estimer la distance en intérieur, et corrigez un tapis qui affiche trop ou trop peu."
     },
     "exerciseSummary": {
         "tapToAdd": "Touchez pour ajouter un exercice",
@@ -5738,7 +5758,9 @@
     },
     "foodEntryCopy": {
         "success": "Repas copié",
-        "failed": "Échec de la copie du repas"
+        "failed": "Échec de la copie du repas",
+        "foodSuccess": "Aliment copié",
+        "foodFailed": "Échec de la copie de l'aliment"
     },
     "foodDelete": {
         "failed": "Échec de la suppression de l'aliment",
@@ -7265,7 +7287,19 @@
         "upNextTitle": "Page « À suivre »",
         "upNextSubtitle": "Une page, accessible en balayant vers le haut depuis l'écran de série, avec l'exercice suivant, son objectif et un bouton Remplacer pour faire d'abord un autre exercice.",
         "largerTextTitle": "Texte plus grand sur la montre",
-        "largerTextSubtitle": "Caractères plus grands et nouvelles mises en page sur toute la montre : Objectifs, Eau, la séance, Jeûne, Pas, etc. Désactivé, l'apparence d'origine est conservée."
+        "largerTextSubtitle": "Caractères plus grands et nouvelles mises en page sur toute la montre : Objectifs, Eau, Jeûne, Pas, etc. Désactivé, l'apparence d'origine est conservée.",
+        "newWorkoutTitle": "Nouvel écran de séance",
+        "newWorkoutSubtitle": "Un bouton Valider la série (le double appui valide aussi), un bouton pour modifier la série précédente, une page Plus avec les actions de la séance et un seul résumé à la fin. Désactivé, l'écran de séance d'origine est conservé.",
+        "topLineTitle": "Ligne du haut",
+        "topLineDescription": "Ce que le haut de l'écran de séance de la montre affiche en premier : le temps écoulé, ou la fréquence cardiaque et les calories en direct. Touchez-la sur la montre pour basculer.",
+        "topLineTime": "Temps",
+        "topLineMetrics": "Mesures",
+        "countdownTitle": "Son et vibration du compte à rebours",
+        "countdownDescription": "Un son et une vibration à chacune des dernières secondes d'un repos ou d'un maintien chronométré, et un signal différent à zéro, pour vous préparer sans regarder. Montre en mode silencieux, seule la vibration est jouée.",
+        "countdownOff": "Désactivé",
+        "countdownSeconds": "{{seconds}} s",
+        "holdCountdownTitle": "Compte à rebours avant les maintiens",
+        "holdCountdownSubtitle": "Un écran « 3, 2, 1, préparez-vous » avant le début d'un maintien chronométré, pour vous mettre en position. Touchez-le pour le passer."
     },
     "aiSettings": {
         "server": {
@@ -7388,7 +7422,9 @@
         "distanceFailed": "Impossible d'enregistrer la distance.",
         "heartRate": "Fréquence cardiaque",
         "jumpRopeSaved": "Corde à sauter enregistrée",
-        "watchJumpRopeSaved": "Corde à sauter de votre montre enregistrée"
+        "watchJumpRopeSaved": "Corde à sauter de votre montre enregistrée",
+        "treadmillCorrected": "La machine affichait {{shown}} {{unit}} ; enregistré à {{saved}} {{unit}} avec votre correction de tapis.",
+        "treadmillCorrectionOn": "Votre correction de tapis de {{percent}} est appliquée au chiffre saisi."
     },
     "personalRecords": {
         "group": {
@@ -8232,7 +8268,7 @@
         "sessionNamePlaceholder": "Nom de la séance (facultatif)",
         "addSession": "Ajouter une séance",
         "assignmentRequired": "Ajoutez au moins une séance au plan.",
-        "presetNotice": "Vous pouvez ajouter les séances enregistrées dans votre bibliothèque. Pour planifier un exercice seul, utilisez l'application web.",
+        "presetNotice": "Vous pouvez ajouter les séances enregistrées dans votre bibliothèque, ou des exercices seuls avec leurs propres séries.",
         "deleteTitle": "Supprimer le plan",
         "deleteMessage": "Supprimer {{name}} ? Les séances à venir ajoutées par ce plan à votre journal seront retirées.",
         "deleteSuccess": "Plan d'entraînement supprimé",
@@ -8250,7 +8286,39 @@
         "emptySubtitle": "Planifiez vos séances enregistrées sur des jours fixes, ou en cycle à suivre.",
         "moreAssignments_one": "+{{count}} autre",
         "moreAssignments_many": "+{{count}} autres",
-        "moreAssignments_other": "+{{count}} autres"
+        "moreAssignments_other": "+{{count}} autres",
+        "invalidSetValues": "Certaines valeurs de série sont incomplètes",
+        "activated": "Plan activé",
+        "addExercise": "Ajouter un exercice",
+        "addSet": "Ajouter une série",
+        "deactivated": "Plan désactivé",
+        "deletePlan": "Supprimer le plan",
+        "impactNote": "Ce plan actif ajoute les prochaines séances à votre journal. Les modifications n'actualisent que les séances prévues ; les séances notées, commencées ou terminées restent intactes.",
+        "impactNoteForm": "L'enregistrement actualise les prochaines séances de ce plan dans le journal. Les séances déjà notées, commencées ou terminées restent intactes.",
+        "moveDownNamed": "Descendre {{name}}",
+        "moveUpNamed": "Monter {{name}}",
+        "noAssignmentsSubtitle": "Modifiez le plan pour ajouter des séances.",
+        "noAssignmentsTitle": "Aucune séance dans ce plan",
+        "refreshedSessions_one": "{{count}} séance à venir actualisée",
+        "refreshedSessions_many": "{{count}} séances à venir actualisées",
+        "refreshedSessions_other": "{{count}} séances à venir actualisées",
+        "regenerationFailed": "Enregistré, mais l'actualisation du journal a échoué",
+        "removedSessions_one": "{{count}} séance à venir supprimée",
+        "removedSessions_many": "{{count}} séances à venir supprimées",
+        "removedSessions_other": "{{count}} séances à venir supprimées",
+        "removeSetNumber": "Supprimer la série {{number}}",
+        "repsCount_one": "{{count}} rép",
+        "repsCount_many": "{{count}} rép",
+        "repsCount_other": "{{count}} rép",
+        "repsShort": "Rép",
+        "restCount_one": "{{count}} s de repos",
+        "restCount_many": "{{count}} s de repos",
+        "restCount_other": "{{count}} s de repos",
+        "restShort": "Repos (s)",
+        "savedWorkout": "Séance enregistrée",
+        "sessionPosition": "Séance {{current}} sur {{total}}",
+        "setNumber": "Série {{number}}",
+        "weightShort": "Poids"
     },
     "equipmentHub": {
         "title": "Équipement",
@@ -8901,7 +8969,8 @@
             "estimateRough_one": "Estimation approximative d'après {{formattedCount}} pas avec une foulée moyenne. Saisissez la distance du tapis et l'app apprendra la vôtre.",
             "estimateRough_many": "Estimation approximative à partir de {{formattedCount}} pas avec une foulée moyenne. Saisissez la distance du tapis et l'app apprendra la vôtre.",
             "estimateRough_other": "Estimation approximative à partir de {{formattedCount}} pas avec une foulée moyenne. Saisissez la distance du tapis et l'app apprendra la vôtre.",
-            "invalid": "Saisissez une distance de zéro ou plus."
+            "invalid": "Saisissez une distance de zéro ou plus.",
+            "corrected": "Le tapis affichait {{shown}} {{unit}}. Enregistré à {{saved}} {{unit}} avec votre correction de tapis de {{percent}}."
         },
         "heartRate": "Fréquence cardiaque",
         "errors": {
@@ -10578,5 +10647,73 @@
         "finishReview": "Confirmez chaque ingrédient avant d'enregistrer.",
         "amountRequired": "Saisissez la quantité pour la recette entière dans l'unité choisie. Un volume n'est jamais traité automatiquement comme une masse.",
         "missingServings": "La source n'indique pas de nombre de portions. Saisissez-le pour enregistrer le suivi ; la synchronisation nutritionnelle reste indisponible."
+    },
+    "treadmillSettings": {
+        "title": "Tapis et foulée",
+        "unitFeet": "pi",
+        "unitMeters": "m",
+        "strideSection": "Votre foulée",
+        "strideSectionHint": "La distance parcourue en un pas. En intérieur, sans GPS, l'app s'en sert pour convertir vos pas en distance.",
+        "walkingStride": "Foulée de marche",
+        "runningStride": "Foulée de course",
+        "strideSummaryTypical": "{{stride}} · moyenne",
+        "strideSummaryManual": "{{stride}} · réglée par vous",
+        "strideSummaryLearned_one": "{{stride}} · apprise sur {{count}} distance",
+        "strideSummaryLearned_many": "{{stride}} · apprise sur {{count}} distances",
+        "strideSummaryLearned_other": "{{stride}} · apprise sur {{count}} distances",
+        "strideManual": "Réglée par vous. Les nouvelles distances l'ajustent à partir de là.",
+        "strideLearned_one": "Apprise sur {{count}} distance réelle. Chaque nouvelle distance l'ajuste.",
+        "strideLearned_many": "Apprise sur {{count}} distances réelles. Chaque nouvelle distance l'ajuste.",
+        "strideLearned_other": "Apprise sur {{count}} distances réelles. Chaque nouvelle distance l'ajuste.",
+        "strideDefault": "Une foulée moyenne. L'app apprend la vôtre chaque fois que vous saisissez la distance d'un tapis après une marche ou une course, ou vous pouvez la régler ici.",
+        "strideInputA11y": "{{activity}} en {{unit}}",
+        "strideInvalid": "Cette foulée semble incorrecte. Un pas mesure généralement entre 0,3 et 2,5 m (1 à 8 pi).",
+        "measureStrideToggle": "La mesurer sur une piste",
+        "measureStrideHint": "Marchez ou courez une distance connue avec certitude, comme des tours de piste. Saisissez ensuite les pas indiqués par Santé ou votre montre, et cette distance.",
+        "calSteps": "Pas effectués",
+        "calDistance": "Distance réelle",
+        "calShown": "Affichage du tapis",
+        "calibrateAction": "Régler ma foulée",
+        "calibrateFailed": "C'est trop court ou incohérent. Utilisez au moins 150 pas et 100 m, et vérifiez les chiffres.",
+        "calibrated": "Votre {{activity}} est maintenant de {{stride}}.",
+        "reset": "Réinitialiser",
+        "resetA11y": "Réinitialiser : {{activity}}",
+        "treadmillSection": "Votre tapis est-il exact ?",
+        "treadmillSectionHint": "Pour un tapis dont l'écran se trompe. Corrige les distances que vous en recopiez, sur le téléphone ou la montre. Conservé sur ce téléphone.",
+        "treadmillRow": "Affichage du tapis",
+        "treadmillSummaryOff": "À peu près juste. Rien n'est modifié.",
+        "treadmillSummaryLong": "Affiche {{percent}} de plus que la réalité",
+        "treadmillSummaryShort": "Affiche {{percent}} de moins que la réalité",
+        "treadmillSummaryLongUnset": "Affiche plus que la réalité. Indiquez de combien.",
+        "treadmillSummaryShortUnset": "Affiche moins que la réalité. Indiquez de combien.",
+        "displayReads": "Par rapport à la distance réellement parcourue, il affiche",
+        "readsRight": "Juste",
+        "readsLong": "Plus",
+        "readsShort": "Moins",
+        "percentBy": "De",
+        "percentA11y": "Écart du tapis en pourcentage",
+        "preview": "Quand il affiche {{shown}} {{unit}}, {{saved}} {{unit}} sont enregistrés.",
+        "previewNone": "Indiquez l'écart, jusqu'à {{max}} %. À 0, rien n'est modifié.",
+        "measureTreadmillToggle": "Pas sûr ? Calculez-le avec vos pas",
+        "measureTreadmillHint": "Marchez ou courez sur le tapis, puis saisissez les pas indiqués par Santé ou votre montre et ce qu'affichait le tapis. Vos pas multipliés par votre foulée donnent la distance réelle.",
+        "checkAction": "Vérifier mon tapis",
+        "checkedLong": "D'après vos pas, cela fait {{actual}} {{unit}} : le tapis affiche donc {{percent}} de plus que la réalité.",
+        "checkedShort": "D'après vos pas, cela fait {{actual}} {{unit}} : le tapis affiche donc {{percent}} de moins que la réalité.",
+        "checkedSame": "D'après vos pas, cela fait {{actual}} {{unit}}. Le tapis est juste, il n'y a rien à corriger.",
+        "useCorrection": "Utiliser cette correction",
+        "watchScale": "Estimation de la montre",
+        "watchScaleHint": "Utilisée quand vous gardez la distance de la montre au lieu de saisir celle du tapis. La montre l'estime d'après le balancement de votre bras, et chaque fois que vous saisissez le chiffre du tapis, elle apprend son écart. C'est automatique.",
+        "watchScaleWalk": "Marches",
+        "watchScaleRun": "Courses",
+        "watchScaleNone": "Pas encore apprise.",
+        "watchScaleLower_one": "Réduite de {{percent}}. Apprise sur {{count}} sortie.",
+        "watchScaleLower_many": "Réduite de {{percent}}. Apprise sur {{count}} sorties.",
+        "watchScaleLower_other": "Réduite de {{percent}}. Apprise sur {{count}} sorties.",
+        "watchScaleRaise_one": "Augmentée de {{percent}}. Apprise sur {{count}} sortie.",
+        "watchScaleRaise_many": "Augmentée de {{percent}}. Apprise sur {{count}} sorties.",
+        "watchScaleRaise_other": "Augmentée de {{percent}}. Apprise sur {{count}} sorties.",
+        "watchScaleSame_one": "La montre correspond au tapis. Apprise sur {{count}} sortie.",
+        "watchScaleSame_many": "La montre correspond au tapis. Apprise sur {{count}} sorties.",
+        "watchScaleSame_other": "La montre correspond au tapis. Apprise sur {{count}} sorties."
     }
 }
