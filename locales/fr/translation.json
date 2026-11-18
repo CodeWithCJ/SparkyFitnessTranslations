@@ -1590,7 +1590,13 @@
                 "unreachable": "Impossible de joindre le serveur. Vérifiez l'URL.",
                 "policy": "Cette adresse n'est pas autorisée par la politique réseau.",
                 "other": "Le serveur n'a pas listé ses outils ({{reason}})."
-            }
+            },
+            "changedSummary_one": "{{count}} outil a changé depuis l'enregistrement et a été décoché. Vérifiez-le ci-dessous.",
+            "changedSummary_many": "{{count}} outils ont changé depuis l'enregistrement et ont été décochés. Vérifiez-les ci-dessous.",
+            "changedSummary_other": "{{count}} outils ont changé depuis l'enregistrement et ont été décochés. Vérifiez-les ci-dessous.",
+            "goneSummary_one": "{{count}} outil n'est plus sur le serveur.",
+            "goneSummary_many": "{{count}} outils ne sont plus sur le serveur.",
+            "goneSummary_other": "{{count}} outils ne sont plus sur le serveur."
         }
     },
     "aboutDialog": {
