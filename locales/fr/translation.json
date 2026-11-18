@@ -108,7 +108,23 @@
             "glucoseUnit": "Unité de glycémie",
             "temperatureUnit": "Unité de température",
             "celsius": "Celsius (°C)",
-            "fahrenheit": "Fahrenheit (°F)"
+            "fahrenheit": "Fahrenheit (°F)",
+            "bacDistributionFormula": "Formule d'estimation de l'alcoolémie",
+            "bacFormula": {
+                "widmark": "Widmark",
+                "widmarkDescription": "Part d'eau corporelle fixe selon le sexe. Nécessite le sexe et le poids.",
+                "watson": "Watson (par défaut)",
+                "watsonDescription": "Eau corporelle d'après le sexe, l'âge, la taille et le poids.",
+                "seidl": "Seidl",
+                "seidlDescription": "D'après le sexe, la taille et le poids.",
+                "forrest": "Forrest",
+                "forrestDescription": "D'après le sexe et l'indice de masse corporelle (taille et poids)."
+            },
+            "bacEliminationRate": "Vitesse d'élimination de l'alcool (‰ par heure)",
+            "bacEliminationRateHint": "Entre {{min}} et {{max}}, toujours en ‰ par heure. {{default}} est une moyenne courante.",
+            "bacDisplayUnit": "Unité d'alcoolémie",
+            "bacPermille": "Pour mille (‰)",
+            "bacPercent": "Pourcentage (%)"
         },
         "waterTracking": {
             "title": "Suivi conso d'eau",
@@ -675,7 +691,11 @@
             "resetError": "Impossible de réinitialiser la configuration initiale. Veuillez réessayer.",
             "resetOnboarding": "Réinitialiser et refaire la configuration initiale",
             "resetSuccessDesc": "La configuration initiale a été réinitialisée. Rendez-vous dans l'onglet Cycle pour la relancer.",
-            "resetSuccessTitle": "Profil réinitialisé"
+            "resetSuccessTitle": "Profil réinitialisé",
+            "switchInFeatures": "Le suivi du cycle s'active ou se désactive dans Fonctionnalités.",
+            "onInFeatures": "Le suivi du cycle est activé. Vous pouvez le désactiver dans Fonctionnalités.",
+            "offInFeatures": "Le suivi du cycle est désactivé. Activez-le dans Fonctionnalités.",
+            "openFeatures": "Ouvrir Fonctionnalités"
         },
         "nutrientGoalDirection": {
             "title": "Sens de l'objectif nutritionnel",
@@ -1320,7 +1340,11 @@
             "appKeyLabel": "App Key :",
             "syncLabel": "Synchro :",
             "neverSynced": "Dernière synchro : jamais",
-            "garminServiceUnreachable": "Service Garmin injoignable. Synchronisation impossible."
+            "garminServiceUnreachable": "Service Garmin injoignable. Synchronisation impossible.",
+            "mcpServerToolCount_one": "Le chat peut utiliser {{count}} outil",
+            "mcpServerToolCount_many": "Le chat peut utiliser {{count}} outils",
+            "mcpServerToolCount_other": "Le chat peut utiliser {{count}} outils",
+            "mcpServerSendsUserId": "Indique au serveur qui utilise le chat"
         },
         "providerSpecificFields": {
             "appURL": "URL de l'app",
@@ -1493,11 +1517,30 @@
             "description": "Choisissez les onglets principaux affichés sur le site",
             "cycleOn": "Activé",
             "cycleOff": "Désactivé",
-            "cycleHint": "{{name}} a son propre interrupteur dans l'onglet Bien-être des paramètres.",
+            "cycleHint": "{{name}} s'active ou se désactive dans Fonctionnalités, ci-dessus.",
             "footnote": "Journal et Paramètres sont toujours affichés. Masquer un onglet ne change que ce site : rien n'est supprimé, et l'app mobile garde ses propres réglages.",
             "saveError": "Impossible d'enregistrer votre choix d'onglets. Veuillez réessayer.",
             "loadError": "Impossible de charger vos choix d'onglets.",
             "actingOnBehalf": "Vous ne pouvez modifier les onglets que de votre propre compte."
+        },
+        "features": {
+            "title": "Fonctionnalités",
+            "description": "Activer ou désactiver des fonctionnalités entières sur ce site",
+            "actingOnBehalf": "Seul le titulaire du compte peut activer ou désactiver des fonctionnalités.",
+            "loadError": "Impossible de charger ce paramètre.",
+            "footnote": "Désactiver une fonctionnalité ne fait que la masquer : rien n'est supprimé, et les synchronisations et importations continuent.",
+            "groups": {
+                "health": "Santé",
+                "nutrition": "Nutrition",
+                "training": "Entraînement",
+                "wellbeing": "Bien-être"
+            },
+            "cycle": {
+                "description": "Suivez vos règles, votre fertilité et votre grossesse.",
+                "scope": "Un seul interrupteur pour le site web et l'application mobile.",
+                "setupHint": "Répondez à quelques questions pour terminer la configuration.",
+                "setupAction": "Configurer"
+            }
         }
     },
     "aboutDialog": {
@@ -1586,7 +1629,14 @@
             "replaceSuccess": "Exercice remplacé",
             "suggestedTab": "Suggestions",
             "caloriesPerHourWithUnit": "Calories/heure ({{unit}})",
-            "caloriesPerHourHintWithUnit": "Laissez vide pour utiliser les calories par heure calculées par le système ({{newExerciseCalories}} {{unit}}/heure)."
+            "caloriesPerHourHintWithUnit": "Laissez vide pour utiliser les calories par heure calculées par le système ({{newExerciseCalories}} {{unit}}/heure).",
+            "healthActivityTypeLabel": "Type d'activité santé",
+            "healthActivityTypeAutomatic": "Automatique ({{type}})",
+            "healthActivityTypeHint": "Utilisé quand l'application mobile écrit vos séances dans Apple Health ou Health Connect.",
+            "healthActivityTypeCommon": "Courantes",
+            "healthActivityTypeAll": "Toutes les activités",
+            "healthActivityTypeSearch": "Rechercher une activité",
+            "healthActivityTypeNoMatches": "Aucun résultat"
         },
         "addWorkoutPresetDialog": {
             "searchPlaceholder": "Chercher parmi vos séances prédéfinies…",
@@ -1831,7 +1881,9 @@
             "fileTooLarge": "Le fichier sélectionné est trop volumineux. Veuillez télécharger un fichier de moins de 25 Mo.",
             "dataParsedSuccessfully": "Les données CSV ont été analysées et chargées avec succès.",
             "headersMapped": "En-têtes mappés",
-            "mapRequiredFields": "Les en-têtes de votre fichier CSV ne correspondent pas au format requis. Veuillez associer les champs pour continuer."
+            "mapRequiredFields": "Les en-têtes de votre fichier CSV ne correspondent pas au format requis. Veuillez associer les champs pour continuer.",
+            "reparsePending": "Veuillez patienter",
+            "reparsePendingDescription": "Un changement de format est encore en cours de traitement. Réessayez dans un instant."
         },
         "playbackModal": {
             "voiceLabel": "Voix :",
@@ -2112,7 +2164,8 @@
         "scheduledWorkout": "Séance",
         "activePlanLabel": "Plan actif : {{name}}",
         "failedToLoadActivePlan": "Échec du chargement du plan d'entraînement actif.",
-        "currentOfTotal": "({{current}} sur {{total}})"
+        "currentOfTotal": "({{current}} sur {{total}})",
+        "regenerationFailed": "Enregistré, mais l'actualisation du journal a échoué. Veuillez réessayer."
     },
     "exerciseCard": {
         "noEntries": "Aucune donnée d'exercice pour aujourd’hui.",
@@ -2267,7 +2320,7 @@
         "editFoodDetailsDescription": "Ajustez les détails de l'aliment avant de l'ajouter à votre base de données personnalisée.",
         "addNewFood": "Ajouter un nouvel aliment",
         "addNewFoodDescription": "Entrez les détails d'un nouvel aliment à ajouter à votre base de données.",
-        "scanBarcodeDescription": "Positionnez le code-barres du produit devant votre caméra.",
+        "scanBarcodeDescription": "Placez le code-barres du produit devant votre caméra, ou utilisez une photo de celui-ci.",
         "importFromCSVDescription": "Importez un fichier CSV pour ajouter plusieurs aliments à la fois.",
         "yourFoods": "Vos aliments",
         "yourMeals": "Vos repas",
@@ -2297,7 +2350,8 @@
         "selectBarcodeProvider": "Sélectionner un fournisseur",
         "dataProvider": "Fournisseur de données :",
         "aiEstimate": "Estimation IA {{ai_confidence}}",
-        "per": "Pour {{default_variant}}"
+        "per": "Pour {{default_variant}}",
+        "scanBarcodeOrLabel": "Scanner un code-barres ou une étiquette"
     },
     "foodSearchDialog": {
         "title": "Rechercher et ajouter un aliment",
@@ -3055,7 +3109,9 @@
             "candidatePlausibilityBand": "Limites de plausibilité selon votre niveau d'activité (×{{multiplier}}) : {{min}}–{{max}} {{unit}}. La valeur brute candidate se situe dans cette plage ; l'ajustement par l'historique suit.",
             "adaptiveHistoryAdjustment": "Ajustement par l'historique : {{candidate}} {{sign}} {{adjustment}} = {{result}} {{unit}} (la moyenne sur {{window}} jours, après conservation puis estompage des estimations plus anciennes).",
             "activityCandidateCapped": "Après le plafond de plausibilité fondé sur le BMR, la valeur candidate hors activité est de {{baseline}} {{unit}} ; son ajustement par l'historique suit.",
-            "activityHistoryAdjustment": "Ajustement par l'historique de la base hors activité : {{candidate}} {{sign}} {{adjustment}} = {{result}} {{unit}}. Le mode d'objectif et votre plancher de sécurité s'appliquent à cette base filtrée."
+            "activityHistoryAdjustment": "Ajustement par l'historique de la base hors activité : {{candidate}} {{sign}} {{adjustment}} = {{result}} {{unit}}. Le mode d'objectif et votre plancher de sécurité s'appliquent à cette base filtrée.",
+            "oxfordMaleMathHenry2005": "Formule : ({{slope}} × poids + {{intercept}}) × 239, pour votre âge\nCalcul : ({{slope}} × {{weight}} + {{intercept}}) × 239 = {{result}} kcal",
+            "oxfordFemaleMathHenry2005": "Formule : ({{slope}} × poids + {{intercept}}) × 239, pour votre âge\nCalcul : ({{slope}} × {{weight}} + {{intercept}}) × 239 = {{result}} kcal"
         },
         "caffeineCard": {
             "dose": "Dose"
@@ -3184,7 +3240,37 @@
             "stepFloor": "Maintenu à votre plancher de sécurité ; les autres jours compensent la différence.",
             "pausedWeeklyPlan": "Le cycle calorique est suspendu aujourd'hui : un plan d'objectifs hebdomadaire définit ce jour.",
             "pausedEarnBack": "Le cycle calorique est suspendu : les calories d'exercice sont rajoutées à votre objectif."
-        }
+        },
+        "bloodAlcohol": {
+            "title": "Alcoolémie estimée",
+            "failedToLoad": "Échec du chargement de l'estimation de l'alcoolémie.",
+            "disclaimer": "Estimation approximative uniquement. Votre alcoolémie réelle peut différer de 20 % ou plus. Ne l'utilisez jamais pour décider si vous êtes en état de conduire.",
+            "estimatedTimes": "Heures estimées",
+            "inputs": {
+                "sex": "sexe",
+                "weight": "poids",
+                "height": "taille",
+                "age": "date de naissance"
+            },
+            "missingInputs": "Pour estimer votre alcoolémie, ajoutez ces données : {{inputs}}. Aucune estimation n'est possible d'ici là.",
+            "openProfile": "Renseigner dans votre profil : {{inputs}}",
+            "openCheckIn": "Noter le poids et la taille dans Enregistrement",
+            "implausibleInputs": "Votre poids et votre taille ne correspondent pas à une corpulence plausible, aucune estimation n'est donc possible. Vérifiez vos dernières valeurs dans Enregistrement.",
+            "checkMeasurements": "Vérifier les mesures",
+            "empty": "Aucun alcool enregistré pour ce jour.",
+            "formulaFellBack": "La formule {{formula}} ne convient pas à vos mensurations, cette estimation utilise donc Watson.",
+            "estimatedNow": "Estimation actuelle",
+            "peak": "Pic estimé",
+            "legendCurve": "Alcoolémie estimée",
+            "legendNow": "Maintenant",
+            "legendDrink": "Boisson enregistrée",
+            "legendEstimated": "Heure supposée",
+            "drinks": "Boissons comptées",
+            "drink": "Boisson",
+            "gramsAlcohol": "{{grams}} g d'alcool"
+        },
+        "copyFoodError": "Échec de la copie de l'aliment.",
+        "copyFoodSuccess": "Aliment copié."
     },
     "foodDiary": {
         "title": "Journal alimentaire",
@@ -3250,7 +3336,8 @@
         "fromPlan": "Issu du menu",
         "editFoodDatabase": "Modifier dans la base d'aliments",
         "editFoodDatabaseDescription": "Modifiez les informations nutritionnelles de cet aliment dans votre base.",
-        "editingTemporarilyUnavailable": "La modification des détails de l'aliment est temporairement indisponible en raison de changements de schéma."
+        "editingTemporarilyUnavailable": "La modification des détails de l'aliment est temporairement indisponible en raison de changements de schéma.",
+        "copyFood": "Copier l'aliment"
     },
     "checkIn": {
         "neutral": "Neutre",
@@ -6562,6 +6649,12 @@
             "energyLevel": "Niveau d'énergie",
             "displayNameCapacityMlml": "{{displayName}} (<span>{{capacityMl}}</span> ml)",
             "energy": "Énergie : {{energy}}"
+        },
+        "ownerOnly": "Seul le titulaire du compte peut voir et modifier ce paramètre.",
+        "off": {
+            "title": "{{name}} : fonctionnalité désactivée",
+            "description": "Votre historique est conservé. Réactivez la fonctionnalité pour le retrouver ici.",
+            "turnOn": "Activer"
         }
     },
     "foodCsvImport": {
@@ -6602,7 +6695,9 @@
         "missingDefaultWarning": "Attention : {{count}} aliment(s) n'ont pas de variante par défaut définie. Veuillez définir au moins une variante par défaut (surligné en jaune ci-dessous).",
         "missingDefaultValidationError": "Au moins une variante par aliment doit être définie comme unité par défaut.",
         "filterMissingDefault": "Afficher les valeurs par défaut manquantes ({{count}})",
-        "showAllRows": "Afficher toutes les lignes ({{count}})"
+        "showAllRows": "Afficher toutes les lignes ({{count}})",
+        "reparsePendingTitle": "Veuillez patienter",
+        "reparsePendingDescription": "Un changement de format est encore en cours. Réessayez dans un instant."
     },
     "foods": {
         "providerVerified": "Aliment vérifié",
@@ -7828,7 +7923,79 @@
         "cancel": "Annuler",
         "imported": "Importés : {{processedCount}}",
         "skipped": "Ignorés : {{skippedCount}}",
-        "failed": "En échec : {{errorsCount}}"
+        "failed": "En échec : {{errorsCount}}",
+        "fieldDescriptions": {
+            "date": "Date (ISO 8601 : AAAA-MM-JJ ; une date et heure complète est aussi acceptée, mais seule la date est conservée : l'heure est ignorée, et le fuseau horaire détermine le jour) — le jour où l'entrée a été enregistrée.",
+            "source": "Texte — provenance des données.",
+            "notes": "Texte — notes libres.",
+            "meal_type": "Texte — l'un de vos types de repas (petit-déjeuner, déjeuner, dîner, collations…), sans tenir compte de la casse.",
+            "meal_name": "Texte — regroupe des lignes en un repas nommé (les lignes ayant la même date, le même type de repas et le même nom forment un seul repas).",
+            "food_name": "Texte — l'aliment à rapprocher de votre bibliothèque ou à créer.",
+            "brand": "Texte — marque facultative, utilisée pour améliorer la correspondance.",
+            "quantity": "Nombre — quantité par unité, p. ex. 200.",
+            "unit": "Texte — unité connue (g, oz, ml, cup, serving…) ; les valeurs non reconnues sont conservées telles quelles.",
+            "name": "Texte — le nom à rapprocher de votre bibliothèque ou à créer.",
+            "serving_size": "Nombre — quantité par portion ; le diviseur de la formule nutritionnelle.",
+            "serving_unit": "Texte — unité de serving_size (g, oz, cup…).",
+            "is_custom": "Booléen — `true` marque l'élément comme personnalisé (toute autre valeur vaut faux).",
+            "shared_with_public": "Booléen — `true` partage l'élément avec la bibliothèque publique (toute autre valeur vaut faux).",
+            "is_default": "Booléen — `true` en fait la variante par défaut (toute autre valeur vaut faux).",
+            "category": "Texte — catégorie d'exercice (strength, cardio…).",
+            "calories_per_hour": "Nombre — estimation des calories brûlées par heure.",
+            "description": "Texte — courte description de l'exercice.",
+            "force": "Texte — `pull`, `push` ou `static` (sans tenir compte de la casse).",
+            "level": "Texte — `beginner`, `intermediate` ou `expert` (sans tenir compte de la casse).",
+            "mechanic": "Texte — `isolation` ou `compound` (sans tenir compte de la casse).",
+            "equipment": "Texte — équipement utilisé (séparé par des virgules).",
+            "primary_muscles": "Texte — muscles principaux (séparés par des virgules).",
+            "secondary_muscles": "Texte — muscles secondaires (séparés par des virgules).",
+            "instructions": "Texte — comment réaliser l'exercice.",
+            "images": "Texte — URL des images (séparées par des virgules).",
+            "entry_date": "Date (ISO 8601 : AAAA-MM-JJ ; une date et heure complète est aussi acceptée, mais seule la date est conservée : l'heure est ignorée, et le fuseau horaire détermine le jour) — le jour où la séance a été réalisée.",
+            "exercise_name": "Texte — l'exercice à rapprocher de votre bibliothèque ou à créer.",
+            "exercise_force": "Texte — `pull`, `push` ou `static` (sans tenir compte de la casse).",
+            "exercise_level": "Texte — `beginner`, `intermediate` ou `expert` (sans tenir compte de la casse).",
+            "exercise_mechanic": "Texte — `isolation` ou `compound` (sans tenir compte de la casse).",
+            "weight": "Nombre — poids corporel (dans weight_unit).",
+            "weight_unit": "Texte — unité du poids (kg ou lb).",
+            "body_fat": "Nombre — taux de masse grasse (%).",
+            "height": "Nombre — taille (dans length_unit).",
+            "neck": "Nombre — tour de cou (dans length_unit).",
+            "waist": "Nombre — tour de taille (dans length_unit).",
+            "hips": "Nombre — tour de hanches (dans length_unit).",
+            "length_unit": "Texte — unité des champs de longueur (cm, in, m).",
+            "bedtime": "Horodatage (ISO) — heure du coucher.",
+            "wake_time": "Horodatage (ISO) — heure du réveil.",
+            "duration_in_seconds": "Nombre — durée totale du sommeil, en secondes.",
+            "time_asleep_in_seconds": "Nombre — temps endormi, en secondes.",
+            "deep_sleep_seconds": "Nombre — sommeil profond, en secondes.",
+            "light_sleep_seconds": "Nombre — sommeil léger, en secondes.",
+            "rem_sleep_seconds": "Nombre — sommeil paradoxal (REM), en secondes.",
+            "awake_sleep_seconds": "Nombre — temps éveillé, en secondes.",
+            "sleep_score": "Nombre — score de sommeil global (0–100).",
+            "stage_events": "Texte (tableau JSON) — séquence brute des phases de sommeil.",
+            "type": "Texte — la mesure ou le signe vital concerné (son nom).",
+            "value": "Nombre — sa valeur.",
+            "mood_value": "Nombre — score d'humeur (10–100).",
+            "mood_tags": "Texte — étiquettes d'humeur séparées par des barres verticales (p. ex. grateful|energetic).",
+            "calories": "Nombre — calories (kcal).",
+            "protein": "Nombre — protéines (g).",
+            "carbs": "Nombre — glucides (g).",
+            "fat": "Nombre — lipides totaux (g).",
+            "saturated_fat": "Nombre — acides gras saturés (g).",
+            "polyunsaturated_fat": "Nombre — acides gras polyinsaturés (g).",
+            "monounsaturated_fat": "Nombre — acides gras monoinsaturés (g).",
+            "trans_fat": "Nombre — acides gras trans (g).",
+            "cholesterol": "Nombre — cholestérol (mg).",
+            "sodium": "Nombre — sodium (mg).",
+            "potassium": "Nombre — potassium (mg).",
+            "dietary_fiber": "Nombre — fibres alimentaires (g).",
+            "sugars": "Nombre — sucres (g).",
+            "vitamin_a": "Nombre — vitamine A (UI).",
+            "vitamin_c": "Nombre — vitamine C (mg).",
+            "calcium": "Nombre — calcium (mg).",
+            "iron": "Nombre — fer (mg)."
+        }
     },
     "foodUnitSelector": {
         "editTitle": "Modifier {{name}}",
@@ -7911,7 +8078,10 @@
         "scopePublic": "Public",
         "title": "Importer le journal (CSV)",
         "uploadCsv": "Téléverser un CSV",
-        "validationErrorTitle": "Erreur de validation"
+        "validationErrorTitle": "Erreur de validation",
+        "aggregateLabel": "Importer en totaux par repas (agrégat par repas)",
+        "aggregateDescription": "Ce fichier contient une ligne par repas, sans nom d'aliment ni quantité. Les nutriments de chaque ligne sont enregistrés comme une seule portion d'un repas nommé d'après son type.",
+        "unit": "Unité"
     },
     "drink_presets": {
         "title": "Boissons prédéfinies en ajout rapide",
@@ -8115,7 +8285,15 @@
         "selectMealTypePlaceholder": "Sélectionner un type de repas",
         "targetDate": "Date cible",
         "title": "Copier les entrées alimentaires",
-        "titleAll": "Copier la journée entière"
+        "titleAll": "Copier la journée entière",
+        "copyTo": "Copier vers",
+        "descriptionFood": "Enregistrez de nouveau cet aliment maintenant, ou choisissez une date et un type de repas.",
+        "quick": {
+            "now": "Maintenant",
+            "today": "Aujourd'hui",
+            "tomorrow": "Demain"
+        },
+        "titleFood": "Copier {{food}}"
     },
     "customNutrients": {
         "failedToAddNutrient": "Échec de l'ajout du nutriment.",
@@ -9025,6 +9203,33 @@
             "estimate2": "Estimation {{ai_confidence}}",
             "custom": "Personnalisé",
             "aiEstimateConfidence": "Estimation IA (confiance : {{confidence}})"
+        },
+        "barcodeImage": {
+            "upload": "Téléverser une image du code-barres",
+            "notFound": "Aucun code-barres trouvé sur cette image. Essayez une photo plus nette où le code-barres est entièrement visible.",
+            "unreadable": "Impossible d'ouvrir cette image. Essayez un fichier JPEG ou PNG."
+        },
+        "imageSourceInput": {
+            "dropOrPaste": "ou déposez une image ici, ou collez une capture d'écran"
+        },
+        "nutritionLabelImage": {
+            "title": "Scanner l'étiquette nutritionnelle",
+            "dialogDescription": "Créez un aliment à partir d'une photo de son étiquette nutritionnelle.",
+            "description": "Utilisez une photo du tableau des valeurs nutritionnelles. Votre service d'IA lit les valeurs, et vous pouvez les vérifier avant l'enregistrement de l'aliment.",
+            "upload": "Téléverser une image de l'étiquette",
+            "reading": "Lecture de l'étiquette…",
+            "errors": {
+                "noAiService": "La lecture d'une étiquette nécessite un service d'IA qui prend en charge les images. Ajoutez-en un dans Paramètres → Service d'IA.",
+                "aiServiceSetup": "Votre service d'IA ne peut pas être utilisé pour lire les étiquettes : {{message}}",
+                "badImage": "Impossible d'envoyer cette image à votre service d'IA. Essayez une photo JPEG ou PNG.",
+                "unreadable": "Aucune valeur nutritionnelle n'a pu être lue sur cette image. Essayez une photo plus nette et plus proche de l'étiquette.",
+                "unavailable": "Votre service d'IA n'a pas répondu. Réessayez dans un instant.",
+                "generic": "Impossible de lire l'étiquette. Réessayez."
+            }
+        },
+        "scanModes": {
+            "barcode": "Code-barres",
+            "label": "Étiquette nutritionnelle"
         }
     },
     "dietTemplates": {
