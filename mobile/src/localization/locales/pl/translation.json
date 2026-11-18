@@ -723,7 +723,6 @@
         "watchRunLiveRun": "Bieg na zegarku",
         "watchWalkLive": "Spacer na zegarku",
         "allergenSettings": "Alergeny",
-        "runProgramCalendar": "Kalendarz programu",
         "runProgramWorkout": "Trening",
         "runProgramEdit": "Edytuj plan",
         "runProgramNew": "Nowy plan",
@@ -8934,34 +8933,8 @@
         "partOfProgram": "Część Twojego programu treningowego",
         "openCalendar": "Otwórz kalendarz programu",
         "openCalendarHint": "Wszystkie treningi w widoku miesiąca",
-        "monthGrid": {
-            "previous": "Poprzedni miesiąc",
-            "next": "Następny miesiąc",
-            "dayA11yNone": "{{date}}, brak treningów",
-            "dayA11y_one": "{{date}}, {{formattedCount}} trening",
-            "dayA11y_few": "{{date}}, {{formattedCount}} treningi",
-            "dayA11y_many": "{{date}}, {{formattedCount}} treningów"
-        },
         "calendarScreen": {
-            "noProgram": "Rozpocznij program treningowy, aby zobaczyć jego kalendarz.",
-            "progress": "{{done}} z {{total}} treningów ukończonych",
-            "doneOn": "Ukończono {{date}}",
-            "done": "Ukończono",
-            "dueOn": "Następny · {{date}}",
-            "notScheduled": "Niezaplanowany",
-            "minutes": "{{minutes}} min",
-            "legendDone": "Ukończony",
-            "legendAhead": "Do wykonania lub zaplanowane",
-            "noWorkoutsDay": "Brak treningu programu w tym dniu.",
-            "pickDays_one": "Jeszcze {{count}} trening nie jest w kalendarzu. Wybierz dni treningowe na ekranie programu, aby zobaczyć, kiedy każdy wypadnie.",
-            "pickDays_few": "Jeszcze {{count}} treningi nie są w kalendarzu. Wybierz dni treningowe na ekranie programu, aby zobaczyć, kiedy każdy wypadnie.",
-            "pickDays_many": "Jeszcze {{count}} treningów nie jest w kalendarzu. Wybierz dni treningowe na ekranie programu, aby zobaczyć, kiedy każdy wypadnie.",
-            "pastGoal_one": "{{count}} trening nie zmieści się przed datą celu.",
-            "pastGoal_few": "{{count}} treningi nie zmieszczą się przed datą celu.",
-            "pastGoal_many": "{{count}} treningów nie zmieści się przed datą celu.",
-            "allWorkouts": "Wszystkie treningi",
-            "today": "Dziś",
-            "due": "Następny"
+            "minutes": "{{minutes}} min"
         },
         "detail": {
             "workoutTitle": "Tydzień {{week}}, bieg {{run}}",

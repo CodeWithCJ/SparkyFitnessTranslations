@@ -1420,7 +1420,6 @@
         "watchRunLiveRun": "Courir avec la montre",
         "watchWalkLive": "Marcher avec la montre",
         "allergenSettings": "Allergènes",
-        "runProgramCalendar": "Calendrier du programme",
         "runProgramWorkout": "Séance",
         "runProgramEdit": "Modifier le plan",
         "runProgramNew": "Nouveau plan",
@@ -8491,34 +8490,8 @@
         "partOfProgram": "Fait partie de votre programme",
         "openCalendar": "Ouvrir le calendrier du programme",
         "openCalendarHint": "Toutes les séances sur une vue mensuelle",
-        "monthGrid": {
-            "previous": "Mois précédent",
-            "next": "Mois suivant",
-            "dayA11yNone": "{{date}}, aucune séance",
-            "dayA11y_one": "{{date}}, {{formattedCount}} séance",
-            "dayA11y_many": "{{date}}, {{formattedCount}} séances",
-            "dayA11y_other": "{{date}}, {{formattedCount}} séances"
-        },
         "calendarScreen": {
-            "noProgram": "Lancez un programme d'entraînement pour voir son calendrier.",
-            "progress": "{{done}} séances faites sur {{total}}",
-            "doneOn": "Fait le {{date}}",
-            "done": "Terminé",
-            "dueOn": "Suivante · {{date}}",
-            "notScheduled": "Non planifiée",
-            "minutes": "{{minutes}} min",
-            "legendDone": "Terminé",
-            "legendAhead": "À faire ou à venir",
-            "noWorkoutsDay": "Aucune séance du programme ce jour-là.",
-            "pickDays_one": "{{count}} séance n'est pas encore au calendrier. Choisissez vos jours d'entraînement sur l'écran du programme pour voir quand elle tombe.",
-            "pickDays_many": "{{count}} séances ne sont pas encore au calendrier. Choisissez vos jours d'entraînement sur l'écran du programme pour voir quand chacune tombe.",
-            "pickDays_other": "{{count}} séances ne sont pas encore au calendrier. Choisissez vos jours d'entraînement sur l'écran du programme pour voir quand chacune tombe.",
-            "pastGoal_one": "{{count}} séance ne tient pas avant votre date objectif.",
-            "pastGoal_many": "{{count}} séances ne tiennent pas avant votre date objectif.",
-            "pastGoal_other": "{{count}} séances ne tiennent pas avant votre date objectif.",
-            "allWorkouts": "Toutes les séances",
-            "today": "Aujourd'hui",
-            "due": "Suivante"
+            "minutes": "{{minutes}} min"
         },
         "detail": {
             "workoutTitle": "Semaine {{week}}, course {{run}}",
