@@ -2150,10 +2150,6 @@
             "wellness": "Welzijnsinstellingen",
             "cyclePregnancy": "Cyclus & Zwangerschap"
         },
-        "enable": {
-            "title": "Cyclus & Zwangerschap Bijhouden Inschakelen",
-            "subtitle": "Registratie, voorspellingen en geschiedenis inschakelen"
-        },
         "groups": {
             "features": "Functieconfiguratie",
             "calculations": "Overschrijvingen voor Cyclusberekeningen",

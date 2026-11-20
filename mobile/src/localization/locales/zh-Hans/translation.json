@@ -2322,10 +2322,6 @@
             "wellness": "健康设置",
             "cyclePregnancy": "周期与孕期"
         },
-        "enable": {
-            "title": "启用周期与孕期追踪",
-            "subtitle": "开启记录、预测和历史"
-        },
         "groups": {
             "features": "功能配置",
             "calculations": "周期计算覆盖项",

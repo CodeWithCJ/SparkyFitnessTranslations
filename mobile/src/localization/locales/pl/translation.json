@@ -2827,10 +2827,6 @@
             "wellness": "Ustawienia dobrego samopoczucia",
             "cyclePregnancy": "Cykl i ciąża"
         },
-        "enable": {
-            "title": "Włącz monitorowanie cyklu i ciąży",
-            "subtitle": "Włącz zapisywanie, prognozy i historię"
-        },
         "groups": {
             "features": "Konfiguracja funkcji",
             "calculations": "Korekty obliczeń cyklu",
@@ -9826,7 +9822,6 @@
         "previewTitle": "Podgląd",
         "previewDescription": "Tak wyglądają szybkie akcje z Twoim wyborem.",
         "lineNumber": "Linia {{number}}",
-        "needsCycle": "Niewidoczne: śledzenie cyklu jest wyłączone",
         "showAs": "Pokaż jako",
         "showAsValue": "Pokaż jako {{style}}",
         "styleList": "Lista",

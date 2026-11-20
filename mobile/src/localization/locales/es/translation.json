@@ -4189,10 +4189,6 @@
             "wellness": "Ajustes de bienestar",
             "cyclePregnancy": "Ciclo y embarazo"
         },
-        "enable": {
-            "title": "Activar el seguimiento del ciclo y el embarazo",
-            "subtitle": "Activa el registro, las predicciones y el historial"
-        },
         "groups": {
             "features": "Configuración de funciones",
             "calculations": "Ajustes de cálculo del ciclo",
@@ -9811,7 +9807,6 @@
         "previewTitle": "Vista previa",
         "previewDescription": "Cómo se ve Acciones rápidas con tus selecciones.",
         "lineNumber": "Línea {{number}}",
-        "needsCycle": "No se muestra: el seguimiento del ciclo está desactivado",
         "showAs": "Mostrar como",
         "showAsValue": "Mostrar como {{style}}",
         "styleList": "Lista",

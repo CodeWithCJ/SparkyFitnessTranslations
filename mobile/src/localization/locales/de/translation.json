@@ -2777,10 +2777,6 @@
             "wellness": "Wellness-Einstellungen",
             "cyclePregnancy": "Zyklus & Schwangerschaft"
         },
-        "enable": {
-            "title": "Zyklus- & Schwangerschafts-Tracking aktivieren",
-            "subtitle": "Protokollierung, Vorhersagen und Verlauf aktivieren"
-        },
         "groups": {
             "features": "Funktionskonfiguration",
             "calculations": "Überschreibungen der Zyklusberechnungen",
@@ -9537,7 +9533,6 @@
         "previewTitle": "Vorschau",
         "previewDescription": "So sehen die Schnellaktionen mit deiner Auswahl aus.",
         "lineNumber": "Zeile {{number}}",
-        "needsCycle": "Ausgeblendet: Zyklus-Tracking ist aus",
         "showAs": "Anzeigen als",
         "showAsValue": "Anzeigen als {{style}}",
         "styleList": "Liste",

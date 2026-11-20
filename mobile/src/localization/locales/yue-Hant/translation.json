@@ -2322,10 +2322,6 @@
             "wellness": "健康設定",
             "cyclePregnancy": "週期同懷孕"
         },
-        "enable": {
-            "title": "啟用週期同懷孕追蹤",
-            "subtitle": "開啟記錄、預測同歷史"
-        },
         "groups": {
             "features": "功能設定",
             "calculations": "週期計算覆寫",
