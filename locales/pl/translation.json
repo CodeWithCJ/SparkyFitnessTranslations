@@ -2256,8 +2256,7 @@
             "resetSuccessTitle": "Reset profilu",
             "switchInFeatures": "Śledzenie cyklu włącza się i wyłącza w sekcji Funkcje.",
             "onInFeatures": "Śledzenie cyklu jest włączone. Możesz je wyłączyć w sekcji Funkcje.",
-            "offInFeatures": "Śledzenie cyklu jest wyłączone. Włącz je w sekcji Funkcje.",
-            "openFeatures": "Otwórz Funkcje"
+            "offInFeatures": "Śledzenie cyklu jest wyłączone. Włącz je w sekcji Funkcje."
         },
         "nutrientGoalDirection": {
             "title": "Sposób interpretacji celu dla składników odżywczych",
@@ -6376,12 +6375,7 @@
             "displayNameCapacityMlml": "{{displayName}} (<span>{{capacityMl}}</span> ml)",
             "energy": "Energia: {{energy}}"
         },
-        "ownerOnly": "Tylko właściciel konta może to widzieć i zmieniać.",
-        "off": {
-            "title": "{{name}} jest wyłączone",
-            "description": "Twoja historia jest zachowana. Włącz ponownie, aby zobaczyć ją tutaj.",
-            "turnOn": "Włącz"
-        }
+        "ownerOnly": "Tylko właściciel konta może to widzieć i zmieniać."
     },
     "onboarding": {
         "completeSetup": "Zakończ konfigurację",

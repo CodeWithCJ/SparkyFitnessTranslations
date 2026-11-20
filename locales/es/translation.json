@@ -1508,8 +1508,7 @@
             "resetSuccessTitle": "Restablecimiento del perfil",
             "switchInFeatures": "El seguimiento del ciclo menstrual se activa o desactiva en Funciones.",
             "onInFeatures": "El seguimiento del ciclo está activo. Puedes desactivarlo en Funciones.",
-            "offInFeatures": "El seguimiento del ciclo está desactivado. Actívalo en Funciones.",
-            "openFeatures": "Abrir Funciones"
+            "offInFeatures": "El seguimiento del ciclo está desactivado. Actívalo en Funciones."
         },
         "nutrientGoalDirection": {
             "title": "Orientación del objetivo de nutrientes",
@@ -6918,12 +6917,7 @@
             "displayNameCapacityMlml": "{{displayName}} (<span>{{capacityMl}}</span>ml)",
             "energy": "Energía: {{energy}}"
         },
-        "ownerOnly": "Solo el propietario de la cuenta puede ver y cambiar esto.",
-        "off": {
-            "title": "{{name}} está desactivado",
-            "description": "Tu historial se conserva. Vuelve a activarlo para verlo aquí de nuevo.",
-            "turnOn": "Activar"
-        }
+        "ownerOnly": "Solo el propietario de la cuenta puede ver y cambiar esto."
     },
     "nutrientGoalDirection": {
         "min": "Mín.",

@@ -675,8 +675,7 @@
             "resetSuccessTitle": "Perfil redefinido",
             "switchInFeatures": "O acompanhamento do ciclo é ligado ou desligado em Recursos.",
             "onInFeatures": "O acompanhamento do ciclo está ligado. Você pode desligá-lo em Recursos.",
-            "offInFeatures": "O acompanhamento do ciclo está desligado. Ligue-o em Recursos.",
-            "openFeatures": "Abrir Recursos"
+            "offInFeatures": "O acompanhamento do ciclo está desligado. Ligue-o em Recursos."
         },
         "nutrientGoalDirection": {
             "title": "Sentido da meta de cada nutriente",
@@ -6830,12 +6829,7 @@
             "displayNameCapacityMlml": "{{displayName}} (<span>{{capacityMl}}</span> ml)",
             "energy": "Energia: {{energy}}"
         },
-        "ownerOnly": "Só o dono da conta pode ver e alterar isto.",
-        "off": {
-            "title": "{{name}} está desligado",
-            "description": "O seu histórico fica guardado. Ligue de novo para vê-lo aqui outra vez.",
-            "turnOn": "Ligar"
-        }
+        "ownerOnly": "Só o dono da conta pode ver e alterar isto."
     },
     "warning": "Atenção",
     "review": {
