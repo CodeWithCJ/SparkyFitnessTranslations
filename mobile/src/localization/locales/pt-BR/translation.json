@@ -135,7 +135,9 @@
             "customMeasurements": "Medições Personalizadas",
             "heartRateZones": "Zonas de frequência cardíaca",
             "heartRateZonesSubtitle": "Frequência cardíaca máxima e de repouso, método das zonas",
-            "nfcTags": "Tags NFC"
+            "nfcTags": "Tags NFC",
+            "offline": "Offline",
+            "features": "Recursos"
         },
         "theme": {
             "title": "Tema",
@@ -1201,7 +1203,8 @@
         "saving": "Salvando…",
         "saved": "Salvo",
         "saveFailed": "Não foi possível salvar sua avaliação. Toque para tentar de novo.",
-        "loadFailed": "Não foi possível carregar sua avaliação. Toque para tentar de novo."
+        "loadFailed": "Não foi possível carregar sua avaliação. Toque para tentar de novo.",
+        "queued": "Será enviado quando você voltar a ficar online"
     },
     "adaptiveCoaching": {
         "reasons": {
@@ -1603,6 +1606,10 @@
         "meditationTimer": {
             "title": "Meditação concluída",
             "body": "Abra o SparkyFitness para salvar a sua sessão."
+        },
+        "offlineUploads": {
+            "title": "Um treino está esperando para ser enviado",
+            "body": "Abra o SparkyFitness quando o seu servidor estiver acessível."
         }
     },
     "activeWorkout": {
@@ -2025,7 +2032,9 @@
         "labResultAdd": "Adicionar resultado de exame",
         "labReportImport": "Importar laudo",
         "treadmillSettings": "Esteira e passada",
-        "trainingCalendar": "Calendário de treinos"
+        "trainingCalendar": "Calendário de treinos",
+        "features": "Recursos",
+        "offlineSettings": "Offline"
     },
     "healthCategories": {
         "Common": "Comuns",
@@ -2538,7 +2547,9 @@
         "oralCare": "Saúde bucal",
         "oralCareSubtitle": "Mostrar a escovação em relação à meta e a sua sequência",
         "bloodAlcohol": "Estimativa de álcool no sangue",
-        "bloodAlcoholSubtitle": "Mostrar no painel uma estimativa aproximada de álcool no sangue a partir das bebidas registradas"
+        "bloodAlcoholSubtitle": "Mostrar no painel uma estimativa aproximada de álcool no sangue a partir das bebidas registradas",
+        "wellness": "Bem-estar",
+        "offInFeatures": "Não exibido: desativado em Recursos"
     },
     "diarySettings": {
         "updateFailed": "Falha ao atualizar a configuração.",
@@ -3469,6 +3480,16 @@
             "discreetSubtitle": "Oculta os nomes \"Ciclo\" e \"Gravidez\" na interface",
             "exportSubtitle": "Baixar os dados exportados em JSON",
             "resetSubtitle": "Recomeçar o passo a passo da configuração"
+        },
+        "loadFailed": "Não foi possível carregar estas configurações.",
+        "feature": {
+            "on": "Ativado",
+            "off": "Desativado",
+            "hint": "Ative ou desative em Configurações → Recursos."
+        },
+        "setup": {
+            "action": "Configurar",
+            "hint": "Responda algumas perguntas para terminar a configuração."
         }
     },
     "measurements": {
@@ -4213,7 +4234,11 @@
             "deskTag": "Tag da mesa",
             "tapped": "Tocada",
             "tagWater": "Água • 500 mL",
-            "logged": "Registrado"
+            "logged": "Registrado",
+            "offlinePush": "Treino A",
+            "offlineBadge": "Offline",
+            "offlineSets": "12 séries registradas",
+            "offlineWaiting": "Esperando envio"
         },
         "features": {
             "medications": {
@@ -4314,6 +4339,12 @@
                 "headline": "Registre com um toque",
                 "body": "Cole uma tag NFC na garrafa de água, na mesa ou no armário da cozinha e configure-a para registrar uma bebida, um alimento ou uma refeição salva. Encoste o celular nela para registrar, com Desfazer se foi sem querer.",
                 "cta": "Configurar tags NFC"
+            },
+            "offlineWorkouts": {
+                "eyebrow": "TREINOS OFFLINE",
+                "headline": "Treine sem sinal",
+                "body": "Comece, registre e termine um treino mesmo quando o seu servidor não estiver acessível. Ele fica guardado no celular e é enviado sozinho quando você voltar a ficar online. Toque e segure exercícios na sua biblioteca para manter também as imagens deles offline.",
+                "cta": "Configurações offline"
             }
         }
     },
@@ -5942,7 +5973,9 @@
         "reorderExercises": "Reordenar exercícios",
         "workoutPlaceholder": "Treino",
         "useYesterday": "Usar ontem",
-        "useToday": "Usar hoje"
+        "useToday": "Usar hoje",
+        "savedOfflineTitle": "Salvo neste celular",
+        "savedOfflineMessage": "Ele será enviado quando o seu servidor estiver acessível."
     },
     "mealMutations": {
         "createFailed": "Falha ao criar a refeição",
@@ -6496,7 +6529,9 @@
     },
     "activeWorkoutAutosave": {
         "failedTitle": "Treino não salvo",
-        "failedMessage": "As alterações ficam guardadas neste aparelho e o envio será tentado de novo."
+        "failedMessage": "As alterações ficam guardadas neste aparelho e o envio será tentado de novo.",
+        "offlineTitle": "Salvo neste celular",
+        "offlineMessage": "Seu treino será enviado quando o seu servidor estiver acessível."
     },
     "medicalDisclaimer": {
         "text": "Apenas para acompanhamento e informação geral; não é orientação médica. Converse com seu profissional de saúde sobre questões médicas."
@@ -6890,6 +6925,14 @@
             "dayCycle_one": "Ciclo de {{count}} dia",
             "dayCycle_many": "Ciclo de {{count}} dias",
             "dayCycle_other": "Ciclo de {{count}} dias"
+        },
+        "loadFailed": "Não foi possível carregar as suas configurações.",
+        "off": {
+            "title": "O acompanhamento do ciclo está desativado",
+            "discreetTitle": "Bem-estar está desativado",
+            "description": "Seu histórico é mantido. Ative de novo para voltar a vê-lo aqui.",
+            "turnOn": "Ativar",
+            "openFeatures": "Abrir Recursos"
         }
     },
     "time": {
@@ -8588,7 +8631,22 @@
         "insightWeekendShorter": "Você dorme {{hours}} a menos no fim de semana do que nos dias úteis.",
         "insightFullNights": "{{full}} de {{total}} noites chegaram a 7 horas.",
         "insightIrregular": "Sua hora de dormir varia cerca de ±{{minutes}} min.",
-        "insightDurationChange": "O tempo dormindo está {{change}} em relação ao período anterior."
+        "insightDurationChange": "O tempo dormindo está {{change}} em relação ao período anterior.",
+        "negativeDuration": "-{{duration}}",
+        "needLoadFailed": "Não foi possível carregar a necessidade de sono desta noite",
+        "needTonight": "Necessidade de sono hoje à noite",
+        "needTotal": "Total",
+        "needBaseline": "Linha de base",
+        "needStrain": "Esforço",
+        "needStrainHint": "Dos treinos de hoje",
+        "needDebt": "Recuperação da dívida",
+        "needDebtHint": "Parte da sua dívida de sono de {{amount}}",
+        "needSurplusHint": "Parte do seu superávit de sono de {{amount}}",
+        "recovery": "Recuperação",
+        "recoveryScore": "{{score}}/100",
+        "recoveryHint": "Sua prontidão: sono, frequência cardíaca de repouso e VFC",
+        "trainingLoad": "Carga de treino",
+        "trainingLoadHint": "Minutos de treino ponderados pela frequência cardíaca"
     },
     "reportsSettings": {
         "reset": "Redefinir",
@@ -8654,7 +8712,8 @@
             "measurementTimeline": "Linha do tempo de medidas",
             "oralCareBrushesChart": "Gráfico de escovações por dia",
             "oralCareMinutesChart": "Gráfico de minutos escovando",
-            "oralCareSummary": "Sequências e outros cuidados"
+            "oralCareSummary": "Sequências e outros cuidados",
+            "sleepNeed": "Necessidade de sono hoje à noite"
         },
         "hydrationSections": "Relatório de hidratação",
         "measurementsSections": "Relatório de medidas",
@@ -9833,7 +9892,8 @@
         "buttonsDescription": "Mostrados lado a lado, no fim do painel.",
         "chooseCard": "Escolher um bloco",
         "slotLabel": "Bloco {{number}}: {{name}}",
-        "slotHint": "Abre uma lista para escolher o que vai aqui"
+        "slotHint": "Abre uma lista para escolher o que vai aqui",
+        "offInFeatures": "Não exibido: desativado em Recursos"
     },
     "calorieLink": {
         "action": "Vincular um treino sincronizado",
@@ -10441,7 +10501,8 @@
         "unreachableSubtitle": "Confira sua conexão ou tente novamente.",
         "notConfiguredTitle": "Nenhum servidor configurado",
         "goToSettings": "Ir para as configurações",
-        "tryAgain": "Tentar novamente"
+        "tryAgain": "Tentar novamente",
+        "offlineWorkouts": "Comece um treino predefinido offline"
     },
     "waterLog": {
         "title": "Bebidas",
@@ -11034,5 +11095,127 @@
         "showEarlier_one": "Mostrar semana anterior ({{formattedCount}})",
         "showEarlier_many": "Mostrar semanas anteriores ({{formattedCount}})",
         "showEarlier_other": "Mostrar semanas anteriores ({{formattedCount}})"
+    },
+    "featureSettings": {
+        "title": "Recursos",
+        "description": "Ative ou desative recursos inteiros neste app.",
+        "footnote": "Desativar um recurso só o oculta: nada é excluído, e as sincronizações e importações continuam funcionando.",
+        "loading": "Carregando",
+        "loadError": "Não foi possível carregar esta configuração.",
+        "saveFailed": "Não foi possível salvar esta configuração. Tente de novo.",
+        "appOnly": "Vale só para este app. O site tem a sua própria chave.",
+        "serverTooOld": "Atualize o seu servidor SparkyFitness para mudar isto.",
+        "groups": {
+            "health": "Saúde",
+            "nutrition": "Nutrição",
+            "training": "Treino",
+            "wellbeing": "Bem-estar"
+        },
+        "cycle": {
+            "title": "Ciclo e gravidez",
+            "discreetTitle": "Bem-estar",
+            "description": "Acompanhe menstruação, fertilidade e gravidez.",
+            "scope": "Uma só chave para o app e o site.",
+            "setupAction": "Configurar",
+            "setupHint": "Responda algumas perguntas para terminar a configuração."
+        },
+        "labResults": {
+            "title": "Exames laboratoriais",
+            "description": "Registre exames de sangue e acompanhe cada marcador ao longo do tempo."
+        }
+    },
+    "offline": {
+        "keptAdded_one": "As imagens de {{count}} exercício serão mantidas offline",
+        "keptAdded_many": "As imagens de {{count}} exercícios serão mantidas offline",
+        "keptAdded_other": "As imagens de {{count}} exercícios serão mantidas offline",
+        "keptRemoved_one": "{{count}} exercício deixou de ser mantido offline",
+        "keptRemoved_many": "{{count}} exercícios deixaram de ser mantidos offline",
+        "keptRemoved_other": "{{count}} exercícios deixaram de ser mantidos offline",
+        "keptMark": "Mantido offline",
+        "selectedCount_one": "{{count}} selecionado",
+        "selectedCount_many": "{{count}} selecionados",
+        "selectedCount_other": "{{count}} selecionados",
+        "keepOffline": "Manter offline",
+        "removeFromOffline": "Tirar do offline",
+        "picturesTitle": "Imagens dos exercícios",
+        "picturesOnMobileData": "Baixar imagens nos dados móveis",
+        "picturesOnMobileDataSubtitle": "Desligado: as imagens só são baixadas no Wi-Fi. Até 300 MB.",
+        "keptHeading": "Exercícios mantidos offline",
+        "keptIntro": "As imagens do plano desta semana e dos seus treinos predefinidos são mantidas automaticamente. Para manter mais, toque e segure exercícios na biblioteca de exercícios.",
+        "keptRemove": "Toque para deixar de manter offline",
+        "presetOfflineNote": "Offline: você pode começar ou registrar este treino. Alterá-lo ou duplicá-lo exige conexão.",
+        "leave": {
+            "title_one": "{{count}} treino está esperando para ser enviado",
+            "title_many": "{{count}} treinos estão esperando para ser enviados",
+            "title_other": "{{count}} treinos estão esperando para ser enviados",
+            "deleteMessage": "Remover este servidor também remove o que está esperando neste celular, e isso nunca chegará ao servidor.",
+            "switchMessage": "Eles ficam neste celular e serão enviados quando você voltar para este servidor.",
+            "uploadFirst": "Enviar antes",
+            "deleteAnyway": "Remover mesmo assim",
+            "switchAnyway": "Trocar mesmo assim"
+        },
+        "presetUpdateQueued": "O treino predefinido será atualizado quando você voltar a ficar online",
+        "presetUpdateSkipped": "O treino predefinido \"{{name}}\" não foi atualizado porque foi alterado em outro lugar",
+        "presetUpdated": "Treino predefinido \"{{name}}\" atualizado",
+        "diaryNote": "Só os treinos ficam disponíveis offline. Alimentos e outros registros exigem conexão.",
+        "diaryNothingSaved": "Nada salvo neste dia",
+        "finishedTitle": "Salvo neste celular",
+        "finishedMessage": "Ele será enviado quando o seu servidor estiver acessível.",
+        "deleteSavedTitle": "Excluído neste celular",
+        "deleteSavedMessage": "Ele será removido do seu servidor assim que ele estiver acessível.",
+        "startedTitle": "Iniciado offline",
+        "startedMessage": "Este treino fica guardado neste celular e será enviado quando o seu servidor estiver acessível.",
+        "notReadyTitle": "Ainda não está pronto para treinos offline",
+        "notReadyMessage": "Conecte-se ao seu servidor uma vez para que este celular salve o que um treino precisa.",
+        "banner": "Offline: mostrando dados salvos neste celular",
+        "bannerHint": "Verifica a conexão de novo",
+        "intro": "Dá para começar e registrar treinos sem conexão. Eles ficam guardados neste celular e são enviados quando o seu servidor estiver acessível.",
+        "waitingHeading": "Esperando envio",
+        "nothingWaiting": "Nada esperando",
+        "nothingWaitingSubtitle": "Tudo o que estava neste celular foi enviado.",
+        "waitingItem": "{{kind}}, {{date}}",
+        "uploadNow": "Enviar agora",
+        "uploadDone": "Tudo foi enviado",
+        "uploadStillWaiting": "Alguns itens ainda estão esperando",
+        "uploadStillWaitingDetail": "Eles ficam neste celular e serão enviados quando o seu servidor estiver acessível.",
+        "storageHeading": "Neste celular",
+        "storageTitle": "Salvo para uso offline",
+        "storageValue": "{{size}} MB",
+        "refreshRow": "Atualizar agora",
+        "refreshing": "Atualizando…",
+        "neverRefreshed": "Ainda não baixado. Conecte-se ao seu servidor uma vez para preparar os treinos offline.",
+        "lastRefreshed": "Última atualização: {{when}}",
+        "refreshDone": "Os dados salvos estão em dia",
+        "refreshFailed": "Não foi possível atualizar",
+        "refreshFailedDetail": "Não foi possível acessar o seu servidor. O que já está salvo é mantido.",
+        "clearRow": "Limpar dados offline",
+        "clearRowSubtitle": "Os envios ainda pendentes são mantidos",
+        "clearTitle": "Limpar os dados offline?",
+        "clearMessage": "Treinos predefinidos, exercícios e outros dados guardados para uso offline são removidos deste celular e baixados de novo na próxima vez. O que ainda está esperando envio é mantido.",
+        "clearConfirm": "Limpar",
+        "status": {
+            "pending": "Esperando envio",
+            "sending": "Enviando…",
+            "conflict": "Alterado em outro lugar. Toque para escolher.",
+            "needsSignIn": "Entre de novo para enviar",
+            "failed": "O servidor não aceitou"
+        },
+        "conflict": {
+            "phoneSuffix": "(celular)",
+            "deletedTitle": "Excluído em outro lugar",
+            "deletedMessage": "Este treino foi excluído em outro aparelho enquanto este celular estava offline.",
+            "saveAsNew": "Salvar como um treino novo",
+            "discard": "Descartar a cópia deste celular",
+            "changedTitle": "Alterado em outro lugar",
+            "changedMessage": "Este treino foi alterado em outro aparelho enquanto este celular estava offline. Qual você quer manter?",
+            "keepPhone": "Manter o treino deste celular",
+            "keepServer": "Manter a outra versão",
+            "saveSeparately": "Manter os dois"
+        },
+        "kind": {
+            "workout": "Treino",
+            "other": "Alteração salva"
+        },
+        "libraryNote": "Só os treinos e exercícios ficam disponíveis offline. O resto da Biblioteca exige conexão."
     }
 }
