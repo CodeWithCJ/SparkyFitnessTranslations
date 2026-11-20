@@ -1520,7 +1520,8 @@
             "footnote": "Diário e Configurações aparecem sempre. Ocultar uma aba só muda este site: nada é excluído, e o app mantém as próprias configurações.",
             "saveError": "Não foi possível salvar a sua escolha de abas. Tente novamente.",
             "loadError": "Não foi possível carregar as suas escolhas de abas.",
-            "actingOnBehalf": "Você só pode mudar as abas da sua própria conta."
+            "actingOnBehalf": "Você só pode mudar as abas da sua própria conta.",
+            "featureOff": "Não exibido: desativado em Recursos."
         },
         "chatMcp": {
             "title": "Ferramentas externas",
@@ -1595,6 +1596,17 @@
                 "scope": "Uma só chave para o site e o app de celular.",
                 "setupHint": "Responda a algumas perguntas para concluir a configuração.",
                 "setupAction": "Configurar"
+            },
+            "open": "Abrir Recursos",
+            "webOnly": "Vale só para este site. O app tem a sua própria chave.",
+            "serverTooOld": "Atualize o seu servidor SparkyFitness para mudar isto.",
+            "off": {
+                "title": "{{name}}: desativado",
+                "description": "Seu histórico é mantido. Ative de novo para voltar a vê-lo aqui.",
+                "turnOn": "Ativar"
+            },
+            "labResults": {
+                "description": "Registre exames de sangue e acompanhe cada marcador ao longo do tempo."
             }
         }
     },
@@ -7597,7 +7609,13 @@
         "baselineError": "Falha ao calcular a necessidade de sono de referência",
         "method2": "Método: {{method}}",
         "workdays2": "Dias úteis: {{workdaysAvailable}}/{{workdaysNeeded}}",
-        "freeDays": "Dias de folga: {{freedaysAvailable}}/{{freedaysNeeded}}"
+        "freeDays": "Dias de folga: {{freedaysAvailable}}/{{freedaysNeeded}}",
+        "sleepSurplus": "Superávit de sono",
+        "debtSurplus": "Superávit",
+        "debtSurplusDesc": "Você está com sono de sobra. A necessidade desta noite é um pouco menor.",
+        "trainingLoad": "Carga de treino",
+        "recovery": "Recuperação",
+        "recoveryScore": "{{score}}/100"
     },
     "onboarding": {
         "completeSetup": "Concluir configuração",
