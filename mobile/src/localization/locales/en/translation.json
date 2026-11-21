@@ -851,6 +851,7 @@
     "elevationGained": "Elevation Gained",
     "boneMass": "Bone Mass",
     "bodyWaterMass": "Body Water Mass",
+    "waistCircumference": "Waist Circumference",
     "cervicalMucus": "Cervical Mucus",
     "cyclingPedalingCadence": "Cycling Pedaling Cadence",
     "intermenstrualBleeding": "Intermenstrual Bleeding",
@@ -1199,6 +1200,8 @@
     "exerciseCaloriesDescription": "How much of your exercise calories are added back to your daily goal.",
     "activityLevel": "Activity Level",
     "activityBaseline": "Used as a baseline for TDEE.",
+    "adaptiveFallbackActivityLevel": "Until Adaptive has {{days}} days of food logs, your baseline is BMR × this level, before Goal Mode is applied, and your workouts are not added on top. Pick a level that includes your workouts.",
+    "adaptiveFallbackActivitySeparated": "Until Adaptive has {{days}} days of food logs, your baseline is BMR × this level, before Goal Mode is applied. Describe your activity outside the steps and workouts that are counted separately.",
     "adaptiveEstimateRangeWithUnit": "Activity Level sets the starting estimate and the ±{{amount}} {{unit}} plausibility range around BMR × this multiplier. Estimates can take several weeks to settle; weight fluctuations and incomplete food logs add uncertainty.",
     "allowNegative": "Allow Lower Fallback Projection",
     "negativeDescription": "When a device total is unavailable, let the BMR + active calories fallback lower your target.",
@@ -1230,6 +1233,9 @@
     "formulas": {
       "activityWithBmr": "Activity + BMR",
       "activityOnly": "Activity only (exercise + steps)",
+      "burnedAdaptive": "Shown for reference. Your Adaptive target already includes your activity.",
+      "netAdaptive": "Not used for Remaining. Turn on \"Count activity calories separately\" to credit today’s activity.",
+      "netAdaptivePercentage": "Not used for Remaining. To credit today’s activity, choose Dynamic and turn on \"Count activity calories separately\".",
       "eatenBurned": "Eaten − Burned",
       "projectedTotal": "Device total calories (BMR + active calories fallback)",
       "dynamic": "Goal − Net Energy",
@@ -7242,7 +7248,19 @@
     "countdownOff": "Off",
     "countdownSeconds": "{{seconds}} s",
     "holdCountdownTitle": "Countdown before holds",
-    "holdCountdownSubtitle": "A 3, 2, 1 Get ready screen before a timed hold starts, so you can get into position. Tap it to skip."
+    "holdCountdownSubtitle": "A 3, 2, 1 Get ready screen before a timed hold starts, so you can get into position. Tap it to skip.",
+    "mediaControlsTitle": "Media controls",
+    "mediaAccessTitle": "Now Playing track info",
+    "mediaAccessEnabledSubtitle": "Your watch shows the current song and artist while controlling phone media during workouts.",
+    "mediaAccessDisabledSubtitle": "Play, skip and volume controls work automatically. Allow Notification Access so your watch can also show the current song and artist. Other notifications are ignored.",
+    "mediaAccessEnabled": "Enabled",
+    "mediaAccessSetup": "Set up",
+    "mediaAccessA11yLabel": "{{title}}, {{status}}",
+    "mediaAccessDisclosureTitle": "Allow Notification Access?",
+    "mediaAccessDisclosureBody": "Android requires Notification Access to read the currently playing song and artist for your Wear OS watch. SparkyFitness only reads active media sessions and ignores your messages and other notifications.",
+    "mediaAccessOpenSettings": "Open Settings",
+    "mediaAccessOpenErrorTitle": "Unable to open Settings",
+    "mediaAccessOpenErrorBody": "Open Android Settings → Notifications → Notification read, reply & control and enable SparkyFitness Media Controls."
   },
   "progressPhotos": {
     "card": {
