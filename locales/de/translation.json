@@ -1340,7 +1340,9 @@
             "syncLabel": "Synchronisierung:",
             "neverSynced": "Letzte Synchronisierung: noch nie",
             "garminServiceUnreachable": "Der Garmin-Dienst ist nicht erreichbar. Eine Synchronisierung ist nicht möglich.",
-            "mcpServerSendsUserId": "Teilt dem Server mit, wer chattet"
+            "mcpServerSendsUserId": "Teilt dem Server mit, wer chattet",
+            "mcpServerToolCount_one": "Der Chat darf {{count}} Tool verwenden",
+            "mcpServerToolCount_other": "Der Chat darf {{count}} Tools verwenden"
         },
         "providerSpecificFields": {
             "appURL": "App-URL",
@@ -1513,7 +1515,7 @@
             "description": "Wähle aus, welche Haupt-Tabs auf der Website angezeigt werden",
             "cycleOn": "Ein",
             "cycleOff": "Aus",
-            "cycleHint": "{{name}} verfügt in den Wellness-Einstellungen über einen eigenen Ein-/Ausschalter.",
+            "cycleHint": "{{name}} wird oben unter „Funktionen“ ein- oder ausgeschaltet.",
             "footnote": "Tagebuch und Einstellungen werden immer angezeigt. Das Ausblenden eines Tabs wirkt sich nur auf diese Website aus: Es wird nichts gelöscht, und die mobile App behält ihre eigenen Einstellungen.",
             "saveError": "Deine Tab-Auswahl konnte nicht gespeichert werden. Bitte versuche es erneut.",
             "loadError": "Deine Tab-Auswahl konnte nicht geladen werden.",
@@ -1568,7 +1570,11 @@
                 "policy": "Diese Adresse ist gemäß der Netzwerkrichtlinie nicht zulässig.",
                 "other": "Der Server hat seine Tools nicht aufgelistet ({{reason}})."
             },
-            "problem": "Der Chat kann dieses Tool nicht verwenden: {{reason}}"
+            "problem": "Der Chat kann dieses Tool nicht verwenden: {{reason}}",
+            "changedSummary_one": "{{count}} Tool wurde seit dem Speichern geändert und abgewählt. Prüfe es unten.",
+            "changedSummary_other": "{{count}} Tools wurden seit dem Speichern geändert und abgewählt. Prüfe sie unten.",
+            "goneSummary_one": "{{count}} Tool ist nicht mehr auf dem Server.",
+            "goneSummary_other": "{{count}} Tools sind nicht mehr auf dem Server."
         },
         "features": {
             "title": "Funktionen",
@@ -2383,7 +2389,7 @@
         "fatSecret": "FatSecret",
         "importFromCSVDescription": "Importiere eine CSV-Datei, um mehrere Lebensmittel gleichzeitig hinzuzufügen.",
         "addNewFoodDescription": "Gib die Details für ein neues Lebensmittel ein, um es deiner Datenbank hinzuzufügen.",
-        "scanBarcodeDescription": "Positioniere den Produkt-Barcode vor deiner Kamera.",
+        "scanBarcodeDescription": "Halte den Produkt-Barcode vor deine Kamera oder nutze ein Foto davon.",
         "yourFoods": "Deine Lebensmittel",
         "yourMeals": "Deine Gerichte",
         "noSavedFoods": "Keine gespeicherten Lebensmittel gefunden.",
@@ -6718,7 +6724,32 @@
             "announce": "Sparky benötigt deine Antwort: Diesen Schritt erlauben?",
             "run": "Sparky wird <bold>{{tool}}</bold> ausführen, nachdem <bold>{{server}}</bold> ausgelesen wurde.",
             "send": "Nach dem Auslesen von <bold>{{server}}</bold> möchte Sparky <bold>{{tool}}</bold> von <bold>{{otherServer}}</bold> verwenden.",
-            "runPlain": "Sparky möchte <bold>{{tool}}</bold> ausführen."
+            "runPlain": "Sparky möchte <bold>{{tool}}</bold> ausführen.",
+            "delete": "Sparky möchte <bold>{{summary}}</bold> löschen.",
+            "deleteAfter": "Nach dem Lesen von <bold>{{server}}</bold> möchte Sparky <bold>{{summary}}</bold> löschen.",
+            "change": "Sparky möchte diese Änderung vornehmen: <bold>{{summary}}</bold>.",
+            "changeAfter": "Nach dem Lesen von <bold>{{server}}</bold> möchte Sparky diese Änderung vornehmen: <bold>{{summary}}</bold>.",
+            "runCompleted": "Nach dem Lesen von <bold>{{server}}</bold> hat Sparky <bold>{{tool}}</bold> ausgeführt.",
+            "runPlainCompleted": "Sparky hat <bold>{{tool}}</bold> ausgeführt.",
+            "sendCompleted": "Nach dem Lesen von <bold>{{server}}</bold> hat Sparky <bold>{{tool}}</bold> ausgeführt.",
+            "deleteCompleted": "Du hast Sparky erlaubt, <bold>{{summary}}</bold> zu löschen.",
+            "deleteAfterCompleted": "Nachdem Sparky <bold>{{server}}</bold> gelesen hat, hast du erlaubt, <bold>{{summary}}</bold> zu löschen.",
+            "changeCompleted": "Du hast Sparky erlaubt, diese Änderung vorzunehmen: <bold>{{summary}}</bold>.",
+            "changeAfterCompleted": "Nachdem Sparky <bold>{{server}}</bold> gelesen hat, hast du erlaubt, diese Änderung vorzunehmen: <bold>{{summary}}</bold>.",
+            "runFailed": "Nach dem Lesen von <bold>{{server}}</bold> hat Sparky versucht, <bold>{{tool}}</bold> auszuführen.",
+            "runPlainFailed": "Sparky hat versucht, <bold>{{tool}}</bold> auszuführen.",
+            "sendFailed": "Nach dem Lesen von <bold>{{server}}</bold> hat Sparky versucht, <bold>{{tool}}</bold> auszuführen.",
+            "deleteFailed": "Sparky hat versucht, <bold>{{summary}}</bold> zu löschen.",
+            "deleteAfterFailed": "Nach dem Lesen von <bold>{{server}}</bold> hat Sparky versucht, <bold>{{summary}}</bold> zu löschen.",
+            "changeFailed": "Sparky hat versucht, diese Änderung vorzunehmen: <bold>{{summary}}</bold>.",
+            "changeAfterFailed": "Nach dem Lesen von <bold>{{server}}</bold> hat Sparky versucht, diese Änderung vorzunehmen: <bold>{{summary}}</bold>.",
+            "runUnused": "Nach dem Lesen von <bold>{{server}}</bold> wollte Sparky <bold>{{tool}}</bold> ausführen.",
+            "runPlainUnused": "Sparky wollte <bold>{{tool}}</bold> ausführen.",
+            "sendUnused": "Nach dem Lesen von <bold>{{server}}</bold> wollte Sparky <bold>{{tool}}</bold> von <bold>{{otherServer}}</bold> verwenden.",
+            "deleteUnused": "Sparky wollte <bold>{{summary}}</bold> löschen.",
+            "deleteAfterUnused": "Nach dem Lesen von <bold>{{server}}</bold> wollte Sparky <bold>{{summary}}</bold> löschen.",
+            "changeUnused": "Sparky wollte diese Änderung vornehmen: <bold>{{summary}}</bold>.",
+            "changeAfterUnused": "Nach dem Lesen von <bold>{{server}}</bold> wollte Sparky diese Änderung vornehmen: <bold>{{summary}}</bold>."
         },
         "outsideSource": {
             "delete": "Diese Nachricht löschen",
@@ -6728,7 +6759,8 @@
             "deleteBody": "Dadurch wird die Antwort aus deinem Chat entfernt. Änderungen, die Sparky bereits vorgenommen hat, werden nicht rückgängig gemacht.",
             "cancel": "Abbrechen",
             "confirmDelete": "Löschen",
-            "deleting": "Wird gelöscht…"
+            "deleting": "Wird gelöscht…",
+            "line": "<bold>{{servers}}</bold> verwendet. Sieht etwas falsch aus?"
         },
         "tools": {
             "generic": "Tool",
@@ -11114,6 +11146,36 @@
         "water_fitness": "Wassergymnastik",
         "water_polo": "Wasserball",
         "water_sports": "Wassersport",
-        "wrestling": "Ringen"
+        "wrestling": "Ringen",
+        "yoga": "Yoga",
+        "barre": "Barre",
+        "core_training": "Core-Training",
+        "calisthenics": "Calisthenics",
+        "cross_country_skiing": "Skilanglauf",
+        "downhill_skiing": "Ski Alpin",
+        "stretching": "Stretching",
+        "hiit": "hochintensives Intervalltraining",
+        "jump_rope": "Seilspringen",
+        "kickboxing": "Kickboxen",
+        "pilates": "Pilates",
+        "snowboarding": "Snowboarden",
+        "stairs": "Treppensteigen",
+        "step_training": "Step-Training",
+        "wheelchair_walk_pace": "Rollstuhl (Gehtempo)",
+        "wheelchair_run_pace": "Rollstuhl (Lauftempo)",
+        "tai_chi": "Tai Chi",
+        "mixed_cardio": "Gemischtes Cardio",
+        "exercise_class": "Fitnesskurs",
+        "boot_camp": "Bootcamp",
+        "hand_cycling": "Handbike",
+        "disc_sports": "Frisbee-Sport",
+        "fitness_gaming": "Fitness-Gaming",
+        "social_dance": "Tanzen",
+        "cardio_dance": "Tanz-Workout",
+        "pickleball": "Pickleball",
+        "underwater_diving": "Tauchen",
+        "paragliding": "Gleitschirmfliegen",
+        "other": "Sonstiges",
+        "cooldown": "Cooldown"
     }
 }
