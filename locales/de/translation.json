@@ -1522,13 +1522,11 @@
             "title": "Tabs",
             "description": "Wähle aus, welche Haupt-Tabs auf der Website angezeigt werden",
             "cycleOn": "Ein",
-            "cycleOff": "Aus",
             "cycleHint": "{{name}} wird oben unter „Funktionen“ ein- oder ausgeschaltet.",
             "footnote": "Tagebuch und Einstellungen werden immer angezeigt. Das Ausblenden eines Tabs wirkt sich nur auf diese Website aus: Es wird nichts gelöscht, und die mobile App behält ihre eigenen Einstellungen.",
             "saveError": "Deine Tab-Auswahl konnte nicht gespeichert werden. Bitte versuche es erneut.",
             "loadError": "Deine Tab-Auswahl konnte nicht geladen werden.",
-            "actingOnBehalf": "Du kannst die Tabs nur in deinem eigenen Konto ändern.",
-            "featureOff": "Nicht angezeigt: unter „Funktionen“ deaktiviert."
+            "actingOnBehalf": "Du kannst die Tabs nur in deinem eigenen Konto ändern."
         },
         "chatMcp": {
             "title": "Externe Tools",

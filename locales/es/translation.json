@@ -2337,13 +2337,11 @@
             "title": "Pestañas",
             "description": "Elige qué pestañas principales se muestran en el sitio web",
             "cycleOn": "Activado",
-            "cycleOff": "Desactivado",
             "cycleHint": "{{name}} está activado o desactivado en Funciones, más arriba.",
             "footnote": "El diario y los ajustes siempre se muestran. Ocultar una pestaña solo cambia este sitio web: no se elimina nada y la aplicación móvil mantiene sus propios ajustes.",
             "saveError": "No se pudo guardar tu elección de pestañas. Por favor, inténtalo de nuevo.",
             "loadError": "No se pudieron cargar tus elecciones de pestañas.",
-            "actingOnBehalf": "Solo puedes cambiar las pestañas en tu propia cuenta.",
-            "featureOff": "No se muestra: desactivado en Funciones."
+            "actingOnBehalf": "Solo puedes cambiar las pestañas en tu propia cuenta."
         },
         "chatMcp": {
             "title": "Herramientas externas",

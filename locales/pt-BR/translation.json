@@ -1523,13 +1523,11 @@
             "title": "Abas",
             "description": "Escolha quais abas principais aparecem no site",
             "cycleOn": "Ligado",
-            "cycleOff": "Desligado",
             "cycleHint": "{{name}} é ligado ou desligado em Recursos, acima.",
             "footnote": "Diário e Configurações aparecem sempre. Ocultar uma aba só muda este site: nada é excluído, e o app mantém as próprias configurações.",
             "saveError": "Não foi possível salvar a sua escolha de abas. Tente novamente.",
             "loadError": "Não foi possível carregar as suas escolhas de abas.",
-            "actingOnBehalf": "Você só pode mudar as abas da sua própria conta.",
-            "featureOff": "Não exibido: desativado em Recursos."
+            "actingOnBehalf": "Você só pode mudar as abas da sua própria conta."
         },
         "chatMcp": {
             "title": "Ferramentas externas",

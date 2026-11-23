@@ -3120,13 +3120,11 @@
             "title": "分頁",
             "description": "選擇哪些主要分頁在網站顯示",
             "cycleOn": "開",
-            "cycleOff": "關",
             "cycleHint": "{{name}} 在上方「功能」中開關。",
             "footnote": "日誌與設定永遠都會顯示。隱藏分頁僅變更此網站：不會刪除任何內容，手機 App 有其自身設定。",
             "saveError": "無法儲存您的分頁選擇。請再試一次。",
             "loadError": "無法載入您的分頁選擇。",
-            "actingOnBehalf": "僅能變更您自己帳戶的分頁。",
-            "featureOff": "不顯示：已在「功能」中關閉。"
+            "actingOnBehalf": "僅能變更您自己帳戶的分頁。"
         },
         "features": {
             "title": "功能",

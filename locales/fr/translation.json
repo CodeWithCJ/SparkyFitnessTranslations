@@ -1523,13 +1523,11 @@
             "title": "Onglets",
             "description": "Choisissez les onglets principaux affichés sur le site",
             "cycleOn": "Activé",
-            "cycleOff": "Désactivé",
             "cycleHint": "{{name}} s'active ou se désactive dans Fonctionnalités, ci-dessus.",
             "footnote": "Journal et Paramètres sont toujours affichés. Masquer un onglet ne change que ce site : rien n'est supprimé, et l'app mobile garde ses propres réglages.",
             "saveError": "Impossible d'enregistrer votre choix d'onglets. Veuillez réessayer.",
             "loadError": "Impossible de charger vos choix d'onglets.",
-            "actingOnBehalf": "Vous ne pouvez modifier les onglets que de votre propre compte.",
-            "featureOff": "Non affiché : désactivé dans Fonctionnalités."
+            "actingOnBehalf": "Vous ne pouvez modifier les onglets que de votre propre compte."
         },
         "features": {
             "title": "Fonctionnalités",

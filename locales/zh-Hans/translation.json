@@ -3120,13 +3120,11 @@
             "title": "标签页",
             "description": "选择哪些主要标签页在网站显示",
             "cycleOn": "开",
-            "cycleOff": "关",
             "cycleHint": "{{name}} 在上方「功能」中开关。",
             "footnote": "日志与设置永远都会显示。隐藏标签页仅更改该网站：不会删除任何内容，手机 App 有自身设置。",
             "saveError": "无法保存你的标签页选择。请再试一次。",
             "loadError": "无法加载你的标签页选择。",
-            "actingOnBehalf": "只能更改你自己账户的标签页。",
-            "featureOff": "不显示：已在「功能」中关闭。"
+            "actingOnBehalf": "只能更改你自己账户的标签页。"
         },
         "features": {
             "title": "功能",
