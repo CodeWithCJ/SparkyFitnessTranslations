@@ -820,7 +820,8 @@
             "ongoingWorkout": "Séance en cours",
             "moodCheckin": "Saisies d'humeur",
             "oralCare": "Rappels de brossage",
-            "mindfulness": "Minuteur de méditation"
+            "mindfulness": "Minuteur de méditation",
+            "challenges": "Défis"
         },
         "actions": {
             "completeSet": "Terminer la série",
@@ -880,6 +881,12 @@
         "offlineUploads": {
             "title": "Une séance attend d'être envoyée",
             "body": "Ouvrez SparkyFitness quand votre serveur est joignable."
+        },
+        "challengeWeek": {
+            "body": "{{leader}} est en tête avec {{total}}. La semaine se termine ce soir.",
+            "bodyWithOwn": "{{leader}} est en tête avec {{total}}. Vous êtes au rang {{rank}} avec {{ownTotal}}. La semaine se termine ce soir.",
+            "bodyYouLead": "Vous êtes en tête avec {{total}}. La semaine se termine ce soir.",
+            "title": "{{name}} : qui mène cette semaine"
         }
     },
     "activeWorkout": {
@@ -1170,7 +1177,9 @@
             "result": "= {{raw}} {{unit}} cru · {{energy}}",
             "incomplete": "Saisissez les poids pour calculer la quantité crue.",
             "enterEaten": "Saisissez le poids cuit que vous avez mangé."
-        }
+        },
+        "queued": "Enregistré sur ce téléphone",
+        "queuedMessage": "Envoi dès que votre serveur sera joignable."
     },
     "mealBuilder": {
         "totalAmount": "Quantité totale ({{unit}}) *",
@@ -1351,7 +1360,9 @@
             "labResults": "Résultats d'analyses",
             "labResultsSubtitle": "Prises de sang et autres marqueurs dans le temps",
             "trainingCalendar": "Calendrier d'entraînement",
-            "trainingCalendarSubtitle": "Séances prévues et réalisées, charge par sport"
+            "trainingCalendarSubtitle": "Séances prévues et réalisées, charge par sport",
+            "challenges": "Défis",
+            "challengesSubtitle": "Classements de groupe avec vos amis et votre famille"
         },
         "serverSettings": "Paramètres du serveur",
         "passkeys": "Clés d'accès",
@@ -3227,7 +3238,9 @@
             "selected_many": "{{count}} sélectionnés",
             "selected_other": "{{count}} sélectionnés",
             "limitReached": "Vous pouvez sélectionner jusqu'à {{limit}} aliments",
-            "foodCheckbox": "Sélectionner {{name}}"
+            "foodCheckbox": "Sélectionner {{name}}",
+            "needsConnection": "Ajouter plusieurs aliments nécessite une connexion",
+            "needsConnectionHint": "Ajoutez-les un par un pour les garder sur ce téléphone."
         },
         "states": {
             "connectToSearch": "Connectez-vous à un serveur pour rechercher des aliments",
@@ -3269,6 +3282,10 @@
             "itemCount_one": "{{count}} élément",
             "itemCount_many": "{{count}} éléments",
             "itemCount_other": "{{count}} éléments"
+        },
+        "foodResultCard": {
+            "tapForFullNutrition": "Touchez pour le détail complet",
+            "tapForNutrition": "Touchez pour le détail"
         }
     },
     "foodPhotoImprove": {
@@ -4137,7 +4154,8 @@
             "lookupBarcode": "Recherche du code-barres impossible. Réessayez.",
             "timeout": "Délai dépassé. Vérifiez la connexion au serveur.",
             "retryOnDevice": "Cet iPhone n'a pas pu lire l'étiquette.",
-            "restartApp": "Impossible d'ouvrir la galerie. Veuillez redémarrer l'app."
+            "restartApp": "Impossible d'ouvrir la galerie. Veuillez redémarrer l'app.",
+            "offlineBarcode": "Pas de connexion. Ce code-barres ne figure pas parmi les aliments enregistrés sur votre téléphone."
         },
         "permission": {
             "camera": "Autorisez l'accès à l'appareil photo pour l'afficher",
@@ -4343,7 +4361,9 @@
         "configure": "Configurez un contenant d'eau sur le serveur pour suivre votre hydratation.",
         "multipleNoPrimaryMobile": "Vous avez plusieurs contenants d'eau mais aucun n'est défini comme principal. Touchez pour en choisir un.",
         "configureMobile": "Ajoutez un contenant d'eau pour commencer à suivre votre hydratation.",
-        "defaultContainer": "Par défaut"
+        "defaultContainer": "Par défaut",
+        "queued": "Enregistré sur ce téléphone",
+        "queuedMessage": "Envoi dès que votre serveur sera joignable."
     },
     "waterContainers": {
         "title": "Contenants d'eau",
@@ -4889,7 +4909,9 @@
         "errors": {
             "permission": "Vous n'avez pas l'autorisation de modifier cette entrée.",
             "saveFailed": "Échec de l'enregistrement",
-            "deleteFailed": "Échec de la suppression"
+            "deleteFailed": "Échec de la suppression",
+            "uploadingNow": "Envoi en cours. Réessayez dans un instant.",
+            "alreadyUploaded": "L'envoi vient d'avoir lieu. Réessayez une fois le Journal actualisé."
         },
         "deleteConfirm": "Voulez-vous vraiment supprimer cette entrée ?",
         "entryNotes": "Note pour cette entrée",
@@ -5865,10 +5887,14 @@
         }
     },
     "foodEntryMeal": {
-        "failed": "Échec de l'ajout du repas"
+        "failed": "Échec de l'ajout du repas",
+        "queued": "Enregistré sur ce téléphone",
+        "queuedMessage": "Envoi dès que votre serveur sera joignable."
     },
     "foodSave": {
-        "failed": "Échec de l'enregistrement de l'aliment"
+        "failed": "Échec de l'enregistrement de l'aliment",
+        "queued": "Enregistré sur ce téléphone",
+        "queuedMessage": "Envoi dès que votre serveur sera joignable."
     },
     "foodPhotoIntro": {
         "title": "Estimer les valeurs à partir d'une photo",
@@ -6250,7 +6276,9 @@
         "checkIn": "Enregistrement quotidien",
         "checkInHint": "Habitudes",
         "oralCare": "Hygiène dentaire",
-        "oralCareHint": "Brossage, fil dentaire"
+        "oralCareHint": "Brossage, fil dentaire",
+        "copyFromYesterday": "Copier depuis hier",
+        "copyFromYesterdayHint": "Répéter des repas"
     },
     "diarySettings": {
         "updateFailed": "Échec de la mise à jour du paramètre.",
@@ -6392,7 +6420,8 @@
         "healthUnavailable": {
             "title": "Données de santé indisponibles",
             "message": "Impossible d'initialiser l'accès aux données de santé. Vérifiez vos autorisations dans les réglages."
-        }
+        },
+        "configureForCopy": "Configurez la connexion à votre serveur dans les Paramètres pour copier depuis hier."
     },
     "ingredientRow": {
         "lastWarning": "C'est le dernier ingrédient. Ajoutez-en un autre avant d'enregistrer, ou utilisez « Supprimer le repas » pour supprimer tout le repas.",
@@ -6492,7 +6521,9 @@
         "oralCareSubtitle": "Afficher le brossage vs objectif et votre série",
         "bloodAlcohol": "Alcoolémie estimée",
         "bloodAlcoholSubtitle": "Afficher sur le tableau de bord une estimation approximative de l'alcoolémie d'après les boissons notées",
-        "wellness": "Bien-être"
+        "wellness": "Bien-être",
+        "challenges": "Défis",
+        "challengesSubtitle": "Votre place dans vos défis en cours"
     },
     "chat": {
         "title": "Sparky",
@@ -6667,7 +6698,10 @@
         "oralCareReminderTime": "Rappel {{number}}",
         "oralCareReminderTimeAccessibility": "Rappel de brossage {{number}}, {{time}}",
         "oralCareRemoveReminder": "Supprimer le rappel de brossage {{number}}",
-        "oralCareAddReminder": "Ajouter un rappel"
+        "oralCareAddReminder": "Ajouter un rappel",
+        "challengeWeek": "Meneur de la semaine",
+        "challengeWeekSubtitle": "Le dernier soir de chaque semaine de défi : qui mène chaque défi hebdomadaire auquel vous participez",
+        "challenges": "Défis"
     },
     "serverSettingsUi": {
         "activeServerChanged": "Serveur actif modifié",
@@ -7805,7 +7839,8 @@
             "arrive": "Arrivée"
         },
         "goBack": "Retour",
-        "followRoadsTooMany": "« Suivre les routes » est limité à {{max}} points. Annulez des points ou désactivez cette option pour enregistrer."
+        "followRoadsTooMany": "« Suivre les routes » est limité à {{max}} points. Annulez des points ou désactivez cette option pour enregistrer.",
+        "mapAttribution": "© OpenMapTiles © OpenStreetMap"
     },
     "voiceSettings": {
         "title": "Saisie vocale",
@@ -9895,7 +9930,8 @@
         "buttonsDescription": "Affichés côte à côte en bas du panneau.",
         "chooseCard": "Choisir une tuile",
         "slotLabel": "Tuile {{number}} : {{name}}",
-        "slotHint": "Ouvre une liste pour choisir ce qui va ici"
+        "slotHint": "Ouvre une liste pour choisir ce qui va ici",
+        "emptySlot": "Vide"
     },
     "customCategories": {
         "title": "Mesures personnalisées",
@@ -11144,7 +11180,7 @@
         "presetUpdateQueued": "La séance enregistrée sera mise à jour à votre retour en ligne",
         "presetUpdateSkipped": "Séance enregistrée « {{name}} » non mise à jour, car elle a été modifiée ailleurs",
         "presetUpdated": "Séance enregistrée « {{name}} » mise à jour",
-        "diaryNote": "Seules les séances sont disponibles hors ligne. Les aliments et autres entrées nécessitent une connexion.",
+        "diaryNote": "Les aliments et séances de la dernière semaine sont disponibles hors ligne. Le sommeil et les autres entrées nécessitent une connexion.",
         "diaryNothingSaved": "Rien d'enregistré pour ce jour",
         "finishedTitle": "Enregistrée sur ce téléphone",
         "finishedMessage": "Elle sera envoyée quand votre serveur sera joignable.",
@@ -11156,7 +11192,7 @@
         "notReadyMessage": "Connectez-vous une fois à votre serveur pour que ce téléphone enregistre ce dont une séance a besoin.",
         "banner": "Hors ligne : données enregistrées sur ce téléphone",
         "bannerHint": "Vérifie à nouveau la connexion",
-        "intro": "Les séances peuvent être lancées et notées sans connexion. Elles sont gardées sur ce téléphone et envoyées quand votre serveur est joignable.",
+        "intro": "Séances, aliments, repas, nouveaux aliments et boissons peuvent être notés sans connexion. Ils sont gardés sur ce téléphone et envoyés quand votre serveur est joignable.",
         "waitingHeading": "En attente d'envoi",
         "nothingWaiting": "Rien en attente",
         "nothingWaitingSubtitle": "Tout ce qui était sur ce téléphone a été envoyé.",
@@ -11170,7 +11206,7 @@
         "storageValue": "{{size}} Mo",
         "refreshRow": "Actualiser",
         "refreshing": "Actualisation…",
-        "neverRefreshed": "Pas encore téléchargé. Connectez-vous une fois à votre serveur pour préparer les séances hors ligne.",
+        "neverRefreshed": "Pas encore téléchargé. Connectez-vous une fois à votre serveur pour préparer l'utilisation hors ligne.",
         "lastRefreshed": "Actualisé le {{when}}",
         "refreshDone": "Les données enregistrées sont à jour",
         "refreshFailed": "Impossible d'actualiser",
@@ -11178,7 +11214,7 @@
         "clearRow": "Effacer les données hors ligne",
         "clearRowSubtitle": "Les envois en attente sont conservés",
         "clearTitle": "Effacer les données hors ligne ?",
-        "clearMessage": "Les séances enregistrées, exercices et autres données gardés pour le hors ligne sont retirés de ce téléphone et retéléchargés la prochaine fois. Tout ce qui attend encore d'être envoyé est conservé.",
+        "clearMessage": "Les séances enregistrées, exercices, aliments, repas et autres données gardés pour le hors ligne sont retirés de ce téléphone et retéléchargés la prochaine fois. Tout ce qui attend encore d'être envoyé est conservé.",
         "clearConfirm": "Effacer",
         "status": {
             "pending": "En attente d'envoi",
@@ -11201,9 +11237,31 @@
         },
         "kind": {
             "workout": "Séance",
-            "other": "Modification enregistrée"
+            "other": "Modification enregistrée",
+            "food": "Entrée d'aliment",
+            "water": "Boisson"
         },
-        "libraryNote": "Seuls les séances et exercices sont disponibles hors ligne. Le reste de la bibliothèque nécessite une connexion."
+        "libraryNote": "Les séances, exercices, aliments et repas enregistrés sur ce téléphone sont disponibles hors ligne. Le reste de la bibliothèque nécessite une connexion.",
+        "ownerless": {
+            "title": "Aucun compte associé",
+            "message": "Cet envoi a été enregistré avant que le téléphone sache à quel compte il appartenait : il ne sera donc pas envoyé. Vous pouvez l'abandonner.",
+            "discard": "Abandonner cet envoi",
+            "subtitle": "Aucun compte associé. Touchez pour abandonner."
+        },
+        "foodHeading": "Aliments et eau gardés hors ligne",
+        "foodIntro": "Vos aliments récents et les plus utilisés, vos propres aliments (jusqu'à 2 000), vos repas enregistrés, vos types de repas et vos contenants d'eau sont gardés, ainsi que le Journal et les totaux de la dernière semaine. Ils sont actualisés dès que vous êtes connecté.",
+        "foodsKeptTitle": "Aliments",
+        "foodsKeptValue_one": "{{count}} aliment",
+        "foodsKeptValue_many": "{{count}} aliments",
+        "foodsKeptValue_other": "{{count}} aliments",
+        "mealsKeptTitle": "Repas enregistrés",
+        "mealsKeptValue_one": "{{count}} repas",
+        "mealsKeptValue_many": "{{count}} repas",
+        "mealsKeptValue_other": "{{count}} repas",
+        "diaryDaysKeptTitle": "Jours du Journal",
+        "diaryDaysKeptValue_one": "{{count}} jour d'alimentation",
+        "diaryDaysKeptValue_many": "{{count}} jours d'alimentation",
+        "diaryDaysKeptValue_other": "{{count}} jours d'alimentation"
     },
     "featureSettings": {
         "title": "Fonctionnalités",
@@ -11231,6 +11289,143 @@
         "labResults": {
             "title": "Résultats d'analyses",
             "description": "Enregistrez vos analyses de sang et suivez chaque marqueur dans le temps."
-        }
+        },
+        "someOff": "Certaines fonctionnalités sont désactivées",
+        "manage": "Gérer"
+    },
+    "challenges": {
+        "card": {
+            "a11y": "Défis",
+            "leader": "{{name}} est en tête avec {{total}}",
+            "noScore": "Pas encore de score",
+            "refreshFailed": "Actualisation impossible ; dernières données",
+            "youLead": "En tête",
+            "yourPlace": "Rang {{rank}} sur {{members}} · {{total}}"
+        },
+        "dates": {
+            "from": "À partir du {{start}}, sans date de fin",
+            "range": "Du {{start}} au {{end}}"
+        },
+        "detailLoadFailed": "Impossible de charger ce défi.",
+        "emptySubtitle": "Rejoignez-en un avec le code d'invitation d'un ami, ou organisez le vôtre sur le web.",
+        "emptyTitle": "Aucun défi pour l'instant",
+        "format": {
+            "groupGoal": "Objectif collectif",
+            "hitGoal": "Atteindre l'objectif",
+            "leaderboard": "Classement",
+            "race": "Course à l'objectif"
+        },
+        "hostOnWeb": "Vous organisez ce défi. Modifiez ses règles et ses codes d'invitation sur le web.",
+        "join": {
+            "closed": "Impossible de rejoindre ce défi pour le moment.",
+            "codeLabel": "Code d'invitation",
+            "codePlaceholder": "Collez le code ou le lien",
+            "ended": "Ce défi est terminé.",
+            "failed": "Impossible de rejoindre le défi.",
+            "full": "Ce défi est complet.",
+            "invalidCode": "Ce code n'est pas valide ou a expiré.",
+            "joined": "Vous avez rejoint « {{name}} »",
+            "lateJoinClosed": "Ce défi a commencé et n'accepte plus de nouveaux participants.",
+            "nameLabel": "Votre nom dans ce défi",
+            "namePlaceholder": "Par exemple, votre prénom",
+            "nameRequired": "Saisissez le nom que verront les autres membres.",
+            "notACode": "Collez le code ou le lien d'invitation que vous avez reçu.",
+            "privacy": "Les membres voient ce nom et vos points, jamais votre journal ni votre adresse e-mail. Vous pouvez quitter le défi à tout moment.",
+            "submit": "Rejoindre",
+            "submitting": "Inscription…",
+            "title": "Rejoindre un défi",
+            "tooMany": "Trop de tentatives. Patientez quelques minutes et réessayez.",
+            "withCode": "Rejoindre avec un code"
+        },
+        "leave": {
+            "action": "Quitter le défi",
+            "confirm": "Quitter",
+            "failed": "Impossible de quitter le défi",
+            "message": "Vos scores dans ce défi seront supprimés. Vous pourrez revenir avec un nouveau code d'invitation.",
+            "title": "Quitter ce défi ?"
+        },
+        "listRefreshFailed": "Impossible d'actualiser vos défis ; affichage des derniers chargés.",
+        "loadFailed": "Impossible de charger vos défis.",
+        "memberCount_one": "{{count}} membre",
+        "memberCount_many": "{{count}} membres",
+        "memberCount_other": "{{count}} membres",
+        "metric": {
+            "activeCalories": "Calories actives",
+            "activeMinutes": "Minutes actives",
+            "distance": "Distance",
+            "elevation": "Dénivelé positif",
+            "hrZoneMinutes": "Minutes en zones de FC",
+            "points": "Points",
+            "steps": "Pas",
+            "workoutDays": "Jours d'entraînement"
+        },
+        "moreActions": "Plus d'actions",
+        "period": {
+            "challenge": "Sur tout le défi",
+            "day": "Quotidien",
+            "month": "Mensuel",
+            "next": "Période suivante",
+            "previous": "Période précédente",
+            "week": "Hebdomadaire"
+        },
+        "refreshFailed": "Impossible d'actualiser ce défi ; affichage des dernières données chargées.",
+        "standings": {
+            "daysHit": "{{hit}} jours sur {{eligible}} à l'objectif",
+            "empty": "Personne n'a encore marqué de points sur cette période.",
+            "final": "Résultats finaux",
+            "find": "Chercher un membre",
+            "finished": "Terminé le {{date}}",
+            "groupTotal": "Ensemble : {{total}} sur {{target}}",
+            "live": "Provisoire ; les synchros tardives comptent encore",
+            "loadFailed": "Impossible de charger le classement.",
+            "minutes": "{{value}} min actives",
+            "noMatch": "Aucun membre ne correspond à « {{query}} ».",
+            "refreshFailed": "Impossible d'actualiser le classement ; affichage du dernier chargé.",
+            "rowA11y": "Rang {{rank}}. {{name}}, {{total}}",
+            "winner": "Gagnant",
+            "you": "{{name}} (vous)"
+        },
+        "state": {
+            "active": "En cours",
+            "daysLeft_one": "{{count}} jour restant",
+            "daysLeft_many": "{{count}} jours restants",
+            "daysLeft_other": "{{count}} jours restants",
+            "ended": "Terminé",
+            "lastDay": "Dernier jour",
+            "running": "En cours",
+            "startsIn_one": "Commence dans {{count}} jour",
+            "startsIn_many": "Commence dans {{count}} jours",
+            "startsIn_other": "Commence dans {{count}} jours",
+            "startsOn": "Commence le {{date}}",
+            "startsTomorrow": "Commence demain"
+        },
+        "target": "Objectif : {{target}}",
+        "title": "Défis",
+        "unavailableSubtitle": "Les défis sont désactivés sur votre serveur, ou il doit être mis à jour. Contactez l'administrateur de votre serveur.",
+        "unavailableTitle": "Les défis ne sont pas disponibles",
+        "value": {
+            "feet": "{{value}} pi",
+            "km": "{{value}} km",
+            "metres": "{{value}} m",
+            "miles": "{{value}} mi",
+            "minutes": "{{value}} min",
+            "points": "{{value}} pts",
+            "steps": "{{value}} pas",
+            "workoutDays_one": "{{count}} jour",
+            "workoutDays_many": "{{count}} jours",
+            "workoutDays_other": "{{count}} jours"
+        },
+        "youHost": "Organisateur"
+    },
+    "copyFromYesterday": {
+        "title": "Copier depuis hier",
+        "subtitle": "Reprendre les repas d'hier pour ce jour",
+        "emptySource": "Il n'y a rien à copier depuis hier.",
+        "copySelected": "Copier la sélection",
+        "copyAll": "Tout copier",
+        "copying": "Copie…",
+        "success": "Copié depuis hier",
+        "failed": "Échec de la copie depuis hier",
+        "loadError": "Impossible de charger les repas d'hier."
     }
 }
