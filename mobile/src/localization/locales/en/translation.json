@@ -322,7 +322,8 @@
       "hydration": "Hydration reminders",
       "moodCheckin": "Mood check-ins",
       "oralCare": "Brushing reminders",
-      "mindfulness": "Meditation timer"
+      "mindfulness": "Meditation timer",
+      "challenges": "Challenges"
     },
     "moodCheckin": {
       "title": "How are you feeling?",
@@ -377,6 +378,12 @@
     "meditationTimer": {
       "title": "Meditation complete",
       "body": "Open SparkyFitness to save your session."
+    },
+    "challengeWeek": {
+      "body": "{{leader}} leads with {{total}}. The week closes tonight.",
+      "bodyWithOwn": "{{leader}} leads with {{total}}. You are #{{rank}} with {{ownTotal}}. The week closes tonight.",
+      "bodyYouLead": "You lead with {{total}}. The week closes tonight.",
+      "title": "{{name}}: who leads this week"
     }
   },
   "activeWorkout": {
@@ -746,7 +753,9 @@
       "trainingCalendar": "Training calendar",
       "trainingCalendarSubtitle": "Planned and completed workouts, and load by sport",
       "labResults": "Lab results",
-      "labResultsSubtitle": "Blood tests and other markers over time"
+      "labResultsSubtitle": "Blood tests and other markers over time",
+      "challenges": "Challenges",
+      "challengesSubtitle": "Group leaderboards with friends and family"
     },
     "sleep": "Sleep",
     "healthTrendsSettings": "Health Trends",
@@ -1374,7 +1383,6 @@
     "cyclePregnancy": "Cycle & Pregnancy",
     "cyclePregnancySubtitle": "Show the wellness card on the Dashboard",
     "wellness": "Wellness",
-    "offInFeatures": "Not shown: turned off in Features",
     "medications": "Medications",
     "medicationsSubtitle": "Show the medications card on the Dashboard",
     "symptoms": "Symptoms",
@@ -1404,7 +1412,9 @@
     "labResults": "Lab Results",
     "labResultsSubtitle": "Show your latest lab results and which are out of range",
     "oralCare": "Oral care",
-    "oralCareSubtitle": "Show brushing against your goal and your streak"
+    "oralCareSubtitle": "Show brushing against your goal and your streak",
+    "challenges": "Challenges",
+    "challengesSubtitle": "Show your place in the challenges you are in"
   },
   "diarySettings": {
     "updateFailed": "Failed to update setting.",
@@ -1483,7 +1493,10 @@
     "oralCareReminderTime": "Reminder {{number}}",
     "oralCareReminderTimeAccessibility": "Brushing reminder {{number}}, {{time}}",
     "oralCareRemoveReminder": "Remove brushing reminder {{number}}",
-    "oralCareAddReminder": "Add reminder"
+    "oralCareAddReminder": "Add reminder",
+    "challengeWeek": "Week leader",
+    "challengeWeekSubtitle": "The last evening of each challenge week: who leads each weekly challenge you are in",
+    "challenges": "Challenges"
   },
   "workoutSettings": {
     "title": "Workout Settings",
@@ -2916,6 +2929,8 @@
     "loadError": "Could not load this setting.",
     "saveFailed": "Could not save this setting. Please try again.",
     "appOnly": "Only this app. The website has its own switch.",
+    "someOff": "Some features are turned off",
+    "manage": "Manage",
     "serverTooOld": "Update your SparkyFitness server to change this.",
     "groups": {
       "health": "Health",
@@ -3039,6 +3054,7 @@
       "loadPhoto": "Failed to load photo.",
       "restartApp": "Unable to open gallery. Please restart the app.",
       "lookupBarcode": "Couldn't look up this barcode. Please try again.",
+      "offlineBarcode": "No connection. This barcode isn't in the foods saved on your phone.",
       "timeout": "Request timed out. Check your server connection.",
       "retryOnDevice": "This iPhone could not read the label."
     },
@@ -4158,7 +4174,6 @@
     "previewTitle": "Preview",
     "previewDescription": "How Quick Actions looks with your choices.",
     "lineNumber": "Line {{number}}",
-    "offInFeatures": "Not shown: turned off in Features",
     "showAs": "Show as",
     "showAsValue": "Show as {{style}}",
     "styleList": "List",
@@ -4170,6 +4185,7 @@
     "buttonsDescription": "Shown side by side at the bottom of the sheet.",
     "chooseCard": "Choose a tile",
     "slotLabel": "Tile {{number}}: {{name}}",
+    "emptySlot": "Empty",
     "slotHint": "Opens a list to choose what goes here"
   },
   "mealPlans": {
@@ -4341,6 +4357,8 @@
     "other": "Other"
   },
   "foodEntryAdd": {
+    "queued": "Saved on this phone",
+    "queuedMessage": "It uploads when your server can be reached.",
     "errors": {
       "equivalentsNotSaved": "Some equivalent units could not be saved",
       "invalidAmount": "Invalid amount",
@@ -4565,6 +4583,8 @@
       "selectAll": "Select all",
       "selected_one": "{{count}} selected",
       "selected_other": "{{count}} selected",
+      "needsConnection": "Adding several foods needs a connection",
+      "needsConnectionHint": "Add them one at a time to keep them on this phone.",
       "limitReached": "You can select up to {{limit}} foods",
       "foodCheckbox": "Select {{name}}"
     },
@@ -4915,7 +4935,9 @@
     "errors": {
       "permission": "You don't have permission to edit this entry.",
       "saveFailed": "Failed to save changes",
-      "deleteFailed": "Failed to delete"
+      "deleteFailed": "Failed to delete",
+      "uploadingNow": "It is uploading right now. Try again in a moment.",
+      "alreadyUploaded": "It has just uploaded. Try again once the Diary has refreshed."
     },
     "deleteConfirm": "Are you sure you want to delete this food entry?",
     "entryNotes": "Note for this entry"
@@ -6048,10 +6070,14 @@
     "customConfirm": "Show this range"
   },
   "foodEntryMeal": {
+    "queued": "Saved on this phone",
+    "queuedMessage": "It uploads when your server can be reached.",
     "failed": "Failed to add meal"
   },
   "foodSave": {
-    "failed": "Failed to save food"
+    "failed": "Failed to save food",
+    "queued": "Saved on this phone",
+    "queuedMessage": "It uploads when your server can be reached."
   },
   "favorites": {
     "updateFailed": "Failed to update favorites"
@@ -6465,6 +6491,8 @@
   "waterIntake": {
     "updateFailed": "Error",
     "updateMessage": "Failed to update water intake. Please try again.",
+    "queued": "Saved on this phone",
+    "queuedMessage": "It uploads when your server can be reached.",
     "noPrimary": "No Primary Container",
     "noContainers": "No Water Containers",
     "multipleNoPrimary": "You have multiple water containers but none is marked as primary. Please set one as primary on the server.",
@@ -9828,7 +9856,7 @@
     "mapSatellite": "Satellite",
     "mapStandard": "Map",
     "mapUnavailable": "Routes cannot be drawn on a map in this build.",
-    "osmAttribution": "© OpenStreetMap",
+    "mapAttribution": "© OpenMapTiles © OpenStreetMap",
     "redo": "Redo",
     "findingRoute": "Finding a route",
     "turns": "Turns",
@@ -10964,7 +10992,7 @@
     "presetUpdateQueued": "Saved workout will be updated when you are back online",
     "presetUpdateSkipped": "Saved workout \"{{name}}\" was not updated because it was changed elsewhere",
     "presetUpdated": "Saved workout \"{{name}}\" updated",
-    "diaryNote": "Only workouts are available offline. Food and other entries need a connection.",
+    "diaryNote": "Food and workouts from the last week are available offline. Sleep and the other entries need a connection.",
     "diaryNothingSaved": "Nothing saved for this day",
     "finishedTitle": "Saved on this phone",
     "finishedMessage": "It uploads when your server can be reached.",
@@ -10976,7 +11004,7 @@
     "notReadyMessage": "Connect to your server once so this phone can save what a workout needs.",
     "banner": "Offline: showing data saved on this phone",
     "bannerHint": "Checks the connection again",
-    "intro": "Workouts can be started and logged without a connection. They are kept on this phone and uploaded when your server can be reached.",
+    "intro": "Workouts, food, meals, new foods and drinks can be logged without a connection. They are kept on this phone and uploaded when your server can be reached.",
     "waitingHeading": "Waiting to upload",
     "nothingWaiting": "Nothing is waiting",
     "nothingWaitingSubtitle": "Everything on this phone has been uploaded.",
@@ -10990,7 +11018,7 @@
     "storageValue": "{{size}} MB",
     "refreshRow": "Refresh now",
     "refreshing": "Refreshing…",
-    "neverRefreshed": "Not downloaded yet. Connect to your server once to prepare offline workouts.",
+    "neverRefreshed": "Not downloaded yet. Connect to your server once to prepare offline use.",
     "lastRefreshed": "Last refreshed {{when}}",
     "refreshDone": "Saved data is up to date",
     "refreshFailed": "Could not refresh",
@@ -10998,7 +11026,7 @@
     "clearRow": "Clear offline data",
     "clearRowSubtitle": "Uploads still waiting are kept",
     "clearTitle": "Clear offline data?",
-    "clearMessage": "Saved workouts, exercises and other data kept for offline use are removed from this phone and downloaded again next time. Anything still waiting to upload is kept.",
+    "clearMessage": "Saved workouts, exercises, foods, meals and other data kept for offline use are removed from this phone and downloaded again next time. Anything still waiting to upload is kept.",
     "clearConfirm": "Clear",
     "status": {
       "pending": "Waiting to upload",
@@ -11006,6 +11034,12 @@
       "conflict": "Changed somewhere else. Tap to choose.",
       "needsSignIn": "Sign in again to upload",
       "failed": "The server did not accept it"
+    },
+    "ownerless": {
+      "title": "No account recorded",
+      "message": "This upload was saved before the phone knew which account it belonged to, so it will not be sent. You can discard it.",
+      "discard": "Discard this upload",
+      "subtitle": "No account recorded. Tap to discard."
     },
     "conflict": {
       "phoneSuffix": "(phone)",
@@ -11021,8 +11055,141 @@
     },
     "kind": {
       "workout": "Workout",
+      "food": "Food entry",
+      "water": "Drink",
       "other": "Saved change"
     },
-    "libraryNote": "Only workouts and exercises are available offline. Everything else in the Library needs a connection."
+    "libraryNote": "Workouts, exercises, foods and meals saved on this phone are available offline. Everything else in the Library needs a connection.",
+    "foodHeading": "Food and water kept offline",
+    "foodIntro": "Your recent and most used foods, your own foods (up to 2,000), saved meals, your meal types and water containers are kept, along with the Diary and totals of the last week. They refresh whenever you are connected.",
+    "foodsKeptTitle": "Foods",
+    "foodsKeptValue_one": "{{count}} food",
+    "foodsKeptValue_other": "{{count}} foods",
+    "mealsKeptTitle": "Saved meals",
+    "mealsKeptValue_one": "{{count}} meal",
+    "mealsKeptValue_other": "{{count}} meals",
+    "diaryDaysKeptTitle": "Diary days",
+    "diaryDaysKeptValue_one": "{{count}} day of food",
+    "diaryDaysKeptValue_other": "{{count}} days of food"
+  },
+  "challenges": {
+    "card": {
+      "a11y": "Challenges",
+      "leader": "{{name}} leads with {{total}}",
+      "noScore": "No score yet",
+      "refreshFailed": "Could not refresh; showing the last loaded",
+      "youLead": "You lead",
+      "yourPlace": "#{{rank}} of {{members}} · {{total}}"
+    },
+    "dates": {
+      "from": "From {{start}}, no end date",
+      "range": "{{start}} to {{end}}"
+    },
+    "detailLoadFailed": "Could not load this challenge.",
+    "emptySubtitle": "Join one with an invite code from a friend, or host your own on the web.",
+    "emptyTitle": "No challenges yet",
+    "format": {
+      "groupGoal": "Group goal",
+      "hitGoal": "Hit the goal",
+      "leaderboard": "Leaderboard",
+      "race": "Race to a target"
+    },
+    "hostOnWeb": "You host this challenge. Change its rules and invite codes on the web.",
+    "join": {
+      "closed": "This challenge cannot be joined right now.",
+      "codeLabel": "Invite code",
+      "codePlaceholder": "Paste the code or link",
+      "ended": "This challenge has ended.",
+      "failed": "Could not join the challenge.",
+      "full": "This challenge is full.",
+      "invalidCode": "That code is not valid or has expired.",
+      "joined": "Joined {{name}}",
+      "lateJoinClosed": "This challenge has started and does not take late joiners.",
+      "nameLabel": "Your name in it",
+      "namePlaceholder": "For example, your first name",
+      "nameRequired": "Enter the name other members will see.",
+      "notACode": "Paste the invite code or link you were sent.",
+      "privacy": "Members see this name and your points, never your diary or your email. You can leave at any time.",
+      "submit": "Join",
+      "submitting": "Joining…",
+      "title": "Join a challenge",
+      "tooMany": "Too many tries. Wait a few minutes and try again.",
+      "withCode": "Join with a code"
+    },
+    "leave": {
+      "action": "Leave challenge",
+      "confirm": "Leave",
+      "failed": "Could not leave the challenge",
+      "message": "Your scores in it are deleted. You can join again with a new invite code.",
+      "title": "Leave this challenge?"
+    },
+    "listRefreshFailed": "Could not refresh your challenges; showing the last ones loaded.",
+    "loadFailed": "Could not load your challenges.",
+    "memberCount_one": "{{count}} member",
+    "memberCount_other": "{{count}} members",
+    "metric": {
+      "activeCalories": "Active calories",
+      "activeMinutes": "Active minutes",
+      "distance": "Distance",
+      "elevation": "Elevation",
+      "hrZoneMinutes": "Heart-rate zone minutes",
+      "points": "Points",
+      "steps": "Steps",
+      "workoutDays": "Workout days"
+    },
+    "moreActions": "More actions",
+    "period": {
+      "challenge": "Whole challenge",
+      "day": "Daily",
+      "month": "Monthly",
+      "next": "Next period",
+      "previous": "Previous period",
+      "week": "Weekly"
+    },
+    "refreshFailed": "Could not refresh this challenge; showing what was loaded last.",
+    "standings": {
+      "daysHit": "{{hit}} of {{eligible}} days on goal",
+      "empty": "Nobody has scored in this period yet.",
+      "final": "Final results",
+      "find": "Find a member",
+      "finished": "Finished {{date}}",
+      "groupTotal": "Together: {{total}} of {{target}}",
+      "live": "So far; late watch syncs still count",
+      "loadFailed": "Could not load the standings.",
+      "minutes": "{{value}} active min",
+      "noMatch": "No member matches “{{query}}”.",
+      "refreshFailed": "Could not refresh the standings; showing the last ones loaded.",
+      "rowA11y": "{{rank}}. {{name}}, {{total}}",
+      "winner": "Winner",
+      "you": "{{name}} (you)"
+    },
+    "state": {
+      "active": "Active",
+      "daysLeft_one": "{{count}} day left",
+      "daysLeft_other": "{{count}} days left",
+      "ended": "Ended",
+      "lastDay": "Last day",
+      "running": "Running",
+      "startsIn_one": "Starts in {{count}} day",
+      "startsIn_other": "Starts in {{count}} days",
+      "startsOn": "Starts {{date}}",
+      "startsTomorrow": "Starts tomorrow"
+    },
+    "target": "Target: {{target}}",
+    "title": "Challenges",
+    "unavailableSubtitle": "Challenges are turned off on your server, or it needs an update. Ask your server admin.",
+    "unavailableTitle": "Challenges are not available",
+    "value": {
+      "feet": "{{value}} ft",
+      "km": "{{value}} km",
+      "metres": "{{value}} m",
+      "miles": "{{value}} mi",
+      "minutes": "{{value}} min",
+      "points": "{{value}} pts",
+      "steps": "{{value}} steps",
+      "workoutDays_one": "{{count}} day",
+      "workoutDays_other": "{{count}} days"
+    },
+    "youHost": "You host"
   }
 }
