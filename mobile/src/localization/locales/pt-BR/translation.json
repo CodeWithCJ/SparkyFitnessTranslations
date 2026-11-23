@@ -2554,8 +2554,7 @@
         "oralCareSubtitle": "Mostrar a escovação em relação à meta e a sua sequência",
         "bloodAlcohol": "Estimativa de álcool no sangue",
         "bloodAlcoholSubtitle": "Mostrar no painel uma estimativa aproximada de álcool no sangue a partir das bebidas registradas",
-        "wellness": "Bem-estar",
-        "offInFeatures": "Não exibido: desativado em Recursos"
+        "wellness": "Bem-estar"
     },
     "diarySettings": {
         "updateFailed": "Falha ao atualizar a configuração.",
@@ -9545,8 +9544,7 @@
             "arrive": "Chegada"
         },
         "goBack": "Voltar",
-        "followRoadsTooMany": "Seguir as ruas aceita no máximo {{max}} pontos. Desfaça pontos ou desative Seguir as ruas para salvar.",
-        "osmAttribution": "© OpenStreetMap"
+        "followRoadsTooMany": "Seguir as ruas aceita no máximo {{max}} pontos. Desfaça pontos ou desative Seguir as ruas para salvar."
     },
     "compareReport": {
         "screen": {
@@ -9910,8 +9908,7 @@
         "buttonsDescription": "Mostrados lado a lado, no fim do painel.",
         "chooseCard": "Escolher um bloco",
         "slotLabel": "Bloco {{number}}: {{name}}",
-        "slotHint": "Abre uma lista para escolher o que vai aqui",
-        "offInFeatures": "Não exibido: desativado em Recursos"
+        "slotHint": "Abre uma lista para escolher o que vai aqui"
     },
     "calorieLink": {
         "action": "Vincular um treino sincronizado",

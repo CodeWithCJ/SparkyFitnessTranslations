@@ -517,8 +517,7 @@
         "oralCareSubtitle": "Muestra el cepillado frente a tu objetivo y racha",
         "bloodAlcohol": "Estimación de alcohol en sangre",
         "bloodAlcoholSubtitle": "Mostrar una estimación aproximada de alcohol en sangre según las bebidas registradas en el Panel",
-        "wellness": "Bienestar",
-        "offInFeatures": "No se muestra: desactivado en Funciones"
+        "wellness": "Bienestar"
     },
     "workoutSettings": {
         "title": "Ajustes de entrenamiento",
@@ -9545,8 +9544,7 @@
         "turnCount_other": "{{count}} turnos",
         "showAllTurns_one": "Mostrar todos los {{count}} turno",
         "showAllTurns_many": "Mostrar todos los {{count}} turnos",
-        "showAllTurns_other": "Mostrar todos los {{count}} turnos",
-        "osmAttribution": "© OpenStreetMap"
+        "showAllTurns_other": "Mostrar todos los {{count}} turnos"
     },
     "compareReport": {
         "screen": {
@@ -9910,8 +9908,7 @@
         "buttonsDescription": "Se muestran uno al lado del otro en la parte inferior de la hoja.",
         "chooseCard": "Elige una tarjeta",
         "slotLabel": "Tarjeta {{number}}: {{name}}",
-        "slotHint": "Abre una lista para elegir qué va aquí",
-        "offInFeatures": "No se muestra: desactivado en Funciones"
+        "slotHint": "Abre una lista para elegir qué va aquí"
     },
     "calorieLink": {
         "action": "Vincular un entrenamiento sincronizado",

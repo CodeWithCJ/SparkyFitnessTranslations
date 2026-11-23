@@ -6492,8 +6492,7 @@
         "oralCareSubtitle": "Afficher le brossage vs objectif et votre série",
         "bloodAlcohol": "Alcoolémie estimée",
         "bloodAlcoholSubtitle": "Afficher sur le tableau de bord une estimation approximative de l'alcoolémie d'après les boissons notées",
-        "wellness": "Bien-être",
-        "offInFeatures": "Non affiché : désactivé dans Fonctionnalités"
+        "wellness": "Bien-être"
     },
     "chat": {
         "title": "Sparky",
@@ -7806,8 +7805,7 @@
             "arrive": "Arrivée"
         },
         "goBack": "Retour",
-        "followRoadsTooMany": "« Suivre les routes » est limité à {{max}} points. Annulez des points ou désactivez cette option pour enregistrer.",
-        "osmAttribution": "© OpenStreetMap"
+        "followRoadsTooMany": "« Suivre les routes » est limité à {{max}} points. Annulez des points ou désactivez cette option pour enregistrer."
     },
     "voiceSettings": {
         "title": "Saisie vocale",
@@ -9897,8 +9895,7 @@
         "buttonsDescription": "Affichés côte à côte en bas du panneau.",
         "chooseCard": "Choisir une tuile",
         "slotLabel": "Tuile {{number}} : {{name}}",
-        "slotHint": "Ouvre une liste pour choisir ce qui va ici",
-        "offInFeatures": "Non affiché : désactivé dans Fonctionnalités"
+        "slotHint": "Ouvre une liste pour choisir ce qui va ici"
     },
     "customCategories": {
         "title": "Mesures personnalisées",

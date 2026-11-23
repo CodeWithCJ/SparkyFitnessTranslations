@@ -1342,8 +1342,7 @@
         "oralCareSubtitle": "Pokazuje szczotkowanie względem celu i Twoją serię",
         "bloodAlcohol": "Szacunek alkoholu we krwi",
         "bloodAlcoholSubtitle": "Pokaż zgrubny szacunek alkoholu we krwi na podstawie zapisanych drinków na Pulpicie",
-        "wellness": "Samopoczucie",
-        "offInFeatures": "Nie pokazano: wyłączone w Funkcje"
+        "wellness": "Samopoczucie"
     },
     "diarySettings": {
         "updateFailed": "Nie udało się zaktualizować ustawienia.",
@@ -9545,8 +9544,7 @@
             "arrive": "Meta"
         },
         "goBack": "Wróć",
-        "followRoadsTooMany": "Prowadzenie wzdłuż dróg mieści do {{max}} punktów. Cofnij punkty albo wyłącz „Wzdłuż dróg”, aby zapisać.",
-        "osmAttribution": "© OpenStreetMap"
+        "followRoadsTooMany": "Prowadzenie wzdłuż dróg mieści do {{max}} punktów. Cofnij punkty albo wyłącz „Wzdłuż dróg”, aby zapisać."
     },
     "compareReport": {
         "screen": {
@@ -9910,8 +9908,7 @@
         "buttonsDescription": "Wyświetlane obok siebie na dole arkusza.",
         "chooseCard": "Wybierz kafelek",
         "slotLabel": "Kafelek {{number}}: {{name}}",
-        "slotHint": "Otwiera listę wyboru tego, co tu trafi",
-        "offInFeatures": "Nie pokazano: wyłączone w Funkcje"
+        "slotHint": "Otwiera listę wyboru tego, co tu trafi"
     },
     "calorieLink": {
         "action": "Powiąż trening z urządzenia",

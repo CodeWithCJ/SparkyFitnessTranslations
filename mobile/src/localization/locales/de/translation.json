@@ -1912,8 +1912,7 @@
         "oralCareSubtitle": "Zähneputzen im Vergleich zu deinem Ziel und deiner Serie anzeigen",
         "bloodAlcohol": "Geschätzter Blutalkoholwert",
         "bloodAlcoholSubtitle": "Auf dem Dashboard eine grobe Schätzung des Blutalkoholspiegels anhand der erfassten Getränke anzeigen",
-        "wellness": "Wohlbefinden",
-        "offInFeatures": "Ausgeblendet: Unter „Funktionen“ deaktiviert"
+        "wellness": "Wohlbefinden"
     },
     "diarySettings": {
         "updateFailed": "Einstellung konnte nicht aktualisiert werden.",
@@ -9357,8 +9356,7 @@
             "arrive": "Ziel erreicht"
         },
         "goBack": "Zurück",
-        "followRoadsTooMany": "„Straßen folgen“ geht mit höchstens {{max}} Punkten. Mach Punkte rückgängig oder schalte „Straßen folgen“ zum Speichern aus.",
-        "osmAttribution": "© OpenStreetMap"
+        "followRoadsTooMany": "„Straßen folgen“ geht mit höchstens {{max}} Punkten. Mach Punkte rückgängig oder schalte „Straßen folgen“ zum Speichern aus."
     },
     "compareReport": {
         "screen": {
@@ -9713,8 +9711,7 @@
         "buttonsDescription": "Nebeneinander am unteren Rand des Menüs.",
         "chooseCard": "Kachel wählen",
         "slotLabel": "Kachel {{number}}: {{name}}",
-        "slotHint": "Öffnet eine Liste, um festzulegen, was hier erscheint",
-        "offInFeatures": "Ausgeblendet: Unter „Funktionen“ deaktiviert"
+        "slotHint": "Öffnet eine Liste, um festzulegen, was hier erscheint"
     },
     "calorieLink": {
         "action": "Synchronisiertes Training verknüpfen",
