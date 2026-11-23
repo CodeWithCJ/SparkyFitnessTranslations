@@ -1527,7 +1527,9 @@
             "footnote": "Journal et Paramètres sont toujours affichés. Masquer un onglet ne change que ce site : rien n'est supprimé, et l'app mobile garde ses propres réglages.",
             "saveError": "Impossible d'enregistrer votre choix d'onglets. Veuillez réessayer.",
             "loadError": "Impossible de charger vos choix d'onglets.",
-            "actingOnBehalf": "Vous ne pouvez modifier les onglets que de votre propre compte."
+            "actingOnBehalf": "Vous ne pouvez modifier les onglets que de votre propre compte.",
+            "someFeaturesOff": "Certaines fonctionnalités sont désactivées",
+            "manageFeatures": "Gérer"
         },
         "features": {
             "title": "Fonctionnalités",
@@ -1614,6 +1616,36 @@
             "goneSummary_one": "{{count}} outil n'est plus sur le serveur.",
             "goneSummary_many": "{{count}} outils ne sont plus sur le serveur.",
             "goneSummary_other": "{{count}} outils ne sont plus sur le serveur."
+        },
+        "foodProviders": {
+            "common": {
+                "getApiKey": "Obtenir une clé API",
+                "terms": "Conditions"
+            },
+            "cooktool": {
+                "help": "L'offre gratuite inclut 1 000 recherches par jour. Acceptez les conditions de CookTool avec votre propre clé. Les recherches sont mises en cache pendant 24 h.",
+                "portalLabel": "Documentation CookTool"
+            },
+            "nutrientgraph": {
+                "help": "L'offre gratuite inclut 2 500 unités par mois. Couvre l'USDA, la table CIQUAL française et les produits de marque américains, en cinq langues. Les recherches sont mises en cache pendant 24 h.",
+                "portalLabel": "Documentation NutrientGraph"
+            },
+            "food-info": {
+                "help": "L'offre gratuite inclut 100 requêtes par jour. Donne accès aux aliments de référence de plusieurs bases nationales. Les recherches sont mises en cache pendant 24 h.",
+                "portalLabel": "Portail développeur Food Info"
+            }
+        },
+        "zeppBridgeProvider": {
+            "warningTitle": "Intégration tierce : nécessite ZeppBridge",
+            "warningInstall": "ZeppBridge est un projet open source indépendant. Il n'est ni conçu, ni maintenu, ni pris en charge par SparkyFitness. Cette intégration ne fonctionne que si vous installez et exécutez vous-même ZeppBridge. Consultez <repo>le projet ZeppBridge sur GitHub</repo> pour savoir ce que c'est et comment l'installer.",
+            "warningDueDiligence": "ZeppBridge se connecte à votre compte Zepp et garde une copie de vos données de santé sur votre propre machine. Faites vos propres vérifications avant de l'installer : lisez sa documentation et ses <privacy>informations sur la confidentialité</privacy>, regardez les accès qu'il demande et décidez si vous lui faites confiance. Utilisez-le à vos risques et périls.",
+            "warningExperimental": "Cette intégration est expérimentale. Elle a été construite à partir de l'API publiée par ZeppBridge et n'a été que peu testée avec de vrais appareils.",
+            "baseUrlLabel": "URL de ZeppBridge",
+            "tokenLabel": "Jeton de récupération",
+            "tokenPlaceholder": "Le jeton défini dans ZEPPBRIDGE_PULL_TOKEN",
+            "overviewNote": "SparkyFitness lit uniquement votre propre serveur ZeppBridge (lancé avec `zeppbridge-cli serve`). Il ne contacte jamais Zepp et ne voit jamais vos identifiants Zepp.",
+            "urlNote": "Saisissez l'adresse complète, http:// (ou https://) compris. Sous Docker, placez les deux conteneurs sur un même réseau et utilisez le nom du conteneur, par exemple http://zeppbridge-serve:43921.",
+            "privateNetworkNote": "Une adresse privée ou de réseau local fonctionne pour les comptes administrateur. Sur un serveur à plusieurs utilisateurs, un administrateur doit d'abord autoriser les fournisseurs en réseau privé."
         }
     },
     "aboutDialog": {
@@ -7778,7 +7810,18 @@
         "intervalsRemoveTitle": "Données nutritionnelles envoyées supprimées",
         "intervalsRemoveDetails": "Jours effacés : {{cleared}} · conservés car modifiés par une autre app : {{kept}} · en échec : {{failed}}.",
         "intervalsRemoveError": "Impossible de supprimer les données nutritionnelles envoyées. Veuillez réessayer.",
-        "intervalsPushToggleError": "Impossible d'enregistrer le réglage d'envoi de la nutrition vers Intervals.icu."
+        "intervalsPushToggleError": "Impossible d'enregistrer le réglage d'envoi de la nutrition vers Intervals.icu.",
+        "zeppbridgeSyncSuccessTitle": "ZeppBridge synchronisé avec succès",
+        "zeppbridgeSyncDetails": "Synchronisé : {{sleepImported}} nuits de sommeil, {{workoutsImported}} séances ({{workoutDetailsImported}} avec parcours ou fréquence cardiaque), {{metricDays}} jours de mesures ({{failed}} en échec, {{workoutDetailsFailed}} détails de séance manquants).",
+        "zeppbridgeSyncIncompleteTitle": "Synchronisation ZeppBridge incomplète",
+        "zeppbridgeSyncError": "Échec de la synchronisation ZeppBridge. Vérifiez l'URL de ZeppBridge et le jeton de récupération dans les paramètres, et que le serveur ZeppBridge est bien lancé.",
+        "zeppbridgeTestSuccessTitle": "La connexion à ZeppBridge fonctionne",
+        "zeppbridgeTestSuccessDetails": "ZeppBridge {{version}} a répondu.",
+        "zeppbridgeTestError": "Impossible de se connecter à ZeppBridge. Vérifiez l'URL (avec http://) et le jeton de récupération.",
+        "zeppbridgeTestButton": "Tester la connexion",
+        "zeppbridgeDisconnectConfirm": "Voulez-vous vraiment déconnecter ZeppBridge ? L'intégration sera désactivée jusqu'à ce que vous la réactiviez. Les données déjà importées sont conservées.",
+        "zeppbridgeThirdPartyNote": "Intégration tierce : elle nécessite <repo>ZeppBridge</repo>, un projet indépendant non pris en charge par SparkyFitness, exécuté sur votre propre machine.",
+        "zeppbridgeDuplicateNote": "Si l'app Zepp écrit aussi dans Apple Health ou Health Connect et que vous synchronisez aussi ces données ici, la même nuit ou la même séance peut apparaître deux fois. Utilisez l'une des deux sources."
     },
     "fasting": {
         "checklistTitle": "Minuteur de jeûne",
@@ -9308,7 +9351,9 @@
             "loadingCameraModule": "Chargement du module caméra…"
         },
         "foodResultCard": {
-            "gi": "IG : {{glycemic_index}}"
+            "gi": "IG : {{glycemic_index}}",
+            "tapForFullNutrition": "Touchez pour le détail complet",
+            "tapForNutrition": "Touchez pour le détail"
         },
         "searchingBarcode": "Recherche du code-barres",
         "lookingUp": "Recherche : {{barcode}}…",
@@ -11586,7 +11631,8 @@
             "days_one": "{{count}} jour",
             "days_many": "{{count}} jours",
             "days_other": "{{count}} jours",
-            "metres": "{{value}} m"
+            "metres": "{{value}} m",
+            "feet": "{{value}} pi"
         },
         "units": {
             "points": "points",
@@ -11595,7 +11641,8 @@
             "miles": "miles",
             "km": "km",
             "days": "jours",
-            "metres": "mètres"
+            "metres": "mètres",
+            "feet": "pieds"
         },
         "periodRange": "{{start}} – {{end}}",
         "widget": {
