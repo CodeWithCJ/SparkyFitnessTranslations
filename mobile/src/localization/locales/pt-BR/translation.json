@@ -3395,7 +3395,8 @@
     "foodSummary": {
         "tapToAddFood": "Toque para adicionar um alimento",
         "caloriesShort": "kcal",
-        "nutritionBreakdown": "Detalhamento nutricional de {{label}}"
+        "nutritionBreakdown": "Detalhamento nutricional de {{label}}",
+        "fromTime": "a partir das {{time}}"
     },
     "exerciseSummary": {
         "tapToAdd": "Toque para adicionar um exercício",
@@ -4612,7 +4613,21 @@
         "makePrivate": "Tornar privado",
         "shareWithPublic": "Compartilhar como público",
         "deleteSheetTitle": "Excluir exercício",
-        "caloriesPerHourWithUnit": "{{unit}} / hora"
+        "caloriesPerHourWithUnit": "{{unit}} / hora",
+        "progress": {
+            "title": "Progresso",
+            "weeks": "Semanas",
+            "months": "Meses",
+            "years": "Anos",
+            "estimated1RM": "1RM est.",
+            "heaviest": "Maior carga",
+            "volume": "Volume",
+            "volumeUnit": "{{unit}} × repetições",
+            "weekOf": "Semana de {{date}}",
+            "loadFailed": "Não foi possível carregar o progresso",
+            "empty": "Nada registrado neste período",
+            "footnote": "Melhor marca por período. Os pontos indicam novos recordes."
+        }
     },
     "mealTypeSettings": {
         "reorder": "Reordenar {{name}}",
@@ -6213,6 +6228,11 @@
             "rangeLabel": "FAIXA",
             "loadFailed": "Falha ao carregar os dados de frequência cardíaca",
             "empty": "Nenhum dado de frequência cardíaca neste período"
+        },
+        "mood": {
+            "title": "Humor",
+            "loadFailed": "Falha ao carregar os dados de humor",
+            "empty": "Nenhum humor registrado neste período"
         }
     },
     "exerciseLibrary": {
@@ -7010,7 +7030,7 @@
         "cm": "{{value}} cm",
         "mmolL": "{{value}} mmol/L",
         "ms": "{{value}} ms",
-        "vo2": "{{value}} ml/min/kg",
+        "vo2": "{{value}} ml/kg/min",
         "minutes": "{{count}} min",
         "meters": "{{value}} m",
         "watts": "{{value}} W",
@@ -7181,7 +7201,37 @@
         "mediaAccessDisclosureBody": "O Android exige o acesso às notificações para ler a música e o artista que estão tocando e mostrá-los no relógio Wear OS. O SparkyFitness só lê as sessões de mídia ativas e ignora as suas mensagens e outras notificações.",
         "mediaAccessOpenSettings": "Abrir configurações",
         "mediaAccessOpenErrorTitle": "Não foi possível abrir as configurações",
-        "mediaAccessOpenErrorBody": "Abra Configurações do Android → Notificações → Leitura, resposta e controle de notificações e ative o SparkyFitness Media Controls."
+        "mediaAccessOpenErrorBody": "Abra Configurações do Android → Notificações → Leitura, resposta e controle de notificações e ative o SparkyFitness Media Controls.",
+        "complicationsTitle": "Complicações",
+        "complicationsRow": "Suas complicações",
+        "complicationsSubtitle": "Crie as suas para o mostrador e importe ou exporte-as.",
+        "complications": {
+            "sources": {
+                "calories": "Calorias",
+                "caloriesRemaining": "Calorias restantes",
+                "caloriesBurned": "Calorias queimadas",
+                "protein": "Proteína",
+                "carbs": "Carboidratos",
+                "fat": "Gordura",
+                "water": "Água",
+                "steps": "Passos",
+                "fasting": "Jejum",
+                "weight": "Peso",
+                "bodyFat": "Gordura corporal",
+                "deepSleep": "Sono profundo",
+                "exerciseCalories": "Calorias de exercício",
+                "exerciseMinutes": "Minutos de exercício",
+                "hrv": "VFC noturna",
+                "lightSleep": "Sono leve",
+                "remSleep": "Sono REM",
+                "restingHeartRate": "Frequência cardíaca em repouso",
+                "sleepDuration": "Tempo de sono",
+                "sleepScore": "Pontuação do sono",
+                "spo2": "Oxigênio no sangue",
+                "timeInBed": "Tempo na cama",
+                "workouts": "Treinos hoje"
+            }
+        }
     },
     "progressPhotos": {
         "card": {
@@ -11175,7 +11225,11 @@
             "description": "Registre exames de sangue e acompanhe cada marcador ao longo do tempo."
         },
         "someOff": "Alguns recursos estão desligados",
-        "manage": "Gerenciar"
+        "manage": "Gerenciar",
+        "medications": {
+            "title": "Medicamentos",
+            "description": "Medicamentos, suplementos e acompanhamento de GLP-1. Enquanto estiver desligado, os lembretes param e voltam quando você ligá-lo de novo; os nutrientes dos suplementos continuam contando nos seus totais."
+        }
     },
     "offline": {
         "keptAdded_one": "As imagens de {{count}} exercício serão mantidas offline",
@@ -11427,5 +11481,133 @@
             "workoutDays_other": "{{count}} dias"
         },
         "youHost": "Você organiza"
+    },
+    "watchComplications": {
+        "deleteTitle": "Excluir complicação",
+        "deleteMessage": "Excluir {{name}}? O espaço do mostrador que a exibe ficará vazio.",
+        "exportFailed": "Não foi possível exportar suas complicações",
+        "importTooLarge": "Esse arquivo é grande demais",
+        "importFailed": "Não foi possível ler esse arquivo",
+        "importInvalid": "Não é um arquivo de complicações",
+        "importInvalidSubtitle": "Escolha um arquivo exportado da tela Complicações.",
+        "importTitle": "Importar complicações",
+        "importAdd": "Adicionar",
+        "importReplace": "Substituir",
+        "resetTitle": "Restaurar o conjunto inicial",
+        "resetMessage": "Substituir suas complicações pelo conjunto inicial? As suas serão perdidas.",
+        "resetConfirm": "Restaurar",
+        "title": "Complicações",
+        "add": "Adicionar complicação",
+        "menu": "Opções da complicação",
+        "reload": "Recarregar complicações",
+        "reloadHint": "Envia suas complicações para o Apple Watch e as atualiza.",
+        "reloaded": "Enviado para o seu relógio",
+        "reloadedSubtitle": "Abra o app do relógio se o seletor ainda mostrar a lista antiga.",
+        "reloadFailed": "Não foi possível enviar para o seu relógio",
+        "builtInTitle": "Complicações integradas",
+        "builtInHelp": "Estas vêm com o app. Mude as cores e os ícones delas.",
+        "changeBuiltIn": "Alterar {{name}}",
+        "builtInReset": "Restaurar a aparência original",
+        "builtInDailyEnergy": "Meta diária de energia",
+        "builtInEnergyReset": "Restaurar as cores originais",
+        "builtIn": {
+            "calorieGoal": "Meta de calorias",
+            "proteinGoal": "Meta de proteína",
+            "carbsGoal": "Meta de carboidratos",
+            "fatGoal": "Meta de gordura",
+            "water": "Ingestão de água",
+            "fasting": "Jejum",
+            "steps": "Passos"
+        },
+        "export": "Exportar",
+        "import": "Importar",
+        "reset": "Restaurar o conjunto inicial",
+        "withGauge": "Medidor",
+        "editNamed": "Editar {{name}}",
+        "moveUp": "Mover {{name}} para cima",
+        "moveDown": "Mover {{name}} para baixo",
+        "deleteNamed": "Excluir {{name}}",
+        "intro": "Crie suas próprias complicações para o mostrador. Cada uma mostra um número do seu dia. No relógio, adicione a Complicação personalizada a um espaço e escolha uma destas.",
+        "starterNote": "Estas são as complicações iniciais. Altere ou adicione uma e a lista passa a ser sua.",
+        "emptyTitle": "Nenhuma complicação ainda",
+        "emptySubtitle": "Adicione uma, como a proteína restante de hoje, ou importe um arquivo.",
+        "nameRequired": "Dê um nome a ela",
+        "nameRequiredSubtitle": "O nome é o que você escolhe no mostrador.",
+        "saved": "Complicação salva",
+        "editTitle": "Editar complicação",
+        "createTitle": "Adicionar complicação",
+        "previewNote": "Um dia de exemplo, em cada tamanho. O mostrador define a aparência final.",
+        "preview": {
+            "left": "restantes",
+            "leftUnit": "{{unit}} restantes",
+            "ofGoal": "de {{goal}}"
+        },
+        "name": "Nome",
+        "namePlaceholder": "ex.: Proteína restante",
+        "source": "Mostra",
+        "sourceHelp": "Os nutrientes que você exibe na página Metas do relógio também aparecem aqui.",
+        "format": "Mostrar como",
+        "noGoalNote": "Este item não tem meta, então só pode mostrar o valor.",
+        "gauge": "Medidor",
+        "gaugeSubtitle": "Mostra um anel ou uma barra com quanto da meta já foi cumprido.",
+        "color": "Cor",
+        "icon": "Ícone",
+        "formats": {
+            "value": "Valor",
+            "percent": "Porcentagem",
+            "remaining": "Restante"
+        },
+        "colors": {
+            "calories": "Violeta",
+            "protein": "Dourado",
+            "carbs": "Verde",
+            "fat": "Azul-celeste",
+            "water": "Ciano",
+            "steps": "Menta",
+            "fasting": "Laranja",
+            "weight": "Verde-azulado",
+            "neutral": "Branco",
+            "exercise": "Verde-vivo",
+            "heart": "Rosa",
+            "sleep": "Índigo"
+        },
+        "icons": {
+            "flame": "Chama",
+            "fish": "Peixe",
+            "leaf": "Folha",
+            "drop": "Gota",
+            "walk": "Caminhada",
+            "timer": "Cronômetro",
+            "scale": "Balança",
+            "heart": "Coração",
+            "bolt": "Raio",
+            "fork": "Garfo e faca",
+            "chart": "Gráfico de barras",
+            "gauge": "Medidor",
+            "bed": "Cama",
+            "dumbbell": "Halter",
+            "heartbeat": "Batimentos",
+            "lungs": "Pulmões",
+            "moon": "Lua"
+        },
+        "importDone_one": "{{count}} complicação importada",
+        "importDone_many": "{{count}} complicações importadas",
+        "importDone_other": "{{count}} complicações importadas",
+        "importMessage_one": "{{count}} complicação encontrada no arquivo. Adicioná-la à sua lista ou substituir sua lista por ela?",
+        "importMessage_many": "{{count}} complicações encontradas no arquivo. Adicioná-las à sua lista ou substituir sua lista por elas?",
+        "importMessage_other": "{{count}} complicações encontradas no arquivo. Adicioná-las à sua lista ou substituir sua lista por elas?",
+        "importSkipped_one": "{{count}} registro não pôde ser usado.",
+        "importSkipped_many": "{{count}} registros não puderam ser usados.",
+        "importSkipped_other": "{{count}} registros não puderam ser usados.",
+        "addValue": "Adicionar outro valor",
+        "moreValues": "Mais valores",
+        "moreValuesHelp": "Mostre até três valores juntos: anéis nos tamanhos circular e de canto, uma linha para cada um no tamanho retangular.",
+        "remove": "Remover",
+        "removeValue": "Remover valor {{number}}",
+        "ringsNote": "Com mais de um valor, cada valor que tem meta ganha seu próprio anel ou barra.",
+        "starters": {
+            "macros": "Macros"
+        },
+        "valueNumber": "Valor {{number}}"
     }
 }
