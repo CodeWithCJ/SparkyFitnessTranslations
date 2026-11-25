@@ -1615,6 +1615,9 @@
             },
             "labResults": {
                 "description": "Registre exames de sangue e acompanhe cada marcador ao longo do tempo."
+            },
+            "medications": {
+                "description": "Medicamentos, suplementos e acompanhamento de GLP-1. Os nutrientes dos suplementos continuam contando nos seus totais."
             }
         },
         "foodProviders": {
@@ -2421,7 +2424,7 @@
             "primaryMuscles": "Músculos primários",
             "secondaryMuscles": "Músculos Secundários",
             "reps": "Repetições",
-            "weight": "Peso",
+            "weight": "Peso ({{unit}})",
             "notes": "Notas",
             "durationMinutes": "Duração (minutos)",
             "caloriesBurned": "Calorias queimadas",
@@ -4358,7 +4361,9 @@
         "editFoodDatabase": "Editar alimento no banco de dados",
         "editFoodDatabaseDescription": "Edite as informações nutricionais deste alimento no seu banco de dados.",
         "editingTemporarilyUnavailable": "A edição de alimentos está temporariamente indisponível por causa de mudanças no banco de dados.",
-        "copyFood": "Copiar alimento"
+        "copyFood": "Copiar alimento",
+        "fromTime": "a partir das {{time}}",
+        "nothingLogged": "Nada registrado ainda, adicione um alimento"
     },
     "foodDatabaseManager": {
         "system": "Sistema",
