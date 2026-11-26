@@ -3177,6 +3177,9 @@
             },
             "labResults": {
                 "description": "Zapisuj wyniki badań krwi i śledź każdy marker w czasie."
+            },
+            "medications": {
+                "description": "Śledzenie leków, suplementów i GLP-1. Składniki odżywcze z suplementów nadal wliczają się do sum."
             }
         },
         "foodProviders": {
@@ -4195,7 +4198,9 @@
         "editFoodDatabase": "Edytuj bazę produktów",
         "editFoodDatabaseDescription": "Edytuj informacje o wartościach odżywczych tego produktu w swojej bazie.",
         "editingTemporarilyUnavailable": "Edycja szczegółów produktu jest chwilowo niedostępna z powodu zmian schematu.",
-        "copyFood": "Kopiuj produkt"
+        "copyFood": "Kopiuj produkt",
+        "fromTime": "od {{time}}",
+        "nothingLogged": "Nic jeszcze nie zapisano, dodaj produkt"
     },
     "checkIn": {
         "neutral": "Neutralnie",
