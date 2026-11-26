@@ -271,7 +271,8 @@
             "moodCheckin": "Wpisy nastroju",
             "oralCare": "Przypomnienia o szczotkowaniu",
             "mindfulness": "Timer medytacji",
-            "challenges": "Wyzwania"
+            "challenges": "Wyzwania",
+            "coaches": "Trenerzy"
         },
         "actions": {
             "completeSet": "Wykonaj serię",
@@ -10495,7 +10496,24 @@
             "serverTooOld": "Twój serwer nie obsługuje jeszcze tagów NFC",
             "failed": "Nie udało się tego zapisać",
             "serverTooOldSubtitle": "Zaktualizuj serwer SparkyFitness i spróbuj ponownie.",
-            "failedSubtitle": "Nic nie zapisano. Sprawdź połączenie i spróbuj ponownie."
+            "failedSubtitle": "Nic nie zapisano. Sprawdź połączenie i spróbuj ponownie.",
+            "amountAndUnit": "Ilość i jednostka",
+            "configureTag": "Ustawienia tagu",
+            "confirmWithCalories": "Zapisz (+{{calories}} kcal)",
+            "customTime": "Godzina (GG:MM)",
+            "invalidTime": "Podaj poprawną godzinę (np. 08:30 lub 8:30 PM).",
+            "lastUsedAmount": "Ostatnio: {{value}} {{unit}}",
+            "mealContext": "Posiłek",
+            "ofGoal": "dziennego celu",
+            "quickAmounts": "Szybkie ilości",
+            "tapToLogActive": "Dotknij, aby zapisać od razu",
+            "kcalUnit": "kcal",
+            "proteinShort": "B:",
+            "carbsShort": "W:",
+            "fatShort": "T:",
+            "timePlaceholder": "GG:MM",
+            "unitOz": "oz",
+            "unitLiter": "litr"
         },
         "form": {
             "errors": {
@@ -10539,7 +10557,16 @@
             "mealType": "Zapisz w",
             "mealTypeHint": "Opcja „Według pory dnia” używa zwykłej pory każdego typu posiłku, tak jak szybkie zapisywanie.",
             "foodOrMeal": "Produkt lub posiłek",
-            "foodOrMealPlaceholder": "Wybierz produkt lub posiłek"
+            "foodOrMealPlaceholder": "Wybierz produkt lub posiłek",
+            "allowAmountAdjustment": "Pozwól na zmianę ilości/mnożnika przy potwierdzeniu",
+            "allowAmountAdjustmentHint": "Pozwala wybrać szybki szablon lub własną ilość w oknie potwierdzenia, zachowując domyślny wybór.",
+            "advancedMode": "Zaawansowane szablony i tryb ml",
+            "allowCustomTimestamp": "Pozwól na własną godzinę przy skanowaniu",
+            "allowCustomTimestampHint": "Gdy wyłączone, zapisuje od razu o bieżącej godzinie. Gdy włączone, pokazuje pole godziny podczas skanowania.",
+            "presetAmountsLabel": "Domyślne ilości (ml dla napojów lub sztuki produktu)",
+            "tapToLog": "Dotknij ilości, aby zapisać od razu",
+            "tooManyPresets": "Podaj maksymalnie 8 domyślnych ilości",
+            "invalidPresetAmount": "Każda domyślna ilość musi być poprawną liczbą większą od 0 i nie większą niż 10000"
         },
         "unsupportedTitle": "Ten telefon nie obsługuje tagów NFC",
         "unsupportedSubtitle": "Tagi NFC wymagają telefonu z modułem NFC.",
@@ -11229,6 +11256,10 @@
         "medications": {
             "title": "Leki",
             "description": "Śledzenie leków, suplementów i GLP-1. Gdy jest wyłączone, przypomnienia zatrzymują się i wracają po włączeniu; składniki odżywcze z suplementów nadal wliczają się do sum."
+        },
+        "aiCoaches": {
+            "title": "Trenerzy",
+            "description": "Trenerzy AI, którzy śledzą Twoje jedzenie, trening i sen oraz wysyłają krótką wiadomość, gdy warto coś powiedzieć."
         }
     },
     "offline": {
@@ -11608,7 +11639,8 @@
         "starters": {
             "macros": "Makroskładniki"
         },
-        "valueNumber": "Wartość {{number}}"
+        "valueNumber": "Wartość {{number}}",
+        "reloadHintWearOs": "Wysyła komplikacje na zegarek Wear OS i odświeża je."
     },
     "coaches": {
         "saved": "Zapisano.",
@@ -11623,7 +11655,9 @@
             "loadError": "Nie udało się wczytać trenerów.",
             "weekday": "Działa w",
             "focusHabit": "Nawyk do skupienia",
-            "noHabit": "Jeszcze brak"
+            "noHabit": "Jeszcze brak",
+            "off": "Trenerzy są wyłączeni. Włącz ich w Ustawienia → Funkcje, aby otrzymywać krótkie, trafne wiadomości od trenerów analizujących Twoje jedzenie, trening i sen.",
+            "openFeatures": "Otwórz Funkcje"
         },
         "aboutMe": {
             "title": "O mnie",
@@ -11661,7 +11695,11 @@
             "checkInTime": "Godzina sprawdzenia",
             "removeTime": "Usuń tę godzinę",
             "addTime": "Dodaj godzinę",
-            "maxMessages": "Maksymalnie tyle wiadomości dziennie"
+            "maxMessages": "Maksymalnie tyle wiadomości dziennie",
+            "maxMessagesLabel": "Limit dzienny",
+            "checkIn": "Sprawdzenie {{number}}",
+            "checkInAccessibility": "Sprawdzenie {{number}}, {{time}}",
+            "removeCheckIn": "Usuń sprawdzenie {{number}}"
         },
         "pause": {
             "title": "Wstrzymaj trenerów",
@@ -11676,14 +11714,20 @@
                 "travel": "Podróż",
                 "injury": "Kontuzja",
                 "other": "Inny"
-            }
+            },
+            "days_one": "{{count}} dzień",
+            "days_few": "{{count}} dni",
+            "days_many": "{{count}} dni"
         },
         "list": {
             "title": "Twoi trenerzy",
             "cost": "Trenerzy korzystają z Twojego dostawcy AI tylko wtedy, gdy pasuje reguła. Bez niego otrzymasz krótką, stałą wiadomość.",
             "create": "Utwórz własnego trenera",
             "limit": "Osiągnięto limit {{count}} własnych trenerów.",
-            "aiDecides": "AI decyduje, kiedy się odezwać."
+            "aiDecides": "AI decyduje, kiedy się odezwać.",
+            "customRules_one": "{{count}} reguła",
+            "customRules_few": "{{count}} reguły",
+            "customRules_many": "{{count}} reguł"
         },
         "preview": {
             "button": "Czy odezwałby się teraz?",
@@ -11695,7 +11739,10 @@
         "thread": {
             "sparky": "Sparky",
             "label": "Czat z",
-            "readOnly": "Dodaj dostawcę AI w Ustawieniach, aby odpowiadać trenerom."
+            "readOnly": "Dodaj dostawcę AI w Ustawieniach, aby odpowiadać trenerom.",
+            "unread_one": "{{count}} nieprzeczytana",
+            "unread_few": "{{count}} nieprzeczytane",
+            "unread_many": "{{count}} nieprzeczytanych"
         },
         "names": {
             "recovery": "Regeneracja",
@@ -11957,7 +12004,17 @@
             "never": "Żadne sprawdzenie jeszcze się nie odbyło. Uruchamiają się o ustawionych godzinach.",
             "sent_one": "{{count}} nowa wiadomość. Otwórz czat, aby ją przeczytać.",
             "sent_few": "{{count}} nowe wiadomości. Otwórz czat, aby je przeczytać.",
-            "sent_many": "{{count}} nowych wiadomości. Otwórz czat, aby je przeczytać."
+            "sent_many": "{{count}} nowych wiadomości. Otwórz czat, aby je przeczytać.",
+            "reasonPaused": "Trenerzy są wstrzymani.",
+            "reasonNoCoaches": "Żaden trener nie jest włączony. Włącz jednego na liście poniżej.",
+            "reasonLimit": "Dzisiejszy limit wiadomości został już osiągnięty.",
+            "reasonNothing": "Nic do powiedzenia w tej chwili: żadna reguła nie pasuje do dzisiejszych danych lub trenerzy powiedzieli to już dzisiaj."
+        },
+        "notifications": {
+            "title": "Powiadomienia na telefonie",
+            "description": "Powiadomienie pojawia się, gdy trener napisze. Na iPhonie może dotrzeć chwilę po godzinie sprawdzenia.",
+            "all": "Powiadamiaj mnie o wiadomościach trenerów",
+            "coach": "Powiadamiaj mnie o {{name}}"
         }
     }
 }
