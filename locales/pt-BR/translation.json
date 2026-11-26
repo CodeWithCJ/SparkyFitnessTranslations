@@ -4561,7 +4561,7 @@
             "mcpOAuthAccessWarning": "Aprovar um aplicativo dá a ele acesso total ao MCP, inclusive a ferramentas que podem gravar ou excluir dados. Aprove só aplicativos de confiança.",
             "mcpOAuthHttpsRequired": "O OAuth do MCP remoto exige HTTPS público. HTTP simples só é aceito para desenvolvimento em loopback.",
             "mcpOAuthRedirectAllowlist": "URIs de redirecionamento OAuth permitidas",
-            "mcpOAuthRedirectAllowlistDescription": "Digite uma URI exata ou um padrão de loopback por linha. Use http://localhost:*, http://127.0.0.1:* ou http://[::1]:* para permitir clientes desktop em qualquer porta local de retorno.",
+            "mcpOAuthRedirectAllowlistDescription": "Digite uma URI exata ou um padrão por linha. Use http://localhost:*, http://127.0.0.1:* ou http://[::1]:* para permitir clientes desktop em qualquer porta local de retorno. Uma URI HTTPS terminada em /* permite qualquer caminho abaixo dela naquele host, conforme exigido pelo Gemini (https://oauth-redirect.googleusercontent.com/r/*).",
             "saveMcpOAuthRedirects": "Salvar a lista de redirecionamentos OAuth",
             "mcpOAuthRedirectsUpdated": "Lista de redirecionamentos OAuth atualizada.",
             "mcpOAuthRedirectsFailed": "Falha ao salvar a lista de redirecionamentos OAuth."
