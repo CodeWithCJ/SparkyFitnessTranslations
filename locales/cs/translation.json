@@ -3073,9 +3073,6 @@
             "openFoodFactsPasswordOptional": "Heslo Open Food Facts (volitelné)",
             "leaveBlankToKeepExisting2": "•••••••• (nechte prázdné pro zachování stávající hodnoty)",
             "appURL": "URL aplikace",
-            "eGHttpsNorishYour": "např. https://norish.vase-domena.cz",
-            "eGHttpYourTandoor": "např. http://vase-instance-tandoor.cz",
-            "eGHttpYourMealie": "např. http://vase-instance-mealie.cz",
             "apiKey": "Klíč API",
             "enterNorishAPIKey": "Zadejte klíč API Norish",
             "enterTandoorAPIKey": "Zadejte klíč API Tandoor",
@@ -3332,7 +3329,6 @@
         },
         "providerSpecificFields": {
             "appURL": "URL aplikace",
-            "eGHttpYourInstance": "např. http://vase-instance-{{provider_type}}.cz",
             "clientID": "ID klienta",
             "yazioEmailUsername": "E-mail / uživatelské jméno YAZIO",
             "appID": "ID aplikace",

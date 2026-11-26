@@ -2715,9 +2715,6 @@
             "leaveBlankToKeepExisting": "（留空就保留而家嘅）",
             "openFoodFactsPasswordOptional": "Open Food Facts 密碼（可選）",
             "appURL": "App URL",
-            "eGHttpsNorishYour": "例如：https://norish.your-domain.com",
-            "eGHttpYourTandoor": "例如：http://your-tandoor-instance.com",
-            "eGHttpYourMealie": "例如：http://your-mealie-instance.com",
             "apiKey": "API 金鑰",
             "enterNorishAPIKey": "輸入 Norish API 金鑰",
             "enterTandoorAPIKey": "輸入 Tandoor API 金鑰",
@@ -2900,7 +2897,6 @@
         },
         "providerSpecificFields": {
             "appURL": "App URL",
-            "eGHttpYourInstance": "例如：http://your-{{provider_type}}-instance.com",
             "clientID": "Client ID",
             "yazioEmailUsername": "YAZIO 電郵／用戶名稱",
             "appID": "App ID",
