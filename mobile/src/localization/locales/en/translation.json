@@ -1601,7 +1601,20 @@
       "invalidNumber": "Invalid number",
       "invalidNumberMessage": "Please enter valid numeric values for strength and dose.",
       "updateFailed": "Failed to update medication: {{error}}",
-      "createFailed": "Failed to create medication: {{error}}"
+      "createFailed": "Failed to create medication: {{error}}",
+      "scheduleAndFrequency": "Schedule & Times",
+      "scheduleHint": "Configure how often and when this medication is taken throughout the day.",
+      "doseOverride": "Dose",
+      "addTimeSlot": "Add another time",
+      "removeTimeSlot": "Remove time slot {{index}}"
+    },
+    "frequency": {
+      "onceDaily": "Once daily",
+      "bid": "2x daily (BID)",
+      "tid": "3x daily (TID)",
+      "qid": "4x daily (QID)",
+      "prn": "As needed",
+      "custom": "Custom"
     },
     "detail": {
       "deleteTitle": "Delete Medication",
@@ -4427,6 +4440,17 @@
       "selectServing": "Select Serving",
       "selectMeal": "Select Meal"
     },
+    "quantity": {
+      "chips": {
+        "toolbar": "Quantity operators",
+        "plus": "Plus",
+        "minus": "Minus",
+        "multiply": "Multiply",
+        "divide": "Divide",
+        "parenOpen": "Open parenthesis",
+        "parenClose": "Close parenthesis"
+      }
+    },
     "cooked": {
       "switch": "Weighed it cooked",
       "sameBatchPrevious": "Same batch as on {{date}}: {{raw}} {{unit}} raw → {{cooked}} {{unit}} cooked",
@@ -5948,6 +5972,19 @@
     "timeCap": "Time Cap",
     "scalingNotes": "Scaling Notes",
     "durationMinutesSeconds": "{{minutes}}m {{seconds}}s"
+  },
+  "diarySelection": {
+    "count_one": "{{count}} selected",
+    "count_other": "{{count}} selected",
+    "deleteConfirm_one": "Delete {{count}} selected entry?",
+    "deleteConfirm_other": "Delete {{count}} selected entries?",
+    "deleteFailed": "Some entries could not be deleted",
+    "move": "Move",
+    "moveFailed": "Could not move entries",
+    "moveMeal": "Move meal",
+    "moveTitle": "Move entries",
+    "moveTo": "Move to",
+    "moving": "Moving…"
   },
   "copyMeal": {
     "title": "Copy meal: {{meal}}",
